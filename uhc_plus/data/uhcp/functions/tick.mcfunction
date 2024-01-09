@@ -3,3 +3,6 @@ execute unless score %uhcp_init uhcp_initstatus matches 1.. if score stage statu
 
 # Lava checks
 execute if score %uhcp_init uhcp_initstatus matches 1.. run function uhcp:lava/checks
+
+# Hunger Effect
+execute if score %uhcp_init uhcp_initstatus matches 1.. run function uhcp:hunger/update
