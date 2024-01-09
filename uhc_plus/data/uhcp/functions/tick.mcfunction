@@ -7,8 +7,8 @@ execute if score countdown tick matches -20 run function uhcp:start
 # Lava checks
 execute if score %uhcp_init uhcp_initStatus matches 1.. run function uhcp:lava/checks
 
-# Settings menu
-execute unless score %uhcp_init uhcp_initStatus matches 1.. run function uhcp:settings/checks
-
 # Hunger Effect
 execute if score %uhcp_init uhcp_initStatus matches 1.. as @a at @s run function uhcp:hunger/update
+
+# Settings menu
+execute unless score %uhcp_init uhcp_initStatus matches 1.. run function uhcp:settings/checks
