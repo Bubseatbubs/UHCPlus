@@ -11,4 +11,4 @@ execute if score %uhcp_init uhcp_initStatus matches 1.. run function uhcp:lava/c
 execute unless score %uhcp_init uhcp_initStatus matches 1.. run function uhcp:settings/checks
 
 # Hunger Effect
-execute as @a at @s run function uhcp:hunger/update
+execute if score %uhcp_init uhcp_initStatus matches 1.. as @a at @s run function uhcp:hunger/update
