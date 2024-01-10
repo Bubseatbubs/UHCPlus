@@ -12,4 +12,4 @@ scoreboard players operation %uhcp_lava uhcp_lavaHeight += %uhcp_lava uhcp_initS
 scoreboard players operation %uhcp_lava uhcp_lavaHeight -= %uhcp_lava uhcp_lavaCurrentLayers
 scoreboard players operation %uhcp_lava uhcp_lavaTimeInterval = %uhcp_lava uhcp_lavaTime
 execute if score %uhcp_lava uhcp_lavaHeight matches 1.. run scoreboard players operation %uhcp_lava uhcp_lavaTimeInterval /= %uhcp_lava uhcp_lavaHeight
-scoreboard players add %uhcp_lavaInit uhcp_lavaCurrentLayers 1
+scoreboard players add %uhcp_lava uhcp_lavaCurrentLayers 1
