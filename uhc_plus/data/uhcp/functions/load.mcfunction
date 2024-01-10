@@ -1,5 +1,6 @@
 # Add Scoreboard Objectives
 
+scoreboard objectives add uhcp_settings dummy
 scoreboard objectives add uhcp_hungerTimer dummy
 scoreboard objectives add uhcp_initStatus dummy
 scoreboard objectives add uhcp_lavaCurrentHeight dummy
