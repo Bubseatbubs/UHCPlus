@@ -30,14 +30,14 @@ execute if score @s uhcp_settings matches 200 run scoreboard players set %h_max 
 execute if score @s uhcp_settings matches 200 run tellraw @s {"text":"Turned hunger timer off."}
 execute if score @s uhcp_settings matches 201 run scoreboard players set %h_max uhcp_settings 1200
 execute if score @s uhcp_settings matches 201 run tellraw @s {"text":"Set hunger time to 1 minute."}
-execute if score @s uhcp_settings matches 202 run scoreboard players set %h_max uhcp_settings 2400
-execute if score @s uhcp_settings matches 202 run tellraw @s {"text":"Set hunger time to 2 minutes."}
-execute if score @s uhcp_settings matches 203 run scoreboard players set %h_max uhcp_settings 3600
-execute if score @s uhcp_settings matches 203 run tellraw @s {"text":"Set hunger time to 3 minutes."}
-execute if score @s uhcp_settings matches 204 run scoreboard players set %h_max uhcp_settings 4800
-execute if score @s uhcp_settings matches 204 run tellraw @s {"text":"Set hunger time to 4 minutes."}
-execute if score @s uhcp_settings matches 205 run scoreboard players set %h_max uhcp_settings 6000
-execute if score @s uhcp_settings matches 205 run tellraw @s {"text":"Set hunger time to 5 minutes."}
+execute if score @s uhcp_settings matches 202 run scoreboard players set %h_max uhcp_settings 3600
+execute if score @s uhcp_settings matches 202 run tellraw @s {"text":"Set hunger time to 3 minutes."}
+execute if score @s uhcp_settings matches 203 run scoreboard players set %h_max uhcp_settings 6000
+execute if score @s uhcp_settings matches 203 run tellraw @s {"text":"Set hunger time to 5 minutes."}
+execute if score @s uhcp_settings matches 204 run scoreboard players set %h_max uhcp_settings 12000
+execute if score @s uhcp_settings matches 204 run tellraw @s {"text":"Set hunger time to 10 minutes."}
+execute if score @s uhcp_settings matches 205 run scoreboard players set %h_max uhcp_settings 24000
+execute if score @s uhcp_settings matches 205 run tellraw @s {"text":"Set hunger time to 20 minutes."}
 
 scoreboard players reset @s uhcp_settings
 playsound block.note_block.harp master @s ~ ~ ~ 10 1 1
