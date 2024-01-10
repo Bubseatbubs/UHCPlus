@@ -1,1 +1,1 @@
-fill -32 -56 -32 32 -56 32 minecraft:lava
+fill -4 -63 -4 5 -56 5 minecraft:lava
