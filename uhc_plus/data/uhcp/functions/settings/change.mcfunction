@@ -39,5 +39,10 @@ execute if score @s uhcp_settings matches 204 run tellraw @s {"text":"Set hunger
 execute if score @s uhcp_settings matches 205 run scoreboard players set %h_max uhcp_settings 24000
 execute if score @s uhcp_settings matches 205 run tellraw @s {"text":"Set hunger time to 20 minutes."}
 
+execute if score @s uhcp_settings matches 1000 run scoreboard players set %h_set uhcp_settings 0
+execute if score @s uhcp_settings matches 1000 run tellraw @s {"text":"Hunger timer will turn on automatically after 40 minutes."}
+execute if score @s uhcp_settings matches 1001 run scoreboard players set %h_max uhcp_settings 1
+execute if score @s uhcp_settings matches 1001 run tellraw @s {"text":"Hunger timer will be manually set through a command. Run /trigger hungerTimer to turn it on and off."}
+
 scoreboard players reset @s uhcp_settings
 playsound block.note_block.harp master @s ~ ~ ~ 10 1 1
