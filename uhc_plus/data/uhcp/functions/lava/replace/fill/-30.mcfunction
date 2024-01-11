@@ -1,1 +1,2 @@
-fill -4 -63 -4 5 -30 5 minecraft:lava
+# Fill y level -30 with lava
+fill -90 -30 -90 90 -30 90 minecraft:lava

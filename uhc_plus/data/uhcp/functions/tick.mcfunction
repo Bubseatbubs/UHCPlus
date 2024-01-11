@@ -4,8 +4,8 @@ execute unless score %uhcp_init uhcp_initStatus matches 1.. if score stage statu
 # Send message after game starts
 execute if score countdown tick matches -20 run function uhcp:start
 
-# Lava checks
-execute if score %uhcp_init uhcp_initStatus matches 1.. run function uhcp:lava/checks
+# Run lava functions if lava should be rising
+execute if score %uhcp_lavaInit uhcp_initStatus matches 1.. run function uhcp:lava/run
 
 # Hunger Effect
 execute unless score %h_max uhcp_settings matches -100 if score %uhcp_init uhcp_initStatus matches 1.. as @a at @s run function uhcp:hunger/update
