@@ -1,5 +1,4 @@
 # Add Scoreboard Objectives
-
 scoreboard objectives add uhcp_gameTime dummy
 scoreboard objectives add uhcp_hungerTimer dummy
 scoreboard objectives add uhcp_initStatus dummy
