@@ -1,4 +1,4 @@
-execute unless score %h_max uhcp_settings matches -100 unless score @s uhcp_hungerTimer > %h_max uhcp_settings run scoreboard players add @s uhcp_hungerTimer 1
+execute unless score @s uhcp_hungerTimer > %h_max uhcp_settings run scoreboard players add @s uhcp_hungerTimer 1
 
 # Effect Hunger
 execute if score @s uhcp_hungerTimer >= %h_max uhcp_settings if score %h_amp uhcp_settings matches 0 run effect give @s hunger 5 0 true
