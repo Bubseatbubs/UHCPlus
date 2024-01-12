@@ -8,4 +8,4 @@ scoreboard players remove %uhcp_lavaSec uhcp_lavaTime 1
 
 # Check if time to fill next layers
 execute if score %uhcp_lava uhcp_lavaCurrentHeight < %uhcp_lava uhcp_lavaMaxHeight if score %uhcp_lava uhcp_lavaTimeInterval matches ..0 run function uhcp:lava/raise/initial
-execute unless score %uhcp_lava uhcp_lavaCurrentHeight matches ..-64 if score %uhcp_lavaSec uhcp_lavaTime matches ..0 run function uhcp:lava/raise/secondary
+execute if score %uhcp_lava uhcp_lavaCurrentHeight matches -63.. if score %uhcp_lavaSec uhcp_lavaTime matches ..0 run function uhcp:lava/raise/secondary
