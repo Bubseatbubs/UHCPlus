@@ -1,4 +1,4 @@
-# Fill lava layers
+# Fill next lava layers
 execute if score %uhcp_lavaSec uhcp_lavaCurrentHeight matches -63..0 run function uhcp:lava/replace/secondary/branches/1
 execute if score %uhcp_lavaSec uhcp_lavaCurrentHeight matches 1..64 run function uhcp:lava/replace/secondary/branches/2
 execute if score %uhcp_lavaSec uhcp_lavaCurrentHeight matches 65..128 run function uhcp:lava/replace/secondary/branches/3

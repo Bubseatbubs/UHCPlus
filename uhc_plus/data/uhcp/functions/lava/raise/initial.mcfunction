@@ -12,6 +12,10 @@ scoreboard players operation %uhcp_lava uhcp_lavaTimeInterval /= %uhcp_lava uhcp
 # Add to current number of filled layers
 scoreboard players add %uhcp_lava uhcp_lavaCurrentLayers 1
 
+# Initialize secondary filling
+execute if score %uhcp_lava uhcp_lavaCurrentHeight matches -62.. run scoreboard players set %uhcp_lavaSec uhcp_initStatus 0
+execute if score %uhcp_lavaSec uhcp_lavaTime matches ..-1 run scoreboard players set %uhcp_lavaSec uhcp_lavaTime 5
+
 # Fill next lava layer
 execute if score %uhcp_lava uhcp_lavaCurrentHeight matches -63..0 run function uhcp:lava/replace/initial/branches/1
 execute if score %uhcp_lava uhcp_lavaCurrentHeight matches 1..64 run function uhcp:lava/replace/initial/branches/2
