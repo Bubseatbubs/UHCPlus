@@ -8,16 +8,16 @@ execute unless score %uhcp_lava uhcp_lavaTime matches -2147483648..2147483647 ru
 scoreboard players set %uhcp_lava uhcp_initStatus 64
 scoreboard players operation %uhcp_lava uhcp_lavaHeight = %uhcp_lava uhcp_lavaMaxHeight
 scoreboard players operation %uhcp_lava uhcp_lavaHeight += %uhcp_lava uhcp_initStatus
-scoreboard players operation %uhcp_lava uhcp_initStatus = %uhcp_lava uhcp_lavaHeight
-scoreboard players operation %uhcp_lava uhcp_initStatus /= %uhcp_lava uhcp_lavaTime
-execute unless score %uhcp_lava uhcp_initStatus matches 5.. run function uhcp:lava/time
+scoreboard players operation %uhcp_lava uhcp_initStatus = %uhcp_lava uhcp_lavaTime
+scoreboard players operation %uhcp_lava uhcp_initStatus /= %uhcp_lava uhcp_lavaHeight
+execute unless score %uhcp_lava uhcp_initStatus matches 160.. run function uhcp:lava/time
 
 # Calculate first initial lava interval length
 scoreboard players operation %uhcp_lava uhcp_lavaTimeInterval = %uhcp_lava uhcp_lavaTime
 scoreboard players operation %uhcp_lava uhcp_lavaTimeInterval /= %uhcp_lava uhcp_lavaHeight
 
 # Set secondary lava scoreboards
-scoreboard players set %uhcp_lavaSec uhcp_lavaTime 5
+scoreboard players set %uhcp_lavaSec uhcp_lavaTime 400
 scoreboard players set %uhcp_lavaSecInit uhcp_initStatus 0
 scoreboard players set %uhcp_lavaSec uhcp_initStatus 1
 

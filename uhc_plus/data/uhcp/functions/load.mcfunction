@@ -11,8 +11,8 @@ scoreboard objectives add uhcp_lavaTimeInterval dummy
 scoreboard objectives add uhcp_settings dummy
 
 # Set default lava scoreboard values
-scoreboard players set %uhcp_lava uhcp_lavaMaxHeight 150
-scoreboard players set %uhcp_lava uhcp_lavaTime 12000
+execute unless score stage status matches 2 unless score %uhcp_lavaInit uhcp_initStatus matches 1 run scoreboard players set %uhcp_lava uhcp_lavaMaxHeight 150
+execute unless score stage status matches 2 unless score %uhcp_lavaInit uhcp_initStatus matches 1 run scoreboard players set %uhcp_lava uhcp_lavaTime 12000
 
 # Temp
 datapack disable "file/uhc_pack"
