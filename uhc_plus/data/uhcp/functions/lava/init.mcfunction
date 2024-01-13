@@ -26,7 +26,7 @@ scoreboard players set %uhcp_lava uhcp_lavaCurrentHeight -64
 scoreboard players set %uhcp_lava uhcp_lavaCurrentLayers 0
 
 # Lava notification
-tellraw @a [{"text":"Lava","color":"red"},{"text":" is rising.","color":"yellow"}]
+tellraw @a [{"text":"Lava","color":"red"},{"text":" is rising!","color":"yellow"}]
 execute as @a at @s run playsound block.note_block.harp master @s ~ ~ ~ 1 1 1
 
 # Set initilization status
