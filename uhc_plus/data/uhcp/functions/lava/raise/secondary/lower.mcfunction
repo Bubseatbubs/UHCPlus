@@ -1,6 +1,12 @@
 # Lower current height
 scoreboard players remove %uhcp_lavaSec uhcp_lavaCurrentHeight 3
 
+# Try to restart lava placement
+execute if score %uhcp_lavaSec uhcp_initStatus matches ..0 run function uhcp:lava/raise/secondary/determine
+
+# Reset timer
+scoreboard players set %uhcp_lavaSec uhcp_lavaTime 140
+
 # Fill next layer
 execute if score %uhcp_lavaSec uhcp_lavaCurrentHeight matches -63.. run function uhcp:lava/raise/secondary/fill
 

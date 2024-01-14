@@ -14,7 +14,7 @@ scoreboard players add %uhcp_lava uhcp_lavaCurrentLayers 1
 
 # Initialize secondary filling
 execute if score %uhcp_lava uhcp_lavaCurrentHeight matches -62.. run scoreboard players set %uhcp_lavaSec uhcp_initStatus 0
-execute if score %uhcp_lavaSec uhcp_lavaTime matches ..-1 run scoreboard players set %uhcp_lavaSec uhcp_lavaTime 400
+execute if score %uhcp_lavaSec uhcp_lavaTime matches ..-1 run scoreboard players set %uhcp_lavaSec uhcp_lavaTime 140
 
 # Fill next lava layer
 execute if score %uhcp_lava uhcp_lavaCurrentHeight matches -63..0 run function uhcp:lava/replace/initial/branches/1
@@ -23,3 +23,6 @@ execute if score %uhcp_lava uhcp_lavaCurrentHeight matches 65..128 run function 
 execute if score %uhcp_lava uhcp_lavaCurrentHeight matches 129..192 run function uhcp:lava/replace/initial/branches/4
 execute if score %uhcp_lava uhcp_lavaCurrentHeight matches 193..256 run function uhcp:lava/replace/initial/branches/5
 execute if score %uhcp_lava uhcp_lavaCurrentHeight matches 257..320 run function uhcp:lava/replace/initial/branches/6
+
+# Schedule falling block kill
+schedule function uhcp:lava/falling_block 30t
