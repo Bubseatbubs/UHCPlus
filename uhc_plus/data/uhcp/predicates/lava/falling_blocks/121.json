@@ -1,0 +1,24 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:falling_block",
+    "location": {
+      "position": {
+        "x": {
+          "min": -70,
+          "max": 70
+        },
+        "y": {
+          "min": -64,
+          "max": 121
+        },
+        "z": {
+          "min": -70,
+          "max": 70
+        }
+      },
+      "dimension": "minecraft:overworld"
+    }
+  }
+}

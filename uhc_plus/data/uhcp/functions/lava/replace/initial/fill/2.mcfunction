@@ -1,2 +1,3 @@
 # Fill y level 2 with lava
-fill -90 2 -90 90 2 90 minecraft:lava
+fill -70 2 -70 70 2 70 minecraft:lava
+schedule function uhcp:lava/replace/initial/kill/2 40t
