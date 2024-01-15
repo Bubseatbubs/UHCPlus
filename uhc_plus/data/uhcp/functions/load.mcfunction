@@ -9,6 +9,7 @@ scoreboard objectives add uhcp_lavaMaxHeight dummy
 scoreboard objectives add uhcp_lavaTime dummy
 scoreboard objectives add uhcp_lavaTimeInterval dummy
 scoreboard objectives add uhcp_menu trigger
+scoreboard objectives add uhcp_hunger trigger
 scoreboard objectives add uhcp_settings dummy
 
 # Set default lava scoreboard values
