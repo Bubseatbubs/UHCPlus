@@ -1,10 +1,10 @@
 # Bound max height scoreboard [-63..320]
-execute unless score %uhcp_lava uhcp_lavaMaxHeight matches -2147483648..2147483647 run scoreboard players set %uhcp_lava uhcp_lavaMaxHeight 150
+execute unless score %uhcp_lava uhcp_lavaMaxHeight matches -2147483648..2147483647 run scoreboard players set %uhcp_lava uhcp_lavaMaxHeight 50
 execute if score %uhcp_lava uhcp_lavaMaxHeight matches ..-64 run scoreboard players set %uhcp_lava uhcp_lavaMaxHeight -63
 execute if score %uhcp_lava uhcp_lavaMaxHeight matches 321.. run scoreboard players set %uhcp_lava uhcp_lavaMaxHeight 320
 
 # Increase lava time to at least 5 ticks per layer
-execute unless score %uhcp_lava uhcp_lavaTime matches -2147483648..2147483647 run scoreboard players set %uhcp_lava uhcp_lavaTime 12000
+execute unless score %uhcp_lava uhcp_lavaTime matches -2147483648..2147483647 run scoreboard players set %uhcp_lava uhcp_lavaTime 8400
 scoreboard players set %uhcp_lava uhcp_initStatus 64
 scoreboard players operation %uhcp_lava uhcp_lavaHeight = %uhcp_lava uhcp_lavaMaxHeight
 scoreboard players operation %uhcp_lava uhcp_lavaHeight += %uhcp_lava uhcp_initStatus
