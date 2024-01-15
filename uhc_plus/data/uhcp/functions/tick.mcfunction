@@ -14,7 +14,7 @@ execute as @a at @s if score @s uhcp_hunger matches 0.. run function uhcp:hunger
 # Settings menu
 execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uhcp:settings/change
 scoreboard players enable @a uhcp_menu
-execute as @a at @s if score @s uhcp_menu matches 0.. run function uhcp:settings/menu
+execute as @a at @s if score @s uhcp_menu matches 1.. run function uhcp:settings/menu
 
 # Timer
 execute unless score %uhcp_hungerInit uhcp_initStatus matches 1.. if score %h_set uhcp_settings matches 0 if score %uhcp_init uhcp_initStatus matches 1.. run scoreboard players add %timer uhcp_gameTime 1
