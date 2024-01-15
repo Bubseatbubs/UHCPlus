@@ -9,7 +9,8 @@ execute if score %uhcp_lavaStart uhcp_initStatus matches 1.. run function uhcp:l
 
 # Hunger effect
 execute unless score %h_max uhcp_settings matches -100 if score %uhcp_hungerInit uhcp_initStatus matches 1.. as @a at @s run function uhcp:hunger/update
-execute as @a at @s if score @s uhcp_hunger matches 0.. run function uhcp:hunger/init
+scoreboard players enable @a uhcp_hunger
+execute as @a at @s if score @s uhcp_hunger matches 1.. run function uhcp:hunger/init
 
 # Settings menu
 execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uhcp:settings/change
