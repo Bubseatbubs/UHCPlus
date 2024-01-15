@@ -12,3 +12,5 @@ execute unless score %h_max uhcp_settings matches -100 if score %uhcp_init uhcp_
 
 # Settings menu
 execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uhcp:settings/change
+scoreboard players enable @a uhcp_menu
+execute as @a at @s if score @s uhcp_menu matches 0.. run function uhcp:settings/menu
