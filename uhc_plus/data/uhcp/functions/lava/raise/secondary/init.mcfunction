@@ -3,7 +3,7 @@ scoreboard players set %uhcp_lavaSec uhcp_initStatus 1
 scoreboard players set %uhcp_lavaSecInit uhcp_initStatus 1
 
 # Reset timer
-scoreboard players set %uhcp_lavaSec uhcp_lavaTime 140
+scoreboard players set %uhcp_lavaSec uhcp_lavaTime 70
 
 # Set current height
 scoreboard players operation %uhcp_lavaSec uhcp_lavaCurrentHeight = %uhcp_lava uhcp_lavaCurrentHeight

@@ -17,9 +17,12 @@ scoreboard players operation %uhcp_lava uhcp_lavaTimeInterval = %uhcp_lava uhcp_
 scoreboard players operation %uhcp_lava uhcp_lavaTimeInterval /= %uhcp_lava uhcp_lavaHeight
 
 # Set secondary lava scoreboards
-scoreboard players set %uhcp_lavaSec uhcp_lavaTime 140
+scoreboard players set %uhcp_lavaSec uhcp_lavaTime 70
 scoreboard players set %uhcp_lavaSecInit uhcp_initStatus 1
 scoreboard players set %uhcp_lavaSec uhcp_initStatus 1
+
+# Set barrier timer
+execute if score %uhcp_lavaBar uhcp_lavaTime matches ..15 run scoreboard players set %uhcp_lavaBar uhcp_lavaTime 10
 
 # Lava notification
 tellraw @a [{"text":"Lava","color":"red"},{"text":" is rising!","color":"yellow"}]

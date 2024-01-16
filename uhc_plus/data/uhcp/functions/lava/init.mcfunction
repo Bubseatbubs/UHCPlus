@@ -17,7 +17,7 @@ scoreboard players operation %uhcp_lava uhcp_lavaTimeInterval = %uhcp_lava uhcp_
 scoreboard players operation %uhcp_lava uhcp_lavaTimeInterval /= %uhcp_lava uhcp_lavaHeight
 
 # Set secondary lava scoreboards
-scoreboard players set %uhcp_lavaSec uhcp_lavaTime 140
+scoreboard players set %uhcp_lavaSec uhcp_lavaTime 70
 scoreboard players set %uhcp_lavaSecInit uhcp_initStatus 0
 scoreboard players set %uhcp_lavaSec uhcp_initStatus 1
 
@@ -26,7 +26,8 @@ scoreboard players set %uhcp_lava uhcp_lavaCurrentHeight -64
 scoreboard players set %uhcp_lava uhcp_lavaCurrentLayers 0
 
 # Replace bordering non-solid blocks with barriers
-function uhcp:lava/replace/barriers/low/west
+scoreboard players set %uhcp_lavaBar uhcp_lavaTime 10
+scoreboard players set %uhcp_lavaBar uhcp_lavaCurrentLayers 0
 
 # Lava notification
 tellraw @a [{"text":"Lava","color":"red"},{"text":" is rising!","color":"yellow"}]

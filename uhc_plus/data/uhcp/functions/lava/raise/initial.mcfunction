@@ -1,7 +1,7 @@
 # Raise layer to fill by one block (starts at y level -63)
 scoreboard players add %uhcp_lava uhcp_lavaCurrentHeight 1
 
-# Calculations
+# Calculate time interval
 scoreboard players set %uhcp_lava uhcp_initStatus 64
 scoreboard players operation %uhcp_lava uhcp_lavaHeight = %uhcp_lava uhcp_lavaMaxHeight
 scoreboard players operation %uhcp_lava uhcp_lavaHeight += %uhcp_lava uhcp_initStatus
