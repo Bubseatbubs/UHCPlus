@@ -13,5 +13,5 @@ scoreboard objectives add uhcp_hunger trigger
 scoreboard objectives add uhcp_settings dummy
 
 # Set default lava scoreboard values
-execute unless score stage status matches 2 unless score %uhcp_lavaInit uhcp_initStatus matches 1 run scoreboard players set %uhcp_lava uhcp_lavaMaxHeight 50
-execute unless score stage status matches 2 unless score %uhcp_lavaInit uhcp_initStatus matches 1 run scoreboard players set %uhcp_lava uhcp_lavaTime 8400
+execute unless score stage status matches 2 unless score %timer uhcp_gameTime matches 1.. unless score %uhcp_lavaInit uhcp_initStatus matches 1 run scoreboard players set %uhcp_lava uhcp_lavaMaxHeight 50
+execute unless score stage status matches 2 unless score %timer uhcp_gameTime matches 1.. unless score %uhcp_lavaInit uhcp_initStatus matches 1 run scoreboard players set %uhcp_lava uhcp_lavaTime 8400
