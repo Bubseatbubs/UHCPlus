@@ -21,7 +21,7 @@ execute if score %uhcp_lava uhcp_lavaCurrentHeight matches 1..64 run function uh
 execute if score %uhcp_lava uhcp_lavaCurrentHeight matches 65..128 run function uhcp:lava/replace/initial/branches/3
 execute if score %uhcp_lava uhcp_lavaCurrentHeight matches 129..192 run function uhcp:lava/replace/initial/branches/4
 execute if score %uhcp_lava uhcp_lavaCurrentHeight matches 193..256 run function uhcp:lava/replace/initial/branches/5
-execute if score %uhcp_lava uhcp_lavaCurrentHeight matches 257..320 run function uhcp:lava/replace/initial/branches/6
+execute if score %uhcp_lava uhcp_lavaCurrentHeight matches 257..319 run function uhcp:lava/replace/initial/branches/6
 
 # Schedule falling block kill
 schedule function uhcp:lava/falling_block 30t

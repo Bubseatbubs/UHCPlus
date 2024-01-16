@@ -15,4 +15,4 @@ execute if score %uhcp_lavaSec uhcp_lavaCurrentHeight matches 1..64 run function
 execute if score %uhcp_lavaSec uhcp_lavaCurrentHeight matches 65..128 run function uhcp:lava/replace/secondary/branches/3
 execute if score %uhcp_lavaSec uhcp_lavaCurrentHeight matches 129..192 run function uhcp:lava/replace/secondary/branches/4
 execute if score %uhcp_lavaSec uhcp_lavaCurrentHeight matches 193..256 run function uhcp:lava/replace/secondary/branches/5
-execute if score %uhcp_lavaSec uhcp_lavaCurrentHeight matches 257..320 run function uhcp:lava/replace/secondary/branches/6
+execute if score %uhcp_lavaSec uhcp_lavaCurrentHeight matches 257..319 run function uhcp:lava/replace/secondary/branches/6

@@ -9,8 +9,7 @@ scoreboard players operation %uhcp_lavaH uhcp_lavaTime /= %uhcp_lava uhcp_initSt
 scoreboard players set %uhcp_lava uhcp_initStatus 1200
 scoreboard players operation %uhcp_lavaM uhcp_lavaTime = %uhcp_lava uhcp_lavaTime
 scoreboard players operation %uhcp_lavaM uhcp_lavaTime /= %uhcp_lava uhcp_initStatus
-scoreboard players operation %uhcp_lavaM2 uhcp_lavaTime = %uhcp_lava uhcp_lavaTime
-scoreboard players operation %uhcp_lavaM2 uhcp_lavaTime /= %uhcp_lava uhcp_initStatus
+scoreboard players operation %uhcp_lavaM2 uhcp_lavaTime = %uhcp_lavaM uhcp_lavaTime
 scoreboard players set %uhcp_lava uhcp_initStatus 60
 scoreboard players operation %uhcp_lava uhcp_initStatus *= %uhcp_lavaH uhcp_lavaTime
 scoreboard players operation %uhcp_lavaM uhcp_lavaTime -= %uhcp_lava uhcp_initStatus
