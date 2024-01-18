@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"player": [],
+				"recipe_id": "uhcp:player_compass"
+			}
+		}
+	},
+	"rewards": {
+		"function": "uhcp:test"
+	}
+}
