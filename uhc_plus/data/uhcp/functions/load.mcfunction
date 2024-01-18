@@ -11,6 +11,7 @@ scoreboard objectives add uhcp_lavaTimeInterval dummy
 scoreboard objectives add uhcp_menu trigger
 scoreboard objectives add uhcp_hunger trigger
 scoreboard objectives add uhcp_settings dummy
+scoreboard objectives add uhcp_team dummy
 
 # Top Objective for /trigger top command
 scoreboard objectives add top trigger

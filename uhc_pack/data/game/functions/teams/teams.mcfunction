@@ -59,4 +59,4 @@ team modify netherite color gray
 
 
 team add bastion
-team modify bastian color dark_gray
+team modify bastion color dark_gray
