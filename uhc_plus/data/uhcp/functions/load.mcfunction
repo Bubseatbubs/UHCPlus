@@ -1,4 +1,6 @@
 # Add Scoreboard Objectives
+scoreboard objectives add uhcp_itemCount dummy
+scoreboard objectives add uhcp_itemInv dummy
 scoreboard objectives add uhcp_gameTime dummy
 scoreboard objectives add uhcp_hungerTimer dummy
 scoreboard objectives add uhcp_initStatus dummy
@@ -18,6 +20,9 @@ scoreboard objectives add top trigger
 
 # Set default lava scores
 execute unless score stage status matches 2 unless score %timer uhcp_gameTime matches 1.. unless score %uhcp_lavaInit uhcp_initStatus matches 1 run function uhcp:load/scores
+
+# Forceload main dimension
+execute in uhcp:main run forceload add 0 0
 
 # Schedule delayed load
 scoreboard players add %uhcp_loadInit uhcp_initStatus 1

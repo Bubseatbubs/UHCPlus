@@ -5,17 +5,22 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:compass"
-				}
-			],
-			"functions": [
-				{
-					"function": "minecraft:set_name",
-					"entity": "this",
-					"name": {
-						"text": "Player Compass",
-						"italic": false
-					}
+					"name": "minecraft:compass",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{player:1b}"
+						},
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "Player Compass",
+								"color": "light_purple",
+								"italic": false
+							}
+						}
+					]
 				}
 			]
 		}

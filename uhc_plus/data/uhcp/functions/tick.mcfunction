@@ -8,7 +8,7 @@ execute if score countdown tick matches 0 run function uhcp:start
 execute if score %uhcp_lavaStart uhcp_initStatus matches 1.. run function uhcp:lava/run
 
 # Player compass
-
+execute as @a[tag=UHCP_Compass] at @s run function uhcp:compass/item/adjust
 
 # Hunger effect
 execute unless score %h_max uhcp_settings matches -100 if score %uhcp_hungerInit uhcp_initStatus matches 1.. as @a at @s run function uhcp:hunger/update

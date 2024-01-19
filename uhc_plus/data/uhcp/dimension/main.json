@@ -1,0 +1,14 @@
+{
+    "type": "uhcp:shadow",
+    "generator": {
+      "type": "minecraft:flat",
+      "settings": {
+        "biome": "uhcp:abyss",
+        "lakes": false,
+        "features": false,
+        "layers": [],
+        "structure_overrides": "uhcp:empty"
+      }
+    }
+  }
+  
