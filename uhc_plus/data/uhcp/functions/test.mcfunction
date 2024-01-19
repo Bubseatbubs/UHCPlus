@@ -1,3 +1,5 @@
+# This function runs once for every crafted item.
+
 #clear @s minecraft:compass 1
 #execute store result score %invTotalCount uhcp_initStatus run clear @s minecraft:compass 0
 #clear @s minecraft:compass
@@ -6,6 +8,7 @@
 #execute at @s as @e[type=minecraft:item,nbt={Item:{id:"minecraft:compass"}},distance=..5,sort=nearest,limit=1] store result score %entityCount uhcp_initStatus run data get entity @s Item.Count
 #execute at @s as @e[type=minecraft:item,nbt={Item:{id:"minecraft:compass"}},distance=..5,sort=nearest,limit=1] store result score %entityTime uhcp_initStatus run data get entity @s Age
 #execute at @s run kill @e[type=minecraft:item,distance=..5]
+say @s
 advancement revoke @s only uhcp:player_compass
 #schedule function uhcp:test1 1t
 
@@ -26,7 +29,7 @@ advancement revoke @s only uhcp:player_compass
 # 2. Entities:
 # Option 1:
 # -Give player(s) who did not meet above conditions tag.
-# -Scheduled function for one tick later:
+# -One tick later (probably should not use schedule function):
 # -For nearest entity non-player compasses thrown by player(s), calculate total number in Count. (Possible to not be most recently thrown item.)
 # -Lower count by one (out of possible 64) (transfer data to score, remove one from score, transfer score back to entity).
 #
