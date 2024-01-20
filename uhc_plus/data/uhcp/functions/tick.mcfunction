@@ -32,4 +32,4 @@ execute as @a at @s if score @s top matches 1.. run function uhcp:top/init
 execute as @a at @s if score @s uhcp_topDelay matches 1.. run function uhcp:top/finish
 
 # Top Chargeup
-execute as @a[tag=uhcp_isTeleporting] run function uhcp:top/updatecharge
+execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
