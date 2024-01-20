@@ -15,9 +15,17 @@ scoreboard objectives add uhcp_menu trigger
 scoreboard objectives add uhcp_settings dummy
 scoreboard objectives add uhcp_team dummy
 scoreboard objectives add uhcp_topDelay dummy
+scoreboard objectives add uhcp_topCD dummy
 
 # Top Objective for /trigger top command
+# Did not use uhcp prefix for ease of use
 scoreboard objectives add top trigger
+
+# Add bossbars
+bossbar add uhcp_topcd "Time Until Teleport:"
+bossbar set minecraft:uhcp_topcd color purple
+bossbar set minecraft:uhcp_topcd style notched_6
+bossbar set minecraft:uhcp_topcd max 60
 
 # Set default lava scores
 execute unless score stage status matches 2 unless score %timer uhcp_gameTime matches 1.. unless score %uhcp_lavaInit uhcp_initStatus matches 1 run function uhcp:load/scores
