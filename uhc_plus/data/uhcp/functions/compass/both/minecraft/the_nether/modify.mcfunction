@@ -10,8 +10,8 @@ data modify storage minecraft:uhcp_compass Compass.hand[0].tag.LodestoneDimensio
 data modify storage minecraft:uhcp_compass Compass.hand[1].tag.LodestoneDimension set value "minecraft:the_nether"
 execute store result storage minecraft:uhcp_compass Compass.hand[0].tag.LodestonePos.X int 1 run data get storage minecraft:uhcp_compass Compass.Pos[0]
 data modify storage minecraft:uhcp_compass Compass.hand[1].tag.LodestonePos.X set from storage minecraft:uhcp_compass Compass.hand[0].tag.LodestonePos.X
-data modify storage minecraft:uhcp_compass Compass.hand[0].tag.LodestonePos.Y set value -64
-data modify storage minecraft:uhcp_compass Compass.hand[1].tag.LodestonePos.Y set value -64
+data modify storage minecraft:uhcp_compass Compass.hand[0].tag.LodestonePos.Y set value 0
+data modify storage minecraft:uhcp_compass Compass.hand[1].tag.LodestonePos.Y set value 0
 execute store result storage minecraft:uhcp_compass Compass.hand[0].tag.LodestonePos.Z int 1 run data get storage minecraft:uhcp_compass Compass.Pos[2]
 data modify storage minecraft:uhcp_compass Compass.hand[1].tag.LodestonePos.Z set from storage minecraft:uhcp_compass Compass.hand[0].tag.LodestonePos.Z
 
