@@ -14,7 +14,8 @@ execute if entity @a[predicate=uhcp:compass/player_compass/hand,gamemode=surviva
 # Hunger effect
 execute unless score %h_max uhcp_settings matches -100 if score %uhcp_hungerInit uhcp_initStatus matches 1.. as @a at @s run function uhcp:hunger/update
 scoreboard players enable @a hunger
-execute as @a at @s if score @s hunger matches 1.. run function uhcp:hunger/init
+execute as @a at @s if score @s hunger matches 1.. unless score %uhcp_hungerInit uhcp_initStatus matches 1.. run function uhcp:hunger/init
+execute as @a at @s if score @s hunger matches 1.. if score %uhcp_hungerInit uhcp_initStatus matches 1.. run function uhcp:hunger/disable
 
 # Settings menu
 execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uhcp:settings/change
@@ -23,13 +24,15 @@ execute as @a at @s if score @s menu matches 1.. run function uhcp:settings/menu
 
 # Timer
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run scoreboard players add %uhcp_time uhcp_gameTime 1
-execute unless score %uhcp_hungerInit uhcp_initStatus matches 1.. if score %h_set uhcp_settings matches 0 if score %uhcp_init uhcp_initStatus matches 1.. run scoreboard players add %timer uhcp_gameTime 1
-execute if score %timer uhcp_gameTime matches 48000.. run function uhcp:hunger/init
+execute unless score %uhcp_hungerInit uhcp_initStatus matches 1.. if score %h_set uhcp_settings matches 0 if score %uhcp_init uhcp_initStatus matches 1.. run scoreboard players add %hunger_timer uhcp_gameTime 1
+execute unless score %uhcp_hungerInit uhcp_initStatus matches 1.. if score %hunger_timer uhcp_gameTime matches 48000..50000 as @a run function uhcp:hunger/init
 
 # Top Command
 scoreboard players enable @a top
-execute as @a at @s if score @s top matches 1.. run function uhcp:top/init
+execute as @a at @s if score @s top matches 1.. run function uhcp:top/check
 execute as @a at @s if score @s uhcp_topDelay matches 1.. run function uhcp:top/finish
+execute as @a if score @s uhcp_topCD matches 1.. run scoreboard players remove @s uhcp_topCD 1
 
 # Top Chargeup
-execute as @a[tag=uhcp_isTeleporting] run function uhcp:top/updatecharge
+execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
+
