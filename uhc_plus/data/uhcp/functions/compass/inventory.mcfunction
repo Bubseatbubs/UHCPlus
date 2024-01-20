@@ -1,8 +1,10 @@
 # Remove one compass from inventory (somewhat involved)
+data modify storage minecraft:uhcp_compass Inventory set from entity @s Inventory
 execute if entity @s[predicate=uhcp:compass/compass] run function uhcp:compass/inventory/find
 clear @s minecraft:compass
 setblock 0 0 0 minecraft:barrel
 data remove block 0 0 0 Items
+data remove storage minecraft:uhcp_compass Load
 
 #Load 1
 data modify block 0 0 0 Items set from storage minecraft:uhcp_compass Inventory
@@ -94,6 +96,3 @@ item replace entity @s armor.legs from block 0 0 0 container.10
 item replace entity @s armor.chest from block 0 0 0 container.11
 item replace entity @s armor.head from block 0 0 0 container.12
 item replace entity @s weapon.offhand from block 0 0 0 container.13
-
-#Finish
-data remove block 0 0 0 Items

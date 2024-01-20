@@ -1,5 +1,4 @@
 # Find slot with lowest number of non-player compasses
-data modify storage minecraft:uhcp_compass Inventory set from entity @s Inventory
 data modify storage minecraft:uhcp_compass InventoryWork set from storage minecraft:uhcp_compass Inventory
 execute store result score %uhcp_compassSlot uhcp_itemInv run data get storage minecraft:uhcp_compass Inventory
 scoreboard players set %uhcp_compass uhcp_itemCount 0
