@@ -26,7 +26,7 @@ bossbar set minecraft:uhcp_topcharge style notched_6
 bossbar set minecraft:uhcp_topcharge max 60
 
 # Set default lava scores
-execute unless score stage status matches 2 unless score %timer uhcp_gameTime matches 1.. unless score %uhcp_lavaInit uhcp_initStatus matches 1 run function uhcp:load/scores
+execute unless score stage status matches 2 unless score %hunger_timer uhcp_gameTime matches 1.. unless score %uhcp_lavaInit uhcp_initStatus matches 1 run function uhcp:load/scores
 
 # Forceload main dimension
 execute in uhcp:main run forceload add 0 0

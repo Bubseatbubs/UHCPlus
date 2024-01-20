@@ -1,3 +1,4 @@
+summon marker ~ ~ ~ {Tags:["uhcp_topCheck"]}
 spreadplayers ~ ~ 0 1 false @s
 scoreboard players add @s uhcp_topDelay 1
 tag @s remove uhcp_isTeleporting
