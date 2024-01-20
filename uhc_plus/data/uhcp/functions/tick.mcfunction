@@ -24,3 +24,8 @@ execute as @a at @s if score @s uhcp_menu matches 1.. run function uhcp:settings
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run scoreboard players add %uhcp_time uhcp_gameTime 1
 execute unless score %uhcp_hungerInit uhcp_initStatus matches 1.. if score %h_set uhcp_settings matches 0 if score %uhcp_init uhcp_initStatus matches 1.. run scoreboard players add %timer uhcp_gameTime 1
 execute if score %timer uhcp_gameTime matches 48000.. run function uhcp:hunger/init
+
+# Top Command
+scoreboard players enable @a top
+execute as @a at @s if score @s top matches 1.. run function uhcp:top/teleport
+execute as @a at @s if score @s uhcp_topDelay matches 1.. run function uhcp:top/finish
