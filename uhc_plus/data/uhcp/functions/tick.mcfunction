@@ -12,13 +12,13 @@ execute as @a[tag=UHCP_Compass] at @s run function uhcp:compass/item/adjust
 
 # Hunger effect
 execute unless score %h_max uhcp_settings matches -100 if score %uhcp_hungerInit uhcp_initStatus matches 1.. as @a at @s run function uhcp:hunger/update
-scoreboard players enable @a uhcp_hunger
-execute as @a at @s if score @s uhcp_hunger matches 1.. run function uhcp:hunger/init
+scoreboard players enable @a hunger
+execute as @a at @s if score @s hunger matches 1.. run function uhcp:hunger/init
 
 # Settings menu
 execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uhcp:settings/change
-scoreboard players enable @a uhcp_menu
-execute as @a at @s if score @s uhcp_menu matches 1.. run function uhcp:settings/menu
+scoreboard players enable @a menu
+execute as @a at @s if score @s menu matches 1.. run function uhcp:settings/menu
 
 # Timer
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run scoreboard players add %uhcp_time uhcp_gameTime 1
