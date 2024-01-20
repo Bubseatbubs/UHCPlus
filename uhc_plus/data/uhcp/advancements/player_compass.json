@@ -9,6 +9,6 @@
 		}
 	},
 	"rewards": {
-		"function": "uhcp:compass"
+		"function": "uhcp:compass/reward"
 	}
 }
