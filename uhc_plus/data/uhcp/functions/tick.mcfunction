@@ -28,8 +28,10 @@ execute if score %timer uhcp_gameTime matches 48000.. run function uhcp:hunger/i
 
 # Top Command
 scoreboard players enable @a top
-execute as @a at @s if score @s top matches 1.. run function uhcp:top/init
+execute as @a at @s if score @s top matches 1.. run function uhcp:top/check
 execute as @a at @s if score @s uhcp_topDelay matches 1.. run function uhcp:top/finish
+execute as @a if score @s uhcp_topCD matches 1.. run scoreboard players remove @s uhcp_topCD 1
 
 # Top Chargeup
 execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
+
