@@ -36,4 +36,3 @@ execute as @a if score @s uhcp_topCD matches 1.. run scoreboard players remove @
 
 # Top Chargeup
 execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
-

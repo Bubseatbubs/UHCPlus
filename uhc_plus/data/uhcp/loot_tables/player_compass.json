@@ -8,10 +8,6 @@
 					"name": "minecraft:compass",
 					"functions": [
 						{
-							"function": "minecraft:set_nbt",
-							"tag": "{player:1b}"
-						},
-						{
 							"function": "minecraft:set_name",
 							"entity": "this",
 							"name": {
@@ -19,6 +15,60 @@
 								"color": "light_purple",
 								"italic": false
 							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "Tracks the ",
+									"color": "gray",
+									"italic": true,
+									"extra": [
+										{
+											"text": "closest enemy",
+											"color": "gold"
+										},
+										{
+											"text": ".",
+											"color": "gray"
+										}
+									]
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "The location updates ",
+									"color": "gray",
+									"italic": true
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "every ",
+									"color": "gray",
+									"italic": true,
+									"extra": [
+										{
+											"text": "5",
+											"color": "gold"
+										},
+										{
+											"text": " seconds.",
+											"color": "gray"
+										}
+									]
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{player:1b}"
 						}
 					]
 				}
