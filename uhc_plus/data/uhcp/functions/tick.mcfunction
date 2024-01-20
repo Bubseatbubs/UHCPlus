@@ -9,7 +9,7 @@ execute if score %uhcp_lavaStart uhcp_initStatus matches 1.. run function uhcp:l
 
 # Player compass
 execute as @a[tag=UHCP_Compass] at @s run function uhcp:compass/item/adjust
-execute if score %uhcp_compassTime uhcp_itemCount matches ..0 if entity @a[predicate=uhcp:compass/player_compass/hand,gamemode=survival] run function uhcp:compass
+execute unless score %uhcp_compassTime uhcp_itemCount matches 1.. if entity @a[predicate=uhcp:compass/player_compass/hand,gamemode=survival] run function uhcp:compass
 execute unless score %uhcp_compassTime uhcp_itemCount matches ..0 run scoreboard players remove %uhcp_compassTime uhcp_itemCount 1
 
 # Hunger effect

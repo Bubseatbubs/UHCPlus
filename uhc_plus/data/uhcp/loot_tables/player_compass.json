@@ -40,7 +40,7 @@
 							"function": "minecraft:set_lore",
 							"lore": [
 								{
-									"text": "The location updates ",
+									"text": "When held, the location ",
 									"color": "gray",
 									"italic": true
 								}
@@ -50,7 +50,7 @@
 							"function": "minecraft:set_lore",
 							"lore": [
 								{
-									"text": "every ",
+									"text": "updates every ",
 									"color": "gray",
 									"italic": true,
 									"extra": [

@@ -1,3 +1,6 @@
+# Remove tag
+tag @a remove UHCP_CTracked
+
 # Assign team scoreboards
 execute if entity @a[predicate=uhcp:teams/solo] run function uhcp:compass/teams/solo
 execute if entity @a[predicate=uhcp:teams/team] run function uhcp:compass/teams/team
