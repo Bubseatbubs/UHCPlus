@@ -6,14 +6,10 @@ data modify storage minecraft:uhcp_compass Compass.hand append from entity @s In
 data modify storage minecraft:uhcp_compass Compass.hand[1].Slot set value 1b
 
 # Modify compasses
-data modify storage minecraft:uhcp_compass Compass.hand[0].tag.LodestoneDimension set value "minecraft:the_nether"
-data modify storage minecraft:uhcp_compass Compass.hand[1].tag.LodestoneDimension set value "minecraft:the_nether"
-execute store result storage minecraft:uhcp_compass Compass.hand[0].tag.LodestonePos.X int 1 run data get storage minecraft:uhcp_compass Compass.Pos[0]
-data modify storage minecraft:uhcp_compass Compass.hand[1].tag.LodestonePos.X set from storage minecraft:uhcp_compass Compass.hand[0].tag.LodestonePos.X
-data modify storage minecraft:uhcp_compass Compass.hand[0].tag.LodestonePos.Y set value 0
-data modify storage minecraft:uhcp_compass Compass.hand[1].tag.LodestonePos.Y set value 0
-execute store result storage minecraft:uhcp_compass Compass.hand[0].tag.LodestonePos.Z int 1 run data get storage minecraft:uhcp_compass Compass.Pos[2]
-data modify storage minecraft:uhcp_compass Compass.hand[1].tag.LodestonePos.Z set from storage minecraft:uhcp_compass Compass.hand[0].tag.LodestonePos.Z
+data modify storage minecraft:uhcp_compass Compass.hand[].tag.LodestoneDimension set value "minecraft:the_nether"
+execute store result storage minecraft:uhcp_compass Compass.hand[].tag.LodestonePos.X int 1 run data get storage minecraft:uhcp_compass Compass.Pos[0]
+data modify storage minecraft:uhcp_compass Compass.hand[].tag.LodestonePos.Y set value 0
+execute store result storage minecraft:uhcp_compass Compass.hand[].tag.LodestonePos.Z int 1 run data get storage minecraft:uhcp_compass Compass.Pos[2]
 
 # Replace items
 execute in uhcp:main run function uhcp:compass/both/minecraft/the_nether/replace
