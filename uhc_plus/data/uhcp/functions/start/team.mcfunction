@@ -1,0 +1,15 @@
+# Assign group team scoreboard values
+scoreboard players set @a[team=barbie] uhcp_team 51
+scoreboard players set @a[team=bastion] uhcp_team 52
+scoreboard players set @a[team=bling] uhcp_team 53
+scoreboard players set @a[team=blitz] uhcp_team 54
+scoreboard players set @a[team=boom] uhcp_team 55
+scoreboard players set @a[team=celeste] uhcp_team 56
+scoreboard players set @a[team=crimson] uhcp_team 57
+scoreboard players set @a[team=dangerdanger] uhcp_team 58
+scoreboard players set @a[team=fire] uhcp_team 59
+scoreboard players set @a[team=ice] uhcp_team 60
+scoreboard players set @a[team=meaniegreeny] uhcp_team 61
+scoreboard players set @a[team=netherite] uhcp_team 62
+scoreboard players set @a[team=riptide] uhcp_team 63
+scoreboard players set @a[team=royalnavy] uhcp_team 64

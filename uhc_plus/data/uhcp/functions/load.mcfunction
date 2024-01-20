@@ -1,9 +1,10 @@
 # Add Scoreboard Objectives
-scoreboard objectives add uhcp_itemCount dummy
-scoreboard objectives add uhcp_itemInv dummy
 scoreboard objectives add uhcp_gameTime dummy
+scoreboard objectives add uhcp_hunger trigger
 scoreboard objectives add uhcp_hungerTimer dummy
 scoreboard objectives add uhcp_initStatus dummy
+scoreboard objectives add uhcp_itemCount dummy
+scoreboard objectives add uhcp_itemInv dummy
 scoreboard objectives add uhcp_lavaCurrentHeight dummy
 scoreboard objectives add uhcp_lavaCurrentLayers dummy
 scoreboard objectives add uhcp_lavaHeight dummy
@@ -11,7 +12,6 @@ scoreboard objectives add uhcp_lavaMaxHeight dummy
 scoreboard objectives add uhcp_lavaTime dummy
 scoreboard objectives add uhcp_lavaTimeInterval dummy
 scoreboard objectives add uhcp_menu trigger
-scoreboard objectives add uhcp_hunger trigger
 scoreboard objectives add uhcp_settings dummy
 scoreboard objectives add uhcp_team dummy
 
