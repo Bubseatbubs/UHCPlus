@@ -1,7 +1,7 @@
 # Initial logic
 execute unless score %uhcp_init uhcp_initStatus matches 1.. if score stage status matches 2 run function uhcp:init
 
-# Send message after game starts
+# Game start
 execute if score countdown tick matches 0 run function uhcp:start
 
 # Lava
