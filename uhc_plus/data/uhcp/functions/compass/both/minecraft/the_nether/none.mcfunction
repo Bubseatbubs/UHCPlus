@@ -8,6 +8,7 @@ data modify storage minecraft:uhcp_compass Compass.hand[1].Slot set value 1b
 # Modify compasses
 data modify storage minecraft:uhcp_compass Compass.hand[].tag.LodestoneDimension set value "minecraft:the_nether"
 data remove storage minecraft:uhcp_compass Compass.hand[].tag.LodestonePos
+data modify storage minecraft:uhcp_compass Compass.hand[].tag.LodestoneTracked set value 1b
 
 # Replace items
 execute in uhcp:main run function uhcp:compass/both/minecraft/overworld/replace
