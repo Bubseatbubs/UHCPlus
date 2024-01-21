@@ -192,7 +192,7 @@ execute if score stage status matches 1 run execute if score hp status matches 2
 execute if score nametags tick matches 0 run execute if score nameplates status matches 0 run function game:events/showtags
 execute if score day tick matches 0 run function game:events/day
 execute if score stage status matches 2 run execute if score marker tick matches 23990 run tellraw @a ["",{"text":"[Marker]","color":"green"},{"text":" ","color":"red"},{"score":{"name":"marker","objective":"status"},"color":"yellow"},{"text":"\u0020Minutes","color":"yellow"}]
-execute if score stage status matches 2 run execute if score marker tick matches 23990..23999 run playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1000000 1 1
+execute if score stage status matches 2 run execute if score marker tick matches 23990..23991 run playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1000000 1 1
 
 
 
