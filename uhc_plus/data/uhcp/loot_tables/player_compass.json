@@ -27,10 +27,6 @@
 										{
 											"text": "closest enemy",
 											"color": "gold"
-										},
-										{
-											"text": ".",
-											"color": "gray"
 										}
 									]
 								}
@@ -40,7 +36,7 @@
 							"function": "minecraft:set_lore",
 							"lore": [
 								{
-									"text": "When held, the location ",
+									"text": "when held. The location ",
 									"color": "gray",
 									"italic": true
 								}
