@@ -1,6 +1,7 @@
 # Remove one compass from inventory (somewhat involved)
 data modify storage minecraft:uhcp_compass Inventory set from entity @s Inventory
-execute if entity @s[predicate=uhcp:compass/compass] run function uhcp:compass/inventory/find
+execute if predicate uhcp:compass/compass run function uhcp:compass/inventory/find
+execute unless predicate uhcp:compass/compass run scoreboard players set %uhcp_compassLow uhcp_itemCount 1
 clear @s minecraft:compass
 setblock 0 0 0 minecraft:barrel
 data remove block 0 0 0 Items
