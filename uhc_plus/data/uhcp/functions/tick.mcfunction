@@ -37,3 +37,6 @@ execute as @a[tag=uhcp_isTeleporting] at @s run execute unless entity @e[type=ma
 
 # Top Chargeup
 execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
+
+# Glow Eye
+execute as @e[type=eye_of_ender,nbt={Item:{id:"minecraft:ender_eye",Count:1b,tag:{uhcp_sight:1b}}}] at @s run function uhcp:glow/init
