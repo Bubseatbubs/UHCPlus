@@ -4,4 +4,5 @@ execute as @a[scores={uhcp_team=1..64},sort=nearest,limit=1] if score @s uhcp_te
 playsound minecraft:block.enchantment_table.use master @a[distance=..4] ~ ~ ~ 1 1 0.4
 playsound minecraft:entity.ender_eye.death master @a[distance=..4] ~ ~ ~ 1 1 0.4
 particle minecraft:enchanted_hit ~ ~ ~ 0.5 1 0.5 0.1 100 normal
+tag @p remove UHCP_GTrack
 kill @s
