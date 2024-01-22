@@ -1,5 +1,6 @@
 # Generate choices based on drop chance
 tag @s remove reroll
+
 execute if score %tier uhcp_a_tier matches 0 run loot replace entity @s hotbar.3 loot uhcp:augments/silver
 execute if score %tier uhcp_a_tier matches 0 run loot replace entity @s hotbar.4 loot uhcp:augments/silver
 execute if score %tier uhcp_a_tier matches 0 run loot replace entity @s hotbar.5 loot uhcp:augments/silver

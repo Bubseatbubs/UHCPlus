@@ -6,7 +6,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:chorus_flower",
+          "name": "minecraft:apple",
           "functions": [
             {
               "function": "set_count",
@@ -14,83 +14,43 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{HideFlags:1,violetquiver:1b,Enchantments:[{id:\"minecraft:protection\",lvl:0s}]}"
+              "tag": "{augment:0b}"
             },
             {
               "function": "set_name",
               "name": [
                 {
-                  "text": "Violet Quiver"
+                  "text": "Johnny Appleseed",
+                  "color": "gray",
+                  "bold": true
                 }
               ]
             },
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
                 [
                   {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Common",
-                    "color": "gray",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "Recieve 12",
+                    "text": "Gain a ",
                     "color": "gray"
                   },
                   {
-                    "text": " Arrows",
-                    "color": "green"
+                    "text": "Apple",
+                    "color": "white"
                   },
                   {
-                    "text": " and 1",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "Arrow of Levitation",
-                    "color": "green",
-                    "italic": false
-                  },
-                  {
-                    "text": " each round.",
+                    "text": " at the start of the",
                     "color": "gray"
                   }
                 ],
                 {
-                  "text": "Passive Item",
-                  "color": "blue"
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "Found buried in Hell, this",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "object seemingly creates arrows",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "out of thin air.",
-                  "color": "gray",
-                  "italic": true
+                  "text": "game and every 4 minutes.",
+                  "color": "gray"
                 }
               ]
             }
@@ -99,7 +59,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:sweet_berries",
+          "name": "minecraft:iron_trapdoor",
           "functions": [
             {
               "function": "set_count",
@@ -107,998 +67,54 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{HideFlags:1,eraberries:1b,Enchantments:[{id:\"minecraft:protection\",lvl:0s}]}"
+              "tag": "{augment:0b}"
             },
             {
               "function": "set_name",
               "name": [
                 {
-                  "text": "Eraberries"
+                  "text": "Trap Master",
+                  "color": "gray",
+                  "bold": true
                 }
               ]
             },
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
                 [
                   {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Common",
-                    "color": "gray",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "Regenerate a small",
+                    "text": "Gain a ",
                     "color": "gray"
-                  }
-                ],
-                {
-                  "text": "portion of Health each round.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "This amount increases the more",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "waves have passed.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "Passive Item",
-                  "color": "blue"
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "A plant most notable in the",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "Malockian outskirts. It's",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "considered quite the delicacy.",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:gold_nugget",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:1,shinystone:1b,Enchantments:[{id:\"minecraft:protection\",lvl:0s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Shiny Stone"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
                   },
                   {
-                    "text": "Common",
-                    "color": "gray",
-                    "bold": false
+                    "text": "Shovel, 16 Signs, 3 Pistons",
+                    "color": "white"
                   }
                 ],
                 [
                   {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
+                    "text": "3 Sticky Pistons, ",
+                    "color": "white"
                   },
                   {
-                    "text": "Recieve an additional",
+                    "text": "and",
                     "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "Caesi",
-                    "color": "gold",
-                    "italic": false
                   },
                   {
-                    "text": " at the start of every",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "Reward Round",
-                    "color": "gold",
-                    "italic": false
+                    "text": " 64 Redstone",
+                    "color": "white"
                   },
                   {
                     "text": ".",
                     "color": "gray"
                   }
-                ],
-                {
-                  "text": "Passive Item",
-                  "color": "blue"
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "The fabled Shiny Stone spells",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "great fortune for those who",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "attain it.",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:ender_eye",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{darkexplosion:1b,Enchantments:[{}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Vile Dispersion"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Common",
-                    "color": "gray",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "Hold",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": " [Right Click]",
-                    "color": "white"
-                  },
-                  {
-                    "text": " to",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "increase your",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": " Charge",
-                    "color": "gold"
-                  },
-                  {
-                    "text": ". At max",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "Charge",
-                    "color": "gold",
-                    "italic": false
-                  },
-                  {
-                    "text": ", unleash a dark explosion",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "around you, damaging nearby",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "enemies.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "\"The Eyx Eyes are a collection",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "of devestating spirits enclosed",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "in peculiar, ocular instruments.\" ",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "- Vrayen Scholar's research paper",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:stone_sword",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{Unbreakable:1b,soulblade:1b,Enchantments:[{id:\"minecraft:sweeping\",lvl:1s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Soul Striker"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Common",
-                    "color": "gray",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "After killing an enemy,",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ],
-                [
-                  {
-                    "text": "gain ",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": "Strength",
-                    "color": "green"
-                  },
-                  {
-                    "text": " for 4 seconds.",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "\"Enchanted with black magic,",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "this blade is powered by",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "war itself.\" - Kalympian Scientist",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:iron_boots",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{Unbreakable:1b,panicboots:1b,Enchantments:[{id:\"minecraft:feather_falling\",lvl:1s},{id:\"minecraft:swift_sneak\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUID:[I;222447345,-805941848,-1483681309,722338289],Slot:\"feet\"},{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.04,Operation:1,UUID:[I;-1078058529,1835552291,-1396724935,698394311],Slot:\"feet\"}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Panic Boots"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Common",
-                    "color": "gray",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect:",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": " Gain",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Speed I",
-                    "color": "green"
-                  },
-                  {
-                    "text": " upon taking",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "damage.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "Tino the Coward is a tale many",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "Elinirians know. His legendary",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "retreat from Ogre Lake baffles",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "even the meekest people.",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:turtle_helmet",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{Unbreakable:1b,koopacap:1b,Enchantments:[{id:\"minecraft:fire_protection\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3,Operation:0,UUID:[I;-738518508,678708706,-1543639575,-61979674],Slot:\"head\"}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Koopa Cap"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Common",
-                    "color": "gray",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "Periodically summon a",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "Turtle",
-                    "color": "green",
-                    "italic": false
-                  },
-                  {
-                    "text": ". ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Turtles",
-                    "color": "green"
-                  },
-                  {
-                    "text": " grant ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Resistance I",
-                    "color": "green"
-                  }
-                ],
-                {
-                  "text": "to nearby players.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "\"Jameson put the cap on and -",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "I ain't pullin' your leg here -",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "livin', spittin' turtles",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "sprouted from his noggin!\" - Barto the Bold",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:nautilus_shell",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:1,healshell:1b,Enchantments:[{id:\"minecraft:protection\",lvl:0s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:1,Operation:0,UUID:[I;-1958976609,-846969674,-1535346361,1159010311],Slot:\"offhand\"},{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:2,Operation:0,UUID:[I;-1482493631,567951922,-2073522110,-71278785],Slot:\"offhand\"}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Heal Shell"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Common",
-                    "color": "gray",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "While held in your",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Offhand",
-                    "color": "gold"
-                  },
-                  {
-                    "text": ",",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "when you strike an enemy,  there is",
-                  "color": "gray",
-                  "italic": false
-                },
-                [
-                  {
-                    "text": "a rare chance to restore",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": " 2 ❤",
-                    "color": "red"
-                  }
-                ],
-                {
-                  "text": "to yourself and nearby players.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "The shell beats a strange, oceanic",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "rhythm. Where it came from has long",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "since been forgotten by the world",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "itself.",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:shield",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:32,Unbreakable:1b,flerianshield:1b,AttributeModifiers:[{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:0.5,Operation:0,UUID:[I;1457080005,1556956925,-1388565907,-407654306],Slot:\"offhand\"},{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:3,Operation:0,UUID:[I;1287491237,-1536539982,-2012931519,-449549778],Slot:\"offhand\"},{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:2,Operation:0,UUID:[I;1918528305,-864010163,-1510573637,-959297822],Slot:\"offhand\"}],BlockEntityTag:{Base:15,Patterns:[{Color:0,Pattern:\"bri\"},{Color:15,Pattern:\"flo\"}]}}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Flerian Shield"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Common",
-                    "color": "gray",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "Enemies are applied",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "Slowness I",
-                    "color": "green",
-                    "italic": false
-                  },
-                  {
-                    "text": " while this is in",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "your off-hand.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "\"We all look out for one",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "another. No soldier should be",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "left behind.\" - Flerian Officer",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:leather_leggings",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{display:{color:5462182},Unbreakable:1b,Enchantments:[{id:\"minecraft:blast_protection\",lvl:1s},{id:\"minecraft:swift_sneak\",lvl:2s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:5,Operation:0,UUID:[I;2049124190,1378697635,-1526346751,-500881872],Slot:\"legs\"},{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:0.25,Operation:1,UUID:[I;-762176600,1304382419,-1140252263,-1068202988],Slot:\"legs\"}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Chic Pants"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Common",
-                    "color": "gray",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "You look surprisingly",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "fashionable.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "Though rare, stunning vanity",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "can catch an opponent",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "off guard.",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:leather_helmet",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{display:{color:8519680},Unbreakable:1b,Enchantments:[{id:\"minecraft:projectile_protection\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:0.2,Operation:1,UUID:[I;420578618,-1579661633,-1971031686,-1030772997],Slot:\"head\"},{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUID:[I;592679482,117916028,-1817283724,743756820],Slot:\"head\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:0.1,Operation:1,UUID:[I;1348809036,2015970089,-1885632990,655460071],Slot:\"head\"}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Battle Helm"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Common",
-                    "color": "gray",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": " N/A",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "\"Enchanted with black magic,",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "this blade is powered by",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "war itself.\" - Kalympian Scientist",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:book",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{spellbook:1b,Enchantments:[{id:\"minecraft:smite\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:1,Operation:0,UUID:[I;-1681462111,-108245660,-1502519550,-7397808],Slot:\"mainhand\"}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Dingy Spellbook"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Common",
-                    "color": "gray",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "After striking 3 times,",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "fire a spell in in your targeted",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "direction. Enemies hit by the",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "spell take damage.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "Although many Vrayen youth desire",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "to cast the flashy spells of",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "their teachers, they must first",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "begin with this.",
-                  "color": "gray",
-                  "italic": true
-                }
+                ]
               ]
             }
           ]
@@ -1114,200 +130,57 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{HideFlags:1,hotfeather:1b,Enchantments:[{id:\"minecraft:protection\",lvl:0s}]}"
+              "tag": "{augment:0b}"
             },
             {
               "function": "set_name",
               "name": [
                 {
-                  "text": "Hot Feather"
+                  "text": "Birds of a Feather",
+                  "color": "gray",
+                  "bold": true
                 }
               ]
             },
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
                 [
                   {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Common",
-                    "color": "gray",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "After striking 6 times,",
+                    "text": "Gain 3",
                     "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "summon a",
-                    "color": "gray",
-                    "italic": false
                   },
                   {
-                    "text": " Chicken",
+                    "text": " Feathers",
                     "color": "white"
                   },
                   {
-                    "text": " at the nearest",
+                    "text": ". When thrown,",
                     "color": "gray"
                   }
                 ],
+                {
+                  "text": "they teleport you to your",
+                  "color": "gray"
+                },
                 [
                   {
-                    "text": "enemy.",
+                    "text": "Teammate",
+                    "color": "gold"
+                  },
+                  {
+                    "text": " (random teammate in",
                     "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": " Chickens",
-                    "color": "white"
-                  },
-                  {
-                    "text": " summon",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Fireballs",
-                    "color": "red"
+                    "italic": true
                   }
                 ],
                 {
-                  "text": "above nearby enemies for a short",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "duration.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "Passive Item",
-                  "color": "blue"
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "Many fauna in Repornire possess",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "peculiar qualities. The chickens ",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "are really no different.",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:bow",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{Unbreakable:1b,fledglingbow:1b,Enchantments:[{id:\"minecraft:power\",lvl:1s},{id:\"minecraft:punch\",lvl:2s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Fledgling Bow"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Common",
-                    "color": "gray",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "Grants 12",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Arrows",
-                    "color": "green"
-                  },
-                  {
-                    "text": " at the",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "start of combat. Grants ",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": "Jump Boost I",
-                    "color": "green"
-                  }
-                ],
-                {
-                  "text": "while held.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "\"It feels as though this bow has",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "been... blessed? By birds? No, no,",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "what am I saying?\" - Flerian Cleric",
+                  "text": "teams of 3 or more)",
                   "color": "gray",
                   "italic": true
                 }

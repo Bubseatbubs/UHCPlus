@@ -39,3 +39,4 @@ execute as @a[tag=uhcp_isTeleporting] at @s run execute unless entity @e[type=ma
 execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
 
 # Augment Selection
+execute if score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_augments uhcp_initStatus matches 1.. as @a[gamemode=survival] at @s run function uhcp:augments/optionselect

@@ -48,5 +48,6 @@ particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 1 100 normal
 execute at @s store result score %glass_count uhcp_a_count run clear @s minecraft:black_stained_glass_pane 0
 execute at @s if score %glass_count uhcp_a_count matches 1.. run function uhcp:augments/returnitemafter
 
+execute as @s at @s store result score @s uhcp_a_selectedAugment run function uhcp:augments/assign
 
 
