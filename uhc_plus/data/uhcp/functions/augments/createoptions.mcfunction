@@ -4,7 +4,7 @@ clear @s
 item replace entity @s hotbar.0 with black_stained_glass_pane{display:{Name:'{"text":"Skip Option"}',Lore:['{"text":"Choose this item to skip the "}','{"text":"selection for the round."}']},skipoption:1b,glass1:1b} 1
 item replace entity @s hotbar.1 with black_stained_glass_pane{display:{Name:'{"text":"Skip Option"}',Lore:['{"text":"Choose this item to skip the "}','{"text":"selection for the round."}']},skipoption:1b,glass2:1b} 1
 item replace entity @s hotbar.2 with black_stained_glass_pane{display:{Name:'{"text":"Skip Option"}',Lore:['{"text":"Choose this item to skip the "}','{"text":"selection for the round."}']},skipoption:1b,glass3:1b} 1
-execute as @s run function medsvl:inventory/dropchance
+execute as @s at @s run function uhcp:augments/createaugments
 item replace entity @s hotbar.6 with black_stained_glass_pane{display:{Name:'{"text":"Skip Option"}',Lore:['{"text":"Choose this item to skip the "}','{"text":"selection for the round."}']},skipoption:1b,glass4:1b} 1
 item replace entity @s hotbar.7 with black_stained_glass_pane{display:{Name:'{"text":"Skip Option"}',Lore:['{"text":"Choose this item to skip the "}','{"text":"selection for the round."}']},skipoption:1b,glass5:1b} 1
 item replace entity @s hotbar.8 with black_stained_glass_pane{display:{Name:'{"text":"Skip Option"}',Lore:['{"text":"Choose this item to skip the "}','{"text":"selection for the round."}']},skipoption:1b,glass6:1b} 1
