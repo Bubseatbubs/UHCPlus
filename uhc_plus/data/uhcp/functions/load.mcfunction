@@ -21,6 +21,7 @@ scoreboard objectives add uhcp_topCD dummy
 scoreboard objectives add uhcp_a_tier dummy
 scoreboard objectives add uhcp_a_count dummy
 scoreboard objectives add uhcp_a_validSelection dummy
+scoreboard objectives add uhcp_a_selectedAugment dummy
 
 # Add bossbars
 bossbar add uhcp_topcharge "Time Until Teleport:"

@@ -1,5 +1,5 @@
 # TODO: Add functionality when item is selected
-say item selected
+tag @s remove UHCP_ChoosingItem
 
 item replace entity @s container.0 with air
 item replace entity @s container.1 with air
@@ -43,7 +43,10 @@ item replace entity @s armor.chest with air
 item replace entity @s armor.head with air
 item replace entity @s weapon.offhand with air
 
-tag @s remove UHCP_ChoosingItem
+playsound block.note_block.chime master @s ~ ~ ~ 1 1 1
+particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 1 100 normal
+execute at @s store result score %glass_count uhcp_a_count run clear @s minecraft:black_stained_glass_pane 0
+execute at @s if score %glass_count uhcp_a_count matches 1.. run function uhcp:augments/returnitemafter
 
 
 
