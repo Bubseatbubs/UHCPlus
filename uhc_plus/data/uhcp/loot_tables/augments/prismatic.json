@@ -1,0 +1,771 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:end_crystal",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:1,thaumaturgy:1b,Enchantments:[{id:\"minecraft:protection\",lvl:0s}]}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Thaumaturgy"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "Rarity: ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "Legendary",
+                    "color": "gold",
+                    "bold": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Effect: ",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "All",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Charge weapons",
+                    "color": "gold"
+                  }
+                ],
+                {
+                  "text": "charge twice as fast. When",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "activating a",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Charge weapon",
+                    "color": "gold"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "there is a rare chance of",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "activating the effect of",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "any ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Charge weapon",
+                    "color": "gold"
+                  },
+                  {
+                    "text": " in your",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "inventory. This effect deals",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage to yourself.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Passive Item",
+                  "color": "blue"
+                },
+                {
+                  "text": "-------------------------"
+                },
+                {
+                  "text": "This magical crystal ",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "is the origin of all arcane",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "power of Lume. Even touching it",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "inflicts unimaginable pain.",
+                  "color": "gray",
+                  "italic": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,infinitecrossbow:1b,Enchantments:[{id:\"minecraft:piercing\",lvl:2s},{id:\"minecraft:quick_charge\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:-0.3,Operation:1,UUID:[I;347419044,1566264647,-2078080441,-1281503695],Slot:\"mainhand\"},{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:-0.3,Operation:1,UUID:[I;-1548096243,965430046,-1239919250,-1609287605],Slot:\"offhand\"}],ChargedProjectiles:[{id:\"minecraft:arrow\",Count:1b},{},{}],Charged:1b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Block n' Bones"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "Rarity: ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "Legendary",
+                    "color": "gold",
+                    "bold": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Effect: ",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "Grants 32",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Arrows",
+                    "color": "green"
+                  },
+                  {
+                    "text": " at the",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "start of combat. After firing,",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "automatically consumes an",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Arrow",
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "to instantly load itself.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "-------------------------"
+                },
+                {
+                  "text": "\"This powerful crossbow harnesses",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "arcane energy to summon arrows",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "from the beyond.\" - Eggbert",
+                  "color": "gray",
+                  "italic": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:diamond_sword",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,voltruneomega:1b,Enchantments:[{id:\"minecraft:sharpness\",lvl:1s},{id:\"minecraft:knockback\",lvl:1s},{id:\"minecraft:sweeping\",lvl:3s}],AttributeModifiers:[{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.05,Operation:1,UUID:[I;-1282117728,201542301,-1767707670,-1177182335],Slot:\"mainhand\"},{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:9,Operation:0,UUID:[I;-220505168,1265713726,-1460581745,-1731832768],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:0.5,Operation:0,UUID:[I;-1599911641,1387941086,-1360146201,-2094933241],Slot:\"mainhand\"}]}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Voltrune Ω"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "Rarity: ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "Legendary",
+                    "color": "gold",
+                    "bold": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Effect: ",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "Striking an enemy",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": "summons an explosion and",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "Slows",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": " the nearest enemy.",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "After 10 strikes, summon an",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "orb at the nearest enemy.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Enemies near the orb are pulled",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "in and repeatedly struck by",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "lightning bolts.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "-------------------------"
+                },
+                {
+                  "text": "\"Whatever entity created this",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "dreadful thing must've held",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "immeasurable strength.\" - Arda Eyx",
+                  "color": "gray",
+                  "italic": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:diamond_sword",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,falsenightfall:1b,Enchantments:[{id:\"minecraft:sharpness\",lvl:2s},{id:\"minecraft:knockback\",lvl:2s},{id:\"minecraft:fire_aspect\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:-0.2,Operation:1,UUID:[I;718042499,-1710076869,-2057447140,203607901],Slot:\"mainhand\"},{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:11,Operation:0,UUID:[I;1939977571,97274446,-1416292436,-1940866030],Slot:\"mainhand\"}]}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "False Nightfall"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "Rarity: ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "Legendary",
+                    "color": "gold",
+                    "bold": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Effect: ",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "Killing an enemy",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "restores",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 2 ❤",
+                    "color": "red"
+                  },
+                  {
+                    "text": ". Periodically",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "create",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Phantom Sabers",
+                    "color": "blue"
+                  },
+                  {
+                    "text": " in the",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "ground that ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Wither",
+                    "color": "green"
+                  },
+                  {
+                    "text": " and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Slow",
+                    "color": "green"
+                  }
+                ],
+                [
+                  {
+                    "text": "nearby enemies. Hold",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Sneak",
+                    "color": "gold"
+                  }
+                ],
+                {
+                  "text": "to teleport to the furthest",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "Phantom Saber",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ". Doing this removes",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "it from the ground.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "-------------------------"
+                },
+                {
+                  "text": "\"Though Nightfall is easily",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "replicable, it is against",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "the law to do so. We must",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "settle for this only.\" - Vrayen Scribe",
+                  "color": "gray",
+                  "italic": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:netherite_leggings",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,worldbreaker:1b,Enchantments:[{id:\"minecraft:fire_protection\",lvl:10s},{id:\"minecraft:blast_protection\",lvl:10s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:7,Operation:0,UUID:[I;10589763,19480935,-1213504701,-1852624479],Slot:\"legs\"},{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10,Operation:0,UUID:[I;1171651021,-109165801,-1546287485,-165986741],Slot:\"legs\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;-1448788765,1677345284,-1348777875,1835001037],Slot:\"legs\"}]}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Worldbreaker"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "Rarity: ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "Legendary",
+                    "color": "gold",
+                    "bold": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Effect: ",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": " At the beginning of each",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Reward Round, receive a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Heaven's",
+                    "color": "gold"
+                  }
+                ],
+                [
+                  {
+                    "text": "Bullet",
+                    "color": "gold"
+                  },
+                  {
+                    "text": ". Upon striking an enemy with",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Heaven's Bullet",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ", launch yourself",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "into the air and grant all allies",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "Resistance IV",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": " for 6 seconds.",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "Upon landing, create a massive",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "explosion and light the ground",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "nearby.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "-------------------------"
+                },
+                {
+                  "text": "\"INCINERATE THE UNWORTHY!\"",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "Erda screamed. Her vengeance",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "against the Realmkillers would",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "soon be sated.",
+                  "color": "gray",
+                  "italic": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:ender_eye",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{laserbeam:1b,Enchantments:[{}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUID:[I;-1104936638,761023878,-1812874414,-2067877940],Slot:\"mainhand\"},{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:0.5,Operation:0,UUID:[I;-622936764,-1120188004,-1568779345,167940201],Slot:\"mainhand\"}]}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Soul-powered Beam"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "Rarity: ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "Legendary",
+                    "color": "gold",
+                    "bold": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Effect: ",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "Hold",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " [Right Click]",
+                    "color": "white"
+                  },
+                  {
+                    "text": " to",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "increase your",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Charge",
+                    "color": "gold"
+                  },
+                  {
+                    "text": ". At max",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Charge",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ", fire a beam in your",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "targeted direction.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "-------------------------"
+                },
+                {
+                  "text": "\"Should they fall into the wrong",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "hands, entire realms could be",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "shattered in an instant.\"",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "- Vrayen Scholar's research paper",
+                  "color": "gray",
+                  "italic": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
