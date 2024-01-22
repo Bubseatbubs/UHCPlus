@@ -3,6 +3,6 @@
 	"entity": "this",
 	"predicate": {
 		"type": "minecraft:item",
-		"nbt": "{Item:{id:\"minecraft:compass\",tag:{player:1b}}}"
+		"nbt": "{Item:{tag:{uhcp_player:1b}}}"
 	}
 }
