@@ -39,7 +39,6 @@ item replace entity @s container.26 from block 0 -64 0 container.26
 
 #Load 2
 data remove block 0 -64 0 Items
-data remove storage minecraft:uhcp_compass Load
 data modify storage minecraft:uhcp_compass Load[{Slot:0b}].id set from storage minecraft:uhcp_compass Inventory[{Slot:27b}].id
 data modify storage minecraft:uhcp_compass Load[{Slot:0b}].tag set from storage minecraft:uhcp_compass Inventory[{Slot:27b}].tag
 data modify storage minecraft:uhcp_compass Load[{Slot:0b}].Count set from storage minecraft:uhcp_compass Inventory[{Slot:27b}].Count
