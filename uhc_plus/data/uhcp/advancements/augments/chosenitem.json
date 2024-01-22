@@ -1,0 +1,248 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"choosingItem\"]}"
+        },
+        "items": [
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          },
+          {
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ],
+            "count": 1,
+            "nbt": "{skipoption:1b}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "uhcp:augments/isselectionvalid"
+  }
+}
