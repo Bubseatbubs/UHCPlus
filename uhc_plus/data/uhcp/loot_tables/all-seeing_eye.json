@@ -1,0 +1,68 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:ender_eye",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "All-Seeing Eye",
+								"color": "light_purple",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "Causes all ",
+									"color": "gray",
+									"italic": true,
+									"extra": [
+										{
+											"text": "enemies",
+											"color": "gold"
+										},
+										{
+											"text": " to glow",
+											"color": "gray"
+										}
+									]
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "for 10 seconds. Consumed",
+									"color": "gray",
+									"italic": true
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "upon use.",
+									"color": "gray",
+									"italic": true
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{uhcp_sight:1b,Enchantments:[{}]}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
