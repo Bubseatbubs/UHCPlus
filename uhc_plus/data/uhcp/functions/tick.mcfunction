@@ -37,3 +37,5 @@ execute as @a[tag=uhcp_isTeleporting] at @s run execute unless entity @e[type=ma
 
 # Top Chargeup
 execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
+
+# Augment Selection

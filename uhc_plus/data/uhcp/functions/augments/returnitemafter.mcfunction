@@ -1,26 +1,11 @@
-# Returns item to player's inventory (check checkvalidity.mcfunction for more information)
+# Returns item to player's inventory if black stained glass was selected and redos augment selection
 # Disable options from being selected while function is running
 tag @s add UHCP_DisableChoose
-execute at @s in minecraft:overworld run setblock ~ -64 ~ barrel
-say returned item
+say black stained glass selected, returning items
+clear @s black_stained_glass_pane
 
-# Add item to barrel
-execute as @s[nbt={Inventory:[{Slot:103b}]}] run item replace block ~ -64 ~ container.0 from entity @s armor.head
-execute as @s[nbt={Inventory:[{Slot:102b}]}] run item replace block ~ -64 ~ container.0 from entity @s armor.chest
-execute as @s[nbt={Inventory:[{Slot:101b}]}] run item replace block ~ -64 ~ container.0 from entity @s armor.legs
-execute as @s[nbt={Inventory:[{Slot:100b}]}] run item replace block ~ -64 ~ container.0 from entity @s armor.feet
-execute as @s[nbt={Inventory:[{Slot:-106b}]}] run item replace block ~ -64 ~ container.0 from entity @s weapon.offhand
-
-# Replace empty slot with item
-execute unless entity @s[nbt={Inventory:[{Slot:3b}]}] run item replace entity @s container.3 from block ~ -64 ~ container.0
-execute unless entity @s[nbt={Inventory:[{Slot:4b}]}] run item replace entity @s container.4 from block ~ -64 ~ container.0
-execute unless entity @s[nbt={Inventory:[{Slot:5b}]}] run item replace entity @s container.5 from block ~ -64 ~ container.0
 
 # Clear filled slots
-item replace entity @s armor.head with air
-item replace entity @s armor.chest with air
-item replace entity @s armor.legs with air
-item replace entity @s armor.feet with air
 item replace entity @s weapon.offhand with air
 
 # Reform Glass
@@ -28,6 +13,9 @@ clear @s black_stained_glass_pane
 item replace entity @s hotbar.0 with black_stained_glass_pane{display:{Name:'{"text":"Skip Option"}',Lore:['{"text":"Choose this item to skip the "}','{"text":"selection for the round."}']},skipoption:1b,glass1:1b} 1
 item replace entity @s hotbar.1 with black_stained_glass_pane{display:{Name:'{"text":"Skip Option"}',Lore:['{"text":"Choose this item to skip the "}','{"text":"selection for the round."}']},skipoption:1b,glass2:1b} 1
 item replace entity @s hotbar.2 with black_stained_glass_pane{display:{Name:'{"text":"Skip Option"}',Lore:['{"text":"Choose this item to skip the "}','{"text":"selection for the round."}']},skipoption:1b,glass3:1b} 1
+item replace entity @s hotbar.3 from block ~ -64 ~ container.0
+item replace entity @s hotbar.4 from block ~ -64 ~ container.1
+item replace entity @s hotbar.5 from block ~ -64 ~ container.2
 item replace entity @s hotbar.6 with black_stained_glass_pane{display:{Name:'{"text":"Skip Option"}',Lore:['{"text":"Choose this item to skip the "}','{"text":"selection for the round."}']},skipoption:1b,glass4:1b} 1
 item replace entity @s hotbar.7 with black_stained_glass_pane{display:{Name:'{"text":"Skip Option"}',Lore:['{"text":"Choose this item to skip the "}','{"text":"selection for the round."}']},skipoption:1b,glass5:1b} 1
 item replace entity @s hotbar.8 with black_stained_glass_pane{display:{Name:'{"text":"Skip Option"}',Lore:['{"text":"Choose this item to skip the "}','{"text":"selection for the round."}']},skipoption:1b,glass6:1b} 1
@@ -60,4 +48,5 @@ item replace entity @s inventory.25 with black_stained_glass_pane{display:{Name:
 item replace entity @s inventory.26 with black_stained_glass_pane{display:{Name:'{"text":"Skip Option"}',Lore:['{"text":"Choose this item to skip the "}','{"text":"selection for the round."}']},skipoption:1b,glass33:1b} 1
 
 tag @s remove UHCP_DisableChoose
+tag @s add UHCP_ChoosingItem
 
