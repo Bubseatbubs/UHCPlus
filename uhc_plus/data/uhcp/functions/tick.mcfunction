@@ -12,6 +12,9 @@ execute as @a[tag=UHCP_Compass] at @s run function uhcp:compass/item/adjust
 execute unless score %uhcp_compassTime uhcp_itemCount matches 1.. if entity @a[predicate=uhcp:compass/player_compass/hand,gamemode=survival] run function uhcp:compass
 execute unless score %uhcp_compassTime uhcp_itemCount matches ..0 run scoreboard players remove %uhcp_compassTime uhcp_itemCount 1
 
+# All-seeing eye
+execute as @a[tag=UHCP_EnderEye] at @s run function uhcp:glow/item/adjust
+
 # Hunger effect
 execute unless score %h_max uhcp_settings matches -100 if score %uhcp_hungerInit uhcp_initStatus matches 1.. as @a at @s run function uhcp:hunger/update
 scoreboard players enable @a hunger

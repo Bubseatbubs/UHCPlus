@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"player": [],
+				"recipe_id": "uhcp:all-seeing_eye"
+			}
+		}
+	},
+	"rewards": {
+		"function": "uhcp:glow/reward"
+	}
+}
