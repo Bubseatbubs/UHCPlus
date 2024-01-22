@@ -6,11 +6,11 @@
 			"entity": "this",
 			"predicate": {
 				"equipment": {
-					"offhand": {
+					"mainhand": {
 						"items": [
 							"minecraft:compass"
 						],
-						"nbt": "{player:1b}"
+						"nbt": "{uhcp_player:1b}"
 					}
 				}
 			}
@@ -20,11 +20,11 @@
 			"entity": "this",
 			"predicate": {
 				"equipment": {
-					"mainhand": {
+					"offhand": {
 						"items": [
 							"minecraft:compass"
 						],
-						"nbt": "{player:1b}"
+						"nbt": "{uhcp_player:1b}"
 					}
 				}
 			}

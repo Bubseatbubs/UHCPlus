@@ -7,7 +7,7 @@
                 "items": [
                     "minecraft:compass"
                 ],
-                "nbt": "{player:1b}"
+                "nbt": "{uhcp_player:1b}"
             }
         }
     }
