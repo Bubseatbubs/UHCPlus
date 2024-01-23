@@ -7,10 +7,11 @@ execute if score @s uhcp_a_beeKeeper matches ..2 run return 0
 
 # Summon bee
 tag @s add UHCP_Owner
-execute at @s run playsound entity.bee.pollinate master @a[distance=..4] ~ ~ ~ 1 1 0.5
+
 execute at @s as @e[tag=!UHCP_Bee,type=!#uhcp:inanimate_mobs,distance=..5] store result score @s uhcp_a_count run function uhcp:augments/effects/gold/beekeeper/checkattacker
-execute at @e[scores={uhcp_a_count=1}] run particle falling_honey ~ ~2 ~ 0.5 0.5 0.5 0.1 20 normal
-execute at @e[scores={uhcp_a_count=1}] run summon bee ~ ~ ~ {Health:5f,HasNectar:0b,HasStung:0b,AngerTime:200000,Tags:["UHCP_Bee"],Attributes:[{Name:"generic.max_health",Base:1},{Name:"generic.follow_range",Base:50},{Name:"generic.movement_speed",Base:0.75},{Name:"generic.attack_damage",Base:5}]}
+execute at @e[scores={uhcp_a_count=1}] run playsound block.beehive.enter master @a[distance=..9] ~ ~ ~ 1 1 0.5
+execute at @e[scores={uhcp_a_count=1}] run particle falling_honey ~ ~2 ~ 0.25 0.5 0.25 0.1 15 normal
+execute at @e[scores={uhcp_a_count=1}] run summon bee ~ ~ ~ {Health:5f,HasNectar:0b,HasStung:0b,AngerTime:200000,Tags:["UHCP_Bee"],Attributes:[{Name:"generic.max_health",Base:1},{Name:"generic.follow_range",Base:50},{Name:"generic.movement_speed",Base:0.75},{Name:"generic.attack_damage",Base:3}]}
 tag @s remove UHCP_Owner
 scoreboard players reset @e[distance=..5] uhcp_a_count
 

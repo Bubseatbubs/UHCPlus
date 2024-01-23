@@ -1177,6 +1177,55 @@
               ]
             }
           ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:honeycomb",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:0b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Bee Keeper",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Every 3 attacks, summon a friendly",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Bee",
+                    "color": "blue"
+                  }
+                ],
+                {
+                  "text": "that attacks nearby enemies.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
