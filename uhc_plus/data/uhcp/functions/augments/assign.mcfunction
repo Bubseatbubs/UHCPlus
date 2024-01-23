@@ -6,8 +6,14 @@ execute if score @s uhcp_a_count matches 1.. run return 0
 execute store success score @s uhcp_a_count run clear @s diamond{augment:2b} 1
 execute if score @s uhcp_a_count matches 1.. run return 2
 
+execute store success score @s uhcp_a_count run clear @s redstone{augment:3b} 1
+execute if score @s uhcp_a_count matches 1.. run return 3
+
 execute store success score @s uhcp_a_count run clear @s leather{augment:4b} 1
 execute if score @s uhcp_a_count matches 1.. run return 4
+
+execute store success score @s uhcp_a_count run clear @s netherite_upgrade_smithing_template{augment:5b} 1
+execute if score @s uhcp_a_count matches 1.. run return 5
 
 execute store success score @s uhcp_a_count run clear @s crossbow{augment:6b} 1
 execute if score @s uhcp_a_count matches 1.. run return 6
@@ -26,6 +32,9 @@ execute if score @s uhcp_a_count matches 1.. run return 10
 
 execute store success score @s uhcp_a_count run clear @s oak_leaves{augment:11b} 1
 execute if score @s uhcp_a_count matches 1.. run return 11
+
+execute store success score @s uhcp_a_count run clear @s iron_bars{augment:14b} 1
+execute if score @s uhcp_a_count matches 1.. run return 14
 
 execute store success score @s uhcp_a_count run clear @s miner_pottery_sherd{augment:13b} 1
 execute if score @s uhcp_a_count matches 1.. run return 13
@@ -50,6 +59,15 @@ execute if score @s uhcp_a_count matches 1.. run return 22
 
 execute store success score @s uhcp_a_count run clear @s white_banner{augment:24b} 1
 execute if score @s uhcp_a_count matches 1.. run return 24
+
+execute store success score @s uhcp_a_count run clear @s feather{augment:25b} 1
+execute if score @s uhcp_a_count matches 1.. run return 25
+
+execute store success score @s uhcp_a_count run clear @s diamond_block{augment:26b} 1
+execute if score @s uhcp_a_count matches 1.. run return 26
+
+execute store success score @s uhcp_a_count run clear @s light_gray_dye{augment:27b} 1
+execute if score @s uhcp_a_count matches 1.. run return 27
 
 execute store success score @s uhcp_a_count run clear @s bundle{augment:29b} 1
 execute if score @s uhcp_a_count matches 1.. run return 29
