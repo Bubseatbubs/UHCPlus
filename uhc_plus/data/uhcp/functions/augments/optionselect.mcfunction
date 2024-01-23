@@ -1,4 +1,5 @@
 # Main function that begins option selection
+tag @s remove UHCP_ChoosingItem
 execute as @s run function uhcp:augments/createoptions
 
 

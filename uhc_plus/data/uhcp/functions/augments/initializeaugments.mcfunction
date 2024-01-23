@@ -1,3 +1,4 @@
+execute if score @s uhcp_a_selectedAugment matches 0 run function uhcp:augments/effects/gold/beekeeper
 execute if score @s uhcp_a_selectedAugment matches 2 run function uhcp:augments/effects/gold/blooddiamonds
 execute if score @s uhcp_a_selectedAugment matches 4 run function uhcp:augments/effects/gold/cowboycosplay
 execute if score @s uhcp_a_selectedAugment matches 6 run function uhcp:augments/effects/gold/doublecross
