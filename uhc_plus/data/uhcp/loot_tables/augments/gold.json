@@ -6,7 +6,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:yellow_glazed_terracotta",
+          "name": "minecraft:emerald",
           "functions": [
             {
               "function": "set_count",
@@ -14,314 +14,117 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{HideFlags:1,spawncaesi:1b,Enchantments:[{id:\"minecraft:protection\",lvl:0s}]}"
+              "tag": "{pickup:1b,augment:20b}"
             },
             {
               "function": "set_name",
               "name": [
                 {
-                  "text": "Spring of Riches"
+                  "text": "Money Money",
+                  "color": "gray",
+                  "bold": true
                 }
               ]
             },
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
                 [
                   {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Rare",
-                    "color": "blue",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": " When Structures spawn,",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "there is a chance for",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": " Caesi",
-                    "color": "gold"
-                  }
-                ],
-                {
-                  "text": "to spawn instead.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "Passive Item",
-                  "color": "blue"
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "\"Too many building pop up",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "nowadays. Way I see it, not",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "enough guards to stop us all.\"",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "- Evo",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:iron_ingot",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:1,steelingot:1b,Enchantments:[{id:\"minecraft:protection\",lvl:0s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Fortifying Ingot"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Rare",
-                    "color": "blue",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "Gain",
+                    "text": "Gain 32",
                     "color": "gray"
                   },
                   {
-                    "text": " Resistance I",
-                    "color": "green"
+                    "text": " Emeralds, 12 Gold Ingots",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 4 Iron Ingots",
+                    "color": "white"
                   },
                   {
                     "text": ".",
                     "color": "gray"
                   }
-                ],
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:golden_sword",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:19b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
                 {
-                  "text": "If you are the only player",
+                  "text": "Lucky Looter",
                   "color": "gray",
-                  "italic": false
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
                 },
                 [
                   {
-                    "text": "remaining, gain",
-                    "color": "gray",
-                    "italic": false
+                    "text": "Gain a",
+                    "color": "gray"
                   },
                   {
-                    "text": " Resistance II",
-                    "color": "green"
+                    "text": " ",
+                    "color": "red"
+                  },
+                  {
+                    "text": "Looting III / Unbreaking III",
+                    "color": "dark_purple"
+                  }
+                ],
+                [
+                  {
+                    "text": "Golden Sword",
+                    "color": "white"
                   },
                   {
                     "text": ".",
                     "color": "gray"
                   }
-                ],
-                {
-                  "text": "Passive Item",
-                  "color": "blue"
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "\"Some pray to gods. Others, to",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "leaders. But I? I see truth in",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "steel.\" - Aran \"Metar\" Trinks",
-                  "color": "gray",
-                  "italic": true
-                }
+                ]
               ]
             }
           ]
         },
         {
-                  "type": "item",
-                  "weight": 1,
-                  "name": "minecraft:birch_sapling",
-                  "functions": [
-                    {
-                      "function": "set_count",
-                      "count": 1
-                    },
-                    {
-                      "function": "set_nbt",
-                      "tag": "{HideFlags:1,yggdrasil:1b,Enchantments:[{id:\"minecraft:protection\",lvl:0s}],BlockStateTag:{stage:\"1\"}}"
-                    },
-                    {
-                      "function": "set_name",
-                      "name": [
-                        {
-                          "text": "Yggdrasil Sapling"
-                        }
-                      ]
-                    },
-                    {
-                      "function": "set_lore",
-                      "lore": [
-                        [
-                          {
-                            "text": "Rarity: ",
-                            "color": "white",
-                            "bold": false,
-                            "italic": false
-                          },
-                          {
-                            "text": "Rare",
-                            "color": "blue",
-                            "bold": false
-                          }
-                        ],
-                        [
-                          {
-                            "text": "Effect: ",
-                            "color": "white",
-                            "italic": false
-                          },
-                          {
-                            "text": "Gain 4",
-                            "color": "gray"
-                          },
-                          {
-                            "text": " Golden Apples",
-                            "color": "gold"
-                          }
-                        ],
-                        {
-                          "text": "now and at the start of",
-                          "color": "gray",
-                          "italic": false
-                        },
-                        [
-                          {
-                            "text": "each ",
-                            "color": "gray"
-                          },
-                          {
-                            "text": "Reward Round",
-                            "color": "gold",
-                            "italic": false
-                          },
-                          {
-                            "text": ". Every other",
-                            "color": "gray"
-                          }
-                        ],
-                        {
-                          "text": "time this effect activates,",
-                          "color": "gray",
-                          "italic": false
-                        },
-                        [
-                          {
-                            "text": "gain an",
-                            "color": "gray",
-                            "italic": false
-                          },
-                          {
-                            "text": " Enchanted Golden Apple",
-                            "color": "gold"
-                          },
-                          {
-                            "text": ".",
-                            "color": "gray"
-                          }
-                        ],
-                        {
-                          "text": "Passive Item",
-                          "color": "blue"
-                        },
-                        {
-                          "text": "-------------------------"
-                        },
-                        {
-                          "text": "The Forest Beyond holds objects",
-                          "color": "gray",
-                          "italic": true
-                        },
-                        {
-                          "text": "of great mystique. Some proved",
-                          "color": "gray",
-                          "italic": true
-                        },
-                        {
-                          "text": "useful in the Malockian War.",
-                          "color": "gray",
-                          "italic": true
-                        }
-                      ]
-                    }
-                  ]
-        },
-        {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:ender_eye",
+          "name": "minecraft:shield",
           "functions": [
             {
               "function": "set_count",
@@ -329,137 +132,97 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{HideFlags:1,seekersight:1b,Enchantments:[{id:\"minecraft:protection\",lvl:0s}]}"
+              "tag": "{pickup:1b,augment:17b}"
             },
             {
               "function": "set_name",
               "name": [
                 {
-                  "text": "Seeker's Sight"
+                  "text": "Large and In Charge",
+                  "color": "gray",
+                  "bold": true
                 }
               ]
             },
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
                 [
                   {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
+                    "text": "Start with",
+                    "color": "gray"
                   },
                   {
-                    "text": "Rare",
-                    "color": "blue",
-                    "bold": false
+                    "text": " +8🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
                   }
-                ],
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:2b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Blood Diamonds",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
                 [
                   {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
+                    "text": "Lose",
+                    "color": "gray"
                   },
                   {
-                    "text": "Hold",
-                    "color": "gray",
-                    "italic": false
+                    "text": " 5🖤",
+                    "color": "red"
                   },
                   {
-                    "text": " [Right Click]",
+                    "text": ". Gain 9",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Diamonds",
                     "color": "white"
                   },
                   {
-                    "text": " to",
+                    "text": ".",
                     "color": "gray"
                   }
-                ],
-                [
-                  {
-                    "text": "increase your",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": " Charge",
-                    "color": "gold"
-                  },
-                  {
-                    "text": ". While",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "Charging",
-                    "color": "gold",
-                    "italic": false
-                  },
-                  {
-                    "text": ", mark nearby enemies.",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "At max ",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": "Charge",
-                    "color": "gold",
-                    "italic": false
-                  },
-                  {
-                    "text": ", damage and",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "apply",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": " Weakness I",
-                    "color": "green"
-                  },
-                  {
-                    "text": " to all",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "marked enemies.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "\"As hunters, our prey finds",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "many ways to shroud themselves.",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "Still, we have ways of outsmarting",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "them.\" - Eyxian Hunters",
-                  "color": "gray",
-                  "italic": true
-                }
+                ]
               ]
             }
           ]
@@ -467,7 +230,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:ender_eye",
+          "name": "minecraft:leather",
           "functions": [
             {
               "function": "set_count",
@@ -475,603 +238,54 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{HideFlags:1,turretmaker:1b,Enchantments:[{id:\"minecraft:protection\",lvl:0s}]}"
+              "tag": "{pickup:1b,augment:4b}"
             },
             {
               "function": "set_name",
               "name": [
                 {
-                  "text": "Portable Turretmaker"
+                  "text": "Cowboy Cosplay",
+                  "color": "gray",
+                  "bold": true
                 }
               ]
             },
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
                 [
                   {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
+                    "text": "Gain a",
+                    "color": "gray"
                   },
                   {
-                    "text": "Rare",
-                    "color": "blue",
-                    "bold": false
+                    "text": " Leather Helmet, Lead, Saddle,",
+                    "color": "white"
                   }
                 ],
                 [
                   {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "Hold",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": " [Right Click]",
+                    "text": "Horse Spawn Egg, ",
                     "color": "white"
                   },
                   {
-                    "text": " to",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "increase your",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": " Charge",
-                    "color": "gold"
-                  },
-                  {
-                    "text": ". At max",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "Charge",
-                    "color": "gold",
-                    "italic": false
-                  },
-                  {
-                    "text": ", create a",
+                    "text": "and",
                     "color": "gray"
                   },
                   {
-                    "text": " Kalympian Turret",
-                    "color": "gold"
-                  }
-                ],
-                {
-                  "text": "at your position. It will attack",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "nearby enemies while active.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "\"The Kalympian Sentryforger has",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "been minimized to be used by the",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "common man, thanks to the Eyepower!\" ",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "- Advertisement for the Turretmaker",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:chainmail_chestplate",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{Unbreakable:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUID:[I;-2025374589,1318604400,-1148773997,-1306652325],Slot:\"chest\"},{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:6,Operation:0,UUID:[I;-218978553,-773830476,-1927927812,1289632054],Slot:\"chest\"}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Eyx Armor"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
+                    "text": " 5 Cow Spawn Eggs",
+                    "color": "white"
                   },
                   {
-                    "text": "Rare",
-                    "color": "blue",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": " N/A",
+                    "text": ".",
                     "color": "gray"
                   }
-                ],
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "A mass produced set of armor",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "made with efficiency in mind.",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "Arda prides her army on its",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "cheap, middling chestplates.",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:golden_boots",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{Unbreakable:1b,firefighterboots:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s},{id:\"minecraft:fire_protection\",lvl:3s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3,Operation:0,UUID:[I;-1564216418,968246307,-1408452064,-190274741],Slot:\"feet\"},{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:5,Operation:0,UUID:[I;-1671571273,1549681614,-1359413775,1373759059],Slot:\"feet\"}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Fire Fighter"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Rare",
-                    "color": "blue",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": " Create a circle of flame",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "where you stand, dealing damage",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "to nearby enemies.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "\"1 to 100, and he just stood",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "there,\" recalls the addled",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "Eyx Warrior. \"The flames of",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "Fleigro... what a dangerous thing.\"",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:stone_sword",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{Unbreakable:1b,evokersummon:1b,Enchantments:[{id:\"minecraft:sharpness\",lvl:1s},{id:\"minecraft:sweeping\",lvl:2s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Kalyx's Bite"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Rare",
-                    "color": "blue",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "Summons an Evoker Fang",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ],
-                {
-                  "text": "under the 2 nearest enemies after",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "striking an enemy.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "\"It dropped out of the sky one day.",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "Swordsmiths are unable to",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "replicate its fearsome biting...\"",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:stone_axe",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{Unbreakable:1b,knockwave:1b,Enchantments:[{id:\"minecraft:knockback\",lvl:2s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "KnockWave™"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Rare",
-                    "color": "blue",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "After striking 3 times,",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ],
-                {
-                  "text": "fling the nearest group of",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "enemies into the air.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "\"We wanted to test air travel,\"",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "explained the Kalympian scientist.",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "\"Bad news is, it... doesn't work.",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "Good news is... it makes for a",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "great weapon.\"",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:golden_leggings",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{Unbreakable:1b,Enchantments:[{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:thorns\",lvl:10s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:6,Operation:0,UUID:[I;-861278574,-1154136815,-1408621303,424333032],Slot:\"legs\"},{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:2,Operation:0,UUID:[I;-319555907,882461758,-1672021166,344809889],Slot:\"legs\"}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Vain Leggings"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Rare",
-                    "color": "blue",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": " N/A",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "\"This gear is mostly ceremonial.",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "However, some idiotic soldiers",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "adorn this gear on the ",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "battleground.\" - Kalympian Officer",
-                  "color": "gray",
-                  "italic": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:trident",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{Unbreakable:1b,whalebane:1b,Enchantments:[{id:\"minecraft:loyalty\",lvl:1s},{id:\"minecraft:riptide\",lvl:3s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Whale's Bane"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                [
-                  {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
-                  },
-                  {
-                    "text": "Rare",
-                    "color": "blue",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "Causes rain to fall while",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ],
-                {
-                  "text": "held, with a rare chance of",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "striking an enemy with lightning.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "\"Below that little fishing village",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "lies something that few know of.\"",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "- Cadri the Bladesmaster",
-                  "color": "gray",
-                  "italic": true
-                }
+                ]
               ]
             }
           ]
@@ -1087,69 +301,100 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{Unbreakable:1b,piercecrossbow:1b,Enchantments:[{id:\"minecraft:power\",lvl:1s},{id:\"minecraft:piercing\",lvl:5s},{id:\"minecraft:quick_charge\",lvl:3s}],ChargedProjectiles:[{id:\"minecraft:arrow\",Count:1b},{},{}],Charged:1b}"
+              "tag": "{pickup:1b,augment:6b}"
             },
             {
               "function": "set_name",
               "name": [
                 {
-                  "text": "The Shredder"
+                  "text": "Double Cross",
+                  "color": "gray",
+                  "bold": true
                 }
               ]
             },
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
                 [
                   {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
+                    "text": "Gain 2",
+                    "color": "gray"
                   },
                   {
-                    "text": "Rare",
-                    "color": "blue",
-                    "bold": false
-                  }
-                ],
-                [
-                  {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
+                    "text": " Crossbows",
+                    "color": "white"
                   },
                   {
-                    "text": "Grants 12",
-                    "color": "gray",
-                    "italic": false
+                    "text": " and 64",
+                    "color": "gray"
                   },
                   {
                     "text": " Arrows",
-                    "color": "green"
+                    "color": "white"
                   },
                   {
-                    "text": " at the",
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:7b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Drip Economy II",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain 10",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Gold Ingots",
+                    "color": "white"
+                  },
+                  {
+                    "text": " now and",
                     "color": "gray"
                   }
                 ],
                 {
-                  "text": "start of combat.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "\"It's plain, but it gets the job",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "done.\" - Air Commander Tieron",
-                  "color": "gray",
-                  "italic": true
+                  "text": "every 2 minutes.",
+                  "color": "gray"
                 }
               ]
             }
@@ -1158,7 +403,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:heart_of_the_sea",
+          "name": "minecraft:magma_block",
           "functions": [
             {
               "function": "set_count",
@@ -1166,122 +411,769 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{HideFlags:1,raygatesupply:1b,Enchantments:[{id:\"minecraft:protection\",lvl:0s}]}"
+              "tag": "{pickup:1b,augment:8b}"
             },
             {
               "function": "set_name",
               "name": [
                 {
-                  "text": "Raygate Supplier"
+                  "text": "Fire and Water",
+                  "color": "gray",
+                  "bold": true
                 }
               ]
             },
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
                 [
                   {
-                    "text": "Rarity: ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
+                    "text": "Gain 2",
+                    "color": "gray"
                   },
                   {
-                    "text": "Rare",
-                    "color": "blue",
-                    "bold": false
+                    "text": " Lava Buckets, Water Buckets",
+                    "color": "white"
                   }
                 ],
                 [
                   {
-                    "text": "Effect: ",
-                    "color": "white",
-                    "italic": false
+                    "text": "and",
+                    "color": "gray"
                   },
                   {
-                    "text": "At the start of each round,",
+                    "text": " 4 Obsidian",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
                     "color": "gray"
                   }
-                ],
-                [
-                  {
-                    "text": "gain 1",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": " Raygate X",
-                    "color": "gold"
-                  },
-                  {
-                    "text": " for every 64",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "Arrows",
-                    "color": "green",
-                    "italic": false
-                  },
-                  {
-                    "text": " you have.",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "Raygate X",
-                    "color": "gold",
-                    "italic": false
-                  },
-                  {
-                    "text": ": After landing on a",
-                    "color": "gray"
-                  }
-                ],
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:cooked_cod",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:9b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
                 {
-                  "text": "surface, begin firing a beam at",
+                  "text": "Fishy Business",
                   "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "the nearest enemy, dealing damage.",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "Passive Item",
-                  "color": "blue"
-                },
-                {
-                  "text": "-------------------------"
-                },
-                {
-                  "text": "Raygate Inc. Arrows are equipped",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "with heatseeking technology. While",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "many would believe them to produce",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "auto-aim arrows, Raygate Inc. strives",
-                  "color": "gray",
-                  "italic": true
-                },
-                {
-                  "text": "past even that.",
-                  "color": "gray",
-                  "italic": true
+                  "bold": true
                 }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Respiration III /",
+                    "color": "dark_purple"
+                  }
+                ],
+                {
+                  "text": "Unbreaking III / Aqua Affinity",
+                  "color": "dark_purple"
+                },
+                [
+                  {
+                    "text": "Leather Helmet",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Depth",
+                    "color": "dark_purple"
+                  }
+                ],
+                {
+                  "text": "Strider / Unbreaking III",
+                  "color": "dark_purple"
+                },
+                [
+                  {
+                    "text": "Leather Boots",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:golden_apple",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:10b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Gapple Gap",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain 4",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Golden Apples",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:oak_leaves",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:11b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Green Thumb",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 20 Apples, 12 Sugar Cane",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "and a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Diamond Shovel",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:miner_pottery_sherd",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:13b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Into the Mines II",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Diamond Pickaxe",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:apple",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:15b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Johnny Appleseed",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Apple",
+                    "color": "white"
+                  },
+                  {
+                    "text": " at the start of the",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "game and every 4 minutes.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:iron_trapdoor",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:32b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Trap Master",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Shovel, 16 Signs, 3 Pistons",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "3 Sticky Pistons, ",
+                    "color": "white"
+                  },
+                  {
+                    "text": "and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 64 Redstone",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:33b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Village Idol",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------"
+                },
+                [
+                  {
+                    "text": "Gain 3",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Villager Spawn Eggs",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Start with",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Hero of the Village",
+                    "color": "yellow"
+                  }
+                ],
+                {
+                  "text": "for 60 minutes.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:1,pickup:1b,augment:34b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Well Studied",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                {
+                  "text": "Start the game at Level 20.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:30b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Take Aim I",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Bow and 64 Arrows",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:bundle",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:32,pickup:1b,augment:29b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Starter Kit II",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain an",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Iron Pickaxe, Iron Axe",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "and an ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Iron Shovel",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:white_banner",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:98,pickup:1b,augment:24b,BlockEntityTag:{Patterns:[{Pattern:\"mr\",Color:9},{Pattern:\"bs\",Color:8},{Pattern:\"cs\",Color:7},{Pattern:\"bo\",Color:8},{Pattern:\"ms\",Color:15},{Pattern:\"hh\",Color:8},{Pattern:\"mc\",Color:8},{Pattern:\"bo\",Color:15}]}}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Reinforcements",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain 2",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Vindicator Spawn Eggs",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:iron_chestplate",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:22b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Protect Protocol II",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain an",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Iron Chestplate, Iron",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "Leggings, ",
+                    "color": "white"
+                  },
+                  {
+                    "text": "and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Iron Boots",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:eye_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:162,pickup:1b,augment:21b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Pearly",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain 4",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Ender Pearls",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
               ]
             }
           ]

@@ -1,0 +1,1 @@
+give @s vindicator_spawn_egg 2

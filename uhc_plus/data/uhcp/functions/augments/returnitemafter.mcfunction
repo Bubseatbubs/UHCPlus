@@ -1,7 +1,7 @@
 # Returns item to player's inventory if black stained glass was selected and redos augment selection
 # Disable options from being selected while function is running
 tag @s add UHCP_DisableChoose
-say black stained glass selected, returning items
+scoreboard players reset @s uhcp_a_selectedAugment
 clear @s black_stained_glass_pane
 
 

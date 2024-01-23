@@ -43,3 +43,6 @@ execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
 
 # Augment Selection
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_augments uhcp_initStatus matches 1.. as @a[gamemode=survival] at @s run function uhcp:augments/optionselect
+
+# Augments
+execute as @e[type=bee,tag=UHCP_Bee] at @s run function uhcp:augments/effects/gold/beekeeper/update
