@@ -44,9 +44,6 @@ execute if score countdown tick matches 40 run title @a title {"text":"2","color
 execute if score countdown tick matches 40 run playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1000000 1 1
 execute if score countdown tick matches 20 run title @a title {"text":"1","color":"red"}
 execute if score countdown tick matches 20 run playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1000000 1 1
-execute if score countdown tick matches 0 run title @a title {"text":"Go Go Go!!","color":"green"}
-execute if score countdown tick matches 0 run title @a subtitle {"text":"Invincible For 1 Minute!","color":"yellow"}
-
 execute if score countdown tick matches 0 run playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1000000 2 1
 execute if score countdown tick matches 0 run function game:start
 
