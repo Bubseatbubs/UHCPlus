@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:ender_pearl] run effect give @p minecraft:resistance 1 6 true
