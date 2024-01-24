@@ -117,12 +117,12 @@ team join 50 @r[team=]
 scoreboard objectives remove team
 
 #Starter tools
-execute if score tools status matches 1 run give @a minecraft:stone_sword
-execute if score tools status matches 1 run give @a minecraft:stone_axe
-execute if score tools status matches 1 run give @a minecraft:stone_pickaxe
-execute if score tools status matches 1 run give @a minecraft:stone_hoe
-execute if score tools status matches 1 run give @a minecraft:stone_shovel
-execute if score tools status matches 1 run give @a minecraft:torch 8
+#execute if score tools status matches 1 run give @a minecraft:stone_sword
+#execute if score tools status matches 1 run give @a minecraft:stone_axe
+#execute if score tools status matches 1 run give @a minecraft:stone_pickaxe
+#execute if score tools status matches 1 run give @a minecraft:stone_hoe
+#execute if score tools status matches 1 run give @a minecraft:stone_shovel
+#execute if score tools status matches 1 run give @a minecraft:torch 8
 
 #Spreadplayers
 execute if score TotalWorldSize setting matches 1000 run execute if score teamgame status matches 1 run spreadplayers 0 0 100 400 true @a

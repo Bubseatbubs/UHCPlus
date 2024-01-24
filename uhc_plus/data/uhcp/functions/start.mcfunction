@@ -1,6 +1,9 @@
 # Start game
-scoreboard players reset %uhcp_time uhcp_gameTime
+scoreboard players reset %time uhcp_gameTime
 scoreboard players set %uhcp_gameStart uhcp_initStatus 1
+scoreboard players set %AUG_7 uhcp_gameTime 2400
+scoreboard players set %AUG_15 uhcp_gameTime 2400
+scoreboard players set %AUG_27 uhcp_gameTime 12000
 
 # Add everyone not on team to solo team
 team join 1 @r[predicate=uhcp:teams/neither,gamemode=survival]
@@ -55,6 +58,7 @@ team join 49 @r[predicate=uhcp:teams/neither,gamemode=survival]
 team join 50 @r[predicate=uhcp:teams/neither,gamemode=survival]
 
 # Augment Selection
+scoreboard players set %tier uhcp_a_tier 1
 scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 900
 bossbar set uhcp_augment players @a
 execute at @a[gamemode=survival] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["UHCP_Lock"]}

@@ -1,6 +1,13 @@
-scoreboard players add @s uhcp_a_timer 1
-execute store success score %reset uhcp_a_timer if score @s uhcp_a_selectedAugment matches 5 if score @s uhcp_a_timer matches 60000 run function uhcp:augments/effects/gold/delayedprotection
-execute store success score %reset uhcp_a_timer if score @s uhcp_a_selectedAugment matches 15 if score @s uhcp_a_timer matches 2400 run give @s apple
-execute store success score %reset uhcp_a_timer if score @s uhcp_a_selectedAugment matches 25 if score @s uhcp_a_timer matches 48000 run function uhcp:augments/effects/gold/secondwind
-execute store success score %reset uhcp_a_timer if score @s uhcp_a_selectedAugment matches 27 if score @s uhcp_a_timer matches 2400 run give @s potion{Enchantments:[{}],Potion:"minecraft:invisibility"} 1
-execute if score %reset uhcp_a_timer matches 1.. run scoreboard players reset @s uhcp_a_timer
+# One Time Effects
+execute if score %time uhcp_gameTime matches 60000 as @a[scores={uhcp_a_selectedAugment=5}] run function uhcp:augments/effects/gold/delayedprotection
+execute if score %time uhcp_gameTime matches 48000 as @a[scores={uhcp_a_selectedAugment=25}] run function uhcp:augments/effects/gold/secondwind
+
+# Cycle Effects
+execute if score %time uhcp_gameTime >= %AUG_7 uhcp_gameTime run give @a[scores={uhcp_a_selectedAugment=7}] gold_ingot 1
+execute if score %time uhcp_gameTime >= %AUG_7 uhcp_gameTime run scoreboard players add %AUG_7 uhcp_gameTime 2400
+
+execute if score %time uhcp_gameTime >= %AUG_15 uhcp_gameTime run give @a[scores={uhcp_a_selectedAugment=15}] apple 1
+execute if score %time uhcp_gameTime >= %AUG_15 uhcp_gameTime run scoreboard players add %AUG_15 uhcp_gameTime 2400
+
+execute if score %time uhcp_gameTime >= %AUG_27 uhcp_gameTime run give @a[scores={uhcp_a_selectedAugment=27}] potion{Enchantments:[{}],Potion:"minecraft:invisibility"} 1
+execute if score %time uhcp_gameTime >= %AUG_27 uhcp_gameTime run scoreboard players add %AUG_27 uhcp_gameTime 12000

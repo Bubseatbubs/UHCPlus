@@ -779,26 +779,32 @@
                 },
                 [
                   {
-                    "text": "Gain a ",
+                    "text": "Gain ",
                     "color": "gray"
                   },
                   {
-                    "text": "Shovel, 16 Signs, 3 Pistons",
+                    "text": "16 Signs, 3 Pistons, 3 Sticky Pistons,",
                     "color": "white"
                   }
                 ],
                 [
                   {
-                    "text": "3 Sticky Pistons, ",
+                    "text": "64 Redstone, an Iron Shovel, and an Iron",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "Pickaxe",
                     "color": "white"
                   },
                   {
-                    "text": "and",
+                    "text": " with",
                     "color": "gray"
                   },
                   {
-                    "text": " 64 Redstone",
-                    "color": "white"
+                    "text": " Unbreaking III",
+                    "color": "dark_purple"
                   },
                   {
                     "text": ".",
@@ -961,7 +967,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:bundle",
+          "name": "minecraft:chest",
           "functions": [
             {
               "function": "set_count",
@@ -1007,6 +1013,16 @@
                   {
                     "text": "Iron Shovel",
                     "color": "white"
+                  },
+                  {
+                    "text": ". They all have",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Efficiency I",
+                    "color": "dark_purple"
                   },
                   {
                     "text": ".",
@@ -1099,26 +1115,34 @@
                 },
                 [
                   {
-                    "text": "Gain an",
+                    "text": "Gain a set of",
                     "color": "gray"
                   },
                   {
-                    "text": " Iron Chestplate, Iron",
+                    "text": " Iron Armor",
                     "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "Leggings, ",
-                    "color": "white"
-                  },
-                  {
-                    "text": "and",
+                    "text": "The",
                     "color": "gray"
                   },
                   {
-                    "text": " Iron Boots",
+                    "text": " Iron Chestplate",
                     "color": "white"
+                  },
+                  {
+                    "text": " has",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Protection I",
+                    "color": "dark_purple"
                   },
                   {
                     "text": ".",
@@ -1487,7 +1511,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:5b}"
+              "tag": "{HideFlags:32,pickup:1b,augment:5b}"
             },
             {
               "function": "set_name",
