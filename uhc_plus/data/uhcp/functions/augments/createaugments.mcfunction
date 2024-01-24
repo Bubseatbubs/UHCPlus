@@ -19,14 +19,12 @@ data remove storage minecraft:uhcp_augments Roll
 data modify storage minecraft:uhcp_augments Roll append from entity @s Inventory[{Slot:3b}].tag.augment
 data modify storage minecraft:uhcp_augments Roll append from entity @s Inventory[{Slot:4b}].tag.augment
 data modify storage minecraft:uhcp_augments Roll append from entity @s Inventory[{Slot:5b}].tag.augment
-data modify storage minecraft:uhcp_augments RollWork set from storage minecraft:uhcp_augments Roll
-execute store success score %uhcp_duplicate uhcp_itemCount run data modify storage minecraft:uhcp_augments Roll[1] set from storage minecraft:uhcp_augments Roll[0]
-execute if score %uhcp_duplicate uhcp_itemCount matches 0 run tag @s add Aug_Reroll
+data modify storage minecraft:uhcp_augments Roll append from storage minecraft:uhcp_augments Roll[2]
 execute store success score %uhcp_duplicate uhcp_itemCount run data modify storage minecraft:uhcp_augments Roll[2] set from storage minecraft:uhcp_augments Roll[0]
 execute if score %uhcp_duplicate uhcp_itemCount matches 0 run tag @s add Aug_Reroll
-execute store success score %uhcp_duplicate uhcp_itemCount run data modify storage minecraft:uhcp_augments RollWork[0] set from storage minecraft:uhcp_augments RollWork[1]
+execute store success score %uhcp_duplicate uhcp_itemCount run data modify storage minecraft:uhcp_augments Roll[0] set from storage minecraft:uhcp_augments Roll[1]
 execute if score %uhcp_duplicate uhcp_itemCount matches 0 run tag @s add Aug_Reroll
-execute store success score %uhcp_duplicate uhcp_itemCount run data modify storage minecraft:uhcp_augments RollWork[2] set from storage minecraft:uhcp_augments RollWork[1]
+execute store success score %uhcp_duplicate uhcp_itemCount run data modify storage minecraft:uhcp_augments Roll[3] set from storage minecraft:uhcp_augments Roll[1]
 execute if score %uhcp_duplicate uhcp_itemCount matches 0 run tag @s add Aug_Reroll
 
 execute as @s[tag=Aug_Reroll] run function uhcp:augments/createaugments
