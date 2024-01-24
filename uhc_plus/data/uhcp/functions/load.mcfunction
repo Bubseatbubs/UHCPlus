@@ -32,6 +32,11 @@ bossbar set minecraft:uhcp_topcharge color purple
 bossbar set minecraft:uhcp_topcharge style notched_6
 bossbar set minecraft:uhcp_topcharge max 60
 
+bossbar add uhcp_augment "Time Remaining:"
+bossbar set minecraft:uhcp_augment color white
+bossbar set minecraft:uhcp_augment style notched_6
+bossbar set minecraft:uhcp_augment max 900
+
 # Set default lava scores
 execute unless score stage status matches 2 unless score %uhcp_time uhcp_gameTime matches 1.. unless score %uhcp_lavaInit uhcp_initStatus matches 1 run function uhcp:load/scores
 
