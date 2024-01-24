@@ -17,12 +17,12 @@ execute if score %uhcp_augmentCountdown uhcp_gameTime matches 80 as @a at @s run
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 60 as @a at @s run playsound block.note_block.harp master @s ~ ~ ~ 1 1 1
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 40 as @a at @s run playsound block.note_block.harp master @s ~ ~ ~ 1 1 1
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 20 as @a at @s run playsound block.note_block.harp master @s ~ ~ ~ 1 1 1
+execute if score %uhcp_augmentCountdown uhcp_gameTime matches 1 as @a[gamemode=adventure] unless score @s uhcp_a_selectedAugment = @s uhcp_a_selectedAugment at @s run function uhcp:augments/autoselect
 
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 0.. run return 0
 
 # Ran once countdown reaches 0. Initializes the game as UHC Pack would've done, and gives all players their selected augments
 gamemode survival @a[gamemode=adventure]
-execute as @a[gamemode=survival] unless score @s uhcp_a_validSelection = @s uhcp_a_validSelection run function uhcp:augments/autoselect
 bossbar set minecraft:uhcp_augment players
 kill @e[tag=UHCP_Lock]
 
