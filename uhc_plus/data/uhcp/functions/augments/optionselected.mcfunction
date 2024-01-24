@@ -1,3 +1,7 @@
+##
+# If player's selection is valid, this function is ran to reset player's inventory and give them a score based on their remaining item
+##
+
 tag @s remove UHCP_ChoosingItem
 
 # clear all items (without removing their held item)

@@ -1,3 +1,7 @@
+##
+# Gives player the augment they selected
+##
+
 # execute if score @s uhcp_a_selectedAugment matches 0 run function uhcp:augments/effects/gold/beekeeper
 execute if score @s uhcp_a_selectedAugment matches 2 run function uhcp:augments/effects/gold/blooddiamonds
 execute if score @s uhcp_a_selectedAugment matches 3 run function uhcp:augments/effects/gold/bloodthirsty

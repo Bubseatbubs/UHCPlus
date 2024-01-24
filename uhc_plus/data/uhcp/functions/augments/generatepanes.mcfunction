@@ -1,14 +1,13 @@
-# Generates items in player inventory for option select
-clear @s
+##
+# Replaces much of the player's inventory with black stained glass panes
+##
 
 item replace entity @s hotbar.0 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
 item replace entity @s hotbar.1 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
 item replace entity @s hotbar.2 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
-execute as @s at @s run function uhcp:augments/createaugments
 item replace entity @s hotbar.6 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
 item replace entity @s hotbar.7 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
 item replace entity @s hotbar.8 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
-
 item replace entity @s inventory.0 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
 item replace entity @s inventory.1 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
 item replace entity @s inventory.2 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
@@ -36,5 +35,3 @@ item replace entity @s inventory.23 with black_stained_glass_pane{display:{Name:
 item replace entity @s inventory.24 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
 item replace entity @s inventory.25 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
 item replace entity @s inventory.26 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
-
-

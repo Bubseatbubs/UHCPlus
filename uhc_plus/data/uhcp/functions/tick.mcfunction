@@ -47,3 +47,6 @@ execute as @e[type=bee,tag=UHCP_Bee] at @s run function uhcp:augments/effects/go
 # Augment Countdown
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 0.. run function uhcp:augments/countdown
 function uhcp:augments/effects/timer
+
+# Disable Ender Pearl Damage
+execute as @e[type=ender_pearl] at @s run function uhcp:enderpearl
