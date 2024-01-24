@@ -1,28 +1,9 @@
-# Returns item to player's inventory (check checkvalidity.mcfunction for more information)
-# Disable options from being selected while function is running
-tag @s add UHCP_DisableChoose
-execute at @s in uhcp:main run setblock 0 -64 0 barrel
+# System to detect if a player moved an item to their armor/offhand slot during selection
+# Returns item to correct slot if this is the case
 
-# Add item to barrel
-execute in uhcp:main as @s[nbt={Inventory:[{Slot:103b}]}] run item replace block 0 -64 0 container.0 from entity @s armor.head
-execute in uhcp:main as @s[nbt={Inventory:[{Slot:102b}]}] run item replace block 0 -64 0 container.0 from entity @s armor.chest
-execute in uhcp:main as @s[nbt={Inventory:[{Slot:101b}]}] run item replace block 0 -64 0 container.0 from entity @s armor.legs
-execute in uhcp:main as @s[nbt={Inventory:[{Slot:100b}]}] run item replace block 0 -64 0 container.0 from entity @s armor.feet
-execute in uhcp:main as @s[nbt={Inventory:[{Slot:-106b}]}] run item replace block 0 -64 0 container.0 from entity @s weapon.offhand
+scoreboard players set @s uhcp_a_validSelection 0
 
-# Replace empty slot with item
-execute in uhcp:main unless entity @s[nbt={Inventory:[{Slot:3b}]}] run item replace entity @s container.3 from block 0 -64 0 container.0
-execute in uhcp:main unless entity @s[nbt={Inventory:[{Slot:4b}]}] run item replace entity @s container.4 from block 0 -64 0 container.0
-execute in uhcp:main unless entity @s[nbt={Inventory:[{Slot:5b}]}] run item replace entity @s container.5 from block 0 -64 0 container.0
-
-# Clear filled slots
-item replace entity @s armor.head with air
-item replace entity @s armor.chest with air
-item replace entity @s armor.legs with air
-item replace entity @s armor.feet with air
-item replace entity @s weapon.offhand with air
-
-# Reform Glass
+# Revert Black Stained Glass Pane
 clear @s black_stained_glass_pane
 item replace entity @s hotbar.0 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
 item replace entity @s hotbar.1 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
@@ -58,5 +39,5 @@ item replace entity @s inventory.24 with black_stained_glass_pane{display:{Name:
 item replace entity @s inventory.25 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
 item replace entity @s inventory.26 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
 
-tag @s remove UHCP_DisableChoose
-
+advancement revoke @s only uhcp:augments/chosenitem
+advancement revoke @s only uhcp:augments/threwitem
