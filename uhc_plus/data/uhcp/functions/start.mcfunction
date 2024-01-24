@@ -1,4 +1,5 @@
 # Start game
+scoreboard players reset %uhcp_time uhcp_gameTime
 scoreboard players set %uhcp_gameStart uhcp_initStatus 1
 
 # Add everyone not on team to solo team
@@ -52,3 +53,8 @@ team join 47 @r[predicate=uhcp:teams/neither,gamemode=survival]
 team join 48 @r[predicate=uhcp:teams/neither,gamemode=survival]
 team join 49 @r[predicate=uhcp:teams/neither,gamemode=survival]
 team join 50 @r[predicate=uhcp:teams/neither,gamemode=survival]
+
+# Augment Selection
+scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 900
+bossbar set uhcp_augment players @a
+execute as @a[gamemode=survival] run function uhcp:augments/optionselect
