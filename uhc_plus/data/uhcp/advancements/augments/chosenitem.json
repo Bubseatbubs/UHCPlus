@@ -3,15 +3,25 @@
     "requirement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "player": {
-          "nbt": "{Tags:[\"UHCP_ChoosingItem\"]}"
-        },
-        "slots": {
-          "empty": {
-            "min": 1,
-            "max": 32
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "uhcp_a_validSelection": 100
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"UHCP_ChoosingItem\"]}"
+            }
           }
-        }
+        ]
       }
     }
   },

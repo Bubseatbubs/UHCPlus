@@ -1,11 +1,11 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:player_hurt_entity"
-      }
-    },
-    "rewards": {
-      "function": "uhcp:augments/effects/hurt_entity"
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity"
     }
+  },
+  "rewards": {
+    "function": "uhcp:augments/effects/hurt_entity"
   }
+}
   

@@ -2,6 +2,11 @@
 # Returns item to correct slot if this is the case
 
 scoreboard players set @s uhcp_a_validSelection 0
+
+execute if entity @e[predicate=uhcp:augments/choice_items,distance=..4] run scoreboard players set @s uhcp_a_validSelection 100
+execute if score @s uhcp_a_validSelection matches 100 as @e[predicate=uhcp:augments/choice_items,distance=..4,limit=1,sort=nearest] run data modify entity @s PickupDelay set value 0s
+execute if score @s uhcp_a_validSelection matches 100 run return 0
+
 execute at @s store success score @s[scores={uhcp_a_validSelection=0}] uhcp_a_validSelection run data get entity @s Inventory[{Slot:100b}]
 execute at @s store success score @s[scores={uhcp_a_validSelection=0}] uhcp_a_validSelection run data get entity @s Inventory[{Slot:101b}]
 execute at @s store success score @s[scores={uhcp_a_validSelection=0}] uhcp_a_validSelection run data get entity @s Inventory[{Slot:102b}]
@@ -17,4 +22,5 @@ execute in uhcp:main as @s run item replace block 0 -64 0 container.2 from entit
 execute at @s as @s[scores={uhcp_a_validSelection=0},tag=!UHCP_DisableChoose] run function uhcp:augments/optionselected
 execute at @s as @s[scores={uhcp_a_validSelection=1},tag=!UHCP_DisableChoose] run function uhcp:augments/returnitem
 tag @s[tag=UHCP_DisableChoose] remove UHCP_DisableChoose
+
 advancement revoke @s only uhcp:augments/chosenitem
