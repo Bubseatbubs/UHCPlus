@@ -16,7 +16,6 @@ execute if score stage status matches 1 run execute as @a[gamemode=adventure,sco
 execute if score stage status matches 1 run execute as @a[scores={phantom=180}] at @s run tellraw @s ["",{"text":"To show all game settings ["},{"text":"Click Here","color":"green","clickEvent":{"action":"run_command","value":"/trigger options"}},{"text":"]"}]
 execute if score stage status matches 1 run execute as @a[scores={phantom=180}] at @s run tellraw @s ["",{"text":"You can toggle coords at any time by running "},{"text":"/trigger ch_toggle","color":"green","clickEvent":{"action":"run_command","value":"/trigger ch_toggle"}}]
 execute if score stage status matches 1 run execute store result score Players setting if entity @e[type=player]
-execute if score stage status matches 1 run execute as @p at @s run execute if block ~ ~-2 ~ minecraft:air run effect give @a[gamemode=creative] minecraft:blindness 3 0 true
 
 execute if score stage status matches 2 run gamemode spectator @a[team=] 
 scoreboard players enable @a options

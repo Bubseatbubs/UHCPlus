@@ -194,33 +194,31 @@ tp @a 0 301 0
 summon minecraft:text_display 0 303 0 {Tags:["lobby","lobbycenter"],billboard:"center",text:'[{"text":"Cosmian","color":"red"},{"text":" | ","color":"white"},{"text":"UHC","color":"yellow"},{"text":" | ","color":"white"},{"text":"v3.37","color":"green"}]'}
 
 #Defaults
-scoreboard players set Radius WorldPregen 1500
+scoreboard players set Radius WorldPregen 2000
 
 
 #Respawns
 scoreboard players set respawn status 0
 
 #Autocook
-scoreboard players set autocook status 0
-datapack disable "file/cook"
+scoreboard players set autocook status 1
+datapack enable "file/cook"
 
 #Speed UHC
 scoreboard players set speed status 0
 
 #Warden
-scoreboard players set warden status 1
+scoreboard players set warden status 0
 
- #Night Vision
-scoreboard players set night status 0
-
-scoreboard players set ffire status 1
+#Night Vision
+scoreboard players set night status 1
 
 #OP Items
 scoreboard players set opitems status 1
 datapack disable "file/disable_god_apple"
 
 #Weather
-scoreboard players set weather status 1
+scoreboard players set weather status 0
 
 #Nametags
 function game:options/nametags_on
@@ -239,15 +237,15 @@ scoreboard players set daynite status 0
 scoreboard players set fall status 1
 
 #Health
-scoreboard players set hp status 10
+scoreboard players set hp status 20
 
 #Fast leaf decay_off
-scoreboard players set decay status 0
-gamerule randomTickSpeed 3
+scoreboard players set decay status 1
+gamerule randomTickSpeed 23
 
 #Phantoms
-scoreboard players set phantoms status 1
-gamerule doInsomnia true
+scoreboard players set phantoms status 0
+gamerule doInsomnia false
 
 #Bonus tools
 scoreboard players set tools status 0
@@ -256,7 +254,7 @@ scoreboard players set tools status 0
 scoreboard players set stew status 1
 
 #Friendly fire
-scoreboard players set ffire status 1
+scoreboard players set ffire status 0
 
 #Firetick
 scoreboard players set ftick status 1
