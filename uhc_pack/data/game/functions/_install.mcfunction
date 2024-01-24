@@ -191,7 +191,7 @@ fill -12 305 -12 12 305 12 minecraft:air
 
 tp @a 0 301 0
 
-summon minecraft:armor_stand 0 301 0 {Tags:[lobby,lobbycenter],NoGravity:1b,Invisible:1b,CustomNameVisible:1b,CustomName:"[{\"text\":\"Cosmian\",\"color\":\"red\"},{\"text\":\" \\u2503\",\"color\":\"white\"},{\"text\":\" UHC\",\"color\":\"yellow\"},{\"text\":\" \\u2503\",\"color\":\"white\"},{\"text\":\" v3.37\",\"color\":\"green\"}]"}
+summon minecraft:text_display 0 303 0 {Tags:["lobby","lobbycenter"],billboard:"center",text:'[{"text":"Cosmian","color":"red"},{"text":" | ","color":"white"},{"text":"UHC","color":"yellow"},{"text":" | ","color":"white"},{"text":"v3.37","color":"green"}]'}
 
 #Defaults
 scoreboard players set Radius WorldPregen 1500

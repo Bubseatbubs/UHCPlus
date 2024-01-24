@@ -149,7 +149,7 @@ scoreboard players reset @a phantom
 xp set @a 0 levels
 xp set @a 0 points
 effect give @a minecraft:health_boost 2 0 true
-schedule function game:boots 6s
+#schedule function game:boots 6s
 
 
 
