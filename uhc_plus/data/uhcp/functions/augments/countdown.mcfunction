@@ -1,4 +1,5 @@
 scoreboard players remove %uhcp_augmentCountdown uhcp_gameTime 1
+execute as @a[gamemode=adventure] at @s run ride @s mount @e[tag=UHCP_Lock,limit=1,sort=nearest]
 execute store result bossbar uhcp_augment value run scoreboard players get %uhcp_augmentCountdown uhcp_gameTime
 
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 101.. run return 0
@@ -11,6 +12,10 @@ execute if score %uhcp_augmentCountdown uhcp_gameTime matches 20 as @a at @s run
 
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 0.. run return 0
 
+execute as @a[gamemode=adventure] at @s run ride @s dismount
+gamemode survival @a[gamemode=adventure]
 execute as @a[gamemode=survival] unless score @s uhcp_a_validSelection = @s uhcp_a_validSelection run function uhcp:augments/autoselect
 bossbar set minecraft:uhcp_augment players
-execute as @a[gamemode=survival] run function uhcp:augments/initializeaugments
+kill @e[tag=UHCP_Lock]
+
+execute as @a[gamemode=survival] at @s run function uhcp:augments/initializeaugments
