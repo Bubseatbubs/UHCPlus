@@ -1,5 +1,5 @@
 # Generate choices based on drop chance
-tag @s remove reroll
+tag @s remove Aug_Reroll
 
 execute if score %tier uhcp_a_tier matches 0 run loot replace entity @s hotbar.3 loot uhcp:augments/silver
 execute if score %tier uhcp_a_tier matches 0 run loot replace entity @s hotbar.4 loot uhcp:augments/silver
@@ -15,9 +15,18 @@ execute if score %tier uhcp_a_tier matches 2 run loot replace entity @s hotbar.5
 
 
 # Check for duplicates, if there are duplicates, reroll options again
-execute store result score %count uhcp_a_count run data get entity @s Inventory[{Slot:3b}].Count
-execute if score %count uhcp_a_count matches 2.. run tag @s add reroll
-execute store result score %count uhcp_a_count run data get entity @s Inventory[{Slot:4b}].Count
-execute if score %count uhcp_a_count matches 2.. run tag @s add reroll
+data remove storage minecraft:uhcp_augments Roll
+data modify storage minecraft:uhcp_augments Roll append from entity @s Inventory[{Slot:3b}].tag.augment
+data modify storage minecraft:uhcp_augments Roll append from entity @s Inventory[{Slot:4b}].tag.augment
+data modify storage minecraft:uhcp_augments Roll append from entity @s Inventory[{Slot:5b}].tag.augment
+data modify storage minecraft:uhcp_augments RollWork set from storage minecraft:uhcp_augments Roll
+execute store success score %uhcp_duplicate uhcp_itemCount run data modify storage minecraft:uhcp_augments Roll[1] set from storage minecraft:uhcp_augments Roll[0]
+execute if score %uhcp_duplicate uhcp_itemCount matches 0 run tag @s add Aug_Reroll
+execute store success score %uhcp_duplicate uhcp_itemCount run data modify storage minecraft:uhcp_augments Roll[2] set from storage minecraft:uhcp_augments Roll[0]
+execute if score %uhcp_duplicate uhcp_itemCount matches 0 run tag @s add Aug_Reroll
+execute store success score %uhcp_duplicate uhcp_itemCount run data modify storage minecraft:uhcp_augments RollWork[0] set from storage minecraft:uhcp_augments RollWork[1]
+execute if score %uhcp_duplicate uhcp_itemCount matches 0 run tag @s add Aug_Reroll
+execute store success score %uhcp_duplicate uhcp_itemCount run data modify storage minecraft:uhcp_augments RollWork[2] set from storage minecraft:uhcp_augments RollWork[1]
+execute if score %uhcp_duplicate uhcp_itemCount matches 0 run tag @s add Aug_Reroll
 
-execute as @s[tag=reroll] run function uhcp:augments/createaugments
+execute as @s[tag=Aug_Reroll] run function uhcp:augments/createaugments
