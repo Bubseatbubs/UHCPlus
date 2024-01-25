@@ -55,6 +55,63 @@
         {
           "type": "item",
           "weight": 1,
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:6b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Double Cross",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain 2",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Crossbows",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and 16",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Arrows",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
           "name": "minecraft:iron_trapdoor",
           "functions": [
             {
