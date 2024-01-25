@@ -6,4 +6,6 @@ execute if score %apples uhcp_settings matches 3 run give @s golden_apple 3
 execute if score %apples uhcp_settings matches 4 run give @s golden_apple 4
 execute if score %apples uhcp_settings matches 5 run give @s golden_apple 5
 
+xp add @s 8 levels
+
 advancement revoke @s only uhcp:killed_player
