@@ -36,6 +36,7 @@ execute if score daydice tick matches 25.. run scoreboard players set daydice ti
 title @a subtitle {"text":""}
 execute if score countdown tick matches 100 run title @a title {"text":"5","color":"blue"}
 execute if score countdown tick matches 100 run playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1000000 1 1
+execute if score countdown tick matches 100 run gamemode spectator @a
 execute if score countdown tick matches 80 run title @a title {"text":"4","color":"green"}
 execute if score countdown tick matches 80 run playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1000000 1 1
 execute if score countdown tick matches 60 run title @a title {"text":"3","color":"yellow"}

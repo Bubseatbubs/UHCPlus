@@ -1,6 +1,3 @@
-# Set game mode to spectator
-gamemode spectator @a
-
 #Start Game
 scoreboard objectives setdisplay sidebar.team.black hearts
 scoreboard objectives setdisplay sidebar
