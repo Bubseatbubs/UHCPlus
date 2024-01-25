@@ -148,7 +148,7 @@ execute if score TotalWorldSize setting matches 10000 run execute if score teamg
 scoreboard players reset @a phantom 
 xp set @a 0 levels
 xp set @a 0 points
-# effect give @a minecraft:health_boost 2 0 true
+effect give @a minecraft:health_boost 2 0 true
 #schedule function game:boots 6s
 
 
