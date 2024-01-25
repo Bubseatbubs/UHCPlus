@@ -5,6 +5,9 @@
 execute store success score @s uhcp_a_count run clear @s honeycomb{augment:0b} 1
 execute if score @s uhcp_a_count matches 1.. run return 0
 
+execute store success score @s uhcp_a_count run clear @s feather{augment:1b} 1
+execute if score @s uhcp_a_count matches 1.. run return 1
+
 execute store success score @s uhcp_a_count run clear @s diamond{augment:2b} 1
 execute if score @s uhcp_a_count matches 1.. run return 2
 

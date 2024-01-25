@@ -65,6 +65,75 @@
         {
           "type": "item",
           "weight": 1,
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{augment:1b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Birds of a Feather",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain 3",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Feathers",
+                    "color": "white"
+                  },
+                  {
+                    "text": ". When thrown,",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "they teleport you to your",
+                  "color": "gray"
+                },
+                [
+                  {
+                    "text": "Teammate",
+                    "color": "gold"
+                  },
+                  {
+                    "text": " (random teammate in",
+                    "color": "gray",
+                    "italic": true
+                  }
+                ],
+                {
+                  "text": "teams of 3 or more)",
+                  "color": "gray",
+                  "italic": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
           "name": "minecraft:golden_sword",
           "functions": [
             {

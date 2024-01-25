@@ -42,6 +42,7 @@ execute as @a[tag=uhcp_isTeleporting] at @s run execute unless entity @e[type=ma
 execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
 
 # Augments
+execute as @e[predicate=uhcp:augments/birdfeather] at @s run function uhcp:augments/effects/gold/birdsofafeather/teleport
 execute as @e[type=bee,tag=UHCP_Bee] at @s run function uhcp:augments/effects/gold/beekeeper/update
 
 # Augment Countdown
