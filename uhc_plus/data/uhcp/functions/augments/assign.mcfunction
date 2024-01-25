@@ -74,7 +74,7 @@ execute if score @s uhcp_a_count matches 1.. run return 26
 execute store success score @s uhcp_a_count run clear @s light_gray_dye{augment:27b} 1
 execute if score @s uhcp_a_count matches 1.. run return 27
 
-execute store success score @s uhcp_a_count run clear @s bundle{augment:29b} 1
+execute store success score @s uhcp_a_count run clear @s chest{augment:29b} 1
 execute if score @s uhcp_a_count matches 1.. run return 29
 
 execute store success score @s uhcp_a_count run clear @s bow{augment:30b} 1

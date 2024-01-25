@@ -1,0 +1,1 @@
+execute at @a[gamemode=adventure] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["UHCP_Lock"]}
