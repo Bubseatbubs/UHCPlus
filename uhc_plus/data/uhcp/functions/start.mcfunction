@@ -6,6 +6,7 @@ scoreboard players set %AUG_15 uhcp_gameTime 2400
 scoreboard players set %AUG_27 uhcp_gameTime 12000
 
 scoreboard objectives setdisplay sidebar uhcp_displayTime
+scoreboard objectives setdisplay below_name hearts
 
 # Add everyone not on team to solo team
 execute if entity @a[predicate=uhcp:teams/neither] run function uhcp:start/teams
