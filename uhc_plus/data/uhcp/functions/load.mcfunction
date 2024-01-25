@@ -44,7 +44,7 @@ execute in uhcp:main run forceload add 0 0
 
 # Schedule delayed load
 scoreboard players add %uhcp_loadInit uhcp_initStatus 1
+execute if score %uhcp_lock uhcp_itemCount matches 1.. run function uhcp:load/summon/summon
 execute unless score %uhcp_loadInit uhcp_initStatus matches 2.. unless entity @e[tag=UHCP_Lock] unless score %uhcp_lock uhcp_itemCount matches 1.. run function uhcp:load/summon
-execute unless score %uhcp_loadInit uhcp_initStatus matches 2.. if score %uhcp_lock uhcp_itemCount matches 1.. run function uhcp:load/summon/summon
 execute unless score %uhcp_loadInit uhcp_initStatus matches 2.. run schedule function uhcp:load 20t
 execute if score %uhcp_loadInit uhcp_initStatus matches 2.. run function uhcp:load/message

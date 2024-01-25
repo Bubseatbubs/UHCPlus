@@ -3,7 +3,8 @@
 ##
 
 scoreboard players remove %uhcp_augmentCountdown uhcp_gameTime 1
-execute if score %uhcp_augmentCountdown uhcp_gameTime matches ..890 as @a[gamemode=adventure] at @s run ride @s mount @e[tag=UHCP_Lock,sort=nearest,limit=1]
+execute if score %uhcp_augmentCountdown uhcp_gameTime matches ..883 as @a[gamemode=adventure] at @s run ride @s mount @e[tag=UHCP_Lock,sort=nearest,limit=1]
+execute if score %uhcp_augmentCountdown uhcp_gameTime matches 880 as @a at @s run forceload remove ~ ~ 
 
 # If all players selected an augment, skip to 5 seconds left
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 101.. unless entity @a[gamemode=adventure,tag=UHCP_ChoosingItem] run scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 100
