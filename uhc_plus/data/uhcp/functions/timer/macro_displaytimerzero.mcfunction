@@ -1,0 +1,1 @@
+$scoreboard players display numberformat %display uhcp_displayTime fixed [{"text":"$(minutes)"}, {"text":":"}, {"text":"0"}, {"text":"$(seconds)"}]

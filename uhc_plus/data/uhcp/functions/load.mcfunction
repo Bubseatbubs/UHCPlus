@@ -3,6 +3,7 @@ scoreboard objectives add hunger trigger
 scoreboard objectives add menu trigger
 scoreboard objectives add top trigger
 scoreboard objectives add uhcp_gameTime dummy
+scoreboard objectives add uhcp_displayTime dummy
 scoreboard objectives add uhcp_hungerTimer dummy
 scoreboard objectives add uhcp_initStatus dummy
 scoreboard objectives add uhcp_itemCount dummy
@@ -24,6 +25,11 @@ scoreboard objectives add uhcp_a_timer dummy
 scoreboard objectives add uhcp_a_validSelection dummy
 scoreboard objectives add uhcp_a_selectedAugment dummy
 scoreboard objectives add uhcp_a_beeKeeper dummy
+
+# Add Display Timer Names
+scoreboard players set %display uhcp_displayTime 0
+scoreboard players display name %display uhcp_displayTime {"text":"Time:","color":"gold"}
+scoreboard objectives modify uhcp_displayTime displayname {"text":"Elapsed Time","color":"gold"}
 
 # Add bossbars
 bossbar add uhcp_topcharge "Time Until Teleport:"

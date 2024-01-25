@@ -51,3 +51,6 @@ function uhcp:augments/effects/timer
 
 # Disable Ender Pearl Damage
 execute as @e[type=ender_pearl] at @s run function uhcp:enderpearl
+
+# Display Time
+execute if score %time uhcp_gameTime matches 1.. run function uhcp:timer/update_displaytimer

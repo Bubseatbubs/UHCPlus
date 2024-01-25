@@ -2,13 +2,14 @@
 # Gives player the augment they selected
 ##
 
+# Gold Augments
 execute if score @s uhcp_a_selectedAugment matches 0 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Bee Keeper","color":"gold"},{"text":"!","color":"white"}]
 execute if score @s uhcp_a_selectedAugment matches 1 run function uhcp:augments/effects/gold/birdsofafeather
 execute if score @s uhcp_a_selectedAugment matches 2 run function uhcp:augments/effects/gold/blooddiamonds
-execute if score @s uhcp_a_selectedAugment matches 3 run function uhcp:augments/effects/gold/bloodthirsty
+execute if score @s uhcp_a_selectedAugment matches 3 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Bloodthirsty","color":"gold"},{"text":"!","color":"white"}]
 execute if score @s uhcp_a_selectedAugment matches 4 run function uhcp:augments/effects/gold/cowboycosplay
 execute if score @s uhcp_a_selectedAugment matches 5 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Delayed Protection","color":"gold"},{"text":"!","color":"white"}]
-execute if score @s uhcp_a_selectedAugment matches 6 run function uhcp:augments/effects/gold/doublecross
+# execute if score @s uhcp_a_selectedAugment matches 6 run function uhcp:augments/effects/gold/doublecross
 execute if score @s uhcp_a_selectedAugment matches 7 run function uhcp:augments/effects/gold/dripeconomyii
 execute if score @s uhcp_a_selectedAugment matches 8 run function uhcp:augments/effects/gold/fireandwater
 execute if score @s uhcp_a_selectedAugment matches 9 run function uhcp:augments/effects/gold/fishybusiness
@@ -27,7 +28,7 @@ execute if score @s uhcp_a_selectedAugment matches 25 run tellraw @a [{"selector
 execute if score @s uhcp_a_selectedAugment matches 26 run function uhcp:augments/effects/gold/shinyspawn
 execute if score @s uhcp_a_selectedAugment matches 27 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Sneaky Sneaky","color":"gold"},{"text":"!","color":"white"}]
 execute if score @s uhcp_a_selectedAugment matches 29 run function uhcp:augments/effects/gold/starterkitii
-execute if score @s uhcp_a_selectedAugment matches 30 run function uhcp:augments/effects/gold/takeaimi
+# execute if score @s uhcp_a_selectedAugment matches 30 run function uhcp:augments/effects/gold/takeaimi
 execute if score @s uhcp_a_selectedAugment matches 32 run function uhcp:augments/effects/gold/trapmaster
 execute if score @s uhcp_a_selectedAugment matches 33 run function uhcp:augments/effects/gold/villageidol
 execute if score @s uhcp_a_selectedAugment matches 34 run function uhcp:augments/effects/gold/wellstudied
