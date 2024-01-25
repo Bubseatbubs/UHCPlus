@@ -6,7 +6,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:apple",
+          "name": "minecraft:bow",
           "functions": [
             {
               "function": "set_count",
@@ -14,13 +14,13 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{augment:0b}"
+              "tag": "{pickup:1b,augment:30b}"
             },
             {
               "function": "set_name",
               "name": [
                 {
-                  "text": "Johnny Appleseed",
+                  "text": "Take Aim",
                   "color": "gray",
                   "bold": true
                 }
@@ -36,22 +36,18 @@
                 },
                 [
                   {
-                    "text": "Gain an ",
+                    "text": "Gain a",
                     "color": "gray"
                   },
                   {
-                    "text": "Apple",
+                    "text": " Bow and 16 Arrows",
                     "color": "white"
                   },
                   {
-                    "text": " at the start of the",
+                    "text": ".",
                     "color": "gray"
                   }
-                ],
-                {
-                  "text": "game and every 4 minutes.",
-                  "color": "gray"
-                }
+                ]
               ]
             }
           ]

@@ -2,7 +2,7 @@
 execute unless score @s uhcp_a_selectedAugment matches 0 run return 0
 scoreboard players add @s uhcp_a_beeKeeper 1
 
-execute if score @s uhcp_a_beeKeeper matches ..2 run return 0
+execute if score @s uhcp_a_beeKeeper matches ..1 run return 0
 
 # Summon bee
 tag @s add UHCP_Owner
