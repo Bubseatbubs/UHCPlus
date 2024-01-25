@@ -38,8 +38,6 @@ scoreboard objectives setdisplay sidebar setting
 team add spectator
 team modify spectator color white
 
-scoreboard players set countdown tick 110
-
 team add crimson
 team modify crimson color red
 

@@ -25,7 +25,6 @@ scoreboard objectives add uhcp_a_validSelection dummy
 scoreboard objectives add uhcp_a_selectedAugment dummy
 scoreboard objectives add uhcp_a_beeKeeper dummy
 
-
 # Add bossbars
 bossbar add uhcp_topcharge "Time Until Teleport:"
 bossbar set minecraft:uhcp_topcharge color purple
