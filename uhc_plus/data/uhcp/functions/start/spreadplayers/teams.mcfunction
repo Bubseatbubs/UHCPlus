@@ -9,11 +9,5 @@ execute if score TotalWorldSize setting matches 5000 run spreadplayers 0 0 100 2
 execute if score TotalWorldSize setting matches 7000 run spreadplayers 0 0 100 3400 true @a
 execute if score TotalWorldSize setting matches 10000 run spreadplayers 0 0 100 4900 true @a
 
-# Assign team scoreboards
-execute if entity @a[predicate=uhcp:teams/solo] run function uhcp:teams/solo
-execute if entity @a[predicate=uhcp:teams/team] run function uhcp:teams/team
-scoreboard players set @a[predicate=uhcp:teams/neither] uhcp_team 0
-scoreboard players set @a[gamemode=!survival] uhcp_team 0
-
 # Spread same teams slightly
 function uhcp:start/spreadplayers/teams/cycle

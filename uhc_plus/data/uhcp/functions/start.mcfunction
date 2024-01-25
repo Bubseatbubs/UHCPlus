@@ -6,9 +6,13 @@ scoreboard players set %AUG_15 uhcp_gameTime 2400
 scoreboard players set %AUG_27 uhcp_gameTime 12000
 
 # Add everyone not on team to solo team
-tag @a remove UHCP_TeamJoin
-execute as @a[predicate=uhcp:teams/neither,sort=random] run function uhcp:start/teams
-tag @a remove UHCP_TeamJoin
+execute if entity @a[predicate=uhcp:teams/neither] run function uhcp:start/teams
+
+# Assign team scoreboards
+execute if entity @a[predicate=uhcp:teams/solo] run function uhcp:teams/solo
+execute if entity @a[predicate=uhcp:teams/team] run function uhcp:teams/team
+scoreboard players set @a[predicate=uhcp:teams/neither] uhcp_team 0
+scoreboard players set @a[gamemode=!survival] uhcp_team 0
 
 # Spreadplayers logic
 execute if score teamgame status matches 0 run function uhcp:start/spreadplayers/solo
