@@ -43,4 +43,25 @@ execute as @a[gamemode=survival] at @s if biome ~ ~ ~ minecraft:grove run item r
 execute as @a[gamemode=survival] at @s if biome ~ ~ ~ minecraft:jagged_peaks run item replace entity @s[gamemode=survival] armor.feet with minecraft:leather_boots
 execute as @a[gamemode=survival] at @s run execute if block ~ ~-1 ~ minecraft:powder_snow run setblock ~ ~-1 ~ minecraft:snow_block
 
+#Spreadplayers
+execute if score TotalWorldSize setting matches 1000 run execute if score teamgame status matches 1 run spreadplayers 0 0 100 400 true @a
+execute if score TotalWorldSize setting matches 1500 run execute if score teamgame status matches 1 run spreadplayers 0 0 100 700 true @a
+execute if score TotalWorldSize setting matches 2000 run execute if score teamgame status matches 1 run spreadplayers 0 0 100 900 true @a
+execute if score TotalWorldSize setting matches 2500 run execute if score teamgame status matches 1 run spreadplayers 0 0 100 1200 true @a
+execute if score TotalWorldSize setting matches 3000 run execute if score teamgame status matches 1 run spreadplayers 0 0 100 1400 true @a
+execute if score TotalWorldSize setting matches 4000 run execute if score teamgame status matches 1 run spreadplayers 0 0 100 1900 true @a
+execute if score TotalWorldSize setting matches 5000 run execute if score teamgame status matches 1 run spreadplayers 0 0 100 2400 true @a
+execute if score TotalWorldSize setting matches 7000 run execute if score teamgame status matches 1 run spreadplayers 0 0 100 3400 true @a
+execute if score TotalWorldSize setting matches 10000 run execute if score teamgame status matches 1 run spreadplayers 0 0 100 4900 true @a
+
+execute if score TotalWorldSize setting matches 1000 run execute if score teamgame status matches 0 run spreadplayers 0 0 100 400 false @a
+execute if score TotalWorldSize setting matches 1500 run execute if score teamgame status matches 0 run spreadplayers 0 0 100 700 false @a
+execute if score TotalWorldSize setting matches 2000 run execute if score teamgame status matches 0 run spreadplayers 0 0 100 900 false @a
+execute if score TotalWorldSize setting matches 2500 run execute if score teamgame status matches 0 run spreadplayers 0 0 100 1200 false @a
+execute if score TotalWorldSize setting matches 3000 run execute if score teamgame status matches 0 run spreadplayers 0 0 100 1400 false @a
+execute if score TotalWorldSize setting matches 4000 run execute if score teamgame status matches 0 run spreadplayers 0 0 100 1900 false @a
+execute if score TotalWorldSize setting matches 5000 run execute if score teamgame status matches 0 run spreadplayers 0 0 100 2400 false @a
+execute if score TotalWorldSize setting matches 7000 run execute if score teamgame status matches 0 run spreadplayers 0 0 100 3400 false @a
+execute if score TotalWorldSize setting matches 10000 run execute if score teamgame status matches 0 run spreadplayers 0 0 100 4900 false @a
+
 execute as @a[gamemode=survival] at @s run function uhcp:augments/initializeaugments
