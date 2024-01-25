@@ -61,7 +61,7 @@ team join 50 @r[predicate=uhcp:teams/neither,gamemode=survival]
 scoreboard players set %tier uhcp_a_tier 1
 scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 900
 bossbar set uhcp_augment players @a
-execute at @a[gamemode=adventure] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["UHCP_Lock"]}
+execute at @a[gamemode=survival] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["UHCP_Lock"]}
 execute as @a[gamemode=survival] run effect give @s resistance 45 4 true
 execute as @a[gamemode=survival] run effect give @s mining_fatigue 45 255 true
 execute as @a[gamemode=survival] run effect give @s weakness 45 4 true
