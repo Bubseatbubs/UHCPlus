@@ -78,9 +78,6 @@ execute if score @s uhcp_a_count matches 1.. run return 27
 execute store success score @s uhcp_a_count run clear @s chest{augment:29b} 1
 execute if score @s uhcp_a_count matches 1.. run return 29
 
-execute store success score @s uhcp_a_count run clear @s bow{augment:132s} 1
-execute if score @s uhcp_a_count matches 1.. run return 132
-
 execute store success score @s uhcp_a_count run clear @s iron_trapdoor{augment:32b} 1
 execute if score @s uhcp_a_count matches 1.. run return 32
 
@@ -90,6 +87,7 @@ execute if score @s uhcp_a_count matches 1.. run return 33
 execute store success score @s uhcp_a_count run clear @s enchanted_book{augment:34b} 1
 execute if score @s uhcp_a_count matches 1.. run return 34
 
+# Silver Augments
 execute store success score @s uhcp_a_count run clear @s slime_ball{augment:100s} 1
 execute if score @s uhcp_a_count matches 1.. run return 100
 
@@ -114,7 +112,7 @@ execute if score @s uhcp_a_count matches 1.. run return 110
 execute store success score @s uhcp_a_count run clear @s golden_apple{augment:111s} 1
 execute if score @s uhcp_a_count matches 1.. run return 111
 
-execute store success score @s uhcp_a_count run clear @s cooked_beef{augment:113s} 1
+execute store success score @s uhcp_a_count run clear @s rabbit_stew{augment:113s} 1
 execute if score @s uhcp_a_count matches 1.. run return 113
 
 execute store success score @s uhcp_a_count run clear @s iron_pickaxe{augment:114s} 1
@@ -138,10 +136,10 @@ execute if score @s uhcp_a_count matches 1.. run return 123
 execute store success score @s uhcp_a_count run clear @s shield{augment:124s} 1
 execute if score @s uhcp_a_count matches 1.. run return 124
 
-execute store success score @s uhcp_a_count run clear @s potion{augment:125s} 1
+execute store success score @s uhcp_a_count run clear @s light_gray_dye{augment:125s} 1
 execute if score @s uhcp_a_count matches 1.. run return 125
 
-execute store success score @s uhcp_a_count run clear @s potion{augment:126s} 1
+execute store success score @s uhcp_a_count run clear @s feather{augment:126s} 1
 execute if score @s uhcp_a_count matches 1.. run return 126
 
 execute store success score @s uhcp_a_count run clear @s stone_pickaxe{augment:127s} 1
@@ -150,11 +148,14 @@ execute if score @s uhcp_a_count matches 1.. run return 127
 execute store success score @s uhcp_a_count run clear @s cobweb{augment:128s} 1
 execute if score @s uhcp_a_count matches 1.. run return 128
 
-execute store success score @s uhcp_a_count run clear @s shulker_box{augment:129s} 1
+execute store success score @s uhcp_a_count run clear @s shulker_shell{augment:129s} 1
 execute if score @s uhcp_a_count matches 1.. run return 129
 
 execute store success score @s uhcp_a_count run clear @s turtle_helmet{augment:131s} 1
 execute if score @s uhcp_a_count matches 1.. run return 131
+
+execute store success score @s uhcp_a_count run clear @s bow{augment:132s} 1
+execute if score @s uhcp_a_count matches 1.. run return 132
 
 execute store success score @s uhcp_a_count run clear @s oak_trapdoor{augment:133s} 1
 execute if score @s uhcp_a_count matches 1.. run return 133

@@ -1364,55 +1364,6 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:iron_bars",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:14b}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Iron Will",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Resistance IV",
-                    "color": "yellow"
-                  },
-                  {
-                    "text": " for 5 minutes.",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
           "name": "minecraft:redstone",
           "functions": [
             {
