@@ -21,9 +21,6 @@ execute if score @s uhcp_a_count matches 1.. run return 4
 execute store success score @s uhcp_a_count run clear @s netherite_upgrade_smithing_template{augment:5b} 1
 execute if score @s uhcp_a_count matches 1.. run return 5
 
-execute store success score @s uhcp_a_count run clear @s crossbow{augment:106s} 1
-execute if score @s uhcp_a_count matches 1.. run return 106
-
 execute store success score @s uhcp_a_count run clear @s gold_nugget{augment:7b} 1
 execute if score @s uhcp_a_count matches 1.. run return 7
 
@@ -39,17 +36,23 @@ execute if score @s uhcp_a_count matches 1.. run return 10
 execute store success score @s uhcp_a_count run clear @s oak_leaves{augment:11b} 1
 execute if score @s uhcp_a_count matches 1.. run return 11
 
-execute store success score @s uhcp_a_count run clear @s iron_bars{augment:115s} 1
-execute if score @s uhcp_a_count matches 1.. run return 115
+execute store success score @s uhcp_a_count run clear @s goat_horn{augment:12b} 1
+execute if score @s uhcp_a_count matches 1.. run return 12
 
 execute store success score @s uhcp_a_count run clear @s miner_pottery_sherd{augment:13b} 1
 execute if score @s uhcp_a_count matches 1.. run return 13
+
+execute store success score @s uhcp_a_count run clear @s stick{augment:14b} 1
+execute if score @s uhcp_a_count matches 1.. run return 14
 
 execute store success score @s uhcp_a_count run clear @s apple{augment:15b} 1
 execute if score @s uhcp_a_count matches 1.. run return 15
 
 execute store success score @s uhcp_a_count run clear @s shield{augment:17b} 1
 execute if score @s uhcp_a_count matches 1.. run return 17
+
+execute store success score @s uhcp_a_count run clear @s clock{augment:18b} 1
+execute if score @s uhcp_a_count matches 1.. run return 18
 
 execute store success score @s uhcp_a_count run clear @s golden_sword{augment:19b} 1
 execute if score @s uhcp_a_count matches 1.. run return 19
@@ -78,6 +81,9 @@ execute if score @s uhcp_a_count matches 1.. run return 27
 execute store success score @s uhcp_a_count run clear @s chest{augment:29b} 1
 execute if score @s uhcp_a_count matches 1.. run return 29
 
+execute store success score @s uhcp_a_count run clear @s netherite_axe{augment:30b} 1
+execute if score @s uhcp_a_count matches 1.. run return 30
+
 execute store success score @s uhcp_a_count run clear @s iron_trapdoor{augment:32b} 1
 execute if score @s uhcp_a_count matches 1.. run return 32
 
@@ -86,6 +92,12 @@ execute if score @s uhcp_a_count matches 1.. run return 33
 
 execute store success score @s uhcp_a_count run clear @s enchanted_book{augment:34b} 1
 execute if score @s uhcp_a_count matches 1.. run return 34
+
+execute store success score @s uhcp_a_count run clear @s copper_ingot{augment:35b} 1
+execute if score @s uhcp_a_count matches 1.. run return 35
+
+execute store success score @s uhcp_a_count run clear @s tnt{augment:38b} 1
+execute if score @s uhcp_a_count matches 1.. run return 38
 
 # Silver Augments
 execute store success score @s uhcp_a_count run clear @s slime_ball{augment:100s} 1
@@ -102,6 +114,9 @@ execute if score @s uhcp_a_count matches 1.. run return 104
 
 execute store success score @s uhcp_a_count run clear @s creeper_head{augment:105s} 1
 execute if score @s uhcp_a_count matches 1.. run return 105
+
+execute store success score @s uhcp_a_count run clear @s crossbow{augment:106s} 1
+execute if score @s uhcp_a_count matches 1.. run return 106
 
 execute store success score @s uhcp_a_count run clear @s glass_bottle{augment:109s} 1
 execute if score @s uhcp_a_count matches 1.. run return 109

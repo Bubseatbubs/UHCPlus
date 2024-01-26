@@ -761,6 +761,351 @@
         {
           "type": "item",
           "weight": 1,
+          "name": "minecraft:tnt",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:38b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Oppenheimer",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 15 TNT, 64 Redstone, a Flint and Steel,",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Diamond Boots",
+                    "color": "white"
+                  },
+                  {
+                    "text": " with",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Blast Protection IV",
+                    "color": "dark_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:18b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Late Looter",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Start with",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Mining Fatigue I",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " for 20",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "minutes. Afterwards, gain ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Haste III",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:goat_horn",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:12b,instrument:\"minecraft:call_goat_horn\"}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Hunting Call",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Goat Horn",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Blowing a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Goat Horn",
+                    "color": "white"
+                  },
+                  {
+                    "text": " applies",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Speed I",
+                    "color": "yellow"
+                  }
+                ],
+                [
+                  {
+                    "text": "for",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 20 seconds",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and inflicts",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Glowing",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " to all enemies for 10",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "seconds.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " (5 Minute Cooldown)",
+                    "color": "red"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:copper_ingot",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:35b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Copper Collector",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "After 50 minutes, all",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Copper Ingots",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "become",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Gold Ingots",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:netherite_axe",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:30b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Berserker",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "After killing a player, gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Strength,",
+                    "color": "yellow"
+                  }
+                ],
+                [
+                  {
+                    "text": "Speed, and Regeneration I",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " for 15 seconds.",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
           "name": "minecraft:iron_trapdoor",
           "functions": [
             {
@@ -985,6 +1330,62 @@
                 [
                   {
                     "text": "Efficiency I",
+                    "color": "dark_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:14b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Back Off!",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Stick",
+                    "color": "white"
+                  },
+                  {
+                    "text": " with"
+                  },
+                  {
+                    "text": " Knockback III",
                     "color": "dark_purple"
                   },
                   {
