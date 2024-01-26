@@ -177,3 +177,52 @@ execute if score @s uhcp_a_count matches 1.. run return 132
 
 execute store success score @s uhcp_a_count run clear @s oak_trapdoor{augment:133s} 1
 execute if score @s uhcp_a_count matches 1.. run return 133
+
+# Prismatic Augments
+execute store success score @s uhcp_a_count run clear @s bow{augment:201s} 1
+execute if score @s uhcp_a_count matches 1.. run return 201
+
+execute store success score @s uhcp_a_count run clear @s obsidian{augment:204s} 1
+execute if score @s uhcp_a_count matches 1.. run return 204
+
+execute store success score @s uhcp_a_count run clear @s golden_apple{augment:206s} 1
+execute if score @s uhcp_a_count matches 1.. run return 206
+
+execute store success score @s uhcp_a_count run clear @s diamond_pickaxe{augment:211s} 1
+execute if score @s uhcp_a_count matches 1.. run return 211
+
+execute store success score @s uhcp_a_count run clear @s totem_of_undying{augment:212s} 1
+execute if score @s uhcp_a_count matches 1.. run return 212
+
+execute store success score @s uhcp_a_count run clear @s bookshelf{augment:213s} 1
+execute if score @s uhcp_a_count matches 1.. run return 213
+
+execute store success score @s uhcp_a_count run clear @s netherrack{augment:214s} 1
+execute if score @s uhcp_a_count matches 1.. run return 214
+
+execute store success score @s uhcp_a_count run clear @s trident{augment:215s} 1
+execute if score @s uhcp_a_count matches 1.. run return 215
+
+execute store success score @s uhcp_a_count run clear @s potion{augment:216s} 1
+execute if score @s uhcp_a_count matches 1.. run return 216
+
+execute store success score @s uhcp_a_count run clear @s target{augment:217s} 1
+execute if score @s uhcp_a_count matches 1.. run return 217
+
+execute store success score @s uhcp_a_count run clear @s shield{augment:220s} 1
+execute if score @s uhcp_a_count matches 1.. run return 220
+
+execute store success score @s uhcp_a_count run clear @s miner_pottery_sherd{augment:224s} 1
+execute if score @s uhcp_a_count matches 1.. run return 224
+
+execute store success score @s uhcp_a_count run clear @s rabbit_foot{augment:226s} 1
+execute if score @s uhcp_a_count matches 1.. run return 226
+
+execute store success score @s uhcp_a_count run clear @s elytra{augment:227s} 1
+execute if score @s uhcp_a_count matches 1.. run return 227
+
+execute store success score @s uhcp_a_count run clear @s iron_trapdoor{augment:228s} 1
+execute if score @s uhcp_a_count matches 1.. run return 228
+
+execute store success score @s uhcp_a_count run clear @s fishing_rod{augment:229s} 1
+execute if score @s uhcp_a_count matches 1.. run return 229

@@ -64,5 +64,23 @@ execute if score @s uhcp_a_selectedAugment matches 34 run function uhcp:augments
 execute if score @s uhcp_a_selectedAugment matches 35 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Copper Collector","color":"gold"},{"text":"!","color":"white"}]
 execute if score @s uhcp_a_selectedAugment matches 38 run function uhcp:augments/effects/gold/oppenheimer
 
+# Prismatic Augments
+execute if score @s uhcp_a_selectedAugment matches 201 run function uhcp:augments/effects/prismatic/bowmaster
+execute if score @s uhcp_a_selectedAugment matches 204 run function uhcp:augments/effects/prismatic/dimensionaltraveler
+execute if score @s uhcp_a_selectedAugment matches 206 run function uhcp:augments/effects/prismatic/gapplegapiii
+execute if score @s uhcp_a_selectedAugment matches 211 run function uhcp:augments/effects/prismatic/intotheminesiii
+execute if score @s uhcp_a_selectedAugment matches 212 run function uhcp:augments/effects/prismatic/laststand
+execute if score @s uhcp_a_selectedAugment matches 213 run function uhcp:augments/effects/prismatic/librarian
+execute if score @s uhcp_a_selectedAugment matches 214 run function uhcp:augments/effects/prismatic/netherborn
+execute if score @s uhcp_a_selectedAugment matches 215 run function uhcp:augments/effects/prismatic/poseidonsblessing
+execute if score @s uhcp_a_selectedAugment matches 216 run function uhcp:augments/effects/prismatic/potionmaster
+execute if score @s uhcp_a_selectedAugment matches 217 run function uhcp:augments/effects/prismatic/primetarget
+execute if score @s uhcp_a_selectedAugment matches 220 run function uhcp:augments/effects/prismatic/restierplayer
+execute if score @s uhcp_a_selectedAugment matches 224 run function uhcp:augments/effects/prismatic/starterkitiii
+execute if score @s uhcp_a_selectedAugment matches 226 run function uhcp:augments/effects/prismatic/therabbit
+execute if score @s uhcp_a_selectedAugment matches 227 run function uhcp:augments/effects/prismatic/totheskies
+execute if score @s uhcp_a_selectedAugment matches 228 run function uhcp:augments/effects/prismatic/trapgod
+execute if score @s uhcp_a_selectedAugment matches 229 run function uhcp:augments/effects/prismatic/youhavemyrod
+
 particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.25 100 normal
 
