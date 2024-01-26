@@ -27,10 +27,11 @@ scoreboard objectives add stew minecraft.used:minecraft.suspicious_stew
 scoreboard objectives add timedeath minecraft.custom:minecraft.time_since_death
 scoreboard objectives add team trigger
 scoreboard objectives add options trigger
-gamerule announceAdvancements false
+execute in minecraft:overworld run gamerule announceAdvancements false
+execute in minecraft:the_nether run gamerule announceAdvancements false
 scoreboard objectives remove ch_help
-gamerule sendCommandFeedback false
-
+execute in minecraft:overworld run gamerule sendCommandFeedback false
+execute in minecraft:the_nether run gamerule sendCommandFeedback false
 
 scoreboard objectives setdisplay list hearts
 scoreboard objectives setdisplay sidebar setting
@@ -173,8 +174,10 @@ team add 50
 
 #Prepare World
 scoreboard players set stage status 1
-gamerule doWeatherCycle false
-gamerule doDaylightCycle false
+execute in minecraft:overworld run gamerule doWeatherCycle false
+execute in minecraft:the_nether run gamerule doWeatherCycle false
+execute in minecraft:overworld run gamerule doDaylightCycle false
+execute in minecraft:the_nether run gamerule doDaylightCycle false
 weather clear
 time set 0
 gamerule commandBlockOutput false
@@ -239,11 +242,13 @@ scoreboard players set hp status 20
 
 #Fast leaf decay_off
 scoreboard players set decay status 1
-gamerule randomTickSpeed 23
+execute in minecraft:overworld run gamerule randomTickSpeed 23
+execute in minecraft:the_nether run gamerule randomTickSpeed 23
 
 #Phantoms
 scoreboard players set phantoms status 0
-gamerule doInsomnia false
+execute in minecraft:overworld run gamerule doInsomnia false
+execute in minecraft:the_nether run gamerule doInsomnia false
 
 #Bonus tools
 scoreboard players set tools status 0

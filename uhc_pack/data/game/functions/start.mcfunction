@@ -44,6 +44,7 @@ execute if score daynite status matches 1 run execute if score daydice tick matc
 
 #Game Settings
 execute if score weather status matches 1 run gamerule doWeatherCycle true
+execute if score weather status matches 1 run gamerule doWeatherCycle true
 execute if score weather status matches 1 run weather rain 2s
 execute if score weather status matches 0 run gamerule doWeatherCycle false
 execute if score weather status matches 0 run weather clear
@@ -52,7 +53,8 @@ scoreboard players set @a ch_toggleConst 1
 
 gamemode survival @a
 clear @a
-gamerule naturalRegeneration false
+execute in minecraft:overworld naturalRegeneration false
+execute in minecraft:the_nether naturalRegeneration false
 
 #Nametags Toggle
 execute if score nametags status matches 1 run function game:options/nametags_on

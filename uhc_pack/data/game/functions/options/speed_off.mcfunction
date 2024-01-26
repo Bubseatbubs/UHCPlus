@@ -7,6 +7,8 @@ scoreboard players set decay status 0
 scoreboard players set fall status 0
 scoreboard players set autocook status 0
 
-gamerule fallDamage true
-gamerule randomTickSpeed 3
+execute in minecraft:overworld run gamerule fallDamage true
+execute in minecraft:the_nether run gamerule fallDamage true
+execute in minecraft:overworld run gamerule randomTickSpeed 3
+execute in minecraft:the_nether run gamerule randomTickSpeed 3
 datapack disable "file/cook"
