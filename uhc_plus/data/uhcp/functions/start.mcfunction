@@ -20,7 +20,7 @@ execute if score teamgame status matches 0 run function uhcp:start/spreadplayers
 execute unless score teamgame status matches 0 run function uhcp:start/spreadplayers/teams
 
 # Augment Selection
-scoreboard players set %tier uhcp_a_tier 1
+# scoreboard players set %tier uhcp_a_tier 1
 scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 900
 bossbar set uhcp_augment players @a
 execute as @a[gamemode=survival] run function uhcp:start/augments
