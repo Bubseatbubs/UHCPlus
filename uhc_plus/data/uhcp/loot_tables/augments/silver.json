@@ -6,6 +6,287 @@
         {
           "type": "item",
           "weight": 1,
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:1,pickup:1b,augment:110b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Extra Enchanting",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 5 Leather",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 3 Sugar Cane",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:glass_bottle",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:109b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Empty Hearted",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Start the game with",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " +4🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "4 Gold Ingots",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:creeper_head",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:105b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Creeper Cosplay",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 4 TNT, a Flint and Steel,",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "4 Gold Ingots",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:104b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Cram Session",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                {
+                  "text": "Start the game at Level 10.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:bucket",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:103b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Bucket List",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Lava Bucket, Water Bucket,",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "an empty",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Bucket,",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 3 Paper",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
           "name": "minecraft:bow",
           "functions": [
             {
@@ -14,7 +295,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:30b}"
+              "tag": "{pickup:1b,augment:132b}"
             },
             {
               "function": "set_name",
@@ -112,7 +393,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:iron_trapdoor",
+          "name": "minecraft:slime_ball",
           "functions": [
             {
               "function": "set_count",
@@ -120,13 +401,13 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{augment:0b}"
+              "tag": "{pickup:1b,augment:100b}"
             },
             {
               "function": "set_name",
               "name": [
                 {
-                  "text": "Trap Master",
+                  "text": "!shoma",
                   "color": "gray",
                   "bold": true
                 }
@@ -142,32 +423,38 @@
                 },
                 [
                   {
-                    "text": "Gain a ",
+                    "text": "Gain",
                     "color": "gray"
                   },
                   {
-                    "text": "Shovel, 16 Signs, 3 Pistons",
+                    "text": " 2 Slime Balls, 2 Snow Balls,",
                     "color": "white"
                   }
                 ],
                 [
                   {
-                    "text": "3 Sticky Pistons, ",
+                    "text": "2 Clay Balls,",
                     "color": "white"
                   },
                   {
-                    "text": "and",
+                    "text": " and ",
                     "color": "gray"
                   },
                   {
-                    "text": " 64 Redstone",
+                    "text": "2 Ender Pearls",
                     "color": "white"
                   },
                   {
                     "text": ".",
                     "color": "gray"
                   }
-                ]
+                ],
+                {
+                  "text": "\"balls\"",
+                  "color": "gold",
+                  "bold": true,
+                  "italic": false
+                }
               ]
             }
           ]
@@ -175,7 +462,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:feather",
+          "name": "minecraft:damaged_anvil",
           "functions": [
             {
               "function": "set_count",
@@ -183,13 +470,13 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{augment:0b}"
+              "tag": "{pickup:1b,augment:102b}"
             },
             {
               "function": "set_name",
               "name": [
                 {
-                  "text": "Birds of a Feather",
+                  "text": "Blacksmith",
                   "color": "gray",
                   "bold": true
                 }
@@ -205,38 +492,18 @@
                 },
                 [
                   {
-                    "text": "Gain 3",
+                    "text": "Gain a",
                     "color": "gray"
                   },
                   {
-                    "text": " Feathers",
+                    "text": " Damaged Anvil",
                     "color": "white"
                   },
                   {
-                    "text": ". When thrown,",
+                    "text": ".",
                     "color": "gray"
                   }
-                ],
-                {
-                  "text": "they teleport you to your",
-                  "color": "gray"
-                },
-                [
-                  {
-                    "text": "Teammate",
-                    "color": "gold"
-                  },
-                  {
-                    "text": " (random teammate in",
-                    "color": "gray",
-                    "italic": true
-                  }
-                ],
-                {
-                  "text": "teams of 3 or more)",
-                  "color": "gray",
-                  "italic": true
-                }
+                ]
               ]
             }
           ]
