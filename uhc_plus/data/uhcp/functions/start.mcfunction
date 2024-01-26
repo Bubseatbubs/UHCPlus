@@ -8,6 +8,9 @@ scoreboard players set %AUG_27 uhcp_gameTime 12000
 scoreboard objectives setdisplay sidebar uhcp_displayTime
 scoreboard objectives setdisplay below_name hearts
 
+# Reset UHC Pack Timer to sync up
+scoreboard players set marker tick 0
+
 # Add everyone not on team to solo team
 execute if entity @a[predicate=uhcp:teams/neither] run function uhcp:start/teams
 

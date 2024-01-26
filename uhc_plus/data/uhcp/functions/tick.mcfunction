@@ -1,6 +1,10 @@
 # Initial logic
 execute unless score %uhcp_init uhcp_initStatus matches 1.. if score stage status matches 2 run function uhcp:init
 
+# Display Time
+execute if score %time uhcp_gameTime matches 1.. run function uhcp:timer/update_displaytimer
+
+
 # Game start
 execute if score countdown tick matches 0 run function uhcp:start
 
@@ -50,6 +54,3 @@ function uhcp:augments/effects/timer
 
 # Disable Ender Pearl Damage
 execute as @e[type=ender_pearl] at @s run function uhcp:enderpearl
-
-# Display Time
-execute if score %time uhcp_gameTime matches 1.. run function uhcp:timer/update_displaytimer

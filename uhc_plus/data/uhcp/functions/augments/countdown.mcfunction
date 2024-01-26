@@ -28,8 +28,8 @@ bossbar set minecraft:uhcp_augment players
 kill @e[tag=UHCP_Lock]
 
 effect clear @a[gamemode=survival]
-effect give @a[gamemode=survival] speed 15 0 true
-effect give @a[gamemode=survival] resistance 120 4 true
+effect give @a[gamemode=survival] speed 15 0 false
+effect give @a[gamemode=survival] resistance 120 4 false
 
 # Boots Effect (from UHC Pack)
 execute as @a[gamemode=survival] at @s if biome ~ ~ ~ minecraft:snowy_beach run item replace entity @s[gamemode=survival] armor.feet with minecraft:leather_boots
