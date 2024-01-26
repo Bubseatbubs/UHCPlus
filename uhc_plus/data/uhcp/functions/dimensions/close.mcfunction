@@ -3,4 +3,4 @@ execute if entity @a[predicate=!uhcp:dimensions/minecraft/overworld,gamemode=sur
 
 # Replace portal blocks
 execute as @a[gamemode=survival] at @s run function uhcp:dimensions/close/replace
-execute as @e[type=minecraft:ender_pearl] at @s run fill ~-4 ~-4 ~-4 ~4 ~4 ~4 minecraft:air replace minecraft:end_portal
+execute as @e[type=minecraft:ender_pearl] at @s run function uhcp:dimensions/close/replace/ender_pearl
