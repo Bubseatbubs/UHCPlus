@@ -9,7 +9,6 @@ execute if score @s uhcp_a_selectedAugment matches 2 run function uhcp:augments/
 execute if score @s uhcp_a_selectedAugment matches 3 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Bloodthirsty","color":"gold"},{"text":"!","color":"white"}]
 execute if score @s uhcp_a_selectedAugment matches 4 run function uhcp:augments/effects/gold/cowboycosplay
 execute if score @s uhcp_a_selectedAugment matches 5 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Delayed Protection","color":"gold"},{"text":"!","color":"white"}]
-# execute if score @s uhcp_a_selectedAugment matches 6 run function uhcp:augments/effects/gold/doublecross
 execute if score @s uhcp_a_selectedAugment matches 7 run function uhcp:augments/effects/gold/dripeconomyii
 execute if score @s uhcp_a_selectedAugment matches 8 run function uhcp:augments/effects/gold/fireandwater
 execute if score @s uhcp_a_selectedAugment matches 9 run function uhcp:augments/effects/gold/fishybusiness
@@ -28,10 +27,37 @@ execute if score @s uhcp_a_selectedAugment matches 25 run tellraw @a [{"selector
 execute if score @s uhcp_a_selectedAugment matches 26 run function uhcp:augments/effects/gold/shinyspawn
 execute if score @s uhcp_a_selectedAugment matches 27 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Sneaky Sneaky","color":"gold"},{"text":"!","color":"white"}]
 execute if score @s uhcp_a_selectedAugment matches 29 run function uhcp:augments/effects/gold/starterkitii
-# execute if score @s uhcp_a_selectedAugment matches 30 run function uhcp:augments/effects/gold/takeaimi
 execute if score @s uhcp_a_selectedAugment matches 32 run function uhcp:augments/effects/gold/trapmaster
 execute if score @s uhcp_a_selectedAugment matches 33 run function uhcp:augments/effects/gold/villageidol
 execute if score @s uhcp_a_selectedAugment matches 34 run function uhcp:augments/effects/gold/wellstudied
+
+execute if score @s uhcp_a_selectedAugment matches 100 run function uhcp:augments/effects/silver/shoma
+
+execute if score @s uhcp_a_selectedAugment matches 102 run function uhcp:augments/effects/silver/blacksmith
+execute if score @s uhcp_a_selectedAugment matches 103 run function uhcp:augments/effects/silver/bucketlist
+execute if score @s uhcp_a_selectedAugment matches 104 run function uhcp:augments/effects/silver/cramsession
+execute if score @s uhcp_a_selectedAugment matches 105 run function uhcp:augments/effects/silver/creepercosplay
+execute if score @s uhcp_a_selectedAugment matches 106 run function uhcp:augments/effects/silver/doublecross
+execute if score @s uhcp_a_selectedAugment matches 109 run function uhcp:augments/effects/silver/emptyhearted
+execute if score @s uhcp_a_selectedAugment matches 110 run function uhcp:augments/effects/silver/extraenchanting
+execute if score @s uhcp_a_selectedAugment matches 111 run function uhcp:augments/effects/silver/gapplegapi
+execute if score @s uhcp_a_selectedAugment matches 113 run function uhcp:augments/effects/silver/heartymeal
+execute if score @s uhcp_a_selectedAugment matches 114 run function uhcp:augments/effects/silver/intotheminesi
+execute if score @s uhcp_a_selectedAugment matches 115 run function uhcp:augments/effects/silver/ironwill
+execute if score @s uhcp_a_selectedAugment matches 116 run function uhcp:augments/effects/silver/ladderwarrior
+execute if score @s uhcp_a_selectedAugment matches 118 run function uhcp:augments/effects/silver/mansbestfriend
+execute if score @s uhcp_a_selectedAugment matches 119 run function uhcp:augments/effects/silver/monsterhunter
+execute if score @s uhcp_a_selectedAugment matches 122 run function uhcp:augments/effects/silver/rattunneler
+execute if score @s uhcp_a_selectedAugment matches 123 run function uhcp:augments/effects/silver/saddleup
+execute if score @s uhcp_a_selectedAugment matches 124 run function uhcp:augments/effects/silver/shieldsup
+execute if score @s uhcp_a_selectedAugment matches 125 run function uhcp:augments/effects/silver/sneaky
+execute if score @s uhcp_a_selectedAugment matches 126 run function uhcp:augments/effects/silver/speedystart
+execute if score @s uhcp_a_selectedAugment matches 127 run function uhcp:augments/effects/silver/starterkiti
+execute if score @s uhcp_a_selectedAugment matches 128 run function uhcp:augments/effects/silver/stickysituation
+execute if score @s uhcp_a_selectedAugment matches 129 run function uhcp:augments/effects/silver/storagesolution
+execute if score @s uhcp_a_selectedAugment matches 131 run function uhcp:augments/effects/silver/taequalsta
+execute if score @s uhcp_a_selectedAugment matches 132 run function uhcp:augments/effects/silver/takeaim
+execute if score @s uhcp_a_selectedAugment matches 133 run function uhcp:augments/effects/silver/trapenthusiast
 
 particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.25 100 normal
 
