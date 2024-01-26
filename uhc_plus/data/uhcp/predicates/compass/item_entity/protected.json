@@ -14,7 +14,7 @@
 			"entity": "this",
 			"predicate": {
 				"type": "minecraft:item",
-				"nbt": "{Item:{id:\"minecraft:compass\",tag:{LodestoneTracked:1b}}}"
+				"nbt": "{Item:{tag:{LodestoneTracked:1b}}}"
 			}
 		}
 	]

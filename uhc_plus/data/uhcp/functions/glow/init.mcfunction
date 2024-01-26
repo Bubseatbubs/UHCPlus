@@ -4,7 +4,8 @@ execute if entity @a[predicate=uhcp:teams/team] run function uhcp:teams/team
 scoreboard players set @a[predicate=uhcp:teams/neither] uhcp_team 0
 scoreboard players set @a[gamemode=!survival] uhcp_team 0
 
-tag @a remove UHCP_GTrack
+# Initialize all-seeing eye
+tag @s remove UHCP_GTrack
 tag @s add UHCP_GTrack
 execute as @a[scores={uhcp_team=1..64}] unless score @s uhcp_team = @a[tag=UHCP_GTrack,limit=1] uhcp_team at @s run function uhcp:glow/target
 execute as @a[scores={uhcp_team=1..64}] if score @s uhcp_team = @a[tag=UHCP_GTrack,limit=1] uhcp_team run tellraw @s [{"selector":"@a[tag=UHCP_GTrack,limit=1]","color":"gold"},{"text":" inflicted","color":"gray"},{"text":" Glowing","color":"white"},{"text":" on other teams!","color":"gray"}]
