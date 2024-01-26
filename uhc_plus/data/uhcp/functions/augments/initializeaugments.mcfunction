@@ -42,10 +42,12 @@ execute if score @s uhcp_a_selectedAugment matches 8 run function uhcp:augments/
 execute if score @s uhcp_a_selectedAugment matches 9 run function uhcp:augments/effects/gold/fishybusiness
 execute if score @s uhcp_a_selectedAugment matches 10 run function uhcp:augments/effects/gold/gapplegapii
 execute if score @s uhcp_a_selectedAugment matches 11 run function uhcp:augments/effects/gold/greenthumb
+execute if score @s uhcp_a_selectedAugment matches 12 run function uhcp:augments/effects/gold/huntingcall
 execute if score @s uhcp_a_selectedAugment matches 13 run function uhcp:augments/effects/gold/intotheminesii
-execute if score @s uhcp_a_selectedAugment matches 14 run function uhcp:augments/effects/gold/ironwill
+execute if score @s uhcp_a_selectedAugment matches 14 run function uhcp:augments/effects/gold/backoff
 execute if score @s uhcp_a_selectedAugment matches 15 run function uhcp:augments/effects/gold/johnnyappleseed
 execute if score @s uhcp_a_selectedAugment matches 17 run function uhcp:augments/effects/gold/largeandincharge
+execute if score @s uhcp_a_selectedAugment matches 18 run function uhcp:augments/effects/gold/latelooter
 execute if score @s uhcp_a_selectedAugment matches 19 run function uhcp:augments/effects/gold/luckylooter
 execute if score @s uhcp_a_selectedAugment matches 20 run function uhcp:augments/effects/gold/moneymoney
 execute if score @s uhcp_a_selectedAugment matches 21 run function uhcp:augments/effects/gold/pearly
@@ -55,9 +57,12 @@ execute if score @s uhcp_a_selectedAugment matches 25 run tellraw @a [{"selector
 execute if score @s uhcp_a_selectedAugment matches 26 run function uhcp:augments/effects/gold/shinyspawn
 execute if score @s uhcp_a_selectedAugment matches 27 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Sneaky Sneaky","color":"gold"},{"text":"!","color":"white"}]
 execute if score @s uhcp_a_selectedAugment matches 29 run function uhcp:augments/effects/gold/starterkitii
+execute if score @s uhcp_a_selectedAugment matches 27 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Berserker","color":"gold"},{"text":"!","color":"white"}]
 execute if score @s uhcp_a_selectedAugment matches 32 run function uhcp:augments/effects/gold/trapmaster
 execute if score @s uhcp_a_selectedAugment matches 33 run function uhcp:augments/effects/gold/villageidol
 execute if score @s uhcp_a_selectedAugment matches 34 run function uhcp:augments/effects/gold/wellstudied
+execute if score @s uhcp_a_selectedAugment matches 35 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Copper Collector","color":"gold"},{"text":"!","color":"white"}]
+execute if score @s uhcp_a_selectedAugment matches 38 run function uhcp:augments/effects/gold/oppenheimer
 
 particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.25 100 normal
 
