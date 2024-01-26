@@ -46,6 +46,8 @@ execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
 # Augments
 execute as @e[predicate=uhcp:augments/birdfeather] at @s run function uhcp:augments/effects/gold/birdsofafeather/teleport
 execute as @e[type=bee,tag=UHCP_Bee] at @s run function uhcp:augments/effects/gold/beekeeper/update
+execute as @e[tag=UHCP_Saber] at @s run function uhcp:augments/effects/prismatic/radiantrelics/soulflamesaber/update
+execute as @e[tag=UHCP_Voltrune] at @s run function uhcp:augments/effects/prismatic/radiantrelics/voltrune/update
 
 # Augment Countdown
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 0.. run function uhcp:augments/countdown
