@@ -42,8 +42,9 @@ bossbar set minecraft:uhcp_augment color white
 bossbar set minecraft:uhcp_augment style notched_6
 bossbar set minecraft:uhcp_augment max 900
 
-# Set default lava scores
-execute unless score stage status matches 2 unless score %time uhcp_gameTime matches 1.. unless score %uhcp_lavaInit uhcp_initStatus matches 1 run function uhcp:load/scores
+# Set default scores
+execute unless score stage status matches 2 unless score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_lavaInit uhcp_initStatus matches 1 run function uhcp:load/scores
+execute unless score stage status matches 2 unless score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_dimTime uhcp_gameTime matches -2147483648..2147483647 run scoreboard players set %uhcp_dimTime uhcp_gameTime 48000
 
 # Forceload main dimension
 execute in uhcp:main run forceload add 0 0
