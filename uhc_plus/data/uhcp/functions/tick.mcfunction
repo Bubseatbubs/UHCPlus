@@ -4,7 +4,6 @@ execute unless score %uhcp_init uhcp_initStatus matches 1.. if score stage statu
 # Display Time
 execute if score %time uhcp_gameTime matches 1.. run function uhcp:timer/update_displaytimer
 
-
 # Game start
 execute if score countdown tick matches 0 run function uhcp:start
 
@@ -29,7 +28,7 @@ execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uh
 scoreboard players enable @a menu
 execute as @a at @s if score @s menu matches 1.. run function uhcp:settings/menu
 
-# Timer
+# Timers
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run scoreboard players add %time uhcp_gameTime 1
 execute unless score %uhcp_hungerInit uhcp_initStatus matches 1.. if score %h_set uhcp_settings matches 0 if score %uhcp_init uhcp_initStatus matches 1.. run scoreboard players add %hunger_timer uhcp_gameTime 1
 execute unless score %uhcp_hungerInit uhcp_initStatus matches 1.. if score %hunger_timer uhcp_gameTime matches 48000..50000 as @a run function uhcp:hunger/init
@@ -52,5 +51,8 @@ execute as @e[type=bee,tag=UHCP_Bee] at @s run function uhcp:augments/effects/go
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 0.. run function uhcp:augments/countdown
 function uhcp:augments/effects/timer
 
+# Close dimensions
+execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:dimensions/run
+
 # Disable Ender Pearl Damage
-execute as @e[type=ender_pearl] at @s run function uhcp:enderpearl
+execute as @e[type=minecraft:ender_pearl] at @s run function uhcp:enderpearl
