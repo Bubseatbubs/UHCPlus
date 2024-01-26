@@ -24,7 +24,7 @@ scoreboard objectives add uhcp_a_count dummy
 scoreboard objectives add uhcp_a_timer dummy
 scoreboard objectives add uhcp_a_validSelection dummy
 scoreboard objectives add uhcp_a_selectedAugment dummy
-scoreboard objectives add uhcp_a_beeKeeper dummy
+scoreboard objectives add uhcp_a_stack dummy
 
 # Add Display Timer Names
 scoreboard players set %display uhcp_displayTime 0
