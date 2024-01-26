@@ -107,7 +107,11 @@
                 ],
                 [
                   {
-                    "text": "4 Gold Ingots",
+                    "text": "Gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 4 Gold Ingots",
                     "color": "white"
                   },
                   {
@@ -671,7 +675,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:zombie_head",
+          "name": "minecraft:pointed_dripstone",
           "functions": [
             {
               "function": "set_count",
@@ -752,7 +756,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:118s}"
+              "tag": "{pickup:1b,augment:119s}"
             },
             {
               "function": "set_name",
@@ -1381,7 +1385,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:feather",
+          "name": "minecraft:chest",
           "functions": [
             {
               "function": "set_count",
@@ -1395,7 +1399,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "Starter Kit",
+                  "text": "Starter Kit I",
                   "color": "gray",
                   "bold": true
                 }

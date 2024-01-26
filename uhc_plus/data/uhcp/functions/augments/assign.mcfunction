@@ -118,8 +118,11 @@ execute if score @s uhcp_a_count matches 1.. run return 113
 execute store success score @s uhcp_a_count run clear @s iron_pickaxe{augment:114s} 1
 execute if score @s uhcp_a_count matches 1.. run return 114
 
-execute store success score @s uhcp_a_count run clear @s ladder{augment:115s} 1
+execute store success score @s uhcp_a_count run clear @s iron_bars{augment:115s} 1
 execute if score @s uhcp_a_count matches 1.. run return 115
+
+execute store success score @s uhcp_a_count run clear @s ladder{augment:116s} 1
+execute if score @s uhcp_a_count matches 1.. run return 116
 
 execute store success score @s uhcp_a_count run clear @s bone{augment:118s} 1
 execute if score @s uhcp_a_count matches 1.. run return 118
@@ -127,7 +130,7 @@ execute if score @s uhcp_a_count matches 1.. run return 118
 execute store success score @s uhcp_a_count run clear @s zombie_head{augment:119s} 1
 execute if score @s uhcp_a_count matches 1.. run return 119
 
-execute store success score @s uhcp_a_count run clear @s oak_trapdoor{augment:122s} 1
+execute store success score @s uhcp_a_count run clear @s pointed_dripstone{augment:122s} 1
 execute if score @s uhcp_a_count matches 1.. run return 122
 
 execute store success score @s uhcp_a_count run clear @s leather_horse_armor{augment:123s} 1
@@ -142,13 +145,13 @@ execute if score @s uhcp_a_count matches 1.. run return 125
 execute store success score @s uhcp_a_count run clear @s feather{augment:126s} 1
 execute if score @s uhcp_a_count matches 1.. run return 126
 
-execute store success score @s uhcp_a_count run clear @s stone_pickaxe{augment:127s} 1
+execute store success score @s uhcp_a_count run clear @s chest{augment:127s} 1
 execute if score @s uhcp_a_count matches 1.. run return 127
 
 execute store success score @s uhcp_a_count run clear @s cobweb{augment:128s} 1
 execute if score @s uhcp_a_count matches 1.. run return 128
 
-execute store success score @s uhcp_a_count run clear @s shulker_shell{augment:129s} 1
+execute store success score @s uhcp_a_count run clear @s shulker_box{augment:129s} 1
 execute if score @s uhcp_a_count matches 1.. run return 129
 
 execute store success score @s uhcp_a_count run clear @s turtle_helmet{augment:131s} 1
