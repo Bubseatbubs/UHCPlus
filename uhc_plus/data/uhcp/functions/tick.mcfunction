@@ -7,13 +7,12 @@ execute if score countdown tick matches 0 run function uhcp:start
 # Lava
 execute if score %uhcp_lavaStart uhcp_initStatus matches 1.. run function uhcp:lava/run
 
-# Player compass
-execute as @a[tag=UHCP_Compass] at @s run function uhcp:compass/item/adjust
-execute unless score %uhcp_compassTime uhcp_itemCount matches 1.. if entity @a[predicate=uhcp:compass/player_compass/hand,gamemode=survival] run function uhcp:compass
-execute unless score %uhcp_compassTime uhcp_itemCount matches ..0 run scoreboard players remove %uhcp_compassTime uhcp_itemCount 1
+# Crafting
+execute if entity @a[tag=UHCP_Craft] run function uhcp:crafting/item/determine
 
-# All-seeing eye
-execute as @a[tag=UHCP_EnderEye] at @s run function uhcp:glow/item/adjust
+# Player compass
+execute unless score %uhcp_compassTime uhcp_itemCount matches 1.. if entity @a[predicate=uhcp:compass/player_compass/hand,gamemode=survival] run function uhcp:player_compass
+execute unless score %uhcp_compassTime uhcp_itemCount matches ..0 run scoreboard players remove %uhcp_compassTime uhcp_itemCount 1
 
 # Hunger effect
 execute unless score %h_max uhcp_settings matches -100 if score %uhcp_hungerInit uhcp_initStatus matches 1.. as @a at @s run function uhcp:hunger/update

@@ -9,6 +9,6 @@
 		}
 	},
 	"rewards": {
-		"function": "uhcp:compass/reward"
+		"function": "uhcp:crafting/reward/player_compass"
 	}
 }

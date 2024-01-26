@@ -9,6 +9,6 @@
 		}
 	},
 	"rewards": {
-		"function": "uhcp:glow/reward"
+		"function": "uhcp:crafting/reward/glow"
 	}
 }
