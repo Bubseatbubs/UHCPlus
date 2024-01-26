@@ -4,3 +4,4 @@ tag @e[tag=UHCP_DimMark] remove UHCP_DimWork
 tag @e[tag=UHCP_DimMark,limit=1] add UHCP_DimWork
 
 # Notification
+tellraw @s {"text":"The Nether has closed.","color":"red"}
