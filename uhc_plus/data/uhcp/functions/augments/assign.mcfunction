@@ -90,7 +90,7 @@ execute if score @s uhcp_a_count matches 1.. run return 32
 execute store success score @s uhcp_a_count run clear @s totem_of_undying{augment:33b} 1
 execute if score @s uhcp_a_count matches 1.. run return 33
 
-execute store success score @s uhcp_a_count run clear @s enchanted_book{augment:34b} 1
+execute store success score @s uhcp_a_count run clear @s glass_bottle{augment:34b} 1
 execute if score @s uhcp_a_count matches 1.. run return 34
 
 execute store success score @s uhcp_a_count run clear @s copper_ingot{augment:35b} 1

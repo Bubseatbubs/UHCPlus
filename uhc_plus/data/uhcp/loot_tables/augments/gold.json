@@ -1236,7 +1236,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:enchanted_book",
+          "name": "minecraft:glass_bottle",
           "functions": [
             {
               "function": "set_count",
@@ -1250,7 +1250,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "Well Studied",
+                  "text": "Bottle Smasher",
                   "color": "gray",
                   "bold": true
                 }
@@ -1265,8 +1265,12 @@
                   "bold": true
                 },
                 {
-                  "text": "Start the game at Level 20.",
+                  "text": "Gain 40 ",
                   "color": "gray"
+                },
+                {
+                  "text": "Bottles o' Enchanting",
+                  "color": "white"
                 }
               ]
             }
