@@ -7,8 +7,8 @@ execute if score @s uhcp_a_stack matches ..1 run return 0
 # Summon bee
 tag @s add UHCP_Owner
 
-scoreboard players reset @e[distance=..50] uhcp_a_count
-execute as @e[tag=!UHCP_Owner,tag=!UHCP_Bee,type=!#uhcp:inanimate_mobs,distance=..50] store result score @s uhcp_a_count run function uhcp:augments/effects/gold/beekeeper/checkattacker
+scoreboard players reset @e[distance=..5] uhcp_a_count
+execute as @e[tag=!UHCP_Owner,tag=!UHCP_Bee,type=!#uhcp:inanimate_mobs,distance=..5] store result score @s uhcp_a_count run function uhcp:augments/effects/gold/beekeeper/checkattacker
 tag @e[scores={uhcp_a_count=1},sort=nearest,limit=1] add UHCP_BeeTarget
 execute at @e[tag=UHCP_BeeTarget] run playsound block.beehive.enter master @a[distance=..9] ~ ~ ~ 1 1 0.5
 execute at @e[tag=UHCP_BeeTarget] run particle falling_honey ~ ~2 ~ 0.25 0.5 0.25 0.1 15 normal
