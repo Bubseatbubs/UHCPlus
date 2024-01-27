@@ -239,12 +239,13 @@
         },    
         {
           "type": "minecraft:item",
-		  "weight": 2,
-          "name": "minecraft:gold_block",
+          "name": "minecraft:golden_apple",
+          "weight": "2",
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 8
+              "count": 3,
+              "add": false
             }
           ]
         }
