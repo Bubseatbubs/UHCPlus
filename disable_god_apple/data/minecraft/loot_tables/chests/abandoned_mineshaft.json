@@ -10,17 +10,12 @@
           "name": "minecraft:golden_apple"
         },
         {
-          "rolls": 1,
-          "entries": [
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "functions": [
             {
-              "type": "minecraft:item",
-              "name": "minecraft:golden_apple",
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": 3
-                }
-              ]
+              "function": "minecraft:set_count",
+              "count": 3
             }
           ]
         },
