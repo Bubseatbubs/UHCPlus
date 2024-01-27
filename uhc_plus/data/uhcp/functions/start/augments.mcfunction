@@ -5,4 +5,5 @@ effect give @s resistance 45 4 true
 effect give @s mining_fatigue 45 255 true
 effect give @s weakness 45 4 true
 function uhcp:augments/optionselect
-gamemode adventure
+scoreboard players set %uhcp_augments uhcp_initStatus 1
+gamemode adventure @s

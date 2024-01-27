@@ -17,4 +17,3 @@ execute at @s run summon firework_rocket ~ ~7 ~ {FireworksItem:{id:"firework_roc
 
 # Final Cleanup
 tag @s add UHCP_ChoosingItem
-scoreboard players set %uhcp_augments uhcp_initStatus 1

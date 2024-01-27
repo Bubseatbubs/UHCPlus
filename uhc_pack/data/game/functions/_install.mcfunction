@@ -199,7 +199,7 @@ fill -13 300 13 13 305 -13 minecraft:barrier hollow
 fill -12 305 12 12 305 -12 minecraft:barrier
 fill -12 305 -12 12 305 12 minecraft:air
 
-tp @a 0 301 0
+execute in minecraft:overworld run tp @a 0 301 0
 
 summon minecraft:text_display 0 303 0 {Tags:["lobby","lobbycenter"],billboard:"center",text:'[{"text":"Cosmian","color":"red"},{"text":" | ","color":"white"},{"text":"UHC","color":"yellow"},{"text":" | ","color":"white"},{"text":"v3.37","color":"green"}]'}
 

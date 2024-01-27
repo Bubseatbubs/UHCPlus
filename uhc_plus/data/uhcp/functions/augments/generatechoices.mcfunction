@@ -4,24 +4,12 @@
 
 tag @s remove Aug_Reroll
 
-execute unless score %tier uhcp_a_tier = %tier uhcp_a_tier run loot replace entity @s hotbar.3 loot uhcp:augments/gold
-execute unless score %tier uhcp_a_tier = %tier uhcp_a_tier run loot replace entity @s hotbar.4 loot uhcp:augments/gold
-execute unless score %tier uhcp_a_tier = %tier uhcp_a_tier run loot replace entity @s hotbar.5 loot uhcp:augments/gold
+execute unless score %tier uhcp_a_tier = %tier uhcp_a_tier run function uhcp:augments/gold
+execute if score %tier uhcp_a_tier matches 0 run function uhcp:augments/silver
+execute if score %tier uhcp_a_tier matches 1 run function uhcp:augments/gold
+execute if score %tier uhcp_a_tier matches 2 run function uhcp:augments/prismatic
 
-execute if score %tier uhcp_a_tier matches 0 run loot replace entity @s hotbar.3 loot uhcp:augments/silver
-execute if score %tier uhcp_a_tier matches 0 run loot replace entity @s hotbar.4 loot uhcp:augments/silver
-execute if score %tier uhcp_a_tier matches 0 run loot replace entity @s hotbar.5 loot uhcp:augments/silver
-
-execute if score %tier uhcp_a_tier matches 1 run loot replace entity @s hotbar.3 loot uhcp:augments/gold
-execute if score %tier uhcp_a_tier matches 1 run loot replace entity @s hotbar.4 loot uhcp:augments/gold
-execute if score %tier uhcp_a_tier matches 1 run loot replace entity @s hotbar.5 loot uhcp:augments/gold
-
-execute if score %tier uhcp_a_tier matches 2 run loot replace entity @s hotbar.3 loot uhcp:augments/prismatic
-execute if score %tier uhcp_a_tier matches 2 run loot replace entity @s hotbar.4 loot uhcp:augments/prismatic
-execute if score %tier uhcp_a_tier matches 2 run loot replace entity @s hotbar.5 loot uhcp:augments/prismatic
-
-
-# Check for duplicates, if there are duplicates, reroll options again
+# Check for duplicates. If there are duplicates, reroll options.
 data remove storage minecraft:uhcp_augments Roll
 data modify storage minecraft:uhcp_augments Roll append from entity @s Inventory[{Slot:3b}].tag.augment
 data modify storage minecraft:uhcp_augments Roll append from entity @s Inventory[{Slot:4b}].tag.augment

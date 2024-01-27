@@ -30,8 +30,8 @@ scoreboard players set marker tick 0
 execute if entity @a[predicate=uhcp:teams/neither] run function uhcp:start/teams
 
 # Spreadplayers logic
-execute if score teamgame status matches 0 run function uhcp:start/spreadplayers/solo
-execute unless score teamgame status matches 0 run function uhcp:start/spreadplayers/teams
+execute if score teamgame status matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/solo
+execute unless score teamgame status matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/teams
 
 # Augment Selection
 # scoreboard players set %tier uhcp_a_tier 1

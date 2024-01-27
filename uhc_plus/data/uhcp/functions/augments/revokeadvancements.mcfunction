@@ -4,7 +4,7 @@
 scoreboard players set @s uhcp_a_validSelection 0
 
 # Revert Black Stained Glass Pane
-clear @s black_stained_glass_pane
+clear @s minecraft:black_stained_glass_pane
 function uhcp:augments/generatepanes
 
 advancement revoke @s only uhcp:augments/chosenitem

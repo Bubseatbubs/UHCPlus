@@ -136,5 +136,6 @@ datapack disable "file/lvl2pots"
 datapack disable "file/pregen"
 datapack disable "file/regenpots"
 
-# UHC Plus default dimension closing time
+# UHC Plus
 scoreboard players set %uhcp_dimTime uhcp_gameTime 48000
+scoreboard players reset @a top
