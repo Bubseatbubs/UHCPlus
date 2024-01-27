@@ -10,6 +10,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:golden_apple"
+    "function": "uhcp:kill_check"
   }
 }
