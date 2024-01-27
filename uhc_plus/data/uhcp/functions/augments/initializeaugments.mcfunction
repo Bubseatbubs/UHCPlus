@@ -82,5 +82,6 @@ execute if score @s uhcp_a_selectedAugment matches 227 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 228 run function uhcp:augments/effects/prismatic/trapgod
 execute if score @s uhcp_a_selectedAugment matches 229 run function uhcp:augments/effects/prismatic/youhavemyrod
 
+scoreboard players reset @s uhcp_a_stack
 particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.25 100 normal
 
