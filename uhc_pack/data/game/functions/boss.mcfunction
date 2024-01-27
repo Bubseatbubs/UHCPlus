@@ -7,7 +7,7 @@ item replace entity @s armor.legs with minecraft:netherite_leggings{Unbreakable:
 item replace entity @s armor.feet with minecraft:netherite_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:5},{id:"minecraft:depth_strider",lvl:3},{id:"minecraft:feather_falling",lvl:4}]}
 item replace entity @s weapon.offhand with minecraft:shield{Unbreakable:1b}
 
-give @s netherite_axe{display:{Name:"\"Cosmic Smasher\""},Unbreakable:1b,Enchantments:[{id:sharpness,lvl:10},{id:fire_aspect,lvl:2},{id:efficiency,lvl:5}]} 1
+give @s netherite_axe{display:{Name:'{"text":"Cosmic Smasher"}'},Unbreakable:1b,Enchantments:[{id:"minecraft:sharpness",lvl:10},{id:"minecraft:fire_aspect",lvl:2},{id:"minecraft:efficiency",lvl:5}]} 1
 give @s minecraft:bow{Unbreakable:1b,Enchantments:[{id:"power",lvl:10},{id:"minecraft:flame",lvl:1},{id:"minecraft:infinity",lvl:1}]}
 give @s minecraft:enchanted_golden_apple 64
 give @s minecraft:water_bucket

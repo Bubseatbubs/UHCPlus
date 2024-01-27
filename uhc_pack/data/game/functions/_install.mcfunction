@@ -28,9 +28,11 @@ scoreboard objectives add timedeath minecraft.custom:minecraft.time_since_death
 scoreboard objectives add team trigger
 scoreboard objectives add options trigger
 execute in minecraft:overworld run gamerule announceAdvancements false
+execute in minecraft:the_end run gamerule announceAdvancements false
 execute in minecraft:the_nether run gamerule announceAdvancements false
 scoreboard objectives remove ch_help
 execute in minecraft:overworld run gamerule sendCommandFeedback false
+execute in minecraft:the_end run gamerule sendCommandFeedback false
 execute in minecraft:the_nether run gamerule sendCommandFeedback false
 
 scoreboard objectives setdisplay list hearts
@@ -177,10 +179,12 @@ scoreboard players set stage status 1
 execute in minecraft:overworld run gamerule doWeatherCycle false
 execute in minecraft:the_nether run gamerule doWeatherCycle false
 execute in minecraft:overworld run gamerule doDaylightCycle false
-execute in minecraft:the_nether run gamerule doDaylightCycle false
-weather clear
-time set 0
-gamerule commandBlockOutput false
+execute in minecraft:overworld run weather clear
+execute in minecraft:the_nether run weather clear
+execute in minecraft:overworld run time set 0
+execute in minecraft:overworld run gamerule commandBlockOutput false
+execute in minecraft:the_end run gamerule commandBlockOutput false
+execute in minecraft:the_nether run gamerule commandBlockOutput false
 scoreboard players set countdown tick 120
 worldborder damage buffer 1000000
 
@@ -242,13 +246,13 @@ scoreboard players set hp status 20
 
 #Fast leaf decay_off
 scoreboard players set decay status 1
-execute in minecraft:overworld run gamerule randomTickSpeed 23
-execute in minecraft:the_nether run gamerule randomTickSpeed 23
+execute in minecraft:the_end run gamerule randomTickSpeed 3
+execute in minecraft:the_nether run gamerule randomTickSpeed 3
+execute in minecraft:overworld run gamerule randomTickSpeed 18
 
 #Phantoms
 scoreboard players set phantoms status 0
 execute in minecraft:overworld run gamerule doInsomnia false
-execute in minecraft:the_nether run gamerule doInsomnia false
 
 #Bonus tools
 scoreboard players set tools status 0
@@ -287,7 +291,9 @@ scoreboard players set EternalDay setting 20
 scoreboard players set FinalArenaSize setting 200
 
 #Minecraft Difficulty
-difficulty normal
+execute in minecraft:overworld run difficulty normal
+execute in minecraft:the_end run difficulty normal
+execute in minecraft:the_nether run difficulty normal
 scoreboard players set minecraft status 2
 
 #Nether Travel

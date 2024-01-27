@@ -6,6 +6,7 @@ setworldspawn ~ ~ ~
 worldborder set 59000000
 worldborder damage buffer 5
 execute in minecraft:overworld run gamerule sendCommandFeedback true
+execute in minecraft:the_end run gamerule sendCommandFeedback true
 execute in minecraft:the_nether run gamerule sendCommandFeedback true
 
 scoreboard objectives remove tick 
@@ -46,12 +47,11 @@ kill @e[tag=lobbycenter]
 kill @e[tag=lobby]
 gamemode creative @s
 
-weather rain 2
-time set 0
 execute in minecraft:overworld run gamerule doWeatherCycle true
 execute in minecraft:the_nether run gamerule doWeatherCycle true
 execute in minecraft:overworld run gamerule doDaylightCycle true
-execute in minecraft:the_nether run gamerule doDaylightCycle true
+execute in minecraft:overworld run weather rain 2
+execute in minecraft:overworld run time set 0
 execute as @a at @s run attribute @s minecraft:generic.max_health base set 20
 
 team remove 1

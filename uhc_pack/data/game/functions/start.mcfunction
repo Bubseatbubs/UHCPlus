@@ -43,18 +43,23 @@ execute if score daynite status matches 1 run execute if score daydice tick matc
 execute if score daynite status matches 1 run execute if score daydice tick matches 25 run time set 0
 
 #Game Settings
-execute if score weather status matches 1 run gamerule doWeatherCycle true
-execute if score weather status matches 1 run gamerule doWeatherCycle true
-execute if score weather status matches 1 run weather rain 2s
-execute if score weather status matches 0 run gamerule doWeatherCycle false
-execute if score weather status matches 0 run weather clear
-gamerule doDaylightCycle true
+execute if score weather status matches 1 in minecraft:overworld run gamerule doWeatherCycle true
+execute if score weather status matches 1 in minecraft:the_nether run gamerule doWeatherCycle true
+execute if score weather status matches 1 in minecraft:overworld run weather rain 2s
+execute if score weather status matches 0 in minecraft:overworld run gamerule doWeatherCycle false
+execute if score weather status matches 0 in minecraft:the_nether run gamerule doWeatherCycle false
+execute if score weather status matches 0 in minecraft:overworld run weather clear
+execute if score weather status matches 0 in minecraft:the_nether run weather clear
+# Why is there no check for daylight cycle?
+# Seems strange that this is not an option when weather cycle is. -Aidan
+execute in minecraft:overworld run gamerule doDaylightCycle true
 scoreboard players set @a ch_toggleConst 1
 
 gamemode survival @a
 clear @a
-execute in minecraft:overworld naturalRegeneration false
-execute in minecraft:the_nether naturalRegeneration false
+execute in minecraft:overworld run gamerule naturalRegeneration false
+execute in minecraft:the_end run gamerule naturalRegeneration false
+execute in minecraft:the_nether run gamerule naturalRegeneration false
 
 #Nametags Toggle
 execute if score nametags status matches 1 run function game:options/nametags_on
