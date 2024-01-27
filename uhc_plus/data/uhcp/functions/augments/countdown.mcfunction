@@ -30,6 +30,7 @@ kill @e[tag=UHCP_Lock]
 effect clear @a[gamemode=survival]
 effect give @a[gamemode=survival] speed 15 0 false
 effect give @a[gamemode=survival] resistance 120 4 false
+effect give @a[gamemode=survival] haste infinite 0 true
 
 # Boots Effect (from UHC Pack)
 execute as @a[gamemode=survival] at @s if biome ~ ~ ~ minecraft:snowy_beach run item replace entity @s[gamemode=survival] armor.feet with minecraft:leather_boots
