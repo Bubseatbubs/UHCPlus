@@ -34,6 +34,7 @@ scoreboard objectives remove ch_help
 execute in minecraft:overworld run gamerule sendCommandFeedback false
 execute in minecraft:the_end run gamerule sendCommandFeedback false
 execute in minecraft:the_nether run gamerule sendCommandFeedback false
+worldborder damage amount .02
 
 scoreboard objectives setdisplay list hearts
 scoreboard objectives setdisplay sidebar setting

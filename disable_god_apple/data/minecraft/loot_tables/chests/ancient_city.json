@@ -11,18 +11,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "name": "minecraft:golden_apple",
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": {
-                "min": 8.0,
-                "max": 8.0,
-                "type": "minecraft:uniform"
-              }
+              "count": 3,
+              "add": false
             }
-          ],
-          "name": "minecraft:gold_block"
+          ]
         },
         {
           "type": "minecraft:item",
