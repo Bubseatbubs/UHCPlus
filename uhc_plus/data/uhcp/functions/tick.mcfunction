@@ -35,7 +35,7 @@ execute unless score %uhcp_hungerInit uhcp_initStatus matches 1.. if score %hung
 
 # Top Command
 scoreboard players enable @a top
-execute as @a at @s if score @s top matches 1.. run function uhcp:top/check
+execute if entity @a[scores={top=1..}] run function uhcp:top/validate
 execute as @a at @s if score @s uhcp_topDelay matches 1.. run function uhcp:top/finish
 execute as @a if score @s uhcp_topCD matches 1.. run scoreboard players remove @s uhcp_topCD 1
 execute as @a[tag=uhcp_isTeleporting] at @s run execute unless entity @e[type=marker,tag=uhcp_topCheck,distance=..1] run function uhcp:top/cancel
