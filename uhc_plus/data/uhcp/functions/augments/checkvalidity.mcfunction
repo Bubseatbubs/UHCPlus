@@ -27,8 +27,8 @@ execute in uhcp:main as @s run item replace block 0 -64 0 container.1 from entit
 execute in uhcp:main as @s run item replace block 0 -64 0 container.2 from entity @s hotbar.5
 
 # Based on if selection was valid, continue with optionselected, else return the item
-execute at @s as @s[scores={uhcp_a_validSelection=0},tag=!UHCP_DisableChoose] run function uhcp:augments/optionselected
-execute at @s as @s[scores={uhcp_a_validSelection=1},tag=!UHCP_DisableChoose] run function uhcp:augments/returnitem
+execute as @s[scores={uhcp_a_validSelection=0},tag=!UHCP_DisableChoose] at @s run function uhcp:augments/optionselected
+execute as @s[scores={uhcp_a_validSelection=1},tag=!UHCP_DisableChoose] at @s run function uhcp:augments/returnitem
 tag @s[tag=UHCP_DisableChoose] remove UHCP_DisableChoose
 
 advancement revoke @s only uhcp:augments/chosenitem

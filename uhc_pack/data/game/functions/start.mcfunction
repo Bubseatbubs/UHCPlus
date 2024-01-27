@@ -2,45 +2,45 @@
 scoreboard objectives setdisplay sidebar.team.black hearts
 scoreboard objectives setdisplay sidebar
 
-
+# Moved to uhcp:start
 #World setting
-execute if score TotalWorldSize setting matches 1000 run worldborder set 1000
-execute if score TotalWorldSize setting matches 1500 run worldborder set 1500
-execute if score TotalWorldSize setting matches 2000 run worldborder set 2000
-execute if score TotalWorldSize setting matches 2500 run worldborder set 2500
-execute if score TotalWorldSize setting matches 3000 run worldborder set 3000
-execute if score TotalWorldSize setting matches 4000 run worldborder set 4000
-execute if score TotalWorldSize setting matches 5000 run worldborder set 5000
-execute if score TotalWorldSize setting matches 7000 run worldborder set 7000
-execute if score TotalWorldSize setting matches 10000 run worldborder set 10000
+#execute if score TotalWorldSize setting matches 1000 run worldborder set 1000
+#execute if score TotalWorldSize setting matches 1500 run worldborder set 1500
+#execute if score TotalWorldSize setting matches 2000 run worldborder set 2000
+#execute if score TotalWorldSize setting matches 2500 run worldborder set 2500
+#execute if score TotalWorldSize setting matches 3000 run worldborder set 3000
+#execute if score TotalWorldSize setting matches 4000 run worldborder set 4000
+#execute if score TotalWorldSize setting matches 5000 run worldborder set 5000
+#execute if score TotalWorldSize setting matches 7000 run worldborder set 7000
+#execute if score TotalWorldSize setting matches 10000 run worldborder set 10000
 
-
+# Moved to uhcp:start
 #Random day/night start
-execute if score daynite status matches 1 run execute if score daydice tick matches 1 run time set 0
-execute if score daynite status matches 1 run execute if score daydice tick matches 2 run time set 1000
-execute if score daynite status matches 1 run execute if score daydice tick matches 3 run time set 2000
-execute if score daynite status matches 1 run execute if score daydice tick matches 4 run time set 3000
-execute if score daynite status matches 1 run execute if score daydice tick matches 5 run time set 4000
-execute if score daynite status matches 1 run execute if score daydice tick matches 6 run time set 5000
-execute if score daynite status matches 1 run execute if score daydice tick matches 7 run time set 6000
-execute if score daynite status matches 1 run execute if score daydice tick matches 8 run time set 7000
-execute if score daynite status matches 1 run execute if score daydice tick matches 9 run time set 8000
-execute if score daynite status matches 1 run execute if score daydice tick matches 10 run time set 9000
-execute if score daynite status matches 1 run execute if score daydice tick matches 11 run time set 10000
-execute if score daynite status matches 1 run execute if score daydice tick matches 12 run time set 11000
-execute if score daynite status matches 1 run execute if score daydice tick matches 13 run time set 12000
-execute if score daynite status matches 1 run execute if score daydice tick matches 14 run time set 13000
-execute if score daynite status matches 1 run execute if score daydice tick matches 15 run time set 14000
-execute if score daynite status matches 1 run execute if score daydice tick matches 16 run time set 15000
-execute if score daynite status matches 1 run execute if score daydice tick matches 17 run time set 16000
-execute if score daynite status matches 1 run execute if score daydice tick matches 18 run time set 17000
-execute if score daynite status matches 1 run execute if score daydice tick matches 19 run time set 18000
-execute if score daynite status matches 1 run execute if score daydice tick matches 20 run time set 19000
-execute if score daynite status matches 1 run execute if score daydice tick matches 21 run time set 20000
-execute if score daynite status matches 1 run execute if score daydice tick matches 22 run time set 21000
-execute if score daynite status matches 1 run execute if score daydice tick matches 23 run time set 22000
-execute if score daynite status matches 1 run execute if score daydice tick matches 24 run time set 23000
-execute if score daynite status matches 1 run execute if score daydice tick matches 25 run time set 0
+#execute if score daynite status matches 1 run execute if score daydice tick matches 1 run time set 0
+#execute if score daynite status matches 1 run execute if score daydice tick matches 2 run time set 1000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 3 run time set 2000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 4 run time set 3000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 5 run time set 4000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 6 run time set 5000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 7 run time set 6000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 8 run time set 7000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 9 run time set 8000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 10 run time set 9000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 11 run time set 10000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 12 run time set 11000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 13 run time set 12000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 14 run time set 13000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 15 run time set 14000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 16 run time set 15000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 17 run time set 16000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 18 run time set 17000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 19 run time set 18000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 20 run time set 19000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 21 run time set 20000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 22 run time set 21000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 23 run time set 22000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 24 run time set 23000
+#execute if score daynite status matches 1 run execute if score daydice tick matches 25 run time set 0
 
 #Game Settings
 execute if score weather status matches 1 in minecraft:overworld run gamerule doWeatherCycle true
@@ -55,7 +55,8 @@ execute if score weather status matches 0 in minecraft:the_nether run weather cl
 execute in minecraft:overworld run gamerule doDaylightCycle true
 scoreboard players set @a ch_toggleConst 1
 
-gamemode survival @a
+# UHC Plus will set players to adventure
+#gamemode survival @a
 clear @a
 execute in minecraft:overworld run gamerule naturalRegeneration false
 execute in minecraft:the_end run gamerule naturalRegeneration false
@@ -158,8 +159,3 @@ xp set @a 0 levels
 xp set @a 0 points
 effect give @a minecraft:health_boost 2 0 true
 #schedule function game:boots 6s
-
-
-
-
-

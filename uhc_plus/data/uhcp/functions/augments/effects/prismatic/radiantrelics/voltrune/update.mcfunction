@@ -21,4 +21,3 @@ scoreboard players set @s uhcp_a_timer 0
 execute unless score @s uhcp_gameTime matches 150.. run return 0
 summon minecraft:lightning_bolt ~ ~-1 ~
 kill @s
-

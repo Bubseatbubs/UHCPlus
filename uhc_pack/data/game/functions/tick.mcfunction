@@ -50,7 +50,9 @@ execute if score countdown tick matches 0 run function game:start
 
 #Reset Timers
 execute if score marker tick matches 23980 run scoreboard players add marker status 20
-execute if score marker tick matches 23999 run worldborder damage buffer 1
+execute if score marker tick matches 23999 in minecraft:overworld run worldborder damage buffer 1
+execute if score marker tick matches 23999 in minecraft:the_end run worldborder damage buffer 1
+execute if score marker tick matches 23999 in minecraft:the_nether run worldborder damage buffer 1
 execute if score marker tick matches 24000.. run scoreboard players set marker tick 0
 
 #Border

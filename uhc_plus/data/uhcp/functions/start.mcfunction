@@ -9,6 +9,20 @@ execute if score %uhcp_dimTime uhcp_gameTime matches ..-1 run scoreboard players
 scoreboard objectives setdisplay sidebar uhcp_displayTime
 scoreboard objectives setdisplay below_name hearts
 
+# Determine worldborder size
+execute if score TotalWorldSize setting matches 1000 run function uhcp:start/worldborder/1000
+execute if score TotalWorldSize setting matches 1500 run function uhcp:start/worldborder/1500
+execute if score TotalWorldSize setting matches 2000 run function uhcp:start/worldborder/2000
+execute if score TotalWorldSize setting matches 2500 run function uhcp:start/worldborder/2500
+execute if score TotalWorldSize setting matches 3000 run function uhcp:start/worldborder/3000
+execute if score TotalWorldSize setting matches 4000 run function uhcp:start/worldborder/4000
+execute if score TotalWorldSize setting matches 5000 run function uhcp:start/worldborder/5000
+execute if score TotalWorldSize setting matches 7000 run function uhcp:start/worldborder/7000
+execute if score TotalWorldSize setting matches 10000 run function uhcp:start/worldborder/10000
+
+# Random day/night start
+execute if score daynite status matches 1 run function uhcp:start/randomtime/determine
+
 # Reset UHC Pack Timer to sync up
 scoreboard players set marker tick 0
 

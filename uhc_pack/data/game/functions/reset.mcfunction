@@ -1,10 +1,14 @@
 #Reset 
 title @a title {"text":"UHC: RESET!","color":"red"}
 playsound minecraft:entity.husk.converted_to_zombie master @a ~ ~ ~ 1000000 0 1
-fill -13 300 13 13 305 -13 minecraft:air
-setworldspawn ~ ~ ~
-worldborder set 59000000
-worldborder damage buffer 5
+execute in minecraft:overworld run fill -13 300 13 13 305 -13 minecraft:air
+execute in minecraft:overworld run setworldspawn 0 68 0
+execute in minecraft:overworld run worldborder set 59000000
+execute in minecraft:the_end run worldborder set 59000000
+execute in minecraft:the_nether run worldborder set 59000000
+execute in minecraft:overworld run worldborder damage buffer 5
+execute in minecraft:the_end run worldborder damage buffer 5
+execute in minecraft:the_nether run worldborder damage buffer 5
 execute in minecraft:overworld run gamerule sendCommandFeedback true
 execute in minecraft:the_end run gamerule sendCommandFeedback true
 execute in minecraft:the_nether run gamerule sendCommandFeedback true
@@ -39,8 +43,8 @@ scoreboard players set @a ch_toggleConst 0
 
 clear @a
 effect give @a minecraft:regeneration 5 255 true
-time set 0
-tp 0 200 0
+execute in minecraft:overworld run time set 0
+execute in minecraft:overworld run tp 0 200 0
 datapack enable "file/pregen"
 effect clear @a
 kill @e[tag=lobbycenter]
@@ -132,5 +136,5 @@ datapack disable "file/lvl2pots"
 datapack disable "file/pregen"
 datapack disable "file/regenpots"
 
-# UHC Plus
+# UHC Plus default dimension closing time
 scoreboard players set %uhcp_dimTime uhcp_gameTime 48000

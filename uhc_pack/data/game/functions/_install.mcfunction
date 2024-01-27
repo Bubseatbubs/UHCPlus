@@ -34,7 +34,9 @@ scoreboard objectives remove ch_help
 execute in minecraft:overworld run gamerule sendCommandFeedback false
 execute in minecraft:the_end run gamerule sendCommandFeedback false
 execute in minecraft:the_nether run gamerule sendCommandFeedback false
-worldborder damage amount .02
+execute in minecraft:overworld run worldborder damage amount .02
+execute in minecraft:the_end run worldborder damage amount .02
+execute in minecraft:the_nether run worldborder damage amount .02
 
 scoreboard objectives setdisplay list hearts
 scoreboard objectives setdisplay sidebar setting
@@ -187,7 +189,9 @@ execute in minecraft:overworld run gamerule commandBlockOutput false
 execute in minecraft:the_end run gamerule commandBlockOutput false
 execute in minecraft:the_nether run gamerule commandBlockOutput false
 scoreboard players set countdown tick 120
-worldborder damage buffer 1000000
+execute in minecraft:overworld run worldborder damage buffer 1000000
+execute in minecraft:the_end run worldborder damage buffer 1000000
+execute in minecraft:the_nether run worldborder damage buffer 1000000
 
 tag @s add admin
 fill -13 299 13 13 299 -13 minecraft:barrier
@@ -302,8 +306,10 @@ scoreboard players set nether status 1
 
 
 
-worldborder center 0.5 0.5
-setworldspawn ~ ~ ~
+execute in minecraft:overworld run worldborder center 0.5 0.5
+execute in minecraft:the_end run worldborder center 0.5 0.5
+execute in minecraft:the_nether run worldborder center 0.5 0.5
+execute in minecraft:overworld run setworldspawn 0 68 0
 
 
 playsound minecraft:entity.player.levelup hostile @a ~ ~ ~ 1000000 1 1
@@ -312,31 +318,3 @@ title @a subtitle {"text":"Installed Successfully","color":"blue"}
 
 datapack enable "file/pregen"
 function game:setting
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

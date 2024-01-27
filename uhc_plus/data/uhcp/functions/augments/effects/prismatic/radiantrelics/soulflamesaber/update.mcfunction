@@ -11,4 +11,3 @@ tag @s remove UHCP_Damage
 
 execute if score @s uhcp_a_timer matches 100.. run playsound block.fire.extinguish master @a[distance=..9] ~ ~ ~ 1 1 0.5
 execute if score @s uhcp_a_timer matches 100.. run kill @s
-
