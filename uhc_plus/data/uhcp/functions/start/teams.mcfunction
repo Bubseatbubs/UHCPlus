@@ -1,8 +1,10 @@
-# Select by gamemode
+# Select by gamemode (just tag everyone)
 tag @a remove UHCP_TeamJoin
-tag @a[gamemode=adventure] add UHCP_TeamJoin
-tag @a[gamemode=creative] add UHCP_TeamJoin
-tag @a[gamemode=survival] add UHCP_TeamJoin
+#tag @a[gamemode=adventure] add UHCP_TeamJoin
+#tag @a[gamemode=creative] add UHCP_TeamJoin
+#tag @a[gamemode=spectator] add UHCP_TeamJoin
+#tag @a[gamemode=survival] add UHCP_TeamJoin
+tag @a add UHCP_TeamJoin
 
 # Join teams
 team join 1 @r[tag=UHCP_TeamJoin,predicate=uhcp:teams/neither]

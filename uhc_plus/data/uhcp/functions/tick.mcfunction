@@ -17,21 +17,16 @@ execute if entity @a[tag=UHCP_Craft] run function uhcp:crafting/item/determine
 execute unless score %uhcp_compassTime uhcp_itemCount matches 1.. if entity @a[predicate=uhcp:compass/player_compass/hand,gamemode=survival] run function uhcp:player_compass
 execute unless score %uhcp_compassTime uhcp_itemCount matches ..0 run scoreboard players remove %uhcp_compassTime uhcp_itemCount 1
 
-# Hunger effect
-execute unless score %h_max uhcp_settings matches -100 if score %uhcp_hungerInit uhcp_initStatus matches 1.. as @a at @s run function uhcp:hunger/update
-scoreboard players enable @a hunger
-execute as @a if score @s hunger matches 1.. unless score %uhcp_hungerInit uhcp_initStatus matches 1.. at @s run function uhcp:hunger/init
-execute as @a if score @s hunger matches 1.. if score %uhcp_hungerInit uhcp_initStatus matches 1.. at @s run function uhcp:hunger/disable
+# Hunger system
+execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:hunger
 
 # Settings menu
 execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uhcp:settings/change
 scoreboard players enable @a menu
 execute as @a at @s if score @s menu matches 1.. run function uhcp:settings/menu
 
-# Timers
+# Timer
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run scoreboard players add %time uhcp_gameTime 1
-execute unless score %uhcp_hungerInit uhcp_initStatus matches 1.. if score %h_set uhcp_settings matches 0 if score %uhcp_init uhcp_initStatus matches 1.. run scoreboard players add %hunger_timer uhcp_gameTime 1
-execute unless score %uhcp_hungerInit uhcp_initStatus matches 1.. if score %hunger_timer uhcp_gameTime matches 48000..50000 as @a run function uhcp:hunger/init
 
 # Top Command
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run scoreboard players enable @a top
@@ -45,7 +40,7 @@ execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
 
 # Augments
 execute as @e[predicate=uhcp:augments/birdfeather] at @s run function uhcp:augments/effects/gold/birdsofafeather/teleport
-execute as @e[type=bee,tag=UHCP_Bee] at @s run function uhcp:augments/effects/gold/beekeeper/update
+execute as @e[type=minecraft:bee,tag=UHCP_Bee] at @s run function uhcp:augments/effects/gold/beekeeper/update
 execute as @e[tag=UHCP_Saber] at @s run function uhcp:augments/effects/prismatic/radiantrelics/soulflamesaber/update
 execute as @e[tag=UHCP_Voltrune] at @s run function uhcp:augments/effects/prismatic/radiantrelics/voltrune/update
 

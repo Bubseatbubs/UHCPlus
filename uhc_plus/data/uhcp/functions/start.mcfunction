@@ -1,5 +1,6 @@
 # Start game
 scoreboard players reset %time uhcp_gameTime
+scoreboard players reset @a uhcp_topCD
 scoreboard players set %uhcp_gameStart uhcp_initStatus 1
 scoreboard players set %AUG_7 uhcp_gameTime 2400
 scoreboard players set %AUG_15 uhcp_gameTime 2400
@@ -37,4 +38,4 @@ execute unless score teamgame status matches 0 in minecraft:overworld run functi
 # scoreboard players set %tier uhcp_a_tier 1
 scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 900
 bossbar set uhcp_augment players @a
-execute as @a[gamemode=survival] run function uhcp:start/augments
+execute as @a run function uhcp:start/augments
