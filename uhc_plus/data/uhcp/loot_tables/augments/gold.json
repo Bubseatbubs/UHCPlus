@@ -1837,7 +1837,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{HideFlags:32,pickup:1b,augment:37b}"
+              "tag": "{pickup:1b,augment:37b}"
             },
             {
               "function": "set_name",
