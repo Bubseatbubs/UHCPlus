@@ -14,7 +14,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{HideFlags:1,thaumaturgy:1b,Enchantments:[{id:\"minecraft:protection\",lvl:0s}]}"
+              "tag": "{HideFlags:1,thaumaturgy:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "set_name",
@@ -661,7 +661,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{laserbeam:1b,Enchantments:[{}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUID:[I;-1104936638,761023878,-1812874414,-2067877940],Slot:\"mainhand\"},{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:0.5,Operation:0,UUID:[I;-622936764,-1120188004,-1568779345,167940201],Slot:\"mainhand\"}]}"
+              "tag": "{laserbeam:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUID:[I;-1104936638,761023878,-1812874414,-2067877940],Slot:\"mainhand\"},{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:0.5,Operation:0,UUID:[I;-622936764,-1120188004,-1568779345,167940201],Slot:\"mainhand\"}]}"
             },
             {
               "function": "set_name",

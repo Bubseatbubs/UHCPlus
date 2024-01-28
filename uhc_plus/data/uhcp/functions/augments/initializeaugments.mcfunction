@@ -77,6 +77,7 @@ execute if score @s uhcp_a_selectedAugment matches 215 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 216 run function uhcp:augments/effects/prismatic/potionmaster
 execute if score @s uhcp_a_selectedAugment matches 217 run function uhcp:augments/effects/prismatic/primetarget
 execute if score @s uhcp_a_selectedAugment matches 220 run function uhcp:augments/effects/prismatic/restierplayer
+execute if score @s uhcp_a_selectedAugment matches 222 run function uhcp:augments/effects/prismatic/sololeveling
 execute if score @s uhcp_a_selectedAugment matches 224 run function uhcp:augments/effects/prismatic/starterkitiii
 execute if score @s uhcp_a_selectedAugment matches 226 run function uhcp:augments/effects/prismatic/therabbit
 execute if score @s uhcp_a_selectedAugment matches 227 run function uhcp:augments/effects/prismatic/totheskies
@@ -85,4 +86,3 @@ execute if score @s uhcp_a_selectedAugment matches 229 run function uhcp:augment
 
 scoreboard players reset @s uhcp_a_stack
 particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.25 100 normal
-

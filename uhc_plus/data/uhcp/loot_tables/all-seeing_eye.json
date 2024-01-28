@@ -58,7 +58,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{uhcp_sight:1b,Enchantments:[{}]}"
+							"tag": "{uhcp_sight:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
 						}
 					]
 				}
