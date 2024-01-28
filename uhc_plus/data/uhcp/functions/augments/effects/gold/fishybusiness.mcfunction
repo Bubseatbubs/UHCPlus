@@ -1,3 +1,4 @@
 give @s leather_helmet{display:{color:4025087},HideFlags:192,Enchantments:[{id:"minecraft:respiration",lvl:3s},{id:"minecraft:aqua_affinity",lvl:1s},{id:"minecraft:unbreaking",lvl:3s}],Trim:{material:"minecraft:gold",pattern:"minecraft:wild"}} 1
 give @s leather_boots{display:{color:4025087},HideFlags:192,Enchantments:[{id:"minecraft:depth_strider",lvl:3s},{id:"minecraft:unbreaking",lvl:3s}],Trim:{material:"minecraft:gold",pattern:"minecraft:wild"}} 1
+give @s gold_ingot 10
 tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Fishy Business","color":"gold"},{"text":"!","color":"white"}]

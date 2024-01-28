@@ -96,6 +96,9 @@ execute if score @s uhcp_a_count matches 1.. run return 34
 execute store success score @s uhcp_a_count run clear @s copper_ingot{augment:35b} 1
 execute if score @s uhcp_a_count matches 1.. run return 35
 
+execute store success score @s uhcp_a_count run clear @s barrel{augment:37b} 1
+execute if score @s uhcp_a_count matches 1.. run return 37
+
 execute store success score @s uhcp_a_count run clear @s tnt{augment:38b} 1
 execute if score @s uhcp_a_count matches 1.. run return 38
 
