@@ -10,5 +10,5 @@ execute if score %apples uhcp_settings matches 5 run give @s golden_apple 5
 xp add @s 8 levels
 
 # Augments Check
-execute as @a[scores={uhcp_a_selectedAugment=30}] run function uhcp:augments/effects/gold/berserker
+execute as @s[scores={uhcp_a_selectedAugment=30}] run function uhcp:augments/effects/gold/berserker
 
