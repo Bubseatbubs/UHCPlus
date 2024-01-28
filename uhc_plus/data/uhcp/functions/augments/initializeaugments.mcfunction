@@ -29,6 +29,7 @@ execute if score @s uhcp_a_selectedAugment matches 129 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 131 run function uhcp:augments/effects/silver/taequalsta
 execute if score @s uhcp_a_selectedAugment matches 132 run function uhcp:augments/effects/silver/takeaim
 execute if score @s uhcp_a_selectedAugment matches 133 run function uhcp:augments/effects/silver/trapenthusiast
+execute if score @s uhcp_a_selectedAugment matches 134 run function uhcp:augments/effects/silver/reinforcements
 
 # Gold Augments
 execute if score @s uhcp_a_selectedAugment matches 0 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Bee Keeper","color":"gold"},{"text":"!","color":"white"}]
@@ -52,7 +53,6 @@ execute if score @s uhcp_a_selectedAugment matches 19 run function uhcp:augments
 execute if score @s uhcp_a_selectedAugment matches 20 run function uhcp:augments/effects/gold/moneymoney
 execute if score @s uhcp_a_selectedAugment matches 21 run function uhcp:augments/effects/gold/pearly
 execute if score @s uhcp_a_selectedAugment matches 22 run function uhcp:augments/effects/gold/protectprotocolii
-execute if score @s uhcp_a_selectedAugment matches 24 run function uhcp:augments/effects/silver/reinforcements
 execute if score @s uhcp_a_selectedAugment matches 25 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Second Wind","color":"gold"},{"text":"!","color":"white"}]
 execute if score @s uhcp_a_selectedAugment matches 26 run function uhcp:augments/effects/gold/shinyspawn
 execute if score @s uhcp_a_selectedAugment matches 27 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Sneaky Sneaky","color":"gold"},{"text":"!","color":"white"}]
