@@ -62,7 +62,7 @@ execute if score @s uhcp_a_selectedAugment matches 32 run function uhcp:augments
 execute if score @s uhcp_a_selectedAugment matches 33 run function uhcp:augments/effects/gold/villageidol
 execute if score @s uhcp_a_selectedAugment matches 34 run function uhcp:augments/effects/gold/bottlesmasher
 execute if score @s uhcp_a_selectedAugment matches 35 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Copper Collector","color":"gold"},{"text":"!","color":"white"}]
-execute if score @s uhcp_a_selectedAugment matches 38 run function uhcp:augments/effects/gold/likefishinabarrel
+execute if score @s uhcp_a_selectedAugment matches 37 run function uhcp:augments/effects/gold/likefishinabarrel
 execute if score @s uhcp_a_selectedAugment matches 38 run function uhcp:augments/effects/gold/oppenheimer
 
 # Prismatic Augments

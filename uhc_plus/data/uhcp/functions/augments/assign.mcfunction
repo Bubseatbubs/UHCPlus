@@ -66,9 +66,6 @@ execute if score @s uhcp_a_count matches 1.. run return 21
 execute store success score @s uhcp_a_count run clear @s iron_chestplate{augment:22b} 1
 execute if score @s uhcp_a_count matches 1.. run return 22
 
-execute store success score @s uhcp_a_count run clear @s white_banner{augment:134s} 1
-execute if score @s uhcp_a_count matches 1.. run return 134
-
 execute store success score @s uhcp_a_count run clear @s feather{augment:25b} 1
 execute if score @s uhcp_a_count matches 1.. run return 25
 
@@ -180,6 +177,9 @@ execute if score @s uhcp_a_count matches 1.. run return 132
 
 execute store success score @s uhcp_a_count run clear @s oak_trapdoor{augment:133s} 1
 execute if score @s uhcp_a_count matches 1.. run return 133
+
+execute store success score @s uhcp_a_count run clear @s white_banner{augment:134s} 1
+execute if score @s uhcp_a_count matches 1.. run return 134
 
 # Prismatic Augments
 execute store success score @s uhcp_a_count run clear @s bow{augment:201s} 1
