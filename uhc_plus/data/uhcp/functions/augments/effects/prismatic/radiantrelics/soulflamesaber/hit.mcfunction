@@ -2,6 +2,7 @@ advancement revoke @s only uhcp:augments/hurt_with_soulflame_saber
 tag @s add UHCP_Owner
 scoreboard players add @s uhcp_a_stack 1
 
+execute if score @s uhcp_a_stack matches 4 run playsound block.note_block.pling master @s ~ ~ ~ 1 1 1
 execute if score @s uhcp_a_stack matches ..4 run return 0
 
 scoreboard players reset @e[distance=..6] uhcp_a_count
