@@ -30,6 +30,7 @@ execute if score @s uhcp_a_selectedAugment matches 131 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 132 run function uhcp:augments/effects/silver/takeaim
 execute if score @s uhcp_a_selectedAugment matches 133 run function uhcp:augments/effects/silver/trapenthusiast
 execute if score @s uhcp_a_selectedAugment matches 134 run function uhcp:augments/effects/silver/reinforcements
+execute if score @s uhcp_a_selectedAugment matches 135 run function uhcp:augments/effects/silver/structurescout
 
 # Gold Augments
 execute if score @s uhcp_a_selectedAugment matches 0 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Bee Keeper","color":"gold"},{"text":"!","color":"white"}]

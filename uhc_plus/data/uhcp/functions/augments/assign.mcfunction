@@ -181,6 +181,9 @@ execute if score @s uhcp_a_count matches 1.. run return 133
 execute store success score @s uhcp_a_count run clear @s minecraft:white_banner{augment:134s} 1
 execute if score @s uhcp_a_count matches 1.. run return 134
 
+execute store success score @s uhcp_a_count run clear @s minecraft:spyglass{augment:135s} 1
+execute if score @s uhcp_a_count matches 1.. run return 135
+
 # Prismatic Augments
 execute store success score @s uhcp_a_count run clear @s minecraft:bow{augment:201s} 1
 execute if score @s uhcp_a_count matches 1.. run return 201

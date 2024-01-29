@@ -1538,6 +1538,55 @@
               ]
             }
           ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:spyglass",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:135s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Structure Scout",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "At the start of the game, spawn with an ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Elytra",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and teleport high into the sky. The Elytra disappears after 1 minute.",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
         }
       ]
     }
