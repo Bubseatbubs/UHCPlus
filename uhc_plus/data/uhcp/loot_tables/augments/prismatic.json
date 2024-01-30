@@ -14,7 +14,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:214s,Enchantments:[{}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:214s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "set_name",
@@ -85,7 +85,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:213s,Enchantments:[{}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:213s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "set_name",
@@ -134,7 +134,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:212s,Enchantments:[{}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:212s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "set_name",
@@ -183,7 +183,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:211s,Enchantments:[{}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:211s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "set_name",
@@ -240,7 +240,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:206s,Enchantments:[{}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:206s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "set_name",
@@ -293,7 +293,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:204s,Enchantments:[{}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:204s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "set_name",
@@ -356,7 +356,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:201s,Enchantments:[{}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:201s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "set_name",
@@ -453,7 +453,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:216s,Enchantments:[{}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:216s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "set_name",
@@ -508,7 +508,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:215s,Enchantments:[{}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:215s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "set_name",
@@ -601,7 +601,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:214s,Enchantments:[{}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:214s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "set_name",
@@ -1018,7 +1018,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:217s,Enchantments:[{}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:217s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "set_name",
