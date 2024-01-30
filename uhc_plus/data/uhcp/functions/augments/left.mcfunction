@@ -2,7 +2,7 @@
 gamemode survival @s
 bossbar set minecraft:uhcp_augment players
 ride @s dismount
-execute at @s run kill @e[tag=UHCP_Lock,distance=..20]
+execute at @s as @e[tag=UHCP_Lock,distance=..100] in uhcp:main run tp @s 0 -63 0
 
 effect clear @s
 effect give @s speed 15 0 false

@@ -25,7 +25,7 @@ execute if score %uhcp_augmentCountdown uhcp_gameTime matches 0.. run return 0
 # Ran once countdown reaches 0. Initializes the game as UHC Pack would've done, and gives all players their selected augments
 gamemode survival @a[gamemode=adventure]
 bossbar set minecraft:uhcp_augment players
-kill @e[tag=UHCP_Lock]
+execute in uhcp:main run tp @e[tag=UHCP_Lock] 0 -63 0
 
 effect clear @a[gamemode=survival]
 effect give @a[gamemode=survival] speed 15 0 false
