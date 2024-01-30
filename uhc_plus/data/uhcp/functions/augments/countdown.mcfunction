@@ -10,6 +10,9 @@ execute if score %uhcp_augmentCountdown uhcp_gameTime matches 880 as @a[gamemode
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 101.. unless entity @a[gamemode=adventure,tag=UHCP_ChoosingItem] run scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 100
 execute store result bossbar uhcp_augment value run scoreboard players get %uhcp_augmentCountdown uhcp_gameTime
 
+# Clear leave scoreboard
+scoreboard players reset @a[tag=UHCP_ChoosingItem] uhcp_a_leave
+
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 101.. run return 0
 
 # Countdown noise
