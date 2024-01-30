@@ -4,7 +4,6 @@
 
 tag @s remove Aug_Reroll
 
-execute unless score %tier uhcp_a_tier = %tier uhcp_a_tier run function uhcp:augments/gold
 execute if score %tier uhcp_a_tier matches 0 run function uhcp:augments/silver
 execute if score %tier uhcp_a_tier matches 1 run function uhcp:augments/gold
 execute if score %tier uhcp_a_tier matches 2 run function uhcp:augments/prismatic
