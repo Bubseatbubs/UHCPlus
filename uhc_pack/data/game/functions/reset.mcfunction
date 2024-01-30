@@ -52,7 +52,6 @@ kill @e[tag=lobby]
 gamemode creative @s
 
 execute in minecraft:overworld run gamerule doWeatherCycle true
-execute in minecraft:the_nether run gamerule doWeatherCycle true
 execute in minecraft:overworld run gamerule doDaylightCycle true
 execute in minecraft:overworld run weather rain 2
 execute in minecraft:overworld run time set 0

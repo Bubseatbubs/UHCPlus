@@ -180,10 +180,8 @@ team add 50
 #Prepare World
 scoreboard players set stage status 1
 execute in minecraft:overworld run gamerule doWeatherCycle false
-execute in minecraft:the_nether run gamerule doWeatherCycle false
 execute in minecraft:overworld run gamerule doDaylightCycle false
 execute in minecraft:overworld run weather clear
-execute in minecraft:the_nether run weather clear
 execute in minecraft:overworld run time set 0
 execute in minecraft:overworld run gamerule commandBlockOutput false
 execute in minecraft:the_end run gamerule commandBlockOutput false
