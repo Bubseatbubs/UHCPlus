@@ -474,83 +474,6 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:cooked_cod",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:9b}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Fishy Business",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Respiration III /",
-                    "color": "dark_purple"
-                  }
-                ],
-                {
-                  "text": "Unbreaking III / Aqua Affinity",
-                  "color": "dark_purple"
-                },
-                [
-                  {
-                    "text": "Leather Helmet",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Depth",
-                    "color": "dark_purple"
-                  }
-                ],
-                {
-                  "text": "Strider / Unbreaking III",
-                  "color": "dark_purple"
-                },
-                [
-                  {
-                    "text": "Leather Boots",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
           "name": "minecraft:golden_apple",
           "functions": [
             {
@@ -1555,7 +1478,7 @@
                 },
                 [
                   {
-                    "text": "Every 2 attacks, summon a friendly",
+                    "text": "Every 3 attacks, summon a friendly",
                     "color": "gray"
                   },
                   {
@@ -1900,6 +1823,99 @@
                 [
                   {
                     "text": " (20 second duration each).",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:trident",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:1,pickup:1b,augment:215s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Poseidon's Blessing",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Trident",
+                    "color": "white"
+                  },
+                  {
+                    "text": " with",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Riptide II / Unbreaking II",
+                    "color": "dark_purple"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "an",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Iron Helmet",
+                    "color": "white"
+                  },
+                  {
+                    "text": " with",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Respiration III / Unbreaking III /",
+                    "color": "dark_purple"
+                  }
+                ],
+                [
+                  {
+                    "text": "Aqua Affinity",
+                    "color": "dark_purple"
+                  },
+                  {
+                    "text": ". Start with ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Dolphin's Grace",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": ".",
                     "color": "gray"
                   }
                 ]
