@@ -191,7 +191,7 @@ execute if score @s uhcp_a_count matches 1.. run return 201
 execute store success score @s uhcp_a_count run clear @s minecraft:obsidian{augment:204s} 1
 execute if score @s uhcp_a_count matches 1.. run return 204
 
-execute store success score @s uhcp_a_count run clear @s minecraft:golden_apple{augment:206s} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:enchanted_golden_apple{augment:206s} 1
 execute if score @s uhcp_a_count matches 1.. run return 206
 
 execute store success score @s uhcp_a_count run clear @s minecraft:diamond_pickaxe{augment:211s} 1
@@ -209,7 +209,7 @@ execute if score @s uhcp_a_count matches 1.. run return 214
 execute store success score @s uhcp_a_count run clear @s minecraft:trident{augment:215s} 1
 execute if score @s uhcp_a_count matches 1.. run return 215
 
-execute store success score @s uhcp_a_count run clear @s minecraft:potion{augment:216s} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:brewing_stand{augment:216s} 1
 execute if score @s uhcp_a_count matches 1.. run return 216
 
 execute store success score @s uhcp_a_count run clear @s minecraft:target{augment:217s} 1
@@ -221,7 +221,7 @@ execute if score @s uhcp_a_count matches 1.. run return 220
 execute store success score @s uhcp_a_count run clear @s minecraft:wooden_sword{augment:222s} 1
 execute if score @s uhcp_a_count matches 1.. run return 222
 
-execute store success score @s uhcp_a_count run clear @s minecraft:miner_pottery_sherd{augment:224s} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:chest{augment:224s} 1
 execute if score @s uhcp_a_count matches 1.. run return 224
 
 execute store success score @s uhcp_a_count run clear @s minecraft:rabbit_foot{augment:226s} 1
