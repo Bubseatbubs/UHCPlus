@@ -4,6 +4,9 @@ scoreboard players remove @a[scores={uhcp_a_timer=0..2147483647}] uhcp_a_timer 1
 execute if score %time uhcp_gameTime matches 1200 as @a[scores={uhcp_a_selectedAugment=135}] run clear @s elytra
 execute if score %time uhcp_gameTime matches 1200 as @a[scores={uhcp_a_selectedAugment=135}] run setblock 0 250 0 air
 execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=18}] run function uhcp:augments/effects/gold/latelooter/haste
+execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=214}] run give @s obsidian 14
+execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=214}] run give @s flint_and_steel 1
+execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=214}] run give @s potion{Potion:"minecraft:long_fire_resistance"} 1
 execute if score %time uhcp_gameTime matches 54000 as @a[scores={uhcp_a_selectedAugment=5}] run function uhcp:augments/effects/gold/delayedprotection
 execute if score %time uhcp_gameTime matches 54000 as @a[scores={uhcp_a_selectedAugment=35}] run tellraw @s {"text":"Copper will convert to Gold in 5 minutes!","color":"red"}
 execute if score %time uhcp_gameTime matches 58800 as @a[scores={uhcp_a_selectedAugment=35}] run tellraw @s {"text":"Copper will convert to Gold in 1 minute!","color":"red"}

@@ -285,69 +285,6 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:obsidian",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:204s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Dimensional Traveler",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " 14 Obsidian, a Flint and Steel, and a Fire",
-                    "color": "white"
-                  },
-                  {
-                    "text": " ",
-                    "color": "red"
-                  }
-                ],
-                [
-                  {
-                    "text": "Resistance Potion (8 minute duration)",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "),",
-                    "color": "white"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
           "name": "minecraft:bow",
           "functions": [
             {

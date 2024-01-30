@@ -68,7 +68,6 @@ execute if score @s uhcp_a_selectedAugment matches 38 run function uhcp:augments
 
 # Prismatic Augments
 execute if score @s uhcp_a_selectedAugment matches 201 run function uhcp:augments/effects/prismatic/bowmaster
-execute if score @s uhcp_a_selectedAugment matches 204 run function uhcp:augments/effects/prismatic/dimensionaltraveler
 execute if score @s uhcp_a_selectedAugment matches 206 run function uhcp:augments/effects/prismatic/gapplegapiii
 execute if score @s uhcp_a_selectedAugment matches 211 run function uhcp:augments/effects/prismatic/intotheminesiii
 execute if score @s uhcp_a_selectedAugment matches 212 run function uhcp:augments/effects/prismatic/laststand
