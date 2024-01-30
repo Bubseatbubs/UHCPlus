@@ -48,6 +48,7 @@ execute as @e[tag=UHCP_Lasercorp] at @s run function uhcp:augments/effects/prism
 
 # Augment Countdown/Functions
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_augmentCountdown uhcp_gameTime matches 0.. as @a[tag=UHCP_ChoosingItem,scores={uhcp_a_leave=1..}] run function uhcp:augments/left
+execute if score %uhcp_gameStart uhcp_initStatus matches 1.. if score %uhcp_augmentCountdown uhcp_gameTime matches 0.. run scoreboard players reset @a[tag=UHCP_ChoosingItem,scores={uhcp_a_leave=1..}] uhcp_a_leave
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 0.. run function uhcp:augments/countdown
 function uhcp:augments/effects/timer
 
