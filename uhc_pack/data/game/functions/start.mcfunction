@@ -44,12 +44,9 @@ scoreboard objectives setdisplay sidebar
 
 #Game Settings
 execute if score weather status matches 1 in minecraft:overworld run gamerule doWeatherCycle true
-execute if score weather status matches 1 in minecraft:the_nether run gamerule doWeatherCycle true
 execute if score weather status matches 1 in minecraft:overworld run weather rain 2s
 execute if score weather status matches 0 in minecraft:overworld run gamerule doWeatherCycle false
-execute if score weather status matches 0 in minecraft:the_nether run gamerule doWeatherCycle false
 execute if score weather status matches 0 in minecraft:overworld run weather clear
-execute if score weather status matches 0 in minecraft:the_nether run weather clear
 # Why is there no check for daylight cycle?
 # Seems strange that this is not an option when weather cycle is. -Aidan
 execute in minecraft:overworld run gamerule doDaylightCycle true
