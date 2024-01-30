@@ -33,12 +33,12 @@ execute if score @s uhcp_a_selectedAugment matches 134 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 135 run function uhcp:augments/effects/silver/structurescout
 
 # Gold Augments
-execute if score @s uhcp_a_selectedAugment matches 0 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Bee Keeper","color":"gold"},{"text":"!","color":"white"}]
+execute if score @s uhcp_a_selectedAugment matches 0 run return 0
 execute if score @s uhcp_a_selectedAugment matches 1 run function uhcp:augments/effects/gold/birdsofafeather
 execute if score @s uhcp_a_selectedAugment matches 2 run function uhcp:augments/effects/gold/blooddiamonds
-execute if score @s uhcp_a_selectedAugment matches 3 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Bloodthirsty","color":"gold"},{"text":"!","color":"white"}]
+execute if score @s uhcp_a_selectedAugment matches 3 run return 0
 execute if score @s uhcp_a_selectedAugment matches 4 run function uhcp:augments/effects/gold/cowboycosplay
-execute if score @s uhcp_a_selectedAugment matches 5 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Delayed Protection","color":"gold"},{"text":"!","color":"white"}]
+execute if score @s uhcp_a_selectedAugment matches 5 run return 0
 execute if score @s uhcp_a_selectedAugment matches 7 run function uhcp:augments/effects/gold/dripeconomyii
 execute if score @s uhcp_a_selectedAugment matches 8 run function uhcp:augments/effects/gold/fireandwater
 execute if score @s uhcp_a_selectedAugment matches 9 run function uhcp:augments/effects/gold/fishybusiness
@@ -54,15 +54,15 @@ execute if score @s uhcp_a_selectedAugment matches 19 run function uhcp:augments
 execute if score @s uhcp_a_selectedAugment matches 20 run function uhcp:augments/effects/gold/moneymoney
 execute if score @s uhcp_a_selectedAugment matches 21 run function uhcp:augments/effects/gold/pearly
 execute if score @s uhcp_a_selectedAugment matches 22 run function uhcp:augments/effects/gold/protectprotocolii
-execute if score @s uhcp_a_selectedAugment matches 25 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Second Wind","color":"gold"},{"text":"!","color":"white"}]
+execute if score @s uhcp_a_selectedAugment matches 25 run return 0
 execute if score @s uhcp_a_selectedAugment matches 26 run function uhcp:augments/effects/gold/shinyspawn
-execute if score @s uhcp_a_selectedAugment matches 27 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Sneaky Sneaky","color":"gold"},{"text":"!","color":"white"}]
+execute if score @s uhcp_a_selectedAugment matches 27 run return 0
 execute if score @s uhcp_a_selectedAugment matches 29 run function uhcp:augments/effects/gold/starterkitii
-execute if score @s uhcp_a_selectedAugment matches 27 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Berserker","color":"gold"},{"text":"!","color":"white"}]
+execute if score @s uhcp_a_selectedAugment matches 27 run return 0
 execute if score @s uhcp_a_selectedAugment matches 32 run function uhcp:augments/effects/gold/trapmaster
 execute if score @s uhcp_a_selectedAugment matches 33 run function uhcp:augments/effects/gold/villageidol
 execute if score @s uhcp_a_selectedAugment matches 34 run function uhcp:augments/effects/gold/bottlesmasher
-execute if score @s uhcp_a_selectedAugment matches 35 run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Copper Collector","color":"gold"},{"text":"!","color":"white"}]
+execute if score @s uhcp_a_selectedAugment matches 35 run return 0
 execute if score @s uhcp_a_selectedAugment matches 37 run function uhcp:augments/effects/gold/likefishinabarrel
 execute if score @s uhcp_a_selectedAugment matches 38 run function uhcp:augments/effects/gold/oppenheimer
 

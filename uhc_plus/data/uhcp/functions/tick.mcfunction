@@ -25,6 +25,10 @@ execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uh
 scoreboard players enable @a menu
 execute as @a at @s if score @s menu matches 1.. run function uhcp:settings/menu
 
+# Announce Augments
+scoreboard players enable @a augments
+execute as @a if score @s augments matches 1.. run function uhcp:augments/announceaugments
+
 # Timer
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run scoreboard players add %time uhcp_gameTime 1
 
@@ -44,7 +48,6 @@ execute as @e[type=minecraft:bee,tag=UHCP_Bee] at @s run function uhcp:augments/
 execute as @e[tag=UHCP_Saber] at @s run function uhcp:augments/effects/prismatic/radiantrelics/soulflamesaber/update
 execute as @e[tag=UHCP_Voltrune] at @s run function uhcp:augments/effects/prismatic/radiantrelics/voltrune/update
 execute as @e[type=armor_stand,tag=UHCP_Temp] run function uhcp:augments/effects/prismatic/radiantrelics/gravitysmasher/update
-#execute as @e[tag=UHCP_Lasercorp] at @s run function uhcp:augments/effects/prismatic/radiantrelics/lasercorpstriker/raycast
 
 # Augment Countdown/Functions
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_augmentCountdown uhcp_gameTime matches 0.. as @a[tag=UHCP_ChoosingItem,scores={uhcp_a_leave=1..}] run function uhcp:augments/left

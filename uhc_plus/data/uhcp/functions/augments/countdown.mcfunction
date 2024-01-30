@@ -49,3 +49,4 @@ execute as @a[gamemode=survival] at @s if biome ~ ~ ~ minecraft:jagged_peaks run
 execute as @a[gamemode=survival] at @s run execute if block ~ ~-1 ~ minecraft:powder_snow run setblock ~ ~-1 ~ minecraft:snow_block
 
 execute as @a[gamemode=survival] at @s run function uhcp:augments/initializeaugments
+execute as @a[gamemode=survival] at @s run function uhcp:augments/announceaugments

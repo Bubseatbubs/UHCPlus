@@ -2,6 +2,7 @@
 scoreboard objectives add hunger trigger
 scoreboard objectives add menu trigger
 scoreboard objectives add top trigger
+scoreboard objectives add augments trigger
 scoreboard objectives add uhcp_gameTime dummy
 scoreboard objectives add uhcp_displayTime dummy
 scoreboard objectives add uhcp_hungerTimer dummy
@@ -39,6 +40,11 @@ bossbar set minecraft:uhcp_topcharge style notched_6
 bossbar set minecraft:uhcp_topcharge max 60
 
 bossbar add uhcp_augment "Time Remaining:"
+bossbar set minecraft:uhcp_augment color white
+bossbar set minecraft:uhcp_augment style notched_6
+bossbar set minecraft:uhcp_augment max 900
+
+bossbar add uhcp_augment "Cooldown:"
 bossbar set minecraft:uhcp_augment color white
 bossbar set minecraft:uhcp_augment style notched_6
 bossbar set minecraft:uhcp_augment max 900
