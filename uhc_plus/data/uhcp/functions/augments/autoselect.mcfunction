@@ -13,4 +13,4 @@ clear @s
 
 playsound block.note_block.chime master @s ~ ~ ~ 1 1 1
 particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 1 100 normal
-tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected an augment!","color":"white"}]
+execute unless score @s uhcp_a_leave matches 1.. run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected an augment!","color":"white"}]

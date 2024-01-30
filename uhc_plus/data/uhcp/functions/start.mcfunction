@@ -36,6 +36,7 @@ execute unless score teamgame status matches 0 in minecraft:overworld run functi
 
 # Augment Selection
 # scoreboard players set %tier uhcp_a_tier 1
+scoreboard players reset @a uhcp_a_leave
 scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 900
 bossbar set uhcp_augment players @a
 execute as @a run function uhcp:start/augments

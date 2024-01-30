@@ -19,12 +19,13 @@ scoreboard objectives add uhcp_team dummy
 scoreboard objectives add uhcp_topDelay dummy
 scoreboard objectives add uhcp_topCharge dummy
 scoreboard objectives add uhcp_topCD dummy
-scoreboard objectives add uhcp_a_tier dummy
 scoreboard objectives add uhcp_a_count dummy
-scoreboard objectives add uhcp_a_timer dummy
-scoreboard objectives add uhcp_a_validSelection dummy
+scoreboard objectives add uhcp_a_leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add uhcp_a_selectedAugment dummy
 scoreboard objectives add uhcp_a_stack dummy
+scoreboard objectives add uhcp_a_tier dummy
+scoreboard objectives add uhcp_a_timer dummy
+scoreboard objectives add uhcp_a_validSelection dummy
 
 # Add Display Timer Names
 scoreboard players set %display uhcp_displayTime 0
