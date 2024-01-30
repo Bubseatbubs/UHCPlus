@@ -1,7 +1,8 @@
 # Runs if players left during augment selection
 gamemode survival @s
 bossbar set minecraft:uhcp_augment players
-kill @e[tag=UHCP_Lock]
+ride @s dismount
+#kill @e[tag=UHCP_Lock]
 
 effect clear @s
 effect give @s speed 15 0 false
@@ -9,6 +10,7 @@ effect give @s resistance 120 4 false
 effect give @s haste infinite 0 true
 
 # Initialize augment
+scoreboard players set @s uhcp_a_leave 1
 function uhcp:augments/autoselect
 execute at @s run function uhcp:augments/initializeaugments
 
