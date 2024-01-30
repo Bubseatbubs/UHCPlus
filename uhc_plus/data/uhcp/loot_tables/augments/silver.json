@@ -1587,6 +1587,83 @@
               ]
             }
           ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:cooked_cod",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:9b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Fishy Business",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Respiration III /",
+                    "color": "dark_purple"
+                  }
+                ],
+                {
+                  "text": "Unbreaking III / Aqua Affinity",
+                  "color": "dark_purple"
+                },
+                [
+                  {
+                    "text": "Leather Helmet",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Depth",
+                    "color": "dark_purple"
+                  }
+                ],
+                {
+                  "text": "Strider / Unbreaking III",
+                  "color": "dark_purple"
+                },
+                [
+                  {
+                    "text": "Leather Boots",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
         }
       ]
     }

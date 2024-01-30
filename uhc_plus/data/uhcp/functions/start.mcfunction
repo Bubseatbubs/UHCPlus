@@ -5,6 +5,7 @@ scoreboard players set %uhcp_gameStart uhcp_initStatus 1
 scoreboard players set %AUG_7 uhcp_gameTime 2400
 scoreboard players set %AUG_15 uhcp_gameTime 2400
 scoreboard players set %AUG_27 uhcp_gameTime 12000
+scoreboard players set %AUG_203 uhcp_gameTime 1200
 execute if score %uhcp_dimTime uhcp_gameTime matches ..-1 run scoreboard players set %uhcp_dimTime uhcp_gameTime 0
 
 scoreboard objectives setdisplay sidebar uhcp_displayTime

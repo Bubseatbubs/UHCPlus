@@ -36,7 +36,15 @@
                 },
                 [
                   {
-                    "text": "Gain",
+                    "text": "Spawn in",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " The Nether",
+                    "color": "red"
+                  },
+                  {
+                    "text": " with",
                     "color": "gray"
                   },
                   {
@@ -50,7 +58,31 @@
                 ],
                 [
                   {
-                    "text": "2",
+                    "text": " Full Diamond Tools,",
+                    "color": "white"
+                  },
+                  {
+                    "text": " a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Diamond Sword,",
+                    "color": "white"
+                  },
+                  {
+                    "text": " a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Shield,",
+                    "color": "white"
+                  },
+                  {
+                    "text": " 32 Crimson Stems (Nether wood),",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and 2",
                     "color": "gray"
                   },
                   {
@@ -58,15 +90,13 @@
                     "color": "white"
                   },
                   {
-                    "text": " and a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Block of Gold",
-                    "color": "white"
-                  },
-                  {
                     "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "After 20 minutes, gain materials needed to create an exit Nether Portal",
                     "color": "gray"
                   }
                 ]
@@ -424,99 +454,6 @@
                   {
                     "text": "2 Glistening Melons, and 1 Magma Cream",
                     "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:trident",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:215s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Poseidon's Blessing",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Trident",
-                    "color": "white"
-                  },
-                  {
-                    "text": " with",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Riptide II / Unbreaking II",
-                    "color": "dark_purple"
-                  },
-                  {
-                    "text": ",",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Diamond Helmet",
-                    "color": "white"
-                  },
-                  {
-                    "text": " with",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Respiration III / Unbreaking III /",
-                    "color": "dark_purple"
-                  }
-                ],
-                [
-                  {
-                    "text": "Aqua Affinity",
-                    "color": "dark_purple"
-                  },
-                  {
-                    "text": ". Start with ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Dolphin's Grace",
-                    "color": "yellow"
                   },
                   {
                     "text": ".",
@@ -981,7 +918,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " +15🖤",
+                    "text": " 30 Absorption Hearts",
                     "color": "red"
                   },
                   {
@@ -997,6 +934,197 @@
                   "text": "for the first 20 minutes.",
                   "color": "gray"
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:turtle_helmet",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:1,pickup:1b,augment:236s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "The Tortoise",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 10 Maximum Filled Hearts",
+                    "color": "red"
+                  },
+                  {
+                    "text": " and ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Full Protection II Netherite Armor",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Each piece worn reduces your movement speed by",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 8%",
+                    "color": "red"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:blaze_powder",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:1,pickup:1b,augment:203s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Cruel Pact",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Take",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 17 Hearts of damage",
+                    "color": "red"
+                  },
+                  {
+                    "text": " at the start of the game.",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Heal",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 1 heart",
+                    "color": "red"
+                  },
+                  {
+                    "text": " every minute for the rest of the game.",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:diamond_boots",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:1,pickup:1b,augment:203s,Enchantments:[{id:\"minecraft:impaling\",lvl:1s}]}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Gas Gas Gas",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Start with",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Speed II",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " for 10 minutes. Afterwards, gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Speed I",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " for the rest of the game.",
+                    "color": "gray"
+                  }
+                ]
               ]
             }
           ]
