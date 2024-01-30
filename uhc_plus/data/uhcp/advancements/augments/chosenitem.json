@@ -7,11 +7,25 @@
           {
             "condition": "minecraft:inverted",
             "term": {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "uhcp_a_validSelection": 100
-              }
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "uhcp_a_leave": {
+                      "min": 1
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "uhcp_a_validSelection": 100
+                  }
+                }
+              ]
             }
           },
           {
