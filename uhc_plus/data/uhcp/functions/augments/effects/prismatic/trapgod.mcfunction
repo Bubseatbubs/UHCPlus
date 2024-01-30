@@ -13,5 +13,3 @@ give @s sand 64
 give @s gravel 64
 give @s sculk_sensor 1
 tp @s 0 150 0
-
-tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Trap God","color":"gold"},{"text":"!","color":"white"}]

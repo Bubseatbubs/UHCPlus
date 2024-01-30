@@ -1,2 +1,1 @@
-give @s stone_sword{Enchantments:[{id:smite,lvl:2},{id:bane_of_arthropods,lvl:2},{id:looting,lvl:1}]} 1
-tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Monster Hunter","color":"gold"},{"text":"!","color":"white"}]
+give @s stone_sword{Enchantments:[{id:"minecraft:smite",lvl:2},{id:"minecraft:bane_of_arthropods",lvl:2},{id:"minecraft:looting",lvl:1}]} 1
