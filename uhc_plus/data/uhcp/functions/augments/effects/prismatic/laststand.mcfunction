@@ -1,1 +1,1 @@
-give @s totem_of_undying
+give @s totem_of_undying{Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]} 1
