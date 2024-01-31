@@ -16,6 +16,7 @@
                         "items": [
                           "minecraft:golden_sword"
                         ],
+                        "durability": 32,
                         "nbt": "{uhcp_radiant:2b}"
                       }
                     }
@@ -30,6 +31,7 @@
                         "items": [
                           "minecraft:golden_sword"
                         ],
+                        "durability": 32,
                         "nbt": "{uhcp_radiant:2b}"
                       }
                     }
@@ -47,13 +49,7 @@
                 }
               }
             }
-          ],
-          "damage": {
-            "dealt": {
-              "min": 5,
-              "max": 100
-            }
-          }
+          ]
         }
       }
     },

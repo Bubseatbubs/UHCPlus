@@ -1,64 +1,49 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:player_hurt_entity",
-        "conditions": {
-          "player": [
-            {
-              "condition": "minecraft:any_of",
-              "terms": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "equipment": {
-                      "offhand": {
-                        "items": [
-                          "minecraft:diamond_sword"
-                        ],
-                        "nbt": "{uhcp_radiant:1b}"
-                      }
-                    }
-                  }
-                },
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "equipment": {
-                      "mainhand": {
-                        "items": [
-                          "minecraft:diamond_sword"
-                        ],
-                        "nbt": "{uhcp_radiant:1b}"
-                      }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "offhand": {
+                      "items": [
+                        "minecraft:diamond_sword"
+                      ],
+                      "durability": 1561,
+                      "nbt": "{uhcp_radiant:1b}"
                     }
                   }
                 }
-              ],
-              "damage": {
-                "type": {
-                  "tags": [
-                    {
-                      "id": "minecraft:is_projectile",
-                      "expected": false
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": [
+                        "minecraft:diamond_sword"
+                      ],
+                      "durability": 1561,
+                      "nbt": "{uhcp_radiant:1b}"
                     }
-                  ]
+                  }
                 }
               }
-            }
-          ],
-          "damage": {
-            "dealt": {
-              "min": 7,
-              "max": 100
-            }
+            ]
           }
-        }
+        ]
       }
-    },
-    "rewards": {
-      "function": "uhcp:augments/effects/prismatic/radiantrelics/soulflamesaber/hit"
     }
+  },
+  "rewards": {
+    "function": "uhcp:augments/effects/prismatic/radiantrelics/soulflamesaber/hit"
   }
-  
+}

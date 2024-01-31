@@ -1,9 +1,8 @@
 advancement revoke @s only uhcp:augments/hurt_with_soulflame_saber
 tag @s add UHCP_Owner
 
-execute if score @s uhcp_a_timer matches 1.. run return 0
-scoreboard players set @s uhcp_a_timer 200
-
+execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_a_durability 10
+item modify entity @s weapon.mainhand uhcp:update_dur
 scoreboard players reset @e[distance=..6] uhcp_a_count
 execute as @e[tag=!UHCP_Owner,type=!#uhcp:inanimate_mobs,distance=..6] store result score @s uhcp_a_count run function uhcp:augments/effects/prismatic/radiantrelics/checkattacker
 tag @e[distance=..6,scores={uhcp_a_count=1},sort=nearest,limit=1] add UHCP_SaberTarget

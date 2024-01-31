@@ -1,0 +1,29 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "uhcp:cd"
+    },
+    "ops": [
+      {
+        "source": "cDamage",
+        "target": "cDamage",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_damage",
+    "damage": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "%damage"
+      },
+      "score": "uhcp_a_durability",
+      "scale": 0.0006406149903907751
+    },
+    "add": false
+  }
+]

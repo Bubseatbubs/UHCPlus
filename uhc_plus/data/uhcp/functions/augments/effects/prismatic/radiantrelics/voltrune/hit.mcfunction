@@ -1,11 +1,8 @@
 advancement revoke @s only uhcp:augments/hurt_with_voltrune
 tag @s add UHCP_Owner
 
-scoreboard players add @s uhcp_a_stack 1
-
-execute if score @s uhcp_a_stack matches 6 run playsound block.note_block.pling master @s ~ ~ ~ 1 1 1
-execute if score @s uhcp_a_stack matches ..6 run return 0
-
+execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_a_durability 50
+item modify entity @s weapon.mainhand uhcp:update_dur
 scoreboard players reset @e[distance=..6] uhcp_a_count
 execute as @e[tag=!UHCP_Owner,type=!#uhcp:inanimate_mobs,distance=..6] store result score @s uhcp_a_count run function uhcp:augments/effects/prismatic/radiantrelics/checkattacker
 tag @e[distance=..6,scores={uhcp_a_count=1},sort=nearest,limit=1] add UHCP_VoltTarget

@@ -4,10 +4,7 @@ tag @s add UHCP_Owner
 scoreboard players reset @e[distance=..6] uhcp_a_count
 execute as @e[tag=!UHCP_Owner,type=!#uhcp:inanimate_mobs,distance=..6] store result score @s uhcp_a_count run function uhcp:augments/effects/prismatic/radiantrelics/checkattacker
 tag @e[distance=..6,scores={uhcp_a_count=1},sort=nearest,limit=1] add UHCP_GravTarget
-execute at @e[tag=UHCP_GravTarget] anchored eyes run summon shulker_bullet ~ ~5 ~ {Motion:[0.0,-1.0,0.0],Steps:6,Glowing:1b,Tags:["UHCP_New"]}
-data modify entity @e[tag=UHCP_New,type=shulker_bullet,sort=nearest,limit=1] Target set from entity @e[tag=UHCP_GravTarget,sort=nearest,limit=1] UUID
-data modify entity @e[tag=UHCP_New,type=shulker_bullet,sort=nearest,limit=1] Owner set from entity @e[tag=UHCP_Owner,sort=nearest,limit=1] UUID
-execute at @e[tag=UHCP_New,type=shulker_bullet,sort=nearest,limit=1] run playsound minecraft:entity.shulker.shoot player @a[distance=..12] ~ ~ ~ 1.0 0.6 0.75
+execute as @e[tag=UHCP_GravTarget] run effect give @s levitation 1 0 false
 
 scoreboard players add @s uhcp_a_stack 1
 
