@@ -7,7 +7,7 @@ execute unless score %uhcp_gameStart uhcp_initStatus matches 1.. if score @s uhc
 execute if score @s uhcp_settings matches 800..899 run function uhcp:settings/lava
 
 execute if score @s uhcp_settings matches 400..407 run function uhcp:settings/menu/dimensions
-execute if score @s uhcp_settings matches 500..502 run function uhcp:settings/augmenttier
+execute if score @s uhcp_settings matches 500..503 run function uhcp:settings/augmenttier
 execute if score @s uhcp_settings matches 800..801 run function uhcp:settings/menu
 execute if score %uhcp_lavaStart uhcp_initStatus matches 1.. if score @s uhcp_settings matches 800 if score %uhcp_lavaInit uhcp_initStatus matches 1.. run tellraw @s [{"text":"Lava","color":"red"},{"text":" is rising!","color":"yellow"}]
 execute unless score %uhcp_lavaStart uhcp_initStatus matches 1.. if score @s uhcp_settings matches 801 run tellraw @s [{"text":"Lava","color":"red"},{"text":" stopped rising.","color":"yellow"}]
