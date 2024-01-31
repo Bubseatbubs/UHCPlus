@@ -347,7 +347,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 5 Cow Spawn Eggs",
+                    "text": " 8 Cow Spawn Eggs",
                     "color": "white"
                   },
                   {
@@ -880,7 +880,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 20 seconds",
+                    "text": " 30 seconds",
                     "color": "white"
                   },
                   {
@@ -904,7 +904,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " (5 Minute Cooldown)",
+                    "text": " (2 minute 30 second Cooldown)",
                     "color": "red"
                   }
                 ]
@@ -964,61 +964,6 @@
                   },
                   {
                     "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:netherite_axe",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:30b}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Berserker",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "After killing a player, gain",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Strength,",
-                    "color": "yellow"
-                  }
-                ],
-                [
-                  {
-                    "text": "Speed, and Regeneration I",
-                    "color": "yellow"
-                  },
-                  {
-                    "text": " for 15 seconds.",
                     "color": "gray"
                   }
                 ]
@@ -1358,34 +1303,12 @@
                 },
                 [
                   {
-                    "text": "Gain a set of",
+                    "text": "Gain a ",
                     "color": "gray"
                   },
                   {
-                    "text": " Iron Armor",
+                    "text": " Diamond Helmet, Iron Chestplate, Iron Leggings, and Iron Boots",
                     "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "The",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Iron Chestplate",
-                    "color": "white"
-                  },
-                  {
-                    "text": " has",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Protection I",
-                    "color": "dark_purple"
                   },
                   {
                     "text": ".",
@@ -1429,7 +1352,7 @@
                 },
                 [
                   {
-                    "text": "Gain 4",
+                    "text": "Gain 7",
                     "color": "gray"
                   },
                   {
@@ -1782,7 +1705,7 @@
                 },
                 [
                   {
-                    "text": "Gain 2 ",
+                    "text": "Gain 3 ",
                     "color": "gray"
                   },
                   {
@@ -1802,27 +1725,7 @@
                 ],
                 [
                   {
-                    "text": "and 2 ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " ",
-                    "color": "red"
-                  }
-                ],
-                [
-                  {
-                    "text": "Splash Potions of Slowness",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": " (20 second duration each).",
+                    "text": " (20 second duration).",
                     "color": "gray"
                   }
                 ]

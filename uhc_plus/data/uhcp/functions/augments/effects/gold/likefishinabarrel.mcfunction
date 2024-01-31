@@ -1,2 +1,1 @@
-give @s splash_potion{display:{Name:'{"text":"Levitation Potion"}',Lore:['{"text":"It\'s like shooting fish in a barrel."}']},custom_potion_effects:[{id:"minecraft:levitation",amplifier:0b,duration:400}],Potion:"minecraft:empty"} 2
-give @s splash_potion{display:{Name:'{"text":"Slowness Potion"}',Lore:['{"text":"It\'s like shooting fish in a barrel."}']},custom_potion_effects:[{id:"minecraft:slowness",amplifier:0b,duration:400}],Potion:"minecraft:empty"} 2
+give @s splash_potion{display:{Name:'{"text":"Levitation Potion"}',Lore:['{"text":"It\'s like shooting fish in a barrel."}']},custom_potion_effects:[{id:"minecraft:levitation",amplifier:0b,duration:400}],Potion:"minecraft:empty"} 3

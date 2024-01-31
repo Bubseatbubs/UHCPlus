@@ -25,10 +25,10 @@ scoreboard players set @a[predicate=uhcp:teams/neither] uhcp_team 0
 scoreboard players set @a[gamemode=!survival] uhcp_team 0
 
 tag @s add UHCP_HuntingCall
-effect give @s speed 20 0 false
+effect give @s speed 30 0 false
 execute as @a[distance=..100] unless score @s uhcp_team = @a[tag=UHCP_HuntingCall,sort=nearest,limit=1] uhcp_team run effect give @s glowing 10 0 true
 execute as @a at @s run playsound block.note_block.harp master @s ~ ~ ~ 1 1 1
 tellraw @a [{"selector":"@s","color":"blue"},{"text":" used","color":"white"},{"text":" Hunting Call","color":"gold"},{"text":"!","color":"white"}]
 
-scoreboard players set @s uhcp_a_timer 6000
+scoreboard players set @s uhcp_a_timer 3000
 tag @s remove UHCP_HuntingCall

@@ -1,1 +1,1 @@
-give @s ender_pearl 4
+give @s ender_pearl 7

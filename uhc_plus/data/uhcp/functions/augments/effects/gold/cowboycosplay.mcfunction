@@ -1,4 +1,4 @@
-give @s cow_spawn_egg 5
+give @s cow_spawn_egg 8
 give @s horse_spawn_egg 1
 give @s saddle 1
 give @s lead{display:{Name:'{"text":"Lasso","color":"yellow","italic":false}',Lore:['{"text":"Whip \'em up!","color":"white"}']}} 1

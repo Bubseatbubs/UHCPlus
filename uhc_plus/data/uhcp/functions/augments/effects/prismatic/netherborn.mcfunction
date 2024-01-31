@@ -6,7 +6,13 @@ give @s diamond_sword
 give @s diamond_hoe
 give @s shield
 give @s crimson_stem 32
+give @s oak_boat 2
+give @s cooked_beef 12
 give @s lava_bucket 2
+give @s iron_helmet
+give @s iron_chestplate
+give @s iron_leggings
+give @s iron_boots
 
 # Teleport player to the_nether
 execute in minecraft:the_nether if score TotalWorldSize setting matches 1000 run spreadplayers 0 0 100 400 under 127 false @s

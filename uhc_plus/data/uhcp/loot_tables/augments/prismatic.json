@@ -58,39 +58,11 @@
                 ],
                 [
                   {
-                    "text": " Full Diamond Tools,",
+                    "text": " Full Diamond Tools, Iron Armor,",
                     "color": "white"
                   },
                   {
-                    "text": " a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Diamond Sword,",
-                    "color": "white"
-                  },
-                  {
-                    "text": " a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Shield,",
-                    "color": "white"
-                  },
-                  {
-                    "text": " 32 Crimson Stems (Nether wood),",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and 2",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Lava Buckets",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
+                    "text": " and other essentials.",
                     "color": "gray"
                   }
                 ],
@@ -292,11 +264,11 @@
                 },
                 [
                   {
-                    "text": "Gain an",
+                    "text": "Gain 12",
                     "color": "gray"
                   },
                   {
-                    "text": " Enchanted Golden Apple",
+                    "text": " Golden Apples",
                     "color": "white"
                   },
                   {
@@ -509,7 +481,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Luck of the Sea V / Unbreaking III",
+                    "text": " Luck of the Sea X / Unbreaking III",
                     "color": "dark_purple"
                   }
                 ],
@@ -912,7 +884,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Full Protection II Netherite Armor",
+                    "text": " Full Netherite Armor",
                     "color": "white"
                   },
                   {
@@ -926,7 +898,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 8%",
+                    "text": " 12%",
                     "color": "red"
                   },
                   {
