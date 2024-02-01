@@ -14,10 +14,10 @@
                   "equipment": {
                     "offhand": {
                       "items": [
-                        "minecraft:diamond_sword"
+                        "minecraft:brush"
                       ],
-                      "durability": 1561,
-                      "nbt": "{uhcp_radiant:1b}"
+                      "durability": 64,
+                      "nbt": "{uhcp_radiant:6b}"
                     }
                   }
                 }
@@ -29,10 +29,10 @@
                   "equipment": {
                     "mainhand": {
                       "items": [
-                        "minecraft:diamond_sword"
+                        "minecraft:brush"
                       ],
-                      "durability": 1561,
-                      "nbt": "{uhcp_radiant:1b}"
+                      "durability": 64,
+                      "nbt": "{uhcp_radiant:6b}"
                     }
                   }
                 }
@@ -44,6 +44,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/gold/radiantrelics/soulflamesaber/hit"
+    "function": "uhcp:augments/effects/gold/radiantrelics/shadowclone/hit"
   }
 }

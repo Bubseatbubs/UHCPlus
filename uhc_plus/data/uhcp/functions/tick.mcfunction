@@ -45,9 +45,11 @@ execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
 # Augments
 execute as @e[predicate=uhcp:augments/birdfeather] at @s run function uhcp:augments/effects/gold/birdsofafeather/teleport
 execute as @e[type=minecraft:bee,tag=UHCP_Bee] at @s run function uhcp:augments/effects/gold/beekeeper/update
-execute as @e[tag=UHCP_Saber] at @s run function uhcp:augments/effects/prismatic/radiantrelics/soulflamesaber/update
-execute as @e[tag=UHCP_Voltrune] at @s run function uhcp:augments/effects/prismatic/radiantrelics/voltrune/update
-execute as @e[type=armor_stand,tag=UHCP_Temp] run function uhcp:augments/effects/prismatic/radiantrelics/gravitysmasher/update
+execute as @e[tag=UHCP_Saber] at @s run function uhcp:augments/effects/gold/radiantrelics/soulflamesaber/update
+execute as @e[tag=UHCP_Voltrune] at @s run function uhcp:augments/effects/gold/radiantrelics/voltrune/update
+execute as @e[tag=UHCP_Temp,type=armor_stand] run function uhcp:augments/effects/gold/radiantrelics/gravitysmasher/update
+execute as @e[tag=UHCP_GoldBlock,type=armor_stand] run function uhcp:augments/effects/gold/radiantrelics/theharvester/update
+execute as @e[tag=UHCP_SCloneStand,type=armor_stand] at @s run function uhcp:augments/effects/gold/radiantrelics/shadowclone/update
 
 # Augment Countdown/Functions
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_augmentCountdown uhcp_gameTime matches 0.. as @a[tag=UHCP_ChoosingItem,scores={uhcp_a_leave=1..}] run function uhcp:augments/left

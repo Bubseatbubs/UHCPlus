@@ -11,11 +11,11 @@
                 "equipment": {
                   "mainhand": {
                     "items": [
-                      "minecraft:golden_sword"
+                      "minecraft:crossbow"
                     ],
                     "durability": {
                       "min": 0,
-                      "max": 31
+                      "max": 464
                     },
                     "nbt": "{uhcp_radiant:2b}"
                   }

@@ -11,13 +11,13 @@
                 "equipment": {
                   "mainhand": {
                     "items": [
-                      "minecraft:golden_sword"
+                      "minecraft:diamond_axe"
                     ],
                     "durability": {
                       "min": 0,
-                      "max": 31
+                      "max": 1560
                     },
-                    "nbt": "{uhcp_radiant:2b}"
+                    "nbt": "{uhcp_radiant:4b}"
                   }
                 }
               }

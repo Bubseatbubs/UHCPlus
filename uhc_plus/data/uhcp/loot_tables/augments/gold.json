@@ -65,6 +65,55 @@
         {
           "type": "item",
           "weight": 1,
+          "name": "minecraft:blade_pottery_sherd",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:40b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Relics of the Past",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain a random",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Relic",
+                    "color": "blue"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
           "name": "minecraft:feather",
           "functions": [
             {

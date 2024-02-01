@@ -96,6 +96,9 @@ execute if score @s uhcp_a_count matches 1.. run return 38
 execute store success score @s uhcp_a_count run clear @s minecraft:trident{augment:39s} 1
 execute if score @s uhcp_a_count matches 1.. run return 39
 
+execute store success score @s uhcp_a_count run clear @s minecraft:blade_pottery_sherd{augment:40b} 1
+execute if score @s uhcp_a_count matches 1.. run return 40
+
 # Silver Augments
 execute store success score @s uhcp_a_count run clear @s minecraft:slime_ball{augment:100s} 1
 execute if score @s uhcp_a_count matches 1.. run return 100

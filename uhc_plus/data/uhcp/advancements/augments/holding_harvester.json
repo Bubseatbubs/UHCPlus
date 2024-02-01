@@ -11,13 +11,13 @@
                 "equipment": {
                   "mainhand": {
                     "items": [
-                      "minecraft:golden_sword"
+                      "minecraft:golden_hoe"
                     ],
                     "durability": {
                       "min": 0,
                       "max": 31
                     },
-                    "nbt": "{uhcp_radiant:2b}"
+                    "nbt": "{uhcp_radiant:5b}"
                   }
                 }
               }

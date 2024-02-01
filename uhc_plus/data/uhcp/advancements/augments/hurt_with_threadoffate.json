@@ -14,9 +14,10 @@
                     "equipment": {
                       "offhand": {
                         "items": [
-                          "minecraft:iron_axe"
+                          "minecraft:shears"
                         ],
-                        "nbt": "{uhcp_radiant:4b}"
+                        "durability": 238,
+                        "nbt": "{uhcp_radiant:7b}"
                       }
                     }
                   }
@@ -28,9 +29,10 @@
                     "equipment": {
                       "mainhand": {
                         "items": [
-                          "minecraft:iron_axe"
+                          "minecraft:shears"
                         ],
-                        "nbt": "{uhcp_radiant:4b}"
+                        "durability": 238,
+                        "nbt": "{uhcp_radiant:7b}"
                       }
                     }
                   }
@@ -47,18 +49,12 @@
                 }
               }
             }
-          ],
-          "damage": {
-            "dealt": {
-              "min": 9,
-              "max": 100
-            }
-          }
+          ]
         }
       }
     },
     "rewards": {
-      "function": "uhcp:augments/effects/prismatic/radiantrelics/gravitysmasher/hit"
+      "function": "uhcp:augments/effects/gold/radiantrelics/threadoffate/dash"
     }
   }
   

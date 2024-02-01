@@ -1,7 +1,7 @@
 {
     "criteria": {
       "requirement": {
-        "trigger": "minecraft:location",
+        "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "player": [
             {
@@ -9,15 +9,15 @@
               "entity": "this",
               "predicate": {
                 "equipment": {
-                  "mainhand": {
+                  "chest": {
                     "items": [
-                      "minecraft:golden_sword"
+                      "minecraft:leather_chestplate"
                     ],
                     "durability": {
-                      "min": 0,
-                      "max": 31
+                      "min": 77,
+                      "max": 80
                     },
-                    "nbt": "{uhcp_radiant:2b}"
+                    "nbt": "{uhcp_radiant:3b}"
                   }
                 }
               }
@@ -27,7 +27,7 @@
       }
     },
     "rewards": {
-      "function": "uhcp:augments/effects/gold/radiantrelics/increase_dur"
+      "function": "uhcp:augments/effects/gold/radiantrelics/yggdrasil/protect"
     }
   }
   
