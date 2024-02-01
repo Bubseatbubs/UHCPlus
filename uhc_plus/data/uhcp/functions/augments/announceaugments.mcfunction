@@ -76,6 +76,8 @@ execute as @a if score @s uhcp_a_selectedAugment matches 37 run tellraw @a[tag=U
 execute as @a if score @s uhcp_a_selectedAugment matches 38 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Oppenheimer","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_a_selectedAugment matches 39 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Poseidon's Blessing","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_a_selectedAugment matches 40 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Relics of the Past","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_a_selectedAugment matches 41 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Harvest Season","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_a_selectedAugment matches 42 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Shadow Clone Jutsu","color":"gold"},{"text":"!","color":"white"}]
 
 # Prismatic Augments
 execute as @a if score @s uhcp_a_selectedAugment matches 200 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Beastmaster","color":"gold"},{"text":"!","color":"white"}]

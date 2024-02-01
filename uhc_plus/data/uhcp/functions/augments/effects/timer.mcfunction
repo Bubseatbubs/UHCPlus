@@ -20,6 +20,35 @@ execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selected
 execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=214}] run give @s flint_and_steel 1
 execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=214}] run give @s potion{Potion:"minecraft:long_fire_resistance"} 1
 
+# Scuffed version of Relic Master
+execute if score %time uhcp_gameTime matches 12000 as @a[scores={uhcp_a_selectedAugment=238}] run loot give @s loot uhcp:relics
+execute if score %time uhcp_gameTime matches 12000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s health_boost infinite 0
+execute if score %time uhcp_gameTime matches 12000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s instant_health 1 0
+execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=238}] run loot give @s loot uhcp:relics
+execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s health_boost infinite 1
+execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s instant_health 1 0
+execute if score %time uhcp_gameTime matches 36000 as @a[scores={uhcp_a_selectedAugment=238}] run loot give @s loot uhcp:relics
+execute if score %time uhcp_gameTime matches 36000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s health_boost infinite 2
+execute if score %time uhcp_gameTime matches 36000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s instant_health 1 0
+execute if score %time uhcp_gameTime matches 48000 as @a[scores={uhcp_a_selectedAugment=238}] run loot give @s loot uhcp:relics
+execute if score %time uhcp_gameTime matches 48000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s health_boost infinite 3
+execute if score %time uhcp_gameTime matches 48000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s instant_health 1 0
+execute if score %time uhcp_gameTime matches 60000 as @a[scores={uhcp_a_selectedAugment=238}] run loot give @s loot uhcp:relics
+execute if score %time uhcp_gameTime matches 60000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s health_boost infinite 4
+execute if score %time uhcp_gameTime matches 60000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s instant_health 1 0
+execute if score %time uhcp_gameTime matches 72000 as @a[scores={uhcp_a_selectedAugment=238}] run loot give @s loot uhcp:relics
+execute if score %time uhcp_gameTime matches 72000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s health_boost infinite 5
+execute if score %time uhcp_gameTime matches 72000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s instant_health 1 0
+execute if score %time uhcp_gameTime matches 84000 as @a[scores={uhcp_a_selectedAugment=238}] run loot give @s loot uhcp:relics
+execute if score %time uhcp_gameTime matches 84000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s health_boost infinite 6
+execute if score %time uhcp_gameTime matches 84000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s instant_health 1 0
+execute if score %time uhcp_gameTime matches 96000 as @a[scores={uhcp_a_selectedAugment=238}] run loot give @s loot uhcp:relics
+execute if score %time uhcp_gameTime matches 96000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s health_boost infinite 7
+execute if score %time uhcp_gameTime matches 96000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s instant_health 1 0
+execute if score %time uhcp_gameTime matches 108000 as @a[scores={uhcp_a_selectedAugment=238}] run loot give @s loot uhcp:relics
+execute if score %time uhcp_gameTime matches 108000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s health_boost infinite 8
+execute if score %time uhcp_gameTime matches 108000 as @a[scores={uhcp_a_selectedAugment=238}] run effect give @s instant_health 1 0
+
 # Cycle Effects
 execute if score %time uhcp_gameTime matches ..3599 as @a[scores={uhcp_a_selectedAugment=101}] run function uhcp:augments/effects/silver/afk/lock
 

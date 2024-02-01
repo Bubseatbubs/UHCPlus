@@ -1874,6 +1874,130 @@
               ]
             }
           ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:golden_hoe",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:41b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Harvest Season",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " The Harvester",
+                    "color": "gold"
+                  }
+                ],
+                [
+                  {
+                    "text": ", a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Relic",
+                    "color": " light blue"
+                  },
+                  {
+                    "text": " that farms extra gold from hostile mob and player kills.",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": " It also summons falling gold blocks which increase in size and damage based on the number of Golden Apples in your inventory.",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:brush",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:42b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Shadow Clone Jutsu",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Smooth Getaway",
+                    "color": "gold"
+                  }
+                ],
+                [
+                  {
+                    "text": ", a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Relic",
+                    "color": " light blue"
+                  },
+                  {
+                    "text": "  that allows you to disappear and summon 2 clones that attack the nearest enemies.",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
         }
       ]
     }
