@@ -20,7 +20,7 @@
                         "min": 0,
                         "max": 1560
                       },
-                      "nbt": "{uhcp_radiant:4b}"
+                      "nbt": "{uhcp_radiant:3b}"
                     }
                   }
                 }
@@ -38,7 +38,7 @@
                         "min": 0,
                         "max": 1560
                       },
-                      "nbt": "{uhcp_radiant:4b}"
+                      "nbt": "{uhcp_radiant:3b}"
                     }
                   }
                 }
