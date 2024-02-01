@@ -44,7 +44,7 @@
                     "color": "red"
                   },
                   {
-                    "text": " with",
+                    "text": " You have",
                     "color": "gray"
                   },
                   {
@@ -52,7 +52,7 @@
                     "color": "yellow"
                   },
                   {
-                    "text": " for 60 minutes. Gain",
+                    "text": " for the entire game. Gain",
                     "color": "gray"
                   }
                 ],
@@ -68,7 +68,7 @@
                 ],
                 [
                   {
-                    "text": "After 20 minutes, gain materials needed to create an exit Nether Portal and a long Fire Resistance Potion.",
+                    "text": "After 20 minutes, gain materials needed to create an exit Nether Portal.",
                     "color": "gray"
                   }
                 ]
