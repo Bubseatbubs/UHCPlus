@@ -264,7 +264,7 @@
                 },
                 [
                   {
-                    "text": "Gain 12",
+                    "text": "Gain 10",
                     "color": "gray"
                   },
                   {
@@ -272,12 +272,16 @@
                     "color": "white"
                   },
                   {
-                    "text": ".",
+                    "text": " and",
                     "color": "gray"
                   },
                   {
-                    "text": " ",
-                    "color": "red"
+                    "text": " The Harvester",
+                    "color": "gold"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
                   }
                 ]
               ]
