@@ -14,10 +14,13 @@
                   "equipment": {
                     "offhand": {
                       "items": [
-                        "minecraft:diamond_sword"
+                        "minecraft:diamond_axe"
                       ],
-                      "durability": 1561,
-                      "nbt": "{uhcp_radiant:1b}"
+                      "durability": {
+                        "min": 0,
+                        "max": 1560
+                      },
+                      "nbt": "{uhcp_radiant:3b}"
                     }
                   }
                 }
@@ -29,21 +32,31 @@
                   "equipment": {
                     "mainhand": {
                       "items": [
-                        "minecraft:diamond_sword"
+                        "minecraft:diamond_axe"
                       ],
-                      "durability": 1561,
-                      "nbt": "{uhcp_radiant:1b}"
+                      "durability": {
+                        "min": 0,
+                        "max": 1560
+                      },
+                      "nbt": "{uhcp_radiant:3b}"
                     }
                   }
                 }
               }
             ]
           }
-        ]
+        ],
+        "damage": {
+          "dealt": {
+            "min": 7,
+            "max": 100
+          },
+          "blocked": false
+        }
       }
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/gold/radiantrelics/soulflamesaber/hit"
+    "function": "uhcp:augments/effects/gold/radiantrelics/gravitysmasher/levitation"
   }
 }

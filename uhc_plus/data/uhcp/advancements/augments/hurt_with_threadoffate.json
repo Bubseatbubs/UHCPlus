@@ -14,10 +14,10 @@
                     "equipment": {
                       "offhand": {
                         "items": [
-                          "minecraft:golden_sword"
+                          "minecraft:shears"
                         ],
-                        "durability": 32,
-                        "nbt": "{uhcp_radiant:2b}"
+                        "durability": 238,
+                        "nbt": "{uhcp_radiant:7b}"
                       }
                     }
                   }
@@ -29,10 +29,10 @@
                     "equipment": {
                       "mainhand": {
                         "items": [
-                          "minecraft:golden_sword"
+                          "minecraft:shears"
                         ],
-                        "durability": 32,
-                        "nbt": "{uhcp_radiant:2b}"
+                        "durability": 238,
+                        "nbt": "{uhcp_radiant:7b}"
                       }
                     }
                   }
@@ -54,7 +54,7 @@
       }
     },
     "rewards": {
-      "function": "uhcp:augments/effects/gold/radiantrelics/voltrune/hit"
+      "function": "uhcp:augments/effects/gold/radiantrelics/threadoffate/dash"
     }
   }
   

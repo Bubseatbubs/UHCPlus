@@ -14,10 +14,10 @@
                     "equipment": {
                       "offhand": {
                         "items": [
-                          "minecraft:golden_sword"
+                          "minecraft:diamond_axe"
                         ],
-                        "durability": 32,
-                        "nbt": "{uhcp_radiant:2b}"
+                        "durability": 1561,
+                        "nbt": "{uhcp_radiant:3b}"
                       }
                     }
                   }
@@ -29,10 +29,10 @@
                     "equipment": {
                       "mainhand": {
                         "items": [
-                          "minecraft:golden_sword"
+                          "minecraft:diamond_axe"
                         ],
-                        "durability": 32,
-                        "nbt": "{uhcp_radiant:2b}"
+                        "durability": 1561,
+                        "nbt": "{uhcp_radiant:3b}"
                       }
                     }
                   }
@@ -54,7 +54,7 @@
       }
     },
     "rewards": {
-      "function": "uhcp:augments/effects/gold/radiantrelics/voltrune/hit"
+      "function": "uhcp:augments/effects/gold/radiantrelics/gravitysmasher/hit"
     }
   }
   

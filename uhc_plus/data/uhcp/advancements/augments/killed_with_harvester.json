@@ -1,0 +1,48 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "mainhand": {
+                        "items": [
+                          "minecraft:golden_hoe"
+                        ],
+                        "nbt": "{uhcp_radiant:5b}"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "entity": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "#uhcp:can_be_hostile_mobs"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "uhcp:augments/effects/gold/radiantrelics/theharvester/harvest"
+    }
+  }
+  

@@ -14,10 +14,10 @@
                   "equipment": {
                     "offhand": {
                       "items": [
-                        "minecraft:diamond_sword"
+                        "minecraft:golden_hoe"
                       ],
-                      "durability": 1561,
-                      "nbt": "{uhcp_radiant:1b}"
+                      "durability": 32,
+                      "nbt": "{uhcp_radiant:5b}"
                     }
                   }
                 }
@@ -29,10 +29,10 @@
                   "equipment": {
                     "mainhand": {
                       "items": [
-                        "minecraft:diamond_sword"
+                        "minecraft:golden_hoe"
                       ],
-                      "durability": 1561,
-                      "nbt": "{uhcp_radiant:1b}"
+                      "durability": 32,
+                      "nbt": "{uhcp_radiant:5b}"
                     }
                   }
                 }
@@ -44,6 +44,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/gold/radiantrelics/soulflamesaber/hit"
+    "function": "uhcp:augments/effects/gold/radiantrelics/theharvester/hit"
   }
 }

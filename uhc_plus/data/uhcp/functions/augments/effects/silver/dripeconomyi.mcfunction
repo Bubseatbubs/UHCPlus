@@ -1,0 +1,1 @@
+give @s gold_ingot 3

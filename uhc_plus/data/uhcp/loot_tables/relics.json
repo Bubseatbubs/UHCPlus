@@ -1,0 +1,1108 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:shears",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{HideFlags:3,uhcp_radiant:7b,Enchantments:[{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:8.5,Operation:0,UUID:[I;1143660634,-1035515697,-2017256653,387488453],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.4,Operation:0,UUID:[I;-66302264,1916223962,-1566999601,324500780],Slot:\"mainhand\"}]}"
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "Thr",
+                    "color": "#0800FF",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "ead",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": " of",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": " Fa",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": "te",
+                    "color": "#54C0FF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  [
+                    {
+                      "text": "RELIC",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Relics gain durability while ",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "held. At max durability, its",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": "activates on hit.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Dash",
+                      "color": "gray",
+                      "italic": true
+                    },
+                    {
+                      "text": " 5 Blocks",
+                      "color": "white",
+                      "italic": true
+                    },
+                    {
+                      "text": " through your",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "target.",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Deal",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " 2🖤",
+                      "color": "red"
+                    },
+                    {
+                      "text": " from players you",
+                      "color": "gray"
+                    }
+                  ],
+                  {
+                    "text": "dash through.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "When in Main Hand:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 7 Attack Damage",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "text": " 2.1 Attack Speed",
+                    "color": "dark_green",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:brush",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{HideFlags:3,uhcp_radiant:6b,Enchantments:[{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:5,Operation:0,UUID:[I;-514273535,1199853292,-1652511467,-1994049012],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.9,Operation:0,UUID:[I;126047672,1898989385,-1577738927,1597316504],Slot:\"mainhand\"}]}"
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "Sm",
+                    "color": "#0800FF",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "oo",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": "th",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": " Ge",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": "ta",
+                    "color": "#54C0FF"
+                  },
+                  {
+                    "text": "way",
+                    "color": "#4FE8FF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  [
+                    {
+                      "text": "RELIC",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Relics gain durability while ",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "held. At max durability, its",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": "activates on hit.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Gain",
+                      "color": "gray",
+                      "italic": true
+                    },
+                    {
+                      "text": " Invisibility",
+                      "color": "yellow",
+                      "italic": true
+                    },
+                    {
+                      "text": " for 10",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "seconds and spawn 2",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Mirages",
+                      "color": "blue"
+                    },
+                    {
+                      "text": " of yourself.",
+                      "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": " Mirages",
+                      "color": "blue"
+                    },
+                    {
+                      "text": " fight for you for 10 seconds.",
+                      "color": "gray"
+                    }
+                  ],
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "When in Main Hand:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 5.5 Attack Damage",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "text": " 1.6 Attack Speed",
+                    "color": "dark_green",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:crossbow",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{uhcp_radiant:2b,Enchantments:[{id:\"minecraft:piercing\",lvl:2s},{id:\"minecraft:quick_charge\",lvl:2s}]}"
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "Bo",
+                    "color": "#0800FF",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "om",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": "bu",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": "rs",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": "t",
+                    "color": "#54C0FF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue"
+                  },
+                  [
+                    {
+                      "text": "RELIC",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Relics gain durability while ",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "held. At max durability, its",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": "activates when shot.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Instantly reloads itself with a",
+                      "color": "gray",
+                      "italic": true
+                    },
+                    {
+                      "text": " Firework Rocket",
+                      "color": "white",
+                      "italic": true
+                    },
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:golden_hoe",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{HideFlags:1,uhcp_radiant:5b,Enchantments:[{id:\"minecraft:sharpness\",lvl:11s},{id:\"minecraft:unbreaking\",lvl:5s}]}"
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "Th",
+                    "color": "#0800FF",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "e H",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": "ar",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": "ve",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": "st",
+                    "color": "#54C0FF"
+                  },
+                  {
+                    "text": "er",
+                    "color": "#4FE8FF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue"
+                  },
+                  [
+                    {
+                      "text": "RELIC",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Relics gain durability while ",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "held. At max durability, its",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": "activates on hit.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "PASSIVE",
+                      "color": "white",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Killing hostile mobs grants a",
+                      "color": "gray",
+                      "italic": true
+                    },
+                    {
+                      "text": " Gold Ingot",
+                      "color": "white",
+                      "italic": false
+                    },
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Killing players grants a",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Golden Apple",
+                      "color": "white"
+                    },
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ],
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Summon a giant falling Gold Block above your",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "target that deals",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " 2🖤",
+                      "color": "red"
+                    },
+                    {
+                      "text": ". Its damage & size increases",
+                      "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "based on how many",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Golden Apples",
+                      "color": "white"
+                    },
+                    {
+                      "text": " you have (max: 20).",
+                      "color": "gray"
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:diamond_axe",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{uhcp_radiant:3b,Enchantments:[{id:\"minecraft:sharpness\",lvl:1s},{id:\"minecraft:knockback\",lvl:2s}]}"
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "Gr",
+                    "color": "#0800FF",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "av",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": "it",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": "y S",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": "ma",
+                    "color": "#54C0FF"
+                  },
+                  {
+                    "text": "sh",
+                    "color": "#4FE8FF"
+                  },
+                  {
+                    "text": "er",
+                    "color": "#00FFFF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue"
+                  },
+                  [
+                    {
+                      "text": "RELIC",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Relics gain durability while ",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "held. At max durability, its",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": "activates on hit.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "PASSIVE",
+                      "color": "white",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Sweep hits inflict",
+                      "color": "gray",
+                      "italic": true
+                    },
+                    {
+                      "text": " Levitation",
+                      "color": "yellow",
+                      "italic": true
+                    }
+                  ],
+                  {
+                    "text": "for 1 second.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Launch all nearby enemies",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  {
+                    "text": "into the air.",
+                    "color": "gray"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:leather_chestplate",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{display:{color:5381640},HideFlags:194,uhcp_radiant:4b,Enchantments:[{id:\"minecraft:protection\",lvl:2s},{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:10,Operation:0,UUID:[I;-1749621740,1902725274,-1259731052,1668770021],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;-446085697,-156416355,-1149814584,-38593133],Slot:\"chest\"}],Trim:{material:\"minecraft:quartz\",pattern:\"minecraft:eye\"}}"
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "Ygg",
+                    "color": "#0800FF",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "dra",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": "sil",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": "'s",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": " Ba",
+                    "color": "#54C0FF"
+                  },
+                  {
+                    "text": "rk",
+                    "color": "#4FE8FF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue"
+                  },
+                  [
+                    {
+                      "text": "RELIC",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Relics gain durability while ",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "worn. At max durability, its",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": "activates when you are hit.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Gain",
+                      "color": "gray",
+                      "italic": true
+                    },
+                    {
+                      "text": " +5🖤",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": " and",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Resistance I",
+                      "color": "yellow"
+                    }
+                  ],
+                  {
+                    "text": "for 3 seconds.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "When on Body:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "+10 Armor",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": "+1 Armor Toughness",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:golden_sword",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{HideFlags:3,uhcp_radiant:2b,Enchantments:[{id:\"minecraft:sharpness\",lvl:6s},{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.5,Operation:0,UUID:[I;1412654855,-1586016557,-1183197751,-1541944307],Slot:\"mainhand\"}]}"
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "Fl",
+                    "color": "#0800FF",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "ux",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": " Fa",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": "ct",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": "or",
+                    "color": "#54C0FF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue"
+                  },
+                  [
+                    {
+                      "text": "RELIC",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Relics gain durability while ",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "held. At max durability, its",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": "activates on hit.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Deploy a magnetic field over 7 seconds",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "that inflicts",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Slowness III",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": " on enemies and grants",
+                      "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": " Speed II & Jump Boost I",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": " to allies.",
+                      "color": "gray"
+                    }
+                  ],
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "When in Main Hand:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 7.5 Attack Damage",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "text": " 2 Attack Speed",
+                    "color": "dark_green",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:diamond_sword",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{uhcp_radiant:1b,Enchantments:[{id:\"minecraft:sharpness\",lvl:1s},{id:\"minecraft:sweeping\",lvl:1s}]}"
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "So",
+                    "color": "#0800FF",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "ul",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": "fl",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": "am",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": "e S",
+                    "color": "#54C0FF"
+                  },
+                  {
+                    "text": "ab",
+                    "color": "#4FE8FF"
+                  },
+                  {
+                    "text": "er",
+                    "color": "#00FFFF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue"
+                  },
+                  [
+                    {
+                      "text": "RELIC",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Relics gain durability while ",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "held. At max durability, its",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": "activates on hit.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Summon a circle of flames beneath",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "your target, dealing",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " 10🖤",
+                      "color": "red"
+                    },
+                    {
+                      "text": " over 5 seconds.",
+                      "color": "gray"
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

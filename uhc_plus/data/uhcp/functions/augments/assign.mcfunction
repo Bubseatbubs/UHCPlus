@@ -96,9 +96,21 @@ execute if score @s uhcp_a_count matches 1.. run return 38
 execute store success score @s uhcp_a_count run clear @s minecraft:trident{augment:39s} 1
 execute if score @s uhcp_a_count matches 1.. run return 39
 
+execute store success score @s uhcp_a_count run clear @s minecraft:blade_pottery_sherd{augment:40b} 1
+execute if score @s uhcp_a_count matches 1.. run return 40
+
+execute store success score @s uhcp_a_count run clear @s minecraft:golden_hoe{augment:41b} 1
+execute if score @s uhcp_a_count matches 1.. run return 41
+
+execute store success score @s uhcp_a_count run clear @s minecraft:brush{augment:42b} 1
+execute if score @s uhcp_a_count matches 1.. run return 42
+
 # Silver Augments
 execute store success score @s uhcp_a_count run clear @s minecraft:slime_ball{augment:100s} 1
 execute if score @s uhcp_a_count matches 1.. run return 100
+
+execute store success score @s uhcp_a_count run clear @s minecraft:clock{augment:101s} 1
+execute if score @s uhcp_a_count matches 1.. run return 101
 
 execute store success score @s uhcp_a_count run clear @s minecraft:damaged_anvil{augment:102s} 1
 execute if score @s uhcp_a_count matches 1.. run return 102
@@ -114,6 +126,12 @@ execute if score @s uhcp_a_count matches 1.. run return 105
 
 execute store success score @s uhcp_a_count run clear @s minecraft:crossbow{augment:106s} 1
 execute if score @s uhcp_a_count matches 1.. run return 106
+
+execute store success score @s uhcp_a_count run clear @s minecraft:gold_nugget{augment:107s} 1
+execute if score @s uhcp_a_count matches 1.. run return 107
+
+execute store success score @s uhcp_a_count run clear @s minecraft:potion{augment:108s} 1
+execute if score @s uhcp_a_count matches 1.. run return 108
 
 execute store success score @s uhcp_a_count run clear @s minecraft:glass_bottle{augment:109s} 1
 execute if score @s uhcp_a_count matches 1.. run return 109
@@ -142,6 +160,12 @@ execute if score @s uhcp_a_count matches 1.. run return 118
 execute store success score @s uhcp_a_count run clear @s minecraft:zombie_head{augment:119s} 1
 execute if score @s uhcp_a_count matches 1.. run return 119
 
+execute store success score @s uhcp_a_count run clear @s minecraft:compass{augment:120s} 1
+execute if score @s uhcp_a_count matches 1.. run return 120
+
+execute store success score @s uhcp_a_count run clear @s minecraft:chainmail_chestplate{augment:121s} 1
+execute if score @s uhcp_a_count matches 1.. run return 121
+
 execute store success score @s uhcp_a_count run clear @s minecraft:pointed_dripstone{augment:122s} 1
 execute if score @s uhcp_a_count matches 1.. run return 122
 
@@ -165,6 +189,9 @@ execute if score @s uhcp_a_count matches 1.. run return 128
 
 execute store success score @s uhcp_a_count run clear @s minecraft:shulker_box{augment:129s} 1
 execute if score @s uhcp_a_count matches 1.. run return 129
+
+execute store success score @s uhcp_a_count run clear @s minecraft:diamond{augment:130s} 1
+execute if score @s uhcp_a_count matches 1.. run return 130
 
 execute store success score @s uhcp_a_count run clear @s minecraft:turtle_helmet{augment:131s} 1
 execute if score @s uhcp_a_count matches 1.. run return 131
