@@ -2,7 +2,7 @@
 tag @s add UHCP_Gravity
 scoreboard players add @s uhcp_a_timer 1
 scoreboard players add @s uhcp_gameTime 1
-execute at @s[tag=UHCP_Voltrune_Active] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] unless score @s uhcp_team = @e[tag=UHCP_Gravity,sort=nearest,limit=1] uhcp_team run function uhcp:augments/effects/gold/radiantrelics/voltrune/gravity
+execute at @s[tag=UHCP_Voltrune_Active] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] unless score @s uhcp_team = @e[tag=UHCP_Gravity,sort=nearest,limit=1] uhcp_team run effect give @s slowness 1 2 false
 execute at @s[tag=UHCP_Voltrune_Active] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] if score @s uhcp_team = @e[tag=UHCP_Gravity,sort=nearest,limit=1] uhcp_team run effect give @s speed 1 1 false
 execute at @s[tag=UHCP_Voltrune_Active] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] if score @s uhcp_team = @e[tag=UHCP_Gravity,sort=nearest,limit=1] uhcp_team run effect give @s jump_boost 1 0 false
 

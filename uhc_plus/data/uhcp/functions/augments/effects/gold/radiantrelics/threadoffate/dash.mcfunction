@@ -47,7 +47,7 @@ execute at @s unless block ~ ~ ~ #uhcp:non_solid_blocks run tp @s ^ ^ ^-1
 execute at @s unless block ~ ~ ~ #uhcp:non_solid_blocks run tp @s ^ ^ ^-1
 
 # Load Rotation
-execute at @s rotated as @e[tag=UHCP_SaveRotation,limit=1,sort=nearest] run tp @s ~ ~ ~ ~ ~
+execute at @s rotated as @e[tag=UHCP_SaveRotation,limit=1,sort=nearest] run tp @s ~ ~ ~ ~180 ~
 kill @e[tag=UHCP_SaveRotation]
 schedule function uhcp:augments/effects/gold/radiantrelics/threadoffate/finish 2t
 

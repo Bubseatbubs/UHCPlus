@@ -14,7 +14,7 @@
               },
               {
                 "function": "set_nbt",
-                "tag": "{HideFlags:3,uhcp_radiant:7b,Enchantments:[{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:6.5,Operation:0,UUID:[I;447695693,-711897399,-1108188814,2100217050],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.4,Operation:0,UUID:[I;984545779,-1819719397,-1958803177,-2076758992],Slot:\"mainhand\"}]}"
+                "tag": "{HideFlags:3,uhcp_radiant:7b,Enchantments:[{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:8.5,Operation:0,UUID:[I;1143660634,-1035515697,-2017256653,387488453],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.4,Operation:0,UUID:[I;-66302264,1916223962,-1566999601,324500780],Slot:\"mainhand\"}]}"
               },
               {
                 "function": "set_name",
@@ -109,11 +109,11 @@
                       "color": "gray"
                     },
                     {
-                      "text": " Steal",
+                      "text": " Deal",
                       "color": "gray"
                     },
                     {
-                      "text": " 1🖤",
+                      "text": " 2🖤",
                       "color": "red"
                     },
                     {
@@ -158,7 +158,7 @@
               },
               {
                 "function": "set_nbt",
-                "tag": "{HideFlags:3,uhcp_radiant:6b,Enchantments:[{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:5,Operation:0,UUID:[I;-314955671,-1399504256,-1419510637,926558577],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.9,Operation:0,UUID:[I;-358265146,-528921831,-1938549642,-1420215511],Slot:\"mainhand\"}]}"
+                "tag": "{HideFlags:3,uhcp_radiant:6b,Enchantments:[{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:5,Operation:0,UUID:[I;-514273535,1199853292,-1652511467,-1994049012],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.9,Operation:0,UUID:[I;126047672,1898989385,-1577738927,1597316504],Slot:\"mainhand\"}]}"
               },
               {
                 "function": "set_name",
@@ -308,7 +308,7 @@
               },
               {
                 "function": "set_nbt",
-                "tag": "{uhcp_radiant:2b}"
+                "tag": "{uhcp_radiant:2b,Enchantments:[{id:\"minecraft:piercing\",lvl:2s},{id:\"minecraft:quick_charge\",lvl:2s}]}"
               },
               {
                 "function": "set_name",
@@ -415,7 +415,7 @@
               },
               {
                 "function": "set_nbt",
-                "tag": "{HideFlags:1,uhcp_radiant:5b,Enchantments:[{id:\"minecraft:sharpness\",lvl:10s},{id:\"minecraft:unbreaking\",lvl:5s}]}"
+                "tag": "{HideFlags:1,uhcp_radiant:5b,Enchantments:[{id:\"minecraft:sharpness\",lvl:11s},{id:\"minecraft:unbreaking\",lvl:5s}]}"
               },
               {
                 "function": "set_name",
@@ -583,7 +583,7 @@
               },
               {
                 "function": "set_nbt",
-                "tag": "{uhcp_radiant:4b,Enchantments:[{id:\"minecraft:sharpness\",lvl:1s},{id:\"minecraft:knockback\",lvl:2s}]}"
+                "tag": "{uhcp_radiant:3b,Enchantments:[{id:\"minecraft:sharpness\",lvl:1s},{id:\"minecraft:knockback\",lvl:2s}]}"
               },
               {
                 "function": "set_name",
@@ -675,7 +675,8 @@
                     },
                     {
                       "text": " Levitation",
-                      "color": "yellow"
+                      "color": "yellow",
+                      "italic": true
                     }
                   ],
                   {
@@ -716,7 +717,7 @@
               },
               {
                 "function": "set_nbt",
-                "tag": "{display:{color:5381640},HideFlags:194,uhcp_radiant:3b,Enchantments:[{id:\"minecraft:protection\",lvl:2s},{id:\"minecraft:fire_protection\",lvl:2s},{id:\"minecraft:projectile_protection\",lvl:2s},{id:\"minecraft:thorns\",lvl:1s},{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:9,Operation:0,UUID:[I;1361568887,-1260043504,-1728192266,-1368077826],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;-1758723300,-390576561,-1494853386,1480037201],Slot:\"chest\"}],Trim:{material:\"minecraft:quartz\",pattern:\"minecraft:eye\"}}"
+                "tag": "{display:{color:5381640},HideFlags:194,uhcp_radiant:4b,Enchantments:[{id:\"minecraft:protection\",lvl:2s},{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:10,Operation:0,UUID:[I;-1749621740,1902725274,-1259731052,1668770021],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;-446085697,-156416355,-1149814584,-38593133],Slot:\"chest\"}],Trim:{material:\"minecraft:quartz\",pattern:\"minecraft:eye\"}}"
               },
               {
                 "function": "set_name",
@@ -828,7 +829,7 @@
                     "italic": false
                   },
                   {
-                    "text": "+9 Armor",
+                    "text": "+10 Armor",
                     "color": "blue",
                     "italic": false
                   },
@@ -852,7 +853,7 @@
               },
               {
                 "function": "set_nbt",
-                "tag": "{HideFlags:3,uhcp_radiant:2b,Enchantments:[{id:\"minecraft:sharpness\",lvl:6s},{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.5,Operation:0,UUID:[I;-1952120182,1619411981,-2011067792,577546675],Slot:\"mainhand\"}]}"
+                "tag": "{HideFlags:3,uhcp_radiant:2b,Enchantments:[{id:\"minecraft:sharpness\",lvl:6s},{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.5,Operation:0,UUID:[I;1412654855,-1586016557,-1183197751,-1541944307],Slot:\"mainhand\"}]}"
               },
               {
                 "function": "set_name",
@@ -935,21 +936,27 @@
                       "italic": true
                     }
                   ],
-                  {
-                    "text": "that pulls enemies towards the center and grants",
-                    "color": "gray"
-                  },
                   [
                     {
-                      "text": "allies",
+                      "text": "that inflicts",
                       "color": "gray"
                     },
+                    {
+                      "text": " Slowness III",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": " on enemies and grants",
+                      "color": "gray"
+                    }
+                  ],
+                  [
                     {
                       "text": " Speed II & Jump Boost I",
                       "color": "yellow"
                     },
                     {
-                      "text": ".",
+                      "text": " to allies.",
                       "color": "gray"
                     }
                   ],
