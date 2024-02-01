@@ -18,7 +18,6 @@ execute if score %time uhcp_gameTime matches 1200 as @a[scores={uhcp_a_selectedA
 execute if score %time uhcp_gameTime matches 12000 as @a[scores={uhcp_a_selectedAugment=207}] run effect give @s speed infinite 0
 execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=214}] run give @s obsidian 14
 execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=214}] run give @s flint_and_steel 1
-execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=214}] run give @s potion{Potion:"minecraft:long_fire_resistance"} 1
 
 # Scuffed version of Relic Master
 execute if score %time uhcp_gameTime matches 12000 as @a[scores={uhcp_a_selectedAugment=238}] run loot give @s loot uhcp:relics
