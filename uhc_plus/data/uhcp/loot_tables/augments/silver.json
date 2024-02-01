@@ -63,6 +63,383 @@
         {
           "type": "item",
           "weight": 1,
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:130s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Supply Drop",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain 8",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Diamonds",
+                    "color": "white"
+                  },
+                  {
+                    "text": " after 30 minutes.",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:chainmail_chestplate",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:121s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Protect Protocol I",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain a set of full",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Iron Armor",
+                    "color": "white"
+                  },
+                  {
+                    "text": " after",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "10 minutes.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:compass",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:120s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "On the Hunt",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Player Tracking Compass",
+                    "color": "white"
+                  },
+                  {
+                    "text": " after",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "10 minutes.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:gold_ingot",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:117s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Late Game Specialist",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 40 Gold Ingots ",
+                    "color": "white"
+                  },
+                  {
+                    "text": " upon reaching",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "Level 25.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:108s,Potion:\"minecraft:mundane\",CustomPotionColor:10921066}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Drunken Stupor",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Start the game with",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Nausea",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " for 3 minutes.",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Strength I and Resistance I",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " for 25",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "minutes after.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:107s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Drip Economy I",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain 3",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Gold Ingots",
+                    "color": "white"
+                  },
+                  {
+                    "text": " now and another every",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "5 minutes.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:101s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "AFK",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                {
+                  "text": "You cannot move or attack for 3 minutes.",
+                  "color": "gray"
+                },
+                [
+                  {
+                    "text": "Gain 15",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Gold Ingots",
+                    "color": "white"
+                  },
+                  {
+                    "text": " after.",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
           "name": "minecraft:glass_bottle",
           "functions": [
             {
