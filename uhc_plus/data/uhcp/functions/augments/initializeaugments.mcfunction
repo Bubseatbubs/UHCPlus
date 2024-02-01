@@ -73,6 +73,8 @@ execute if score @s uhcp_a_selectedAugment matches 37 run function uhcp:augments
 execute if score @s uhcp_a_selectedAugment matches 38 run function uhcp:augments/effects/gold/oppenheimer
 execute if score @s uhcp_a_selectedAugment matches 39 run function uhcp:augments/effects/gold/poseidonsblessing
 execute if score @s uhcp_a_selectedAugment matches 40 run function uhcp:augments/effects/gold/relicsofthepast
+execute if score @s uhcp_a_selectedAugment matches 41 run function uhcp:augments/effects/gold/harvestseason
+execute if score @s uhcp_a_selectedAugment matches 42 run function uhcp:augments/effects/gold/shadowclonejutsu
 
 # Prismatic Augments
 execute if score @s uhcp_a_selectedAugment matches 201 run function uhcp:augments/effects/prismatic/bowmaster
@@ -93,6 +95,7 @@ execute if score @s uhcp_a_selectedAugment matches 227 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 228 run function uhcp:augments/effects/prismatic/trapgod
 execute if score @s uhcp_a_selectedAugment matches 229 run function uhcp:augments/effects/prismatic/youhavemyrod
 execute if score @s uhcp_a_selectedAugment matches 236 run function uhcp:augments/effects/prismatic/thetortoise
+execute if score @s uhcp_a_selectedAugment matches 238 run function uhcp:augments/effects/prismatic/relicmaster
 
 scoreboard players reset @s uhcp_a_stack
 particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.25 100 normal
