@@ -1,5 +1,4 @@
 # Assign target to team based on their score
-
 execute if score @s uhcp_team matches 51 run team join barbie
 execute if score @s uhcp_team matches 52 run team join bastion
 execute if score @s uhcp_team matches 53 run team join bling
