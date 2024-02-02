@@ -248,7 +248,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 40 Gold Ingots ",
+                    "text": " 32 Gold Ingots ",
                     "color": "white"
                   },
                   {
@@ -922,6 +922,14 @@
                   },
                   {
                     "text": " Invisibility Potion",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Speed Potion",
                     "color": "white"
                   },
                   {

@@ -144,7 +144,7 @@
                 },
                 [
                   {
-                    "text": "Gain 3",
+                    "text": "Gain 4",
                     "color": "gray"
                   },
                   {
@@ -1503,12 +1503,20 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Invisibility Potion",
+                    "text": " Long Invisibility Potion",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Speed Potion",
                     "color": "white"
                   }
                 ],
                 {
-                  "text": "every 10 minutes.",
+                  "text": " every 10 minutes.",
                   "color": "gray"
                 }
               ]
