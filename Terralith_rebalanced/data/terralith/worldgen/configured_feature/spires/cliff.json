@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:noise_provider",
+      "noise": {
+        "amplitudes": [
+          1,
+          1,
+          2,
+          3,
+          0,
+          2.75,
+          5
+        ],
+        "firstOctave": -6
+      },
+      "scale": 1,
+      "seed": 0,
+      "states": [
+        {
+          "Name": "minecraft:stone"
+        },
+        {
+          "Name": "minecraft:stone"
+        },
+        {
+          "Name": "minecraft:stone"
+        },
+        {
+          "Name": "minecraft:dripstone_block"
+        },
+        {
+          "Name": "minecraft:granite"
+        },
+        {
+          "Name": "minecraft:granite"
+        },
+        {
+          "Name": "minecraft:granite"
+        }
+      ]
+    }
+  }
+}

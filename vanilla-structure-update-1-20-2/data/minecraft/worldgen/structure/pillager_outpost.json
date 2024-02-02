@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": ["minecraft:plains","minecraft:desert","minecraft:meadow","minecraft:grove","minecraft:snowy_slopes","minecraft:jagged_peaks","minecraft:frozen_peaks","minecraft:savanna","minecraft:snowy_plains","minecraft:taiga"],
+  "step": "surface_structures",
+  "spawn_overrides": {
+    "monster": {
+      "bounding_box": "full",
+      "spawns": [
+        {
+          "type": "minecraft:pillager",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 3
+        }
+      ]
+    }
+  },
+  "terrain_adaptation": "beard_thin",
+  "start_pool": "minecraft:pillager_outpost/towers",
+  "size": 7,
+  "start_height": {
+    "absolute": 0
+  },
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "max_distance_from_center": 70,
+  "use_expansion_hack": false
+}

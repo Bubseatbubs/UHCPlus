@@ -1,0 +1,16 @@
+{
+  "name": "vsrevamped:swamp_hut/hut",
+  "fallback": "minecraft:empty",
+  "elements": [
+	{
+      "weight": 50,
+      "element": {
+        "location": "vsrevamped:swamp_hut",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
+

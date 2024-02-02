@@ -1,0 +1,31 @@
+{
+    "pack": {
+        "pack_format": 15,
+        "supported_formats": [
+            10,
+            26
+        ],
+        "description": [
+            {
+                "text": "Structory",
+                "color": "#e878d1"
+            },
+            {
+                "text": "\nCreated by ",
+                "color": "gray"
+            },
+            {
+                "text": "Stardust Labs",
+                "color": "#683edd"
+            }
+        ]
+    },
+    "overlays": {
+        "entries": [
+            {
+                "formats": 26,
+                "directory": "1-20-3-overlay"
+            }
+        ]
+    }
+}

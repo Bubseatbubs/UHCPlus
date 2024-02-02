@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "minecraft:desert_pyramid",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 200,
+    "separation": 150,
+    "salt": 1692637480
+  }
+}

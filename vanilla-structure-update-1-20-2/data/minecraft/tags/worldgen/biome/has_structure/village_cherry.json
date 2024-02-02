@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:cherry_grove",
+    "terralith:sakura_grove",
+    "terralith:sakura_valley"
+  ]
+}

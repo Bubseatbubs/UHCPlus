@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "minecraft:stronghold",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 180,
+    "separation": 160,
+    "salt": 83298135823
+  }
+}
