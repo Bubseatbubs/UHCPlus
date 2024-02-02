@@ -3,19 +3,19 @@
 ##
 
 tag @s add UHCP_DisableChoose
-execute at @s in uhcp:main run setblock 0 -64 0 barrel
+execute at @s in uhcp:main run setblock 0 0 0 barrel
 
 # Add item to barrel
-execute in uhcp:main as @s[nbt={Inventory:[{Slot:103b}]}] run item replace block 0 -64 0 container.0 from entity @s armor.head
-execute in uhcp:main as @s[nbt={Inventory:[{Slot:102b}]}] run item replace block 0 -64 0 container.0 from entity @s armor.chest
-execute in uhcp:main as @s[nbt={Inventory:[{Slot:101b}]}] run item replace block 0 -64 0 container.0 from entity @s armor.legs
-execute in uhcp:main as @s[nbt={Inventory:[{Slot:100b}]}] run item replace block 0 -64 0 container.0 from entity @s armor.feet
-execute in uhcp:main as @s[nbt={Inventory:[{Slot:-106b}]}] run item replace block 0 -64 0 container.0 from entity @s weapon.offhand
+execute in uhcp:main as @s[nbt={Inventory:[{Slot:103b}]}] run item replace block 0 0 0 container.0 from entity @s armor.head
+execute in uhcp:main as @s[nbt={Inventory:[{Slot:102b}]}] run item replace block 0 0 0 container.0 from entity @s armor.chest
+execute in uhcp:main as @s[nbt={Inventory:[{Slot:101b}]}] run item replace block 0 0 0 container.0 from entity @s armor.legs
+execute in uhcp:main as @s[nbt={Inventory:[{Slot:100b}]}] run item replace block 0 0 0 container.0 from entity @s armor.feet
+execute in uhcp:main as @s[nbt={Inventory:[{Slot:-106b}]}] run item replace block 0 0 0 container.0 from entity @s weapon.offhand
 
 # Replace empty slot with item
-execute in uhcp:main unless entity @s[nbt={Inventory:[{Slot:3b}]}] run item replace entity @s container.3 from block 0 -64 0 container.0
-execute in uhcp:main unless entity @s[nbt={Inventory:[{Slot:4b}]}] run item replace entity @s container.4 from block 0 -64 0 container.0
-execute in uhcp:main unless entity @s[nbt={Inventory:[{Slot:5b}]}] run item replace entity @s container.5 from block 0 -64 0 container.0
+execute in uhcp:main unless entity @s[nbt={Inventory:[{Slot:3b}]}] run item replace entity @s container.3 from block 0 0 0 container.0
+execute in uhcp:main unless entity @s[nbt={Inventory:[{Slot:4b}]}] run item replace entity @s container.4 from block 0 0 0 container.0
+execute in uhcp:main unless entity @s[nbt={Inventory:[{Slot:5b}]}] run item replace entity @s container.5 from block 0 0 0 container.0
 
 # Clear filled slots
 item replace entity @s armor.head with air

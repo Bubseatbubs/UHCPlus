@@ -21,10 +21,10 @@ execute at @s store success score @s[scores={uhcp_a_validSelection=0}] uhcp_a_va
 execute at @s store success score @s[scores={uhcp_a_validSelection=0}] uhcp_a_validSelection run data get entity @s Inventory[{Slot:-106b}]
 
 # Add items to barrel, in case BSG was selected
-execute in uhcp:main run setblock 0 -64 0 barrel
-execute in uhcp:main as @s run item replace block 0 -64 0 container.0 from entity @s hotbar.3
-execute in uhcp:main as @s run item replace block 0 -64 0 container.1 from entity @s hotbar.4
-execute in uhcp:main as @s run item replace block 0 -64 0 container.2 from entity @s hotbar.5
+execute in uhcp:main run setblock 0 0 0 barrel
+execute in uhcp:main as @s run item replace block 0 0 0 container.0 from entity @s hotbar.3
+execute in uhcp:main as @s run item replace block 0 0 0 container.1 from entity @s hotbar.4
+execute in uhcp:main as @s run item replace block 0 0 0 container.2 from entity @s hotbar.5
 
 # Based on if selection was valid, continue with optionselected, else return the item
 execute as @s[scores={uhcp_a_validSelection=0},tag=!UHCP_DisableChoose] at @s run function uhcp:augments/optionselected
