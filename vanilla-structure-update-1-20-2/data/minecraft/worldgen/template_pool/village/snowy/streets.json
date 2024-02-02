@@ -1,0 +1,141 @@
+{
+  "name": "minecraft:village/snowy/streets",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 6,
+      "element": {
+        "location": "minecraft:village/snowy/streets/snowy_crossroad_3",
+        "processors": "vsrevamped:snowy_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "minecraft:village/snowy/streets/snowy_crossroad_4",
+        "processors": "vsrevamped:snowy_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "minecraft:village/snowy/streets/snowy_crossroad_5",
+        "processors": "vsrevamped:snowy_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "minecraft:village/snowy/streets/snowy_corner_1",
+        "processors": "vsrevamped:snowy_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "minecraft:village/snowy/streets/snowy_corner_2",
+        "processors": "vsrevamped:snowy_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "minecraft:village/snowy/streets/snowy_corner_3",
+        "processors": "vsrevamped:snowy_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "minecraft:village/snowy/streets/snowy_turn_1",
+        "processors": "vsrevamped:snowy_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "minecraft:village/snowy/streets/snowy_square_1",
+        "processors": "vsrevamped:snowy_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "minecraft:village/snowy/streets/snowy_crossroad_6",
+        "processors": "vsrevamped:snowy_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight":11,
+      "element": {
+        "location": "minecraft:village/snowy/streets/snowy_straight_1",
+        "processors": "vsrevamped:snowy_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "minecraft:village/snowy/streets/snowy_straight_2",
+        "processors": "vsrevamped:snowy_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 16,
+      "element": {
+        "location": "minecraft:village/snowy/streets/snowy_straight_3",
+        "processors": "vsrevamped:snowy_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "minecraft:village/snowy/streets/snowy_straight_4",
+        "processors": "vsrevamped:snowy_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "minecraft:village/snowy/streets/snowy_straight_6",
+        "processors": "vsrevamped:snowy_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "minecraft:village/snowy/streets/snowy_straight_8",
+        "processors": "vsrevamped:snowy_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

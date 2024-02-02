@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "vsrevamped:village_cherry",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1218123376,
+    "exclusion_zone": {
+      "chunk_count": 3,
+      "other_set": "minecraft:villages"
+    },
+    "spacing": 20,
+    "separation": 7
+  }
+}

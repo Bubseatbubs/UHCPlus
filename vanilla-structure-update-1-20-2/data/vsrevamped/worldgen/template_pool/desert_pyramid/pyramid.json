@@ -1,0 +1,15 @@
+{
+  "name": "vsrevamped:desert_pyramid/pyramid",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 100,
+      "element": {
+        "location": "vsrevamped:desert_pyramid/desert_pyramid",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }      
+  ]
+}

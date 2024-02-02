@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "artemisoutposts:outpost",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 34,
+    "separation": 15,
+    "salt": 1365279543
+  }
+}

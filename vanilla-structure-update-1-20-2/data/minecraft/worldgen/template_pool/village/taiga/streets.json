@@ -1,0 +1,87 @@
+{
+  "name": "minecraft:village/taiga/streets",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 6,
+      "element": {
+        "location": "minecraft:village/taiga/streets/taiga_crossroad_1",
+        "processors": "vsrevamped:taiga_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "minecraft:village/taiga/streets/taiga_crossroad_2",
+        "processors": "vsrevamped:taiga_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "minecraft:village/taiga/streets/taiga_crossroad_3",
+        "processors": "vsrevamped:taiga_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 8,
+      "element": {
+        "location": "minecraft:village/taiga/streets/taiga_curve",
+        "processors": "vsrevamped:taiga_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "minecraft:village/taiga/streets/taiga_deadend",
+        "processors": "vsrevamped:taiga_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight":11,
+      "element": {
+        "location": "minecraft:village/taiga/streets/taiga_straight",
+        "processors": "vsrevamped:taiga_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "minecraft:village/taiga/streets/taiga_straight2",
+        "processors": "vsrevamped:taiga_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 16,
+      "element": {
+        "location": "minecraft:village/taiga/streets/taiga_straight3",
+        "processors": "vsrevamped:taiga_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "minecraft:village/taiga/streets/taiga_straight4",
+        "processors": "vsrevamped:taiga_streets",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

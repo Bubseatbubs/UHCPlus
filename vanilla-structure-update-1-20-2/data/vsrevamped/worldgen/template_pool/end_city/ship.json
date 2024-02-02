@@ -1,0 +1,15 @@
+{
+  "name": "vsrevamped:end_city/ship",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 20,
+      "element": {
+        "location": "vsrevamped:end_city/end_ship",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
