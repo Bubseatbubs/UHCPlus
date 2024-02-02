@@ -1,0 +1,41 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"type_specific": {
+										"type": "player",
+										"level": {
+											"min": 75
+										}
+									}
+								}
+							},
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"uhcp_a_tier": {
+										"max": 17
+									},
+									"uhcp_a_selectedAugment": 222
+								}
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "uhcp:augments/effects/prismatic/sololeveling/upgrade/18"
+	}
+}
