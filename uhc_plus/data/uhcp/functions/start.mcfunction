@@ -52,4 +52,5 @@ scoreboard players reset @a uhcp_smithingTable
 # -----------------------------------------------------------
 scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 900
 bossbar set uhcp_augment players @a
+scoreboard players set %uhcp_augments uhcp_initStatus 1
 execute as @a run function uhcp:start/augments
