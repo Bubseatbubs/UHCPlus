@@ -1914,25 +1914,43 @@
                   {
                     "text": " The Harvester",
                     "color": "gold"
-                  }
-                ],
-                [
+                  },
                   {
                     "text": ", a",
                     "color": "gray"
                   },
                   {
                     "text": " Relic",
-                    "color": " light blue"
+                    "color": "blue"
                   },
                   {
-                    "text": " that farms extra gold from hostile mob and player kills.",
+                    "text": " that farms extra",
                     "color": "gray"
+                  },
+                  {
+                    "text": " Gold",
+                    "color": "white"
                   }
                 ],
+                {
+                  "text": "from hostile mob and player kills. It also summons",
+                  "color": "gray"
+                },
+                {
+                  "text": "falling Gold Blocks that increase in power",
+                  "color": "gray"
+                },
                 [
                   {
-                    "text": " It also summons falling gold blocks which increase in size and damage based on the number of Golden Apples in your inventory.",
+                    "text": "based on the amount of",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Golden Apples",
+                    "color": "white"
+                  },
+                  {
+                    "text": " you have.",
                     "color": "gray"
                   }
                 ]
@@ -1979,22 +1997,28 @@
                   {
                     "text": " Smooth Getaway",
                     "color": "gold"
-                  }
-                ],
-                [
+                  },
                   {
                     "text": ", a",
                     "color": "gray"
                   },
                   {
                     "text": " Relic",
-                    "color": " light blue"
+                    "color": "dark_blue"
                   },
                   {
-                    "text": "  that allows you to disappear and summon 2 clones that attack the nearest enemies.",
+                    "text": " that summons",
                     "color": "gray"
+                  },
+                  {
+                    "text": " Mirages",
+                    "color": "blue"
                   }
-                ]
+                ],
+                {
+                  "text": "that fight and look like you, allowing you to get away!",
+                  "color": "gray"
+                }
               ]
             }
           ]
