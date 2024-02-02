@@ -45,7 +45,7 @@ clear @a
 effect give @a minecraft:regeneration 5 255 true
 execute in minecraft:overworld run time set 0
 execute in minecraft:overworld run tp 0 200 0
-datapack enable "file/pregen"
+# datapack enable "file/pregen"
 effect clear @a
 kill @e[tag=lobbycenter]
 kill @e[tag=lobby]

@@ -37,6 +37,7 @@ scoreboard objectives add uhcp_team dummy
 scoreboard objectives add uhcp_topDelay dummy
 scoreboard objectives add uhcp_topCharge dummy
 scoreboard objectives add uhcp_topCD dummy
+scoreboard objectives add uhcp_death deathCount
 
 # Add Display Timer Names
 scoreboard players set %display uhcp_displayTime 0
