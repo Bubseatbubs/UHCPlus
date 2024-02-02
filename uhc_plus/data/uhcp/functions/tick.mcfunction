@@ -51,6 +51,7 @@ execute as @e[tag=UHCP_Temp,type=armor_stand] run function uhcp:augments/effects
 execute as @e[tag=UHCP_GoldBlock,type=armor_stand] run function uhcp:augments/effects/gold/radiantrelics/theharvester/update
 execute as @e[tag=UHCP_SCloneStand,type=armor_stand] at @s run function uhcp:augments/effects/gold/radiantrelics/shadowclone/update
 execute as @a[scores={uhcp_lavaTimeInterval=1..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
+execute as @e[tag=UHCP_SLBlock] run function 
 
 # Augment Countdown/Functions
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_augmentCountdown uhcp_gameTime matches 0.. as @a[tag=UHCP_ChoosingItem,scores={uhcp_a_leave=1..}] run function uhcp:augments/left
