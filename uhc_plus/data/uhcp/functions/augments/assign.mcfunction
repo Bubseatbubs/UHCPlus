@@ -268,3 +268,9 @@ execute if score @s uhcp_a_count matches 1.. run return 229
 
 execute store success score @s uhcp_a_count run clear @s minecraft:turtle_helmet{augment:236s} 1
 execute if score @s uhcp_a_count matches 1.. run return 236
+
+execute store success score @s uhcp_a_count run clear @s minecraft:brush{augment:236s} 1
+execute if score @s uhcp_a_count matches 1.. run return 239
+
+execute store success score @s uhcp_a_count run clear @s minecraft:golden_sword{augment:236s} 1
+execute if score @s uhcp_a_count matches 1.. run return 240

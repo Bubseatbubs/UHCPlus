@@ -100,5 +100,7 @@ execute as @a if score @s uhcp_a_selectedAugment matches 227 run tellraw @a[tag=
 execute as @a if score @s uhcp_a_selectedAugment matches 228 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Trap God","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_a_selectedAugment matches 229 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" You Have My Rod","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_a_selectedAugment matches 236 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" The Tortoise","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_a_selectedAugment matches 239 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Shadow Clone Jutsu","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_a_selectedAugment matches 240 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Zeus' Favor","color":"gold"},{"text":"!","color":"white"}]
 scoreboard players reset @s augments 
 tag @s remove UHCP_AugmentAnnounce
