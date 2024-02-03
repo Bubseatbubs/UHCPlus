@@ -30,8 +30,7 @@ return fail
 # Upgrade if player has tag (normal tag) and one of items' previous stages are found in inventory.
 # Transfer rewritten (or unwritten) storage to player inventory.
 #
-# Use item_durability_changed advancement to record item durabilities for players. Lower durability if item gains durability. Keep durability if have lower durability.
-# Record when items make it out of inventory, give player tag when this is the case.
+# Also close GUI for players with any solo_level:1b items.
 
 # Known issues:
 # GUI closing does not always work. Mostly works.

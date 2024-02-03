@@ -67,3 +67,9 @@ execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:d
 
 # Disable Ender Pearl Damage
 execute as @e[type=minecraft:ender_pearl] at @s run function uhcp:enderpearl
+
+# Remove three below and temp predicate when in pack format with new advancements
+scoreboard players reset @a[predicate=uhcp:temp] uhcp_anvil
+scoreboard players reset @a[predicate=uhcp:temp] uhcp_grindstone
+scoreboard players reset @a[predicate=uhcp:temp] uhcp_smithingTable
+# -----------------------------------------------------------

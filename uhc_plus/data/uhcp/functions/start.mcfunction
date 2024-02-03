@@ -46,11 +46,6 @@ execute if score %tier uhcp_a_tier matches 12..17 run scoreboard players set %ti
 execute if score %tier uhcp_a_tier matches 18..19 run scoreboard players set %tier uhcp_a_tier 2
 
 scoreboard players reset @a uhcp_a_leave
-# Remove three below when in pack format with new advancements
-scoreboard players reset @a uhcp_anvil
-scoreboard players reset @a uhcp_grindstone
-scoreboard players reset @a uhcp_smithingTable
-# -----------------------------------------------------------
 scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 900
 bossbar set uhcp_augment players @a
 scoreboard players set %uhcp_augments uhcp_initStatus 1
