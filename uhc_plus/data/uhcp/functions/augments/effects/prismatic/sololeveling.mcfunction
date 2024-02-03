@@ -34,8 +34,7 @@ return fail
 # Record when items make it out of inventory, give player tag when this is the case.
 
 # Known issues:
-# GUI closing does not work if player moves fast enough while interacting with blocks. (Maybe use teleport to stop them.)
-# GUI closing does not work at world height limit (blocks cannot be placed). Maybe teleport the player slightly down, or use alternative player teleport system.
+# GUI closing does not always work. Mostly works.
 
 # Items for 18 upgrades:
 # Stone tools

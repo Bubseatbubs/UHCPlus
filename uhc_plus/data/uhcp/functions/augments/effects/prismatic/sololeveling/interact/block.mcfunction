@@ -1,5 +1,7 @@
 # Replace block at head with Nether portal
-execute in uhcp:main run forceload add ~ ~
+scoreboard players set @s uhcp_lavaTimeInterval 5
+execute unless predicate uhcp:dimensions/minecraft/the_nether in uhcp:main run forceload add ~ ~
+execute if predicate uhcp:dimensions/minecraft/the_nether in uhcp:hell run forceload add ~ ~
 forceload add ~ ~
 summon minecraft:marker ~ ~ ~ {Tags:["UHCP_SLBlock","UHCP_SLBNew"]}
 summon minecraft:marker ~ ~ ~ {Tags:["UHCP_SLBTP","UHCP_SLBTPNew"]}

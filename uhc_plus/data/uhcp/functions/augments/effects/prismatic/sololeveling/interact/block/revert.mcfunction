@@ -1,3 +1,3 @@
 # Clone block back
-clone from uhcp:main ~ -64 ~ ~ -64 ~ ~ ~ ~
-execute in uhcp:main run setblock ~ -64 ~ minecraft:air
+execute unless predicate uhcp:dimensions/minecraft/the_nether run function uhcp:augments/effects/prismatic/sololeveling/interact/block/normal
+execute if predicate uhcp:dimensions/minecraft/the_nether run function uhcp:augments/effects/prismatic/sololeveling/interact/block/the_nether
