@@ -1,5 +1,4 @@
 # Close GUI for player
-tag @a remove UHCP_SLCLose
 execute if entity @s[gamemode=survival] run function uhcp:augments/effects/prismatic/sololeveling/interact/interact
 
 # Reset player
