@@ -92,7 +92,7 @@ execute if score @s uhcp_a_selectedAugment matches 217 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 220 run function uhcp:augments/effects/prismatic/restierplayer
 execute if score @s uhcp_a_selectedAugment matches 222 run function uhcp:augments/effects/prismatic/sololeveling
 execute if score @s uhcp_a_selectedAugment matches 224 run function uhcp:augments/effects/prismatic/starterkitiii
-execute if score @s uhcp_a_selectedAugment matches 226 run function uhcp:augments/effects/prismatic/therabbit
+execute if score @s uhcp_a_selectedAugment matches 226 run function uhcp:augments/effects/prismatic/thehare
 execute if score @s uhcp_a_selectedAugment matches 227 run function uhcp:augments/effects/prismatic/totheskies
 execute if score @s uhcp_a_selectedAugment matches 228 run function uhcp:augments/effects/prismatic/trapgod
 execute if score @s uhcp_a_selectedAugment matches 229 run function uhcp:augments/effects/prismatic/youhavemyrod
