@@ -3,8 +3,11 @@
 ##
 
 scoreboard players remove %uhcp_augmentCountdown uhcp_gameTime 1
-execute if score %uhcp_augmentCountdown uhcp_gameTime matches ..890 as @a[gamemode=adventure] at @s run ride @s mount @e[tag=UHCP_Lock,distance=..15,sort=nearest,limit=1]
+execute if score %uhcp_augmentCountdown uhcp_gameTime matches ..890 as @a[gamemode=adventure] at @s run ride @s mount @e[tag=UHCP_Lock,distance=..2,sort=nearest,limit=1]
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 880 as @a[gamemode=adventure] at @s run forceload remove ~ ~
+
+# Spawn armor stand if there are none near the player
+execute if score %uhcp_augmentCountdown uhcp_gameTime matches 101..895 as @a[gamemode=adventure] at @s unless entity @e[tag=UHCP_Lock,distance=..2] run summon minecraft:armor_stand ~ ~1 ~ {Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["UHCP_Lock"]}
 
 # If all players selected an augment, skip to 5 seconds left
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 101.. unless entity @a[gamemode=adventure,tag=UHCP_ChoosingItem] run scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 100
