@@ -47,7 +47,7 @@
       }
     },
     "rewards": {
-      "function": "uhcp:relics/theharvester/harvest_player"
+      "function": "uhcp:relics/the_harvester/harvest_player"
     }
   }
   

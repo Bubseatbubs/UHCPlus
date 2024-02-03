@@ -44,6 +44,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:relics/theharvester/hit"
+    "function": "uhcp:relics/the_harvester/hit"
   }
 }

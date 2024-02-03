@@ -54,7 +54,7 @@
       }
     },
     "rewards": {
-      "function": "uhcp:relics/gravitysmasher/hit"
+      "function": "uhcp:relics/gravity_smasher/hit"
     }
   }
   
