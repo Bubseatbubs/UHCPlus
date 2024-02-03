@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:augments/shot_boomburst
+advancement revoke @s only uhcp:relics/shot_boomburst
 
 # Modify Item
 item modify entity @s weapon.mainhand uhcp:update_boomburst

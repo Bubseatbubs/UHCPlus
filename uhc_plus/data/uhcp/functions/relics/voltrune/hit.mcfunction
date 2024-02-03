@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:augments/hurt_with_voltrune
+advancement revoke @s only uhcp:relics/hurt_with_voltrune
 tag @s add UHCP_Owner
 
 

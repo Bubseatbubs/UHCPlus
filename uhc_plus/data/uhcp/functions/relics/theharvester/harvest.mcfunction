@@ -1,2 +1,2 @@
-advancement revoke @s only uhcp:augments/killed_with_harvester
+advancement revoke @s only uhcp:relics/killed_hostile_with_harvester
 give @s gold_ingot 1
