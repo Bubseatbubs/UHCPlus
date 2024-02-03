@@ -1,0 +1,129 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond_sword",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{uhcp_radiant:1b,Enchantments:[{id:\"minecraft:sharpness\",lvl:1s},{id:\"minecraft:sweeping\",lvl:1s}]}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "So",
+                    "color": "#0800FF",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "ul",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": "fl",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": "am",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": "e S",
+                    "color": "#54C0FF"
+                  },
+                  {
+                    "text": "ab",
+                    "color": "#4FE8FF"
+                  },
+                  {
+                    "text": "er",
+                    "color": "#00FFFF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue"
+                  },
+                  [
+                    {
+                      "text": "RELIC",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Relics gain durability while ",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "held. At max durability, its",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": "activates on hit.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Summon a circle of flames beneath",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "your target, dealing",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " 10🖤",
+                      "color": "red"
+                    },
+                    {
+                      "text": " over 5 seconds.",
+                      "color": "gray"
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

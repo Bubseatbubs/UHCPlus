@@ -1,0 +1,149 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_sword",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{HideFlags:3,uhcp_radiant:2b,Enchantments:[{id:\"minecraft:sharpness\",lvl:6s},{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.5,Operation:0,UUID:[I;1412654855,-1586016557,-1183197751,-1541944307],Slot:\"mainhand\"}]}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Fl",
+                    "color": "#0800FF",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "ux",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": " Fa",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": "ct",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": "or",
+                    "color": "#54C0FF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue"
+                  },
+                  [
+                    {
+                      "text": "RELIC",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Relics gain durability while ",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "held. At max durability, its",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": "activates on hit.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Deploy a magnetic field over 7 seconds",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "that inflicts",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Slowness III",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": " on enemies and grants",
+                      "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": " Speed II & Jump Boost I",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": " to allies.",
+                      "color": "gray"
+                    }
+                  ],
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "When in Main Hand:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 7.5 Attack Damage",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "text": " 2 Attack Speed",
+                    "color": "dark_green",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

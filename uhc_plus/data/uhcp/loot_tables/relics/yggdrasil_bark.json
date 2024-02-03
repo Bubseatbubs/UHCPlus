@@ -1,0 +1,145 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:leather_chestplate",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{color:5381640},HideFlags:194,uhcp_radiant:4b,Enchantments:[{id:\"minecraft:protection\",lvl:2s},{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:10,Operation:0,UUID:[I;-1749621740,1902725274,-1259731052,1668770021],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;-446085697,-156416355,-1149814584,-38593133],Slot:\"chest\"}],Trim:{material:\"minecraft:quartz\",pattern:\"minecraft:eye\"}}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Ygg",
+                    "color": "#0800FF",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "dra",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": "sil",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": "'s",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": " Ba",
+                    "color": "#54C0FF"
+                  },
+                  {
+                    "text": "rk",
+                    "color": "#4FE8FF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue"
+                  },
+                  [
+                    {
+                      "text": "RELIC",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Relics gain durability while ",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "worn. At max durability, its",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": "activates when you are hit.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Gain",
+                      "color": "gray",
+                      "italic": true
+                    },
+                    {
+                      "text": " +5🖤",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": " and",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Resistance I",
+                      "color": "yellow"
+                    }
+                  ],
+                  {
+                    "text": "for 3 seconds.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "When on Body:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "+10 Armor",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": "+1 Armor Toughness",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

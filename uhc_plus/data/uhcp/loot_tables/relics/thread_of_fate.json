@@ -1,0 +1,153 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:shears",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{HideFlags:3,uhcp_radiant:7b,Enchantments:[{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:8.5,Operation:0,UUID:[I;1143660634,-1035515697,-2017256653,387488453],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.4,Operation:0,UUID:[I;-66302264,1916223962,-1566999601,324500780],Slot:\"mainhand\"}]}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Thr",
+                    "color": "#0800FF",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "ead",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": " of",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": " Fa",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": "te",
+                    "color": "#54C0FF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  [
+                    {
+                      "text": "RELIC",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Relics gain durability while ",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "held. At max durability, its",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": "activates on hit.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Dash",
+                      "color": "gray",
+                      "italic": true
+                    },
+                    {
+                      "text": " 5 Blocks",
+                      "color": "white",
+                      "italic": true
+                    },
+                    {
+                      "text": " through your",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "target.",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Deal",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " 2🖤",
+                      "color": "red"
+                    },
+                    {
+                      "text": " to players you",
+                      "color": "gray"
+                    }
+                  ],
+                  {
+                    "text": "dash through.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "When in Main Hand:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 9 Attack Damage",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "text": " 2.1 Attack Speed",
+                    "color": "dark_green",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

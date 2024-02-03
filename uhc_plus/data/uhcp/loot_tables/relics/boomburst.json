@@ -1,0 +1,116 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:crossbow",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{uhcp_radiant:2b,Enchantments:[{id:\"minecraft:piercing\",lvl:2s},{id:\"minecraft:quick_charge\",lvl:2s}]}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Bo",
+                    "color": "#0800FF",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "om",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": "bu",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": "rs",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": "t",
+                    "color": "#54C0FF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue"
+                  },
+                  [
+                    {
+                      "text": "RELIC",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Relics gain durability while ",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "held. At max durability, its",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": "activates when shot.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Instantly reloads itself with a",
+                      "color": "gray",
+                      "italic": true
+                    },
+                    {
+                      "text": " Firework Rocket",
+                      "color": "white",
+                      "italic": true
+                    },
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

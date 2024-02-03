@@ -1,0 +1,143 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond_axe",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{uhcp_radiant:3b,Enchantments:[{id:\"minecraft:sharpness\",lvl:1s},{id:\"minecraft:knockback\",lvl:2s}]}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Gr",
+                    "color": "#0800FF",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "av",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": "it",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": "y S",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": "ma",
+                    "color": "#54C0FF"
+                  },
+                  {
+                    "text": "sh",
+                    "color": "#4FE8FF"
+                  },
+                  {
+                    "text": "er",
+                    "color": "#00FFFF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue"
+                  },
+                  [
+                    {
+                      "text": "RELIC",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Relics gain durability while ",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "held. At max durability, its",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": "activates on hit.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "PASSIVE",
+                      "color": "white",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Sweep hits inflict",
+                      "color": "gray",
+                      "italic": true
+                    },
+                    {
+                      "text": " Levitation",
+                      "color": "yellow",
+                      "italic": true
+                    }
+                  ],
+                  {
+                    "text": "for 1 second.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Launch all nearby enemies",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  {
+                    "text": "into the air.",
+                    "color": "gray"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
