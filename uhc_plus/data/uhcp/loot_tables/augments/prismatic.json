@@ -988,7 +988,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:203s,Enchantments:[{id:\"minecraft:impaling\",lvl:1s}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:207s,Enchantments:[{id:\"minecraft:impaling\",lvl:1s}]}"
             },
             {
               "function": "set_name",
