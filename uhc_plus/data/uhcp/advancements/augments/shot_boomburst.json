@@ -32,6 +32,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/gold/radiantrelics/boomburst/shoot"
+    "function": "uhcp:relics/boomburst/shoot"
   }
 }

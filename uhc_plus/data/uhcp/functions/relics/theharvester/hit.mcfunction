@@ -3,7 +3,7 @@ tag @s add UHCP_Owner
 #Get Player Gapple amount
 
 scoreboard players reset @e[distance=..6] uhcp_a_count
-execute as @e[tag=!UHCP_Owner,type=!#uhcp:inanimate_mobs,distance=..6] store result score @s uhcp_a_count run function uhcp:augments/effects/gold/radiantrelics/checkattacker
+execute as @e[tag=!UHCP_Owner,type=!#uhcp:inanimate_mobs,distance=..6] store result score @s uhcp_a_count run function uhcp:relics/checkattacker
 tag @e[distance=..6,scores={uhcp_a_count=1},sort=nearest,limit=1] add UHCP_HarvesterTarget
 
 # Stop function if no targets are near

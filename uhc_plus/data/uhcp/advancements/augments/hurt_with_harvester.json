@@ -44,6 +44,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/gold/radiantrelics/theharvester/hit"
+    "function": "uhcp:relics/theharvester/hit"
   }
 }

@@ -54,7 +54,7 @@
       }
     },
     "rewards": {
-      "function": "uhcp:augments/effects/gold/radiantrelics/gravitysmasher/hit"
+      "function": "uhcp:relics/gravitysmasher/hit"
     }
   }
   

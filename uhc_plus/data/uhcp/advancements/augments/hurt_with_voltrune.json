@@ -54,7 +54,7 @@
       }
     },
     "rewards": {
-      "function": "uhcp:augments/effects/gold/radiantrelics/voltrune/hit"
+      "function": "uhcp:relics/voltrune/hit"
     }
   }
   

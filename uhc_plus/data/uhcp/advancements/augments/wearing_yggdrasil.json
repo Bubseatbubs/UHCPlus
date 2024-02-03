@@ -21,6 +21,6 @@
       }
     },
     "rewards": {
-      "function": "uhcp:augments/effects/gold/radiantrelics/increase_dur_armor"
+      "function": "uhcp:relics/increase_dur_armor"
     }
   }

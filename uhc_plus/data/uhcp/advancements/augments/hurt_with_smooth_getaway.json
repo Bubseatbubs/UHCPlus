@@ -44,6 +44,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/gold/radiantrelics/shadowclone/hit"
+    "function": "uhcp:relics/shadowclone/hit"
   }
 }

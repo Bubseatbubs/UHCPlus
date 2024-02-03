@@ -20,19 +20,19 @@ scoreboard players set @a[gamemode=!survival] uhcp_team 0
 tag @s add UHCP_isDashing
 execute at @s if block ^ ^ ^1 #uhcp:non_solid_blocks run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:1b,ShowArms:1b,Invisible:1b,NoBasePlate:1b,Tags:["UHCP_DashShadow"],Pose:{LeftArm:[36f,0f,0f],RightArm:[297f,0f,0f],LeftLeg:[303f,0f,0f],RightLeg:[44f,0f,0f]},DisabledSlots:4144959,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:917542}}},{id:"minecraft:black_concrete",Count:1b}]}
 execute at @s if block ^ ^ ^1 #uhcp:non_solid_blocks run tp @s ^ ^ ^1
-execute at @s as @e[type=!#uhcp:inanimate_mobs,distance=..1.5] unless score @s uhcp_team = @a[tag=UHCP_isDashing,limit=1,sort=nearest] uhcp_team run function uhcp:augments/effects/gold/radiantrelics/threadoffate/damage
+execute at @s as @e[type=!#uhcp:inanimate_mobs,distance=..1.5] unless score @s uhcp_team = @a[tag=UHCP_isDashing,limit=1,sort=nearest] uhcp_team run function uhcp:relics/threadoffate/damage
 execute at @s if block ^ ^ ^1 #uhcp:non_solid_blocks run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:1b,ShowArms:1b,Invisible:1b,NoBasePlate:1b,Tags:["UHCP_DashShadow"],Pose:{LeftArm:[36f,0f,0f],RightArm:[297f,0f,0f],LeftLeg:[303f,0f,0f],RightLeg:[44f,0f,0f]},DisabledSlots:4144959,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:917542}}},{id:"minecraft:black_concrete",Count:1b}]}
 execute at @s if block ^ ^ ^1 #uhcp:non_solid_blocks run tp @s ^ ^ ^1
-execute at @s as @e[type=!#uhcp:inanimate_mobs,distance=..1.5] unless score @s uhcp_team = @a[tag=UHCP_isDashing,limit=1,sort=nearest] uhcp_team run function uhcp:augments/effects/gold/radiantrelics/threadoffate/damage
+execute at @s as @e[type=!#uhcp:inanimate_mobs,distance=..1.5] unless score @s uhcp_team = @a[tag=UHCP_isDashing,limit=1,sort=nearest] uhcp_team run function uhcp:relics/threadoffate/damage
 execute at @s if block ^ ^ ^1 #uhcp:non_solid_blocks run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:1b,ShowArms:1b,Invisible:1b,NoBasePlate:1b,Tags:["UHCP_DashShadow"],Pose:{LeftArm:[36f,0f,0f],RightArm:[297f,0f,0f],LeftLeg:[303f,0f,0f],RightLeg:[44f,0f,0f]},DisabledSlots:4144959,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:917542}}},{id:"minecraft:black_concrete",Count:1b}]}
 execute at @s if block ^ ^ ^1 #uhcp:non_solid_blocks run tp @s ^ ^ ^1
-execute at @s as @e[type=!#uhcp:inanimate_mobs,distance=..1.5] unless score @s uhcp_team = @a[tag=UHCP_isDashing,limit=1,sort=nearest] uhcp_team run function uhcp:augments/effects/gold/radiantrelics/threadoffate/damage
+execute at @s as @e[type=!#uhcp:inanimate_mobs,distance=..1.5] unless score @s uhcp_team = @a[tag=UHCP_isDashing,limit=1,sort=nearest] uhcp_team run function uhcp:relics/threadoffate/damage
 execute at @s if block ^ ^ ^1 #uhcp:non_solid_blocks run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:1b,ShowArms:1b,Invisible:1b,NoBasePlate:1b,Tags:["UHCP_DashShadow"],Pose:{LeftArm:[36f,0f,0f],RightArm:[297f,0f,0f],LeftLeg:[303f,0f,0f],RightLeg:[44f,0f,0f]},DisabledSlots:4144959,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:917542}}},{id:"minecraft:black_concrete",Count:1b}]}
 execute at @s if block ^ ^ ^1 #uhcp:non_solid_blocks run tp @s ^ ^ ^1
-execute at @s as @e[type=!#uhcp:inanimate_mobs,distance=..1.5] unless score @s uhcp_team = @a[tag=UHCP_isDashing,limit=1,sort=nearest] uhcp_team run function uhcp:augments/effects/gold/radiantrelics/threadoffate/damage
+execute at @s as @e[type=!#uhcp:inanimate_mobs,distance=..1.5] unless score @s uhcp_team = @a[tag=UHCP_isDashing,limit=1,sort=nearest] uhcp_team run function uhcp:relics/threadoffate/damage
 execute at @s if block ^ ^ ^1 #uhcp:non_solid_blocks run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:1b,ShowArms:1b,Invisible:1b,NoBasePlate:1b,Tags:["UHCP_DashShadow"],Pose:{LeftArm:[36f,0f,0f],RightArm:[297f,0f,0f],LeftLeg:[303f,0f,0f],RightLeg:[44f,0f,0f]},DisabledSlots:4144959,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:917542}}},{id:"minecraft:black_concrete",Count:1b}]}
 execute at @s if block ^ ^ ^1 #uhcp:non_solid_blocks run tp @s ^ ^ ^1
-execute at @s as @e[type=!#uhcp:inanimate_mobs,distance=..1.5] unless score @s uhcp_team = @a[tag=UHCP_isDashing,limit=1,sort=nearest] uhcp_team run function uhcp:augments/effects/gold/radiantrelics/threadoffate/damage
+execute at @s as @e[type=!#uhcp:inanimate_mobs,distance=..1.5] unless score @s uhcp_team = @a[tag=UHCP_isDashing,limit=1,sort=nearest] uhcp_team run function uhcp:relics/threadoffate/damage
 
 # End Dash
 execute as @e[type=armor_stand,tag=UHCP_DashShadow] at @s rotated as @e[tag=UHCP_isDashing,limit=1,sort=nearest] run tp @s ~ ~ ~ ~ ~
@@ -49,5 +49,5 @@ execute at @s unless block ~ ~ ~ #uhcp:non_solid_blocks run tp @s ^ ^ ^-1
 # Load Rotation
 execute at @s rotated as @e[tag=UHCP_SaveRotation,limit=1,sort=nearest] run tp @s ~ ~ ~ ~180 ~
 kill @e[tag=UHCP_SaveRotation]
-schedule function uhcp:augments/effects/gold/radiantrelics/threadoffate/finish 2t
+schedule function uhcp:relics/threadoffate/finish 2t
 

@@ -44,6 +44,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/gold/radiantrelics/soulflamesaber/hit"
+    "function": "uhcp:relics/soulflamesaber/hit"
   }
 }

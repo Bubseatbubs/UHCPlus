@@ -14,10 +14,10 @@ execute if score @s uhcp_a_timer matches 3.. positioned ~ ~0.6 ~ run particle mi
 
 execute unless score @s uhcp_a_timer matches 30.. run return 0
 playsound block.beacon.activate master @a[distance=..12.5] ~ ~ ~
-execute positioned ~ ~0.6 ~ run function uhcp:augments/effects/gold/radiantrelics/voltrune/particles
-execute positioned ~ ~0.6 ~ rotated ~90 ~ run function uhcp:augments/effects/gold/radiantrelics/voltrune/particles
-execute positioned ~ ~0.6 ~ rotated ~180 ~ run function uhcp:augments/effects/gold/radiantrelics/voltrune/particles
-execute positioned ~ ~0.6 ~ rotated ~270 ~ run function uhcp:augments/effects/gold/radiantrelics/voltrune/particles
+execute positioned ~ ~0.6 ~ run function uhcp:relics/voltrune/particles
+execute positioned ~ ~0.6 ~ rotated ~90 ~ run function uhcp:relics/voltrune/particles
+execute positioned ~ ~0.6 ~ rotated ~180 ~ run function uhcp:relics/voltrune/particles
+execute positioned ~ ~0.6 ~ rotated ~270 ~ run function uhcp:relics/voltrune/particles
 scoreboard players set @s uhcp_a_timer 0
 
 execute unless score @s uhcp_gameTime matches 150.. run return 0

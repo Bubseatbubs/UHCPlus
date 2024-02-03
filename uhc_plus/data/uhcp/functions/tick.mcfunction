@@ -48,11 +48,11 @@ execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:augments/effects/
 # Augments
 execute as @e[predicate=uhcp:augments/birdfeather] at @s run function uhcp:augments/effects/gold/birdsofafeather/teleport
 execute as @e[type=minecraft:bee,tag=UHCP_Bee] at @s run function uhcp:augments/effects/gold/beekeeper/update
-execute as @e[tag=UHCP_Saber] at @s run function uhcp:augments/effects/gold/radiantrelics/soulflamesaber/update
-execute as @e[tag=UHCP_Voltrune] at @s run function uhcp:augments/effects/gold/radiantrelics/voltrune/update
-execute as @e[tag=UHCP_Temp,type=armor_stand] run function uhcp:augments/effects/gold/radiantrelics/gravitysmasher/update
-execute as @e[tag=UHCP_GoldBlock,type=armor_stand] run function uhcp:augments/effects/gold/radiantrelics/theharvester/update
-execute as @e[tag=UHCP_SCloneStand,type=armor_stand] at @s run function uhcp:augments/effects/gold/radiantrelics/shadowclone/update
+execute as @e[tag=UHCP_Saber] at @s run function uhcp:relics/soulflamesaber/update
+execute as @e[tag=UHCP_Voltrune] at @s run function uhcp:relics/voltrune/update
+execute as @e[tag=UHCP_Temp,type=armor_stand] run function uhcp:relics/gravitysmasher/update
+execute as @e[tag=UHCP_GoldBlock,type=armor_stand] run function uhcp:relics/theharvester/update
+execute as @e[tag=UHCP_SCloneStand,type=armor_stand] at @s run function uhcp:relics/shadowclone/update
 execute as @a[scores={uhcp_lavaTimeInterval=1..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
 execute as @a[scores={uhcp_lavaMaxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
