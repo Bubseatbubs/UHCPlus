@@ -1,9 +1,9 @@
 tag @s add UHCP_Find
 scoreboard players add @s uhcp_a_timer 1
-execute at @s unless entity @e[tag=UHCP_SClone,distance=..3] run scoreboard players set @s uhcp_a_timer 300
+execute at @s unless entity @e[tag=UHCP_SClone,distance=..1.5] run scoreboard players set @s uhcp_a_timer 300
 
 tag @s add UHCP_Teleport
-execute as @e[tag=UHCP_SClone] at @s unless entity @e[tag=UHCP_SCloneStand,tag=!UHCP_Find,distance=..1] if score @s uhcp_team = @e[tag=UHCP_Teleport,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_Target
+execute as @e[tag=UHCP_SClone] at @s unless entity @e[tag=UHCP_SCloneStand,tag=!UHCP_Find,distance=..0.5] if score @s uhcp_team = @e[tag=UHCP_Teleport,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_Target
 tp @s @e[tag=UHCP_Target,sort=nearest,limit=1]
 tag @s remove UHCP_Find
 
