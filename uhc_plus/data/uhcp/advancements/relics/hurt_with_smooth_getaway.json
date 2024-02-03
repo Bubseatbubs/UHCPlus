@@ -44,6 +44,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:relics/shadowclone/hit"
+    "function": "uhcp:relics/smooth_getaway/hit"
   }
 }

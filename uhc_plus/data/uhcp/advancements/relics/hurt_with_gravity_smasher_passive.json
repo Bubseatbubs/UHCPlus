@@ -57,6 +57,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:relics/gravitysmasher/levitation"
+    "function": "uhcp:relics/gravity_smasher/levitation"
   }
 }
