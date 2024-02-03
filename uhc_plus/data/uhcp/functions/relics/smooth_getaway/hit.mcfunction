@@ -1,10 +1,14 @@
 advancement revoke @s only uhcp:relics/hurt_with_smooth_getaway
 
+
+
 summon armor_stand ~-1 ~ ~ {CustomNameVisible:1b,ShowArms:1b,Invulnerable:1b,NoBasePlate:1b,Tags:["UHCP_SCloneStand","UHCP_New"],DisabledSlots:63,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:6260410}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:2632752}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:10793663}}},{}],CustomName:'{"text":"ShadowClone"}'}
-summon wolf ~-1 ~ ~ {Silent:1b,Health:2f,Sitting:0b,Tags:["UHCP_SClone","UHCP_New"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:2000,show_particles:0b}],Attributes:[{Name:"generic.attack_damage",Base:5}]}
+summon wolf ~-1 ~ ~ {Silent:1b,Health:5f,Sitting:0b,Tags:["UHCP_SClone","UHCP_New"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:2000,show_particles:0b}],Attributes:[{Name:"generic.attack_damage",Base:5}]}
 
 summon armor_stand ~1 ~ ~ {CustomNameVisible:1b,ShowArms:1b,Invulnerable:1b,NoBasePlate:1b,Tags:["UHCP_SCloneStand","UHCP_New"],DisabledSlots:63,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:6260410}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:2632752}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:10793663}}},{}],CustomName:'{"text":"ShadowClone"}'}
-summon wolf ~1 ~ ~ {Silent:1b,Health:2f,Sitting:0b,Tags:["UHCP_SClone","UHCP_New"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:2000,show_particles:0b}],Attributes:[{Name:"generic.attack_damage",Base:5}]}
+summon wolf ~1 ~ ~ {Silent:1b,Health:5f,Sitting:0b,Tags:["UHCP_SClone","UHCP_New"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:2000,show_particles:0b}],Attributes:[{Name:"generic.attack_damage",Base:5}]}
+
+execute as @a if score @s uhcp_a_selectedAugment matches 239 at @s run function uhcp:relics/smooth_getaway/shadowclone
 
 particle minecraft:campfire_signal_smoke ~ ~ ~ 1.5 0.5 1.5 0.1 500 normal
 playsound entity.zombie.converted_to_drowned master @a[distance=..8] ~ ~ ~ 1 0.5 0.5
@@ -13,7 +17,7 @@ playsound entity.zombie.converted_to_drowned master @a[distance=..8] ~ ~ ~ 1 0.5
 execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_a_durability 1
 item modify entity @s weapon.mainhand uhcp:update_dur
 
-loot replace entity @e[tag=UHCP_New] armor.head loot uhcp:player_head
+loot replace entity @e[tag=UHCP_New,type=armor_stand] armor.head loot uhcp:player_head
 effect give @s invisibility 10 0 false
 
 tag @s add UHCP_Owner
@@ -23,7 +27,7 @@ tag @e[distance=..6,scores={uhcp_a_count=1},sort=nearest,limit=1] add UHCP_SClon
 
 # execute as @e[type=wolf,tag=UHCP_New] run data modify entity @s Owner set from entity @p[tag=UHCP_Owner] UUID
 
-execute as @e[tag=UHCP_New,type=armor_stand,sort=nearest,limit=2] run data modify entity @s CustomName set from entity @s ArmorItems[3].tag.SkullOwner.Name
+execute as @e[tag=UHCP_New,type=armor_stand] run data modify entity @s CustomName set from entity @s ArmorItems[3].tag.SkullOwner.Name
 
 # Assign Team Scoreboards
 execute if entity @a[predicate=uhcp:teams/solo] run function uhcp:teams/solo

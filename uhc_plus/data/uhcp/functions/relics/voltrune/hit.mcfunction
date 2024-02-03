@@ -14,6 +14,8 @@ execute at @e[tag=UHCP_VoltTarget] anchored eyes run summon armor_stand ~ ~ ~ {S
 execute at @e[tag=UHCP_VoltTarget] run playsound minecraft:block.enchantment_table.use player @a[distance=..6] ~ ~ ~ 1.0 0.6 1.0
 execute at @e[tag=UHCP_VoltTarget] run playsound minecraft:entity.blaze.death player @a[distance=..6] ~ ~ ~ 1.0 2.0 1.0
 
+execute as @a if score @s uhcp_a_selectedAugment matches 240 run tag @e[tag=UHCP_New,sort=nearest,limit=1] add UHCP_ZeusFavor
+
 execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_a_durability 50
 item modify entity @s weapon.mainhand uhcp:update_dur
 
