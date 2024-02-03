@@ -838,7 +838,7 @@
                     "color": "yellow"
                   },
                   {
-                    "text": " for 20",
+                    "text": " for 12",
                     "color": "gray"
                   }
                 ],
@@ -998,7 +998,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Copper Ingots",
+                    "text": " Copper Ingots and Blocks",
                     "color": "white"
                   }
                 ],
@@ -1008,11 +1008,11 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Gold Ingots",
+                    "text": " Gold",
                     "color": "white"
                   },
                   {
-                    "text": ".",
+                    "text": " at a rate of 10 to 1.",
                     "color": "gray"
                   }
                 ]
@@ -1078,6 +1078,14 @@
                   },
                   {
                     "text": " Unbreaking III",
+                    "color": "dark_purple"
+                  },
+                  {
+                    "text": " and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Efficiency I",
                     "color": "dark_purple"
                   },
                   {
@@ -1182,11 +1190,11 @@
                   "bold": true
                 },
                 {
-                  "text": "Gain 40 ",
+                  "text": "Gain 35",
                   "color": "gray"
                 },
                 {
-                  "text": "Bottles o' Enchanting",
+                  "text": " Bottles o' Enchanting",
                   "color": "white"
                 }
               ]

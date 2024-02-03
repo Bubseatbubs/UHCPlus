@@ -1,1 +1,1 @@
-give @s experience_bottle 40
+give @s experience_bottle 35
