@@ -1,10 +1,10 @@
 advancement revoke @s only uhcp:relics/hurt_with_smooth_getaway
 
-summon armor_stand ~-1 ~ ~ {CustomNameVisible:1b,ShowArms:1b,Invulnerable:1b,NoBasePlate:1b,Tags:["UHCP_SCloneStand","UHCP_SCloneStandWolf","UHCP_New"],DisabledSlots:63,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:6260410}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:2632752}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:10793663}}},{}],CustomName:'{"text":"ShadowClone"}'}
-summon wolf ~-1 ~ ~ {Silent:1b,Health:2f,Tags:["UHCP_SClone","UHCP_New"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:2000,show_particles:0b}]}
+summon armor_stand ~-1 ~ ~ {CustomNameVisible:1b,ShowArms:1b,Invulnerable:1b,NoBasePlate:1b,Tags:["UHCP_SCloneStand","UHCP_New"],DisabledSlots:63,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:6260410}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:2632752}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:10793663}}},{}],CustomName:'{"text":"ShadowClone"}'}
+summon wolf ~-1 ~ ~ {Silent:1b,Health:2f,Sitting:0b,Tags:["UHCP_SClone","UHCP_New"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:2000,show_particles:0b}],Attributes:[{Name:"generic.attack_damage",Base:5}]}
 
-summon armor_stand ~1 ~ ~ {CustomNameVisible:1b,ShowArms:1b,Invulnerable:1b,NoBasePlate:1b,Tags:["UHCP_SCloneStand","UHCP_SCloneStandWolf","UHCP_New"],DisabledSlots:63,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:6260410}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:2632752}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:10793663}}},{}],CustomName:'{"text":"ShadowClone"}'}
-summon wolf ~1 ~ ~ {Silent:1b,Health:2f,Tags:["UHCP_SClone","UHCP_New"],active_effects:[{id:"minecraft:strength",amplifier:0b,duration:2000,show_particles:0b},{id:"minecraft:invisibility",amplifier:0b,duration:2000,show_particles:0b}]}
+summon armor_stand ~1 ~ ~ {CustomNameVisible:1b,ShowArms:1b,Invulnerable:1b,NoBasePlate:1b,Tags:["UHCP_SCloneStand","UHCP_New"],DisabledSlots:63,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:6260410}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:2632752}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:10793663}}},{}],CustomName:'{"text":"ShadowClone"}'}
+summon wolf ~1 ~ ~ {Silent:1b,Health:2f,Sitting:0b,Tags:["UHCP_SClone","UHCP_New"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:2000,show_particles:0b}],Attributes:[{Name:"generic.attack_damage",Base:5}]}
 
 particle minecraft:campfire_signal_smoke ~ ~ ~ 1.5 0.5 1.5 0.1 500 normal
 playsound entity.zombie.converted_to_drowned master @a[distance=..8] ~ ~ ~ 1 0.5 0.5

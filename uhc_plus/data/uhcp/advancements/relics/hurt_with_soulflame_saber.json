@@ -44,6 +44,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:relics/soulflamesaber/hit"
+    "function": "uhcp:relics/soulflame_saber/hit"
   }
 }
