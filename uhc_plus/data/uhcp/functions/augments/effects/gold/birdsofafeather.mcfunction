@@ -1,1 +1,1 @@
-give @p feather{display:{Name:'{"text":"Wild Feather","color":"light_purple"}',Lore:['{"text":"Throw this item to teleport to","color":"gray"}','{"text":"a random teammate.","color":"gray"}']},birdfeather:1b} 4
+give @s feather{display:{Name:'{"text":"Wild Feather","color":"light_purple"}',Lore:['{"text":"Throw this item to teleport to","color":"gray"}','{"text":"a random teammate.","color":"gray"}']},birdfeather:1b} 4

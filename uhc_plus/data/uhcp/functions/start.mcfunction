@@ -8,6 +8,7 @@ scoreboard players set %AUG_15 uhcp_gameTime 2400
 scoreboard players set %AUG_27 uhcp_gameTime 12000
 scoreboard players set %AUG_107 uhcp_gameTime 6000
 scoreboard players set %AUG_203 uhcp_gameTime 1200
+scoreboard players set %AUG_238 uhcp_gameTime 12000
 execute if score %uhcp_dimTime uhcp_gameTime matches ..-1 run scoreboard players set %uhcp_dimTime uhcp_gameTime 0
 
 scoreboard objectives setdisplay sidebar uhcp_displayTime

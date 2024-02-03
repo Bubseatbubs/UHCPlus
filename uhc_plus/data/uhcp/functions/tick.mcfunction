@@ -42,6 +42,9 @@ execute as @a[tag=uhcp_isTeleporting] at @s run execute unless entity @e[type=mi
 # Top Chargeup
 execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
 
+# Death
+execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:augments/effects/death
+
 # Augments
 execute as @e[predicate=uhcp:augments/birdfeather] at @s run function uhcp:augments/effects/gold/birdsofafeather/teleport
 execute as @e[type=minecraft:bee,tag=UHCP_Bee] at @s run function uhcp:augments/effects/gold/beekeeper/update
