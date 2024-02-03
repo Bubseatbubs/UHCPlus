@@ -14,13 +14,6 @@ give @s iron_chestplate
 give @s iron_leggings
 give @s iron_boots
 
-# Teleport player to the_nether
-execute in minecraft:the_nether if score TotalWorldSize setting matches 1000 run spreadplayers 0 0 100 400 under 127 false @s
-execute in minecraft:the_nether if score TotalWorldSize setting matches 1500 run spreadplayers 0 0 100 700 under 127 false @s
-execute in minecraft:the_nether if score TotalWorldSize setting matches 2000 run spreadplayers 0 0 100 900 under 127 false @s
-execute in minecraft:the_nether if score TotalWorldSize setting matches 2500 run spreadplayers 0 0 100 1200 under 127 false @s
-execute in minecraft:the_nether if score TotalWorldSize setting matches 3000 run spreadplayers 0 0 100 1400 under 127 false @s
-execute in minecraft:the_nether if score TotalWorldSize setting matches 4000 run spreadplayers 0 0 100 1900 under 127 false @s
-execute in minecraft:the_nether if score TotalWorldSize setting matches 5000 run spreadplayers 0 0 100 2400 under 127 false @s
-execute in minecraft:the_nether if score TotalWorldSize setting matches 7000 run spreadplayers 0 0 100 3400 under 127 false @s
-execute in minecraft:the_nether if score TotalWorldSize setting matches 10000 run spreadplayers 0 0 100 4900 under 127 false @s
+# Teleport player to the Nether
+execute store success score %uhcp_nBSpread uhcp_initStatus at @s in minecraft:the_nether run spreadplayers ~ ~ 0 1 under 127 false @s
+execute if score %uhcp_nBSpread uhcp_initStatus matches 0 at @s in minecraft:the_nether run function uhcp:augments/effects/prismatic/netherborn/fail
