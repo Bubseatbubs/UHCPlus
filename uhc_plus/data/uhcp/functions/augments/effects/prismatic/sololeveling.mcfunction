@@ -30,11 +30,10 @@ return fail
 # Upgrade if player has tag (normal tag) and one of items' previous stages are found in inventory.
 # Transfer rewritten (or unwritten) storage to player inventory.
 #
-# Use item_durability_changed advancement to record item durabilities for players. Lower durability if lost item is returned with higher durability. Keep durability if returned with low durability.
+# Use item_durability_changed advancement to record item durabilities for players. Lower durability if item gains durability. Keep durability if have lower durability.
 # Record when items make it out of inventory, give player tag when this is the case.
 
 # Known issues:
-# GUI closing does not work after dimensions close (Nether portal).
 # GUI closing does not work if player moves fast enough while interacting with blocks. (Maybe use teleport to stop them.)
 # GUI closing does not work at world height limit (blocks cannot be placed). Maybe teleport the player slightly down, or use alternative player teleport system.
 
