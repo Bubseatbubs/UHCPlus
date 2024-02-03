@@ -42,6 +42,9 @@ execute as @a[tag=uhcp_isTeleporting] at @s run execute unless entity @e[type=mi
 # Top Chargeup
 execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
 
+# Death
+execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:augments/effects/death
+
 # Augments
 execute as @e[predicate=uhcp:augments/birdfeather] at @s run function uhcp:augments/effects/gold/birdsofafeather/teleport
 execute as @e[type=minecraft:bee,tag=UHCP_Bee] at @s run function uhcp:augments/effects/gold/beekeeper/update
@@ -50,6 +53,7 @@ execute as @e[tag=UHCP_Voltrune] at @s run function uhcp:augments/effects/gold/r
 execute as @e[tag=UHCP_Temp,type=armor_stand] run function uhcp:augments/effects/gold/radiantrelics/gravitysmasher/update
 execute as @e[tag=UHCP_GoldBlock,type=armor_stand] run function uhcp:augments/effects/gold/radiantrelics/theharvester/update
 execute as @e[tag=UHCP_SCloneStand,type=armor_stand] at @s run function uhcp:augments/effects/gold/radiantrelics/shadowclone/update
+
 # Remove three below when in pack format with new advancements
 scoreboard players set @a[scores={uhcp_grindstone=1..}] uhcp_anvil 1
 scoreboard players set @a[scores={uhcp_smithingTable=1..}] uhcp_anvil 1

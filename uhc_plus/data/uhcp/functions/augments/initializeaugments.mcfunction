@@ -1,5 +1,6 @@
 ##
 # Gives player the augment they selected
+# If the ID returns 0, this means the augment doesn't do anything at the start of the game
 ##
 
 # Silver Augments
@@ -15,6 +16,7 @@ execute if score @s uhcp_a_selectedAugment matches 108 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 109 run function uhcp:augments/effects/silver/emptyhearted
 execute if score @s uhcp_a_selectedAugment matches 110 run function uhcp:augments/effects/silver/extraenchanting
 execute if score @s uhcp_a_selectedAugment matches 111 run function uhcp:augments/effects/silver/gapplegapi
+execute if score @s uhcp_a_selectedAugment matches 112 run return 0
 execute if score @s uhcp_a_selectedAugment matches 113 run function uhcp:augments/effects/silver/heartymeal
 execute if score @s uhcp_a_selectedAugment matches 114 run function uhcp:augments/effects/silver/intotheminesi
 execute if score @s uhcp_a_selectedAugment matches 115 run function uhcp:augments/effects/silver/ironwill

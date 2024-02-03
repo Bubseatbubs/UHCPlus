@@ -142,6 +142,9 @@ execute if score @s uhcp_a_count matches 1.. run return 110
 execute store success score @s uhcp_a_count run clear @s minecraft:golden_apple{augment:111s} 1
 execute if score @s uhcp_a_count matches 1.. run return 111
 
+execute store success score @s uhcp_a_count run clear @s minecraft:melon_slice{augment:112s} 1
+execute if score @s uhcp_a_count matches 1.. run return 112
+
 execute store success score @s uhcp_a_count run clear @s minecraft:rabbit_stew{augment:113s} 1
 execute if score @s uhcp_a_count matches 1.. run return 113
 
