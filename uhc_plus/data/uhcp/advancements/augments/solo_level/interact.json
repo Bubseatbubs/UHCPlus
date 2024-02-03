@@ -1,7 +1,7 @@
 {
 	"criteria": {
 		"requirement": {
-			"trigger": "minecraft:location",
+			"trigger": "minecraft:tick",
 			"conditions": {
 				"player": [
 					{
@@ -44,13 +44,6 @@
 								"entity": "this",
 								"scores": {
 									"uhcp_a_selectedAugment": 222
-								}
-							},
-							{
-								"condition": "minecraft:entity_scores",
-								"entity": "this",
-								"scores": {
-									"uhcp_a_selectedAugment": 223
 								}
 							}
 						]

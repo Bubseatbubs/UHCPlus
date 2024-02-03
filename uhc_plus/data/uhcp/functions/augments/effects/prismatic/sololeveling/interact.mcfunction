@@ -8,5 +8,4 @@ scoreboard players reset @a uhcp_anvil
 scoreboard players reset @a uhcp_grindstone
 scoreboard players reset @a uhcp_smithingTable
 # -----------------------------------------------------------
-# Enable below command again for advancement
-#advancement revoke @s only uhcp:augments/solo_level/interact
+advancement revoke @s only uhcp:augments/solo_level/interact

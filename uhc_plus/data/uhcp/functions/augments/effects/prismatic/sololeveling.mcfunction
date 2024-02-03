@@ -29,13 +29,14 @@ return fail
 # If totals match, do nothing. If more of overall total, find normal items in inventory's storage, summon them as items, remove them from storage.
 # Upgrade if player has tag (normal tag) and one of items' previous stages are found in inventory.
 # Transfer rewritten (or unwritten) storage to player inventory.
+#
+# Use item_durability_changed advancement to record item durabilities for players. Lower durability if lost item is returned with higher durability. Keep durability if returned with low durability.
+# Record when items make it out of inventory, give player tag when this is the case.
 
-# Tests for closing anvil/grindstone/smithing table
-scoreboard players set @a[tag=test,scores={uhcp_displayTime=0}] uhcp_displayTime 100
-execute as @a[tag=test,scores={uhcp_displayTime=8}] at @s anchored eyes run fill ^ ^ ^ ^ ^ ^ minecraft:nether_portal replace minecraft:air
-stopsound @a[tag=test,scores={uhcp_displayTime=0..6}] ambient minecraft:block.portal.trigger
-execute as @a[tag=test,scores={uhcp_displayTime=7}] at @s anchored eyes run fill ^ ^ ^ ^ ^ ^ minecraft:air replace minecraft:nether_portal
-scoreboard players remove @a[tag=test,scores={uhcp_displayTime=1..}] uhcp_displayTime 1
+# Known issues:
+# GUI closing does not work after dimensions close (Nether portal).
+# GUI closing does not work if player moves fast enough while interacting with blocks. (Maybe use teleport to stop them.)
+# GUI closing does not work at world height limit (blocks cannot be placed). Maybe teleport the player slightly down, or use alternative player teleport system.
 
 # Items for 18 upgrades:
 # Stone tools

@@ -50,11 +50,6 @@ execute as @e[tag=UHCP_Voltrune] at @s run function uhcp:augments/effects/gold/r
 execute as @e[tag=UHCP_Temp,type=armor_stand] run function uhcp:augments/effects/gold/radiantrelics/gravitysmasher/update
 execute as @e[tag=UHCP_GoldBlock,type=armor_stand] run function uhcp:augments/effects/gold/radiantrelics/theharvester/update
 execute as @e[tag=UHCP_SCloneStand,type=armor_stand] at @s run function uhcp:augments/effects/gold/radiantrelics/shadowclone/update
-# Remove three below when in pack format with new advancements
-scoreboard players set @a[scores={uhcp_grindstone=1..}] uhcp_anvil 1
-scoreboard players set @a[scores={uhcp_smithingTable=1..}] uhcp_anvil 1
-execute as @a[scores={uhcp_a_selectedAugment=222,uhcp_anvil=1..}] run function uhcp:augments/effects/prismatic/sololeveling/interact
-# -----------------------------------------------------------
 execute as @a[scores={uhcp_lavaTimeInterval=1..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
 
