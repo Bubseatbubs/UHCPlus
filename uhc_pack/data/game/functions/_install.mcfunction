@@ -222,8 +222,8 @@ scoreboard players set warden status 0
 scoreboard players set night status 1
 
 #OP Items
-scoreboard players set opitems status 1
-datapack disable "file/disable_god_apple"
+scoreboard players set opitems status 0
+datapack enable "file/disable_god_apple"
 
 #Weather
 scoreboard players set weather status 0
