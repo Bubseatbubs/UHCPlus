@@ -1,0 +1,78 @@
+{
+    "type": "minecraft:gift",
+    "pools": [
+      {
+        "rolls": 1,
+        "bonus_rolls": 0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_apple",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 2
+              }
+            ],
+            "weight": 40
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:enchanted_book",
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:sharpness": 2
+                }
+              }
+            ],
+            "weight": 20
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:enchanted_book",
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:protection": 2
+                }
+              }
+            ],
+            "weight": 20
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:enchanted_book",
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:power": 2
+                }
+              }
+            ],
+            "weight": 20
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 5
+              }
+            ],
+            "weight": 20
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:enchanted_golden_apple",
+            "weight": 1
+          }
+        ]
+      }
+    ]
+  }
+  
