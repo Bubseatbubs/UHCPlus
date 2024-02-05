@@ -823,8 +823,8 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 30 Absorption Hearts",
-                    "color": "red"
+                    "text": " +30🖤",
+                    "color": "yellow"
                   },
                   {
                     "text": ". You are",
@@ -880,7 +880,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 10 Maximum Filled Hearts",
+                    "text": " +10🖤",
                     "color": "red"
                   },
                   {
@@ -951,7 +951,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 17 Hearts of damage",
+                    "text": " 17🖤 of damage",
                     "color": "red"
                   },
                   {
@@ -965,7 +965,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 1 heart",
+                    "text": " 1🖤",
                     "color": "red"
                   },
                   {
