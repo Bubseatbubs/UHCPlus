@@ -980,6 +980,104 @@
         {
           "type": "item",
           "weight": 1,
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:1,pickup:1b,augment:237s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Glory of Ra",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Sun Disk of Ra",
+                    "color": "gold"
+                  },
+                  {
+                    "text": ". When a player dies 10",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "blocks near you, the",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Sun Disk",
+                    "color": "gold"
+                  },
+                  {
+                    "text": " gains 1",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Charge",
+                    "color": "gold"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "and 2 additional",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Charges",
+                    "color": "gold"
+                  },
+                  {
+                    "text": " if you killed them.",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "At 10",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Charges",
+                    "color": "gold"
+                  },
+                  {
+                    "text": ", ",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
           "name": "minecraft:diamond_boots",
           "functions": [
             {

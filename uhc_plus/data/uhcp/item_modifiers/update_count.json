@@ -1,0 +1,13 @@
+[
+    {
+      "function": "minecraft:set_count",
+      "count": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "uhcp_a_gloryOfRa",
+        "scale": 1
+      },
+      "add": false
+    }
+  ]
+  
