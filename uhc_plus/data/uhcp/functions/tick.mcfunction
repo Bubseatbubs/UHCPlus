@@ -47,6 +47,7 @@ execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:augments/effects/
 
 # Augments
 execute as @e[predicate=uhcp:augments/birdfeather] at @s run function uhcp:augments/effects/gold/birdsofafeather/teleport
+execute as @e[predicate=uhcp:augments/relicexcavator] at @s run function uhcp:relics/relicexcavatoruse
 execute as @e[type=minecraft:bee,tag=UHCP_Bee] at @s run function uhcp:augments/effects/gold/beekeeper/update
 execute as @a[scores={uhcp_lavaTimeInterval=1..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
 execute as @a[scores={uhcp_lavaMaxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return

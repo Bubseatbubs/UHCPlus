@@ -1,0 +1,1 @@
+give @s anvil{display:{Name:'{"text":"Relic Anvil","color":"light_purple"}',Lore:['{"text":"Throw this item to obtain a","color":"gray"}','[{"text":"random  ","color":"gray"},{"text":"Relic","color":"gold"},{"text":"."}]']},relicexcavator:{},Enchantments:[{}]} 1
