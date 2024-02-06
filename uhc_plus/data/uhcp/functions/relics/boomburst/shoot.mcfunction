@@ -1,8 +1,6 @@
-advancement revoke @s only uhcp:relics/shot_boomburst
+advancement revoke @s only uhcp:relics/holding_max_boomburst
+
+execute at @s run playsound item.crossbow.quick_charge_3 master @s ~ ~ ~ 1 1 1
 
 # Modify Item
 item modify entity @s weapon.mainhand uhcp:update_boomburst
-
-execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_a_durability 50
-item modify entity @s weapon.mainhand uhcp:update_dur
-

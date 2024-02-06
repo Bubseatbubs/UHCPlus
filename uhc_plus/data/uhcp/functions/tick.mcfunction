@@ -68,6 +68,10 @@ execute as @e[tag=UHCP_GoldBlock,type=armor_stand] run function uhcp:relics/the_
 execute as @e[tag=UHCP_SCloneStand,type=armor_stand] at @s run function uhcp:relics/smooth_getaway/update
 execute as @e[tag=UHCP_SClone] at @s unless entity @e[tag=UHCP_SCloneStand,distance=..2] run kill @s
 
+execute as @e[type=arrow,tag=!UHCP_BoomburstInit,nbt={custom_potion_effects:[{id:"minecraft:bad_omen",amplifier:100b}]}] run function uhcp:relics/boomburst/initialize
+execute as @e[type=arrow,nbt={inGround:1b,custom_potion_effects:[{id:"minecraft:bad_omen",amplifier:100b}]}] at @s run function uhcp:relics/boomburst/explode_inground
+execute as @e[nbt={active_effects:[{id:"minecraft:bad_omen",amplifier:100b,duration:1}]}] at @s if entity @e[tag=UHCP_BoomburstDisplay,distance=..4] run function uhcp:relics/boomburst/explode_onhit
+
 # Close dimensions
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:dimensions/run
 

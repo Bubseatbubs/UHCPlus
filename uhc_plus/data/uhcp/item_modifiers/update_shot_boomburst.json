@@ -1,0 +1,7 @@
+[
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{ChargedProjectiles:[{id:\"minecraft:arrow\",Count:1b},{},{}],hasTnt:0b,Charged:0b}"
+    }
+  ]
+  

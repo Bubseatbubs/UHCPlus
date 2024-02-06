@@ -1,7 +1,7 @@
 [
     {
       "function": "minecraft:set_nbt",
-      "tag": "{uhcp_radiant:2b,ChargedProjectiles:[{id:\"minecraft:firework_rocket\",Count:1b,tag:{Fireworks:{Explosions:[{Type:4,Trail:1b,Colors:[I;10592673]},{Type:0,Colors:[I;10592673]},{Type:0,Colors:[I;10592673]},{Type:0,Colors:[I;10592673]},{Type:0,Colors:[I;10592673]},{Type:0,Colors:[I;10592673]},{Type:0,Colors:[I;10592673]},{Type:1,Flicker:1b,Trail:1b,Colors:[I;16711680]},{Type:1,Colors:[I;16711680]},{Type:1,Colors:[I;16711680]},{Type:1,Flicker:1b,Trail:1b,Colors:[I;16759552]},{Type:1,Flicker:1b,Trail:1b,Colors:[I;16748800]}]}}},{id:\"minecraft:firework_rocket\",Count:1b,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16711680]}]}}},{id:\"minecraft:firework_rocket\",Count:1b,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16711680]}]}}}],Charged:1b}"
+      "tag": "{hasTnt:1b,uhcp_radiant:2b,ChargedProjectiles:[{id:\"minecraft:tipped_arrow\",Count:1b,tag:{display:{Name:'{\"text\":\"TNT Arrow\",\"color\":\"red\",\"bold\":true,\"italic\":false}'},custom_potion_effects:[{id:\"minecraft:bad_omen\",amplifier:100b,duration:1}],Potion:\"minecraft:empty\",CustomPotionColor:16711680}},{},{}],Charged:1b}"
     }
   ]
   
