@@ -47,7 +47,6 @@ execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:augments/effects/
 
 # Augments
 execute as @e[predicate=uhcp:augments/birdfeather] at @s run function uhcp:augments/effects/gold/birdsofafeather/teleport
-execute as @e[predicate=uhcp:augments/relicexcavator] at @s run function uhcp:relics/relicexcavatoruse
 execute as @e[predicate=uhcp:augments/lavapool] at @s run function uhcp:augments/effects/silver/portablelavapool/summonlavapool
 execute as @e[type=minecraft:bee,tag=UHCP_Bee] at @s run function uhcp:augments/effects/gold/beekeeper/update
 execute as @a[scores={uhcp_lavaTimeInterval=1..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
@@ -68,10 +67,13 @@ execute as @e[tag=UHCP_Temp,type=armor_stand] run function uhcp:relics/gravity_s
 execute as @e[tag=UHCP_GoldBlock,type=armor_stand] run function uhcp:relics/the_harvester/update
 execute as @e[tag=UHCP_SCloneStand,type=armor_stand] at @s run function uhcp:relics/smooth_getaway/update
 execute as @e[tag=UHCP_SClone] at @s unless entity @e[tag=UHCP_SCloneStand,distance=..2] run kill @s
+execute as @e[tag=UHCP_DragonsProtection] at @s run function uhcp:relics/dragons_protection/update
 
 execute as @e[type=arrow,tag=!UHCP_BoomburstInit,nbt={custom_potion_effects:[{id:"minecraft:bad_omen",amplifier:100b}]}] run function uhcp:relics/boomburst/initialize
 execute as @e[type=arrow,nbt={inGround:1b,custom_potion_effects:[{id:"minecraft:bad_omen",amplifier:100b}]}] at @s run function uhcp:relics/boomburst/explode_inground
-execute as @e[nbt={active_effects:[{id:"minecraft:bad_omen",amplifier:100b,duration:1}]}] at @s if entity @e[tag=UHCP_BoomburstDisplay,distance=..4] run function uhcp:relics/boomburst/explode_onhit
+execute as @e[predicate=uhcp:relics/hit_by_boomburst] at @s if entity @e[tag=UHCP_BoomburstDisplay,distance=..4] run function uhcp:relics/boomburst/explode_onhit
+
+execute as @e[predicate=uhcp:augments/relicexcavator] at @s run function uhcp:relics/relicexcavatoruse
 
 # Close dimensions
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:dimensions/run
