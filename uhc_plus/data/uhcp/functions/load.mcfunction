@@ -4,11 +4,12 @@ scoreboard objectives add hunger trigger
 scoreboard objectives add menu trigger
 scoreboard objectives add top trigger
 scoreboard objectives add uhcp_a_count dummy
+scoreboard objectives add uhcp_a_durability dummy
+scoreboard objectives add uhcp_a_gloryOfRa dummy
 scoreboard objectives add uhcp_a_leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add uhcp_a_selectedAugment dummy
 scoreboard objectives add uhcp_a_stack dummy
 scoreboard objectives add uhcp_a_tier dummy
-scoreboard objectives add uhcp_a_durability dummy
 scoreboard objectives add uhcp_a_timer dummy
 scoreboard objectives add uhcp_a_validSelection dummy
 # Remove one below when in pack format with new advancements

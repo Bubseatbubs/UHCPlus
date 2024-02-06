@@ -21,7 +21,10 @@ execute positioned ~ ~0.6 ~ rotated ~270 ~ run function uhcp:relics/voltrune/par
 scoreboard players set @s uhcp_a_timer 0
 
 execute unless score @s uhcp_gameTime matches 150.. run return 0
+execute as @a[gamemode=survival] if score @s uhcp_team = @e[tag=UHCP_Gravity,sort=nearest,limit=1] uhcp_team run effect give @s resistance 1 5 true
+execute as @a[gamemode=survival] if score @s uhcp_team = @e[tag=UHCP_Gravity,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_Invulnerable
 execute if entity @s[tag=UHCP_ZeusFavor] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] unless score @s uhcp_team = @e[tag=UHCP_Gravity,sort=nearest,limit=1] uhcp_team at @s run summon lightning_bolt ~ ~ ~
 particle minecraft:cloud ~ ~1 ~ 0.1 0.1 0.1 1 50 normal
 playsound minecraft:block.respawn_anchor.deplete master @a[distance=..12.5] ~ ~ ~ 1 1 0.8
+
 kill @s

@@ -85,6 +85,7 @@ execute if score @s uhcp_a_selectedAugment matches 227 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 228 run function uhcp:augments/effects/prismatic/trapgod
 execute if score @s uhcp_a_selectedAugment matches 229 run function uhcp:augments/effects/prismatic/youhavemyrod
 execute if score @s uhcp_a_selectedAugment matches 236 run function uhcp:augments/effects/prismatic/thetortoise
+execute if score @s uhcp_a_selectedAugment matches 237 run function uhcp:augments/effects/prismatic/gloryofra
 execute if score @s uhcp_a_selectedAugment matches 238 run function uhcp:augments/effects/prismatic/relicmaster
 execute if score @s uhcp_a_selectedAugment matches 239 run function uhcp:augments/effects/prismatic/shadowclonejutsu
 execute if score @s uhcp_a_selectedAugment matches 240 run function uhcp:augments/effects/prismatic/zeusfavor
