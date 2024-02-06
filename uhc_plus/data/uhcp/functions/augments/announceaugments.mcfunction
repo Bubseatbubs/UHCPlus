@@ -49,6 +49,7 @@ execute as @a if score @s uhcp_a_selectedAugment matches 142 run tellraw @a[tag=
 execute as @a if score @s uhcp_a_selectedAugment matches 143 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Delayed Protection","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_a_selectedAugment matches 144 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Back Off","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_a_selectedAugment matches 145 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Second Wind","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_a_selectedAugment matches 146 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Portable Lava Pool","color":"gold"},{"text":"!","color":"white"}]
 
 # Gold Augments
 execute as @a if score @s uhcp_a_selectedAugment matches 0 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Bee Keeper","color":"gold"},{"text":"!","color":"white"}]

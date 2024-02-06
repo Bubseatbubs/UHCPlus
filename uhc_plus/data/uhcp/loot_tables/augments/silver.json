@@ -1744,6 +1744,62 @@
               ]
             }
           ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:lava_bucket",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:146s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Portable Lava Pool",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Portable Lava Pool",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "When it is thrown, summon a 5x5",
+                  "color": "gray"
+                },
+                {
+                  "text": "pool of lava in front of you.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
