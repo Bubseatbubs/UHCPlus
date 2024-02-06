@@ -3,6 +3,6 @@ execute store result score %uhcp_itemTot uhcp_itemCount run clear @s minecraft:c
 scoreboard players set %uhcp_itemLow uhcp_itemCount 65
 execute if score %uhcp_itemTot uhcp_itemCount matches 1.. run function uhcp:crafting/inventory/player_compass
 execute unless score %uhcp_itemLow uhcp_itemCount matches ..64 run function uhcp:crafting/item/player_compass
-execute at @s run loot spawn ~ ~ ~ loot uhcp:player_compass
-execute at @s as @e[distance=..2,predicate=uhcp:compass/item_entity/player_compass] run data modify entity @s PickupDelay set value 0s
+execute store result score %uhcp_item uhcp_itemCount run loot give @s loot uhcp:player_compass
+execute if score %uhcp_item uhcp_itemCount matches 0 at @s run function uhcp:crafting/reward/player_compass/spawn
 advancement revoke @s only uhcp:player_compass
