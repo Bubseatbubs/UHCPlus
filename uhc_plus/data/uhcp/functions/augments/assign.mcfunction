@@ -99,11 +99,9 @@ execute if score @s uhcp_a_count matches 1.. run return 39
 execute store success score @s uhcp_a_count run clear @s minecraft:blade_pottery_sherd{augment:40b} 1
 execute if score @s uhcp_a_count matches 1.. run return 40
 
-execute store success score @s uhcp_a_count run clear @s minecraft:golden_hoe{augment:41b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:sniffer_spawn_egg{augment:41b}
 execute if score @s uhcp_a_count matches 1.. run return 41
 
-execute store success score @s uhcp_a_count run clear @s minecraft:brush{augment:42b} 1
-execute if score @s uhcp_a_count matches 1.. run return 42
 
 # Silver Augments
 execute store success score @s uhcp_a_count run clear @s minecraft:slime_ball{augment:100s} 1

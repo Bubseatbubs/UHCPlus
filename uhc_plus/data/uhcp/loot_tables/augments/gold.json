@@ -1890,6 +1890,80 @@
               ]
             }
           ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:sniffer_egg",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:{},augment:{}}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "SNIFFA",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Sniffer Spawn Egg",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and"
+                  }
+                ],
+                [
+                  {
+                    "text": "Lead",
+                    "color": "white"
+                  },
+                  {
+                    "text": ". The ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Sniffer",
+                    "color": "gold"
+                  },
+                  {
+                    "text": " is invulnerable,",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "glowing, and digs up rare loot",
+                  "color": "gray"
+                },
+                {
+                  "text": "every 8 minutes!",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
         }
       ]
     }

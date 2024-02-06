@@ -67,9 +67,7 @@ execute if score @s uhcp_a_selectedAugment matches 37 run function uhcp:augments
 execute if score @s uhcp_a_selectedAugment matches 38 run function uhcp:augments/effects/gold/oppenheimer
 execute if score @s uhcp_a_selectedAugment matches 39 run function uhcp:augments/effects/gold/poseidonsblessing
 execute if score @s uhcp_a_selectedAugment matches 40 run function uhcp:augments/effects/gold/relicsofthepast
-execute if score @s uhcp_a_selectedAugment matches 41 run function uhcp:augments/effects/gold/harvestseason
-execute if score @s uhcp_a_selectedAugment matches 42 run function uhcp:augments/effects/gold/shadowclonejutsu
-
+execute if score @s uhcp_a_selectedAugment matches 41 run function uhcp:augments/effects/gold/sniffa
 # Prismatic Augments
 execute if score @s uhcp_a_selectedAugment matches 201 run function uhcp:augments/effects/prismatic/bowmaster
 execute if score @s uhcp_a_selectedAugment matches 203 run function uhcp:augments/effects/prismatic/cruelpact
