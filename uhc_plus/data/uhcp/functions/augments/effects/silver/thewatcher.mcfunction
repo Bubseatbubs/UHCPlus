@@ -1,0 +1,10 @@
+loot give @s loot uhcp:all-seeing_eye
+loot give @s loot uhcp:all-seeing_eye
+loot give @s loot uhcp:all-seeing_eye
+loot give @s loot uhcp:all-seeing_eye
+loot give @s loot uhcp:all-seeing_eye
+loot give @s loot uhcp:all-seeing_eye
+loot give @s loot uhcp:all-seeing_eye
+loot give @s loot uhcp:all-seeing_eye
+loot give @s loot uhcp:all-seeing_eye
+loot give @s loot uhcp:all-seeing_eye

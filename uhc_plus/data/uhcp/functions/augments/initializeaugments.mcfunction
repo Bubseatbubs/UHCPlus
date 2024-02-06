@@ -8,38 +8,30 @@ execute if score @s uhcp_a_selectedAugment matches 100 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 101 run function uhcp:augments/effects/silver/afk
 execute if score @s uhcp_a_selectedAugment matches 102 run function uhcp:augments/effects/silver/blacksmith
 execute if score @s uhcp_a_selectedAugment matches 103 run function uhcp:augments/effects/silver/bucketlist
-execute if score @s uhcp_a_selectedAugment matches 104 run function uhcp:augments/effects/silver/cramsession
-execute if score @s uhcp_a_selectedAugment matches 105 run function uhcp:augments/effects/silver/creepercosplay
-execute if score @s uhcp_a_selectedAugment matches 106 run function uhcp:augments/effects/silver/doublecross
 execute if score @s uhcp_a_selectedAugment matches 107 run function uhcp:augments/effects/silver/dripeconomyi
 execute if score @s uhcp_a_selectedAugment matches 108 run function uhcp:augments/effects/silver/drunkenstupor
 execute if score @s uhcp_a_selectedAugment matches 109 run function uhcp:augments/effects/silver/emptyhearted
-execute if score @s uhcp_a_selectedAugment matches 110 run function uhcp:augments/effects/silver/extraenchanting
 execute if score @s uhcp_a_selectedAugment matches 111 run function uhcp:augments/effects/silver/gapplegapi
 execute if score @s uhcp_a_selectedAugment matches 112 run return 0
-execute if score @s uhcp_a_selectedAugment matches 113 run function uhcp:augments/effects/silver/heartymeal
 execute if score @s uhcp_a_selectedAugment matches 114 run function uhcp:augments/effects/silver/intotheminesi
 execute if score @s uhcp_a_selectedAugment matches 115 run function uhcp:augments/effects/silver/ironwill
 execute if score @s uhcp_a_selectedAugment matches 117 run return 0
-execute if score @s uhcp_a_selectedAugment matches 116 run function uhcp:augments/effects/silver/ladderwarrior
-execute if score @s uhcp_a_selectedAugment matches 118 run function uhcp:augments/effects/silver/mansbestfriend
 execute if score @s uhcp_a_selectedAugment matches 119 run function uhcp:augments/effects/silver/monsterhunter
 execute if score @s uhcp_a_selectedAugment matches 120 run return 0
 execute if score @s uhcp_a_selectedAugment matches 122 run function uhcp:augments/effects/silver/rattunneler
-execute if score @s uhcp_a_selectedAugment matches 123 run function uhcp:augments/effects/silver/saddleup
-execute if score @s uhcp_a_selectedAugment matches 124 run function uhcp:augments/effects/silver/shieldsup
 execute if score @s uhcp_a_selectedAugment matches 125 run function uhcp:augments/effects/silver/sneaky
 execute if score @s uhcp_a_selectedAugment matches 126 run function uhcp:augments/effects/silver/speedystart
 execute if score @s uhcp_a_selectedAugment matches 127 run function uhcp:augments/effects/silver/starterkiti
 execute if score @s uhcp_a_selectedAugment matches 128 run function uhcp:augments/effects/silver/stickysituation
 execute if score @s uhcp_a_selectedAugment matches 129 run function uhcp:augments/effects/silver/storagesolution
 execute if score @s uhcp_a_selectedAugment matches 130 run return 0
-execute if score @s uhcp_a_selectedAugment matches 131 run function uhcp:augments/effects/silver/taequalsta
-execute if score @s uhcp_a_selectedAugment matches 132 run function uhcp:augments/effects/silver/takeaim
 execute if score @s uhcp_a_selectedAugment matches 133 run function uhcp:augments/effects/silver/trapenthusiast
-execute if score @s uhcp_a_selectedAugment matches 134 run function uhcp:augments/effects/silver/reinforcements
 execute if score @s uhcp_a_selectedAugment matches 135 run function uhcp:augments/effects/silver/structurescout
-execute if score @s uhcp_a_selectedAugment matches 136 run function uhcp:augments/effects/gold/fishybusiness
+execute if score @s uhcp_a_selectedAugment matches 136 run function uhcp:augments/effects/silver/fishybusiness
+execute if score @s uhcp_a_selectedAugment matches 139 run function uhcp:augments/effects/silver/theboat
+execute if score @s uhcp_a_selectedAugment matches 140 run function uhcp:augments/effects/silver/thewatcher
+execute if score @s uhcp_a_selectedAugment matches 141 run function uhcp:augments/effects/silver/finalupgrade
+execute if score @s uhcp_a_selectedAugment matches 142 run function uhcp:augments/effects/silver/tunnelvision
 
 # Gold Augments
 execute if score @s uhcp_a_selectedAugment matches 0 run return 0
@@ -75,9 +67,7 @@ execute if score @s uhcp_a_selectedAugment matches 37 run function uhcp:augments
 execute if score @s uhcp_a_selectedAugment matches 38 run function uhcp:augments/effects/gold/oppenheimer
 execute if score @s uhcp_a_selectedAugment matches 39 run function uhcp:augments/effects/gold/poseidonsblessing
 execute if score @s uhcp_a_selectedAugment matches 40 run function uhcp:augments/effects/gold/relicsofthepast
-execute if score @s uhcp_a_selectedAugment matches 41 run function uhcp:augments/effects/gold/harvestseason
-execute if score @s uhcp_a_selectedAugment matches 42 run function uhcp:augments/effects/gold/shadowclonejutsu
-
+execute if score @s uhcp_a_selectedAugment matches 41 run function uhcp:augments/effects/gold/sniffa
 # Prismatic Augments
 execute if score @s uhcp_a_selectedAugment matches 201 run function uhcp:augments/effects/prismatic/bowmaster
 execute if score @s uhcp_a_selectedAugment matches 203 run function uhcp:augments/effects/prismatic/cruelpact

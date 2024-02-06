@@ -1,0 +1,2 @@
+give @s leather_helmet{display:{Name:'{"text":"Bald Head","color":"light_purple"}',Lore:['{"text":"The lack of hair somehow grants"}','{"text":"you protection."}']},RepairCost:100,Enchantments:[{id:"minecraft:protection",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;123181312,-545305898,-1790076370,512693127]}]} 1
+give @s oak_boat 1

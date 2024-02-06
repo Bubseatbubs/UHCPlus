@@ -1,0 +1,2 @@
+give @s sniffer_spawn_egg{display:{Name:'{"text":"SNIFFA","color":"light_purple"}',Lore:['[{"text":"Spawns a loot-sniffing ","color":"gray"},{"text":"Sniffer","color":"yellow"},{"text":".","color":"gray"}]']},EntityTag:{Invulnerable:1b,Glowing:1b}} 1
+give @s lead

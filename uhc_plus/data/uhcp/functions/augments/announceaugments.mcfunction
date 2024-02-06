@@ -5,7 +5,7 @@ tag @s add UHCP_AugmentAnnounce
 ##
 
 # Silver Augments
-execute as @a if score @s uhcp_a_selectedAugment matches 100 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" !shoma","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_a_selectedAugment matches 100 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" !shoma","color":"gold"},{"text":"! balls","color":"white"}]
 execute as @a if score @s uhcp_a_selectedAugment matches 101 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" AFK","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_a_selectedAugment matches 102 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Blacksmith","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_a_selectedAugment matches 103 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Bucket List","color":"gold"},{"text":"!","color":"white"}]
@@ -42,6 +42,10 @@ execute as @a if score @s uhcp_a_selectedAugment matches 133 run tellraw @a[tag=
 execute as @a if score @s uhcp_a_selectedAugment matches 134 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Reinforcements","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_a_selectedAugment matches 135 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Structure Scout","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_a_selectedAugment matches 136 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Fishy Business","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_a_selectedAugment matches 139 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" The B.O.A.T.","color":"gold"},{"text":"! Can we get a Baldge in the chat!","color":"white"}]
+execute as @a if score @s uhcp_a_selectedAugment matches 140 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" The Watcher","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_a_selectedAugment matches 141 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Final Upgrade","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_a_selectedAugment matches 142 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Tunnel Vision","color":"gold"},{"text":"!","color":"white"}]
 
 # Gold Augments
 execute as @a if score @s uhcp_a_selectedAugment matches 0 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Bee Keeper","color":"gold"},{"text":"!","color":"white"}]
@@ -77,8 +81,7 @@ execute as @a if score @s uhcp_a_selectedAugment matches 37 run tellraw @a[tag=U
 execute as @a if score @s uhcp_a_selectedAugment matches 38 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Oppenheimer","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_a_selectedAugment matches 39 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Poseidon's Blessing","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_a_selectedAugment matches 40 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Relics of the Past","color":"gold"},{"text":"!","color":"white"}]
-execute as @a if score @s uhcp_a_selectedAugment matches 41 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Harvest Season","color":"gold"},{"text":"!","color":"white"}]
-execute as @a if score @s uhcp_a_selectedAugment matches 42 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Shadow Clone Jutsu","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_a_selectedAugment matches 41 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" SNIFFA","color":"gold"},{"text":"!","color":"white"}]
 
 # Prismatic Augments
 execute as @a if score @s uhcp_a_selectedAugment matches 200 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Beastmaster","color":"gold"},{"text":"!","color":"white"}]
