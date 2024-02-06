@@ -1331,6 +1331,263 @@
               ]
             }
           ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:139s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "The B.O.A.T.",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain  a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Boat",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and a "
+                  },
+                  {
+                    "text": "Bald Head",
+                    "color": "white"
+                  }
+                ],
+                {
+                  "text": "which is equivalent to a",
+                  "color": "gray"
+                },
+                {
+                  "text": "Diamond Helmet with Protection I.",
+                  "color": "gray"
+                },
+                [
+                  {
+                    "text": "The ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Bald Head",
+                    "color": "white"
+                  },
+                  {
+                    "text": " cannot be enchanted"
+                  }
+                ],
+                {
+                  "text": "any further.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:eye_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:140s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "The Watcher",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain 10 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "All-Seeing Eyes",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:smithing_table",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:141}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Final Upgrade",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "2 Netherite Ingots",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "2 Upgrade Templates"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:target",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:142}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Tunnel Vision",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "a Potion",
+                    "color": "white"
+                  },
+                  {
+                    "text": " that gives",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Strengh",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ", ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Speed"
+                  },
+                  {
+                    "text": ", and ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Blindness"
+                  }
+                ],
+                {
+                  "text": "for 30 seconds.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
         }
       ]
     }

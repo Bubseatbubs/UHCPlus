@@ -172,6 +172,18 @@ execute if score @s uhcp_a_count matches 1.. run return 135
 execute store success score @s uhcp_a_count run clear @s minecraft:cooked_cod{augment:136s} 1
 execute if score @s uhcp_a_count matches 1.. run return 136
 
+execute store success score @s uhcp_a_count run clear @s minecraft:leather_helmet{augment:139s} 1
+execute if score @s uhcp_a_count matches 1.. run return 139
+
+execute store success score @s uhcp_a_count run clear @s minecraft:eye_armor_trim_smithing_template{augment:140s} 1
+execute if score @s uhcp_a_count matches 1.. run return 140
+
+execute store success score @s uhcp_a_count run clear @s minecraft:smithing_table{augment:141s} 1
+execute if score @s uhcp_a_count matches 1.. run return 141
+
+execute store success score @s uhcp_a_count run clear @s minecraft:target{augment:141s} 1
+execute if score @s uhcp_a_count matches 1.. run return 142
+
 # Prismatic Augments
 execute store success score @s uhcp_a_count run clear @s minecraft:bow{augment:201s} 1
 execute if score @s uhcp_a_count matches 1.. run return 201
