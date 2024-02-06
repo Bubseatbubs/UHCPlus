@@ -6,63 +6,6 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:enchanted_book",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:110s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Extra Enchanting",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " 5 Leather",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " 3 Sugar Cane",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
           "name": "minecraft:melon_slice",
           "functions": [
             {
@@ -152,58 +95,6 @@
                     "color": "gray"
                   }
                 ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:chainmail_chestplate",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:121s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Protect Protocol I",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue"
-                },
-                [
-                  {
-                    "text": "Gain a set of full",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Iron Armor",
-                    "color": "white"
-                  },
-                  {
-                    "text": " after",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "10 minutes.",
-                  "color": "gray"
-                }
               ]
             }
           ]
@@ -551,277 +442,6 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:creeper_head",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:105s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Creeper Cosplay",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " 4 TNT, a Flint and Steel,",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "4 Gold Ingots",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:book",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:104s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Cram Session",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                {
-                  "text": "Start the game at Level 10.",
-                  "color": "gray"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:bucket",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:103s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Bucket List",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Lava Bucket, Water Bucket,",
-                    "color": "white"
-                  }
-                ],
-                [
-                  {
-                    "text": "an empty",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Bucket,",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " 3 Paper",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:bow",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:132s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Take Aim",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Bow and 16 Arrows",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:crossbow",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:106s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Double Cross",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain 2",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Crossbows",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and 16",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Arrows",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
           "name": "minecraft:slime_ball",
           "functions": [
             {
@@ -981,196 +601,7 @@
                     "color": "white"
                   },
                   {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:shield",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:124s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Shields Up!",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Shield",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " 7 Gold Ingots",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:leather_horse_armor",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:123s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Saddle Up!",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Saddle, a Horse Spawn Egg",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "12 Hay Bales",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:pointed_dripstone",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:122s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Rat Tunneler",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " 2 Trap Doors, 2 Gold Ingots",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Stone Pickaxe and Stone Shovel",
-                    "color": "white"
-                  }
-                ],
-                [
-                  {
-                    "text": "with ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Efficiency I",
-                    "color": "dark_purple"
-                  },
-                  {
-                    "text": ".",
+                    "text": ". (8 minute duration)",
                     "color": "gray"
                   }
                 ]
@@ -1231,124 +662,6 @@
                   {
                     "text": "/ Looting I",
                     "color": "dark_purple"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:bone",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:118s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Man's Best Friend",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " 2 Wolf Spawn Eggs",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "8 Bones",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:ladder",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:116s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Ladder Warrior",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " 64 Ladders, 6 Iron Ingots",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and an",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "Iron Sword",
-                    "color": "white"
                   },
                   {
                     "text": ".",
@@ -1457,56 +770,7 @@
                     "color": "yellow"
                   },
                   {
-                    "text": " for 5 minutes.",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:rabbit_stew",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:113s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Hearty Meal",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Start with",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " +2🖤",
-                    "color": "red"
-                  },
-                  {
-                    "text": ".",
+                    "text": " for 15 minutes.",
                     "color": "gray"
                   }
                 ]
@@ -1547,11 +811,11 @@
                 },
                 [
                   {
-                    "text": "Gain a",
+                    "text": "Gain 2",
                     "color": "gray"
                   },
                   {
-                    "text": " Golden Apple",
+                    "text": " Golden Apples",
                     "color": "white"
                   },
                   {
@@ -1596,93 +860,35 @@
                 },
                 [
                   {
-                    "text": "Gain",
+                    "text": "Gain ",
                     "color": "gray"
                   },
                   {
-                    "text": " 3 Pistons, 32 Redstone,",
+                    "text": "6 Pistons",
                     "color": "white"
                   },
                   {
-                    "text": " and a",
-                    "color": "gray"
+                    "text": ", "
+                  },
+                  {
+                    "text": "32 Redstone",
+                    "color": "white"
+                  },
+                  {
+                    "text": ","
                   }
                 ],
                 [
                   {
-                    "text": "Stone Pickaxe",
+                    "text": "3 Pointed Dripstone",
                     "color": "white"
                   },
                   {
-                    "text": " with",
+                    "text": ", and ",
                     "color": "gray"
                   },
                   {
-                    "text": " Efficiency I",
-                    "color": "dark_purple"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:turtle_helmet",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:131s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "TA = TA",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " 64 Baked PoTAtoes, a Name TAg,",
-                    "color": "white"
-                  }
-                ],
-                [
-                  {
-                    "text": "a Brewing STAnd,",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " 4 Gold IngoT(A)s",
-                    "color": "white"
+                    "text": "16 signs"
                   },
                   {
                     "text": ".",
@@ -1734,13 +940,13 @@
                     "color": "white"
                   },
                   {
-                    "text": " and",
+                    "text": " and a ",
                     "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "4 Gold Ingots",
+                    "text": "Golden Apple",
                     "color": "white"
                   },
                   {
@@ -1785,25 +991,31 @@
                 },
                 [
                   {
-                    "text": "Gain",
+                    "text": "Gain a ",
                     "color": "gray"
                   },
                   {
-                    "text": " 2 Slime Blocks, 2 Cobwebs,",
+                    "text": "32 Cobwebs",
                     "color": "white"
+                  },
+                  {
+                    "text": ", "
+                  },
+                  {
+                    "text": "2 Slime Balls",
+                    "color": "white"
+                  },
+                  {
+                    "text": ","
                   }
                 ],
                 [
                   {
-                    "text": "2 Bottles of Honey",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and",
+                    "text": "and a ",
                     "color": "gray"
                   },
                   {
-                    "text": " 6 Gold Ingots",
+                    "text": "Royal Jelly",
                     "color": "white"
                   },
                   {
@@ -1912,55 +1124,6 @@
                   },
                   {
                     "text": " Damaged Anvil",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:white_banner",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:98,pickup:1b,augment:134s,BlockEntityTag:{Patterns:[{Pattern:\"mr\",Color:9},{Pattern:\"bs\",Color:8},{Pattern:\"cs\",Color:7},{Pattern:\"bo\",Color:8},{Pattern:\"ms\",Color:15},{Pattern:\"hh\",Color:8},{Pattern:\"mc\",Color:8},{Pattern:\"bo\",Color:15}]}}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Reinforcements",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain 2",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Vindicator Spawn Eggs",
                     "color": "white"
                   },
                   {
@@ -2087,6 +1250,77 @@
                 [
                   {
                     "text": "Leather Boots",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:bucket",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:103b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Bucket List",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Water Bucket, Lava Bucket,",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "empty Bucket"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 12 paper"
+                  },
+                  {
+                    "text": ", and",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "2 leather",
                     "color": "white"
                   },
                   {

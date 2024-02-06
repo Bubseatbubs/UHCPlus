@@ -1,1 +1,1 @@
-give @s golden_apple 1
+give @s golden_apple 2

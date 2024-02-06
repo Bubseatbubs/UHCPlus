@@ -1,1 +1,1 @@
-effect give @s resistance 420 4 true
+effect give @s resistance 900 4 true
