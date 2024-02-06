@@ -10,6 +10,9 @@ give @s minecraft:leather_boots{solo_item:7b,solo_level:1b,solo_stage:0b,Enchant
 give @s minecraft:bow{solo_item:8b,solo_level:1b,solo_stage:0b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
 give @s minecraft:wooden_hoe{solo_item:9b,solo_level:1b,solo_stage:0b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
 
+# Current upgrade stage
+scoreboard players set @s uhcp_a_tier 0
+
 # Temporary planning/work
 return fail
 

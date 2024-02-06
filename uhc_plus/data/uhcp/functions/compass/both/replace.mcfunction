@@ -1,12 +1,12 @@
 # Determine compass age
 execute store result score %uhcp_compassAge uhcp_itemInv run data get storage uhcp:compass Compass.hand[0].tag.compass_time
 scoreboard players add %uhcp_compassAge uhcp_itemInv 1
-execute if score %uhcp_compassAge uhcp_itemInv matches 121.. run function uhcp:compass/both/mainhand
-execute if score %uhcp_compassAge uhcp_itemInv matches 0..120 run function uhcp:compass/both/age/mainhand
+execute if score %uhcp_compassAge uhcp_itemInv matches 61.. run function uhcp:compass/both/mainhand
+execute if score %uhcp_compassAge uhcp_itemInv matches 0..60 run function uhcp:compass/both/age/mainhand
 execute store result score %uhcp_compassAge uhcp_itemInv run data get storage uhcp:compass Compass.hand[1].tag.compass_time
 scoreboard players add %uhcp_compassAge uhcp_itemInv 1
-execute if score %uhcp_compassAge uhcp_itemInv matches 121.. run function uhcp:compass/both/offhand
-execute if score %uhcp_compassAge uhcp_itemInv matches 0..120 run function uhcp:compass/both/age/offhand
+execute if score %uhcp_compassAge uhcp_itemInv matches 61.. run function uhcp:compass/both/offhand
+execute if score %uhcp_compassAge uhcp_itemInv matches 0..60 run function uhcp:compass/both/age/offhand
 
 # Replace player's compasses
 setblock 0 0 0 minecraft:barrel
