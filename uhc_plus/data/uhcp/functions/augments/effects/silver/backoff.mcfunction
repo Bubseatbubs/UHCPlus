@@ -1,0 +1,1 @@
+give @s wooden_sword{display:{Name:'{"text":"Back Off!","color":"light_purple"}',Lore:['{"text":"Keep your enemies an arm\'s length","color":"gray"}','{"text":"away. OK, maybe more than an","color":"gray"}','{"text":"arm\'s length.","color":"gray"}']},RepairCost:100,Damage:56,Enchantments:[{id:"minecraft:knockback",lvl:5s}]} 1

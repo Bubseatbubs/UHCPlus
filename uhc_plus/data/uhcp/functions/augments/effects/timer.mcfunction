@@ -2,9 +2,9 @@ scoreboard players remove @a[scores={uhcp_a_timer=0..2147483647}] uhcp_a_timer 1
 
 # One Time Effects
 execute if score %time uhcp_gameTime matches 16800 as @a[scores={uhcp_a_selectedAugment=115}] run tellraw @s {"text":"Your Iron Will Resistance will wear off in 1 minute!","color":"red"}
-execute if score %time uhcp_gameTime matches 54000 as @a[scores={uhcp_a_selectedAugment=5}] run function uhcp:augments/effects/gold/delayedprotection
+execute if score %time uhcp_gameTime matches 54000 as @a[scores={uhcp_a_selectedAugment=143}] run function uhcp:augments/effects/silver/delayedprotection
 execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=18}] run function uhcp:augments/effects/gold/latelooter/haste
-execute if score %time uhcp_gameTime matches 48000 as @a[scores={uhcp_a_selectedAugment=25}] run function uhcp:augments/effects/gold/secondwind
+execute if score %time uhcp_gameTime matches 48000 as @a[scores={uhcp_a_selectedAugment=145}] run function uhcp:augments/effects/silver/secondwind
 execute if score %time uhcp_gameTime matches 54000 as @a[scores={uhcp_a_selectedAugment=35}] run tellraw @s {"text":"Copper will convert to Gold in 5 minutes!","color":"red"}
 execute if score %time uhcp_gameTime matches 58800 as @a[scores={uhcp_a_selectedAugment=35}] run tellraw @s {"text":"Copper will convert to Gold in 1 minute!","color":"red"}
 execute if score %time uhcp_gameTime matches 60000 as @a[scores={uhcp_a_selectedAugment=35}] run function uhcp:augments/effects/gold/coppercollector

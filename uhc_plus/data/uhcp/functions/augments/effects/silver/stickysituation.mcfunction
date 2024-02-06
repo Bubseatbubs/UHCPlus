@@ -1,3 +1,3 @@
 give @s cobweb 32
 give @s slime_block 2
-# give @s royal jelly goes here
+give @s potion{display:{Name:'{"text":"Royal Jelly","color":"light_purple"}'},custom_potion_effects:[{id:"minecraft:speed",amplifier:0b,duration:3600},{id:"minecraft:haste",amplifier:1b,duration:3600},{id:"minecraft:absorption",amplifier:0b,duration:1000},{id:"minecraft:saturation",amplifier:40b,duration:1},{id:"minecraft:glowing",amplifier:0b,duration:300}],CustomPotionColor:16762880} 1

@@ -1588,6 +1588,162 @@
               ]
             }
           ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:netherite_upgrade_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:32,pickup:1b,augment:143s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Delayed Protection",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "After 45 minutes, gain a set of full",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " ",
+                    "color": "red"
+                  }
+                ],
+                [
+                  {
+                    "text": "Diamond Armor",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:144s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Back Off!",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 3 Durability Wooden Sword",
+                    "color": "white"
+                  },
+                  {
+                    "text": " with"
+                  },
+                  {
+                    "text": " Knockback V",
+                    "color": "dark_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:145s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Second Wind",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "After 40 minutes, restore all of your",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 🖤",
+                    "color": "red"
+                  }
+                ]
+              ]
+            }
+          ]
         }
       ]
     }

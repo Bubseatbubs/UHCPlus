@@ -18,9 +18,6 @@ execute if score @s uhcp_a_count matches 1.. run return 3
 execute store success score @s uhcp_a_count run clear @s minecraft:leather{augment:4b} 1
 execute if score @s uhcp_a_count matches 1.. run return 4
 
-execute store success score @s uhcp_a_count run clear @s minecraft:netherite_upgrade_smithing_template{augment:5b} 1
-execute if score @s uhcp_a_count matches 1.. run return 5
-
 execute store success score @s uhcp_a_count run clear @s minecraft:gold_nugget{augment:7b} 1
 execute if score @s uhcp_a_count matches 1.. run return 7
 
@@ -38,9 +35,6 @@ execute if score @s uhcp_a_count matches 1.. run return 12
 
 execute store success score @s uhcp_a_count run clear @s minecraft:miner_pottery_sherd{augment:13b} 1
 execute if score @s uhcp_a_count matches 1.. run return 13
-
-execute store success score @s uhcp_a_count run clear @s minecraft:stick{augment:14b} 1
-execute if score @s uhcp_a_count matches 1.. run return 14
 
 execute store success score @s uhcp_a_count run clear @s minecraft:apple{augment:15b} 1
 execute if score @s uhcp_a_count matches 1.. run return 15
@@ -62,9 +56,6 @@ execute if score @s uhcp_a_count matches 1.. run return 21
 
 execute store success score @s uhcp_a_count run clear @s minecraft:iron_chestplate{augment:22b} 1
 execute if score @s uhcp_a_count matches 1.. run return 22
-
-execute store success score @s uhcp_a_count run clear @s minecraft:feather{augment:25b} 1
-execute if score @s uhcp_a_count matches 1.. run return 25
 
 execute store success score @s uhcp_a_count run clear @s minecraft:diamond_block{augment:26b} 1
 execute if score @s uhcp_a_count matches 1.. run return 26
@@ -179,8 +170,17 @@ execute if score @s uhcp_a_count matches 1.. run return 140
 execute store success score @s uhcp_a_count run clear @s minecraft:smithing_table{augment:141s} 1
 execute if score @s uhcp_a_count matches 1.. run return 141
 
-execute store success score @s uhcp_a_count run clear @s minecraft:target{augment:141s} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:target{augment:142s} 1
 execute if score @s uhcp_a_count matches 1.. run return 142
+
+execute store success score @s uhcp_a_count run clear @s minecraft:netherite_upgrade_smithing_template{augment:143s} 1
+execute if score @s uhcp_a_count matches 1.. run return 143
+
+execute store success score @s uhcp_a_count run clear @s minecraft:stick{augment:144s} 1
+execute if score @s uhcp_a_count matches 1.. run return 144
+
+execute store success score @s uhcp_a_count run clear @s minecraft:feather{augment:145s} 1
+execute if score @s uhcp_a_count matches 1.. run return 145
 
 # Prismatic Augments
 execute store success score @s uhcp_a_count run clear @s minecraft:bow{augment:201s} 1
