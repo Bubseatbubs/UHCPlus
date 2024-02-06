@@ -13,7 +13,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{uhcp_radiant:2b,Enchantments:[{id:\"minecraft:piercing\",lvl:2s},{id:\"minecraft:quick_charge\",lvl:2s}]}"
+                "tag": "{hasTnt:0b,uhcp_radiant:2b,Enchantments:[{id:\"minecraft:piercing\",lvl:10s},{id:\"minecraft:quick_charge\",lvl:2s}]}"
               },
               {
                 "function": "minecraft:set_name",
@@ -91,18 +91,42 @@
                       "italic": false
                     },
                     {
-                      "text": ": Instantly reloads itself with a",
+                      "text": ": Fire a",
                       "color": "gray",
                       "italic": true
                     },
                     {
-                      "text": " Firework Rocket",
-                      "color": "white",
+                      "text": " TNT Arrow",
+                      "color": "red",
                       "italic": true
                     },
                     {
                       "text": ".",
                       "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "TNT Arrows",
+                      "color": "red",
+                      "italic": true
+                    },
+                    {
+                      "text": " are lit upon hitting an enemy or block.",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "TNT Arrows",
+                      "color": "red",
+                      "italic": true
+                    },
+                    {
+                      "text": " explode 1 second after being lit.",
+                      "color": "gray",
+                      "italic": true
                     }
                   ]
                 ]

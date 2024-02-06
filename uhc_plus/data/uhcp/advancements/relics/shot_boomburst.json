@@ -3,35 +3,20 @@
     "requirement": {
       "trigger": "minecraft:shot_crossbow",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:any_of",
-            "terms": [
-              {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "equipment": {
-                    "mainhand": {
-                      "items": [
-                        "minecraft:crossbow"
-                      ],
-                      "durability": {
-                        "min": 464,
-                        "max": 465
-                      },
-                      "nbt": "{uhcp_radiant:2b}"
-                    }
-                  }
-                }
-              }
-            ]
-          }
-        ]
+        "item": {
+          "items": [
+            "minecraft:crossbow"
+          ],
+          "durability": {
+            "min": 464,
+            "max": 465
+          },
+          "nbt": "{uhcp_radiant:2b,hasTnt:1b}"
+        }
       }
     }
   },
   "rewards": {
-    "function": "uhcp:relics/boomburst/shoot"
+    "function": "uhcp:relics/boomburst/update_durability"
   }
 }
