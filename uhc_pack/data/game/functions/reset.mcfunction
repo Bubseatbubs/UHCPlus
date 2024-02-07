@@ -1,5 +1,6 @@
 #Reset 
 title @a title {"text":"UHC: RESET!","color":"red"}
+scoreboard objectives setdisplay sidebar
 playsound minecraft:entity.husk.converted_to_zombie master @a ~ ~ ~ 1000000 0 1
 execute in minecraft:overworld run fill -13 300 13 13 305 -13 minecraft:air
 execute in minecraft:overworld run setworldspawn 0 68 0
@@ -142,3 +143,5 @@ scoreboard players reset @a uhcp_topCD
 scoreboard players reset @a hunger
 scoreboard players reset @a top
 scoreboard players set %uhcp_dimTime uhcp_gameTime 72000
+scoreboard objectives setdisplay sidebar
+

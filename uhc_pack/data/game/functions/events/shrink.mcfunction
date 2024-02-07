@@ -11,3 +11,5 @@ execute if score FinalArenaSize setting matches 750 run function game:events/shr
 execute if score FinalArenaSize setting matches 1000 run function game:events/shrink/1000
 
 playsound minecraft:entity.firework_rocket.blast master @a ~ ~ ~ 1000000 0 1
+
+# scoreboard players display numberformat %border uhcp_gameDisplay fixed {"text":"Shrinking","color":"dark_red","bold":false}
