@@ -1,125 +1,88 @@
 {
-    "type": "minecraft:gift",
-    "pools": [
-      {
-        "rolls": 1,
-        "bonus_rolls": 0,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:golden_apple",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": 2
-              }
-            ],
-            "weight": 40
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "functions": [
-              {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:sharpness": 2
-                }
-              }
-            ],
-            "weight": 20
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "functions": [
-              {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:protection": 2
-                }
-              }
-            ],
-            "weight": 20
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "functions": [
-              {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:power": 2
-                }
-              }
-            ],
-            "weight": 20
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:diamond",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": 5
-              }
-            ],
-            "weight": 20
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_golden_apple",
-            "weight": 1
-          },
-          {
-            "type": "item",
-            "weight": 7,
-            "name": "minecraft:golden_shovel",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "set_nbt",
-                "tag": "{relicexcavator:1b,Enchantments:[{}]}"
-              },
-              {
-                "function": "set_name",
-                "name": [
-                  {
-                    "text": "Relic Excavator",
-                    "color": "light_purple"
-                  }
-                ]
-              },
-              {
-                "function": "set_lore",
-                "lore": [
-                  {
-                    "text": "Throw this item to obtain a",
-                    "color": "gray"
-                  },
-                  [
-                    {
-                      "text": "random  ",
-                      "color": "gray"
-                    },
-                    {
-                      "text": "Relic",
-                      "color": "gold"
-                    },
-                    {
-                      "text": ".",
-                      "color": "gray"
-                    }
-                  ]
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+  "type": null,
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "loot_table",
+          "weight": 7,
+          "name": "uhcp:relics/relic_invoker",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 40,
+          "name": "minecraft:golden_apple",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 20,
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 20,
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 20,
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 20,
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:enchanted_golden_apple",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
