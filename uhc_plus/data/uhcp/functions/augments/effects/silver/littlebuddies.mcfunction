@@ -1,0 +1,1 @@
+give @s allay_spawn_egg{display:{Name:'{"text":"Little Buddy","color":"light_purple","bold":true}',Lore:['{"text":"Give this invulnerable buddy an"}','{"text":"item, and it will go seek out"}','{"text":"more of that item for you!"}']},EntityTag:{Invulnerable:1b,CustomName:'{"text":"Little Buddy","color":"gold"}'}} 3
