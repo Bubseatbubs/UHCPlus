@@ -2,11 +2,8 @@ advancement revoke @s only uhcp:relics/smooth_getaway/ability
 
 
 
-summon armor_stand ~-1 ~ ~ {CustomNameVisible:1b,ShowArms:1b,Invulnerable:1b,NoBasePlate:1b,Tags:["UHCP_SCloneStand","UHCP_New"],DisabledSlots:63,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:6260410}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:2632752}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:10793663}}},{}],CustomName:'{"text":"ShadowClone"}'}
-summon wolf ~-1 ~ ~ {Silent:1b,Health:5f,Sitting:0b,Tags:["UHCP_SClone","UHCP_New"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:2000,show_particles:0b}],Attributes:[{Name:"generic.attack_damage",Base:5}]}
-
-summon armor_stand ~1 ~ ~ {CustomNameVisible:1b,ShowArms:1b,Invulnerable:1b,NoBasePlate:1b,Tags:["UHCP_SCloneStand","UHCP_New"],DisabledSlots:63,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:6260410}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:2632752}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:10793663}}},{}],CustomName:'{"text":"ShadowClone"}'}
-summon wolf ~1 ~ ~ {Silent:1b,Health:5f,Sitting:0b,Tags:["UHCP_SClone","UHCP_New"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:2000,show_particles:0b}],Attributes:[{Name:"generic.attack_damage",Base:5}]}
+execute at @s positioned ~-1 ~ ~ run function uhcp:relics/smooth_getaway/summon
+execute at @s positioned ~1 ~ ~ run function uhcp:relics/smooth_getaway/summon
 
 execute as @a if score @s uhcp_a_selectedAugment matches 239 at @s run function uhcp:relics/smooth_getaway/shadowclone
 
