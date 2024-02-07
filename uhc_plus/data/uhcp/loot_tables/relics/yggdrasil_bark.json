@@ -124,21 +124,25 @@
                       "italic": true
                     },
                     {
-                      "text": " +5🖤",
-                      "color": "yellow"
+                      "text": " +6🖤",
+                      "color": "yellow",
+                      "italic": true
                     },
                     {
                       "text": " and",
-                      "color": "gray"
+                      "color": "gray",
+                      "italic": true
                     },
                     {
                       "text": " Resistance I",
-                      "color": "yellow"
+                      "color": "yellow",
+                      "italic": true
                     }
                   ],
                   {
                     "text": "for 3 seconds.",
-                    "color": "gray"
+                    "color": "gray",
+                    "italic": true
                   },
                   {
                     "text": " "
