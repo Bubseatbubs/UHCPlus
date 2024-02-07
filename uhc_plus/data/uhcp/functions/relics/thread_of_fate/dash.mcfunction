@@ -1,4 +1,5 @@
 advancement revoke @s only uhcp:relics/thread_of_fate/ability
+effect give @s absorption 2 0 true
 
 execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_a_durability 10
 item modify entity @s weapon.mainhand uhcp:update_dur
@@ -40,11 +41,18 @@ tag @s remove UHCP_isDashing
 tag @e remove UHCP_Hit
 execute at @s run playsound minecraft:item.trident.riptide_2 player @a[distance=..6.5] ~ ~ ~ 1.0 2.0 1.0
 execute at @s run playsound minecraft:item.trident.riptide_3 player @a[distance=..6.5] ~ ~ ~ 1.0 2.0 1.0
+
+# Check if player is in solid block
 execute at @s unless block ~ ~ ~ #uhcp:non_solid_blocks run tp @s ^ ^ ^-1
+execute at @s unless block ~ ~1 ~ #uhcp:non_solid_blocks run tp @s ^ ^ ^-1
 execute at @s unless block ~ ~ ~ #uhcp:non_solid_blocks run tp @s ^ ^ ^-1
+execute at @s unless block ~ ~1 ~ #uhcp:non_solid_blocks run tp @s ^ ^ ^-1
 execute at @s unless block ~ ~ ~ #uhcp:non_solid_blocks run tp @s ^ ^ ^-1
+execute at @s unless block ~ ~1 ~ #uhcp:non_solid_blocks run tp @s ^ ^ ^-1
 execute at @s unless block ~ ~ ~ #uhcp:non_solid_blocks run tp @s ^ ^ ^-1
+execute at @s unless block ~ ~1 ~ #uhcp:non_solid_blocks run tp @s ^ ^ ^-1
 execute at @s unless block ~ ~ ~ #uhcp:non_solid_blocks run tp @s ^ ^ ^-1
+execute at @s unless block ~ ~1 ~ #uhcp:non_solid_blocks run tp @s ^ ^ ^-1
 
 # Load Rotation
 execute at @s rotated as @e[tag=UHCP_SaveRotation,limit=1,sort=nearest] run tp @s ~ ~ ~ ~180 ~
