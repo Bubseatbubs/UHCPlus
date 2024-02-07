@@ -4,6 +4,7 @@ execute unless score %updateDisplay uhcp_gameTime matches 20.. run return 0
 
 # Update Player Count
 function uhcp:timer/update_playersleft
+function uhcp:timer/update_bordersize
 
 scoreboard players reset %updateDisplay uhcp_gameTime
 scoreboard players set %display uhcp_gameTime 1200

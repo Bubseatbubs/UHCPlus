@@ -15,9 +15,6 @@ execute if score %uhcp_dimTime uhcp_gameTime matches ..-1 run scoreboard players
 scoreboard objectives setdisplay sidebar uhcp_gameDisplay
 scoreboard objectives setdisplay below_name hearts
 
-scoreboard players display numberformat %nether uhcp_gameDisplay fixed {"text":"✔","color":"dark_green","bold":true}
-# scoreboard players display numberformat %border uhcp_gameDisplay fixed {"text":"Static","color":"dark_green","bold":false}
-
 # Determine worldborder size
 execute if score TotalWorldSize setting matches 1000 run function uhcp:start/worldborder/1000
 execute if score TotalWorldSize setting matches 1500 run function uhcp:start/worldborder/1500

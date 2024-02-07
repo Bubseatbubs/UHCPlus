@@ -45,11 +45,7 @@ scoreboard players set %display uhcp_gameDisplay 10000
 scoreboard players display name %display uhcp_gameDisplay {"text":"Time:","color":"gold"}
 scoreboard objectives modify uhcp_gameDisplay displayname {"text":"Game Stats","color":"gold"}
 
-#scoreboard players set %border uhcp_gameDisplay -10
-#scoreboard players display name %border uhcp_gameDisplay {"text":"Border Status:","color":"gold"}
-
-scoreboard players set %nether uhcp_gameDisplay -100
-scoreboard players display name %nether uhcp_gameDisplay {"text":"Nether Status:","color":"red"}
+scoreboard players display name %border uhcp_gameDisplay {"text":"Border Size:","color":"gold"}
 
 scoreboard players set %players uhcp_gameDisplay 0
 scoreboard players display name %players uhcp_gameDisplay {"text":"Players Left:","color":"gold"}
