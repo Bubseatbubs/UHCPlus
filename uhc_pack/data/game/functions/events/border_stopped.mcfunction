@@ -12,6 +12,3 @@ execute if score BorderShrinkTime setting matches 180 run execute if score shrin
 execute if score BorderShrinkTime setting matches 200 run execute if score shrinkstart tick matches -2400000 run tellraw @a ["",{"text":"[Info]","color":"light_purple"},{"text":" Border has stopped shrinking","color":"green"}]
 execute if score BorderShrinkTime setting matches 220 run execute if score shrinkstart tick matches -264000 run tellraw @a ["",{"text":"[Info]","color":"light_purple"},{"text":" Border has stopped shrinking","color":"green"}]
 execute if score BorderShrinkTime setting matches 240 run execute if score shrinkstart tick matches -288000 run tellraw @a ["",{"text":"[Info]","color":"light_purple"},{"text":" Border has stopped shrinking","color":"green"}]
-
-# scoreboard players display numberformat %border uhcp_gameDisplay fixed {"text":"Static","color":"dark_green","bold":false}
-
