@@ -1,12 +1,4 @@
-advancement revoke @s only uhcp:relics/holding_soulflame_saber
-advancement revoke @s only uhcp:relics/holding_voltrune
-advancement revoke @s only uhcp:relics/holding_gravity_smasher
-advancement revoke @s only uhcp:relics/holding_harvester
-advancement revoke @s only uhcp:relics/holding_boomburst
-advancement revoke @s only uhcp:relics/holding_smooth_getaway
-advancement revoke @s only uhcp:relics/holding_threadoffate
-advancement revoke @s only uhcp:relics/holding_light
-advancement revoke @s only uhcp:relics/holding_dark
+advancement revoke @s through uhcp:relics/increase_dur
 scoreboard players reset %damage uhcp_a_durability
 
 execute store result score %damage uhcp_a_durability run data get entity @s SelectedItem.tag.cDamage

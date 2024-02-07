@@ -1,4 +1,5 @@
 {
+  "parent": "uhcp:relics/increase_dur",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:location",

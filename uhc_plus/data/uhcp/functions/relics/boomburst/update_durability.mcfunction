@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:relics/shot_boomburst
+advancement revoke @s only uhcp:relics/boomburst/shot
 
 
 

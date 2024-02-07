@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:relics/hurt_with_dark
+advancement revoke @s only uhcp:relics/dark_ability
 
 
 # Set Cooldown

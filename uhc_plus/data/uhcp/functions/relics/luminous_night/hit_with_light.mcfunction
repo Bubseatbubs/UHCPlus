@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:relics/hurt_with_light
+advancement revoke @s only uhcp:relics/luminous_night/light_ability
 
 
 # Set Cooldown

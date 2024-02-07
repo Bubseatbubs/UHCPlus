@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:relics/hurt_with_threadoffate
+advancement revoke @s only uhcp:relics/thread_of_fate/ability
 
 execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_a_durability 10
 item modify entity @s weapon.mainhand uhcp:update_dur

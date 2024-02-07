@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:relics/hurt_with_harvester
+advancement revoke @s only uhcp:relics/harvester/ability
 tag @s add UHCP_Owner
 #Get Player Gapple amount
 
