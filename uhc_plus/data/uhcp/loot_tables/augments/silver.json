@@ -1592,6 +1592,82 @@
         {
           "type": "item",
           "weight": 1,
+          "name": "minecraft:warped_fungus",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:147s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Parasite",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Strength I",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": ". Additionally, gain",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "an irremovable",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Fungus",
+                    "color": "white"
+                  },
+                  {
+                    "text": " on your head",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "that inflicts",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Hunger",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
           "name": "minecraft:netherite_upgrade_smithing_template",
           "functions": [
             {
