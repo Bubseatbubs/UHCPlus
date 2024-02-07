@@ -14,6 +14,9 @@ execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %d
 item modify entity @s weapon.mainhand uhcp:update_dur
 
 execute store result score @s uhcp_a_count run clear @s golden_apple 0
+execute store result score %e_gapple uhcp_a_count run clear @s enchanted_golden_apple 0
+
+scoreboard players operation @s uhcp_a_count += %e_gapple uhcp_a_count 
 
 # Scale size of block display with gapple amount
 execute if score @s uhcp_a_count matches 0 at @e[tag=UHCP_HarvesterTarget] anchored eyes run summon armor_stand ~ ~5 ~ {NoGravity:0b,Silent:1b,Small:1b,Invisible:1b,Tags:["UHCP_New","UHCP_GoldBlock"],Passengers:[{id:"minecraft:block_display",NoGravity:0b,Tags:["UHCP_GBDisplay"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1f,-1f,-1f],scale:[2f,2f,2f]},block_state:{Name:"minecraft:gold_block"}}]}
@@ -24,7 +27,7 @@ execute if score @s uhcp_a_count matches 13..16 at @e[tag=UHCP_HarvesterTarget] 
 execute if score @s uhcp_a_count matches 17..19 at @e[tag=UHCP_HarvesterTarget] anchored eyes run summon armor_stand ~ ~5 ~ {NoGravity:0b,Silent:1b,Small:1b,Invisible:1b,Tags:["UHCP_New","UHCP_GoldBlock"],Passengers:[{id:"minecraft:block_display",NoGravity:0b,Tags:["UHCP_GBDisplay"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-2.25f,-2.25f,-2.25f],scale:[4.5f,4.5f,4.5f]},block_state:{Name:"minecraft:gold_block"}}]}
 execute if score @s uhcp_a_count matches 20.. at @e[tag=UHCP_HarvesterTarget] anchored eyes run summon armor_stand ~ ~5 ~ {NoGravity:0b,Silent:1b,Small:1b,Invisible:1b,Tags:["UHCP_New","UHCP_GoldBlock"],Passengers:[{id:"minecraft:block_display",NoGravity:0b,Tags:["UHCP_GBDisplay"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-3f,-3f,-3f],scale:[6f,6f,6f]},block_state:{Name:"minecraft:gold_block"}}]}
 
-execute store result score @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_a_tier run clear @s golden_apple 0
+execute store result score @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_a_tier run scoreboard players get @s uhcp_a_count
 
 execute at @e[tag=UHCP_HarvesterTarget] run playsound minecraft:block.anvil.place player @a[distance=..6] ~ ~ ~ 1.0 0.6 1.0
 
