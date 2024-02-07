@@ -12,8 +12,10 @@ scoreboard players set %AUG_203 uhcp_gameTime 1200
 scoreboard players set %AUG_238 uhcp_gameTime 12000
 execute if score %uhcp_dimTime uhcp_gameTime matches ..-1 run scoreboard players set %uhcp_dimTime uhcp_gameTime 0
 
-scoreboard objectives setdisplay sidebar uhcp_displayTime
+scoreboard objectives setdisplay sidebar uhcp_gameDisplay
 scoreboard objectives setdisplay below_name hearts
+
+scoreboard players display numberformat %nether uhcp_gameDisplay fixed {"text":"✔","color":"dark_green","bold":true}
 
 # Determine worldborder size
 execute if score TotalWorldSize setting matches 1000 run function uhcp:start/worldborder/1000

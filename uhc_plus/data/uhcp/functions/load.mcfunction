@@ -19,7 +19,7 @@ scoreboard objectives add uhcp_gameTime dummy
 # Remove one below when in pack format with new advancements
 scoreboard objectives add uhcp_grindstone minecraft.custom:minecraft.interact_with_grindstone
 # -----------------------------------------------------------
-scoreboard objectives add uhcp_displayTime dummy
+scoreboard objectives add uhcp_gameDisplay dummy
 scoreboard objectives add uhcp_hungerTimer dummy
 scoreboard objectives add uhcp_initStatus dummy
 scoreboard objectives add uhcp_itemCount dummy
@@ -41,9 +41,15 @@ scoreboard objectives add uhcp_topCD dummy
 scoreboard objectives add uhcp_death deathCount
 
 # Add Display Timer Names
-scoreboard players set %display uhcp_displayTime 0
-scoreboard players display name %display uhcp_displayTime {"text":"Time:","color":"gold"}
-scoreboard objectives modify uhcp_displayTime displayname {"text":"Elapsed Time","color":"gold"}
+scoreboard players set %display uhcp_gameDisplay 10000
+scoreboard players display name %display uhcp_gameDisplay {"text":"Time:","color":"gold"}
+scoreboard objectives modify uhcp_gameDisplay displayname {"text":"Game Stats","color":"gold"}
+
+scoreboard players set %nether uhcp_gameDisplay -100
+scoreboard players display name %nether uhcp_gameDisplay {"text":"Nether Status:","color":"red"}
+
+scoreboard players set %players uhcp_gameDisplay 0
+scoreboard players display name %players uhcp_gameDisplay {"text":"Players Left:","color":"gold"}
 
 # Add bossbars
 bossbar add uhcp_topcharge "Time Until Teleport:"
