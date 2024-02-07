@@ -7,7 +7,7 @@ execute if entity @s[tag=UHCP_GravitySmasher] run return run function uhcp:relic
 execute if entity @s[tag=UHCP_GoldBlock] run return run function uhcp:relics/the_harvester/update
 execute if entity @s[tag=UHCP_SCloneStand] run return run function uhcp:relics/smooth_getaway/update
 execute if entity @s[tag=UHCP_DragonsProtection] run return run function uhcp:relics/dragons_protection/update
-execute if entity @s[tag=UHCP_SClone] unless entity @s[tag=UHCP_SCloneStand,distance=..2] run kill @s
+
 
 # Augments
 execute if entity @s[tag=UHCP_Bee] at @s run return run function uhcp:augments/effects/gold/beekeeper/update

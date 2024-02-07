@@ -62,6 +62,7 @@ function uhcp:augments/effects/timer
 
 # Update Summoned Entities
 execute as @e[tag=UHCP_Summon] at @s run function uhcp:update
+execute if entity @s[tag=UHCP_SClone] unless entity @s[tag=UHCP_SCloneStand,distance=..2] run kill @s
 
 # Relics
 execute as @e[type=arrow,tag=!UHCP_BoomburstInit,nbt={custom_potion_effects:[{id:"minecraft:bad_omen",amplifier:100b}]}] run function uhcp:relics/boomburst/initialize
