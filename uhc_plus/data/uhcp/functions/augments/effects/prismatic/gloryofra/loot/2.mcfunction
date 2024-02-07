@@ -1,2 +1,3 @@
-give @s golden_shovel{display:{Name:'{"text":"Relic Excavator","color":"light_purple"}',Lore:['{"text":"Throw this item to obtain a","color":"gray"}','[{"text":"random ","color":"gray"},{"text":"Relic","color":"gold"},{"text":".","color":"gray"}]']},relicexcavator:1b,Enchantments:[{}]} 1
+give @s golden_shovel{display:{Name:'{"text":"Relic Excavator","color":"light_purple"}',Lore:['{"text":"Throw this item to obtain a","color":"gray"}','[{"text":"random ","color":"gray"},{"text":"Relic","color":"gold"},{"text":".","color":"gray"}]']},relicexcavator:1b,Enchantments:[{}]} 2
 give @s enchanted_golden_apple 2
+tellraw @s [{"text":"Ra's blesses you with his Relics!","color":"gold"},{"text":" You've received ","color":"gray"},{"text":"2 Relic Excavators","color":"light_purple","bold":true},{"text":" and ","color":"gray"},{"text":"2 Enchanted Golden Apples","color":"light_purple","bold":true},{"text":".","color":"gray"}]

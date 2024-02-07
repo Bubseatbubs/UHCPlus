@@ -1,2 +1,3 @@
 tag @s add UHCP_Beekeeper
 give @s enchanted_golden_apple
+tellraw @s [{"text":"Ra blesses you with his tenacity!","color":"gold"},{"text":" You've received ","color":"gray"},{"text":"10🖤","color":"light_purple","bold":true},{"text":", ","color":"gray"},{"text":"a heal to full Health","color":"light_purple","bold":true},{"text":", and an ","color":"gray"},{"text":"Enchanted Golden Apple","color":"light_purple","bold":true},{"text":".","color":"gray"}]

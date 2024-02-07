@@ -9,3 +9,4 @@ tag @e remove UHCP_New
 effect give @s strength infinite 0 false
 give @s enchanted_golden_apple 1
 gamerule maxEntityCramming 24
+tellraw @s [{"text":"Ra blesses you with his pack! ","color":"gold"},{"text":"You've received ","color":"gray"},{"text":"25 tamed Wolves","color":"light_purple","bold":true},{"text":", ","color":"gray"},{"text":"permanent Strength","color":"light_purple","bold":true},{"text":", and an ","color":"gray"},{"text":"Enchanted Golden Apple","color":"light_purple"},{"text":".","color":"gray"}]
