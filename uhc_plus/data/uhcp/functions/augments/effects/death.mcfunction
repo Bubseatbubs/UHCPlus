@@ -1,4 +1,5 @@
 scoreboard players reset @s uhcp_death
+execute if score @s uhcp_a_selectedAugment matches 237 run scoreboard players set @s uhcp_a_gloryOfRa -10
 execute if score @s uhcp_a_selectedAugment matches 210 run summon creeper ~ ~ ~ {Fuse:0}
 execute if score @s uhcp_a_selectedAugment matches 147 run setblock ~ ~ ~ warped_fungus
 execute as @a[distance=..10,scores={uhcp_a_gloryOfRa=0..}] if score @s uhcp_a_selectedAugment matches 237 at @s run scoreboard players add @s uhcp_a_gloryOfRa 1
