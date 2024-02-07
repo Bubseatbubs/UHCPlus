@@ -1,1 +1,1 @@
-loot give @s loot uhcp:relics
+loot give @s loot uhcp:relics/relic_invoker
