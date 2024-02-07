@@ -1163,23 +1163,33 @@
               "lore": [
                 {
                   "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
+                  "color": "blue"
+                },
+                {
+                  "text": "At the start of the game, ",
+                  "color": "gray"
+                },
+                {
+                  "text": "teleport high into the sky",
+                  "color": "gray"
                 },
                 [
                   {
-                    "text": "At the start of the game, spawn with an ",
+                    "text": "and gain an ",
                     "color": "gray"
                   },
                   {
                     "text": "Elytra",
-                    "color": "white"
+                    "color": "light_purple"
                   },
                   {
-                    "text": " and teleport high into the sky. The Elytra disappears after 1 minute.",
-                    "color": "gray"
+                    "text": ". It disappears"
                   }
-                ]
+                ],
+                {
+                  "text": "after one minute.",
+                  "color": "gray"
+                }
               ]
             }
           ]
@@ -1873,6 +1883,126 @@
                   "text": "pool of lava in front of you.",
                   "color": "gray"
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:warped_fungus",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:147s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Parasite",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " irremovable Fungus ",
+                    "color": "red"
+                  },
+                  {
+                    "text": "on your"
+                  }
+                ],
+                [
+                  {
+                    "text": "head that inflicts ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Hunger",
+                    "color": "red"
+                  },
+                  {
+                    "text": "."
+                  }
+                ],
+                [
+                  {
+                    "text": "Gain permanent "
+                  },
+                  {
+                    "text": "Strength I",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:amethyst_shard",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:148s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Little Buddies",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain 3 spawn eggs for",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " invulnerable Allays",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
               ]
             }
           ]
