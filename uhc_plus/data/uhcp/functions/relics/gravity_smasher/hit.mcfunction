@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:relics/hurt_with_gravity_smasher
+advancement revoke @s only uhcp:relics/gravity_smasher/ability
 tag @s add UHCP_Owner
 
 # Set Cooldown

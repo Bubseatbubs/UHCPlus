@@ -1,0 +1,243 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:golden_sword",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{HideFlags:2,uhcp_radiant:8b,Enchantments:[{id:\"minecraft:sharpness\",lvl:1s},{id:\"minecraft:smite\",lvl:3s},{id:\"minecraft:bane_of_arthropods\",lvl:3s},{id:\"minecraft:sweeping\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:8,Operation:0,UUID:[I;13844264,-1134607179,-1869203229,-2009792647],Slot:\"mainhand\"}]}"
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "Lu",
+                    "color": "#0800FF",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "mi",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": "no",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": "us ",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": "Ni",
+                    "color": "#54C0FF"
+                  },
+                  {
+                    "text": "gh",
+                    "color": "#4FE8FF"
+                  },
+                  {
+                    "text": "t",
+                    "color": "#00FFFF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue"
+                  },
+                  [
+                    {
+                      "text": "RELIC",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": ": This relic gains durability while",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "held",
+                      "color": "white"
+                    },
+                    {
+                      "text": ". At max durability, its",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "activates",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " on player hit",
+                      "color": "white"
+                    },
+                    {
+                      "text": ". Using an",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": "consumes a large amount of durability.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "PASSIVE:",
+                      "color": "white",
+                      "italic": false
+                    },
+                    {
+                      "text": " After using its",
+                      "color": "gray",
+                      "italic": true
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": ",",
+                      "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "swaps between its",
+                      "color": "gray",
+                      "italic": true
+                    },
+                    {
+                      "text": " Light",
+                      "color": "gold"
+                    },
+                    {
+                      "text": " and",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Dark",
+                      "color": "dark_purple"
+                    },
+                    {
+                      "text": " forms.",
+                      "color": "gray"
+                    }
+                  ],
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "text": "ABILITY",
+                      "color": "blue"
+                    },
+                    {
+                      "text": ":",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Light --",
+                      "color": "gold",
+                      "italic": true
+                    },
+                    {
+                      "text": " Heal",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " 3🖤",
+                      "color": "red"
+                    },
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Dark --",
+                      "color": "dark_purple",
+                      "italic": true
+                    },
+                    {
+                      "text": " Inflict",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Blindness",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": " on your target",
+                      "color": "gray"
+                    }
+                  ],
+                  {
+                    "text": "for 2 seconds.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "When in Main Hand:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 8 Attack Damage",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "text": " 1.6 Attack Speed",
+                    "color": "dark_green",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

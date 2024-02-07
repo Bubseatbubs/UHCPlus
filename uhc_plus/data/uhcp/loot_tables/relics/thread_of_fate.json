@@ -148,10 +148,21 @@
                       "color": "gray"
                     }
                   ],
-                  {
-                    "text": "dash through.",
-                    "color": "gray"
-                  },
+                  [
+                    {
+                      "text": "dash through. Gain",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " 2🖤",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ],
+                  
                   {
                     "text": " "
                   },

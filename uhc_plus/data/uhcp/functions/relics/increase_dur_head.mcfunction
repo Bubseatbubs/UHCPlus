@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:relics/wearing_dragons_protection
+advancement revoke @s only uhcp:relics/dragons_protection/wearing
 scoreboard players reset %damage uhcp_a_durability
 
 execute store result score %damage uhcp_a_durability run data get entity @s Inventory[{Slot:103b}].tag.cDamage

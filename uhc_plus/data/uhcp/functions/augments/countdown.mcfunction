@@ -33,23 +33,5 @@ gamemode survival @a[gamemode=adventure]
 bossbar set minecraft:uhcp_augment players
 execute in uhcp:main run tp @e[tag=UHCP_Lock] 0 -63 0
 
-effect clear @a[gamemode=survival]
-effect give @a[gamemode=survival] speed 15 0 false
-effect give @a[gamemode=survival] resistance 120 4 false
-effect give @a[gamemode=survival] haste infinite 0 true
+execute as @a[gamemode=survival] at @s run function uhcp:augments/countdown/end
 
-# Boots Effect (from UHC Pack)
-execute as @a[gamemode=survival] at @s if biome ~ ~ ~ minecraft:snowy_beach run item replace entity @s[gamemode=survival] armor.feet with minecraft:leather_boots
-execute as @a[gamemode=survival] at @s if biome ~ ~ ~ minecraft:snowy_plains run item replace entity @s[gamemode=survival] armor.feet with minecraft:leather_boots
-execute as @a[gamemode=survival] at @s if biome ~ ~ ~ minecraft:snowy_slopes run item replace entity @s[gamemode=survival] armor.feet with minecraft:leather_boots
-execute as @a[gamemode=survival] at @s if biome ~ ~ ~ minecraft:snowy_taiga run item replace entity @s[gamemode=survival] armor.feet with minecraft:leather_boots
-execute as @a[gamemode=survival] at @s if biome ~ ~ ~ minecraft:frozen_peaks run item replace entity @s[gamemode=survival] armor.feet with minecraft:leather_boots
-execute as @a[gamemode=survival] at @s if biome ~ ~ ~ minecraft:frozen_ocean run item replace entity @s[gamemode=survival] armor.feet with minecraft:leather_boots
-execute as @a[gamemode=survival] at @s if biome ~ ~ ~ minecraft:frozen_river run item replace entity @s[gamemode=survival] armor.feet with minecraft:leather_boots
-execute as @a[gamemode=survival] at @s if biome ~ ~ ~ minecraft:ice_spikes run item replace entity @s[gamemode=survival] armor.feet with minecraft:leather_boots
-execute as @a[gamemode=survival] at @s if biome ~ ~ ~ minecraft:grove run item replace entity @s[gamemode=survival] armor.feet with minecraft:leather_boots
-execute as @a[gamemode=survival] at @s if biome ~ ~ ~ minecraft:jagged_peaks run item replace entity @s[gamemode=survival] armor.feet with minecraft:leather_boots
-execute as @a[gamemode=survival] at @s run execute if block ~ ~-1 ~ minecraft:powder_snow run setblock ~ ~-1 ~ minecraft:snow_block
-
-execute as @a[gamemode=survival] at @s run function uhcp:augments/initializeaugments
-execute as @a[gamemode=survival] at @s run function uhcp:augments/announceaugments

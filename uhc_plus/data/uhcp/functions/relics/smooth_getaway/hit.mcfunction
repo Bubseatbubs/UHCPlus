@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:relics/hurt_with_smooth_getaway
+advancement revoke @s only uhcp:relics/smooth_getaway/ability
 
 
 

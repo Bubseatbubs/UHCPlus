@@ -1,4 +1,5 @@
 {
+  "parent": "uhcp:relics/increase_dur",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:location",
@@ -11,13 +12,13 @@
                 "equipment": {
                   "mainhand": {
                     "items": [
-                      "minecraft:shears"
+                      "minecraft:golden_sword"
                     ],
                     "durability": {
                       "min": 0,
-                      "max": 237
+                      "max": 31
                     },
-                    "nbt": "{uhcp_radiant:7b}"
+                    "nbt": "{uhcp_radiant:8b}"
                   }
                 }
               }

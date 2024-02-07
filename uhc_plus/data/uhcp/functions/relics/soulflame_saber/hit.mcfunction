@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:relics/hurt_with_soulflame_saber
+advancement revoke @s only uhcp:relics/soulflame_saber/ability
 tag @s add UHCP_Owner
 
 scoreboard players reset @e[distance=..6] uhcp_a_count

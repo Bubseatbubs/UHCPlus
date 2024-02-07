@@ -1,4 +1,5 @@
 {
+  "parent": "uhcp:relics/increase_dur",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:location",
@@ -11,13 +12,13 @@
                 "equipment": {
                   "mainhand": {
                     "items": [
-                      "minecraft:brush"
+                      "minecraft:diamond_sword"
                     ],
                     "durability": {
                       "min": 0,
-                      "max": 63
+                      "max": 1560
                     },
-                    "nbt": "{uhcp_radiant:6b}"
+                    "nbt": "{uhcp_radiant:1b}"
                   }
                 }
               }
