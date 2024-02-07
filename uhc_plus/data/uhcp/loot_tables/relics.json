@@ -28,6 +28,17 @@
         {
           "type": "loot_table",
           "weight": 1,
+          "name": "uhcp:relics/luminous_night",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "weight": 1,
           "name": "uhcp:relics/flux_factor",
           "functions": [
             {
