@@ -5,7 +5,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:leather_chestplate",
+            "name": "minecraft:netherite_helmet",
             "functions": [
               {
                 "function": "minecraft:set_count",
@@ -13,36 +13,40 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{color:5381640},HideFlags:194,uhcp_radiant:4b,Enchantments:[{id:\"minecraft:protection\",lvl:2s},{id:\"minecraft:thorns\",lvl:1s},{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:10,Operation:0,UUID:[I;-1749621740,1902725274,-1259731052,1668770021],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;-446085697,-156416355,-1149814584,-38593133],Slot:\"chest\"}],Trim:{material:\"minecraft:quartz\",pattern:\"minecraft:eye\"}}"
+                "tag": "{uhcp_radiant:9b,Enchantments:[{id:\"minecraft:protection\",lvl:3s},{id:\"minecraft:blast_protection\",lvl:3s}]}"
               },
               {
                 "function": "minecraft:set_name",
                 "name": [
                   {
-                    "text": "Ygg",
+                    "text": "Dr",
                     "color": "#0800FF",
                     "bold": true,
                     "italic": false
                   },
                   {
-                    "text": "dra",
+                    "text": "ag",
                     "color": "#2B64FF"
                   },
                   {
-                    "text": "sil",
+                    "text": "on",
                     "color": "#428EFF"
                   },
                   {
-                    "text": "'s",
+                    "text": "'s P",
                     "color": "#54B5FF"
                   },
                   {
-                    "text": " Ba",
+                    "text": "rot",
                     "color": "#54C0FF"
                   },
                   {
-                    "text": "rk",
+                    "text": "ect",
                     "color": "#4FE8FF"
+                  },
+                  {
+                    "text": "ion",
+                    "color": "#00FFFF"
                   },
                   {
                     "text": " ℝ",
@@ -53,7 +57,7 @@
                 ]
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -84,29 +88,38 @@
                       "text": " ABILITY",
                       "color": "blue",
                       "italic": false
+                    },
+                    {
+                      "text": " activates",
+                      "color": "gray"
                     }
                   ],
                   [
                     {
-                      "text": "activates",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " upon taking damage",
+                      "text": "when using Dragon's Watchful Eye",
                       "color": "white"
                     },
                     {
-                      "text": ". Using an",
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Using an",
                       "color": "gray"
                     },
                     {
                       "text": " ABILITY",
                       "color": "blue",
                       "italic": false
+                    },
+                    {
+                      "text": " consumes a large"
                     }
                   ],
                   {
-                    "text": "consumes a large amount of durability.",
+                    "text": "amount of durability.",
                     "color": "gray"
                   },
                   {
@@ -114,49 +127,51 @@
                   },
                   [
                     {
-                      "text": "ABILITY",
-                      "color": "blue",
+                      "text": "PASSIVE:",
+                      "color": "white",
                       "italic": false
                     },
                     {
-                      "text": ": Gain",
+                      "text": " At max durability, gain a",
                       "color": "gray",
                       "italic": true
                     },
                     {
-                      "text": " +5🖤",
-                      "color": "yellow"
+                      "text": " Dragon's",
+                      "color": "white",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Watchful Eye",
+                      "color": "white"
                     },
                     {
-                      "text": " and",
+                      "text": " if you don't have one already.",
                       "color": "gray"
-                    },
-                    {
-                      "text": " Resistance I",
-                      "color": "yellow"
                     }
                   ],
                   {
-                    "text": "for 3 seconds.",
-                    "color": "gray"
-                  },
-                  {
                     "text": " "
                   },
+                  [
+                    {
+                      "text": "ABILITY",
+                      "color": "blue"
+                    },
+                    {
+                      "text": ": Encase yourself in an",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Obsidian Egg",
+                      "color": "white"
+                    }
+                  ],
                   {
-                    "text": "When on Body:",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": "+10 Armor",
-                    "color": "blue",
-                    "italic": false
-                  },
-                  {
-                    "text": "+1 Armor Toughness",
-                    "color": "blue",
-                    "italic": false
+                    "text": "for 4 seconds.",
+                    "color": "gray"
                   }
                 ]
               }

@@ -4,45 +4,50 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:item",
-            "name": "minecraft:leather_chestplate",
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:diamond_sword",
             "functions": [
               {
-                "function": "minecraft:set_count",
+                "function": "set_count",
                 "count": 1
               },
               {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{color:5381640},HideFlags:194,uhcp_radiant:4b,Enchantments:[{id:\"minecraft:protection\",lvl:2s},{id:\"minecraft:thorns\",lvl:1s},{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:10,Operation:0,UUID:[I;-1749621740,1902725274,-1259731052,1668770021],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;-446085697,-156416355,-1149814584,-38593133],Slot:\"chest\"}],Trim:{material:\"minecraft:quartz\",pattern:\"minecraft:eye\"}}"
+                "function": "set_nbt",
+                "tag": "{HideFlags:1,uhcp_radiant:100s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
               },
               {
-                "function": "minecraft:set_name",
+                "function": "set_name",
                 "name": [
                   {
-                    "text": "Ygg",
+                    "text": "Te",
                     "color": "#0800FF",
                     "bold": true,
                     "italic": false
                   },
                   {
-                    "text": "dra",
+                    "text": "st",
                     "color": "#2B64FF"
                   },
                   {
-                    "text": "sil",
+                    "text": "in",
                     "color": "#428EFF"
                   },
                   {
-                    "text": "'s",
+                    "text": "g R",
                     "color": "#54B5FF"
                   },
                   {
-                    "text": " Ba",
+                    "text": "el",
                     "color": "#54C0FF"
                   },
                   {
-                    "text": "rk",
+                    "text": "ic",
                     "color": "#4FE8FF"
+                  },
+                  {
+                    "text": "!!",
+                    "color": "#00FFFF"
                   },
                   {
                     "text": " ℝ",
@@ -53,7 +58,7 @@
                 ]
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -73,7 +78,7 @@
                   ],
                   [
                     {
-                      "text": "worn",
+                      "text": "held",
                       "color": "white"
                     },
                     {
@@ -92,7 +97,7 @@
                       "color": "gray"
                     },
                     {
-                      "text": " upon taking damage",
+                      "text": " on hit",
                       "color": "white"
                     },
                     {
@@ -115,49 +120,23 @@
                   [
                     {
                       "text": "ABILITY",
-                      "color": "blue",
-                      "italic": false
+                      "color": "blue"
                     },
                     {
-                      "text": ": Gain",
-                      "color": "gray",
-                      "italic": true
-                    },
-                    {
-                      "text": " +5🖤",
-                      "color": "yellow"
-                    },
-                    {
-                      "text": " and",
+                      "text": ": Summon a powerful thing, dealing",
                       "color": "gray"
-                    },
-                    {
-                      "text": " Resistance I",
-                      "color": "yellow"
                     }
                   ],
-                  {
-                    "text": "for 3 seconds.",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " "
-                  },
-                  {
-                    "text": "When on Body:",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": "+10 Armor",
-                    "color": "blue",
-                    "italic": false
-                  },
-                  {
-                    "text": "+1 Armor Toughness",
-                    "color": "blue",
-                    "italic": false
-                  }
+                  [
+                    {
+                      "text": "10🖤",
+                      "color": "red"
+                    },
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ]
                 ]
               }
             ]
@@ -166,4 +145,3 @@
       }
     ]
   }
-  

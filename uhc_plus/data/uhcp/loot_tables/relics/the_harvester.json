@@ -66,23 +66,47 @@
                       "italic": false
                     },
                     {
-                      "text": ": Relics gain durability while ",
+                      "text": ": This relic gains durability while",
                       "color": "gray",
                       "italic": true
                     }
                   ],
                   [
                     {
-                      "text": "held. At max durability, its",
+                      "text": "held",
+                      "color": "white"
+                    },
+                    {
+                      "text": ". At max durability, its",
                       "color": "gray"
                     },
                     {
                       "text": " ABILITY",
-                      "color": "blue"
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "activates",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " on hit",
+                      "color": "white"
+                    },
+                    {
+                      "text": ". Using an",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue",
+                      "italic": false
                     }
                   ],
                   {
-                    "text": "activates on hit.",
+                    "text": "consumes a large amount of durability.",
                     "color": "gray"
                   },
                   {
@@ -95,23 +119,29 @@
                       "italic": false
                     },
                     {
-                      "text": ": Killing hostile mobs grants a",
+                      "text": ": Killing hostile mobs has a chance of",
                       "color": "gray",
+                      "italic": true
+                    }
+                  ],  
+                  [
+                    {
+                      "text": "granting a",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Golden Apple",
+                      "color": "white",
                       "italic": true
                     },
                     {
-                      "text": " Gold Ingot",
-                      "color": "white",
-                      "italic": false
-                    },
-                    {
-                      "text": ".",
+                      "text": ". Killing players grants",
                       "color": "gray"
                     }
                   ],
                   [
                     {
-                      "text": "Killing players grants a",
+                      "text": "a",
                       "color": "gray"
                     },
                     {

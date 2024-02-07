@@ -1,0 +1,55 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:ender_eye",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "Dragon's Watchful Eye",
+                  "color": "light_purple",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "Encase yourself in an",
+                    "color": "gray",
+                    "italic": true,
+                    "extra": [
+                      {
+                        "text": " Obsidian Egg",
+                        "color": "gold"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "for 4 seconds. Consumed upon use.",
+                    "color": "gray",
+                    "italic": true
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{HideFlags:1,uhcp_dragoneye:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

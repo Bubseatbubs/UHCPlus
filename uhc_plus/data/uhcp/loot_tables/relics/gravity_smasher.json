@@ -70,23 +70,47 @@
                       "italic": false
                     },
                     {
-                      "text": ": Relics gain durability while ",
+                      "text": ": This relic gains durability while",
                       "color": "gray",
                       "italic": true
                     }
                   ],
                   [
                     {
-                      "text": "held. At max durability, its",
+                      "text": "held",
+                      "color": "white"
+                    },
+                    {
+                      "text": ". At max durability, its",
                       "color": "gray"
                     },
                     {
                       "text": " ABILITY",
-                      "color": "blue"
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "activates",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " on hit",
+                      "color": "white"
+                    },
+                    {
+                      "text": ". Using an",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " ABILITY",
+                      "color": "blue",
+                      "italic": false
                     }
                   ],
                   {
-                    "text": "activates on hit.",
+                    "text": "consumes a large amount of durability.",
                     "color": "gray"
                   },
                   {

@@ -5,15 +5,12 @@
         "conditions": {
           "player": {
             "equipment": {
-              "chest": {
+              "head": {
                 "items": [
-                    "minecraft:leather_chestplate"
+                    "minecraft:netherite_helmet"
                   ],
-                  "durability": {
-                    "min": 0,
-                    "max": 79
-                  },
-                  "nbt": "{uhcp_radiant:4b}"
+                  "durability": 407,
+                  "nbt": "{uhcp_radiant:9b}"
               }
             }
           }
@@ -21,6 +18,6 @@
       }
     },
     "rewards": {
-      "function": "uhcp:relics/increase_dur_chest"
+      "function": "uhcp:relics/dragons_protection/give"
     }
   }
