@@ -1,8 +1,8 @@
 scoreboard players set @s uhcp_a_gloryOfRa -10
 playsound ui.toast.challenge_complete master @s ~ ~ ~ 1 1 1
 particle end_rod ~ ~ ~ 0.3 10 0.3 0.1 1000 normal
-tellraw @s [{"text":"Ra's Light shines upon you!","color":"gold","bold":true},{"text":" You recieved powerful loot!","color":"gray"}]
 clear @s clock{sundiskofra:1b}
+effect give @s absorption 10 5 true
 
 execute store result score %random uhcp_a_count run random value 0..10
 

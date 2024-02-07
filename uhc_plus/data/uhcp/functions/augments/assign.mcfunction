@@ -185,6 +185,9 @@ execute if score @s uhcp_a_count matches 1.. run return 145
 execute store success score @s uhcp_a_count run clear @s minecraft:lava_bucket{augment:146s} 1
 execute if score @s uhcp_a_count matches 1.. run return 146
 
+execute store success score @s uhcp_a_count run clear @s minecraft:warped_fungus{augment:147s} 1
+execute if score @s uhcp_a_count matches 1.. run return 147
+
 # Prismatic Augments
 execute store success score @s uhcp_a_count run clear @s minecraft:bow{augment:201s} 1
 execute if score @s uhcp_a_count matches 1.. run return 201

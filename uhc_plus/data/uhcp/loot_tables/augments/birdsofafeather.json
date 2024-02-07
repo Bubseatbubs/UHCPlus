@@ -1,0 +1,47 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:feather",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 4
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{HideFlags:1,birdfeather:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "Wild Feather",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": "Throw this item to teleport to",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "a random teammate.",
+                    "color": "gray"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

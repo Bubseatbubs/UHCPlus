@@ -47,7 +47,7 @@ execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:augments/effects/
 
 # Augments
 execute as @e[predicate=uhcp:augments/birdfeather] at @s run function uhcp:augments/effects/gold/birdsofafeather/teleport
-execute as @e[predicate=uhcp:augments/lavapool] on origin at @s run function uhcp:augments/effects/silver/portablelavapool/summonlavapool
+execute as @e[predicate=uhcp:augments/lavapool] on origin at @s run function uhcp:augments/effects/silver/portablelavapool/summon
 execute as @e[type=minecraft:bee,tag=UHCP_Bee] at @s run function uhcp:augments/effects/gold/beekeeper/update
 execute as @a[scores={uhcp_lavaTimeInterval=1..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
 execute as @a[scores={uhcp_lavaMaxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
@@ -73,7 +73,8 @@ execute as @e[type=arrow,tag=!UHCP_BoomburstInit,nbt={custom_potion_effects:[{id
 execute as @e[type=arrow,nbt={inGround:1b,custom_potion_effects:[{id:"minecraft:bad_omen",amplifier:100b}]}] at @s run function uhcp:relics/boomburst/explode_inground
 execute as @e[predicate=uhcp:relics/hit_by_boomburst] at @s if entity @e[tag=UHCP_BoomburstDisplay,distance=..4] run function uhcp:relics/boomburst/explode_onhit
 
-execute as @e[predicate=uhcp:augments/relicexcavator] at @s run function uhcp:relics/relicexcavatoruse
+# Relic Excavator
+execute as @e[predicate=uhcp:augments/relicexcavator] at @s run function uhcp:relics/relic_excavator/use
 
 # Close dimensions
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:dimensions/run

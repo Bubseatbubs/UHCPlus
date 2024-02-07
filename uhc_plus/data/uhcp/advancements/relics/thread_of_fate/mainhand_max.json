@@ -1,0 +1,31 @@
+{
+  "parent": "uhcp:relics/increase_dur",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": [
+                      "minecraft:shears"
+                    ],
+                    "durability": 238,
+                    "nbt": "{uhcp_radiant:7b}"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "uhcp:relics/thread_of_fate/indicator"
+    }
+  }
+  
