@@ -19,49 +19,13 @@
           "name": "minecraft:golden_apple"
         },
         {
-          "type": "item",
+          "type": "loot_table",
           "weight": 7,
-          "name": "minecraft:golden_shovel",
+          "name": "uhcp:relics/relic_invoker",
           "functions": [
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{relicexcavator:1b,Enchantments:[{}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Relic Excavator",
-                  "color": "light_purple"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "Throw this item to obtain a",
-                  "color": "gray"
-                },
-                [
-                  {
-                    "text": "random  ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Relic",
-                    "color": "gold"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
             }
           ]
         },
