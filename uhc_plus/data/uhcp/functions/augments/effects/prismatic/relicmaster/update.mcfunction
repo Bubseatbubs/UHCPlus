@@ -1,4 +1,4 @@
-loot give @s loot uhcp:relics
+loot give @s loot uhcp:relics/relic_invoker
 execute store result score %health uhcp_a_count run attribute @s generic.max_health get 1
 scoreboard players add %health uhcp_a_count 6
 
