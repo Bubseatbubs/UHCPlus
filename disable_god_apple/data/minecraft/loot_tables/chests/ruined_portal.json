@@ -22,7 +22,7 @@
         },
         {
           "type": "item",
-          "weight": 5,
+          "weight": 20,
           "name": "minecraft:golden_shovel",
           "functions": [
             {
