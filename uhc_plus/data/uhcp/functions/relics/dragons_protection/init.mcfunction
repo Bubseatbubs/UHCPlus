@@ -1,5 +1,5 @@
 tag @s add UHCP_Init
-summon marker ~ ~ ~ {Tags:["UHCP_DragonsProtection","UHCP_New"]}
+summon marker ~ ~ ~ {Tags:["UHCP_DragonsProtection","UHCP_Summon","UHCP_New"]}
 playsound entity.ender_dragon.growl master @a[distance=..8] ~ ~ ~ 1 1 1
 playsound minecraft:block.stone.place master @a[distance=..10] ~ ~ ~ 1 0.5 1
 particle block obsidian ~ ~ ~ 3 3 3 0.01 1000 normal
