@@ -231,6 +231,9 @@ execute if score @s uhcp_a_count matches 1.. run return 217
 execute store success score @s uhcp_a_count run clear @s minecraft:shield{augment:220s} 1
 execute if score @s uhcp_a_count matches 1.. run return 220
 
+execute store success score @s uhcp_a_count run clear @s minecraft:white_dye{augment:221s} 1
+execute if score @s uhcp_a_count matches 1.. run return 221
+
 execute store success score @s uhcp_a_count run clear @s minecraft:wooden_sword{augment:222s} 1
 execute if score @s uhcp_a_count matches 1.. run return 222
 

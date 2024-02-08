@@ -137,6 +137,7 @@ datapack disable "file/pregen"
 datapack disable "file/regenpots"
 
 # UHC Plus
+data remove storage uhcp:compass Track
 scoreboard players reset %uhcp_gameStart uhcp_initStatus
 scoreboard players reset %hunger_timer uhcp_gameTime
 scoreboard players reset @a uhcp_topCD
@@ -144,4 +145,3 @@ scoreboard players reset @a hunger
 scoreboard players reset @a top
 scoreboard players set %uhcp_dimTime uhcp_gameTime 72000
 scoreboard objectives setdisplay sidebar
-

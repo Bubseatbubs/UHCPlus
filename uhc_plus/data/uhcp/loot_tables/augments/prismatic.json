@@ -267,6 +267,58 @@
         {
           "type": "item",
           "weight": 1,
+          "name": "minecraft:white_dye",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:221s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Sneaky Sneaky Sneaky",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "no particle Invisibility",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " for 5 seconds",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "when sneaking.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
           "name": "minecraft:grass_block",
           "functions": [
             {
