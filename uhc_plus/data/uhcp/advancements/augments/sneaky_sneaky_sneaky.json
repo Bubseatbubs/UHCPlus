@@ -1,0 +1,49 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "effects": {
+                    "minecraft:invisibility": {
+                      "duration": {
+                        "min": 5,
+                        "max": 100
+                      },
+                      "visible": false
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "uhcp_a_selectedAugment": 221
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_sneaking": true
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "uhcp:augments/effects/prismatic/sneakysneakysneaky/sneaking"
+    }
+  }
+  
