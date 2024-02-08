@@ -244,7 +244,7 @@
                 },
                 [
                   {
-                    "text": "Gain ",
+                    "text": "Start with ",
                     "color": "gray"
                   },
                   {
@@ -258,6 +258,80 @@
                 ],
                 {
                   "text": "is half as effective.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:grass_block",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:225s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Surface Duty",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "You start with",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " +10🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Speed II",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " for 20 minutes,",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Permanent Haste II",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": ". You cannot go below",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "y=50.",
                   "color": "gray"
                 }
               ]

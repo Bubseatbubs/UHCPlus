@@ -240,6 +240,9 @@ execute if score @s uhcp_a_count matches 1.. run return 223
 execute store success score @s uhcp_a_count run clear @s minecraft:chest{augment:224s} 1
 execute if score @s uhcp_a_count matches 1.. run return 224
 
+execute store success score @s uhcp_a_count run clear @s minecraft:grass_block{augment:225s} 1
+execute if score @s uhcp_a_count matches 1.. run return 225
+
 execute store success score @s uhcp_a_count run clear @s minecraft:rabbit_foot{augment:226s} 1
 execute if score @s uhcp_a_count matches 1.. run return 226
 

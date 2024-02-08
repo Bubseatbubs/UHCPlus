@@ -88,6 +88,7 @@ execute if score @s uhcp_a_selectedAugment matches 216 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 217 run function uhcp:augments/effects/prismatic/primetarget
 execute if score @s uhcp_a_selectedAugment matches 220 run function uhcp:augments/effects/prismatic/restierplayer
 execute if score @s uhcp_a_selectedAugment matches 222 run function uhcp:augments/effects/prismatic/sololeveling
+execute if score @s uhcp_a_selectedAugment matches 225 run function uhcp:augments/effects/prismatic/surfaceduty
 execute if score @s uhcp_a_selectedAugment matches 224 run function uhcp:augments/effects/prismatic/starterkitiii
 execute if score @s uhcp_a_selectedAugment matches 226 run function uhcp:augments/effects/prismatic/thehare
 execute if score @s uhcp_a_selectedAugment matches 227 run function uhcp:augments/effects/prismatic/totheskies
