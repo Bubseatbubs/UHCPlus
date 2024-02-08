@@ -204,6 +204,9 @@ execute if score @s uhcp_a_count matches 1.. run return 206
 execute store success score @s uhcp_a_count run clear @s minecraft:diamond_boots{augment:207s} 1
 execute if score @s uhcp_a_count matches 1.. run return 207
 
+execute store success score @s uhcp_a_count run clear @s minecraft:glass{augment:208s} 1
+execute if score @s uhcp_a_count matches 1.. run return 208
+
 execute store success score @s uhcp_a_count run clear @s minecraft:golden_apple{augment:209s} 1
 execute if score @s uhcp_a_count matches 1.. run return 209
 

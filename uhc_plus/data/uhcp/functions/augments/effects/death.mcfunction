@@ -1,4 +1,5 @@
 scoreboard players reset @s uhcp_death
+execute if score @s uhcp_a_selectedAugment matches 208 run attribute @s minecraft:generic.armor modifier remove 05e629b8-3a86-4491-bd8e-9c6584dd335c
 execute if score @s uhcp_a_selectedAugment matches 237 run scoreboard players set @s uhcp_a_gloryOfRa -10
 execute if score @s uhcp_a_selectedAugment matches 210 run summon creeper ~ ~ ~ {Fuse:0}
 execute if score @s uhcp_a_selectedAugment matches 147 run setblock ~ ~ ~ warped_fungus
