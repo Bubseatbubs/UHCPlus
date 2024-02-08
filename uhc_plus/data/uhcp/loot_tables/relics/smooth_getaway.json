@@ -13,7 +13,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{HideFlags:3,uhcp_radiant:6b,Enchantments:[{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:5,Operation:0,UUID:[I;-514273535,1199853292,-1652511467,-1994049012],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.9,Operation:0,UUID:[I;126047672,1898989385,-1577738927,1597316504],Slot:\"mainhand\"}]}"
+                "tag": "{RepairCost:100,HideFlags:3,uhcp_radiant:6b,Enchantments:[{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:5,Operation:0,UUID:[I;-514273535,1199853292,-1652511467,-1994049012],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.9,Operation:0,UUID:[I;126047672,1898989385,-1577738927,1597316504],Slot:\"mainhand\"}]}"
               },
               {
                 "function": "minecraft:set_name",

@@ -13,7 +13,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{color:5381640},HideFlags:194,uhcp_radiant:4b,Enchantments:[{id:\"minecraft:protection\",lvl:2s},{id:\"minecraft:thorns\",lvl:1s},{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:10,Operation:0,UUID:[I;-1749621740,1902725274,-1259731052,1668770021],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;-446085697,-156416355,-1149814584,-38593133],Slot:\"chest\"}],Trim:{material:\"minecraft:quartz\",pattern:\"minecraft:eye\"}}"
+                "tag": "{RepairCost:100,display:{color:5381640},HideFlags:194,uhcp_radiant:4b,Enchantments:[{id:\"minecraft:protection\",lvl:2s},{id:\"minecraft:thorns\",lvl:1s},{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:10,Operation:0,UUID:[I;-1749621740,1902725274,-1259731052,1668770021],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;-446085697,-156416355,-1149814584,-38593133],Slot:\"chest\"}],Trim:{material:\"minecraft:quartz\",pattern:\"minecraft:eye\"}}"
               },
               {
                 "function": "minecraft:set_name",

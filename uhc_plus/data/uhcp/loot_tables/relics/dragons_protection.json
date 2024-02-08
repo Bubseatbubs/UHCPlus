@@ -13,7 +13,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{uhcp_radiant:9b,Enchantments:[{id:\"minecraft:protection\",lvl:3s},{id:\"minecraft:blast_protection\",lvl:3s}]}"
+                "tag": "{RepairCost:100,uhcp_radiant:9b,Enchantments:[{id:\"minecraft:protection\",lvl:3s},{id:\"minecraft:blast_protection\",lvl:3s}]}"
               },
               {
                 "function": "minecraft:set_name",
