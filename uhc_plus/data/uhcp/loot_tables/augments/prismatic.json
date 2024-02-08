@@ -79,6 +79,142 @@
         {
           "type": "item",
           "weight": 1,
+          "name": "minecraft:soul_lantern",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:223s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Soul Siphoner",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Golden Apples",
+                    "color": "white"
+                  },
+                  {
+                    "text": " heal for",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 1🖤",
+                    "color": "red"
+                  }
+                ],
+                [
+                  {
+                    "text": "instead of",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 2🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": ". Heal",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 16🖤",
+                    "color": "red"
+                  }
+                ],
+                {
+                  "text": "when a player dies 10 blocks",
+                  "color": "gray"
+                },
+                {
+                  "text": "near you.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:golden_apple",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:209s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Golden-er Apples",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Golden Apples",
+                    "color": "white"
+                  },
+                  {
+                    "text": " heal for",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 4🖤",
+                    "color": "red"
+                  }
+                ],
+                [
+                  {
+                    "text": "instead of",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 2🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
           "name": "minecraft:bookshelf",
           "functions": [
             {

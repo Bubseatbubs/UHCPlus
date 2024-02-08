@@ -40,11 +40,11 @@ execute if score teamgame status matches 0 in minecraft:overworld run function u
 execute unless score teamgame status matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/teams
 
 # Augment Selection
-execute unless score %tier uhcp_a_tier = %tier uhcp_a_tier store result score %tier uhcp_a_tier run random value 1..100
-execute if score %random uhcp_a_tier matches 1 store result score %tier uhcp_a_tier run random value 1..100
-execute if score %tier uhcp_a_tier matches 1..25 run scoreboard players set %tier uhcp_a_tier 0
-execute if score %tier uhcp_a_tier matches 26..80 run scoreboard players set %tier uhcp_a_tier 1
-execute if score %tier uhcp_a_tier matches 81..99 run scoreboard players set %tier uhcp_a_tier 2
+execute unless score %tier uhcp_a_tier = %tier uhcp_a_tier store result score %tier uhcp_a_tier run random value 10..109
+execute if score %random uhcp_a_tier matches 1 store result score %tier uhcp_a_tier run random value 10..109
+execute if score %tier uhcp_a_tier matches 10..34 run scoreboard players set %tier uhcp_a_tier 0
+execute if score %tier uhcp_a_tier matches 35..89 run scoreboard players set %tier uhcp_a_tier 1
+execute if score %tier uhcp_a_tier matches 90..109 run scoreboard players set %tier uhcp_a_tier 2
 
 scoreboard players reset @a uhcp_a_leave
 scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 900

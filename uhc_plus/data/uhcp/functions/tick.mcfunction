@@ -54,6 +54,7 @@ execute as @a[scores={uhcp_lavaMaxHeight=0..}] run function uhcp:augments/effect
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
 execute as @e[predicate=uhcp:augments/sundiskofra] at @s run function uhcp:augments/effects/prismatic/gloryofra/stoppickup
 execute as @a[scores={uhcp_a_gloryOfRa=10..}] at @s run function uhcp:augments/effects/prismatic/gloryofra/giveloot
+execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:update_golden_apple
 
 # Augment Countdown/Functions
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_augmentCountdown uhcp_gameTime matches 0.. as @a[tag=UHCP_ChoosingItem,scores={uhcp_a_leave=1..}] run function uhcp:augments/left

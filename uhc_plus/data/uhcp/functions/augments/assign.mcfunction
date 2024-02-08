@@ -204,6 +204,9 @@ execute if score @s uhcp_a_count matches 1.. run return 206
 execute store success score @s uhcp_a_count run clear @s minecraft:diamond_boots{augment:207s} 1
 execute if score @s uhcp_a_count matches 1.. run return 207
 
+execute store success score @s uhcp_a_count run clear @s minecraft:golden_apple{augment:209s} 1
+execute if score @s uhcp_a_count matches 1.. run return 209
+
 execute store success score @s uhcp_a_count run clear @s minecraft:diamond_pickaxe{augment:211s} 1
 execute if score @s uhcp_a_count matches 1.. run return 211
 
@@ -227,6 +230,9 @@ execute if score @s uhcp_a_count matches 1.. run return 220
 
 execute store success score @s uhcp_a_count run clear @s minecraft:wooden_sword{augment:222s} 1
 execute if score @s uhcp_a_count matches 1.. run return 222
+
+execute store success score @s uhcp_a_count run clear @s minecraft:soul_lantern{augment:223s} 1
+execute if score @s uhcp_a_count matches 1.. run return 223
 
 execute store success score @s uhcp_a_count run clear @s minecraft:chest{augment:224s} 1
 execute if score @s uhcp_a_count matches 1.. run return 224
