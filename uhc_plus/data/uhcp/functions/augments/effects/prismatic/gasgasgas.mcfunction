@@ -1,1 +1,1 @@
-effect give @s speed 600 1
+effect give @s speed 1200 1 true

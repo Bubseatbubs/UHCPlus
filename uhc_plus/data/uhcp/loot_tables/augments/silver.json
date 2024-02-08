@@ -1863,11 +1863,11 @@
                 },
                 [
                   {
-                    "text": "Gain a ",
+                    "text": "Gain 2 ",
                     "color": "gray"
                   },
                   {
-                    "text": "Portable Lava Pool",
+                    "text": "Portable Lava Pools",
                     "color": "light_purple"
                   },
                   {
@@ -1876,7 +1876,7 @@
                   }
                 ],
                 {
-                  "text": "When it is thrown, summon a 5x5",
+                  "text": "When thrown, they summon a 5x5x1",
                   "color": "gray"
                 },
                 {
@@ -1996,6 +1996,14 @@
                   },
                   {
                     "text": " invulnerable Allays",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": " and a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Golden Apple",
                     "color": "light_purple"
                   },
                   {
