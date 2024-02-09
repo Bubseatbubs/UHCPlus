@@ -15,6 +15,7 @@ scoreboard objectives add uhcp_a_validSelection dummy
 # Remove one below when in pack format with new advancements
 scoreboard objectives add uhcp_anvil minecraft.custom:minecraft.interact_with_anvil
 # -----------------------------------------------------------
+scoreboard objectives add uhcp_arrowCount dummy
 scoreboard objectives add uhcp_gameTime dummy
 # Remove one below when in pack format with new advancements
 scoreboard objectives add uhcp_grindstone minecraft.custom:minecraft.interact_with_grindstone
@@ -30,6 +31,7 @@ scoreboard objectives add uhcp_lavaHeight dummy
 scoreboard objectives add uhcp_lavaMaxHeight dummy
 scoreboard objectives add uhcp_lavaTime dummy
 scoreboard objectives add uhcp_lavaTimeInterval dummy
+scoreboard objectives add uhcp_page dummy
 scoreboard objectives add uhcp_settings dummy
 # Remove one below when in pack format with new advancements
 scoreboard objectives add uhcp_smithingTable minecraft.custom:minecraft.interact_with_smithing_table

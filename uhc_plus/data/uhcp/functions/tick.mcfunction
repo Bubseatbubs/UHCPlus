@@ -23,7 +23,7 @@ execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:h
 # Settings menu
 execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uhcp:settings/change
 scoreboard players enable @a menu
-execute as @a at @s if score @s menu matches 1.. run function uhcp:settings/menu
+execute as @a at @s if score @s menu matches 1.. run function uhcp:settings/pages/1
 
 # Announce Augments
 scoreboard players enable @a augments
