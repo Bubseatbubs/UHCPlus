@@ -1,5 +1,5 @@
 # 17-19 Gapples
-execute at @s as @e[type=!#uhcp:inanimate_mobs,distance=..4.5] unless score @s uhcp_team = @e[tag=UHCP_GoldBlock,sort=nearest,limit=1] uhcp_team run damage @s 14 falling_anvil
+execute at @s as @e[type=!#uhcp:inanimate_mobs,distance=..4.5] unless score @s uhcp_team = @e[tag=UHCP_GoldBlock,sort=nearest,limit=1] uhcp_team run damage @s 14 falling_block
 execute at @s as @e[type=!#uhcp:inanimate_mobs,distance=..6] unless score @s uhcp_team = @e[tag=UHCP_GoldBlock,sort=nearest,limit=1] uhcp_team run effect give @s slowness 2 1 false
 
 
