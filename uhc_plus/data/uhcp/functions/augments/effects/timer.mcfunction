@@ -9,6 +9,10 @@ execute if score %time uhcp_gameTime matches 54000 as @a[scores={uhcp_a_selected
 execute if score %time uhcp_gameTime matches 58800 as @a[scores={uhcp_a_selectedAugment=35}] run tellraw @s {"text":"Copper will convert to Gold in 1 minute!","color":"red"}
 execute if score %time uhcp_gameTime matches 60000 as @a[scores={uhcp_a_selectedAugment=35}] run function uhcp:augments/effects/gold/coppercollector
 execute if score %time uhcp_gameTime matches 60000 as @a[scores={uhcp_a_selectedAugment=35}] run function uhcp:augments/effects/gold/coppercollector_block
+execute if score %time uhcp_gameTime matches 54000 as @a[scores={uhcp_a_selectedAugment=42}] run tellraw @s {"text":"Coal will convert to Diamonds in 5 minutes!","color":"red"}
+execute if score %time uhcp_gameTime matches 58800 as @a[scores={uhcp_a_selectedAugment=42}] run tellraw @s {"text":"Coal will convert to Diamonds in 1 minute!","color":"red"}
+execute if score %time uhcp_gameTime matches 60000 as @a[scores={uhcp_a_selectedAugment=42}] run function uhcp:augments/effects/gold/diamondsintherough
+execute if score %time uhcp_gameTime matches 60000 as @a[scores={uhcp_a_selectedAugment=42}] run function uhcp:augments/effects/gold/diamondsintheroughblock
 execute if score %time uhcp_gameTime matches 3600 as @a[scores={uhcp_a_selectedAugment=101}] run function uhcp:augments/effects/silver/afk/freedom
 execute if score %time uhcp_gameTime matches 3600 as @a[scores={uhcp_a_selectedAugment=108}] run function uhcp:augments/effects/silver/drunkenstupor/cure
 execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=120}] run function uhcp:augments/effects/silver/onthehunt
