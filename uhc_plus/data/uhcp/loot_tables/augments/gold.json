@@ -1807,6 +1807,65 @@
               ]
             }
           ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:35b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Diamonds in the Rough",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "After 50 minutes, all",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Coal and Coal Blocks",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "become",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Diamond",
+                    "color": "white"
+                  },
+                  {
+                    "text": " at a rate of 4 to 1.",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
         }
       ]
     }

@@ -93,6 +93,9 @@ execute if score @s uhcp_a_count matches 1.. run return 40
 execute store success score @s uhcp_a_count run clear @s minecraft:sniffer_spawn_egg{augment:41b}
 execute if score @s uhcp_a_count matches 1.. run return 41
 
+execute store success score @s uhcp_a_count run clear @s minecraft:diamond{augment:42b}
+execute if score @s uhcp_a_count matches 1.. run return 42
+
 
 # Silver Augments
 execute store success score @s uhcp_a_count run clear @s minecraft:slime_ball{augment:100s} 1
