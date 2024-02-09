@@ -13,7 +13,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{uhcp_radiant:1b,Enchantments:[{id:\"minecraft:sharpness\",lvl:1s},{id:\"minecraft:sweeping\",lvl:1s}]}"
+                "tag": "{RepairCost:100,uhcp_radiant:1b,Enchantments:[{id:\"minecraft:sharpness\",lvl:1s},{id:\"minecraft:sweeping\",lvl:1s}]}"
               },
               {
                 "function": "minecraft:set_name",
