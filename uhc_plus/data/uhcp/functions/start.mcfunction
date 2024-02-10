@@ -40,6 +40,9 @@ execute if entity @a[predicate=uhcp:teams/neither] run function uhcp:start/teams
 execute if score teamgame status matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/solo
 execute unless score teamgame status matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/teams
 
+# Kill items
+kill @e[type=minecraft:item]
+
 # Augment Selection
 execute unless score %tier uhcp_a_tier = %tier uhcp_a_tier store result score %tier uhcp_a_tier run random value 10..109
 execute if score %random uhcp_a_tier matches 1 store result score %tier uhcp_a_tier run random value 10..109
