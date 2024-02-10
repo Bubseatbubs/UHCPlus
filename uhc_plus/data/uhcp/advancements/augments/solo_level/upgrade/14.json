@@ -14,8 +14,7 @@
 									"type_specific": {
 										"type": "player",
 										"level": {
-											"min": 35,
-											"max": 36
+											"min": 35
 										}
 									}
 								}
@@ -24,9 +23,7 @@
 								"condition": "minecraft:entity_scores",
 								"entity": "this",
 								"scores": {
-									"uhcp_a_tier": {
-										"max": 13
-									},
+									"uhcp_a_tier": 13,
 									"uhcp_a_selectedAugment": 222
 								}
 							}
