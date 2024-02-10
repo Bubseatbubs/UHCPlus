@@ -1,8 +1,9 @@
 # Start game
 scoreboard players reset %time uhcp_gameTime
-scoreboard players reset @a uhcp_topCD
-scoreboard players reset @a uhcp_a_tier
 scoreboard players reset @a uhcp_a_gloryOfRa
+scoreboard players reset @a uhcp_a_selectedAugment
+scoreboard players reset @a uhcp_a_tier
+scoreboard players reset @a uhcp_topCD
 scoreboard players set %uhcp_gameStart uhcp_initStatus 1
 scoreboard players reset @a uhcp_arrowCount
 scoreboard players set %AUG_7 uhcp_gameTime 2400
