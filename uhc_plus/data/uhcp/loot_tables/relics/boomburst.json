@@ -13,7 +13,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{RepairCost:100,hasTnt:0b,uhcp_radiant:2b,Enchantments:[{id:\"minecraft:piercing\",lvl:10s},{id:\"minecraft:quick_charge\",lvl:2s}]}"
+                "tag": "{RepairCost:100,hasTnt:0b,uhcp_radiant:2b,Enchantments:[{id:\"minecraft:piercing\",lvl:10s},{id:\"minecraft:quick_charge\",lvl:2s},{id:\"minecraft:vanishing_curse\",lvl:1s}]}"
               },
               {
                 "function": "minecraft:set_name",

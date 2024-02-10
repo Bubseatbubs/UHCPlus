@@ -144,12 +144,12 @@
                 },
                 [
                   {
-                    "text": "Gain 4",
+                    "text": "Gain 3",
                     "color": "gray"
                   },
                   {
-                    "text": " Feathers",
-                    "color": "white"
+                    "text": " Wild Feathers",
+                    "color": "light_purple"
                   },
                   {
                     "text": ". When thrown,",
@@ -329,7 +329,7 @@
                     "color": "red"
                   },
                   {
-                    "text": ". Gain 9",
+                    "text": ". Gain 12",
                     "color": "gray"
                   },
                   {
@@ -441,7 +441,7 @@
                 },
                 [
                   {
-                    "text": "Gain 10",
+                    "text": "Gain 8",
                     "color": "gray"
                   },
                   {
@@ -710,11 +710,11 @@
                 },
                 [
                   {
-                    "text": "Gain an ",
+                    "text": "Gain 6 ",
                     "color": "gray"
                   },
                   {
-                    "text": "Apple",
+                    "text": "Apples",
                     "color": "white"
                   },
                   {
@@ -723,7 +723,7 @@
                   }
                 ],
                 {
-                  "text": "game and every 2 minutes.",
+                  "text": "game and another every 2 minutes.",
                   "color": "gray"
                 }
               ]
@@ -838,7 +838,7 @@
                     "color": "yellow"
                   },
                   {
-                    "text": " for 12",
+                    "text": " for 8",
                     "color": "gray"
                   }
                 ],
@@ -994,7 +994,7 @@
                 },
                 [
                   {
-                    "text": "After 50 minutes, all",
+                    "text": "After 35 minutes, all",
                     "color": "gray"
                   },
                   {
@@ -1012,7 +1012,7 @@
                     "color": "white"
                   },
                   {
-                    "text": " at a rate of 10 to 1.",
+                    "text": " at a rate of 8 to 1.",
                     "color": "gray"
                   }
                 ]
@@ -1420,7 +1420,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:light_gray_dye",
+          "name": "minecraft:white_dye",
           "functions": [
             {
               "function": "set_count",
@@ -1428,7 +1428,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:27b}"
+              "tag": "{pickup:1b,augment:221s}"
             },
             {
               "function": "set_name",
@@ -1445,29 +1445,24 @@
               "lore": [
                 {
                   "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
+                  "color": "blue"
                 },
                 [
                   {
-                    "text": "Gain an",
+                    "text": "Gain ",
                     "color": "gray"
                   },
                   {
-                    "text": " Long Invisibility Potion",
-                    "color": "white"
+                    "text": "no particle Invisibility",
+                    "color": "yellow"
                   },
                   {
-                    "text": " and a",
+                    "text": " for 5 seconds",
                     "color": "gray"
-                  },
-                  {
-                    "text": " Speed Potion",
-                    "color": "white"
                   }
                 ],
                 {
-                  "text": " every 10 minutes.",
+                  "text": "when sneaking.",
                   "color": "gray"
                 }
               ]
@@ -1767,20 +1762,20 @@
                 },
                 [
                   {
-                    "text": "Gain a ",
+                    "text": "Gain 2 ",
                     "color": "gray"
                   },
                   {
-                    "text": "Sniffer Spawn Egg",
+                    "text": "Sniffer Spawn Eggs",
                     "color": "white"
                   },
                   {
-                    "text": " and"
+                    "text": " and 2 "
                   }
                 ],
                 [
                   {
-                    "text": "Lead",
+                    "text": "Leads",
                     "color": "white"
                   },
                   {
@@ -1788,20 +1783,20 @@
                     "color": "gray"
                   },
                   {
-                    "text": "Sniffer",
+                    "text": "Sniffers",
                     "color": "gold"
                   },
                   {
-                    "text": " is invulnerable,",
+                    "text": " are invulnerable,",
                     "color": "gray"
                   }
                 ],
                 {
-                  "text": "glowing, and digs up rare loot",
+                  "text": "glowing, and dig up rare loot",
                   "color": "gray"
                 },
                 {
-                  "text": "every 8 minutes!",
+                  "text": "every 4 minutes!",
                   "color": "gray"
                 }
               ]
@@ -1841,7 +1836,7 @@
                 },
                 [
                   {
-                    "text": "After 50 minutes, all",
+                    "text": "After 20 minutes, all",
                     "color": "gray"
                   },
                   {
@@ -1859,7 +1854,7 @@
                     "color": "white"
                   },
                   {
-                    "text": " at a rate of 4 to 1.",
+                    "text": " at a rate of 3 to 1.",
                     "color": "gray"
                   }
                 ]

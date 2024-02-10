@@ -13,7 +13,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{RepairCost:100,HideFlags:1,uhcp_radiant:5b,Enchantments:[{id:\"minecraft:sharpness\",lvl:11s},{id:\"minecraft:unbreaking\",lvl:5s}]}"
+                "tag": "{RepairCost:100,HideFlags:1,uhcp_radiant:5b,Enchantments:[{id:\"minecraft:sharpness\",lvl:11s},{id:\"minecraft:unbreaking\",lvl:5s},{id:\"minecraft:vanishing_curse\",lvl:1s}]}"
               },
               {
                 "function": "minecraft:set_name",
