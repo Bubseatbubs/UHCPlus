@@ -23,9 +23,7 @@
 								"condition": "minecraft:entity_scores",
 								"entity": "this",
 								"scores": {
-									"uhcp_a_tier": {
-										"max": 17
-									},
+									"uhcp_a_tier": 17,
 									"uhcp_a_selectedAugment": 222
 								}
 							}

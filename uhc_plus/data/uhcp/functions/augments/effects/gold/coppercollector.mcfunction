@@ -1,4 +1,4 @@
-execute store result score %copper uhcp_a_count run clear @s copper_ingot 10
+execute store result score %copper uhcp_a_count run clear @s copper_ingot 8
 execute if score %copper uhcp_a_count matches ..2 run return 0
 give @s gold_ingot
 

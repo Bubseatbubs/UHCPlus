@@ -267,6 +267,9 @@ execute if score @s uhcp_a_count matches 1.. run return 236
 execute store success score @s uhcp_a_count run clear @s minecraft:clock{augment:237s} 1
 execute if score @s uhcp_a_count matches 1.. run return 237
 
+execute store success score @s uhcp_a_count run clear @s minecraft:blade_pottery_sherd{augment:238s} 1
+execute if score @s uhcp_a_count matches 1.. run return 238
+
 execute store success score @s uhcp_a_count run clear @s minecraft:brush{augment:239s} 1
 execute if score @s uhcp_a_count matches 1.. run return 239
 

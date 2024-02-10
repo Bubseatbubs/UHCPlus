@@ -14,8 +14,7 @@
 									"type_specific": {
 										"type": "player",
 										"level": {
-											"min": 3,
-											"max": 4
+											"min": 3
 										}
 									}
 								}

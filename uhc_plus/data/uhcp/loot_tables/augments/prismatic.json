@@ -349,58 +349,6 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:white_dye",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:221s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Sneaky Sneaky Sneaky",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue"
-                },
-                [
-                  {
-                    "text": "Gain ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "no particle Invisibility",
-                    "color": "yellow"
-                  },
-                  {
-                    "text": " for 5 seconds",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "when sneaking.",
-                  "color": "gray"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
           "name": "minecraft:grass_block",
           "functions": [
             {
@@ -1250,7 +1198,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:236s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:236,Enchantments:[{id:\"minecraft:fortune\",lvl:1s}]}"
             },
             {
               "function": "set_name",
@@ -1267,8 +1215,7 @@
               "lore": [
                 {
                   "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
+                  "color": "blue"
                 },
                 [
                   {
@@ -1276,36 +1223,29 @@
                     "color": "gray"
                   },
                   {
-                    "text": " +10🖤",
+                    "text": " 10🖤",
                     "color": "red"
                   },
                   {
-                    "text": " and ",
+                    "text": " and a ",
                     "color": "gray"
                   },
                   {
-                    "text": " Full Netherite Armor",
-                    "color": "white"
+                    "text": "Turtle Shell",
+                    "color": "light_purple"
                   },
                   {
-                    "text": ".",
-                    "color": "gray"
+                    "text": ","
                   }
                 ],
-                [
-                  {
-                    "text": "Each piece worn reduces your movement speed by",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " 12%",
-                    "color": "red"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
+                {
+                  "text": "a powerful chestplate that reduces",
+                  "color": "gray"
+                },
+                {
+                  "text": "your movement speed by 30%.",
+                  "color": "gray"
+                }
               ]
             }
           ]
@@ -1361,7 +1301,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 1🖤",
+                    "text": " 1.6🖤",
                     "color": "red"
                   },
                   {
@@ -1646,6 +1586,72 @@
                   "text": "within its area.",
                   "color": "gray"
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:blade_pottery_sherd",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:238,Enchantments:[{}]}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Relic Master",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain 2 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Relic Invokers",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "Every 7 minutes, gain another",
+                  "color": "gray"
+                },
+                [
+                  {
+                    "text": "and 3 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "max 🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
               ]
             }
           ]
