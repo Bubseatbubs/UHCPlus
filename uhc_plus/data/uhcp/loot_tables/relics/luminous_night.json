@@ -14,7 +14,7 @@
               },
               {
                 "function": "set_nbt",
-                "tag": "{RepairCost:100,HideFlags:2,uhcp_radiant:8b,Enchantments:[{id:\"minecraft:sharpness\",lvl:1s},{id:\"minecraft:smite\",lvl:3s},{id:\"minecraft:bane_of_arthropods\",lvl:3s},{id:\"minecraft:sweeping\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:8,Operation:0,UUID:[I;13844264,-1134607179,-1869203229,-2009792647],Slot:\"mainhand\"}]}"
+                "tag": "{RepairCost:100,HideFlags:2,uhcp_radiant:8b,Enchantments:[{id:\"minecraft:sharpness\",lvl:1s},{id:\"minecraft:smite\",lvl:3s},{id:\"minecraft:bane_of_arthropods\",lvl:3s},{id:\"minecraft:sweeping\",lvl:1s},{id:\"minecraft:vanishing_curse\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:8,Operation:0,UUID:[I;13844264,-1134607179,-1869203229,-2009792647],Slot:\"mainhand\"}]}"
               },
               {
                 "function": "set_name",

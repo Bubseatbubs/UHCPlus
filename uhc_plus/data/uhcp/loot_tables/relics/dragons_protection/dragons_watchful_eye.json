@@ -44,7 +44,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{HideFlags:1,uhcp_dragoneye:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+                "tag": "{HideFlags:1,uhcp_dragoneye:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s},{id:\"minecraft:vanishing_curse\",lvl:1s}]}"
               }
             ]
           }
