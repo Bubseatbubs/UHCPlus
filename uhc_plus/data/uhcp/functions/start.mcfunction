@@ -4,6 +4,7 @@ scoreboard players reset @a uhcp_topCD
 scoreboard players reset @a uhcp_a_tier
 scoreboard players reset @a uhcp_a_gloryOfRa
 scoreboard players set %uhcp_gameStart uhcp_initStatus 1
+scoreboard players reset @a uhcp_arrowCount
 scoreboard players set %AUG_7 uhcp_gameTime 2400
 scoreboard players set %AUG_15 uhcp_gameTime 2400
 scoreboard players set %AUG_27 uhcp_gameTime 12000

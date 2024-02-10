@@ -79,6 +79,88 @@
         {
           "type": "item",
           "weight": 1,
+          "name": "minecraft:netherite_upgrade_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:161,pickup:1b,augment:222s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Solo Leveling",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "full Wood tools, a Woorden Sword, a Bow,",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "and full Leather Armor, ",
+                    "color": "white"
+                  },
+                  {
+                    "text": "all of which have",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Unbreaking III / Mending",
+                    "color": "dark_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "You cannot upgrade or pick up",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Weapons, Armor, and Tools",
+                    "color": "white"
+                  }
+                ],
+                {
+                  "text": "this game. Instead, they upgrade as you progress in",
+                  "color": "gray"
+                },
+                {
+                  "text": "experience levels.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
           "name": "minecraft:soul_lantern",
           "functions": [
             {

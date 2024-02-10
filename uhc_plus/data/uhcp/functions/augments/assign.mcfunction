@@ -237,7 +237,7 @@ execute if score @s uhcp_a_count matches 1.. run return 220
 execute store success score @s uhcp_a_count run clear @s minecraft:white_dye{augment:221s} 1
 execute if score @s uhcp_a_count matches 1.. run return 221
 
-execute store success score @s uhcp_a_count run clear @s minecraft:wooden_sword{augment:222s} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:netherite_upgrade_smithing_template{augment:222s} 1
 execute if score @s uhcp_a_count matches 1.. run return 222
 
 execute store success score @s uhcp_a_count run clear @s minecraft:soul_lantern{augment:223s} 1
