@@ -1,8 +1,10 @@
 # Effect
-attribute @s minecraft:generic.max_health base set 90
-effect give @s minecraft:instant_health 1 1 true
-effect give @s minecraft:regeneration 3 1 true
-tellraw @s [{"text":"You ","color":"gray"},{"text":"leveled up","color":"gold"},{"text":"! You gained ","color":"gray"},{"text":"health","color":"white"},{"text":".","color":"gray"}]
+tellraw @s [{"text":"You ","color":"gray"},{"text":"leveled up","color":"gold"},{"text":"! Your ","color":"gray"},{"text":"equipment","color":"white"},{"text":" became stronger.","color":"gray"}]
+tag @s add UHCP_SLUpg
+tag @s add UHCP_SLAxe
+tag @s add UHCP_SLHoe
+tag @s add UHCP_SLPick
+tag @s add UHCP_SLShovel
 
 # Initialize upgrade
 function uhcp:augments/effects/prismatic/sololeveling/upgrade/init
