@@ -964,6 +964,72 @@
         {
           "type": "item",
           "weight": 1,
+          "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:43b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Sample Augment",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain 2",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Wolf Spawn Eggs and 12 Bones",
+                    "color": "white"
+                  },
+                  {
+                    "text": ". At 35",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "minutes, all of your tamed",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Wolves",
+                    "color": "blue"
+                  },
+                  {
+                    "text": " dig up",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "loot!",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
           "name": "minecraft:copper_ingot",
           "functions": [
             {

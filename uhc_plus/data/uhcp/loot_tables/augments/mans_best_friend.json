@@ -1,0 +1,127 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 2,
+            "name": "minecraft:golden_apple",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 5
+              }
+            ]
+          },
+          {
+            "type": "loot_table",
+            "weight": 4,
+            "name": "uhcp:relics/relic_invoker",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 2,
+            "name": "minecraft:enchanted_book",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{StoredEnchantments:[{id:\"minecraft:sharpness\",lvl:2s}]}"
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 2,
+            "name": "minecraft:enchanted_book",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{StoredEnchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 10,
+            "name": "minecraft:book",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 3
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 20,
+            "name": "minecraft:book",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 10,
+            "name": "minecraft:diamond",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 3
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 20,
+            "name": "minecraft:diamond",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 10,
+            "name": "minecraft:gold_ingot",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 3
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 20,
+            "name": "minecraft:gold_ingot",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
