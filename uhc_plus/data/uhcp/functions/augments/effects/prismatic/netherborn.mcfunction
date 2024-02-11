@@ -1,4 +1,4 @@
-effect give @s fire_resistance infinite 0
+effect give @s minecraft:fire_resistance infinite 0 false
 give @s diamond_pickaxe{Enchantments:[{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:unbreaking",lvl:3s}]}
 give @s diamond_axe
 give @s diamond_shovel
