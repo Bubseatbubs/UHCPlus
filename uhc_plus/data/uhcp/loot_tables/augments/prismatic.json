@@ -31,44 +31,69 @@
               "lore": [
                 {
                   "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
+                  "color": "blue"
                 },
                 [
                   {
-                    "text": "Spawn in",
+                    "text": "Start with permanent ",
                     "color": "gray"
                   },
                   {
-                    "text": " The Nether",
-                    "color": "red"
-                  },
-                  {
-                    "text": " You have",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Fire Resistance",
+                    "text": "Fire Resistance",
                     "color": "yellow"
                   },
                   {
-                    "text": " for the entire game. Gain",
+                    "text": ".",
                     "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": " Full Diamond Tools, Iron Armor,",
+                    "text": "Gain ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Diamond Tools and a Sword",
                     "color": "white"
                   },
                   {
-                    "text": " and other essentials.",
-                    "color": "gray"
+                    "text": " and"
                   }
                 ],
                 [
                   {
-                    "text": "After 20 minutes, gain materials needed to create an exit Nether Portal.",
+                    "text": "and some other essentials. ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "You spawn",
+                    "color": "red",
+                    "bold": true
+                  }
+                ],
+                [
+                  {
+                    "text": "in the Nether ",
+                    "color": "red",
+                    "bold": true
+                  },
+                  {
+                    "text": "this game. After 20 minutes,",
+                    "color": "gray",
+                    "bold": false
+                  }
+                ],
+                {
+                  "text": "gain the materials needed to craft an",
+                  "color": "gray"
+                },
+                [
+                  {
+                    "text": "exit portal",
+                    "color": "red"
+                  },
+                  {
+                    "text": ".",
                     "color": "gray"
                   }
                 ]
@@ -326,11 +351,11 @@
                 },
                 [
                   {
-                    "text": "Start with ",
+                    "text": "Start with permanent",
                     "color": "gray"
                   },
                   {
-                    "text": "Permanent Strength II",
+                    "text": " Strength II",
                     "color": "yellow"
                   },
                   {
@@ -1008,7 +1033,7 @@
                 },
                 [
                   {
-                    "text": "Start with",
+                    "text": "Start with permanent",
                     "color": "gray"
                   },
                   {
@@ -1114,7 +1139,7 @@
                 },
                 [
                   {
-                    "text": "Start with",
+                    "text": "Start with permanent",
                     "color": "gray"
                   },
                   {
@@ -1452,7 +1477,7 @@
                     "color": "yellow"
                   },
                   {
-                    "text": " for 20 minutes. Afterwards, gain",
+                    "text": " for 20 minutes. Afterwards, gain permanent",
                     "color": "gray"
                   },
                   {
@@ -1460,7 +1485,7 @@
                     "color": "yellow"
                   },
                   {
-                    "text": " for the rest of the game.",
+                    "text": ".",
                     "color": "gray"
                   }
                 ]
@@ -1601,7 +1626,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:238,Enchantments:[{}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:238,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "set_name",

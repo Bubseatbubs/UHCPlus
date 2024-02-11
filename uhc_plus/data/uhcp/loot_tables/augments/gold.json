@@ -95,11 +95,11 @@
                 },
                 [
                   {
-                    "text": "Gain a random",
+                    "text": "Gain a ",
                     "color": "gray"
                   },
                   {
-                    "text": " Relic",
+                    "text": " Relic Invoker",
                     "color": "blue"
                   },
                   {
@@ -276,7 +276,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " +8🖤",
+                    "text": " +8 max filled 🖤",
                     "color": "red"
                   },
                   {
@@ -1142,18 +1142,14 @@
                 ],
                 [
                   {
-                    "text": "Start with",
+                    "text": "Start with permanent",
                     "color": "gray"
                   },
                   {
                     "text": " Hero of the Village III",
                     "color": "yellow"
                   }
-                ],
-                {
-                  "text": "for 60 minutes.",
-                  "color": "gray"
-                }
+                ]
               ]
             }
           ]
@@ -1713,7 +1709,7 @@
                     "color": "dark_purple"
                   },
                   {
-                    "text": ". Start with ",
+                    "text": ". Start with permanent ",
                     "color": "gray"
                   },
                   {
