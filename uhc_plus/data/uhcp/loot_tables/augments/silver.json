@@ -511,7 +511,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:feather",
+          "name": "minecraft:golden_hoe",
           "functions": [
             {
               "function": "set_count",
@@ -536,20 +536,22 @@
               "lore": [
                 {
                   "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
+                  "color": "blue"
                 },
                 [
                   {
-                    "text": "Gain",
+                    "text": "Start with ",
                     "color": "gray"
                   },
                   {
-                    "text": " Speed I",
+                    "text": "Speed I",
                     "color": "yellow"
                   },
                   {
-                    "text": " for 10 minutes.",
+                    "text": " for 20 minutes"
+                  },
+                  {
+                    "text": ".",
                     "color": "gray"
                   }
                 ]
@@ -838,7 +840,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:133s}"
+              "tag": "{pickup:1b,augment:126s}"
             },
             {
               "function": "set_name",
@@ -855,23 +857,22 @@
               "lore": [
                 {
                   "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
+                  "color": "blue"
                 },
                 [
                   {
-                    "text": "Gain ",
+                    "text": "Gain 6 ",
                     "color": "gray"
                   },
                   {
-                    "text": "6 Pistons",
+                    "text": "Pistons",
                     "color": "white"
                   },
                   {
-                    "text": ", "
+                    "text": ", 32"
                   },
                   {
-                    "text": "32 Redstone",
+                    "text": " Redstone",
                     "color": "white"
                   },
                   {
@@ -880,19 +881,34 @@
                 ],
                 [
                   {
-                    "text": "3 Pointed Dripstone",
+                    "text": "and a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Stone Pickaxe and Shovel",
                     "color": "white"
                   },
                   {
-                    "text": ", and ",
-                    "color": "gray"
+                    "text": " with"
+                  }
+                ],
+                [
+                  {
+                    "text": "Efficiency I",
+                    "color": "dark_purple"
                   },
                   {
-                    "text": "16 signs"
+                    "text": ". You cannot be seen by",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "All-Seeing Eyes",
+                    "color": "light_purple"
                   },
                   {
-                    "text": ".",
-                    "color": "gray"
+                    "text": "."
                   }
                 ]
               ]
@@ -1631,7 +1647,7 @@
                 },
                 [
                   {
-                    "text": "Gain",
+                    "text": "Start with permanent",
                     "color": "gray"
                   },
                   {
@@ -1639,7 +1655,7 @@
                     "color": "yellow"
                   },
                   {
-                    "text": ". Additionally, gain",
+                    "text": ". In exchange, gain",
                     "color": "gray"
                   }
                 ],
@@ -1650,7 +1666,7 @@
                   },
                   {
                     "text": " Fungus",
-                    "color": "white"
+                    "color": "blue"
                   },
                   {
                     "text": " on your head",
