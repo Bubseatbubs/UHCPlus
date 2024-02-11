@@ -42,6 +42,6 @@
 		}
 	},
 	"rewards": {
-		"function": "uhcp:augments/effects/prismatic/netherborn/fires_resistance"
+		"function": "uhcp:augments/effects/prismatic/netherborn/fire_resistance"
 	}
 }
