@@ -330,7 +330,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:225s}"
+              "tag": "{pickup:1b,augment:225,Enchantments:[{}]}"
             },
             {
               "function": "set_name",
@@ -351,43 +351,67 @@
                 },
                 [
                   {
-                    "text": "You start with",
+                    "text": "Start with permanent ",
                     "color": "gray"
                   },
                   {
-                    "text": " +10🖤",
-                    "color": "red"
-                  },
-                  {
-                    "text": ",",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Speed II",
+                    "text": "Speed I",
                     "color": "yellow"
                   },
                   {
-                    "text": " for 20 minutes,",
-                    "color": "gray"
+                    "text": ", "
+                  },
+                  {
+                    "text": "Haste II",
+                    "color": "yellow"
                   }
                 ],
                 [
                   {
-                    "text": "and",
+                    "text": "and ",
                     "color": "gray"
                   },
                   {
-                    "text": " Permanent Haste II",
+                    "text": "Hero of the Village III",
                     "color": "yellow"
                   },
                   {
-                    "text": ". You cannot go below",
+                    "text": "."
+                  }
+                ],
+                [
+                  {
+                    "text": "Gain ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "10 filled 🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": ", ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Iron Tools",
+                    "color": "white"
+                  },
+                  {
+                    "text": ", and 32 "
+                  },
+                  {
+                    "text": "Emeralds",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
                     "color": "gray"
                   }
                 ],
                 {
-                  "text": "y=50.",
-                  "color": "gray"
+                  "text": "You cannot go below y level 50.",
+                  "color": "gray",
+                  "bold": true
                 }
               ]
             }
@@ -831,7 +855,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:228s}"
+              "tag": "{pickup:1b,augment:228s,Enchantments:[{}]}"
             },
             {
               "function": "set_name",
@@ -857,17 +881,16 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 32 Signs, 12 Pistons, 12 Sticky Pistons, 5 Pointed Dripstone,",
+                    "text": " all the materials you need to make a trap",
                     "color": "white"
+                  },
+                  {
+                    "text": ","
                   }
                 ],
-                {
-                  "text": "2 Observers, 2 Cobwebs, 64 Redstone, 64 Dirt, 64 Gravel, 64 Sand,",
-                  "color": "white"
-                },
                 [
                   {
-                    "text": "and full Iron Tools",
+                    "text": "full Iron Tools",
                     "color": "white"
                   },
                   {
@@ -879,14 +902,33 @@
                     "color": "dark_purple"
                   },
                   {
-                    "text": ". Teleport to",
+                    "text": ",",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Iron Armor, and Shield",
+                    "color": "white"
+                  },
+                  {
+                    "text": ". At the start of the game,",
                     "color": "gray"
                   }
                 ],
                 {
-                  "text": "(0, 0).",
+                  "text": "teleport to (0, 0). You cannot be seen by",
                   "color": "gray"
-                }
+                },
+                [
+                  {
+                    "text": "All-Seeing Eyes",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
               ]
             }
           ]
@@ -928,7 +970,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 10 Firework Rockets and an Elytra",
+                    "text": " 15 Firework Rockets and an Elytra",
                     "color": "white"
                   },
                   {

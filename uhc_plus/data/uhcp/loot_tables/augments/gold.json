@@ -1127,12 +1127,10 @@
                     "color": "white"
                   }
                 ],
-                [
-                  {
-                    "text": "64 Redstone, an Iron Shovel, and an Iron",
-                    "color": "white"
-                  }
-                ],
+                {
+                  "text": "64 Redstone, an Iron Shovel, and an Iron",
+                  "color": "white"
+                },
                 [
                   {
                     "text": "Pickaxe",
@@ -1153,6 +1151,20 @@
                   {
                     "text": " Efficiency I",
                     "color": "dark_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "You cannot be seen by ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "All-Seeing Eyes",
+                    "color": "light_purple"
                   },
                   {
                     "text": ".",
