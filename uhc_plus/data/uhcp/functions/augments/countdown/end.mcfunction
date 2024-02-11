@@ -1,8 +1,8 @@
 # Ran once the countdown ends
 effect clear @s
-effect give @s speed 15 0 false
-effect give @s resistance 120 4 false
-effect give @s haste infinite 0 true
+effect give @s minecraft:speed 15 0 false
+effect give @s minecraft:resistance 120 4 false
+effect give @s minecraft:haste infinite 0 true
 
 # Boots Effect (from UHC Pack)
 execute if biome ~ ~ ~ minecraft:snowy_beach run item replace entity @s[gamemode=survival] armor.feet with minecraft:leather_boots

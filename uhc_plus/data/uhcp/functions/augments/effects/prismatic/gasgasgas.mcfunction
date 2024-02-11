@@ -1,1 +1,2 @@
-effect give @s speed 1200 1 true
+effect clear @s minecraft:speed
+effect give @s minecraft:speed 1200 1 false

@@ -19,7 +19,7 @@ execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selected
 execute if score %time uhcp_gameTime matches 36000 as @a[scores={uhcp_a_selectedAugment=130}] run function uhcp:augments/effects/silver/supplydrop
 execute if score %time uhcp_gameTime matches 1200 as @a[scores={uhcp_a_selectedAugment=135}] run clear @s elytra
 execute if score %time uhcp_gameTime matches 1200 as @a[scores={uhcp_a_selectedAugment=135}] run setblock 0 250 0 air
-execute if score %time uhcp_gameTime matches 12000 as @a[scores={uhcp_a_selectedAugment=207}] run effect give @s speed infinite 0
+execute if score %time uhcp_gameTime matches 12000 as @a[scores={uhcp_a_selectedAugment=207}] run function uhcp:augments/effects/prismatic/gasgasgas/speed
 execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=214}] run give @s obsidian 14
 execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=214}] run give @s flint_and_steel 1
 
