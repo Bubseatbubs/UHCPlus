@@ -14,7 +14,7 @@
               },
               {
                 "function": "set_nbt",
-                "tag": "{HideFlags:163,relicexcavator:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+                "tag": "{HideFlags:163,uhcp_dropeffect:1b,relicexcavator:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
               },
               {
                 "function": "set_name",

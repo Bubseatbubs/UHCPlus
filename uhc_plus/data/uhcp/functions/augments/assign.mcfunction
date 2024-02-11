@@ -96,6 +96,9 @@ execute if score @s uhcp_a_count matches 1.. run return 41
 execute store success score @s uhcp_a_count run clear @s minecraft:diamond{augment:42b}
 execute if score @s uhcp_a_count matches 1.. run return 42
 
+execute store success score @s uhcp_a_count run clear @s minecraft:bone{augment:43b}
+execute if score @s uhcp_a_count matches 1.. run return 43
+
 
 # Silver Augments
 execute store success score @s uhcp_a_count run clear @s minecraft:slime_ball{augment:100s} 1
@@ -130,6 +133,9 @@ execute if score @s uhcp_a_count matches 1.. run return 114
 
 execute store success score @s uhcp_a_count run clear @s minecraft:iron_bars{augment:115s} 1
 execute if score @s uhcp_a_count matches 1.. run return 115
+
+execute store success score @s uhcp_a_count run clear @s minecraft:gold_ingot{augment:117s} 1
+execute if score @s uhcp_a_count matches 1.. run return 117
 
 execute store success score @s uhcp_a_count run clear @s minecraft:zombie_head{augment:119s} 1
 execute if score @s uhcp_a_count matches 1.. run return 119

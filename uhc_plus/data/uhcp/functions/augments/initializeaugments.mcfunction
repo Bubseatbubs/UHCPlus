@@ -74,7 +74,7 @@ execute if score @s uhcp_a_selectedAugment matches 38 run function uhcp:augments
 execute if score @s uhcp_a_selectedAugment matches 39 run function uhcp:augments/effects/gold/poseidonsblessing
 execute if score @s uhcp_a_selectedAugment matches 40 run function uhcp:augments/effects/gold/relicsofthepast
 execute if score @s uhcp_a_selectedAugment matches 41 run function uhcp:augments/effects/gold/sniffa
-execute if score @s uhcp_a_selectedAugment matches 35 run return 0
+execute if score @s uhcp_a_selectedAugment matches 43 run function uhcp:augments/effects/gold/mansbestfriend
 
 # Prismatic Augments
 execute if score @s uhcp_a_selectedAugment matches 201 run function uhcp:augments/effects/prismatic/bowmaster
