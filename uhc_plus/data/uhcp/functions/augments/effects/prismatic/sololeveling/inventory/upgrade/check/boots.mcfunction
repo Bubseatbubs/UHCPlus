@@ -5,4 +5,5 @@ execute if score @s uhcp_a_tier matches 9..11 if score %uhcp_sLStage uhcp_itemIn
 execute if score @s uhcp_a_tier matches 12..13 if score %uhcp_sLStage uhcp_itemInv matches ..2 run function uhcp:augments/effects/prismatic/sololeveling/inventory/upgrade/boots/3
 execute if score @s uhcp_a_tier matches 14..15 if score %uhcp_sLStage uhcp_itemInv matches ..3 run function uhcp:augments/effects/prismatic/sololeveling/inventory/upgrade/boots/4
 execute if score @s uhcp_a_tier matches 16..17 if score %uhcp_sLStage uhcp_itemInv matches ..4 run function uhcp:augments/effects/prismatic/sololeveling/inventory/upgrade/boots/5
-execute if score @s uhcp_a_tier matches 18 if score %uhcp_sLStage uhcp_itemInv matches ..5 run function uhcp:augments/effects/prismatic/sololeveling/inventory/upgrade/boots/6
+execute if score @s uhcp_a_tier matches 18..20 if score %uhcp_sLStage uhcp_itemInv matches ..5 run function uhcp:augments/effects/prismatic/sololeveling/inventory/upgrade/boots/6
+execute if score @s uhcp_a_tier matches 21..26 if score %uhcp_sLStage uhcp_itemInv matches ..6 run function uhcp:augments/effects/prismatic/sololeveling/inventory/upgrade/boots/7

@@ -1,8 +1,9 @@
 # Start game
 scoreboard players reset %time uhcp_gameTime
-scoreboard players reset @a uhcp_topCD
-scoreboard players reset @a uhcp_a_tier
 scoreboard players reset @a uhcp_a_gloryOfRa
+scoreboard players reset @a uhcp_a_selectedAugment
+scoreboard players reset @a uhcp_a_tier
+scoreboard players reset @a uhcp_topCD
 scoreboard players set %uhcp_gameStart uhcp_initStatus 1
 scoreboard players reset @a uhcp_arrowCount
 scoreboard players set %AUG_7 uhcp_gameTime 2400
@@ -39,6 +40,9 @@ execute if entity @a[predicate=uhcp:teams/neither] run function uhcp:start/teams
 # Spreadplayers logic
 execute if score teamgame status matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/solo
 execute unless score teamgame status matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/teams
+
+# Kill items
+kill @e[type=minecraft:item]
 
 # Augment Selection
 execute unless score %tier uhcp_a_tier = %tier uhcp_a_tier store result score %tier uhcp_a_tier run random value 10..109

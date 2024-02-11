@@ -58,7 +58,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{HideFlags:1,uhcp_sight:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+							"tag": "{HideFlags:1,uhcp_instantpickup:1b,uhcp_sight:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
 						}
 					]
 				}

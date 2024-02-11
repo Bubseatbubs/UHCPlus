@@ -45,21 +45,19 @@ execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
 # Death
 execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:augments/effects/death
 
+# Ate Golden Apple Effect
+execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:update_golden_apple
+
 # Augments
-execute as @e[predicate=uhcp:augments/birdfeather] at @s run function uhcp:augments/effects/gold/birdsofafeather/teleport
-execute as @e[predicate=uhcp:augments/lavapool] on origin at @s run function uhcp:augments/effects/silver/portablelavapool/summon
-execute as @e[type=minecraft:bee,tag=UHCP_Bee] at @s run function uhcp:augments/effects/gold/beekeeper/update
+execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
 execute as @a[scores={uhcp_lavaTimeInterval=1..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
 execute as @a[scores={uhcp_lavaMaxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
-execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
-execute as @e[predicate=uhcp:augments/sundiskofra] at @s run function uhcp:augments/effects/prismatic/gloryofra/stoppickup
 execute as @a[scores={uhcp_a_gloryOfRa=10..}] at @s run function uhcp:augments/effects/prismatic/gloryofra/giveloot
-execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:update_golden_apple
 
 # Augment Countdown/Functions
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_augmentCountdown uhcp_gameTime matches 0.. as @a[tag=UHCP_ChoosingItem,scores={uhcp_a_leave=1..}] run function uhcp:augments/left
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 0.. run function uhcp:augments/countdown
-function uhcp:augments/effects/timer
+execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:augments/effects/timer
 
 # Update Summoned Entities
 execute as @e[tag=UHCP_Summon] at @s run function uhcp:update
@@ -70,14 +68,15 @@ execute as @e[type=arrow,tag=!UHCP_BoomburstInit,nbt={custom_potion_effects:[{id
 execute as @e[type=arrow,nbt={inGround:1b,custom_potion_effects:[{id:"minecraft:bad_omen",amplifier:100b}]}] at @s run function uhcp:relics/boomburst/explode_inground
 execute as @e[predicate=uhcp:relics/hit_by_boomburst] at @s if entity @e[tag=UHCP_BoomburstDisplay,distance=..4] run function uhcp:relics/boomburst/explode_onhit
 
-# Relic Excavator
-execute as @e[predicate=uhcp:augments/relicexcavator] at @s run function uhcp:relics/relic_excavator/use
-
 # Close dimensions
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:dimensions/run
 
 # Disable Ender Pearl Damage
 execute as @e[type=minecraft:ender_pearl] at @s run function uhcp:enderpearl
+
+# Items (instant pickup and item effects)
+execute as @e[predicate=uhcp:items/instant_pickup] run function uhcp:items/instant_pickup
+execute as @e[predicate=uhcp:items/drop_effect] at @s run function uhcp:items/drop_effect
 
 # Remove three below and temp predicate when in pack format with new advancements
 scoreboard players reset @a[predicate=uhcp:temp] uhcp_anvil

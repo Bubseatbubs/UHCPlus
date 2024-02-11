@@ -1,4 +1,5 @@
 tag @s add UHCP_Init
+execute unless predicate uhcp:relics/dragons_protection_max run return run function uhcp:relics/dragons_protection/fail
 summon marker ~ ~ ~ {Tags:["UHCP_DragonsProtection","UHCP_Summon","UHCP_New"]}
 playsound entity.ender_dragon.growl master @a[distance=..8] ~ ~ ~ 1 1 1
 playsound minecraft:block.stone.place master @a[distance=..10] ~ ~ ~ 1 0.5 1
