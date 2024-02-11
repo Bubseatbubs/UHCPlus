@@ -322,58 +322,6 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:glass",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:208s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Glass Cannon",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue"
-                },
-                [
-                  {
-                    "text": "Start with permanent",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Strength II",
-                    "color": "yellow"
-                  },
-                  {
-                    "text": ", but armor",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "is half as effective.",
-                  "color": "gray"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
           "name": "minecraft:grass_block",
           "functions": [
             {

@@ -75,13 +75,13 @@ execute if score @s uhcp_a_selectedAugment matches 39 run function uhcp:augments
 execute if score @s uhcp_a_selectedAugment matches 40 run function uhcp:augments/effects/gold/relicsofthepast
 execute if score @s uhcp_a_selectedAugment matches 41 run function uhcp:augments/effects/gold/sniffa
 execute if score @s uhcp_a_selectedAugment matches 43 run function uhcp:augments/effects/gold/mansbestfriend
+execute if score @s uhcp_a_selectedAugment matches 45 run function uhcp:augments/effects/gold/glasscannon
 
 # Prismatic Augments
 execute if score @s uhcp_a_selectedAugment matches 201 run function uhcp:augments/effects/prismatic/bowmaster
 execute if score @s uhcp_a_selectedAugment matches 203 run function uhcp:augments/effects/prismatic/cruelpact
 execute if score @s uhcp_a_selectedAugment matches 206 run function uhcp:augments/effects/prismatic/gapplegapiii
 execute if score @s uhcp_a_selectedAugment matches 207 run function uhcp:augments/effects/prismatic/gasgasgas
-execute if score @s uhcp_a_selectedAugment matches 208 run function uhcp:augments/effects/prismatic/glasscannon
 execute if score @s uhcp_a_selectedAugment matches 211 run function uhcp:augments/effects/prismatic/intotheminesiii
 execute if score @s uhcp_a_selectedAugment matches 212 run function uhcp:augments/effects/prismatic/laststand
 execute if score @s uhcp_a_selectedAugment matches 213 run function uhcp:augments/effects/prismatic/librarian
@@ -89,7 +89,6 @@ execute if score @s uhcp_a_selectedAugment matches 214 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 216 run function uhcp:augments/effects/prismatic/potionmaster
 execute if score @s uhcp_a_selectedAugment matches 217 run function uhcp:augments/effects/prismatic/primetarget
 execute if score @s uhcp_a_selectedAugment matches 220 run function uhcp:augments/effects/prismatic/restierplayer
-execute if score @s uhcp_a_selectedAugment matches 221 run return 0
 execute if score @s uhcp_a_selectedAugment matches 222 run function uhcp:augments/effects/prismatic/sololeveling
 execute if score @s uhcp_a_selectedAugment matches 225 run function uhcp:augments/effects/prismatic/surfaceduty
 execute if score @s uhcp_a_selectedAugment matches 224 run function uhcp:augments/effects/prismatic/starterkitiii

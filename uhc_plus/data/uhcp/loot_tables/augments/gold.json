@@ -1490,7 +1490,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:221s}"
+              "tag": "{pickup:1b,augment:44b}"
             },
             {
               "function": "set_name",
@@ -1920,6 +1920,58 @@
                     "color": "gray"
                   }
                 ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:glass",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:45b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Glass Cannon",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Start with permanent",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Strength III",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": ", but your armor",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "is half as effective.",
+                  "color": "gray"
+                }
               ]
             }
           ]
