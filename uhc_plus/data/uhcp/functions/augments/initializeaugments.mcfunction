@@ -89,6 +89,7 @@ execute if score @s uhcp_a_selectedAugment matches 213 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 214 run function uhcp:augments/effects/prismatic/netherborn
 execute if score @s uhcp_a_selectedAugment matches 216 run function uhcp:augments/effects/prismatic/potionmaster
 execute if score @s uhcp_a_selectedAugment matches 217 run function uhcp:augments/effects/prismatic/primetarget
+execute if score @s uhcp_a_selectedAugment matches 218 run return 0
 execute if score @s uhcp_a_selectedAugment matches 220 run function uhcp:augments/effects/prismatic/restierplayer
 execute if score @s uhcp_a_selectedAugment matches 222 run function uhcp:augments/effects/prismatic/sololeveling
 execute if score @s uhcp_a_selectedAugment matches 225 run function uhcp:augments/effects/prismatic/surfaceduty

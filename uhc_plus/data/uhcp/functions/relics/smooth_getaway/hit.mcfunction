@@ -7,7 +7,7 @@ execute at @s positioned ~1 ~ ~ run function uhcp:relics/smooth_getaway/summon
 
 execute as @a if score @s uhcp_a_selectedAugment matches 239 at @s run function uhcp:relics/smooth_getaway/shadowclone
 
-particle minecraft:campfire_signal_smoke ~ ~ ~ 1.5 0.5 1.5 0.1 500 normal
+particle minecraft:campfire_signal_smoke ~ ~ ~ 1.5 0.5 1.5 0.1 50 normal
 playsound entity.zombie.converted_to_drowned master @a[distance=..8] ~ ~ ~ 1 0.5 0.5
 
 # Set Cooldown
