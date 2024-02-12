@@ -81,6 +81,7 @@ execute if score @s uhcp_a_selectedAugment matches 45 run function uhcp:augments
 # Prismatic Augments
 execute if score @s uhcp_a_selectedAugment matches 201 run function uhcp:augments/effects/prismatic/bowmaster
 execute if score @s uhcp_a_selectedAugment matches 203 run function uhcp:augments/effects/prismatic/cruelpact
+execute if score @s uhcp_a_selectedAugment matches 205 run function uhcp:augments/effects/prismatic/endschosen
 execute if score @s uhcp_a_selectedAugment matches 206 run function uhcp:augments/effects/prismatic/gapplegapiii
 execute if score @s uhcp_a_selectedAugment matches 207 run function uhcp:augments/effects/prismatic/gasgasgas
 execute if score @s uhcp_a_selectedAugment matches 210 run return 0

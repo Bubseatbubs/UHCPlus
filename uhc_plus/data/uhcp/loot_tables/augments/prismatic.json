@@ -322,6 +322,76 @@
         {
           "type": "item",
           "weight": 1,
+          "name": "minecraft:dragon_egg",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:205s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "End's Chosen",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Dragon's Protection",
+                    "color": "white"
+                  },
+                  {
+                    "text": ". When used,",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "the Ender Dragon breathes down Fireballs",
+                  "color": "gray"
+                },
+                {
+                  "text": "at your location. After the Egg breaks,",
+                  "color": "gray"
+                },
+                [
+                  {
+                    "text": "gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Resistance I",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " for 30 seconds.",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
           "name": "minecraft:creeper_head",
           "functions": [
             {
@@ -336,7 +406,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "Monster Madness",
+                  "text": "End's Chosen",
                   "color": "gray",
                   "bold": true
                 }
