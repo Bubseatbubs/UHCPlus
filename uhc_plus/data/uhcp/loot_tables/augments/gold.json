@@ -2047,6 +2047,54 @@
               ]
             }
           ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:glistering_melon_slice",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:10b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Healing Orbs II",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "When a player dies 10 blocks near you, heal",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 4🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
         }
       ]
     }

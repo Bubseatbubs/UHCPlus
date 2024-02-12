@@ -24,7 +24,10 @@ execute if score @s uhcp_a_count matches 1.. run return 7
 execute store success score @s uhcp_a_count run clear @s minecraft:magma_block{augment:8b} 1
 execute if score @s uhcp_a_count matches 1.. run return 8
 
-execute store success score @s uhcp_a_count run clear @s minecraft:golden_apple{augment:10b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:golden_apple{augment:9b} 1
+execute if score @s uhcp_a_count matches 1.. run return 9
+
+execute store success score @s uhcp_a_count run clear @s minecraft:glistering_melon_slice{augment:10b} 1
 execute if score @s uhcp_a_count matches 1.. run return 10
 
 execute store success score @s uhcp_a_count run clear @s minecraft:oak_leaves{augment:11b} 1
