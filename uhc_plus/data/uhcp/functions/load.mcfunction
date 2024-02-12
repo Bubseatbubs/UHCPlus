@@ -12,6 +12,10 @@ scoreboard objectives add uhcp_a_stack dummy
 scoreboard objectives add uhcp_a_tier dummy
 scoreboard objectives add uhcp_a_timer dummy
 scoreboard objectives add uhcp_a_validSelection dummy
+scoreboard objectives add uhcp_hb_killedZombie dummy
+scoreboard objectives add uhcp_hb_killedCreeper dummy
+scoreboard objectives add uhcp_hb_killedSkeleton dummy
+scoreboard objectives add uhcp_hb_killedSpider dummy
 # Remove one below when in pack format with new advancements
 scoreboard objectives add uhcp_anvil minecraft.custom:minecraft.interact_with_anvil
 # -----------------------------------------------------------

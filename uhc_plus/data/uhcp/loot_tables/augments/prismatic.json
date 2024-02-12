@@ -322,6 +322,112 @@
         {
           "type": "item",
           "weight": 1,
+          "name": "minecraft:creeper_head",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:210s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Monster Madness",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                {
+                  "text": "Gain abilities when you kill a certain number of mobs:",
+                  "color": "gray"
+                },
+                [
+                  {
+                    "text": "10 Creepers",
+                    "color": "dark_red"
+                  },
+                  {
+                    "text": ": Explode on your death.",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "10 Skeletons",
+                    "color": "dark_red"
+                  },
+                  {
+                    "text": ": Gain a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Power II / Infinity",
+                    "color": "dark_purple"
+                  },
+                  {
+                    "text": " Bow",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "10 Spiders",
+                    "color": "dark_red"
+                  },
+                  {
+                    "text": ": Gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Permanent Speed I",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "10 Zombies",
+                    "color": "dark_red"
+                  },
+                  {
+                    "text": ": Gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " +5🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
           "name": "minecraft:nether_star",
           "functions": [
             {

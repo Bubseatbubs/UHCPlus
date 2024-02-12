@@ -14,6 +14,15 @@ scoreboard players set %AUG_203 uhcp_gameTime 1200
 scoreboard players set %AUG_238 uhcp_gameTime 12000
 execute if score %uhcp_dimTime uhcp_gameTime matches ..-1 run scoreboard players set %uhcp_dimTime uhcp_gameTime 0
 
+scoreboard players reset @a uhcp_hb_killedCreeper
+scoreboard players reset @a uhcp_hb_killedZombie
+scoreboard players reset @a uhcp_hb_killedSkeleton
+scoreboard players reset @a uhcp_hb_killedSpider
+tag @a remove UHCP_Creeper
+tag @a remove UHCP_Skeleton
+tag @a remove UHCP_Spider
+tag @a remove UHCP_Zombie
+
 scoreboard objectives setdisplay sidebar uhcp_gameDisplay
 scoreboard objectives setdisplay below_name hearts
 

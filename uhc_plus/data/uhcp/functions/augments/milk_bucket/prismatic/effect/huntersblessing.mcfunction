@@ -1,0 +1,1 @@
+effect give @s[tag=UHCP_EffectHB] speed infinite 0 false

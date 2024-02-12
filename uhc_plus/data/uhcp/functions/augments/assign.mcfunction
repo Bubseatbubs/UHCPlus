@@ -221,6 +221,12 @@ execute if score @s uhcp_a_count matches 1.. run return 207
 execute store success score @s uhcp_a_count run clear @s minecraft:golden_apple{augment:209s} 1
 execute if score @s uhcp_a_count matches 1.. run return 209
 
+execute store success score @s uhcp_a_count run clear @s minecraft:creeper_head{augment:210s} 1
+execute if score @s uhcp_a_count matches 1.. run return 210
+
+execute store success score @s uhcp_a_count run clear @s minecraft:diamond_pickaxe{augment:211s} 1
+execute if score @s uhcp_a_count matches 1.. run return 211
+
 execute store success score @s uhcp_a_count run clear @s minecraft:diamond_pickaxe{augment:211s} 1
 execute if score @s uhcp_a_count matches 1.. run return 211
 

@@ -82,6 +82,7 @@ execute if score @s uhcp_a_selectedAugment matches 201 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 203 run function uhcp:augments/effects/prismatic/cruelpact
 execute if score @s uhcp_a_selectedAugment matches 206 run function uhcp:augments/effects/prismatic/gapplegapiii
 execute if score @s uhcp_a_selectedAugment matches 207 run function uhcp:augments/effects/prismatic/gasgasgas
+execute if score @s uhcp_a_selectedAugment matches 210 run return 0
 execute if score @s uhcp_a_selectedAugment matches 211 run function uhcp:augments/effects/prismatic/intotheminesiii
 execute if score @s uhcp_a_selectedAugment matches 212 run function uhcp:augments/effects/prismatic/laststand
 execute if score @s uhcp_a_selectedAugment matches 213 run function uhcp:augments/effects/prismatic/librarian
