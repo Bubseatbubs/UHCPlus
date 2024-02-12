@@ -23,6 +23,9 @@ execute if score %time uhcp_gameTime matches 40800 as @a[scores={uhcp_a_selected
 execute if score %time uhcp_gameTime matches 18000 as @a[scores={uhcp_a_selectedAugment=42}] run tellraw @s {"text":"Coal will convert to Diamonds in 5 minutes!","color":"red"}
 execute if score %time uhcp_gameTime matches 22800 as @a[scores={uhcp_a_selectedAugment=42}] run tellraw @s {"text":"Coal will convert to Diamonds in 1 minute!","color":"red"}
 
+#Rain random lab UHC player balance addons
+execute if score %time uhcp_gameTime matches 2800 run function rain:tags
+
 # Cycle Effects
 execute if score %time uhcp_gameTime matches ..3599 as @a[scores={uhcp_a_selectedAugment=101}] run function uhcp:augments/effects/silver/afk/lock
 
