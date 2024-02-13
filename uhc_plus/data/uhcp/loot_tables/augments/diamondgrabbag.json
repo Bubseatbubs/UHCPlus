@@ -14,7 +14,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
             }
           ]
         },
@@ -29,7 +29,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
             }
           ]
         },
@@ -44,7 +44,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
             }
           ]
         },
@@ -59,7 +59,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
             }
           ]
         },
@@ -74,7 +74,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:looting\",lvl:1s}]}"
+              "tag": "{Enchantments:[{id:\"minecraft:looting\",lvl:3s}]}"
             }
           ]
         },
@@ -89,7 +89,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:knockback\",lvl:1s}]}"
+              "tag": "{Enchantments:[{id:\"minecraft:knockback\",lvl:2s}]}"
             }
           ]
         },
@@ -104,7 +104,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1s}]}"
+              "tag": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:3s}]}"
             }
           ]
         },
@@ -134,7 +134,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}]}"
+              "tag": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:3s}]}"
             }
           ]
         },
@@ -194,7 +194,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}]}"
+              "tag": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:3s}]}"
             }
           ]
         }
