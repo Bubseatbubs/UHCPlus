@@ -257,9 +257,6 @@ execute if score @s uhcp_a_count matches 1.. run return 217
 execute store success score @s uhcp_a_count run clear @s minecraft:nether_star{augment:218s} 1
 execute if score @s uhcp_a_count matches 1.. run return 218
 
-execute store success score @s uhcp_a_count run clear @s minecraft:shield{augment:220s} 1
-execute if score @s uhcp_a_count matches 1.. run return 220
-
 execute store success score @s uhcp_a_count run clear @s minecraft:netherite_upgrade_smithing_template{augment:222s} 1
 execute if score @s uhcp_a_count matches 1.. run return 222
 

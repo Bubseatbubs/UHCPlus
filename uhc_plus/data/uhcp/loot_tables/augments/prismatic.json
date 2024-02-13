@@ -1348,55 +1348,6 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:shield",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:220s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Res Tier Player",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Start with permanent",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Resistance I",
-                    "color": "yellow"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
           "name": "minecraft:target",
           "functions": [
             {
