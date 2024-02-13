@@ -1,6 +1,5 @@
 advancement revoke @s only uhcp:relics/yggdrasil/ability
-effect give @s absorption 3 2 false
-effect give @s resistance 3 0 false
+effect give @s absorption 3 1 false
 execute at @s run playsound block.shroomlight.place master @a[distance=..4] ~ ~ ~ 1 1 1
 execute at @s run playsound block.shroomlight.place master @a[distance=..4] ~ ~ ~ 1 1 1
 execute at @s run playsound block.shroomlight.place master @a[distance=..4] ~ ~ ~ 1 1 1
