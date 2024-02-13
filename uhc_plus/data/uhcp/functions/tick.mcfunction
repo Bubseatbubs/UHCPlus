@@ -53,6 +53,7 @@ execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prisma
 execute as @a[scores={uhcp_lavaTimeInterval=1..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
 execute as @a[scores={uhcp_lavaMaxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
 execute as @a[scores={uhcp_a_gloryOfRa=10..}] at @s run function uhcp:augments/effects/prismatic/gloryofra/giveloot
+execute as @a[scores={uhcp_a_selectedAugment=202}] at @s if block ~ ~-1 ~ ice run function uhcp:augments/effects/prismatic/coldblooded/effect
 
 # Augment Countdown/Functions
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_augmentCountdown uhcp_gameTime matches 0.. as @a[tag=UHCP_ChoosingItem,scores={uhcp_a_leave=1..}] run function uhcp:augments/left

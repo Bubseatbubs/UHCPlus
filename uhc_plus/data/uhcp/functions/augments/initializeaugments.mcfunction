@@ -80,6 +80,7 @@ execute if score @s uhcp_a_selectedAugment matches 45 run function uhcp:augments
 
 # Prismatic Augments
 execute if score @s uhcp_a_selectedAugment matches 201 run function uhcp:augments/effects/prismatic/bowmaster
+execute if score @s uhcp_a_selectedAugment matches 202 run return 0
 execute if score @s uhcp_a_selectedAugment matches 203 run function uhcp:augments/effects/prismatic/cruelpact
 execute if score @s uhcp_a_selectedAugment matches 205 run function uhcp:augments/effects/prismatic/endschosen
 execute if score @s uhcp_a_selectedAugment matches 206 run function uhcp:augments/effects/prismatic/gapplegapiii
@@ -94,6 +95,7 @@ execute if score @s uhcp_a_selectedAugment matches 217 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 218 run return 0
 execute if score @s uhcp_a_selectedAugment matches 220 run function uhcp:augments/effects/prismatic/restierplayer
 execute if score @s uhcp_a_selectedAugment matches 222 run function uhcp:augments/effects/prismatic/sololeveling
+execute if score @s uhcp_a_selectedAugment matches 223 run return 0
 execute if score @s uhcp_a_selectedAugment matches 225 run function uhcp:augments/effects/prismatic/surfaceduty
 execute if score @s uhcp_a_selectedAugment matches 224 run function uhcp:augments/effects/prismatic/starterkitiii
 execute if score @s uhcp_a_selectedAugment matches 226 run function uhcp:augments/effects/prismatic/thehare
@@ -105,7 +107,8 @@ execute if score @s uhcp_a_selectedAugment matches 237 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 238 run function uhcp:augments/effects/prismatic/relicmaster
 execute if score @s uhcp_a_selectedAugment matches 239 run function uhcp:augments/effects/prismatic/shadowclonejutsu
 execute if score @s uhcp_a_selectedAugment matches 240 run function uhcp:augments/effects/prismatic/zeusfavor
-
+execute if score @s uhcp_a_selectedAugment matches 241 run function uhcp:augments/effects/prismatic/thinkfast
+execute if score @s uhcp_a_selectedAugment matches 242 run function uhcp:augments/effects/prismatic/diamondgrabbag
 
 scoreboard players reset @s uhcp_a_stack
 particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.25 100 normal

@@ -531,7 +531,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:10b}"
+              "tag": "{pickup:1b,augment:9b}"
             },
             {
               "function": "set_name",
