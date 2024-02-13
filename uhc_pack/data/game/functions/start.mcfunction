@@ -49,7 +49,7 @@ execute if score weather status matches 0 in minecraft:overworld run gamerule do
 execute if score weather status matches 0 in minecraft:overworld run weather clear
 # Why is there no check for daylight cycle?
 # Seems strange that this is not an option when weather cycle is. -Aidan
-execute in minecraft:overworld run gamerule doDaylightCycle true
+execute in minecraft:overworld run gamerule doDaylightCycle false
 scoreboard players set @a ch_toggleConst 1
 
 # UHC Plus will set players to adventure

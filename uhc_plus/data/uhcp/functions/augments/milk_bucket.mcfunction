@@ -1,6 +1,6 @@
 # Re-apply effects after milk bucket is used
 tag @s add UHCP_EffectDefault
-schedule function uhcp:augments/milk_bucket/effect/default 1t
+execute unless score %uhcp_effectDefault uhcp_initStatus matches 1.. run function uhcp:augments/milk_bucket/default
 
 execute if score @s uhcp_a_selectedAugment matches 0..99 run function uhcp:augments/milk_bucket/gold
 execute if score @s uhcp_a_selectedAugment matches 100..199 run function uhcp:augments/milk_bucket/silver
