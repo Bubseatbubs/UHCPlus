@@ -1,1 +1,1 @@
-loot give @s loot uhcp:augments/itemgrabbag
+loot give @s loot uhcp:augments/diamondgrabbag
