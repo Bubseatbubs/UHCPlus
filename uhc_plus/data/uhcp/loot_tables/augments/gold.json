@@ -2095,6 +2095,58 @@
               ]
             }
           ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:leather_boots",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:2,pickup:1b,augment:30b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Fleet Footed",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Speed II",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " whenever you are",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "not wearing any boots.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
