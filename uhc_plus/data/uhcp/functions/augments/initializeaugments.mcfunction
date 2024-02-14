@@ -38,6 +38,7 @@ execute if score @s uhcp_a_selectedAugment matches 145 run return 0
 execute if score @s uhcp_a_selectedAugment matches 146 run function uhcp:augments/effects/silver/portablelavapool
 execute if score @s uhcp_a_selectedAugment matches 147 run function uhcp:augments/effects/silver/parasite
 execute if score @s uhcp_a_selectedAugment matches 148 run function uhcp:augments/effects/silver/littlebuddies
+execute if score @s uhcp_a_selectedAugment matches 150 run return 0
 
 # Gold Augments
 execute if score @s uhcp_a_selectedAugment matches 0 run return 0

@@ -14,20 +14,20 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{pickup:1b,augment:109s}"
+                "tag": "{pickup:1b,augment:17b}"
               },
               {
                 "function": "minecraft:set_name",
                 "name": [
                   {
-                    "text": "Empty Hearted",
+                    "text": "Large and in Charge",
                     "color": "gray",
                     "bold": true
                   }
                 ]
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -36,26 +36,12 @@
                   },
                   [
                     {
-                      "text": "Start the game with",
+                      "text": "Start with",
                       "color": "gray"
                     },
                     {
-                      "text": " +4 empty 🖤",
+                      "text": " +8 max filled 🖤",
                       "color": "red"
-                    },
-                    {
-                      "text": ".",
-                      "color": "gray"
-                    }
-                  ],
-                  [
-                    {
-                      "text": "Gain",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " 4 Gold Ingots",
-                      "color": "white"
                     },
                     {
                       "text": ".",
@@ -113,20 +99,20 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{pickup:1b,augment:119s}"
+                "tag": "{pickup:1b,augment:19b}"
               },
               {
                 "function": "minecraft:set_name",
                 "name": [
                   {
-                    "text": "Monster Hunter",
+                    "text": "Lucky Hunt",
                     "color": "gray",
                     "bold": true
                   }
                 ]
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -139,22 +125,18 @@
                       "color": "gray"
                     },
                     {
-                      "text": " Stone Sword",
-                      "color": "white"
+                      "text": " ",
+                      "color": "red"
                     },
                     {
-                      "text": " with",
-                      "color": "gray"
+                      "text": "Looting III / Unbreaking III",
+                      "color": "dark_purple"
                     }
                   ],
-                  {
-                    "text": "Smite II / Bane of Anthropods II",
-                    "color": "dark_purple"
-                  },
                   [
                     {
-                      "text": "/ Looting I",
-                      "color": "dark_purple"
+                      "text": "Golden Sword",
+                      "color": "white"
                     },
                     {
                       "text": ".",
@@ -212,20 +194,20 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{pickup:1b,augment:126s}"
+                "tag": "{pickup:1b,augment:30b}"
               },
               {
                 "function": "minecraft:set_name",
                 "name": [
                   {
-                    "text": "Speedy Start",
+                    "text": "Unburdened",
                     "color": "gray",
                     "bold": true
                   }
                 ]
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -233,21 +215,22 @@
                   },
                   [
                     {
-                      "text": "Start with ",
+                      "text": "Gain ",
                       "color": "gray"
                     },
                     {
-                      "text": "Speed I",
+                      "text": "Speed II",
                       "color": "yellow"
                     },
                     {
-                      "text": " for 20 minutes"
-                    },
-                    {
-                      "text": ".",
+                      "text": " whenever you are",
                       "color": "gray"
                     }
-                  ]
+                  ],
+                  {
+                    "text": "not wearing any boots.",
+                    "color": "gray"
+                  }
                 ]
               }
             ],
@@ -291,7 +274,7 @@
           {
             "type": "minecraft:item",
             "weight": 1,
-            "name": "minecraft:iron_pickaxe",
+            "name": "minecraft:miner_pottery_sherd",
             "functions": [
               {
                 "function": "minecraft:set_count",
@@ -299,20 +282,20 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{pickup:1b,augment:114s}"
+                "tag": "{pickup:1b,augment:13b}"
               },
               {
                 "function": "minecraft:set_name",
                 "name": [
                   {
-                    "text": "Into the Mines",
+                    "text": "Into the Mines II",
                     "color": "gray",
                     "bold": true
                   }
                 ]
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -321,19 +304,11 @@
                   },
                   [
                     {
-                      "text": "Gain an",
+                      "text": "Gain a",
                       "color": "gray"
                     },
                     {
-                      "text": " Iron Pickaxe",
-                      "color": "white"
-                    },
-                    {
-                      "text": " and",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " 5 Gold Ingots",
+                      "text": " Diamond Pickaxe",
                       "color": "white"
                     },
                     {
@@ -392,20 +367,20 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{pickup:1b,augment:111s}"
+                "tag": "{pickup:1b,augment:9b}"
               },
               {
                 "function": "minecraft:set_name",
                 "name": [
                   {
-                    "text": "Gapple Gap I",
+                    "text": "Gapple Gap II",
                     "color": "gray",
                     "bold": true
                   }
                 ]
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -414,7 +389,7 @@
                   },
                   [
                     {
-                      "text": "Gain 2",
+                      "text": "Gain 4",
                       "color": "gray"
                     },
                     {
@@ -469,7 +444,7 @@
           {
             "type": "minecraft:item",
             "weight": 1,
-            "name": "minecraft:oak_trapdoor",
+            "name": "minecraft:iron_trapdoor",
             "functions": [
               {
                 "function": "minecraft:set_count",
@@ -477,75 +452,78 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{pickup:1b,augment:126s}"
+                "tag": "{pickup:1b,augment:32b}"
               },
               {
                 "function": "minecraft:set_name",
                 "name": [
                   {
-                    "text": "Trap Enthusiast",
+                    "text": "Trap Master",
                     "color": "gray",
                     "bold": true
                   }
                 ]
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   {
                     "text": "------------------------",
-                    "color": "blue"
+                    "color": "blue",
+                    "bold": true
                   },
                   [
                     {
-                      "text": "Gain 6 ",
+                      "text": "Gain ",
                       "color": "gray"
                     },
                     {
-                      "text": "Pistons",
+                      "text": "16 Signs, 3 Pistons, 3 Sticky Pistons,",
                       "color": "white"
-                    },
-                    {
-                      "text": ", 32"
-                    },
-                    {
-                      "text": " Redstone",
-                      "color": "white"
-                    },
-                    {
-                      "text": ","
                     }
                   ],
+                  {
+                    "text": "64 Redstone, an Iron Shovel, and an Iron",
+                    "color": "white"
+                  },
                   [
                     {
-                      "text": "and a ",
+                      "text": "Pickaxe",
+                      "color": "white"
+                    },
+                    {
+                      "text": " with",
                       "color": "gray"
                     },
                     {
-                      "text": "Stone Pickaxe and Shovel",
-                      "color": "white"
-                    },
-                    {
-                      "text": " with"
-                    }
-                  ],
-                  [
-                    {
-                      "text": "Efficiency I",
+                      "text": " Unbreaking III",
                       "color": "dark_purple"
                     },
                     {
-                      "text": ". You cannot be seen by",
+                      "text": " and",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Efficiency I",
+                      "color": "dark_purple"
+                    },
+                    {
+                      "text": ".",
                       "color": "gray"
                     }
                   ],
                   [
+                    {
+                      "text": "You cannot be seen by ",
+                      "color": "gray"
+                    },
                     {
                       "text": "All-Seeing Eyes",
                       "color": "light_purple"
                     },
                     {
-                      "text": "."
+                      "text": ".",
+                      "color": "gray"
                     }
                   ]
                 ]
@@ -590,73 +568,41 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:book",
+            "name": "minecraft:glass_bottle",
             "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "set_nbt",
-                "tag": "{pickup:1b,augment:150}"
-              },
-              {
-                "function": "set_name",
-                "name": [
-                  {
-                    "text": "Cram Session",
-                    "color": "gray",
-                    "bold": true
-                  }
-                ]
-              },
-              {
-                "function": "set_lore",
-                "lore": [
-                  {
-                    "text": "------------------------",
-                    "color": "blue"
-                  },
-                  {
-                    "text": "After 15 minutes, gain 10 XP Levels.",
-                    "color": "gray"
-                  }
-                ]
-              }
-            ],
-            "conditions": [
                 {
-                  "condition": "minecraft:any_of",
-                  "terms": [
+                  "function": "set_count",
+                  "count": 1
+                },
+                {
+                  "function": "set_nbt",
+                  "tag": "{HideFlags:1,pickup:1b,augment:34b}"
+                },
+                {
+                  "function": "set_name",
+                  "name": [
                     {
-                      "condition": "minecraft:entity_scores",
-                      "entity": "this",
-                      "scores": {
-                        "uhcp_a_patron": 3
-                      }
+                      "text": "Bottled Knowledge",
+                      "color": "gray",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "function": "set_lore",
+                  "lore": [
+                    {
+                      "text": "------------------------",
+                      "color": "blue",
+                      "bold": true
                     },
                     {
-                      "condition": "minecraft:all_of",
-                      "terms": [
-                        {
-                          "condition": "minecraft:inverted",
-                          "term": {
-                            "condition": "minecraft:entity_scores",
-                            "entity": "this",
-                            "scores": {
-                              "uhcp_a_patron": 3
-                            }
-                          }
-                        },
-                        {
-                          "condition": "minecraft:entity_scores",
-                          "entity": "this",
-                          "scores": {
-                            "uhcp_a_choosingAugment": 1
-                          }
-                        }
-                      ]
+                      "text": "Gain 35",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Bottles o' Enchanting",
+                      "color": "white"
                     }
                   ]
                 }
@@ -668,7 +614,7 @@
             "functions": [
               {
                 "function": "minecraft:set_name",
-                "name": "Take Aim I"
+                "name": "Take Aim"
               }
             ],
             "conditions": [

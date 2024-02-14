@@ -2030,6 +2030,44 @@
               ]
             }
           ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:150}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Cram Session",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                {
+                  "text": "After 15 minutes, gain 10 XP Levels.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
         }
       ]
     }

@@ -69,7 +69,7 @@ execute if score @s uhcp_a_count matches 1.. run return 26
 execute store success score @s uhcp_a_count run clear @s minecraft:chest{augment:29b} 1
 execute if score @s uhcp_a_count matches 1.. run return 29
 
-execute store success score @s uhcp_a_count run clear @s minecraft:leather_boots{augment:30b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:feather{augment:30b} 1
 execute if score @s uhcp_a_count matches 1.. run return 30
 
 execute store success score @s uhcp_a_count run clear @s minecraft:iron_trapdoor{augment:32b} 1
@@ -207,6 +207,9 @@ execute if score @s uhcp_a_count matches 1.. run return 147
 
 execute store success score @s uhcp_a_count run clear @s minecraft:amethyst_shard{augment:148s} 1
 execute if score @s uhcp_a_count matches 1.. run return 148
+
+execute store success score @s uhcp_a_count run clear @s minecraft:book{augment:150s} 1
+execute if score @s uhcp_a_count matches 1.. run return 150
 
 # Prismatic Augments
 execute store success score @s uhcp_a_count run clear @s minecraft:bow{augment:201s} 1

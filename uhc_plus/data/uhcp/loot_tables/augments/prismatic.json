@@ -931,51 +931,31 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Power II / Infinity",
+                    "text": " Power II",
                     "color": "dark_purple"
                   },
                   {
-                    "text": ",",
+                    "text": " and 64 ",
                     "color": "gray"
                   },
                   {
-                    "text": " ",
-                    "color": "red"
-                  }
-                ],
-                [
-                  {
-                    "text": "1 Arrow, 8 Tipped Arrow (",
-                    "color": "white"
-                  },
-                  {
-                    "text": "Weakness",
-                    "color": "yellow"
-                  },
-                  {
-                    "text": "),",
-                    "color": "white"
-                  }
-                ],
-                [
-                  {
-                    "text": "and 8",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Tipped Arrow (",
-                    "color": "white"
-                  },
-                  {
-                    "text": "Instant Damage",
-                    "color": "yellow"
-                  },
-                  {
-                    "text": ")",
+                    "text": " arrows",
                     "color": "white"
                   },
                   {
                     "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Your arrow limit is ",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "raised to 64.",
                     "color": "gray"
                   }
                 ]
@@ -1390,7 +1370,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " +30🖤",
+                    "text": " +20🖤",
                     "color": "yellow"
                   },
                   {
