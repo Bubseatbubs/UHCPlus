@@ -7,6 +7,5 @@ execute if score %uhcp_sLFound uhcp_itemInv matches 1 run function uhcp:augments
 execute if score %uhcp_sLSlot uhcp_itemCount matches ..0 run return fail
 
 # Run for next slot
-scoreboard players add %uhcp_sLSlot uhcp_itemInv 1
-data remove storage uhcp:solo_level InventoryWork[0]
+data remove storage uhcp:solo_level InventoryWork[-1]
 function uhcp:augments/effects/prismatic/sololeveling/inventory/search
