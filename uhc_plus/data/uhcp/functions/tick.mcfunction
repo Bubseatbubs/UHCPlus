@@ -58,6 +58,7 @@ execute as @a[scores={uhcp_a_selectedAugment=202}] at @s if block ~ ~-1 ~ froste
 execute as @a[scores={uhcp_a_selectedAugment=202}] at @s if block ~ ~-1 ~ blue_ice run function uhcp:augments/effects/prismatic/coldblooded/effect
 execute as @a[scores={uhcp_a_selectedAugment=202}] at @s if block ~ ~-1 ~ packed_ice run function uhcp:augments/effects/prismatic/coldblooded/effect
 execute as @a[scores={uhcp_a_selectedAugment=30}] at @s unless entity @a[nbt={Inventory:[{Slot:100b}]}] run function uhcp:augments/effects/gold/unburdened/effect
+execute as @a[scores={uhcp_a_selectedAugment=16}] at @s if entity @a[scores={hearts=..20}] run function uhcp:augments/effects/gold/knifesedge/effect
 
 # Augment Countdown/Functions
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_augmentCountdown uhcp_gameTime matches 0.. as @a[tag=UHCP_ChoosingItem,scores={uhcp_a_leave=1..}] run function uhcp:augments/left

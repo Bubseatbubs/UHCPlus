@@ -42,6 +42,9 @@ execute if score @s uhcp_a_count matches 1.. run return 13
 execute store success score @s uhcp_a_count run clear @s minecraft:apple{augment:15b} 1
 execute if score @s uhcp_a_count matches 1.. run return 15
 
+execute store success score @s uhcp_a_count run clear @s minecraft:iron_sword{augment:16b} 1
+execute if score @s uhcp_a_count matches 1.. run return 16
+
 execute store success score @s uhcp_a_count run clear @s minecraft:shield{augment:17b} 1
 execute if score @s uhcp_a_count matches 1.. run return 17
 

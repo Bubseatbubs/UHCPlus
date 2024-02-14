@@ -2095,6 +2095,67 @@
               ]
             }
           ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:2,pickup:1b,augment:16b}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Knife's Edge",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Strength",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " whenever  you"
+                  }
+                ],
+                [
+                  {
+                    "text": "are at ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "10❤️",
+                    "color": "red"
+                  },
+                  {
+                    "text": " or below.",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
         }
       ]
     }

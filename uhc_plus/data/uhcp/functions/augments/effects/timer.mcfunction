@@ -10,6 +10,7 @@ execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selected
 execute if score %time uhcp_gameTime matches 3600 as @a[scores={uhcp_a_selectedAugment=101}] run function uhcp:augments/effects/silver/afk/freedom
 execute if score %time uhcp_gameTime matches 3600 as @a[scores={uhcp_a_selectedAugment=108}] run function uhcp:augments/effects/silver/drunkenstupor/cure
 execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=120}] run function uhcp:augments/effects/silver/onthehunt
+execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=207}] run function uhcp:augments/effects/prismatic/gasgasgas/speed
 execute if score %time uhcp_gameTime matches 36000 as @a[scores={uhcp_a_selectedAugment=130}] run function uhcp:augments/effects/silver/supplydrop
 execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selectedAugment=214}] run function uhcp:augments/effects/prismatic/netherborn/portal
 execute if score %time uhcp_gameTime matches 42000 as @a[scores={uhcp_a_selectedAugment=43}] at @s run function uhcp:augments/effects/gold/mansbestfriend/giveloot
