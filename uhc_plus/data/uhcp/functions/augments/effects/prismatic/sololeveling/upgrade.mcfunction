@@ -1,5 +1,4 @@
 # Find items to upgrade
-scoreboard players set %uhcp_sLSlot uhcp_itemInv 0
 execute unless entity @s[tag=UHCP_SLModify] run data modify storage uhcp:solo_level Inventory set from entity @s Inventory
 data modify storage uhcp:solo_level InventoryWork set from storage uhcp:solo_level Inventory
 execute store result score %uhcp_sLSlot uhcp_itemCount run data get storage uhcp:solo_level Inventory

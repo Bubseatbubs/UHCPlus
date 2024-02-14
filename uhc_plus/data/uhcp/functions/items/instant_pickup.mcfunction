@@ -1,5 +1,7 @@
+# Force items to be picked up
 tag @s add UHCP_BeingPickedUp
-execute at @s on origin unless entity @s[scores={uhcp_death=1..}] run data modify entity @e[tag=UHCP_BeingPickedUp,sort=nearest,limit=1] Owner set from entity @s UUID
-data modify entity @s PickupDelay set value 0s
-execute at @s on origin run tp @e[tag=UHCP_BeingPickedUp] @s
+tag @s add UHCP_ItemPickup
+scoreboard players set %uhcp_itemDrop uhcp_initStatus 0
+execute store result score %uhcp_itemDrop uhcp_initStatus on origin run function uhcp:items/instant_pickup/pickup
+execute if score %uhcp_itemDrop uhcp_initStatus matches 0 run function uhcp:items/instant_pickup/leave
 tag @s remove UHCP_BeingPickedUp

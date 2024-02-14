@@ -1,6 +1,6 @@
 # Search
 data modify storage uhcp:compass Work set from storage uhcp:compass Compass.hand[1].tag.UUID
-execute store success score %uhcp_compassID uhcp_itemInv run data modify storage uhcp:compass Work set from storage uhcp:compass Track[0].UUID
+execute store success score %uhcp_compassID uhcp_itemInv run data modify storage uhcp:compass Work set from storage uhcp:compass Track[-1].UUID
 execute if score %uhcp_compassID uhcp_itemInv matches 0 run return 1
 scoreboard players remove %uhcp_compassTrack uhcp_itemInv 1
 execute if score %uhcp_compassTrack uhcp_itemInv matches ..0 run return 0

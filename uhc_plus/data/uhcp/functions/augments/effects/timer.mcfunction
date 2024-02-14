@@ -1,7 +1,6 @@
 scoreboard players remove @a[scores={uhcp_a_timer=0..2147483647}] uhcp_a_timer 1
 
 # One Time Effects
-
 execute if score %time uhcp_gameTime matches 42000 as @a[scores={uhcp_a_selectedAugment=143}] run function uhcp:augments/effects/silver/delayedprotection
 execute if score %time uhcp_gameTime matches 9600 as @a[scores={uhcp_a_selectedAugment=18}] run function uhcp:augments/effects/gold/latelooter/haste
 execute if score %time uhcp_gameTime matches 42000 as @a[scores={uhcp_a_selectedAugment=145}] run function uhcp:augments/effects/silver/secondwind

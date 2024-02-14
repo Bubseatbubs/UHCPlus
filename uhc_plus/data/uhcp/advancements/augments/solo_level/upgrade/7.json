@@ -13,6 +13,7 @@
 								"predicate": {
 									"type_specific": {
 										"type": "player",
+										"gamemode": "survival",
 										"level": {
 											"min": 14
 										}

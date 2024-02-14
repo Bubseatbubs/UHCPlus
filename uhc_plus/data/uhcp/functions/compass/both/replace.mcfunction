@@ -10,7 +10,7 @@ execute if score %uhcp_compassAge uhcp_itemInv matches 61.. run function uhcp:co
 execute if score %uhcp_compassAge uhcp_itemInv matches 0..60 run function uhcp:compass/both/age/mainhand
 
 data modify storage uhcp:compass Work set value [I;-1,-1,-1,-1]
-execute store success score %uhcp_compassID uhcp_itemInv run data modify storage uhcp:compass Work set from storage uhcp:compass Compass.hand[0].tag.UUID
+execute store success score %uhcp_compassID uhcp_itemInv run data modify storage uhcp:compass Work set from storage uhcp:compass Compass.hand[1].tag.UUID
 execute if score %uhcp_compassID uhcp_itemInv matches 0 run function uhcp:compass/replace/hand1/assign
 execute if score %uhcp_compassID uhcp_itemInv matches 1 run function uhcp:compass/replace/hand1/compare
 
