@@ -52,7 +52,7 @@ execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:update_gold
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
 execute as @a[scores={uhcp_lavaTimeInterval=1..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
 execute as @a[scores={uhcp_lavaMaxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
-execute as @a[scores={uhcp_a_gloryOfRa=10..}] at @s run function uhcp:augments/effects/prismatic/gloryofra/giveloot
+execute as @a[scores={uhcp_a_gloryOfRa=9..}] at @s run function uhcp:augments/effects/prismatic/gloryofra/giveloot
 execute as @a[scores={uhcp_a_selectedAugment=202}] at @s if block ~ ~-1 ~ ice run function uhcp:augments/effects/prismatic/coldblooded/effect
 execute as @a[scores={uhcp_a_selectedAugment=202}] at @s if block ~ ~-1 ~ frosted_ice run function uhcp:augments/effects/prismatic/coldblooded/effect
 execute as @a[scores={uhcp_a_selectedAugment=202}] at @s if block ~ ~-1 ~ blue_ice run function uhcp:augments/effects/prismatic/coldblooded/effect
