@@ -63,9 +63,6 @@ execute if score @s uhcp_a_count matches 1.. run return 22
 execute store success score @s uhcp_a_count run clear @s minecraft:diamond_block{augment:26b} 1
 execute if score @s uhcp_a_count matches 1.. run return 26
 
-execute store success score @s uhcp_a_count run clear @s minecraft:light_gray_dye{augment:27b} 1
-execute if score @s uhcp_a_count matches 1.. run return 27
-
 execute store success score @s uhcp_a_count run clear @s minecraft:chest{augment:29b} 1
 execute if score @s uhcp_a_count matches 1.. run return 29
 
@@ -107,9 +104,6 @@ execute if score @s uhcp_a_count matches 1.. run return 43
 
 execute store success score @s uhcp_a_count run clear @s minecraft:white_dye{augment:44b} 1
 execute if score @s uhcp_a_count matches 1.. run return 44
-
-execute store success score @s uhcp_a_count run clear @s minecraft:glass{augment:208s} 1
-execute if score @s uhcp_a_count matches 1.. run return 45
 
 # Silver Augments
 execute store success score @s uhcp_a_count run clear @s minecraft:slime_ball{augment:100s} 1

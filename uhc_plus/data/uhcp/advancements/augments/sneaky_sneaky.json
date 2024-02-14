@@ -26,7 +26,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "uhcp_a_selectedAugment": 27
+                "uhcp_a_selectedAugment": 44
               }
             },
             {
