@@ -89,7 +89,6 @@ execute as @a if score @s uhcp_a_selectedAugment matches 41 run tellraw @a[tag=U
 execute as @a if score @s uhcp_a_selectedAugment matches 42 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Diamonds in the Rough","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_a_selectedAugment matches 43 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Man's Best Friend","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_a_selectedAugment matches 44 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Sneaky Sneaky","color":"gold"},{"text":"!","color":"white"}]
-execute as @a if score @s uhcp_a_selectedAugment matches 45 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Glass Cannon","color":"gold"},{"text":"!","color":"white"}]
 
 # Prismatic Augments
 execute as @a if score @s uhcp_a_selectedAugment matches 200 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Beastmaster","color":"gold"},{"text":"!","color":"white"}]
