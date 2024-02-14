@@ -197,7 +197,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "Lucky Looter",
+                  "text": "Lucky Hunt",
                   "color": "gray",
                   "bold": true
                 }
@@ -537,7 +537,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "Gapple Gap",
+                  "text": "Gapple Gap II",
                   "color": "gray",
                   "bold": true
                 }
@@ -1249,7 +1249,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "Bottle Smasher",
+                  "text": "Bottled Knowledge",
                   "color": "gray",
                   "bold": true
                 }
@@ -2047,7 +2047,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:leather_boots",
+          "name": "minecraft:feather",
           "functions": [
             {
               "function": "set_count",
