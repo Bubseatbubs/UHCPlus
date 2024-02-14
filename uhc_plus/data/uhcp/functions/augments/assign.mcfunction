@@ -69,6 +69,9 @@ execute if score @s uhcp_a_count matches 1.. run return 27
 execute store success score @s uhcp_a_count run clear @s minecraft:chest{augment:29b} 1
 execute if score @s uhcp_a_count matches 1.. run return 29
 
+execute store success score @s uhcp_a_count run clear @s minecraft:leather_boots{augment:30b} 1
+execute if score @s uhcp_a_count matches 1.. run return 30
+
 execute store success score @s uhcp_a_count run clear @s minecraft:iron_trapdoor{augment:32b} 1
 execute if score @s uhcp_a_count matches 1.. run return 32
 

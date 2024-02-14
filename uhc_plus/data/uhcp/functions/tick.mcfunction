@@ -54,6 +54,10 @@ execute as @a[scores={uhcp_lavaTimeInterval=1..}] run function uhcp:augments/eff
 execute as @a[scores={uhcp_lavaMaxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
 execute as @a[scores={uhcp_a_gloryOfRa=10..}] at @s run function uhcp:augments/effects/prismatic/gloryofra/giveloot
 execute as @a[scores={uhcp_a_selectedAugment=202}] at @s if block ~ ~-1 ~ ice run function uhcp:augments/effects/prismatic/coldblooded/effect
+execute as @a[scores={uhcp_a_selectedAugment=202}] at @s if block ~ ~-1 ~ frosted_ice run function uhcp:augments/effects/prismatic/coldblooded/effect
+execute as @a[scores={uhcp_a_selectedAugment=202}] at @s if block ~ ~-1 ~ blue_ice run function uhcp:augments/effects/prismatic/coldblooded/effect
+execute as @a[scores={uhcp_a_selectedAugment=202}] at @s if block ~ ~-1 ~ packed_ice run function uhcp:augments/effects/prismatic/coldblooded/effect
+execute as @a[scores={uhcp_a_selectedAugment=30}] at @s unless entity @a[nbt={Inventory:[{Slot:100b}]}] run function uhcp:augments/effects/gold/fleetfooted/effect
 
 # Augment Countdown/Functions
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_augmentCountdown uhcp_gameTime matches 0.. as @a[tag=UHCP_ChoosingItem,scores={uhcp_a_leave=1..}] run function uhcp:augments/left
