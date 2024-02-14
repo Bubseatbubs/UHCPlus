@@ -63,11 +63,11 @@ execute if score @s uhcp_a_count matches 1.. run return 22
 execute store success score @s uhcp_a_count run clear @s minecraft:diamond_block{augment:26b} 1
 execute if score @s uhcp_a_count matches 1.. run return 26
 
-execute store success score @s uhcp_a_count run clear @s minecraft:light_gray_dye{augment:27b} 1
-execute if score @s uhcp_a_count matches 1.. run return 27
-
 execute store success score @s uhcp_a_count run clear @s minecraft:chest{augment:29b} 1
 execute if score @s uhcp_a_count matches 1.. run return 29
+
+execute store success score @s uhcp_a_count run clear @s minecraft:leather_boots{augment:30b} 1
+execute if score @s uhcp_a_count matches 1.. run return 30
 
 execute store success score @s uhcp_a_count run clear @s minecraft:iron_trapdoor{augment:32b} 1
 execute if score @s uhcp_a_count matches 1.. run return 32
@@ -104,9 +104,6 @@ execute if score @s uhcp_a_count matches 1.. run return 43
 
 execute store success score @s uhcp_a_count run clear @s minecraft:white_dye{augment:44b} 1
 execute if score @s uhcp_a_count matches 1.. run return 44
-
-execute store success score @s uhcp_a_count run clear @s minecraft:glass{augment:208s} 1
-execute if score @s uhcp_a_count matches 1.. run return 45
 
 # Silver Augments
 execute store success score @s uhcp_a_count run clear @s minecraft:slime_ball{augment:100s} 1
@@ -212,6 +209,9 @@ execute if score @s uhcp_a_count matches 1.. run return 148
 execute store success score @s uhcp_a_count run clear @s minecraft:bow{augment:201s} 1
 execute if score @s uhcp_a_count matches 1.. run return 201
 
+execute store success score @s uhcp_a_count run clear @s minecraft:ice{augment:202s} 1
+execute if score @s uhcp_a_count matches 1.. run return 202
+
 execute store success score @s uhcp_a_count run clear @s minecraft:blaze_powder{augment:203s} 1
 execute if score @s uhcp_a_count matches 1.. run return 203
 
@@ -254,13 +254,10 @@ execute if score @s uhcp_a_count matches 1.. run return 217
 execute store success score @s uhcp_a_count run clear @s minecraft:nether_star{augment:218s} 1
 execute if score @s uhcp_a_count matches 1.. run return 218
 
-execute store success score @s uhcp_a_count run clear @s minecraft:shield{augment:220s} 1
-execute if score @s uhcp_a_count matches 1.. run return 220
-
 execute store success score @s uhcp_a_count run clear @s minecraft:netherite_upgrade_smithing_template{augment:222s} 1
 execute if score @s uhcp_a_count matches 1.. run return 222
 
-execute store success score @s uhcp_a_count run clear @s minecraft:soul_lantern{augment:223s} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:apple{augment:223s} 1
 execute if score @s uhcp_a_count matches 1.. run return 223
 
 execute store success score @s uhcp_a_count run clear @s minecraft:chest{augment:224s} 1
@@ -295,3 +292,9 @@ execute if score @s uhcp_a_count matches 1.. run return 239
 
 execute store success score @s uhcp_a_count run clear @s minecraft:golden_sword{augment:240s} 1
 execute if score @s uhcp_a_count matches 1.. run return 240
+
+execute store success score @s uhcp_a_count run clear @s minecraft:feather{augment:241s} 1
+execute if score @s uhcp_a_count matches 1.. run return 241
+
+execute store success score @s uhcp_a_count run clear @s minecraft:diamond{augment:242s} 1
+execute if score @s uhcp_a_count matches 1.. run return 242

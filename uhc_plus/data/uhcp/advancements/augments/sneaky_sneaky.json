@@ -26,7 +26,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "uhcp_a_selectedAugment": 221
+                "uhcp_a_selectedAugment": 44
               }
             },
             {
@@ -43,7 +43,7 @@
       }
     },
     "rewards": {
-      "function": "uhcp:augments/effects/prismatic/sneakysneakysneaky/sneaking"
+      "function": "uhcp:augments/effects/gold/sneakysneaky/sneaking"
     }
   }
   

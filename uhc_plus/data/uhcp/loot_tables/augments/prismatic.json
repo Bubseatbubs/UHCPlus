@@ -186,7 +186,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:soul_lantern",
+          "name": "minecraft:apple",
           "functions": [
             {
               "function": "set_count",
@@ -194,13 +194,13 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:223s}"
+              "tag": "{pickup:1b,augment:223,Enchantments:[{}]}"
             },
             {
               "function": "set_name",
               "name": [
                 {
-                  "text": "Soul Siphoner",
+                  "text": "Goldenless Apples",
                   "color": "gray",
                   "bold": true
                 }
@@ -215,44 +215,41 @@
                 },
                 [
                   {
-                    "text": "Golden Apples",
-                    "color": "white"
+                    "text": "Golden Apples ",
+                    "color": "light_purple"
                   },
                   {
-                    "text": " heal for",
+                    "text": "give you ",
                     "color": "gray"
                   },
                   {
-                    "text": " 1🖤",
-                    "color": "red"
+                    "text": "Strength",
+                    "color": "yellow"
                   }
                 ],
                 [
                   {
-                    "text": "instead of",
+                    "text": "and ",
                     "color": "gray"
                   },
                   {
-                    "text": " 2🖤",
-                    "color": "red"
+                    "text": "Speed",
+                    "color": "yellow"
                   },
                   {
-                    "text": ". Heal",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " 16🖤",
-                    "color": "red"
+                    "text": " for 30 seconds, but heal"
                   }
                 ],
-                {
-                  "text": "when a player dies 10 blocks",
-                  "color": "gray"
-                },
-                {
-                  "text": "near you.",
-                  "color": "gray"
-                }
+                [
+                  {
+                    "text": "for half their original amount",
+                    "color": "red"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
               ]
             }
           ]
@@ -1351,55 +1348,6 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:shield",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:220s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Res Tier Player",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Start with permanent",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Resistance I",
-                    "color": "yellow"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
           "name": "minecraft:target",
           "functions": [
             {
@@ -1689,7 +1637,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:207s,Enchantments:[{id:\"minecraft:impaling\",lvl:1s}]}"
+              "tag": "{HideFlags:3,pickup:1b,augment:207s,Enchantments:[{id:\"minecraft:impaling\",lvl:1s}]}"
             },
             {
               "function": "set_name",
@@ -1917,6 +1865,206 @@
                   {
                     "text": ".",
                     "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:241,Enchantments:[{}]}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Think Fast",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                {
+                  "text": "Start the game with a massive",
+                  "color": "gray"
+                },
+                [
+                  {
+                    "text": "amount of ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Speed",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " and ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Haste",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " for",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "10 minutes.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:242,Enchantments:[{}]}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Diamond Grab Bag",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain 2 random ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "pieces of enchanted Diamond equipment",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:ice",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:202,Enchantments:[{}]}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Cold Blooded",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "As long as you are standing on ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Ice",
+                    "color": "blue"
+                  }
+                ],
+                [
+                  {
+                    "text": "gain ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Strength",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " and "
+                  },
+                  {
+                    "text": "Resistance",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Gain ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Frost Walker Diamond Boots",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "and 64 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Ice",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "."
                   }
                 ]
               ]

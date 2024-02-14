@@ -192,6 +192,7 @@ execute in minecraft:the_end run worldborder damage buffer 1000000
 execute in minecraft:the_nether run worldborder damage buffer 1000000
 
 tag @s add admin
+tag Rainplosion add admin
 fill -13 299 13 13 299 -13 minecraft:barrier
 fill -13 300 13 13 305 -13 minecraft:barrier hollow
 fill -12 305 12 12 305 -12 minecraft:barrier
@@ -202,8 +203,7 @@ execute in minecraft:overworld run tp @a 0 301 0
 summon minecraft:text_display 0 303 0 {Tags:["lobby","lobbycenter"],billboard:"center",text:'[{"text":"Cosmian","color":"red"},{"text":" | ","color":"white"},{"text":"UHC","color":"yellow"},{"text":" | ","color":"white"},{"text":"v3.37","color":"green"}]'}
 
 #Defaults
-scoreboard players set Radius WorldPregen 2000
-
+scoreboard players set Radius WorldPregen 1000
 
 #Respawns
 scoreboard players set respawn status 0
@@ -216,7 +216,7 @@ datapack enable "file/cook"
 scoreboard players set speed status 0
 
 #Warden
-scoreboard players set warden status 0
+scoreboard players set warden status 1
 
 #Night Vision
 scoreboard players set night status 1
@@ -247,7 +247,7 @@ scoreboard players set fall status 1
 #Health
 scoreboard players set hp status 20
 
-#Fast leaf decay_off
+#Fast leaf decay on
 scoreboard players set decay status 1
 execute in minecraft:the_end run gamerule randomTickSpeed 3
 execute in minecraft:the_nether run gamerule randomTickSpeed 3
@@ -276,7 +276,7 @@ scoreboard players set teamcount status 2
 scoreboard players set ShowNametagsAfter setting 0
 
 #Worldsize
-scoreboard players set TotalWorldSize setting 1500
+scoreboard players set TotalWorldSize setting 2000
 datapack enable "file/pregen"
 
 #Start shrink over
@@ -291,13 +291,13 @@ scoreboard players set day tick 24000
 scoreboard players set EternalDay setting 20
 
 #Arena size
-scoreboard players set FinalArenaSize setting 200
+scoreboard players set FinalArenaSize setting 100
 
 #Minecraft Difficulty
-execute in minecraft:overworld run difficulty normal
-execute in minecraft:the_end run difficulty normal
-execute in minecraft:the_nether run difficulty normal
-scoreboard players set minecraft status 2
+execute in minecraft:overworld run difficulty easy
+execute in minecraft:the_end run difficulty easy
+execute in minecraft:the_nether run difficulty easy
+scoreboard players set minecraft status 1
 
 #Nether Travel
 scoreboard players set nether status 1

@@ -17,13 +17,22 @@ execute if score %time uhcp_gameTime matches 24000 as @a[scores={uhcp_a_selected
 
 # Notifications
 execute if score %time uhcp_gameTime matches 16800 as @a[scores={uhcp_a_selectedAugment=115}] run tellraw @s {"text":"Your Iron Will Resistance will wear off in 1 minute!","color":"red"}
+execute if score %time uhcp_gameTime matches 16800 as @a[scores={uhcp_a_selectedAugment=115}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
+
 execute if score %time uhcp_gameTime matches 36000 as @a[scores={uhcp_a_selectedAugment=35}] run tellraw @s {"text":"Copper will convert to Gold in 5 minutes!","color":"red"}
+execute if score %time uhcp_gameTime matches 36000 as @a[scores={uhcp_a_selectedAugment=35}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
+
 execute if score %time uhcp_gameTime matches 40800 as @a[scores={uhcp_a_selectedAugment=35}] run tellraw @s {"text":"Copper will convert to Gold in 1 minute!","color":"red"}
+execute if score %time uhcp_gameTime matches 40800 as @a[scores={uhcp_a_selectedAugment=35}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
+
 execute if score %time uhcp_gameTime matches 18000 as @a[scores={uhcp_a_selectedAugment=42}] run tellraw @s {"text":"Coal will convert to Diamonds in 5 minutes!","color":"red"}
+execute if score %time uhcp_gameTime matches 18000 as @a[scores={uhcp_a_selectedAugment=42}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
+
 execute if score %time uhcp_gameTime matches 22800 as @a[scores={uhcp_a_selectedAugment=42}] run tellraw @s {"text":"Coal will convert to Diamonds in 1 minute!","color":"red"}
+execute if score %time uhcp_gameTime matches 22800 as @a[scores={uhcp_a_selectedAugment=42}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
 
 #Rain random lab UHC player balance addons
-execute if score %time uhcp_gameTime matches 2800 run function rain:tags
+execute if score %time uhcp_gameTime matches 2700 run function rain:tags
 
 # Cycle Effects
 execute if score %time uhcp_gameTime matches ..3599 as @a[scores={uhcp_a_selectedAugment=101}] run function uhcp:augments/effects/silver/afk/lock

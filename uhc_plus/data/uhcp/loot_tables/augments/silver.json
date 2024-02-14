@@ -1446,7 +1446,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{pickup:1b,augment:140s}"
+              "tag": "{HideFlags:128,pickup:1b,augment:140s}"
             },
             {
               "function": "set_name",

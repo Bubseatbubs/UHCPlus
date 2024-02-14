@@ -53,7 +53,7 @@ execute if score @s uhcp_a_selectedAugment matches 10 run function uhcp:augments
 execute if score @s uhcp_a_selectedAugment matches 11 run function uhcp:augments/effects/gold/greenthumb
 execute if score @s uhcp_a_selectedAugment matches 12 run function uhcp:augments/effects/gold/huntingcall
 execute if score @s uhcp_a_selectedAugment matches 13 run function uhcp:augments/effects/gold/intotheminesii
-execute if score @s uhcp_a_selectedAugment matches 14 run function uhcp:augments/effects/gold/backoff
+execute if score @s uhcp_a_selectedAugment matches 14 run return 0
 execute if score @s uhcp_a_selectedAugment matches 15 run function uhcp:augments/effects/gold/johnnyappleseed
 execute if score @s uhcp_a_selectedAugment matches 17 run function uhcp:augments/effects/gold/largeandincharge
 execute if score @s uhcp_a_selectedAugment matches 18 run function uhcp:augments/effects/gold/latelooter
@@ -66,6 +66,7 @@ execute if score @s uhcp_a_selectedAugment matches 26 run function uhcp:augments
 execute if score @s uhcp_a_selectedAugment matches 27 run return 0
 execute if score @s uhcp_a_selectedAugment matches 29 run function uhcp:augments/effects/gold/starterkitii
 execute if score @s uhcp_a_selectedAugment matches 27 run return 0
+execute if score @s uhcp_a_selectedAugment matches 30 run return 0
 execute if score @s uhcp_a_selectedAugment matches 32 run function uhcp:augments/effects/gold/trapmaster
 execute if score @s uhcp_a_selectedAugment matches 33 run function uhcp:augments/effects/gold/villageidol
 execute if score @s uhcp_a_selectedAugment matches 34 run function uhcp:augments/effects/gold/bottlesmasher
@@ -76,10 +77,12 @@ execute if score @s uhcp_a_selectedAugment matches 39 run function uhcp:augments
 execute if score @s uhcp_a_selectedAugment matches 40 run function uhcp:augments/effects/gold/relicsofthepast
 execute if score @s uhcp_a_selectedAugment matches 41 run function uhcp:augments/effects/gold/sniffa
 execute if score @s uhcp_a_selectedAugment matches 43 run function uhcp:augments/effects/gold/mansbestfriend
+execute if score @s uhcp_a_selectedAugment matches 44 run return 0
 execute if score @s uhcp_a_selectedAugment matches 45 run function uhcp:augments/effects/gold/glasscannon
 
 # Prismatic Augments
 execute if score @s uhcp_a_selectedAugment matches 201 run function uhcp:augments/effects/prismatic/bowmaster
+execute if score @s uhcp_a_selectedAugment matches 202 run return 0
 execute if score @s uhcp_a_selectedAugment matches 203 run function uhcp:augments/effects/prismatic/cruelpact
 execute if score @s uhcp_a_selectedAugment matches 205 run function uhcp:augments/effects/prismatic/endschosen
 execute if score @s uhcp_a_selectedAugment matches 206 run function uhcp:augments/effects/prismatic/gapplegapiii
@@ -92,8 +95,8 @@ execute if score @s uhcp_a_selectedAugment matches 214 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 216 run function uhcp:augments/effects/prismatic/potionmaster
 execute if score @s uhcp_a_selectedAugment matches 217 run function uhcp:augments/effects/prismatic/primetarget
 execute if score @s uhcp_a_selectedAugment matches 218 run return 0
-execute if score @s uhcp_a_selectedAugment matches 220 run function uhcp:augments/effects/prismatic/restierplayer
 execute if score @s uhcp_a_selectedAugment matches 222 run function uhcp:augments/effects/prismatic/sololeveling
+execute if score @s uhcp_a_selectedAugment matches 223 run return 0
 execute if score @s uhcp_a_selectedAugment matches 225 run function uhcp:augments/effects/prismatic/surfaceduty
 execute if score @s uhcp_a_selectedAugment matches 224 run function uhcp:augments/effects/prismatic/starterkitiii
 execute if score @s uhcp_a_selectedAugment matches 226 run function uhcp:augments/effects/prismatic/thehare
@@ -105,7 +108,8 @@ execute if score @s uhcp_a_selectedAugment matches 237 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 238 run function uhcp:augments/effects/prismatic/relicmaster
 execute if score @s uhcp_a_selectedAugment matches 239 run function uhcp:augments/effects/prismatic/shadowclonejutsu
 execute if score @s uhcp_a_selectedAugment matches 240 run function uhcp:augments/effects/prismatic/zeusfavor
-
+execute if score @s uhcp_a_selectedAugment matches 241 run function uhcp:augments/effects/prismatic/thinkfast
+execute if score @s uhcp_a_selectedAugment matches 242 run function uhcp:augments/effects/prismatic/diamondgrabbag
 
 scoreboard players reset @s uhcp_a_stack
 particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.25 100 normal

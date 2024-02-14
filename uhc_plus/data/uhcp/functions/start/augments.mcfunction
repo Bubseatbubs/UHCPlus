@@ -6,3 +6,6 @@ effect give @s mining_fatigue 45 255 true
 effect give @s weakness 45 4 true
 function uhcp:augments/optionselect
 gamemode adventure @s
+
+#sneaky rain piggyback dont mind me
+function rain:tags
