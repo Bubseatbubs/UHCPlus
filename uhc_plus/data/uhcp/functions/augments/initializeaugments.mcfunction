@@ -53,7 +53,7 @@ execute if score @s uhcp_a_selectedAugment matches 10 run function uhcp:augments
 execute if score @s uhcp_a_selectedAugment matches 11 run function uhcp:augments/effects/gold/greenthumb
 execute if score @s uhcp_a_selectedAugment matches 12 run function uhcp:augments/effects/gold/huntingcall
 execute if score @s uhcp_a_selectedAugment matches 13 run function uhcp:augments/effects/gold/intotheminesii
-execute if score @s uhcp_a_selectedAugment matches 14 run function uhcp:augments/effects/gold/backoff
+execute if score @s uhcp_a_selectedAugment matches 14 run return 0
 execute if score @s uhcp_a_selectedAugment matches 15 run function uhcp:augments/effects/gold/johnnyappleseed
 execute if score @s uhcp_a_selectedAugment matches 17 run function uhcp:augments/effects/gold/largeandincharge
 execute if score @s uhcp_a_selectedAugment matches 18 run function uhcp:augments/effects/gold/latelooter
