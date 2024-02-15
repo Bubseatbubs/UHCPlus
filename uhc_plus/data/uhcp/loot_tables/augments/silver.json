@@ -901,7 +901,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:9b}"
+              "tag": "{pickup:1b,augment:136s}"
             },
             {
               "function": "minecraft:set_name",
@@ -978,7 +978,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:103b}"
+              "tag": "{pickup:1b,augment:103s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1175,7 +1175,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:141}"
+              "tag": "{pickup:1b,augment:141s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1233,7 +1233,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:142}"
+              "tag": "{pickup:1b,augment:142s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1579,78 +1579,6 @@
                   "text": "pool of lava in front of you.",
                   "color": "gray"
                 }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:warped_fungus",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:147s}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": [
-                {
-                  "text": "Parasite",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue"
-                },
-                [
-                  {
-                    "text": "Gain a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " irremovable Fungus ",
-                    "color": "red"
-                  },
-                  {
-                    "text": "on your"
-                  }
-                ],
-                [
-                  {
-                    "text": "head that inflicts ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Hunger",
-                    "color": "red"
-                  },
-                  {
-                    "text": "."
-                  }
-                ],
-                [
-                  {
-                    "text": "Gain permanent "
-                  },
-                  {
-                    "text": "Strength I",
-                    "color": "light_purple"
-                  },
-                  {
-                    "text": "."
-                  }
-                ]
               ]
             }
           ]

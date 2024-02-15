@@ -194,7 +194,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:223,Enchantments:[{}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:223s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "minecraft:set_name",
@@ -397,7 +397,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:225,Enchantments:[{}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:225s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "minecraft:set_name",
@@ -762,7 +762,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:236,Enchantments:[{id:\"minecraft:fortune\",lvl:1s}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:236s,Enchantments:[{id:\"minecraft:fortune\",lvl:1s}]}"
             },
             {
               "function": "minecraft:set_name",
@@ -1108,7 +1108,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:238,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "tag": "{HideFlags:1,pickup:1b,augment:238s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "minecraft:set_name",
@@ -1174,7 +1174,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:241,Enchantments:[{}]}"
+              "tag": "{pickup:1b,augment:241s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "minecraft:set_name",
@@ -1238,7 +1238,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:242,Enchantments:[{}]}"
+              "tag": "{pickup:1b,augment:242s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "minecraft:set_name",
@@ -1286,7 +1286,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:202,Enchantments:[{}]}"
+              "tag": "{pickup:1b,augment:202s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
               "function": "minecraft:set_name",
