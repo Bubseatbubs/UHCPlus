@@ -20,7 +20,7 @@
                   "function": "set_name",
                   "name": [
                     {
-                      "text": "Big Target",
+                      "text": "Center of Attention",
                       "color": "gray",
                       "bold": true
                     }
@@ -133,7 +133,7 @@
                     },
                     [
                       {
-                        "text": "10 Creepers",
+                        "text": "5 Creepers",
                         "color": "dark_red"
                       },
                       {
@@ -143,7 +143,7 @@
                     ],
                     [
                       {
-                        "text": "10 Skeletons",
+                        "text": "5 Skeletons",
                         "color": "dark_red"
                       },
                       {
@@ -151,7 +151,7 @@
                         "color": "gray"
                       },
                       {
-                        "text": " Power II / Infinity",
+                        "text": " Power II",
                         "color": "dark_purple"
                       },
                       {
@@ -165,7 +165,7 @@
                     ],
                     [
                       {
-                        "text": "10 Spiders",
+                        "text": "5 Spiders",
                         "color": "dark_red"
                       },
                       {
@@ -183,7 +183,7 @@
                     ],
                     [
                       {
-                        "text": "10 Zombies",
+                        "text": "5 Zombies",
                         "color": "dark_red"
                       },
                       {
@@ -211,7 +211,7 @@
                       "entity": "this",
                       "scores": {
                         "uhcp_a_choosingAugment": 0,
-                        "uhcp_a_patron": 3
+                        "uhcp_a_patron": 2
                       }
                     },
                     {
@@ -223,7 +223,7 @@
                             "condition": "minecraft:entity_scores",
                             "entity": "this",
                             "scores": {
-                              "uhcp_a_patron": 3
+                              "uhcp_a_patron": 2
                             }
                           }
                         },
@@ -379,15 +379,15 @@
                         "color": "gray"
                       },
                       {
-                        "text": "  Fortune I",
+                        "text": " Fortune I",
                         "color": "dark_purple"
                       },
                       {
-                        "text": "  and ",
+                        "text": " and",
                         "color": "gray"
                       },
                       {
-                        "text": "  Efficiency I",
+                        "text": " Efficiency I",
                         "color": "dark_purple"
                       },
                       {

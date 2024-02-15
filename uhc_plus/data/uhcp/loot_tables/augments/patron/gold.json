@@ -6,21 +6,21 @@
           {
             "type": "minecraft:item",
             "weight": 1,
-            "name": "minecraft:glass_bottle",
+            "name": "minecraft:shield",
             "functions": [
               {
-                "function": "minecraft:set_count",
+                "function": "set_count",
                 "count": 1
               },
               {
-                "function": "minecraft:set_nbt",
+                "function": "set_nbt",
                 "tag": "{pickup:1b,augment:17b}"
               },
               {
-                "function": "minecraft:set_name",
+                "function": "set_name",
                 "name": [
                   {
-                    "text": "Large and in Charge",
+                    "text": "Less than 3",
                     "color": "gray",
                     "bold": true
                   }
@@ -31,17 +31,33 @@
                 "lore": [
                   {
                     "text": "------------------------",
-                    "color": "blue",
-                    "bold": true
+                    "color": "blue"
                   },
                   [
                     {
-                      "text": "Start with",
+                      "text": "Start with an extra",
                       "color": "gray"
                     },
                     {
-                      "text": " +8 max filled 🖤",
+                      "text": " 2 filled 🖤",
                       "color": "red"
+                    },
+                    {
+                      "text": ",",
+                      "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": " 2 empty 🖤",
+                      "color": "red"
+                    },
+                    {
+                      "text": ", and ",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " 2 saturation 🖤"
                     },
                     {
                       "text": ".",
@@ -92,7 +108,7 @@
           {
             "type": "minecraft:item",
             "weight": 1,
-            "name": "minecraft:zombie_head",
+            "name": "minecraft:golden_sword",
             "functions": [
               {
                 "function": "minecraft:set_count",
@@ -156,7 +172,7 @@
                       "entity": "this",
                       "scores": {
                         "uhcp_a_choosingAugment": 0,
-                        "uhcp_a_patron": 3
+                        "uhcp_a_patron": 2
                       }
                     },
                     {
@@ -168,7 +184,7 @@
                             "condition": "minecraft:entity_scores",
                             "entity": "this",
                             "scores": {
-                              "uhcp_a_patron": 3
+                              "uhcp_a_patron": 2
                             }
                           }
                         },
