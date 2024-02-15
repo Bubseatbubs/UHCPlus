@@ -14,7 +14,7 @@
               },
               {
                 "function": "set_nbt",
-                "tag": "{pickup:1b,augment:17b}"
+                "tag": "{pickup:1b,augment:17s}"
               },
               {
                 "function": "set_name",
@@ -116,7 +116,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{pickup:1b,augment:19b}"
+                "tag": "{pickup:1b,augment:19s}"
               },
               {
                 "function": "minecraft:set_name",
@@ -212,7 +212,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{pickup:1b,augment:30b}"
+                "tag": "{pickup:1b,augment:30s}"
               },
               {
                 "function": "minecraft:set_name",
@@ -301,7 +301,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{pickup:1b,augment:13b}"
+                "tag": "{pickup:1b,augment:13s}"
               },
               {
                 "function": "minecraft:set_name",
@@ -387,7 +387,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{pickup:1b,augment:9b}"
+                "tag": "{pickup:1b,augment:9s}"
               },
               {
                 "function": "minecraft:set_name",
@@ -473,7 +473,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{pickup:1b,augment:32b}"
+                "tag": "{pickup:1b,augment:32s}"
               },
               {
                 "function": "minecraft:set_name",
@@ -598,7 +598,7 @@
                 },
                 {
                   "function": "set_nbt",
-                  "tag": "{HideFlags:1,pickup:1b,augment:34b}"
+                  "tag": "{HideFlags:1,pickup:1b,augment:34s}"
                 },
                 {
                   "function": "set_name",
