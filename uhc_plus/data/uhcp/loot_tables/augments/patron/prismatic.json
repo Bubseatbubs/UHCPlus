@@ -133,7 +133,7 @@
                     },
                     [
                       {
-                        "text": "10 Creepers",
+                        "text": "5 Creepers",
                         "color": "dark_red"
                       },
                       {
@@ -143,7 +143,7 @@
                     ],
                     [
                       {
-                        "text": "10 Skeletons",
+                        "text": "5 Skeletons",
                         "color": "dark_red"
                       },
                       {
@@ -151,7 +151,7 @@
                         "color": "gray"
                       },
                       {
-                        "text": " Power II / Infinity",
+                        "text": " Power II",
                         "color": "dark_purple"
                       },
                       {
@@ -165,7 +165,7 @@
                     ],
                     [
                       {
-                        "text": "10 Spiders",
+                        "text": "5 Spiders",
                         "color": "dark_red"
                       },
                       {
@@ -183,7 +183,7 @@
                     ],
                     [
                       {
-                        "text": "10 Zombies",
+                        "text": "5 Zombies",
                         "color": "dark_red"
                       },
                       {
