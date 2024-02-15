@@ -5,8 +5,8 @@ execute store result storage uhcp:compass Compass.hand[1].Count byte 1 run score
 data modify storage uhcp:compass Compass.hand[1].tag.compass_time set value 1b
 
 # Track item in array
-execute if score %uhcp_compassAge uhcp_itemCount matches ..0 run data remove storage uhcp:compass Track[0]
-execute if score %uhcp_compassAge uhcp_itemCount matches 1.. run data modify storage uhcp:compass Track[0].Count set from storage uhcp:compass Compass.hand[1].Count
+execute if score %uhcp_compassAge uhcp_itemCount matches ..0 run data remove storage uhcp:compass Track[-1]
+execute if score %uhcp_compassAge uhcp_itemCount matches 1.. run data modify storage uhcp:compass Track[-1].Count set from storage uhcp:compass Compass.hand[1].Count
 
 # Notification
 function uhcp:compass/notify/0
