@@ -4,20 +4,20 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:emerald",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:20b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Money Money",
@@ -27,7 +27,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -63,20 +63,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:blade_pottery_sherd",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:40b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Relics of the Past",
@@ -86,7 +86,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -112,20 +112,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:feather",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{augment:1b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Birds of a Feather",
@@ -135,7 +135,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -181,128 +181,20 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:golden_sword",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:19b}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Lucky Hunt",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " ",
-                    "color": "red"
-                  },
-                  {
-                    "text": "Looting III / Unbreaking III",
-                    "color": "dark_purple"
-                  }
-                ],
-                [
-                  {
-                    "text": "Golden Sword",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:shield",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:17b}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Large and In Charge",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Start with",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " +8 max filled 🖤",
-                    "color": "red"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:diamond",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:2b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Blood Diamonds",
@@ -312,7 +204,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -346,20 +238,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:leather",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:4b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Cowboy Cosplay",
@@ -369,7 +261,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -409,20 +301,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:gold_nugget",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:7b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Drip Economy II",
@@ -432,7 +324,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -462,20 +354,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:magma_block",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:8b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Fire and Water",
@@ -485,7 +377,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -521,69 +413,20 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:golden_apple",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:9b}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Gapple Gap II",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain 4",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Golden Apples",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:oak_leaves",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:11b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Green Thumb",
@@ -593,7 +436,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -629,69 +472,20 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:miner_pottery_sherd",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:13b}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Into the Mines II",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Diamond Pickaxe",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:apple",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:15b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Johnny Appleseed",
@@ -701,7 +495,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -731,20 +525,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:tnt",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:38b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Oppenheimer",
@@ -754,7 +548,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -798,20 +592,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:clock",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:18b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Late Looter",
@@ -821,7 +615,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -861,20 +655,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:goat_horn",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:12b,instrument:\"minecraft:call_goat_horn\"}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Hunting Call",
@@ -884,7 +678,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -962,20 +756,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:bone",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:43b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Man's Best Friend",
@@ -985,7 +779,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1028,20 +822,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:copper_ingot",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:35b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Copper Collector",
@@ -1051,7 +845,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1087,109 +881,20 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:iron_trapdoor",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:32b}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Trap Master",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "16 Signs, 3 Pistons, 3 Sticky Pistons,",
-                    "color": "white"
-                  }
-                ],
-                {
-                  "text": "64 Redstone, an Iron Shovel, and an Iron",
-                  "color": "white"
-                },
-                [
-                  {
-                    "text": "Pickaxe",
-                    "color": "white"
-                  },
-                  {
-                    "text": " with",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Unbreaking III",
-                    "color": "dark_purple"
-                  },
-                  {
-                    "text": " and",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Efficiency I",
-                    "color": "dark_purple"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "You cannot be seen by ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "All-Seeing Eyes",
-                    "color": "light_purple"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:totem_of_undying",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:33b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Village Idol",
@@ -1199,7 +904,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------"
@@ -1233,20 +938,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:glass_bottle",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{HideFlags:1,pickup:1b,augment:34b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Bottled Knowledge",
@@ -1256,7 +961,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1276,20 +981,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:chest",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{HideFlags:32,pickup:1b,augment:29b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Starter Kit II",
@@ -1299,7 +1004,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1345,20 +1050,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:iron_chestplate",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:22b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Protect Protocol",
@@ -1368,7 +1073,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1394,20 +1099,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:eye_armor_trim_smithing_template",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{HideFlags:162,pickup:1b,augment:21b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Pearly",
@@ -1417,7 +1122,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1443,20 +1148,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:honeycomb",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:0b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Bee Keeper",
@@ -1466,7 +1171,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1492,20 +1197,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:white_dye",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:44b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Sneaky Sneaky",
@@ -1515,7 +1220,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1544,20 +1249,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:diamond_block",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:26b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Shiny Spawn",
@@ -1567,7 +1272,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1597,20 +1302,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:redstone",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:3b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Bloodthirsty",
@@ -1620,7 +1325,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1650,20 +1355,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:barrel",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:37b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Like Fish in a Barrel",
@@ -1673,7 +1378,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1711,20 +1416,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:trident",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{HideFlags:1,pickup:1b,augment:215s}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Poseidon's Blessing",
@@ -1734,7 +1439,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1804,20 +1509,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:sniffer_egg",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:{},augment:{}}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "SNIFFA",
@@ -1827,7 +1532,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1878,20 +1583,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:diamond",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:35b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Diamonds in the Rough",
@@ -1901,7 +1606,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1937,20 +1642,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:bone",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:43}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Man's Best Friend",
@@ -1960,7 +1665,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1997,20 +1702,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:glistering_melon_slice",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:10b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Healing Orbs II",
@@ -2020,7 +1725,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -2045,72 +1750,20 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:feather",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:2,pickup:1b,augment:30b}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Unburdened",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue"
-                },
-                [
-                  {
-                    "text": "Gain ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Speed II",
-                    "color": "yellow"
-                  },
-                  {
-                    "text": " whenever you are",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "not wearing any boots.",
-                  "color": "gray"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:iron_sword",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{HideFlags:2,pickup:1b,augment:16b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Knife's Edge",
@@ -2120,7 +1773,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -2156,6 +1809,11 @@
               ]
             }
           ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 8,
+          "name": "uhcp:augments/patron/gold"
         }
       ]
     }

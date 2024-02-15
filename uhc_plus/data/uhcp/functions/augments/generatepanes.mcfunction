@@ -6,7 +6,6 @@ item replace entity @s hotbar.0 with black_stained_glass_pane{display:{Name:'{"t
 item replace entity @s hotbar.1 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
 item replace entity @s hotbar.2 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
 item replace entity @s hotbar.6 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
-item replace entity @s hotbar.7 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
 item replace entity @s hotbar.8 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
 item replace entity @s inventory.0 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1
 item replace entity @s inventory.1 with black_stained_glass_pane{display:{Name:'{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'},HideFlags:255,pickup:1b,uhcp_glass:1b} 1

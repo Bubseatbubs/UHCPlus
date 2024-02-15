@@ -4,20 +4,20 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:netherrack",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{HideFlags:1,pickup:1b,augment:214s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Netherborn",
@@ -27,7 +27,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -102,20 +102,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:netherite_upgrade_smithing_template",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{HideFlags:161,pickup:1b,augment:222s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Solo Leveling",
@@ -125,7 +125,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -184,20 +184,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:apple",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:223,Enchantments:[{}]}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Goldenless Apples",
@@ -207,7 +207,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -255,20 +255,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:golden_apple",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:209s}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Golden-er Apples",
@@ -278,7 +278,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -317,20 +317,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:dragon_egg",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:205s}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "End's Chosen",
@@ -340,7 +340,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -387,126 +387,20 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:creeper_head",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:210s}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Hunter's Insight",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue"
-                },
-                {
-                  "text": "Gain abilities when you kill a certain number of mobs:",
-                  "color": "gray"
-                },
-                [
-                  {
-                    "text": "10 Creepers",
-                    "color": "dark_red"
-                  },
-                  {
-                    "text": ": Explode on your death.",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "10 Skeletons",
-                    "color": "dark_red"
-                  },
-                  {
-                    "text": ": Gain a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Power II / Infinity",
-                    "color": "dark_purple"
-                  },
-                  {
-                    "text": " Bow",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "10 Spiders",
-                    "color": "dark_red"
-                  },
-                  {
-                    "text": ": Gain",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Permanent Speed I",
-                    "color": "yellow"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "10 Zombies",
-                    "color": "dark_red"
-                  },
-                  {
-                    "text": ": Gain",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " +8🖤",
-                    "color": "red"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:nether_star",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:218s}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Radiant Blessing",
@@ -516,7 +410,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -569,20 +463,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:grass_block",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:225,Enchantments:[{}]}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Surface Duty",
@@ -592,7 +486,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -667,69 +561,20 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:bookshelf",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:213s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Librarian",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain 10",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Bookshelves",
-                    "color": "white"
-                  },
-                  {
-                    "text": ". Start at Level 10.",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:totem_of_undying",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{HideFlags:1,pickup:1b,augment:212s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Last Stand",
@@ -739,7 +584,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -765,219 +610,20 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:diamond_pickaxe",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:211s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Into the Mines III",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Diamond Pickaxe",
-                    "color": "white"
-                  },
-                  {
-                    "text": " with",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "  Fortune I",
-                    "color": "dark_purple"
-                  },
-                  {
-                    "text": "  and ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "  Efficiency I",
-                    "color": "dark_purple"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:enchanted_golden_apple",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:206s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Gapple Gap III",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain 12",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Golden Apples",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " The Harvester",
-                    "color": "gold"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:bow",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:201s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Bowmaster",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Bow",
-                    "color": "white"
-                  },
-                  {
-                    "text": " with",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Power II",
-                    "color": "dark_purple"
-                  },
-                  {
-                    "text": " and 64 ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " arrows",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "Your arrow limit is ",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "raised to 64.",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:brewing_stand",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{HideFlags:1,pickup:1b,augment:216s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Potionmaster",
@@ -987,7 +633,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1019,20 +665,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:fishing_rod",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:229s}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "You Have My Rod",
@@ -1042,7 +688,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1082,109 +728,20 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:iron_trapdoor",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{pickup:1b,augment:228s,Enchantments:[{}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Trap God",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " all the materials you need to make a trap",
-                    "color": "white"
-                  },
-                  {
-                    "text": ","
-                  }
-                ],
-                [
-                  {
-                    "text": "full Iron Tools",
-                    "color": "white"
-                  },
-                  {
-                    "text": " with",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Efficiency I / Unbreaking III",
-                    "color": "dark_purple"
-                  },
-                  {
-                    "text": ",",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "Iron Armor, and Shield",
-                    "color": "white"
-                  },
-                  {
-                    "text": ". At the start of the game,",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "teleport to (0, 0). You cannot be seen by",
-                  "color": "gray"
-                },
-                [
-                  {
-                    "text": "All-Seeing Eyes",
-                    "color": "light_purple"
-                  },
-                  {
-                    "text": "."
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:elytra",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:227s}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "To the Skies!",
@@ -1194,7 +751,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1228,20 +785,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:rabbit_foot",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:226s}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "The Hare",
@@ -1251,7 +808,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1277,20 +834,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:chest",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:224s}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Starter Kit III",
@@ -1300,7 +857,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1334,77 +891,20 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:target",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:217s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Big Target",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Start with",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " +20🖤",
-                    "color": "yellow"
-                  },
-                  {
-                    "text": ". You are",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Glowing",
-                    "color": "yellow"
-                  }
-                ],
-                {
-                  "text": "for the first 20 minutes.",
-                  "color": "gray"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:turtle_helmet",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{HideFlags:1,pickup:1b,augment:236,Enchantments:[{id:\"minecraft:fortune\",lvl:1s}]}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "The Tortoise",
@@ -1414,7 +914,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1454,20 +954,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:blaze_powder",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{HideFlags:1,pickup:1b,augment:203s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Cruel Pact",
@@ -1477,7 +977,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1517,20 +1017,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:clock",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{HideFlags:1,pickup:1b,augment:237s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Glory of Ra",
@@ -1540,7 +1040,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1615,77 +1115,20 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:diamond_boots",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:3,pickup:1b,augment:207s,Enchantments:[{id:\"minecraft:impaling\",lvl:1s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Gas Gas Gas",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Start with",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Speed II",
-                    "color": "yellow"
-                  },
-                  {
-                    "text": " for 20 minutes. Afterwards, gain permanent",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Speed I",
-                    "color": "yellow"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:brush",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{HideFlags:1,pickup:1b,augment:239s,Enchantments:[{id:\"minecraft:impaling\",lvl:1s}]}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Shadow Clone Jutsu",
@@ -1695,7 +1138,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1728,20 +1171,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:golden_sword",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{HideFlags:1,pickup:1b,augment:240s,Enchantments:[{id:\"minecraft:impaling\",lvl:1s}]}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Zeus' Favor",
@@ -1751,7 +1194,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1794,20 +1237,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:blade_pottery_sherd",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{HideFlags:1,pickup:1b,augment:238,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Relic Master",
@@ -1817,7 +1260,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1860,20 +1303,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:feather",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:241,Enchantments:[{}]}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Think Fast",
@@ -1883,7 +1326,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1924,20 +1367,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:diamond",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:242,Enchantments:[{}]}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Diamond Grab Bag",
@@ -1947,7 +1390,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1972,20 +1415,20 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:ice",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
+              "function": "minecraft:set_nbt",
               "tag": "{pickup:1b,augment:202,Enchantments:[{}]}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Cold Blooded",
@@ -1995,7 +1438,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -2058,6 +1501,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "uhcp:augments/patron/prismatic"
         }
       ]
     }

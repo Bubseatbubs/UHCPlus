@@ -5,8 +5,10 @@
 # Initialize player tags + scores + options
 clear @s
 tag @s remove UHCP_ChoosingItem
+scoreboard players set @s uhcp_a_choosingAugment 0
 scoreboard players reset @s uhcp_a_selectedAugment
 function uhcp:augments/generatepanes
+function uhcp:augments/generatepatron
 function uhcp:augments/generatechoices
 
 # Extra fluff
