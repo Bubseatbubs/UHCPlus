@@ -10,15 +10,7 @@ execute if score %tier uhcp_a_tier matches 2 run function uhcp:augments/prismati
 
 # Check for duplicates. If there are duplicates, reroll options.
 data remove storage uhcp:augments Roll
-data modify storage uhcp:augments Roll append from entity @s Inventory[{Slot:3b}].tag.augment
-data modify storage uhcp:augments Roll append from entity @s Inventory[{Slot:4b}].tag.augment
-data modify storage uhcp:augments Roll append from entity @s Inventory[{Slot:5b}].tag.augment
-data modify storage uhcp:augments Roll append from storage uhcp:augments Roll[2]
-execute store success score %uhcp_duplicate uhcp_itemCount run data modify storage uhcp:augments Roll[2] set from storage uhcp:augments Roll[0]
-execute if score %uhcp_duplicate uhcp_itemCount matches 0 run tag @s add Aug_Reroll
-execute store success score %uhcp_duplicate uhcp_itemCount run data modify storage uhcp:augments Roll[0] set from storage uhcp:augments Roll[1]
-execute if score %uhcp_duplicate uhcp_itemCount matches 0 run tag @s add Aug_Reroll
-execute store success score %uhcp_duplicate uhcp_itemCount run data modify storage uhcp:augments Roll[3] set from storage uhcp:augments Roll[1]
-execute if score %uhcp_duplicate uhcp_itemCount matches 0 run tag @s add Aug_Reroll
+execute if score @s uhcp_a_patron matches 8 run function uhcp:augments/generatechoices/3
+execute unless score @s uhcp_a_patron matches 8 run function uhcp:augments/generatechoices/3
 
 execute as @s[tag=Aug_Reroll] run function uhcp:augments/generatechoices
