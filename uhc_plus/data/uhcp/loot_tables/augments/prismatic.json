@@ -591,69 +591,6 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:fishing_rod",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:229s}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": [
-                {
-                  "text": "You Have My Rod",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain a",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Fishing Rod",
-                    "color": "white"
-                  },
-                  {
-                    "text": " with",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Luck of the Sea X / Unbreaking III",
-                    "color": "dark_purple"
-                  }
-                ],
-                [
-                  {
-                    "text": "Lure IV / Mending",
-                    "color": "dark_purple"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:elytra",
           "functions": [
             {
