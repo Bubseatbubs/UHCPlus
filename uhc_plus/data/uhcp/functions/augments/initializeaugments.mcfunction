@@ -49,8 +49,8 @@ execute if score @s uhcp_a_selectedAugment matches 4 run function uhcp:augments/
 execute if score @s uhcp_a_selectedAugment matches 5 run return 0
 execute if score @s uhcp_a_selectedAugment matches 7 run function uhcp:augments/effects/gold/dripeconomyii
 execute if score @s uhcp_a_selectedAugment matches 8 run function uhcp:augments/effects/gold/fireandwater
-execute if score @s uhcp_a_selectedAugment matches 9 run return 0
-execute if score @s uhcp_a_selectedAugment matches 10 run function uhcp:augments/effects/gold/gapplegapii
+execute if score @s uhcp_a_selectedAugment matches 9 run function uhcp:augments/effects/gold/gapplegapii
+execute if score @s uhcp_a_selectedAugment matches 10 run return 0
 execute if score @s uhcp_a_selectedAugment matches 11 run function uhcp:augments/effects/gold/greenthumb
 execute if score @s uhcp_a_selectedAugment matches 12 run function uhcp:augments/effects/gold/huntingcall
 execute if score @s uhcp_a_selectedAugment matches 13 run function uhcp:augments/effects/gold/intotheminesii
