@@ -19,47 +19,36 @@
 						{
 							"function": "minecraft:set_lore",
 							"lore": [
+								[
+									{
+										"text": "Tracks the ",
+										"color": "gray",
+										"italic": true
+									},
+									{
+										"text": "closest enemy",
+										"color": "gold"
+									}
+								],
 								{
-									"text": "Tracks the ",
-									"color": "gray",
-									"italic": true,
-									"extra": [
-										{
-											"text": "closest enemy",
-											"color": "gold"
-										}
-									]
-								}
-							]
-						},
-						{
-							"function": "minecraft:set_lore",
-							"lore": [
-								{
-									"text": "while held. The location ",
+									"text": "while held. The location",
 									"color": "gray",
 									"italic": true
-								}
-							]
-						},
-						{
-							"function": "minecraft:set_lore",
-							"lore": [
-								{
-									"text": "updates every ",
-									"color": "gray",
-									"italic": true,
-									"extra": [
-										{
-											"text": "5",
-											"color": "gold"
-										},
-										{
-											"text": " seconds.",
-											"color": "gray"
-										}
-									]
-								}
+								},
+								[
+									{
+										"text": "updates every ",
+										"color": "gray",
+										"italic": true
+									},
+									{
+										"text": "5",
+										"color": "gold"
+									},
+									{
+										"text": " seconds."
+									}
+								]
 							]
 						},
 						{
