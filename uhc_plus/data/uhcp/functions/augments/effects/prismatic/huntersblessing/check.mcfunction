@@ -10,9 +10,6 @@ execute as @s run tellraw @s[tag=!UHCP_Skeleton,advancements={uhcp:augments/hunt
 execute as @s[tag=!UHCP_Spider,advancements={uhcp:augments/hunters_blessing/killed_spider=true}] run scoreboard players add @s uhcp_hb_killedSpider 1
 execute as @s run tellraw @s[tag=!UHCP_Spider,advancements={uhcp:augments/hunters_blessing/killed_spider=true}] [{"text":"Spiders Slain: [","color":"white"},{"score":{"name":"@s","objective":"uhcp_hb_killedSpider"},"color":"light_purple"},{"text":"/10]","color":"white"}]
 
-execute as @s[tag=!UHCP_Spider,advancements={uhcp:augments/hunters_blessing/killed_cave_spider=true}] run scoreboard players add @s uhcp_hb_killedSpider 1
-execute as @s run tellraw @s[tag=!UHCP_Spider,advancements={uhcp:augments/hunters_blessing/killed_cave_spider=true}] [{"text":"Spiders Slain: [","color":"white"},{"score":{"name":"@s","objective":"uhcp_hb_killedSpider"},"color":"light_purple"},{"text":"/10]","color":"white"}]
-
 # Reward
 execute if score @s[tag=!UHCP_Creeper] uhcp_hb_killedCreeper matches 5.. run function uhcp:augments/effects/prismatic/huntersblessing/creeper
 execute if score @s[tag=!UHCP_Zombie] uhcp_hb_killedZombie matches 5.. run function uhcp:augments/effects/prismatic/huntersblessing/zombie
