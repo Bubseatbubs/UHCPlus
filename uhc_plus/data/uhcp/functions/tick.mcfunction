@@ -65,6 +65,11 @@ execute if score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 0.. run function uhcp:augments/countdown
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:augments/effects/timer
 
+# Patron
+scoreboard players enable @a patron
+execute as @a if score @s patron matches 1..99 run function uhcp:settings/patron/menu
+execute as @a if score @s patron matches 100..108 run function uhcp:settings/patron/select
+
 # Update Summoned Entities
 execute as @e[tag=UHCP_Summon] at @s run function uhcp:update
 execute if entity @s[tag=UHCP_SClone] unless entity @s[tag=UHCP_SCloneStand,distance=..2] run kill @s

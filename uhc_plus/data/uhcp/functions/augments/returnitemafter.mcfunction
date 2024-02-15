@@ -14,6 +14,7 @@ item replace entity @s weapon.offhand with air
 execute in uhcp:main run item replace entity @s hotbar.3 from block 0 0 0 container.0
 execute in uhcp:main run item replace entity @s hotbar.4 from block 0 0 0 container.1
 execute in uhcp:main run item replace entity @s hotbar.5 from block 0 0 0 container.2
+execute in uhcp:main run item replace entity @s hotbar.7 from block 0 0 0 container.3
 
 # Reform Glass
 clear @s black_stained_glass_pane
