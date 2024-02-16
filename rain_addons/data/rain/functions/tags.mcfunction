@@ -19,12 +19,12 @@ tag blopedydoo add res2
 tag blopedydoo add str1
 tag BelladonnaBlack add res2
 tag BelladonnaBlack add str1
-tag karu_o7 add res2
-tag karu_o7 add str1
 tag C_A_U_Z add res2
 tag C_A_U_Z add str1
 
 #Silver/Gold
+tag karu_o7 add res2
+
 tag azienbarney add res1
 tag azienbarney add str1
 

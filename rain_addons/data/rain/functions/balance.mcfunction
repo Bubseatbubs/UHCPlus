@@ -7,7 +7,7 @@ execute as @a[tag=18] run attribute @s minecraft:generic.max_health base set 36
 execute as @a[tag=19] run attribute @s minecraft:generic.max_health base set 38
 
 #Give Buffs
-execute as @a[tag=minires] run attribute @s minecraft:generic.armor base set 1.5
+execute as @a[tag=minires] run attribute @s minecraft:generic.armor base set 2
 
 effect give @a[tag=res1] resistance infinite 0 true
 effect give @a[tag=res2] resistance infinite 1 true
