@@ -1,0 +1,49 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:elytra",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:3s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUID:[I;-1863235907,-1965143226,-1566537571,953676984],Slot:\"chest\"}]}"
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "Armored Wings",
+                    "color": "light_purple",
+                    "bold": true
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": "An Elytra with the protection",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "levels of a Diamond Chestplate.",
+                    "color": "gray",
+                    "italic": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
