@@ -391,7 +391,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:golden_apple",
-          "weight": 25
+          "weight": 30
         },
         {
           "type": "minecraft:item",
@@ -402,7 +402,18 @@
               "count": 4
             }
           ],
-          "weight": 10
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 32
+            }
+          ],
+          "weight": 6
         }
       ],
       "rolls": 1.0
