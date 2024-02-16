@@ -56,4 +56,4 @@ execute if score %time uhcp_gameTime >= %AUG_203 uhcp_gameTime run effect give @
 execute if score %time uhcp_gameTime >= %AUG_203 uhcp_gameTime run scoreboard players add %AUG_203 uhcp_gameTime 1200
 
 execute if score %time uhcp_gameTime >= %AUG_238 uhcp_gameTime as @a[scores={uhcp_a_selectedAugment=238}] at @s run function uhcp:augments/effects/prismatic/relicmaster/update
-execute if score %time uhcp_gameTime >= %AUG_238 uhcp_gameTime run scoreboard players add %AUG_238 uhcp_gameTime 8400
+execute if score %time uhcp_gameTime >= %AUG_238 uhcp_gameTime run scoreboard players add %AUG_238 uhcp_gameTime 24000

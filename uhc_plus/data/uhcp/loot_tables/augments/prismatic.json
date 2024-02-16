@@ -1129,11 +1129,11 @@
                 },
                 [
                   {
-                    "text": "Gain 2 ",
+                    "text": "Gain a ",
                     "color": "gray"
                   },
                   {
-                    "text": "Relic Invokers",
+                    "text": "Relic Invoker",
                     "color": "light_purple"
                   },
                   {
@@ -1142,7 +1142,7 @@
                   }
                 ],
                 {
-                  "text": "Every 7 minutes, gain another",
+                  "text": "Every 20 minutes, gain another",
                   "color": "gray"
                 },
                 [

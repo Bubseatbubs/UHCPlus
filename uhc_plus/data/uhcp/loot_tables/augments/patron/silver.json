@@ -701,6 +701,109 @@
                   ]
                 }
               ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:fishing_rod",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{HideFlags:1,pickup:1b,augment:106s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "You have My Rod I",
+                    "color": "gray",
+                    "bold": true
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue"
+                  },
+                  [
+                    {
+                      "text": "Gain a ",
+                      "color": "gray"
+                    },
+                    {
+                      "text": "Fishing Rod",
+                      "color": "white"
+                    },
+                    {
+                      "text": " with",
+                      "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Luck of the Sea III",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": " and ",
+                      "color": "gray"
+                    },
+                    {
+                      "text": "Lure IV",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ]
+                ]
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:any_of",
+                "terms": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "uhcp_a_choosingAugment": 0,
+                      "uhcp_a_patron": 9
+                    }
+                  },
+                  {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                      {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                          "condition": "minecraft:entity_scores",
+                          "entity": "this",
+                          "scores": {
+                            "uhcp_a_patron": 9
+                          }
+                        }
+                      },
+                      {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                          "uhcp_a_choosingAugment": 9
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
