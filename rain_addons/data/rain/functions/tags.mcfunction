@@ -5,7 +5,7 @@ tag The_Real_Shoma add 16
 tag cuummymancer69 add 16
 tag Aelwyn413 add 16
 tag asiak_void add 16
-tag Asian_GamerMC add 18
+tag Asian_GamerMC add 16
 tag Rainplosion add 18
 
 #Bronze
