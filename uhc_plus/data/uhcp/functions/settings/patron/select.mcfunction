@@ -28,4 +28,7 @@ execute if score @s patron matches 107 run tellraw @a [{"text":"Loki","color":"g
 execute if score @s patron matches 108 run scoreboard players set @s uhcp_a_patron 8
 execute if score @s patron matches 108 run tellraw @a [{"text":"Hera","color":"gold"},{"text":" became ","color":"gray"},{"selector":"@s","color":"blue"},{"text":"'s","color":"blue"},{"text":" Patron God!","color":"gold"}]
 
+execute if score @s patron matches 109 run scoreboard players set @s uhcp_a_patron 0
+execute if score @s patron matches 109 run tellraw @a [{"text":"Triton","color":"gold"},{"text":" became ","color":"gray"},{"selector":"@s","color":"blue"},{"text":"'s","color":"blue"},{"text":" Patron God!","color":"gold"}]
+
 scoreboard players reset @s patron
