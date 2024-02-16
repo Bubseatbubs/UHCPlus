@@ -713,7 +713,7 @@
               },
               {
                 "function": "set_nbt",
-                "tag": "{HideFlags:1,pickup:1b,augment:106s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+                "tag": "{pickup:1b,augment:106s}"
               },
               {
                 "function": "set_name",
