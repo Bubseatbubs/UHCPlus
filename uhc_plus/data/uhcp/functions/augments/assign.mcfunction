@@ -224,7 +224,7 @@ execute if score @s uhcp_a_count matches 1.. run return 203
 execute store success score @s uhcp_a_count run clear @s minecraft:dragon_egg{augment:205s} 1
 execute if score @s uhcp_a_count matches 1.. run return 205
 
-execute store success score @s uhcp_a_count run clear @s minecraft:enchanted_golden_apple{augment:206s} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:golden_apple{augment:206s} 1
 execute if score @s uhcp_a_count matches 1.. run return 206
 
 execute store success score @s uhcp_a_count run clear @s minecraft:diamond_boots{augment:207s} 1

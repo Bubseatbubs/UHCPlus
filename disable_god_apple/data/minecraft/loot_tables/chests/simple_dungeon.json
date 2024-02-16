@@ -20,7 +20,7 @@
         },
         {
           "type": "loot_table",
-          "weight": 3,
+          "weight": 1,
           "name": "uhcp:relics/relic_invoker",
           "functions": [
             {

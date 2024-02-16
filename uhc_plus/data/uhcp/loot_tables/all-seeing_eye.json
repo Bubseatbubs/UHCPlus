@@ -19,36 +19,34 @@
 						{
 							"function": "minecraft:set_lore",
 							"lore": [
-								{
-									"text": "Causes all ",
-									"color": "gray",
-									"italic": true,
-									"extra": [
-										{
-											"text": "enemies",
-											"color": "gold"
-										},
-										{
-											"text": " to glow",
-											"color": "gray"
-										}
-									]
-								}
-							]
-						},
-						{
-							"function": "minecraft:set_lore",
-							"lore": [
-								{
-									"text": "for 10 seconds. Consumed",
-									"color": "gray",
-									"italic": true
-								}
-							]
-						},
-						{
-							"function": "minecraft:set_lore",
-							"lore": [
+								[
+									{
+										"text": "Causes ",
+										"color": "gray",
+										"italic": true
+									},
+									{
+										"text": "all enemies",
+										"color": "gold"
+									},
+									{
+										"text": " to glow"
+									}
+								],
+								[
+									{
+										"text": "for ",
+										"color": "gray",
+										"italic": true
+									},
+									{
+										"text": "10",
+										"color": "gold"
+									},
+									{
+										"text": " seconds. Consumed"
+									}
+								],
 								{
 									"text": "upon use.",
 									"color": "gray",

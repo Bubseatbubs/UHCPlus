@@ -14,7 +14,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:20b}"
+              "tag": "{pickup:1b,augment:20s}"
             },
             {
               "function": "minecraft:set_name",
@@ -73,7 +73,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:40b}"
+              "tag": "{pickup:1b,augment:40s}"
             },
             {
               "function": "minecraft:set_name",
@@ -122,7 +122,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{augment:1b}"
+              "tag": "{pickup:1b,augment:1s}"
             },
             {
               "function": "minecraft:set_name",
@@ -191,7 +191,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:2b}"
+              "tag": "{pickup:1b,augment:2s}"
             },
             {
               "function": "minecraft:set_name",
@@ -248,7 +248,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:4b}"
+              "tag": "{pickup:1b,augment:4s}"
             },
             {
               "function": "minecraft:set_name",
@@ -311,7 +311,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:7b}"
+              "tag": "{pickup:1b,augment:7s}"
             },
             {
               "function": "minecraft:set_name",
@@ -364,7 +364,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:8b}"
+              "tag": "{pickup:1b,augment:8s}"
             },
             {
               "function": "minecraft:set_name",
@@ -423,7 +423,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:11b}"
+              "tag": "{pickup:1b,augment:11s}"
             },
             {
               "function": "minecraft:set_name",
@@ -482,7 +482,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:15b}"
+              "tag": "{pickup:1b,augment:15s}"
             },
             {
               "function": "minecraft:set_name",
@@ -535,7 +535,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:38b}"
+              "tag": "{pickup:1b,augment:38s}"
             },
             {
               "function": "minecraft:set_name",
@@ -602,7 +602,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:18b}"
+              "tag": "{pickup:1b,augment:18s}"
             },
             {
               "function": "minecraft:set_name",
@@ -665,7 +665,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:12b,instrument:\"minecraft:call_goat_horn\"}"
+              "tag": "{pickup:1b,augment:12s,instrument:\"minecraft:call_goat_horn\"}"
             },
             {
               "function": "minecraft:set_name",
@@ -766,7 +766,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:43b}"
+              "tag": "{pickup:1b,augment:43s}"
             },
             {
               "function": "minecraft:set_name",
@@ -832,7 +832,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:35b}"
+              "tag": "{pickup:1b,augment:35s}"
             },
             {
               "function": "minecraft:set_name",
@@ -891,7 +891,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:33b}"
+              "tag": "{pickup:1b,augment:33s}"
             },
             {
               "function": "minecraft:set_name",
@@ -948,7 +948,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:34b}"
+              "tag": "{HideFlags:1,pickup:1b,augment:34s}"
             },
             {
               "function": "minecraft:set_name",
@@ -991,7 +991,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:32,pickup:1b,augment:29b}"
+              "tag": "{HideFlags:32,pickup:1b,augment:29s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1060,13 +1060,13 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:22b}"
+              "tag": "{pickup:1b,augment:22s}"
             },
             {
               "function": "minecraft:set_name",
               "name": [
                 {
-                  "text": "Protect Protocol",
+                  "text": "Protect Protocol II",
                   "color": "gray",
                   "bold": true
                 }
@@ -1086,7 +1086,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Diamond Helmet, Iron Chestplate, Iron Leggings, and Iron Boots",
+                    "text": "Diamond Helmet, Iron Chestplate, Iron Leggings, and Iron Boots",
                     "color": "white"
                   },
                   {
@@ -1109,7 +1109,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:162,pickup:1b,augment:21b}"
+              "tag": "{HideFlags:162,pickup:1b,augment:21s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1158,7 +1158,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:0b}"
+              "tag": "{pickup:1b,augment:0s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1207,7 +1207,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:44b}"
+              "tag": "{pickup:1b,augment:44s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1259,7 +1259,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:26b}"
+              "tag": "{pickup:1b,augment:26s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1312,7 +1312,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:3b}"
+              "tag": "{pickup:1b,augment:3s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1365,7 +1365,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:37b}"
+              "tag": "{pickup:1b,augment:37s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1426,7 +1426,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:215s}"
+              "tag": "{HideFlags:1,pickup:1b,augment:39s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1519,7 +1519,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:{},augment:{}}"
+              "tag": "{pickup:1b,augment:41s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1593,7 +1593,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:35b}"
+              "tag": "{pickup:1b,augment:42s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1652,7 +1652,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:43}"
+              "tag": "{pickup:1b,augment:43s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1712,7 +1712,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:10b}"
+              "tag": "{pickup:1b,augment:10s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1760,7 +1760,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:2,pickup:1b,augment:16b}"
+              "tag": "{HideFlags:2,pickup:1b,augment:16s}"
             },
             {
               "function": "minecraft:set_name",
