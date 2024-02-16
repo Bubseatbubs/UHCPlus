@@ -108,6 +108,9 @@ execute if score @s uhcp_a_count matches 1.. run return 43
 execute store success score @s uhcp_a_count run clear @s minecraft:white_dye{augment:44s} 1
 execute if score @s uhcp_a_count matches 1.. run return 44
 
+execute store success score @s uhcp_a_count run clear @s minecraft:fishing_rod{augment:45s} 1
+execute if score @s uhcp_a_count matches 1.. run return 45
+
 # Silver Augments
 execute store success score @s uhcp_a_count run clear @s minecraft:slime_ball{augment:100s} 1
 execute if score @s uhcp_a_count matches 1.. run return 100
@@ -120,6 +123,9 @@ execute if score @s uhcp_a_count matches 1.. run return 102
 
 execute store success score @s uhcp_a_count run clear @s minecraft:bucket{augment:103s} 1
 execute if score @s uhcp_a_count matches 1.. run return 103
+
+execute store success score @s uhcp_a_count run clear @s minecraft:fishing_rod{augment:106s} 1
+execute if score @s uhcp_a_count matches 1.. run return 106
 
 execute store success score @s uhcp_a_count run clear @s minecraft:gold_nugget{augment:107s} 1
 execute if score @s uhcp_a_count matches 1.. run return 107

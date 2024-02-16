@@ -8,6 +8,7 @@ execute if score @s uhcp_a_selectedAugment matches 100 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 101 run function uhcp:augments/effects/silver/afk
 execute if score @s uhcp_a_selectedAugment matches 102 run function uhcp:augments/effects/silver/blacksmith
 execute if score @s uhcp_a_selectedAugment matches 103 run function uhcp:augments/effects/silver/bucketlist
+execute if score @s uhcp_a_selectedAugment matches 106 run function uhcp:augments/effects/silver/youhavemyrodi
 execute if score @s uhcp_a_selectedAugment matches 107 run function uhcp:augments/effects/silver/dripeconomyi
 execute if score @s uhcp_a_selectedAugment matches 108 run function uhcp:augments/effects/silver/drunkenstupor
 execute if score @s uhcp_a_selectedAugment matches 109 run function uhcp:augments/effects/silver/emptyhearted
@@ -80,7 +81,7 @@ execute if score @s uhcp_a_selectedAugment matches 40 run function uhcp:augments
 execute if score @s uhcp_a_selectedAugment matches 41 run function uhcp:augments/effects/gold/sniffa
 execute if score @s uhcp_a_selectedAugment matches 43 run function uhcp:augments/effects/gold/mansbestfriend
 execute if score @s uhcp_a_selectedAugment matches 44 run return 0
-execute if score @s uhcp_a_selectedAugment matches 45 run function uhcp:augments/effects/gold/glasscannon
+execute if score @s uhcp_a_selectedAugment matches 45 run function uhcp:augments/effects/gold/youhavemyrodii
 
 # Prismatic Augments
 execute if score @s uhcp_a_selectedAugment matches 201 run function uhcp:augments/effects/prismatic/bowmaster
