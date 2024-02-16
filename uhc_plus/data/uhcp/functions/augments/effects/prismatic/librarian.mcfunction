@@ -1,2 +1,2 @@
-give @s bookshelf 10
-xp add @s 10 levels
+give @s bookshelf 8
+xp add @s 8 levels

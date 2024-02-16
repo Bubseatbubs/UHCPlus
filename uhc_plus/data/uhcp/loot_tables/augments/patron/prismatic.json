@@ -469,7 +469,7 @@
                     },
                     [
                       {
-                        "text": "Gain 12",
+                        "text": "Gain 10",
                         "color": "gray"
                       },
                       {
@@ -689,7 +689,7 @@
                     },
                     [
                       {
-                        "text": "Gain 10",
+                        "text": "Gain 8",
                         "color": "gray"
                       },
                       {
@@ -697,7 +697,7 @@
                         "color": "white"
                       },
                       {
-                        "text": ". Start at Level 10.",
+                        "text": ". Start at Level 8.",
                         "color": "gray"
                       }
                     ]
