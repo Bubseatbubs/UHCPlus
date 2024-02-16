@@ -3,109 +3,109 @@
 ##
 
 # Gold Augments
-execute store success score @s uhcp_a_count run clear @s minecraft:honeycomb{augment:0b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:honeycomb{augment:0s} 1
 execute if score @s uhcp_a_count matches 1.. run return 0
 
-execute store success score @s uhcp_a_count run clear @s minecraft:feather{augment:1b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:feather{augment:1s} 1
 execute if score @s uhcp_a_count matches 1.. run return 1
 
-execute store success score @s uhcp_a_count run clear @s minecraft:diamond{augment:2b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:diamond{augment:2s} 1
 execute if score @s uhcp_a_count matches 1.. run return 2
 
-execute store success score @s uhcp_a_count run clear @s minecraft:redstone{augment:3b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:redstone{augment:3s} 1
 execute if score @s uhcp_a_count matches 1.. run return 3
 
-execute store success score @s uhcp_a_count run clear @s minecraft:leather{augment:4b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:leather{augment:4s} 1
 execute if score @s uhcp_a_count matches 1.. run return 4
 
-execute store success score @s uhcp_a_count run clear @s minecraft:gold_nugget{augment:7b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:gold_nugget{augment:7s} 1
 execute if score @s uhcp_a_count matches 1.. run return 7
 
-execute store success score @s uhcp_a_count run clear @s minecraft:magma_block{augment:8b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:magma_block{augment:8s} 1
 execute if score @s uhcp_a_count matches 1.. run return 8
 
-execute store success score @s uhcp_a_count run clear @s minecraft:golden_apple{augment:9b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:golden_apple{augment:9s} 1
 execute if score @s uhcp_a_count matches 1.. run return 9
 
-execute store success score @s uhcp_a_count run clear @s minecraft:glistering_melon_slice{augment:10b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:glistering_melon_slice{augment:10s} 1
 execute if score @s uhcp_a_count matches 1.. run return 10
 
-execute store success score @s uhcp_a_count run clear @s minecraft:oak_leaves{augment:11b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:oak_leaves{augment:11s} 1
 execute if score @s uhcp_a_count matches 1.. run return 11
 
-execute store success score @s uhcp_a_count run clear @s minecraft:goat_horn{augment:12b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:goat_horn{augment:12s} 1
 execute if score @s uhcp_a_count matches 1.. run return 12
 
-execute store success score @s uhcp_a_count run clear @s minecraft:miner_pottery_sherd{augment:13b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:miner_pottery_sherd{augment:13s} 1
 execute if score @s uhcp_a_count matches 1.. run return 13
 
-execute store success score @s uhcp_a_count run clear @s minecraft:apple{augment:15b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:apple{augment:15s} 1
 execute if score @s uhcp_a_count matches 1.. run return 15
 
-execute store success score @s uhcp_a_count run clear @s minecraft:iron_sword{augment:16b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:iron_sword{augment:16s} 1
 execute if score @s uhcp_a_count matches 1.. run return 16
 
-execute store success score @s uhcp_a_count run clear @s minecraft:shield{augment:17b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:shield{augment:17s} 1
 execute if score @s uhcp_a_count matches 1.. run return 17
 
-execute store success score @s uhcp_a_count run clear @s minecraft:clock{augment:18b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:clock{augment:18s} 1
 execute if score @s uhcp_a_count matches 1.. run return 18
 
-execute store success score @s uhcp_a_count run clear @s minecraft:golden_sword{augment:19b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:golden_sword{augment:19s} 1
 execute if score @s uhcp_a_count matches 1.. run return 19
 
-execute store success score @s uhcp_a_count run clear @s minecraft:emerald{augment:20b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:emerald{augment:20s} 1
 execute if score @s uhcp_a_count matches 1.. run return 20
 
-execute store success score @s uhcp_a_count run clear @s minecraft:eye_armor_trim_smithing_template{augment:21b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:eye_armor_trim_smithing_template{augment:21s} 1
 execute if score @s uhcp_a_count matches 1.. run return 21
 
-execute store success score @s uhcp_a_count run clear @s minecraft:iron_chestplate{augment:22b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:iron_chestplate{augment:22s} 1
 execute if score @s uhcp_a_count matches 1.. run return 22
 
-execute store success score @s uhcp_a_count run clear @s minecraft:diamond_block{augment:26b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:diamond_block{augment:26s} 1
 execute if score @s uhcp_a_count matches 1.. run return 26
 
-execute store success score @s uhcp_a_count run clear @s minecraft:chest{augment:29b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:chest{augment:29s} 1
 execute if score @s uhcp_a_count matches 1.. run return 29
 
-execute store success score @s uhcp_a_count run clear @s minecraft:feather{augment:30b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:feather{augment:30s} 1
 execute if score @s uhcp_a_count matches 1.. run return 30
 
-execute store success score @s uhcp_a_count run clear @s minecraft:iron_trapdoor{augment:32b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:iron_trapdoor{augment:32s} 1
 execute if score @s uhcp_a_count matches 1.. run return 32
 
-execute store success score @s uhcp_a_count run clear @s minecraft:totem_of_undying{augment:33b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:totem_of_undying{augment:33s} 1
 execute if score @s uhcp_a_count matches 1.. run return 33
 
-execute store success score @s uhcp_a_count run clear @s minecraft:glass_bottle{augment:34b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:glass_bottle{augment:34s} 1
 execute if score @s uhcp_a_count matches 1.. run return 34
 
-execute store success score @s uhcp_a_count run clear @s minecraft:copper_ingot{augment:35b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:copper_ingot{augment:35s} 1
 execute if score @s uhcp_a_count matches 1.. run return 35
 
-execute store success score @s uhcp_a_count run clear @s minecraft:barrel{augment:37b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:barrel{augment:37s} 1
 execute if score @s uhcp_a_count matches 1.. run return 37
 
-execute store success score @s uhcp_a_count run clear @s minecraft:tnt{augment:38b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:tnt{augment:38s} 1
 execute if score @s uhcp_a_count matches 1.. run return 38
 
 execute store success score @s uhcp_a_count run clear @s minecraft:trident{augment:39s} 1
 execute if score @s uhcp_a_count matches 1.. run return 39
 
-execute store success score @s uhcp_a_count run clear @s minecraft:blade_pottery_sherd{augment:40b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:blade_pottery_sherd{augment:40s} 1
 execute if score @s uhcp_a_count matches 1.. run return 40
 
-execute store success score @s uhcp_a_count run clear @s minecraft:sniffer_spawn_egg{augment:41b}
+execute store success score @s uhcp_a_count run clear @s minecraft:sniffer_spawn_egg{augment:41s}
 execute if score @s uhcp_a_count matches 1.. run return 41
 
-execute store success score @s uhcp_a_count run clear @s minecraft:diamond{augment:42b}
+execute store success score @s uhcp_a_count run clear @s minecraft:diamond{augment:42s}
 execute if score @s uhcp_a_count matches 1.. run return 42
 
-execute store success score @s uhcp_a_count run clear @s minecraft:bone{augment:43b}
+execute store success score @s uhcp_a_count run clear @s minecraft:bone{augment:43s}
 execute if score @s uhcp_a_count matches 1.. run return 43
 
-execute store success score @s uhcp_a_count run clear @s minecraft:white_dye{augment:44b} 1
+execute store success score @s uhcp_a_count run clear @s minecraft:white_dye{augment:44s} 1
 execute if score @s uhcp_a_count matches 1.. run return 44
 
 # Silver Augments
@@ -235,9 +235,6 @@ execute if score @s uhcp_a_count matches 1.. run return 209
 
 execute store success score @s uhcp_a_count run clear @s minecraft:creeper_head{augment:210s} 1
 execute if score @s uhcp_a_count matches 1.. run return 210
-
-execute store success score @s uhcp_a_count run clear @s minecraft:diamond_pickaxe{augment:211s} 1
-execute if score @s uhcp_a_count matches 1.. run return 211
 
 execute store success score @s uhcp_a_count run clear @s minecraft:diamond_pickaxe{augment:211s} 1
 execute if score @s uhcp_a_count matches 1.. run return 211
