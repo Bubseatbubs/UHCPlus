@@ -175,6 +175,30 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
+                "max": 30,
+                "min": 15
+              },
+              "treasure": true
+            }
+          ],
+          "weight": 10,
+          "name": "minecraft:bow"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.75,
+                "min": 0.3
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
                 "max": 20,
                 "min": 10
               },
