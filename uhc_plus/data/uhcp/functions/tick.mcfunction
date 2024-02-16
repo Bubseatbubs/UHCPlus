@@ -68,7 +68,7 @@ execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:a
 # Patron
 scoreboard players enable @a patron
 execute as @a if score @s patron matches 1..99 run function uhcp:settings/patron/menu
-execute as @a if score @s patron matches 100..108 run function uhcp:settings/patron/select
+execute as @a at @s if score @s patron matches 100..108 run function uhcp:settings/patron/select
 
 # Update Summoned Entities
 execute as @e[tag=UHCP_Summon] at @s run function uhcp:update

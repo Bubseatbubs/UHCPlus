@@ -1644,66 +1644,6 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:bone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:43s}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": [
-                {
-                  "text": "Man's Best Friend",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue"
-                },
-                [
-                  {
-                    "text": "Gain 2 ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Wolf Spawn Eggs",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and"
-                  }
-                ],
-                [
-                  {
-                    "text": "12 bones"
-                  },
-                  {
-                    "text": ". After 35 minutes, all",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "your wolves drop you loot!",
-                  "color": "gray"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:glistering_melon_slice",
           "functions": [
             {
