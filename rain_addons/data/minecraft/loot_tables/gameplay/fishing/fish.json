@@ -6,12 +6,12 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:cod",
+          "name": "minecraft:cooked_cod",
           "weight": 60
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:salmon",
+          "name": "minecraft:cooked_salmon",
           "weight": 25
         },
         {
