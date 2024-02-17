@@ -14,6 +14,9 @@ scoreboard players set %AUG_203 uhcp_gameTime 1200
 scoreboard players set %AUG_238 uhcp_gameTime 12000
 execute if score %uhcp_dimTime uhcp_gameTime matches ..-1 run scoreboard players set %uhcp_dimTime uhcp_gameTime 0
 
+# Default Patrons
+execute as @a if score @s uhcp_a_patron = @s uhcp_a_patron run scoreboard players set @s uhcp_a_patron 8
+
 scoreboard players reset @a uhcp_hb_killedCreeper
 scoreboard players reset @a uhcp_hb_killedZombie
 scoreboard players reset @a uhcp_hb_killedSkeleton

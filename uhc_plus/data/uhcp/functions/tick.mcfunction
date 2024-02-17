@@ -8,6 +8,7 @@ execute if score %time uhcp_gameTime matches 1.. run function uhcp:timer/update_
 execute if score countdown tick matches 0 run function uhcp:start
 
 # Lava
+execute if score %uhcp_lava uhcp_gameTime matches -1.. if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:lava/countdown
 execute if score %uhcp_lavaStart uhcp_initStatus matches 1.. run function uhcp:lava/run
 
 # Crafting

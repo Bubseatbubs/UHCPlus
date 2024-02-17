@@ -35,3 +35,4 @@ execute as @a at @s run playsound block.note_block.harp master @s ~ ~ ~ 1 1 1
 
 # Set initilization status
 scoreboard players set %uhcp_lavaInit uhcp_initStatus 1
+scoreboard players set %uhcp_lava uhcp_gameTime -2
