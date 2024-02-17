@@ -1,2 +1,2 @@
-attribute @s minecraft:generic.max_health base set 48
-effect give @s health_boost 1 1
+attribute @s minecraft:generic.max_health base set 44
+effect give @s absorption infinite 1

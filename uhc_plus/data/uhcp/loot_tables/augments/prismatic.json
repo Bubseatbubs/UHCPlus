@@ -452,8 +452,16 @@
                     "color": "gray"
                   },
                   {
-                    "text": "10 filled 🖤",
+                    "text": "4 filled 🖤",
                     "color": "red"
+                  },
+                  {
+                    "text": ", ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "6 🖤",
+                    "color": "yellow"
                   },
                   {
                     "text": ", ",
@@ -787,8 +795,8 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 10🖤",
-                    "color": "red"
+                    "text": " 6🖤",
+                    "color": "yellow"
                   },
                   {
                     "text": " and a ",
@@ -1142,23 +1150,9 @@
                   }
                 ],
                 {
-                  "text": "Every 20 minutes, gain another",
+                  "text": "Every 20 minutes, gain another.",
                   "color": "gray"
-                },
-                [
-                  {
-                    "text": "and 3 ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "max 🖤",
-                    "color": "red"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
+                }
               ]
             }
           ]

@@ -40,8 +40,16 @@
                       "color": "gray"
                     },
                     {
-                      "text": " +4 empty 🖤",
+                      "text": "2 empty 🖤",
                       "color": "red"
+                    },
+                    {
+                      "text": " and ",
+                      "color": "gray"
+                    },
+                    {
+                      "text": "2🖤",
+                      "color": "yellow"
                     },
                     {
                       "text": ".",

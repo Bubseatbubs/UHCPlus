@@ -191,8 +191,16 @@
                         "color": "gray"
                       },
                       {
-                        "text": " +8🖤",
+                        "text": "4🖤",
                         "color": "red"
+                      },
+                      {
+                        "text": " and ",
+                        "color": "gray"
+                      },
+                      {
+                        "text": "4🖤",
+                        "color": "yellow"
                       },
                       {
                         "text": ".",
