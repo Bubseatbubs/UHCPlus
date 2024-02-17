@@ -20,9 +20,9 @@ tag BelladonnaBlack add str2
 tag C_A_U_Z add res2
 tag C_A_U_Z add str2
 
-
 tag _V1L3 add res2
 tag _V1L3 add str2
+
 tag Kayndrew add res2
 tag Kayndrew add str1
 tag azienbarney add res2
@@ -31,8 +31,6 @@ tag zingtasticoca add res2
 tag zingtasticoca add str1
 
 #Silver/Gold
-tag karu_o7 add res2
-
 tag N0tChristine add res1
 tag N0tChristine add str1
 
@@ -45,7 +43,12 @@ tag ambear1238 add str1
 tag surperiority add res1
 tag surperiority add str1
 
+tag karu_o7 add res1
+tag karu_o7 add minires
+
 tag Majoritysc add res1
+tag Majority add minires
+
 tag headpat_enjoyer add res1
 tag ItsDinodan add res1
 

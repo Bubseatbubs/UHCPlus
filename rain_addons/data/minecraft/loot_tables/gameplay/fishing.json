@@ -32,7 +32,7 @@
           "type": "minecraft:loot_table",
           "name": "minecraft:gameplay/fishing/fish",
           "quality": -1,
-          "weight": 85
+          "weight": 75
         }
       ],
       "rolls": 1.0
