@@ -2,7 +2,7 @@
 execute unless score %arrow_limit uhcp_arrowCount matches -2147483648..2147483647 run scoreboard players set %arrow_limit uhcp_arrowCount 12
 
 # Set default dimension countdown
-execute unless score %uhcp_dimTime uhcp_gameTime matches -2147483648..2147483647 run scoreboard players set %uhcp_dimTime uhcp_gameTime 72000
+execute unless score %uhcp_dimTime uhcp_gameTime matches -2147483648..2147483647 run scoreboard players set %uhcp_dimTime uhcp_gameTime 48000
 
 # Set default golden apples
 execute unless score %apples uhcp_settings matches -2147483648..2147483647 run scoreboard players set %apples uhcp_settings 3
