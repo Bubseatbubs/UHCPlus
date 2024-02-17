@@ -121,6 +121,10 @@ team join 50 @r[team=]
 
 scoreboard objectives remove team
 
+execute in minecraft:overworld run worldborder damage amount .01
+execute in minecraft:the_end run worldborder damage amount .01
+execute in minecraft:the_nether run worldborder damage amount .01
+
 #Starter tools
 #execute if score tools status matches 1 run give @a minecraft:stone_sword
 #execute if score tools status matches 1 run give @a minecraft:stone_axe
