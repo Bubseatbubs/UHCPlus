@@ -1,5 +1,5 @@
 # Effect
-give @s golden_apple 2
+give @s minecraft:golden_apple 2
 tellraw @s [{"text":"You ","color":"gray"},{"text":"leveled up","color":"gold"},{"text":"! Your ","color":"gray"},{"text":"equipment","color":"white"},{"text":" became stronger.","color":"gray"}]
 tag @s add UHCP_SLUpg
 tag @s add UHCP_SLAxe

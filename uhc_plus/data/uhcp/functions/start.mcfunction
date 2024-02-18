@@ -63,6 +63,9 @@ execute if score %tier uhcp_a_tier matches 10..34 run scoreboard players set %ti
 execute if score %tier uhcp_a_tier matches 35..89 run scoreboard players set %tier uhcp_a_tier 1
 execute if score %tier uhcp_a_tier matches 90..109 run scoreboard players set %tier uhcp_a_tier 2
 
+# Reset attribute modifiers
+execute as @a run function uhcp:attributes_reset
+
 # Solo leveling
 scoreboard players set @a uhcp_a_tier 0
 tag @a remove UHCP_SLUpg
