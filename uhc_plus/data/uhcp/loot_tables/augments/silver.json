@@ -1641,7 +1641,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 8,
+          "weight": 9,
           "name": "uhcp:augments/patron/silver"
         }
       ]
