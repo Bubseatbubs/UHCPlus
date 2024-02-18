@@ -30,7 +30,7 @@ execute if score @s patron matches 106 run playsound minecraft:entity.breeze.jum
 
 execute if score @s patron matches 107 run scoreboard players set @s uhcp_a_patron 7
 execute if score @s patron matches 107 run tellraw @a [{"text":"Loki","color":"gold"},{"text":" became ","color":"gray"},{"selector":"@s","color":"blue"},{"text":"'s","color":"blue"},{"text":" Patron God!","color":"gold"}]
-execute if score @s patron matches 107 run playsound entity.player.big_fall master @s ~ ~ ~ 1 1 1
+execute if score @s patron matches 107 run playsound block.piston.extend master @s ~ ~ ~ 1 1 1
 
 execute if score @s patron matches 108 run scoreboard players set @s uhcp_a_patron 8
 execute if score @s patron matches 108 run tellraw @a [{"text":"Hera","color":"gold"},{"text":" became ","color":"gray"},{"selector":"@s","color":"blue"},{"text":"'s","color":"blue"},{"text":" Patron God!","color":"gold"}]
