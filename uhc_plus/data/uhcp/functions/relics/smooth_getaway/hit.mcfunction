@@ -16,6 +16,7 @@ item modify entity @s weapon.mainhand uhcp:update_dur
 
 loot replace entity @e[tag=UHCP_New,type=armor_stand] armor.head loot uhcp:player_head
 effect give @s invisibility 10 0 false
+execute as @a if score @s uhcp_a_selectedAugment matches 239 run effect give @s speed 10 1 false
 
 tag @s add UHCP_Owner
 scoreboard players reset @e[distance=..6] uhcp_a_count

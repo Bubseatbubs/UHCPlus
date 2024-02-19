@@ -1034,7 +1034,21 @@
                 {
                   "text": "clones that deal double damage.",
                   "color": "gray"
-                }
+                },
+                [
+                  {
+                    "text": "Additionally, gain ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Speed I",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " for 10 seconds on ability activation.",
+                    "color": "gray"
+                  }
+                ]
               ]
             }
           ]
