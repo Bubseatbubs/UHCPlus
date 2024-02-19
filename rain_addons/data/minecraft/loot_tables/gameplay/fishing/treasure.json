@@ -168,7 +168,7 @@
               "treasure": true
             }
           ],
-          "weight": 15,
+          "weight": 10,
           "name": "minecraft:trident"
         },
         {
@@ -405,10 +405,10 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 2
+              "count": 1
             }
           ],
-          "weight": 35
+          "weight": 55
         },
         {
           "type": "minecraft:item",
