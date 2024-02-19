@@ -405,10 +405,13 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 1
+              "count": {
+                "min": 1,
+                "max": 2
+              }
             }
           ],
-          "weight": 55
+          "weight": 40
         },
         {
           "type": "minecraft:item",
