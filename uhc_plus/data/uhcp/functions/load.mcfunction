@@ -15,6 +15,7 @@ scoreboard objectives add uhcp_a_stack dummy
 scoreboard objectives add uhcp_a_tier dummy
 scoreboard objectives add uhcp_a_timer dummy
 scoreboard objectives add uhcp_a_validSelection dummy
+scoreboard objectives add uhcp_bee_stack dummy
 scoreboard objectives add uhcp_hb_killedZombie dummy
 scoreboard objectives add uhcp_hb_killedCreeper dummy
 scoreboard objectives add uhcp_hb_killedSkeleton dummy

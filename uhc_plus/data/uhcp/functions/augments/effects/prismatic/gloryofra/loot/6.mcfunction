@@ -1,3 +1,3 @@
-tag @s add UHCP_Beekeeper
+scoreboard players set @s uhcp_a_tier 855555
 give @s enchanted_golden_apple
-tellraw @s [{"text":"Ra blesses you with his tenacity!","color":"gold"},{"text":" You've received ","color":"gray"},{"text":"10🖤","color":"light_purple","bold":true},{"text":", ","color":"gray"},{"text":"a heal to full Health","color":"light_purple","bold":true},{"text":", and an ","color":"gray"},{"text":"Enchanted Golden Apple","color":"light_purple","bold":true},{"text":".","color":"gray"}]
+tellraw @s [{"text":"Ra blesses you with his... bees?!","color":"gold"},{"text":" You'll summon","color":"gray"},{"text":" Bees","color":"light_purple","bold":true},{"text":" every attack","color":"gray"},{"text":", and you've gained an ","color":"gray"},{"text":"Enchanted Golden Apple","color":"light_purple","bold":true},{"text":".","color":"gray"}]
