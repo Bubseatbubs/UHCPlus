@@ -1,4 +1,4 @@
-give @s minecraft:diamond 12
+give @s minecraft:diamond 24
 effect clear @s minecraft:resistance
-damage @s 10 minecraft:generic
-effect give @s minecraft:resistance 120 6 true
+damage @s 8 minecraft:generic
+effect give @s minecraft:resistance 120 4 true
