@@ -289,7 +289,7 @@
                         "color": "yellow"
                       },
                       {
-                        "text": " for 20 minutes. Afterwards, gain permanent",
+                        "text": " for 30 minutes. Afterwards, gain permanent",
                         "color": "gray"
                       },
                       {
@@ -697,7 +697,7 @@
                     },
                     [
                       {
-                        "text": "Gain 8",
+                        "text": "Gain 10",
                         "color": "gray"
                       },
                       {
@@ -705,7 +705,7 @@
                         "color": "white"
                       },
                       {
-                        "text": ". Start at Level 8.",
+                        "text": ". Start at Level 10.",
                         "color": "gray"
                       }
                     ]

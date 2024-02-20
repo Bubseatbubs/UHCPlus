@@ -146,13 +146,13 @@
                       "color": "red"
                     },
                     {
-                      "text": "Looting III / Unbreaking III",
+                      "text": "Looting III / Sharpness I",
                       "color": "dark_purple"
                     }
                   ],
                   [
                     {
-                      "text": "Golden Sword",
+                      "text": "Diamond Sword",
                       "color": "white"
                     },
                     {
@@ -409,7 +409,7 @@
                   },
                   [
                     {
-                      "text": "Gain 4",
+                      "text": "Gain 5",
                       "color": "gray"
                     },
                     {
@@ -760,7 +760,7 @@
                   ],
                   [
                     {
-                      "text": "Luck of the Sea VII",
+                      "text": "Luck of the Sea VI",
                       "color": "yellow"
                     },
                     {

@@ -217,11 +217,11 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 5🖤",
+                    "text": " 4🖤",
                     "color": "red"
                   },
                   {
-                    "text": ". Gain 12",
+                    "text": ". Gain 24",
                     "color": "gray"
                   },
                   {
@@ -354,20 +354,20 @@
           ]
         },
         {
-          "type": "minecraft:item",
+          "type": "item",
           "weight": 1,
           "name": "minecraft:magma_block",
           "functions": [
             {
-              "function": "minecraft:set_count",
+              "function": "set_count",
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pickup:1b,augment:8s}"
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:8b}"
             },
             {
-              "function": "minecraft:set_name",
+              "function": "set_name",
               "name": [
                 {
                   "text": "Fire and Water",
@@ -377,31 +377,50 @@
               ]
             },
             {
-              "function": "minecraft:set_lore",
+              "function": "set_lore",
               "lore": [
                 {
                   "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
+                  "color": "blue"
                 },
                 [
                   {
-                    "text": "Gain 2",
+                    "text": "Gain ",
                     "color": "gray"
                   },
                   {
-                    "text": " Lava Buckets, Water Buckets",
+                    "text": "2 Water Buckets",
                     "color": "white"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 2 Lava Buckets",
+                    "color": "white"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "and",
+                    "text": "a ",
                     "color": "gray"
                   },
                   {
-                    "text": " 4 Obsidian",
+                    "text": "Fire Resistance Potion",
                     "color": "white"
+                  },
+                  {
+                    "text": ", and"
+                  }
+                ],
+                [
+                  {
+                    "text": "Depth Strider II Diamond Boots"
                   },
                   {
                     "text": ".",
@@ -561,7 +580,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 15 TNT, 64 Redstone, a Flint and Steel,",
+                    "text": " 15 TNT, 64 Redstone, Minecarts and Rails,",
                     "color": "white"
                   }
                 ],
@@ -723,7 +742,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 30 seconds",
+                    "text": " 20 seconds",
                     "color": "white"
                   },
                   {
@@ -737,7 +756,7 @@
                     "color": "yellow"
                   },
                   {
-                    "text": " to all enemies for 10",
+                    "text": " to all nearby enemies for 20",
                     "color": "gray"
                   }
                 ],
@@ -747,7 +766,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " (2 minute 30 second Cooldown)",
+                    "text": " (3 minute cooldown)",
                     "color": "red"
                   }
                 ]
@@ -911,11 +930,11 @@
                 },
                 [
                   {
-                    "text": "Gain 3",
+                    "text": "Gain an ",
                     "color": "gray"
                   },
                   {
-                    "text": " Villager Spawn Eggs",
+                    "text": "Efficiency III / Unbreaking III Diamond Axe",
                     "color": "white"
                   },
                   {
@@ -931,6 +950,16 @@
                   {
                     "text": " Hero of the Village III",
                     "color": "yellow"
+                  }
+                ],
+                [
+                  {
+                    "text": "Generate a Village at your",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " spawn location.",
+                    "color": "gray"
                   }
                 ]
               ]
@@ -1066,7 +1095,7 @@
               "function": "minecraft:set_name",
               "name": [
                 {
-                  "text": "Protect Protocol II",
+                  "text": "Protect Protocol",
                   "color": "gray",
                   "bold": true
                 }
@@ -1082,11 +1111,11 @@
                 },
                 [
                   {
-                    "text": "Gain a ",
+                    "text": "Gain full ",
                     "color": "gray"
                   },
                   {
-                    "text": "Diamond Helmet, Iron Chestplate, Iron Leggings, and Iron Boots",
+                    "text": "Diamond Armor",
                     "color": "white"
                   },
                   {
