@@ -40,9 +40,6 @@ tag VanillaXDttv add str1
 tag ambear1238 add res1
 tag ambear1238 add str1
 
-tag surperiority add res1
-tag surperiority add str1
-
 tag karu_o7 add res1
 tag karu_o7 add minires
 
@@ -51,6 +48,7 @@ tag Majority add minires
 
 tag headpat_enjoyer add res1
 tag ItsDinodan add res1
+tag surperiority add res1
 
 #Plat
 tag kramsey11 add minires
