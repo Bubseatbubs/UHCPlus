@@ -1372,6 +1372,64 @@
           ]
         },
         {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:1,pickup:1b,augment:218}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Radiant Blessing",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "The first time you fall below",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 6🖤",
+                    "color": "red"
+                  }
+                ],
+                {
+                  "text": "after 20 minutes, gain an",
+                  "color": "gray"
+                },
+                [
+                  {
+                    "text": "Enchanted Golden Apple",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
           "type": "minecraft:loot_table",
           "weight": 9,
           "name": "uhcp:augments/patron/prismatic"

@@ -7,6 +7,7 @@ give @s sticky_piston 12
 give @s pointed_dripstone 12
 give @s observer 12
 give @s cobweb 6
+give @s tnt 10
 give @s redstone_block 64
 give @s stone 64
 give @s dirt 64
