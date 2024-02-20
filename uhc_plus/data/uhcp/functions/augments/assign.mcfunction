@@ -96,7 +96,7 @@ execute if score @s uhcp_a_count matches 1.. run return 39
 execute store success score @s uhcp_a_count run clear @s minecraft:blade_pottery_sherd{augment:40s} 1
 execute if score @s uhcp_a_count matches 1.. run return 40
 
-execute store success score @s uhcp_a_count run clear @s minecraft:sniffer_spawn_egg{augment:41s}
+execute store success score @s uhcp_a_count run clear @s minecraft:sniffer_egg{augment:41s}
 execute if score @s uhcp_a_count matches 1.. run return 41
 
 execute store success score @s uhcp_a_count run clear @s minecraft:diamond{augment:42s}

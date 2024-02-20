@@ -1261,7 +1261,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": "no particle Invisibility",
+                    "text": "no particle Invisibility and Speed",
                     "color": "yellow"
                   },
                   {
@@ -1270,7 +1270,7 @@
                   }
                 ],
                 {
-                  "text": "when sneaking.",
+                  "text": "when you sneak.",
                   "color": "gray"
                 }
               ]

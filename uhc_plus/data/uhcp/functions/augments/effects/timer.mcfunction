@@ -33,6 +33,12 @@ execute if score %time uhcp_gameTime matches 18000 as @a[scores={uhcp_a_selected
 execute if score %time uhcp_gameTime matches 22800 as @a[scores={uhcp_a_selectedAugment=42}] run tellraw @s {"text":"Coal will convert to Diamonds in 1 minute!","color":"red"}
 execute if score %time uhcp_gameTime matches 22800 as @a[scores={uhcp_a_selectedAugment=42}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
 
+execute if score %time uhcp_gameTime matches 36000 as @a[scores={uhcp_a_selectedAugment=43}] run tellraw @s {"text":"All your wolves will fetch loot in 5 minutes!","color":"red"}
+execute if score %time uhcp_gameTime matches 36000 as @a[scores={uhcp_a_selectedAugment=43}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
+
+execute if score %time uhcp_gameTime matches 40800 as @a[scores={uhcp_a_selectedAugment=43}] run tellraw @s {"text":"All your wolves will fetch loot in 1 minute!","color":"red"}
+execute if score %time uhcp_gameTime matches 40800 as @a[scores={uhcp_a_selectedAugment=43}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
+
 #Rain random lab UHC player balance addons
 execute if score %time uhcp_gameTime matches 2700 run function rain:tags
 
