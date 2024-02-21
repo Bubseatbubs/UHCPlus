@@ -168,7 +168,7 @@
               "treasure": true
             }
           ],
-          "weight": 10,
+          "weight": 8,
           "name": "minecraft:trident"
         },
         {
@@ -186,8 +186,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 16,
-                "min": 10
+                "min": 8,
+                "max": {
+                  "min": 12,
+                  "max": 20
+                }
               },
               "treasure": true
             }
@@ -210,8 +213,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 20,
-                "min": 10
+                "min": 8,
+                "max": {
+                  "min": 12,
+                  "max": 20
+                }
               },
               "treasure": true
             }
@@ -234,8 +240,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 20,
-                "min": 10
+                "min": 8,
+                "max": {
+                  "min": 12,
+                  "max": 20
+                }
               },
               "treasure": true
             }
@@ -258,8 +267,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 20,
-                "min": 10
+                "min": 8,
+                "max": {
+                  "min": 12,
+                  "max": 20
+                }
               },
               "treasure": true
             }
@@ -282,8 +294,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 20,
-                "min": 10
+                "min": 10,
+                "max": {
+                  "min": 20,
+                  "max": 30
+                }
               },
               "treasure": true
             }
@@ -306,8 +321,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 20,
-                "min": 10
+                "min": 8,
+                "max": {
+                  "min": 12,
+                  "max": 20
+                }
               },
               "treasure": true
             }
@@ -330,8 +348,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 20,
-                "min": 10
+                "min": 8,
+                "max": {
+                  "min": 12,
+                  "max": 20
+                }
               },
               "treasure": true
             }
@@ -354,8 +375,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 20,
-                "min": 10
+                "min": 8,
+                "max": {
+                  "min": 12,
+                  "max": 20
+                }
               },
               "treasure": true
             }
@@ -378,8 +402,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 20,
-                "min": 10
+                "min": 8,
+                "max": {
+                  "min": 12,
+                  "max": 20
+                }
               },
               "treasure": true
             }
@@ -392,11 +419,14 @@
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
+              "levels": {
+                "min": 8,
+                "max": 20
+              },
               "treasure": true
             }
           ],
-          "weight": 26,
+          "weight": 24,
           "name": "minecraft:book"
         },
         {
@@ -411,7 +441,7 @@
               }
             }
           ],
-          "weight": 40
+          "weight": 36
         },
         {
           "type": "minecraft:item",
@@ -422,7 +452,7 @@
               "count": 6
             }
           ],
-          "weight": 15
+          "weight": 12
         },
         {
           "type": "minecraft:item",
