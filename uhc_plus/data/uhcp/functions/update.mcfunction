@@ -12,4 +12,5 @@ execute if entity @s[tag=UHCP_DragonsProtection] run return run function uhcp:re
 
 # Augments
 execute if entity @s[tag=UHCP_Bee] at @s run return run function uhcp:augments/effects/bees/update
+execute if entity @s[tag=UHCP_BeastWolf] at @s run return run function uhcp:augments/effects/wolves/update
 
