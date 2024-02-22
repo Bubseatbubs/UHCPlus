@@ -12,7 +12,7 @@ execute if score stage status matches 1 run effect give @a minecraft:resistance 
 execute if score stage status matches 1 run effect give @a minecraft:regeneration 128 125 true
 execute if score stage status matches 1 run execute as @a[gamemode=adventure,scores={phantom=100}] at @s run scoreboard players set @s options 1
 execute if score stage status matches 1 run execute as @a[scores={phantom=180}] at @s run tellraw @s ["",{"text":"You can toggle coords at any time by running "},{"text":"/trigger ch_toggle","color":"green","clickEvent":{"action":"run_command","value":"/trigger ch_toggle"}}]
-execute if score stage status matches 1 run execute as @a[scores={phantom=180}] at @s run tellraw @s ["",{"text":"You can select a Patron God at any time by running "},{"text":"/trigger patron","color":"green","clickEvent":{"action":"run_command","value":"/trigger ch_toggle"}}]
+execute if score stage status matches 1 run execute as @a[scores={phantom=180}] at @s run tellraw @s ["",{"text":"You can select a Patron God at any time by running "},{"text":"/trigger patron","color":"green","clickEvent":{"action":"run_command","value":"/trigger patron"}}]
 execute if score stage status matches 1 run execute store result score Players setting if entity @e[type=player]
  
 scoreboard players enable @a options
