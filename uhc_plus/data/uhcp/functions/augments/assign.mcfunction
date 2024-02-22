@@ -218,6 +218,9 @@ execute store success score @s uhcp_a_count run clear @s minecraft:book{augment:
 execute if score @s uhcp_a_count matches 1.. run return 150
 
 # Prismatic Augments
+execute store success score @s uhcp_a_count run clear @s minecraft:bone{augment:200s} 1
+execute if score @s uhcp_a_count matches 1.. run return 200
+
 execute store success score @s uhcp_a_count run clear @s minecraft:bow{augment:201s} 1
 execute if score @s uhcp_a_count matches 1.. run return 201
 

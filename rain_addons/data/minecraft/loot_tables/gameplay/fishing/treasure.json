@@ -5,6 +5,11 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
+          "type": "minecraft:item",
+          "name": "minecraft:sniffer_spawn_egg",
+          "weight": 1
+        },
+        {
           "type": "item",
           "weight": 1,
           "name": "minecraft:elytra",
@@ -67,7 +72,7 @@
         },
         {
           "type": "item",
-          "weight": 2,
+          "weight": 1,
           "name": "minecraft:feather",
           "functions": [
             {
@@ -168,7 +173,7 @@
               "treasure": true
             }
           ],
-          "weight": 10,
+          "weight": 8,
           "name": "minecraft:trident"
         },
         {
@@ -186,8 +191,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 16,
-                "min": 10
+                "min": 8,
+                "max": {
+                  "min": 12,
+                  "max": 20
+                }
               },
               "treasure": true
             }
@@ -210,8 +218,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 20,
-                "min": 10
+                "min": 8,
+                "max": {
+                  "min": 12,
+                  "max": 20
+                }
               },
               "treasure": true
             }
@@ -234,8 +245,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 20,
-                "min": 10
+                "min": 8,
+                "max": {
+                  "min": 12,
+                  "max": 20
+                }
               },
               "treasure": true
             }
@@ -258,8 +272,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 20,
-                "min": 10
+                "min": 8,
+                "max": {
+                  "min": 12,
+                  "max": 20
+                }
               },
               "treasure": true
             }
@@ -282,8 +299,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 20,
-                "min": 10
+                "min": 10,
+                "max": {
+                  "min": 20,
+                  "max": 30
+                }
               },
               "treasure": true
             }
@@ -306,8 +326,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 20,
-                "min": 10
+                "min": 8,
+                "max": {
+                  "min": 12,
+                  "max": 20
+                }
               },
               "treasure": true
             }
@@ -330,8 +353,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 20,
-                "min": 10
+                "min": 8,
+                "max": {
+                  "min": 12,
+                  "max": 20
+                }
               },
               "treasure": true
             }
@@ -354,8 +380,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 20,
-                "min": 10
+                "min": 8,
+                "max": {
+                  "min": 12,
+                  "max": 20
+                }
               },
               "treasure": true
             }
@@ -378,8 +407,11 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "max": 20,
-                "min": 10
+                "min": 8,
+                "max": {
+                  "min": 12,
+                  "max": 20
+                }
               },
               "treasure": true
             }
@@ -392,11 +424,14 @@
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
+              "levels": {
+                "min": 8,
+                "max": 20
+              },
               "treasure": true
             }
           ],
-          "weight": 26,
+          "weight": 24,
           "name": "minecraft:book"
         },
         {
@@ -411,7 +446,7 @@
               }
             }
           ],
-          "weight": 40
+          "weight": 36
         },
         {
           "type": "minecraft:item",
@@ -422,7 +457,7 @@
               "count": 6
             }
           ],
-          "weight": 15
+          "weight": 12
         },
         {
           "type": "minecraft:item",
@@ -431,6 +466,17 @@
             {
               "function": "minecraft:set_count",
               "count": 32
+            }
+          ],
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:obsidian",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 8
             }
           ],
           "weight": 6

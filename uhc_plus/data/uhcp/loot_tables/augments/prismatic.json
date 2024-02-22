@@ -1120,6 +1120,76 @@
           ]
         },
         {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:1,pickup:1b,augment:200s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Beastmaster",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Every 3 attacks, summon an angry",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Bee",
+                    "color": "blue"
+                  },
+                  {
+                    "text": " that",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "attacks your target. Every 6 attacks,",
+                  "color": "gray"
+                },
+                [
+                  {
+                    "text": "summon a temporary",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Wolf",
+                    "color": "blue"
+                  },
+                  {
+                    "text": " that attacks your",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "target.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:blade_pottery_sherd",

@@ -84,6 +84,7 @@ execute if score @s uhcp_a_selectedAugment matches 44 run return 0
 execute if score @s uhcp_a_selectedAugment matches 45 run function uhcp:augments/effects/gold/youhavemyrodii
 
 # Prismatic Augments
+execute if score @s uhcp_a_selectedAugment matches 200 run function uhcp:augments/effects/prismatic/beastmaster
 execute if score @s uhcp_a_selectedAugment matches 201 run function uhcp:augments/effects/prismatic/bowmaster
 execute if score @s uhcp_a_selectedAugment matches 202 run return 0
 execute if score @s uhcp_a_selectedAugment matches 203 run function uhcp:augments/effects/prismatic/cruelpact

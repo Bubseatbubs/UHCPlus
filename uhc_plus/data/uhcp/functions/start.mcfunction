@@ -4,6 +4,8 @@ scoreboard players reset @a uhcp_a_gloryOfRa
 scoreboard players reset @a uhcp_a_selectedAugment
 scoreboard players reset @a uhcp_a_tier
 scoreboard players reset @a uhcp_topCD
+scoreboard players reset @a uhcp_wolf_stacks
+scoreboard players reset @a uhcp_bee_stacks
 scoreboard players set %uhcp_gameStart uhcp_initStatus 1
 scoreboard players reset @a uhcp_arrowCount
 scoreboard players set %AUG_7 uhcp_gameTime 2400
