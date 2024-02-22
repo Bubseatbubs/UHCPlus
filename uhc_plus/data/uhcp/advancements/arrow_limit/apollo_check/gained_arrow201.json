@@ -26,7 +26,7 @@
                     "type": "minecraft:score",
                     "target": {
                       "type": "minecraft:fixed",
-                      "name": "%arrow_limit"
+                      "name": "%arrow_limit201"
                     },
                     "score": "uhcp_arrowCount",
                     "scale": 1
@@ -37,39 +37,11 @@
             }
           },
           {
-            "condition": "minecraft:all_of",
-            "terms": [
-              {
-                "condition": "minecraft:inverted",
-                "term": {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "uhcp_a_selectedAugment": 149
-                  }
-                }
-              },
-              {
-                "condition": "minecraft:inverted",
-                "term": {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "uhcp_a_selectedAugment": 5
-                  }
-                }
-              },
-              {
-                "condition": "minecraft:inverted",
-                "term": {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "uhcp_a_selectedAugment": 201
-                  }
-                }
-              }
-            ]
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "uhcp_a_selectedAugment": 201
+            }
           }
         ],
         "items": [

@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:arrow_limit/end
+advancement revoke @s through uhcp:arrow_limit/end_parent
 execute at @s run summon item ~ ~ ~ {Tags:["UHCP_New"],PickupDelay:40,Item:{id:"minecraft:arrow",Count:1b}}
 execute store result score @s uhcp_arrowCount run clear @s arrow 0
 scoreboard players operation %init uhcp_arrowCount -= @s uhcp_arrowCount
@@ -10,3 +10,4 @@ data modify entity @e[tag=UHCP_New,sort=nearest,limit=1] Item.Count set from sto
 tag @e remove UHCP_New
 
 scoreboard players reset @s uhcp_arrowCount
+scoreboard players reset %arrow_limit_player uhcp_arrowCount
