@@ -10,30 +10,15 @@
           "weight": 1
         },
         {
-          "type": "item",
+          "type": "loot_table",
           "weight": 1,
-          "name": "minecraft:elytra",
+          "name": "uhcp:augments/armored_wings",
           "functions": [
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Armored Elytra\",\"color\":\"light_purple\",\"bold\":true}'},Unbreakable:1b,AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUID:[I;1920415641,-1732883090,-1175575910,-338861308],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;-925892693,1057638723,-1131740273,-1618213274],Slot:\"chest\"}]}"
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:gold_ingot",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 32
-            }
-          ],
-          "weight": 1
         },
         {
           "type": "loot_table",
