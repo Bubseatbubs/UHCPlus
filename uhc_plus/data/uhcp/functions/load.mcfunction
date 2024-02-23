@@ -3,6 +3,7 @@ scoreboard objectives add augments trigger
 scoreboard objectives add hunger trigger
 scoreboard objectives add menu trigger
 scoreboard objectives add top trigger
+scoreboard objectives add testkit trigger
 scoreboard objectives add patron trigger
 scoreboard objectives add uhcp_a_count dummy
 scoreboard objectives add uhcp_a_durability dummy

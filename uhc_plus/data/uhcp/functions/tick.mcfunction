@@ -42,6 +42,11 @@ execute as @a[tag=uhcp_isTeleporting] at @s run execute unless entity @e[type=mi
 
 # Top Chargeup
 execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
+execute if entity @a[scores={top=1..}] run function uhcp:top/validate
+
+# Testkit Command
+scoreboard players enable @a testkit
+execute as @a if score @s testkit matches 1.. run function uhcp:testkit
 
 # Death
 execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:augments/effects/death
