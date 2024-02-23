@@ -8,6 +8,7 @@ execute if score @s uhcp_a_selectedAugment matches 100 run function uhcp:augment
 execute if score @s uhcp_a_selectedAugment matches 101 run function uhcp:augments/effects/silver/afk
 execute if score @s uhcp_a_selectedAugment matches 102 run function uhcp:augments/effects/silver/blacksmith
 execute if score @s uhcp_a_selectedAugment matches 103 run function uhcp:augments/effects/silver/bucketlist
+execute if score @s uhcp_a_selectedAugment matches 104 run return 0
 execute if score @s uhcp_a_selectedAugment matches 106 run function uhcp:augments/effects/silver/youhavemyrodi
 execute if score @s uhcp_a_selectedAugment matches 107 run function uhcp:augments/effects/silver/dripeconomyi
 execute if score @s uhcp_a_selectedAugment matches 108 run function uhcp:augments/effects/silver/drunkenstupor

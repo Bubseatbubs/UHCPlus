@@ -1584,6 +1584,58 @@
           ]
         },
         {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:enchanting_table",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{pickup:1b,augment:104s}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Magician",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "/trigger top ",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "no longer applies",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "negative effects and the cooldown",
+                  "color": "gray"
+                },
+                {
+                  "text": "is halved.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:amethyst_shard",
