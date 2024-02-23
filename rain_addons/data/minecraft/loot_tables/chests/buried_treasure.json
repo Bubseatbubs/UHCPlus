@@ -147,84 +147,24 @@
           ]
         },
         {
-          "type": "item",
+          "type": "loot_table",
           "weight": 1,
-          "name": "minecraft:feather",
+          "name": "uhcp:augments/birdsofafeather",
           "functions": [
             {
               "function": "set_count",
               "count": 2
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:1,uhcp_dropeffect:1b,birdfeather:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Wild Feather",
-                  "color": "light_purple",
-                  "italic": false
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "Throw this item to teleport to",
-                  "color": "gray"
-                },
-                {
-                  "text": "a random teammate.",
-                  "color": "gray"
-                }
-              ]
             }
           ]
         },
         {
-          "type": "item",
+          "type": "loot_table",
           "weight": 1,
-          "name": "minecraft:magma_cream",
+          "name": "uhcp:augments/portablelavapool",
           "functions": [
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:1,uhcp_dropeffect:1b,portablelavapool:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "Portable Lava Pool",
-                  "color": "light_purple",
-                  "italic": false
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "Throw this item to summon a 5x5",
-                  "color": "gray"
-                },
-                [
-                  {
-                    "text": "Lava Pool ",
-                    "color": "red"
-                  },
-                  {
-                    "text": "in front of you.",
-                    "color": "gray"
-                  }
-                ]
-              ]
             }
           ]
         }
