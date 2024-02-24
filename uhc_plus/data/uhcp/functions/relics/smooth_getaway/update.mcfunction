@@ -4,10 +4,9 @@ execute at @s unless entity @e[tag=UHCP_SClone,distance=..1.5] run scoreboard pl
 tag @s add UHCP_Teleport
 execute as @e[tag=UHCP_SClone] at @s unless entity @e[tag=UHCP_SCloneStand,tag=!UHCP_Teleport,distance=..0.5] if score @s uhcp_team = @e[tag=UHCP_Teleport,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_Target
 tp @s @e[tag=UHCP_Target,sort=nearest,limit=1]
-execute at @s run tp @e[tag=UHCP_Target,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
-execute as @e[type=!#uhcp:inanimate_mobs] unless score @s uhcp_team = @e[tag=UHCP_Teleport,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_AttackTarget
-execute as @e[tag=UHCP_Target] run data modify entity @s AngryAt set from entity @e[tag=UHCP_AttackTarget,sort=nearest,limit=1] UUID
+#execute as @e[type=!#uhcp:inanimate_mobs] unless score @s uhcp_team = @e[tag=UHCP_Teleport,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_AttackTarget
+#execute as @e[tag=UHCP_Target] run data modify entity @s AngryAt set from entity @e[tag=UHCP_AttackTarget,sort=nearest,limit=1] UUID
 
 execute if score @s uhcp_a_timer matches ..200 run tag @e remove UHCP_Target
 tag @e remove UHCP_AttackTarget

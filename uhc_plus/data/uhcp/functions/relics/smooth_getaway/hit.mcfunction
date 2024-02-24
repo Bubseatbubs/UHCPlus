@@ -23,7 +23,7 @@ scoreboard players reset @e[distance=..6] uhcp_a_count
 execute as @e[tag=!UHCP_Owner,type=!#uhcp:inanimate_mobs,distance=..6] store result score @s uhcp_a_count run function uhcp:relics/checkattacker
 tag @e[distance=..6,scores={uhcp_a_count=1},sort=nearest,limit=1] add UHCP_SCloneTarget
 
-# execute as @e[type=wolf,tag=UHCP_New] run data modify entity @s Owner set from entity @p[tag=UHCP_Owner] UUID
+execute as @e[type=wolf,tag=UHCP_New] run data modify entity @s Owner set from entity @p[tag=UHCP_Owner] UUID
 
 execute as @e[tag=UHCP_New,type=armor_stand] run data modify entity @s CustomName set from entity @s ArmorItems[3].tag.SkullOwner.Name
 
