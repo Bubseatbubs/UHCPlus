@@ -33,7 +33,7 @@ execute if entity @a[predicate=uhcp:teams/team] run function uhcp:teams/team
 scoreboard players set @a[predicate=uhcp:teams/neither] uhcp_team 0
 scoreboard players set @a[gamemode=!survival] uhcp_team 0
 
-execute as @e[tag=UHCP_New] store result score @s uhcp_team run scoreboard players get @a[tag=UHCP_Owner,sort=nearest,limit=1] uhcp_team
+scoreboard players operation @e[tag=UHCP_New] uhcp_team = @a[tag=UHCP_Owner,sort=nearest,limit=1] uhcp_team
 
 tag @s remove UHCP_Owner
 tag @e remove UHCP_New

@@ -27,7 +27,7 @@ execute if score @s uhcp_a_count matches 13..16 at @e[tag=UHCP_HarvesterTarget] 
 execute if score @s uhcp_a_count matches 17..19 at @e[tag=UHCP_HarvesterTarget] anchored eyes run summon armor_stand ~ ~5 ~ {NoGravity:0b,Silent:1b,Small:1b,Invisible:1b,Tags:["UHCP_New","UHCP_GoldBlock","UHCP_Summon"],Passengers:[{id:"minecraft:block_display",NoGravity:0b,Tags:["UHCP_GBDisplay"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-2.25f,-2.25f,-2.25f],scale:[4.5f,4.5f,4.5f]},block_state:{Name:"minecraft:gold_block"}}]}
 execute if score @s uhcp_a_count matches 20.. at @e[tag=UHCP_HarvesterTarget] anchored eyes run summon armor_stand ~ ~5 ~ {NoGravity:0b,Silent:1b,Small:1b,Invisible:1b,Tags:["UHCP_New","UHCP_GoldBlock","UHCP_Summon"],Passengers:[{id:"minecraft:block_display",NoGravity:0b,Tags:["UHCP_GBDisplay"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-3f,-3f,-3f],scale:[6f,6f,6f]},block_state:{Name:"minecraft:gold_block"}}]}
 
-execute store result score @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_a_tier run scoreboard players get @s uhcp_a_count
+scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_a_tier = @s uhcp_a_count
 
 execute at @e[tag=UHCP_HarvesterTarget] run playsound minecraft:block.anvil.place player @a[distance=..6] ~ ~ ~ 1.0 0.6 1.0
 
@@ -38,7 +38,7 @@ scoreboard players set @a[predicate=uhcp:teams/neither] uhcp_team 0
 scoreboard players set @a[gamemode=!survival] uhcp_team 0
 
 # Gets team value
-execute store result score @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_team run scoreboard players get @s uhcp_team
+scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_team = @s uhcp_team
 
 tag @s remove UHCP_Owner
 tag @e remove UHCP_HarvesterTarget

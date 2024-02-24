@@ -26,7 +26,7 @@ scoreboard players set @a[predicate=uhcp:teams/neither] uhcp_team 0
 scoreboard players set @a[gamemode=!survival] uhcp_team 0
 
 # Gets team value
-execute store result score @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_team run scoreboard players get @s uhcp_team
+scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_team = @s uhcp_team
 
 execute at @e[tag=UHCP_New,sort=nearest,limit=1] positioned ~ ~0.6 ~ run function uhcp:relics/voltrune/particles
 execute at @e[tag=UHCP_New,sort=nearest,limit=1] positioned ~ ~0.6 ~ rotated ~90 ~ run function uhcp:relics/voltrune/particles

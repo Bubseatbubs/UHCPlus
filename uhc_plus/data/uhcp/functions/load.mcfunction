@@ -78,7 +78,19 @@ bossbar set minecraft:uhcp_augment color white
 bossbar set minecraft:uhcp_augment style notched_6
 bossbar set minecraft:uhcp_augment max 900
 
-# Set default scores
+# Default scores
+# Arrow limit
+scoreboard players set %arrow_limit_default uhcp_arrowCount 12
+# Dimension countdown
+scoreboard players set %uhcp_dimTimeDef uhcp_gameTime 48000
+# Golden apples
+scoreboard players set %apples_default uhcp_settings 3
+# Lava
+scoreboard players set %uhcp_lavaDef uhcp_lavaMaxHeight 50
+scoreboard players set %uhcp_lavaDef uhcp_lavaTime 8400
+scoreboard players set %uhcp_lavaDef uhcp_gameTime 48000
+
+# Set default scores when unset
 execute unless score stage status matches 2 unless score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:load/scores
 
 # Forceload main dimension
