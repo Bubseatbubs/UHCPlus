@@ -25,9 +25,9 @@ scoreboard players set @a[predicate=uhcp:teams/neither] uhcp_team 0
 scoreboard players set @a[gamemode=!survival] uhcp_team 0
 
 # Bee is part of the squad
-execute store result score @e[tag=UHCP_Bee,sort=nearest,limit=1] uhcp_team run scoreboard players get @s uhcp_team
+scoreboard players operation @e[tag=UHCP_Bee,sort=nearest,limit=1] uhcp_team = @s uhcp_team
 
-# Bee Sin!
+# Bee Sin! :o
 execute store result score %random uhcp_a_count run random value 1..100
 execute if score %random uhcp_a_count matches 100 run data merge entity @e[tag=UHCP_Bee,sort=nearest,limit=1] {CustomName:'{"text":"Bee Sin","color":"gold"}',CustomNameVisible:1b}
 

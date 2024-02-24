@@ -1,22 +1,17 @@
-tag @s add UHCP_Find
 scoreboard players add @s uhcp_a_timer 1
 execute at @s unless entity @e[tag=UHCP_SClone,distance=..1.5] run scoreboard players set @s uhcp_a_timer 300
 
 tag @s add UHCP_Teleport
-execute as @e[tag=UHCP_SClone] at @s unless entity @e[tag=UHCP_SCloneStand,tag=!UHCP_Find,distance=..0.5] if score @s uhcp_team = @e[tag=UHCP_Teleport,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_Target
+execute as @e[tag=UHCP_SClone] at @s unless entity @e[tag=UHCP_SCloneStand,tag=!UHCP_Teleport,distance=..0.5] if score @s uhcp_team = @e[tag=UHCP_Teleport,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_Target
 tp @s @e[tag=UHCP_Target,sort=nearest,limit=1]
-execute at @s rotated as @e[tag=UHCP_Target,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ ~
-tag @s remove UHCP_Find
 
-execute as @e[type=!#uhcp:inanimate_mobs] unless score @s uhcp_team = @e[tag=UHCP_Teleport,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_AttackTarget
-execute as @e[tag=UHCP_Target] run data modify entity @s AngryAt set from entity @e[tag=UHCP_AttackTarget,sort=nearest,limit=1] UUID
+#execute as @e[type=!#uhcp:inanimate_mobs] unless score @s uhcp_team = @e[tag=UHCP_Teleport,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_AttackTarget
+#execute as @e[tag=UHCP_Target] run data modify entity @s AngryAt set from entity @e[tag=UHCP_AttackTarget,sort=nearest,limit=1] UUID
 
 execute if score @s uhcp_a_timer matches ..200 run tag @e remove UHCP_Target
 tag @e remove UHCP_AttackTarget
 tag @s remove UHCP_Teleport
 execute if score @s uhcp_a_timer matches ..200 run return 0
-
-
 
 particle minecraft:campfire_signal_smoke ~ ~ ~ 1.5 0.5 1.5 0.1 50 normal
 playsound entity.armor_stand.break master @a[distance=..8] ~ ~ ~ 1 0.5 0.5

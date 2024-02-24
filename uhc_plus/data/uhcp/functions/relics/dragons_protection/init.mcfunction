@@ -14,7 +14,7 @@ scoreboard players set @a[predicate=uhcp:teams/neither] uhcp_team 0
 scoreboard players set @a[gamemode=!survival] uhcp_team 0
 
 # Gets team value
-execute store result score @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_team run scoreboard players get @s uhcp_team
+scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_team = @s uhcp_team
 execute at @e[tag=UHCP_New,sort=nearest,limit=1] run fill ~-1 ~ ~-1 ~1 ~2 ~1 minecraft:air
 execute as @e[distance=..3] unless score @s uhcp_team = @a[tag=UHCP_Init,sort=nearest,limit=1] uhcp_team at @s run tp @s ~ ~4 ~
 tp @s ~ ~1 ~

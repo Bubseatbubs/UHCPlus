@@ -143,6 +143,6 @@ scoreboard players reset %hunger_timer uhcp_gameTime
 scoreboard players reset @a uhcp_topCD
 scoreboard players reset @a hunger
 scoreboard players reset @a top
-execute unless score %uhcp_lavaStart uhcp_initStatus matches 1 run scoreboard players set %uhcp_lava uhcp_gameTime 48000
-scoreboard players set %uhcp_dimTime uhcp_gameTime 48000
+execute unless score %uhcp_lavaStart uhcp_initStatus matches 1 run scoreboard players operation %uhcp_lava uhcp_gameTime = %uhcp_lavaDef uhcp_gameTime
+scoreboard players operation %uhcp_dimTime uhcp_gameTime = %uhcp_dimTimeDef uhcp_gameTime
 scoreboard objectives setdisplay sidebar

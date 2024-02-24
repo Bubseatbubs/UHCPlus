@@ -24,7 +24,6 @@ scoreboard players set @a[predicate=uhcp:teams/neither] uhcp_team 0
 scoreboard players set @a[gamemode=!survival] uhcp_team 0
 
 # Wolf is part of the squad
-execute store result score @e[tag=UHCP_BeastWolf,sort=nearest,limit=1] uhcp_team run scoreboard players get @s uhcp_team
-
+scoreboard players operation @e[tag=UHCP_BeastWolf,sort=nearest,limit=1] uhcp_team = @s uhcp_team
 
 scoreboard players reset @s uhcp_wolf_stack

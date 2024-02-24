@@ -1,17 +1,3 @@
-# Reset upgrade status
-scoreboard players set @a uhcp_a_tier 0
-tag @a remove UHCP_SLUpg
-tag @a remove UHCP_SLAxe
-tag @a remove UHCP_SLBoots
-tag @a remove UHCP_SLBow
-tag @a remove UHCP_SLChest
-tag @a remove UHCP_SLHelm
-tag @a remove UHCP_SLHoe
-tag @a remove UHCP_SLLegs
-tag @a remove UHCP_SLPick
-tag @a remove UHCP_SLShovel
-tag @a remove UHCP_SLSword
-
 # Tool list
 data modify storage uhcp:solo_level ToolList set value ["minecraft:bow","minecraft:chainmail_boots","minecraft:chainmail_chestplate","minecraft:chainmail_helmet","minecraft:chainmail_leggings","minecraft:crossbow","minecraft:diamond_axe","minecraft:diamond_boots","minecraft:diamond_chestplate","minecraft:diamond_helmet","minecraft:diamond_hoe","minecraft:diamond_leggings","minecraft:diamond_pickaxe","minecraft:diamond_shovel","minecraft:diamond_sword","minecraft:golden_axe","minecraft:golden_boots","minecraft:golden_chestplate","minecraft:golden_helmet","minecraft:golden_hoe","minecraft:golden_leggings","minecraft:golden_pickaxe","minecraft:golden_shovel","minecraft:golden_sword","minecraft:iron_axe","minecraft:iron_boots","minecraft:iron_chestplate","minecraft:iron_helmet","minecraft:iron_hoe","minecraft:iron_leggings","minecraft:iron_pickaxe","minecraft:iron_shovel","minecraft:iron_sword","minecraft:leather_boots","minecraft:leather_chestplate","minecraft:leather_helmet","minecraft:leather_leggings","minecraft:netherite_axe","minecraft:netherite_boots","minecraft:netherite_chestplate","minecraft:netherite_helmet","minecraft:netherite_hoe","minecraft:netherite_leggings","minecraft:netherite_pickaxe","minecraft:netherite_shovel","minecraft:netherite_sword","minecraft:stone_axe","minecraft:stone_hoe","minecraft:stone_pickaxe","minecraft:stone_shovel","minecraft:stone_sword","minecraft:wooden_axe","minecraft:wooden_hoe","minecraft:wooden_pickaxe","minecraft:wooden_shovel","minecraft:wooden_sword"]
 
