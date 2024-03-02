@@ -1,10 +1,10 @@
 # Manage compass data
 data modify storage uhcp:compass Work set value [I;-1,-1,-1,-1]
-execute store success score %uhcp_compassID uhcp_itemInv run data modify storage uhcp:compass Work set from storage uhcp:compass Compass.hand[0].tag.UUID
+execute store success score %uhcp_compassID uhcp_itemInv run data modify storage uhcp:compass Work set from storage uhcp:compass Compass.hand[0].components."minecraft:custom_data".uuid
 execute if score %uhcp_compassID uhcp_itemInv matches 0 run function uhcp:compass/replace/hand0/assign
 execute if score %uhcp_compassID uhcp_itemInv matches 1 run function uhcp:compass/replace/hand0/compare
 
-execute store result score %uhcp_compassAge uhcp_itemInv run data get storage uhcp:compass Compass.hand[0].tag.compass_time
+execute store result score %uhcp_compassAge uhcp_itemInv run data get storage uhcp:compass Compass.hand[0].components."minecraft:custom_data".compass_time
 scoreboard players add %uhcp_compassAge uhcp_itemInv 1
 execute if score %uhcp_compassAge uhcp_itemInv matches 61.. run function uhcp:compass/mainhand/mainhand
 execute if score %uhcp_compassAge uhcp_itemInv matches 0..60 run function uhcp:compass/mainhand/age

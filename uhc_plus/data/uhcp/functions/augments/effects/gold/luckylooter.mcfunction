@@ -1,1 +1,1 @@
-give @s diamond_sword{Enchantments:[{id:"minecraft:looting",lvl:3s},{id:"minecraft:sharpness",lvl:1s}]} 1
+give @s minecraft:diamond_sword[minecraft:enchantments={levels:{"minecraft:looting":3,"minecraft:sharpness":1}}] 1

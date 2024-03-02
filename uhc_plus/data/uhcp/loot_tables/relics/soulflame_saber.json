@@ -12,8 +12,22 @@
                 "count": 1
               },
               {
-                "function": "minecraft:set_nbt",
-                "tag": "{RepairCost:100,uhcp_radiant:1b,Enchantments:[{id:\"minecraft:sharpness\",lvl:1s},{id:\"minecraft:sweeping\",lvl:1s},{id:\"minecraft:vanishing_curse\",lvl:1s}]}"
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:sharpness": 1,
+                  "minecraft:sweeping_edge": 1,
+                  "minecraft:vanishing_curse": 1
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                    "minecraft:repair_cost": 100
+                  }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_radiant:1b}"
               },
               {
                 "function": "minecraft:set_name",

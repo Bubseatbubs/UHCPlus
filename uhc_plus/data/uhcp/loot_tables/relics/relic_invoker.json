@@ -13,8 +13,20 @@
                 "count": 1
               },
               {
-                "function": "set_nbt",
-                "tag": "{HideFlags:163,uhcp_dropeffect:1b,relicexcavator:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:enchantments": {
+                    "levels": {
+                      "minecraft:protection": 1
+                    },
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:hide_additional_tooltip": {}
+                }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_dropeffect:1b,relicexcavator:1b}"
               },
               {
                 "function": "set_name",

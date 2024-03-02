@@ -1,1 +1,1 @@
-give @s diamond_pickaxe{Enchantments:[{id:"minecraft:fortune",lvl:1}]} 1
+give @s minecraft:diamond_pickaxe[minecraft:enchantments={levels:{"minecraft:fortune":1}}] 1

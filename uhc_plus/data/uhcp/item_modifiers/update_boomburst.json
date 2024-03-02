@@ -1,7 +1,30 @@
 [
-    {
-      "function": "minecraft:set_nbt",
-      "tag": "{hasTnt:1b,uhcp_radiant:2b,ChargedProjectiles:[{id:\"minecraft:tipped_arrow\",Count:1b,tag:{display:{Name:'{\"text\":\"TNT Arrow\",\"color\":\"red\",\"bold\":true,\"italic\":false}'},custom_potion_effects:[{id:\"minecraft:bad_omen\",amplifier:100b,duration:1}],Potion:\"minecraft:empty\",CustomPotionColor:16711680}},{},{}],Charged:1b}"
-    }
-  ]
-  
+  {
+		"function": "minecraft:set_components",
+		"components": {
+			"minecraft:charged_projectiles": [
+				{
+					"id": "minecraft:tipped_arrow",
+					"components": {
+						"minecraft:custom_name": "'{\"text\":\"TNT Arrow\",\"color\":\"red\",\"bold\":true,\"italic\":false}'",
+						"minecraft:potion_contents": {
+							"potion": "minecraft:mundane",
+							"custom_color": 16711680,
+							"custom_effects": [
+								{
+									"id": "minecraft:bad_omen",
+									"amplifier": 100,
+									"duration": 1
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+	},
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{hasTnt:1b,uhcp_radiant:2b}"
+  }
+]

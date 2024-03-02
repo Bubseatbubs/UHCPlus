@@ -5,200 +5,111 @@ data modify storage uhcp:solo_level ToolList set value ["minecraft:bow","minecra
 data modify storage uhcp:solo_level Item set value [[],[],[],[],[],[],[],[],[],[]]
 
 # 1 - Stone tools
-item replace block 0 0 0 container.0 with minecraft:stone_pickaxe{solo_item:1b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[1] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:stone_axe{solo_item:2b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[2] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:stone_shovel{solo_item:3b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[3] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:stone_hoe{solo_item:9b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[9] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[1] append value {id:"minecraft:stone_pickaxe",components:{"minecraft:custom_data":{solo_item:1b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[2] append value {id:"minecraft:stone_axe",components:{"minecraft:custom_data":{solo_item:2b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[3] append value {id:"minecraft:stone_shovel",components:{"minecraft:custom_data":{solo_item:3b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[9] append value {id:"minecraft:stone_hoe",components:{"minecraft:custom_data":{solo_item:9b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:unbreaking":3,"minecraft:mending":1}}}}
 
 # 2 - Stone weapons
-item replace block 0 0 0 container.0 with minecraft:stone_sword{solo_item:0b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[0] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[0] append value {id:"minecraft:stone_sword",components:{"minecraft:custom_data":{solo_item:0b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:unbreaking":3,"minecraft:mending":1}}}}
 
 # 3 - Efficiency I on stone tools
-item replace block 0 0 0 container.0 with minecraft:stone_pickaxe{solo_item:1b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[1] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:stone_axe{solo_item:2b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[2] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:stone_shovel{solo_item:3b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[3] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:stone_hoe{solo_item:9b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[9] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[1] append value {id:"minecraft:stone_pickaxe",components:{"minecraft:custom_data":{solo_item:1b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":1,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[2] append value {id:"minecraft:stone_axe",components:{"minecraft:custom_data":{solo_item:2b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":1,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[3] append value {id:"minecraft:stone_shovel",components:{"minecraft:custom_data":{solo_item:3b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":1,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[9] append value {id:"minecraft:stone_hoe",components:{"minecraft:custom_data":{solo_item:9b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":1,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
 
 # 4 - Iron tools
-item replace block 0 0 0 container.0 with minecraft:iron_pickaxe{solo_item:1b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[1] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:iron_axe{solo_item:2b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[2] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:iron_shovel{solo_item:3b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[3] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:iron_hoe{solo_item:9b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[9] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[1] append value {id:"minecraft:iron_pickaxe",components:{"minecraft:custom_data":{solo_item:1b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":1,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[2] append value {id:"minecraft:iron_axe",components:{"minecraft:custom_data":{solo_item:2b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":1,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[3] append value {id:"minecraft:iron_shovel",components:{"minecraft:custom_data":{solo_item:3b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":1,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[9] append value {id:"minecraft:iron_hoe",components:{"minecraft:custom_data":{solo_item:9b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":1,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
 
-# 5 - Iron weapons, five max hearts
-#attribute @s minecraft:generic.max_health base set 50
-item replace block 0 0 0 container.0 with minecraft:iron_sword{solo_item:0b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[0] append from block 0 0 0 Items[0]
+# 5 - Iron weapons
+data modify storage uhcp:solo_level Item[0] append value {id:"minecraft:iron_sword",components:{"minecraft:custom_data":{solo_item:0b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:unbreaking":3,"minecraft:mending":1}}}}
 
 # 6 - Iron armor
-item replace block 0 0 0 container.0 with minecraft:iron_helmet{solo_item:4b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[4] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:iron_chestplate{solo_item:5b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[5] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:iron_leggings{solo_item:6b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[6] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:iron_boots{solo_item:7b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[7] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[4] append value {id:"minecraft:iron_helmet",components:{"minecraft:custom_data":{solo_item:4b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[5] append value {id:"minecraft:iron_chestplate",components:{"minecraft:custom_data":{solo_item:5b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[6] append value {id:"minecraft:iron_leggings",components:{"minecraft:custom_data":{solo_item:6b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[7] append value {id:"minecraft:iron_boots",components:{"minecraft:custom_data":{solo_item:7b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
 
 # 7 - Sharpness I, power I on weapons
-item replace block 0 0 0 container.0 with minecraft:iron_sword{solo_item:0b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:sharpness",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[0] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:iron_axe{solo_item:2b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:sharpness",lvl:1s},{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[2] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:bow{solo_item:8b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:power",lvl:1s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[8] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[0] append value {id:"minecraft:iron_sword",components:{"minecraft:custom_data":{solo_item:0b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:sharpness":1,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[2] append value {id:"minecraft:iron_axe",components:{"minecraft:custom_data":{solo_item:2b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:sharpness":1,"minecraft:efficiency":1,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[8] append value {id:"minecraft:bow",components:{"minecraft:custom_data":{solo_item:8b,solo_level:1b,solo_stage:1b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:unbreaking":3,"minecraft:power":1,"minecraft:mending":1}}}}
 
 # 8 - Diamond tools
-item replace block 0 0 0 container.0 with minecraft:diamond_pickaxe{solo_item:1b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[1] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_axe{solo_item:2b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:sharpness",lvl:1s},{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[2] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_shovel{solo_item:3b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[3] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_hoe{solo_item:9b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[9] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[1] append value {id:"minecraft:diamond_pickaxe",components:{"minecraft:custom_data":{solo_item:1b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":1,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[2] append value {id:"minecraft:diamond_axe",components:{"minecraft:custom_data":{solo_item:2b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:sharpness":1,"minecraft:efficiency":1,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[3] append value {id:"minecraft:diamond_shovel",components:{"minecraft:custom_data":{solo_item:3b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":1,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[9] append value {id:"minecraft:diamond_hoe",components:{"minecraft:custom_data":{solo_item:9b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":1,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
 
 # 9 - Protection I on armor
-item replace block 0 0 0 container.0 with minecraft:iron_helmet{solo_item:4b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[4] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:iron_chestplate{solo_item:5b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[5] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:iron_leggings{solo_item:6b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[6] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:iron_boots{solo_item:7b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[7] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[4] append value {id:"minecraft:iron_helmet",components:{"minecraft:custom_data":{solo_item:4b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":1,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[5] append value {id:"minecraft:iron_chestplate",components:{"minecraft:custom_data":{solo_item:5b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":1,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[6] append value {id:"minecraft:iron_leggings",components:{"minecraft:custom_data":{solo_item:6b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":1,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[7] append value {id:"minecraft:iron_boots",components:{"minecraft:custom_data":{solo_item:7b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":1,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
 
-# 10 - Diamond weapons, five max hearts
-#attribute @s minecraft:generic.max_health base set 60
-item replace block 0 0 0 container.0 with minecraft:diamond_sword{solo_item:0b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:sharpness",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[0] append from block 0 0 0 Items[0]
+# 10 - Diamond weapons
+data modify storage uhcp:solo_level Item[0] append value {id:"minecraft:diamond_sword",components:{"minecraft:custom_data":{solo_item:0b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:sharpness":1,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
 
 # 11 - Sharpness II, power II on weapons
-item replace block 0 0 0 container.0 with minecraft:diamond_sword{solo_item:0b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:sharpness",lvl:2s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[0] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_axe{solo_item:2b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:sharpness",lvl:2s},{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[2] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:bow{solo_item:8b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:power",lvl:2s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[8] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[0] append value {id:"minecraft:diamond_sword",components:{"minecraft:custom_data":{solo_item:0b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:sharpness":2,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[2] append value {id:"minecraft:diamond_axe",components:{"minecraft:custom_data":{solo_item:2b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:sharpness":2,"minecraft:efficiency":1,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[8] append value {id:"minecraft:bow",components:{"minecraft:custom_data":{solo_item:8b,solo_level:1b,solo_stage:2b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:unbreaking":3,"minecraft:power":2,"minecraft:mending":1}}}}
 
 # 12 - Diamond armor
-item replace block 0 0 0 container.0 with minecraft:diamond_helmet{solo_item:4b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[4] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_chestplate{solo_item:5b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[5] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_leggings{solo_item:6b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[6] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_boots{solo_item:7b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[7] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[4] append value {id:"minecraft:diamond_helmet",components:{"minecraft:custom_data":{solo_item:4b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":1,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[5] append value {id:"minecraft:diamond_chestplate",components:{"minecraft:custom_data":{solo_item:5b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":1,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[6] append value {id:"minecraft:diamond_leggings",components:{"minecraft:custom_data":{solo_item:6b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":1,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[7] append value {id:"minecraft:diamond_boots",components:{"minecraft:custom_data":{solo_item:7b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":1,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
 
 # 13 - Efficiency II on tools
-item replace block 0 0 0 container.0 with minecraft:diamond_pickaxe{solo_item:1b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:2s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[1] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_axe{solo_item:2b,solo_level:1b,solo_stage:7b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:sharpness",lvl:2s},{id:"minecraft:efficiency",lvl:2s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[2] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_shovel{solo_item:3b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:2s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[3] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_hoe{solo_item:9b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:2s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[9] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[1] append value {id:"minecraft:diamond_pickaxe",components:{"minecraft:custom_data":{solo_item:1b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":2,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[2] append value {id:"minecraft:diamond_axe",components:{"minecraft:custom_data":{solo_item:2b,solo_level:1b,solo_stage:7b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:sharpness":2,"minecraft:efficiency":2,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[3] append value {id:"minecraft:diamond_shovel",components:{"minecraft:custom_data":{solo_item:3b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":2,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[9] append value {id:"minecraft:diamond_hoe",components:{"minecraft:custom_data":{solo_item:9b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":2,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
 
 # 14 - Protection II on armor
-item replace block 0 0 0 container.0 with minecraft:diamond_helmet{solo_item:4b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[4] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_chestplate{solo_item:5b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[5] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_leggings{solo_item:6b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[6] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_boots{solo_item:7b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[7] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[4] append value {id:"minecraft:diamond_helmet",components:{"minecraft:custom_data":{solo_item:4b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":2,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[5] append value {id:"minecraft:diamond_chestplate",components:{"minecraft:custom_data":{solo_item:5b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":2,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[6] append value {id:"minecraft:diamond_leggings",components:{"minecraft:custom_data":{solo_item:6b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":2,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[7] append value {id:"minecraft:diamond_boots",components:{"minecraft:custom_data":{solo_item:7b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":2,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
 
-# 15 - Sharpness III, power III on weapons, five max hearts
-#attribute @s minecraft:generic.max_health base set 70
-item replace block 0 0 0 container.0 with minecraft:diamond_sword{solo_item:0b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:sharpness",lvl:3s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[0] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_axe{solo_item:2b,solo_level:1b,solo_stage:8b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:sharpness",lvl:3s},{id:"minecraft:efficiency",lvl:2s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[2] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:bow{solo_item:8b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:power",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[8] append from block 0 0 0 Items[0]
+# 15 - Sharpness III, power III on weapons
+data modify storage uhcp:solo_level Item[0] append value {id:"minecraft:diamond_sword",components:{"minecraft:custom_data":{solo_item:0b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:sharpness":3,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[2] append value {id:"minecraft:diamond_axe",components:{"minecraft:custom_data":{solo_item:2b,solo_level:1b,solo_stage:8b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:sharpness":3,"minecraft:efficiency":2,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[8] append value {id:"minecraft:bow",components:{"minecraft:custom_data":{solo_item:8b,solo_level:1b,solo_stage:3b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:unbreaking":3,"minecraft:power":3,"minecraft:mending":1}}}}
 
 # 16 - Protection III on armor
-item replace block 0 0 0 container.0 with minecraft:diamond_helmet{solo_item:4b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:3s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[4] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_chestplate{solo_item:5b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:3s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[5] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_leggings{solo_item:6b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:3s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[6] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:diamond_boots{solo_item:7b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:3s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[7] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[4] append value {id:"minecraft:diamond_helmet",components:{"minecraft:custom_data":{solo_item:4b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":3,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[5] append value {id:"minecraft:diamond_chestplate",components:{"minecraft:custom_data":{solo_item:5b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":3,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[6] append value {id:"minecraft:diamond_leggings",components:{"minecraft:custom_data":{solo_item:6b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":3,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[7] append value {id:"minecraft:diamond_boots",components:{"minecraft:custom_data":{solo_item:7b,solo_level:1b,solo_stage:5b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":3,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
 
 # 17 - Netherite tools
-item replace block 0 0 0 container.0 with minecraft:netherite_pickaxe{solo_item:1b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:2s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[1] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:netherite_axe{solo_item:2b,solo_level:1b,solo_stage:9b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:sharpness",lvl:3s},{id:"minecraft:efficiency",lvl:2s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[2] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:netherite_shovel{solo_item:3b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:2s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[3] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:netherite_hoe{solo_item:9b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:efficiency",lvl:2s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[9] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[1] append value {id:"minecraft:netherite_pickaxe",components:{"minecraft:custom_data":{solo_item:1b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":2,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[2] append value {id:"minecraft:netherite_axe",components:{"minecraft:custom_data":{solo_item:2b,solo_level:1b,solo_stage:9b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:sharpness":3,"minecraft:efficiency":2,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[3] append value {id:"minecraft:netherite_shovel",components:{"minecraft:custom_data":{solo_item:3b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":2,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[9] append value {id:"minecraft:netherite_hoe",components:{"minecraft:custom_data":{solo_item:9b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:efficiency":2,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
 
 # 18 - Netherite armor
-item replace block 0 0 0 container.0 with minecraft:netherite_helmet{solo_item:4b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:3s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[4] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:netherite_chestplate{solo_item:5b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:3s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[5] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:netherite_leggings{solo_item:6b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:3s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[6] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:netherite_boots{solo_item:7b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:3s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[7] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[4] append value {id:"minecraft:netherite_helmet",components:{"minecraft:custom_data":{solo_item:4b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":3,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[5] append value {id:"minecraft:netherite_chestplate",components:{"minecraft:custom_data":{solo_item:5b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":3,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[6] append value {id:"minecraft:netherite_leggings",components:{"minecraft:custom_data":{solo_item:6b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":3,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[7] append value {id:"minecraft:netherite_boots",components:{"minecraft:custom_data":{solo_item:7b,solo_level:1b,solo_stage:6b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":3,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
 
 # 19 - Netherite weapons
-item replace block 0 0 0 container.0 with minecraft:netherite_sword{solo_item:0b,solo_level:1b,solo_stage:7b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:sharpness",lvl:3s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[0] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[0] append value {id:"minecraft:netherite_sword",components:{"minecraft:custom_data":{solo_item:0b,solo_level:1b,solo_stage:7b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:sharpness":3,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
 
 # 20 - Sharpness IV, power IV on weapons
-item replace block 0 0 0 container.0 with minecraft:netherite_axe{solo_item:2b,solo_level:1b,solo_stage:10b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:sharpness",lvl:4s},{id:"minecraft:efficiency",lvl:2s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[2] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:netherite_sword{solo_item:0b,solo_level:1b,uhcp_instantpickup:1b,solo_stage:8b,Enchantments:[{id:"minecraft:sharpness",lvl:4s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[0] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:bow{solo_item:8b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:power",lvl:4s},{id:"minecraft:mending",lvl:1s}]}
-data modify storage uhcp:solo_level Item[8] append from block 0 0 0 Items[0]
+data modify storage uhcp:solo_level Item[2] append value {id:"minecraft:netherite_axe",components:{"minecraft:custom_data":{solo_item:2b,solo_level:1b,solo_stage:10b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:sharpness":4,"minecraft:efficiency":2,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[0] append value {id:"minecraft:netherite_sword",components:{"minecraft:custom_data":{solo_item:0b,solo_level:1b,solo_stage:8b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:sharpness":4,"minecraft:unbreaking":3,"minecraft:mending":1}}}}
+data modify storage uhcp:solo_level Item[8] append value {id:"minecraft:bow",components:{"minecraft:custom_data":{solo_item:8b,solo_level:1b,solo_stage:4b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:unbreaking":3,"minecraft:power":4,"minecraft:mending":1}}}}
 
 # 21 - Protection IV on armor
-item replace block 0 0 0 container.0 with minecraft:netherite_helmet{solo_item:4b,solo_level:1b,solo_stage:7b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:4s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[4] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:netherite_chestplate{solo_item:5b,solo_level:1b,solo_stage:7b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:4s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[5] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:netherite_leggings{solo_item:6b,solo_level:1b,solo_stage:7b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:4s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[6] append from block 0 0 0 Items[0]
-item replace block 0 0 0 container.0 with minecraft:netherite_boots{solo_item:7b,solo_level:1b,solo_stage:7b,uhcp_instantpickup:1b,Enchantments:[{id:"minecraft:protection",lvl:4s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}
-data modify storage uhcp:solo_level Item[7] append from block 0 0 0 Items[0]
-
-# 22 - Five max hearts
-#attribute @s minecraft:generic.max_health base set 80
-
-# 23 - Permanent resistance I
-#effect give @s minecraft:resistance infinite 0 true
-
-# 24 - Permanent speed I
-#effect give @s minecraft:speed infinite 0 true
-
-# 25 - Permanent strength I
-#effect give @s minecraft:strength infinite 0 true
-
-# 26 - Enchanted golden apple
-#give @s minecraft:enchanted_golden_apple 1
-
-# Remove slot data
-data remove storage uhcp:solo_level Item[][].Slot
+data modify storage uhcp:solo_level Item[4] append value {id:"minecraft:netherite_helmet",components:{"minecraft:custom_data":{solo_item:4b,solo_level:1b,solo_stage:7b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":4,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[5] append value {id:"minecraft:netherite_chestplate",components:{"minecraft:custom_data":{solo_item:5b,solo_level:1b,solo_stage:7b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":4,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[6] append value {id:"minecraft:netherite_leggings",components:{"minecraft:custom_data":{solo_item:6b,solo_level:1b,solo_stage:7b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":4,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}
+data modify storage uhcp:solo_level Item[7] append value {id:"minecraft:netherite_boots",components:{"minecraft:custom_data":{solo_item:7b,solo_level:1b,solo_stage:7b,uhcp_instantpickup:1b},"minecraft:enchantments":{levels:{"minecraft:protection":4,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1}}}}

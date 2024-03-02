@@ -94,9 +94,3 @@ execute as @e[type=minecraft:ender_pearl] at @s run function uhcp:enderpearl
 # Items (instant pickup and item effects)
 execute as @e[tag=!UHCP_ItemPickup,predicate=uhcp:items/instant_pickup] run function uhcp:items/instant_pickup
 execute as @e[predicate=uhcp:items/drop_effect] at @s run function uhcp:items/drop_effect
-
-# Remove three below and temp predicate when in pack format with new advancements
-scoreboard players reset @a[predicate=uhcp:temp] uhcp_anvil
-scoreboard players reset @a[predicate=uhcp:temp] uhcp_grindstone
-scoreboard players reset @a[predicate=uhcp:temp] uhcp_smithingTable
-# -----------------------------------------------------------

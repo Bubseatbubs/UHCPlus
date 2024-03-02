@@ -43,8 +43,20 @@
                 ]
               },
               {
-                "function": "minecraft:set_nbt",
-                "tag": "{HideFlags:1,uhcp_instantpickup:1b,uhcp_dragoneye:1b,Enchantments:[{id:\"minecraft:protection\",lvl:1s},{id:\"minecraft:vanishing_curse\",lvl:1s}]}"
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:enchantments": {
+                    "levels": {
+                      "minecraft:protection": 1,
+                      "minecraft:vanishing_curse": 1
+                    },
+                    "show_in_tooltip": false
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_instantpickup:1b,uhcp_dragoneye:1b}"
               }
             ]
           }

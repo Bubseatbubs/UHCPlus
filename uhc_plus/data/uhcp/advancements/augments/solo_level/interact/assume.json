@@ -25,7 +25,7 @@
 										"type": "player",
 										"gamemode": "survival"
 									},
-									"nbt": "{Inventory:[{tag:{solo_level:1b}}]}"
+									"nbt": "{Inventory:[{components:{\"minecraft:custom_data\":{solo_level:1b}}}]}"
 								}
 							}
 						]

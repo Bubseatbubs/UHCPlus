@@ -1,4 +1,4 @@
-item replace entity @s armor.chest with elytra{HideFlags:1,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s},{id:"minecraft:unbreaking",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]} 1
+item replace entity @s armor.chest with minecraft:elytra[minecraft:enchantments={levels:{"minecraft:binding_curse":1,"minecraft:unbreaking":1,"minecraft:vanishing_curse":1},show_in_tooltip:0b},minecraft:unbreakable={}] 1
 execute at @s run setblock ~ 250 ~ glass
 tp @s ~ 251 ~
 execute at @s run summon marker ~ 250 ~ {Tags:["UHCP_Summon","UHCP_Scout"]}

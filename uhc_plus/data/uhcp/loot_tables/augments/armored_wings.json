@@ -13,8 +13,23 @@
                 "count": 1
               },
               {
-                "function": "set_nbt",
-                "tag": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:3s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUID:[I;-1863235907,-1965143226,-1566537571,953676984],Slot:\"chest\"}]}"
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "armrdwngs",
+                    "amount": 8,
+                    "operation": "add_value",
+                    "id": "5b65f98d-2098-4b9b-aaae-255b67ce9e54",
+                    "slot": "chest"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": 3
+                }
               },
               {
                 "function": "set_name",

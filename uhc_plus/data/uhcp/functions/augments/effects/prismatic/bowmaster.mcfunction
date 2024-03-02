@@ -1,2 +1,2 @@
-give @s bow{Enchantments:[{id:"minecraft:power",lvl:2s}]} 1
-give @s arrow 64
+give @s minecraft:bow[minecraft:enchantments={levels:{"minecraft:power":2}}] 1
+give @s minecraft:arrow 64

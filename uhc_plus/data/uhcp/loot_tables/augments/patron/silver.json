@@ -13,7 +13,7 @@
                 "count": 1
               },
               {
-                "function": "minecraft:set_nbt",
+                "function": "minecraft:set_custom_data",
                 "tag": "{pickup:1b,augment:109s}"
               },
               {
@@ -107,7 +107,7 @@
                 "count": 1
               },
               {
-                "function": "minecraft:set_nbt",
+                "function": "minecraft:set_custom_data",
                 "tag": "{pickup:1b,augment:119s}"
               },
               {
@@ -207,7 +207,7 @@
                 "count": 1
               },
               {
-                "function": "minecraft:set_nbt",
+                "function": "minecraft:set_custom_data",
                 "tag": "{pickup:1b,augment:126s}"
               },
               {
@@ -295,7 +295,7 @@
                 "count": 1
               },
               {
-                "function": "minecraft:set_nbt",
+                "function": "minecraft:set_custom_data",
                 "tag": "{pickup:1b,augment:114s}"
               },
               {
@@ -389,7 +389,7 @@
                 "count": 1
               },
               {
-                "function": "minecraft:set_nbt",
+                "function": "minecraft:set_custom_data",
                 "tag": "{pickup:1b,augment:111s}"
               },
               {
@@ -475,7 +475,7 @@
                 "count": 1
               },
               {
-                "function": "minecraft:set_nbt",
+                "function": "minecraft:set_custom_data",
                 "tag": "{pickup:1b,augment:126s}"
               },
               {
@@ -588,7 +588,7 @@
                 "count": 1
               },
               {
-                "function": "set_nbt",
+                "function": "minecraft:set_custom_data",
                 "tag": "{pickup:1b,augment:150s}"
               },
               {
@@ -710,7 +710,7 @@
                 "count": 1
               },
               {
-                "function": "set_nbt",
+                "function": "minecraft:set_custom_data",
                 "tag": "{pickup:1b,augment:106s}"
               },
               {

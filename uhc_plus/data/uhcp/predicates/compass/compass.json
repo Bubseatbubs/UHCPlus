@@ -2,6 +2,6 @@
 	"condition": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
-		"nbt": "{Inventory:[{id:\"minecraft:compass\"}]}"
+		"custom_data": "{Inventory:[{id:\"minecraft:compass\"}]}"
 	}
 }

@@ -3,6 +3,6 @@
 	"entity": "this",
 	"predicate": {
 		"type": "minecraft:item",
-		"nbt": "{Item:{tag:{pickup:1b}}}"
+		"nbt": "{Item:{components:{\"minecraft:custom_data\":{pickup:1b}}}}"
 	}
 }

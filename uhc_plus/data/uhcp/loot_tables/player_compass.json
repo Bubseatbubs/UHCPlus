@@ -52,8 +52,19 @@
 							]
 						},
 						{
-							"function": "minecraft:set_nbt",
-							"tag": "{uhcp_player:1b,compass_time:0b,UUID:[I;-1,-1,-1,-1]}"
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:enchantments": {
+									"levels": {
+										"minecraft:protection": 1
+									},
+									"show_in_tooltip": false
+								}
+							}
+						},
+						{
+							"function": "minecraft:set_custom_data",
+							"tag": "{uhcp_player:1b,compass_time:0b,uuid:[I;-1,-1,-1,-1]}"
 						}
 					]
 				}

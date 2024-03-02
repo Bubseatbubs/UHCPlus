@@ -1,1 +1,1 @@
-give @s stone_sword{Enchantments:[{id:"minecraft:smite",lvl:2},{id:"minecraft:bane_of_arthropods",lvl:2},{id:"minecraft:looting",lvl:1}]} 1
+give @s minecraft:stone_sword[minecraft:enchantments={levels:{"minecraft:smite":2,"minecraft:bane_of_arthropods":2,"minecraft:looting":1}}] 1

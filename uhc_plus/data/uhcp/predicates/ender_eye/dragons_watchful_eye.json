@@ -3,6 +3,6 @@
 	"entity": "this",
 	"predicate": {
 		"type": "minecraft:eye_of_ender",
-		"nbt": "{Item:{tag:{uhcp_dragoneye:1b}}}"
+		"nbt": "{Item:{components:{\"minecraft:custom_data\":{uhcp_dragoneye:1b}}}}"
 	}
 }

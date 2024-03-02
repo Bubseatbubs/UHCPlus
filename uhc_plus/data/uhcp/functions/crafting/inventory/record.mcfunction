@@ -1,3 +1,3 @@
 # Record numbers of items and positions
-execute store result score %uhcp_itemRLow uhcp_itemCount run data get storage uhcp:craft InventoryWork[-1].Count
-execute if score %uhcp_itemRLow uhcp_itemCount < %uhcp_itemLow uhcp_itemCount run function uhcp:crafting/inventory/lowest
+scoreboard players operation %uhcp_itemLow uhcp_itemCount = %uhcp_item uhcp_initStatus
+scoreboard players operation %uhcp_itemArr uhcp_itemInv = %uhcp_itemSlot uhcp_itemInv

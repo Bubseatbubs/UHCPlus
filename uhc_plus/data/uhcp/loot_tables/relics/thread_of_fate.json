@@ -12,8 +12,42 @@
                 "count": 1
               },
               {
-                "function": "minecraft:set_nbt",
-                "tag": "{RepairCost:100,HideFlags:3,uhcp_radiant:7b,Enchantments:[{id:\"minecraft:unbreaking\",lvl:5s},{id:\"minecraft:vanishing_curse\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:8.5,Operation:0,UUID:[I;1143660634,-1035515697,-2017256653,387488453],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.4,Operation:0,UUID:[I;-66302264,1916223962,-1566999601,324500780],Slot:\"mainhand\"}]}"
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:attribute_modifiers": {
+                    "modifiers": [
+                      {
+                        "type": "minecraft:generic.attack_damage",
+                        "uuid": [-2092556517,2047034661,-2071001092,-1901870095],
+                        "name": "atkdamag",
+                        "amount": 8.5,
+                        "operation": "add_value",
+                        "slot": "mainhand"
+                      },
+                      {
+                        "type": "minecraft:generic.attack_speed",
+                        "uuid": [1349389673,981025850,-1930237861,1982321349],
+                        "name": "atkspeed",
+                        "amount": -0.4,
+                        "operation": "add_value",
+                        "slot": "mainhand"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:enchantments": {
+                    "levels": {
+                      "minecraft:unbreaking": 5,
+                      "minecraft:vanishing_curse": 1
+                    },
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:repair_cost": 100
+                }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_radiant:7b}"
               },
               {
                 "function": "minecraft:set_name",

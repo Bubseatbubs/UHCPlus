@@ -1,1 +1,1 @@
-give @s splash_potion{display:{Name:'{"text":"Levitation Potion"}',Lore:['{"text":"It\'s like shooting fish in a barrel."}']},custom_potion_effects:[{id:"minecraft:levitation",amplifier:0b,duration:800}],Potion:"minecraft:empty"} 3
+give @s minecraft:splash_potion[minecraft:custom_name='{"text":"Levitation Potion","italic":false}',minecraft:lore=['{"text":"It\'s like shooting fish in a barrel."}'],minecraft:potion_contents={"potion":"minecraft:mundane","custom_effects":[{"id":"minecraft:levitation","amplifier":0,"duration":800}]}] 3

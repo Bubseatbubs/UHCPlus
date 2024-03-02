@@ -1,7 +1,7 @@
 advancement revoke @s through uhcp:relics/increase_dur
 scoreboard players reset %damage uhcp_a_durability
 
-execute store result score %damage uhcp_a_durability run data get entity @s SelectedItem.tag.cDamage
+execute store result score %damage uhcp_a_durability run data get entity @s SelectedItem.components."minecraft:custom_data".cDamage
 scoreboard players add %damage uhcp_a_durability 223
 execute if entity @s[nbt={SelectedItem:{tag:{uhcp_radiant:8b}}}] run scoreboard players add %damage uhcp_a_durability 297
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:diamond_sword",Count:1b}}] run scoreboard players remove %damage uhcp_a_durability 136

@@ -13,8 +13,37 @@
                 "count": 1
               },
               {
-                "function": "set_nbt",
-                "tag": "{RepairCost:100,HideFlags:2,uhcp_radiant:8b,Enchantments:[{id:\"minecraft:sharpness\",lvl:1s},{id:\"minecraft:smite\",lvl:3s},{id:\"minecraft:bane_of_arthropods\",lvl:3s},{id:\"minecraft:sweeping\",lvl:1s},{id:\"minecraft:vanishing_curse\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:8,Operation:0,UUID:[I;13844264,-1134607179,-1869203229,-2009792647],Slot:\"mainhand\"}]}"
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:sharpness": 1,
+                  "minecraft:smite": 3,
+                  "minecraft:bane_of_arthropods": 3,
+                  "minecraft:sweeping_edge": 1,
+                  "minecraft:vanishing_curse": 1
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:attribute_modifiers": {
+                    "modifiers": [
+                      {
+                        "type": "minecraft:generic.attack_damage",
+                        "uuid": [594662577,1079133854,-1814589750,-2042968454],
+                        "name": "atkdmg",
+                        "amount": 8,
+                        "operation": "add_value",
+                        "slot": "mainhand"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:repair_cost": 100
+                }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_radiant:8b}"
               },
               {
                 "function": "set_name",

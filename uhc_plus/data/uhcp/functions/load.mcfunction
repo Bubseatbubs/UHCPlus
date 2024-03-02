@@ -22,14 +22,8 @@ scoreboard objectives add uhcp_hb_killedZombie dummy
 scoreboard objectives add uhcp_hb_killedCreeper dummy
 scoreboard objectives add uhcp_hb_killedSkeleton dummy
 scoreboard objectives add uhcp_hb_killedSpider dummy
-# Remove one below when in pack format with new advancements
-scoreboard objectives add uhcp_anvil minecraft.custom:minecraft.interact_with_anvil
-# -----------------------------------------------------------
 scoreboard objectives add uhcp_arrowCount dummy
 scoreboard objectives add uhcp_gameTime dummy
-# Remove one below when in pack format with new advancements
-scoreboard objectives add uhcp_grindstone minecraft.custom:minecraft.interact_with_grindstone
-# -----------------------------------------------------------
 scoreboard objectives add uhcp_gameDisplay dummy
 scoreboard objectives add uhcp_hungerTimer dummy
 scoreboard objectives add uhcp_initStatus dummy
@@ -43,9 +37,6 @@ scoreboard objectives add uhcp_lavaTime dummy
 scoreboard objectives add uhcp_lavaTimeInterval dummy
 scoreboard objectives add uhcp_page dummy
 scoreboard objectives add uhcp_settings dummy
-# Remove one below when in pack format with new advancements
-scoreboard objectives add uhcp_smithingTable minecraft.custom:minecraft.interact_with_smithing_table
-# -----------------------------------------------------------
 scoreboard objectives add uhcp_team dummy
 scoreboard objectives add uhcp_topDelay dummy
 scoreboard objectives add uhcp_topCharge dummy

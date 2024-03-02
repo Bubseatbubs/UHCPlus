@@ -17,7 +17,7 @@
         {
           "type": "loot_table",
           "weight": 4,
-          "name": "uhcp:relics/relic_invoker",
+          "value": "uhcp:relics/relic_invoker",
           "functions": [
             {
               "function": "set_count",
@@ -35,9 +35,15 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"minecraft:sharpness\",lvl:2s}]}"
-            }
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:stored_enchantments": {
+									"levels": {
+										"minecraft:sharpness": 2
+									}
+								}
+							}
+						}
           ]
         },
         {
@@ -50,9 +56,15 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
-            }
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:stored_enchantments": {
+									"levels": {
+										"minecraft:protection": 2
+									}
+								}
+							}
+						}
           ]
         },
         {
@@ -65,9 +77,15 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
-            }
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:stored_enchantments": {
+									"levels": {
+										"minecraft:protection": 1
+									}
+								}
+							}
+						}
           ]
         },
         {
@@ -80,9 +98,15 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"minecraft:sharpness\",lvl:1s}]}"
-            }
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:stored_enchantments": {
+									"levels": {
+										"minecraft:sharpness": 1
+									}
+								}
+							}
+						}
           ]
         },
         {

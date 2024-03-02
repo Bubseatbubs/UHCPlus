@@ -12,8 +12,52 @@
                 "count": 1
               },
               {
-                "function": "minecraft:set_nbt",
-                "tag": "{RepairCost:100,display:{color:5381640},HideFlags:194,uhcp_radiant:4b,Enchantments:[{id:\"minecraft:protection\",lvl:2s},{id:\"minecraft:thorns\",lvl:1s},{id:\"minecraft:unbreaking\",lvl:5s},{id:\"minecraft:vanishing_curse\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUID:[I;-1749621740,1902725274,-1259731052,1668770021],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;-446085697,-156416355,-1149814584,-38593133],Slot:\"chest\"}],Trim:{material:\"minecraft:quartz\",pattern:\"minecraft:eye\"}}"
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:protection": 2,
+                  "minecraft:thorns": 1,
+                  "minecraft:unbreaking": 5
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:attribute_modifiers": {
+                    "modifiers": [
+                      {
+                        "type": "minecraft:generic.armor",
+                        "uuid": [1772161217,-181646701,-1380355196,-2098803050],
+                        "name": "armr",
+                        "amount": 8,
+                        "operation": "add_value",
+                        "slot": "chest"
+                      },
+                      {
+                        "type": "minecraft:generic.armor_toughness",
+                        "uuid": [-634491124,-1763749918,-1763569791,775953812],
+                        "name": "armrtghnss",
+                        "amount": 1,
+                        "operation": "add_value",
+                        "slot": "chest"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:dyed_color": {
+                    "rgb": 5381640,
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:repair_cost": 100,
+                  "minecraft:trim": {
+                    "material": "minecraft:quartz",
+                    "pattern": "minecraft:eye",
+                    "show_in_tooltip": false
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_radiant:4b}"
               },
               {
                 "function": "minecraft:set_name",

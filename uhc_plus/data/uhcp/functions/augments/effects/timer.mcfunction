@@ -51,8 +51,8 @@ execute if score %time uhcp_gameTime >= %AUG_7 uhcp_gameTime run scoreboard play
 execute if score %time uhcp_gameTime >= %AUG_15 uhcp_gameTime run give @a[scores={uhcp_a_selectedAugment=15}] apple 1
 execute if score %time uhcp_gameTime >= %AUG_15 uhcp_gameTime run scoreboard players add %AUG_15 uhcp_gameTime 2400
 
-execute if score %time uhcp_gameTime >= %AUG_27 uhcp_gameTime run give @a[scores={uhcp_a_selectedAugment=27}] minecraft:potion{HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],Potion:"minecraft:long_invisibility"} 1
-execute if score %time uhcp_gameTime >= %AUG_27 uhcp_gameTime run give @a[scores={uhcp_a_selectedAugment=27}] minecraft:potion{HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],Potion:"minecraft:swiftness"} 1
+execute if score %time uhcp_gameTime >= %AUG_27 uhcp_gameTime run give @a[scores={uhcp_a_selectedAugment=27}] minecraft:potion[minecraft:enchantments={levels:{"minecraft:protection":1},show_in_tooltip:0b},minecraft:potion_contents={potion:"minecraft:long_invisibility"}] 1
+execute if score %time uhcp_gameTime >= %AUG_27 uhcp_gameTime run give @a[scores={uhcp_a_selectedAugment=27}] minecraft:potion[minecraft:enchantments={levels:{"minecraft:protection":1},show_in_tooltip:0b},minecraft:potion_contents={potion:"minecraft:swiftness"}] 1
 execute if score %time uhcp_gameTime >= %AUG_27 uhcp_gameTime run scoreboard players add %AUG_27 uhcp_gameTime 12000
 
 execute if score %time uhcp_gameTime >= %AUG_107 uhcp_gameTime run give @a[scores={uhcp_a_selectedAugment=7}] gold_ingot 1

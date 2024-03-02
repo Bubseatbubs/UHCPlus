@@ -1,7 +1,16 @@
 [
-    {
-      "function": "minecraft:set_nbt",
-      "tag": "{ChargedProjectiles:[{id:\"minecraft:arrow\",Count:1b},{},{}],hasTnt:0b,Charged:0b}"
-    }
-  ]
-  
+  {
+		"function": "minecraft:set_components",
+		"components": {
+			"minecraft:charged_projectiles": [
+				{
+					"id": "minecraft:arrow"
+				}
+			]
+		}
+	},
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{hasTnt:0b}"
+  }
+]

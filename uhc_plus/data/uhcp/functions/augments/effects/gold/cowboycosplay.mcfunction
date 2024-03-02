@@ -1,6 +1,6 @@
-give @s cow_spawn_egg 8
-give @s horse_spawn_egg 1
-give @s saddle 1
-give @s lead{display:{Name:'{"text":"Lasso","color":"yellow","italic":false}',Lore:['{"text":"Whip \'em up!","color":"white"}']}} 1
-give @s leather_helmet{display:{Name:'{"text":"Cowboy Hat","color":"yellow","italic":false}',Lore:['{"text":"Yeehaw!","color":"white"}'],color:12884551},HideFlags:192,Trim:{material:"minecraft:iron",pattern:"minecraft:dune"}} 1
-give @s gold_ingot 8
+give @s minecraft:cow_spawn_egg 8
+give @s minecraft:horse_spawn_egg 1
+give @s minecraft:saddle 1
+give @s minecraft:lead[minecraft:custom_name='{"text":"Lasso","color":"yellow","italic":false}',minecraft:lore=['{"text":"Whip \'em up!","color":"white"}']] 1
+give @s minecraft:leather_helmet[minecraft:custom_name='{"text":"Cowboy Hat","color":"yellow","italic":false}',minecraft:lore=['{"text":"Yeehaw!","color":"white"}'],minecraft:dyed_color={rgb:12884551,show_in_tooltip:0b},minecraft:trim={material:"minecraft:iron",pattern:"minecraft:dune",show_in_tooltip:0b}] 1
+give @s minecraft:gold_ingot 8

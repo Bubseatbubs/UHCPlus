@@ -12,8 +12,22 @@
                 "count": 1
               },
               {
-                "function": "minecraft:set_nbt",
-                "tag": "{RepairCost:100,uhcp_radiant:9b,Enchantments:[{id:\"minecraft:protection\",lvl:2s},{id:\"minecraft:blast_protection\",lvl:2s},{id:\"minecraft:vanishing_curse\",lvl:1s}]}"
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:protection": 2,
+                  "minecraft:blast_protection": 2,
+                  "minecraft:vanishing_curse": 1
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                    "minecraft:repair_cost": 100
+                  }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_radiant:9b}"
               },
               {
                 "function": "minecraft:set_name",

@@ -6,7 +6,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "name": "uhcp:relics/boomburst",
+          "value": "uhcp:relics/boomburst",
           "functions": [
             {
               "function": "set_count",
@@ -17,7 +17,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "name": "uhcp:relics/dragons_protection",
+          "value": "uhcp:relics/dragons_protection",
           "functions": [
             {
               "function": "set_count",
@@ -28,7 +28,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "name": "uhcp:relics/luminous_night",
+          "value": "uhcp:relics/luminous_night",
           "functions": [
             {
               "function": "set_count",
@@ -39,7 +39,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "name": "uhcp:relics/flux_factor",
+          "value": "uhcp:relics/flux_factor",
           "functions": [
             {
               "function": "set_count",
@@ -50,7 +50,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "name": "uhcp:relics/smooth_getaway",
+          "value": "uhcp:relics/smooth_getaway",
           "functions": [
             {
               "function": "set_count",
@@ -61,7 +61,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "name": "uhcp:relics/soulflame_saber",
+          "value": "uhcp:relics/soulflame_saber",
           "functions": [
             {
               "function": "set_count",
@@ -72,7 +72,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "name": "uhcp:relics/the_harvester",
+          "value": "uhcp:relics/the_harvester",
           "functions": [
             {
               "function": "set_count",
@@ -83,7 +83,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "name": "uhcp:relics/gravity_smasher",
+          "value": "uhcp:relics/gravity_smasher",
           "functions": [
             {
               "function": "set_count",
@@ -94,7 +94,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "name": "uhcp:relics/thread_of_fate",
+          "value": "uhcp:relics/thread_of_fate",
           "functions": [
             {
               "function": "set_count",
@@ -105,7 +105,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "name": "uhcp:relics/yggdrasil_bark",
+          "value": "uhcp:relics/yggdrasil_bark",
           "functions": [
             {
               "function": "set_count",

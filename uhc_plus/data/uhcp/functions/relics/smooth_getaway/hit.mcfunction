@@ -25,7 +25,7 @@ tag @e[distance=..6,scores={uhcp_a_count=1},sort=nearest,limit=1] add UHCP_SClon
 
 execute as @e[type=wolf,tag=UHCP_New] run data modify entity @s Owner set from entity @p[tag=UHCP_Owner] UUID
 
-execute as @e[tag=UHCP_New,type=armor_stand] run data modify entity @s CustomName set from entity @s ArmorItems[3].tag.SkullOwner.Name
+execute as @e[tag=UHCP_New,type=armor_stand] run data modify entity @s CustomName set from entity @s ArmorItems[3].components."minecraft:profile".name
 
 # Assign Team Scoreboards
 execute if entity @a[predicate=uhcp:teams/solo] run function uhcp:teams/solo

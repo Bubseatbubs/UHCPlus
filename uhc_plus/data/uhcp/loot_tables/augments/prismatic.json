@@ -13,8 +13,19 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:214s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:214s}"
             },
             {
               "function": "minecraft:set_name",
@@ -111,8 +122,20 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:161,pickup:1b,augment:222s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:enchantments": {
+									"levels": {
+										"minecraft:protection": 1
+									},
+									"show_in_tooltip": false
+								},
+								"minecraft:hide_additional_tooltip": {}
+							}
+						},
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:222s}"
             },
             {
               "function": "minecraft:set_name",
@@ -193,8 +216,19 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:223s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:223s}"
             },
             {
               "function": "minecraft:set_name",
@@ -264,7 +298,7 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
+              "function": "minecraft:set_custom_data",
               "tag": "{pickup:1b,augment:209s}"
             },
             {
@@ -326,7 +360,7 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
+              "function": "minecraft:set_custom_data",
               "tag": "{pickup:1b,augment:205s}"
             },
             {
@@ -396,8 +430,19 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:225s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:225s}"
             },
             {
               "function": "minecraft:set_name",
@@ -502,8 +547,19 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:212s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:212s}"
             },
             {
               "function": "minecraft:set_name",
@@ -551,8 +607,19 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:216s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:216s}"
             },
             {
               "function": "minecraft:set_name",
@@ -606,7 +673,7 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
+              "function": "minecraft:set_custom_data",
               "tag": "{pickup:1b,augment:227s}"
             },
             {
@@ -663,7 +730,7 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
+              "function": "minecraft:set_custom_data",
               "tag": "{pickup:1b,augment:226s}"
             },
             {
@@ -712,7 +779,7 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
+              "function": "minecraft:set_custom_data",
               "tag": "{pickup:1b,augment:224s}"
             },
             {
@@ -769,8 +836,19 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:236s,Enchantments:[{id:\"minecraft:fortune\",lvl:1s}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:fortune": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:236s}"
             },
             {
               "function": "minecraft:set_name",
@@ -832,8 +910,19 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:203s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:203s}"
             },
             {
               "function": "minecraft:set_name",
@@ -895,8 +984,19 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:237s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:237s}"
             },
             {
               "function": "minecraft:set_name",
@@ -993,8 +1093,19 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:239s,Enchantments:[{id:\"minecraft:impaling\",lvl:1s}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:239s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1063,8 +1174,19 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:240s,Enchantments:[{id:\"minecraft:impaling\",lvl:1s}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:240s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1129,8 +1251,19 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:200s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:200s}"
             },
             {
               "function": "set_name",
@@ -1199,8 +1332,19 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:238s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:238s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1251,8 +1395,19 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:241s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:241s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1315,8 +1470,19 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:242s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:242s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1363,8 +1529,19 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:202s,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:202s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1451,8 +1628,8 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{HideFlags:1,pickup:1b,augment:218}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:218}"
             },
             {
               "function": "set_name",
@@ -1502,7 +1679,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 9,
-          "name": "uhcp:augments/patron/prismatic"
+          "value": "uhcp:augments/patron/prismatic"
         }
       ]
     }

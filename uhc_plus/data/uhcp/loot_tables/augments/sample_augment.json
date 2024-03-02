@@ -13,8 +13,8 @@
                 "count": 1
               },
               {
-                "function": "set_nbt",
-                "tag": "{pickup:1b,augment:-1b}"
+                "function": "minecraft:set_custom_data",
+                "tag": "{pickup:1b,augment:-1s}"
               },
               {
                 "function": "set_name",

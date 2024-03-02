@@ -6,4 +6,4 @@ tellraw @s [{"text":"You ","color":"gray"},{"text":"leveled up","color":"gold"},
 function uhcp:augments/effects/prismatic/sololeveling/upgrade/init
 
 # Revoke advancement
-advancement revoke @s only uhcp:augments/solo_level/upgrade/23
+advancement revoke @s only uhcp:augments/solo_level/upgrade/22

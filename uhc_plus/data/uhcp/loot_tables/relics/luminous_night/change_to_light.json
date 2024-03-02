@@ -9,11 +9,11 @@
             "name": "minecraft:golden_sword",
             "functions": [
               {
-                "function": "minecraft:copy_nbt",
+                "function": "minecraft:copy_custom_data",
                 "source": "this",
                 "ops": [
                   {
-                    "source": "SelectedItem.tag",
+                    "source": "SelectedItem.components.\"minecraft:custom_data\"",
                     "target": "{}",
                     "op": "merge"
                   }

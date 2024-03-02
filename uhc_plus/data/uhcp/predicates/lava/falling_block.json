@@ -16,7 +16,7 @@
 			},
 			"dimension": "minecraft:overworld",
 			"fluid": {
-				"tag": "minecraft:lava"
+				"fluids": "#minecraft:lava"
 			}
 		}
 	}

@@ -10,7 +10,7 @@
 						"items": [
 							"minecraft:compass"
 						],
-						"nbt": "{uhcp_player:1b}"
+						"custom_data": "{uhcp_player:1b}"
 					}
 				}
 			}
@@ -24,7 +24,7 @@
 						"items": [
 							"minecraft:compass"
 						],
-						"nbt": "{uhcp_player:1b}"
+						"custom_data": "{uhcp_player:1b}"
 					}
 				}
 			}

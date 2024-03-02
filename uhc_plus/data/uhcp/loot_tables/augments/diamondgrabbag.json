@@ -13,8 +13,10 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 2
+              }
             }
           ]
         },
@@ -28,8 +30,10 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 2
+              }
             }
           ]
         },
@@ -43,8 +47,10 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 2
+              }
             }
           ]
         },
@@ -58,8 +64,10 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 2
+              }
             }
           ]
         },
@@ -73,8 +81,10 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:looting\",lvl:3s}]}"
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:looting": 3
+              }
             }
           ]
         },
@@ -88,8 +98,10 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:knockback\",lvl:2s}]}"
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:knockback": 2
+              }
             }
           ]
         },
@@ -103,8 +115,10 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:3s}]}"
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:unbreaking": 3
+              }
             }
           ]
         },
@@ -118,8 +132,10 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:fortune\",lvl:1s}]}"
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:fortune": 1
+              }
             }
           ]
         },
@@ -133,8 +149,10 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:3s}]}"
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:efficiency": 3
+              }
             }
           ]
         },
@@ -148,8 +166,10 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:sharpness\",lvl:1s}]}"
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": 1
+              }
             }
           ]
         },
@@ -163,8 +183,10 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:sharpness\",lvl:1s}]}"
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": 1
+              }
             }
           ]
         },
@@ -178,8 +200,10 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}]}"
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:efficiency": 1
+              }
             }
           ]
         },
@@ -193,8 +217,10 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:3s}]}"
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:efficiency": 3
+              }
             }
           ]
         }

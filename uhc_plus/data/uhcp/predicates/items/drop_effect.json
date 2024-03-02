@@ -3,6 +3,6 @@
 	"entity": "this",
 	"predicate": {
 		"type": "minecraft:item",
-		"nbt": "{Item:{tag:{uhcp_dropeffect:1b}}}"
+		"nbt": "{Item:{components:{\"minecraft:custom_data\":{uhcp_dropeffect:1b}}}}"
 	}
 }
