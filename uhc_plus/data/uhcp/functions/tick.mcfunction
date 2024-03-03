@@ -91,6 +91,9 @@ execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:d
 # Disable Ender Pearl Damage
 execute as @e[type=minecraft:ender_pearl] at @s run function uhcp:enderpearl
 
+# Titans
+execute as @e[tag=UHCP_Titan] at @s run function uhcp:titans/update
+
 # Items (instant pickup and item effects)
 execute as @e[tag=!UHCP_ItemPickup,predicate=uhcp:items/instant_pickup] run function uhcp:items/instant_pickup
 execute as @e[predicate=uhcp:items/drop_effect] at @s run function uhcp:items/drop_effect

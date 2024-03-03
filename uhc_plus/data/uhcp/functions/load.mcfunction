@@ -22,6 +22,9 @@ scoreboard objectives add uhcp_hb_killedZombie dummy
 scoreboard objectives add uhcp_hb_killedCreeper dummy
 scoreboard objectives add uhcp_hb_killedSkeleton dummy
 scoreboard objectives add uhcp_hb_killedSpider dummy
+scoreboard objectives add uhcp_t_timer dummy
+scoreboard objectives add uhcp_t_attack dummy
+scoreboard objectives add uhcp_t_count dummy
 scoreboard objectives add uhcp_arrowCount dummy
 scoreboard objectives add uhcp_gameTime dummy
 scoreboard objectives add uhcp_gameDisplay dummy
@@ -42,6 +45,14 @@ scoreboard objectives add uhcp_topDelay dummy
 scoreboard objectives add uhcp_topCharge dummy
 scoreboard objectives add uhcp_topCD dummy
 scoreboard objectives add uhcp_death deathCount
+
+scoreboard objectives add uhcp_motion_x1 dummy
+scoreboard objectives add uhcp_motion_y1 dummy
+scoreboard objectives add uhcp_motion_z1 dummy
+
+scoreboard objectives add uhcp_motion_x2 dummy
+scoreboard objectives add uhcp_motion_y2 dummy
+scoreboard objectives add uhcp_motion_z2 dummy
 
 # Add Display Timer Names
 scoreboard players set %display uhcp_gameDisplay 10000
@@ -68,6 +79,11 @@ bossbar add uhcp_augment "Cooldown:"
 bossbar set minecraft:uhcp_augment color white
 bossbar set minecraft:uhcp_augment style notched_6
 bossbar set minecraft:uhcp_augment max 900
+
+bossbar add uhcp_titanhealth "Titan Health"
+bossbar set minecraft:uhcp_titanhealth color red
+bossbar set minecraft:uhcp_titanhealth style notched_6
+bossbar set minecraft:uhcp_titanhealth max 1
 
 # Default scores
 # Arrow limit
