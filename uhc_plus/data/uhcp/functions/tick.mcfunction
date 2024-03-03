@@ -81,8 +81,8 @@ execute as @e[tag=UHCP_Summon] at @s run function uhcp:update
 execute if entity @s[tag=UHCP_SClone] unless entity @s[tag=UHCP_SCloneStand,distance=..2] run kill @s
 
 # Relics
-execute as @e[type=arrow,tag=!UHCP_BoomburstInit,nbt={custom_potion_effects:[{id:"minecraft:bad_omen",amplifier:100b}]}] run function uhcp:relics/boomburst/initialize
-execute as @e[type=arrow,nbt={inGround:1b,custom_potion_effects:[{id:"minecraft:bad_omen",amplifier:100b}]}] at @s run function uhcp:relics/boomburst/explode_inground
+execute as @e[type=arrow,tag=!UHCP_BoomburstInit,predicate=uhcp:relics/boomburst/arrow] run function uhcp:relics/boomburst/initialize
+execute as @e[type=arrow,predicate=uhcp:relics/boomburst/arrow_in_ground] at @s run function uhcp:relics/boomburst/explode_inground
 execute as @e[predicate=uhcp:relics/hit_by_boomburst] at @s if entity @e[tag=UHCP_BoomburstDisplay,distance=..4] run function uhcp:relics/boomburst/explode_onhit
 
 # Close dimensions

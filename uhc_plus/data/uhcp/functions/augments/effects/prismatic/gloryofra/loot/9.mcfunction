@@ -1,5 +1,5 @@
 loot give @s loot uhcp:relics/yggdrasil_bark
-give @s potion{Potion:"minecraft:strong_regeneration"} 2
+give @s minecraft:potion[minecraft:potion_contents={"potion":"minecraft:strong_regeneration"}] 2
 
 execute store result score %health uhcp_a_count run attribute @s generic.max_health get 1
 scoreboard players set %CONST_2 uhcp_a_count 2
