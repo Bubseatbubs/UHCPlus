@@ -1,6 +1,6 @@
 # Update Display Timer
 scoreboard players add %updateDisplay uhcp_gameTime 1
-execute unless score %updateDisplay uhcp_gameTime matches 20.. run return 0
+execute unless score %updateDisplay uhcp_gameTime matches 10.. run return 0
 
 # Update Player Count
 function uhcp:timer/update_playersleft
