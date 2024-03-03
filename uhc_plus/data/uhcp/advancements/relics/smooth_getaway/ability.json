@@ -17,7 +17,7 @@
                         "minecraft:brush"
                       ],
                       "durability": 64,
-                      "nbt": "{uhcp_radiant:6b}"
+                      "custom_data": "{uhcp_radiant:6b}"
                     }
                   }
                 }
@@ -32,7 +32,7 @@
                         "minecraft:brush"
                       ],
                       "durability": 64,
-                      "nbt": "{uhcp_radiant:6b}"
+                      "custom_data": "{uhcp_radiant:6b}"
                     }
                   }
                 }

@@ -18,7 +18,7 @@
                       "min": 0,
                       "max": 1560
                     },
-                    "nbt": "{uhcp_radiant:3b}"
+                    "custom_data": "{uhcp_radiant:3b}"
                   }
                 }
               }

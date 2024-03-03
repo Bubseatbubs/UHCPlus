@@ -17,7 +17,7 @@
                           "minecraft:shears"
                         ],
                         "durability": 238,
-                        "nbt": "{uhcp_radiant:7b}"
+                        "custom_data": "{uhcp_radiant:7b}"
                       }
                     }
                   }
@@ -32,7 +32,7 @@
                           "minecraft:shears"
                         ],
                         "durability": 238,
-                        "nbt": "{uhcp_radiant:7b}"
+                        "custom_data": "{uhcp_radiant:7b}"
                       }
                     }
                   }

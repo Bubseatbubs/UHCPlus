@@ -31,7 +31,7 @@
 										"condition": "minecraft:entity_properties",
 										"entity": "this",
 										"predicate": {
-											"nbt": "{Inventory:[{components:{\"minecraft:custom_data\":{solo_level:1b}}}]}"
+											"custom_data": "{Inventory:[{components:{\"minecraft:custom_data\":{solo_level:1b}}}]}"
 										}
 									}
 								]

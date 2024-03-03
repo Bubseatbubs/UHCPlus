@@ -17,7 +17,7 @@
                         "minecraft:golden_hoe"
                       ],
                       "durability": 32,
-                      "nbt": "{uhcp_radiant:5b}"
+                      "custom_data": "{uhcp_radiant:5b}"
                     }
                   }
                 }
@@ -32,7 +32,7 @@
                         "minecraft:golden_hoe"
                       ],
                       "durability": 32,
-                      "nbt": "{uhcp_radiant:5b}"
+                      "custom_data": "{uhcp_radiant:5b}"
                     }
                   }
                 }

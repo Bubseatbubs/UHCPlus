@@ -17,7 +17,7 @@
                         "minecraft:diamond_sword"
                       ],
                       "durability": 1561,
-                      "nbt": "{uhcp_radiant:1b}"
+                      "custom_data": "{uhcp_radiant:1b}"
                     }
                   }
                 }
@@ -32,7 +32,7 @@
                         "minecraft:diamond_sword"
                       ],
                       "durability": 1561,
-                      "nbt": "{uhcp_radiant:1b}"
+                      "custom_data": "{uhcp_radiant:1b}"
                     }
                   }
                 }

@@ -16,7 +16,7 @@
                         "items": [
                           "minecraft:golden_hoe"
                         ],
-                        "nbt": "{uhcp_radiant:5b}"
+                        "custom_data": "{uhcp_radiant:5b}"
                       }
                     }
                   }

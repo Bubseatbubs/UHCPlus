@@ -13,7 +13,7 @@
                     "min": 0,
                     "max": 406
                   },
-                  "nbt": "{uhcp_radiant:9b}"
+                  "custom_data": "{uhcp_radiant:9b}"
               }
             }
           }

@@ -1,5 +1,5 @@
 advancement revoke @s through uhcp:arrow_limit/end_parent
-execute at @s run summon item ~ ~ ~ {Tags:["UHCP_New"],PickupDelay:40,Item:{id:"minecraft:arrow",Count:1b}}
+execute at @s run summon item ~ ~ ~ {Tags:["UHCP_New"],PickupDelay:40,Item:{id:"minecraft:arrow"}}
 execute store result score @s uhcp_arrowCount run clear @s arrow 0
 scoreboard players operation %init uhcp_arrowCount -= @s uhcp_arrowCount
 scoreboard players set %stack uhcp_arrowCount 64

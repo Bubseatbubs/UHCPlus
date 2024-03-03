@@ -20,7 +20,7 @@
                         "minecraft:netherite_sword"
                       ],
                       "durability": 2031,
-                      "nbt": "{uhcp_radiant:8b}"
+                      "custom_data": "{uhcp_radiant:8b}"
                     }
                   }
                 }
@@ -35,7 +35,7 @@
                         "minecraft:netherite_sword"
                       ],
                       "durability": 2031,
-                      "nbt": "{uhcp_radiant:8b}"
+                      "custom_data": "{uhcp_radiant:8b}"
                     }
                   }
                 }

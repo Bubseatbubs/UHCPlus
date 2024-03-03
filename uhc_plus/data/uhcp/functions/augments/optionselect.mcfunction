@@ -15,7 +15,7 @@ function uhcp:augments/generatechoices
 title @s subtitle {"text":"Choose 1","color":"white"}
 title @s title {"text":"Choose your augment!","color":"gold","italic":true}
 execute at @s run playsound block.beacon.activate master @s ~ ~ ~ 1 1 1
-execute at @s run summon firework_rocket ~ ~7 ~ {FireworksItem:{id:"firework_rocket",Count:1,tag:{Fireworks:{Explosions:[{Type:2,Trail:1b,Colors:[I;16772608],FadeColors:[I;15662848]}]}}}}
+execute at @s run summon minecraft:firework_rocket ~ ~7 ~ {FireworksItem:{id:"firework_rocket",components:{"minecraft:fireworks":{explosions:[{shape:"star",colors:[I;16772608],fade_colors:[I;15662848],has_trail:1b}]}}}}
 
 # Final Cleanup
 tag @s add UHCP_ChoosingItem

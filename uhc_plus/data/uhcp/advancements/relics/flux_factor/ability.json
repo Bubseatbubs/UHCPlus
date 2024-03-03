@@ -17,7 +17,7 @@
                           "minecraft:golden_sword"
                         ],
                         "durability": 32,
-                        "nbt": "{uhcp_radiant:2b}"
+                        "custom_data": "{uhcp_radiant:2b}"
                       }
                     }
                   }
@@ -32,7 +32,7 @@
                           "minecraft:golden_sword"
                         ],
                         "durability": 32,
-                        "nbt": "{uhcp_radiant:2b}"
+                        "custom_data": "{uhcp_radiant:2b}"
                       }
                     }
                   }
