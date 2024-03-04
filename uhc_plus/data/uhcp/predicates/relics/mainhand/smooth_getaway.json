@@ -4,7 +4,7 @@
     "predicate": {
         "equipment": {
             "mainhand": {
-                "custom_data": "uhcp_radiant:6b"
+                "custom_data": "{uhcp_radiant:6b}"
             }
         }
     }
