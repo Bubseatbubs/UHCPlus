@@ -18,14 +18,11 @@ tag @s remove UHCP_Owner
 tag @e remove UHCP_BeeTarget
 scoreboard players reset @e[distance=..5] uhcp_a_count
 
-# Assign Team Scoreboards
-execute if entity @a[predicate=uhcp:teams/solo] run function uhcp:teams/solo
-execute if entity @a[predicate=uhcp:teams/team] run function uhcp:teams/team
-scoreboard players set @a[predicate=uhcp:teams/neither] uhcp_team 0
-scoreboard players set @a[gamemode=!survival] uhcp_team 0
+# Assign ID if player doesn't have one already
+execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
-# Bee is part of the squad
-scoreboard players operation @e[tag=UHCP_Bee,sort=nearest,limit=1] uhcp_team = @s uhcp_team
+# Bee owner is set to player
+scoreboard players operation @e[tag=UHCP_Bee,sort=nearest,limit=1] uhcp_id = @s uhcp_id
 
 # Bee Sin! :o
 execute store result score %random uhcp_a_count run random value 1..100

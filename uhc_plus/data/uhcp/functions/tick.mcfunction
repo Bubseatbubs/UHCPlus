@@ -84,6 +84,7 @@ execute if entity @s[tag=UHCP_SClone] unless entity @s[tag=UHCP_SCloneStand,dist
 execute as @e[type=arrow,tag=!UHCP_BoomburstInit,predicate=uhcp:relics/boomburst/arrow] run function uhcp:relics/boomburst/initialize
 execute as @e[type=arrow,predicate=uhcp:relics/boomburst/arrow_in_ground] at @s run function uhcp:relics/boomburst/explode_inground
 execute as @e[predicate=uhcp:relics/hit_by_boomburst] at @s if entity @e[tag=UHCP_BoomburstDisplay,distance=..4] run function uhcp:relics/boomburst/explode_onhit
+execute as @e[predicate=uhcp:relics/smooth_getaway/hitbox_hurt] at @s run function uhcp:relics/smooth_getaway/hurt
 
 # Close dimensions
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:dimensions/run

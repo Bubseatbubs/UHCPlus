@@ -45,6 +45,7 @@ scoreboard objectives add uhcp_topDelay dummy
 scoreboard objectives add uhcp_topCharge dummy
 scoreboard objectives add uhcp_topCD dummy
 scoreboard objectives add uhcp_death deathCount
+scoreboard objectives add uhcp_id dummy
 
 scoreboard objectives add uhcp_motion_x1 dummy
 scoreboard objectives add uhcp_motion_y1 dummy

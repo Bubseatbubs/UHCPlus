@@ -1,5 +1,7 @@
 # Start game
 scoreboard players reset %time uhcp_gameTime
+scoreboard players reset @a uhcp_id
+scoreboard players reset %global uhcp_id
 scoreboard players reset @a uhcp_a_gloryOfRa
 scoreboard players reset @a uhcp_a_selectedAugment
 scoreboard players reset @a uhcp_a_tier
@@ -67,6 +69,7 @@ execute if score %tier uhcp_a_tier matches 90..109 run scoreboard players set %t
 
 # Reset attribute modifiers
 execute as @a run function uhcp:attributes_reset
+execute as @a run function uhcp:start/id/assign
 
 # Solo leveling
 scoreboard players set @a uhcp_a_tier 0

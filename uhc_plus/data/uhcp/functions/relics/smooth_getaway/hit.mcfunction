@@ -10,6 +10,9 @@ execute as @a if score @s uhcp_a_selectedAugment matches 239 at @s run function 
 particle minecraft:campfire_signal_smoke ~ ~ ~ 1.5 0.5 1.5 0.1 50 normal
 playsound entity.zombie.converted_to_drowned master @a[distance=..8] ~ ~ ~ 1 0.5 0.5
 
+# Assign IDs
+execute as @e[tag=UHCP_New,tag=UHCP_InitScore] run function uhcp:relics/smooth_getaway/assign
+
 # Set Cooldown
 execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_a_durability 1
 item modify entity @s weapon.mainhand uhcp:update_dur
@@ -26,14 +29,6 @@ tag @e[distance=..6,scores={uhcp_a_count=1},sort=nearest,limit=1] add UHCP_SClon
 execute as @e[type=wolf,tag=UHCP_New] run data modify entity @s Owner set from entity @p[tag=UHCP_Owner] UUID
 
 execute as @e[tag=UHCP_New,type=armor_stand] run data modify entity @s CustomName set from entity @s ArmorItems[3].components."minecraft:profile".name
-
-# Assign Team Scoreboards
-execute if entity @a[predicate=uhcp:teams/solo] run function uhcp:teams/solo
-execute if entity @a[predicate=uhcp:teams/team] run function uhcp:teams/team
-scoreboard players set @a[predicate=uhcp:teams/neither] uhcp_team 0
-scoreboard players set @a[gamemode=!survival] uhcp_team 0
-
-scoreboard players operation @e[tag=UHCP_New] uhcp_team = @a[tag=UHCP_Owner,sort=nearest,limit=1] uhcp_team
 
 tag @s remove UHCP_Owner
 tag @e remove UHCP_New
