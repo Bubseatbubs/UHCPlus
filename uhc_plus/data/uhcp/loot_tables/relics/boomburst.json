@@ -15,6 +15,7 @@
                 "function": "minecraft:set_enchantments",
                 "enchantments": {
                   "minecraft:piercing": 10,
+                  "minecraft:multishot": 1,
                   "minecraft:quick_charge": 2,
                   "minecraft:vanishing_curse": 1
                 }
@@ -33,13 +34,13 @@
                 "function": "minecraft:set_name",
                 "name": [
                   {
-                    "text": "Bo",
+                    "text": "Bu",
                     "color": "#0800FF",
                     "bold": true,
                     "italic": false
                   },
                   {
-                    "text": "om",
+                    "text": "zz",
                     "color": "#2B64FF"
                   },
                   {
@@ -134,7 +135,7 @@
                       "italic": true
                     },
                     {
-                      "text": " TNT Arrow",
+                      "text": " Beehive",
                       "color": "red",
                       "italic": true
                     },
@@ -145,24 +146,24 @@
                   ],
                   [
                     {
-                      "text": "TNT Arrows",
+                      "text": "Beehives",
                       "color": "red",
                       "italic": true
                     },
                     {
-                      "text": " are lit upon hitting an enemy or block.",
+                      "text": " explode into a cloud of",
                       "color": "gray",
                       "italic": true
                     }
                   ],
                   [
                     {
-                      "text": "TNT Arrows",
-                      "color": "red",
+                      "text": "Bees",
+                      "color": "blue",
                       "italic": true
                     },
                     {
-                      "text": " explode 1 second after being lit.",
+                      "text": " after hitting a block or enemy.",
                       "color": "gray",
                       "italic": true
                     }
