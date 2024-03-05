@@ -6,6 +6,7 @@
 # Does not check for if player clicked on BSG (that is a little later)
 ##
 
+
 scoreboard players set @s uhcp_a_validSelection 0
 
 # Check if item was thrown out of inventory, return item using 0s PickupDelay

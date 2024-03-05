@@ -8,6 +8,8 @@ execute if entity @s[tag=UHCP_GravitySmasher] run return run function uhcp:relic
 execute if entity @s[tag=UHCP_GoldBlock] run return run function uhcp:relics/the_harvester/update
 execute if entity @s[tag=UHCP_SCloneStand] run return run function uhcp:relics/smooth_getaway/update
 execute if entity @s[tag=UHCP_DragonsProtection] run return run function uhcp:relics/dragons_protection/update
+execute if entity @s[tag=UHCP_PhantomClaw,tag=!UHCP_FlyingTowardsTarget] run return run function uhcp:augments/effects/gold/phantomclaw/update
+execute if entity @s[tag=UHCP_FlyingTowardsTarget] at @s run return run function uhcp:augments/effects/gold/phantomclaw/update_flight
 
 
 # Augments

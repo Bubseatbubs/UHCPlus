@@ -240,6 +240,81 @@
         {
           "type": "minecraft:item",
           "weight": 1,
+          "name": "minecraft:ward_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+								"minecraft:hide_additional_tooltip": {}
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{pickup:1b,augment:6s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Phantom Claw",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "A",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Ghostly Sword",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": " hovers above you.",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "Every 3 attacks, the sword",
+                  "color": "gray"
+                },
+                [
+                  {
+                    "text": "strikes your target, dealing",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": " 2🖤",
+                    "color": "red"
+                  }
+                ],
+                
+                {
+                  "text": "to any enemy it passes through.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
           "name": "minecraft:leather",
           "functions": [
             {
@@ -1190,55 +1265,6 @@
                     "color": "gray"
                   }
                 ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:honeycomb",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:0s}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": [
-                {
-                  "text": "Bee Keeper",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Every 3 attacks, summon a friendly",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Bee",
-                    "color": "blue"
-                  }
-                ],
-                {
-                  "text": "that attacks nearby enemies.",
-                  "color": "gray"
-                }
               ]
             }
           ]

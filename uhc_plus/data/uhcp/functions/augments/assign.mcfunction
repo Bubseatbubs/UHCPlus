@@ -18,6 +18,9 @@ execute if score @s uhcp_a_count matches 1.. run return 3
 execute store success score @s uhcp_a_count run clear @s minecraft:leather{augment:4s} 1
 execute if score @s uhcp_a_count matches 1.. run return 4
 
+execute store success score @s uhcp_a_count run clear @s minecraft:ward_armor_trim_smithing_template{augment:6s} 1
+execute if score @s uhcp_a_count matches 1.. run return 6
+
 execute store success score @s uhcp_a_count run clear @s minecraft:gold_nugget{augment:7s} 1
 execute if score @s uhcp_a_count matches 1.. run return 7
 

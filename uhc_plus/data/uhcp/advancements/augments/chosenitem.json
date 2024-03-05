@@ -32,7 +32,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "custom_data": "{Tags:[\"UHCP_ChoosingItem\"]}"
+              "nbt": "{Tags:[\"UHCP_ChoosingItem\"]}"
             }
           }
         ]

@@ -49,6 +49,7 @@ execute if score @s uhcp_a_selectedAugment matches 2 run function uhcp:augments/
 execute if score @s uhcp_a_selectedAugment matches 3 run return 0
 execute if score @s uhcp_a_selectedAugment matches 4 run function uhcp:augments/effects/gold/cowboycosplay
 execute if score @s uhcp_a_selectedAugment matches 5 run return 0
+execute if score @s uhcp_a_selectedAugment matches 6 run function uhcp:augments/effects/gold/phantomclaw
 execute if score @s uhcp_a_selectedAugment matches 7 run function uhcp:augments/effects/gold/dripeconomyii
 execute if score @s uhcp_a_selectedAugment matches 8 run function uhcp:augments/effects/gold/fireandwater
 execute if score @s uhcp_a_selectedAugment matches 9 run function uhcp:augments/effects/gold/gapplegapii
