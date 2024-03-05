@@ -22,7 +22,8 @@ scoreboard players reset @e[distance=..5] uhcp_a_count
 execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
 # Bee owner is set to player
-scoreboard players operation @e[tag=UHCP_Bee,sort=nearest,limit=1] uhcp_id = @s uhcp_id
+scoreboard players operation @e[tag=UHCP_New,tag=UHCP_Bee,sort=nearest,limit=1] uhcp_id = @s uhcp_id
+tag @e remove UHCP_New
 
 # Bee Sin! :o
 execute store result score %random uhcp_a_count run random value 1..100
