@@ -7,9 +7,6 @@ execute if score %time uhcp_gameTime matches 1.. run function uhcp:timer/update_
 # Game start
 execute if score countdown tick matches 0 run function uhcp:start
 
-# Crafting
-execute if entity @a[tag=UHCP_Craft] run function uhcp:crafting/item/determine
-
 # Lava
 execute if score %uhcp_lava uhcp_gameTime matches -1.. if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:lava/countdown
 execute if score %uhcp_lavaStart uhcp_initStatus matches 1.. run function uhcp:lava/run
@@ -58,13 +55,7 @@ execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:update_gold
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
 execute as @a[scores={uhcp_lavaTimeInterval=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
 execute as @a[scores={uhcp_lavaMaxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
-execute as @a[scores={uhcp_a_gloryOfRa=9..}] at @s run function uhcp:augments/effects/prismatic/gloryofra/giveloot
-execute as @a[scores={uhcp_a_selectedAugment=202}] at @s if block ~ ~-1 ~ ice run function uhcp:augments/effects/prismatic/coldblooded/effect
-execute as @a[scores={uhcp_a_selectedAugment=202}] at @s if block ~ ~-1 ~ frosted_ice run function uhcp:augments/effects/prismatic/coldblooded/effect
-execute as @a[scores={uhcp_a_selectedAugment=202}] at @s if block ~ ~-1 ~ blue_ice run function uhcp:augments/effects/prismatic/coldblooded/effect
-execute as @a[scores={uhcp_a_selectedAugment=202}] at @s if block ~ ~-1 ~ packed_ice run function uhcp:augments/effects/prismatic/coldblooded/effect
-execute as @a[scores={uhcp_a_selectedAugment=30}] at @s unless entity @a[nbt={Inventory:[{Slot:100b}]}] run function uhcp:augments/effects/gold/unburdened/effect
-execute as @a[scores={uhcp_a_selectedAugment=16}] at @s if entity @s[scores={hearts=..20}] run function uhcp:augments/effects/gold/knifesedge/effect
+execute as @a at @s if score @s uhcp_a_gloryOfRa matches 9.. run function uhcp:augments/effects/prismatic/gloryofra/giveloot
 
 # Augment Countdown/Functions
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_augmentCountdown uhcp_gameTime matches 0.. as @a[tag=UHCP_ChoosingItem,scores={uhcp_a_leave=1..}] run function uhcp:augments/left
@@ -78,7 +69,6 @@ execute as @a at @s if score @s patron matches 100..109 run function uhcp:settin
 
 # Update Summoned Entities
 execute as @e[tag=UHCP_Summon] at @s run function uhcp:update
-execute if entity @s[tag=UHCP_SClone] unless entity @s[tag=UHCP_SCloneStand,distance=..2] run kill @s
 
 # Relics
 execute as @e[type=arrow,tag=!UHCP_BoomburstInit,predicate=uhcp:relics/boomburst/arrow] run function uhcp:relics/boomburst/initialize

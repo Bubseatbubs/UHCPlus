@@ -38,6 +38,6 @@
 		}
 	},
 	"rewards": {
-		"function": "uhcp:augments/effect/latelooter"
+		"function": "uhcp:augments/left/effect/latelooter"
 	}
 }

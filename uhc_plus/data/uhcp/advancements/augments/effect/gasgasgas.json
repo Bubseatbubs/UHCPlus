@@ -38,6 +38,6 @@
 		}
 	},
 	"rewards": {
-		"function": "uhcp:augments/effect/gasgasgas"
+		"function": "uhcp:augments/left/effect/gasgasgas"
 	}
 }
