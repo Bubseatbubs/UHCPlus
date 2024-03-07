@@ -1,6 +1,3 @@
-# Return if recently run
-execute if score @s uhcp_lavaCurrentLayers matches 1.. run return fail
-
 # Modify inventory
 setblock 0 0 0 minecraft:barrel
 data remove block 0 0 0 Items
@@ -36,51 +33,36 @@ item replace entity @s container.24 from block 0 0 0 container.24
 item replace entity @s container.25 from block 0 0 0 container.25
 item replace entity @s container.26 from block 0 0 0 container.26
 
-#return fail
 #Load 2
 data remove block 0 0 0 Items
-data modify storage uhcp:solo_level Load[{Slot:0b}].id set from storage uhcp:solo_level Inventory[{Slot:27b}].id
-data modify storage uhcp:solo_level Load[{Slot:0b}].components set from storage uhcp:solo_level Inventory[{Slot:27b}].components
-data modify storage uhcp:solo_level Load[{Slot:0b}].count set from storage uhcp:solo_level Inventory[{Slot:27b}].count
-data modify storage uhcp:solo_level Load[{Slot:1b}].id set from storage uhcp:solo_level Inventory[{Slot:28b}].id
-data modify storage uhcp:solo_level Load[{Slot:1b}].components set from storage uhcp:solo_level Inventory[{Slot:28b}].components
-data modify storage uhcp:solo_level Load[{Slot:1b}].count set from storage uhcp:solo_level Inventory[{Slot:28b}].count
-data modify storage uhcp:solo_level Load[{Slot:2b}].id set from storage uhcp:solo_level Inventory[{Slot:29b}].id
-data modify storage uhcp:solo_level Load[{Slot:2b}].components set from storage uhcp:solo_level Inventory[{Slot:29b}].components
-data modify storage uhcp:solo_level Load[{Slot:2b}].count set from storage uhcp:solo_level Inventory[{Slot:29b}].count
-data modify storage uhcp:solo_level Load[{Slot:3b}].id set from storage uhcp:solo_level Inventory[{Slot:30b}].id
-data modify storage uhcp:solo_level Load[{Slot:3b}].components set from storage uhcp:solo_level Inventory[{Slot:30b}].components
-data modify storage uhcp:solo_level Load[{Slot:3b}].count set from storage uhcp:solo_level Inventory[{Slot:30b}].count
-data modify storage uhcp:solo_level Load[{Slot:4b}].id set from storage uhcp:solo_level Inventory[{Slot:31b}].id
-data modify storage uhcp:solo_level Load[{Slot:4b}].components set from storage uhcp:solo_level Inventory[{Slot:31b}].components
-data modify storage uhcp:solo_level Load[{Slot:4b}].count set from storage uhcp:solo_level Inventory[{Slot:31b}].count
-data modify storage uhcp:solo_level Load[{Slot:5b}].id set from storage uhcp:solo_level Inventory[{Slot:32b}].id
-data modify storage uhcp:solo_level Load[{Slot:5b}].components set from storage uhcp:solo_level Inventory[{Slot:32b}].components
-data modify storage uhcp:solo_level Load[{Slot:5b}].count set from storage uhcp:solo_level Inventory[{Slot:32b}].count
-data modify storage uhcp:solo_level Load[{Slot:6b}].id set from storage uhcp:solo_level Inventory[{Slot:33b}].id
-data modify storage uhcp:solo_level Load[{Slot:6b}].components set from storage uhcp:solo_level Inventory[{Slot:33b}].components
-data modify storage uhcp:solo_level Load[{Slot:6b}].count set from storage uhcp:solo_level Inventory[{Slot:33b}].count
-data modify storage uhcp:solo_level Load[{Slot:7b}].id set from storage uhcp:solo_level Inventory[{Slot:34b}].id
-data modify storage uhcp:solo_level Load[{Slot:7b}].components set from storage uhcp:solo_level Inventory[{Slot:34b}].components
-data modify storage uhcp:solo_level Load[{Slot:7b}].count set from storage uhcp:solo_level Inventory[{Slot:34b}].count
-data modify storage uhcp:solo_level Load[{Slot:8b}].id set from storage uhcp:solo_level Inventory[{Slot:35b}].id
-data modify storage uhcp:solo_level Load[{Slot:8b}].components set from storage uhcp:solo_level Inventory[{Slot:35b}].components
-data modify storage uhcp:solo_level Load[{Slot:8b}].count set from storage uhcp:solo_level Inventory[{Slot:35b}].count
-data modify storage uhcp:solo_level Load[{Slot:9b}].id set from storage uhcp:solo_level Inventory[{Slot:100b}].id
-data modify storage uhcp:solo_level Load[{Slot:9b}].components set from storage uhcp:solo_level Inventory[{Slot:100b}].components
-data modify storage uhcp:solo_level Load[{Slot:9b}].count set from storage uhcp:solo_level Inventory[{Slot:100b}].count
-data modify storage uhcp:solo_level Load[{Slot:10b}].id set from storage uhcp:solo_level Inventory[{Slot:101b}].id
-data modify storage uhcp:solo_level Load[{Slot:10b}].components set from storage uhcp:solo_level Inventory[{Slot:101b}].components
-data modify storage uhcp:solo_level Load[{Slot:10b}].count set from storage uhcp:solo_level Inventory[{Slot:101b}].count
-data modify storage uhcp:solo_level Load[{Slot:11b}].id set from storage uhcp:solo_level Inventory[{Slot:102b}].id
-data modify storage uhcp:solo_level Load[{Slot:11b}].components set from storage uhcp:solo_level Inventory[{Slot:102b}].components
-data modify storage uhcp:solo_level Load[{Slot:11b}].count set from storage uhcp:solo_level Inventory[{Slot:102b}].count
-data modify storage uhcp:solo_level Load[{Slot:12b}].id set from storage uhcp:solo_level Inventory[{Slot:103b}].id
-data modify storage uhcp:solo_level Load[{Slot:12b}].components set from storage uhcp:solo_level Inventory[{Slot:103b}].components
-data modify storage uhcp:solo_level Load[{Slot:12b}].count set from storage uhcp:solo_level Inventory[{Slot:103b}].count
-data modify storage uhcp:solo_level Load[{Slot:13b}].id set from storage uhcp:solo_level Inventory[{Slot:-106b}].id
-data modify storage uhcp:solo_level Load[{Slot:13b}].components set from storage uhcp:solo_level Inventory[{Slot:-106b}].components
-data modify storage uhcp:solo_level Load[{Slot:13b}].count set from storage uhcp:solo_level Inventory[{Slot:-106b}].count
+data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:27b}]
+data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:28b}]
+data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:29b}]
+data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:30b}]
+data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:31b}]
+data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:32b}]
+data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:33b}]
+data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:34b}]
+data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:35b}]
+data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:100b}]
+data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:101b}]
+data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:102b}]
+data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:103b}]
+data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:-106b}]
+execute if data storage uhcp:solo_level Inventory[{Slot:27b}] run data modify storage uhcp:solo_level Load[{Slot:27b}].Slot set value 0b
+execute if data storage uhcp:solo_level Inventory[{Slot:28b}] run data modify storage uhcp:solo_level Load[{Slot:28b}].Slot set value 1b
+execute if data storage uhcp:solo_level Inventory[{Slot:29b}] run data modify storage uhcp:solo_level Load[{Slot:29b}].Slot set value 2b
+execute if data storage uhcp:solo_level Inventory[{Slot:30b}] run data modify storage uhcp:solo_level Load[{Slot:30b}].Slot set value 3b
+execute if data storage uhcp:solo_level Inventory[{Slot:31b}] run data modify storage uhcp:solo_level Load[{Slot:31b}].Slot set value 4b
+execute if data storage uhcp:solo_level Inventory[{Slot:32b}] run data modify storage uhcp:solo_level Load[{Slot:32b}].Slot set value 5b
+execute if data storage uhcp:solo_level Inventory[{Slot:33b}] run data modify storage uhcp:solo_level Load[{Slot:33b}].Slot set value 6b
+execute if data storage uhcp:solo_level Inventory[{Slot:34b}] run data modify storage uhcp:solo_level Load[{Slot:34b}].Slot set value 7b
+execute if data storage uhcp:solo_level Inventory[{Slot:35b}] run data modify storage uhcp:solo_level Load[{Slot:35b}].Slot set value 8b
+execute if data storage uhcp:solo_level Inventory[{Slot:100b}] run data modify storage uhcp:solo_level Load[{Slot:100b}].Slot set value 9b
+execute if data storage uhcp:solo_level Inventory[{Slot:101b}] run data modify storage uhcp:solo_level Load[{Slot:101b}].Slot set value 10b
+execute if data storage uhcp:solo_level Inventory[{Slot:102b}] run data modify storage uhcp:solo_level Load[{Slot:102b}].Slot set value 11b
+execute if data storage uhcp:solo_level Inventory[{Slot:103b}] run data modify storage uhcp:solo_level Load[{Slot:103b}].Slot set value 12b
+execute if data storage uhcp:solo_level Inventory[{Slot:-106b}] run data modify storage uhcp:solo_level Load[{Slot:-106b}].Slot set value 13b
 data modify block 0 0 0 Items set from storage uhcp:solo_level Load
 item replace entity @s container.27 from block 0 0 0 container.0
 item replace entity @s container.28 from block 0 0 0 container.1
