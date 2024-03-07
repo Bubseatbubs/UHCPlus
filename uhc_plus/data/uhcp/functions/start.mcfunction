@@ -1,37 +1,46 @@
-# Start game
-scoreboard players reset %time uhcp_gameTime
-scoreboard players reset @a uhcp_id
-scoreboard players reset %global uhcp_id
-scoreboard players reset @a uhcp_a_gloryOfRa
-scoreboard players reset @a uhcp_a_selectedAugment
-scoreboard players reset @a uhcp_a_tier
-scoreboard players reset @a uhcp_topCD
-scoreboard players reset @a uhcp_wolf_stacks
-scoreboard players reset @a uhcp_bee_stacks
+# Set scores
 scoreboard players set %uhcp_gameStart uhcp_initStatus 1
-scoreboard players reset @a uhcp_arrowCount
+execute if score %uhcp_dimTime uhcp_gameTime matches ..-1 run scoreboard players set %uhcp_dimTime uhcp_gameTime 0
+execute as @a unless score @s uhcp_a_patron = @s uhcp_a_patron run scoreboard players set @s uhcp_a_patron 8
 scoreboard players set %AUG_7 uhcp_gameTime 2400
 scoreboard players set %AUG_15 uhcp_gameTime 2400
 scoreboard players set %AUG_27 uhcp_gameTime 12000
 scoreboard players set %AUG_107 uhcp_gameTime 6000
 scoreboard players set %AUG_203 uhcp_gameTime 1200
 scoreboard players set %AUG_238 uhcp_gameTime 12000
-execute if score %uhcp_dimTime uhcp_gameTime matches ..-1 run scoreboard players set %uhcp_dimTime uhcp_gameTime 0
+execute store result score %random uhcp_gameId run random value 0..3
+execute if score %random uhcp_gameId matches 0 store result score %global uhcp_gameId run random value -2147483648..-1073741825
+execute if score %random uhcp_gameId matches 1 store result score %global uhcp_gameId run random value -1073741824..-1
+execute if score %random uhcp_gameId matches 2 store result score %global uhcp_gameId run random value 0..1073741823
+execute if score %random uhcp_gameId matches 3 store result score %global uhcp_gameId run random value 1073741824..2147483647
+scoreboard players operation @a uhcp_gameId = %global uhcp_gameId
 
-# Default Patrons
-execute as @a unless score @s uhcp_a_patron = @s uhcp_a_patron run scoreboard players set @s uhcp_a_patron 8
+# Display
+scoreboard objectives setdisplay sidebar uhcp_gameDisplay
+scoreboard objectives setdisplay below_name hearts
 
+# Reset scoreboards
+scoreboard players reset @a uhcp_a_gloryOfRa
+scoreboard players reset @a uhcp_a_leave
+scoreboard players reset @a uhcp_a_selectedAugment
+scoreboard players reset @a uhcp_a_tier
+scoreboard players reset @a uhcp_arrowCount
+scoreboard players reset @a uhcp_bee_stacks
+scoreboard players reset %time uhcp_gameTime
 scoreboard players reset @a uhcp_hb_killedCreeper
 scoreboard players reset @a uhcp_hb_killedZombie
 scoreboard players reset @a uhcp_hb_killedSkeleton
 scoreboard players reset @a uhcp_hb_killedSpider
+scoreboard players reset @a uhcp_id
+scoreboard players reset %global uhcp_id
+scoreboard players reset @a uhcp_topCD
+scoreboard players reset @a uhcp_wolf_stacks
+
+# Remove tags
 tag @a remove UHCP_Creeper
 tag @a remove UHCP_Skeleton
 tag @a remove UHCP_Spider
 tag @a remove UHCP_Zombie
-
-scoreboard objectives setdisplay sidebar uhcp_gameDisplay
-scoreboard objectives setdisplay below_name hearts
 
 # Determine worldborder size
 execute if score TotalWorldSize setting matches 1000 run function uhcp:start/worldborder/1000
@@ -72,7 +81,6 @@ execute as @a run function uhcp:attributes_reset
 execute as @a run function uhcp:start/id/assign
 
 # Solo leveling
-scoreboard players set @a uhcp_a_tier 0
 tag @a remove UHCP_SLUpg
 tag @a remove UHCP_SLAxe
 tag @a remove UHCP_SLBoots
@@ -86,7 +94,6 @@ tag @a remove UHCP_SLShovel
 tag @a remove UHCP_SLSword
 
 # Augments
-scoreboard players reset @a uhcp_a_leave
 scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 900
 bossbar set uhcp_augment players @a
 scoreboard players set %uhcp_augments uhcp_initStatus 1

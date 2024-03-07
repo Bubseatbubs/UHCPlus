@@ -34,4 +34,3 @@ bossbar set minecraft:uhcp_augment players
 execute in uhcp:main run tp @e[tag=UHCP_Lock] 0 -63 0
 
 execute as @a[gamemode=survival] at @s run function uhcp:augments/countdown/end
-

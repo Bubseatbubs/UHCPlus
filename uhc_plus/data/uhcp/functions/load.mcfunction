@@ -2,33 +2,32 @@
 scoreboard objectives add augments trigger
 scoreboard objectives add hunger trigger
 scoreboard objectives add menu trigger
-scoreboard objectives add top trigger
-scoreboard objectives add testkit trigger
 scoreboard objectives add patron trigger
+scoreboard objectives add testkit trigger
+scoreboard objectives add top trigger
+scoreboard objectives add uhcp_a_choosingAugment dummy
 scoreboard objectives add uhcp_a_count dummy
 scoreboard objectives add uhcp_a_durability dummy
 scoreboard objectives add uhcp_a_gloryOfRa dummy
 scoreboard objectives add uhcp_a_leave minecraft.custom:minecraft.leave_game
-scoreboard objectives add uhcp_a_selectedAugment dummy
-scoreboard objectives add uhcp_a_choosingAugment dummy
 scoreboard objectives add uhcp_a_patron dummy
+scoreboard objectives add uhcp_a_selectedAugment dummy
 scoreboard objectives add uhcp_a_stack dummy
 scoreboard objectives add uhcp_a_tier dummy
 scoreboard objectives add uhcp_a_timer dummy
 scoreboard objectives add uhcp_a_validSelection dummy
+scoreboard objectives add uhcp_arrowCount dummy
 scoreboard objectives add uhcp_bee_stack dummy
-scoreboard objectives add uhcp_wolf_stack dummy
+scoreboard objectives add uhcp_death deathCount
+scoreboard objectives add uhcp_gameDisplay dummy
+scoreboard objectives add uhcp_gameId dummy
+scoreboard objectives add uhcp_gameTime dummy
 scoreboard objectives add uhcp_hb_killedZombie dummy
 scoreboard objectives add uhcp_hb_killedCreeper dummy
 scoreboard objectives add uhcp_hb_killedSkeleton dummy
 scoreboard objectives add uhcp_hb_killedSpider dummy
-scoreboard objectives add uhcp_t_timer dummy
-scoreboard objectives add uhcp_t_attack dummy
-scoreboard objectives add uhcp_t_count dummy
-scoreboard objectives add uhcp_arrowCount dummy
-scoreboard objectives add uhcp_gameTime dummy
-scoreboard objectives add uhcp_gameDisplay dummy
 scoreboard objectives add uhcp_hungerTimer dummy
+scoreboard objectives add uhcp_id dummy
 scoreboard objectives add uhcp_initStatus dummy
 scoreboard objectives add uhcp_itemCount dummy
 scoreboard objectives add uhcp_itemInv dummy
@@ -38,22 +37,22 @@ scoreboard objectives add uhcp_lavaHeight dummy
 scoreboard objectives add uhcp_lavaMaxHeight dummy
 scoreboard objectives add uhcp_lavaTime dummy
 scoreboard objectives add uhcp_lavaTimeInterval dummy
+scoreboard objectives add uhcp_motion_x1 dummy
+scoreboard objectives add uhcp_motion_x2 dummy
+scoreboard objectives add uhcp_motion_y1 dummy
+scoreboard objectives add uhcp_motion_y2 dummy
+scoreboard objectives add uhcp_motion_z1 dummy
+scoreboard objectives add uhcp_motion_z2 dummy
 scoreboard objectives add uhcp_page dummy
 scoreboard objectives add uhcp_settings dummy
+scoreboard objectives add uhcp_t_attack dummy
+scoreboard objectives add uhcp_t_count dummy
+scoreboard objectives add uhcp_t_timer dummy
 scoreboard objectives add uhcp_team dummy
-scoreboard objectives add uhcp_topDelay dummy
-scoreboard objectives add uhcp_topCharge dummy
 scoreboard objectives add uhcp_topCD dummy
-scoreboard objectives add uhcp_death deathCount
-scoreboard objectives add uhcp_id dummy
-
-scoreboard objectives add uhcp_motion_x1 dummy
-scoreboard objectives add uhcp_motion_y1 dummy
-scoreboard objectives add uhcp_motion_z1 dummy
-
-scoreboard objectives add uhcp_motion_x2 dummy
-scoreboard objectives add uhcp_motion_y2 dummy
-scoreboard objectives add uhcp_motion_z2 dummy
+scoreboard objectives add uhcp_topCharge dummy
+scoreboard objectives add uhcp_topDelay dummy
+scoreboard objectives add uhcp_wolf_stack dummy
 
 # Add Display Timer Names
 scoreboard players set %display uhcp_gameDisplay 10000
@@ -94,9 +93,9 @@ scoreboard players set %uhcp_dimTimeDef uhcp_gameTime 48000
 # Golden apples
 scoreboard players set %apples_default uhcp_settings 3
 # Lava
+scoreboard players set %uhcp_lavaDef uhcp_gameTime 48000
 scoreboard players set %uhcp_lavaDef uhcp_lavaMaxHeight 50
 scoreboard players set %uhcp_lavaDef uhcp_lavaTime 8400
-scoreboard players set %uhcp_lavaDef uhcp_gameTime 48000
 
 # Set default scores when unset
 execute unless score stage status matches 2 unless score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:load/scores

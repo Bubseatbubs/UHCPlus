@@ -1,5 +1,5 @@
 # Manage compass data
-data modify storage uhcp:compass Work set value [I;-1,-1,-1,-1]
+data modify storage uhcp:compass Work set value [I;-2147483648,-2147483648,-2147483648,-2147483648]
 execute store success score %uhcp_compassID uhcp_itemInv run data modify storage uhcp:compass Work set from storage uhcp:compass Compass.hand[0].components."minecraft:custom_data".uuid
 execute if score %uhcp_compassID uhcp_itemInv matches 0 run function uhcp:compass/replace/hand0/assign
 execute if score %uhcp_compassID uhcp_itemInv matches 1 run function uhcp:compass/replace/hand0/compare
