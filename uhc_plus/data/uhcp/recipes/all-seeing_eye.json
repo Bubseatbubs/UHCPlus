@@ -15,6 +15,20 @@
     "###"
   ],
   "result": {
-    "id": "minecraft:ender_eye"
+    "id": "minecraft:ender_eye",
+    "components": {
+      "custom_name": "{\"text\":\"All-Seeing Eye\",\"color\":\"light_purple\",\"italic\":false}",
+      "lore": ["{\"text\":\"Causes \",\"color\":\"gray\",\"italic\":true,\"extra\":[{\"text\":\"all enemies\",\"color\":\"gold\"},\" to glow\"]}","{\"text\":\"for \",\"color\":\"gray\",\"italic\":true,\"extra\":[{\"text\":\"10\",\"color\":\"gold\"},\" seconds. Consumed\"]}","{\"text\":\"upon use.\",\"color\":\"gray\",\"italic\":true}"],
+      "enchantments": {
+        "levels": {
+          "minecraft:protection": 1
+        },
+        "show_in_tooltip": 0
+      },
+      "custom_data": {
+        "uhcp_instantpickup": 1,
+        "uhcp_sight": 1
+      }
+    }
   }
 }

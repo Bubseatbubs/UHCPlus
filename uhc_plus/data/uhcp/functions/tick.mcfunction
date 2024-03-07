@@ -7,12 +7,12 @@ execute if score %time uhcp_gameTime matches 1.. run function uhcp:timer/update_
 # Game start
 execute if score countdown tick matches 0 run function uhcp:start
 
+# Crafting
+execute if entity @a[tag=UHCP_Craft] run function uhcp:crafting/item/determine
+
 # Lava
 execute if score %uhcp_lava uhcp_gameTime matches -1.. if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:lava/countdown
 execute if score %uhcp_lavaStart uhcp_initStatus matches 1.. run function uhcp:lava/run
-
-# Crafting
-execute if entity @a[tag=UHCP_Craft] run function uhcp:crafting/item/determine
 
 # Player compass
 execute unless score %uhcp_compassTime uhcp_itemCount matches 1.. if entity @a[predicate=uhcp:compass/player_compass/hand,gamemode=survival] run function uhcp:player_compass
