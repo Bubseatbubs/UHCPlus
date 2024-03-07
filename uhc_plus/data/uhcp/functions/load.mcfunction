@@ -100,6 +100,16 @@ scoreboard players set %uhcp_lavaDef uhcp_lavaTime 8400
 # Set default scores when unset
 execute unless score stage status matches 2 unless score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:load/scores
 
+# Set Gamerules
+gamerule doLimitedCrafting true
+execute in minecraft:overworld run gamerule doInsomnia true
+execute in minecraft:the_nether run gamerule doInsomnia true
+execute in minecraft:the_end run gamerule doInsomnia true
+execute in minecraft:the_end run gamerule randomTickSpeed 3
+execute in minecraft:the_nether run gamerule randomTickSpeed 3
+execute in minecraft:overworld run gamerule randomTickSpeed 18
+
+
 # Forceload main dimension
 execute in uhcp:main run forceload add 0 0
 

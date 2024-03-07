@@ -19,6 +19,10 @@ scoreboard players operation @a uhcp_gameId = %global uhcp_gameId
 scoreboard objectives setdisplay sidebar uhcp_gameDisplay
 scoreboard objectives setdisplay below_name hearts
 
+# Crafting
+advancement grant @a from minecraft:recipes/root
+# Revoke all special augment recipes here.
+
 # Reset scoreboards
 scoreboard players reset @a uhcp_a_gloryOfRa
 scoreboard players reset @a uhcp_a_leave
