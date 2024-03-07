@@ -25,7 +25,12 @@
 										"type": "player",
 										"gamemode": "survival"
 									},
-									"custom_data": "{Inventory:[{components:{\"minecraft:custom_data\":{solo_level:1b}}}]}"
+									"slots": {
+										"container.*": {
+											"items": "#uhcp:tools",
+                							"custom_data": "{solo_level:1b}"
+										}
+									}
 								}
 							}
 						]

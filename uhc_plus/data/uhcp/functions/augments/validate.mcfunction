@@ -15,7 +15,7 @@ execute if score @s uhcp_a_validSelection matches 100 run return 0
 
 # Check if player's offhand or armor slots are filled
 execute store success score @s[scores={uhcp_a_validSelection=0}] uhcp_a_validSelection if items entity @s armor.* #uhcp:wearable
-execute at @s store success score @s[scores={uhcp_a_validSelection=0}] uhcp_a_validSelection run data get entity @s Inventory[{Slot:-106b}]
+execute store success score @s[scores={uhcp_a_validSelection=0}] uhcp_a_validSelection run data get entity @s Inventory[{Slot:-106b}]
 
 # Check if BSG was selected
 execute store success score @s[scores={uhcp_a_validSelection=0}] uhcp_a_validSelection if items entity @s player.cursor minecraft:black_stained_glass_pane

@@ -1,7 +1,11 @@
 {
-	"condition": "minecraft:entity_properties",
-	"entity": "this",
-	"predicate": {
-		"custom_data": "{Inventory:[{id:\"minecraft:compass\"}]}"
-	}
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "container.*": {
+                "items": "minecraft:compass"
+            }
+        }
+    }
 }

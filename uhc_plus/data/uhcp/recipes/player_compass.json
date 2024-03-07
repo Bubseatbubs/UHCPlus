@@ -17,15 +17,16 @@
   "result": {
     "id": "minecraft:compass",
     "components": {
-      "custom_name": "{\"text\":\"Player Compass\",\"color\":\"light_purple\",\"italic\":false}",
-      "lore": ["{\"text\":\"Tracks the \",\"color\":\"gray\",\"italic\":true,\"extra\":[{\"text\":\"closest enemy\",\"color\":\"gold\"}]}","{\"text\":\"while held. The location\",\"color\":\"gray\",\"italic\":true}","{\"text\":\"updates every \",\"color\":\"gray\",\"italic\":true,\"extra\":[{\"text\":\"5\",\"color\":\"gold\"},\" seconds.\"]}"],
-      "enchantments": {
+      "minecraft:custom_name": "{\"text\":\"Player Compass\",\"color\":\"light_purple\",\"italic\":false}",
+      "minecraft:lore": ["{\"text\":\"Tracks the \",\"color\":\"gray\",\"italic\":true,\"extra\":[{\"text\":\"closest enemy\",\"color\":\"gold\"}]}","{\"text\":\"while held. The location\",\"color\":\"gray\",\"italic\":true}","{\"text\":\"updates every \",\"color\":\"gray\",\"italic\":true,\"extra\":[{\"text\":\"5\",\"color\":\"gold\"},\" seconds.\"]}"],
+      "minecraft:enchantments": {
         "levels": {
           "minecraft:protection": 1
         },
         "show_in_tooltip": 0
       },
-      "custom_data": {
+      "minecraft:lodestone_tracker": {},
+      "minecraft:custom_data": {
         "uhcp_player": 1,
         "compass_time": 0,
         "uuid": [-2147483648,-2147483648,-2147483648,-2147483648]

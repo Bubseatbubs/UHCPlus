@@ -1,7 +1,11 @@
 {
-	"condition": "minecraft:entity_properties",
-	"entity": "this",
-	"predicate": {
-		"nbt": "{Inventory:[{id:\"minecraft:ender_eye\"}]}"
-	}
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "container.*": {
+                "items": "minecraft:ender_eye"
+            }
+        }
+    }
 }

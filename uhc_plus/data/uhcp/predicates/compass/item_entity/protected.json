@@ -14,7 +14,7 @@
 			"entity": "this",
 			"predicate": {
 				"type": "minecraft:item",
-				"nbt": "{Item:{components:{\"minecraft:lodestone_target\":{}}}}"
+				"nbt": "{Item:{components:{\"minecraft:lodestone_tracker\":{}}}}"
 			}
 		}
 	]
