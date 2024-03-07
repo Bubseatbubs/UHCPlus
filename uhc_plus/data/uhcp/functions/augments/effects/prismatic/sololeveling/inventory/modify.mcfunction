@@ -35,34 +35,36 @@ item replace entity @s container.26 from block 0 0 0 container.26
 
 #Load 2
 data remove block 0 0 0 Items
-data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:27b}]
-data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:28b}]
-data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:29b}]
-data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:30b}]
-data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:31b}]
-data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:32b}]
-data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:33b}]
-data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:34b}]
-data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:35b}]
-data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:100b}]
-data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:101b}]
-data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:102b}]
-data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:103b}]
-data modify storage uhcp:solo_level Load append from storage uhcp:solo_level Inventory[{Slot:-106b}]
-execute if data storage uhcp:solo_level Inventory[{Slot:27b}] run data modify storage uhcp:solo_level Load[{Slot:27b}].Slot set value 0b
-execute if data storage uhcp:solo_level Inventory[{Slot:28b}] run data modify storage uhcp:solo_level Load[{Slot:28b}].Slot set value 1b
-execute if data storage uhcp:solo_level Inventory[{Slot:29b}] run data modify storage uhcp:solo_level Load[{Slot:29b}].Slot set value 2b
-execute if data storage uhcp:solo_level Inventory[{Slot:30b}] run data modify storage uhcp:solo_level Load[{Slot:30b}].Slot set value 3b
-execute if data storage uhcp:solo_level Inventory[{Slot:31b}] run data modify storage uhcp:solo_level Load[{Slot:31b}].Slot set value 4b
-execute if data storage uhcp:solo_level Inventory[{Slot:32b}] run data modify storage uhcp:solo_level Load[{Slot:32b}].Slot set value 5b
-execute if data storage uhcp:solo_level Inventory[{Slot:33b}] run data modify storage uhcp:solo_level Load[{Slot:33b}].Slot set value 6b
-execute if data storage uhcp:solo_level Inventory[{Slot:34b}] run data modify storage uhcp:solo_level Load[{Slot:34b}].Slot set value 7b
-execute if data storage uhcp:solo_level Inventory[{Slot:35b}] run data modify storage uhcp:solo_level Load[{Slot:35b}].Slot set value 8b
-execute if data storage uhcp:solo_level Inventory[{Slot:100b}] run data modify storage uhcp:solo_level Load[{Slot:100b}].Slot set value 9b
-execute if data storage uhcp:solo_level Inventory[{Slot:101b}] run data modify storage uhcp:solo_level Load[{Slot:101b}].Slot set value 10b
-execute if data storage uhcp:solo_level Inventory[{Slot:102b}] run data modify storage uhcp:solo_level Load[{Slot:102b}].Slot set value 11b
-execute if data storage uhcp:solo_level Inventory[{Slot:103b}] run data modify storage uhcp:solo_level Load[{Slot:103b}].Slot set value 12b
-execute if data storage uhcp:solo_level Inventory[{Slot:-106b}] run data modify storage uhcp:solo_level Load[{Slot:-106b}].Slot set value 13b
+data modify storage uhcp:solo_level Load set value [{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b}]
+data modify storage uhcp:solo_level Load[0] set from storage uhcp:solo_level Inventory[{Slot:27b}]
+data modify storage uhcp:solo_level Load[1] set from storage uhcp:solo_level Inventory[{Slot:28b}]
+data modify storage uhcp:solo_level Load[2] set from storage uhcp:solo_level Inventory[{Slot:29b}]
+data modify storage uhcp:solo_level Load[3] set from storage uhcp:solo_level Inventory[{Slot:30b}]
+data modify storage uhcp:solo_level Load[4] set from storage uhcp:solo_level Inventory[{Slot:31b}]
+data modify storage uhcp:solo_level Load[5] set from storage uhcp:solo_level Inventory[{Slot:32b}]
+data modify storage uhcp:solo_level Load[6] set from storage uhcp:solo_level Inventory[{Slot:33b}]
+data modify storage uhcp:solo_level Load[7] set from storage uhcp:solo_level Inventory[{Slot:34b}]
+data modify storage uhcp:solo_level Load[8] set from storage uhcp:solo_level Inventory[{Slot:35b}]
+data modify storage uhcp:solo_level Load[9] set from storage uhcp:solo_level Inventory[{Slot:100b}]
+data modify storage uhcp:solo_level Load[10] set from storage uhcp:solo_level Inventory[{Slot:101b}]
+data modify storage uhcp:solo_level Load[11] set from storage uhcp:solo_level Inventory[{Slot:102b}]
+data modify storage uhcp:solo_level Load[12] set from storage uhcp:solo_level Inventory[{Slot:103b}]
+data modify storage uhcp:solo_level Load[13] set from storage uhcp:solo_level Inventory[{Slot:-106b}]
+data modify storage uhcp:solo_level Load[0].Slot set value 0b
+data modify storage uhcp:solo_level Load[1].Slot set value 1b
+data modify storage uhcp:solo_level Load[2].Slot set value 2b
+data modify storage uhcp:solo_level Load[3].Slot set value 3b
+data modify storage uhcp:solo_level Load[4].Slot set value 4b
+data modify storage uhcp:solo_level Load[5].Slot set value 5b
+data modify storage uhcp:solo_level Load[6].Slot set value 6b
+data modify storage uhcp:solo_level Load[7].Slot set value 7b
+data modify storage uhcp:solo_level Load[8].Slot set value 8b
+data modify storage uhcp:solo_level Load[9].Slot set value 9b
+data modify storage uhcp:solo_level Load[10].Slot set value 10b
+data modify storage uhcp:solo_level Load[11].Slot set value 11b
+data modify storage uhcp:solo_level Load[12].Slot set value 12b
+data modify storage uhcp:solo_level Load[13].Slot set value 13b
+data remove storage uhcp:solo_level Load[{no_slot:1b}]
 data modify block 0 0 0 Items set from storage uhcp:solo_level Load
 item replace entity @s container.27 from block 0 0 0 container.0
 item replace entity @s container.28 from block 0 0 0 container.1
