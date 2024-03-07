@@ -1,8 +1,11 @@
-tag @s add UHCP_AugmentAnnounce
-
-##
+#>  uhcp:augments/announce
 # Tells player what augments other players chose
-##
+# Announced automatically at game start or when player runs /trigger augments
+#
+# @within  uhcp:tick
+# @within  uhcp:augments/countdown/end
+
+tag @s add UHCP_AugmentAnnounce
 
 # Silver Augments
 execute as @a if score @s uhcp_a_selectedAugment matches 100 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" !shoma","color":"gold"},{"text":"! balls","color":"white"}]

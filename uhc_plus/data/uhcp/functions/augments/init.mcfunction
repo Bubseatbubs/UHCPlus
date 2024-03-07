@@ -1,15 +1,17 @@
-##
-# Initializes player's choices for augments
-##
+#>  uhcp:augments/init
+#   Initial augment selection function
+#   Generates options for player to choose from
+#
+# @within  uhcp:start/augments
 
 # Initialize player tags + scores + options
-clear @s
 tag @s remove UHCP_ChoosingItem
+clear @s
 scoreboard players set @s uhcp_a_choosingAugment 0
 scoreboard players reset @s uhcp_a_selectedAugment
-function uhcp:augments/generatepanes
-function uhcp:augments/generatepatron
-function uhcp:augments/generatechoices
+function uhcp:augments/generate/panes
+function uhcp:augments/generate/patron
+function uhcp:augments/generate/choices
 
 # Extra fluff
 title @s subtitle {"text":"Choose 1","color":"white"}

@@ -1,6 +1,9 @@
-##
-# Countdown for selecting an augment
-##
+#>  uhcp:augments/countdown
+#   Counts down during augment selection
+#   When the countdown ends, augment selection ends and the game begins
+#
+# @within  uhcp:augments/autoselect
+# @within  uhcp:augments/optionselected
 
 scoreboard players remove %uhcp_augmentCountdown uhcp_gameTime 1
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches ..890 as @a[gamemode=adventure] at @s run ride @s mount @e[tag=UHCP_Lock,distance=..2,sort=nearest,limit=1]
@@ -16,6 +19,7 @@ execute store result bossbar uhcp_augment value run scoreboard players get %uhcp
 # Clear leave scoreboard
 scoreboard players reset @a[tag=UHCP_ChoosingItem] uhcp_a_leave
 
+# If  < 5 seconds, stop function
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 101.. run return 0
 
 # Countdown noise

@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/revokeadvancements"
+    "function": "uhcp:augments/threw_item"
   }
 }

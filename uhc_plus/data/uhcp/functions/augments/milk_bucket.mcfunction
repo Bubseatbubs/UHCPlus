@@ -1,4 +1,10 @@
-# Re-apply effects after milk bucket is used
+#>  uhcp:augments/milk_bucket
+#   Re-apply effects after milk bucket is used
+#
+# @within  uhcp:augments/consume_milk_bucket
+
+#declare advancement uhcp:augments/consume_milk_bucket
+
 tag @s add UHCP_EffectDefault
 execute unless score %uhcp_effectDefault uhcp_initStatus matches 1.. run function uhcp:augments/milk_bucket/default
 

@@ -1,9 +1,11 @@
-##
-# Returns an item to the correct location in a player's inventory
-##
+#>  uhcp:augments/return
+#   Returns the player's items if they made a strange selection
+#
+# @within uhcp:augments/validate
 
 tag @s add UHCP_DisableChoose
 execute at @s in uhcp:main run setblock 0 0 0 barrel
+execute at @s run playsound block.note_block.snare master @s ~ ~ ~ 1 1 1
 
 # Add item to barrel
 execute in uhcp:main as @s[nbt={Inventory:[{Slot:103b}]}] run item replace block 0 0 0 container.0 from entity @s armor.head
@@ -26,7 +28,7 @@ item replace entity @s weapon.offhand with air
 
 # Reform Glass
 clear @s black_stained_glass_pane
-function uhcp:augments/generatepanes
+function uhcp:augments/generate/panes
 
 tag @s remove UHCP_DisableChoose
 

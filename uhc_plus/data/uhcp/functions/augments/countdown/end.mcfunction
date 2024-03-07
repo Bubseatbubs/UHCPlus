@@ -17,5 +17,5 @@ execute if biome ~ ~ ~ minecraft:grove run item replace entity @s[gamemode=survi
 execute if biome ~ ~ ~ minecraft:jagged_peaks run item replace entity @s[gamemode=survival] armor.feet with minecraft:leather_boots
 execute run execute if block ~ ~-1 ~ minecraft:powder_snow run setblock ~ ~-1 ~ minecraft:snow_block
 
-execute at @s run function uhcp:augments/initializeaugments
-execute at @s run function uhcp:augments/announceaugments
+execute at @s run function uhcp:augments/effects/init
+execute at @s run function uhcp:augments/announce

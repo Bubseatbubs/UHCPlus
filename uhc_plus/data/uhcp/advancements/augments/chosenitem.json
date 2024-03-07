@@ -40,6 +40,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/checkvalidity"
+    "function": "uhcp:augments/validate"
   }
 }

@@ -1,6 +1,9 @@
-##
-# Replaces much of the player's inventory with black stained glass panes
-##
+#>  uhcp:augments/generate/panes
+#   Replaces much of the player's inventory with black stained glass panes
+#
+# @within  uhcp:augments/init
+# @within  uhcp:augments/return
+# @within  uhcp:augments/threw_item
 
 item replace entity @s hotbar.0 with black_stained_glass_pane[minecraft:custom_data={pickup:1b,uhcp_glass:1b},minecraft:custom_name='{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'] 1
 item replace entity @s hotbar.1 with black_stained_glass_pane[minecraft:custom_data={pickup:1b,uhcp_glass:1b},minecraft:custom_name='{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}'] 1

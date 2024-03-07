@@ -28,7 +28,7 @@ execute as @a at @s if score @s menu matches 1.. run function uhcp:settings/page
 
 # Announce Augments
 scoreboard players enable @a augments
-execute as @a if score @s augments matches 1.. run function uhcp:augments/announceaugments
+execute as @a if score @s augments matches 1.. run function uhcp:augments/announce
 
 # Timer
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run scoreboard players add %time uhcp_gameTime 1

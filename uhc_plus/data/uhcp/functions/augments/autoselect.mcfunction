@@ -1,6 +1,10 @@
-##
-# Ran if the player doesn't select an augment
-##
+#>  uhcp:augments/autoselect
+#   Runs if player didn't select an augment in time
+#   Selects a random augment from their listed choices
+#
+# @within  uhcp:augments/left
+# @within  uhcp:augments/countdown/1
+
 tag @s remove UHCP_ChoosingItem
 
 # Randomize selection
