@@ -14,5 +14,5 @@ clear @s minecraft:black_stained_glass_pane
 function uhcp:augments/generate/panes
 
 # Revoke advancements
-advancement revoke @s only uhcp:augments/chosenitem
+advancement revoke @s only uhcp:augments/chosen_item
 advancement revoke @s only uhcp:augments/threw_item

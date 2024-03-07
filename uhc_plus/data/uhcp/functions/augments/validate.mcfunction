@@ -2,9 +2,9 @@
 #   Ran when player selects an item (by checking if their inventory changed)
 #   System to detect if a player moved an item to their armor/offhand slot during selection
 #   Additionally checks if player throws an item out of their inventory
-# @within  uhcp:augments/chosenitem
+# @within  uhcp:augments/chosen_item
 
-#declare advancement uhcp:augments/chosenitem
+#declare advancement uhcp:augments/chosen_item
 
 scoreboard players set @s uhcp_a_validSelection 0
 
@@ -25,4 +25,4 @@ execute as @s[scores={uhcp_a_validSelection=0},tag=!UHCP_DisableChoose] at @s ru
 execute as @s[scores={uhcp_a_validSelection=1},tag=!UHCP_DisableChoose] at @s run function uhcp:augments/return
 tag @s[tag=UHCP_DisableChoose] remove UHCP_DisableChoose
 
-advancement revoke @s only uhcp:augments/chosenitem
+advancement revoke @s only uhcp:augments/chosen_item
