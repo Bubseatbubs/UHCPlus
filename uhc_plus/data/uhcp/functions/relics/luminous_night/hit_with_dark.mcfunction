@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:relics/dark_ability
+advancement revoke @s only uhcp:relics/luminous_night/dark_ability
 
 
 # Set Cooldown
