@@ -1,2 +1,4 @@
-give @s minecraft:sniffer_spawn_egg[minecraft:entity_data={id:"minecraft:sniffer",Invulnerable:1b,CustomName:'{"text":"SNIFFA","color":"#FFCF59","bold":true,"italic":false,"underlined":true}'}] 2
-give @s minecraft:lead 2
+tag @s add UHCP_Owner
+function uhcp:augments/effects/gold/sniffa/summon
+function uhcp:augments/effects/gold/sniffa/summon
+tag @s remove UHCP_Owner

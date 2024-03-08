@@ -10,6 +10,7 @@ execute if entity @s[tag=UHCP_SCloneStand] run return run function uhcp:relics/s
 execute if entity @s[tag=UHCP_DragonsProtection] run return run function uhcp:relics/dragons_protection/update
 execute if entity @s[tag=UHCP_PhantomClaw,tag=!UHCP_FlyingTowardsTarget] run return run function uhcp:augments/effects/gold/phantomclaw/update
 execute if entity @s[tag=UHCP_FlyingTowardsTarget] at @s run return run function uhcp:augments/effects/gold/phantomclaw/update_flight
+execute if entity @s[tag=UHCP_Sniffa] at @s run function uhcp:augments/effects/gold/sniffa/update
 
 
 # Augments
