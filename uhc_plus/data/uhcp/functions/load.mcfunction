@@ -49,6 +49,7 @@ scoreboard objectives add uhcp_t_attack dummy
 scoreboard objectives add uhcp_t_count dummy
 scoreboard objectives add uhcp_t_timer dummy
 scoreboard objectives add uhcp_team dummy
+scoreboard objectives add uhcp_teamWork dummy
 scoreboard objectives add uhcp_topCD dummy
 scoreboard objectives add uhcp_topCharge dummy
 scoreboard objectives add uhcp_topDelay dummy
@@ -85,6 +86,36 @@ bossbar set minecraft:uhcp_titanhealth color red
 bossbar set minecraft:uhcp_titanhealth style notched_6
 bossbar set minecraft:uhcp_titanhealth max 1
 
+# Add teams
+team add aqua {"text":"Aqua","color":"aqua"}
+team add blue {"text":"Blue","color":"blue"}
+team add dark_aqua {"text":"Dark Aqua","color":"dark_aqua"}
+team add dark_blue {"text":"Dark Blue","color":"dark_blue"}
+team add dark_gray {"text":"Dark Gray","color":"dark_gray"}
+team add dark_green {"text":"Dark Green","color":"dark_green"}
+team add dark_purple {"text":"Dark Purple","color":"dark_purple"}
+team add dark_red {"text":"Dark Red","color":"dark_red"}
+team add gold {"text":"Gold","color":"gold"}
+team add gray {"text":"Gray","color":"gray"}
+team add green {"text":"Green","color":"green"}
+team add light_purple {"text":"Light Purple","color":"light_purple"}
+team add red {"text":"Red","color":"red"}
+team add yellow {"text":"Yellow","color":"yellow"}
+team modify aqua color aqua
+team modify blue color blue
+team modify dark_aqua color dark_aqua
+team modify dark_blue color dark_blue
+team modify dark_gray color dark_gray
+team modify dark_green color dark_green
+team modify dark_purple color dark_purple
+team modify dark_red color dark_red
+team modify gold color gold
+team modify gray color gray
+team modify green color green
+team modify light_purple color light_purple
+team modify red color red
+team modify yellow color yellow
+
 # Default scores
 # Arrow limit
 scoreboard players set %arrow_limit_default uhcp_arrowCount 12
@@ -118,8 +149,8 @@ execute in minecraft:the_end run gamerule randomTickSpeed 3
 execute in minecraft:the_nether run gamerule randomTickSpeed 3
 execute in minecraft:overworld run gamerule randomTickSpeed 18
 
-# Forceload main dimension
-execute in uhcp:main run forceload add 0 0
+# Main dimension
+execute in uhcp:main run function uhcp:load/dimensions/main
 
 # Schedule delayed load
 scoreboard players add %uhcp_loadInit uhcp_initStatus 1
