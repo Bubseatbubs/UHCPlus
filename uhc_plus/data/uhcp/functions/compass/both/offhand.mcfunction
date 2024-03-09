@@ -1,6 +1,5 @@
 # Reduce compasses in offhand
 execute store result score %uhcp_compassAge uhcp_itemCount run data get storage uhcp:compass Compass.hand[1].count
-execute if score %uhcp_compassAge uhcp_itemCount matches 0 run scoreboard players set %uhcp_compassAge uhcp_itemCount 1
 scoreboard players remove %uhcp_compassAge uhcp_itemCount 1
 execute store result storage uhcp:compass Compass.hand[1].count int 1 run scoreboard players get %uhcp_compassAge uhcp_itemCount
 data modify storage uhcp:compass Compass.hand[1].components."minecraft:custom_data".compass_time set value 1b
