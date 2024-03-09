@@ -17,12 +17,6 @@ tag @s remove UHCP_Owner
 tag @e remove UHCP_BeastWolfTarget
 scoreboard players reset @e[distance=..5] uhcp_a_count
 
-# Assign Team Scoreboards
-execute if entity @a[predicate=uhcp:teams/solo] run function uhcp:teams/solo
-execute if entity @a[predicate=uhcp:teams/team] run function uhcp:teams/team
-scoreboard players set @a[predicate=uhcp:teams/neither] uhcp_team 0
-scoreboard players set @a[gamemode=!survival] uhcp_team 0
-
 # Wolf is part of the squad
 scoreboard players operation @e[tag=UHCP_BeastWolf,sort=nearest,limit=1] uhcp_team = @s uhcp_team
 

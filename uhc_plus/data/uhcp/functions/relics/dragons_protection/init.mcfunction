@@ -8,15 +8,13 @@ effect give @s resistance 4 100 false
 execute if score @s uhcp_a_selectedAugment matches 205 at @s run function uhcp:relics/dragons_protection/fireballlocations
 
 # Assign Team Scoreboards
-execute if entity @a[predicate=uhcp:teams/solo] run function uhcp:teams/solo
-execute if entity @a[predicate=uhcp:teams/team] run function uhcp:teams/team
-scoreboard players set @a[predicate=uhcp:teams/neither] uhcp_team 0
-scoreboard players set @a[gamemode=!survival] uhcp_team 0
+scoreboard players set @a uhcp_initStatus 0
+execute as @a[gamemode=survival] run scoreboard players operation @s uhcp_initStatus = @s uhcp_team
 
 # Gets team value
-scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_team = @s uhcp_team
+scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_initStatus = @s uhcp_initStatus
 execute at @e[tag=UHCP_New,sort=nearest,limit=1] run fill ~-1 ~ ~-1 ~1 ~2 ~1 minecraft:air
-execute as @e[distance=..3] unless score @s uhcp_team = @a[tag=UHCP_Init,sort=nearest,limit=1] uhcp_team at @s run tp @s ~ ~4 ~
+execute as @e[distance=..3,scores={uhcp_initStatus=1..}] unless score @s uhcp_initStatus = @a[tag=UHCP_Init,sort=nearest,limit=1] uhcp_initStatus at @s run tp @s ~ ~4 ~
 tp @s ~ ~1 ~
 tag @s remove UHCP_Init
 tag @e remove UHCP_New

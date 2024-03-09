@@ -63,12 +63,42 @@ execute if score daynite status matches 1 run function uhcp:start/randomtime/det
 # Reset UHC Pack Timer to sync up
 scoreboard players set marker tick 0
 
-# Add everyone not on team to solo team
-execute if entity @a[predicate=uhcp:teams/neither] run function uhcp:start/teams
+# Team logic
+scoreboard players set @a uhcp_team 0
+scoreboard players set @a[team=aqua] uhcp_team 1
+scoreboard players set @a[team=blue] uhcp_team 2
+scoreboard players set @a[team=dark_aqua] uhcp_team 3
+scoreboard players set @a[team=dark_blue] uhcp_team 4
+scoreboard players set @a[team=dark_gray] uhcp_team 5
+scoreboard players set @a[team=dark_green] uhcp_team 6
+scoreboard players set @a[team=dark_purple] uhcp_team 7
+scoreboard players set @a[team=dark_red] uhcp_team 8
+scoreboard players set @a[team=gold] uhcp_team 9
+scoreboard players set @a[team=gray] uhcp_team 10
+scoreboard players set @a[team=green] uhcp_team 11
+scoreboard players set @a[team=light_purple] uhcp_team 12
+scoreboard players set @a[team=red] uhcp_team 13
+scoreboard players set @a[team=yellow] uhcp_team 14
+
+scoreboard players set %global uhcp_team 15
+execute as @a[scores={uhcp_team=0}] run function uhcp:start/teams
+
+team join grace_period @a
 
 # Spreadplayers logic
-execute if score teamgame status matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/solo
-execute unless score teamgame status matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/teams
+execute as @a run scoreboard players operation @s uhcp_initStatus = @s uhcp_team
+
+execute if score TotalWorldSize setting matches 1000 run spreadplayers 0 0 100 400 true @a
+execute if score TotalWorldSize setting matches 1500 run spreadplayers 0 0 100 700 true @a
+execute if score TotalWorldSize setting matches 2000 run spreadplayers 0 0 100 900 true @a
+execute if score TotalWorldSize setting matches 2500 run spreadplayers 0 0 100 1200 true @a
+execute if score TotalWorldSize setting matches 3000 run spreadplayers 0 0 100 1400 true @a
+execute if score TotalWorldSize setting matches 4000 run spreadplayers 0 0 100 1900 true @a
+execute if score TotalWorldSize setting matches 5000 run spreadplayers 0 0 100 2400 true @a
+execute if score TotalWorldSize setting matches 7000 run spreadplayers 0 0 100 3400 true @a
+execute if score TotalWorldSize setting matches 10000 run spreadplayers 0 0 100 4900 true @a
+
+function uhcp:start/spreadplayers
 
 # Kill items
 kill @e[type=minecraft:item]

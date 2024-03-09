@@ -14,3 +14,4 @@ execute if predicate uhcp:dimensions/minecraft/the_nether in minecraft:the_nethe
 
 # Remove tag
 tag @s remove UHCP_CTrack
+tag @s add UHCP_CTracked

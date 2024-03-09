@@ -49,7 +49,6 @@ scoreboard objectives add uhcp_t_attack dummy
 scoreboard objectives add uhcp_t_count dummy
 scoreboard objectives add uhcp_t_timer dummy
 scoreboard objectives add uhcp_team dummy
-scoreboard objectives add uhcp_teamWork dummy
 scoreboard objectives add uhcp_topCD dummy
 scoreboard objectives add uhcp_topCharge dummy
 scoreboard objectives add uhcp_topDelay dummy
@@ -115,6 +114,8 @@ team modify green color green
 team modify light_purple color light_purple
 team modify red color red
 team modify yellow color yellow
+
+team add grace_period
 
 # Default scores
 # Arrow limit
