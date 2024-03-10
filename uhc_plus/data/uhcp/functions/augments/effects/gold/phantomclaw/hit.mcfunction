@@ -1,14 +1,15 @@
 advancement revoke @s only uhcp:augments/attacked_with_phantom_claw
 
-# Increase attack stacks
-scoreboard players add @s uhcp_a_stack 1
+# 20% chance to proc follow up
+execute store result score @s uhcp_a_stack run random value 0..4 
 
-execute if score @s uhcp_a_stack matches ..2 run return 0
+execute unless score @s uhcp_a_stack matches 4 run return 0
 
 # Assign ID if player doesn't have one already
 execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
 tag @s add UHCP_Owner
+execute as @e[tag=UHCP_PhantomDestination] if score @s uhcp_id = @a[tag=UHCP_Owner,sort=nearest,limit=1] uhcp_id run kill @s
 execute as @e[tag=UHCP_PhantomClaw] if score @s uhcp_id = @a[tag=UHCP_Owner,sort=nearest,limit=1] uhcp_id run tag @s add UHCP_FlyingTowardsTarget
 execute as @e[tag=UHCP_PhantomClaw] if score @s uhcp_id = @a[tag=UHCP_Owner,sort=nearest,limit=1] uhcp_id run data merge entity @s {teleport_duration:1}
 
