@@ -12,7 +12,7 @@ execute if score %lava_countdown uhcp_settings matches -1.. if score %uhcp_gameS
 execute if score %uhcp_lavaStart uhcp_initStatus matches 1.. run function uhcp:lava/run
 
 # Player compass
-execute unless score %uhcp_compassTime uhcp_itemCount matches 1.. if entity @a[predicate=uhcp:compass/player_compass/hand,gamemode=survival] run function uhcp:player_compass
+execute unless score %uhcp_compassTime uhcp_itemCount matches 1.. if entity @a[predicate=uhcp:compass/player_compass/hand,gamemode=survival] run function uhcp:compass/determine
 execute unless score %uhcp_compassTime uhcp_itemCount matches ..0 run scoreboard players remove %uhcp_compassTime uhcp_itemCount 1
 
 # Settings menu
