@@ -1,0 +1,1 @@
+scoreboard players remove %ra_stacks uhcp_settings 1

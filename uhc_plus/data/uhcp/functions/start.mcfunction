@@ -1,6 +1,6 @@
 # Set scores
 scoreboard players set %uhcp_gameStart uhcp_initStatus 1
-execute if score %uhcp_dimTime uhcp_gameTime matches ..-1 run scoreboard players set %uhcp_dimTime uhcp_gameTime 0
+execute if score %dimension uhcp_settings matches ..-1 run scoreboard players set %dimension uhcp_settings 0
 execute as @a unless score @s uhcp_a_patron = @s uhcp_a_patron run scoreboard players set @s uhcp_a_patron 8
 scoreboard players set %AUG_7 uhcp_gameTime 2400
 scoreboard players set %AUG_15 uhcp_gameTime 2400

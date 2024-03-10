@@ -13,7 +13,7 @@
       }
     },
     "rewards": {
-      "function": "uhcp:augments/effects/ate_golden_apple"
+      "function": "uhcp:augments/effects/golden_apple/ate"
     }
   }
   

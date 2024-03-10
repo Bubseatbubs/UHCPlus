@@ -1,0 +1,1 @@
+scoreboard players add %ra_stacks uhcp_settings 3

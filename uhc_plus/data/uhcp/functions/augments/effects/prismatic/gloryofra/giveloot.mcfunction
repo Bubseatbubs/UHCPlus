@@ -1,3 +1,4 @@
+advancement revoke @s only uhcp:augments/gained_enough_stacks
 scoreboard players set @s uhcp_a_gloryOfRa -10
 playsound ui.toast.challenge_complete master @s ~ ~ ~ 1 1 1
 particle end_rod ~ ~ ~ 0.3 10 0.3 0.1 1000 normal

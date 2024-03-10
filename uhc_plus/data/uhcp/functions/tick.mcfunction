@@ -8,20 +8,22 @@ execute if score %time uhcp_gameTime matches 1.. run function uhcp:timer/update_
 execute if score countdown tick matches 0 run function uhcp:start
 
 # Lava
-execute if score %uhcp_lava uhcp_gameTime matches -1.. if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:lava/countdown
+execute if score %lava_countdown uhcp_settings matches -1.. if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:lava/countdown
 execute if score %uhcp_lavaStart uhcp_initStatus matches 1.. run function uhcp:lava/run
 
 # Player compass
 execute unless score %uhcp_compassTime uhcp_itemCount matches 1.. if entity @a[predicate=uhcp:compass/player_compass/hand,gamemode=survival] run function uhcp:player_compass
 execute unless score %uhcp_compassTime uhcp_itemCount matches ..0 run scoreboard players remove %uhcp_compassTime uhcp_itemCount 1
 
-# Hunger system
-execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:hunger
-
 # Settings menu
 execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uhcp:settings/change
-scoreboard players enable @a menu
-execute as @a at @s if score @s menu matches 1.. run function uhcp:settings/pages/1
+scoreboard players enable @a settings
+scoreboard players enable @a settings_player
+scoreboard players enable @a settings_augments
+execute as @a if score @s settings matches 1.. run function uhcp:settings/pages/main
+execute as @a if score @s settings_player matches 1.. run function uhcp:settings/pages/player/1
+execute as @a if score @s settings_augments matches 1.. run function uhcp:settings/pages/augments/1
+
 
 # Announce Augments
 scoreboard players enable @a augments
@@ -49,13 +51,12 @@ execute as @a if score @s testkit matches 1.. run function uhcp:testkit
 execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:augments/effects/death
 
 # Ate Golden Apple Effect
-execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:update_golden_apple
+execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:augments/effects/golden_apple/update
 
 # Augments
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
 execute as @a[scores={uhcp_lavaTimeInterval=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
 execute as @a[scores={uhcp_lavaMaxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
-execute as @a at @s if score @s uhcp_a_gloryOfRa matches 9.. run function uhcp:augments/effects/prismatic/gloryofra/giveloot
 
 # Augment Countdown/Functions
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_augmentCountdown uhcp_gameTime matches 0.. as @a[tag=UHCP_ChoosingItem,scores={uhcp_a_leave=1..}] run function uhcp:augments/left

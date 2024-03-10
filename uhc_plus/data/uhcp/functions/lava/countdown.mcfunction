@@ -1,5 +1,5 @@
 # Warnings
-execute if score %uhcp_lava uhcp_gameTime matches ..24000 run function uhcp:lava/notify
+execute if score %lava_countdown uhcp_settings matches ..24000 run function uhcp:lava/notify
 
 # Countdown
-scoreboard players remove %uhcp_lava uhcp_gameTime 1
+scoreboard players remove %lava_countdown uhcp_settings 1

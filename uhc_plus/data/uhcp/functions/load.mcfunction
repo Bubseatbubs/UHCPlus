@@ -1,10 +1,18 @@
 # Add Scoreboard Objectives
 scoreboard objectives add augments trigger
-scoreboard objectives add hunger trigger
 scoreboard objectives add menu trigger
 scoreboard objectives add patron trigger
 scoreboard objectives add testkit trigger
 scoreboard objectives add top trigger
+
+# Add Settings Triggers
+scoreboard objectives add settings trigger
+scoreboard objectives add settings_augments trigger
+scoreboard objectives add settings_border trigger
+scoreboard objectives add settings_lava trigger
+scoreboard objectives add settings_player trigger
+scoreboard objectives add settings_other trigger
+
 scoreboard objectives add uhcp_a_choosingAugment dummy
 scoreboard objectives add uhcp_a_count dummy
 scoreboard objectives add uhcp_a_durability dummy
@@ -26,7 +34,6 @@ scoreboard objectives add uhcp_hb_killedZombie dummy
 scoreboard objectives add uhcp_hb_killedCreeper dummy
 scoreboard objectives add uhcp_hb_killedSkeleton dummy
 scoreboard objectives add uhcp_hb_killedSpider dummy
-scoreboard objectives add uhcp_hungerTimer dummy
 scoreboard objectives add uhcp_id dummy
 scoreboard objectives add uhcp_initStatus dummy
 scoreboard objectives add uhcp_itemCount dummy
@@ -119,13 +126,25 @@ team add grace_period
 
 # Default scores
 # Arrow limit
-scoreboard players set %arrow_limit_default uhcp_arrowCount 12
+scoreboard players set %arrow_limit_def uhcp_settings 12
+
 # Dimension countdown
-scoreboard players set %uhcp_dimTimeDef uhcp_gameTime 48000
+scoreboard players set %dimension_def uhcp_settings 48000
+
 # Golden apples
-scoreboard players set %apples_default uhcp_settings 3
+scoreboard players set %golden_apples_def uhcp_settings 3
+
+# PvP
+scoreboard players set %pvp_def uhcp_settings 24000
+
+# Friendly Fire
+scoreboard players set %friendly_fire_def uhcp_settings 0
+
+# Ra Stacks
+scoreboard players set %ra_stacks_def uhcp_settings 9
+
 # Lava
-scoreboard players set %uhcp_lavaDef uhcp_gameTime 48000
+scoreboard players set %lava_countdown_def uhcp_settings 48000
 scoreboard players set %uhcp_lavaDef uhcp_lavaMaxHeight 50
 scoreboard players set %uhcp_lavaDef uhcp_lavaTime 8400
 

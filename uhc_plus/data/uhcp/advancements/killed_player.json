@@ -10,6 +10,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:kill_check"
+    "function": "uhcp:kill/init"
   }
 }
