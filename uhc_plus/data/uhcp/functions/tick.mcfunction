@@ -20,9 +20,11 @@ execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uh
 scoreboard players enable @a settings
 scoreboard players enable @a settings_player
 scoreboard players enable @a settings_augments
+scoreboard players enable @a settings_other
 execute as @a if score @s settings matches 1.. run function uhcp:settings/pages/main
 execute as @a if score @s settings_player matches 1.. run function uhcp:settings/pages/player/1
 execute as @a if score @s settings_augments matches 1.. run function uhcp:settings/pages/augments/1
+execute as @a if score @s settings_other matches 1.. run function uhcp:settings/pages/other/1
 
 
 # Announce Augments
@@ -69,7 +71,7 @@ execute as @a if score @s patron matches 1..99 run function uhcp:settings/patron
 execute as @a at @s if score @s patron matches 100..109 run function uhcp:settings/patron/select
 
 # Update Summoned Entities
-execute as @e[tag=UHCP_Summon] at @s run function uhcp:update
+execute as @e[tag=UHCP_Summon] at @s run function uhcp:entity/update
 
 # Relics
 execute as @e[type=minecraft:arrow,tag=!UHCP_BoomburstInit,predicate=uhcp:relics/boomburst/arrow] run function uhcp:relics/boomburst/initialize
@@ -81,11 +83,11 @@ execute as @e[predicate=uhcp:relics/smooth_getaway/hitbox_hurt] at @s run functi
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:dimensions/run
 
 # Disable Ender Pearl Damage
-execute as @e[type=minecraft:ender_pearl] at @s run function uhcp:enderpearl
+execute as @e[type=minecraft:ender_pearl] at @s run function uhcp:entity/ender_pearl
 
 # Titans
 execute as @e[tag=UHCP_Titan] at @s run function uhcp:titans/update
 
 # Items (instant pickup and item effects)
-execute as @e[tag=!UHCP_ItemPickup,predicate=uhcp:items/instant_pickup] run function uhcp:items/instant_pickup
-execute as @e[predicate=uhcp:items/drop_effect] at @s run function uhcp:items/drop_effect
+execute as @e[tag=!UHCP_ItemPickup,predicate=uhcp:items/instant_pickup] run function uhcp:entity/items/instant_pickup
+execute as @e[predicate=uhcp:items/drop_effect] at @s run function uhcp:entity/items/drop_effect

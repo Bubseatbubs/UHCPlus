@@ -1,6 +1,5 @@
 {
-    "message_id": "instant_damage",
+    "message_id": "player",
     "exhaustion": 0.1,
-    "scaling": "when_caused_by_living_non_player",
-    "death_message_type": "default"
+    "scaling": "when_caused_by_living_non_player"
   }

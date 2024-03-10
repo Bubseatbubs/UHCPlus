@@ -24,6 +24,9 @@ execute unless score %friendly_fire uhcp_settings = %friendly_fire uhcp_settings
 # Set default Ra Stacks
 execute unless score %ra_stacks uhcp_settings = %ra_stacks uhcp_settings run scoreboard players operation %ra_stacks uhcp_settings = %ra_stacks_def uhcp_settings
 
+# Set default difficulty
+execute unless score %difficulty uhcp_settings = %difficulty uhcp_settings run scoreboard players operation %difficulty uhcp_settings = %difficulty_def uhcp_settings
+
 # Set default lava scoreboard values
 execute unless score %lava_countdown uhcp_settings = %lava_countdown uhcp_settings run scoreboard players operation %lava_countdown uhcp_settings = %lava_countdown_def uhcp_settings
 execute unless score %uhcp_lavaInit uhcp_initStatus matches 1 run function uhcp:load/scores/lava

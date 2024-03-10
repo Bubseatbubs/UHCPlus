@@ -143,6 +143,9 @@ scoreboard players set %friendly_fire_def uhcp_settings 0
 # Ra Stacks
 scoreboard players set %ra_stacks_def uhcp_settings 9
 
+# Difficulty
+scoreboard players set %difficulty_def uhcp_settings 0
+
 # Lava
 scoreboard players set %lava_countdown_def uhcp_settings 48000
 scoreboard players set %uhcp_lavaDef uhcp_lavaMaxHeight 50
