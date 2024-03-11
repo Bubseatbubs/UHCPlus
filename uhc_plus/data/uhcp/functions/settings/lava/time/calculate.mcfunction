@@ -5,5 +5,5 @@ execute unless score %uhcp_lavaInit uhcp_initStatus matches 1.. run function uhc
 # Notify player of time
 scoreboard players operation %time_calc uhcp_settings = %uhcp_lava uhcp_lavaTime
 function uhcp:settings/time_calc
-execute if score %time_calcM uhcp_lavaTime matches 0..9 run function uhcp:settings/lava/time/notify/single
-execute if score %time_calcM uhcp_lavaTime matches 10..59 run function uhcp:settings/lava/time/notify/double
+execute if score %time_calcM uhcp_gameTime matches 0..9 run function uhcp:settings/lava/time/notify/single
+execute if score %time_calcM uhcp_gameTime matches 10..59 run function uhcp:settings/lava/time/notify/double
