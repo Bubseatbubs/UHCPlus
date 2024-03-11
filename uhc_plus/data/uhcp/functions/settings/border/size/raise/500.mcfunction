@@ -1,0 +1,1 @@
+scoreboard players add %border_size uhcp_settings 500

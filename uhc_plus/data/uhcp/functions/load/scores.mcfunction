@@ -9,6 +9,15 @@ scoreboard players add %arrow_limit149 uhcp_arrowCount 8
 scoreboard players add %arrow_limit5 uhcp_arrowCount 20
 scoreboard players add %arrow_limit201 uhcp_arrowCount 52
 
+# Set default border countdown
+execute unless score %border_size uhcp_settings = %border_size uhcp_settings run scoreboard players operation %border_size uhcp_settings = %border_size_def uhcp_settings
+
+# Set default border countdown
+execute unless score %border_countdown uhcp_settings = %border_countdown uhcp_settings run scoreboard players operation %border_countdown uhcp_settings = %border_countdown_def uhcp_settings
+
+# Set default border shrink speed
+execute unless score %border_shrink_speed uhcp_settings = %border_shrink_speed uhcp_settings run scoreboard players operation %border_shrink_speed uhcp_settings = %border_shrink_speed_def uhcp_settings
+
 # Set default dimension countdown
 execute unless score %dimension uhcp_settings matches -2147483648..2147483647 run scoreboard players operation %dimension uhcp_settings = %dimension_def uhcp_settings
 

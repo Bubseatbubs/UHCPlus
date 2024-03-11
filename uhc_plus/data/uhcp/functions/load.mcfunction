@@ -128,6 +128,15 @@ team add grace_period
 # Arrow limit
 scoreboard players set %arrow_limit_def uhcp_settings 12
 
+# Border Size
+scoreboard players set %border_size_def uhcp_settings 1500
+
+# Border Countdown
+scoreboard players set %border_countdown_def uhcp_settings 24000
+
+# Border Shrink Speed
+scoreboard players set %border_shrink_speed_def uhcp_settings 24000
+
 # Dimension countdown
 scoreboard players set %dimension_def uhcp_settings 48000
 
