@@ -25,8 +25,9 @@ scoreboard players set %uhcp_lavaSec uhcp_initStatus 1
 execute if score %uhcp_lavaBar uhcp_lavaTime matches ..15 run scoreboard players set %uhcp_lavaBar uhcp_lavaTime 10
 
 # Lava notification
-tellraw @a [{"text":"Lava","color":"red"},{"text":" is rising!","color":"yellow"}]
-execute as @a at @s run playsound block.note_block.harp master @s ~ ~ ~ 1 1 1
+# tellraw @a [{"text":"Lava","color":"red"},{"text":" is rising!","color":"yellow"}] <-- Moved to change/lava
+execute as @a at @s run playsound block.lava.pop master @s ~ ~ ~ 1 1 1
+execute as @a at @s run playsound item.bucket.empty_lava master @s ~ ~ ~ 1 1 1
 
 # Start raising lava
 scoreboard players set %uhcp_lavaStart uhcp_initStatus 1

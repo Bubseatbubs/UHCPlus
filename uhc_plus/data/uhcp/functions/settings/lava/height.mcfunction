@@ -1,3 +1,3 @@
 # Determine setting
-execute if score @s uhcp_settings matches 820..824 run function uhcp:settings/lava/height/lower
-execute if score @s uhcp_settings matches 825..829 run function uhcp:settings/lava/height/raise
+execute if score @s uhcp_settings matches 208..212 run function uhcp:settings/lava/height/lower
+execute if score @s uhcp_settings matches 213..217 run function uhcp:settings/lava/height/raise

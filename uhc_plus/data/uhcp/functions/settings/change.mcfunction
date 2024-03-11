@@ -1,6 +1,7 @@
 # Change settings
 
 execute if score @s uhcp_settings matches 0..99 run function uhcp:settings/change/augments
+execute if score @s uhcp_settings matches 200..299 run function uhcp:settings/change/lava
 execute if score @s uhcp_settings matches 300..399 run function uhcp:settings/change/other
 execute if score @s uhcp_settings matches 400..499 run function uhcp:settings/change/player
 
