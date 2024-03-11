@@ -1,5 +1,5 @@
 execute if score @s uhcp_settings matches 226..227 run function uhcp:settings/lava/status
-execute if score %uhcp_lavaStart uhcp_initStatus matches 0 run function uhcp:settings/pages/lava/stopped
+execute unless score %uhcp_lavaStart uhcp_initStatus matches 1.. run function uhcp:settings/pages/lava/stopped
 execute if score %uhcp_lavaStart uhcp_initStatus matches 1 run function uhcp:settings/pages/lava/started
 execute if score @s uhcp_settings matches 200..207 run function uhcp:settings/lava/time
 execute if score @s uhcp_settings matches 208..217 run function uhcp:settings/lava/height
