@@ -11,6 +11,7 @@ scoreboard objectives add settings_augments trigger
 scoreboard objectives add settings_border trigger
 scoreboard objectives add settings_lava trigger
 scoreboard objectives add settings_player trigger
+scoreboard objectives add settings_team trigger
 scoreboard objectives add settings_other trigger
 
 scoreboard objectives add uhcp_a_choosingAugment dummy
@@ -146,8 +147,17 @@ scoreboard players set %golden_apples_def uhcp_settings 3
 # PvP
 scoreboard players set %pvp_def uhcp_settings 24000
 
+# Team Game
+scoreboard players set %team_def uhcp_settings 0
+
+# Team Game
+scoreboard players set %team_size_def uhcp_settings 2
+
 # Friendly Fire
 scoreboard players set %friendly_fire_def uhcp_settings 0
+
+# Player Select Teams
+scoreboard players set %players_select_teams_def uhcp_settings 1
 
 # Ra Stacks
 scoreboard players set %ra_stacks_def uhcp_settings 9

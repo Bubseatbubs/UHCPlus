@@ -27,18 +27,25 @@ scoreboard players operation %golden_apples uhcp_settings = %golden_apples_def u
 # Set default PvP Grace Period countdown
 scoreboard players operation %pvp uhcp_settings = %pvp_def uhcp_settings
 
-# Set default Friendly Fire
-scoreboard players operation %friendly_fire uhcp_settings = %friendly_fire_def uhcp_settings
-
 # Set default Ra Stacks
 scoreboard players operation %ra_stacks uhcp_settings = %ra_stacks_def uhcp_settings
 
 # Set default difficulty
 scoreboard players operation %difficulty uhcp_settings = %difficulty_def uhcp_settings
+execute in minecraft:overworld run difficulty easy
+execute in minecraft:the_nether run difficulty easy
+execute in minecraft:the_end run difficulty easy
 
 # Set default lava scoreboard values
 scoreboard players operation %lava_countdown uhcp_settings = %lava_countdown_def uhcp_settings
 scoreboard players operation %uhcp_lava uhcp_lavaMaxHeight = %uhcp_lavaDef uhcp_lavaMaxHeight
 scoreboard players operation %uhcp_lava uhcp_lavaTime = %uhcp_lavaDef uhcp_lavaTime
 
+# Set default team values
+scoreboard players operation %team_size uhcp_settings = %team_size uhcp_settings
+scoreboard players operation %team uhcp_lavaMaxHeight = %team uhcp_lavaMaxHeight
+scoreboard players operation %players_select_teams uhcp_lavaTime = %players_select_teams uhcp_lavaTime
+scoreboard players operation %friendly_fire uhcp_settings = %friendly_fire_def uhcp_settings
+
+function uhcp:settings/pages/main
 tellraw @s "Settings were reset to their default values."
