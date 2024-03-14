@@ -1,0 +1,44 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:ender_eye"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_name",
+            "name": {
+              "text": "Ra's Gaze",
+              "color": "light_purple"
+            }
+          },
+          {
+            "function": "minecraft:set_lore",
+            "lore": [
+              {
+                "text": "Call Ra's aid. Ra fires a sunray onto the ground,",
+                "color": "gray"
+              },
+              {
+                "text": "which follows nearby enemies. After 10 seconds,",
+                "color": "gray"
+              },
+              {
+                "text": "the ray disappears.",
+                "color": "gray"
+              }
+            ]
+          },
+          {
+            "function": "minecraft:set_custom_data",
+            "tag": "{uhcp_instantpickup:1b,uhcp_raseye:1b}"
+          }
+        ]
+      }
+    ]
+  }
+  
