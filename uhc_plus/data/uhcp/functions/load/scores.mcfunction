@@ -27,8 +27,17 @@ execute unless score %golden_apples uhcp_settings = %golden_apples uhcp_settings
 # Set default PvP Grace Period countdown
 execute unless score %pvp uhcp_settings = %pvp uhcp_settings run scoreboard players operation %pvp uhcp_settings = %pvp_def uhcp_settings
 
+# Set default Team
+execute unless score %team uhcp_settings = %team uhcp_settings run scoreboard players operation %team uhcp_settings = %team_def uhcp_settings
+
+# Set default Team Size
+execute unless score %team_size uhcp_settings = %team_size uhcp_settings run scoreboard players operation %team_size uhcp_settings = %team_size_def uhcp_settings
+
 # Set default Friendly Fire
 execute unless score %friendly_fire uhcp_settings = %friendly_fire uhcp_settings run scoreboard players operation %friendly_fire uhcp_settings = %friendly_fire_def uhcp_settings
+
+# Set default Player Select Teams
+execute unless score %players_select_teams uhcp_settings = %players_select_teams uhcp_settings run scoreboard players operation %players_select_teams uhcp_settings = %players_select_teams_def uhcp_settings
 
 # Set default Ra Stacks
 execute unless score %ra_stacks uhcp_settings = %ra_stacks uhcp_settings run scoreboard players operation %ra_stacks uhcp_settings = %ra_stacks_def uhcp_settings
