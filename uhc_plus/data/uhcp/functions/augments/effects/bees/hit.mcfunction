@@ -2,8 +2,6 @@ advancement revoke @s only uhcp:augments/attacked_with_bees
 
 # Increase attack stacks
 execute if score @s uhcp_a_selectedAugment matches 0 run scoreboard players add @s uhcp_bee_stack 2
-execute if score @s uhcp_a_selectedAugment matches 200 run scoreboard players add @s uhcp_bee_stack 2
-execute if score @s uhcp_a_selectedAugment matches 237 run scoreboard players add @s uhcp_bee_stack 6
 
 execute if score @s uhcp_bee_stack matches ..5 run return 0
 

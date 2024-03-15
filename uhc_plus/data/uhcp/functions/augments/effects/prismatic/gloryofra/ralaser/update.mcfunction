@@ -1,4 +1,3 @@
-tp @s ~ ~ ~ ~20 0
 scoreboard players add @s uhcp_a_timer 1
 tag @s add UHCP_CurrentRaLaser
 
@@ -9,6 +8,7 @@ execute if score @s uhcp_a_timer matches 5 at @s as @a[distance=..32] at @s run 
 execute if score @s uhcp_a_timer matches 20 run particle flash ~ ~ ~ 1 1 1 1 5 force
 execute unless score @s uhcp_a_timer matches 20.. run return 0
 
+tp @s ~ ~ ~ ~5 0
 execute as @a[distance=..36,gamemode=survival] unless score @s uhcp_team = @e[tag=UHCP_CurrentRaLaser,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_RaTarget
 execute as @a[distance=..36,gamemode=survival] if score @s uhcp_id = @e[tag=UHCP_CurrentRaLaser,sort=nearest,limit=1] uhcp_id run tag @s remove UHCP_RaTarget
 execute facing entity @p[tag=UHCP_RaTarget] feet run tp @s ^ ^ ^0.33
