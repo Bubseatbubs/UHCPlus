@@ -46,6 +46,11 @@ tag @a remove UHCP_Skeleton
 tag @a remove UHCP_Spider
 tag @a remove UHCP_Zombie
 
+# Set difficulty
+execute unless score %difficulty uhcp_settings matches 1.. run function uhcp:settings/other/difficulty/easy
+execute if score %difficulty uhcp_settings matches 1 run function uhcp:settings/other/difficulty/normal
+execute if score %difficulty uhcp_settings matches 2 run function uhcp:settings/other/difficulty/hard
+
 # Determine worldborder size
 execute if score TotalWorldSize setting matches 1000 run function uhcp:start/worldborder/1000
 execute if score TotalWorldSize setting matches 1500 run function uhcp:start/worldborder/1500

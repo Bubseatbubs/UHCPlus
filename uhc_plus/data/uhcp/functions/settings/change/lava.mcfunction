@@ -6,5 +6,5 @@ execute if score @s uhcp_settings matches 208..217 run function uhcp:settings/la
 execute if score @s uhcp_settings matches 218..225 run function uhcp:settings/lava/countdown
 
 
-execute if score @s uhcp_settings matches 226 run tellraw @a [{"text":"Lava","color":"red"},{"text":" is rising!","color":"yellow"}]
+execute if score @s uhcp_settings matches 226 run tellraw @a [{"text":"Lava","color":"red"},{"text":" is rising to y-level ","color":"yellow"},{"score":{"name":"%uhcp_lava","objective":"uhcp_lavaMaxHeight"},"color":"light_purple"},{"text":"!","color":"yellow"}]
 execute if score @s uhcp_settings matches 227 run tellraw @a [{"text":"Lava","color":"red"},{"text":" stopped rising.","color":"yellow"}]

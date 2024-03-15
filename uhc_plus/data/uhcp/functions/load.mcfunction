@@ -17,7 +17,6 @@ scoreboard objectives add uhcp_a_choosingAugment dummy
 scoreboard objectives add uhcp_a_count dummy
 scoreboard objectives add uhcp_a_durability dummy
 scoreboard objectives add uhcp_a_gloryOfRa dummy
-scoreboard objectives add uhcp_a_leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add uhcp_a_patron dummy
 scoreboard objectives add uhcp_a_selectedAugment dummy
 scoreboard objectives add uhcp_a_stack dummy
@@ -44,6 +43,7 @@ scoreboard objectives add uhcp_lavaHeight dummy
 scoreboard objectives add uhcp_lavaMaxHeight dummy
 scoreboard objectives add uhcp_lavaTime dummy
 scoreboard objectives add uhcp_lavaTimeInterval dummy
+scoreboard objectives add uhcp_leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add uhcp_motion_x1 dummy
 scoreboard objectives add uhcp_motion_x2 dummy
 scoreboard objectives add uhcp_motion_y1 dummy

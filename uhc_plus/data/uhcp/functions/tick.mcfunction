@@ -1,5 +1,8 @@
 # Initial logic
-execute unless score %uhcp_init uhcp_initStatus matches 1.. if score stage status matches 2 run function uhcp:init
+execute unless score %uhcp_init uhcp_initStatus matches 1.. run function uhcp:init
+
+# Mangage new players
+execute as @a[tag=!UHCP_Player] run function uhcp:new
 
 # Display Time
 execute if score %time uhcp_gameTime matches 1.. run function uhcp:timer/update_displaytimer
@@ -19,7 +22,6 @@ execute unless score %uhcp_compassTime uhcp_itemCount matches ..0 run scoreboard
 # All of this will be put into a function at some point
 execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uhcp:settings/change
 function uhcp:settings/tick
-
 
 # Announce Augments
 scoreboard players enable @a augments
