@@ -1,7 +1,7 @@
 # Initial logic
 execute unless score %uhcp_init uhcp_initStatus matches 1.. run function uhcp:init
 
-# Mangage new players
+# Manage new players
 execute as @a[tag=!UHCP_Player] run function uhcp:new
 
 # Display Time
