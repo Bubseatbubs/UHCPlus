@@ -17,7 +17,6 @@ attribute @s minecraft:generic.scale modifier add 46eca67f-7103-4d35-a3b7-1576bf
 playsound minecraft:entity.breeze.deflect master @s ~ ~ ~ 1 1 1
 particle cloud ~ ~ ~ 0.5 0.5 0.5 0.1 10 normal @s
 execute at @s run summon block_display ~ ~ ~ {teleport_duration:1,Tags:["UHCP_Prop","UHCP_Summon","UHCP_New"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.0f,0.0f],scale:[1f,1f,1f]},block_state:{Name:"minecraft:air"}}
-execute at @s run summon marker ~ ~ ~ {teleport_duration:1,Tags:["UHCP_PropLocation","UHCP_Summon","UHCP_New"]}
 scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=2] uhcp_id = @s uhcp_id
 execute in uhcp:main run data modify entity @e[tag=UHCP_New,limit=1] block_state.Name set from block 0 0 0 Items[0].id
 tag @e remove UHCP_New
