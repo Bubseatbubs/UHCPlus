@@ -13,6 +13,8 @@ execute if entity @s[tag=UHCP_FlyingTowardsTarget] at @s run return run function
 execute if entity @s[tag=UHCP_Sniffa] at @s run function uhcp:augments/effects/gold/sniffa/update
 execute if entity @s[tag=UHCP_Prop] at @s run function uhcp:augments/effects/silver/prophunt/update
 execute if entity @s[tag=UHCP_RaLaser] at @s run function uhcp:augments/effects/prismatic/gloryofra/ralaser/update
+execute if entity @s[tag=UHCP_TurretOrigin] at @s run function uhcp:augments/effects/gold/turret/update
+execute if entity @s[tag=UHCP_TurretShot] at @s run function uhcp:augments/effects/gold/turret/laser/update
 
 
 # Augments

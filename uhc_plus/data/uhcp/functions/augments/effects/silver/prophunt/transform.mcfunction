@@ -1,6 +1,9 @@
 # Assign ID if player doesn't have one already
 execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
+effect give @s invisibility infinite 0 true
+attribute @s minecraft:generic.scale modifier add 46eca67f-7103-4d35-a3b7-1576bf42ca48 "" -0.55 add_multiplied_base
+playsound minecraft:entity.breeze.deflect master @s ~ ~ ~ 1 1 1
 execute in uhcp:main run setblock 8 -10 8 air
 execute in uhcp:main run item replace block 0 0 0 container.0 with air
 clone ~ ~-0.5 ~ ~ ~-0.5 ~ to uhcp:main 8 -10 8 replace
