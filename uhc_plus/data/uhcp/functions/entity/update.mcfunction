@@ -12,6 +12,7 @@ execute if entity @s[tag=UHCP_PhantomClaw,tag=!UHCP_FlyingTowardsTarget] run ret
 execute if entity @s[tag=UHCP_FlyingTowardsTarget] at @s run return run function uhcp:augments/effects/gold/phantomclaw/update_flight
 execute if entity @s[tag=UHCP_Sniffa] at @s run function uhcp:augments/effects/gold/sniffa/update
 execute if entity @s[tag=UHCP_Prop] at @s run function uhcp:augments/effects/silver/prophunt/update
+execute if entity @s[tag=UHCP_PropLocation] at @s run function uhcp:augments/effects/silver/prophunt/check_for_reset
 execute if entity @s[tag=UHCP_RaLaser] at @s run function uhcp:augments/effects/prismatic/gloryofra/ralaser/update
 execute if entity @s[tag=UHCP_TurretOrigin] at @s run function uhcp:augments/effects/gold/turret/update
 execute if entity @s[tag=UHCP_TurretShot] at @s run function uhcp:augments/effects/gold/turret/laser/update
