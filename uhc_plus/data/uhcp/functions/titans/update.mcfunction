@@ -4,7 +4,8 @@ bossbar set minecraft:uhcp_titanhealth players @a[distance=..16]
 bossbar set minecraft:uhcp_titanhealth name {"selector":"@s","color":"gold"}
 
 execute if entity @a[distance=..32,gamemode=survival] run scoreboard players add @s uhcp_t_timer 1
-execute store result score %blocksfilled uhcp_t_count run fill ~-5 ~ ~-5 ~5 ~5 ~5 air replace #uhcp:titan_can_break
-execute if score %blocksfilled uhcp_t_count matches 3.. run playsound entity.wither.break_block master @a[distance=..16] ~ ~ ~ 0.5 1.25 0.15
+
+execute if entity @s[tag=UHCP_Arachne] at @s run function uhcp:titans/arachne/update
+execute if entity @s[tag=UHCP_Gigantus] at @s run function uhcp:titans/gigantus/update
+
 execute if score @s uhcp_t_timer matches 100.. run function uhcp:titans/attack
-execute if entity @p[distance=24..48,gamemode=survival] facing entity @p eyes run function uhcp:titans/arachne/leap

@@ -56,6 +56,8 @@ scoreboard objectives add uhcp_settings dummy
 scoreboard objectives add uhcp_t_attack dummy
 scoreboard objectives add uhcp_t_count dummy
 scoreboard objectives add uhcp_t_timer dummy
+scoreboard objectives add uhcp_t_id dummy
+scoreboard objectives add uhcp_t_heightDifference dummy
 scoreboard objectives add uhcp_team dummy
 scoreboard objectives add uhcp_topCD dummy
 scoreboard objectives add uhcp_topCharge dummy
@@ -92,6 +94,11 @@ bossbar add uhcp_titanhealth "Titan Health"
 bossbar set minecraft:uhcp_titanhealth color red
 bossbar set minecraft:uhcp_titanhealth style notched_6
 bossbar set minecraft:uhcp_titanhealth max 1
+
+bossbar add uhcp_arachnehealth "Titan Health"
+bossbar set minecraft:uhcp_arachnehealth color red
+bossbar set minecraft:uhcp_arachnehealth style notched_6
+bossbar set minecraft:uhcp_arachnehealth max 1
 
 # Add teams
 team add aqua {"text":"Aqua","color":"aqua"}
