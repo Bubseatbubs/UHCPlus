@@ -15,6 +15,7 @@ execute if entity @s[tag=UHCP_Prop] at @s run function uhcp:augments/effects/sil
 execute if entity @s[tag=UHCP_RaLaser] at @s run function uhcp:augments/effects/prismatic/gloryofra/ralaser/update
 execute if entity @s[tag=UHCP_TurretOrigin] at @s run function uhcp:augments/effects/gold/turret/update
 execute if entity @s[tag=UHCP_TurretShot] at @s run function uhcp:augments/effects/gold/turret/laser/update
+execute if entity @s[tag=UHCP_WebSlinger] at @s run function uhcp:titans/items/web_slinger/update
 
 
 # Augments
