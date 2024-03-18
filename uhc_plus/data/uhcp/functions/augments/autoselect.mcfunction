@@ -2,7 +2,7 @@
 #   Runs if player didn't select an augment in time
 #   Selects a random augment from their listed choices
 #
-# @within  uhcp:augments/left
+# @within  uhcp:left/augments/select
 # @within  uhcp:augments/countdown/1
 
 tag @s remove UHCP_ChoosingItem
@@ -18,4 +18,4 @@ clear @s
 
 playsound block.note_block.chime master @s ~ ~ ~ 1 1 1
 particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 1 100 normal
-execute unless score @s uhcp_a_leave matches 1.. run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected an augment!","color":"white"}]
+execute unless score @s uhcp_leave matches 1.. run tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected an augment!","color":"white"}]

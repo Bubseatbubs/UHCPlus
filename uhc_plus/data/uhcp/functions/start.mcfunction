@@ -1,3 +1,11 @@
+# Reset forceloads
+execute in minecraft:overworld run forceload remove all
+execute in minecraft:the_end run forceload remove all
+execute in minecraft:the_nether run forceload remove all
+execute in uhcp:hell run forceload remove all
+execute in uhcp:main run forceload remove all
+execute in uhcp:main run forceload add 0 0
+
 # Set scores
 scoreboard players set %uhcp_gameStart uhcp_initStatus 1
 execute if score %dimension uhcp_settings matches ..-1 run scoreboard players set %dimension uhcp_settings 0
@@ -25,7 +33,7 @@ advancement grant @a from minecraft:recipes/root
 
 # Reset scoreboards
 scoreboard players reset @a uhcp_a_gloryOfRa
-scoreboard players reset @a uhcp_a_leave
+scoreboard players reset @a uhcp_leave
 scoreboard players reset @a uhcp_a_selectedAugment
 scoreboard players reset @a uhcp_a_tier
 scoreboard players reset @a uhcp_arrowCount

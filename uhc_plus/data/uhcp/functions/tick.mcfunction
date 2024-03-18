@@ -1,8 +1,9 @@
 # Initial logic
 execute unless score %uhcp_init uhcp_initStatus matches 1.. run function uhcp:init
 
-# Manage new players
+# Manage players
 execute as @a[tag=!UHCP_Player] run function uhcp:new
+execute as @a[scores={uhcp_leave=1..}] run function uhcp:left
 
 # Display Time
 execute if score %time uhcp_gameTime matches 1.. run function uhcp:timer/update_displaytimer
@@ -57,7 +58,6 @@ execute as @a[scores={uhcp_lavaTimeInterval=0..}] run function uhcp:augments/eff
 execute as @a[scores={uhcp_lavaMaxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
 
 # Augment Countdown/Functions
-execute if score %uhcp_gameStart uhcp_initStatus matches 1.. unless score %uhcp_augmentCountdown uhcp_gameTime matches 0.. as @a[tag=UHCP_ChoosingItem,scores={uhcp_a_leave=1..}] run function uhcp:augments/left
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 0.. run function uhcp:augments/countdown
 execute if score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:timer/timer
 

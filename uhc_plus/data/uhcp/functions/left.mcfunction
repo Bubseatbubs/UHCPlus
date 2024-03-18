@@ -1,7 +1,5 @@
-# 
-# execute if score %uhcp_gameStart uhcp_initStatus matches 1 run 
+# Manage players whom left
+execute unless score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:left/lobby
+execute if score %uhcp_gameStart uhcp_initStatus matches 1 run function uhcp:left/identify
 
-
-
-
-tag @a add UHCP_Player
+scoreboard players reset @s uhcp_leave
