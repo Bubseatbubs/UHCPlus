@@ -54,6 +54,10 @@ tag @a remove UHCP_Skeleton
 tag @a remove UHCP_Spider
 tag @a remove UHCP_Zombie
 
+# Remove lobby
+fill 0 300 0 15 311 15 minecraft:air
+kill @e[tag=UHCP_Lobby]
+
 # Set difficulty
 execute unless score %difficulty uhcp_settings matches 1.. run function uhcp:settings/other/difficulty/easy
 execute if score %difficulty uhcp_settings matches 1 run function uhcp:settings/other/difficulty/normal
