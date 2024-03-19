@@ -18,6 +18,7 @@ execute if entity @s[tag=UHCP_TurretShot] at @s run function uhcp:augments/effec
 execute if entity @s[tag=UHCP_WebSlinger] at @s run function uhcp:titans/items/web_slinger/update
 execute if entity @s[tag=UHCP_GraveMarker] at @s run function uhcp:titans/gigantus/graves/update
 execute if entity @s[tag=UHCP_FenrirMinion] at @s run function uhcp:titans/fenrir/wolves/update
+execute if entity @s[tag=UHCP_KungfuPanda] at @s run function uhcp:augments/effects/prismatic/kungfupanda/update
 
 
 # Augments
