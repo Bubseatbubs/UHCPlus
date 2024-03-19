@@ -1,4 +1,5 @@
 # Reset player whom is not part of game as spectator
+clear @s
 gamemode spectator @s
 scoreboard players operation @s uhcp_gameId = %global uhcp_gameId
 scoreboard players set @s uhcp_team 0
