@@ -143,6 +143,7 @@ tag @a remove UHCP_SLLegs
 tag @a remove UHCP_SLPick
 tag @a remove UHCP_SLShovel
 tag @a remove UHCP_SLSword
+function uhcp:augments/effects/prismatic/sololeveling/prepare
 
 # Augments
 scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 900
