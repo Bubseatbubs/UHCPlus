@@ -4,4 +4,5 @@ summon minecraft:giant ~ ~ ~ {NoAI:1b,Silent:1b,Health:15f,Attributes:[{Name:"ge
 
 scoreboard players add %global uhcp_id 1
 scoreboard players operation @e[tag=UHCP_InitScore] uhcp_id = %global uhcp_id
+scoreboard players operation @e[tag=UHCP_InitScore] uhcp_team = %global uhcp_team
 tag @e[tag=UHCP_InitScore] remove UHCP_InitScore
