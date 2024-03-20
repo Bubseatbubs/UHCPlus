@@ -39,6 +39,7 @@
               },
               {
                 "function": "set_lore",
+                "mode": "insert",
                 "lore": [
                   {
                     "text": "Throw this item to teleport to",

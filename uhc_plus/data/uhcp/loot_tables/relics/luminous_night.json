@@ -88,6 +88,7 @@
               },
               {
                 "function": "set_lore",
+                "mode": "insert",
                 "lore": [
                   {
                     "text": "------------------------",

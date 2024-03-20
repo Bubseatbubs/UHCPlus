@@ -28,6 +28,7 @@
               },
               {
                 "function": "set_lore",
+                "mode": "insert",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -130,6 +131,7 @@
               },
               {
                 "function": "set_lore",
+                "mode": "insert",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -226,6 +228,7 @@
               },
               {
                 "function": "set_lore",
+                "mode": "insert",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -315,6 +318,7 @@
               },
               {
                 "function": "set_lore",
+                "mode": "insert",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -401,6 +405,7 @@
               },
               {
                 "function": "set_lore",
+                "mode": "insert",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -487,6 +492,7 @@
               },
               {
                 "function": "set_lore",
+                "mode": "insert",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -612,6 +618,7 @@
                 },
                 {
                   "function": "set_lore",
+                "mode": "insert",
                   "lore": [
                     {
                       "text": "------------------------",
@@ -739,6 +746,7 @@
               },
               {
                 "function": "set_lore",
+                "mode": "insert",
                 "lore": [
                   {
                     "text": "------------------------",

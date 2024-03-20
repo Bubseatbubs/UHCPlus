@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "player": [],
+          "item": {
+            "custom_data": "{uhcp_feather:1b}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "uhcp:entity/items/eat_item/init"
+    }
+  }
+  

@@ -40,6 +40,7 @@
               },
               {
                 "function": "set_lore",
+                "mode": "insert",
                 "lore": [
                   {
                     "text": "Throw this item to obtain a",

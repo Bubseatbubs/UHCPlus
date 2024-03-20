@@ -18,23 +18,20 @@
               },
               {
                 "function": "minecraft:set_lore",
+                "mode": "insert",
                 "lore": [
-                  {
-                    "text": "Encase yourself in an",
-                    "color": "gray",
-                    "italic": true,
-                    "extra": [
-                      {
-                        "text": " Obsidian Egg",
-                        "color": "gold"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "function": "minecraft:set_lore",
-                "lore": [
+                  [
+                    {
+                      "text": "Encase yourself in an ",
+                      "color": "gray",
+                      "italic": true
+                    },
+                    {
+                      "text": "Obsidian Egg",
+                      "color": "gold",
+                      "italic": true
+                    }
+                  ],
                   {
                     "text": "for 4 seconds. Consumed upon use.",
                     "color": "gray",
