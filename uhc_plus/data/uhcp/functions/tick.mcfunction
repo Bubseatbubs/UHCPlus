@@ -84,6 +84,5 @@ execute as @e[type=minecraft:ender_pearl] at @s run function uhcp:entity/ender_p
 # Titans
 execute as @e[tag=UHCP_Titan] at @s run function uhcp:titans/update
 
-# Items (instant pickup and item effects)
+# Instant pickup items
 execute as @e[tag=!UHCP_ItemPickup,predicate=uhcp:items/instant_pickup] run function uhcp:entity/items/instant_pickup
-execute as @e[predicate=uhcp:items/drop_effect] at @s run function uhcp:entity/items/drop_effect

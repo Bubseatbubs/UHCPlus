@@ -1,5 +1,5 @@
-kill @e[type=item,predicate=uhcp:titan_items/webslinger,sort=nearest,limit=1]
 tag @s add UHCP_Owner
+clear @s *[custom_data~{uhcp_webslinger:1b}] 1
 execute anchored feet positioned ~ ~0.5 ~ run summon block_display ^ ^ ^1.25 {teleport_duration:1,Tags:["UHCP_Summon","UHCP_WebSlinger","UHCP_New"],Passengers:[{id:"minecraft:item_display",teleport_duration:1,item:{id:"minecraft:cobweb",Count:1},item_display:"fixed",transformation:[1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,-0.0000f,1.0000f,0.5000f,0.0000f,-1.0000f,-0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}]}
 playsound item.trident.throw master @a[distance=..4] ~ ~ ~ 1 1 1
 

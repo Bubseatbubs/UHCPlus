@@ -5,7 +5,9 @@
         "conditions": {
           "player": [],
           "item": {
-            "custom_data": "{uhcp_feather:1b}"
+            "predicates": {
+                "minecraft:custom_data": "{uhcp_consumable:1b}"
+            }
           }
         }
       }

@@ -20,12 +20,19 @@
                       "minecraft:protection": 1
                     },
                     "show_in_tooltip": false
-                  }
+                  },
+                  "minecraft:food": {
+                    "can_always_eat": true,
+                    "nutrition": 0,
+                    "saturation_modifier": 0,
+                    "eat_seconds": 10000000
+                  },
+                  "minecraft:max_stack_size": 1
                 }
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_dropeffect:1b,birdfeather:1b}"
+                "tag": "{uhcp_consumable:1b,uhcp_wildfeather:1b}"
               },
               {
                 "function": "set_name",
