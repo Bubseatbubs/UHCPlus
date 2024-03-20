@@ -8,6 +8,8 @@ execute in uhcp:main run forceload add 0 0
 
 # Set scores
 scoreboard players set %uhcp_gameStart uhcp_initStatus 1
+scoreboard players operation %border_countdown uhcp_gameTime = %border_countdown uhcp_settings
+scoreboard players set %border_stage uhcp_itemCount 0
 execute if score %dimension uhcp_settings matches ..-1 run scoreboard players set %dimension uhcp_settings 0
 execute as @a unless score @s uhcp_a_patron = @s uhcp_a_patron run scoreboard players set @s uhcp_a_patron 8
 scoreboard players set %AUG_7 uhcp_gameTime 2400
@@ -63,16 +65,9 @@ execute unless score %difficulty uhcp_settings matches 1.. run function uhcp:set
 execute if score %difficulty uhcp_settings matches 1 run function uhcp:settings/other/difficulty/normal
 execute if score %difficulty uhcp_settings matches 2 run function uhcp:settings/other/difficulty/hard
 
-# Determine worldborder size
-execute if score TotalWorldSize setting matches 1000 run function uhcp:start/worldborder/1000
-execute if score TotalWorldSize setting matches 1500 run function uhcp:start/worldborder/1500
-execute if score TotalWorldSize setting matches 2000 run function uhcp:start/worldborder/2000
-execute if score TotalWorldSize setting matches 2500 run function uhcp:start/worldborder/2500
-execute if score TotalWorldSize setting matches 3000 run function uhcp:start/worldborder/3000
-execute if score TotalWorldSize setting matches 4000 run function uhcp:start/worldborder/4000
-execute if score TotalWorldSize setting matches 5000 run function uhcp:start/worldborder/5000
-execute if score TotalWorldSize setting matches 7000 run function uhcp:start/worldborder/7000
-execute if score TotalWorldSize setting matches 10000 run function uhcp:start/worldborder/10000
+# Set world border size
+execute store result storage uhcp:border distance int 1 run scoreboard players get %border_size uhcp_settings
+function uhcp:start/border with storage uhcp:border
 
 # Random day/night start
 execute if score daynite status matches 1 run function uhcp:start/randomtime/determine
@@ -102,20 +97,22 @@ execute as @a[scores={uhcp_team=0}] run function uhcp:start/teams
 
 team join grace_period @a
 
-# Spreadplayers logic
+# Spread players
+scoreboard players operation %spread uhcp_initStatus = %border_size uhcp_settings
+scoreboard players set %const uhcp_initStatus 7
+scoreboard players operation %spread uhcp_initStatus /= %const uhcp_initStatus
+scoreboard players set %const uhcp_initStatus 3
+scoreboard players operation %spread uhcp_initStatus *= %const uhcp_initStatus
+execute store result storage uhcp:border max_range int 1 run scoreboard players get %spread uhcp_initStatus
+
+scoreboard players set %const uhcp_initStatus 10
+scoreboard players operation %spread uhcp_initStatus /= %const uhcp_initStatus
+execute store result storage uhcp:border spread_distance int 1 run scoreboard players get %spread uhcp_initStatus
+
+function uhcp:start/spreadplayers/initial with storage uhcp:border
+
 execute as @a run scoreboard players operation @s uhcp_initStatus = @s uhcp_team
-
-execute if score TotalWorldSize setting matches 1000 run spreadplayers 0 0 100 400 true @a
-execute if score TotalWorldSize setting matches 1500 run spreadplayers 0 0 100 700 true @a
-execute if score TotalWorldSize setting matches 2000 run spreadplayers 0 0 100 900 true @a
-execute if score TotalWorldSize setting matches 2500 run spreadplayers 0 0 100 1200 true @a
-execute if score TotalWorldSize setting matches 3000 run spreadplayers 0 0 100 1400 true @a
-execute if score TotalWorldSize setting matches 4000 run spreadplayers 0 0 100 1900 true @a
-execute if score TotalWorldSize setting matches 5000 run spreadplayers 0 0 100 2400 true @a
-execute if score TotalWorldSize setting matches 7000 run spreadplayers 0 0 100 3400 true @a
-execute if score TotalWorldSize setting matches 10000 run spreadplayers 0 0 100 4900 true @a
-
-function uhcp:start/spreadplayers
+function uhcp:start/spreadplayers/secondary
 
 # Kill items
 kill @e[type=minecraft:item]
