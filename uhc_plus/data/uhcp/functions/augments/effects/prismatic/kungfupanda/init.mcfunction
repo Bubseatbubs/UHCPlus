@@ -1,4 +1,5 @@
 advancement revoke @s only uhcp:augments/drank_potion_of_panda
+function uhcp:augments/effects/prismatic/kungfupanda/store_armor
 tag @s add UHCP_IsPanda
 playsound block.brewing_stand.brew master @a[distance=..4] ~ ~ ~ 1 1 0.75
 particle effect ~ ~ ~ 0.1 0.1 0.1 0.1 15 normal
@@ -11,7 +12,6 @@ summon panda ~ ~ ~ {Silent:1b,NoAI:1b,Health:1000f,MainGene:"normal",HiddenGene:
 execute as @e[tag=UHCP_New,sort=nearest,limit=1] store result score @s uhcp_a_tier run data get entity @s Health
 effect give @s invisibility infinite 0 true
 effect give @s absorption infinite 4 true
-effect give @s fire_resistance infinite 0 true
 
 # Assign ID if player doesn't have one already
 execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
