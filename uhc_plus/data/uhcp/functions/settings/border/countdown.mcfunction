@@ -10,3 +10,6 @@ scoreboard players operation %time_calc uhcp_settings = %border_countdown uhcp_s
 function uhcp:settings/time_calc
 execute if score %time_calcM uhcp_gameTime matches 0..9 run function uhcp:settings/border/countdown/notify/single
 execute if score %time_calcM uhcp_gameTime matches 10..59 run function uhcp:settings/border/countdown/notify/double
+
+# Ensure lava rises after border is small enough
+function uhcp:settings/border/lava/check
