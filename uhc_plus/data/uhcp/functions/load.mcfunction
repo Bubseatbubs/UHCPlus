@@ -181,22 +181,9 @@ scoreboard players set %uhcp_lavaDef uhcp_lavaTime 8400
 execute unless score %game uhcp_initStatus matches 1.. run function uhcp:load/scores
 
 # Set gamerules
-execute in minecraft:overworld run gamerule doFireTick false
-execute in minecraft:the_end run gamerule doFireTick false
-execute in minecraft:the_nether run gamerule doFireTick false
-execute in minecraft:overworld run gamerule doInsomnia false
-execute in minecraft:overworld run gamerule doLimitedCrafting true
-execute in minecraft:the_end run gamerule doLimitedCrafting true
-execute in minecraft:the_nether run gamerule doLimitedCrafting true
-execute in minecraft:overworld run gamerule doWeatherCycle false
-execute in minecraft:the_end run gamerule doWeatherCycle false
-execute in minecraft:the_nether run gamerule doWeatherCycle false
-execute in minecraft:overworld run gamerule naturalRegeneration false
-execute in minecraft:the_end run gamerule naturalRegeneration false
-execute in minecraft:the_nether run gamerule naturalRegeneration false
-execute in minecraft:the_end run gamerule randomTickSpeed 3
-execute in minecraft:the_nether run gamerule randomTickSpeed 3
-execute in minecraft:overworld run gamerule randomTickSpeed 18
+execute in minecraft:the_end run function uhcp:load/gamerules/the_end
+execute in minecraft:the_nether run function uhcp:load/gamerules/the_nether
+execute in minecraft:overworld run function uhcp:load/gamerules/overworld
 
 # Main dimension
 execute in uhcp:main run function uhcp:load/dimensions/main
