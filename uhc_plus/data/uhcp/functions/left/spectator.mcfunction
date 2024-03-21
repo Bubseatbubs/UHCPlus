@@ -8,4 +8,5 @@ scoreboard players reset @s top
 execute in minecraft:overworld run tp @s 0 150 0
 effect clear @s
 effect give @s minecraft:night_vision infinite 0 true
+function uhcp:attributes_reset
 tellraw @s {"text":"You are spectating the current match.","color":"red"}

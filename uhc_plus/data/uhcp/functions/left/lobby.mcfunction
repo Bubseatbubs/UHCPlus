@@ -4,6 +4,7 @@ effect clear @s
 effect give @s minecraft:instant_health 2 5 true
 effect give @s minecraft:resistance infinite 5 true
 effect give @s minecraft:saturation infinite 255 true
+function uhcp:attributes_reset
 # --------------- Temp coordinates to lobby
 execute in minecraft:overworld run tp @s 7 301 7
 # ---------------
