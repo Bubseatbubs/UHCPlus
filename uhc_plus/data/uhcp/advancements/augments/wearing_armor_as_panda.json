@@ -15,8 +15,7 @@
                     "slots": {
                       "weapon.offhand": {
                         "count": {
-                          "min": 1,
-                          "max": 64
+                          "min": 1
                         }
                       }
                     }
@@ -30,8 +29,7 @@
                     "slots": {
                       "armor.*": {
                         "count": {
-                          "min": 1,
-                          "max": 64
+                          "min": 1
                         }
                       }
                     }

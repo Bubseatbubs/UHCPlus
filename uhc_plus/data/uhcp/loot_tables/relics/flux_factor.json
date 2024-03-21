@@ -1,203 +1,177 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:sentry_armor_trim_smithing_template",
-            "functions": [
-              {
-                "function": "minecraft:toggle_tooltips",
-                "toggles": {
-                  "minecraft:trim": false
-                }
-              },
-              {
-                "function": "minecraft:set_count",
-                "count": 1
-              },
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:enchantments": {
-                    "levels": {
-                      "minecraft:sharpness": 6,
-                      "minecraft:unbreaking": 5,
-                      "minecraft:vanishing_curse": 1
-                    },
-                    "show_in_tooltip": false
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sentry_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:vanishing_curse": 1
                   },
-                  "minecraft:food": {
-                    "can_always_eat": true,
-                    "nutrition": 0,
-                    "saturation_modifier": 0,
-                    "eat_seconds": 10000000
-                  },
-                  "minecraft:max_stack_size": 1,
-                  "minecraft:damage": 0,
-                  "minecraft:max_damage": 800,
-                  "minecraft:repair_cost": 100
+                  "show_in_tooltip": false
+                },
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation_modifier": 0,
+                  "can_always_eat": true,
+                  "eat_seconds": 10000000
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:damage": 0,
+                "minecraft:max_damage": 800,
+                "minecraft:repair_cost": 100,
+                "minecraft:hide_additional_tooltip": {}
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_consumable:1b,uhcp_relic:1b,uhcp_radiant:2b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Fl",
+                  "color": "#0800FF",
+                  "bold": true,
+                  "italic": false
+                },
+                {
+                  "text": "ux",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": " Fa",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": "ct",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": "or",
+                  "color": "#54C0FF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false,
+                  "italic": false
                 }
-              },
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_consumable:1b,uhcp_relic:1b,uhcp_radiant:2b}"
-              },
-              {
-                "function": "minecraft:set_name",
-                "name": [
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
                   {
-                    "text": "Fl",
-                    "color": "#0800FF",
-                    "bold": true,
+                    "text": "RELIC",
+                    "color": "gold",
                     "italic": false
                   },
                   {
-                    "text": "ux",
-                    "color": "#2B64FF"
-                  },
-                  {
-                    "text": " Fa",
-                    "color": "#428EFF"
-                  },
-                  {
-                    "text": "ct",
-                    "color": "#54B5FF"
-                  },
-                  {
-                    "text": "or",
-                    "color": "#54C0FF"
-                  },
-                  {
-                    "text": " ℝ",
-                    "color": "white",
-                    "bold": false,
-                    "italic": false
+                    "text": ": This relic gains durability while",
+                    "color": "gray",
+                    "italic": true
                   }
-                ]
-              },
-              {
-                "function": "minecraft:set_lore",
-                "mode": "insert",
-                "lore": [
+                ],
+                [
                   {
-                    "text": "------------------------",
-                    "color": "blue"
+                    "text": "held",
+                    "color": "white"
                   },
-                  [
-                    {
-                      "text": "RELIC",
-                      "color": "gold",
-                      "italic": false
-                    },
-                    {
-                      "text": ": This relic gains durability while",
-                      "color": "gray",
-                      "italic": true
-                    }
-                  ],
-                  [
-                    {
-                      "text": "held",
-                      "color": "white"
-                    },
-                    {
-                      "text": ". At max durability, its",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " ABILITY",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "text": "activates",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " on hit",
-                      "color": "white"
-                    },
-                    {
-                      "text": ". Using an",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " ABILITY",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ],
                   {
-                    "text": "consumes a large amount of durability.",
+                    "text": ". At max durability, its",
                     "color": "gray"
                   },
                   {
-                    "text": " "
-                  },
-                  [
-                    {
-                      "text": "ABILITY",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": ": Deploy a magnetic field over 7 seconds",
-                      "color": "gray",
-                      "italic": true
-                    }
-                  ],
-                  [
-                    {
-                      "text": "that inflicts",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " Slowness I",
-                      "color": "yellow"
-                    },
-                    {
-                      "text": " on enemies and grants",
-                      "color": "gray"
-                    }
-                  ],
-                  [
-                    {
-                      "text": " Speed II & Jump Boost I",
-                      "color": "yellow"
-                    },
-                    {
-                      "text": " to allies.",
-                      "color": "gray"
-                    }
-                  ],
-                  {
-                    "text": " "
-                  },
-                  {
-                    "text": "When in Main Hand:",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": " 7.5 Attack Damage",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "text": " 2 Attack Speed",
-                    "color": "dark_green",
+                    "text": " ABILITY",
+                    "color": "blue",
                     "italic": false
                   }
+                ],
+                [
+                  {
+                    "text": "activates",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " on Right Click",
+                    "color": "white"
+                  },
+                  {
+                    "text": ". Using an",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": "consumes a large amount of durability.",
+                  "color": "gray"
+                },
+                {
+                  "text": " "
+                },
+                [
+                  {
+                    "text": "ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ": Deploy a magnetic field over 7 seconds",
+                    "color": "gray",
+                    "italic": true
+                  }
+                ],
+                [
+                  {
+                    "text": "that inflicts",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Slowness I",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " on enemies and grants",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": " Speed II & Jump Boost I",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " to allies.",
+                    "color": "gray"
+                  }
                 ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
