@@ -9,16 +9,18 @@
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "equipment": {
-                  "mainhand": {
-                    "items": [
-                      "minecraft:shears"
-                    ],
-                    "durability": {
-                      "min": 0,
-                      "max": 237
-                    },
-                    "custom_data": "{uhcp_radiant:7b}"
+                "slots": {
+                  "weapon.mainhand": {
+                    "items": "minecraft:shears",
+                    "predicates": {
+                      "minecraft:custom_data": "{uhcp_radiant:7b}",
+                      "minecraft:damage": {
+                        "damage": {
+                          "min": 1,
+                          "max": 1000
+                        }
+                      }
+                    }
                   }
                 }
               }
