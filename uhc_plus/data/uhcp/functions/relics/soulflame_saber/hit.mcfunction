@@ -1,5 +1,5 @@
-advancement revoke @s only uhcp:relics/soulflame_saber/ability
 tag @s add UHCP_Owner
+function uhcp:relics/durability/reset
 
 scoreboard players reset @e[distance=..6] uhcp_a_count
 execute as @e[tag=!UHCP_Owner,type=!#uhcp:inanimate_mobs,distance=..6] store result score @s uhcp_a_count run function uhcp:relics/checkattacker
@@ -15,8 +15,7 @@ execute at @e[tag=UHCP_SaberTarget] run particle soul_fire_flame ~ ~2 ~ 0.25 0.5
 execute at @e[tag=UHCP_SaberTarget] run particle soul ~ ~2 ~ 0.25 0.5 0.25 1 100 normal
 execute at @e[tag=UHCP_SaberTarget] run summon marker ~ ~ ~ {Tags:["UHCP_Summon","UHCP_Saber","UHCP_New"]}
 
-execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_a_durability 10
-item modify entity @s weapon.mainhand uhcp:update_dur
+
 
 # Gets team value
 scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_team = @s uhcp_team

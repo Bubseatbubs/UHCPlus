@@ -1,5 +1,4 @@
 {
-  "parent": "uhcp:relics/increase_dur",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:location",
@@ -10,16 +9,14 @@
               "entity": "this",
               "predicate": {
                 "slots": {
-                  "weapon.mainhand": {
-                    "items": "minecraft:shears",
+                  "armor.*": {
                     "predicates": {
-                      "minecraft:custom_data": "{uhcp_radiant:7b}",
                       "minecraft:damage": {
                         "damage": {
-                          "min": 1,
-                          "max": 1000
+                          "min": 1
                         }
-                      }
+                      },
+                      "minecraft:custom_data": "{uhcp_relic:1b}"
                     }
                   }
                 }
@@ -30,7 +27,7 @@
       }
     },
     "rewards": {
-      "function": "uhcp:relics/increase_dur"
+      "function": "uhcp:relics/durability/increase_armor"
     }
   }
   

@@ -21,7 +21,6 @@ loot give @s loot uhcp:relics/the_harvester
 loot give @s loot uhcp:relics/boomburst
 loot give @s loot uhcp:relics/yggdrasil_bark
 loot give @s loot uhcp:relics/dragons_protection
-loot give @s loot uhcp:relics/luminous_night
 
 give @s minecraft:fishing_rod[minecraft:enchantments={levels:{"minecraft:luck_of_the_sea":5,"minecraft:lure":5,"minecraft:unbreaking":5,"minecraft:vanishing_curse":1}}] 1
 give @s minecraft:fishing_rod[minecraft:enchantments={levels:{"minecraft:luck_of_the_sea":6,"minecraft:lure":5,"minecraft:unbreaking":5,"minecraft:vanishing_curse":1}}] 1

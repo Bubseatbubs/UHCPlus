@@ -22,18 +22,15 @@
                       "minecraft:quick_charge": 1
                     },
                     "show_in_tooltip": false
-                  }
+                  },
+                  "minecraft:max_stack_size": 1,
+                  "minecraft:max_damage": 1600,
+                  "minecraft:repair_cost": 100
                 }
               },
               {
-                "function": "minecraft:set_components",
-                "components": {
-                    "minecraft:repair_cost": 100
-                  }
-              },
-              {
                 "function": "minecraft:set_custom_data",
-                "tag": "{hasTnt:0b,uhcp_radiant:2b}"
+                "tag": "{uhcp_relic:1b,hasTnt:0b,uhcp_radiant:2b}"
               },
               {
                 "function": "minecraft:set_name",

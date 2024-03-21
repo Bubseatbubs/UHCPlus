@@ -5,8 +5,14 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:golden_sword",
+            "name": "minecraft:sentry_armor_trim_smithing_template",
             "functions": [
+              {
+                "function": "minecraft:toggle_tooltips",
+                "toggles": {
+                  "minecraft:trim": false
+                }
+              },
               {
                 "function": "minecraft:set_count",
                 "count": 1
@@ -14,19 +20,6 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:attribute_modifiers": {
-                    "modifiers": [
-                      {
-                        "type": "minecraft:generic.attack_speed",
-                        "uuid": [429705565,-2068361771,-1818255141,1631974032],
-                        "name": "atkspd",
-                        "amount": -0.5,
-                        "operation": "add_value",
-                        "slot": "mainhand"
-                      }
-                    ],
-                    "show_in_tooltip": false
-                  },
                   "minecraft:enchantments": {
                     "levels": {
                       "minecraft:sharpness": 6,
@@ -35,12 +28,21 @@
                     },
                     "show_in_tooltip": false
                   },
+                  "minecraft:food": {
+                    "can_always_eat": true,
+                    "nutrition": 0,
+                    "saturation_modifier": 0,
+                    "eat_seconds": 10000000
+                  },
+                  "minecraft:max_stack_size": 1,
+                  "minecraft:damage": 0,
+                  "minecraft:max_damage": 800,
                   "minecraft:repair_cost": 100
                 }
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_radiant:2b}"
+                "tag": "{uhcp_consumable:1b,uhcp_relic:1b,uhcp_radiant:2b}"
               },
               {
                 "function": "minecraft:set_name",

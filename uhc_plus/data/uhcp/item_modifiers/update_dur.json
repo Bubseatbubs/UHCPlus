@@ -1,19 +1,5 @@
 [
   {
-    "function": "minecraft:copy_custom_data",
-    "source": {
-      "type": "minecraft:storage",
-      "source": "uhcp:cd"
-    },
-    "ops": [
-      {
-        "source": "cDamage",
-        "target": "cDamage",
-        "op": "replace"
-      }
-    ]
-  },
-  {
     "function": "minecraft:set_damage",
     "damage": {
       "type": "minecraft:score",
@@ -22,8 +8,8 @@
         "name": "%damage"
       },
       "score": "uhcp_a_durability",
-      "scale": 0.0006406149903907751
+      "scale": 0.00001
     },
-    "add": false
+    "add": true
   }
 ]

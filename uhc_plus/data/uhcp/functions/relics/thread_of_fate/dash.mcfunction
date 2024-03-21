@@ -1,7 +1,6 @@
 effect give @s absorption 2 0 true
 
-execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_a_durability 10
-item modify entity @s weapon.mainhand uhcp:update_dur
+function uhcp:relics/durability/reset
 
 # Initalize Dash
 summon marker ~ ~ ~ {Tags:["UHCP_SaveRotation"]}

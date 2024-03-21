@@ -10,8 +10,7 @@ tag @e[distance=..6,scores={uhcp_a_count=1},sort=nearest,limit=1] add UHCP_Harve
 execute unless entity @e[tag=UHCP_HarvesterTarget] run tag @s remove UHCP_Owner
 execute unless entity @e[tag=UHCP_HarvesterTarget] run return 0
 
-execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_a_durability 100
-item modify entity @s weapon.mainhand uhcp:update_dur
+function uhcp:relics/durability/reset
 
 execute store result score @s uhcp_a_count run clear @s golden_apple 0
 execute store result score %e_gapple uhcp_a_count run clear @s enchanted_golden_apple 0

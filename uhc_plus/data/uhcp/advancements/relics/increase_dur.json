@@ -1,10 +1,33 @@
 {
     "criteria": {
       "requirement": {
-        "trigger": "minecraft:impossible",
-        "conditions": {}
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "slots": {
+                  "weapon.mainhand": {
+                    "predicates": {
+                      "minecraft:custom_data": "{uhcp_relic:1b}",
+                      "minecraft:damage": {
+                        "damage": {
+                          "min": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
       }
     },
-    "rewards": {}
+    "rewards": {
+      "function": "uhcp:relics/durability/increase"
+    }
   }
   

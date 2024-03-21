@@ -1,6 +1,6 @@
 advancement revoke @s only uhcp:relics/smooth_getaway/ability
 
-
+function uhcp:relics/durability/reset
 
 execute at @s positioned ~-1 ~ ~ run function uhcp:relics/smooth_getaway/summon
 execute at @s positioned ~1 ~ ~ run function uhcp:relics/smooth_getaway/summon
@@ -12,10 +12,6 @@ playsound entity.zombie.converted_to_drowned master @a[distance=..8] ~ ~ ~ 1 0.5
 
 # Assign IDs
 execute as @e[tag=UHCP_New,tag=UHCP_InitScore] run function uhcp:relics/smooth_getaway/assign
-
-# Set Cooldown
-execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_a_durability 1
-item modify entity @s weapon.mainhand uhcp:update_dur
 
 loot replace entity @e[tag=UHCP_New,type=armor_stand] armor.head loot uhcp:player_head
 effect give @s invisibility 10 0 false

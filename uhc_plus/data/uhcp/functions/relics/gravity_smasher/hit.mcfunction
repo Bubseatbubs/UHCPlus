@@ -1,9 +1,7 @@
 advancement revoke @s only uhcp:relics/gravity_smasher/ability
 tag @s add UHCP_Owner
 
-# Set Cooldown
-execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_a_durability 10
-item modify entity @s weapon.mainhand uhcp:update_dur
+function uhcp:relics/durability/reset
 
 # Assign Team Scoreboards
 scoreboard players set @a uhcp_initStatus 0

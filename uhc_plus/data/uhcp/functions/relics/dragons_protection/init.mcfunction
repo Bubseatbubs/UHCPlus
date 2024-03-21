@@ -19,7 +19,8 @@ tp @s ~ ~1 ~
 tag @s remove UHCP_Init
 tag @e remove UHCP_New
 
-execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_a_durability 165
+scoreboard players set %damage uhcp_a_durability -1000000
 item modify entity @s armor.head uhcp:update_dur
+function uhcp:relics/durability/armor/helmet
 
 kill @e[predicate=uhcp:ender_eye/dragons_watchful_eye,sort=nearest,limit=1]

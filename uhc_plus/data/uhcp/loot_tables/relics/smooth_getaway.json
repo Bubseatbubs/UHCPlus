@@ -5,7 +5,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:brush",
+            "name": "minecraft:firework_star",
             "functions": [
               {
                 "function": "minecraft:set_count",
@@ -42,12 +42,21 @@
                     },
                     "show_in_tooltip": false
                   },
+                  "minecraft:food": {
+                    "can_always_eat": true,
+                    "nutrition": 0,
+                    "saturation_modifier": 0,
+                    "eat_seconds": 10000000
+                  },
+                  "minecraft:max_stack_size": 1,
+                  "minecraft:max_damage": 1300,
+                  "minecraft:damage": 0,
                   "minecraft:repair_cost": 100
                 }
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_radiant:6b}"
+                "tag": "{uhcp_consumable:1b,uhcp_relic:1b,uhcp_radiant:6b}"
               },
               {
                 "function": "minecraft:set_name",

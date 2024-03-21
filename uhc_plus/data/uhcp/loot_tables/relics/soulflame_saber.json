@@ -22,12 +22,14 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
+                    "minecraft:max_stack_size": 1,
+                    "minecraft:max_damage": 800,
                     "minecraft:repair_cost": 100
                   }
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_radiant:1b}"
+                "tag": "{uhcp_consumable:1b,uhcp_relic:1b,uhcp_radiant:1b}"
               },
               {
                 "function": "minecraft:set_name",

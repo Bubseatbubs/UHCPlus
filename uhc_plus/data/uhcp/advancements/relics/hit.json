@@ -1,7 +1,7 @@
 {
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:entity_hurt_player",
+      "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "player": [
           {
@@ -9,12 +9,12 @@
             "entity": "this",
             "predicate": {
               "slots": {
-                "armor.chest": {
+                "weapon.mainhand": {
                   "predicates": {
+                    "minecraft:custom_data": "{uhcp_relic:1b}",
                     "minecraft:damage": {
                       "damage": 0
-                    },
-                    "minecraft:custom_data": "{uhcp_radiant:4b}"
+                    }
                   }
                 }
               }
@@ -25,6 +25,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:relics/yggdrasil/protect"
+    "function": "uhcp:relics/hit"
   }
 }
