@@ -178,7 +178,7 @@ scoreboard players set %uhcp_lavaDef uhcp_lavaMaxHeight 50
 scoreboard players set %uhcp_lavaDef uhcp_lavaTime 8400
 
 # Set default scores when unset
-execute unless score stage status matches 2 unless score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:load/scores
+execute unless score %uhcp_gameStart uhcp_initStatus matches 1.. run function uhcp:load/scores
 
 # Set gamerules
 execute in minecraft:overworld run gamerule doFireTick false
