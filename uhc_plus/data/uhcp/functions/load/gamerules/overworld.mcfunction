@@ -1,4 +1,4 @@
-# Overworld game rules
+# Overworld game rules (runs last to retain vanilla compatibility for randomTickSpeed)
 gamerule doFireTick false
 gamerule doInsomnia false
 gamerule doLimitedCrafting true
