@@ -8,3 +8,4 @@ effect give @s minecraft:saturation infinite 255 true
 execute in minecraft:overworld run tp @s 7 301 7
 # ---------------
 gamemode adventure @s
+scoreboard players reset @s top

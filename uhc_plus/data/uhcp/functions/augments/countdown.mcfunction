@@ -16,7 +16,7 @@ execute if score %uhcp_augmentCountdown uhcp_gameTime matches 101..895 as @a[gam
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 101.. unless entity @a[gamemode=adventure,tag=UHCP_ChoosingItem] run scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 100
 execute store result bossbar uhcp_augment value run scoreboard players get %uhcp_augmentCountdown uhcp_gameTime
 
-# If  < 5 seconds, stop function
+# If < 5 seconds, stop function
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 101.. run return 0
 
 # Countdown noise
@@ -30,6 +30,8 @@ execute if score %uhcp_augmentCountdown uhcp_gameTime matches 1 run function uhc
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 0.. run return 0
 
 # Ran once countdown reaches 0. Initializes the game as UHC Pack would've done, and gives all players their selected augments
+scoreboard players set %time uhcp_initStatus 1
+
 gamemode survival @a[gamemode=adventure]
 bossbar set minecraft:uhcp_augment players
 execute in uhcp:main run tp @e[tag=UHCP_Lock] 0 -63 0

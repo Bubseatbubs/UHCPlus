@@ -7,7 +7,8 @@ execute in uhcp:main run forceload remove all
 execute in uhcp:main run forceload add 0 0
 
 # Set scores
-scoreboard players set %uhcp_gameStart uhcp_initStatus 1
+scoreboard players set %game uhcp_initStatus 1
+scoreboard players set %time uhcp_initStatus 0
 scoreboard players operation %border_countdown uhcp_gameTime = %border_countdown uhcp_settings
 scoreboard players set %border_stage uhcp_itemCount 0
 execute if score %dimension uhcp_settings matches ..-1 run scoreboard players set %dimension uhcp_settings 0
@@ -34,19 +35,20 @@ advancement grant @a from minecraft:recipes/root
 # Revoke all special augment recipes here.
 
 # Reset scoreboards
+scoreboard players reset @a top
 scoreboard players reset @a uhcp_a_gloryOfRa
-scoreboard players reset @a uhcp_leave
 scoreboard players reset @a uhcp_a_selectedAugment
 scoreboard players reset @a uhcp_a_tier
 scoreboard players reset @a uhcp_arrowCount
 scoreboard players reset @a uhcp_bee_stacks
 scoreboard players reset %time uhcp_gameTime
 scoreboard players reset @a uhcp_hb_killedCreeper
-scoreboard players reset @a uhcp_hb_killedZombie
 scoreboard players reset @a uhcp_hb_killedSkeleton
 scoreboard players reset @a uhcp_hb_killedSpider
+scoreboard players reset @a uhcp_hb_killedZombie
 scoreboard players reset @a uhcp_id
 scoreboard players reset %global uhcp_id
+scoreboard players reset @a uhcp_leave
 scoreboard players reset @a uhcp_topCD
 scoreboard players reset @a uhcp_wolf_stacks
 
@@ -126,6 +128,8 @@ execute if score %tier uhcp_a_tier matches 90..109 run scoreboard players set %t
 
 # Reset attribute modifiers
 execute as @a run function uhcp:attributes_reset
+
+# Assign player IDs
 execute as @a run function uhcp:start/id/assign
 
 # Solo leveling
