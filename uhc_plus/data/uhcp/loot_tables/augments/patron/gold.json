@@ -390,6 +390,12 @@
                 "count": 1
               },
               {
+                "function": "minecraft:set_components",
+                "components": {
+                    "!minecraft:food": {}
+                }
+              },
+              {
                 "function": "minecraft:set_custom_data",
                 "tag": "{pickup:1b,augment:9s}"
               },

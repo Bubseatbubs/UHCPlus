@@ -13,6 +13,12 @@
               "count": 1
             },
             {
+              "function": "minecraft:set_components",
+              "components": {
+                  "!minecraft:food": {}
+              }
+            },
+            {
               "function": "minecraft:set_custom_data",
               "tag": "{pickup:1b,augment:112s}"
             },
@@ -575,6 +581,12 @@
               "count": 1
             },
             {
+              "function": "minecraft:set_components",
+              "components": {
+                  "!minecraft:food": {}
+              }
+            },
+            {
               "function": "minecraft:set_custom_data",
               "tag": "{pickup:1b,augment:111s}"
             },
@@ -923,6 +935,12 @@
             {
               "function": "minecraft:set_count",
               "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                  "!minecraft:food": {}
+              }
             },
             {
               "function": "minecraft:set_custom_data",

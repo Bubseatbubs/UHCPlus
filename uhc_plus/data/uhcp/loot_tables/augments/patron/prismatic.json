@@ -490,7 +490,8 @@
                         "minecraft:protection": 1
                       },
                       "show_in_tooltip": false
-                    }
+                    },
+                    "!minecraft:food": {}
                   }
                 },
                 {
