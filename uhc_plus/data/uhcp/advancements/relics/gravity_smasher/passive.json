@@ -5,51 +5,22 @@
       "conditions": {
         "player": [
           {
-            "condition": "minecraft:any_of",
-            "terms": [
-              {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "equipment": {
-                    "offhand": {
-                      "items": [
-                        "minecraft:diamond_axe"
-                      ],
-                      "durability": {
-                        "min": 0,
-                        "max": 1560
-                      },
-                      "custom_data": "{uhcp_radiant:3b}"
-                    }
-                  }
-                }
-              },
-              {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "equipment": {
-                    "mainhand": {
-                      "items": [
-                        "minecraft:diamond_axe"
-                      ],
-                      "durability": {
-                        "min": 0,
-                        "max": 1560
-                      },
-                      "custom_data": "{uhcp_radiant:3b}"
-                    }
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "weapon.mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": "{uhcp_radiant:3b}"
                   }
                 }
               }
-            ]
+            }
           }
         ],
         "damage": {
           "dealt": {
-            "min": 7,
-            "max": 100
+            "min": 7
           },
           "blocked": false
         }
