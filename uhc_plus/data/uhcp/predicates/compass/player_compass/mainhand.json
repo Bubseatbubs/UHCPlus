@@ -4,10 +4,10 @@
     "predicate": {
         "equipment": {
             "mainhand": {
-                "items": [
-                    "minecraft:compass"
-                ],
-                "custom_data": "{uhcp_player:1b}"
+                "items": "minecraft:compass",
+				"predicates": {
+					"minecraft:custom_data": "{uhcp_player:1b}"
+				}
             }
         }
     }
