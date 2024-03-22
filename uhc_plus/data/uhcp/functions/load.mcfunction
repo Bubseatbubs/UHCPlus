@@ -4,9 +4,9 @@
 scoreboard objectives add augments trigger
 scoreboard objectives add menu trigger
 scoreboard objectives add patron trigger
+scoreboard objectives add team trigger
 scoreboard objectives add testkit trigger
 scoreboard objectives add top trigger
-scoreboard objectives add team trigger
 
 # Settings Triggers
 scoreboard objectives add settings trigger

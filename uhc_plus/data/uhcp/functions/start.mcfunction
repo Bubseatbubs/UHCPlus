@@ -74,6 +74,10 @@ execute if score daynite status matches 1 run function uhcp:start/randomtime/det
 # Reset UHC Pack Timer to sync up
 scoreboard players set marker tick 0
 
+# Allow one-player games to not end
+execute store result score %players uhcp_initStatus if entity @a[tag=!UHCP_Spectator]
+execute if score %players uhcp_initStatus matches ..1 run scoreboard players set %end uhcp_initStatus 1
+
 # Team logic
 scoreboard players set @a uhcp_team 0
 scoreboard players set @a[team=aqua] uhcp_team 1
@@ -92,7 +96,7 @@ scoreboard players set @a[team=red] uhcp_team 13
 scoreboard players set @a[team=yellow] uhcp_team 14
 
 scoreboard players set %global uhcp_team 15
-execute as @a[scores={uhcp_team=0}] run function uhcp:start/teams
+execute as @a[tag=!UHCP_Spectator,scores={uhcp_team=0}] run function uhcp:start/teams
 
 team join grace_period @a
 
