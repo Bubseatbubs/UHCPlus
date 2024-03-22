@@ -27,6 +27,7 @@ scoreboard players reset %global uhcp_gameId
 scoreboard players reset @a uhcp_gameId
 scoreboard players reset %global uhcp_id
 scoreboard players reset @a uhcp_id
+scoreboard players reset %end uhcp_initStatus
 scoreboard players reset %game uhcp_initStatus
 scoreboard players reset %time uhcp_gameTime
 scoreboard players reset %time uhcp_initStatus

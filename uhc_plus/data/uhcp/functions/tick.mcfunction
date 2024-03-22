@@ -1,5 +1,5 @@
 # End game
-execute if score %time uhcp_gameTime matches 1 if entity @a run function uhcp:end
+execute unless score %end uhcp_initStatus matches 1 if score %time uhcp_initStatus matches 1 if entity @a run function uhcp:end
 
 # Initial logic
 execute unless score %uhcp_init uhcp_initStatus matches 1.. run function uhcp:init
