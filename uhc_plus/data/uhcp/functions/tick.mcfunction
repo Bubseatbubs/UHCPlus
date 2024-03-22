@@ -8,6 +8,9 @@ execute unless score %init uhcp_initStatus matches 1.. run function uhcp:init
 execute as @a[tag=!UHCP_Player] run function uhcp:new
 execute as @a[scores={uhcp_leave=1..}] run function uhcp:left
 
+# Timer
+execute if score %time uhcp_initStatus matches 1 run scoreboard players add %time uhcp_gameTime 1
+
 # Display Time
 execute if score %game uhcp_initStatus matches 1 run function uhcp:timer/update_displaytimer
 
@@ -33,9 +36,6 @@ function uhcp:settings/tick
 # Announce Augments
 scoreboard players enable @a augments
 execute as @a if score @s augments matches 1.. run function uhcp:augments/announce
-
-# Timer
-execute if score %time uhcp_initStatus matches 1 run scoreboard players add %time uhcp_gameTime 1
 
 # Top Command
 execute if score %time uhcp_initStatus matches 1.. run scoreboard players enable @a top

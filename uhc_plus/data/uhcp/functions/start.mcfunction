@@ -130,7 +130,7 @@ execute if score %tier uhcp_a_tier matches 90..109 run scoreboard players set %t
 
 # Effects
 effect clear @a
-effect give @a minecraft:instant_health 2 5 true
+effect give @a minecraft:regeneration 10 5 true
 effect give @a[tag=!UHCP_Spectator] minecraft:resistance infinite 5 true
 effect give @a[tag=!UHCP_Spectator] minecraft:saturation infinite 255 true
 effect give @a minecraft:night_vision infinite 0 true
@@ -139,6 +139,9 @@ effect give @a[tag=!UHCP_Spectator] minecraft:weakness infinite 4 true
 
 # Reset attribute modifiers
 execute as @a run function uhcp:reset/attributes
+
+# Grant players +20 health
+execute as @a run attribute @s minecraft:generic.max_health modifier add 5ae70886-031a-42b7-aa86-783c9536c746 "" 20 add_value
 
 # Reset experience
 experience set @a 0 levels

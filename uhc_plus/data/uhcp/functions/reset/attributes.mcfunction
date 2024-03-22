@@ -6,6 +6,11 @@
 #alias uuid UHCP_MaxHealth bcae8a4d-80b1-4a6b-9eaf-e9efa3044754
 attribute @s minecraft:generic.max_health modifier remove bcae8a4d-80b1-4a6b-9eaf-e9efa3044754
 
+# Game Max Health (+10 Hearts)
+# Given to all players at the start of the game
+#alias uuid UHCP_GameMaxHealth 5ae70886-031a-42b7-aa86-783c9536c746
+attribute @s minecraft:generic.max_health modifier remove 5ae70886-031a-42b7-aa86-783c9536c746
+
 # Block Breaking Speed
 # Given to all players at the start of the game
 #alias uuid UHCP_BlockBreakSpeed 4329681b-2b41-4dc1-8b3a-4a5ebae3c1ce
