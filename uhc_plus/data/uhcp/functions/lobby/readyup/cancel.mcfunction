@@ -1,4 +1,5 @@
 tag @s add UHCP_DisableReset
+execute if score @s uhcp_ready matches 2 run function uhcp:lobby/spectator/stop_spectate
 scoreboard players set @s uhcp_ready 0
 clear @s *[minecraft:custom_data~{uhcp_lobby:4b}]
 loot replace entity @s weapon.mainhand loot uhcp:lobby_menu/not_ready
