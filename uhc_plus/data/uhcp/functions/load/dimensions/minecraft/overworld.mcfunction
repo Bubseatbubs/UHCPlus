@@ -6,3 +6,9 @@ gamerule doWeatherCycle false
 gamerule naturalRegeneration false
 gamerule randomTickSpeed 18
 gamerule sendCommandFeedback false
+
+# World border
+worldborder center 0 0
+
+# World spawn
+setworldspawn 0 64 0

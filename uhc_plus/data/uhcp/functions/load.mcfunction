@@ -185,13 +185,11 @@ scoreboard players set %uhcp_lavaDef uhcp_lavaTime 8400
 # Set default scores when unset
 execute unless score %game uhcp_initStatus matches 1.. run function uhcp:load/scores
 
-# Set gamerules
-execute in minecraft:the_end run function uhcp:load/gamerules/the_end
-execute in minecraft:the_nether run function uhcp:load/gamerules/the_nether
-execute in minecraft:overworld run function uhcp:load/gamerules/overworld
-
-# Main dimension
-execute in uhcp:main run function uhcp:load/dimensions/main
+# Dimension-specific commands
+execute in minecraft:the_end run function uhcp:load/dimensions/minecraft/the_end
+execute in minecraft:the_nether run function uhcp:load/dimensions/minecraft/the_nether
+execute in minecraft:overworld run function uhcp:load/dimensions/minecraft/overworld
+execute in uhcp:main run function uhcp:load/dimensions/uhcp/main
 
 # Schedule delayed load
 scoreboard players add %uhcp_loadInit uhcp_initStatus 1
