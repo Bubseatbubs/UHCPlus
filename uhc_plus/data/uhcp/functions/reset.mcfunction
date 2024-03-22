@@ -51,5 +51,8 @@ experience set @a 0 levels
 experience set @a 0 points
 gamemode adventure @a
 
+# Lobby Menu
+execute as @a at @s run function uhcp:lobby/menu
+
 # Notify players of reset - Help me, Bubson! :(
 # Title and sound, probably.
