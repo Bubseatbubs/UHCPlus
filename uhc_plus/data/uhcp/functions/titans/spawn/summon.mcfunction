@@ -9,4 +9,5 @@ execute as @e[tag=UHCP_TitanSpawn] at @s run fill ~-4 ~ ~-4 ~4 ~8 ~4 air replace
 execute as @e[tag=UHCP_TitanSpawn] at @s run playsound block.end_portal.spawn master @a[distance=..16] ~ ~ ~ 1 1 0.6
 execute as @e[tag=UHCP_TitanSpawn] at @s run particle reverse_portal ~ ~ ~ 3 3 3 0.1 100 normal
 execute as @e[tag=UHCP_TitanSpawn] at @s run particle flash ~ ~ ~ 0.1 0.1 0.1 0.1 10 normal
+#execute as @e[tag=UHCP_TitanSpawn] at @s run forceload remove ~-6 ~-6 ~6 ~6
 execute as @a at @s run playsound entity.ender_dragon.growl master @s ~ ~ ~ 1 0.5 1

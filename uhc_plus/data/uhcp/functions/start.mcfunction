@@ -98,6 +98,9 @@ execute as @a[tag=!UHCP_Spectator,scores={uhcp_team=0}] run function uhcp:start/
 
 team join grace_period @a
 
+# Allow one-team games to not end
+execute if score %end uhcp_initStatus matches 0 run function uhcp:start/teams/check
+
 # Remove lobby
 execute in minecraft:overworld run function uhcp:lobby/remove
 
