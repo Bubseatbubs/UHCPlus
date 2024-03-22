@@ -6,6 +6,9 @@ execute in uhcp:hell run forceload remove all
 execute in uhcp:main run forceload remove all
 execute in uhcp:main run forceload add 0 0
 
+# Prepare Spectators
+tag @a[scores={uhcp_ready=2}] add UHCP_Spectator
+
 # Set scores
 scoreboard players set %game uhcp_initStatus 1
 scoreboard players set %time uhcp_initStatus 0
@@ -68,6 +71,7 @@ execute if score %difficulty uhcp_settings matches 2 run function uhcp:start/dif
 # Set world border size
 execute store result storage uhcp:border distance int 1 run scoreboard players get %border_size uhcp_settings
 function uhcp:start/border with storage uhcp:border
+worldborder center 0 0
 
 # Allow one-player games to not end
 execute store result score %players uhcp_initStatus if entity @a[tag=!UHCP_Spectator]

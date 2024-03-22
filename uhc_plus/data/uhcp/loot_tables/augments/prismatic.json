@@ -25,7 +25,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:214s}"
+              "tag": "{uhcp_augmentselect:1b,augment:214s}"
             },
             {
               "function": "minecraft:set_name",
@@ -136,7 +136,7 @@
 						},
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:222s}"
+              "tag": "{uhcp_augmentselect:1b,augment:222s}"
             },
             {
               "function": "minecraft:set_name",
@@ -231,7 +231,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:223s}"
+              "tag": "{uhcp_augmentselect:1b,augment:223s}"
             },
             {
               "function": "minecraft:set_name",
@@ -309,7 +309,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:209s}"
+              "tag": "{uhcp_augmentselect:1b,augment:209s}"
             },
             {
               "function": "minecraft:set_name",
@@ -372,7 +372,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:205s}"
+              "tag": "{uhcp_augmentselect:1b,augment:205s}"
             },
             {
               "function": "minecraft:set_name",
@@ -454,7 +454,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:225s}"
+              "tag": "{uhcp_augmentselect:1b,augment:225s}"
             },
             {
               "function": "minecraft:set_name",
@@ -572,7 +572,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:212s}"
+              "tag": "{uhcp_augmentselect:1b,augment:212s}"
             },
             {
               "function": "minecraft:set_name",
@@ -633,7 +633,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:216s}"
+              "tag": "{uhcp_augmentselect:1b,augment:216s}"
             },
             {
               "function": "minecraft:set_name",
@@ -689,7 +689,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:227s}"
+              "tag": "{uhcp_augmentselect:1b,augment:227s}"
             },
             {
               "function": "minecraft:set_name",
@@ -747,7 +747,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:226s}"
+              "tag": "{uhcp_augmentselect:1b,augment:226s}"
             },
             {
               "function": "minecraft:set_name",
@@ -797,7 +797,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:224s}"
+              "tag": "{uhcp_augmentselect:1b,augment:224s}"
             },
             {
               "function": "minecraft:set_name",
@@ -866,7 +866,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:236s}"
+              "tag": "{uhcp_augmentselect:1b,augment:236s}"
             },
             {
               "function": "minecraft:set_name",
@@ -941,7 +941,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:203s}"
+              "tag": "{uhcp_augmentselect:1b,augment:203s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1016,7 +1016,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:237s}"
+              "tag": "{uhcp_augmentselect:1b,augment:237s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1126,7 +1126,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:239s}"
+              "tag": "{uhcp_augmentselect:1b,augment:239s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1208,7 +1208,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:240s}"
+              "tag": "{uhcp_augmentselect:1b,augment:240s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1286,7 +1286,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:200s}"
+              "tag": "{uhcp_augmentselect:1b,augment:200s}"
             },
             {
               "function": "set_name",
@@ -1368,7 +1368,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:238s}"
+              "tag": "{uhcp_augmentselect:1b,augment:238s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1432,7 +1432,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:241s}"
+              "tag": "{uhcp_augmentselect:1b,augment:241s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1508,7 +1508,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:242s}"
+              "tag": "{uhcp_augmentselect:1b,augment:242s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1568,7 +1568,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:202s}"
+              "tag": "{uhcp_augmentselect:1b,augment:202s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1657,7 +1657,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{pickup:1b,augment:218}"
+              "tag": "{uhcp_augmentselect:1b,augment:218}"
             },
             {
               "function": "set_name",

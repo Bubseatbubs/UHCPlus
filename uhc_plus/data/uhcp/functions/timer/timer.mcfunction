@@ -65,6 +65,7 @@ execute if score %time uhcp_gameTime >= %AUG_238 uhcp_gameTime as @a[scores={uhc
 execute if score %time uhcp_gameTime >= %AUG_238 uhcp_gameTime run scoreboard players add %AUG_238 uhcp_gameTime 24000
 
 # Titans
-execute if score %time uhcp_gameTime matches 6000 run function uhcp:titans/spawn/init
-execute if score %time uhcp_gameTime matches 24000 run function uhcp:titans/spawn/summon
-execute if score %time uhcp_gameTime matches 42000 run function uhcp:titans/spawn/despawn
+execute if score %time uhcp_gameTime matches 5900 in minecraft:overworld run forceload add 0 0
+execute if score %time uhcp_gameTime matches 6000 in minecraft:overworld positioned 0 64 0 run function uhcp:titans/spawn/init
+execute if score %time uhcp_gameTime matches 24000 in minecraft:overworld run function uhcp:titans/spawn/summon
+execute if score %time uhcp_gameTime matches 42000 in minecraft:overworld run function uhcp:titans/spawn/despawn

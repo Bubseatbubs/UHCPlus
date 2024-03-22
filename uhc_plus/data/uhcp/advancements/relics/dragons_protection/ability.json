@@ -1,7 +1,7 @@
 {
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:entity_hurt_player",
+      "trigger": "minecraft:location",
       "conditions": {
         "player": [
           {
@@ -14,7 +14,7 @@
                     "minecraft:damage": {
                       "damage": 0
                     },
-                    "minecraft:custom_data": "{uhcp_radiant:8b}"
+                    "minecraft:custom_data": "{uhcp_radiant:9b}"
                   }
                 }
               }
