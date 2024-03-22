@@ -36,4 +36,10 @@ gamemode survival @a[gamemode=adventure]
 bossbar set minecraft:uhcp_augment players
 execute in uhcp:main run tp @e[tag=UHCP_Lock] 0 -63 0
 
+effect clear @a
+effect give @a minecraft:speed 15 0 false
+effect give @a minecraft:resistance 120 4 false
+attribute @a minecraft:player.block_break_speed modifier add 4329681b-2b41-4dc1-8b3a-4a5ebae3c1ce "" 1.2 add_multiplied_total
+effect give @a minecraft:night_vision infinite 0 true
+
 execute as @a[gamemode=survival] at @s run function uhcp:augments/countdown/end
