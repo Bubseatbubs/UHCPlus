@@ -47,5 +47,4 @@ scoreboard players operation %team uhcp_lavaMaxHeight = %team uhcp_lavaMaxHeight
 scoreboard players operation %players_select_teams uhcp_lavaTime = %players_select_teams uhcp_lavaTime
 scoreboard players operation %friendly_fire uhcp_settings = %friendly_fire_def uhcp_settings
 
-function uhcp:settings/pages/main
-tellraw @s "Settings were reset to their default values."
+execute unless score %game uhcp_initStatus matches 1 run function uhcp:settings/reset/page

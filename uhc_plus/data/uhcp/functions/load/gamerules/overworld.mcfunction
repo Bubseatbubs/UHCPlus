@@ -5,3 +5,4 @@ gamerule doLimitedCrafting true
 gamerule doWeatherCycle false
 gamerule naturalRegeneration false
 gamerule randomTickSpeed 18
+gamerule sendCommandFeedback false

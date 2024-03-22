@@ -113,8 +113,7 @@ execute as @a run scoreboard players operation @s uhcp_initStatus = @s uhcp_team
 function uhcp:start/spreadplayers/secondary
 
 # Remove lobby
-fill 0 300 0 15 311 15 minecraft:air
-kill @e[tag=UHCP_Lobby]
+function uhcp:lobby/remove
 
 # Kill items
 kill @e[type=minecraft:item]
@@ -127,7 +126,11 @@ execute if score %tier uhcp_a_tier matches 35..89 run scoreboard players set %ti
 execute if score %tier uhcp_a_tier matches 90..109 run scoreboard players set %tier uhcp_a_tier 2
 
 # Reset attribute modifiers
-execute as @a run function uhcp:attributes_reset
+execute as @a run function uhcp:reset/attributes
+
+# Reset experience
+experience set @a 0 levels
+experience set @a 0 points
 
 # Assign player IDs
 execute as @a run function uhcp:start/id/assign
@@ -145,6 +148,10 @@ tag @a remove UHCP_SLPick
 tag @a remove UHCP_SLShovel
 tag @a remove UHCP_SLSword
 function uhcp:augments/effects/prismatic/sololeveling/prepare
+
+# Time
+gamerule doDaylightCycle true
+time set 1000
 
 # Augments
 scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 900

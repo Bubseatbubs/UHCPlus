@@ -1,3 +1,6 @@
+# Reset game
+# condition for function uhcp:reset
+
 # Initial logic
 execute unless score %uhcp_init uhcp_initStatus matches 1.. run function uhcp:init
 
