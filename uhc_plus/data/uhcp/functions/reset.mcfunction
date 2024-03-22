@@ -31,6 +31,7 @@ scoreboard players reset %end uhcp_initStatus
 scoreboard players reset %game uhcp_initStatus
 scoreboard players reset %time uhcp_gameTime
 scoreboard players reset %time uhcp_initStatus
+scoreboard players reset %uhcp_lava uhcp_initStatus
 scoreboard players reset @a uhcp_lavaTimeInterval
 scoreboard players reset @a uhcp_lavaMaxHeight
 scoreboard players reset @a uhcp_team
@@ -55,6 +56,7 @@ experience set @a 0 points
 gamemode adventure @a
 
 # Lobby Menu
+scoreboard players set @a uhcp_ready 0
 execute as @a at @s run function uhcp:lobby/menu
 
 # Notify players of reset - Help me, Bubson! :(
