@@ -1,6 +1,5 @@
 # Updates a summoned entity
 
-# Relics
 execute if entity @s[tag=UHCP_Scout] at @s unless entity @a[distance=..3] run function uhcp:augments/effects/silver/structurescout/clear
 execute if entity @s[tag=UHCP_Saber] run return run function uhcp:relics/soulflame_saber/update
 execute if entity @s[tag=UHCP_BigBone] at @s run return run function uhcp:titans/bone_colossus/bone_jump/update
