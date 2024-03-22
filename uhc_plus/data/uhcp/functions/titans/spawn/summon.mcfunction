@@ -1,5 +1,7 @@
 execute as @e[tag=UHCP_TitanSpawn] if score @s uhcp_t_count matches 1 at @s positioned ~ ~1 ~ run function uhcp:titans/arachne/init
 execute as @e[tag=UHCP_TitanSpawn] if score @s uhcp_t_count matches 2 at @s positioned ~ ~1 ~ run function uhcp:titans/gigantus/init
+execute as @e[tag=UHCP_TitanSpawn] if score @s uhcp_t_count matches 3 at @s positioned ~ ~1 ~ run function uhcp:titans/fenrir/init
+execute as @e[tag=UHCP_TitanSpawn] if score @s uhcp_t_count matches 4 at @s positioned ~ ~1 ~ run function uhcp:titans/bone_colossus/init
 execute as @e[tag=UHCP_AltarDisplay,sort=nearest,limit=1] on passengers run kill @s
 execute as @e[tag=UHCP_AltarDisplay,sort=nearest,limit=1] run kill @s
 tellraw @a "Titans have spawned."

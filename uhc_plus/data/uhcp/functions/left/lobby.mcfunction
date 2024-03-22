@@ -12,4 +12,5 @@ execute in minecraft:overworld run tp @s 7 301 7
 # ---------------
 gamemode adventure @s
 scoreboard players reset @s top
+function uhcp:lobby/menu
 execute if score @s uhcp_ready matches 1 run function uhcp:lobby/readyup/cancel
