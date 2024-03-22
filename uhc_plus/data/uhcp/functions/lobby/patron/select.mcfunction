@@ -1,4 +1,4 @@
-function uhcp:settings/patron/menu
+function uhcp:lobby/patron/menu
 
 execute if score @s patron matches 100 run scoreboard players set @s uhcp_a_patron 0
 execute if score @s patron matches 100 run tellraw @a [{"text":"Aphrodite","color":"gold"},{"text":" became ","color":"gray"},{"selector":"@s","color":"blue"},{"text":"'s","color":"blue"},{"text":" Patron God!","color":"gold"}]

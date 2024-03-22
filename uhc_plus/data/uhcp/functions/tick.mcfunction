@@ -69,8 +69,13 @@ execute if score %time uhcp_initStatus matches 1.. run function uhcp:timer/timer
 
 # Patron
 scoreboard players enable @a patron
-execute as @a if score @s patron matches 1..99 run function uhcp:settings/patron/menu
-execute as @a at @s if score @s patron matches 100..109 run function uhcp:settings/patron/select
+execute as @a if score @s patron matches 1..99 run function uhcp:lobby/patron/menu
+execute as @a at @s if score @s patron matches 100..109 run function uhcp:lobby/patron/select
+
+# Team
+scoreboard players enable @a team
+execute as @a if score @s team matches 1..99 run function uhcp:lobby/team/menu
+execute as @a at @s if score @s team matches 100..115 run function uhcp:lobby/team/select
 
 # Update Summoned Entities
 execute as @e[tag=UHCP_Summon] at @s run function uhcp:entity/update

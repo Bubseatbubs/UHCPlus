@@ -1,11 +1,14 @@
 # Add Scoreboard Objectives
+
+# Triggers
 scoreboard objectives add augments trigger
 scoreboard objectives add menu trigger
 scoreboard objectives add patron trigger
 scoreboard objectives add testkit trigger
 scoreboard objectives add top trigger
+scoreboard objectives add team trigger
 
-# Add Settings Triggers
+# Settings Triggers
 scoreboard objectives add settings trigger
 scoreboard objectives add settings_augments trigger
 scoreboard objectives add settings_border trigger
@@ -14,6 +17,7 @@ scoreboard objectives add settings_player trigger
 scoreboard objectives add settings_team trigger
 scoreboard objectives add settings_other trigger
 
+# Scoreboard Objectives
 scoreboard objectives add uhcp_a_choosingAugment dummy
 scoreboard objectives add uhcp_a_count dummy
 scoreboard objectives add uhcp_a_durability dummy
@@ -63,6 +67,7 @@ scoreboard objectives add uhcp_topCD dummy
 scoreboard objectives add uhcp_topCharge dummy
 scoreboard objectives add uhcp_topDelay dummy
 scoreboard objectives add uhcp_wolf_stack dummy
+scoreboard objectives add uhcp_ready dummy
 
 # Add Display Timer Names
 scoreboard players set %display uhcp_gameDisplay 10000
