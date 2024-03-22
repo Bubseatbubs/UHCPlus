@@ -2,14 +2,14 @@
 execute unless score %end uhcp_initStatus matches 1 if score %time uhcp_initStatus matches 1 if entity @a run function uhcp:end
 
 # Initial logic
-execute unless score %uhcp_init uhcp_initStatus matches 1.. run function uhcp:init
+execute unless score %init uhcp_initStatus matches 1.. run function uhcp:init
 
 # Manage players
 execute as @a[tag=!UHCP_Player] run function uhcp:new
 execute as @a[scores={uhcp_leave=1..}] run function uhcp:left
 
 # Display Time
-execute if score %time uhcp_gameTime matches 1.. run function uhcp:timer/update_displaytimer
+execute if score %game uhcp_initStatus matches 1 run function uhcp:timer/update_displaytimer
 
 # Game start
 execute if score countdown tick matches 0 run function uhcp:start

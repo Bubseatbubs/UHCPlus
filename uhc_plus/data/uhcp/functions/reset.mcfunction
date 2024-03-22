@@ -40,6 +40,9 @@ scoreboard players reset @a top
 # Sidebar
 scoreboard objectives setdisplay sidebar
 
+# Tags
+tag @a remove UHCP_Spectator
+
 # Players
 clear @a
 effect clear @a

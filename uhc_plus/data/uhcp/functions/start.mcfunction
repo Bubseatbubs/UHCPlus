@@ -61,19 +61,13 @@ tag @a remove UHCP_Spider
 tag @a remove UHCP_Zombie
 
 # Set difficulty
-execute unless score %difficulty uhcp_settings matches 1.. run function uhcp:settings/other/difficulty/easy
-execute if score %difficulty uhcp_settings matches 1 run function uhcp:settings/other/difficulty/normal
-execute if score %difficulty uhcp_settings matches 2 run function uhcp:settings/other/difficulty/hard
+execute unless score %difficulty uhcp_settings matches 1.. run function uhcp:start/difficulty/easy
+execute if score %difficulty uhcp_settings matches 1 run function uhcp:start/difficulty/normal
+execute if score %difficulty uhcp_settings matches 2 run function uhcp:start/difficulty/hard
 
 # Set world border size
 execute store result storage uhcp:border distance int 1 run scoreboard players get %border_size uhcp_settings
 function uhcp:start/border with storage uhcp:border
-
-# Random day/night start
-execute if score daynite status matches 1 run function uhcp:start/randomtime/determine
-
-# Reset UHC Pack Timer to sync up
-scoreboard players set marker tick 0
 
 # Allow one-player games to not end
 execute store result score %players uhcp_initStatus if entity @a[tag=!UHCP_Spectator]
@@ -102,7 +96,7 @@ execute as @a[tag=!UHCP_Spectator,scores={uhcp_team=0}] run function uhcp:start/
 team join grace_period @a
 
 # Remove lobby
-function uhcp:lobby/remove
+execute in minecraft:overworld run function uhcp:lobby/remove
 
 # Spread players
 scoreboard players operation %spread uhcp_initStatus = %border_size uhcp_settings
@@ -116,7 +110,7 @@ scoreboard players set %const uhcp_initStatus 10
 scoreboard players operation %spread uhcp_initStatus /= %const uhcp_initStatus
 execute store result storage uhcp:border spread_distance int 1 run scoreboard players get %spread uhcp_initStatus
 
-function uhcp:start/spreadplayers/initial with storage uhcp:border
+execute in minecraft:overworld run function uhcp:start/spreadplayers/initial with storage uhcp:border
 
 execute as @a run scoreboard players operation @s uhcp_initStatus = @s uhcp_team
 function uhcp:start/spreadplayers/secondary
@@ -133,10 +127,12 @@ execute if score %tier uhcp_a_tier matches 90..109 run scoreboard players set %t
 
 # Effects
 effect clear @a
-effect give @s minecraft:instant_health 2 5 true
-effect give @s minecraft:resistance infinite 5 true
-effect give @s minecraft:saturation infinite 255 true
+effect give @a minecraft:instant_health 2 5 true
+effect give @a[tag=!UHCP_Spectator] minecraft:resistance infinite 5 true
+effect give @a[tag=!UHCP_Spectator] minecraft:saturation infinite 255 true
 effect give @a minecraft:night_vision infinite 0 true
+effect give @a[tag=!UHCP_Spectator] minecraft:mining_fatigue infinite 255 true
+effect give @a[tag=!UHCP_Spectator] minecraft:weakness infinite 4 true
 
 # Reset attribute modifiers
 execute as @a run function uhcp:reset/attributes
@@ -163,11 +159,18 @@ tag @a remove UHCP_SLSword
 function uhcp:augments/effects/prismatic/sololeveling/prepare
 
 # Time
-gamerule doDaylightCycle true
-time set 1000
+execute in minecraft:overworld run gamerule doDaylightCycle true
+execute in minecraft:overworld run time set 1000
 
 # Augments
 scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 900
 bossbar set uhcp_augment players @a
 scoreboard players set %uhcp_augments uhcp_initStatus 1
-execute as @a run function uhcp:start/augments
+execute as @a[tag=!UHCP_Spectator] run function uhcp:start/augments
+
+# Spectators
+clear @a[tag=UHCP_Spectator]
+tp @a[tag=UHCP_Spectator] 0 150 0
+gamemode spectator @a[tag=UHCP_Spectator]
+tellraw @a[tag=UHCP_Spectator] {"text":"You are spectating the current match.","color":"red"}
+tag @a remove UHCP_Spectator
