@@ -1,5 +1,6 @@
 function uhcp:lobby/team/menu
 
+execute unless score @s team matches 114 if score @s uhcp_ready matches 2 run function uhcp:lobby/spectator/stop_spectate
 execute if score @s team matches 100 run team join aqua
 execute if score @s team matches 100 run tellraw @a [{"selector":"@s"},{"text":" has joined the","color":"gray"},{"text":" Aqua","color":"aqua"},{"text":" Team!","color":"gray"}]
 execute if score @s team matches 101 run team join dark_aqua
