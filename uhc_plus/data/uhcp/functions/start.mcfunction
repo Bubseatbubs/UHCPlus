@@ -126,6 +126,13 @@ execute if score %tier uhcp_a_tier matches 10..34 run scoreboard players set %ti
 execute if score %tier uhcp_a_tier matches 35..89 run scoreboard players set %tier uhcp_a_tier 1
 execute if score %tier uhcp_a_tier matches 90..109 run scoreboard players set %tier uhcp_a_tier 2
 
+# Effects
+effect clear @a
+effect give @s minecraft:instant_health 2 5 true
+effect give @s minecraft:resistance infinite 5 true
+effect give @s minecraft:saturation infinite 255 true
+effect give @a minecraft:night_vision infinite 0 true
+
 # Reset attribute modifiers
 execute as @a run function uhcp:reset/attributes
 

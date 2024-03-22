@@ -1,8 +1,4 @@
 # Ran once the countdown ends
-effect clear @s
-effect give @s minecraft:speed 15 0 false
-effect give @s minecraft:resistance 120 4 false
-attribute @s minecraft:player.block_break_speed modifier add 4329681b-2b41-4dc1-8b3a-4a5ebae3c1ce "" 1.2 add_multiplied_total
 
 # Boots Effect (from UHC Pack)
 execute if biome ~ ~ ~ minecraft:snowy_beach run item replace entity @s[gamemode=survival] armor.feet with minecraft:leather_boots
