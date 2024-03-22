@@ -50,5 +50,5 @@ experience set @a 0 levels
 experience set @a 0 points
 gamemode adventure @a
 
-# Notify players of reset
+# Notify players of reset - Help me, Bubson! :(
 # Title and sound, probably.
