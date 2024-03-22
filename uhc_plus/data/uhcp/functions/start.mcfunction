@@ -100,6 +100,9 @@ execute as @a[tag=!UHCP_Spectator,scores={uhcp_team=0}] run function uhcp:start/
 
 team join grace_period @a
 
+# Remove lobby
+function uhcp:lobby/remove
+
 # Spread players
 scoreboard players operation %spread uhcp_initStatus = %border_size uhcp_settings
 scoreboard players set %const uhcp_initStatus 7
@@ -116,9 +119,6 @@ function uhcp:start/spreadplayers/initial with storage uhcp:border
 
 execute as @a run scoreboard players operation @s uhcp_initStatus = @s uhcp_team
 function uhcp:start/spreadplayers/secondary
-
-# Remove lobby
-function uhcp:lobby/remove
 
 # Kill items
 kill @e[type=minecraft:item]
