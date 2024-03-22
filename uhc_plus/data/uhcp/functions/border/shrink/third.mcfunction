@@ -3,7 +3,7 @@ execute in minecraft:overworld run worldborder set 30 300
 execute in minecraft:the_end run worldborder set 30 300
 execute in minecraft:the_nether run worldborder set 30 300
 
-# Notification
+# Notification - Help me, Bubson! :(
 # Insert message for border continuing to shrink to 30 blocks.
 
 # Set countdown

@@ -7,7 +7,7 @@ execute store result storage uhcp:border time int 1 run scoreboard players get %
 function uhcp:border/shrink/first/shrink with storage uhcp:border
 
 
-# Notification
+# Notification - Help me, Bubson! :(
 # Insert message for when border is shrinking to 100 blocks, maybe sound. (Mention that border has started shrinking.)
 
 # Set countdown
