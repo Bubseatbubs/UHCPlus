@@ -5,6 +5,7 @@ execute if entity @s[tag=UHCP_Saber] run return run function uhcp:relics/soulfla
 execute if entity @s[tag=UHCP_BigBone] at @s run return run function uhcp:titans/bone_colossus/bone_jump/update
 execute if entity @s[tag=UHCP_Voltrune] run return run function uhcp:relics/voltrune/update
 execute if entity @s[tag=UHCP_GravitySmasher] run return run function uhcp:relics/gravity_smasher/update
+execute if entity @s[tag=UHCP_GigantusCircleStrike] at @s run return run function uhcp:titans/gigantus/circle_strike/update
 execute if entity @s[tag=UHCP_BoneBlock] run return run function uhcp:titans/bone_colossus/block/update
 execute if entity @s[tag=UHCP_GoldBlock] run return run function uhcp:relics/the_harvester/update
 execute if entity @s[tag=UHCP_SCloneStand] run return run function uhcp:relics/smooth_getaway/update

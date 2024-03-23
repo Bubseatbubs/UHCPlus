@@ -3,7 +3,6 @@ execute as @a[gamemode=survival,distance=..16] at @s run playsound entity.elder_
 
 execute at @s run function uhcp:titans/gigantus/graves/place_grave_marker
 execute at @s run function uhcp:titans/gigantus/graves/place_grave_marker
-execute at @s run function uhcp:titans/gigantus/graves/place_grave_marker
 
 tag @s add UHCP_GigantusGraves
 schedule function uhcp:titans/gigantus/graves/spread 1t
