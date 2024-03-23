@@ -1,19 +1,16 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:using_item",
-        "conditions": {
-          "player": [],
-          "item": {
-            "items": [
-              "minecraft:goat_horn"
-            ]
-          }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [],
+        "item": {
+          "items": "minecraft:goat_horn"
         }
       }
-    },
-    "rewards": {
-        "function": "uhcp:augments/effects/gold/huntingcall/use"
     }
+  },
+  "rewards": {
+      "function": "uhcp:augments/effects/gold/huntingcall/use"
   }
-  
+}

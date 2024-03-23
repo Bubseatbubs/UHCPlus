@@ -12,6 +12,11 @@
               "type_specific": {
                 "type": "player",
                 "gamemode": "survival"
+              },
+              "slots": {
+                  "container.*": {
+                      "items": "minecraft:arrow"
+                  }
               }
             }
           },
@@ -69,13 +74,6 @@
                   }
                 }
               }
-            ]
-          }
-        ],
-        "items": [
-          {
-            "items": [
-              "minecraft:arrow"
             ]
           }
         ]

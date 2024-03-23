@@ -1,19 +1,18 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:using_item",
-        "conditions": {
-          "player": [],
-          "item": {
-            "predicates": {
-                "minecraft:custom_data": "{uhcp_consumable:1b}"
-            }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [],
+        "item": {
+          "predicates": {
+              "minecraft:custom_data": "{uhcp_consumable:1b}"
           }
         }
       }
-    },
-    "rewards": {
-      "function": "uhcp:entity/items/eat_item/init"
     }
+  },
+  "rewards": {
+    "function": "uhcp:entity/items/eat_item/init"
   }
-  
+}

@@ -10,11 +10,13 @@
             "predicate": {
               "equipment": {
                 "mainhand": {
-                  "items": [
-                    "minecraft:crossbow"
-                  ],
-                  "durability": 465,
-                  "custom_data": "{uhcp_radiant:2b,hasTnt:0b}"
+                  "items": "minecraft:crossbow",
+                  "predicates": {
+                    "minecraft:damage": {
+                      "durability": 465
+                    },
+                    "minecraft:custom_data": "{uhcp_radiant:2b,hasTnt:0b}"
+                  }
                 }
               }
             }

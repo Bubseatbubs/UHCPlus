@@ -1,11 +1,10 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:player_killed_entity"
-      }
-    },
-    "rewards": {
-      "function": "uhcp:augments/effects/killed_entity"
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity"
     }
+  },
+  "rewards": {
+    "function": "uhcp:augments/effects/killed_entity"
   }
-  
+}

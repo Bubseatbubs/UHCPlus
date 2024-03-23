@@ -4,7 +4,9 @@
     "predicate": {
         "equipment": {
             "mainhand": {
-                "custom_data": "{uhcp_radiant:0b}"
+                "predicates": {
+                    "minecraft:custom_data": "{uhcp_radiant:0b}"
+                }
             }
         }
     }

@@ -34,7 +34,9 @@
 											"slots": {
 												"container.*": {
 													"items": "#uhcp:tools",
-                									"custom_data": "{solo_level:1b}"
+													"predicates": {
+														"minecraft:custom_data": "{solo_level:1b}"
+													}
 												}
 											}
 										}

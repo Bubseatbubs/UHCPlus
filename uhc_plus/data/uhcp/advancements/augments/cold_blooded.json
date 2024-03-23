@@ -1,33 +1,32 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:tick",
-        "conditions": {
-          "player": [
-            {
-              "condition": "minecraft:location_check",
-              "offsetX": 0,
-              "offsetY": -1,
-              "offsetZ": 0,
-              "predicate": {
-                "block": {
-                  "blocks": "#minecraft:ice"
-                }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "offsetX": 0,
+            "offsetY": -1,
+            "offsetZ": 0,
+            "predicate": {
+              "block": {
+                "blocks": "#minecraft:ice"
               }
-            },
-            {
-                "condition": "minecraft:entity_scores",
-                "entity": "this",
-                "scores": {
-                  "uhcp_a_selectedAugment": 202
-                }
+            }
+          },
+          {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "uhcp_a_selectedAugment": 202
               }
-          ]
-        }
+            }
+        ]
       }
-    },
-    "rewards": {
-      "function": "uhcp:augments/effects/prismatic/coldblooded/effect"
     }
+  },
+  "rewards": {
+    "function": "uhcp:augments/effects/prismatic/coldblooded/effect"
   }
-  
+}

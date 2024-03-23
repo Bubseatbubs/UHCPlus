@@ -1,42 +1,41 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:player_hurt_entity",
-        "conditions": {
-          "player": [
-            {
-              "condition": "minecraft:any_of",
-              "terms": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "uhcp_a_selectedAugment": 0
-                  }
-                },
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "uhcp_a_selectedAugment": 200
-                  }
-                },
-                {
-                    "condition": "minecraft:entity_scores",
-                    "entity": "this",
-                    "scores": {
-                      "uhcp_a_selectedAugment": 237,
-                      "uhcp_a_tier": 855555
-                    }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "uhcp_a_selectedAugment": 0
                 }
-              ]
-            }
-          ]
-        }
+              },
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "uhcp_a_selectedAugment": 200
+                }
+              },
+              {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "uhcp_a_selectedAugment": 237,
+                    "uhcp_a_tier": 855555
+                  }
+              }
+            ]
+          }
+        ]
       }
-    },
-    "rewards": {
-      "function": "uhcp:augments/effects/bees/hit"
     }
+  },
+  "rewards": {
+    "function": "uhcp:augments/effects/bees/hit"
   }
-  
+}

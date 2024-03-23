@@ -1,19 +1,17 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:consume_item",
-        "conditions": {
-          "player": [],
-          "item": {
-            "items": [
-              "minecraft:golden_apple"
-            ]
-          }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": [],
+        "item": {
+          "items": "minecraft:golden_apple"
         }
       }
-    },
-    "rewards": {
-      "function": "uhcp:augments/effects/golden_apple/ate"
     }
+  },
+  "rewards": {
+    "function": "uhcp:augments/effects/golden_apple/ate"
   }
+}
   

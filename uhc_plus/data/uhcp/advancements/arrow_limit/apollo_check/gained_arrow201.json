@@ -12,6 +12,11 @@
               "type_specific": {
                 "type": "player",
                 "gamemode": "survival"
+              },
+              "slots": {
+                  "container.*": {
+                      "items": "minecraft:arrow"
+                  }
               }
             }
           },
@@ -42,13 +47,6 @@
             "scores": {
               "uhcp_a_selectedAugment": 201
             }
-          }
-        ],
-        "items": [
-          {
-            "items": [
-              "minecraft:arrow"
-            ]
           }
         ]
       }
