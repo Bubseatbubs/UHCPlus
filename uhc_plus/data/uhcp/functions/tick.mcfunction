@@ -77,3 +77,6 @@ execute as @e[tag=UHCP_Titan] at @s run function uhcp:titans/update
 
 # Instant pickup items
 execute as @e[tag=!UHCP_ItemPickup,predicate=uhcp:items/instant_pickup] run function uhcp:entity/items/instant_pickup
+
+# Item use timer
+scoreboard players remove @a[scores={uhcp_itemCount=1..}] uhcp_itemCount 1

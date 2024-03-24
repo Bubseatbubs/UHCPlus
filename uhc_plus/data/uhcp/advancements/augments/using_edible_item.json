@@ -3,10 +3,23 @@
     "requirement": {
       "trigger": "minecraft:using_item",
       "conditions": {
-        "player": [],
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "uhcp_itemCount": {
+                  "min": 1
+                }
+              }
+            }
+          }
+        ],
         "item": {
           "predicates": {
-              "minecraft:custom_data": "{uhcp_consumable:1b}"
+            "minecraft:custom_data": "{uhcp_consumable:1b}"
           }
         }
       }

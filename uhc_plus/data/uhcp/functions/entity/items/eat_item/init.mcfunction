@@ -1,4 +1,5 @@
 advancement revoke @s only uhcp:augments/using_edible_item
+scoreboard players set @s uhcp_itemCount 4
 
 # Relics
 execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_radiant:2b}] at @s run return run function uhcp:relics/voltrune/hit
