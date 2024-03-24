@@ -54,6 +54,7 @@ execute as @a run function uhcp:reset/attributes
 experience set @a 0 levels
 experience set @a 0 points
 gamemode adventure @a
+team leave @a
 
 # Lobby Menu
 scoreboard players set @a uhcp_ready 0

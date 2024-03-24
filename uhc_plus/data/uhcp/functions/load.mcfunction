@@ -154,6 +154,8 @@ team modify red color red
 team modify yellow color yellow
 
 team add grace_period
+team modify grace_period seeFriendlyInvisibles false
+team modify grace_period friendlyFire false
 
 # Default scores
 # Arrow limit

@@ -182,5 +182,6 @@ execute as @a[tag=!UHCP_Spectator] run function uhcp:start/augments
 clear @a[tag=UHCP_Spectator]
 tp @a[tag=UHCP_Spectator] 0 150 0
 gamemode spectator @a[tag=UHCP_Spectator]
+team leave @a[tag=UHCP_Spectator]
 tellraw @a[tag=UHCP_Spectator] {"text":"You are spectating the current match.","color":"red"}
 tag @a remove UHCP_Spectator
