@@ -38,6 +38,7 @@ scoreboard objectives add uhcp_hb_killedZombie dummy
 scoreboard objectives add uhcp_hb_killedCreeper dummy
 scoreboard objectives add uhcp_hb_killedSkeleton dummy
 scoreboard objectives add uhcp_hb_killedSpider dummy
+scoreboard objectives add uhcp_health health {"text":"Health","color":"red"}
 scoreboard objectives add uhcp_id dummy
 scoreboard objectives add uhcp_initStatus dummy
 scoreboard objectives add uhcp_itemCount dummy
@@ -68,6 +69,10 @@ scoreboard objectives add uhcp_topCharge dummy
 scoreboard objectives add uhcp_topDelay dummy
 scoreboard objectives add uhcp_wolf_stack dummy
 scoreboard objectives add uhcp_ready dummy
+
+# Display health objective
+scoreboard objectives setdisplay below_name uhcp_health
+scoreboard objectives setdisplay list uhcp_health
 
 # Add Display Timer Names
 scoreboard players set %display uhcp_gameDisplay 10000

@@ -33,7 +33,6 @@ scoreboard players operation @a uhcp_gameId = %global uhcp_gameId
 
 # Display
 scoreboard objectives setdisplay sidebar uhcp_gameDisplay
-scoreboard objectives setdisplay below_name hearts
 
 # Crafting
 advancement grant @a from minecraft:recipes/root

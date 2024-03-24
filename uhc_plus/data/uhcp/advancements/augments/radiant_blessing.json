@@ -18,7 +18,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "hearts": {
+              "uhcp_health": {
                 "min": 0,
                 "max": 12
               },
