@@ -12,6 +12,8 @@ give @s arrow 12
 
 attribute @s generic.max_health base set 40
 
+effect give @s regeneration 5 10 true
+
 loot give @s loot uhcp:relics/soulflame_saber
 loot give @s loot uhcp:relics/gravity_smasher
 loot give @s loot uhcp:relics/flux_factor

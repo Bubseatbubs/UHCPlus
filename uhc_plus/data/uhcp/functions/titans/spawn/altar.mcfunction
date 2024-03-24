@@ -2,6 +2,7 @@ tellraw @a [{"text":"A titan approaches at ","italic":true},{"text":"[","color":
 execute as @a at @s run playsound entity.lightning_bolt.thunder master @s ~ ~ ~ 1 0.5 1
 
 fill ~-5 ~-1 ~-5 ~5 ~-5 ~5 mud
+fill ~-5 ~-6 ~-5 ~5 ~-15 ~5 mud keep
 fill ~-5 ~ ~-5 ~5 ~5 ~5 air
 fill ~-2 ~ ~-2 ~2 ~7 ~2 barrier
 playsound block.end_portal.spawn master @a[distance=..16] ~ ~ ~ 1 1 0.6

@@ -1,0 +1,5 @@
+summon creeper ~ ~ ~ {Health:12f,ExplosionRadius:2b,active_effects:[{id:"minecraft:fire_resistance",amplifier:1b,duration:200000}],Attributes:[{Name:generic.max_health,Base:12},{Name:generic.movement_speed,Base:0.35}]}
+summon creeper ~ ~ ~ {Health:12f,ExplosionRadius:2b,active_effects:[{id:"minecraft:fire_resistance",amplifier:1b,duration:200000}],Attributes:[{Name:generic.max_health,Base:12},{Name:generic.movement_speed,Base:0.35}]}
+summon creeper ~ ~ ~ {Health:12f,ExplosionRadius:2b,active_effects:[{id:"minecraft:fire_resistance",amplifier:1b,duration:200000}],Attributes:[{Name:generic.max_health,Base:12},{Name:generic.movement_speed,Base:0.35}]}
+summon creeper ~ ~ ~ {Health:12f,ExplosionRadius:2b,active_effects:[{id:"minecraft:fire_resistance",amplifier:1b,duration:200000}],Attributes:[{Name:generic.max_health,Base:12},{Name:generic.movement_speed,Base:0.35}]}
+execute as @a[gamemode=survival,distance=..16] at @s run playsound entity.elder_guardian.curse master @s ~ ~ ~ 1 1 1

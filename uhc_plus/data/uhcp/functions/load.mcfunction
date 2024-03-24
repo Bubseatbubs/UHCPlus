@@ -95,15 +95,33 @@ bossbar set minecraft:uhcp_augment color white
 bossbar set minecraft:uhcp_augment style notched_6
 bossbar set minecraft:uhcp_augment max 900
 
-bossbar add uhcp_titanhealth "Titan Health"
-bossbar set minecraft:uhcp_titanhealth color red
-bossbar set minecraft:uhcp_titanhealth style notched_6
-bossbar set minecraft:uhcp_titanhealth max 1
-
-bossbar add uhcp_arachnehealth "Titan Health"
+bossbar add uhcp_arachnehealth ""
 bossbar set minecraft:uhcp_arachnehealth color red
-bossbar set minecraft:uhcp_arachnehealth style notched_6
-bossbar set minecraft:uhcp_arachnehealth max 1
+bossbar set minecraft:uhcp_arachnehealth style notched_10
+
+bossbar add uhcp_gigantushealth ""
+bossbar set minecraft:uhcp_gigantushealth color red
+bossbar set minecraft:uhcp_gigantushealth style notched_10
+
+bossbar add uhcp_fenrirhealth ""
+bossbar set minecraft:uhcp_fenrirhealth color red
+bossbar set minecraft:uhcp_fenrirhealth style notched_10
+
+bossbar add uhcp_bonecolossushealth ""
+bossbar set minecraft:uhcp_bonecolossushealth color red
+bossbar set minecraft:uhcp_bonecolossushealth style notched_10
+
+bossbar add uhcp_gigacreeperhealth ""
+bossbar set minecraft:uhcp_gigacreeperhealth color red
+bossbar set minecraft:uhcp_gigacreeperhealth style notched_10
+
+bossbar add uhcp_tritonhealth ""
+bossbar set minecraft:uhcp_tritonhealth color red
+bossbar set minecraft:uhcp_tritonhealth style notched_10
+
+bossbar add uhcp_seraphimhealth ""
+bossbar set minecraft:uhcp_seraphimhealth color red
+bossbar set minecraft:uhcp_seraphimhealth style notched_10
 
 # Add teams
 team add aqua {"text":"Aqua","color":"aqua"}
