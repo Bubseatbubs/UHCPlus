@@ -11,9 +11,6 @@ execute if score %time uhcp_initStatus matches 1 run function uhcp:time
 # Display time
 execute if score %game uhcp_initStatus matches 1 run function uhcp:timer/update_displaytimer
 
-# Game start
-#execute if score countdown tick matches 0 run function uhcp:start
-
 # Lava
 execute if score %uhcp_lavaStart uhcp_initStatus matches 1.. run function uhcp:lava/run
 
