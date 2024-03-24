@@ -27,7 +27,7 @@
                     "saturation_modifier": 0,
                     "eat_seconds": 2147483647
                   },
-                  "minecraft:max_stack_size": 1
+                  "minecraft:max_stack_size": 64
                 }
               },
               {

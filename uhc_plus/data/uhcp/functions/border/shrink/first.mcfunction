@@ -7,8 +7,9 @@ execute store result storage uhcp:border time int 1 run scoreboard players get %
 function uhcp:border/shrink/first/shrink with storage uhcp:border
 
 
-# Notification - Help me, Bubson! :(
-# Insert message for when border is shrinking to 100 blocks, maybe sound. (Mention that border has started shrinking.)
+# Notification
+tellraw @a [{"text":"The Border","color":"#00E6DE","bold":true},{"text":" has started to shrink to a size of","color":"#2E73B0","bold":false},{"text":" 100","color":"#9EE8FF","bold":true},{"text":" blocks.","color":"#2E73B0","bold":false}]
+execute as @a at @s run playsound block.note_block.bell master @s ~ ~ ~ 1 1 1
 
 # Set countdown
 scoreboard players operation %border_countdown uhcp_gameTime = %border_shrink_speed uhcp_settings

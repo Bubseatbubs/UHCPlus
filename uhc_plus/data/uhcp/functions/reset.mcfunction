@@ -1,5 +1,8 @@
 # Kill entities (kill items last)
 
+kill @e[type=!player,type=!#uhcp:inanimate_mobs]
+kill @e[tag=UHCP_Summon]
+kill @e[tag=UHCP_Titan]
 kill @e[type=item]
 
 # Within dimensions
@@ -20,7 +23,7 @@ experience set @a 0 points
 data remove storage uhcp:compass Track
 
 # Scoreboards
-function uhcp:settings/reset/reset
+# function uhcp:settings/reset/reset
 scoreboard players reset @a uhcp_a_choosingAugment
 scoreboard players reset @a uhcp_a_selectedAugment
 scoreboard players reset %global uhcp_gameId
@@ -60,5 +63,10 @@ team leave @a
 scoreboard players set @a uhcp_ready 0
 execute as @a at @s run function uhcp:lobby/menu
 
-# Notify players of reset - Help me, Bubson! :(
-# Title and sound, probably.
+# Notify players of reset
+title @a subtitle {"text":"RESET","color":"gray"}
+title @a title [{"text":"[","color":"white"},{"text":"U","color":"#1921FF"},{"text":"H","color":"#3D8BFF"},{"text":"C","color":"#59B7FF"},{"text":" +","color":"#85EFFF"},{"text":"]","color":"white"}]
+execute as @a at @s run playsound entity.enderman.teleport master @s ~ ~ ~ 1 1 1
+execute as @a at @s run playsound entity.allay.death master @s ~ ~ ~ 1 0.5 1
+execute as @a at @s run particle portal ~ ~ ~ 1 1 1 0.1 100 normal @s
+execute as @a at @s run particle flash ~ ~ ~ 1 1 1 0.1 100 normal @s

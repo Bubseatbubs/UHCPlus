@@ -1,4 +1,5 @@
-tellraw @a [{"text":"A titan approaches at ","italic":true},{"text":"[","color":"dark_gray","italic":false},{"score":{"name":"@s","objective":"uhcp_motion_x1"},"color":"#9EE8FF","italic":false},{"text":", ","italic":false},{"score":{"name":"@s","objective":"uhcp_motion_y1"},"color":"#9EE8FF","italic":false},{"text":", ","italic":false},{"score":{"name":"@s","objective":"uhcp_motion_z1"},"color":"#9EE8FF","italic":false},{"text":"]","color":"dark_gray","italic":false},{"text":"...","color":"white","italic":true}]
+tellraw @a [{"text":"A Titan","color":"#1C00A8","bold":true},{"text":" will rise at ","color":"#5D00FF","bold":false},{"text":"[","color":"dark_gray","bold":false},{"score":{"name":"@s","objective":"uhcp_motion_x1"},"color":"#9EE8FF","bold":false},{"text":", ","color":"dark_gray","bold":false},{"score":{"name":"@s","objective":"uhcp_motion_y1"},"color":"#9EE8FF","bold":false},{"text":", ","color":"dark_gray","bold":false},{"score":{"name":"@s","objective":"uhcp_motion_z1"},"color":"#9EE8FF","bold":false},{"text":"]","color":"dark_gray","bold":false},{"text":"...","color":"#5D00FF","bold":false}]
+
 execute as @a at @s run playsound entity.lightning_bolt.thunder master @s ~ ~ ~ 1 0.5 1
 
 fill ~-5 ~-1 ~-5 ~5 ~-5 ~5 mud
