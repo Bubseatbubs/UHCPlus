@@ -144,14 +144,14 @@ effect give @a[tag=!UHCP_Spectator] minecraft:weakness infinite 4 true
 execute as @a run function uhcp:reset/attributes
 
 # Grant players +20 health
-execute as @a run attribute @s minecraft:generic.max_health modifier add 5ae70886-031a-42b7-aa86-783c9536c746 "" 20 add_value
+execute as @a[tag=!UHCP_Spectator] run attribute @s minecraft:generic.max_health modifier add 5ae70886-031a-42b7-aa86-783c9536c746 "" 20 add_value
 
 # Reset experience
 experience set @a 0 levels
 experience set @a 0 points
 
 # Assign player IDs
-execute as @a run function uhcp:start/id/assign
+execute as @a[tag=!UHCP_Spectator] run function uhcp:start/id/assign
 
 # Solo leveling
 tag @a remove UHCP_SLUpg
