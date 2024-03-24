@@ -1,6 +1,3 @@
-# End game
-execute unless score %end uhcp_initStatus matches 1 if score %time uhcp_initStatus matches 1 if entity @a run function uhcp:end
-
 # Initial logic
 execute unless score %init uhcp_initStatus matches 1.. run function uhcp:init
 
@@ -8,20 +5,16 @@ execute unless score %init uhcp_initStatus matches 1.. run function uhcp:init
 execute as @a[tag=!UHCP_Player] run function uhcp:new
 execute as @a[scores={uhcp_leave=1..}] run function uhcp:left
 
-# Timer
-execute if score %time uhcp_initStatus matches 1 run scoreboard players add %time uhcp_gameTime 1
+# After time starts moving
+execute if score %time uhcp_initStatus matches 1 run function uhcp:time
 
-# Display Time
+# Display time
 execute if score %game uhcp_initStatus matches 1 run function uhcp:timer/update_displaytimer
 
 # Game start
-execute if score countdown tick matches 0 run function uhcp:start
-
-# World border
-execute unless score %border_countdown uhcp_gameTime matches ..-1 if score %time uhcp_initStatus matches 1.. run function uhcp:border
+#execute if score countdown tick matches 0 run function uhcp:start
 
 # Lava
-execute unless score %lava_countdown uhcp_settings matches ..-1 if score %time uhcp_initStatus matches 1.. run function uhcp:lava/countdown
 execute if score %uhcp_lavaStart uhcp_initStatus matches 1.. run function uhcp:lava/run
 
 # Player compass
@@ -33,12 +26,7 @@ execute unless score %uhcp_compassTime uhcp_itemCount matches ..0 run scoreboard
 execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uhcp:settings/change
 function uhcp:settings/tick
 
-# Announce Augments
-scoreboard players enable @a augments
-execute as @a if score @s augments matches 1.. run function uhcp:augments/announce
-
 # Top Command
-execute if score %time uhcp_initStatus matches 1.. run scoreboard players enable @a top
 execute if entity @a[scores={top=1..}] run function uhcp:top/validate
 execute as @a if score @s uhcp_topDelay matches 1.. at @s run function uhcp:top/finish
 scoreboard players remove @a[scores={uhcp_topCD=1..}] uhcp_topCD 1
@@ -48,8 +36,7 @@ execute as @a[tag=uhcp_isTeleporting] at @s run execute unless entity @e[type=mi
 execute as @a[tag=uhcp_isTeleporting] at @s run function uhcp:top/updatecharge
 execute if entity @a[scores={top=1..}] run function uhcp:top/validate
 
-# Testkit Command
-scoreboard players enable @a testkit
+# Testkit
 execute as @a if score @s testkit matches 1.. run function uhcp:testkit
 
 # Death
@@ -63,17 +50,16 @@ execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prisma
 execute as @a[scores={uhcp_lavaTimeInterval=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
 execute as @a[scores={uhcp_lavaMaxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
 
-# Augment Countdown/Functions
+# Augment Countdown
 execute if score %uhcp_augmentCountdown uhcp_gameTime matches 0.. run function uhcp:augments/countdown
-execute if score %time uhcp_initStatus matches 1.. run function uhcp:timer/timer
 
 # Patron
-scoreboard players enable @a patron
+execute unless score %game uhcp_initStatus matches 1 run scoreboard players enable @a patron
 execute as @a if score @s patron matches 1..99 run function uhcp:lobby/patron/menu
 execute as @a at @s if score @s patron matches 100..109 run function uhcp:lobby/patron/select
 
 # Team
-scoreboard players enable @a team
+execute unless score %game uhcp_initStatus matches 1 run scoreboard players enable @a team
 execute as @a if score @s team matches 1..99 run function uhcp:lobby/team/menu
 execute as @a at @s if score @s team matches 100..115 run function uhcp:lobby/team/select
 
@@ -85,9 +71,6 @@ execute as @e[type=minecraft:arrow,tag=!UHCP_BoomburstInit,predicate=uhcp:relics
 execute as @e[type=minecraft:arrow,predicate=uhcp:relics/boomburst/arrow_in_ground] at @s run function uhcp:relics/boomburst/explode_inground
 execute as @e[predicate=uhcp:relics/hit_by_boomburst] at @s if entity @e[tag=UHCP_BoomburstDisplay,distance=..4] run function uhcp:relics/boomburst/explode_onhit
 execute as @e[predicate=uhcp:relics/smooth_getaway/hitbox_hurt] at @s run function uhcp:relics/smooth_getaway/hurt
-
-# Close dimensions
-execute if score %time uhcp_initStatus matches 1.. run function uhcp:dimensions/run
 
 # Disable Ender Pearl Damage
 execute as @e[type=minecraft:ender_pearl] at @s run function uhcp:entity/ender_pearl

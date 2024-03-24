@@ -13,6 +13,7 @@ tag @a[scores={uhcp_ready=2}] add UHCP_Spectator
 scoreboard players set %game uhcp_initStatus 1
 scoreboard players set %time uhcp_initStatus 0
 scoreboard players set %end uhcp_initStatus 0
+scoreboard players set %day uhcp_initStatus 0
 scoreboard players operation %border_countdown uhcp_gameTime = %border_countdown uhcp_settings
 scoreboard players set %border_stage uhcp_itemCount 0
 execute if score %dimension uhcp_settings matches ..-1 run scoreboard players set %dimension uhcp_settings 0
