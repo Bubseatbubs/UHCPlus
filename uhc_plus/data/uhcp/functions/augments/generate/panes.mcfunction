@@ -3,6 +3,7 @@
 #
 # @within  uhcp:augments/init
 # @within  uhcp:augments/return
+# @within  uhcp:augments/return/swap
 # @within  uhcp:augments/threw_item
 
 item replace entity @s hotbar.0 with black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_glass:1b},minecraft:custom_name='{"text":"Select an Augment!","color":"gold","bold":false,"italic":false}',minecraft:hide_tooltip={}] 1
