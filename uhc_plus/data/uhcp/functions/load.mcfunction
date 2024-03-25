@@ -75,7 +75,7 @@ scoreboard objectives setdisplay below_name uhcp_health
 scoreboard objectives setdisplay list uhcp_health
 
 # Add Display Timer Names
-scoreboard players set %display uhcp_gameDisplay 10000
+scoreboard players set %display uhcp_gameDisplay 59999968
 scoreboard players display name %display uhcp_gameDisplay {"text":"Time:","color":"gold"}
 scoreboard objectives modify uhcp_gameDisplay displayname {"text":"Game Stats","color":"gold"}
 
