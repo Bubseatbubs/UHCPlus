@@ -36,6 +36,7 @@ scoreboard objectives setdisplay sidebar uhcp_gameDisplay
 
 # Crafting
 advancement grant @a from minecraft:recipes/root
+advancement grant @a only uhcp:base_recipes
 # Revoke all special augment recipes here.
 
 # Reset scoreboards
