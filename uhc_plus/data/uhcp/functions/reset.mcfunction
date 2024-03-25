@@ -1,5 +1,4 @@
 # Kill entities (kill items last)
-
 kill @e[type=!player,type=!#uhcp:inanimate_mobs]
 kill @e[tag=UHCP_Summon]
 kill @e[tag=UHCP_Titan]
@@ -22,8 +21,7 @@ experience set @a 0 points
 # Reset storages
 data remove storage uhcp:compass Track
 
-# Scoreboards
-# function uhcp:settings/reset/reset
+# Reset scores
 scoreboard players reset @a uhcp_a_choosingAugment
 scoreboard players reset @a uhcp_a_selectedAugment
 scoreboard players reset %global uhcp_gameId
@@ -35,14 +33,37 @@ scoreboard players reset %day uhcp_initStatus
 scoreboard players reset %game uhcp_initStatus
 scoreboard players reset %time uhcp_gameTime
 scoreboard players reset %time uhcp_initStatus
-scoreboard players reset %uhcp_lava uhcp_initStatus
+scoreboard players reset %uhcp_lavaStart uhcp_initStatus
 scoreboard players reset @a uhcp_lavaTimeInterval
 scoreboard players reset @a uhcp_lavaMaxHeight
 scoreboard players reset @a uhcp_team
 scoreboard players reset @a uhcp_topCD
 scoreboard players reset @a top
 
-# Sidebar
+# Load border size
+scoreboard players operation %border_size uhcp_settings = %border_size_retain uhcp_settings
+
+# Load border countdown
+scoreboard players operation %border_countdown uhcp_settings = %border_countdown_retain uhcp_settings
+
+# Load border shrink speed
+scoreboard players operation %border_shrink_speed uhcp_settings = %border_shrink_speed_retain uhcp_settings
+
+# Load dimension countdown
+scoreboard players operation %dimension uhcp_settings = %dimension_retain uhcp_settings
+
+# Load PvP Grace Period countdown
+scoreboard players operation %pvp uhcp_settings = %pvp_retain uhcp_settings
+
+# Load lava scoreboard values
+execute unless score uhcp_lavaInit uhcp_initStatus matches 1 run function uhcp:reset/lava_scores
+
+# Load team values
+scoreboard players operation %team_size uhcp_settings = %team_size_retain uhcp_settings
+scoreboard players operation %team uhcp_settings = %team_retain uhcp_settings
+scoreboard players operation %players_select_teams uhcp_settings = %players_select_teams_retain uhcp_settings
+
+# Sidebar display
 scoreboard objectives setdisplay sidebar
 
 # Tags

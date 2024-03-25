@@ -1,14 +1,13 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:impossible"
-      }
-    },
-    "rewards": {
-      "recipes": [
-        "uhcp:all-seeing_eye",
-        "uhcp:player_compass"
-      ]
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
     }
+  },
+  "rewards": {
+    "recipes": [
+      "uhcp:all-seeing_eye",
+      "uhcp:player_compass"
+    ]
   }
-  
+}

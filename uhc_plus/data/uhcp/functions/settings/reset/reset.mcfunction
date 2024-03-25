@@ -9,7 +9,7 @@ scoreboard players add %arrow_limit149 uhcp_arrowCount 8
 scoreboard players add %arrow_limit5 uhcp_arrowCount 20
 scoreboard players add %arrow_limit201 uhcp_arrowCount 52
 
-# Set default border countdown
+# Set default border size
 scoreboard players operation %border_size uhcp_settings = %border_size_def uhcp_settings
 
 # Set default border countdown
@@ -42,9 +42,9 @@ scoreboard players operation %uhcp_lava uhcp_lavaMaxHeight = %uhcp_lavaDef uhcp_
 scoreboard players operation %uhcp_lava uhcp_lavaTime = %uhcp_lavaDef uhcp_lavaTime
 
 # Set default team values
-scoreboard players operation %team_size uhcp_settings = %team_size uhcp_settings
-scoreboard players operation %team uhcp_lavaMaxHeight = %team uhcp_lavaMaxHeight
-scoreboard players operation %players_select_teams uhcp_lavaTime = %players_select_teams uhcp_lavaTime
+scoreboard players operation %team_size uhcp_settings = %team_size_def uhcp_settings
+scoreboard players operation %team uhcp_settings = %team_def uhcp_settings
+scoreboard players operation %players_select_teams uhcp_settings = %players_select_teams_def uhcp_settings
 scoreboard players operation %friendly_fire uhcp_settings = %friendly_fire_def uhcp_settings
 
-execute unless score %game uhcp_initStatus matches 1 run function uhcp:settings/reset/page
+function uhcp:settings/reset/page

@@ -31,6 +31,31 @@ execute if score %random uhcp_gameId matches 2 store result score %global uhcp_g
 execute if score %random uhcp_gameId matches 3 store result score %global uhcp_gameId run random value 1073741824..2147483647
 scoreboard players operation @a uhcp_gameId = %global uhcp_gameId
 
+# Store border size
+scoreboard players operation %border_size_retain uhcp_settings = %border_size uhcp_settings
+
+# Store border countdown
+scoreboard players operation %border_countdown_retain uhcp_settings = %border_countdown uhcp_settings
+
+# Store border shrink speed
+scoreboard players operation %border_shrink_speed_retain uhcp_settings = %border_shrink_speed uhcp_settings
+
+# Store dimension countdown
+scoreboard players operation %dimension_retain uhcp_settings = %dimension uhcp_settings
+
+# Store PvP Grace Period countdown
+scoreboard players operation %pvp_retain uhcp_settings = %pvp uhcp_settings
+
+# Store lava scoreboard values
+scoreboard players operation %lava_countdown_retain uhcp_settings = %lava_countdown uhcp_settings
+scoreboard players operation %uhcp_lava_retain uhcp_lavaMaxHeight = %uhcp_lava uhcp_lavaMaxHeight
+scoreboard players operation %uhcp_lava_retain uhcp_lavaTime = %uhcp_lava uhcp_lavaTime
+
+# Store team values
+scoreboard players operation %team_size_retain uhcp_settings = %team_size uhcp_settings
+scoreboard players operation %team_retain uhcp_settings = %team uhcp_settings
+scoreboard players operation %players_select_teams_retain uhcp_settings = %players_select_teams uhcp_settings
+
 # Display
 scoreboard objectives setdisplay sidebar uhcp_gameDisplay
 
