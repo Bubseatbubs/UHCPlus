@@ -18,5 +18,6 @@ item replace entity @s weapon.offhand with minecraft:shield
 item replace entity @s armor.head with minecraft:iron_helmet
 item replace entity @s armor.chest with minecraft:iron_chestplate
 item replace entity @s armor.legs with minecraft:iron_leggings
-item replace entity @s armor.feet with minecraft:iron_boots
+execute unless biome ~ ~-1 ~ #uhcp:snowy run item replace entity @s armor.feet with minecraft:iron_boots
+execute if biome ~ ~-1 ~ #uhcp:snowy run give @s minecraft:iron_boots 1
 tp @s 0 150 0
