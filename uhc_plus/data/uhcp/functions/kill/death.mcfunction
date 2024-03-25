@@ -21,6 +21,3 @@ effect clear @s
 
 tag @e remove UHCP_CurrentDeathMarker
 tag @s remove UHCP_CurrentDeadPlayer
-
-gamerule doImmediateRespawn true
-
