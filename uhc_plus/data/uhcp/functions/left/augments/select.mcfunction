@@ -19,5 +19,5 @@ effect give @s minecraft:night_vision infinite 0 true
 function uhcp:augments/autoselect
 execute at @s run function uhcp:augments/effects/init
 
-# Boots Effect (from UHC Pack)
-execute at @s run function uhcp:left/augments/boots
+# Give player Snow Boots if in Snowy Biome
+execute if biome ~ ~-1 ~ #uhcp:snowy run loot replace entity @s armor.feet loot uhcp:snow_boots
