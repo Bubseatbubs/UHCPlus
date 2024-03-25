@@ -208,7 +208,7 @@ scoreboard players set %uhcp_lavaDef uhcp_lavaMaxHeight 50
 scoreboard players set %uhcp_lavaDef uhcp_lavaTime 8400
 
 # Set default scores when unset
-execute unless score %game uhcp_initStatus matches 1.. run function uhcp:load/scores
+execute unless score %game uhcp_initStatus matches 1 run function uhcp:load/scores
 
 # Dimension-specific commands
 execute in minecraft:the_end run function uhcp:load/dimensions/minecraft/the_end

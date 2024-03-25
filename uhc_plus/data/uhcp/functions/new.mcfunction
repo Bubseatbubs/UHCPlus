@@ -1,5 +1,5 @@
 # Manage new player
-execute unless score %game uhcp_initStatus matches 1.. run function uhcp:left/lobby
+execute unless score %game uhcp_initStatus matches 1 run function uhcp:left/lobby
 execute if score %game uhcp_initStatus matches 1 run function uhcp:left/spectator
 
 # New Player Message
