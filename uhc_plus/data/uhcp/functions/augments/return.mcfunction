@@ -4,7 +4,6 @@
 # @within uhcp:augments/validate
 
 tag @s add UHCP_DisableChoose
-setblock 0 0 0 minecraft:barrel
 execute at @s run playsound block.note_block.snare master @s ~ ~ ~ 1 1 1
 
 # Find slot item moved from
