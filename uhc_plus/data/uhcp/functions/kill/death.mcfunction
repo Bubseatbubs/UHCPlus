@@ -19,6 +19,10 @@ title @s title {"text":"YOU DIED","color":"dark_red","bold":true}
 gamemode spectator @s
 effect clear @s
 effect give @s minecraft:night_vision infinite 0 true
+scoreboard players reset @s patron
+scoreboard players reset @s team
+scoreboard players reset @s testkit
+scoreboard players reset @s top
 
 tag @e remove UHCP_CurrentDeathMarker
 tag @s remove UHCP_CurrentDeadPlayer
