@@ -1,4 +1,4 @@
-# Overworld game rules (runs last to retain vanilla compatibility for randomTickSpeed)
+# Overworld game rules (runs last to maintain vanilla server compatibility)
 gamerule announceAdvancements false
 gamerule doFireTick false
 gamerule doInsomnia false
