@@ -1,4 +1,5 @@
 # Nether game rules
+gamerule announceAdvancements false
 gamerule doFireTick false
 gamerule doLimitedCrafting true
 gamerule naturalRegeneration false
