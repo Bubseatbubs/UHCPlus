@@ -1,7 +1,0 @@
-{
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-        "nbt": "{inGround:1b,item:{components:{\"minecraft:potion_contents\":{custom_effects:[{id:\"minecraft:bad_omen\",amplifier:100b}]}}}}"
-    }
-}
