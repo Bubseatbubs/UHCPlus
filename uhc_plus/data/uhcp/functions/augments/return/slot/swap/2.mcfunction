@@ -1,4 +1,4 @@
-#>  uhcp:augments/return/slot/2
+#>  uhcp:augments/return/slot/swap/2
 #   Returns the player's items if they made a strange selection
 #
 # @within uhcp:augments/return/swap

@@ -11,7 +11,7 @@ execute as @a[tag=!UHCP_CTracked,scores={uhcp_initStatus=1..},predicate=uhcp:com
 execute as @a[tag=!UHCP_CTracked,scores={uhcp_initStatus=1..},predicate=uhcp:compass/player_compass/offhand] at @s run function uhcp:compass/offhand
 
 # Reset timer
-scoreboard players set %uhcp_compassTime uhcp_itemCount 100
+scoreboard players set %compass_time uhcp_itemCount 100
 
 # Remove tag
 tag @a remove UHCP_CTracked

@@ -8,3 +8,6 @@ execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @
 # Alive players
 effect give @a[gamemode=survival] minecraft:resistance infinite 5 true
 effect give @a[gamemode=survival] minecraft:saturation infinite 255 true
+
+# Freeze time
+scoreboard players set %time_freeze uhcp_initStatus 1

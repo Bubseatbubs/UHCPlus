@@ -15,5 +15,5 @@ item replace entity @s armor.legs with minecraft:iron_leggings
 item replace entity @s armor.feet with minecraft:iron_boots
 
 # Teleport player to the Nether
-execute store success score %uhcp_nBSpread uhcp_initStatus at @s in minecraft:the_nether run spreadplayers ~ ~ 0 1 under 127 false @s
-execute if score %uhcp_nBSpread uhcp_initStatus matches 0 at @s in minecraft:the_nether run function uhcp:augments/effects/prismatic/netherborn/fail
+execute store success score %nether_spread uhcp_initStatus at @s in minecraft:the_nether run spreadplayers ~ ~ 0 1 under 127 false @s
+execute if score %nether_spread uhcp_initStatus matches 0 at @s in minecraft:the_nether run function uhcp:augments/effects/prismatic/netherborn/fail

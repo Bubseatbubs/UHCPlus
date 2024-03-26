@@ -32,7 +32,7 @@ execute if score @s uhcp_a_validSelection matches 0 unless items entity @s playe
 
 # Based on if selection was valid, continue with optionselected, else return the item
 execute as @s[scores={uhcp_a_validSelection=0},tag=!UHCP_DisableChoose] at @s run function uhcp:augments/optionselected
-execute as @s[scores={uhcp_a_validSelection=1},tag=!UHCP_DisableChoose] in uhcp:main run function uhcp:augments/return
+execute as @s[scores={uhcp_a_validSelection=1},tag=!UHCP_DisableChoose] run function uhcp:augments/return
 execute as @s[scores={uhcp_a_validSelection=2..6},tag=!UHCP_DisableChoose] run function uhcp:augments/return/swap
 tag @s remove UHCP_DisableChoose
 

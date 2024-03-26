@@ -22,6 +22,8 @@ experience set @a 0 points
 data remove storage uhcp:compass Track
 
 # Reset scores
+scoreboard players reset @a testkit
+scoreboard players reset @a top
 scoreboard players reset @a uhcp_a_choosingAugment
 scoreboard players reset @a uhcp_a_selectedAugment
 scoreboard players reset %global uhcp_gameId
@@ -33,12 +35,12 @@ scoreboard players reset %day uhcp_initStatus
 scoreboard players reset %game uhcp_initStatus
 scoreboard players reset %time uhcp_gameTime
 scoreboard players reset %time uhcp_initStatus
-scoreboard players reset %uhcp_lavaStart uhcp_initStatus
+scoreboard players reset %time_freeze uhcp_initStatus
+scoreboard players reset %lava_start uhcp_initStatus
 scoreboard players reset @a uhcp_lavaTimeInterval
 scoreboard players reset @a uhcp_lavaMaxHeight
 scoreboard players reset @a uhcp_team
 scoreboard players reset @a uhcp_topCD
-scoreboard players reset @a top
 
 # Load border size
 scoreboard players operation %border_size uhcp_settings = %border_size_retain uhcp_settings
@@ -56,7 +58,8 @@ scoreboard players operation %dimension uhcp_settings = %dimension_retain uhcp_s
 scoreboard players operation %pvp uhcp_settings = %pvp_retain uhcp_settings
 
 # Load lava scoreboard values
-execute unless score uhcp_lavaInit uhcp_initStatus matches 1 run function uhcp:reset/lava_scores
+execute unless score %lava_init uhcp_initStatus matches 1 run function uhcp:reset/lava_scores
+scoreboard players operation %lava_countdown uhcp_settings = %lava_countdown_retain uhcp_settings
 
 # Load team values
 scoreboard players operation %team_size uhcp_settings = %team_size_retain uhcp_settings
