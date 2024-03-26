@@ -16,22 +16,22 @@ scoreboard players set %time uhcp_initStatus 0
 scoreboard players set %time_freeze uhcp_initStatus 0
 scoreboard players set %end uhcp_initStatus 0
 scoreboard players set %day uhcp_initStatus 0
-scoreboard players operation %border_countdown uhcp_gameTime = %border_countdown uhcp_settings
+scoreboard players operation %border_countdown uhcp_game_time = %border_countdown uhcp_settings
 scoreboard players set %border_stage uhcp_itemCount 0
 execute if score %dimension uhcp_settings matches ..-1 run scoreboard players set %dimension uhcp_settings 0
-execute as @a unless score @s uhcp_a_patron = @s uhcp_a_patron run scoreboard players set @s uhcp_a_patron 8
-scoreboard players set %AUG_7 uhcp_gameTime 2400
-scoreboard players set %AUG_15 uhcp_gameTime 2400
-scoreboard players set %AUG_27 uhcp_gameTime 12000
-scoreboard players set %AUG_107 uhcp_gameTime 6000
-scoreboard players set %AUG_203 uhcp_gameTime 1200
-scoreboard players set %AUG_238 uhcp_gameTime 12000
-execute store result score %random uhcp_gameId run random value 0..3
-execute if score %random uhcp_gameId matches 0 store result score %global uhcp_gameId run random value -2147483648..-1073741825
-execute if score %random uhcp_gameId matches 1 store result score %global uhcp_gameId run random value -1073741824..-1
-execute if score %random uhcp_gameId matches 2 store result score %global uhcp_gameId run random value 0..1073741823
-execute if score %random uhcp_gameId matches 3 store result score %global uhcp_gameId run random value 1073741824..2147483647
-scoreboard players operation @a uhcp_gameId = %global uhcp_gameId
+execute as @a unless score @s uhcp_aug_patron = @s uhcp_aug_patron run scoreboard players set @s uhcp_aug_patron 8
+scoreboard players set %AUG_7 uhcp_game_time 2400
+scoreboard players set %AUG_15 uhcp_game_time 2400
+scoreboard players set %AUG_27 uhcp_game_time 12000
+scoreboard players set %AUG_107 uhcp_game_time 6000
+scoreboard players set %AUG_203 uhcp_game_time 1200
+scoreboard players set %AUG_238 uhcp_game_time 12000
+execute store result score %random uhcp_game_ID run random value 0..3
+execute if score %random uhcp_game_ID matches 0 store result score %global uhcp_game_ID run random value -2147483648..-1073741825
+execute if score %random uhcp_game_ID matches 1 store result score %global uhcp_game_ID run random value -1073741824..-1
+execute if score %random uhcp_game_ID matches 2 store result score %global uhcp_game_ID run random value 0..1073741823
+execute if score %random uhcp_game_ID matches 3 store result score %global uhcp_game_ID run random value 1073741824..2147483647
+scoreboard players operation @a uhcp_game_ID = %global uhcp_game_ID
 
 # Store border size
 scoreboard players operation %border_size_retain uhcp_settings = %border_size uhcp_settings
@@ -50,8 +50,8 @@ scoreboard players operation %pvp_retain uhcp_settings = %pvp uhcp_settings
 
 # Store lava scoreboard values
 scoreboard players operation %lava_countdown_retain uhcp_settings = %lava_countdown uhcp_settings
-scoreboard players operation %lava_retain uhcp_lavaMaxHeight = %lava uhcp_lavaMaxHeight
-scoreboard players operation %lava_retain uhcp_lavaTime = %lava uhcp_lavaTime
+scoreboard players operation %lava_retain uhcp_lava_maxHeight = %lava uhcp_lava_maxHeight
+scoreboard players operation %lava_retain uhcp_lava_time = %lava uhcp_lava_time
 
 # Store team values
 scoreboard players operation %team_size_retain uhcp_settings = %team_size uhcp_settings
@@ -59,7 +59,7 @@ scoreboard players operation %team_retain uhcp_settings = %team uhcp_settings
 scoreboard players operation %players_select_teams_retain uhcp_settings = %players_select_teams uhcp_settings
 
 # Display
-scoreboard objectives setdisplay sidebar uhcp_gameDisplay
+scoreboard objectives setdisplay sidebar uhcp_game_display
 
 # Crafting
 advancement grant @a from minecraft:recipes/root
@@ -70,12 +70,12 @@ advancement grant @a only uhcp:base_recipes
 scoreboard players reset @a patron
 scoreboard players reset @a team
 scoreboard players reset @a top
-scoreboard players reset @a uhcp_a_gloryOfRa
-scoreboard players reset @a uhcp_a_selectedAugment
-scoreboard players reset @a uhcp_a_tier
+scoreboard players reset @a uhcp_aug_gloryOfRa
+scoreboard players reset @a uhcp_augment
+scoreboard players reset @a uhcp_aug_tier
 scoreboard players reset @a uhcp_arrowCount
 scoreboard players reset @a uhcp_bee_stacks
-scoreboard players reset %time uhcp_gameTime
+scoreboard players reset %time uhcp_game_time
 scoreboard players reset @a uhcp_hb_killedCreeper
 scoreboard players reset @a uhcp_hb_killedSkeleton
 scoreboard players reset @a uhcp_hb_killedSpider
@@ -84,7 +84,7 @@ scoreboard players reset @a uhcp_id
 scoreboard players reset @a uhcp_ready
 scoreboard players reset %global uhcp_id
 scoreboard players reset @a uhcp_leave
-scoreboard players reset @a uhcp_topCD
+scoreboard players reset @a uhcp_top_CD
 scoreboard players reset @a uhcp_wolf_stacks
 
 # Remove tags
@@ -155,11 +155,11 @@ function uhcp:start/spreadplayers/secondary
 kill @e[type=minecraft:item]
 
 # Augment Selection
-execute unless score %tier uhcp_a_tier = %tier uhcp_a_tier store result score %tier uhcp_a_tier run random value 10..109
-execute if score %random uhcp_a_tier matches 1 store result score %tier uhcp_a_tier run random value 10..109
-execute if score %tier uhcp_a_tier matches 10..34 run scoreboard players set %tier uhcp_a_tier 0
-execute if score %tier uhcp_a_tier matches 35..89 run scoreboard players set %tier uhcp_a_tier 1
-execute if score %tier uhcp_a_tier matches 90..109 run scoreboard players set %tier uhcp_a_tier 2
+execute unless score %tier uhcp_aug_tier = %tier uhcp_aug_tier store result score %tier uhcp_aug_tier run random value 10..109
+execute if score %random uhcp_aug_tier matches 1 store result score %tier uhcp_aug_tier run random value 10..109
+execute if score %tier uhcp_aug_tier matches 10..34 run scoreboard players set %tier uhcp_aug_tier 0
+execute if score %tier uhcp_aug_tier matches 35..89 run scoreboard players set %tier uhcp_aug_tier 1
+execute if score %tier uhcp_aug_tier matches 90..109 run scoreboard players set %tier uhcp_aug_tier 2
 
 # Effects
 effect clear @a
@@ -201,7 +201,7 @@ execute in minecraft:overworld run gamerule doDaylightCycle true
 execute in minecraft:overworld run time set 1000
 
 # Augments
-scoreboard players set %augment_countdown uhcp_gameTime 900
+scoreboard players set %augment_countdown uhcp_game_time 900
 bossbar set uhcp_augment players @a
 execute as @a[tag=!UHCP_Spectator] run function uhcp:start/augments
 

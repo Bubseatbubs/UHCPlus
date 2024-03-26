@@ -24,8 +24,8 @@ function uhcp:settings/tick
 
 # Top Command
 execute if entity @a[scores={top=1..}] run function uhcp:top/validate
-execute as @a if score @s uhcp_topDelay matches 1.. at @s run function uhcp:top/finish
-scoreboard players remove @a[scores={uhcp_topCD=1..}] uhcp_topCD 1
+execute as @a if score @s uhcp_top_delay matches 1.. at @s run function uhcp:top/finish
+scoreboard players remove @a[scores={uhcp_top_CD=1..}] uhcp_top_CD 1
 execute as @a[tag=UHCP_IsTeleporting] at @s run execute unless entity @e[type=minecraft:marker,tag=uhcp_topCheck,distance=..1] run function uhcp:top/cancel
 
 # Top Chargeup
@@ -43,11 +43,11 @@ execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:augments/ef
 
 # Augments
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
-execute as @a[scores={uhcp_lavaTimeInterval=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
-execute as @a[scores={uhcp_lavaMaxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
+execute as @a[scores={uhcp_lava_timeInterval=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
+execute as @a[scores={uhcp_lava_maxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
 
 # Augment Countdown
-execute if score %augment_countdown uhcp_gameTime matches 0.. run function uhcp:augments/countdown
+execute if score %augment_countdown uhcp_game_time matches 0.. run function uhcp:augments/countdown
 
 # Patron
 execute unless score %game uhcp_initStatus matches 1 run scoreboard players enable @a patron

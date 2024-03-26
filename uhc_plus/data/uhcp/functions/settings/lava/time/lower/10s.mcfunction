@@ -1,3 +1,3 @@
 # Decrease time by 10 seconds
-scoreboard players remove %lava uhcp_lavaTime 200
+scoreboard players remove %lava uhcp_lava_time 200
 function uhcp:settings/lava/time/calculate

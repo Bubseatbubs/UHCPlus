@@ -1,6 +1,6 @@
 execute if entity @s[nbt={HasStung:1b}] run function uhcp:entity/instant_kill
-scoreboard players add @s uhcp_a_timer 1
-execute if score @s uhcp_a_timer matches 200.. run function uhcp:entity/instant_kill
+scoreboard players add @s uhcp_timer 1
+execute if score @s uhcp_timer matches 200.. run function uhcp:entity/instant_kill
 
 tag @s add UHCP_BeeTarget
 execute as @a if score @s uhcp_id = @e[tag=UHCP_BeeTarget,sort=nearest,limit=1] uhcp_id run tag @s add UHCP_Owner

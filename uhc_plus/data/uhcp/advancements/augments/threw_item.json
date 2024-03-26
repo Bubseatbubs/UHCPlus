@@ -8,7 +8,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "uhcp_a_validSelection": 100
+              "uhcp_aug_validSelection": 100
             }
           }
         ]

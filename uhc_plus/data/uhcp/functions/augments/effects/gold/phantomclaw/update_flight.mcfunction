@@ -15,7 +15,7 @@ execute at @s as @e[tag=!UHCP_Owner,tag=!UHCP_TeamMember,type=!#uhcp:inanimate_m
 particle sweep_attack ~ ~ ~ 0.01 0.01 0.01 0.1 1 normal
 particle enchanted_hit ~ ~ ~ 0.25 0.25 0.25 0.1 100 normal
 playsound item.trident.return master @a[distance=..4] ~ ~ ~ 1 1 0.75
-scoreboard players set @a[tag=UHCP_Owner,sort=nearest,limit=1] uhcp_a_stack 0
+scoreboard players set @a[tag=UHCP_Owner,sort=nearest,limit=1] uhcp_aug_stack 0
 kill @e[tag=UHCP_PhantomDestination,sort=nearest,limit=1]
 data merge entity @s {teleport_duration:3}
 tag @a remove UHCP_Owner

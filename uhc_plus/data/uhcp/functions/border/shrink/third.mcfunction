@@ -8,4 +8,4 @@ tellraw @a [{"text":"The Border","color":"#00E6DE","bold":true},{"text":" has st
 execute as @a at @s run playsound block.note_block.bell master @s ~ ~ ~ 1 1 1
 
 # Set countdown
-scoreboard players set %border_countdown uhcp_gameTime 6000
+scoreboard players set %border_countdown uhcp_game_time 6000

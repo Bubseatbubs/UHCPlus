@@ -1,4 +1,4 @@
-scoreboard players set %eyes uhcp_a_count 30
+scoreboard players set %eyes uhcp_aug_count 30
 function uhcp:augments/effects/prismatic/gloryofra/allseeingeyes
 effect give @s strength infinite 0 false
 effect give @s speed infinite 0 false

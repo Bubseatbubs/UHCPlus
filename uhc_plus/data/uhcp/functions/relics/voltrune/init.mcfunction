@@ -7,9 +7,9 @@ summon minecraft:item_display ~ ~1.5 ~ {Tags:["UHCP_Voltrune","UHCP_Summon","UHC
 playsound minecraft:block.enchantment_table.use player @a[distance=..6] ~ ~ ~ 1.0 0.6 1.0
 playsound minecraft:entity.blaze.death player @a[distance=..6] ~ ~ ~ 1.0 2.0 1.0
 
-execute as @a if score @s uhcp_a_selectedAugment matches 240 run tag @e[tag=UHCP_New,sort=nearest,limit=1] add UHCP_ZeusFavor
+execute as @a if score @s uhcp_augment matches 240 run tag @e[tag=UHCP_New,sort=nearest,limit=1] add UHCP_ZeusFavor
 
-execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_a_durability 50
+execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_aug_durability 50
 item modify entity @s weapon.mainhand uhcp:update_dur
 
 # Gets team value
@@ -22,5 +22,5 @@ execute at @e[tag=UHCP_New,sort=nearest,limit=1] positioned ~ ~0.6 ~ rotated ~27
 
 tag @s remove UHCP_Owner
 tag @e remove UHCP_New
-scoreboard players reset @e[distance=..6] uhcp_a_count
-scoreboard players reset @s uhcp_a_stack
+scoreboard players reset @e[distance=..6] uhcp_aug_count
+scoreboard players reset @s uhcp_aug_stack

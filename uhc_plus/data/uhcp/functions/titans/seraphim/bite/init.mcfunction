@@ -1,5 +1,5 @@
 tag @s add UHCP_Bite
-scoreboard players reset @s uhcp_a_timer
+scoreboard players reset @s uhcp_timer
 playsound entity.vex.charge master @a[distance=..16] ~ ~ ~ 1 1 1
 playsound entity.vex.charge master @a[distance=..16] ~ ~ ~ 1 1 1
 playsound entity.vex.charge master @a[distance=..16] ~ ~ ~ 1 1 1

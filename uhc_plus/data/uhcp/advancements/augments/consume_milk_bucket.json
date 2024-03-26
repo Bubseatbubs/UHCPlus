@@ -8,7 +8,7 @@
 						"condition": "minecraft:entity_scores",
 						"entity": "this",
 						"scores": {
-							"uhcp_a_selectedAugment": {
+							"uhcp_augment": {
 								"min": 0
 							}
 						}

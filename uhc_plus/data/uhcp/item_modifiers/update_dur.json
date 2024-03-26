@@ -7,7 +7,7 @@
         "type": "minecraft:fixed",
         "name": "%damage"
       },
-      "score": "uhcp_a_durability",
+      "score": "uhcp_aug_durability",
       "scale": 0.00001
     },
     "add": true

@@ -6,4 +6,4 @@ execute as @a[tag=!UHCP_Compare,gamemode=survival] unless score @s uhcp_team = @
 execute if score %end uhcp_initStatus matches 1 run function uhcp:end/end
 
 tag @a remove UHCP_Compare
-scoreboard players set %end uhcp_gameTime 20
+scoreboard players set %end uhcp_game_time 20

@@ -47,7 +47,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
-                    "uhcp_a_selectedAugment": 149
+                    "uhcp_augment": 149
                   }
                 }
               },
@@ -57,7 +57,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
-                    "uhcp_a_selectedAugment": 5
+                    "uhcp_augment": 5
                   }
                 }
               },
@@ -67,7 +67,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
-                    "uhcp_a_selectedAugment": 201
+                    "uhcp_augment": 201
                   }
                 }
               }

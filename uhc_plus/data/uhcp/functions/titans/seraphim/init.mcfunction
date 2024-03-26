@@ -2,4 +2,4 @@ summon allay ~ ~ ~ {Health:1000f,Tags:["UHCP_Titan","UHCP_New","UHCP_Seraphim"],
 
 # Initialize bossbar and boss ID
 execute store result bossbar minecraft:uhcp_seraphimhealth max run data get entity @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] Health
-scoreboard players set @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] uhcp_t_id 7
+scoreboard players set @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] uhcp_titans_ID 7

@@ -1,3 +1,3 @@
 # Load lava scoreboard values
-scoreboard players operation %lava uhcp_lavaMaxHeight = %lava_retain uhcp_lavaMaxHeight
-scoreboard players operation %lava uhcp_lavaTime = %lava_retain uhcp_lavaTime
+scoreboard players operation %lava uhcp_lava_maxHeight = %lava_retain uhcp_lava_maxHeight
+scoreboard players operation %lava uhcp_lava_time = %lava_retain uhcp_lava_time

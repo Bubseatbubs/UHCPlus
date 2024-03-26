@@ -1,3 +1,3 @@
 # Lava scores only reset while lava is not initialized
-scoreboard players operation %lava uhcp_lavaMaxHeight = %lava_def uhcp_lavaMaxHeight
-scoreboard players operation %lava uhcp_lavaTime = %lava_def uhcp_lavaTime
+scoreboard players operation %lava uhcp_lava_maxHeight = %lava_def uhcp_lava_maxHeight
+scoreboard players operation %lava uhcp_lava_time = %lava_def uhcp_lava_time

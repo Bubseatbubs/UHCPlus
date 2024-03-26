@@ -2,4 +2,4 @@ summon stray ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:oak_button",count:1,comp
 
 # Initialize bossbar and boss ID
 execute store result bossbar minecraft:uhcp_bonecolossushealth max run data get entity @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] Health
-scoreboard players set @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] uhcp_t_id 4
+scoreboard players set @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] uhcp_titans_ID 4

@@ -1,5 +1,5 @@
 gamerule maxEntityCramming 100
-scoreboard players set %dogs uhcp_a_count 25
+scoreboard players set %dogs uhcp_aug_count 25
 execute at @s run function uhcp:augments/effects/prismatic/gloryofra/spawnwolves
 tag @s add UHCP_Owner
 execute as @e[tag=UHCP_New,tag=UHCP_Anubis] run data modify entity @s Owner set from entity @p[tag=UHCP_Owner] UUID

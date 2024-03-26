@@ -2,4 +2,4 @@ summon creeper ~ ~ ~ {CustomNameVisible:0b,PersistenceRequired:1b,Health:1000f,p
 
 # Initialize bossbar and boss ID
 execute store result bossbar minecraft:uhcp_gigacreeperhealth max run data get entity @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] Health
-scoreboard players set @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] uhcp_t_id 5
+scoreboard players set @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] uhcp_titans_ID 5

@@ -1,4 +1,4 @@
-scoreboard players add @s uhcp_a_timer 1
+scoreboard players add @s uhcp_timer 1
 
 tag @s add UHCP_Damage
 
@@ -9,5 +9,5 @@ execute at @e[type=!#uhcp:inanimate_mobs,distance=..4] unless score @s uhcp_team
 
 tag @s remove UHCP_Damage
 
-execute if score @s uhcp_a_timer matches 100.. run playsound block.fire.extinguish master @a[distance=..9] ~ ~ ~ 1 1 0.5
-execute if score @s uhcp_a_timer matches 100.. run kill @s
+execute if score @s uhcp_timer matches 100.. run playsound block.fire.extinguish master @a[distance=..9] ~ ~ ~ 1 1 0.5
+execute if score @s uhcp_timer matches 100.. run kill @s

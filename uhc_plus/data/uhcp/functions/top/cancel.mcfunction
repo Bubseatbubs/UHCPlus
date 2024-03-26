@@ -1,14 +1,14 @@
 tag @s remove UHCP_IsTeleporting
 
 # Remove player, add back players who are currently teleporting
-bossbar set uhcp_topcharge players
-execute as @a[tag=UHCP_IsTeleporting] run bossbar set uhcp_topcharge players @s
-scoreboard players reset @s uhcp_topCharge
+bossbar set uhcp_top_charge players
+execute as @a[tag=UHCP_IsTeleporting] run bossbar set uhcp_top_charge players @s
+scoreboard players reset @s uhcp_top_charge
 scoreboard players reset @s top
-scoreboard players reset @s uhcp_topDelay
+scoreboard players reset @s uhcp_top_delay
 
 tellraw @s {"text":"Teleportation canceled.","color":"dark_red","hoverEvent":{"action":"show_text","value":[{"text":"","bold":true}]}}
 playsound block.amethyst_cluster.break master @s ~ ~ ~ 1 1 1
-scoreboard players set @s uhcp_topCD 100
+scoreboard players set @s uhcp_top_CD 100
 
 kill @e[type=marker,tag=uhcp_topCheck,distance=..3,sort=nearest,limit=1]

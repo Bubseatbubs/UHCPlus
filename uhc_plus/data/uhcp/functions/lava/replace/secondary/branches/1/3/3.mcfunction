@@ -1,5 +1,5 @@
 # [-23..-20]
-execute if score %lava_secondary uhcp_lavaCurrentHeight matches -23 run function uhcp:lava/replace/secondary/fill/-23
-execute if score %lava_secondary uhcp_lavaCurrentHeight matches -22 run function uhcp:lava/replace/secondary/fill/-22
-execute if score %lava_secondary uhcp_lavaCurrentHeight matches -21 run function uhcp:lava/replace/secondary/fill/-21
-execute if score %lava_secondary uhcp_lavaCurrentHeight matches -20 run function uhcp:lava/replace/secondary/fill/-20
+execute if score %lava_secondary uhcp_lava_currentHeight matches -23 run function uhcp:lava/replace/secondary/fill/-23
+execute if score %lava_secondary uhcp_lava_currentHeight matches -22 run function uhcp:lava/replace/secondary/fill/-22
+execute if score %lava_secondary uhcp_lava_currentHeight matches -21 run function uhcp:lava/replace/secondary/fill/-21
+execute if score %lava_secondary uhcp_lava_currentHeight matches -20 run function uhcp:lava/replace/secondary/fill/-20

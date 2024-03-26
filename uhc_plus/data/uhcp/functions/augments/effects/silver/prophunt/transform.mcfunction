@@ -2,14 +2,14 @@
 execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
 
-scoreboard players reset @s uhcp_a_count
+scoreboard players reset @s uhcp_aug_count
 execute in uhcp:main run setblock 8 -10 8 air
 execute in uhcp:main run setblock 0 0 0 barrel
 execute in uhcp:main run item replace block 0 0 0 container.0 with air
 clone ~ ~-0.5 ~ ~ ~-0.5 ~ to uhcp:main 8 -10 8 replace
 execute in uhcp:main run loot replace block 0 0 0 container.0 mine 8 -10 8 diamond_pickaxe[minecraft:enchantments={levels:{"minecraft:silk_touch":1}}]
-execute store success score @s uhcp_a_count in uhcp:main run data get block 0 0 0 Items[0].id
-execute if score @s uhcp_a_count matches 0 run return run function uhcp:augments/effects/silver/prophunt/fail
+execute store success score @s uhcp_aug_count in uhcp:main run data get block 0 0 0 Items[0].id
+execute if score @s uhcp_aug_count matches 0 run return run function uhcp:augments/effects/silver/prophunt/fail
 
 # Transform into block
 effect give @s invisibility infinite 0 true

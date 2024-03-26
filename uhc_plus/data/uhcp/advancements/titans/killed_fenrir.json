@@ -8,7 +8,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "uhcp_t_id": 3
+              "uhcp_titans_ID": 3
             }
           }
         ]

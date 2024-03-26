@@ -4,7 +4,7 @@
       "count": {
         "type": "minecraft:score",
         "target": "this",
-        "score": "uhcp_a_gloryOfRa",
+        "score": "uhcp_aug_gloryOfRa",
         "scale": 1
       },
       "add": false

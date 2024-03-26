@@ -5,7 +5,7 @@ playsound entity.ender_dragon.growl master @a[distance=..8] ~ ~ ~ 1 1 1
 playsound minecraft:block.stone.place master @a[distance=..10] ~ ~ ~ 1 0.5 1
 particle block obsidian ~ ~ ~ 3 3 3 0.01 1000 normal
 effect give @s resistance 4 100 false
-execute if score @s uhcp_a_selectedAugment matches 205 at @s run function uhcp:relics/dragons_protection/fireballlocations
+execute if score @s uhcp_augment matches 205 at @s run function uhcp:relics/dragons_protection/fireballlocations
 
 # Assign Team Scoreboards
 scoreboard players set @a uhcp_initStatus 0

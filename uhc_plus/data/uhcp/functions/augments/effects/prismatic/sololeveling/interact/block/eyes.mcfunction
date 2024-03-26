@@ -3,4 +3,4 @@ execute unless predicate uhcp:dimensions/minecraft/the_nether run clone ^ ^ ^ ^ 
 execute if predicate uhcp:dimensions/minecraft/the_nether run clone ^ ^ ^ ^ ^ ^ to uhcp:hell ~ -64 ~
 setblock ^ ^ ^ minecraft:nether_portal
 tp @e[tag=UHCP_SLBNew] ^ ^ ^
-scoreboard players set @e[tag=UHCP_SLBNew] uhcp_gameTime 3
+scoreboard players set @e[tag=UHCP_SLBNew] uhcp_game_time 3

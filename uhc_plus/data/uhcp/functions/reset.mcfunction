@@ -29,23 +29,23 @@ execute as @a[tag=UHCP_IsTeleporting] run function uhcp:top/cancel
 # Reset scores
 scoreboard players reset @a testkit
 scoreboard players reset @a top
-scoreboard players reset @a uhcp_a_choosingAugment
-scoreboard players reset @a uhcp_a_selectedAugment
-scoreboard players reset %global uhcp_gameId
-scoreboard players reset @a uhcp_gameId
+scoreboard players reset @a uhcp_aug_choosingAugment
+scoreboard players reset @a uhcp_augment
+scoreboard players reset %global uhcp_game_ID
+scoreboard players reset @a uhcp_game_ID
 scoreboard players reset %global uhcp_id
 scoreboard players reset @a uhcp_id
 scoreboard players reset %end uhcp_initStatus
 scoreboard players reset %day uhcp_initStatus
 scoreboard players reset %game uhcp_initStatus
-scoreboard players reset %time uhcp_gameTime
+scoreboard players reset %time uhcp_game_time
 scoreboard players reset %time uhcp_initStatus
 scoreboard players reset %time_freeze uhcp_initStatus
 scoreboard players reset %lava_start uhcp_initStatus
-scoreboard players reset @a uhcp_lavaTimeInterval
-scoreboard players reset @a uhcp_lavaMaxHeight
+scoreboard players reset @a uhcp_lava_timeInterval
+scoreboard players reset @a uhcp_lava_maxHeight
 scoreboard players reset @a uhcp_team
-scoreboard players reset @a uhcp_topCD
+scoreboard players reset @a uhcp_top_CD
 
 # Load border size
 scoreboard players operation %border_size uhcp_settings = %border_size_retain uhcp_settings

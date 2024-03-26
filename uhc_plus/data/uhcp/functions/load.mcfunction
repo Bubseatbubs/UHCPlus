@@ -18,22 +18,21 @@ scoreboard objectives add settings_team trigger
 scoreboard objectives add settings_other trigger
 
 # Scoreboard Objectives
-scoreboard objectives add uhcp_a_choosingAugment dummy
-scoreboard objectives add uhcp_a_count dummy
-scoreboard objectives add uhcp_a_durability dummy
-scoreboard objectives add uhcp_a_gloryOfRa dummy
-scoreboard objectives add uhcp_a_patron dummy
-scoreboard objectives add uhcp_a_selectedAugment dummy
-scoreboard objectives add uhcp_a_stack dummy
-scoreboard objectives add uhcp_a_tier dummy
-scoreboard objectives add uhcp_a_timer dummy
-scoreboard objectives add uhcp_a_validSelection dummy
+scoreboard objectives add uhcp_augment dummy
+scoreboard objectives add uhcp_aug_choosingAugment dummy
+scoreboard objectives add uhcp_aug_count dummy
+scoreboard objectives add uhcp_aug_durability dummy
+scoreboard objectives add uhcp_aug_gloryOfRa dummy
+scoreboard objectives add uhcp_aug_patron dummy
+scoreboard objectives add uhcp_aug_stack dummy
+scoreboard objectives add uhcp_aug_tier dummy
+scoreboard objectives add uhcp_aug_validSelection dummy
 scoreboard objectives add uhcp_arrowCount dummy
 scoreboard objectives add uhcp_bee_stack dummy
 scoreboard objectives add uhcp_death deathCount
-scoreboard objectives add uhcp_gameDisplay dummy
-scoreboard objectives add uhcp_gameId dummy
-scoreboard objectives add uhcp_gameTime dummy
+scoreboard objectives add uhcp_game_display dummy
+scoreboard objectives add uhcp_game_ID dummy
+scoreboard objectives add uhcp_game_time dummy
 scoreboard objectives add uhcp_hb_killedZombie dummy
 scoreboard objectives add uhcp_hb_killedCreeper dummy
 scoreboard objectives add uhcp_hb_killedSkeleton dummy
@@ -43,12 +42,12 @@ scoreboard objectives add uhcp_id dummy
 scoreboard objectives add uhcp_initStatus dummy
 scoreboard objectives add uhcp_itemCount dummy
 scoreboard objectives add uhcp_itemInv dummy
-scoreboard objectives add uhcp_lavaCurrentHeight dummy
-scoreboard objectives add uhcp_lavaCurrentLayers dummy
-scoreboard objectives add uhcp_lavaHeight dummy
-scoreboard objectives add uhcp_lavaMaxHeight dummy
-scoreboard objectives add uhcp_lavaTime dummy
-scoreboard objectives add uhcp_lavaTimeInterval dummy
+scoreboard objectives add uhcp_lava_currentHeight dummy
+scoreboard objectives add uhcp_lava_currentLayers dummy
+scoreboard objectives add uhcp_lava_height dummy
+scoreboard objectives add uhcp_lava_maxHeight dummy
+scoreboard objectives add uhcp_lava_time dummy
+scoreboard objectives add uhcp_lava_timeInterval dummy
 scoreboard objectives add uhcp_leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add uhcp_motion_x1 dummy
 scoreboard objectives add uhcp_motion_x2 dummy
@@ -58,15 +57,16 @@ scoreboard objectives add uhcp_motion_z1 dummy
 scoreboard objectives add uhcp_motion_z2 dummy
 scoreboard objectives add uhcp_page dummy
 scoreboard objectives add uhcp_settings dummy
-scoreboard objectives add uhcp_t_attack dummy
-scoreboard objectives add uhcp_t_count dummy
-scoreboard objectives add uhcp_t_timer dummy
-scoreboard objectives add uhcp_t_id dummy
-scoreboard objectives add uhcp_t_heightDifference dummy
+scoreboard objectives add uhcp_titans_attack dummy
+scoreboard objectives add uhcp_titans_count dummy
+scoreboard objectives add uhcp_titans_timer dummy
+scoreboard objectives add uhcp_titans_ID dummy
+scoreboard objectives add uhcp_titans_height dummy
 scoreboard objectives add uhcp_team dummy
-scoreboard objectives add uhcp_topCD dummy
-scoreboard objectives add uhcp_topCharge dummy
-scoreboard objectives add uhcp_topDelay dummy
+scoreboard objectives add uhcp_timer dummy
+scoreboard objectives add uhcp_top_CD dummy
+scoreboard objectives add uhcp_top_charge dummy
+scoreboard objectives add uhcp_top_delay dummy
 scoreboard objectives add uhcp_wolf_stack dummy
 scoreboard objectives add uhcp_ready dummy
 
@@ -75,20 +75,20 @@ scoreboard objectives setdisplay below_name uhcp_health
 scoreboard objectives setdisplay list uhcp_health
 
 # Add Display Timer Names
-scoreboard players set %display uhcp_gameDisplay 59999968
-scoreboard players display name %display uhcp_gameDisplay {"text":"Time:","color":"gold"}
-scoreboard objectives modify uhcp_gameDisplay displayname {"text":"Game Stats","color":"gold"}
+scoreboard players set %display uhcp_game_display 59999968
+scoreboard players display name %display uhcp_game_display {"text":"Time:","color":"gold"}
+scoreboard objectives modify uhcp_game_display displayname {"text":"Game Stats","color":"gold"}
 
-scoreboard players display name %border uhcp_gameDisplay {"text":"Border Size:","color":"gold"}
+scoreboard players display name %border uhcp_game_display {"text":"Border Size:","color":"gold"}
 
-scoreboard players set %players uhcp_gameDisplay 0
-scoreboard players display name %players uhcp_gameDisplay {"text":"Players Left:","color":"gold"}
+scoreboard players set %players uhcp_game_display 0
+scoreboard players display name %players uhcp_game_display {"text":"Players Left:","color":"gold"}
 
 # Add bossbars
-bossbar add uhcp_topcharge "Time Until Teleport:"
-bossbar set minecraft:uhcp_topcharge color purple
-bossbar set minecraft:uhcp_topcharge style notched_6
-bossbar set minecraft:uhcp_topcharge max 60
+bossbar add uhcp_top_charge "Time Until Teleport:"
+bossbar set minecraft:uhcp_top_charge color purple
+bossbar set minecraft:uhcp_top_charge style notched_6
+bossbar set minecraft:uhcp_top_charge max 60
 
 bossbar add uhcp_augment "Time Remaining:"
 bossbar set minecraft:uhcp_augment color white
@@ -207,8 +207,8 @@ scoreboard players set %difficulty_def uhcp_settings 0
 
 # Lava
 scoreboard players set %lava_countdown_def uhcp_settings 48000
-scoreboard players set %lava_def uhcp_lavaMaxHeight 50
-scoreboard players set %lava_def uhcp_lavaTime 8400
+scoreboard players set %lava_def uhcp_lava_maxHeight 50
+scoreboard players set %lava_def uhcp_lava_time 8400
 
 # Set default scores when unset
 execute unless score %game uhcp_initStatus matches 1 run function uhcp:load/scores
