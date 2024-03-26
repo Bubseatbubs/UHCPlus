@@ -7,11 +7,13 @@ execute if items entity @s armor.head * run item replace entity @e[tag=UHCP_Stor
 execute if items entity @s armor.chest * run item replace entity @e[tag=UHCP_StoredArmor,tag=UHCP_New] armor.chest from entity @s armor.chest
 execute if items entity @s armor.legs * run item replace entity @e[tag=UHCP_StoredArmor,tag=UHCP_New] armor.legs from entity @s armor.legs
 execute if items entity @s armor.feet * run item replace entity @e[tag=UHCP_StoredArmor,tag=UHCP_New] armor.feet from entity @s armor.feet
+execute if items entity @s weapon.offhand * run item replace entity @e[tag=UHCP_StoredArmor,tag=UHCP_New] weapon.offhand from entity @s weapon.offhand
 
 item replace entity @s armor.head with minecraft:air
 item replace entity @s armor.chest with minecraft:air
 item replace entity @s armor.legs with minecraft:air
 item replace entity @s armor.feet with minecraft:air
+item replace entity @s weapon.offhand with minecraft:air
 
 tag @s add UHCP_Owner
 execute as @e[tag=UHCP_StoredArmor,tag=UHCP_New] run scoreboard players operation @s uhcp_id = @p[tag=UHCP_Owner] uhcp_id

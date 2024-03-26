@@ -3,5 +3,5 @@ bossbar set minecraft:uhcp_arachnehealth players
 tellraw @a [{"text":"Arachne","color":"gold"},{"text":" has been vanquished by ","color":"white"},{"selector":"@s","color":"gold"},{"text":"!","color":"white"}]
 
 function uhcp:titans/reward
-loot give @s loot uhcp:titan_items/web_slinger
+loot give @s loot uhcp:relics/web_o_rang
 tellraw @s [{"text":"You've slain"},{"text":" Arachne","color":"gold"},{"text":"! You gained a","color":"white"},{"text":" Web-o-Rang","color":"gold"},{"text":"!","color":"white"}]

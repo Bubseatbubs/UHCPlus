@@ -1,0 +1,182 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:raiser_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:max_damage": 800,
+                "minecraft:damage": 0,
+                "minecraft:repair_cost": 100,
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation_modifier": 0,
+                  "can_always_eat": true,
+                  "eat_seconds": 2147483647
+                },
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 0
+                  },
+                  "show_in_tooltip": false
+                },
+                "minecraft:hide_additional_tooltip": {}
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_consumable:1b,uhcp_relic:1b,uhcp_radiant:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "So",
+                  "color": "#0800FF",
+                  "bold": true,
+                  "italic": false
+                },
+                {
+                  "text": "ul",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": "fl",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": "am",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": "e's E",
+                  "color": "#54C0FF"
+                },
+                {
+                  "text": "mbr",
+                  "color": "#4FE8FF"
+                },
+                {
+                  "text": "ace",
+                  "color": "#00FFFF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false,
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "RELIC",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ": Relics charge up when held.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Right Click",
+                    "color": "#9EE8FF",
+                    "italic": false
+                  },
+                  {
+                    "text": " at max charge to activate",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "a Relic's",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ". Using an",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": "resets the Relic's charge.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                [
+                  {
+                    "text": "ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ": Your next attack summons a",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "circle of flames beneath your target,",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "which deal",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 4🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": " over 5 seconds."
+                  }
+                ]
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

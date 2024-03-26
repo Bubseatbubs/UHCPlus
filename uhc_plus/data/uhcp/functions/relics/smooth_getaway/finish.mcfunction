@@ -8,8 +8,11 @@ item replace entity @s armor.head from entity @e[tag=UHCP_CurrentStoredArmor,lim
 item replace entity @s armor.chest from entity @e[tag=UHCP_CurrentStoredArmor,limit=1] armor.chest
 item replace entity @s armor.legs from entity @e[tag=UHCP_CurrentStoredArmor,limit=1] armor.legs
 item replace entity @s armor.feet from entity @e[tag=UHCP_CurrentStoredArmor,limit=1] armor.feet
+item replace entity @s weapon.offhand from entity @e[tag=UHCP_CurrentStoredArmor,limit=1] weapon.offhand
 
 kill @e[tag=UHCP_CurrentStoredArmor,limit=1]
 tag @s remove UHCP_Owner
 tag @s remove UHCP_SmoothGetaway
+
+loot give @s loot uhcp:relics/smooth_getaway/damaged
 

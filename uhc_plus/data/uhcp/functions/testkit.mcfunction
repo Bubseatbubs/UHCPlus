@@ -14,15 +14,7 @@ attribute @s generic.max_health base set 40
 
 effect give @s regeneration 5 10 true
 
-loot give @s loot uhcp:relics/soulflame_saber
-loot give @s loot uhcp:relics/gravity_smasher
-loot give @s loot uhcp:relics/flux_factor
-loot give @s loot uhcp:relics/smooth_getaway
-loot give @s loot uhcp:relics/thread_of_fate
-loot give @s loot uhcp:relics/the_harvester
-loot give @s loot uhcp:relics/boomburst
-loot give @s loot uhcp:relics/yggdrasil_bark
-loot give @s loot uhcp:relics/dragons_protection
+function uhcp:relics/give
 
 give @s minecraft:fishing_rod[minecraft:enchantments={levels:{"minecraft:luck_of_the_sea":5,"minecraft:lure":5,"minecraft:unbreaking":5,"minecraft:vanishing_curse":1}}] 1
 give @s minecraft:fishing_rod[minecraft:enchantments={levels:{"minecraft:luck_of_the_sea":6,"minecraft:lure":5,"minecraft:unbreaking":5,"minecraft:vanishing_curse":1}}] 1

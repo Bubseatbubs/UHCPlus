@@ -1,201 +1,176 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:netherite_helmet",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": 1
-              },
-              {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:protection": 2,
-                  "minecraft:blast_protection": 2,
-                  "minecraft:vanishing_curse": 1
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:popped_chorus_fruit",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:max_damage": 18100,
+                "minecraft:damage": 0,
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation_modifier": 0,
+                  "can_always_eat": true,
+                  "eat_seconds": 2147483647
+                },
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 0
+                  },
+                  "show_in_tooltip": false
+                },
+                "minecraft:hide_additional_tooltip": {}
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_consumable:1b,uhcp_relic:1b,uhcp_radiant:8b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Drag",
+                  "color": "#0800FF",
+                  "bold": true,
+                  "italic": false
+                },
+                {
+                  "text": "on's",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": " Prot",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": "ection",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false,
+                  "italic": false
                 }
-              },
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                    "minecraft:max_stack_size": 1,
-                    "minecraft:max_damage": 19000,
-                    "minecraft:repair_cost": 100
-                  }
-              },
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_relic:1b,uhcp_radiant:9b}"
-              },
-              {
-                "function": "minecraft:set_name",
-                "name": [
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
                   {
-                    "text": "Dr",
-                    "color": "#0800FF",
-                    "bold": true,
+                    "text": "RELIC",
+                    "color": "gold",
                     "italic": false
                   },
                   {
-                    "text": "ag",
-                    "color": "#2B64FF"
-                  },
-                  {
-                    "text": "on",
-                    "color": "#428EFF"
-                  },
-                  {
-                    "text": "'s P",
-                    "color": "#54B5FF"
-                  },
-                  {
-                    "text": "rot",
-                    "color": "#54C0FF"
-                  },
-                  {
-                    "text": "ect",
-                    "color": "#4FE8FF"
-                  },
-                  {
-                    "text": "ion",
-                    "color": "#00FFFF"
-                  },
-                  {
-                    "text": " ℝ",
-                    "color": "white",
-                    "bold": false,
+                    "text": ": Relics charge up when held.",
+                    "color": "gray",
                     "italic": false
                   }
-                ]
-              },
-              {
-                "function": "set_lore",
-                "mode": "insert",
-                "lore": [
+                ],
+                [
                   {
-                    "text": "------------------------",
-                    "color": "blue"
-                  },
-                  [
-                    {
-                      "text": "RELIC",
-                      "color": "gold",
-                      "italic": false
-                    },
-                    {
-                      "text": ": This relic gains durability while",
-                      "color": "gray",
-                      "italic": true
-                    }
-                  ],
-                  [
-                    {
-                      "text": "worn",
-                      "color": "white"
-                    },
-                    {
-                      "text": ". At max durability, its",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " ABILITY",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " activates",
-                      "color": "gray"
-                    }
-                  ],
-                  [
-                    {
-                      "text": "when using Dragon's Watchful Eye",
-                      "color": "white"
-                    },
-                    {
-                      "text": ".",
-                      "color": "gray"
-                    }
-                  ],
-                  [
-                    {
-                      "text": "Using an",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " ABILITY",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " consumes a large"
-                    }
-                  ],
-                  {
-                    "text": "amount of durability.",
-                    "color": "gray"
+                    "text": "Right Click",
+                    "color": "#9EE8FF",
+                    "italic": false
                   },
                   {
-                    "text": " "
-                  },
-                  [
-                    {
-                      "text": "PASSIVE:",
-                      "color": "white",
-                      "italic": false
-                    },
-                    {
-                      "text": " At max durability, gain a",
-                      "color": "gray",
-                      "italic": true
-                    },
-                    {
-                      "text": " Dragon's",
-                      "color": "white",
-                      "italic": true
-                    }
-                  ],
-                  [
-                    {
-                      "text": "Watchful Eye",
-                      "color": "white"
-                    },
-                    {
-                      "text": " if you don't have one already.",
-                      "color": "gray"
-                    }
-                  ],
+                    "text": " at max charge to activate",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
                   {
-                    "text": " "
+                    "text": "a Relic's",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ". Using an",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": "resets the Relic's charge.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                [
+                  {
+                    "text": "ABILITY",
+                    "color": "blue",
+                    "italic": false
                   },
                   [
-                    {
-                      "text": "ABILITY",
-                      "color": "blue"
-                    },
                     {
                       "text": ": Encase yourself in an",
                       "color": "gray"
                     },
                     {
                       "text": " Obsidian Egg",
-                      "color": "white"
+                      "color": "blue"
                     }
-                  ],
+                  ]
+                ],
+                [
                   {
-                    "text": "for 4 seconds.",
+                    "text": "for 4 seconds. You are",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " invulnerable",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " for the",
                     "color": "gray"
                   }
+                ],
+                [
+                  {
+                    "text": "duration.",
+                    "color": "gray",
+                    "italic": false
+                  }
                 ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

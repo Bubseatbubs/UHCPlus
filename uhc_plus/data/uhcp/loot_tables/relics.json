@@ -6,7 +6,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "value": "uhcp:relics/boomburst",
+          "value": "uhcp:relics/buzzburst",
           "functions": [
             {
               "function": "set_count",
@@ -50,7 +50,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "value": "uhcp:relics/soulflame_saber",
+          "value": "uhcp:relics/soulflames_embrace",
           "functions": [
             {
               "function": "set_count",
@@ -72,7 +72,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "value": "uhcp:relics/gravity_smasher",
+          "value": "uhcp:relics/gravity_globe",
           "functions": [
             {
               "function": "set_count",
@@ -83,7 +83,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "value": "uhcp:relics/thread_of_fate",
+          "value": "uhcp:relics/runic_sentry",
           "functions": [
             {
               "function": "set_count",
@@ -94,7 +94,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "value": "uhcp:relics/yggdrasil_bark",
+          "value": "uhcp:relics/web_o_rang",
           "functions": [
             {
               "function": "set_count",
