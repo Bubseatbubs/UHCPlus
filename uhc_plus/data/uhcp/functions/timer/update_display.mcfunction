@@ -1,7 +1,7 @@
 # Update Display
-scoreboard players remove %updateDisplay uhcp_game_time 1
-execute unless score %updateDisplay uhcp_game_time matches ..0 run return 0
-scoreboard players set %updateDisplay uhcp_game_time 10
+scoreboard players remove %update_display uhcp_game_time 1
+execute unless score %update_display uhcp_game_time matches ..0 run return 0
+scoreboard players set %update_display uhcp_game_time 10
 
 # Update Player Count
 function uhcp:timer/update_playersleft
