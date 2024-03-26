@@ -1,7 +1,6 @@
 # Kill entities (kill items last)
 kill @e[type=!player,type=!#uhcp:inanimate_mobs]
 kill @e[tag=UHCP_Summon]
-kill @e[tag=UHCP_Titan]
 kill @e[type=item]
 
 # Within dimensions
@@ -20,6 +19,12 @@ experience set @a 0 points
 
 # Reset storages
 data remove storage uhcp:compass Track
+
+# Reset Titans
+function uhcp:titans/reset
+
+# Reset any players in /trigger top
+execute as @a[tag=UHCP_IsTeleporting] run function uhcp:top/cancel
 
 # Reset scores
 scoreboard players reset @a testkit

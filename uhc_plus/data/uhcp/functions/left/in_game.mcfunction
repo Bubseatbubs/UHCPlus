@@ -8,3 +8,6 @@ execute if score @s uhcp_a_selectedAugment matches 207 run function uhcp:left/au
 
 # Late Looter
 execute if score @s uhcp_a_selectedAugment matches 18 run function uhcp:left/augments/effects/latelooter
+
+# Reset Titan Healthbars -- they should re-apply if the Titans are still alive
+function uhcp:titans/reset_bossbar

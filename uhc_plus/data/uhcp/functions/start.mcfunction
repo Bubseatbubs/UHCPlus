@@ -10,6 +10,7 @@ execute in uhcp:main run forceload add 0 0
 tag @a[scores={uhcp_ready=2}] add UHCP_Spectator
 
 # Set scores
+scoreboard players operation %titans uhcp_initStatus = %titans uhcp_settings
 scoreboard players set %game uhcp_initStatus 1
 scoreboard players set %time uhcp_initStatus 0
 scoreboard players set %time_freeze uhcp_initStatus 0
@@ -162,12 +163,11 @@ execute if score %tier uhcp_a_tier matches 90..109 run scoreboard players set %t
 
 # Effects
 effect clear @a
-effect give @a minecraft:regeneration 10 5 true
+effect give @a[tag=!UHCP_Spectator] minecraft:regeneration 10 5 true
 effect give @a[tag=!UHCP_Spectator] minecraft:resistance infinite 5 true
 effect give @a[tag=!UHCP_Spectator] minecraft:saturation infinite 255 true
-effect give @a minecraft:night_vision infinite 0 true
-effect give @a[tag=!UHCP_Spectator] minecraft:mining_fatigue infinite 255 true
 effect give @a[tag=!UHCP_Spectator] minecraft:weakness infinite 4 true
+effect give @a minecraft:night_vision infinite 0 true
 
 # Reset attribute modifiers
 execute as @a run function uhcp:reset/attributes

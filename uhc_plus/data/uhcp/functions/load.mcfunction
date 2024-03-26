@@ -181,6 +181,9 @@ scoreboard players set %dimension_def uhcp_settings 48000
 # Golden apples
 scoreboard players set %golden_apples_def uhcp_settings 3
 
+# Number of Titans
+scoreboard players set %titans_def uhcp_settings 3
+
 # PvP
 scoreboard players set %pvp_def uhcp_settings 24000
 

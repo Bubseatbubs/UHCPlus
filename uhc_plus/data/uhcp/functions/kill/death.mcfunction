@@ -18,6 +18,7 @@ title @s subtitle {"text":"You are now Spectating the match.","color":"gray","bo
 title @s title {"text":"YOU DIED","color":"dark_red","bold":true}
 gamemode spectator @s
 effect clear @s
+effect give @s minecraft:night_vision infinite 0 true
 
 tag @e remove UHCP_CurrentDeathMarker
 tag @s remove UHCP_CurrentDeadPlayer

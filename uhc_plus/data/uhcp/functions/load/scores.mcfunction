@@ -24,6 +24,9 @@ execute unless score %dimension uhcp_settings matches -2147483648..2147483647 ru
 # Set default golden apples
 execute unless score %golden_apples uhcp_settings = %golden_apples uhcp_settings run scoreboard players operation %golden_apples uhcp_settings = %golden_apples_def uhcp_settings
 
+# Set default golden apples
+execute unless score %titans uhcp_settings = %titans uhcp_settings run scoreboard players operation %titans uhcp_settings = %titans_def uhcp_settings
+
 # Set default PvP Grace Period countdown
 execute unless score %pvp uhcp_settings = %pvp uhcp_settings run scoreboard players operation %pvp uhcp_settings = %pvp_def uhcp_settings
 

@@ -1,8 +1,8 @@
-tag @s remove uhcp_isTeleporting
+tag @s remove UHCP_IsTeleporting
 
 # Remove player, add back players who are currently teleporting
 bossbar set uhcp_topcharge players
-execute as @a[tag=uhcp_isTeleporting] run bossbar set uhcp_topcharge players @s
+execute as @a[tag=UHCP_IsTeleporting] run bossbar set uhcp_topcharge players @s
 scoreboard players reset @s uhcp_topCharge
 scoreboard players reset @s top
 scoreboard players reset @s uhcp_topDelay
