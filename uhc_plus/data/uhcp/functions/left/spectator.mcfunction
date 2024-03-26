@@ -5,6 +5,9 @@ scoreboard players operation @s uhcp_game_ID = %global uhcp_game_ID
 scoreboard players set @s uhcp_team 0
 scoreboard players reset @s uhcp_id
 team leave @s
+scoreboard players reset @s patron
+scoreboard players reset @s team
+scoreboard players reset @s testkit
 scoreboard players reset @s top
 execute in minecraft:overworld run tp @s 0 150 0
 effect clear @s

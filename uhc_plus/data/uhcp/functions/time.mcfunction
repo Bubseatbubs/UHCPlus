@@ -26,5 +26,5 @@ scoreboard players enable @a augments
 execute as @a if score @s augments matches 1.. run function uhcp:augments/announce
 
 # Enable triggers
-scoreboard players enable @a top
-scoreboard players enable @a testkit
+scoreboard players enable @a[gamemode=survival] top
+scoreboard players enable @a[gamemode=survival] testkit
