@@ -34,7 +34,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_consumable:1b,uhcp_relic:1b,uhcp_radiant:4b}"
+                "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_radiant:4b}"
               },
               {
                 "function": "minecraft:set_name",

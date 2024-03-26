@@ -5,6 +5,6 @@
 		}
 	},
 	"rewards": {
-		"function": "uhcp:glow/check"
+		"function": "uhcp:entity/ender_eye_check"
 	}
 }

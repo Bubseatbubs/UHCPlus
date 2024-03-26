@@ -1,7 +1,7 @@
 kill @e[type=eye_of_ender,predicate=uhcp:ender_eye/ras_eye,sort=nearest,limit=1]
 
 tag @s add UHCP_Check
-execute as @e[tag=UHCP_RaLaser] if score @s uhcp_id = @p[tag=UHCP_Check] uhcp_id as @p[tag=UHCP_Check] at @s run return run function uhcp:augments/effects/prismatic/gloryofra/ralaser/fail
+execute as @e[tag=UHCP_RaLaser] if score @s uhcp_id = @p[tag=UHCP_Check] uhcp_id as @p[tag=UHCP_Check] at @s run return run function uhcp:consumables/ras_gaze/fail
 
 summon block_display ~ ~ ~ {CustomNameVisible:0b,teleport_duration:1,interpolation_duration:20,Tags:["UHCP_New","UHCP_RaLaser","UHCP_Summon"],CustomName:'[{"text":"Curse of Ra "},{"text":"a a a a a a a a a a a a a a","color":"dark_purple","obfuscated":true}]',brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-50f,0f],scale:[0f,1000f,0f]},block_state:{Name:"minecraft:fire"}}
 playsound minecraft:ambient.basalt_deltas.mood master @a[distance=..128] ~ ~ ~ 1 0.5 0.25

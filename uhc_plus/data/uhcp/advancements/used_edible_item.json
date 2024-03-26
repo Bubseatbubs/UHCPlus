@@ -19,13 +19,13 @@
         ],
         "item": {
           "predicates": {
-            "minecraft:custom_data": "{uhcp_consumable:1b}"
+            "minecraft:custom_data": "{uhcp_rightclick:1b}"
           }
         }
       }
     }
   },
   "rewards": {
-    "function": "uhcp:entity/items/eat_item/init"
+    "function": "uhcp:entity/items/used_edible_item"
   }
 }

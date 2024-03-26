@@ -17,7 +17,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 5,
-          "value": "uhcp:all-seeing_eye",
+          "value": "uhcp:consumables/all-seeing_eye",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -33,7 +33,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 5,
-          "value": "uhcp:augments/wild_feather",
+          "value": "uhcp:consumables/wild_feather",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -44,7 +44,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 5,
-          "value": "uhcp:relics/relic_invoker"
+          "value": "uhcp:consumables/relic_invoker"
         },
         {
           "type": "minecraft:item",

@@ -33,7 +33,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_consumable:1b,uhcp_relicinvoker:1b}"
+                "tag": "{uhcp_rightclick:1b,uhcp_consumable:3b}"
               },
               {
                 "function": "set_name",

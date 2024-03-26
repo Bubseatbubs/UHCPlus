@@ -1,4 +1,4 @@
-clear @s *[custom_data~{uhcp_relicinvoker:1b}] 1
+clear @s *[custom_data~{uhcp_consumable:3b}] 1
 loot give @s loot uhcp:relics
 playsound entity.breeze.death master @s ~ ~ ~ 1 0.5 1
 playsound block.bell.resonate master @s ~ ~ ~ 1 2 1

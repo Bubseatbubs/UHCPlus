@@ -1,4 +1,4 @@
-clear @s *[custom_data~{uhcp_wildfeather:1b}] 1
+clear @s *[custom_data~{uhcp_consumable:4b}] 1
 
 # Assign Team Scoreboards
 scoreboard players set @a uhcp_initStatus 0

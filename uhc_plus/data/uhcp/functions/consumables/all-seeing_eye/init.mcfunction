@@ -5,7 +5,7 @@ execute as @a[gamemode=survival] run scoreboard players operation @s uhcp_initSt
 # Initialize all-seeing eye
 tag @s remove UHCP_GTrack
 tag @s add UHCP_GTrack
-execute as @a[scores={uhcp_initStatus=1..},predicate=!uhcp:augments/immune_to_eye] unless score @s uhcp_initStatus = @a[tag=UHCP_GTrack,limit=1] uhcp_initStatus at @s run function uhcp:glow/target
+execute as @a[scores={uhcp_initStatus=1..},predicate=!uhcp:augments/immune_to_eye] unless score @s uhcp_initStatus = @a[tag=UHCP_GTrack,limit=1] uhcp_initStatus at @s run function uhcp:consumables/all-seeing_eye/target
 execute as @a[scores={uhcp_initStatus=1..}] if score @s uhcp_initStatus = @a[tag=UHCP_GTrack,limit=1] uhcp_initStatus run tellraw @s [{"selector":"@a[tag=UHCP_GTrack,limit=1]","color":"gold"},{"text":" inflicted","color":"gray"},{"text":" Glowing","color":"white"},{"text":" on other teams!","color":"gray"}]
 playsound minecraft:block.enchantment_table.use master @a[distance=..4] ~ ~ ~ 1 1 0.4
 playsound minecraft:entity.ender_eye.death master @a[distance=..4] ~ ~ ~ 1 1 0.4

@@ -32,7 +32,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_consumable:1b,uhcp_portablelavapool:1b}"
+                "tag": "{uhcp_rightclick:1b,uhcp_consumable:1b}"
               },
               {
                 "function": "set_name",

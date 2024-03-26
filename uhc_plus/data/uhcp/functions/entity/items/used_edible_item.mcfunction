@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:augments/using_edible_item
+advancement revoke @s only uhcp:used_edible_item
 scoreboard players set @s uhcp_itemCount 4
 
 # Relics
@@ -13,9 +13,15 @@ execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_d
 execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_radiant:8b}] at @s run return run function uhcp:relics/dragons_protection/init
 
 # Consumables
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_wildfeather:1b}] at @s run return run function uhcp:augments/effects/gold/birdsofafeather/teleport
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_portablelavapool:1b}] at @s run return run function uhcp:augments/effects/silver/portablelavapool/summon
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_relicinvoker:1b}] at @s run return run function uhcp:relics/relic_excavator/use
+
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:1b}] at @s run return run function uhcp:consumables/portable_lava_pool/init
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:3b}] at @s run return run function uhcp:consumables/relic_invoker/use
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:4b}] at @s run return run function uhcp:consumables/wild_feather/init
+
+# Consumables (Offhand)
+execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumable:1b}] at @s run return run function uhcp:consumables/portable_lava_pool/init
+execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumable:3b}] at @s run return run function uhcp:consumables/relic_invoker/use
+execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumable:4b}] at @s run return run function uhcp:consumables/wild_feather/init
 
 # Lobby Items
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_lobby:1b}] at @s run return run function uhcp:lobby/patron/menu
@@ -25,9 +31,3 @@ execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_lobby:4
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_lobby:5b}] at @s run return run function uhcp:lobby/spectator/spectate
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_lobby:6b}] at @s run return run function uhcp:lobby/spectator/stop_spectate
 
-
-execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_wildfeather:1b}] at @s run return run function uhcp:augments/effects/gold/birdsofafeather/teleport
-execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_portablelavapool:1b}] at @s run return run function uhcp:augments/effects/silver/portablelavapool/summon
-execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_relicinvoker:1b}] at @s run return run function uhcp:relics/relic_excavator/use
-execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_webslinger:1b}] at @s run return run function uhcp:titans/items/web_o_rang/init
-execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_lobby:1b}] at @s run return run function uhcp:lobby/patron/menu
