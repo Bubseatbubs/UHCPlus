@@ -6,7 +6,7 @@ scoreboard players set %uhcp_lavaSecInit uhcp_initStatus 1
 scoreboard players set %uhcp_lavaSec uhcp_lavaTime 70
 
 # Set current height
-scoreboard players operation %uhcp_lavaSec uhcp_lavaCurrentHeight = %uhcp_lava uhcp_lavaCurrentHeight
+scoreboard players operation %uhcp_lavaSec uhcp_lavaCurrentHeight = %lava uhcp_lavaCurrentHeight
 scoreboard players remove %uhcp_lavaSec uhcp_lavaCurrentHeight 1
 
 # Fill next lava layers

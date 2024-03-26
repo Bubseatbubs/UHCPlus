@@ -204,8 +204,8 @@ scoreboard players set %difficulty_def uhcp_settings 0
 
 # Lava
 scoreboard players set %lava_countdown_def uhcp_settings 48000
-scoreboard players set %uhcp_lavaDef uhcp_lavaMaxHeight 50
-scoreboard players set %uhcp_lavaDef uhcp_lavaTime 8400
+scoreboard players set %lava_def uhcp_lavaMaxHeight 50
+scoreboard players set %lava_def uhcp_lavaTime 8400
 
 # Set default scores when unset
 execute unless score %game uhcp_initStatus matches 1 run function uhcp:load/scores
@@ -217,8 +217,8 @@ execute in minecraft:overworld run function uhcp:load/dimensions/minecraft/overw
 execute in uhcp:main run function uhcp:load/dimensions/uhcp/main
 
 # Schedule delayed load
-scoreboard players add %uhcp_loadInit uhcp_initStatus 1
-execute if score %uhcp_lock uhcp_itemCount matches 1.. run function uhcp:load/summon/summon
-execute unless score %uhcp_loadInit uhcp_initStatus matches 2.. unless entity @e[tag=UHCP_Lock] unless score %uhcp_lock uhcp_itemCount matches 1.. run function uhcp:load/summon
-execute unless score %uhcp_loadInit uhcp_initStatus matches 2.. run schedule function uhcp:load 20t
-execute if score %uhcp_loadInit uhcp_initStatus matches 2.. run function uhcp:load/message
+scoreboard players add %load uhcp_initStatus 1
+execute if score %lock uhcp_itemCount matches 1.. run function uhcp:load/summon/summon
+execute unless score %load uhcp_initStatus matches 2.. unless entity @e[tag=UHCP_Lock] unless score %lock uhcp_itemCount matches 1.. run function uhcp:load/summon
+execute unless score %load uhcp_initStatus matches 2.. run schedule function uhcp:load 20t
+execute if score %load uhcp_initStatus matches 2.. run function uhcp:load/message

@@ -47,4 +47,4 @@ execute unless score %difficulty uhcp_settings = %difficulty uhcp_settings run s
 
 # Set default lava scoreboard values
 execute unless score %lava_countdown uhcp_settings = %lava_countdown uhcp_settings run scoreboard players operation %lava_countdown uhcp_settings = %lava_countdown_def uhcp_settings
-execute unless score %uhcp_lavaInit uhcp_initStatus matches 1 run function uhcp:load/scores/lava
+execute unless score %lava_init uhcp_initStatus matches 1 run function uhcp:load/scores/lava

@@ -2,18 +2,18 @@ advancement revoke @s only uhcp:augments/used_goat_horn
 execute unless score @s uhcp_a_selectedAugment matches 12 run return 0
 
 # If ran before cooldown is up
-execute if score @s uhcp_a_timer matches 1.. run scoreboard players set %uhcp_augment uhcp_a_timer 1200
-execute if score @s uhcp_a_timer matches 1.. run scoreboard players operation %uhcp_augmentM uhcp_a_timer = @s uhcp_a_timer
-execute if score @s uhcp_a_timer matches 1.. run scoreboard players operation %uhcp_augmentM uhcp_a_timer /= %uhcp_augment uhcp_a_timer
-execute if score @s uhcp_a_timer matches 1.. run scoreboard players set %uhcp_augment uhcp_a_timer 20
-execute if score @s uhcp_a_timer matches 1.. run scoreboard players operation %uhcp_augmentS uhcp_a_timer = @s uhcp_a_timer
-execute if score @s uhcp_a_timer matches 1.. run scoreboard players operation %uhcp_augmentS uhcp_a_timer /= %uhcp_augment uhcp_a_timer
-execute if score @s uhcp_a_timer matches 1.. run scoreboard players set %uhcp_augment uhcp_a_timer 60
-execute if score @s uhcp_a_timer matches 1.. run scoreboard players operation %uhcp_augment uhcp_a_timer *= %uhcp_augmentM uhcp_a_timer
-execute if score @s uhcp_a_timer matches 1.. run scoreboard players operation %uhcp_augmentS uhcp_a_timer -= %uhcp_augment uhcp_a_timer
+execute if score @s uhcp_a_timer matches 1.. run scoreboard players set %augment uhcp_a_timer 1200
+execute if score @s uhcp_a_timer matches 1.. run scoreboard players operation %augment_min uhcp_a_timer = @s uhcp_a_timer
+execute if score @s uhcp_a_timer matches 1.. run scoreboard players operation %augment_min uhcp_a_timer /= %augment uhcp_a_timer
+execute if score @s uhcp_a_timer matches 1.. run scoreboard players set %augment uhcp_a_timer 20
+execute if score @s uhcp_a_timer matches 1.. run scoreboard players operation %augment_sec uhcp_a_timer = @s uhcp_a_timer
+execute if score @s uhcp_a_timer matches 1.. run scoreboard players operation %augment_sec uhcp_a_timer /= %augment uhcp_a_timer
+execute if score @s uhcp_a_timer matches 1.. run scoreboard players set %augment uhcp_a_timer 60
+execute if score @s uhcp_a_timer matches 1.. run scoreboard players operation %augment uhcp_a_timer *= %augment_min uhcp_a_timer
+execute if score @s uhcp_a_timer matches 1.. run scoreboard players operation %augment_sec uhcp_a_timer -= %augment uhcp_a_timer
 
-execute if score @s uhcp_a_timer matches 1.. if score %uhcp_augmentS uhcp_a_timer matches 0..9 run tellraw @s [{"text":"Can't cast","color":"dark_red"},{"text":" Hunting Call","color":"gold"},{"text":" yet! [","color":"dark_red"},{"text":"⏰","color":"white"},{"text":": ","color":"dark_red"},{"score":{"name":"%uhcp_augmentM","objective":"uhcp_a_timer"},"color":"light_purple"},{"text":":0","color":"light_purple"},{"score":{"name":"%uhcp_augmentS","objective":"uhcp_a_timer"},"color":"light_purple"},{"text":"]","color":"dark_red"}]
-execute if score @s uhcp_a_timer matches 1.. if score %uhcp_augmentS uhcp_a_timer matches 10..59 run tellraw @s [{"text":"Can't cast","color":"dark_red"},{"text":" Hunting Call","color":"gold"},{"text":" yet! [","color":"dark_red"},{"text":"⏰","color":"white"},{"text":": ","color":"dark_red"},{"score":{"name":"%uhcp_augmentM","objective":"uhcp_a_timer"},"color":"light_purple"},{"text":":","color":"light_purple"},{"score":{"name":"%uhcp_augmentS","objective":"uhcp_a_timer"},"color":"light_purple"},{"text":"]","color":"dark_red"}]
+execute if score @s uhcp_a_timer matches 1.. if score %augment_sec uhcp_a_timer matches 0..9 run tellraw @s [{"text":"Can't cast","color":"dark_red"},{"text":" Hunting Call","color":"gold"},{"text":" yet! [","color":"dark_red"},{"text":"⏰","color":"white"},{"text":": ","color":"dark_red"},{"score":{"name":"%augment_min","objective":"uhcp_a_timer"},"color":"light_purple"},{"text":":0","color":"light_purple"},{"score":{"name":"%augment_sec","objective":"uhcp_a_timer"},"color":"light_purple"},{"text":"]","color":"dark_red"}]
+execute if score @s uhcp_a_timer matches 1.. if score %augment_sec uhcp_a_timer matches 10..59 run tellraw @s [{"text":"Can't cast","color":"dark_red"},{"text":" Hunting Call","color":"gold"},{"text":" yet! [","color":"dark_red"},{"text":"⏰","color":"white"},{"text":": ","color":"dark_red"},{"score":{"name":"%augment_min","objective":"uhcp_a_timer"},"color":"light_purple"},{"text":":","color":"light_purple"},{"score":{"name":"%augment_sec","objective":"uhcp_a_timer"},"color":"light_purple"},{"text":"]","color":"dark_red"}]
 
 execute if score @s uhcp_a_timer matches 0.. run return 0
 

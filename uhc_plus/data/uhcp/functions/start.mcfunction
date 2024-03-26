@@ -12,6 +12,7 @@ tag @a[scores={uhcp_ready=2}] add UHCP_Spectator
 # Set scores
 scoreboard players set %game uhcp_initStatus 1
 scoreboard players set %time uhcp_initStatus 0
+scoreboard players set %time_freeze uhcp_initStatus 0
 scoreboard players set %end uhcp_initStatus 0
 scoreboard players set %day uhcp_initStatus 0
 scoreboard players operation %border_countdown uhcp_gameTime = %border_countdown uhcp_settings
@@ -48,8 +49,8 @@ scoreboard players operation %pvp_retain uhcp_settings = %pvp uhcp_settings
 
 # Store lava scoreboard values
 scoreboard players operation %lava_countdown_retain uhcp_settings = %lava_countdown uhcp_settings
-scoreboard players operation %uhcp_lava_retain uhcp_lavaMaxHeight = %uhcp_lava uhcp_lavaMaxHeight
-scoreboard players operation %uhcp_lava_retain uhcp_lavaTime = %uhcp_lava uhcp_lavaTime
+scoreboard players operation %lava_retain uhcp_lavaMaxHeight = %lava uhcp_lavaMaxHeight
+scoreboard players operation %lava_retain uhcp_lavaTime = %lava uhcp_lavaTime
 
 # Store team values
 scoreboard players operation %team_size_retain uhcp_settings = %team_size uhcp_settings
@@ -65,6 +66,8 @@ advancement grant @a only uhcp:base_recipes
 # Revoke all special augment recipes here.
 
 # Reset scoreboards
+scoreboard players reset @a patron
+scoreboard players reset @a team
 scoreboard players reset @a top
 scoreboard players reset @a uhcp_a_gloryOfRa
 scoreboard players reset @a uhcp_a_selectedAugment
@@ -198,9 +201,8 @@ execute in minecraft:overworld run gamerule doDaylightCycle true
 execute in minecraft:overworld run time set 1000
 
 # Augments
-scoreboard players set %uhcp_augmentCountdown uhcp_gameTime 900
+scoreboard players set %augment_countdown uhcp_gameTime 900
 bossbar set uhcp_augment players @a
-scoreboard players set %uhcp_augments uhcp_initStatus 1
 execute as @a[tag=!UHCP_Spectator] run function uhcp:start/augments
 
 # Spectators

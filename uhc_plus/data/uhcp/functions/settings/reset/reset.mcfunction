@@ -37,9 +37,8 @@ execute in minecraft:the_nether run difficulty easy
 execute in minecraft:the_end run difficulty easy
 
 # Set default lava scoreboard values
+execute unless score %lava_init uhcp_initStatus matches 1 run function uhcp:settings/reset/lava
 scoreboard players operation %lava_countdown uhcp_settings = %lava_countdown_def uhcp_settings
-scoreboard players operation %uhcp_lava uhcp_lavaMaxHeight = %uhcp_lavaDef uhcp_lavaMaxHeight
-scoreboard players operation %uhcp_lava uhcp_lavaTime = %uhcp_lavaDef uhcp_lavaTime
 
 # Set default team values
 scoreboard players operation %team_size uhcp_settings = %team_size_def uhcp_settings

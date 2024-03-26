@@ -9,17 +9,16 @@ execute as @a[scores={uhcp_leave=1..}] run function uhcp:left
 execute if score %time uhcp_initStatus matches 1 run function uhcp:time
 
 # Display time
-execute if score %game uhcp_initStatus matches 1 run function uhcp:timer/update_displaytimer
+execute if score %game uhcp_initStatus matches 1 run function uhcp:timer/update_display
 
 # Lava
-execute if score %uhcp_lavaStart uhcp_initStatus matches 1.. run function uhcp:lava/run
+execute if score %lava_start uhcp_initStatus matches 1 run function uhcp:lava/run
 
 # Player compass
-execute unless score %uhcp_compassTime uhcp_itemCount matches 1.. if entity @a[predicate=uhcp:compass/player_compass/hand,gamemode=survival] run function uhcp:compass/determine
-execute unless score %uhcp_compassTime uhcp_itemCount matches ..0 run scoreboard players remove %uhcp_compassTime uhcp_itemCount 1
+execute unless score %compass_time uhcp_itemCount matches 1.. if entity @a[predicate=uhcp:compass/player_compass/hand,gamemode=survival] run function uhcp:compass/determine
+execute unless score %compass_time uhcp_itemCount matches ..0 run scoreboard players remove %compass_time uhcp_itemCount 1
 
 # Settings menu
-# All of this will be put into a function at some point
 execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uhcp:settings/change
 function uhcp:settings/tick
 
@@ -48,7 +47,7 @@ execute as @a[scores={uhcp_lavaTimeInterval=0..}] run function uhcp:augments/eff
 execute as @a[scores={uhcp_lavaMaxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
 
 # Augment Countdown
-execute if score %uhcp_augmentCountdown uhcp_gameTime matches 0.. run function uhcp:augments/countdown
+execute if score %augment_countdown uhcp_gameTime matches 0.. run function uhcp:augments/countdown
 
 # Patron
 execute unless score %game uhcp_initStatus matches 1 run scoreboard players enable @a patron

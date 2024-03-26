@@ -8,11 +8,11 @@
 tag @s remove UHCP_ChoosingItem
 
 # Randomize selection
-execute store result score %uhcp_augRoll uhcp_a_selectedAugment run random value 0..3
-execute if score %uhcp_augRoll uhcp_a_selectedAugment matches 0 run item replace entity @s player.cursor from entity @s container.3
-execute if score %uhcp_augRoll uhcp_a_selectedAugment matches 1 run item replace entity @s player.cursor from entity @s container.4
-execute if score %uhcp_augRoll uhcp_a_selectedAugment matches 2 run item replace entity @s player.cursor from entity @s container.5
-execute if score %uhcp_augRoll uhcp_a_selectedAugment matches 3 run item replace entity @s player.cursor from entity @s container.7
+execute store result score %augment_roll uhcp_a_selectedAugment run random value 0..3
+execute if score %augment_roll uhcp_a_selectedAugment matches 0 run item replace entity @s player.cursor from entity @s container.3
+execute if score %augment_roll uhcp_a_selectedAugment matches 1 run item replace entity @s player.cursor from entity @s container.4
+execute if score %augment_roll uhcp_a_selectedAugment matches 2 run item replace entity @s player.cursor from entity @s container.5
+execute if score %augment_roll uhcp_a_selectedAugment matches 3 run item replace entity @s player.cursor from entity @s container.7
 execute store result score @s uhcp_a_selectedAugment run function uhcp:augments/assign
 clear @s
 

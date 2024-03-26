@@ -1,6 +1,6 @@
 # Run for players whom are part of game
 # Yes, the augment countdown score check should be for 1, not 0.
-execute unless score %uhcp_augmentCountdown uhcp_gameTime matches 1.. if entity @s[tag=UHCP_ChoosingItem] run function uhcp:left/augments/select
+execute unless score %augment_countdown uhcp_gameTime matches 1.. if entity @s[tag=UHCP_ChoosingItem] run function uhcp:left/augments/select
 
 # Augments potentially affected by leaving
 # Gas Gas Gas
