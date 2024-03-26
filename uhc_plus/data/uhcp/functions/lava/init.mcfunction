@@ -17,17 +17,17 @@ scoreboard players operation %lava uhcp_lavaTimeInterval = %lava uhcp_lavaTime
 scoreboard players operation %lava uhcp_lavaTimeInterval /= %lava uhcp_lavaHeight
 
 # Set secondary lava scoreboards
-scoreboard players set %uhcp_lavaSec uhcp_lavaTime 70
-scoreboard players set %uhcp_lavaSecInit uhcp_initStatus 0
-scoreboard players set %uhcp_lavaSec uhcp_initStatus 1
+scoreboard players set %lava_secondary uhcp_lavaTime 70
+scoreboard players set %lava_secondary_init uhcp_initStatus 0
+scoreboard players set %lava_secondary uhcp_initStatus 1
 
 # Set height scoreboards
 scoreboard players set %lava uhcp_lavaCurrentHeight -64
 scoreboard players set %lava uhcp_lavaCurrentLayers 0
 
 # Replace bordering non-solid blocks with barriers
-scoreboard players set %uhcp_lavaBar uhcp_lavaTime 10
-scoreboard players set %uhcp_lavaBar uhcp_lavaCurrentLayers 0
+scoreboard players set %lava_barrier uhcp_lavaTime 10
+scoreboard players set %lava_barrier uhcp_lavaCurrentLayers 0
 
 # Set initilization status
 scoreboard players set %lava_init uhcp_initStatus 1

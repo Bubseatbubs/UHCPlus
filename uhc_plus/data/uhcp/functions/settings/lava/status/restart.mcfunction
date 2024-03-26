@@ -17,12 +17,12 @@ scoreboard players operation %lava uhcp_lavaTimeInterval = %lava uhcp_lavaTime
 scoreboard players operation %lava uhcp_lavaTimeInterval /= %lava uhcp_lavaHeight
 
 # Set secondary lava scoreboards
-scoreboard players set %uhcp_lavaSec uhcp_lavaTime 70
-scoreboard players set %uhcp_lavaSecInit uhcp_initStatus 1
-scoreboard players set %uhcp_lavaSec uhcp_initStatus 1
+scoreboard players set %lava_secondary uhcp_lavaTime 70
+scoreboard players set %lava_secondary_init uhcp_initStatus 1
+scoreboard players set %lava_secondary uhcp_initStatus 1
 
 # Set barrier timer
-execute if score %uhcp_lavaBar uhcp_lavaTime matches ..15 run scoreboard players set %uhcp_lavaBar uhcp_lavaTime 10
+execute if score %lava_barrier uhcp_lavaTime matches ..15 run scoreboard players set %lava_barrier uhcp_lavaTime 10
 
 # Lava notification
 execute as @a at @s run playsound block.lava.pop master @s ~ ~ ~ 1 1 1

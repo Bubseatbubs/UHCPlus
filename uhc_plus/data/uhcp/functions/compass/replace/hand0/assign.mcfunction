@@ -7,5 +7,5 @@ execute store result storage uhcp:compass Compass.hand[0].components."minecraft:
 # Track information
 data modify storage uhcp:compass Track append value {}
 data modify storage uhcp:compass Track[-1].uuid set from storage uhcp:compass Compass.hand[0].components."minecraft:custom_data".uuid
-execute store result score %uhcp_compassCt uhcp_itemInv run data get storage uhcp:compass Compass.hand[0].count
-execute store result storage uhcp:compass Track[-1].count int 1 run scoreboard players get %uhcp_compassCt uhcp_itemInv
+execute store result score %compass_count uhcp_itemInv run data get storage uhcp:compass Compass.hand[0].count
+execute store result storage uhcp:compass Track[-1].count int 1 run scoreboard players get %compass_count uhcp_itemInv
