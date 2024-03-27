@@ -1,10 +1,9 @@
 # Update Display
 scoreboard players remove %update_display uhcp_game_time 1
-execute unless score %update_display uhcp_game_time matches ..0 run return 0
+execute if score %update_display uhcp_game_time matches 1.. run return 0
 scoreboard players set %update_display uhcp_game_time 10
 
-# Update Player Count
+# Update statistics
 function uhcp:timer/update_playersleft
-function uhcp:timer/update_bordersize
-
+execute store result score %border uhcp_game_display run worldborder get
 execute unless score %time_freeze uhcp_initStatus matches 1 run function uhcp:timer/update_displaytimer

@@ -42,6 +42,7 @@ scoreboard players reset %time uhcp_game_time
 scoreboard players reset %time uhcp_initStatus
 scoreboard players reset %time_freeze uhcp_initStatus
 scoreboard players reset %lava_start uhcp_initStatus
+scoreboard players reset %update_display uhcp_game_time
 scoreboard players reset @a uhcp_lava_timeInterval
 scoreboard players reset @a uhcp_lava_maxHeight
 scoreboard players reset @a uhcp_team
