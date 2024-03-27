@@ -11,7 +11,7 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/golden_apple/ate"
+    "function": "uhcp:entity/items/ate_golden_apple/ate"
   }
 }
   

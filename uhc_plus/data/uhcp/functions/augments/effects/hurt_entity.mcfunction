@@ -1,2 +1,2 @@
 
-advancement revoke @s only uhcp:augments/hurt_entity
+advancement revoke @s only uhcp:entity_actions/hurt_entity

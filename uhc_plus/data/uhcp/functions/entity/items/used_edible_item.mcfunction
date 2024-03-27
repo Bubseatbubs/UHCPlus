@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:used_edible_item
+advancement revoke @s only uhcp:entity_actions/used_edible_item
 scoreboard players set @s uhcp_itemCount 4
 
 # Relics

@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:augments/drank_potion_of_panda
+advancement revoke @s only uhcp:augments/become_panda
 function uhcp:augments/effects/prismatic/kungfupanda/store_armor
 tag @s add UHCP_IsPanda
 playsound block.brewing_stand.brew master @a[distance=..4] ~ ~ ~ 1 1 0.75

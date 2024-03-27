@@ -1,7 +1,8 @@
 # Activates when a player kills another player
-advancement revoke @s only uhcp:killed_player
+advancement revoke @s only uhcp:entity_actions/killed_player
 execute store result storage uhcp:settings golden_apple.amount int 1 run scoreboard players get %golden_apples uhcp_settings
 function uhcp:kill/give_gapples with storage uhcp:settings golden_apple
+function uhcp:augments/effects/killed_player
 
 # Give levels
 effect give @s minecraft:speed 12 0

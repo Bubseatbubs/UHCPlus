@@ -39,7 +39,7 @@ execute as @a if score @s testkit matches 1.. run function uhcp:testkit
 execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:kill/death
 
 # Ate Golden Apple Effect
-execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:augments/effects/golden_apple/update
+execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:entity/items/ate_golden_apple/update
 
 # Augments
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
