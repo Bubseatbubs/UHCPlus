@@ -3,4 +3,5 @@ execute as @e[tag=UHCP_AltarDisplay] on passengers run kill @s
 execute as @e[tag=UHCP_AltarDisplay] run kill @s
 tellraw @a [{"text":"The Titans","color":"#3B1CD5","bold":true},{"text":" rise...","bold":false}]
 
-execute as @a at @s run playsound entity.ender_dragon.growl master @s ~ ~ ~ 1 0.5 1
+execute as @a at @s run playsound minecraft:event.mob_effect.raid_omen master @s ~ ~ ~ 1 1 1
+execute as @a at @s run playsound minecraft:event.mob_effect.trial_omen master @s ~ ~ ~ 1 1 1
