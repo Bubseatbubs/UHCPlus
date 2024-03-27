@@ -1,0 +1,93 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:rotten_flesh",
+            "functions": [
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                    {
+                      "text": "Grants",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " +4🖤",
+                      "color": "yellow",
+                      "italic": true
+                    },
+                    {
+                      "text": " for 30 seconds",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  {
+                    "text": "when consumed.",
+                    "color": "gray",
+                    "italic": true
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "Suspicious Flesh",
+                  "color": "light_purple",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:food": {
+                    "nutrition": 4,
+                    "saturation_modifier": 0,
+                    "can_always_eat": true,
+                    "effects": [
+                      {
+                        "effect": {
+                          "id": "minecraft:hunger",
+                          "amplifier": 0,
+                          "duration": 600,
+                          "ambient": false,
+                          "show_particles": true,
+                          "show_icon": true
+                        },
+                        "probability": 0.8
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:absorption",
+                          "amplifier": 1,
+                          "duration": 600,
+                          "ambient": false,
+                          "show_particles": true,
+                          "show_icon": true
+                        }
+                      }
+                    ]
+                  },
+                  "minecraft:enchantments": {
+                    "levels": {
+                      "minecraft:protection": 0
+                    },
+                    "show_in_tooltip": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

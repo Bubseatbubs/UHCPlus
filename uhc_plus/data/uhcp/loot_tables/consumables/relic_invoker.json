@@ -49,13 +49,13 @@
                 "function": "set_lore",
                 "mode": "insert",
                 "lore": [
-                  {
-                    "text": "Throw this item to obtain a",
-                    "color": "gray"
-                  },
                   [
                     {
-                      "text": "random ",
+                      "text": "Right click to obtain a",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " random ",
                       "color": "gray"
                     },
                     {

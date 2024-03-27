@@ -13,8 +13,9 @@ execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_d
 execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_radiant:8b}] at @s run return run function uhcp:relics/dragons_protection/init
 
 # Consumables
-
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:0b}] at @s run return run function uhcp:consumables/duplicator/init
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:1b}] at @s run return run function uhcp:consumables/portable_lava_pool/init
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:2b}] at @s run return run function uhcp:consumables/lesser_duplicator/init
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:3b}] at @s run return run function uhcp:consumables/relic_invoker/use
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:4b}] at @s run return run function uhcp:consumables/wild_feather/init
 

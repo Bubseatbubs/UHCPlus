@@ -1,0 +1,118 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bamboo",
+            "functions": [
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                    {
+                      "text": "Transform into a",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Panda",
+                      "color": "blue",
+                      "italic": true
+                    },
+                    {
+                      "text": " and gain",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  [
+                    {
+                      "text": "+10🖤",
+                      "color": "yellow",
+                      "italic": true
+                    },
+                    {
+                      "text": ". Transform back when you",
+                      "color": "gray"
+                    }
+                  ],
+                  {
+                    "text": "have no Absorption.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "Panda",
+                      "color": "blue"
+                    },
+                    {
+                      "text": ": Set your ⛊ to 30, and",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  {
+                    "text": "automatically attack nearby enemies.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "You cannot equip Armor, manually",
+                    "color": "dark_red"
+                  },
+                  {
+                    "text": "attack, or use your Offhand.",
+                    "color": "dark_red"
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "Suspicious Bamboo Shoot",
+                  "color": "light_purple",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:food": {
+                    "nutrition": 4,
+                    "saturation_modifier": 0,
+                    "can_always_eat": true,
+                    "effects": [
+                      {
+                        "effect": {
+                          "id": "minecraft:bad_omen",
+                          "amplifier": 101,
+                          "duration": 1,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      }
+                    ]
+                  },
+                  "minecraft:enchantments": {
+                    "levels": {
+                      "minecraft:protection": 1
+                    },
+                    "show_in_tooltip": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

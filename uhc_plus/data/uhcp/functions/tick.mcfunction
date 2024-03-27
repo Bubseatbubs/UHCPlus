@@ -35,7 +35,7 @@ execute if entity @a[scores={top=1..}] run function uhcp:top/validate
 # Testkit
 execute as @a if score @s testkit matches 1.. run function uhcp:testkit
 
-# Death
+# On Player Death
 execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:kill/death
 
 # Ate Golden Apple Effect
@@ -62,6 +62,9 @@ execute as @a at @s if score @s team matches 100..115 run function uhcp:lobby/te
 # Update Summoned Entities
 execute as @e[tag=UHCP_Summon] at @s run function uhcp:entity/update
 
+# Update Titans
+execute as @e[tag=UHCP_Titan] at @s run function uhcp:titans/update
+
 # Relics
 execute as @a[tag=UHCP_SoulflameEmbrace] at @s run function uhcp:relics/soulflames_embrace/update_player
 execute as @a[tag=UHCP_InflictedWithGravityGlobe] at @s run function uhcp:relics/gravity_globe/update
@@ -70,9 +73,6 @@ execute as @e[predicate=uhcp:relics/runic_sentry/hitbox_hurt] at @s run function
 
 # Disable Ender Pearl Damage
 execute as @e[type=minecraft:ender_pearl] at @s run function uhcp:entity/ender_pearl
-
-# Titans
-execute as @e[tag=UHCP_Titan] at @s run function uhcp:titans/update
 
 # Instant pickup items
 execute as @e[tag=!UHCP_ItemPickup,predicate=uhcp:items/instant_pickup] run function uhcp:entity/items/instant_pickup

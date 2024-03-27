@@ -5,8 +5,8 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:stone"
+          "type": "minecraft:loot_table",
+          "value": "uhcp:consumables/lesser_duplicator"
         }
       ]
     },
