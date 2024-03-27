@@ -1,5 +1,5 @@
 advancement revoke @s only uhcp:relics/smooth_getaway/wearing_armor
-tellraw @s {"text":"You can't equip Armor right now!","color":"dark_red"}
+tellraw @s {"text":"You can't equip Armor or use your Offhand right now!","color":"dark_red"}
 playsound block.note_block.snare master @s ~ ~ ~ 1 1 1
 
 execute if items entity @s armor.head * run function uhcp:entity/remove_armor/head

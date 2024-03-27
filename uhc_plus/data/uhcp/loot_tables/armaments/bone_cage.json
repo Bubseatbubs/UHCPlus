@@ -1,0 +1,162 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:leather_chestplate",
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:protection": 4,
+                  "minecraft:projectile_protection": 4,
+                  "minecraft:unbreaking": 5
+                }
+              },
+              {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 8,
+                    "operation": "add_value",
+                    "id": "b5d7f698-8bad-4654-a5d9-7f487e5aa7c5",
+                    "slot": "chest"
+                  },
+                  {
+                    "attribute": "minecraft:generic.armor_toughness",
+                    "name": "",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "id": "37a4ce43-f874-463e-8789-22908689c0f5",
+                    "slot": "chest"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue"
+                  },
+                  [
+                    {
+                      "text": "ARMAMENT",
+                      "color": "#bf7830",
+                      "italic": false
+                    },
+                    {
+                      "text": ": Armaments are pieces",
+                      "color": "gray"
+                    }
+                  ],
+                  {
+                    "text": "of Armor with special effects.",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "EFFECT:",
+                      "color": "#e61c69",
+                      "italic": false
+                    },
+                    {
+                      "text": " Drop",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Bones",
+                      "color": "blue"
+                    },
+                    {
+                      "text": " when you are hurt. ",
+                      "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Picking up",
+                      "color": "gray",
+                      "italic": false
+                    },
+                    {
+                      "text": " Bones",
+                      "color": "blue"
+                    },
+                    {
+                      "text": " grants"
+                    },
+                    {
+                      "text": " Resistance I",
+                      "color": "yellow"
+                    }
+                  ],
+                  {
+                    "text": "for 1 second.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Bo",
+                    "color": "#ab5b1a",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "ne",
+                    "color": "#cf8817"
+                  },
+                  {
+                    "text": " Ca",
+                    "color": "#debb10"
+                  },
+                  {
+                    "text": "ge",
+                    "color": "#e8d20c"
+                  },
+                  {
+                    "text": " 𝔸",
+                    "color": "white",
+                    "bold": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:dyed_color": {
+                    "rgb": 7566195,
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:trim": {
+                    "material": "minecraft:quartz",
+                    "pattern": "minecraft:rib",
+                    "show_in_tooltip": false
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_armaments:0b}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

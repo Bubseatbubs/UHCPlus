@@ -20,7 +20,9 @@ execute if score %tier uhcp_aug_tier matches 2 run title @s subtitle [{"text":"A
 title @s title [{"text":"Aug","color":"#1921FF","bold":true},{"text":"men","color":"#3D8BFF"},{"text":"t Se","color":"#59B7FF"},{"text":"lec","color":"#85EFFF"},{"text":"tion","color":"#B8FFF1"}]
 tellraw @s [{"text":"[","color":"white"},{"text":"Aug","color":"#1921FF"},{"text":"men","color":"#3D8BFF"},{"text":"t Se","color":"#59B7FF"},{"text":"lec","color":"#85EFFF"},{"text":"tion","color":"#B8FFF1"},{"text":"]\n","color":"white"},{"text":"Choose one of three augments from your inventory.\nTo choose an augment, open your inventory and\nclick on the augment you want.","color":"gray"}]
 execute at @s run playsound block.beacon.activate master @s ~ ~ ~ 1 1 1
-execute at @s run summon minecraft:firework_rocket ~ ~7 ~ {FireworksItem:{id:"firework_rocket",components:{"minecraft:fireworks":{explosions:[{shape:"star",colors:[I;16772608],fade_colors:[I;15662848],has_trail:1b}]}}}}
+execute at @s run playsound block.beacon.activate master @s ~ ~ ~ 1 1 1
+execute at @s run playsound minecraft:block.fire.extinguish master @s ~ ~ ~ 1 2 1
+execute at @s run particle minecraft:trial_spawner_detection ~ ~ ~ 0.5 0.5 0.5 0.001 100 normal
 
 # Final Cleanup
 tag @s add UHCP_ChoosingItem

@@ -1,10 +1,15 @@
 {
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:entity_hurt_player"
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "blocked": false
+        }
+      }
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/hurt"
+    "function": "uhcp:entity/hurt"
   }
 }
