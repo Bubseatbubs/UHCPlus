@@ -23,7 +23,7 @@
         "levels": {
           "minecraft:protection": 1
         },
-        "show_in_tooltip": 0
+        "show_in_tooltip": false
       },
       "minecraft:custom_data": {
         "uhcp_instantpickup": 1,
