@@ -7,6 +7,7 @@ tag @s add UHCP_CurrentDeadPlayer
 function uhcp:kill/death/augments
 
 # Marker
+execute as @e[tag=UHCP_Summon] if score @s uhcp_id = @a[tag=UHCP_CurrentDeadPlayer,limit=1] uhcp_id run kill @s
 execute as @e[tag=UHCP_Death] if score @s uhcp_id = @a[tag=UHCP_CurrentDeadPlayer,limit=1] uhcp_id run kill @s
 execute summon marker at @s run function uhcp:kill/death/spawn_marker
 
