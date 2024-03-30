@@ -12,53 +12,21 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "name": "uhcp:augments/armored_wings",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            }
-          ]
+          "value": "uhcp:armaments/armored_wings"
         },
         {
           "type": "loot_table",
           "weight": 1,
-          "name": "uhcp:relics/relic_invoker",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            }
-          ]
+          "value": "uhcp:consumables/relic_invoker"
         },
         {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "count": 1,
-              "function": "minecraft:set_count"
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomPotionColor:16762880,CustomPotionEffects:[{Duration:1200,Id:22},{Duration:300,Id:24},{Duration:6000,Id:3,Amplifier:1},{Duration:1,Id:23,Amplifier:40},{Duration:3600,Id:1}],custom_potion_effects:[{duration:1000,id:\"minecraft:absorption\"},{duration:300,id:\"minecraft:glowing\"},{duration:3600,id:\"minecraft:haste\",amplifier:1},{duration:1,id:\"minecraft:saturation\",amplifier:40},{duration:3600,id:\"minecraft:speed\"}]}"
-            },
-            {
-              "entity": "this",
-              "function": "minecraft:set_name",
-              "name": {
-                "bold": false,
-                "color": "light_purple",
-                "italic": false,
-                "text": "Royal Jelly"
-              }
-            }
-          ],
-          "name": "minecraft:potion"
+          "type": "loot_table",
+          "value": "uhcp:consumables/royal_jelly"
         },
         {
           "type": "loot_table",
           "weight": 1,
-          "name": "uhcp:augments/birdsofafeather",
+          "value": "uhcp:consumables/wild_feather",
           "functions": [
             {
               "function": "set_count",
@@ -69,13 +37,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "name": "uhcp:augments/portablelavapool",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            }
-          ]
+          "value": "uhcp:consumables/portable_lava_pool"
         },
         {
           "type": "minecraft:item",

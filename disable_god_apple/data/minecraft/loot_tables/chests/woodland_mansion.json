@@ -21,7 +21,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "name": "uhcp:relics/relic_invoker",
+          "value": "uhcp:consumables/relic_invoker",
           "functions": [
             {
               "function": "set_count",

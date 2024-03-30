@@ -1,0 +1,97 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:potion",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:potion_contents": {
+                    "potion": "minecraft:awkward",
+                    "custom_color": 16766566,
+                    "custom_effects": [
+                      {
+                        "id": "minecraft:glowing",
+                        "amplifier": 0,
+                        "duration": 300,
+                        "ambient": false,
+                        "show_particles": false,
+                        "show_icon": true
+                      },
+                      {
+                        "id": "minecraft:saturation",
+                        "duration": 1000,
+                        "hidden_effect": {
+                          "amplifier": 40,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      },
+                      {
+                        "id": "minecraft:absorption",
+                        "amplifier": 0,
+                        "duration": 1000
+                      },
+                      {
+                        "id": "minecraft:speed",
+                        "amplifier": 0,
+                        "duration": 3600,
+                        "ambient": true,
+                        "show_particles": true,
+                        "show_icon": true
+                      },
+                      {
+                        "id": "minecraft:haste",
+                        "amplifier": 1,
+                        "duration": 3600,
+                        "ambient": true,
+                        "show_particles": true,
+                        "show_icon": true
+                      }
+                    ]
+                  },
+                  "minecraft:enchantments": {
+                    "levels": {
+                      "minecraft:protection": 1
+                    },
+                    "show_in_tooltip": false
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "target": "item_name",
+                "name": {
+                  "text": "Royal Jelly",
+                  "color": "light_purple",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "A strange consumable that grants",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "a slew of status effects.",
+                    "color": "gray"
+                  }
+                ],
+                "mode": "replace_all"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

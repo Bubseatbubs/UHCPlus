@@ -1,2 +1,2 @@
-loot give @s loot uhcp:augments/armored_wings
+loot give @s loot uhcp:armaments/armored_wings
 give @s firework_rocket 15
