@@ -100,7 +100,7 @@ execute as @a at @s run function uhcp:lobby/menu
 
 # Notify players of reset
 title @a subtitle {"text":"RESET","color":"gray"}
-title @a title [{"text":"[","color":"white"},{"text":"U","color":"#1921FF"},{"text":"H","color":"#3D8BFF"},{"text":"C","color":"#59B7FF"},{"text":" +","color":"#85EFFF"},{"text":"]","color":"white"}]
+title @a title [{"text":"[","color":"white"},{"text":"U","color":"#1921FF"},{"text":"H","color":"#3D8BFF"},{"text":"C","color":"#59B7FF"},{"text":"+","color":"#85EFFF"},{"text":"]","color":"white"}]
 execute as @a at @s run playsound entity.enderman.teleport master @s ~ ~ ~ 1 1 1
 execute as @a at @s run particle portal ~ ~ ~ 1 1 1 0.1 100 normal @s
 execute as @a at @s run particle flash ~ ~ ~ 1 1 1 0.1 100 normal @s

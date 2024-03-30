@@ -13,21 +13,6 @@
                 "scores": {
                   "uhcp_augment": 0
                 }
-              },
-              {
-                "condition": "minecraft:entity_scores",
-                "entity": "this",
-                "scores": {
-                  "uhcp_augment": 200
-                }
-              },
-              {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "uhcp_augment": 237,
-                    "uhcp_aug_tier": 855555
-                  }
               }
             ]
           }

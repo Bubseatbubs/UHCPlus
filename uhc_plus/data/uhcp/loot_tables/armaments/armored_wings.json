@@ -8,53 +8,115 @@
           "name": "minecraft:elytra",
           "functions": [
             {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_attributes",
-              "modifiers": [
-                {
-                  "attribute": "minecraft:generic.armor",
-                  "name": "armrdwngs",
-                  "amount": 8,
-                  "operation": "add_value",
-                  "id": "5b65f98d-2098-4b9b-aaae-255b67ce9e54",
-                  "slot": "chest"
-                }
-              ]
-            },
-            {
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:unbreaking": 3
               }
             },
             {
-              "function": "minecraft:set_name",
-              "target": "item_name",
-              "name": [
+              "function": "minecraft:set_attributes",
+              "modifiers": [
                 {
-                  "text": "Armored Wings",
-                  "color": "light_purple"
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "id": "b5d7f698-8bad-4654-a5d9-7f487e5aa7c5",
+                  "slot": "chest"
+                },
+                {
+                  "attribute": "minecraft:generic.armor_toughness",
+                  "name": "",
+                  "amount": 2,
+                  "operation": "add_value",
+                  "id": "37a4ce43-f874-463e-8789-22908689c0f5",
+                  "slot": "chest"
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
-                  "text": "An Elytra with the protection",
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "ARMAMENT",
+                    "color": "#bf7830",
+                    "italic": false
+                  },
+                  {
+                    "text": ": Armaments are pieces",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "of Armor with special effects.",
                   "color": "gray",
-                  "italic": true
+                  "italic": false
                 },
                 {
-                  "text": "levels of a Diamond Chestplate.",
-                  "color": "gray",
-                  "italic": true
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "EFFECT:",
+                    "color": "#e61c69",
+                    "italic": false
+                  },
+                  {
+                    "text": " Grants Armor equal to a",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Diamond Chestplate",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Arm",
+                  "color": "#ab5b1a",
+                  "bold": true,
+                  "italic": false
+                },
+                {
+                  "text": "ored",
+                  "color": "#cf8817"
+                },
+                {
+                  "text": " Wi",
+                  "color": "#debb10"
+                },
+                {
+                  "text": "ngs",
+                  "color": "#e8d20c"
+                },
+                {
+                  "text": " 𝔸",
+                  "color": "white",
+                  "bold": false
                 }
               ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_armaments:3b}"
             }
           ]
         }
