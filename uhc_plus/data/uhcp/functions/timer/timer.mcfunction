@@ -39,9 +39,6 @@ execute if score %time uhcp_game_time matches 30000 as @a[scores={uhcp_augment=4
 execute if score %time uhcp_game_time matches 34800 as @a[scores={uhcp_augment=43}] run tellraw @s {"text":"All your wolves will fetch loot in 1 minute!","color":"red"}
 execute if score %time uhcp_game_time matches 34800 as @a[scores={uhcp_augment=43}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
 
-# Rain random lab UHC player balance addons
-execute if score %time uhcp_game_time matches 2700 run function rain:tags
-
 # Cycle Effects
 execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=101}] run function uhcp:augments/effects/silver/afk/lock
 
@@ -68,3 +65,6 @@ execute if score %time uhcp_game_time >= %AUG_238 uhcp_game_time run scoreboard 
 execute if score %time uhcp_game_time matches 6000 in minecraft:overworld positioned 0 64 0 run function uhcp:titans/spawn/init
 execute if score %time uhcp_game_time matches 24000 in minecraft:overworld run function uhcp:titans/spawn/summon
 execute if score %time uhcp_game_time matches 42000 in minecraft:overworld run function uhcp:titans/reset
+
+# Rain random lab UHC player balance addons
+execute if score %time uhcp_game_time matches 2700 run function rain:tags

@@ -21,13 +21,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "value": "uhcp:consumables/relic_invoker",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            }
-          ]
+          "value": "uhcp:consumables/relic_invoker"
         },
         {
           "type": "minecraft:item",
