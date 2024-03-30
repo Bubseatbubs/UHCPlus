@@ -6,8 +6,8 @@
   },
   "rewards": {
     "recipes": [
-      "minecraft:flint",
       "uhcp:all-seeing_eye",
+      "uhcp:flint",
       "uhcp:player_compass"
     ]
   }
