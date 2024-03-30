@@ -13,17 +13,6 @@
                   "count": 1
                 },
                 {
-                  "function": "minecraft:set_components",
-                  "components": {
-                    "minecraft:enchantments": {
-                      "levels": {
-                        "minecraft:protection": 1
-                      },
-                      "show_in_tooltip": false
-                    }
-                  }
-                },
-                {
                   "function": "minecraft:set_custom_data",
                   "tag": "{uhcp_augmentselect:1b,augment:217s}"
                 },
@@ -273,17 +262,6 @@
                   "count": 1
                 },
                 {
-                  "function": "minecraft:set_components",
-                  "components": {
-                    "minecraft:enchantments": {
-                      "levels": {
-                        "minecraft:impaling": 1
-                      },
-                      "show_in_tooltip": false
-                    }
-                  }
-                },
-                {
                   "function": "minecraft:set_custom_data",
                   "tag": "{uhcp_augmentselect:1b,augment:207s}"
                 },
@@ -378,17 +356,6 @@
                 {
                   "function": "set_count",
                   "count": 1
-                },
-                {
-                  "function": "minecraft:set_components",
-                  "components": {
-                    "minecraft:enchantments": {
-                      "levels": {
-                        "minecraft:protection": 1
-                      },
-                      "show_in_tooltip": false
-                    }
-                  }
                 },
                 {
                   "function": "minecraft:set_custom_data",
@@ -489,12 +456,6 @@
                 {
                   "function": "minecraft:set_components",
                   "components": {
-                    "minecraft:enchantments": {
-                      "levels": {
-                        "minecraft:protection": 1
-                      },
-                      "show_in_tooltip": false
-                    },
                     "!minecraft:food": {}
                   }
                 },
@@ -594,17 +555,7 @@
                   "function": "set_count",
                   "count": 1
                 },
-                {
-                  "function": "minecraft:set_components",
-                  "components": {
-                    "minecraft:enchantments": {
-                      "levels": {
-                        "minecraft:protection": 1
-                      },
-                      "show_in_tooltip": false
-                    }
-                  }
-                },
+                
                 {
                   "function": "minecraft:set_custom_data",
                   "tag": "{uhcp_augmentselect:1b,augment:228s}"
@@ -734,17 +685,6 @@
                   "count": 1
                 },
                 {
-                  "function": "minecraft:set_components",
-                  "components": {
-                    "minecraft:enchantments": {
-                      "levels": {
-                        "minecraft:protection": 1
-                      },
-                      "show_in_tooltip": false
-                    }
-                  }
-                },
-                {
                   "function": "minecraft:set_custom_data",
                   "tag": "{uhcp_augmentselect:1b,augment:213s}"
                 },
@@ -832,17 +772,7 @@
                   "function": "set_count",
                   "count": 1
                 },
-                {
-                  "function": "minecraft:set_components",
-                  "components": {
-                    "minecraft:enchantments": {
-                      "levels": {
-                        "minecraft:protection": 1
-                      },
-                      "show_in_tooltip": false
-                    }
-                  }
-                },
+                
                 {
                   "function": "minecraft:set_custom_data",
                   "tag": "{uhcp_augmentselect:1b,augment:201s}"
@@ -958,17 +888,6 @@
               {
                 "function": "set_count",
                 "count": 1
-              },
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:enchantments": {
-                    "levels": {
-                      "minecraft:protection": 1
-                    },
-                    "show_in_tooltip": false
-                  }
-                }
               },
               {
                 "function": "minecraft:set_custom_data",

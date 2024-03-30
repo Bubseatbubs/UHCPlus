@@ -13,17 +13,6 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  },
-                  "show_in_tooltip": false
-                }
-              }
-            },
-            {
               "function": "minecraft:set_custom_data",
               "tag": "{uhcp_augmentselect:1b,augment:214s}"
             },
@@ -40,7 +29,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -110,7 +98,8 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -124,17 +113,11 @@
               "count": 1
             },
             {
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:enchantments": {
-									"levels": {
-										"minecraft:protection": 1
-									},
-									"show_in_tooltip": false
-								},
-								"minecraft:hide_additional_tooltip": {}
-							}
-						},
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {}
+              }
+            },
             {
               "function": "minecraft:set_custom_data",
               "tag": "{uhcp_augmentselect:1b,augment:222s}"
@@ -152,7 +135,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -206,7 +188,8 @@
                   "text": "experience levels.",
                   "color": "gray"
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -222,12 +205,6 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  },
-                  "show_in_tooltip": false
-                },
                 "!minecraft:food": {}
               }
             },
@@ -248,7 +225,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -291,14 +267,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:golden_apple",
+          "name": "minecraft:enchanted_golden_apple",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -307,7 +284,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                  "!minecraft:food": {}
+                "!minecraft:food": {}
               }
             },
             {
@@ -327,7 +304,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -361,7 +337,8 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -391,7 +368,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -433,7 +409,8 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -445,17 +422,6 @@
             {
               "function": "minecraft:set_count",
               "count": 1
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  },
-                  "show_in_tooltip": false
-                }
-              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -474,7 +440,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -552,7 +517,8 @@
                   "color": "gray",
                   "bold": true
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -564,17 +530,6 @@
             {
               "function": "minecraft:set_count",
               "count": 1
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  },
-                  "show_in_tooltip": false
-                }
-              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -593,7 +548,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -614,7 +568,8 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -626,17 +581,6 @@
             {
               "function": "minecraft:set_count",
               "count": 1
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  },
-                  "show_in_tooltip": false
-                }
-              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -655,7 +599,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -682,7 +625,8 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -712,7 +656,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -741,7 +684,8 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -771,7 +715,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -792,7 +735,8 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -822,7 +766,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -851,7 +794,8 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -863,17 +807,6 @@
             {
               "function": "minecraft:set_count",
               "count": 1
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:fortune": 1
-                  },
-                  "show_in_tooltip": false
-                }
-              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -892,7 +825,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -927,7 +859,8 @@
                   "text": "your movement speed by 30%.",
                   "color": "gray"
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -939,17 +872,6 @@
             {
               "function": "minecraft:set_count",
               "count": 1
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  },
-                  "show_in_tooltip": false
-                }
-              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -968,7 +890,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1003,7 +924,8 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -1015,17 +937,6 @@
             {
               "function": "minecraft:set_count",
               "count": 1
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  },
-                  "show_in_tooltip": false
-                }
-              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -1044,7 +955,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1114,7 +1024,8 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -1126,17 +1037,6 @@
             {
               "function": "minecraft:set_count",
               "count": 1
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  },
-                  "show_in_tooltip": false
-                }
-              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -1155,7 +1055,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1197,7 +1096,8 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -1209,17 +1109,6 @@
             {
               "function": "minecraft:set_count",
               "count": 1
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  },
-                  "show_in_tooltip": false
-                }
-              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -1238,7 +1127,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1276,29 +1164,19 @@
                   "text": "within its area.",
                   "color": "gray"
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:bone",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  },
-                  "show_in_tooltip": false
-                }
-              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -1316,8 +1194,7 @@
               ]
             },
             {
-              "function": "set_lore",
-              "mode": "replace_all",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1359,7 +1236,8 @@
                   "text": "target.",
                   "color": "gray"
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -1371,17 +1249,6 @@
             {
               "function": "minecraft:set_count",
               "count": 1
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  },
-                  "show_in_tooltip": false
-                }
-              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -1400,7 +1267,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1424,7 +1290,8 @@
                   "text": "Every 20 minutes, gain another.",
                   "color": "gray"
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -1436,17 +1303,6 @@
             {
               "function": "minecraft:set_count",
               "count": 1
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  },
-                  "show_in_tooltip": false
-                }
-              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -1465,7 +1321,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1501,7 +1356,8 @@
                   "text": "10 minutes.",
                   "color": "gray"
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -1513,17 +1369,6 @@
             {
               "function": "minecraft:set_count",
               "count": 1
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  },
-                  "show_in_tooltip": false
-                }
-              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -1542,7 +1387,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1562,7 +1406,8 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -1574,17 +1419,6 @@
             {
               "function": "minecraft:set_count",
               "count": 1
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  },
-                  "show_in_tooltip": false
-                }
-              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -1603,7 +1437,6 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1663,17 +1496,18 @@
                     "text": "."
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:nether_star",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
@@ -1692,8 +1526,7 @@
               ]
             },
             {
-              "function": "set_lore",
-              "mode": "replace_all",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1723,7 +1556,8 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
@@ -1731,6 +1565,19 @@
           "type": "minecraft:loot_table",
           "weight": 9,
           "value": "uhcp:augments/patron/prismatic"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:enchantments": {
+              "levels": {
+                "minecraft:protection": 1
+              },
+              "show_in_tooltip": false
+            }
+          }
         }
       ]
     }
