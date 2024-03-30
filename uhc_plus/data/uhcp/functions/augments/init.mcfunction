@@ -22,7 +22,7 @@ tellraw @s [{"text":"[","color":"white"},{"text":"Aug","color":"#1921FF"},{"text
 execute at @s run playsound block.beacon.activate master @s ~ ~ ~ 1 1 1
 execute at @s run playsound block.beacon.activate master @s ~ ~ ~ 1 1 1
 execute at @s run playsound minecraft:block.fire.extinguish master @s ~ ~ ~ 1 2 1
-execute at @s run particle minecraft:trial_spawner_detection ~ ~ ~ 0.5 0.5 0.5 0.001 100 normal
+execute at @s run particle minecraft:trial_spawner_detection_ominous ~ ~ ~ 0.5 0.5 0.5 0.001 100 normal
 
 # Final Cleanup
 tag @s add UHCP_ChoosingItem
