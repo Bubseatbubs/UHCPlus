@@ -1,15 +1,13 @@
 ﻿{
-    "type": "crafting_shaped",
-    "pattern": [
-        "#"
-    ],
-    "key": {
-        "#": {
-            "item": "minecraft:gravel"
-        }
-    },
-    "result": {
-        "item": "minecraft:flint",
-        "count": 1
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:gravel"
     }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:flint"
+  }
 }

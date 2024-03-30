@@ -14,10 +14,8 @@
             {
               "height": {
                 "type": "minecraft:biased_to_bottom",
-                "value": {
-                  "max_inclusive": 5,
-                  "min_inclusive": 3
-                }
+                "max_inclusive": 5,
+                "min_inclusive": 3
               },
               "provider": {
                 "type": "minecraft:simple_state_provider",
@@ -57,10 +55,7 @@
                 "predicates": [
                   {
                     "type": "minecraft:matching_fluids",
-                    "fluids": [
-                      "minecraft:water",
-                      "minecraft:flowing_water"
-                    ],
+                    "fluids": "#minecraft:water",
                     "offset": [
                       1,
                       -1,
@@ -69,10 +64,7 @@
                   },
                   {
                     "type": "minecraft:matching_fluids",
-                    "fluids": [
-                      "minecraft:water",
-                      "minecraft:flowing_water"
-                    ],
+                    "fluids": "#minecraft:water",
                     "offset": [
                       -1,
                       -1,
@@ -81,10 +73,7 @@
                   },
                   {
                     "type": "minecraft:matching_fluids",
-                    "fluids": [
-                      "minecraft:water",
-                      "minecraft:flowing_water"
-                    ],
+                    "fluids": "#minecraft:water",
                     "offset": [
                       0,
                       -1,
@@ -93,10 +82,7 @@
                   },
                   {
                     "type": "minecraft:matching_fluids",
-                    "fluids": [
-                      "minecraft:water",
-                      "minecraft:flowing_water"
-                    ],
+                    "fluids": "#minecraft:water",
                     "offset": [
                       0,
                       -1,
