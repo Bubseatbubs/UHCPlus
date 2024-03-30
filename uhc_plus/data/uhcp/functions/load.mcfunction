@@ -202,13 +202,13 @@ scoreboard players set %golden_apples_def uhcp_settings 3
 # Number of Titans
 scoreboard players set %titans_def uhcp_settings 3
 
-# PvP
+# PvP countdown
 scoreboard players set %pvp_def uhcp_settings 24000
 
-# Team Game
-scoreboard players set %team_def uhcp_settings 0
+# Team game
+scoreboard players set %team_def uhcp_settings 1
 
-# Team Game
+# Team size
 scoreboard players set %team_size_def uhcp_settings 2
 
 # Friendly Fire
