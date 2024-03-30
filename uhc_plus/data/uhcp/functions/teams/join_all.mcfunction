@@ -1,5 +1,4 @@
 # Assign players to teams based on their scores
-team leave @a
 team join aqua @a[scores={uhcp_team=1}]
 team join blue @a[scores={uhcp_team=2}]
 team join dark_aqua @a[scores={uhcp_team=3}]

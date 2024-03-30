@@ -1,5 +1,5 @@
 # Initial logic
-execute unless score %lava_init uhcp_initStatus matches 1.. run function uhcp:lava/init
+execute unless score %lava_init uhcp_initStatus matches 1 run function uhcp:lava/init
 
 # Decrement lava timers
 execute if score %lava uhcp_lava_time matches 1.. run scoreboard players remove %lava uhcp_lava_time 1
