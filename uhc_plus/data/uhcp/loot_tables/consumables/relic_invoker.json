@@ -36,18 +36,18 @@
                 "tag": "{uhcp_rightclick:1b,uhcp_consumable:3b}"
               },
               {
-                "function": "set_name",
+                "function": "minecraft:set_name",
+                "target": "item_name",
                 "name": [
                   {
                     "text": "Relic Invoker",
-                    "color": "light_purple",
-                    "italic": false
+                    "color": "light_purple"
                   }
                 ]
               },
               {
                 "function": "set_lore",
-                "mode": "insert",
+                "mode": "replace_all",
                 "lore": [
                   [
                     {

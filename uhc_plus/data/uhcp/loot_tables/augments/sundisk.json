@@ -28,7 +28,8 @@
                 "tag": "{uhcp_instantpickup:1b,sundiskofra:1b}"
               },
               {
-                "function": "set_name",
+                "function": "minecraft:set_name",
+                "target": "item_name",
                 "name": [
                   {
                     "text": "Sun Disk of Ra",
@@ -39,7 +40,7 @@
               },
               {
                 "function": "set_lore",
-                "mode": "insert",
+                "mode": "replace_all",
                 "lore": [
                   [
                     {

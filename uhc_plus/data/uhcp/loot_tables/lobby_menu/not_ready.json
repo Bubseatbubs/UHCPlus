@@ -56,17 +56,16 @@
                   }
                 ]
               ],
-              "mode": "insert"
+              "mode": "replace_all"
             },
             {
               "function": "minecraft:set_name",
               "entity": "this",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Status: ",
-                  "color": "white",
-                  "bold": false,
-                  "italic": false
+                  "color": "white"
                 },
                 {
                   "text": "Not Ready",

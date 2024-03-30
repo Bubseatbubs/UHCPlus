@@ -32,17 +32,17 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Armored Wings",
-                  "color": "light_purple",
-                  "bold": true
+                  "color": "light_purple"
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "An Elytra with the protection",

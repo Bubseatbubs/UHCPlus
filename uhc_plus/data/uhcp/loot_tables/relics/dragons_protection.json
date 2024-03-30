@@ -38,12 +38,12 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Drag",
                   "color": "#0800FF",
-                  "bold": true,
-                  "italic": false
+                  "bold": true
                 },
                 {
                   "text": "on's",
@@ -60,8 +60,7 @@
                 {
                   "text": " ℝ",
                   "color": "white",
-                  "bold": false,
-                  "italic": false
+                  "bold": false
                 }
               ]
             },
@@ -166,7 +165,7 @@
                   }
                 ]
               ],
-              "mode": "insert"
+              "mode": "replace_all"
             }
           ]
         }

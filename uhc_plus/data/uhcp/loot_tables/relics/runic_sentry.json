@@ -38,12 +38,12 @@
               },
               {
                 "function": "minecraft:set_name",
+                "target": "item_name",
                 "name": [
                   {
                     "text": "Ru",
                     "color": "#0800FF",
-                    "bold": true,
-                    "italic": false
+                    "bold": true
                   },
                   {
                     "text": "ni",
@@ -68,8 +68,7 @@
                   {
                     "text": " ℝ",
                     "color": "white",
-                    "bold": false,
-                    "italic": false
+                    "bold": false
                   }
                 ]
               },
@@ -210,7 +209,7 @@
                     }
                   ]
                 ],
-                "mode": "insert"
+                "mode": "replace_all"
               }
             ]
           }

@@ -17,7 +17,8 @@
                 "tag": "{uhcp_augmentselect:1b,augment:17s}"
               },
               {
-                "function": "set_name",
+                "function": "minecraft:set_name",
+                "target": "item_name",
                 "name": [
                   {
                     "text": "Less than 3",
@@ -28,7 +29,7 @@
               },
               {
                 "function": "set_lore",
-                "mode": "insert",
+                "mode": "replace_all",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -121,6 +122,7 @@
               },
               {
                 "function": "minecraft:set_name",
+                "target": "item_name",
                 "name": [
                   {
                     "text": "Lucky Hunt",
@@ -131,7 +133,7 @@
               },
               {
                 "function": "set_lore",
-                "mode": "insert",
+                "mode": "replace_all",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -218,6 +220,7 @@
               },
               {
                 "function": "minecraft:set_name",
+                "target": "item_name",
                 "name": [
                   {
                     "text": "Unburdened",
@@ -228,7 +231,7 @@
               },
               {
                 "function": "set_lore",
-                "mode": "insert",
+                "mode": "replace_all",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -308,6 +311,7 @@
               },
               {
                 "function": "minecraft:set_name",
+                "target": "item_name",
                 "name": [
                   {
                     "text": "Into the Mines II",
@@ -318,7 +322,7 @@
               },
               {
                 "function": "set_lore",
-                "mode": "insert",
+                "mode": "replace_all",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -401,6 +405,7 @@
               },
               {
                 "function": "minecraft:set_name",
+                "target": "item_name",
                 "name": [
                   {
                     "text": "Gapple Gap II",
@@ -411,7 +416,7 @@
               },
               {
                 "function": "set_lore",
-                "mode": "insert",
+                "mode": "replace_all",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -488,6 +493,7 @@
               },
               {
                 "function": "minecraft:set_name",
+                "target": "item_name",
                 "name": [
                   {
                     "text": "Trap Master",
@@ -498,7 +504,7 @@
               },
               {
                 "function": "set_lore",
-                "mode": "insert",
+                "mode": "replace_all",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -613,7 +619,8 @@
                   "tag": "{uhcp_augmentselect:1b,augment:34s}"
                 },
                 {
-                  "function": "set_name",
+                  "function": "minecraft:set_name",
+                  "target": "item_name",
                   "name": [
                     {
                       "text": "Bottled Knowledge",
@@ -624,7 +631,7 @@
                 },
                 {
                   "function": "set_lore",
-                "mode": "insert",
+                "mode": "replace_all",
                   "lore": [
                     {
                       "text": "------------------------",
@@ -686,7 +693,14 @@
             "functions": [
               {
                 "function": "minecraft:set_name",
-                "name": "Take Aim"
+                "target": "item_name",
+                "name": [
+                  {
+                    "text": "Take Aim",
+                    "color": "gray",
+                    "bold": true
+                  }
+                ]
               }
             ],
             "conditions": [
@@ -741,7 +755,8 @@
                 "tag": "{uhcp_augmentselect:1b,augment:45s}"
               },
               {
-                "function": "set_name",
+                "function": "minecraft:set_name",
+                "target": "item_name",
                 "name": [
                   {
                     "text": "You have My Rod II",
@@ -752,7 +767,7 @@
               },
               {
                 "function": "set_lore",
-                "mode": "insert",
+                "mode": "replace_all",
                 "lore": [
                   {
                     "text": "------------------------",

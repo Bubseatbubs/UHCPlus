@@ -11,7 +11,7 @@
                 "function": "minecraft:set_lore",
                 "lore": [
                   {
-                    "text": "Allows you to tredge on snow.",
+                    "text": "Allow you to tredge on snow.",
                     "color": "gray",
                     "italic": true
                   }
@@ -20,10 +20,10 @@
               },
               {
                 "function": "minecraft:set_name",
+                "target": "item_name",
                 "name": {
                   "text": "Snow Boots",
-                  "color": "light_purple",
-                  "italic": false
+                  "color": "light_purple"
                 }
               },
               {

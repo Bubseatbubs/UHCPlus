@@ -39,12 +39,12 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Sm",
                   "color": "#0800FF",
-                  "bold": true,
-                  "italic": false
+                  "bold": true
                 },
                 {
                   "text": "oo",
@@ -69,8 +69,7 @@
                 {
                   "text": " ℝ",
                   "color": "white",
-                  "bold": false,
-                  "italic": false
+                  "bold": false
                 }
               ]
             },
@@ -205,7 +204,7 @@
                   }
                 ]
               ],
-              "mode": "insert"
+              "mode": "replace_all"
             }
           ]
         }

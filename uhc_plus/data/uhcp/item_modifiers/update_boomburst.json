@@ -6,7 +6,7 @@
 				{
 					"id": "minecraft:tipped_arrow",
 					"components": {
-						"minecraft:custom_name": "'{\"text\":\"TNT Arrow\",\"color\":\"red\",\"bold\":true,\"italic\":false}'",
+						"minecraft:item_name": "'{\"text\":\"TNT Arrow\",\"color\":\"red\",\"bold\":true}'",
 						"minecraft:potion_contents": {
 							"custom_color": 16711680,
 							"custom_effects": [

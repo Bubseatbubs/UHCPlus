@@ -26,6 +26,9 @@ function uhcp:titans/reset
 # Reset any players in /trigger top
 execute as @a[tag=UHCP_IsTeleporting] run function uhcp:top/cancel
 
+# Remove crafting recipes
+recipe take @a *
+
 # Reset scores
 scoreboard players reset @a testkit
 scoreboard players reset @a top
@@ -64,7 +67,6 @@ scoreboard players operation %dimension uhcp_settings = %dimension_retain uhcp_s
 scoreboard players operation %pvp uhcp_settings = %pvp_retain uhcp_settings
 
 # Load lava scoreboard values
-execute unless score %lava_init uhcp_initStatus matches 1 run function uhcp:reset/lava_scores
 scoreboard players operation %lava_countdown uhcp_settings = %lava_countdown_retain uhcp_settings
 
 # Load team values

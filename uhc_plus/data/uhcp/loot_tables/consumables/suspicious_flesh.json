@@ -39,10 +39,10 @@
               {
                 "function": "minecraft:set_name",
                 "entity": "this",
+                "target": "item_name",
                 "name": {
                   "text": "Suspicious Flesh",
-                  "color": "light_purple",
-                  "italic": false
+                  "color": "light_purple"
                 }
               },
               {

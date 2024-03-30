@@ -48,10 +48,8 @@ scoreboard players operation %dimension_retain uhcp_settings = %dimension uhcp_s
 # Store PvP Grace Period countdown
 scoreboard players operation %pvp_retain uhcp_settings = %pvp uhcp_settings
 
-# Store lava scoreboard values
+# Store lava countdown
 scoreboard players operation %lava_countdown_retain uhcp_settings = %lava_countdown uhcp_settings
-scoreboard players operation %lava_retain uhcp_lava_maxHeight = %lava uhcp_lava_maxHeight
-scoreboard players operation %lava_retain uhcp_lava_time = %lava uhcp_lava_time
 
 # Store team values
 scoreboard players operation %team_size_retain uhcp_settings = %team_size uhcp_settings

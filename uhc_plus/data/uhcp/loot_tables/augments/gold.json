@@ -18,6 +18,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Money Money",
@@ -28,7 +29,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -78,6 +79,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Relics of the Past",
@@ -88,7 +90,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -128,6 +130,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Birds of a Feather",
@@ -138,7 +141,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -198,6 +201,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Blood Diamonds",
@@ -208,7 +212,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -262,6 +266,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Phantom Claw",
@@ -272,7 +277,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -332,6 +337,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Cowboy Cosplay",
@@ -342,7 +348,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -396,6 +402,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Drip Economy II",
@@ -406,7 +413,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -449,7 +456,8 @@
               "tag": "{uhcp_augmentselect:1b,augment:8b}"
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Fire and Water",
@@ -460,7 +468,7 @@
             },
             {
               "function": "set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -529,6 +537,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Green Thumb",
@@ -539,7 +548,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -595,6 +604,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Johnny Appleseed",
@@ -605,7 +615,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -649,6 +659,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Oppenheimer",
@@ -659,7 +670,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -717,6 +728,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Late Looter",
@@ -727,7 +739,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -787,6 +799,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Hunting Call",
@@ -797,7 +810,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -889,6 +902,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Man's Best Friend",
@@ -899,7 +913,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -956,6 +970,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Copper Collector",
@@ -966,7 +981,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1016,6 +1031,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Village Idol",
@@ -1026,7 +1042,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------"
@@ -1084,6 +1100,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Bottled Knowledge",
@@ -1094,7 +1111,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1134,6 +1151,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Starter Kit II",
@@ -1144,7 +1162,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1204,6 +1222,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Protect Protocol",
@@ -1214,7 +1233,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1260,6 +1279,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Pearly",
@@ -1270,7 +1290,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1310,6 +1330,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Sneaky Sneaky",
@@ -1320,7 +1341,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1363,6 +1384,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Shiny Spawn",
@@ -1373,7 +1395,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1417,6 +1439,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Bloodthirsty",
@@ -1427,7 +1450,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1471,6 +1494,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Like Fish in a Barrel",
@@ -1481,7 +1505,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1533,6 +1557,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Poseidon's Blessing",
@@ -1543,7 +1568,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1627,6 +1652,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "SNIFFA",
@@ -1637,7 +1663,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1702,6 +1728,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Diamonds in the Rough",
@@ -1712,7 +1739,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1762,6 +1789,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Healing Orbs II",
@@ -1772,7 +1800,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1811,6 +1839,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "Knife's Edge",
@@ -1821,7 +1850,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "insert",
+              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",

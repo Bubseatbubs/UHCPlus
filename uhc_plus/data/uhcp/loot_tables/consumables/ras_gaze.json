@@ -11,6 +11,7 @@
         "functions": [
           {
             "function": "minecraft:set_name",
+            "target": "item_name",
             "name": {
               "text": "Ra's Gaze",
               "color": "light_purple"
@@ -18,7 +19,7 @@
           },
           {
             "function": "minecraft:set_lore",
-            "mode": "insert",
+            "mode": "replace_all",
             "lore": [
               {
                 "text": "Call Ra's aid. Ra fires a sunray onto the ground,",

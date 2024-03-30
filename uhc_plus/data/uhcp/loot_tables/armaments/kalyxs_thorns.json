@@ -96,12 +96,12 @@
               },
               {
                 "function": "minecraft:set_name",
+                "target": "item_name",
                 "name": [
                   {
                     "text": "Ka",
                     "color": "#ab5b1a",
-                    "bold": true,
-                    "italic": false
+                    "bold": true
                   },
                   {
                     "text": "lyx's",

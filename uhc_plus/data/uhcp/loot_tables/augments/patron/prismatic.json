@@ -28,7 +28,8 @@
                   "tag": "{uhcp_augmentselect:1b,augment:217s}"
                 },
                 {
-                  "function": "set_name",
+                  "function": "minecraft:set_name",
+                  "target": "item_name",
                   "name": [
                     {
                       "text": "Center of Attention",
@@ -39,7 +40,7 @@
                 },
                 {
                   "function": "set_lore",
-                  "mode": "insert",
+                  "mode": "replace_all",
                   "lore": [
                     {
                       "text": "------------------------",
@@ -123,7 +124,8 @@
                   "tag": "{uhcp_augmentselect:1b,augment:210s}"
                 },
                 {
-                  "function": "set_name",
+                  "function": "minecraft:set_name",
+                  "target": "item_name",
                   "name": [
                     {
                       "text": "Hunter's Insight",
@@ -134,7 +136,7 @@
                 },
                 {
                   "function": "set_lore",
-                  "mode": "insert",
+                  "mode": "replace_all",
                   "lore": [
                     {
                       "text": "------------------------",
@@ -286,7 +288,8 @@
                   "tag": "{uhcp_augmentselect:1b,augment:207s}"
                 },
                 {
-                  "function": "set_name",
+                  "function": "minecraft:set_name",
+                  "target": "item_name",
                   "name": [
                     {
                       "text": "Gas Gas Gas",
@@ -297,7 +300,7 @@
                 },
                 {
                   "function": "set_lore",
-                  "mode": "insert",
+                  "mode": "replace_all",
                   "lore": [
                     {
                       "text": "------------------------",
@@ -392,7 +395,8 @@
                   "tag": "{uhcp_augmentselect:1b,augment:211s}"
                 },
                 {
-                  "function": "set_name",
+                  "function": "minecraft:set_name",
+                  "target": "item_name",
                   "name": [
                     {
                       "text": "Into the Mines III",
@@ -403,7 +407,7 @@
                 },
                 {
                   "function": "set_lore",
-                  "mode": "insert",
+                  "mode": "replace_all",
                   "lore": [
                     {
                       "text": "------------------------",
@@ -499,7 +503,8 @@
                   "tag": "{uhcp_augmentselect:1b,augment:206s}"
                 },
                 {
-                  "function": "set_name",
+                  "function": "minecraft:set_name",
+                  "target": "item_name",
                   "name": [
                     {
                       "text": "Gapple Gap III",
@@ -510,7 +515,7 @@
                 },
                 {
                   "function": "set_lore",
-                  "mode": "insert",
+                  "mode": "replace_all",
                   "lore": [
                     {
                       "text": "------------------------",
@@ -605,7 +610,8 @@
                   "tag": "{uhcp_augmentselect:1b,augment:228s}"
                 },
                 {
-                  "function": "set_name",
+                  "function": "minecraft:set_name",
+                  "target": "item_name",
                   "name": [
                     {
                       "text": "Trap God",
@@ -616,7 +622,7 @@
                 },
                 {
                   "function": "set_lore",
-                  "mode": "insert",
+                  "mode": "replace_all",
                   "lore": [
                     {
                       "text": "------------------------",
@@ -743,7 +749,8 @@
                   "tag": "{uhcp_augmentselect:1b,augment:213s}"
                 },
                 {
-                  "function": "set_name",
+                  "function": "minecraft:set_name",
+                  "target": "item_name",
                   "name": [
                     {
                       "text": "Librarian",
@@ -754,7 +761,7 @@
                 },
                 {
                   "function": "set_lore",
-                  "mode": "insert",
+                  "mode": "replace_all",
                   "lore": [
                     {
                       "text": "------------------------",
@@ -841,7 +848,8 @@
                   "tag": "{uhcp_augmentselect:1b,augment:201s}"
                 },
                 {
-                  "function": "set_name",
+                  "function": "minecraft:set_name",
+                  "target": "item_name",
                   "name": [
                     {
                       "text": "Bowmaster",
@@ -852,7 +860,7 @@
                 },
                 {
                   "function": "set_lore",
-                  "mode": "insert",
+                  "mode": "replace_all",
                   "lore": [
                     {
                       "text": "------------------------",
@@ -967,7 +975,8 @@
                 "tag": "{uhcp_augmentselect:1b,augment:229s}"
               },
               {
-                "function": "set_name",
+                "function": "minecraft:set_name",
+                "target": "item_name",
                 "name": [
                   {
                     "text": "You have My Rod III",
@@ -978,7 +987,7 @@
               },
               {
                 "function": "set_lore",
-                "mode": "insert",
+                "mode": "replace_all",
                 "lore": [
                   {
                     "text": "------------------------",

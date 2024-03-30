@@ -39,12 +39,12 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": [
                 {
                   "text": "So",
                   "color": "#0800FF",
-                  "bold": true,
-                  "italic": false
+                  "bold": true
                 },
                 {
                   "text": "ul",
@@ -73,8 +73,7 @@
                 {
                   "text": " ℝ",
                   "color": "white",
-                  "bold": false,
-                  "italic": false
+                  "bold": false
                 }
               ]
             },
@@ -172,7 +171,7 @@
                   }
                 ]
               ],
-              "mode": "insert"
+              "mode": "replace_all"
             }
           ]
         }

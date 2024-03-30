@@ -10,15 +10,15 @@
 						{
 							"function": "minecraft:set_name",
 							"entity": "this",
+							"target": "item_name",
 							"name": {
 								"text": "All-Seeing Eye",
-								"color": "light_purple",
-								"italic": false
+								"color": "light_purple"
 							}
 						},
 						{
 							"function": "minecraft:set_lore",
-							"mode": "insert",
+							"mode": "replace_all",
 							"lore": [
 								[
 									{
