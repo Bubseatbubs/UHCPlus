@@ -45,5 +45,19 @@ scoreboard players operation %team_size uhcp_settings = %team_size_def uhcp_sett
 scoreboard players operation %team uhcp_settings = %team_def uhcp_settings
 scoreboard players operation %players_select_teams uhcp_settings = %players_select_teams_def uhcp_settings
 scoreboard players operation %friendly_fire uhcp_settings = %friendly_fire_def uhcp_settings
+team modify aqua friendlyFire false
+team modify blue friendlyFire false
+team modify dark_aqua friendlyFire false
+team modify dark_blue friendlyFire false
+team modify dark_gray friendlyFire false
+team modify dark_green friendlyFire false
+team modify dark_purple friendlyFire false
+team modify dark_red friendlyFire false
+team modify gold friendlyFire false
+team modify gray friendlyFire false
+team modify green friendlyFire false
+team modify light_purple friendlyFire false
+team modify red friendlyFire false
+team modify yellow friendlyFire false
 
 function uhcp:settings/reset/page

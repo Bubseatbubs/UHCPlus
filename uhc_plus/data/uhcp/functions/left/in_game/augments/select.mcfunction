@@ -1,8 +1,8 @@
-#>  uhcp:left/augments/select
+#>  uhcp:left/in_game/augments/select
 #   Runs for a player who left during augment selection
 #   Runs the effects that would've occurred if the player was in game when augment selection finished
 #
-# @within  uhcp:left/in_game
+# @within  uhcp:left/in_game/alive
 
 gamemode survival @s
 bossbar set minecraft:uhcp_augment players

@@ -1,6 +1,3 @@
 # Determine setting
-execute if score @s uhcp_settings matches 512 run scoreboard players set %friendly_fire uhcp_settings 1
-execute if score @s uhcp_settings matches 513 run scoreboard players set %friendly_fire uhcp_settings 0
-
-execute if score %friendly_fire uhcp_settings matches 1 run tellraw @s [{"text":"Friendly Fire has been turned "},{"text":"ON","color":"green"},{"text":"."}]
-execute if score %friendly_fire uhcp_settings matches 0 run tellraw @s [{"text":"Friendly Fire has been turned "},{"text":"OFF","color":"red"},{"text":"."}]
+execute if score @s uhcp_settings matches 512 run function uhcp:settings/team/friendly_fire/on
+execute if score @s uhcp_settings matches 513 run function uhcp:settings/team/friendly_fire/off

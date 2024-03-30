@@ -2,7 +2,7 @@
 #   Runs if player didn't select an augment in time
 #   Selects a random augment from their listed choices
 #
-# @within  uhcp:left/augments/select
+# @within  uhcp:left/in_game/augments/select
 # @within  uhcp:augments/countdown/1
 
 tag @s remove UHCP_ChoosingItem

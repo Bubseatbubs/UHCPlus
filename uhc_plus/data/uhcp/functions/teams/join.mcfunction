@@ -1,4 +1,5 @@
 # Assign target to team based on their score
+team leave @s
 execute if score @s uhcp_team matches 1 run team join aqua @s
 execute if score @s uhcp_team matches 2 run team join blue @s
 execute if score @s uhcp_team matches 3 run team join dark_aqua @s

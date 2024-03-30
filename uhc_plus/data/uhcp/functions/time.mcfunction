@@ -18,6 +18,9 @@ execute unless score %dimension uhcp_settings matches ..-1 run scoreboard player
 # Eternal day
 execute if score %time uhcp_game_time matches 24000..24500 in minecraft:overworld run function uhcp:day/run
 
+# Grace period end
+execute unless score %pvp uhcp_settings matches ..-1 run function uhcp:pvp/countdown
+
 # Augment timer
 function uhcp:timer/timer
 
