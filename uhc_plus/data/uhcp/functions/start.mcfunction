@@ -11,6 +11,7 @@ tag @a[scores={uhcp_ready=2}] add UHCP_Spectator
 
 # Set scores
 scoreboard players operation %titans uhcp_initStatus = %titans uhcp_settings
+scoreboard players reset %start_countdown
 scoreboard players set %game uhcp_initStatus 1
 scoreboard players set %time uhcp_initStatus 0
 scoreboard players set %time_freeze uhcp_initStatus 0

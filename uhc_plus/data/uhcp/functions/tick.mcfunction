@@ -1,6 +1,9 @@
 # Initial logic
 execute unless score %init uhcp_initStatus matches 1.. run function uhcp:init
 
+# Game Start Countdown
+execute if score %start_countdown uhcp_initStatus matches 1.. run function uhcp:lobby/countdown
+
 # Manage players
 execute as @a[tag=!UHCP_Player] run function uhcp:new
 execute as @a[scores={uhcp_leave=1..}] run function uhcp:left
