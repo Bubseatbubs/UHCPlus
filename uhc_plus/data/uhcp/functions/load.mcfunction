@@ -30,6 +30,7 @@ scoreboard objectives add uhcp_aug_validSelection dummy
 scoreboard objectives add uhcp_arrowCount dummy
 scoreboard objectives add uhcp_bee_stack dummy
 scoreboard objectives add uhcp_death deathCount
+scoreboard objectives add uhcp_deathTime dummy
 scoreboard objectives add uhcp_game_display dummy
 scoreboard objectives add uhcp_game_ID dummy
 scoreboard objectives add uhcp_game_time dummy
@@ -143,6 +144,22 @@ team add green {"text":"Green","color":"green"}
 team add light_purple {"text":"Light Purple","color":"light_purple"}
 team add red {"text":"Red","color":"red"}
 team add yellow {"text":"Yellow","color":"yellow"}
+
+team modify aqua collisionRule pushOwnTeam
+team modify blue collisionRule pushOwnTeam
+team modify dark_aqua collisionRule pushOwnTeam
+team modify dark_blue collisionRule pushOwnTeam
+team modify dark_gray collisionRule pushOwnTeam
+team modify dark_green collisionRule pushOwnTeam
+team modify dark_purple collisionRule pushOwnTeam
+team modify dark_red collisionRule pushOwnTeam
+team modify gold collisionRule pushOwnTeam
+team modify gray collisionRule pushOwnTeam
+team modify green collisionRule pushOwnTeam
+team modify light_purple collisionRule pushOwnTeam
+team modify red collisionRule pushOwnTeam
+team modify yellow collisionRule pushOwnTeam
+
 team modify aqua color aqua
 team modify blue color blue
 team modify dark_aqua color dark_aqua
@@ -159,8 +176,9 @@ team modify red color red
 team modify yellow color yellow
 
 team add grace_period
-team modify grace_period seeFriendlyInvisibles false
+team modify grace_period collisionRule pushOwnTeam
 team modify grace_period friendlyFire false
+team modify grace_period seeFriendlyInvisibles false
 
 # Default scores
 # Arrow limit

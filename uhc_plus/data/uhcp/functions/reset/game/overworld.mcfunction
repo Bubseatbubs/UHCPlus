@@ -13,4 +13,5 @@ function uhcp:lobby/remove
 function uhcp:lobby/place
 # --------------- Temp coordinates to lobby
 spreadplayers 7 7 0 5 under 310 false @a
+spawnpoint @a 7 301 7
 # ---------------

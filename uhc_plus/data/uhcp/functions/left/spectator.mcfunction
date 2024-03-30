@@ -9,6 +9,7 @@ scoreboard players reset @s patron
 scoreboard players reset @s team
 scoreboard players reset @s testkit
 scoreboard players reset @s top
+tag @s remove UHCP_Died
 execute in minecraft:overworld run tp @s 0 150 0
 effect clear @s
 effect give @s minecraft:night_vision infinite 0 true

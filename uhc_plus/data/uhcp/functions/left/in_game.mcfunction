@@ -6,3 +6,5 @@ function uhcp:titans/reset_bossbar
 
 # Add to team
 execute if score %pvp uhcp_settings matches ..0 as @s[team=grace_period] run function uhcp:teams/join
+
+tag @s remove UHCP_Died

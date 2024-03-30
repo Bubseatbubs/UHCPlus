@@ -1,7 +1,7 @@
 # Kill entities (kill items last)
 kill @e[type=!player,type=!#uhcp:inanimate_mobs]
 kill @e[tag=UHCP_Summon]
-kill @e[type=item]
+kill @e[type=minecraft:item]
 
 # Within dimensions
 execute in minecraft:overworld run function uhcp:reset/game/overworld
@@ -34,6 +34,7 @@ scoreboard players reset @a testkit
 scoreboard players reset @a top
 scoreboard players reset @a uhcp_aug_choosingAugment
 scoreboard players reset @a uhcp_augment
+scoreboard players reset @a uhcp_deathTime
 scoreboard players reset %global uhcp_game_ID
 scoreboard players reset @a uhcp_game_ID
 scoreboard players reset %global uhcp_id
@@ -78,6 +79,7 @@ scoreboard players operation %players_select_teams uhcp_settings = %players_sele
 scoreboard objectives setdisplay sidebar
 
 # Tags
+tag @s remove UHCP_Died
 tag @a remove UHCP_Spectator
 
 # Players

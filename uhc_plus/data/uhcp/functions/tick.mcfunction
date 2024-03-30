@@ -80,5 +80,8 @@ execute as @e[type=minecraft:ender_pearl] at @s run function uhcp:entity/ender_p
 # Instant pickup items
 execute as @e[tag=!UHCP_ItemPickup,predicate=uhcp:items/instant_pickup] run function uhcp:entity/items/instant_pickup
 
+# Death time
+execute if entity @a[tag=UHCP_Died] run function uhcp:kill/death/time
+
 # Item use timer
 scoreboard players remove @a[scores={uhcp_itemCount=1..}] uhcp_itemCount 1
