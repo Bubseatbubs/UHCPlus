@@ -133,7 +133,8 @@ scoreboard players set @a[team=yellow] uhcp_team 14
 scoreboard players set %global uhcp_team 15
 execute as @a[tag=!UHCP_Spectator,scores={uhcp_team=0}] run function uhcp:start/teams
 
-team join grace_period @a
+execute if score %pvp uhcp_settings matches ..0 run scoreboard players set %pvp uhcp_settings -1
+execute unless score %pvp uhcp_settings matches -1 run team join grace_period @a
 
 # Allow one-team games to not end
 execute if score %end uhcp_initStatus matches 0 run function uhcp:start/teams/check
