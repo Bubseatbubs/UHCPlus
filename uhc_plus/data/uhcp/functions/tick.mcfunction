@@ -52,15 +52,8 @@ execute as @a[scores={uhcp_lava_maxHeight=0..}] run function uhcp:augments/effec
 # Augment Countdown
 execute if score %augment_countdown uhcp_game_time matches 0.. run function uhcp:augments/countdown
 
-# Patron
-execute unless score %game uhcp_initStatus matches 1 run scoreboard players enable @a patron
-execute as @a if score @s patron matches 1..99 run function uhcp:lobby/patron/menu
-execute as @a at @s if score @s patron matches 100..109 run function uhcp:lobby/patron/select
-
-# Team
-execute unless score %game uhcp_initStatus matches 1 run scoreboard players enable @a team
-execute as @a if score @s team matches 1..99 run function uhcp:lobby/team/menu
-execute as @a at @s if score @s team matches 100..115 run function uhcp:lobby/team/select
+# Selection menus
+execute unless score %game uhcp_initStatus matches 1 run function uhcp:menus
 
 # Update Summoned Entities
 execute as @e[tag=UHCP_Summon] at @s run function uhcp:entity/update

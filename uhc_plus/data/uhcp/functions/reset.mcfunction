@@ -20,6 +20,23 @@ experience set @a 0 points
 # Reset storages
 data remove storage uhcp:compass Track
 
+# Empty teams
+team empty aqua
+team empty blue
+team empty dark_aqua
+team empty dark_blue
+team empty dark_gray
+team empty dark_green
+team empty dark_purple
+team empty dark_red
+team empty gold
+team empty grace_period
+team empty gray
+team empty green
+team empty light_purple
+team empty red
+team empty yellow
+
 # Reset Titans
 function uhcp:titans/reset
 
