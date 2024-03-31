@@ -8,7 +8,7 @@ give @s minecraft:cobweb 8
 give @s minecraft:diamond_pickaxe[minecraft:enchantments={levels:{"minecraft:efficiency":1}}]
 give @s minecraft:cobblestone 64
 give @s minecraft:golden_apple 12
-give @s arrow 12
+give @s minecraft:arrow 12
 
 attribute @s generic.max_health base set 40
 
@@ -28,3 +28,5 @@ item replace entity @s weapon.offhand with minecraft:shield
 
 tellraw @a [{"selector":"@s","color":"gold"},{"text":" was given a Test Kit!","color":"gray"}]
 scoreboard players reset @s testkit
+
+tag @s add UHCP_Operator

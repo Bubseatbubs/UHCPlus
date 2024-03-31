@@ -28,6 +28,10 @@ function uhcp:timer/timer
 scoreboard players enable @a augments
 execute as @a if score @s augments matches 1.. run function uhcp:augments/announce
 
+# Testkit
+execute as @a[gamemode=survival] if score @s testkit matches 1.. run function uhcp:testkit/verify
+execute as @a if score @s uhcp_testkit matches 1 run function uhcp:testkit/kit
+
 # Enable triggers
 scoreboard players enable @a[gamemode=survival] top
 scoreboard players enable @a[gamemode=survival] testkit
