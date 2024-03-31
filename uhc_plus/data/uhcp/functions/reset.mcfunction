@@ -1,6 +1,7 @@
 # Kill entities (kill items last)
-kill @e[type=!player,type=!#uhcp:inanimate_mobs]
+kill @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs]
 kill @e[tag=UHCP_Summon]
+kill @e[type=minecraft:experience_orb]
 kill @e[type=minecraft:item]
 
 # Within dimensions

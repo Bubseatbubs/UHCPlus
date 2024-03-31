@@ -123,26 +123,26 @@ execute if score %players uhcp_initStatus matches ..1 run scoreboard players set
 
 # Team logic
 scoreboard players set @a uhcp_team 0
-scoreboard players set @a[team=aqua] uhcp_team 1
-scoreboard players set @a[team=blue] uhcp_team 2
-scoreboard players set @a[team=dark_aqua] uhcp_team 3
-scoreboard players set @a[team=dark_blue] uhcp_team 4
-scoreboard players set @a[team=dark_gray] uhcp_team 5
-scoreboard players set @a[team=dark_green] uhcp_team 6
-scoreboard players set @a[team=dark_purple] uhcp_team 7
-scoreboard players set @a[team=dark_red] uhcp_team 8
-scoreboard players set @a[team=gold] uhcp_team 9
-scoreboard players set @a[team=gray] uhcp_team 10
-scoreboard players set @a[team=green] uhcp_team 11
-scoreboard players set @a[team=light_purple] uhcp_team 12
-scoreboard players set @a[team=red] uhcp_team 13
-scoreboard players set @a[team=yellow] uhcp_team 14
+scoreboard players set @a[tag=!UHCP_Spectator,team=aqua] uhcp_team 1
+scoreboard players set @a[tag=!UHCP_Spectator,team=blue] uhcp_team 2
+scoreboard players set @a[tag=!UHCP_Spectator,team=dark_aqua] uhcp_team 3
+scoreboard players set @a[tag=!UHCP_Spectator,team=dark_blue] uhcp_team 4
+scoreboard players set @a[tag=!UHCP_Spectator,team=dark_gray] uhcp_team 5
+scoreboard players set @a[tag=!UHCP_Spectator,team=dark_green] uhcp_team 6
+scoreboard players set @a[tag=!UHCP_Spectator,team=dark_purple] uhcp_team 7
+scoreboard players set @a[tag=!UHCP_Spectator,team=dark_red] uhcp_team 8
+scoreboard players set @a[tag=!UHCP_Spectator,team=gold] uhcp_team 9
+scoreboard players set @a[tag=!UHCP_Spectator,team=gray] uhcp_team 10
+scoreboard players set @a[tag=!UHCP_Spectator,team=green] uhcp_team 11
+scoreboard players set @a[tag=!UHCP_Spectator,team=light_purple] uhcp_team 12
+scoreboard players set @a[tag=!UHCP_Spectator,team=red] uhcp_team 13
+scoreboard players set @a[tag=!UHCP_Spectator,team=yellow] uhcp_team 14
 
 scoreboard players set %global uhcp_team 15
 execute as @a[tag=!UHCP_Spectator,scores={uhcp_team=0}] run function uhcp:start/teams
 
 execute if score %pvp uhcp_settings matches ..0 run scoreboard players set %pvp uhcp_settings -1
-execute unless score %pvp uhcp_settings matches -1 run team join grace_period @a
+execute unless score %pvp uhcp_settings matches -1 run team join grace_period @a[tag=!UHCP_Spectator]
 
 # Allow one-team games to not end
 execute if score %end uhcp_initStatus matches 0 run function uhcp:start/teams/check
@@ -164,7 +164,7 @@ execute store result storage uhcp:border spread_distance int 1 run scoreboard pl
 
 execute in minecraft:overworld run function uhcp:start/spreadplayers/initial with storage uhcp:border
 
-execute as @a run scoreboard players operation @s uhcp_initStatus = @s uhcp_team
+execute as @a[tag=!UHCP_Spectator] run scoreboard players operation @s uhcp_initStatus = @s uhcp_team
 function uhcp:start/spreadplayers/secondary
 
 # Kill items
