@@ -27,6 +27,6 @@ item replace entity @s armor.feet with minecraft:diamond_boots[minecraft:enchant
 item replace entity @s weapon.offhand with minecraft:shield
 
 tellraw @a [{"selector":"@s","color":"gold"},{"text":" was given a Test Kit!","color":"gray"}]
-scoreboard players reset @s testkit
+scoreboard players reset @s uhcp_testkit
 
 tag @s add UHCP_Operator
