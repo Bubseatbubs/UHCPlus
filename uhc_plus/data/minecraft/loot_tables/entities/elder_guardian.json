@@ -11,7 +11,7 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
+                "max": 2.0,
                 "min": 0.0
               },
               "function": "minecraft:set_count"
@@ -25,7 +25,7 @@
               "function": "minecraft:looting_enchant"
             }
           ],
-          "name": "minecraft:rabbit_hide"
+          "name": "minecraft:prismarine_shard"
         }
       ],
       "rolls": 1.0
@@ -37,10 +37,20 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "add": false,
-              "count": 1.0,
-              "function": "minecraft:set_count"
-            },
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
             {
               "count": {
                 "type": "minecraft:uniform",
@@ -50,7 +60,26 @@
               "function": "minecraft:looting_enchant"
             }
           ],
-          "name": "minecraft:cooked_rabbit"
+          "name": "minecraft:prismarine_crystals",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:empty"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wet_sponge"
         }
       ],
       "rolls": 1.0
@@ -62,19 +91,33 @@
           "condition": "minecraft:killed_by_player"
         },
         {
-          "chance": 0.1,
+          "chance": 0.025,
           "condition": "minecraft:random_chance_with_looting",
-          "looting_multiplier": 0.03
+          "looting_multiplier": 0.01
         }
       ],
       "entries": [
         {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:gameplay/fishing/fish"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 4
+        },
+        {
           "type": "minecraft:item",
-          "name": "minecraft:rabbit_foot"
+          "name": "minecraft:tide_armor_trim_smithing_template"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:entities/rabbit"
+  "random_sequence": "minecraft:entities/elder_guardian"
 }

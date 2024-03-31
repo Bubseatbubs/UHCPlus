@@ -5,6 +5,11 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
+          "type": "loot_table",
+          "weight": 5,
+          "value": "uhcp:consumables/relic_invoker"
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {
@@ -19,17 +24,6 @@
           ],
           "name": "minecraft:obsidian",
           "weight": 40
-        },
-        {
-          "type": "loot_table",
-          "weight": 5,
-          "value": "uhcp:consumables/relic_invoker",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            }
-          ]
         },
         {
           "type": "minecraft:item",
@@ -253,13 +247,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:golden_apple",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 3
-            }
-          ]
+          "name": "minecraft:golden_apple"
         },
         {
           "type": "minecraft:item",

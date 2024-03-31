@@ -2,7 +2,6 @@
   "type": "minecraft:cave",
   "config": {
     "debug_settings": {
-      "debug_mode":false,
       "air_state": {
         "Name": "minecraft:oak_button",
         "Properties": {

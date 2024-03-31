@@ -5,6 +5,11 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
+          "type": "loot_table",
+          "weight": 2,
+          "value": "uhcp:consumables/relic_invoker"
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {
@@ -15,17 +20,6 @@
           ],
           "name": "minecraft:netherite_ingot",
           "weight": 15
-        },
-        {
-          "type": "loot_table",
-          "weight": 2,
-          "value": "uhcp:consumables/relic_invoker",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            }
-          ]
         },
         {
           "type": "minecraft:item",
@@ -201,14 +195,14 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:golden_apple",
           "functions": [
             {
-              "function": "minecraft:set_count",
-              "count": 3,
-              "add": false
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
             }
           ],
+          "name": "minecraft:golden_apple",
           "weight": 2
         }
       ],

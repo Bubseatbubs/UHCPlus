@@ -2,15 +2,13 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
-      "bonus_rolls": 0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
-              "name": "minecraft:copper_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -27,38 +25,37 @@
                     }
                   }
                 }
-              ]
+              ],
+              "name": "minecraft:deepslate_copper_ore"
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:raw_copper",
               "functions": [
                 {
-                  "function": "minecraft:furnace_smelt"
-                },
-                {
-                  "function": "minecraft:set_count",
+                  "add": false,
                   "count": {
                     "type": "minecraft:uniform",
-                    "min": 2,
-                    "max": 5
+                    "max": 5.0,
+                    "min": 2.0
                   },
-                  "add": false
+                  "function": "minecraft:set_count"
                 },
                 {
-                  "function": "minecraft:apply_bonus",
                   "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops"
+                  "formula": "minecraft:ore_drops",
+                  "function": "minecraft:apply_bonus"
                 },
                 {
                   "function": "minecraft:explosion_decay"
                 }
-              ]
+              ],
+              "name": "minecraft:copper_ingot"
             }
           ]
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/copper_ore"
+  "random_sequence": "minecraft:blocks/deepslate_copper_ore"
 }
