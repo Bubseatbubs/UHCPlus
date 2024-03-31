@@ -60,7 +60,7 @@ scoreboard players operation %players_select_teams_retain uhcp_settings = %playe
 # Display statistics
 scoreboard players display numberformat %display uhcp_game_display fixed {"text":"0:00"}
 scoreboard players operation %border uhcp_game_display = %border_size uhcp_settings
-execute store result score %players uhcp_game_display run execute if entity @a[tag=!UHCP_Spectator]
+execute store result score %players uhcp_game_display if entity @a[tag=!UHCP_Spectator]
 execute if score %players uhcp_game_display matches 6.. run scoreboard players display numberformat %players uhcp_game_display styled {"color":"white"}
 execute if score %players uhcp_game_display matches ..5 run scoreboard players display numberformat %players uhcp_game_display styled {"color":"red"}
 scoreboard objectives setdisplay sidebar uhcp_game_display
