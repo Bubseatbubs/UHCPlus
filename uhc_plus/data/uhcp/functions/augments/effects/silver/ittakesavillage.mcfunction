@@ -1,0 +1,1 @@
+execute align xyz run place structure village_plains ~ ~ ~

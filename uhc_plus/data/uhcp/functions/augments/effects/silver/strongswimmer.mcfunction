@@ -1,0 +1,1 @@
+effect give @s dolphins_grace infinite 0
