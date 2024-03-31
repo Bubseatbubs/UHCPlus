@@ -6,34 +6,34 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "weight": 5,
-          "value": "uhcp:consumables/duplicator"
+          "value": "uhcp:consumables/duplicator",
+          "weight": 10
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 5,
-          "value": "uhcp:titans/loot/netherite"
+          "value": "uhcp:titans/loot/netherite",
+          "weight": 34
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 5,
           "value": "uhcp:consumables/all-seeing_eye",
+          "weight": 34,
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 12
+              "count": 6
             }
           ]
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 5,
-          "value": "uhcp:titans/loot/lava_web_duplicator"
+          "value": "uhcp:titans/loot/lava_web_duplicator",
+          "weight": 34
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 5,
           "value": "uhcp:consumables/wild_feather",
+          "weight": 34,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -43,13 +43,13 @@
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 5,
-          "value": "uhcp:consumables/relic_invoker"
+          "value": "uhcp:consumables/relic_invoker",
+          "weight": 4
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
           "name": "minecraft:enchanted_book",
+          "weight": 15,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -65,8 +65,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
           "name": "minecraft:enchanted_book",
+          "weight": 15,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -82,8 +82,47 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
+          "name": "minecraft:enchanted_book",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "levels": {
+                    "minecraft:protection": 2
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "levels": {
+                    "minecraft:sharpness": 2
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
           "name": "minecraft:golden_apple",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -93,8 +132,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 20,
           "name": "minecraft:golden_apple",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -104,8 +143,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
           "name": "minecraft:golden_apple",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
