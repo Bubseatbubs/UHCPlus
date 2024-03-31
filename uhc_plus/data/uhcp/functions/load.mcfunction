@@ -56,7 +56,6 @@ scoreboard objectives add uhcp_motion_y1 dummy
 scoreboard objectives add uhcp_motion_y2 dummy
 scoreboard objectives add uhcp_motion_z1 dummy
 scoreboard objectives add uhcp_motion_z2 dummy
-scoreboard objectives add uhcp_page dummy
 scoreboard objectives add uhcp_settings dummy
 scoreboard objectives add uhcp_titans_attack dummy
 scoreboard objectives add uhcp_titans_count dummy
@@ -64,6 +63,7 @@ scoreboard objectives add uhcp_titans_timer dummy
 scoreboard objectives add uhcp_titans_ID dummy
 scoreboard objectives add uhcp_titans_height dummy
 scoreboard objectives add uhcp_team dummy
+scoreboard objectives add uhcp_testkit dummy
 scoreboard objectives add uhcp_timer dummy
 scoreboard objectives add uhcp_top_CD dummy
 scoreboard objectives add uhcp_top_charge dummy

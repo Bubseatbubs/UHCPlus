@@ -9,3 +9,6 @@ execute if score @s uhcp_settings matches 1000 run function uhcp:settings/reset/
 
 playsound block.note_block.harp master @s ~ ~ ~ 10 1 1
 scoreboard players reset @s uhcp_settings
+
+# Record player as operator
+tag @s add UHCP_Operator
