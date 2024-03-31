@@ -17,4 +17,5 @@ team empty light_purple
 team empty red
 team empty yellow
 
+function uhcp:settings/pages/team/1
 tellraw @s [{"text":"Teams have been turned "},{"text":"OFF","color":"red"},{"text":". It is now a Solo game."}]

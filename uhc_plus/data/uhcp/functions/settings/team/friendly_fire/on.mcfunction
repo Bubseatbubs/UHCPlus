@@ -16,4 +16,5 @@ team modify light_purple friendlyFire true
 team modify red friendlyFire true
 team modify yellow friendlyFire true
 
+function uhcp:settings/pages/team/1
 tellraw @s [{"text":"Friendly Fire has been turned "},{"text":"ON","color":"green"},{"text":"."}]
