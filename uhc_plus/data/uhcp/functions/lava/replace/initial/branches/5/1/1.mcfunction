@@ -1,5 +1,5 @@
 # [193..196]
-execute if score %lava uhcp_lava_currentHeight matches 193 run function uhcp:lava/replace/initial/fill/193
-execute if score %lava uhcp_lava_currentHeight matches 194 run function uhcp:lava/replace/initial/fill/194
-execute if score %lava uhcp_lava_currentHeight matches 195 run function uhcp:lava/replace/initial/fill/195
+execute if score %lava uhcp_lava_currentHeight matches 193 run return run function uhcp:lava/replace/initial/fill/193
+execute if score %lava uhcp_lava_currentHeight matches 194 run return run function uhcp:lava/replace/initial/fill/194
+execute if score %lava uhcp_lava_currentHeight matches 195 run return run function uhcp:lava/replace/initial/fill/195
 execute if score %lava uhcp_lava_currentHeight matches 196 run function uhcp:lava/replace/initial/fill/196
