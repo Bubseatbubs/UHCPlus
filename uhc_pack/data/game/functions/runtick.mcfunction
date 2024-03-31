@@ -1,3 +1,0 @@
-#Runtick
-
-function game:tick
