@@ -1,4 +1,4 @@
-# Assign players team scores
+# Assign players' team scores
 scoreboard players operation %teams_left uhcp_initStatus = %teams uhcp_initStatus
 function uhcp:settings/team/randomize/assign/scores
 

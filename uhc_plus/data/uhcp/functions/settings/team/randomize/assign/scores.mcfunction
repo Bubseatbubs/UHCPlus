@@ -1,4 +1,4 @@
-# Assign intermediate teams scores
+# Assign intermediate team scores
 scoreboard players operation @r[scores={uhcp_initStatus=0,uhcp_ready=0..1}] uhcp_initStatus = %teams_left uhcp_initStatus
 
 scoreboard players remove %players_left uhcp_initStatus 1
