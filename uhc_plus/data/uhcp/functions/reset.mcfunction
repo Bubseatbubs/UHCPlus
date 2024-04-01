@@ -36,6 +36,7 @@ team empty grace_period
 team empty gray
 team empty green
 team empty light_purple
+team empty no_collision
 team empty red
 team empty yellow
 
