@@ -1,3 +1,4 @@
+tag @s add UHCP_Owner
 function uhcp:relics/durability/reset
 function uhcp:relics/smooth_getaway/store_armor
 item replace entity @s weapon.mainhand with minecraft:air
@@ -16,7 +17,6 @@ effect give @s invisibility 10 0 true
 effect give @s resistance 3 5 true
 execute as @a if score @s uhcp_augment matches 239 run effect give @s speed 10 1 false
 
-tag @s add UHCP_Owner
 scoreboard players reset @e[distance=..6] uhcp_aug_count
 execute as @e[tag=!UHCP_Owner,type=!#uhcp:inanimate_mobs,distance=..6] store result score @s uhcp_aug_count run function uhcp:relics/checkattacker
 tag @e[distance=..6,scores={uhcp_aug_count=1},sort=nearest,limit=1] add UHCP_SCloneTarget
