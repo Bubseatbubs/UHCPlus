@@ -5,7 +5,7 @@ item replace entity @s weapon.mainhand with minecraft:air
 execute at @s positioned ~-1 ~ ~ run function uhcp:relics/smooth_getaway/summon
 execute at @s positioned ~1 ~ ~ run function uhcp:relics/smooth_getaway/summon
 
-execute as @a if score @s uhcp_augment matches 239 at @s run function uhcp:relics/smooth_getaway/shadowclone
+execute if score @s uhcp_augment matches 239 at @s run function uhcp:relics/smooth_getaway/shadowclone
 
 particle minecraft:campfire_signal_smoke ~ ~ ~ 2 0.5 2 0.1 100 normal
 particle minecraft:flash ~ ~ ~ 1 0.5 1 0.1 10 normal

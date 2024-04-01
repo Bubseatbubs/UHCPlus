@@ -180,6 +180,11 @@ team modify grace_period collisionRule pushOwnTeam
 team modify grace_period friendlyFire false
 team modify grace_period seeFriendlyInvisibles false
 
+team add no_collision
+team modify no_collision collisionRule never
+team modify no_collision friendlyFire true
+team modify no_collision seeFriendlyInvisibles false
+
 # Default scores
 # Arrow limit
 scoreboard players set %arrow_limit_def uhcp_settings 12
