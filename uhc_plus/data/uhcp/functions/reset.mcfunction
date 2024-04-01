@@ -46,9 +46,6 @@ function uhcp:titans/reset
 # Reset any players in /trigger top
 execute as @a[tag=UHCP_IsTeleporting] run function uhcp:top/cancel
 
-# Remove crafting recipes
-recipe take @a *
-
 # Reset scores
 scoreboard players reset @a testkit
 scoreboard players reset @a top
