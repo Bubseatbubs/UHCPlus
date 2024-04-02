@@ -787,8 +787,7 @@
                 ]
               },
               {
-                "function": "set_lore",
-                "mode": "replace_all",
+                "function": "minecraft:set_lore",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -810,23 +809,16 @@
                   ],
                   [
                     {
-                      "text": "Luck of the Sea V",
-                      "color": "yellow"
-                    },
-                    {
-                      "text": " and ",
-                      "color": "gray"
-                    },
-                    {
-                      "text": "Lure V",
-                      "color": "yellow"
+                      "text": "Luck of the Sea V / Lure V",
+                      "color": "dark_purple"
                     },
                     {
                       "text": ".",
                       "color": "gray"
                     }
                   ]
-                ]
+                ],
+                "mode": "replace_all"
               }
             ],
             "conditions": [
