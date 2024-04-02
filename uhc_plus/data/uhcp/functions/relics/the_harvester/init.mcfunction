@@ -2,7 +2,7 @@ advancement revoke @s only uhcp:relics/the_harvester/ability
 tag @s add UHCP_Owner
 #Get Player Gapple amount
 
-execute as @a[tag=!UHCP_Owner,distance=..9,gamemode=survival] unless score @s uhcp_team = @p[tag=UHCP_Owner] uhcp_team run tag @s add UHCP_HarvesterTarget
+execute as @a[tag=!UHCP_Owner,team=!grace_period,distance=..9,gamemode=survival] unless score @s uhcp_team = @p[tag=UHCP_Owner] uhcp_team run tag @s add UHCP_HarvesterTarget
 execute unless entity @e[tag=UHCP_HarvesterTarget] as @e[type=!#uhcp:inanimate_mobs,type=!player,distance=..9] unless score @s uhcp_id = @p[tag=UHCP_Owner] uhcp_id run tag @s add UHCP_HarvesterTarget
 
 # Stop function if no targets are near
