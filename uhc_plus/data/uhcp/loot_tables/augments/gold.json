@@ -5,8 +5,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:emerald",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -22,14 +22,13 @@
               "name": [
                 {
                   "text": "Money Money",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -60,14 +59,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:blade_pottery_sherd",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -83,14 +83,13 @@
               "name": [
                 {
                   "text": "Relics of the Past",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -103,7 +102,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Relic Invoker",
+                    "text": "Relic Invoker",
                     "color": "blue"
                   },
                   {
@@ -111,14 +110,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:feather",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -134,14 +134,13 @@
               "name": [
                 {
                   "text": "Birds of a Feather",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -178,18 +177,19 @@
                   }
                 ],
                 {
-                  "text": "teams of 3 or more)",
+                  "text": "teams of 3 or more).",
                   "color": "gray",
                   "italic": true
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:diamond",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -205,14 +205,13 @@
               "name": [
                 {
                   "text": "Blood Diamonds",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -241,15 +240,22 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
           "weight": 1,
-          "name": "minecraft:ward_armor_trim_smithing_template",
           "functions": [
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
             {
               "function": "minecraft:set_count",
               "count": 1
@@ -257,7 +263,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-								"minecraft:hide_additional_tooltip": {}
+                "minecraft:hide_additional_tooltip": {}
               }
             },
             {
@@ -270,14 +276,13 @@
               "name": [
                 {
                   "text": "Phantom Claw",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -290,7 +295,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Ghostly Sword",
+                    "text": " Diamond Sword",
                     "color": "light_purple"
                   },
                   {
@@ -299,33 +304,22 @@
                   }
                 ],
                 {
-                  "text": "Every 3 attacks, the sword",
+                  "text": "20% of your attacks cause it to strike for",
                   "color": "gray"
                 },
-                [
-                  {
-                    "text": "strikes your target, dealing",
-                    "color": "gray",
-                    "italic": true
-                  },
-                  {
-                    "text": " 2🖤",
-                    "color": "red"
-                  }
-                ],
-                
                 {
-                  "text": "to any enemy it passes through.",
+                  "text": "additional damage.",
                   "color": "gray"
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:lead",
           "weight": 1,
-          "name": "minecraft:leather",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -341,14 +335,13 @@
               "name": [
                 {
                   "text": "Cowboy Cosplay",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -383,14 +376,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:gold_nugget",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -406,14 +400,13 @@
               "name": [
                 {
                   "text": "Drip Economy II",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -438,17 +431,18 @@
                   "text": "every 2 minutes.",
                   "color": "gray"
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
+          "type": "minecraft:item",
           "name": "minecraft:magma_block",
+          "weight": 1,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
@@ -461,14 +455,13 @@
               "name": [
                 {
                   "text": "Fire and Water",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
-              "function": "set_lore",
-              "mode": "replace_all",
+              "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "------------------------",
@@ -518,14 +511,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:oak_leaves",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -541,14 +535,13 @@
               "name": [
                 {
                   "text": "Green Thumb",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -579,14 +572,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:apple",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -595,7 +589,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                  "!minecraft:food": {}
+                "!minecraft:food": {}
               }
             },
             {
@@ -608,14 +602,13 @@
               "name": [
                 {
                   "text": "Johnny Appleseed",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -640,14 +633,15 @@
                   "text": "game and another every 2 minutes.",
                   "color": "gray"
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:tnt",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -663,14 +657,13 @@
               "name": [
                 {
                   "text": "Oppenheimer",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -709,14 +702,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:clock",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -732,14 +726,13 @@
               "name": [
                 {
                   "text": "Late Looter",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -762,7 +755,7 @@
                 ],
                 [
                   {
-                    "text": "minutes. Afterwards, gain ",
+                    "text": "minutes. Afterwards, gain",
                     "color": "gray"
                   },
                   {
@@ -774,14 +767,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:goat_horn",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -803,14 +797,13 @@
               "name": [
                 {
                   "text": "Hunting Call",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -883,14 +876,15 @@
                     "color": "red"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:bone",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -906,14 +900,13 @@
               "name": [
                 {
                   "text": "Man's Best Friend",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -951,14 +944,15 @@
                   "text": "exciting loot!",
                   "color": "gray"
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:copper_ingot",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -974,14 +968,13 @@
               "name": [
                 {
                   "text": "Copper Collector",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1012,14 +1005,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:totem_of_undying",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1035,17 +1029,18 @@
               "name": [
                 {
                   "text": "Village Idol",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
-                  "text": "------------------------"
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
                 },
                 [
                   {
@@ -1053,7 +1048,11 @@
                     "color": "gray"
                   },
                   {
-                    "text": "Efficiency III / Unbreaking III Diamond Axe",
+                    "text": "Efficiency III / Unbreaking III",
+                    "color": "dark_purple"
+                  },
+                  {
+                    "text": " Diamond Axe",
                     "color": "white"
                   },
                   {
@@ -1069,11 +1068,15 @@
                   {
                     "text": " Hero of the Village III",
                     "color": "yellow"
+                  },
+                  {
+                    "text": " and",
+                    "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "Generate a Village at your",
+                    "text": "generate a Village at your",
                     "color": "gray"
                   },
                   {
@@ -1081,14 +1084,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:glass_bottle",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1104,14 +1108,13 @@
               "name": [
                 {
                   "text": "Bottled Knowledge",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1126,14 +1129,15 @@
                   "text": " Bottles o' Enchanting",
                   "color": "white"
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:chest",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1155,14 +1159,13 @@
               "name": [
                 {
                   "text": "Starter Kit II",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1203,14 +1206,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate",
           "weight": 1,
-          "name": "minecraft:iron_chestplate",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1226,14 +1230,19 @@
               "name": [
                 {
                   "text": "Protect Protocol",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1254,14 +1263,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:eye_armor_trim_smithing_template",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1283,14 +1293,13 @@
               "name": [
                 {
                   "text": "Pearly",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1311,14 +1320,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:white_dye",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1334,14 +1344,13 @@
               "name": [
                 {
                   "text": "Sneaky Sneaky",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1365,14 +1374,15 @@
                   "text": "when you sneak.",
                   "color": "gray"
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:diamond_block",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1388,14 +1398,13 @@
               "name": [
                 {
                   "text": "Shiny Spawn",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1420,14 +1429,15 @@
                   "text": "you are at the start of game.",
                   "color": "gray"
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:redstone",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1443,14 +1453,13 @@
               "name": [
                 {
                   "text": "Bloodthirsty",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1475,14 +1484,15 @@
                   "text": "mob.",
                   "color": "gray"
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:barrel",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1498,14 +1508,13 @@
               "name": [
                 {
                   "text": "Like Fish in a Barrel",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1518,34 +1527,25 @@
                     "color": "gray"
                   },
                   {
-                    "text": " ",
-                    "color": "red"
-                  }
-                ],
-                [
-                  {
                     "text": "Splash Potions of Levitation",
                     "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": " (40 second duration).",
+                    "text": "(40 second duration).",
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:trident",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1561,14 +1561,13 @@
               "name": [
                 {
                   "text": "Poseidon's Blessing",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1593,7 +1592,7 @@
                     "color": "dark_purple"
                   },
                   {
-                    "text": ",",
+                    "text": ", and",
                     "color": "gray"
                   }
                 ],
@@ -1633,14 +1632,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:sniffer_egg",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1656,14 +1656,13 @@
               "name": [
                 {
                   "text": "SNIFFA",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1672,51 +1671,50 @@
                 },
                 [
                   {
-                    "text": "Gain 2 ",
+                    "text": "Spawn 2 ",
                     "color": "gray"
                   },
                   {
-                    "text": "Sniffer Spawn Eggs",
-                    "color": "white"
+                    "text": "SNIFFAs",
+                    "color": "blue"
                   },
                   {
-                    "text": " and 2 "
+                    "text": "."
+                  },
+                  {
+                    "text": " SNIFFAs",
+                    "color": "blue"
+                  },
+                  {
+                    "text": " are invulnerable",
+                    "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "Leads",
-                    "color": "white"
+                    "text": "Sniffers ",
+                    "color": "blue"
                   },
                   {
-                    "text": ". The ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Sniffers",
-                    "color": "gold"
-                  },
-                  {
-                    "text": " are invulnerable,",
+                    "text": "that follow you around and dig",
                     "color": "gray"
                   }
                 ],
-                {
-                  "text": "glowing, and dig up rare loot",
-                  "color": "gray"
-                },
-                {
-                  "text": "every 4 minutes!",
-                  "color": "gray"
-                }
-              ]
+                [
+                  {
+                    "text": "up rare loot every 4 minutes!",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:diamond",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1732,14 +1730,13 @@
               "name": [
                 {
                   "text": "Diamonds in the Rough",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1762,7 +1759,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Diamond",
+                    "text": " Diamonds",
                     "color": "white"
                   },
                   {
@@ -1770,14 +1767,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:glistering_melon_slice",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1793,14 +1791,13 @@
               "name": [
                 {
                   "text": "Healing Orbs II",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1820,14 +1817,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:prismarine_shard",
           "weight": 1,
-          "name": "minecraft:iron_sword",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1843,14 +1841,13 @@
               "name": [
                 {
                   "text": "Knife's Edge",
-                  "color": "gray",
+                  "color": "gold",
                   "bold": true
                 }
               ]
             },
             {
               "function": "minecraft:set_lore",
-              "mode": "replace_all",
               "lore": [
                 {
                   "text": "------------------------",
@@ -1862,11 +1859,11 @@
                     "color": "gray"
                   },
                   {
-                    "text": "Strength",
+                    "text": "Strength I",
                     "color": "yellow"
                   },
                   {
-                    "text": " whenever  you"
+                    "text": " whenever you"
                   }
                 ],
                 [
@@ -1875,7 +1872,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": "10❤️",
+                    "text": "10🖤",
                     "color": "red"
                   },
                   {
@@ -1883,14 +1880,15 @@
                     "color": "gray"
                   }
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 9,
-          "value": "uhcp:augments/patron/gold"
+          "value": "uhcp:augments/patron/gold",
+          "weight": 9
         }
       ]
     }

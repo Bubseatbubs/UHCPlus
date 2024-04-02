@@ -5,8 +5,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:netherrack",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -22,7 +22,7 @@
               "name": [
                 {
                   "text": "Netherborn",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -36,6 +36,16 @@
                 },
                 [
                   {
+                    "text": "Start in the Nether this game.",
+                    "color": "dark_red",
+                    "bold": true
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
                     "text": "Start with permanent ",
                     "color": "gray"
                   },
@@ -44,53 +54,41 @@
                     "color": "yellow"
                   },
                   {
-                    "text": ".",
+                    "text": ",",
                     "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "Gain ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Diamond Tools and a Sword",
+                    "text": "Diamond Equipment",
                     "color": "white"
                   },
                   {
-                    "text": " and"
+                    "text": ",",
+                    "color": "gray",
+                    "bold": true
+                  },
+                  {
+                    "text": " Iron Armor"
+                  },
+                  {
+                    "text": ", and other",
+                    "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "and some other essentials. ",
+                    "text": "essentials. After 20 minutes, gain the",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "materials needed to craft an",
                     "color": "gray"
                   },
                   {
-                    "text": "You spawn",
-                    "color": "red",
-                    "bold": true
-                  }
-                ],
-                [
-                  {
-                    "text": "in the Nether ",
-                    "color": "red",
-                    "bold": true
-                  },
-                  {
-                    "text": "this game. After 20 minutes,",
-                    "color": "gray",
-                    "bold": false
-                  }
-                ],
-                {
-                  "text": "gain the materials needed to craft an",
-                  "color": "gray"
-                },
-                [
-                  {
-                    "text": "exit portal",
+                    "text": " exit portal",
                     "color": "red"
                   },
                   {
@@ -128,7 +126,7 @@
               "name": [
                 {
                   "text": "Solo Leveling",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -170,6 +168,9 @@
                     "color": "gray"
                   }
                 ],
+                {
+                  "text": ""
+                },
                 [
                   {
                     "text": "You cannot upgrade or pick up",
@@ -218,7 +219,7 @@
               "name": [
                 {
                   "text": "Goldenless Apples",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -297,7 +298,7 @@
               "name": [
                 {
                   "text": "Golden-er Apples",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -361,7 +362,7 @@
               "name": [
                 {
                   "text": "End's Chosen",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -433,7 +434,7 @@
               "name": [
                 {
                   "text": "Surface Duty",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -513,8 +514,8 @@
                   }
                 ],
                 {
-                  "text": "You cannot go below y level 50.",
-                  "color": "gray",
+                  "text": "You cannot go below y-level 50.",
+                  "color": "dark_red",
                   "bold": true
                 }
               ],
@@ -541,7 +542,7 @@
               "name": [
                 {
                   "text": "Last Stand",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -592,7 +593,7 @@
               "name": [
                 {
                   "text": "Potionmaster",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -649,7 +650,7 @@
               "name": [
                 {
                   "text": "To the Skies!",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -708,7 +709,7 @@
               "name": [
                 {
                   "text": "The Hare",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -759,7 +760,7 @@
               "name": [
                 {
                   "text": "Starter Kit III",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -805,6 +806,12 @@
           "name": "minecraft:turtle_helmet",
           "functions": [
             {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
               "function": "minecraft:set_count",
               "count": 1
             },
@@ -818,7 +825,7 @@
               "name": [
                 {
                   "text": "The Tortoise",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -883,7 +890,7 @@
               "name": [
                 {
                   "text": "Cruel Pact",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -948,7 +955,7 @@
               "name": [
                 {
                   "text": "Glory of Ra",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1032,7 +1039,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:brush",
+          "name": "minecraft:firework_star",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1048,7 +1055,7 @@
               "name": [
                 {
                   "text": "Shadow Clone Jutsu",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1104,11 +1111,17 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:golden_sword",
+          "name": "minecraft:sentry_armor_trim_smithing_template",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {}
+              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -1119,8 +1132,8 @@
               "target": "item_name",
               "name": [
                 {
-                  "text": "Zeus' Favor",
-                  "color": "gray",
+                  "text": "Zeus's Favor",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1171,8 +1184,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:bone",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1188,7 +1201,7 @@
               "name": [
                 {
                   "text": "Beastmaster",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1202,25 +1215,7 @@
                 },
                 [
                   {
-                    "text": "Every 3 attacks, summon an angry",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Bee",
-                    "color": "blue"
-                  },
-                  {
-                    "text": " that",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "attacks your target. Every 6 attacks,",
-                  "color": "gray"
-                },
-                [
-                  {
-                    "text": "summon a temporary",
+                    "text": "Spawn a tamed",
                     "color": "gray"
                   },
                   {
@@ -1228,14 +1223,51 @@
                     "color": "blue"
                   },
                   {
-                    "text": " that attacks your",
+                    "text": " of every variant.",
                     "color": "gray"
                   }
                 ],
-                {
-                  "text": "target.",
-                  "color": "gray"
-                }
+                [
+                  {
+                    "text": "One",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Wolf",
+                    "color": "blue"
+                  },
+                  {
+                    "text": " is designated"
+                  },
+                  {
+                    "text": " Pack Leader",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "granting it increased size, health, ",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Wolf Armor",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
               ],
               "mode": "replace_all"
             }
@@ -1260,7 +1292,7 @@
               "name": [
                 {
                   "text": "Relic Master",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1314,7 +1346,7 @@
               "name": [
                 {
                   "text": "Think Fast",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1380,7 +1412,7 @@
               "name": [
                 {
                   "text": "Diamond Grab Bag",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1430,7 +1462,7 @@
               "name": [
                 {
                   "text": "Cold Blooded",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1520,7 +1552,7 @@
               "name": [
                 {
                   "text": "Radiant Blessing",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]

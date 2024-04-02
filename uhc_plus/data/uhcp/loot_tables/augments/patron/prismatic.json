@@ -22,7 +22,7 @@
                   "name": [
                     {
                       "text": "Center of Attention",
-                      "color": "gray",
+                      "color": "aqua",
                       "bold": true
                     }
                   ]
@@ -118,7 +118,7 @@
                   "name": [
                     {
                       "text": "Hunter's Insight",
-                      "color": "gray",
+                      "color": "aqua",
                       "bold": true
                     }
                   ]
@@ -258,6 +258,12 @@
             "name": "minecraft:diamond_boots",
             "functions": [
                 {
+                  "function": "minecraft:toggle_tooltips",
+                  "toggles": {
+                    "minecraft:attribute_modifiers": false
+                  }
+                },
+                {
                   "function": "set_count",
                   "count": 1
                 },
@@ -271,7 +277,7 @@
                   "name": [
                     {
                       "text": "Gas Gas Gas",
-                      "color": "gray",
+                      "color": "aqua",
                       "bold": true
                     }
                   ]
@@ -354,6 +360,12 @@
             "name": "minecraft:diamond_pickaxe",
             "functions": [
                 {
+                  "function": "minecraft:toggle_tooltips",
+                  "toggles": {
+                    "minecraft:attribute_modifiers": false
+                  }
+                },
+                {
                   "function": "set_count",
                   "count": 1
                 },
@@ -367,7 +379,7 @@
                   "name": [
                     {
                       "text": "Into the Mines III",
-                      "color": "gray",
+                      "color": "aqua",
                       "bold": true
                     }
                   ]
@@ -469,7 +481,7 @@
                   "name": [
                     {
                       "text": "Gapple Gap III",
-                      "color": "gray",
+                      "color": "aqua",
                       "bold": true
                     }
                   ]
@@ -566,7 +578,7 @@
                   "name": [
                     {
                       "text": "Trap God",
-                      "color": "gray",
+                      "color": "aqua",
                       "bold": true
                     }
                   ]
@@ -694,7 +706,7 @@
                   "name": [
                     {
                       "text": "Librarian",
-                      "color": "gray",
+                      "color": "aqua",
                       "bold": true
                     }
                   ]
@@ -783,7 +795,7 @@
                   "name": [
                     {
                       "text": "Bowmaster",
-                      "color": "gray",
+                      "color": "aqua",
                       "bold": true
                     }
                   ]

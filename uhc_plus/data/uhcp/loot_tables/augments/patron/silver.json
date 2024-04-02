@@ -297,6 +297,12 @@
             "name": "minecraft:iron_pickaxe",
             "functions": [
               {
+                "function": "minecraft:toggle_tooltips",
+                "toggles": {
+                  "minecraft:attribute_modifiers": false
+                }
+              },
+              {
                 "function": "minecraft:set_count",
                 "count": 1
               },
