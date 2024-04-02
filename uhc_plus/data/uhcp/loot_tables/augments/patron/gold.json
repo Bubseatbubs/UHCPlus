@@ -610,6 +610,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:glass_bottle",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -697,6 +698,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:arrow",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_name",
@@ -710,12 +712,17 @@
               ]
             },
             {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:5s}"
+            },
+            {
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
                 [
                   {
-                    "text": "Gain a"
+                    "text": "Gain a",
+                    "color": "gray"
                   },
                   {
                     "text": " Power I",
@@ -731,7 +738,8 @@
                   }
                 ],
                 {
-                  "text": "limit is increased to 32."
+                  "text": "limit is increased to 32.",
+                  "color": "gray"
                 }
               ],
               "mode": "replace_all"
@@ -863,7 +871,7 @@
                       "condition": "minecraft:entity_scores",
                       "entity": "this",
                       "scores": {
-                        "uhcp_aug_choosingAugment": 9
+                        "uhcp_aug_choosingAugment": 1
                       }
                     }
                   ]
