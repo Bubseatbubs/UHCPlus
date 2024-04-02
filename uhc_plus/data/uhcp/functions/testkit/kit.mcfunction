@@ -10,7 +10,7 @@ give @s minecraft:cobblestone 64
 give @s minecraft:golden_apple 12
 give @s minecraft:arrow 12
 
-attribute @s generic.max_health base set 40
+attribute @s minecraft:generic.max_health modifier add 5ae70886-031a-42b7-aa86-783c9536c746 "" 20 add_value
 
 effect give @s regeneration 5 10 true
 
