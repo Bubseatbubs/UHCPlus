@@ -1,9 +1,9 @@
-#UHC+
+# UHC+
 
 UHC+ is an alternate take on Minecraft’s Ultra Hardcore gamemode. Originally, it began as an add-on onto Cosmonian UHC, but has now branched off and become an independent project.
 Current version: 1.20.5 (Snapshot 24w13a)
 
-##What to expect:
+## What to expect:
 
 - A robust Augment system in which players select a perk at the start of the game. There are 100+ augments and 3 different tiers of Augments, so there’s a lot of variety!
 - Gigantic Titans that spawn throughout the game. Taking on these behemoths will net you great rewards!
@@ -14,7 +14,7 @@ Current version: 1.20.5 (Snapshot 24w13a)
 - An arrow count limit to stop players from lugging too many Arrows around.
 - Highly configurable settings for the above features!
 
-##To install:
+## To install:
 1. Download the Zip.
 2. Open the Zip file "UHCPlus-main" and extract the contents (another folder called UHCPlus-main).
 3. Put the contents of UHCPlus-main (the folder) into a Minecraft datapack folder.
