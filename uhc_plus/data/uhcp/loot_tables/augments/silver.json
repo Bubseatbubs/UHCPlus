@@ -2037,6 +2037,58 @@
           ]
         },
         {
+          "type": "minecraft:item",
+          "name": "minecraft:tide_armor_trim_smithing_template",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:24s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Cheap Imitation",
+                  "color": "gray",
+                  "italic": "false",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain 2",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Lesser Duplicators",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
           "type": "minecraft:loot_table",
           "value": "uhcp:augments/patron/silver",
           "weight": 9

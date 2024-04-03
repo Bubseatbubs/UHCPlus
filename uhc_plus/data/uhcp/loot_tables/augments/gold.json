@@ -2119,6 +2119,238 @@
           ]
         },
         {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_boots",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:24s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Moonwalking",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "permanent Jump Boost I",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "greatly decrease your gravity,",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "and become immune to fall damage.",
+                  "color": "gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ]
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tide_armor_trim_smithing_template",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:24s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Imperfect Replica",
+                  "color": "gray",
+                  "bold": true,
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain 4",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Lesser Duplicators",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:magma_cream",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:24s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Crazy Consumables",
+                  "color": "gray",
+                  "bold": true,
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain a",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Portable Lava Pool",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "Wild Feather",
+                  "color": "light_purple",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": ", ",
+                      "color": "gray"
+                    },
+                    {
+                      "text": "Webslinger",
+                      "color": "light_purple",
+                      "extra": [
+                        {
+                          "text": ",",
+                          "color": "gray"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Suspicious Flesh",
+                  "color": "light_purple",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": ", ",
+                      "color": "gray",
+                      "extra": [
+                        {
+                          "text": "Royal Jelly",
+                          "color": "light_purple",
+                          "extra": [
+                            {
+                              "text": ",",
+                              "color": "gray"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "and ",
+                  "color": "gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "Lesser Duplicator",
+                      "color": "light_purple",
+                      "extra": [
+                        {
+                          "text": ".",
+                          "color": "gray"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
           "type": "minecraft:loot_table",
           "value": "uhcp:augments/patron/gold",
           "weight": 9
