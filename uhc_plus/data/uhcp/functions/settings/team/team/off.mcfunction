@@ -16,6 +16,7 @@ team empty green
 team empty light_purple
 team empty red
 team empty yellow
+execute as @a[gamemode=survival] run function uhcp:lobby/menu
 
 function uhcp:settings/pages/team/1
 tellraw @s [{"text":"Teams have been turned "},{"text":"OFF","color":"red"},{"text":". It is now a Solo game."}]
