@@ -87,19 +87,19 @@ scoreboard players display name %players uhcp_game_display {"text":"Players Left
 
 # Add bossbars
 bossbar add uhcp_top_charge "Time Until Teleport:"
-bossbar set minecraft:uhcp_top_charge color purple
-bossbar set minecraft:uhcp_top_charge style notched_6
-bossbar set minecraft:uhcp_top_charge max 60
+bossbar set uhcp:top_charge color purple
+bossbar set uhcp:top_charge style notched_6
+bossbar set uhcp:top_charge max 60
 
 bossbar add uhcp_augment "Time Remaining:"
-bossbar set minecraft:uhcp_augment color white
-bossbar set minecraft:uhcp_augment style notched_6
-bossbar set minecraft:uhcp_augment max 900
+bossbar set uhcp:augment color white
+bossbar set uhcp:augment style notched_6
+bossbar set uhcp:augment max 900
 
 bossbar add uhcp_augment "Cooldown:"
-bossbar set minecraft:uhcp_augment color white
-bossbar set minecraft:uhcp_augment style notched_6
-bossbar set minecraft:uhcp_augment max 900
+bossbar set uhcp:augment color white
+bossbar set uhcp:augment style notched_6
+bossbar set uhcp:augment max 900
 
 # Add teams
 team add aqua {"text":"Aqua","color":"aqua"}

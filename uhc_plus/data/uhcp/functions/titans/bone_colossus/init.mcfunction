@@ -1,5 +1,5 @@
 summon stray ~ ~ ~ {ArmorItems:[{},{},{},{id:"minecraft:oak_button",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}}}}],CustomNameVisible:0b,PersistenceRequired:1b,Health:1000f,Tags:["UHCP_Titan","UHCP_BoneColossus","UHCP_New"],CustomName:'{"text":"Bone Colossus","color":"red","bold":true}',Attributes:[{Name:"generic.max_health",Base:1024},{Name:"generic.scale",Base:9},{Name:"generic.step_height",Base:2},{Name:"generic.follow_range",Base:80},{Name:"generic.gravity",Base:0.30},{Name:"generic.fall_damage_multiplier",Base:0},{Name:"generic.knockback_resistance",Base:0.9},{Name:"generic.attack_damage",Base:0},{Name:"generic.armor",Base:5},{Name:"generic.movement_speed",Base:0.2}]}
 
 # Initialize bossbar and boss ID
-execute store result bossbar minecraft:uhcp_bonecolossushealth max run data get entity @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] Health
+execute store result bossbar uhcp:bonecolossushealth max run data get entity @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] Health
 scoreboard players set @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] uhcp_titans_ID 4

@@ -5,7 +5,7 @@
 # @within  uhcp:left/in_game/alive
 
 gamemode survival @s
-bossbar set minecraft:uhcp_augment players
+bossbar set uhcp:augment players
 ride @s dismount
 execute at @s as @e[tag=UHCP_Lock,distance=..100] in uhcp:main run tp @s 0 -63 0
 
