@@ -17,6 +17,5 @@ scoreboard players reset @s testkit
 scoreboard players reset @s top
 tag @s remove UHCP_Died
 execute unless score @s uhcp_ready = @s uhcp_ready run scoreboard players set @s uhcp_ready 0
-function uhcp:titans/reset_bossbar
 function uhcp:lobby/menu
 execute if score @s uhcp_ready matches 1 run function uhcp:lobby/readyup/cancel

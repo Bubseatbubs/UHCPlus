@@ -1821,8 +1821,7 @@
                 {
                   "text": "Perfect Replica",
                   "color": "gray",
-                  "bold": true,
-                  "italic": false
+                  "bold": true
                 }
               ]
             },
@@ -1854,7 +1853,7 @@
               "mode": "replace_all"
             }
           ]
-        }
+        },
         {
           "type": "minecraft:loot_table",
           "weight": 9,

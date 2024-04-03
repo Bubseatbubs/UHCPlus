@@ -86,17 +86,17 @@ scoreboard players set %players uhcp_game_display 0
 scoreboard players display name %players uhcp_game_display {"text":"Players Left:","color":"gold"}
 
 # Add bossbars
-bossbar add uhcp_top_charge "Time Until Teleport:"
+bossbar add uhcp:top_charge "Time Until Teleport:"
 bossbar set uhcp:top_charge color purple
 bossbar set uhcp:top_charge style notched_6
 bossbar set uhcp:top_charge max 60
 
-bossbar add uhcp_augment "Time Remaining:"
+bossbar add uhcp:augment "Time Remaining:"
 bossbar set uhcp:augment color white
 bossbar set uhcp:augment style notched_6
 bossbar set uhcp:augment max 900
 
-bossbar add uhcp_augment "Cooldown:"
+bossbar add uhcp:augment "Cooldown:"
 bossbar set uhcp:augment color white
 bossbar set uhcp:augment style notched_6
 bossbar set uhcp:augment max 900
@@ -213,6 +213,9 @@ execute in minecraft:the_end run function uhcp:load/dimensions/minecraft/the_end
 execute in minecraft:the_nether run function uhcp:load/dimensions/minecraft/the_nether
 execute in minecraft:overworld run function uhcp:load/dimensions/minecraft/overworld
 execute in uhcp:main run function uhcp:load/dimensions/uhcp/main
+
+# Initial logic
+execute unless score %init uhcp_initStatus matches 1 run function uhcp:init
 
 # Schedule delayed load
 scoreboard players add %load uhcp_initStatus 1

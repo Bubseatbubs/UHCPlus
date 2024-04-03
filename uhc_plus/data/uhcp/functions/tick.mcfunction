@@ -1,6 +1,3 @@
-# Initial logic
-execute unless score %init uhcp_initStatus matches 1 run function uhcp:init
-
 # Game Start Countdown
 execute if score %start_countdown uhcp_initStatus matches 1.. run function uhcp:lobby/countdown
 

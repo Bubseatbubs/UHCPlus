@@ -14,7 +14,7 @@ execute if score %augment_countdown uhcp_game_time matches 101..895 as @a[gamemo
 
 # If all players selected an augment, skip to 5 seconds left
 execute if score %augment_countdown uhcp_game_time matches 101.. unless entity @a[gamemode=adventure,tag=UHCP_ChoosingItem] run scoreboard players set %augment_countdown uhcp_game_time 100
-execute store result bossbar uhcp_augment value run scoreboard players get %augment_countdown uhcp_game_time
+execute store result bossbar uhcp:augment value run scoreboard players get %augment_countdown uhcp_game_time
 
 # If < 5 seconds, stop function
 execute if score %augment_countdown uhcp_game_time matches 101.. run return 0

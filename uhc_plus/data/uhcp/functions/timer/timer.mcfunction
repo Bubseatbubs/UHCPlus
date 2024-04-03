@@ -64,7 +64,7 @@ execute if score %time uhcp_game_time >= %AUG_238 uhcp_game_time run scoreboard 
 # Titans
 execute if score %time uhcp_game_time matches 6000 in minecraft:overworld positioned 0 64 0 run function uhcp:titans/spawn/init
 execute if score %time uhcp_game_time matches 24000 in minecraft:overworld run function uhcp:titans/spawn/summon
-execute if score %time uhcp_game_time matches 42000 in minecraft:overworld run function uhcp:titans/reset
+execute if score %time uhcp_game_time matches 42000 in minecraft:overworld run function uhcp:reset/titans
 
 # Rain random lab UHC player balance addons
 execute if score %time uhcp_game_time matches 2700 run function rain:tags

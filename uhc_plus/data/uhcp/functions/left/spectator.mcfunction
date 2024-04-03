@@ -14,7 +14,6 @@ execute in minecraft:overworld run tp @s 0 150 0
 effect clear @s
 effect give @s minecraft:night_vision infinite 0 true
 function uhcp:reset/attributes
-function uhcp:titans/reset_bossbar
 experience set @s 0 levels
 experience set @s 0 points
 tellraw @s {"text":"You are spectating the current match.","color":"red"}

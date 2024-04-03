@@ -119,6 +119,7 @@ function uhcp:start/border with storage uhcp:border
 
 # Allow one-player games to not end
 execute store result score %players uhcp_initStatus if entity @a[tag=!UHCP_Spectator]
+scoreboard players operation %players uhcp_id = %players uhcp_initStatus
 execute if score %players uhcp_initStatus matches ..1 run scoreboard players set %end uhcp_initStatus 1
 
 # Team logic
@@ -221,7 +222,7 @@ execute as @a[tag=!UHCP_Spectator] run function uhcp:titans/bossbar/create
 
 # Augments
 scoreboard players set %augment_countdown uhcp_game_time 900
-bossbar set uhcp_augment players @a
+bossbar set uhcp:augment players @a
 execute as @a[tag=!UHCP_Spectator] run function uhcp:start/augments
 
 # Spectators

@@ -2205,8 +2205,7 @@
                 {
                   "text": "Imperfect Replica",
                   "color": "gray",
-                  "bold": true,
-                  "italic": false
+                  "bold": true
                 }
               ]
             },
@@ -2257,8 +2256,7 @@
                 {
                   "text": "Crazy Consumables",
                   "color": "gray",
-                  "bold": true,
-                  "italic": false
+                  "bold": true
                 }
               ]
             },
