@@ -50,4 +50,3 @@ execute store result bossbar pregen:worldgen value run scoreboard players get Pr
 #Tag for verification
 scoreboard players set VerifyAttempts WorldPregen 0
 tag @s add WorldGenVerify
-scoreboard players set pregen status 1
