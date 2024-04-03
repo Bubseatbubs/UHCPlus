@@ -9,7 +9,7 @@ playsound minecraft:entity.blaze.death player @a[distance=..6] ~ ~ ~ 1.0 2.0 1.0
 
 execute as @a if score @s uhcp_augment matches 240 run tag @e[tag=UHCP_New,sort=nearest,limit=1] add UHCP_ZeusFavor
 
-execute store result storage uhcp:cd cDamage int 1 run scoreboard players set %damage uhcp_aug_durability 50
+execute store result storage uhcp:relic_damage cDamage int 1 run scoreboard players set %damage uhcp_aug_durability 50
 item modify entity @s weapon.mainhand uhcp:update_dur
 
 # Gets team value

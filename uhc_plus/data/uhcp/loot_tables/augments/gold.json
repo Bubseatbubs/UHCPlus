@@ -1091,51 +1091,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:glass_bottle",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:34s}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "target": "item_name",
-              "name": [
-                {
-                  "text": "Bottled Knowledge",
-                  "color": "gold",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                {
-                  "text": "Gain 35",
-                  "color": "gray"
-                },
-                {
-                  "text": " Bottles o' Enchanting",
-                  "color": "white"
-                }
-              ],
-              "mode": "replace_all"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:chest",
           "weight": 1,
           "functions": [

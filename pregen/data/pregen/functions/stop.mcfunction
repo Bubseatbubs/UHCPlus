@@ -14,6 +14,6 @@ gamemode creative @s
 tag @s remove WorldGen
 tag @s remove WorldGenStop
 tag @s remove WorldGenVerify
-execute in minecraft:overworld run tp @a 0 301 0
+execute in minecraft:overworld run tp @a 7 301 7
 playsound minecraft:block.note_block.chime master @a ~ ~ ~ 1000000 0 1
 scoreboard players set pregen status 0
