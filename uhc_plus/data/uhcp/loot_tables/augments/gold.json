@@ -1986,6 +1986,139 @@
           ]
         },
         {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_hoe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:52s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Harvest Season II",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Whenever you kill a hostile",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": "mob, it has a 10% chance of",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "dropping a ",
+                  "color": "gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "Golden Apple",
+                      "color": "white"
+                    },
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ]
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:53s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Capped",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain full ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Protection II ",
+                    "color": "dark_purple"
+                  }
+                ],
+                {
+                  "text": "Diamond Armor",
+                  "color": "white",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": " with",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "text": "Curse of Binding",
+                  "color": "dark_purple",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ]
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
           "type": "minecraft:loot_table",
           "value": "uhcp:augments/patron/gold",
           "weight": 9

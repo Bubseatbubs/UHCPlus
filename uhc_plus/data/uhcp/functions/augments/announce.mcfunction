@@ -55,6 +55,7 @@ execute as @a if score @s uhcp_augment matches 146 run tellraw @a[tag=UHCP_Augme
 execute as @a if score @s uhcp_augment matches 147 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Parasite","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 148 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Little Buddies","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 150 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Cram Session","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_augment matches 151 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Harvest Season I","color":"gold"},{"text":"!","color":"white"}]
 
 # Gold Augments
 execute as @a if score @s uhcp_augment matches 0 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Bee Keeper","color":"gold"},{"text":"!","color":"white"}]
@@ -97,6 +98,8 @@ execute as @a if score @s uhcp_augment matches 43 run tellraw @a[tag=UHCP_Augmen
 execute as @a if score @s uhcp_augment matches 44 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Sneaky Sneaky","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 45 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" You Have My Rod II","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 51 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Bookworm I","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_augment matches 52 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Harvest Season II","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_augment matches 53 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Capped","color":"gold"},{"text":"!","color":"white"}]
 
 # Prismatic Augments
 execute as @a if score @s uhcp_augment matches 200 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Beastmaster","color":"gold"},{"text":"!","color":"white"}]
@@ -126,6 +129,7 @@ execute as @a if score @s uhcp_augment matches 227 run tellraw @a[tag=UHCP_Augme
 execute as @a if score @s uhcp_augment matches 228 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Trap God","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 229 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" You Have My Rod III","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 234 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Bookworm II","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_augment matches 235 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Harvest Season III","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 236 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" The Tortoise","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 237 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Glory of Ra","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 238 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Relic Master","color":"gold"},{"text":"!","color":"white"}]

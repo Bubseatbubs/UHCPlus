@@ -1,0 +1,4 @@
+item replace entity @s armor.head with minecraft:diamond_helmet[minecraft:enchantments={levels:{"minecraft:protection":2,"minecraft:binding_curse":1}}]
+item replace entity @s armor.head with minecraft:diamond_chestplate[minecraft:enchantments={levels:{"minecraft:protection":2,"minecraft:binding_curse":1}}]
+item replace entity @s armor.head with minecraft:diamond_leggings[minecraft:enchantments={levels:{"minecraft:protection":2,"minecraft:binding_curse":1}}]
+item replace entity @s armor.head with minecraft:diamond_boots[minecraft:enchantments={levels:{"minecraft:protection":2,"minecraft:binding_curse":1}}]
