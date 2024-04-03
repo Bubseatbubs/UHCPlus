@@ -8,12 +8,10 @@ execute as @s[tag=WorldGen] if score Dimension WorldPregen matches -1 run scoreb
 execute as @s[tag=WorldGen] if score Dimension WorldPregen matches 1 run scoreboard players operation End WorldPregen = @s WorldPregen
 
 #Return to Spawn
-execute in minecraft:overworld run tp @s ~ 256 ~ 0 0
-gamemode survival @s
+# --------------- Temp coordinates to lobby
+execute in minecraft:overworld run tp @s 7 301 7
+# ---------------
 gamemode creative @s
 tag @s remove WorldGen
 tag @s remove WorldGenStop
 tag @s remove WorldGenVerify
-execute in minecraft:overworld run tp @a 0 301 0
-playsound minecraft:block.note_block.chime master @a ~ ~ ~ 1000000 0 1
-scoreboard players set pregen status 0

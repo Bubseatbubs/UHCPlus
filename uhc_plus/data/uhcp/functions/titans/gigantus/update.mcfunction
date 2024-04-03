@@ -1,7 +1,3 @@
-execute store result bossbar minecraft:uhcp_gigantushealth value run data get entity @s Health
-bossbar set minecraft:uhcp_gigantushealth players @a[distance=..32]
-bossbar set minecraft:uhcp_gigantushealth name {"selector":"@s","color":"gold"}
-
 tag @s add UHCP_CurrentTitan
 execute as @a[distance=..3.5] run damage @s 4 mob_attack by @e[tag=UHCP_CurrentTitan,sort=nearest,limit=1]
 tag @s remove UHCP_CurrentTitan

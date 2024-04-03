@@ -41,7 +41,7 @@ team empty red
 team empty yellow
 
 # Reset Titans
-function uhcp:titans/reset
+function uhcp:reset/titans
 
 # Reset any players in /trigger top
 execute as @a[tag=UHCP_IsTeleporting] run function uhcp:top/cancel

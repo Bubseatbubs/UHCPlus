@@ -14,7 +14,7 @@ execute if score %augment_countdown uhcp_game_time matches 101..895 as @a[gamemo
 
 # If all players selected an augment, skip to 5 seconds left
 execute if score %augment_countdown uhcp_game_time matches 101.. unless entity @a[gamemode=adventure,tag=UHCP_ChoosingItem] run scoreboard players set %augment_countdown uhcp_game_time 100
-execute store result bossbar uhcp_augment value run scoreboard players get %augment_countdown uhcp_game_time
+execute store result bossbar uhcp:augment value run scoreboard players get %augment_countdown uhcp_game_time
 
 # If < 5 seconds, stop function
 execute if score %augment_countdown uhcp_game_time matches 101.. run return 0
@@ -33,7 +33,7 @@ execute if score %augment_countdown uhcp_game_time matches 0.. run return 0
 scoreboard players set %time uhcp_initStatus 1
 
 gamemode survival @a[gamemode=adventure]
-bossbar set minecraft:uhcp_augment players
+bossbar set uhcp:augment players
 execute in uhcp:main run tp @e[tag=UHCP_Lock] 0 -63 0
 
 effect clear @a[gamemode=survival]

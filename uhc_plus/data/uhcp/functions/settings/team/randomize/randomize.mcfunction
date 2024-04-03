@@ -20,5 +20,7 @@ function uhcp:settings/team/randomize/assign
 function uhcp:settings/team/randomize/assign/teams
 function uhcp:teams/join_all
 
-# Notification - Help me, Bubson! :(
+# Notification
 function uhcp:settings/pages/team/1
+tellraw @a [{"text":"Teams","bold":true},{"text":" have been randomized.","bold":false}]
+execute as @a at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1 1

@@ -1,4 +1,4 @@
-bossbar set uhcp_top_charge players @s
+bossbar set uhcp:top_charge players @s
 playsound block.beacon.activate master @s ~ ~ ~ 1 1 1
 scoreboard players set @s uhcp_top_CD 60
 tag @s add UHCP_IsTeleporting

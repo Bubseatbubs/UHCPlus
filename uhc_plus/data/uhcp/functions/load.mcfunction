@@ -78,7 +78,7 @@ scoreboard objectives setdisplay list uhcp_health
 # Add Display Timer Names
 scoreboard players set %display uhcp_game_display 59999969
 scoreboard players display name %display uhcp_game_display {"text":"Time:","color":"gold"}
-scoreboard objectives modify uhcp_game_display displayname {"text":"Game Stats","color":"gold"}
+scoreboard objectives modify uhcp_game_display displayname {"text":"Game Stats","color":"aqua","bold":true}
 
 scoreboard players display name %border uhcp_game_display {"text":"Border Size:","color":"gold"}
 
@@ -86,48 +86,20 @@ scoreboard players set %players uhcp_game_display 0
 scoreboard players display name %players uhcp_game_display {"text":"Players Left:","color":"gold"}
 
 # Add bossbars
-bossbar add uhcp_top_charge "Time Until Teleport:"
-bossbar set minecraft:uhcp_top_charge color purple
-bossbar set minecraft:uhcp_top_charge style notched_6
-bossbar set minecraft:uhcp_top_charge max 60
+bossbar add uhcp:top_charge "Time Until Teleport:"
+bossbar set uhcp:top_charge color purple
+bossbar set uhcp:top_charge style notched_6
+bossbar set uhcp:top_charge max 60
 
-bossbar add uhcp_augment "Time Remaining:"
-bossbar set minecraft:uhcp_augment color white
-bossbar set minecraft:uhcp_augment style notched_6
-bossbar set minecraft:uhcp_augment max 900
+bossbar add uhcp:augment "Time Remaining:"
+bossbar set uhcp:augment color white
+bossbar set uhcp:augment style notched_6
+bossbar set uhcp:augment max 900
 
-bossbar add uhcp_augment "Cooldown:"
-bossbar set minecraft:uhcp_augment color white
-bossbar set minecraft:uhcp_augment style notched_6
-bossbar set minecraft:uhcp_augment max 900
-
-bossbar add uhcp_arachnehealth ""
-bossbar set minecraft:uhcp_arachnehealth color red
-bossbar set minecraft:uhcp_arachnehealth style notched_10
-
-bossbar add uhcp_gigantushealth ""
-bossbar set minecraft:uhcp_gigantushealth color red
-bossbar set minecraft:uhcp_gigantushealth style notched_10
-
-bossbar add uhcp_fenrirhealth ""
-bossbar set minecraft:uhcp_fenrirhealth color red
-bossbar set minecraft:uhcp_fenrirhealth style notched_10
-
-bossbar add uhcp_bonecolossushealth ""
-bossbar set minecraft:uhcp_bonecolossushealth color red
-bossbar set minecraft:uhcp_bonecolossushealth style notched_10
-
-bossbar add uhcp_gigacreeperhealth ""
-bossbar set minecraft:uhcp_gigacreeperhealth color red
-bossbar set minecraft:uhcp_gigacreeperhealth style notched_10
-
-bossbar add uhcp_tritonhealth ""
-bossbar set minecraft:uhcp_tritonhealth color red
-bossbar set minecraft:uhcp_tritonhealth style notched_10
-
-bossbar add uhcp_seraphimhealth ""
-bossbar set minecraft:uhcp_seraphimhealth color red
-bossbar set minecraft:uhcp_seraphimhealth style notched_10
+bossbar add uhcp:augment "Cooldown:"
+bossbar set uhcp:augment color white
+bossbar set uhcp:augment style notched_6
+bossbar set uhcp:augment max 900
 
 # Add teams
 team add aqua {"text":"Aqua","color":"aqua"}
@@ -241,6 +213,9 @@ execute in minecraft:the_end run function uhcp:load/dimensions/minecraft/the_end
 execute in minecraft:the_nether run function uhcp:load/dimensions/minecraft/the_nether
 execute in minecraft:overworld run function uhcp:load/dimensions/minecraft/overworld
 execute in uhcp:main run function uhcp:load/dimensions/uhcp/main
+
+# Initial logic
+execute unless score %init uhcp_initStatus matches 1 run function uhcp:init
 
 # Schedule delayed load
 scoreboard players add %load uhcp_initStatus 1

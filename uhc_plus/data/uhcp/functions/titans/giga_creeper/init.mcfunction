@@ -1,5 +1,4 @@
 summon creeper ~ ~ ~ {CustomNameVisible:0b,PersistenceRequired:1b,Health:1000f,powered:1b,active_effects:[{id:"minecraft:fire_resistance",amplifier:1b,duration:20000000,show_particles:0b}],Fuse:6000,Tags:["UHCP_Titan","UHCP_GigaCreeper","UHCP_New"],CustomName:'{"text":"Giga Creeper","color":"red","bold":true}',ArmorItems:[{},{},{id:"minecraft:netherite_chestplate",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:blast_protection":10,"minecraft:vanishing_curse":1}}}},{}],Attributes:[{Name:"generic.armor",Base:5},{Name:"generic.attack_damage",Base:0},{Name:"generic.fall_damage_multiplier",Base:0},{Name:"generic.follow_range",Base:80},{Name:"generic.knockback_resistance",Base:0.9},{Name:"generic.max_health",Base:1000},{Name:"generic.movement_speed",Base:0.26},{Name:"generic.scale",Base:8},{Name:"generic.step_height",Base:2}]}
 
-# Initialize bossbar and boss ID
-execute store result bossbar minecraft:uhcp_gigacreeperhealth max run data get entity @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] Health
+# Initialize boss ID
 scoreboard players set @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] uhcp_titans_ID 5

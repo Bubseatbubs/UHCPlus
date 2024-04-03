@@ -1,6 +1,6 @@
 # UHC+
 
-UHC+ is an alternate take on Minecraft’s Ultra Hardcore gamemode. Originally, it began as an add-on onto Cosmonian UHC, but has now branched off and become an independent project.
+UHC+ is an alternate take on Minecraft’s Ultra Hardcore gamemode. Originally, it began as an add-on to [Cosmian UHC](https://www.planetminecraft.com/data-pack/cosmian-uhc-v3-1-18/), but has now branched off and become an independent project.
 Current version: 1.20.5 (Snapshot 24w13a)
 
 ## What to expect:

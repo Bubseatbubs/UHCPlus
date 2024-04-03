@@ -17,6 +17,16 @@ attribute @s minecraft:generic.max_health modifier remove 5ae70886-031a-42b7-aa8
 attribute @s minecraft:player.block_break_speed modifier remove 4329681b-2b41-4dc1-8b3a-4a5ebae3c1ce
 
 # Player Scale
-# Currently used by: Prop Hunt
+# Currently used by: Prop Hunt, Lil'Bro, Lil'est Bro
 #alias uuid UHCP_Scale 46eca67f-7103-4d35-a3b7-1576bf42ca48
 attribute @s generic.scale modifier remove 46eca67f-7103-4d35-a3b7-1576bf42ca48
+
+# Fall Damage Multiplier
+# Currently used by: Moon Walking
+#alias uuid UHCP_FallDamageMultiplier 64dfcb79-144e-4edb-880b-c355033bf7eb
+attribute @s minecraft:generic.fall_damage_multiplier modifier remove 64dfcb79-144e-4edb-880b-c355033bf7eb
+
+# Gravity Multiplier
+# Currently used by: Moon Walking
+#alias uuid UHCP_GravityMultiplier d4d5e5c8-fa24-44a8-83a4-dc4a8ee95c3f
+attribute @s minecraft:generic.gravity modifier remove d4d5e5c8-fa24-44a8-83a4-dc4a8ee95c3f

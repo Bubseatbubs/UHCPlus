@@ -196,7 +196,8 @@ experience set @a 0 levels
 experience set @a 0 points
 
 # Assign player IDs
-execute as @a[tag=!UHCP_Spectator] run function uhcp:start/id/assign
+execute as @a run function uhcp:start/id/assign
+scoreboard players operation %players uhcp_id = %global uhcp_id
 
 # Solo leveling
 tag @a remove UHCP_SLUpg
@@ -216,9 +217,12 @@ function uhcp:augments/effects/prismatic/sololeveling/prepare
 execute in minecraft:overworld run gamerule doDaylightCycle true
 execute in minecraft:overworld run time set 1000
 
+# Titan Bossbars
+execute as @a[tag=!UHCP_Spectator] run function uhcp:titans/bossbar/create
+
 # Augments
 scoreboard players set %augment_countdown uhcp_game_time 900
-bossbar set uhcp_augment players @a
+bossbar set uhcp:augment players @a
 execute as @a[tag=!UHCP_Spectator] run function uhcp:start/augments
 
 # Spectators

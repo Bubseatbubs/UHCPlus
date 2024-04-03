@@ -13,5 +13,3 @@ execute summon marker at @s run function uhcp:kill/death/spawn_marker
 playsound minecraft:entity.bogged.death master @s ~ ~ ~ 1 0.5 1
 playsound minecraft:block.beacon.deactivate master @s ~ ~ ~ 1 0.5 1
 playsound minecraft:block.beacon.deactivate master @s ~ ~ ~ 1 0.5 1
-title @s subtitle {"text":"You are now Spectating the match.","color":"gray","bold":true}
-title @s title {"text":"YOU DIED","color":"dark_red","bold":true}

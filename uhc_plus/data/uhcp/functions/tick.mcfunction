@@ -1,6 +1,3 @@
-# Initial logic
-execute unless score %init uhcp_initStatus matches 1 run function uhcp:init
-
 # Game Start Countdown
 execute if score %start_countdown uhcp_initStatus matches 1.. run function uhcp:lobby/countdown
 
@@ -56,6 +53,8 @@ execute unless score %game uhcp_initStatus matches 1 run function uhcp:menus
 execute as @e[tag=UHCP_Summon] at @s run function uhcp:entity/update
 
 # Update Titans
+execute as @a at @s if entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/update
+execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/hide
 execute as @e[tag=UHCP_Titan] at @s run function uhcp:titans/update
 
 # Relics
