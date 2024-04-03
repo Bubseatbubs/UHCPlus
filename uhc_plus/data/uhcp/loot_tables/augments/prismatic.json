@@ -1802,6 +1802,60 @@
           ]
         },
         {
+          "type": "minecraft:item",
+          "name": "minecraft:raiser_armor_trim_smithing_template",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:233s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Perfect Replica",
+                  "color": "gray",
+                  "bold": true,
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain 2 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Duplicators",
+                    "color": "light_purple",
+                    "extra": [
+                      {
+                        "text": ".",
+                        "color": "gray"
+                      }
+                    ]
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+        {
           "type": "minecraft:loot_table",
           "weight": 9,
           "value": "uhcp:augments/patron/prismatic"
