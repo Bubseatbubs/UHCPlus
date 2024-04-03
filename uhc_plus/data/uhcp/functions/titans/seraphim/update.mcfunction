@@ -1,7 +1,3 @@
-execute store result bossbar minecraft:uhcp_seraphimhealth value run data get entity @s Health
-bossbar set minecraft:uhcp_seraphimhealth players @a[distance=..32]
-bossbar set minecraft:uhcp_seraphimhealth name {"selector":"@s","color":"gold"}
-
 scoreboard players reset @s uhcp_aug_tier
 execute store success score @s uhcp_aug_tier run data get entity @e[tag=UHCP_Seraphim,limit=1] Brain.memories."minecraft:liked_player"
 execute if score @s uhcp_aug_tier matches 1 run data remove entity @s Brain.memories

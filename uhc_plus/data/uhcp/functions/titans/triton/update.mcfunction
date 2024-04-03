@@ -1,5 +1,4 @@
 execute store result bossbar minecraft:uhcp_tritonhealth value run data get entity @s Health
-bossbar set minecraft:uhcp_tritonhealth players @a[distance=..32]
 bossbar set minecraft:uhcp_tritonhealth name {"selector":"@s","color":"gold"}
 
 tag @s add UHCP_CurrentTitan

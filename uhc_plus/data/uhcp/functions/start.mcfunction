@@ -216,6 +216,9 @@ function uhcp:augments/effects/prismatic/sololeveling/prepare
 execute in minecraft:overworld run gamerule doDaylightCycle true
 execute in minecraft:overworld run time set 1000
 
+# Titan Bossbars
+execute as @a[tag=!UHCP_Spectator] run function uhcp:titans/bossbar/create
+
 # Augments
 scoreboard players set %augment_countdown uhcp_game_time 900
 bossbar set uhcp_augment players @a
