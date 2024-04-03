@@ -1,67 +1,75 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:barrier",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_augmentselect:1b,augment:-1s}"
-              },
-              {
-                "function": "minecraft:set_name",
-                "target": "item_name",
-                "name": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrier",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:-1s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Sample Augment",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
                   {
-                    "text": "Sample Augment",
-                    "color": "gray",
-                    "bold": true
+                    "text": "Gain a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Cool Item",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and a",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Sharpness V / Unbreaking V",
+                    "color": "dark_purple"
+                  }
+                ],
+                [
+                  {
+                    "text": "Iron Sword",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
                   }
                 ]
-              },
-              {
-                "function": "set_lore",
-                "mode": "replace_all",
-                "lore": [
-                  {
-                    "text": "------------------------",
-                    "color": "blue"
-                  },
-                  [
-                    {
-                      "text": "Gain ",
-                      "color": "gray"
-                    },
-                    {
-                      "text": "Dirt",
-                      "color": "white"
-                    },
-                    {
-                      "text": ". Gain",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " +2🖤",
-                      "color": "red"
-                    },
-                    {
-                      "text": ".",
-                      "color": "gray"
-                    }
-                  ]
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
