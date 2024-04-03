@@ -119,7 +119,6 @@ function uhcp:start/border with storage uhcp:border
 
 # Allow one-player games to not end
 execute store result score %players uhcp_initStatus if entity @a[tag=!UHCP_Spectator]
-scoreboard players operation %players uhcp_id = %players uhcp_initStatus
 execute if score %players uhcp_initStatus matches ..1 run scoreboard players set %end uhcp_initStatus 1
 
 # Team logic
@@ -197,7 +196,8 @@ experience set @a 0 levels
 experience set @a 0 points
 
 # Assign player IDs
-execute as @a[tag=!UHCP_Spectator] run function uhcp:start/id/assign
+execute as @a run function uhcp:start/id/assign
+scoreboard players operation %players uhcp_id = %global uhcp_id
 
 # Solo leveling
 tag @a remove UHCP_SLUpg
