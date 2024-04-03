@@ -78,7 +78,7 @@ scoreboard objectives setdisplay list uhcp_health
 # Add Display Timer Names
 scoreboard players set %display uhcp_game_display 59999969
 scoreboard players display name %display uhcp_game_display {"text":"Time:","color":"gold"}
-scoreboard objectives modify uhcp_game_display displayname {"text":"Game Stats","color":"gold"}
+scoreboard objectives modify uhcp_game_display displayname {"text":"Game Stats","color":"aqua","bold":true}
 
 scoreboard players display name %border uhcp_game_display {"text":"Border Size:","color":"gold"}
 
@@ -179,6 +179,11 @@ team add grace_period
 team modify grace_period collisionRule pushOwnTeam
 team modify grace_period friendlyFire false
 team modify grace_period seeFriendlyInvisibles false
+
+team add no_collision
+team modify no_collision collisionRule never
+team modify no_collision friendlyFire true
+team modify no_collision seeFriendlyInvisibles false
 
 # Default scores
 # Arrow limit

@@ -1,0 +1,57 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "value": "uhcp:relics/smooth_getaway",
+            "functions": [
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "Shadow Ninjitsu:",
+                      "color": "gold",
+                      "bold": false,
+                      "italic": false
+                    },
+                    {
+                      "text": " Create 2 more",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Mirages",
+                      "color": "blue"
+                    },
+                    {
+                      "text": ", and",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Mirages",
+                      "color": "blue"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "deal double damage.",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ]
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

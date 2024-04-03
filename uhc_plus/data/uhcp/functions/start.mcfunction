@@ -65,7 +65,7 @@ execute if score %players uhcp_game_display matches 6.. run scoreboard players d
 execute if score %players uhcp_game_display matches ..5 run scoreboard players display numberformat %players uhcp_game_display styled {"color":"red"}
 scoreboard objectives setdisplay sidebar uhcp_game_display
 
-# Crafting
+# Recipes and advancements
 advancement revoke @a from minecraft:adventure/root
 advancement revoke @a from minecraft:end/root
 advancement revoke @a from minecraft:husbandry/root
@@ -73,8 +73,8 @@ advancement revoke @a from minecraft:nether/root
 advancement revoke @a from minecraft:recipes/root
 advancement revoke @a from minecraft:story/root
 advancement revoke @a only uhcp:base_recipes
-advancement grant @a[tag=!UHCP_Spectator] from minecraft:recipes/root
-advancement grant @a[tag=!UHCP_Spectator] only uhcp:base_recipes
+advancement grant @a from minecraft:recipes/root
+advancement grant @a only uhcp:base_recipes
 # Revoke all special augment recipes here.
 
 # Reset scoreboards

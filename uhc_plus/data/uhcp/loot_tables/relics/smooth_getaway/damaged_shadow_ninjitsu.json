@@ -1,0 +1,21 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "uhcp:relics/augmented/shadow_ninjitsu"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:damage": 600
+          }
+        }
+      ]
+    }
+  ]
+}

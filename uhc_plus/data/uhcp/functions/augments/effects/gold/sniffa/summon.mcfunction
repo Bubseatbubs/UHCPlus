@@ -4,4 +4,5 @@ summon sniffer ~ ~ ~ {Invulnerable:1b,Tags:["UHCP_Sniffa","UHCP_Summon","UHCP_In
 execute as @e[type=cat,tag=UHCP_InitScore] run data modify entity @s Owner set from entity @a[tag=UHCP_Owner,sort=nearest,limit=1] UUID
 scoreboard players add %global uhcp_id 1
 scoreboard players operation @e[tag=UHCP_InitScore] uhcp_id = %global uhcp_id
+team join no_collision @e[tag=UHCP_InitScore]
 tag @e[tag=UHCP_InitScore] remove UHCP_InitScore

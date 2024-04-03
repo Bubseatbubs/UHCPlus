@@ -3,8 +3,9 @@ advancement revoke @s only uhcp:relics/soulflames_embrace/hit
 
 tag @s add UHCP_Owner
 scoreboard players reset @e[distance=..6] uhcp_aug_count
-execute as @e[tag=!UHCP_Owner,type=!#uhcp:inanimate_mobs,distance=..6] store result score @s uhcp_aug_count run function uhcp:relics/checkattacker
+execute as @e[tag=!UHCP_Owner,predicate=uhcp:targetable,distance=..6] store result score @s uhcp_aug_count run function uhcp:relics/checkattacker
 tag @e[distance=..6,scores={uhcp_aug_count=1},sort=nearest,limit=1] add UHCP_SaberTarget
+execute unless entity @e[tag=UHCP_SaberTarget,distance=..6] run tag @s add UHCP_SaberTarget
 
 # Stop function if no targets are near
 execute unless entity @e[tag=UHCP_SaberTarget] run tag @s remove UHCP_Owner

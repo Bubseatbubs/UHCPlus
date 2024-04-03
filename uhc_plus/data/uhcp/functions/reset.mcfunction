@@ -2,6 +2,7 @@
 kill @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs]
 kill @e[tag=UHCP_Summon]
 kill @e[type=minecraft:experience_orb]
+kill @e[type=minecraft:ender_pearl]
 kill @e[type=minecraft:item]
 
 # Within dimensions
@@ -35,6 +36,7 @@ team empty grace_period
 team empty gray
 team empty green
 team empty light_purple
+team empty no_collision
 team empty red
 team empty yellow
 
@@ -43,9 +45,6 @@ function uhcp:titans/reset
 
 # Reset any players in /trigger top
 execute as @a[tag=UHCP_IsTeleporting] run function uhcp:top/cancel
-
-# Remove crafting recipes
-recipe take @a *
 
 # Reset scores
 scoreboard players reset @a testkit

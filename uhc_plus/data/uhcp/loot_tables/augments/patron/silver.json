@@ -297,6 +297,12 @@
             "name": "minecraft:iron_pickaxe",
             "functions": [
               {
+                "function": "minecraft:toggle_tooltips",
+                "toggles": {
+                  "minecraft:attribute_modifiers": false
+                }
+              },
+              {
                 "function": "minecraft:set_count",
                 "count": 1
               },
@@ -687,6 +693,35 @@
                     "bold": true
                   }
                 ]
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_augmentselect:1b,augment:149s}"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                    {
+                      "text": "Gain a",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Bow",
+                      "color": "white"
+                    },
+                    {
+                      "text": ". Your Arrow",
+                      "color": "gray"
+                    }
+                  ],
+                  {
+                    "text": "limit is increased to 20.",
+                    "color": "gray"
+                  }
+                ],
+                "mode": "replace_all"
               }
             ],
             "conditions": [
@@ -752,8 +787,7 @@
                 ]
               },
               {
-                "function": "set_lore",
-                "mode": "replace_all",
+                "function": "minecraft:set_lore",
                 "lore": [
                   {
                     "text": "------------------------",
@@ -775,23 +809,16 @@
                   ],
                   [
                     {
-                      "text": "Luck of the Sea V",
-                      "color": "yellow"
-                    },
-                    {
-                      "text": " and ",
-                      "color": "gray"
-                    },
-                    {
-                      "text": "Lure V",
-                      "color": "yellow"
+                      "text": "Luck of the Sea V / Lure V",
+                      "color": "dark_purple"
                     },
                     {
                       "text": ".",
                       "color": "gray"
                     }
                   ]
-                ]
+                ],
+                "mode": "replace_all"
               }
             ],
             "conditions": [
@@ -823,7 +850,7 @@
                         "condition": "minecraft:entity_scores",
                         "entity": "this",
                         "scores": {
-                          "uhcp_aug_choosingAugment": 9
+                          "uhcp_aug_choosingAugment": 1
                         }
                       }
                     ]

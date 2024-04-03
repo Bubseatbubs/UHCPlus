@@ -1,5 +1,5 @@
 
-execute on passengers at @s as @e[distance=..2.5,type=!#uhcp:inanimate_mobs] unless score @s uhcp_team = @e[tag=UHCP_BuzzburstDisplay,sort=nearest,limit=1] uhcp_team run damage @s 4 fireworks
+execute on passengers at @s as @e[distance=..2.5,predicate=uhcp:targetable] unless score @s uhcp_team = @e[tag=UHCP_BuzzburstDisplay,sort=nearest,limit=1] uhcp_team run damage @s 4 fireworks
 particle dripping_honey ~ ~ ~ 2.5 2.5 2.5 0.1 500 normal
 particle effect ~ ~ ~ 2.5 2.5 2.5 0.1 500 normal
 particle explosion_emitter ~ ~ ~ 0.1 0.1 0.1 0.1 1 normal

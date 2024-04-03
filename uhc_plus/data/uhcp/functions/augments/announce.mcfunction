@@ -18,7 +18,7 @@ execute as @a if score @s uhcp_augment matches 106 run tellraw @a[tag=UHCP_Augme
 execute as @a if score @s uhcp_augment matches 107 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Drip Economy I","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 108 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Drunken Stupor","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 109 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Empty Hearted","color":"gold"},{"text":"!","color":"white"}]
-execute as @a if score @s uhcp_augment matches 110 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Extra Enchanting","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_augment matches 110 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Prop Hunt","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 111 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Gapple Gap I","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 112 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Healing Orbs I","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 113 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Hearty Meal","color":"gold"},{"text":"!","color":"white"}]
@@ -62,7 +62,7 @@ execute as @a if score @s uhcp_augment matches 1 run tellraw @a[tag=UHCP_Augment
 execute as @a if score @s uhcp_augment matches 2 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Blood Diamonds","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 3 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Bloodthirsty","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 4 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Cowboy Cosplay","color":"gold"},{"text":"! Howdy!","color":"white"}]
-execute as @a if score @s uhcp_augment matches 6 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Phantom Claw","color":"gold"},{"text":"! Howdy!","color":"white"}]
+execute as @a if score @s uhcp_augment matches 6 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Phantom Claw","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 7 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Drip Economy II","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 8 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Fire and Water","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 9 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Gapple Gap II","color":"gold"},{"text":"!","color":"white"}]
@@ -94,7 +94,6 @@ execute as @a if score @s uhcp_augment matches 42 run tellraw @a[tag=UHCP_Augmen
 execute as @a if score @s uhcp_augment matches 43 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Man's Best Friend","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 44 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Sneaky Sneaky","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 45 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" You Have My Rod II","color":"gold"},{"text":"!","color":"white"}]
-
 
 # Prismatic Augments
 execute as @a if score @s uhcp_augment matches 200 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Beastmaster","color":"gold"},{"text":"!","color":"white"}]

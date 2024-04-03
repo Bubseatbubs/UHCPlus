@@ -1,5 +1,5 @@
 # 5-8 Gapples
-execute at @s as @e[type=!#uhcp:inanimate_mobs,distance=..3] unless score @s uhcp_team = @e[tag=UHCP_GoldBlock,sort=nearest,limit=1] uhcp_team run damage @s 8 falling_block
+execute at @s as @e[predicate=uhcp:targetable,distance=..3] unless score @s uhcp_team = @e[tag=UHCP_GoldBlock,sort=nearest,limit=1] uhcp_team run damage @s 8 falling_block
 
 particle minecraft:block gold_block ~ ~ ~ 3 3 3 0.1 700 normal
 particle minecraft:cloud ~ ~ ~ 0.25 0.25 0.25 1 75 normal
