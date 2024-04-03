@@ -33,7 +33,7 @@ execute if score %augment_countdown uhcp_game_time matches 0.. run return 0
 scoreboard players set %time uhcp_initStatus 1
 
 gamemode survival @a[gamemode=adventure]
-bossbar set minecraft:uhcp_augment players
+bossbar set uhcp:augment players
 execute in uhcp:main run tp @e[tag=UHCP_Lock] 0 -63 0
 
 effect clear @a[gamemode=survival]

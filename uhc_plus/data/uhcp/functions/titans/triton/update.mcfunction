@@ -1,5 +1,5 @@
-execute store result bossbar minecraft:uhcp_tritonhealth value run data get entity @s Health
-bossbar set minecraft:uhcp_tritonhealth name {"selector":"@s","color":"gold"}
+execute store result bossbar uhcp:tritonhealth value run data get entity @s Health
+bossbar set uhcp:tritonhealth name {"selector":"@s","color":"gold"}
 
 tag @s add UHCP_CurrentTitan
 execute as @a[distance=..3] run damage @s 4 mob_attack by @e[tag=UHCP_CurrentTitan,sort=nearest,limit=1]
