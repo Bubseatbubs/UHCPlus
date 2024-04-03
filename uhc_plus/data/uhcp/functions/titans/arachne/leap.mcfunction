@@ -1,3 +1,4 @@
+tag @s add UHCP_IsJumping
 execute store result score @s uhcp_motion_x1 run data get entity @s Pos[0] 1000
 execute store result score @s uhcp_motion_y1 run data get entity @s Pos[1] 1000
 execute store result score @s uhcp_motion_z1 run data get entity @s Pos[2] 1000

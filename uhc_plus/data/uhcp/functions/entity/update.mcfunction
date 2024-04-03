@@ -18,6 +18,7 @@ execute if entity @s[tag=UHCP_DragonsProtection] run return run function uhcp:re
 
 # Titans
 execute if entity @s[tag=UHCP_BigBone] at @s run return run function uhcp:titans/bone_colossus/bone_jump/update
+execute if entity @s[tag=UHCP_ArachneCobweb] at @s run return run function uhcp:titans/arachne/cobwebs/update
 execute if entity @s[tag=UHCP_GigantusCircleStrike] at @s run return run function uhcp:titans/gigantus/circle_strike/update
 execute if entity @s[tag=UHCP_GigaCreeperLightning] at @s run return run function uhcp:titans/giga_creeper/lightning/update
 execute if entity @s[tag=UHCP_SeraphimLaserIndicator] at @s run return run function uhcp:titans/seraphim/laser/indicator/update

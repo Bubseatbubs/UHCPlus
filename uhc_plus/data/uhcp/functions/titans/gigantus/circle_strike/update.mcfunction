@@ -8,8 +8,8 @@ execute unless score @s uhcp_timer matches 32.. run return 0
 scoreboard players add @s uhcp_aug_tier 1
 
 execute if score @s uhcp_aug_tier matches 2 run playsound minecraft:block.sculk_shrieker.shriek master @a[distance=..12] ~ ~ ~ 1 1.25 0.75
-particle minecraft:sculk_charge_pop ~ ~ ~ 1.5 1 1.5 0.1 50 normal
-particle minecraft:glow_squid_ink ~ ~ ~ 1.5 1 1.5 0.1 70 normal
+particle minecraft:raid_omen ~ ~ ~ 1.5 1 1.5 0.1 50 normal
+particle minecraft:infested ~ ~ ~ 1.5 1 1.5 0.1 15 normal
 execute positioned ~ ~1 ~ rotated 0 90 run function uhcp:titans/gigantus/circle_strike/particles
 execute as @a[distance=..4,gamemode=survival] run damage @s 4 magic
 
