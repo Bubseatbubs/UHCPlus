@@ -99,7 +99,7 @@ scoreboard objectives setdisplay sidebar
 weather clear
 
 # Tags
-tag @s remove UHCP_Died
+tag @a remove UHCP_Died
 tag @a remove UHCP_Spectator
 
 # Players
