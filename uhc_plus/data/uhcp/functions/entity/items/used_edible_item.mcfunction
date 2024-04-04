@@ -1,5 +1,5 @@
 advancement revoke @s only uhcp:entity_actions/used_edible_item
-scoreboard players set @s uhcp_itemCount 4
+scoreboard players set @s uhcp_itemCount 6
 
 # Relics
 execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_radiant:0b}] at @s run return run function uhcp:relics/buzzburst/init

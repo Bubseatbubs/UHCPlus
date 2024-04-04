@@ -1,5 +1,6 @@
 advancement revoke @s only uhcp:augments/used_goat_horn
 execute unless score @s uhcp_augment matches 12 run return 0
+scoreboard players set @s uhcp_itemCount 6
 
 # If ran before cooldown is up
 execute if score @s uhcp_timer matches 1.. run scoreboard players set %augment uhcp_timer 1200
