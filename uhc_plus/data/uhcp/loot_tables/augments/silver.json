@@ -2046,8 +2046,14 @@
               "count": 1
             },
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {}
+              }
+            },
+            {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:24s}"
+              "tag": "{uhcp_augmentselect:1b,augment:121s}"
             },
             {
               "function": "minecraft:set_name",

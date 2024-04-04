@@ -15,12 +15,15 @@ execute if score @s uhcp_augment matches 108 run function uhcp:augments/effects/
 execute if score @s uhcp_augment matches 109 run function uhcp:augments/effects/silver/emptyhearted
 execute if score @s uhcp_augment matches 111 run function uhcp:augments/effects/silver/gapplegapi
 execute if score @s uhcp_augment matches 112 run return 0
+execute if score @s uhcp_augment matches 113 run function uhcp:augments/effects/silver/ittakesavillage
 execute if score @s uhcp_augment matches 114 run function uhcp:augments/effects/silver/intotheminesi
 execute if score @s uhcp_augment matches 115 run function uhcp:augments/effects/silver/ironwill
+execute if score @s uhcp_augment matches 116 run function uhcp:augments/effects/silver/strongswimmer
 execute if score @s uhcp_augment matches 117 run return 0
 execute if score @s uhcp_augment matches 119 run function uhcp:augments/effects/silver/monsterhunter
 execute if score @s uhcp_augment matches 120 run return 0
-execute if score @s uhcp_augment matches 122 run function uhcp:augments/effects/silver/rattunneler
+execute if score @s uhcp_augment matches 121 run function uhcp:augments/effects/silver/cheapimitation
+
 execute if score @s uhcp_augment matches 125 run function uhcp:augments/effects/silver/sneaky
 execute if score @s uhcp_augment matches 126 run function uhcp:augments/effects/silver/speedystart
 execute if score @s uhcp_augment matches 127 run function uhcp:augments/effects/silver/starterkiti
@@ -57,15 +60,16 @@ execute if score @s uhcp_augment matches 10 run return 0
 execute if score @s uhcp_augment matches 11 run function uhcp:augments/effects/gold/greenthumb
 execute if score @s uhcp_augment matches 12 run function uhcp:augments/effects/gold/huntingcall
 execute if score @s uhcp_augment matches 13 run function uhcp:augments/effects/gold/intotheminesii
-execute if score @s uhcp_augment matches 14 run return 0
+execute if score @s uhcp_augment matches 14 run function uhcp:augments/effects/gold/largeandincharge
 execute if score @s uhcp_augment matches 15 run function uhcp:augments/effects/gold/johnnyappleseed
 execute if score @s uhcp_augment matches 16 run return 0
-execute if score @s uhcp_augment matches 17 run function uhcp:augments/effects/gold/largeandincharge
+execute if score @s uhcp_augment matches 17 run function uhcp:augments/effects/gold/lessthan
 execute if score @s uhcp_augment matches 18 run function uhcp:augments/effects/gold/latelooter
 execute if score @s uhcp_augment matches 19 run function uhcp:augments/effects/gold/luckylooter
 execute if score @s uhcp_augment matches 20 run function uhcp:augments/effects/gold/moneymoney
 execute if score @s uhcp_augment matches 21 run function uhcp:augments/effects/gold/pearly
-execute if score @s uhcp_augment matches 22 run function uhcp:augments/effects/gold/protectprotocolii
+execute if score @s uhcp_augment matches 23 run function uhcp:augments/effects/gold/lilbro
+execute if score @s uhcp_augment matches 24 run function uhcp:augments/effects/gold/moonwalking
 execute if score @s uhcp_augment matches 25 run return 0
 execute if score @s uhcp_augment matches 26 run function uhcp:augments/effects/gold/shinyspawn
 execute if score @s uhcp_augment matches 27 run return 0
@@ -84,12 +88,17 @@ execute if score @s uhcp_augment matches 41 run function uhcp:augments/effects/g
 execute if score @s uhcp_augment matches 43 run function uhcp:augments/effects/gold/mansbestfriend
 execute if score @s uhcp_augment matches 44 run return 0
 execute if score @s uhcp_augment matches 45 run function uhcp:augments/effects/gold/youhavemyrodii
+execute if score @s uhcp_augment matches 46 run function uhcp:augments/effects/gold/crazyconsumables
+execute if score @s uhcp_augment matches 47 run function uhcp:augments/effects/gold/imperfectreplica
+execute if score @s uhcp_augment matches 51 run function uhcp:augments/effects/gold/bookworm
+execute if score @s uhcp_augment matches 53 run function uhcp:augments/effects/gold/capped
 
 # Prismatic Augments
 execute if score @s uhcp_augment matches 200 run function uhcp:augments/effects/prismatic/beastmaster
 execute if score @s uhcp_augment matches 201 run function uhcp:augments/effects/prismatic/bowmaster
 execute if score @s uhcp_augment matches 202 run function uhcp:augments/effects/prismatic/coldblooded
 execute if score @s uhcp_augment matches 203 run function uhcp:augments/effects/prismatic/cruelpact
+execute if score @s uhcp_augment matches 204 run function uhcp:augments/effects/prismatic/gumgumfruit
 execute if score @s uhcp_augment matches 205 run function uhcp:augments/effects/prismatic/endschosen
 execute if score @s uhcp_augment matches 206 run function uhcp:augments/effects/prismatic/gapplegapiii
 execute if score @s uhcp_augment matches 207 run function uhcp:augments/effects/prismatic/gasgasgas
@@ -101,6 +110,7 @@ execute if score @s uhcp_augment matches 214 run function uhcp:augments/effects/
 execute if score @s uhcp_augment matches 216 run function uhcp:augments/effects/prismatic/potionmaster
 execute if score @s uhcp_augment matches 217 run function uhcp:augments/effects/prismatic/primetarget
 execute if score @s uhcp_augment matches 218 run return 0
+execute if score @s uhcp_augment matches 219 run function uhcp:augments/effects/prismatic/lilestbro
 execute if score @s uhcp_augment matches 222 run function uhcp:augments/effects/prismatic/sololeveling
 execute if score @s uhcp_augment matches 223 run return 0
 execute if score @s uhcp_augment matches 224 run function uhcp:augments/effects/prismatic/starterkitiii
@@ -109,6 +119,8 @@ execute if score @s uhcp_augment matches 226 run function uhcp:augments/effects/
 execute if score @s uhcp_augment matches 227 run function uhcp:augments/effects/prismatic/totheskies
 execute if score @s uhcp_augment matches 228 run function uhcp:augments/effects/prismatic/trapgod
 execute if score @s uhcp_augment matches 229 run function uhcp:augments/effects/prismatic/youhavemyrod
+execute if score @s uhcp_augment matches 233 run function uhcp:augments/effects/prismatic/perfectreplica
+execute if score @s uhcp_augment matches 234 run function uhcp:augments/effects/prismatic/bookwormii
 execute if score @s uhcp_augment matches 236 run function uhcp:augments/effects/prismatic/thetortoise
 execute if score @s uhcp_augment matches 237 run function uhcp:augments/effects/prismatic/gloryofra
 execute if score @s uhcp_augment matches 238 run function uhcp:augments/effects/prismatic/relicmaster

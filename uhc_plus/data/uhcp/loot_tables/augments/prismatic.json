@@ -1612,7 +1612,7 @@
               "name": [
                 {
                   "text": "Gum-Gum Fruit",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1703,7 +1703,7 @@
               "name": [
                 {
                   "text": "Bookworm II",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1757,7 +1757,7 @@
               "name": [
                 {
                   "text": "Harvest Season III",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1815,12 +1815,18 @@
               "tag": "{uhcp_augmentselect:1b,augment:233s}"
             },
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {}
+              }
+            },
+            {
               "function": "minecraft:set_name",
               "target": "item_name",
               "name": [
                 {
                   "text": "Perfect Replica",
-                  "color": "gray",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
