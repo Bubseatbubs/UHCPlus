@@ -9,8 +9,8 @@ particle effect ~ ~ ~ 0.1 0.1 0.1 0.1 15 normal
 
 tellraw @s {"text":"You've been transformed into a harmless Rabbit!","color":"dark_red"}
 attribute @s minecraft:player.entity_interaction_range modifier add 606e0f11-7483-4e73-828c-b588dd46f162 "" -3 add_value
-attribute @s minecraft:generic.scale modifier add 46eca67f-7103-4d35-a3b7-1576bf42ca48 "" -0.5 add_value
 attribute @s minecraft:player.block_interaction_range modifier add f27d9082-575a-4cec-80ab-1baa22414ade "" -4.5 add_value
+attribute @s minecraft:generic.scale modifier add 46eca67f-7103-4d35-a3b7-1576bf42ca48 "" -0.5 add_value
 summon rabbit ~ ~ ~ {Invulnerable:1b,Tags:["UHCP_New","UHCP_Summon","UHCP_MagicRabbit"],Attributes:[{Name:"generic.scale",Base:1.25}]}
 execute as @e[tag=UHCP_New,sort=nearest,limit=1] store result score @s uhcp_aug_tier run data get entity @s Health
 effect give @s invisibility 10 0 true
