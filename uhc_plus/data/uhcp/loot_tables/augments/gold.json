@@ -1738,6 +1738,12 @@
               ]
             },
             {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
               "function": "minecraft:set_lore",
               "lore": [
                 {
@@ -2090,8 +2096,7 @@
                 [
                   {
                     "text": "Become 50% larger and gain ",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   },
                   {
                     "text": "14🖤",
@@ -2183,6 +2188,70 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:gold_ingot",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:50s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Planned Economy",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "You cannot collect",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Gold Ingots, Blocks & Nuggets",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "for 35 minutes. Gain 80",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Gold Ingots",
+                    "color": "white"
+                  },
+                  {
+                    "text": " after",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "35 minutes.",
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:gold_nugget",
           "weight": 1,
           "functions": [
@@ -2215,8 +2284,7 @@
                 [
                   {
                     "text": "Become smaller.",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   }
                 ]
               ],
@@ -2258,8 +2326,7 @@
                 [
                   {
                     "text": "Gain 3 random ",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   },
                   {
                     "text": "Enchanted Books",
@@ -2309,19 +2376,16 @@
                 [
                   {
                     "text": "Whenever you kill a hostile",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   }
                 ],
                 {
                   "text": "mob, it has a 10% chance of",
-                  "color": "gray",
-                  "italic": false
+                  "color": "gray"
                 },
                 {
                   "text": "dropping a ",
                   "color": "gray",
-                  "italic": false,
                   "extra": [
                     {
                       "text": "Golden Apple",
@@ -2348,6 +2412,12 @@
               "count": 1
             },
             {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
               "function": "minecraft:set_custom_data",
               "tag": "{uhcp_augmentselect:1b,augment:53s}"
             },
@@ -2372,8 +2442,7 @@
                 [
                   {
                     "text": "Gain full ",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   },
                   {
                     "text": "Protection II ",
@@ -2383,19 +2452,16 @@
                 {
                   "text": "Diamond Armor",
                   "color": "white",
-                  "italic": false,
                   "extra": [
                     {
                       "text": " with",
-                      "color": "gray",
-                      "italic": false
+                      "color": "gray"
                     }
                   ]
                 },
                 {
                   "text": "Curse of Binding",
-                  "color": "dark_purple",
-                  "italic": false,
+                  "color": "dark_red",
                   "extra": [
                     {
                       "text": ".",
@@ -2441,9 +2507,8 @@
                 },
                 [
                   {
-                    "text": "Gain ",
-                    "color": "gray",
-                    "italic": false
+                    "text": "Start with ",
+                    "color": "gray"
                   },
                   {
                     "text": "permanent Jump Boost I",
@@ -2456,19 +2521,11 @@
                 ],
                 {
                   "text": "greatly decrease your gravity,",
-                  "color": "gray",
-                  "italic": false
+                  "color": "gray"
                 },
                 {
                   "text": "and become immune to fall damage.",
-                  "color": "gray",
-                  "italic": false,
-                  "extra": [
-                    {
-                      "text": ".",
-                      "color": "gray"
-                    }
-                  ]
+                  "color": "gray"
                 }
               ],
               "mode": "replace_all"
@@ -2515,8 +2572,7 @@
                 [
                   {
                     "text": "Gain 4",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   },
                   {
                     "text": " Lesser Duplicators",
@@ -2534,7 +2590,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:magma_cream",
+          "name": "minecraft:bundle",
           "weight": 1,
           "functions": [
             {
@@ -2557,6 +2613,12 @@
               ]
             },
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {}
+              }
+            },
+            {
               "function": "minecraft:set_lore",
               "lore": [
                 {
@@ -2566,8 +2628,7 @@
                 [
                   {
                     "text": "Gain a",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   },
                   {
                     "text": " Portable Lava Pool",
@@ -2581,7 +2642,6 @@
                 {
                   "text": "Wild Feather",
                   "color": "light_purple",
-                  "italic": false,
                   "extra": [
                     {
                       "text": ", ",
@@ -2602,7 +2662,6 @@
                 {
                   "text": "Suspicious Flesh",
                   "color": "light_purple",
-                  "italic": false,
                   "extra": [
                     {
                       "text": ", ",
@@ -2625,7 +2684,6 @@
                 {
                   "text": "and ",
                   "color": "gray",
-                  "italic": false,
                   "extra": [
                     {
                       "text": "Lesser Duplicator",

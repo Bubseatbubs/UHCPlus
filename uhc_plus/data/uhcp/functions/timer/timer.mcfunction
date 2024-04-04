@@ -7,6 +7,7 @@ execute if score %time uhcp_game_time matches 9600 as @a[scores={uhcp_augment=18
 execute if score %time uhcp_game_time matches 42000 as @a[scores={uhcp_augment=145}] run function uhcp:augments/effects/silver/secondwind
 execute if score %time uhcp_game_time matches 42000 as @a[scores={uhcp_augment=35}] run function uhcp:augments/effects/gold/coppercollector/convert
 execute if score %time uhcp_game_time matches 42000 as @a[scores={uhcp_augment=49}] run function uhcp:augments/effects/gold/fossilfuel/init
+execute if score %time uhcp_game_time matches 42000 as @a[scores={uhcp_augment=50}] run function uhcp:augments/effects/gold/plannedeconomy/give
 execute if score %time uhcp_game_time matches 24000 as @a[scores={uhcp_augment=42}] run function uhcp:augments/effects/gold/diamondsintherough/convert
 execute if score %time uhcp_game_time matches 3600 as @a[scores={uhcp_augment=101}] run function uhcp:augments/effects/silver/afk/freedom
 execute if score %time uhcp_game_time matches 3600 as @a[scores={uhcp_augment=108}] run function uhcp:augments/effects/silver/drunkenstupor/cure
