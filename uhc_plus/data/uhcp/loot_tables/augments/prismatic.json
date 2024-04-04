@@ -103,6 +103,134 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:feather",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:230s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Featherstorm",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain 10",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Wild Feathers",
+                    "color": "white"
+                  },
+                  {
+                    "text": ". When you use a",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Wild Feather",
+                    "color": "white"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Lightning",
+                    "color": "blue"
+                  },
+                  {
+                    "text": " strikes your ",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "original location.",
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:campfire",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:231s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Trailblazer",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Leave a trail of fire behind you.",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Start with",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " permanent Fire Resistance",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:netherite_upgrade_smithing_template",
           "functions": [
@@ -1329,8 +1457,149 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
           "weight": 1,
-          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {}
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:221s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Phantom Claw II",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "A",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Diamond Sword",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": " hovers above you.",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "50% of your attacks cause it to strike for",
+                  "color": "gray"
+                },
+                {
+                  "text": "additional damage.",
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bamboo",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:232s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Kung Fu Panda",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain 2",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Suspicious Bamboo Sugar",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Eating these transforms you into",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Panda",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "!",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:clock",
           "functions": [
             {
               "function": "minecraft:set_count",

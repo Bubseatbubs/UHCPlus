@@ -1,0 +1,79 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "%time"
+                    },
+                    "score": "uhcp_game_time"
+                  },
+                  "range": {
+                    "max": 41999
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "uhcp_augment": 50
+                  }
+                },
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "slots": {
+                          "container.*": {
+                            "items": "minecraft:gold_block"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "slots": {
+                          "container.*": {
+                            "items": "minecraft:gold_ingot"
+                          }
+                        }
+                      }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                          "slots": {
+                            "container.*": {
+                              "items": "minecraft:gold_nugget"
+                            }
+                          }
+                        }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "uhcp:augments/effects/gold/plannedeconomy/init"
+    }
+  }
+  

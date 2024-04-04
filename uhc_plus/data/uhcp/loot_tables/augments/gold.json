@@ -66,6 +66,60 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:iron_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:55s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Hardstuck Iron",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Your Armor is doubled.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " You cannot equip",
+                    "color": "dark_red",
+                    "bold": true
+                  }
+                ],
+                [
+                  {
+                    "text": "Diamond or Netherite Armor.",
+                    "color": "dark_red",
+                    "bold": true
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:blade_pottery_sherd",
           "weight": 1,
           "functions": [
@@ -1446,6 +1500,222 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:redstone_block",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:36s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Redstone Ritual",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "At 35 minutes, convert",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Redstone",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Redstone Blocks",
+                    "color": "white"
+                  },
+                  {
+                    "text": " into",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Absorption",
+                    "color": "yellow"
+                  }
+                ],
+                [
+                  {
+                    "text": "Hearts",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": ". Gain 1",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Heart",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " per 64",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Redstone",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "/ 8",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Redstone Blocks",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:49s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Fossil Fuel",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "At 35 minutes, convert each",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Bone",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "you have into 30 seconds of",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Speed I",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arms_up_pottery_sherd",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:28s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Stand United",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Strength I",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " if you are at least 4 blocks",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "near a teammate.",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:barrel",
           "weight": 1,
           "functions": [
@@ -1520,6 +1790,12 @@
                   "bold": true
                 }
               ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
             },
             {
               "function": "minecraft:set_lore",
@@ -1874,8 +2150,7 @@
                 [
                   {
                     "text": "Become 50% larger and gain ",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   },
                   {
                     "text": "14🖤",
@@ -1967,6 +2242,70 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:gold_ingot",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:50s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Planned Economy",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "You cannot collect",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Gold Ingots, Blocks & Nuggets",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "for 35 minutes. Gain 80",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Gold Ingots",
+                    "color": "white"
+                  },
+                  {
+                    "text": " after",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "35 minutes.",
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:gold_nugget",
           "weight": 1,
           "functions": [
@@ -1999,8 +2338,7 @@
                 [
                   {
                     "text": "Become smaller.",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   }
                 ]
               ],
@@ -2042,8 +2380,7 @@
                 [
                   {
                     "text": "Gain 3 random ",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   },
                   {
                     "text": "Enchanted Books",
@@ -2093,19 +2430,16 @@
                 [
                   {
                     "text": "Whenever you kill a hostile",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   }
                 ],
                 {
                   "text": "mob, it has a 10% chance of",
-                  "color": "gray",
-                  "italic": false
+                  "color": "gray"
                 },
                 {
                   "text": "dropping a ",
                   "color": "gray",
-                  "italic": false,
                   "extra": [
                     {
                       "text": "Golden Apple",
@@ -2132,6 +2466,12 @@
               "count": 1
             },
             {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
               "function": "minecraft:set_custom_data",
               "tag": "{uhcp_augmentselect:1b,augment:53s}"
             },
@@ -2156,8 +2496,7 @@
                 [
                   {
                     "text": "Gain full ",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   },
                   {
                     "text": "Protection II ",
@@ -2167,19 +2506,16 @@
                 {
                   "text": "Diamond Armor",
                   "color": "white",
-                  "italic": false,
                   "extra": [
                     {
                       "text": " with",
-                      "color": "gray",
-                      "italic": false
+                      "color": "gray"
                     }
                   ]
                 },
                 {
                   "text": "Curse of Binding",
-                  "color": "dark_purple",
-                  "italic": false,
+                  "color": "dark_red",
                   "extra": [
                     {
                       "text": ".",
@@ -2225,9 +2561,8 @@
                 },
                 [
                   {
-                    "text": "Gain ",
-                    "color": "gray",
-                    "italic": false
+                    "text": "Start with ",
+                    "color": "gray"
                   },
                   {
                     "text": "permanent Jump Boost I",
@@ -2240,19 +2575,11 @@
                 ],
                 {
                   "text": "greatly decrease your gravity,",
-                  "color": "gray",
-                  "italic": false
+                  "color": "gray"
                 },
                 {
                   "text": "and become immune to fall damage.",
-                  "color": "gray",
-                  "italic": false,
-                  "extra": [
-                    {
-                      "text": ".",
-                      "color": "gray"
-                    }
-                  ]
+                  "color": "gray"
                 }
               ],
               "mode": "replace_all"
@@ -2299,8 +2626,7 @@
                 [
                   {
                     "text": "Gain 4",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   },
                   {
                     "text": " Lesser Duplicators",
@@ -2318,7 +2644,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:magma_cream",
+          "name": "minecraft:bundle",
           "weight": 1,
           "functions": [
             {
@@ -2341,6 +2667,12 @@
               ]
             },
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {}
+              }
+            },
+            {
               "function": "minecraft:set_lore",
               "lore": [
                 {
@@ -2350,8 +2682,7 @@
                 [
                   {
                     "text": "Gain a",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   },
                   {
                     "text": " Portable Lava Pool",
@@ -2365,7 +2696,6 @@
                 {
                   "text": "Wild Feather",
                   "color": "light_purple",
-                  "italic": false,
                   "extra": [
                     {
                       "text": ", ",
@@ -2386,7 +2716,6 @@
                 {
                   "text": "Suspicious Flesh",
                   "color": "light_purple",
-                  "italic": false,
                   "extra": [
                     {
                       "text": ", ",
@@ -2409,7 +2738,6 @@
                 {
                   "text": "and ",
                   "color": "gray",
-                  "italic": false,
                   "extra": [
                     {
                       "text": "Lesser Duplicator",

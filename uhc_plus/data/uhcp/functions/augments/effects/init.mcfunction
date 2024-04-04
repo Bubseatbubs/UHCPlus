@@ -97,6 +97,7 @@ execute if score @s uhcp_augment matches 46 run function uhcp:augments/effects/g
 execute if score @s uhcp_augment matches 47 run function uhcp:augments/effects/gold/imperfectreplica
 execute if score @s uhcp_augment matches 51 run function uhcp:augments/effects/gold/bookworm
 execute if score @s uhcp_augment matches 53 run function uhcp:augments/effects/gold/capped
+execute if score @s uhcp_augment matches 55 run function uhcp:augments/effects/gold/hardstuckiron
 
 # Prismatic Augments
 execute if score @s uhcp_augment matches 200 run function uhcp:augments/effects/prismatic/beastmaster
@@ -116,6 +117,7 @@ execute if score @s uhcp_augment matches 216 run function uhcp:augments/effects/
 execute if score @s uhcp_augment matches 217 run function uhcp:augments/effects/prismatic/primetarget
 execute if score @s uhcp_augment matches 218 run return 0
 execute if score @s uhcp_augment matches 219 run function uhcp:augments/effects/prismatic/lilestbro
+execute if score @s uhcp_augment matches 221 run function uhcp:augments/effects/gold/phantomclaw
 execute if score @s uhcp_augment matches 222 run function uhcp:augments/effects/prismatic/sololeveling
 execute if score @s uhcp_augment matches 223 run return 0
 execute if score @s uhcp_augment matches 224 run function uhcp:augments/effects/prismatic/starterkitiii
@@ -124,6 +126,9 @@ execute if score @s uhcp_augment matches 226 run function uhcp:augments/effects/
 execute if score @s uhcp_augment matches 227 run function uhcp:augments/effects/prismatic/totheskies
 execute if score @s uhcp_augment matches 228 run function uhcp:augments/effects/prismatic/trapgod
 execute if score @s uhcp_augment matches 229 run function uhcp:augments/effects/prismatic/youhavemyrod
+execute if score @s uhcp_augment matches 230 run function uhcp:augments/effects/prismatic/featherstorm
+execute if score @s uhcp_augment matches 231 run function uhcp:augments/effects/prismatic/trailblazer
+execute if score @s uhcp_augment matches 232 run function uhcp:augments/effects/prismatic/kungfupanda
 execute if score @s uhcp_augment matches 233 run function uhcp:augments/effects/prismatic/perfectreplica
 execute if score @s uhcp_augment matches 234 run function uhcp:augments/effects/prismatic/bookwormii
 execute if score @s uhcp_augment matches 236 run function uhcp:augments/effects/prismatic/thetortoise
