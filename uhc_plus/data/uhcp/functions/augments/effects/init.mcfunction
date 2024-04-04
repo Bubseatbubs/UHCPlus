@@ -95,6 +95,7 @@ execute if score @s uhcp_augment matches 46 run function uhcp:augments/effects/g
 execute if score @s uhcp_augment matches 47 run function uhcp:augments/effects/gold/imperfectreplica
 execute if score @s uhcp_augment matches 51 run function uhcp:augments/effects/gold/bookworm
 execute if score @s uhcp_augment matches 53 run function uhcp:augments/effects/gold/capped
+execute if score @s uhcp_augment matches 55 run function uhcp:augments/effects/gold/hardstuckiron
 
 # Prismatic Augments
 execute if score @s uhcp_augment matches 200 run function uhcp:augments/effects/prismatic/beastmaster

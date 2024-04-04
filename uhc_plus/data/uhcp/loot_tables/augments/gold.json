@@ -66,6 +66,60 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:iron_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:55s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Hardstuck Iron",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Your Armor is doubled.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " You cannot equip",
+                    "color": "dark_red",
+                    "bold": true
+                  }
+                ],
+                [
+                  {
+                    "text": "Diamond or Netherite Armor.",
+                    "color": "dark_red",
+                    "bold": true
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:blade_pottery_sherd",
           "weight": 1,
           "functions": [
