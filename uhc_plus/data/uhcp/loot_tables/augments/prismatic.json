@@ -103,6 +103,78 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:feather",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:230s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Featherstorm",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain 10",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Wild Feathers",
+                    "color": "white"
+                  },
+                  {
+                    "text": ". When you use a",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Wild Feather",
+                    "color": "white"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Lightning",
+                    "color": "blue"
+                  },
+                  {
+                    "text": " strikes your ",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "original location.",
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:campfire",
           "weight": 1,
           "functions": [
@@ -1386,7 +1458,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:feather",
+          "name": "minecraft:clock",
           "functions": [
             {
               "function": "minecraft:set_count",
