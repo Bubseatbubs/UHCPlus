@@ -103,6 +103,62 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:campfire",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:231s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Trailblazer",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Leave a trail of fire behind you.",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Start with",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " permanent Fire Resistance",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:netherite_upgrade_smithing_template",
           "functions": [

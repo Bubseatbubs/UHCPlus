@@ -6,7 +6,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:bamboo",
+            "name": "minecraft:sugar",
             "functions": [
               {
                 "function": "minecraft:set_lore",
@@ -77,7 +77,7 @@
                 "entity": "this",
                 "target": "item_name",
                 "name": {
-                  "text": "Suspicious Bamboo Shoot",
+                  "text": "Suspicious Bamboo Sugar",
                   "color": "light_purple"
                 }
               },
