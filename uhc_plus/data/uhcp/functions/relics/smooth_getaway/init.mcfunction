@@ -3,7 +3,7 @@ execute if entity @s[tag=UHCP_SmoothGetaway] if score @s uhcp_augment matches 23
 execute if entity @s[tag=UHCP_SmoothGetaway] unless score @s uhcp_augment matches 239 run loot give @s loot uhcp:relics/smooth_getaway/damaged
 execute unless entity @s[tag=!UHCP_IsPanda,tag=!UHCP_IsRabbit] run return 0
 function uhcp:relics/durability/reset
-function uhcp:entity/armor/store_armor
+
 item replace entity @s weapon.mainhand with minecraft:air
 
 # Summon Mirages
@@ -22,5 +22,6 @@ particle minecraft:flash ~ ~ ~ 1 0.5 1 0.1 10 normal
 playsound entity.zombie.converted_to_drowned master @a[distance=..8] ~ ~ ~ 1 0.5 0.5
 
 # End
+function uhcp:entity/armor/store_armor
 tag @s add UHCP_SmoothGetaway
 
