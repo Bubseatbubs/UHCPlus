@@ -7,3 +7,6 @@ function uhcp:lobby/place
 # Time
 gamerule doDaylightCycle false
 time set 6000
+
+# Weather
+weather clear

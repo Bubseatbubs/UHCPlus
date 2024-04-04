@@ -1,5 +1,5 @@
 # Commands to run during the game
-spawnpoint @s
+execute at @s run spawnpoint @s ~ ~ ~ ~
 
 # Augments Effects
 function uhcp:kill/death/augments

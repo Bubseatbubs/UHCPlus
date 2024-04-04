@@ -11,4 +11,4 @@ tellraw @s {"text":"Teleportation canceled.","color":"dark_red","hoverEvent":{"a
 playsound block.amethyst_cluster.break master @s ~ ~ ~ 1 1 1
 scoreboard players set @s uhcp_top_CD 100
 
-kill @e[type=marker,tag=uhcp_topCheck,distance=..3,sort=nearest,limit=1]
+kill @e[type=minecraft:marker,tag=UHCP_topCheck,distance=..3,sort=nearest,limit=1]

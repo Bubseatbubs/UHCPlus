@@ -95,11 +95,8 @@ scoreboard players operation %players_select_teams uhcp_settings = %players_sele
 # Sidebar display
 scoreboard objectives setdisplay sidebar
 
-# Other
-weather clear
-
 # Tags
-tag @s remove UHCP_Died
+tag @a remove UHCP_Died
 tag @a remove UHCP_Spectator
 
 # Players

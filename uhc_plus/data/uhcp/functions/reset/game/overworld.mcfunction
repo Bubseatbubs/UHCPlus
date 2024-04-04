@@ -8,6 +8,9 @@ forceload remove all
 gamerule doDaylightCycle false
 time set 6000
 
+# Weather
+weather clear
+
 # Lobby
 function uhcp:lobby/remove
 function uhcp:lobby/place
