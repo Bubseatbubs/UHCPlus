@@ -43,8 +43,11 @@ team empty yellow
 # Reset Titans
 function uhcp:reset/titans
 
-# Reset any players in /trigger top
+# Reset any players in a current state
 execute as @a[tag=UHCP_IsTeleporting] run function uhcp:top/cancel
+execute as @a[tag=UHCP_IsPanda] run function uhcp:augments/effects/prismatic/kungfupanda/reset
+execute as @a[tag=UHCP_IsRabbit] run function uhcp:consumables/magic_trick/reset
+execute as @a[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal_fluid/reset
 
 # Reset scores
 scoreboard players reset @a testkit

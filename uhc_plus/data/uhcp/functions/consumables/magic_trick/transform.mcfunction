@@ -1,4 +1,4 @@
-execute unless entity @s[tag=!UHCP_IsPanda,tag=!UHCP_IsRabbit] run return 0
+execute unless entity @s[tag=!UHCP_IsAttackTitan,tag=!UHCP_IsPanda,tag=!UHCP_IsRabbit] run return 0
 
 function uhcp:entity/armor/store_armor
 tag @s add UHCP_IsRabbit

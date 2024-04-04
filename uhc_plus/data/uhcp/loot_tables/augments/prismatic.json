@@ -1528,6 +1528,117 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:profile": {
+                  "id": [
+                    955755449,
+                    917783530,
+                    -1630009984,
+                    -117457091
+                  ],
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGUzNWIxN2M5YmUyMDQ3NGJmZGE0Yjg0NGYwZTg2NzAyYTBkOGFkNTgzZDE5MDQ2OTNlYmQ4ZjA0MGFiOWJiYiJ9fX0="
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:208s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Attack on Titan",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "When you slay a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Titan",
+                    "color": "blue"
+                  },
+                  {
+                    "text": ", gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Titan Spinal Fluid",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Consuming",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Titan Spinal Fluid",
+                    "color": "white"
+                  },
+                  {
+                    "text": " transforms you"
+                  }
+                ],
+                [
+                  {
+                    "text": "into a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Titan",
+                    "color": "blue"
+                  },
+                  {
+                    "text": " for 30 seconds.",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:bamboo",
           "weight": 1,
           "functions": [

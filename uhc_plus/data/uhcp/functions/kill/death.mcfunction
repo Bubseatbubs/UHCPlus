@@ -7,6 +7,9 @@ scoreboard players reset @s uhcp_deathTime
 # Run during game
 execute if score %game uhcp_initStatus matches 1 run function uhcp:kill/death/during_game
 
+# Situational Checks
+execute if entity @s[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal_fluid/reset
+
 # General Effects
 gamemode spectator @s
 effect clear @s

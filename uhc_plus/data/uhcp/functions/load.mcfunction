@@ -70,6 +70,7 @@ scoreboard objectives add uhcp_top_charge dummy
 scoreboard objectives add uhcp_top_delay dummy
 scoreboard objectives add uhcp_transformDuration dummy
 scoreboard objectives add uhcp_ready dummy
+scoreboard objectives add uhcp_jump minecraft.custom:minecraft.jump "Jump"
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health

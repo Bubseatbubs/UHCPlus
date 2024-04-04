@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:player",
+              "effects": {
+                "minecraft:bad_omen": {
+                  "amplifier": 100
+                }
+              }
+            }
+          }
+          ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "uhcp:consumables/titan_spinal_fluid/init"
+  }
+}
