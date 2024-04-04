@@ -14,6 +14,7 @@ execute if score %time uhcp_game_time matches 36000 as @a[scores={uhcp_augment=2
 execute if score %time uhcp_game_time matches 36000 as @a[scores={uhcp_augment=130}] run function uhcp:augments/effects/silver/supplydrop
 execute if score %time uhcp_game_time matches 24000 as @a[scores={uhcp_augment=214}] run function uhcp:augments/effects/prismatic/netherborn/portal
 execute if score %time uhcp_game_time matches 36000 as @a[scores={uhcp_augment=43}] at @s run function uhcp:augments/effects/gold/mansbestfriend/giveloot
+execute if score %time uhcp_game_time matches 42000 as @a[scores={uhcp_augment=36}] at @s run function uhcp:augments/effects/gold/redstoneritual/init
 execute if score %time uhcp_game_time matches 1200 as @a[scores={uhcp_augment=135}] run clear @s elytra
 execute if score %time uhcp_game_time matches 18000 as @a[scores={uhcp_augment=150}] run function uhcp:augments/effects/silver/cramsession
 
@@ -26,6 +27,9 @@ execute if score %time uhcp_game_time matches 36000 as @a[scores={uhcp_augment=3
 
 execute if score %time uhcp_game_time matches 40800 as @a[scores={uhcp_augment=35}] run tellraw @s {"text":"Copper will convert to Gold in 1 minute!","color":"red"}
 execute if score %time uhcp_game_time matches 40800 as @a[scores={uhcp_augment=35}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
+
+execute if score %time uhcp_game_time matches 40800 as @a[scores={uhcp_augment=36}] run tellraw @s {"text":"Redstone will convert to Absorption Hearts in 1 minute!","color":"red"}
+execute if score %time uhcp_game_time matches 40800 as @a[scores={uhcp_augment=36}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
 
 execute if score %time uhcp_game_time matches 18000 as @a[scores={uhcp_augment=42}] run tellraw @s {"text":"Coal will convert to Diamonds in 5 minutes!","color":"red"}
 execute if score %time uhcp_game_time matches 18000 as @a[scores={uhcp_augment=42}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1

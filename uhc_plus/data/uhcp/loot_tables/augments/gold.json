@@ -1446,6 +1446,106 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:redstone_block",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:36s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Redstone Ritual",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "At 35 minutes, convert",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Redstone",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Redstone Blocks",
+                    "color": "white"
+                  },
+                  {
+                    "text": " into",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Absorption",
+                    "color": "yellow"
+                  }
+                ],
+                [
+                  {
+                    "text": "Hearts",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": ". Gain 1",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Heart",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " per 64",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Redstone",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "/ 8",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Redstone Blocks",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:barrel",
           "weight": 1,
           "functions": [
