@@ -215,6 +215,116 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:white_stained_glass_pane",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:105s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Mirror Image",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "The first time you fall below",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " 8🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": ", ",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Speed I",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Invisibility",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " for 30",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "seconds and spawn a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Mirage",
+                    "color": "blue"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "",
+                  "color": "gray"
+                },
+                [
+                  {
+                    "text": "(While",
+                    "color": "dark_gray",
+                    "italic": true
+                  },
+                  {
+                    "text": " Invisible",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": ", your armor and offhand"
+                  }
+                ],
+                [
+                  {
+                    "text": "are temporarily unequipped.)",
+                    "color": "dark_gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:compass",
           "weight": 1,
           "functions": [

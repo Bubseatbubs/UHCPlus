@@ -9,6 +9,9 @@ loot replace entity @e[tag=UHCP_SCloneStand,tag=UHCP_New,sort=nearest,limit=1] a
 execute as @e[tag=UHCP_SCloneStand,tag=UHCP_New,sort=nearest,limit=1] run data modify entity @s CustomName set from entity @s ArmorItems[3].components."minecraft:profile".name
 execute as @e[type=wolf,tag=UHCP_New] at @s run data modify entity @s Owner set from entity @p[tag=UHCP_Owner] UUID
 
+# Mirror Image
+execute if entity @s[tag=UHCP_MirrorImage] as @e[tag=UHCP_SCloneStand,tag=UHCP_New,sort=nearest,limit=1] run scoreboard players set @s uhcp_timer -400
+
 # Init IDs
 scoreboard players add %global uhcp_id 1
 scoreboard players operation @e[tag=UHCP_InitScore] uhcp_id = %global uhcp_id
