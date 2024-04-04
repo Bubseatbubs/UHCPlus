@@ -96,11 +96,6 @@ bossbar set uhcp:augment color white
 bossbar set uhcp:augment style notched_6
 bossbar set uhcp:augment max 900
 
-bossbar add uhcp:augment "Cooldown:"
-bossbar set uhcp:augment color white
-bossbar set uhcp:augment style notched_6
-bossbar set uhcp:augment max 900
-
 # Add teams
 team add aqua {"text":"Aqua","color":"aqua"}
 team add blue {"text":"Blue","color":"blue"}
