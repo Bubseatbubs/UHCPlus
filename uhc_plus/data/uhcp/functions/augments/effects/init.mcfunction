@@ -115,6 +115,7 @@ execute if score @s uhcp_augment matches 216 run function uhcp:augments/effects/
 execute if score @s uhcp_augment matches 217 run function uhcp:augments/effects/prismatic/primetarget
 execute if score @s uhcp_augment matches 218 run return 0
 execute if score @s uhcp_augment matches 219 run function uhcp:augments/effects/prismatic/lilestbro
+execute if score @s uhcp_augment matches 221 run function uhcp:augments/effects/gold/phantomclaw
 execute if score @s uhcp_augment matches 222 run function uhcp:augments/effects/prismatic/sololeveling
 execute if score @s uhcp_augment matches 223 run return 0
 execute if score @s uhcp_augment matches 224 run function uhcp:augments/effects/prismatic/starterkitiii
