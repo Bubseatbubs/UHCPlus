@@ -78,6 +78,7 @@ execute if score @s uhcp_augment matches 27 run return 0
 execute if score @s uhcp_augment matches 29 run function uhcp:augments/effects/gold/starterkitii
 execute if score @s uhcp_augment matches 27 run return 0
 execute if score @s uhcp_augment matches 30 run return 0
+execute if score @s uhcp_augment matches 31 run function uhcp:augments/effects/gold/tightlypacked
 execute if score @s uhcp_augment matches 32 run function uhcp:augments/effects/gold/trapmaster
 execute if score @s uhcp_augment matches 33 run function uhcp:augments/effects/gold/villageidol
 execute if score @s uhcp_augment matches 34 run function uhcp:augments/effects/gold/bottlesmasher

@@ -1893,6 +1893,80 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:chest_minecart",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:31s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Tightly Packed",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Lose 9 inventory slots.",
+                    "color": "dark_red",
+                    "bold": true
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Start with",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Permanent Speed I",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " and",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " +4🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:gold_nugget",
           "weight": 1,
           "functions": [
