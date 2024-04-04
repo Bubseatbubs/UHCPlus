@@ -1,7 +1,10 @@
 playsound block.note_block.snare master @s ~ ~ ~ 1 1 1
+tag @s add UHCP_Owner
 
-execute in uhcp:main as @e[tag=UHCP_StoredArmor] if score @s uhcp_id = @a[tag=UHCP_Owner,sort=nearest,limit=1] uhcp_id run kill @s
-execute in uhcp:main run summon giant 0 32 0 {NoGravity:1b,Invulnerable:1b,Tags:["UHCP_StoredArmor","UHCP_New"]}
+execute as @e[tag=UHCP_StoredArmor] if score @s uhcp_id = @p[tag=UHCP_Owner] uhcp_id run tag @s add UHCP_ReturnArmor
+execute as @e[tag=UHCP_ReturnArmor] if score @s uhcp_id = @p[tag=UHCP_Owner] uhcp_id as @p[tag=UHCP_Owner] at @s run function uhcp:entity/armor/reload_armor
+
+execute in uhcp:main run summon armor_stand 0 32 0 {Marker:1b,NoGravity:1b,Invulnerable:1b,Tags:["UHCP_StoredArmor","UHCP_New"]}
 
 execute if items entity @s armor.head * run item replace entity @e[tag=UHCP_StoredArmor,tag=UHCP_New] armor.head from entity @s armor.head
 execute if items entity @s armor.chest * run item replace entity @e[tag=UHCP_StoredArmor,tag=UHCP_New] armor.chest from entity @s armor.chest
@@ -15,7 +18,9 @@ item replace entity @s armor.legs with minecraft:air
 item replace entity @s armor.feet with minecraft:air
 item replace entity @s weapon.offhand with minecraft:air
 
-tag @s add UHCP_Owner
+
 execute as @e[tag=UHCP_StoredArmor,tag=UHCP_New] run scoreboard players operation @s uhcp_id = @p[tag=UHCP_Owner] uhcp_id
 tag @e remove UHCP_New
 tag @s remove UHCP_Owner
+
+tag @s add UHCP_DisableArmorAndOffhand

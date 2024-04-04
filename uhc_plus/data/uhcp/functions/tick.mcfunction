@@ -57,6 +57,10 @@ execute as @a at @s if entity @e[tag=UHCP_Titan,distance=..32] run function uhcp
 execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/hide
 execute as @e[tag=UHCP_Titan] at @s run function uhcp:titans/update
 
+# Consumables
+execute as @a[tag=UHCP_ListeningToPigstep] at @s run function uhcp:consumables/groovy_disc/update
+execute as @a[tag=UHCP_IsRabbit] at @s run function uhcp:consumables/magic_trick/update
+
 # Relics
 execute as @a[tag=UHCP_SoulflameEmbrace] at @s run function uhcp:relics/soulflames_embrace/update_player
 execute as @a[tag=UHCP_InflictedWithGravityGlobe] at @s run function uhcp:relics/gravity_globe/update

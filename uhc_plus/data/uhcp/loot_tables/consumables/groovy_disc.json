@@ -1,0 +1,92 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_pigstep",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Start a Rave. All Players within 50",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "50 blocks are inflicted with",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": " Blindness",
+                    "color": "yellow"
+                  }
+                ],
+                [
+                  {
+                    "text": "and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Glowing",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " for 30 seconds.",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "item_name",
+              "name": {
+                "text": "Groovy Disc",
+                "color": "light_purple"
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation_modifier": 0,
+                  "can_always_eat": true,
+                  "eat_seconds": 2147483647
+                },
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:hide_additional_tooltip": {}
+          }
+        },
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": "{uhcp_rightclick:1b,uhcp_consumable:7b}"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,9 @@
 # Initialize
+execute if entity @s[tag=UHCP_SmoothGetaway] if score @s uhcp_augment matches 239 run loot give @s loot uhcp:relics/smooth_getaway/damaged_shadow_ninjitsu
+execute if entity @s[tag=UHCP_SmoothGetaway] unless score @s uhcp_augment matches 239 run loot give @s loot uhcp:relics/smooth_getaway/damaged
+execute unless entity @s[tag=!UHCP_IsPanda,tag=!UHCP_IsRabbit] run return 0
 function uhcp:relics/durability/reset
-function uhcp:relics/smooth_getaway/store_armor
+function uhcp:entity/armor/store_armor
 item replace entity @s weapon.mainhand with minecraft:air
 
 # Summon Mirages

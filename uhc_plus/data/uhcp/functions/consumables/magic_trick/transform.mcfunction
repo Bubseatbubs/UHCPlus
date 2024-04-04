@@ -1,18 +1,21 @@
-advancement revoke @s only uhcp:augments/become_panda
+execute unless entity @s[tag=!UHCP_IsPanda,tag=!UHCP_IsRabbit] run return 0
+
 function uhcp:entity/armor/store_armor
-tag @s add UHCP_IsPanda
+tag @s add UHCP_IsRabbit
 execute if score @s uhcp_team matches 15.. run team join no_collision @s
 playsound block.brewing_stand.brew master @a[distance=..4] ~ ~ ~ 1 1 0.75
+playsound entity.rabbit.hurt master @a[distance=..4] ~ ~ ~ 1 1 0.75
 particle effect ~ ~ ~ 0.1 0.1 0.1 0.1 15 normal
-effect clear @s bad_omen
 
+tellraw @s {"text":"You've been transformed into a harmless Rabbit!","color":"dark_red"}
 attribute @s minecraft:player.entity_interaction_range modifier add 606e0f11-7483-4e73-828c-b588dd46f162 "" -3 add_value
-attribute @s minecraft:generic.armor modifier add aca4cdb1-6fb8-494f-8700-5dcac4742191 "" 30 add_value
-attribute @s minecraft:generic.scale modifier add 46eca67f-7103-4d35-a3b7-1576bf42ca48 "" 0.15 add_value
-summon panda ~ ~ ~ {Silent:1b,NoAI:1b,Health:1000f,MainGene:"normal",HiddenGene:"normal",Tags:["UHCP_New","UHCP_Summon","UHCP_KungfuPanda"],Attributes:[{Name:"generic.scale",Base:1.2},{Name:"generic.armor",Base:25},{Name:"generic.max_health",Base:1000}]}
+attribute @s minecraft:generic.scale modifier add 46eca67f-7103-4d35-a3b7-1576bf42ca48 "" -0.5 add_value
+attribute @s minecraft:player.block_interaction_range modifier add f27d9082-575a-4cec-80ab-1baa22414ade "" -4.5 add_value
+summon rabbit ~ ~ ~ {Invulnerable:1b,Tags:["UHCP_New","UHCP_Summon","UHCP_MagicRabbit"],Attributes:[{Name:"generic.scale",Base:1.25}]}
 execute as @e[tag=UHCP_New,sort=nearest,limit=1] store result score @s uhcp_aug_tier run data get entity @s Health
-effect give @s invisibility infinite 0 true
-effect give @s absorption infinite 4 true
+effect give @s invisibility 10 0 true
+effect give @s jump_boost 10 2 true
+effect give @s resistance 10 4 true
 
 # Assign ID if player doesn't have one already
 execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
