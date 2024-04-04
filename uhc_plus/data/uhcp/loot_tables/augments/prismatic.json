@@ -1457,6 +1457,76 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:bamboo",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:232s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Kung Fu Panda",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain 2",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Suspicious Bamboo Sugar",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Eating these transforms you into",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Panda",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "!",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:clock",
           "functions": [

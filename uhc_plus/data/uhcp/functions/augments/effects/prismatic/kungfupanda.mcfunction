@@ -1,10 +1,2 @@
-loot give @s loot uhcp:consumables/wild_feather
-loot give @s loot uhcp:consumables/wild_feather
-loot give @s loot uhcp:consumables/wild_feather
-loot give @s loot uhcp:consumables/wild_feather
-loot give @s loot uhcp:consumables/wild_feather
-loot give @s loot uhcp:consumables/wild_feather
-loot give @s loot uhcp:consumables/wild_feather
-loot give @s loot uhcp:consumables/wild_feather
-loot give @s loot uhcp:consumables/wild_feather
-loot give @s loot uhcp:consumables/wild_feather
+loot give @s loot uhcp:consumables/suspicious_bamboo_shoot
+loot give @s loot uhcp:consumables/suspicious_bamboo_shoot
