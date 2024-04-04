@@ -219,22 +219,9 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:potion",
+          "name": "minecraft:barrel",
           "weight": 1,
           "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:potion_contents": {
-                  "potion": "minecraft:mundane",
-                  "custom_color": 10921066
-                }
-              }
-            },
             {
               "function": "minecraft:set_custom_data",
               "tag": "{uhcp_augmentselect:1b,augment:108s}"
