@@ -2295,6 +2295,136 @@
           ]
         },
         {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_pigstep",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:118s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Rave Party",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Groovy Disc",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ", a consumable",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "that starts a party!",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rabbit_foot",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:122s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Bunny Magic",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain 2 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Magic Tricks",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ", a consumable",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "that turns all players near you",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "(including yourself) into harmless",
+                  "color": "gray"
+                },
+                {
+                  "text": "and invulnerable ",
+                  "color": "gray",
+                  "extra": [
+                    {
+                      "text": "Rabbits",
+                      "color": "blue"
+                    },
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ]
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
           "type": "minecraft:loot_table",
           "value": "uhcp:augments/patron/silver",
           "weight": 9

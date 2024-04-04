@@ -20,9 +20,11 @@ execute if score @s uhcp_augment matches 114 run function uhcp:augments/effects/
 execute if score @s uhcp_augment matches 115 run function uhcp:augments/effects/silver/ironwill
 execute if score @s uhcp_augment matches 116 run function uhcp:augments/effects/silver/strongswimmer
 execute if score @s uhcp_augment matches 117 run return 0
+execute if score @s uhcp_augment matches 118 run function uhcp:augments/effects/silver/raveparty
 execute if score @s uhcp_augment matches 119 run function uhcp:augments/effects/silver/monsterhunter
 execute if score @s uhcp_augment matches 120 run return 0
 execute if score @s uhcp_augment matches 121 run function uhcp:augments/effects/silver/cheapimitation
+execute if score @s uhcp_augment matches 122 run function uhcp:augments/effects/silver/sleightofhand
 
 execute if score @s uhcp_augment matches 125 run function uhcp:augments/effects/silver/sneaky
 execute if score @s uhcp_augment matches 126 run function uhcp:augments/effects/silver/speedystart

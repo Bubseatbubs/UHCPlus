@@ -54,7 +54,7 @@
                     "color": "red"
                   },
                   {
-                    "text": ", and ",
+                    "text": ", ",
                     "color": "gray"
                   },
                   {
@@ -62,8 +62,12 @@
                     "color": "yellow"
                   },
                   {
-                    "text": ".",
+                    "text": ", and ",
                     "color": "gray"
+                  }
+                  {
+                    "text": "2 Golden Apples.",
+                    "color": "white"
                   }
                 ]
               ],
