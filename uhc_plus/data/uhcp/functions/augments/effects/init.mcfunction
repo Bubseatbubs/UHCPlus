@@ -33,6 +33,7 @@ execute if score @s uhcp_augment matches 130 run return 0
 execute if score @s uhcp_augment matches 133 run function uhcp:augments/effects/silver/trapenthusiast
 execute if score @s uhcp_augment matches 135 run function uhcp:augments/effects/silver/structurescout
 execute if score @s uhcp_augment matches 136 run function uhcp:augments/effects/silver/fishybusiness
+execute if score @s uhcp_augment matches 138 run function uhcp:augments/effects/silver/crazycatlady
 execute if score @s uhcp_augment matches 139 run function uhcp:augments/effects/silver/theboat
 execute if score @s uhcp_augment matches 140 run function uhcp:augments/effects/silver/thewatcher
 execute if score @s uhcp_augment matches 141 run function uhcp:augments/effects/silver/finalupgrade
@@ -64,7 +65,7 @@ execute if score @s uhcp_augment matches 13 run function uhcp:augments/effects/g
 execute if score @s uhcp_augment matches 14 run function uhcp:augments/effects/gold/largeandincharge
 execute if score @s uhcp_augment matches 15 run function uhcp:augments/effects/gold/johnnyappleseed
 execute if score @s uhcp_augment matches 16 run return 0
-execute if score @s uhcp_augment matches 17 run function uhcp:augments/effects/gold/lessthan
+execute if score @s uhcp_augment matches 17 run function uhcp:augments/effects/gold/lessthan3
 execute if score @s uhcp_augment matches 18 run function uhcp:augments/effects/gold/latelooter
 execute if score @s uhcp_augment matches 19 run function uhcp:augments/effects/gold/luckylooter
 execute if score @s uhcp_augment matches 20 run function uhcp:augments/effects/gold/moneymoney

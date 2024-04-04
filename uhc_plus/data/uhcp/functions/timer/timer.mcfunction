@@ -55,6 +55,9 @@ execute if score %time uhcp_game_time >= %AUG_27 uhcp_game_time run scoreboard p
 execute if score %time uhcp_game_time >= %AUG_107 uhcp_game_time run give @a[scores={uhcp_augment=7}] gold_ingot 1
 execute if score %time uhcp_game_time >= %AUG_107 uhcp_game_time run scoreboard players add %AUG_107 uhcp_game_time 4800
 
+execute if score %time uhcp_game_time >= %AUG_138 uhcp_game_time as @a[scores={uhcp_augment=138}] at @s run function uhcp:augments/effects/silver/crazycatlady/count
+execute if score %time uhcp_game_time >= %AUG_138 uhcp_game_time run scoreboard players add %AUG_138 uhcp_game_time 1200
+
 execute if score %time uhcp_game_time >= %AUG_203 uhcp_game_time run effect give @a[scores={uhcp_augment=203}] regeneration 4 1
 execute if score %time uhcp_game_time >= %AUG_203 uhcp_game_time run scoreboard players add %AUG_203 uhcp_game_time 1200
 

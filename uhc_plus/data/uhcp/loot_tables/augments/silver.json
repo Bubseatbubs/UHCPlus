@@ -111,6 +111,110 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:profile": {
+                  "id": [
+                    391589697,
+                    -1165538826,
+                    -1476302753,
+                    791818850
+                  ],
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmU1NTIyYzNmMzBlMzY3NDYwNDFmODU0ZWExZmU2NjNiYzkyNjc1MTk0N2FiMWFkNTY1ODFhOGJjNjU3MjI5OSJ9fX0="
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:138s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Crazy Cat Lady",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Every minute, heal",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 0.5🖤",
+                    "color": "red"
+                  }
+                ],
+                [
+                  {
+                    "text": "for every",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Cat",
+                    "color": "blue"
+                  },
+                  {
+                    "text": " you own.",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Gain 2",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Cat Spawn Eggs",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "and 12",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Raw Cod",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:compass",
           "weight": 1,
           "functions": [
