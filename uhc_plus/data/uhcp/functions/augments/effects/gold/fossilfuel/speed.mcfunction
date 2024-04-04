@@ -1,0 +1,1 @@
+$effect give @s speed $(amount) 0 false
