@@ -3,6 +3,7 @@ clear @s
 gamemode spectator @s
 scoreboard players operation @s uhcp_game_ID = %global uhcp_game_ID
 scoreboard players set @s uhcp_team 0
+scoreboard players reset @s uhcp_augment
 team leave @s
 scoreboard players reset @s patron
 scoreboard players reset @s team

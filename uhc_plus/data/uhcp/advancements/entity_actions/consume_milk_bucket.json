@@ -21,6 +21,6 @@
 		}
 	},
 	"rewards": {
-		"function": "uhcp:augments/milk_bucket"
+		"function": "uhcp:milk_bucket/consume"
 	}
 }

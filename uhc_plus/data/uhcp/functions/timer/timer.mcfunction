@@ -1,3 +1,5 @@
+# Rewrite all of this at some point - Aeodine
+
 scoreboard players remove @a[scores={uhcp_timer=0..2147483647}] uhcp_timer 1
 
 # One Time Effects
@@ -15,9 +17,11 @@ execute if score %time uhcp_game_time matches 24000 as @a[scores={uhcp_augment=1
 execute if score %time uhcp_game_time matches 36000 as @a[scores={uhcp_augment=207}] run function uhcp:augments/effects/prismatic/gasgasgas/speed
 execute if score %time uhcp_game_time matches 36000 as @a[scores={uhcp_augment=130}] run function uhcp:augments/effects/silver/supplydrop
 execute if score %time uhcp_game_time matches 24000 as @a[scores={uhcp_augment=214}] run function uhcp:augments/effects/prismatic/netherborn/portal
+execute if score %time uhcp_game_time matches 24000 run effect clear @a[scores={uhcp_augment=217}] minecraft:glowing
 execute if score %time uhcp_game_time matches 36000 as @a[scores={uhcp_augment=43}] at @s run function uhcp:augments/effects/gold/mansbestfriend/giveloot
 execute if score %time uhcp_game_time matches 42000 as @a[scores={uhcp_augment=36}] at @s run function uhcp:augments/effects/gold/redstoneritual/init
-execute if score %time uhcp_game_time matches 1200 as @a[scores={uhcp_augment=135}] run clear @s elytra
+# Include custom data component for elytra - Aeodine
+execute if score %time uhcp_game_time matches 1200 run clear @a[scores={uhcp_augment=135}] minecraft:elytra
 execute if score %time uhcp_game_time matches 18000 as @a[scores={uhcp_augment=150}] run function uhcp:augments/effects/silver/cramsession
 
 # Notifications
