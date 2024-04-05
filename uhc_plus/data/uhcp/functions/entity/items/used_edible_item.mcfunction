@@ -2,15 +2,15 @@ advancement revoke @s only uhcp:entity_actions/used_edible_item
 scoreboard players set @s uhcp_itemCount 6
 
 # Relics
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_radiant:0b}] at @s run return run function uhcp:relics/buzzburst/init
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_radiant:1b}] at @s run return run function uhcp:relics/soulflames_embrace/prepare
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_radiant:2b}] at @s run return run function uhcp:relics/voltrune/init
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_radiant:3b}] at @s run return run function uhcp:relics/gravity_globe/init
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_radiant:4b}] at @s run return run function uhcp:relics/runic_sentry/init
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_radiant:5b}] at @s run return run function uhcp:relics/the_harvester/init
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_radiant:6b}] at @s run return run function uhcp:relics/smooth_getaway/init
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_radiant:7b}] at @s run return run function uhcp:relics/web_o_rang/init
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_radiant:8b}] at @s run return run function uhcp:relics/dragons_protection/init
+execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:0b}] at @s run return run function uhcp:relics/buzzburst/init
+execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:1b}] at @s run return run function uhcp:relics/soulflames_embrace/prepare
+execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:2b}] at @s run return run function uhcp:relics/voltrune/init
+execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:3b}] at @s run return run function uhcp:relics/gravity_globe/init
+execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:4b}] at @s run return run function uhcp:relics/runic_sentry/init
+execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:5b}] at @s run return run function uhcp:relics/the_harvester/init
+execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:6b}] at @s run return run function uhcp:relics/smooth_getaway/init
+execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:7b}] at @s run return run function uhcp:relics/web_o_rang/init
+execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:8b}] at @s run return run function uhcp:relics/dragons_protection/init
 
 # Consumables
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:0b}] at @s run return run function uhcp:consumables/duplicator/init

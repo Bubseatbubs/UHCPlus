@@ -24,6 +24,6 @@
 	},
   {
     "function": "minecraft:set_custom_data",
-    "tag": "{hasTnt:1b,uhcp_radiant:2b}"
+    "tag": "{hasTnt:1b,uhcp_relic_id:2b}"
   }
 ]

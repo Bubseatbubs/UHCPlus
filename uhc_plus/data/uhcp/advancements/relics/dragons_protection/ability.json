@@ -14,7 +14,7 @@
                     "minecraft:damage": {
                       "damage": 0
                     },
-                    "minecraft:custom_data": "{uhcp_radiant:9b}"
+                    "minecraft:custom_data": "{uhcp_relic_id:9b}"
                   }
                 }
               }

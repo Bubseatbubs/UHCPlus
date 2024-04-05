@@ -15,7 +15,7 @@
                     "mainhand": {
                       "items": "minecraft:golden_hoe",
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_radiant:5b}"
+                        "minecraft:custom_data": "{uhcp_relic_id:5b}"
                       }
                     }
                   }
