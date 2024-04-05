@@ -20,6 +20,8 @@ execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consuma
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:4b}] at @s run return run function uhcp:consumables/wild_feather/init
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:7b}] at @s run return run function uhcp:consumables/groovy_disc/init
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:12b}] at @s run return run function uhcp:consumables/magic_trick/init
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:14b}] at @s run return run function uhcp:consumables/web_slinger/init
+
 
 # Consumables (Offhand)
 execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumable:1b}] at @s run return run function uhcp:consumables/portable_lava_pool/init
@@ -27,6 +29,7 @@ execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumab
 execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumable:4b}] at @s run return run function uhcp:consumables/wild_feather/init
 execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumable:7b}] at @s run return run function uhcp:consumables/groovy_disc/init
 execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumable:12b}] at @s run return run function uhcp:consumables/magic_trick/init
+execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumable:14b}] at @s run return run function uhcp:consumables/web_slinger/init
 
 # Lobby Items
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_lobby:1b}] at @s run return run function uhcp:lobby/patron/menu

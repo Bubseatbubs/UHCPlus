@@ -1,0 +1,88 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:phantom_membrane",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Throw a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Slinged Web",
+                    "color": "blue"
+                  },
+                  {
+                    "text": ", which places cobwebs",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "as it travels. It disappears upon a short",
+                    "color": "gray",
+                    "italic": true
+                  }
+                ],
+                [
+                  {
+                    "text": "duration or upon block collision.",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "item_name",
+              "name": {
+                "text": "Web Slinger",
+                "color": "light_purple"
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation_modifier": 0,
+                  "can_always_eat": true,
+                  "eat_seconds": 2147483647
+                },
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:hide_additional_tooltip": {}
+          }
+        },
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": "{uhcp_rightclick:1b,uhcp_consumable:14b}"
+        }
+      ]
+    }
+  ]
+}

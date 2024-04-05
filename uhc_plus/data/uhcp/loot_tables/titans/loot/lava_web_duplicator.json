@@ -24,7 +24,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "uhcp:relics/web_o_rang"
+          "value": "uhcp:consumables/web_slinger"
         }
       ]
     }
