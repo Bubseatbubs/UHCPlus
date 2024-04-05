@@ -1,0 +1,69 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "uhcp:relics/buzzburst",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Royal Hive:",
+                    "color": "gold",
+                    "bold": false,
+                    "italic": false
+                  },
+                  [
+                    {
+                      "text": " Additionally spawn a",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Bee Knight",
+                      "color": "blue"
+                    },
+                    {
+                      "text": ", a large",
+                      "color": "gray"
+                    }
+                  ]
+                ],
+                [
+                  {
+                    "text": "Bee",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": " with high health, damage,",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "and size.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:0b,uhcp_radiant:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

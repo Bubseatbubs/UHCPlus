@@ -1,0 +1,44 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "value": "uhcp:relics/runic_sentry",
+            "functions": [
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "Well Engineered:",
+                      "color": "gold",
+                      "bold": false,
+                      "italic": false
+                    },
+                    [
+                      {
+                        "text": " Turrets last until destroyed.",
+                        "color": "gray"
+                      }
+                    ]
+                  ]
+                ],
+                "mode": "append"
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:4b,uhcp_radiant:1b}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,7 +1,7 @@
 # Updates a summoned entity
 
 # Other
-execute if entity @s[tag=UHCP_WarningSymbol] at @s unless entity @a[distance=..3] run function uhcp:entity/warning_symbol/update
+execute if entity @s[tag=UHCP_WarningSymbol] at @s run function uhcp:entity/warning_symbol/update
 execute if entity @s[tag=UHCP_Scout] at @s unless entity @a[distance=..3] run function uhcp:augments/effects/silver/structurescout/clear
 
 # Relics

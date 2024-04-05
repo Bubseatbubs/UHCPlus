@@ -12,8 +12,9 @@ function uhcp:augments/effects/bees/summon
 function uhcp:augments/effects/bees/summon
 function uhcp:augments/effects/bees/summon
 function uhcp:augments/effects/bees/summon
+execute if entity @s[tag=UHCP_SpawnBeeKnight] run function uhcp:relics/buzzburst/summon_knight
 
-execute at @s as @e[tag=UHCP_Bee,tag=UHCP_New,sort=nearest,limit=5] run scoreboard players operation @s uhcp_id = @e[tag=UHCP_BuzzburstDisplay,sort=nearest,limit=1] uhcp_id
+execute at @s as @e[tag=UHCP_Bee,tag=UHCP_New,sort=nearest,limit=6] run scoreboard players operation @s uhcp_id = @e[tag=UHCP_BuzzburstDisplay,sort=nearest,limit=1] uhcp_id
 tag @e remove UHCP_New
 
 execute on passengers run kill @s

@@ -1,4 +1,5 @@
-execute if entity @s[nbt={HasStung:1b}] run function uhcp:entity/instant_kill
+execute if entity @s[nbt={HasStung:1b},tag=!UHCP_BeeKnight] run function uhcp:entity/instant_kill
+execute if entity @s[nbt={HasStung:1b},tag=UHCP_BeeKnight] run data merge entity @s {HasStung:0b}
 scoreboard players add @s uhcp_timer 1
 execute if score @s uhcp_timer matches 200.. run function uhcp:entity/instant_kill
 

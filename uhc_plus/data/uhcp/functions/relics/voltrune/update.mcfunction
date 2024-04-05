@@ -1,10 +1,12 @@
 # Update Voltrune effect
-tag @s add UHCP_Gravity
+tag @s add UHCP_CurrentFluxFactor
 scoreboard players add @s uhcp_timer 1
 scoreboard players add @s uhcp_game_time 1
-execute at @s[tag=UHCP_Voltrune_Active] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] unless score @s uhcp_team = @e[tag=UHCP_Gravity,sort=nearest,limit=1] uhcp_team run effect give @s slowness 1 0 false
-execute at @s[tag=UHCP_Voltrune_Active] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] if score @s uhcp_team = @e[tag=UHCP_Gravity,sort=nearest,limit=1] uhcp_team run effect give @s speed 1 1 false
-execute at @s[tag=UHCP_Voltrune_Active] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] if score @s uhcp_team = @e[tag=UHCP_Gravity,sort=nearest,limit=1] uhcp_team run effect give @s jump_boost 1 0 false
+
+execute if entity @s[tag=UHCP_ZeusFavor] if score @s uhcp_game_time matches 118 as @e[predicate=uhcp:targetable,distance=..12.5] unless score @s uhcp_team = @e[tag=UHCP_CurrentFluxFactor,sort=nearest,limit=1] uhcp_team at @s run function uhcp:titans/giga_creeper/lightning/summon_indicator
+execute at @s[tag=UHCP_Voltrune_Active] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] unless score @s uhcp_team = @e[tag=UHCP_CurrentFluxFactor,sort=nearest,limit=1] uhcp_team run effect give @s slowness 1 0 false
+execute at @s[tag=UHCP_Voltrune_Active] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] if score @s uhcp_team = @e[tag=UHCP_CurrentFluxFactor,sort=nearest,limit=1] uhcp_team run effect give @s speed 1 1 false
+execute at @s[tag=UHCP_Voltrune_Active] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] if score @s uhcp_team = @e[tag=UHCP_CurrentFluxFactor,sort=nearest,limit=1] uhcp_team run effect give @s jump_boost 1 0 false
 
 execute as @s[tag=!UHCP_Voltrune_Active,nbt={Motion:[0.0,0.0,0.0]}] run tag @s add UHCP_Voltrune_Active
 execute as @s[tag=UHCP_Voltrune_Active] run tp @s ~ ~ ~ ~5 ~
@@ -20,11 +22,7 @@ execute positioned ~ ~0.6 ~ rotated ~180 ~ run function uhcp:relics/voltrune/par
 execute positioned ~ ~0.6 ~ rotated ~270 ~ run function uhcp:relics/voltrune/particles
 scoreboard players set @s uhcp_timer 0
 
-execute unless score @s uhcp_game_time matches 150.. run return 0
-execute as @a[gamemode=survival] if score @s uhcp_team = @e[tag=UHCP_Gravity,sort=nearest,limit=1] uhcp_team run effect give @s resistance 1 5 true
-execute as @a[gamemode=survival] if score @s uhcp_team = @e[tag=UHCP_Gravity,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_Invulnerable
-execute if entity @s[tag=UHCP_ZeusFavor] as @e[predicate=uhcp:targetable,distance=..12.5] unless score @s uhcp_team = @e[tag=UHCP_Gravity,sort=nearest,limit=1] uhcp_team at @s run summon lightning_bolt ~ ~ ~
-particle minecraft:cloud ~ ~1 ~ 0.1 0.1 0.1 1 50 normal
-playsound minecraft:block.respawn_anchor.deplete master @a[distance=..12.5] ~ ~ ~ 1 1 0.8
 
-kill @s
+tag @s remove UHCP_CurrentFluxFactor
+execute unless score @s uhcp_game_time matches 150.. run return 0
+function uhcp:relics/voltrune/finish

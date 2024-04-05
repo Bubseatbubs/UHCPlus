@@ -1,15 +1,16 @@
 # Initialize
-execute if entity @s[tag=UHCP_SmoothGetaway] if score @s uhcp_augment matches 239 run loot give @s loot uhcp:relics/smooth_getaway/damaged_shadow_ninjitsu
-execute if entity @s[tag=UHCP_SmoothGetaway] unless score @s uhcp_augment matches 239 run loot give @s loot uhcp:relics/smooth_getaway/damaged
+execute if entity @s[tag=UHCP_SmoothGetaway,tag=UHCP_ShadowClone] run function uhcp:relics/smooth_getaway/return_shadowclone
+execute if entity @s[tag=UHCP_SmoothGetaway,tag=!UHCP_ShadowClone] unless score @s uhcp_augment matches 239 run loot give @s loot uhcp:relics/smooth_getaway/damaged
 execute unless entity @s[tag=!UHCP_IsPanda,tag=!UHCP_IsRabbit] run return 0
 function uhcp:relics/durability/reset
-
-item replace entity @s weapon.mainhand with minecraft:air
 
 # Summon Mirages
 execute at @s positioned ~-1 ~ ~ run function uhcp:relics/smooth_getaway/summon
 execute at @s positioned ~1 ~ ~ run function uhcp:relics/smooth_getaway/summon
-execute if score @s uhcp_augment matches 239 at @s run function uhcp:relics/smooth_getaway/shadowclone
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_radiant:1b}] at @s run function uhcp:relics/smooth_getaway/shadowclone
+
+# Remove item
+item replace entity @s weapon.mainhand with minecraft:air
 
 # Player Effects
 effect give @s invisibility 10 0 true

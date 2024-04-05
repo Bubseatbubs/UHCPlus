@@ -5,7 +5,7 @@
         "entries": [
           {
             "type": "minecraft:loot_table",
-            "value": "uhcp:relics/smooth_getaway",
+            "value": "uhcp:relics/gravity_globe",
             "functions": [
               {
                 "function": "minecraft:set_lore",
@@ -16,31 +16,21 @@
                   },
                   [
                     {
-                      "text": "Shadow Ninjitsu:",
+                      "text": "Out of This World:",
                       "color": "gold",
                       "bold": false,
                       "italic": false
                     },
-                    {
-                      "text": " Create 2 more",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " Mirages",
-                      "color": "blue"
-                    },
-                    {
-                      "text": ", and",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " Mirages",
-                      "color": "blue"
-                    }
+                    [
+                      {
+                        "text": " Enemies are launched double",
+                        "color": "gray"
+                      }
+                    ]
                   ],
                   [
                     {
-                      "text": "deal double damage.",
+                      "text": "the height.",
                       "color": "gray",
                       "italic": false
                     }
@@ -50,7 +40,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:6b,uhcp_radiant:1b}"
+                "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:3b,uhcp_radiant:1b}"
               }
             ]
           }

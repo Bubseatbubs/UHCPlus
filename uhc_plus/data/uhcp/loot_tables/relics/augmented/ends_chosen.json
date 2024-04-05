@@ -5,7 +5,7 @@
         "entries": [
           {
             "type": "minecraft:loot_table",
-            "value": "uhcp:relics/flux_factor",
+            "value": "uhcp:relics/dragons_protection",
             "functions": [
               {
                 "function": "minecraft:set_lore",
@@ -16,28 +16,45 @@
                   },
                   [
                     {
-                      "text": "Zeus's Favor:",
+                      "text": "End's Chosen:",
                       "color": "gold",
                       "bold": false,
                       "italic": false
                     },
-                    {
-                      "text": " After the zone disappears,",
-                      "color": "gray"
-                    }
+                    [
+                      {
+                        "text": " Rain down",
+                        "color": "gray"
+                      },
+                      {
+                        "text": " Fireballs",
+                        "color": "blue"
+                      }
+                    ]
                   ],
                   [
                     {
-                      "text": "all enemies are struck by",
+                      "text": "at your location. Gain",
                       "color": "gray",
                       "italic": false
                     },
                     {
-                      "text": " Lightning",
-                      "color": "blue"
+                      "text": " Resistance I",
+                      "color": "yellow"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "and",
+                      "color": "gray",
+                      "italic": false
                     },
                     {
-                      "text": ".",
+                      "text": " Fire Resistance",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": " for 45 seconds.",
                       "color": "gray"
                     }
                   ]
@@ -46,7 +63,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:2b,uhcp_radiant:1b}"
+                "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:8b,uhcp_radiant:1b}"
               }
             ]
           }
