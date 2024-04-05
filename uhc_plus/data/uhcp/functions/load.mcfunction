@@ -65,6 +65,7 @@ scoreboard objectives add uhcp_titans_height dummy
 scoreboard objectives add uhcp_team dummy
 scoreboard objectives add uhcp_testkit dummy
 scoreboard objectives add uhcp_timer dummy
+scoreboard objectives add uhcp_count dummy
 scoreboard objectives add uhcp_top_CD dummy
 scoreboard objectives add uhcp_top_charge dummy
 scoreboard objectives add uhcp_top_delay dummy

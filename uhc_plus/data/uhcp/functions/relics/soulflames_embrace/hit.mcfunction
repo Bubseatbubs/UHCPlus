@@ -20,9 +20,11 @@ execute at @e[tag=UHCP_SaberTarget] run summon marker ~ ~ ~ {Tags:["UHCP_Summon"
 
 # Gets team value
 scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_team = @s uhcp_team
+execute if entity @s[tag=UHCP_PreparePhantomPains] run tag @e[tag=UHCP_New,sort=nearest,limit=1] add UHCP_PhantomPains
 
 tag @s remove UHCP_Owner
 tag @e remove UHCP_SaberTarget
 tag @e remove UHCP_New
+tag @s remove UHCP_PreparePhantomPains
 scoreboard players reset @e[distance=..6] uhcp_aug_count
 scoreboard players reset @s uhcp_aug_stack
