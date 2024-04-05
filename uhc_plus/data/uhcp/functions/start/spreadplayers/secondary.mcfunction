@@ -1,4 +1,4 @@
-# Spread members of same teams
-execute as @r[scores={uhcp_initStatus=1}] at @s run spreadplayers ~ ~ 4 8 false @a[scores={uhcp_initStatus=1}]
-scoreboard players remove @a uhcp_initStatus 1
-execute if entity @a[scores={uhcp_initStatus=1..}] run function uhcp:start/spreadplayers/secondary
+# Secondary spread
+scoreboard players set @a uhcp_initStatus 0
+execute as @a[tag=!UHCP_Spectator,scores={uhcp_team=1..14}] run scoreboard players operation @s uhcp_initStatus = @s uhcp_team
+execute if entity @a[scores={uhcp_initStatus=1..}] run function uhcp:start/spreadplayers/secondary/teams

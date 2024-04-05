@@ -164,10 +164,10 @@ scoreboard players operation %spread uhcp_initStatus /= %const uhcp_initStatus
 execute store result storage uhcp:border spread_distance int 1 run scoreboard players get %spread uhcp_initStatus
 
 execute in minecraft:overworld run function uhcp:start/spreadplayers/initial with storage uhcp:border
+execute if score %spread uhcp_initStatus matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/initial/failure_1 with storage uhcp:border
+execute if score %spread uhcp_initStatus matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/initial/failure_2
 
-scoreboard players set @a uhcp_initStatus 0
-execute as @a[tag=!UHCP_Spectator,scores={uhcp_team=1..14}] run scoreboard players operation @s uhcp_initStatus = @s uhcp_team
-execute if entity @a[scores={uhcp_initStatus=1..}] run function uhcp:start/spreadplayers/secondary
+execute if score %spread uhcp_initStatus matches 1 run function uhcp:start/spreadplayers/secondary
 
 # Kill items
 kill @e[type=minecraft:item]
