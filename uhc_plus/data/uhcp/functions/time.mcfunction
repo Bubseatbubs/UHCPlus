@@ -33,8 +33,7 @@ execute as @a[gamemode=survival] if score @s testkit matches 1.. run function uh
 execute as @a if score @s uhcp_testkit matches 1 run function uhcp:testkit/kit
 
 # Milk bucket
-execute as @a if score @s uhcp_milkBucket matches 1 run function uhcp:milk_bucket/apply
-scoreboard players remove @a[scores={uhcp_milkBucket=1..}] uhcp_milkBucket 1
+execute as @a[tag=UHCP_MilkBucket] run function uhcp:milk_bucket/apply
 
 # Enable triggers
 scoreboard players enable @a[gamemode=survival] top

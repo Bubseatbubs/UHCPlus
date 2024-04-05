@@ -52,7 +52,6 @@ scoreboard objectives add uhcp_lava_maxHeight dummy
 scoreboard objectives add uhcp_lava_time dummy
 scoreboard objectives add uhcp_lava_timeInterval dummy
 scoreboard objectives add uhcp_leave minecraft.custom:minecraft.leave_game
-scoreboard objectives add uhcp_milkBucket dummy
 scoreboard objectives add uhcp_motion_x1 dummy
 scoreboard objectives add uhcp_motion_x2 dummy
 scoreboard objectives add uhcp_motion_y1 dummy

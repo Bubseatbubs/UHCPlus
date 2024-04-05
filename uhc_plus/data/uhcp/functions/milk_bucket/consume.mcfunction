@@ -5,6 +5,6 @@
 
 #declare advancement uhcp:entity_actions/consume_milk_bucket
 
-execute unless score @s uhcp_milkBucket matches 1.. run scoreboard players set @s uhcp_milkBucket 1
+tag @s add UHCP_MilkBucket
 
 advancement revoke @s only uhcp:entity_actions/consume_milk_bucket
