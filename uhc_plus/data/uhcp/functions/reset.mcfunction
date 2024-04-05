@@ -62,6 +62,7 @@ scoreboard players reset @a uhcp_id
 scoreboard players reset %end uhcp_initStatus
 scoreboard players reset %day uhcp_initStatus
 scoreboard players reset %game uhcp_initStatus
+scoreboard players reset @a uhcp_itemCount
 scoreboard players reset %time uhcp_game_time
 scoreboard players reset %time uhcp_initStatus
 scoreboard players reset %time_freeze uhcp_initStatus
@@ -69,8 +70,10 @@ scoreboard players reset %lava_start uhcp_initStatus
 scoreboard players reset %update_display uhcp_game_time
 scoreboard players reset @a uhcp_lava_timeInterval
 scoreboard players reset @a uhcp_lava_maxHeight
+scoreboard players reset @a uhcp_milkBucket
 scoreboard players reset @a uhcp_team
 scoreboard players reset @a uhcp_top_CD
+scoreboard players set @a uhcp_ready 0
 
 # Load border size
 scoreboard players operation %border_size uhcp_settings = %border_size_retain uhcp_settings

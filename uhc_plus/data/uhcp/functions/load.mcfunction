@@ -18,7 +18,7 @@ scoreboard objectives add settings_team trigger
 scoreboard objectives add settings_other trigger
 
 # Scoreboard Objectives
-scoreboard objectives add uhcp_augment dummy
+scoreboard objectives add uhcp_arrowCount dummy
 scoreboard objectives add uhcp_aug_choosingAugment dummy
 scoreboard objectives add uhcp_aug_count dummy
 scoreboard objectives add uhcp_aug_durability dummy
@@ -27,8 +27,9 @@ scoreboard objectives add uhcp_aug_patron dummy
 scoreboard objectives add uhcp_aug_stack dummy
 scoreboard objectives add uhcp_aug_tier dummy
 scoreboard objectives add uhcp_aug_validSelection dummy
-scoreboard objectives add uhcp_arrowCount dummy
+scoreboard objectives add uhcp_augment dummy
 scoreboard objectives add uhcp_bee_stack dummy
+scoreboard objectives add uhcp_count dummy
 scoreboard objectives add uhcp_death deathCount
 scoreboard objectives add uhcp_deathTime dummy
 scoreboard objectives add uhcp_game_display dummy
@@ -43,6 +44,7 @@ scoreboard objectives add uhcp_id dummy
 scoreboard objectives add uhcp_initStatus dummy
 scoreboard objectives add uhcp_itemCount dummy
 scoreboard objectives add uhcp_itemInv dummy
+scoreboard objectives add uhcp_jump minecraft.custom:minecraft.jump "Jump"
 scoreboard objectives add uhcp_lava_currentHeight dummy
 scoreboard objectives add uhcp_lava_currentLayers dummy
 scoreboard objectives add uhcp_lava_height dummy
@@ -50,12 +52,14 @@ scoreboard objectives add uhcp_lava_maxHeight dummy
 scoreboard objectives add uhcp_lava_time dummy
 scoreboard objectives add uhcp_lava_timeInterval dummy
 scoreboard objectives add uhcp_leave minecraft.custom:minecraft.leave_game
+scoreboard objectives add uhcp_milkBucket dummy
 scoreboard objectives add uhcp_motion_x1 dummy
 scoreboard objectives add uhcp_motion_x2 dummy
 scoreboard objectives add uhcp_motion_y1 dummy
 scoreboard objectives add uhcp_motion_y2 dummy
 scoreboard objectives add uhcp_motion_z1 dummy
 scoreboard objectives add uhcp_motion_z2 dummy
+scoreboard objectives add uhcp_ready dummy
 scoreboard objectives add uhcp_settings dummy
 scoreboard objectives add uhcp_titans_attack dummy
 scoreboard objectives add uhcp_titans_count dummy
@@ -65,13 +69,10 @@ scoreboard objectives add uhcp_titans_height dummy
 scoreboard objectives add uhcp_team dummy
 scoreboard objectives add uhcp_testkit dummy
 scoreboard objectives add uhcp_timer dummy
-scoreboard objectives add uhcp_count dummy
 scoreboard objectives add uhcp_top_CD dummy
 scoreboard objectives add uhcp_top_charge dummy
 scoreboard objectives add uhcp_top_delay dummy
 scoreboard objectives add uhcp_transformDuration dummy
-scoreboard objectives add uhcp_ready dummy
-scoreboard objectives add uhcp_jump minecraft.custom:minecraft.jump "Jump"
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health
