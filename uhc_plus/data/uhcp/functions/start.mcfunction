@@ -104,6 +104,7 @@ tag @a remove UHCP_Creeper
 tag @a remove UHCP_Skeleton
 tag @a remove UHCP_Spider
 tag @a remove UHCP_Zombie
+tag @a remove UHCP_MilkBucket
 
 # Set difficulty
 execute unless score %difficulty uhcp_settings matches 1.. run function uhcp:start/difficulty/easy
