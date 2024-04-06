@@ -5,6 +5,10 @@ kill @e[type=minecraft:experience_orb]
 kill @e[type=minecraft:ender_pearl]
 kill @e[type=minecraft:item]
 
+# Augment selection reset
+execute in uhcp:main run tp @e[tag=UHCP_Lock] 0 -63 0
+bossbar set uhcp:augment players
+
 # Within dimensions
 execute in minecraft:overworld run function uhcp:reset/game/overworld
 execute in minecraft:the_end run function uhcp:reset/game/the_end
@@ -63,6 +67,7 @@ scoreboard players reset %end uhcp_initStatus
 scoreboard players reset %day uhcp_initStatus
 scoreboard players reset %game uhcp_initStatus
 scoreboard players reset @a uhcp_itemCount
+scoreboard players reset %augment_countdown uhcp_game_time
 scoreboard players reset %time uhcp_game_time
 scoreboard players reset %time uhcp_initStatus
 scoreboard players reset %time_freeze uhcp_initStatus
@@ -101,9 +106,10 @@ scoreboard players operation %players_select_teams uhcp_settings = %players_sele
 scoreboard objectives setdisplay sidebar
 
 # Tags
+tag @a remove UHCP_ChoosingItem
 tag @a remove UHCP_Died
-tag @a remove UHCP_Spectator
 tag @a remove UHCP_MilkBucket
+tag @a remove UHCP_Spectator
 
 # Players
 clear @a
