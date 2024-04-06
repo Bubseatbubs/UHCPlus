@@ -20,8 +20,7 @@ execute if score %time uhcp_game_time matches 24000 as @a[scores={uhcp_augment=2
 execute if score %time uhcp_game_time matches 24000 run effect clear @a[scores={uhcp_augment=217}] minecraft:glowing
 execute if score %time uhcp_game_time matches 36000 as @a[scores={uhcp_augment=43}] at @s run function uhcp:augments/effects/gold/mansbestfriend/giveloot
 execute if score %time uhcp_game_time matches 42000 as @a[scores={uhcp_augment=36}] at @s run function uhcp:augments/effects/gold/redstoneritual/init
-# Include custom data component for elytra - Aeodine
-execute if score %time uhcp_game_time matches 1200 run clear @a[scores={uhcp_augment=135}] minecraft:elytra
+execute if score %time uhcp_game_time matches 1200 run clear @a[scores={uhcp_augment=135}] minecraft:elytra[minecraft:custom_data~{struct_scout:1b}]
 execute if score %time uhcp_game_time matches 18000 as @a[scores={uhcp_augment=150}] run function uhcp:augments/effects/silver/cramsession
 
 # Notifications
