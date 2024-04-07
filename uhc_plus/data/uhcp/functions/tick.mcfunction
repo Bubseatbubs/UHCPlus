@@ -44,7 +44,7 @@ execute as @a[scores={uhcp_lava_timeInterval=0..}] run function uhcp:augments/ef
 execute as @a[scores={uhcp_lava_maxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
 
 # Augment Countdown
-execute if score %augment_countdown uhcp_game_time matches 0.. run function uhcp:augments/countdown
+execute if score %augment_countdown uhcp_game_time matches 1.. run function uhcp:augments/countdown
 
 # Selection menus
 execute unless score %game uhcp_initStatus matches 1 run function uhcp:menus

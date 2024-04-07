@@ -2,8 +2,7 @@
 #   Counts down during augment selection
 #   When the countdown ends, augment selection ends and the game begins
 #
-# @within  uhcp:augments/autoselect
-# @within  uhcp:augments/optionselected
+# @within  uhcp:tick
 
 scoreboard players remove %augment_countdown uhcp_game_time 1
 execute if score %augment_countdown uhcp_game_time matches ..890 as @a[gamemode=adventure] at @s run ride @s mount @e[tag=UHCP_Lock,distance=..2,sort=nearest,limit=1]
@@ -27,7 +26,7 @@ execute if score %augment_countdown uhcp_game_time matches 40 as @a at @s run pl
 execute if score %augment_countdown uhcp_game_time matches 20 as @a at @s run playsound block.note_block.harp master @s ~ ~ ~ 1 1 1
 execute if score %augment_countdown uhcp_game_time matches 1 run function uhcp:augments/countdown/1
 
-execute if score %augment_countdown uhcp_game_time matches 0.. run return 0
+execute if score %augment_countdown uhcp_game_time matches 1.. run return 0
 
 # Ran once countdown reaches 0. Initializes the game as UHC Pack would've done, and gives all players their selected augments
 scoreboard players set %time uhcp_initStatus 1
