@@ -8,6 +8,47 @@
             "value": "uhcp:relics/smooth_getaway",
             "functions": [
               {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": [
+                  {
+                    "text": "Radiant ",
+                    "color": "light_purple",
+                    "bold": true
+                  },
+                  {
+                    "text": "Sm",
+                    "color": "#0800FF",
+                    "bold": true
+                  },
+                  {
+                    "text": "oo",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": "th",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": " Ge",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": "ta",
+                    "color": "#54C0FF"
+                  },
+                  {
+                    "text": "way",
+                    "color": "#4FE8FF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false
+                  }
+                ]
+              },
+              {
                 "function": "minecraft:set_lore",
                 "entity": "this",
                 "lore": [
@@ -16,8 +57,8 @@
                   },
                   [
                     {
-                      "text": "Shadow Ninjitsu:",
-                      "color": "gold",
+                      "text": "Radiant Bonus:",
+                      "color": "blue",
                       "bold": false,
                       "italic": false
                     },

@@ -8,6 +8,43 @@
           "value": "uhcp:relics/buzzburst",
           "functions": [
             {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Radiant ",
+                  "color": "light_purple",
+                  "bold": true
+                },
+                {
+                  "text": "Bu",
+                  "color": "#0800FF",
+                  "bold": true
+                },
+                {
+                  "text": "zz",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": "bu",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": "rs",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": "t",
+                  "color": "#54C0FF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false
+                }
+              ]
+            },
+            {
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
@@ -16,8 +53,8 @@
                 },
                 [
                   {
-                    "text": "Royal Hive:",
-                    "color": "gold",
+                    "text": "Radiant Bonus:",
+                    "color": "blue",
                     "bold": false,
                     "italic": false
                   },
@@ -25,31 +62,31 @@
                     {
                       "text": " Additionally spawn a",
                       "color": "gray"
-                    },
-                    {
-                      "text": " Bee Knight",
-                      "color": "blue"
-                    },
-                    {
-                      "text": ", a large",
-                      "color": "gray"
-                    }
+                    }         
                   ]
                 ],
                 [
+                  {
+                    "text": "Royal Guard",
+                    "color": "blue"
+                  },
+                  {
+                    "text": ", a large ",
+                    "color": "gray"
+                  },
                   {
                     "text": "Bee",
                     "color": "blue",
                     "italic": false
                   },
                   {
-                    "text": " with high health, damage,",
+                    "text": " with",
                     "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "and size.",
+                    "text": "incresed health and damage.",
                     "color": "gray",
                     "italic": false
                   }
