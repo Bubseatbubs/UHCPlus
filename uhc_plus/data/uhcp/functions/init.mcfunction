@@ -4,9 +4,13 @@ scoreboard players set %init uhcp_initStatus 1
 # Lobby
 function uhcp:lobby/place
 
-# Time
+# Gamerules
 gamerule doDaylightCycle false
-time set 6000
+gamerule doMobSpawning false
+gamerule doWardenSpawning false
+
+# Time
+time set 13000
 
 # Weather
 weather clear

@@ -50,7 +50,7 @@
                 "components": {
                   "minecraft:food": {
                     "nutrition": 4,
-                    "saturation_modifier": 0,
+                    "saturation": 0,
                     "can_always_eat": true,
                     "effects": [
                       {

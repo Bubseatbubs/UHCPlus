@@ -19,7 +19,7 @@
                 "minecraft:damage": 0,
                 "minecraft:food": {
                   "nutrition": 0,
-                  "saturation_modifier": 0,
+                  "saturation": 0,
                   "can_always_eat": true,
                   "eat_seconds": 2147483647
                 },

@@ -149,9 +149,6 @@ execute unless score %pvp uhcp_settings matches -1 run team join grace_period @a
 # Allow one-team games to not end
 execute if score %end uhcp_initStatus matches 0 run function uhcp:start/teams/check
 
-# Remove lobby
-execute in minecraft:overworld run function uhcp:lobby/remove
-
 # Spread players
 scoreboard players operation %spread uhcp_initStatus = %border_size uhcp_settings
 scoreboard players set %const uhcp_initStatus 7
@@ -170,8 +167,8 @@ execute if score %spread uhcp_initStatus matches 0 in minecraft:overworld run fu
 
 execute if score %spread uhcp_initStatus matches 1 run function uhcp:start/spreadplayers/secondary
 
-# Kill items
-kill @e[type=minecraft:item]
+# Remove lobby
+execute in minecraft:overworld run function uhcp:lobby/remove
 
 # Augment Selection
 execute unless score %tier uhcp_aug_tier = %tier uhcp_aug_tier store result score %tier uhcp_aug_tier run random value 10..109
@@ -216,8 +213,12 @@ tag @a remove UHCP_SLShovel
 tag @a remove UHCP_SLSword
 function uhcp:augments/effects/prismatic/sololeveling/prepare
 
-# Time
+# Gamerules
 execute in minecraft:overworld run gamerule doDaylightCycle true
+execute in minecraft:overworld run gamerule doMobSpawning true
+execute in minecraft:overworld run gamerule doWardenSpawning true
+
+# Time
 execute in minecraft:overworld run time set 1000
 
 # Titan Bossbars

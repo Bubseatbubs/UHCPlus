@@ -18,14 +18,12 @@ execute if score @s uhcp_ready matches 1 run function uhcp:lobby/readyup/cancel
 
 # Manage player
 gamemode adventure @s
-clear @s
+execute unless items entity @s container.1 *[minecraft:custom_data~{uhcp_lobby:1b}] run clear @s
+function uhcp:reset/attributes
 effect clear @s
 effect give @s minecraft:instant_health 2 5 true
 effect give @s minecraft:resistance infinite 5 true
 effect give @s minecraft:saturation infinite 255 true
-function uhcp:reset/attributes
 experience set @s 0 levels
 experience set @s 0 points
-# --------------- Temp coordinates to lobby
-execute in minecraft:overworld run tp @s 7 301 7
-# ---------------
+execute unless predicate uhcp:in_lobby in minecraft:overworld run spreadplayers 30.0 31 0 1.5 under 299 false @s

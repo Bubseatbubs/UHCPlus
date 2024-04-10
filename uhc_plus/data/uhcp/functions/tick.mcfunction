@@ -46,8 +46,8 @@ execute as @a[scores={uhcp_lava_maxHeight=0..}] run function uhcp:augments/effec
 # Augment Countdown
 execute if score %augment_countdown uhcp_game_time matches 1.. run function uhcp:augments/countdown
 
-# Selection menus
-execute unless score %game uhcp_initStatus matches 1 run function uhcp:menus
+# Lobby
+execute unless score %game uhcp_initStatus matches 1 run function uhcp:lobby
 
 # Update Summoned Entities
 execute as @e[tag=UHCP_Summon] at @s run function uhcp:entity/update

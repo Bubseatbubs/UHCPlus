@@ -25,9 +25,9 @@ execute if score %augment_countdown uhcp_game_time matches 1.. run bossbar set u
 # Manage player
 gamemode spectator @s
 clear @s
+function uhcp:reset/attributes
 effect clear @s
 effect give @s minecraft:night_vision infinite 0 true
-function uhcp:reset/attributes
 experience set @s 0 levels
 experience set @s 0 points
 team leave @s

@@ -113,11 +113,11 @@ tag @a remove UHCP_Spectator
 
 # Players
 clear @a
+execute as @a run function uhcp:reset/attributes
 effect clear @a
 effect give @a minecraft:instant_health 2 5 true
 effect give @a minecraft:resistance infinite 5 true
 effect give @a minecraft:saturation infinite 255 true
-execute as @a run function uhcp:reset/attributes
 experience set @a 0 levels
 experience set @a 0 points
 gamemode adventure @a
