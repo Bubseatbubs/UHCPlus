@@ -216,7 +216,6 @@ function uhcp:augments/effects/prismatic/sololeveling/prepare
 # Gamerules
 execute in minecraft:overworld run gamerule doDaylightCycle true
 execute in minecraft:overworld run gamerule doMobSpawning true
-execute in minecraft:overworld run gamerule doWardenSpawning true
 
 # Time
 execute in minecraft:overworld run time set 1000

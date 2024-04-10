@@ -1,5 +1,6 @@
 # Kill entities
 execute as @e[tag=UHCP_Lobby] run function uhcp:entity/instant_kill
+execute as @e[type=minecraft:warden,predicate=uhcp:lobby/in_lobby] run function uhcp:entity/instant_kill
 
 # Remove lobby
 forceload add 0 0 3 3

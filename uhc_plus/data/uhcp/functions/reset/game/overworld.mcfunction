@@ -7,7 +7,6 @@ forceload remove all
 # Gamerules
 gamerule doDaylightCycle false
 gamerule doMobSpawning false
-gamerule doWardenSpawning false
 
 # Time
 time set 13000

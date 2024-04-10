@@ -26,4 +26,4 @@ effect give @s minecraft:resistance infinite 5 true
 effect give @s minecraft:saturation infinite 255 true
 experience set @s 0 levels
 experience set @s 0 points
-execute unless predicate uhcp:in_lobby in minecraft:overworld run spreadplayers 30.0 31 0 1.5 under 299 false @s
+execute unless predicate uhcp:lobby/in_lobby in minecraft:overworld run spreadplayers 30.0 31 0 1.5 under 299 false @s
