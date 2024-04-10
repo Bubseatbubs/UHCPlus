@@ -105,7 +105,6 @@ execute if score @s uhcp_augment matches 201 run function uhcp:augments/effects/
 execute if score @s uhcp_augment matches 202 run function uhcp:augments/effects/prismatic/coldblooded
 execute if score @s uhcp_augment matches 203 run function uhcp:augments/effects/prismatic/cruelpact
 execute if score @s uhcp_augment matches 204 run function uhcp:augments/effects/prismatic/gumgumfruit
-execute if score @s uhcp_augment matches 205 run function uhcp:augments/effects/prismatic/endschosen
 execute if score @s uhcp_augment matches 206 run function uhcp:augments/effects/prismatic/gapplegapiii
 execute if score @s uhcp_augment matches 207 run function uhcp:augments/effects/prismatic/gasgasgas
 execute if score @s uhcp_augment matches 210 run return 0
@@ -134,8 +133,6 @@ execute if score @s uhcp_augment matches 234 run function uhcp:augments/effects/
 execute if score @s uhcp_augment matches 236 run function uhcp:augments/effects/prismatic/thetortoise
 execute if score @s uhcp_augment matches 237 run function uhcp:augments/effects/prismatic/gloryofra
 execute if score @s uhcp_augment matches 238 run function uhcp:augments/effects/prismatic/relicmaster
-execute if score @s uhcp_augment matches 239 run function uhcp:augments/effects/prismatic/shadowclonejutsu
-execute if score @s uhcp_augment matches 240 run function uhcp:augments/effects/prismatic/zeusfavor
 execute if score @s uhcp_augment matches 241 run function uhcp:augments/effects/prismatic/thinkfast
 execute if score @s uhcp_augment matches 242 run function uhcp:augments/effects/prismatic/diamondgrabbag
 execute if score @s uhcp_augment matches 243 run function uhcp:augments/effects/prismatic/radiantrelics
