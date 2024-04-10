@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "uhcp:relics/augmented/shadow_ninjitsu"
+          "value": "uhcp:relics/radiant/smooth_getaway"
         }
       ],
       "functions": [

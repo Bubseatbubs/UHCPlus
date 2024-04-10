@@ -1,1 +1,1 @@
-loot give @s loot uhcp:radiantrelics
+loot give @s loot uhcp:radiant_relics

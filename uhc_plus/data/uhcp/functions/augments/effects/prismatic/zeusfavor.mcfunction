@@ -1,1 +1,1 @@
-loot give @s loot uhcp:relics/augmented/zeus_favor
+loot give @s loot uhcp:relics/radiant/flux_factor

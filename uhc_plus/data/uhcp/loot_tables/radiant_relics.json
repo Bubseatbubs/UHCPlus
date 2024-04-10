@@ -6,7 +6,7 @@
           {
             "type": "loot_table",
             "weight": 1,
-            "value": "uhcp:relics/augmented/ends_chosen",
+            "value": "uhcp:relics/radiant/dragons_protection",
             "functions": [
               {
                 "function": "set_count",
@@ -17,7 +17,7 @@
           {
             "type": "loot_table",
             "weight": 1,
-            "value": "uhcp:relics/augmented/out_of_this_world",
+            "value": "uhcp:relics/radiant/gravity_globe",
             "functions": [
               {
                 "function": "set_count",
@@ -28,7 +28,7 @@
           {
             "type": "loot_table",
             "weight": 1,
-            "value": "uhcp:relics/augmented/phantom_pains",
+            "value": "uhcp:relics/radiant/soulflames_embrace",
             "functions": [
               {
                 "function": "set_count",
@@ -39,7 +39,7 @@
           {
             "type": "loot_table",
             "weight": 1,
-            "value": "uhcp:relics/augmented/royal_hive",
+            "value": "uhcp:relics/radiant/buzzburst",
             "functions": [
               {
                 "function": "set_count",
@@ -50,7 +50,7 @@
           {
             "type": "loot_table",
             "weight": 1,
-            "value": "uhcp:relics/augmented/shadow_ninjitsu",
+            "value": "uhcp:relics/radiant/smooth_getaway",
             "functions": [
               {
                 "function": "set_count",
@@ -61,7 +61,7 @@
           {
             "type": "loot_table",
             "weight": 1,
-            "value": "uhcp:relics/augmented/well_engineered",
+            "value": "uhcp:relics/radiant/runic_sentry",
             "functions": [
               {
                 "function": "set_count",
@@ -72,7 +72,7 @@
           {
             "type": "loot_table",
             "weight": 1,
-            "value": "uhcp:relics/augmented/zeus_favor",
+            "value": "uhcp:relics/radiant/flux_factor",
             "functions": [
               {
                 "function": "set_count",
