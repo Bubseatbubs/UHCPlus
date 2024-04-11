@@ -2653,7 +2653,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:24s}"
+              "tag": "{uhcp_augmentselect:1b,augment:46s}"
             },
             {
               "function": "minecraft:set_name",

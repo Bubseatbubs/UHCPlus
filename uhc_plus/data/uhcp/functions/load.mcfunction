@@ -8,6 +8,7 @@ scoreboard objectives add team trigger
 scoreboard objectives add testkit trigger
 scoreboard objectives add top trigger
 scoreboard objectives add upgrade trigger
+scoreboard objectives add lobby trigger
 
 # Settings Triggers
 scoreboard objectives add settings trigger
