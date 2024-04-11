@@ -1,5 +1,5 @@
 # Kill entities
-forceload add -96 -96 95 95
+forceload add -80 -80 79 79
 execute as @e[tag=UHCP_Lobby,tag=!UHCP_LobbyOrigin] run function uhcp:entity/instant_kill
 
 # Remove lobby
@@ -9,4 +9,4 @@ kill @e[type=minecraft:falling_block]
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:spectral_arrow]
 kill @e[tag=UHCP_LobbyOrigin]
-forceload remove -96 -96 95 95
+forceload remove -80 -80 79 79

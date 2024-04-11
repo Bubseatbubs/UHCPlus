@@ -27,6 +27,6 @@ effect give @s minecraft:resistance infinite 5 true
 effect give @s minecraft:saturation infinite 255 true
 experience set @s 0 levels
 experience set @s 0 points
-execute in minecraft:overworld run forceload add -96 -96 95 95
+execute in minecraft:overworld run forceload add -80 -80 79 79
 execute at @e[tag=UHCP_LobbyOrigin,limit=1] align y run function uhcp:left/lobby/return
-execute in minecraft:overworld run forceload remove -96 -96 95 95
+execute in minecraft:overworld run forceload remove -80 -80 79 79
