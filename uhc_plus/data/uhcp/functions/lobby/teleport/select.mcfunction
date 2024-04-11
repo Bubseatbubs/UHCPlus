@@ -1,14 +1,12 @@
-function uhcp:lobby/patron/menu
+execute if score @s lobby matches 2 run tp @s @e[tag=UHCP_Destination1,sort=nearest,limit=1]
+execute if score @s lobby matches 3 at @s run tp @s @e[tag=UHCP_Destination2,sort=nearest,limit=1]
+execute if score @s lobby matches 3 at @s run tp @s ~ ~ ~ 0 ~
+execute if score @s lobby matches 4 run tp @s @e[tag=UHCP_Destination3,sort=nearest,limit=1]
+execute if score @s lobby matches 5 run tp @s @e[tag=UHCP_Destination4,sort=nearest,limit=1]
+execute if score @s lobby matches 5 at @s run tp @s ~ ~ ~ -90 ~
 
-execute if score @s patron matches 100 run function uhcp:lobby/patron/select/aphrodite
-execute if score @s patron matches 101 run function uhcp:lobby/patron/select/apollo
-execute if score @s patron matches 102 run function uhcp:lobby/patron/select/artemis
-execute if score @s patron matches 103 run function uhcp:lobby/patron/select/athena
-execute if score @s patron matches 104 run function uhcp:lobby/patron/select/demeter
-execute if score @s patron matches 105 run function uhcp:lobby/patron/select/hephaestus
-execute if score @s patron matches 106 run function uhcp:lobby/patron/select/hermes
-execute if score @s patron matches 107 run function uhcp:lobby/patron/select/loki
-execute if score @s patron matches 108 run function uhcp:lobby/patron/select/hera
-execute if score @s patron matches 109 run function uhcp:lobby/patron/select/triton
-
-scoreboard players reset @s patron
+execute if entity @s[tag=UHCP_RelicTestingChamber] run function uhcp:lobby/relic_testing/reset
+playsound entity.enderman.teleport master @s ~ ~ ~ 1 1 1
+particle portal ~ ~ ~ 1 1 1 0.1 100 normal @s
+particle flash ~ ~ ~ 1 1 1 0.1 100 normal @s
+scoreboard players reset @s lobby

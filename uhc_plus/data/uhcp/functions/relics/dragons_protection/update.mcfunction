@@ -1,12 +1,19 @@
 scoreboard players add @s uhcp_timer 1
 execute if entity @s[tag=UHCP_EndChosen] run scoreboard players add @s uhcp_aug_count 1
 
-fill ~1 ~ ~2 ~-1 ~2 ~2 minecraft:obsidian
-fill ~1 ~ ~-2 ~-1 ~2 ~-2 minecraft:obsidian
-fill ~2 ~ ~1 ~2 ~2 ~-1 minecraft:obsidian
-fill ~-2 ~ ~1 ~-2 ~2 ~-1 minecraft:obsidian
-fill ~1 ~3 ~1 ~-1 ~3 ~-1 minecraft:obsidian
-fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 minecraft:obsidian
+execute if score %game uhcp_initStatus matches 1 run fill ~1 ~ ~2 ~-1 ~2 ~2 minecraft:obsidian
+execute if score %game uhcp_initStatus matches 1 run fill ~1 ~ ~-2 ~-1 ~2 ~-2 minecraft:obsidian
+execute if score %game uhcp_initStatus matches 1 run fill ~2 ~ ~1 ~2 ~2 ~-1 minecraft:obsidian
+execute if score %game uhcp_initStatus matches 1 run fill ~-2 ~ ~1 ~-2 ~2 ~-1 minecraft:obsidian
+execute if score %game uhcp_initStatus matches 1 run fill ~1 ~3 ~1 ~-1 ~3 ~-1 minecraft:obsidian
+execute if score %game uhcp_initStatus matches 1 run fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 minecraft:obsidian
+
+execute unless score %game uhcp_initStatus matches 1 run fill ~1 ~ ~2 ~-1 ~2 ~2 minecraft:obsidian keep
+execute unless score %game uhcp_initStatus matches 1 run fill ~1 ~ ~-2 ~-1 ~2 ~-2 minecraft:obsidian keep
+execute unless score %game uhcp_initStatus matches 1 run fill ~2 ~ ~1 ~2 ~2 ~-1 minecraft:obsidian keep
+execute unless score %game uhcp_initStatus matches 1 run fill ~-2 ~ ~1 ~-2 ~2 ~-1 minecraft:obsidian keep
+execute unless score %game uhcp_initStatus matches 1 run fill ~1 ~3 ~1 ~-1 ~3 ~-1 minecraft:obsidian keep
+execute unless score %game uhcp_initStatus matches 1 run fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 minecraft:obsidian keep
 
 execute if score @s uhcp_timer matches 20 at @s run playsound block.note_block.harp master @a[distance=..2] ~ ~ ~ 1 1 1
 execute if score @s uhcp_timer matches 40 at @s run playsound block.note_block.harp master @a[distance=..2] ~ ~ ~ 1 1 1
