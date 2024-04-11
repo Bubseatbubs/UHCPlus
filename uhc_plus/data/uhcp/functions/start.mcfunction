@@ -8,6 +8,7 @@ execute in uhcp:main run forceload add 0 0
 
 # Prepare Spectators
 tag @a[scores={uhcp_ready=2}] add UHCP_Spectator
+tag @a[tag=UHCP_Died] add UHCP_Spectator
 
 # Set scores
 scoreboard players operation %titans uhcp_initStatus = %titans uhcp_settings
