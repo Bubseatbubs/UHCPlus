@@ -5,6 +5,7 @@ execute as @e[tag=UHCP_Lobby,tag=!UHCP_LobbyOrigin] run function uhcp:entity/ins
 # Remove lobby
 execute at @e[tag=UHCP_LobbyOrigin,limit=1] align y run function uhcp:lobby/place/air
 kill @e[type=minecraft:arrow]
+kill @e[type=minecraft:falling_block]
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:spectral_arrow]
 kill @e[tag=UHCP_LobbyOrigin]
