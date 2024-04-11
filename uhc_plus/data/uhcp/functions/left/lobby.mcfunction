@@ -26,4 +26,6 @@ effect give @s minecraft:resistance infinite 5 true
 effect give @s minecraft:saturation infinite 255 true
 experience set @s 0 levels
 experience set @s 0 points
-execute unless predicate uhcp:lobby/in_lobby in minecraft:overworld run spreadplayers 30.0 31 0 1.5 under 299 false @s
+execute in minecraft:overworld run forceload add -96 -96 95 95
+execute at @e[tag=UHCP_LobbyOrigin,limit=1] align y run function uhcp:left/lobby/return
+execute in minecraft:overworld run forceload remove -96 -96 95 95

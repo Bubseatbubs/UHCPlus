@@ -15,6 +15,7 @@ time set 13000
 weather clear
 
 # Lobby
+forceload add -96 -96 95 95
 function uhcp:lobby/place
-spreadplayers 30.0 31 0 1.5 under 299 false @a
-spawnpoint @a 30 296 32
+execute at @e[tag=UHCP_LobbyOrigin,limit=1] align y run function uhcp:reset/game/overworld/players
+forceload remove -96 -96 95 95
