@@ -1,10 +1,9 @@
-# Reset forceloads
-execute in minecraft:overworld run forceload remove all
+# Dimension-specific commands
 execute in minecraft:the_end run forceload remove all
 execute in minecraft:the_nether run forceload remove all
+execute in minecraft:overworld run function uhcp:start/dimensions/minecraft/overworld
 execute in uhcp:hell run forceload remove all
-execute in uhcp:main run forceload remove all
-execute in uhcp:main run forceload add 0 0
+execute in uhcp:main run function uhcp:start/dimensions/uhcp/main
 
 # Prepare Spectators
 tag @a[scores={uhcp_ready=2}] add UHCP_Spectator
@@ -220,13 +219,6 @@ tag @a remove UHCP_SLPick
 tag @a remove UHCP_SLShovel
 tag @a remove UHCP_SLSword
 function uhcp:augments/effects/prismatic/sololeveling/prepare
-
-# Gamerules
-execute in minecraft:overworld run gamerule doDaylightCycle true
-execute in minecraft:overworld run gamerule doMobSpawning true
-
-# Time
-execute in minecraft:overworld run time set 1000
 
 # Titan Bossbars
 execute as @a run function uhcp:titans/bossbar/create
