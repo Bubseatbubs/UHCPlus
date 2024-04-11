@@ -30,6 +30,6 @@ fill ~-2 ~ ~1 ~-2 ~2 ~-1 air replace minecraft:obsidian
 fill ~1 ~3 ~1 ~-1 ~3 ~-1 air replace minecraft:obsidian
 fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 air replace minecraft:obsidian
 playsound minecraft:block.stone.break master @a[distance=..10] ~ ~ ~ 1 0.5 1
-particle block obsidian ~ ~ ~ 3 3 3 0.01 1000 normal
+particle block{block_state: "minecraft:obsidian"} ~ ~ ~ 3 3 3 0.01 1000 normal
 
 kill @s
