@@ -1,6 +1,6 @@
 # Dimension-specific commands
-execute in minecraft:the_end run forceload remove all
-execute in minecraft:the_nether run forceload remove all
+execute in minecraft:the_end run function uhcp:start/dimensions/minecraft/the_end
+execute in minecraft:the_nether run function uhcp:start/dimensions/minecraft/the_nether
 execute in minecraft:overworld run function uhcp:start/dimensions/minecraft/overworld
 execute in uhcp:hell run forceload remove all
 execute in uhcp:main run function uhcp:start/dimensions/uhcp/main
