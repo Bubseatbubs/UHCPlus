@@ -21,3 +21,7 @@ execute as @e[tag=UHCP_RelicTesting] at @s if entity @a[gamemode=!creative,gamem
 
 # Credits - player head rotation
 execute as @e[tag=UHCP_LobbyCredits] at @s run tp @s ~ ~ ~ ~1 ~
+
+# Kill spectral arrows in ground
+execute unless score %lobby_arrows uhcp_game_time matches 1.. run function uhcp:lobby/kill_arrows
+scoreboard players remove %lobby_arrows uhcp_game_time 1
