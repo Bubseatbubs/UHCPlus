@@ -1,3 +1,6 @@
+# Augment tier
+execute unless score %random uhcp_aug_tier matches -2147483648..2147483647 run scoreboard players operation %random uhcp_aug_tier = %random_def uhcp_aug_tier
+
 # Set default arrow limit
 execute unless score %arrow_limit uhcp_arrowCount matches -2147483648..2147483647 run scoreboard players operation %arrow_limit uhcp_arrowCount = %arrow_limit_def uhcp_settings
 

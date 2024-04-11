@@ -161,6 +161,9 @@ team modify no_collision friendlyFire true
 team modify no_collision seeFriendlyInvisibles false
 
 # Default scores
+# Augment tier
+scoreboard players set %random_def uhcp_aug_tier 3
+
 # Arrow limit
 scoreboard players set %arrow_limit_def uhcp_settings 12
 
