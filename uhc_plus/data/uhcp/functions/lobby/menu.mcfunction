@@ -9,6 +9,7 @@ execute at @s run kill @e[type=item,distance=..4]
 execute unless score %team uhcp_settings matches 1 run item replace entity @s hotbar.0 with black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={}] 1
 execute if score %team uhcp_settings matches 1 run loot replace entity @s hotbar.0 loot uhcp:lobby_menu/team
 loot replace entity @s hotbar.1 loot uhcp:lobby_menu/patron
+loot replace entity @s hotbar.5 loot uhcp:lobby_menu/special_item
 execute unless score @s uhcp_ready matches 2 run loot replace entity @s hotbar.7 loot uhcp:lobby_menu/spectate
 execute if score @s uhcp_ready matches 2 run loot replace entity @s hotbar.7 loot uhcp:lobby_menu/stop_spectate
 execute if score @s uhcp_ready matches 1..2 run loot replace entity @s hotbar.8 loot uhcp:lobby_menu/ready
@@ -17,7 +18,6 @@ execute unless score @s uhcp_ready matches 1.. run loot replace entity @s hotbar
 item replace entity @s hotbar.2 with black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={}] 1
 item replace entity @s hotbar.3 with black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={}] 1
 item replace entity @s hotbar.4 with black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={}] 1
-item replace entity @s hotbar.5 with black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={}] 1
 item replace entity @s hotbar.6 with black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={}] 1
 
 item replace entity @s inventory.0 with black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={}] 1
