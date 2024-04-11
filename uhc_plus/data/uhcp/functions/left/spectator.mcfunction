@@ -5,6 +5,7 @@ scoreboard players reset @s team
 scoreboard players reset @s testkit
 scoreboard players reset @s top
 scoreboard players reset @s uhcp_augment
+scoreboard players reset @s uhcp_lobby_item
 scoreboard players set @s uhcp_team 0
 
 # Remove tags
