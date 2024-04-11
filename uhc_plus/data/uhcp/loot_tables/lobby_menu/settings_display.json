@@ -64,7 +64,7 @@
               "target": "item_name",
               "name": [
                 {
-                  "text": "Check Settings",
+                  "text": "Game Settings",
                   "color": "gold",
                   "bold": true
                 }
