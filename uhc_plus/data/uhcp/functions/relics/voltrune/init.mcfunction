@@ -9,8 +9,6 @@ playsound minecraft:entity.blaze.death player @a[distance=..6] ~ ~ ~ 1.0 2.0 1.0
 
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_radiant:1b}] at @s run tag @e[tag=UHCP_Voltrune,tag=UHCP_New,sort=nearest,limit=1] add UHCP_ZeusFavor
 
-function uhcp:relics/durability/reset
-
 # Gets team value
 scoreboard players operation @e[tag=UHCP_Voltrune,tag=UHCP_New,sort=nearest,limit=1] uhcp_team = @s uhcp_team
 

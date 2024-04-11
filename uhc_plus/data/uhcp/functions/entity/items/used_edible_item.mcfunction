@@ -41,4 +41,5 @@ execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_lobby:6
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_lobby:7b}] at @s run return run function uhcp:lobby/teleport/menu
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_lobby:8b}] at @s run return run function uhcp:lobby/relic_testing/back
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_lobby:9b}] at @s run return run function uhcp:lobby/relic_testing/forward
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_lobby:10b}] at @s run return run function uhcp:lobby/settings_display/menu
 

@@ -20,3 +20,4 @@ execute as @a[gamemode=!creative] run function uhcp:lobby/menu
 
 function uhcp:settings/pages/team/1
 tellraw @s [{"text":"Teams have been turned "},{"text":"OFF","color":"red"},{"text":". It is now a Solo game."}]
+title @a actionbar [{"text":"Game Type set to "},{"text":"SOLO","color":"aqua"}]

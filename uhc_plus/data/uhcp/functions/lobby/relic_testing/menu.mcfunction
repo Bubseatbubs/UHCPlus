@@ -10,3 +10,5 @@ execute if score @s uhcp_lobby_item matches 15 run loot replace entity @s hotbar
 execute if score @s uhcp_lobby_item matches 16 run loot replace entity @s hotbar.4 loot uhcp:relics/smooth_getaway
 execute if score @s uhcp_lobby_item matches 17 run loot replace entity @s hotbar.4 loot uhcp:relics/web_o_rang
 execute if score @s uhcp_lobby_item matches 18 run loot replace entity @s hotbar.4 loot uhcp:relics/dragons_protection
+
+item modify entity @s hotbar.4 uhcp:relic_testing_chamber

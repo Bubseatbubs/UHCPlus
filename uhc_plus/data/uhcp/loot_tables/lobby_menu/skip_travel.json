@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:ghast_tear",
+          "name": "minecraft:nether_star",
           "functions": [
             {
               "function": "minecraft:set_components",

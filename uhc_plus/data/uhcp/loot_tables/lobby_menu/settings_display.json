@@ -6,11 +6,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:paper",
+          "name": "minecraft:book",
           "functions": [
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_rightclick:1b,uhcp_lobby:1b,uhcp_lobby:2b}"
+              "tag": "{uhcp_rightclick:1b,uhcp_lobby:1b,uhcp_lobby:10b}"
             },
             {
               "function": "minecraft:set_components",
@@ -37,29 +37,24 @@
               "lore": [
                 [
                   {
-                    "text": "Select your ",
+                    "text": "Check the current",
                     "color": "gray",
                     "bold": false,
                     "italic": false
                   },
                   {
-                    "text": "Team",
-                    "color": "gold",
+                    "text": " Settings",
+                    "color": "dark_gray",
                     "bold": true,
                     "italic": false
                   },
                   {
-                    "text": " by right-clicking",
+                    "text": ".",
                     "color": "gray",
                     "bold": false,
                     "italic": false
                   }
-                ],
-                {
-                  "text": "with this item.",
-                  "color": "gray",
-                  "italic": false
-                }
+                ]
               ],
               "mode": "replace_all"
             },
@@ -67,11 +62,13 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "target": "item_name",
-              "name": {
-                "text": "Select Team",
-                "color": "gold",
-                "bold": true
-              }
+              "name": [
+                {
+                  "text": "Check Settings",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
             }
           ]
         }
