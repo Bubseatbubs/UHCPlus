@@ -5,6 +5,32 @@
         "entries": [
           {
             "type": "minecraft:item",
+            "name": "minecraft:snowball",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:enchantments": {
+                    "levels": {
+                      "minecraft:protection": 1
+                    },
+                    "show_in_tooltip": false
+                  }
+                }
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "uhcp_lobby_item": 8
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
             "name": "minecraft:stick",
             "functions": [
               {
@@ -37,52 +63,28 @@
                 "function": "minecraft:set_components",
                 "components": {
                   "minecraft:fireworks": {
+                    "flight_duration": 5,
                     "explosions": [
                       {
                         "shape": "star",
                         "colors": [
-                          15007744
-                        ],
-                        "has_trail": true,
-                        "has_twinkle": true
-                      },
-                      {
-                        "shape": "star",
-                        "colors": [
-                          16747776
-                        ],
-                        "has_trail": true,
-                        "has_twinkle": true
-                      },
-                      {
-                        "shape": "star",
-                        "colors": [
-                          16772608
-                        ],
-                        "has_trail": true,
-                        "has_twinkle": true
-                      },
-                      {
-                        "shape": "star",
-                        "colors": [
-                          164129
-                        ],
-                        "has_trail": true,
-                        "has_twinkle": true
-                      },
-                      {
-                        "shape": "star",
-                        "colors": [
-                          19711
-                        ],
-                        "has_trail": true,
-                        "has_twinkle": true
-                      },
-                      {
-                        "shape": "star",
-                        "colors": [
+                          15007744,
+                          16747776,
+                          16772608,
+                          164129,
+                          19711,
                           7798920
-                        ]
+                        ],
+                        "fade_colors": [
+                          15007744,
+                          16747776,
+                          16772608,
+                          164129,
+                          19711,
+                          7798920
+                        ],
+                        "has_trail": true,
+                        "has_twinkle": true
                       }
                     ]
                   },
@@ -94,13 +96,9 @@
                   },
                   "minecraft:can_place_on": {
                     "blocks": "#uhcp:all_blocks"
-                  }
-                }
-              },
-              {
-                "function": "minecraft:toggle_tooltips",
-                "toggles": {
-                  "minecraft:can_place_on": false
+                  },
+                  "minecraft:hide_additional_tooltip": {},
+                  "minecraft:hide_tooltip": {}
                 }
               }
             ],
@@ -119,15 +117,10 @@
             "name": "minecraft:firework_rocket",
             "functions": [
               {
-                "function": "minecraft:toggle_tooltips",
-                "toggles": {
-                  "minecraft:can_place_on": false
-                }
-              },
-              {
                 "function": "minecraft:set_components",
                 "components": {
                   "minecraft:fireworks": {
+                    "flight_duration": 5,
                     "explosions": [
                       {
                         "shape": "small_ball",
@@ -135,10 +128,10 @@
                           16251127
                         ],
                         "has_trail": true,
-                        "has_twinkle": true
+                        "has_twinkle": false
                       },
                       {
-                        "shape": "burst",
+                        "shape": "small_ball",
                         "colors": [
                           16099768
                         ],
@@ -146,7 +139,7 @@
                         "has_twinkle": true
                       },
                       {
-                        "shape": "large_ball",
+                        "shape": "small_ball",
                         "colors": [
                           6016762
                         ],
@@ -163,7 +156,9 @@
                   },
                   "minecraft:can_place_on": {
                     "blocks": "#uhcp:all_blocks"
-                  }
+                  },
+                  "minecraft:hide_additional_tooltip": {},
+                  "minecraft:hide_tooltip": {}
                 }
               }
             ],
