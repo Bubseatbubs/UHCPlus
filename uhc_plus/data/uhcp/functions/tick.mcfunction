@@ -39,9 +39,11 @@ execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:kill/death
 execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:entity/items/ate_golden_apple/update
 
 # Augments
+scoreboard players enable @a[tag=UHCP_CDSelectUpgrade] upgrade
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
 execute as @a[scores={uhcp_lava_timeInterval=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
 execute as @a[scores={uhcp_lava_maxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
+execute as @a[scores={upgrade=1..3}] at @s run function uhcp:augments/effects/prismatic/cyberneticdownload/select
 
 # Augment Countdown
 execute if score %augment_countdown uhcp_game_time matches 1.. run function uhcp:augments/countdown

@@ -7,6 +7,7 @@ scoreboard objectives add patron trigger
 scoreboard objectives add team trigger
 scoreboard objectives add testkit trigger
 scoreboard objectives add top trigger
+scoreboard objectives add upgrade trigger
 
 # Settings Triggers
 scoreboard objectives add settings trigger
@@ -39,6 +40,11 @@ scoreboard objectives add uhcp_hb_killedZombie dummy
 scoreboard objectives add uhcp_hb_killedCreeper dummy
 scoreboard objectives add uhcp_hb_killedSkeleton dummy
 scoreboard objectives add uhcp_hb_killedSpider dummy
+scoreboard objectives add uhcp_aug_cd_firstOption dummy
+scoreboard objectives add uhcp_aug_cd_secondOption dummy
+scoreboard objectives add uhcp_aug_cd_thirdOption dummy
+scoreboard objectives add uhcp_aug_cd_upgrade dummy
+scoreboard objectives add uhcp_aug_cd_time dummy
 scoreboard objectives add uhcp_health health {"text":"Health","color":"red"}
 scoreboard objectives add uhcp_id dummy
 scoreboard objectives add uhcp_initStatus dummy
