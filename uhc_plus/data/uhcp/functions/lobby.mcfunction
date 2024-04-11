@@ -10,3 +10,6 @@ execute if score %team uhcp_settings matches 1 if score %players_select_teams uh
 execute unless score %lobby_parkour uhcp_game_time matches 1.. in minecraft:overworld run function uhcp:lobby/parkour/red_candles
 execute if score %lobby_parkour uhcp_game_time matches 20 in minecraft:overworld run function uhcp:lobby/parkour/yellow_candles
 scoreboard players remove %lobby_parkour uhcp_game_time 1
+
+# Credits - player head rotation
+execute as @e[tag=UHCP_LobbyCredits] at @s run tp @s ~ ~ ~ ~1 ~
