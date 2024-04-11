@@ -79,6 +79,7 @@ advancement grant @a only uhcp:base_recipes
 # Revoke all special augment recipes here.
 
 # Reset scoreboards
+scoreboard players reset @a lobby
 scoreboard players reset @a patron
 scoreboard players reset @a team
 scoreboard players reset @a top

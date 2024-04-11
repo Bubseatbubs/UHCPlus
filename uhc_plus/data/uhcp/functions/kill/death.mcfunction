@@ -14,6 +14,7 @@ execute if entity @s[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan
 gamemode spectator @s
 effect clear @s
 effect give @s minecraft:night_vision infinite 0 true
+scoreboard players reset @s lobby
 scoreboard players reset @s patron
 scoreboard players reset @s team
 scoreboard players reset @s testkit

@@ -1,5 +1,6 @@
 # Reset player whom is not part of game as spectator
 # Scores
+scoreboard players reset @s lobby
 scoreboard players reset @s patron
 scoreboard players reset @s team
 scoreboard players reset @s testkit
