@@ -1,6 +1,5 @@
 loot replace entity @s hotbar.3 loot uhcp:lobby_menu/relic_testing/previous
 loot replace entity @s hotbar.5 loot uhcp:lobby_menu/relic_testing/next
-execute unless score @s uhcp_lobby_item matches 10..18 run scoreboard players set @s uhcp_lobby_item 10
 
 execute if score @s uhcp_lobby_item matches 10 run loot replace entity @s hotbar.4 loot uhcp:relics/buzzburst
 execute if score @s uhcp_lobby_item matches 11 run loot replace entity @s hotbar.4 loot uhcp:relics/soulflames_embrace
