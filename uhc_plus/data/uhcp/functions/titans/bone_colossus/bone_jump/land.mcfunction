@@ -1,7 +1,7 @@
 tag @s remove UHCP_IsJumping
 playsound minecraft:item.mace.smash_ground_heavy master @a[distance=..16] ~ ~ ~ 1 1 1
 playsound minecraft:item.mace.smash_ground_heavy master @a[distance=..16] ~ ~ ~ 1 1 1
-particle minecraft:block bone_block ~ ~ ~ 3 1 3 0.1 100 normal
+particle minecraft:block{block_state: "minecraft:bone_block"} ~ ~ ~ 3 1 3 0.1 100 normal
 particle minecraft:dust_plume ~ ~ ~ 1 1 1 1 100 normal
 tag @s add UHCP_Owner
 function uhcp:titans/bone_colossus/bone_jump/summon

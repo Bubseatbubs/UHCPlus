@@ -15,7 +15,7 @@ playsound item.armor.equip_netherite master @a[distance=..4] ~ ~ ~ 1 1 1
 playsound item.armor.equip_netherite master @a[distance=..4] ~ ~ ~ 1 1 1
 playsound item.mace.smash_ground master @a[distance=..4] ~ ~ ~ 1 0.8 1
 playsound block.beacon.power_select master @a[distance=..4] ~ ~ ~ 1 0.8 1
-particle block minecraft:quartz_block ~ ~ ~ 0.5 0.5 0.5 0.1 10 normal
+particle block{block_state: "minecraft:quartz_block"} ~ ~ ~ 0.5 0.5 0.5 0.1 10 normal
 particle minecraft:trial_spawner_detection ~ ~ ~ 0.25 0.25 0.25 0.1 40 normal
 particle flash ~ ~ ~ 0.5 0.5 0.5 0.1 10 normal
 tag @s remove UHCP_Owner
