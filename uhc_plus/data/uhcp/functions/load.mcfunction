@@ -68,6 +68,7 @@ scoreboard objectives add uhcp_motion_y2 dummy
 scoreboard objectives add uhcp_motion_z1 dummy
 scoreboard objectives add uhcp_motion_z2 dummy
 scoreboard objectives add uhcp_ready dummy
+scoreboard objectives add uhcp_relic_count dummy
 scoreboard objectives add uhcp_settings dummy
 scoreboard objectives add uhcp_titans_attack dummy
 scoreboard objectives add uhcp_titans_count dummy
