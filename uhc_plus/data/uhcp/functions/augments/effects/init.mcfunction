@@ -136,6 +136,8 @@ execute if score @s uhcp_augment matches 238 run function uhcp:augments/effects/
 execute if score @s uhcp_augment matches 241 run function uhcp:augments/effects/prismatic/thinkfast
 execute if score @s uhcp_augment matches 242 run function uhcp:augments/effects/prismatic/diamondgrabbag
 execute if score @s uhcp_augment matches 243 run function uhcp:augments/effects/prismatic/radiantrelics
+execute if score @s uhcp_augment matches 245 run function uhcp:augments/effects/prismatic/wellprotected
+execute if score @s uhcp_augment matches 246 run function uhcp:augments/effects/prismatic/buzzybees
 
 scoreboard players reset @s uhcp_aug_stack
 particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.25 100 normal

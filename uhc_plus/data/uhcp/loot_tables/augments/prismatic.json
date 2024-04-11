@@ -1983,6 +1983,142 @@
           ]
         },
         {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:245s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Immovable Object",
+                  "color": "aqua",
+                  "bold": true,
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Kalyx's Thorns",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ", a",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Bone Cage",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ", and a ",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Dragon's Protection",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bee_nest",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:246s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Buzzy Bees",
+                  "color": "aqua",
+                  "bold": true,
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain 2 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Buzzbursts",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": " and",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "5 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Royal Jelly",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
           "type": "minecraft:loot_table",
           "weight": 9,
           "value": "uhcp:augments/patron/prismatic"

@@ -9,6 +9,7 @@ execute if score %time uhcp_game_time matches 9600 as @a[scores={uhcp_augment=18
 execute if score %time uhcp_game_time matches 42000 as @a[scores={uhcp_augment=145}] run function uhcp:augments/effects/silver/secondwind
 execute if score %time uhcp_game_time matches 42000 as @a[scores={uhcp_augment=35}] run function uhcp:augments/effects/gold/coppercollector/convert
 execute if score %time uhcp_game_time matches 42000 as @a[scores={uhcp_augment=49}] run function uhcp:augments/effects/gold/fossilfuel/init
+execute if score %time uhcp_game_time matches 42000 as @a[scores={uhcp_augment=27}] run function uhcp:augments/effects/gold/watertowine/init
 execute if score %time uhcp_game_time matches 42000 as @a[scores={uhcp_augment=50}] run function uhcp:augments/effects/gold/plannedeconomy/give
 execute if score %time uhcp_game_time matches 24000 as @a[scores={uhcp_augment=42}] run function uhcp:augments/effects/gold/diamondsintherough/convert
 execute if score %time uhcp_game_time matches 3600 as @a[scores={uhcp_augment=101}] run function uhcp:augments/effects/silver/afk/freedom
@@ -44,6 +45,12 @@ execute if score %time uhcp_game_time matches 36000 as @a[scores={uhcp_augment=4
 
 execute if score %time uhcp_game_time matches 40800 as @a[scores={uhcp_augment=49}] run tellraw @s {"text":"Bones will convert to Speed in 1 minute!","color":"red"}
 execute if score %time uhcp_game_time matches 40800 as @a[scores={uhcp_augment=49}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
+
+execute if score %time uhcp_game_time matches 36000 as @a[scores={uhcp_augment=27}] run tellraw @s {"text":"Water Bottles will convert to Potions in 5 minutes!","color":"red"}
+execute if score %time uhcp_game_time matches 36000 as @a[scores={uhcp_augment=27}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
+
+execute if score %time uhcp_game_time matches 40800 as @a[scores={uhcp_augment=27}] run tellraw @s {"text":"Water Bottles will convert to Potions in 1 minute!","color":"red"}
+execute if score %time uhcp_game_time matches 40800 as @a[scores={uhcp_augment=27}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
 
 execute if score %time uhcp_game_time matches 18000 as @a[scores={uhcp_augment=42}] run tellraw @s {"text":"Coal will convert to Diamonds in 5 minutes!","color":"red"}
 execute if score %time uhcp_game_time matches 18000 as @a[scores={uhcp_augment=42}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1

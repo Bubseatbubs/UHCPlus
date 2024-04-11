@@ -329,7 +329,7 @@
               "target": "item_name",
               "name": [
                 {
-                  "text": "Phantom Claw",
+                  "text": "Phantom Claw I",
                   "color": "gold",
                   "bold": true
                 }
@@ -1641,7 +1641,7 @@
                 ],
                 [
                   {
-                    "text": "you have into 30 seconds of",
+                    "text": " into 30 seconds of",
                     "color": "gray"
                   },
                   {
@@ -2751,6 +2751,66 @@
                     }
                   ]
                 }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:27s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Water to Wine",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "At 35 minutes, convert all",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Water Bottles",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": " into",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Random Potions",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
               ],
               "mode": "replace_all"
             }

@@ -157,8 +157,8 @@ execute as @a if score @s uhcp_augment matches 241 run tellraw @a[tag=UHCP_Augme
 execute as @a if score @s uhcp_augment matches 242 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Diamond Grab Bag","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 243 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Radiant Relics","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 244 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Soulblaze","color":"gold"},{"text":"!","color":"white"}]
-execute as @a if score @s uhcp_augment matches 245 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Well-Engineered","color":"gold"},{"text":"!","color":"white"}]
-execute as @a if score @s uhcp_augment matches 246 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Out of this World","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_augment matches 245 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Immovable Object","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_augment matches 246 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Buzzburst","color":"gold"},{"text":"!","color":"white"}]
 
 scoreboard players reset @s augments 
 tag @s remove UHCP_AugmentAnnounce
