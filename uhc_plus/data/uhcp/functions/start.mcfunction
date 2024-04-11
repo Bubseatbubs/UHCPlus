@@ -94,6 +94,7 @@ scoreboard players reset @a uhcp_hb_killedSpider
 scoreboard players reset @a uhcp_hb_killedZombie
 scoreboard players reset @a uhcp_id
 scoreboard players reset @a uhcp_ready
+scoreboard players reset @a uhcp_lobby_item
 scoreboard players reset %global uhcp_id
 scoreboard players reset @a uhcp_leave
 scoreboard players reset @a uhcp_top_CD
