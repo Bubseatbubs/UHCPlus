@@ -6,7 +6,7 @@ particle explosion_emitter ~ ~ ~ 0.1 0.1 0.1 0.1 1 normal
 playsound entity.bee.death master @a[distance=..24.5] ~ ~ ~ 1 1 0.25
 playsound entity.bee.hurt master @a[distance=..24.5] ~ ~ ~ 1 1 0.25
 playsound block.beehive.enter master @a[distance=..24.5] ~ ~ ~ 1 1 0.25
-execute unless score %game uhcp_initStatus matches 1 run fill ~-2 ~-2 ~-2 ~2 ~2 ~2 honey_block replace #uhcp:titan_can_break
+execute if score %game uhcp_initStatus matches 1 run fill ~-2 ~-2 ~-2 ~2 ~2 ~2 honey_block replace #uhcp:titan_can_break
 function uhcp:augments/effects/bees/summon
 function uhcp:augments/effects/bees/summon
 function uhcp:augments/effects/bees/summon
