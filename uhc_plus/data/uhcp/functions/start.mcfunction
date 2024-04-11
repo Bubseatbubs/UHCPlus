@@ -8,6 +8,7 @@ execute in uhcp:main run forceload add 0 0
 
 # Prepare Spectators
 tag @a[scores={uhcp_ready=2}] add UHCP_Spectator
+tag @a[tag=UHCP_Died] add UHCP_Spectator
 
 # Set scores
 scoreboard players operation %titans uhcp_initStatus = %titans uhcp_settings
@@ -153,6 +154,12 @@ execute unless score %pvp uhcp_settings matches -1 run team join grace_period @a
 # Allow one-team games to not end
 execute if score %end uhcp_initStatus matches 0 run function uhcp:start/teams/check
 
+# Move players away from lobby
+execute as @a at @s run tp @s ~ ~100 ~
+
+# Remove lobby
+execute in minecraft:overworld run function uhcp:lobby/remove
+
 # Spread players
 scoreboard players operation %spread uhcp_initStatus = %border_size uhcp_settings
 scoreboard players set %const uhcp_initStatus 7
@@ -170,9 +177,6 @@ execute if score %spread uhcp_initStatus matches 0 in minecraft:overworld run fu
 execute if score %spread uhcp_initStatus matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/initial/failure_2
 
 execute if score %spread uhcp_initStatus matches 1 run function uhcp:start/spreadplayers/secondary
-
-# Remove lobby
-execute in minecraft:overworld run function uhcp:lobby/remove
 
 # Augment Selection
 execute unless score %tier uhcp_aug_tier = %tier uhcp_aug_tier store result score %tier uhcp_aug_tier run random value 10..109

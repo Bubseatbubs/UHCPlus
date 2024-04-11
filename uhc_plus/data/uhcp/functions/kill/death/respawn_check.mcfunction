@@ -6,8 +6,4 @@ execute if predicate uhcp:dimensions/minecraft/the_nether in minecraft:the_nethe
 tag @s remove UHCP_RespawnCheck
 
 execute unless score %game uhcp_initStatus matches 1 as @s[tag=!UHCP_Died] run function uhcp:kill/death/lobby
-execute if score %game uhcp_initStatus matches 1 as @s[tag=!UHCP_Died] run effect give @s minecraft:night_vision infinite 0 true
-
-# Death message
-title @s subtitle {"text":"You are now Spectating the match.","color":"gray","bold":true}
-title @s title {"text":"YOU DIED","color":"dark_red","bold":true}
+execute if score %game uhcp_initStatus matches 1 as @s[tag=!UHCP_Died] run function uhcp:kill/death/respawn
