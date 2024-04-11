@@ -14,7 +14,7 @@ execute as @a[gamemode=survival] run scoreboard players operation @s uhcp_initSt
 
 # Gets team value
 scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_initStatus = @s uhcp_initStatus
-execute at @e[tag=UHCP_New,sort=nearest,limit=1] run fill ~-1 ~ ~-1 ~1 ~2 ~1 minecraft:air
+execute if score %game uhcp_initStatus matches 1 at @e[tag=UHCP_New,sort=nearest,limit=1] run fill ~-1 ~ ~-1 ~1 ~2 ~1 minecraft:air
 execute as @e[distance=..3,scores={uhcp_initStatus=1..}] unless score @s uhcp_initStatus = @a[tag=UHCP_Init,sort=nearest,limit=1] uhcp_initStatus at @s run tp @s ~ ~4 ~
 tp @s ~ ~1 ~
 tag @s remove UHCP_Init
