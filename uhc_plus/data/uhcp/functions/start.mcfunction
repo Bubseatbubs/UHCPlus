@@ -229,7 +229,7 @@ execute in minecraft:overworld run gamerule doMobSpawning true
 execute in minecraft:overworld run time set 1000
 
 # Titan Bossbars
-execute as @a[tag=!UHCP_Spectator] run function uhcp:titans/bossbar/create
+execute as @a run function uhcp:titans/bossbar/create
 
 # Augments
 scoreboard players set %augment_countdown uhcp_game_time 900
