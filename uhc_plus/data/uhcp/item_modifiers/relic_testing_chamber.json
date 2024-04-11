@@ -13,13 +13,13 @@
             "italic": false
           },
           {
-            "text": " In this area, Relics have no Cooldown",
+            "text": " In this area, Relics",
             "color": "gray",
             "italic": false
           }
         ],
         {
-          "text": "and may be slightly modified.",
+          "text": "have no Cooldown and may be slightly modified.",
           "color": "gray",
           "italic": false
         }
