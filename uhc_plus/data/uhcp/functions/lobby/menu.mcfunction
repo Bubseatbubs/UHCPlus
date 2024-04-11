@@ -6,6 +6,9 @@ tag @s add UHCP_DisableReset
 clear @s
 execute at @s run kill @e[type=item,distance=..4]
 
+# Relic Testing Chamber
+execute if entity @s[tag=UHCP_RelicTestingChamber] run function uhcp:lobby/relic_testing/menu
+
 # Create Player Hotbar
 execute unless score %team uhcp_settings matches 1 run item replace entity @s hotbar.0 with black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={}] 1
 execute if score %team uhcp_settings matches 1 run loot replace entity @s hotbar.0 loot uhcp:lobby_menu/team
@@ -21,8 +24,7 @@ item replace entity @s hotbar.3 with black_stained_glass_pane[minecraft:item_nam
 item replace entity @s hotbar.5 with black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={}] 1
 item replace entity @s hotbar.6 with black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={}] 1
 
-# Relic Testing Chamber
-execute if entity @s[tag=UHCP_RelicTestingChamber] run function uhcp:lobby/relic_testing/menu
+
 
 # Fill Rest of Player Inventory
 item replace entity @s inventory.0 with black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={}] 1
