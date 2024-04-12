@@ -13,8 +13,8 @@ scoreboard players remove %lobby_parkour uhcp_game_time 1
 
 # Skip Travel
 scoreboard players enable @a lobby
-execute as @a if score @s lobby matches 1 run function uhcp:lobby/teleport/menu
-execute as @a at @s if score @s lobby matches 2..5 run function uhcp:lobby/teleport/select
+execute as @a[scores={lobby=1}] run function uhcp:lobby/teleport/menu
+execute as @a[scores={lobby=2..5}] run function uhcp:lobby/teleport/select
 
 # Relic Testing Chamber Entrance
 execute as @e[tag=UHCP_RelicTesting] at @s if entity @a[gamemode=!creative,gamemode=!spectator,distance=..2,tag=!UHCP_RelicTestingChamber] as @a[distance=..2,tag=!UHCP_RelicTestingChamber] run function uhcp:lobby/relic_testing/init
