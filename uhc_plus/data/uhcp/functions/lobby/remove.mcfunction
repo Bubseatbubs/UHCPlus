@@ -8,6 +8,8 @@ execute at @e[tag=UHCP_LobbyOrigin,limit=1] align y run function uhcp:lobby/plac
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:falling_block]
 kill @e[type=minecraft:item]
+kill @e[type=minecraft:potion]
+kill @e[type=minecraft:snowball]
 kill @e[type=minecraft:spectral_arrow]
 kill @e[tag=UHCP_LobbyOrigin]
 forceload remove -80 -80 79 79
