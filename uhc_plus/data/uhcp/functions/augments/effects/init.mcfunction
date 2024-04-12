@@ -46,7 +46,7 @@ execute if score @s uhcp_augment matches 145 run return 0
 execute if score @s uhcp_augment matches 146 run function uhcp:augments/effects/silver/portablelavapool
 execute if score @s uhcp_augment matches 147 run function uhcp:augments/effects/silver/parasite
 execute if score @s uhcp_augment matches 148 run function uhcp:augments/effects/silver/littlebuddies
-execute if score @s uhcp_augment matches 149 run function uhcp:augments/effects/silver/takeaim
+execute if score @s uhcp_augment matches 149 run function uhcp:augments/effects/silver/takeaimi
 execute if score @s uhcp_augment matches 150 run return 0
 
 # Gold Augments
@@ -55,7 +55,7 @@ execute if score @s uhcp_augment matches 1 run function uhcp:augments/effects/go
 execute if score @s uhcp_augment matches 2 run function uhcp:augments/effects/gold/blooddiamonds
 execute if score @s uhcp_augment matches 3 run return 0
 execute if score @s uhcp_augment matches 4 run function uhcp:augments/effects/gold/cowboycosplay
-execute if score @s uhcp_augment matches 5 run return 0
+execute if score @s uhcp_augment matches 5 run function uhcp:augments/effects/gold/takeaimii
 execute if score @s uhcp_augment matches 6 run function uhcp:augments/effects/gold/phantomclaw
 execute if score @s uhcp_augment matches 7 run function uhcp:augments/effects/gold/dripeconomyii
 execute if score @s uhcp_augment matches 8 run function uhcp:augments/effects/gold/fireandwater
