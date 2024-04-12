@@ -1219,11 +1219,17 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:blade_pottery_sherd",
+          "name": "minecraft:rib_armor_trim_smithing_template",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {}
+              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -2069,7 +2075,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:blade_pottery_sherd",
+          "name": "minecraft:end_crystal",
           "weight": 1,
           "functions": [
             {
@@ -2120,7 +2126,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_chestplate",
+          "name": "minecraft:bedrock",
           "weight": 1,
           "functions": [
             {
