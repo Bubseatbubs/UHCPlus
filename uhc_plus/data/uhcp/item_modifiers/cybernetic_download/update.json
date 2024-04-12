@@ -1,0 +1,120 @@
+[
+    {
+      "function": "minecraft:set_attributes",
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "name": "MaxHealth",
+          "amount": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "%cd_max_health"
+            },
+            "score": "uhcp_aug_count",
+            "scale": 1
+          },
+          "operation": "add_value",
+          "id": "493ea62b-550f-4f96-8c1f-37683609e4e2",
+          "slot": "chest"
+        },
+        {
+            "attribute": "minecraft:generic.attack_damage",
+            "name": "Attack",
+            "amount": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%cd_attack_damage"
+              },
+              "score": "uhcp_aug_count",
+              "scale": 0.1
+            },
+            "operation": "add_value",
+            "id": "dccf1664-adca-4a04-8421-6226a41b5413",
+            "slot": "chest"
+          },
+          {
+            "attribute": "minecraft:generic.attack_speed",
+            "name": "AttackSpeed",
+            "amount": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%cd_attack_speed"
+              },
+              "score": "uhcp_aug_count",
+              "scale": 0.001
+            },
+            "operation": "add_multiplied_total",
+            "id": "3fe22ea7-75bb-497a-b346-db39356b7e4b",
+            "slot": "chest"
+          },
+          {
+            "attribute": "minecraft:generic.movement_speed",
+            "name": "Movement",
+            "amount": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%cd_movement_speed"
+              },
+              "score": "uhcp_aug_count",
+              "scale": 0.001
+            },
+            "operation": "add_multiplied_total",
+            "id": "f054981e-8f8f-4162-9a16-285ebf08188b",
+            "slot": "chest"
+          },
+          {
+            "attribute": "minecraft:player.entity_interaction_range",
+            "name": "EntityInteraction",
+            "amount": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%cd_entity_interaction_range"
+              },
+              "score": "uhcp_aug_count",
+              "scale": 0.1
+            },
+            "operation": "add_value",
+            "id": "c9bb761b-99ad-40bd-90bb-acd222656dc6",
+            "slot": "chest"
+          },
+          {
+            "attribute": "minecraft:generic.armor_toughness",
+            "name": "ArmorTough",
+            "amount": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%cd_armor_toughness"
+              },
+              "score": "uhcp_aug_count",
+              "scale": 1
+            },
+            "operation": "add_value",
+            "id": "fa339def-b833-4a7f-a35f-33cd446cb688",
+            "slot": "chest"
+          },
+          {
+            "attribute": "minecraft:generic.armor",
+            "name": "Armor",
+            "amount": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%cd_armor"
+              },
+              "score": "uhcp_aug_count",
+              "scale": 1
+            },
+            "operation": "add_value",
+            "id": "9ad94724-b146-4cb2-bf39-ef29f9658a1b",
+            "slot": "chest"
+          }
+        ]
+    }
+  ]
+  

@@ -37,7 +37,7 @@ attribute @s minecraft:generic.gravity modifier remove d4d5e5c8-fa24-44a8-83a4-d
 attribute @s minecraft:generic.jump_strength modifier remove 5a5e7788-9c44-4af5-a5b7-2107b0bfd4d1
 
 # Max Absorption
-# Currently used by: Redstone Ritual
+# Currently used by: Redstone Ritual, Cybernetic Download
 #alias uuid UHCP_MaxAbsorption 5ae70886-031a-42b7-aa86-783c9536c746
 attribute @s minecraft:generic.max_absorption modifier remove 13ede9ff-b146-49ae-8c7b-d7140303926f
 

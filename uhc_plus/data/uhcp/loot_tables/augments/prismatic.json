@@ -103,6 +103,130 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:profile": {
+                  "id": [
+                    -1541302639,
+                    -930658925,
+                    -1787182896,
+                    -675660183
+                  ],
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVjMDM1OGZiNjRlYWFjNmRiNjlhODU3Zjg5ODdiNTE5N2ZjZWE3MjYwOWMwNjBhODYyOGRhOTIyNjZmZDU5MiJ9fX0="
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:220s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Cybernetic Download",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Equip a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Hard Drive",
+                    "color": "white"
+                  },
+                  {
+                    "text": " (a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Diamond Chestplate",
+                    "color": "white"
+                  },
+                  {
+                    "text": ").",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Download",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": " an Upgrade at the start of the game",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "and whenever you finish an Upgrade.",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Download:",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": " Choose 1 of 3 Upgrades, which",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "each take a set amount of time to complete.",
+                  "color": "gray"
+                },
+                [
+                  {
+                    "text": "Upgrades offer bonuses to your",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Hard Drive",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:feather",
           "weight": 1,
           "functions": [
@@ -1095,11 +1219,17 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:blade_pottery_sherd",
+          "name": "minecraft:rib_armor_trim_smithing_template",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {}
+              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -1951,7 +2081,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:blade_pottery_sherd",
+          "name": "minecraft:end_crystal",
           "weight": 1,
           "functions": [
             {
@@ -2002,7 +2132,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_chestplate",
+          "name": "minecraft:bedrock",
           "weight": 1,
           "functions": [
             {
