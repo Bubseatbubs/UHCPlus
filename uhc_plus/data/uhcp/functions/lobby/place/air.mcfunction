@@ -1,5 +1,5 @@
-# Kill wardens
-execute positioned ^29.5 ^16 ^31 as @e[type=minecraft:warden] if entity @s[distance=..64] run function uhcp:entity/instant_kill
+# Kill entities in proximity (including wardens)
+execute positioned ^29.5 ^16 ^31 run function uhcp:lobby/place/kill
 
 # Remove lobby
 fill ^ ^31 ^ ^60 ^38 ^62 minecraft:air
