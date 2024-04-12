@@ -2416,6 +2416,12 @@
               "tag": "{uhcp_augmentselect:1b,augment:52s}"
             },
             {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
               "function": "minecraft:set_name",
               "target": "item_name",
               "name": [
@@ -2776,7 +2782,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:bone",
+          "name": "minecraft:potion",
           "weight": 1,
           "functions": [
             {

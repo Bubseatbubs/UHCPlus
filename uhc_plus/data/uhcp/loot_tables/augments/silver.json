@@ -2188,6 +2188,12 @@
               "tag": "{uhcp_augmentselect:1b,augment:151s}"
             },
             {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
               "function": "minecraft:set_name",
               "target": "item_name",
               "name": [

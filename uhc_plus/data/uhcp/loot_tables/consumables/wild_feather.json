@@ -45,7 +45,7 @@
                 "mode": "replace_all",
                 "lore": [
                   {
-                    "text": "Throw this item to teleport to",
+                    "text": "Use this item to teleport to",
                     "color": "gray"
                   },
                   {
