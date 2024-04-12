@@ -61,7 +61,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "value": "uhcp:relics/the_harvester",
+          "value": "uhcp:relics/windfall",
           "functions": [
             {
               "function": "set_count",

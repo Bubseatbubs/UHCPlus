@@ -3,7 +3,7 @@ loot give @s loot uhcp:relics/gravity_globe
 loot give @s loot uhcp:relics/flux_factor
 loot give @s loot uhcp:relics/smooth_getaway
 loot give @s loot uhcp:relics/web_o_rang
-loot give @s loot uhcp:relics/the_harvester
+loot give @s loot uhcp:relics/windfall
 loot give @s loot uhcp:relics/buzzburst
 loot give @s loot uhcp:relics/runic_sentry
 loot give @s loot uhcp:relics/dragons_protection
