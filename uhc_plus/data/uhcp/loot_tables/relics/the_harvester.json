@@ -41,29 +41,21 @@
               "target": "item_name",
               "name": [
                 {
-                  "text": "Th",
+                  "text": "Wi",
                   "color": "#0800FF",
                   "bold": true
                 },
                 {
-                  "text": "e H",
+                  "text": "nd",
                   "color": "#2B64FF"
                 },
                 {
-                  "text": "ar",
+                  "text": "fa",
                   "color": "#428EFF"
                 },
                 {
-                  "text": "ve",
+                  "text": "ll",
                   "color": "#54B5FF"
-                },
-                {
-                  "text": "st",
-                  "color": "#54C0FF"
-                },
-                {
-                  "text": "er",
-                  "color": "#4FE8FF"
                 },
                 {
                   "text": " ℝ",
