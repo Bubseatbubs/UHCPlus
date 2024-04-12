@@ -1,5 +1,5 @@
 scoreboard players add @s uhcp_timer 1
-execute anchored eyes facing entity @p[gamemode=survival] feet run tp @s ^ ^ ^0.28 ~ ~
+execute anchored eyes facing entity @p[gamemode=survival] feet run tp @s ^ ^ ^0.14 ~ ~
 
 execute if score @s uhcp_timer matches 32 on passengers run kill @s
 execute unless score @s uhcp_timer matches 32.. run return 0
