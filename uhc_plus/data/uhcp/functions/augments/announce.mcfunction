@@ -115,6 +115,7 @@ execute as @a if score @s uhcp_augment matches 52 run tellraw @a[tag=UHCP_Augmen
 execute as @a if score @s uhcp_augment matches 53 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Capped","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 54 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Midas Touch","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 55 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Hardstuck Iron","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_augment matches 56 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Locked Out","color":"gold"},{"text":"!","color":"white"}]
 
 # Prismatic Augments
 execute as @a if score @s uhcp_augment matches 200 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Beastmaster","color":"gold"},{"text":"!","color":"white"}]
@@ -162,5 +163,5 @@ execute as @a if score @s uhcp_augment matches 244 run tellraw @a[tag=UHCP_Augme
 execute as @a if score @s uhcp_augment matches 245 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Immovable Object","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 246 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Buzzy Bees","color":"gold"},{"text":"!","color":"white"}]
 
-scoreboard players reset @s augments 
+scoreboard players reset @s augments
 tag @s remove UHCP_AugmentAnnounce

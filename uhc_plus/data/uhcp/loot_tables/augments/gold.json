@@ -2847,6 +2847,56 @@
           ]
         },
         {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_chest",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:56s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Locked Out",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Exciting loot is placed in your ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Ender Chest",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
           "type": "minecraft:loot_table",
           "value": "uhcp:augments/patron/gold",
           "weight": 9
