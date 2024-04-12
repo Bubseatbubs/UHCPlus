@@ -110,6 +110,7 @@ tag @a remove UHCP_ChoosingItem
 tag @a remove UHCP_Died
 tag @a remove UHCP_MilkBucket
 tag @a remove UHCP_Spectator
+execute as @a if score @s uhcp_augment matches 220 run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 
 # Players
 clear @a
