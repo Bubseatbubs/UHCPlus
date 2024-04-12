@@ -2883,11 +2883,11 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Ender Chest",
-                    "color": "light_purple"
+                    "text": "Ender Chest",
+                    "color": "white"
                   },
                   {
-                    "text": ".",
+                    "text": "!",
                     "color": "gray"
                   }
                 ]
