@@ -89,6 +89,12 @@
               ]
             },
             {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
               "function": "minecraft:set_lore",
               "lore": [
                 {
