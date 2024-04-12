@@ -1844,6 +1844,83 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:gold_block",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:239s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Midas Touch",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Whenever you touch an Ore,",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "convert it to",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Gold",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                {
+                  "text": "(Start with extra equipment",
+                  "color": "dark_gray"
+                },
+                [
+                  {
+                    "text": "in a",
+                    "color": "dark_gray"
+                  },
+                  {
+                    "text": " SOLO",
+                    "color": "aqua"
+                  },
+                  {
+                    "text": " game.)",
+                    "color": "dark_gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:flowering_azalea_leaves",
           "weight": 1,
           "functions": [

@@ -135,6 +135,7 @@ execute if score @s uhcp_augment matches 234 run function uhcp:augments/effects/
 execute if score @s uhcp_augment matches 236 run function uhcp:augments/effects/prismatic/thetortoise
 execute if score @s uhcp_augment matches 237 run function uhcp:augments/effects/prismatic/gloryofra
 execute if score @s uhcp_augment matches 238 run function uhcp:augments/effects/prismatic/relicmaster
+execute if score @s uhcp_augment matches 239 run function uhcp:augments/effects/prismatic/midastouch
 execute if score @s uhcp_augment matches 241 run function uhcp:augments/effects/prismatic/thinkfast
 execute if score @s uhcp_augment matches 242 run function uhcp:augments/effects/prismatic/diamondgrabbag
 execute if score @s uhcp_augment matches 243 run function uhcp:augments/effects/prismatic/radiantrelics

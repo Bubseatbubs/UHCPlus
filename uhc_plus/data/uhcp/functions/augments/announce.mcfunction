@@ -155,6 +155,7 @@ execute as @a if score @s uhcp_augment matches 235 run tellraw @a[tag=UHCP_Augme
 execute as @a if score @s uhcp_augment matches 236 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" The Tortoise","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 237 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Glory of Ra","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 238 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Relic Master","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_augment matches 239 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Midas Touch","color":"gold"},{"text":"!","color":"white"}]
 
 execute as @a if score @s uhcp_augment matches 241 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Think Fast","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 242 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Diamond Grab Bag","color":"gold"},{"text":"!","color":"white"}]
