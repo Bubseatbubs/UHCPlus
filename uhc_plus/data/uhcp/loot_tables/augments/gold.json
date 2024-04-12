@@ -2782,7 +2782,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:potion",
+          "name": "minecraft:glass_bottle",
           "weight": 1,
           "functions": [
             {
