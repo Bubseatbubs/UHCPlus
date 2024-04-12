@@ -1,5 +1,5 @@
 # Unready ready players
-execute as @a if score @s uhcp_ready matches 1 run function uhcp:lobby/readyup/cancel
+execute as @a[scores={uhcp_ready=1}] run function uhcp:lobby/readyup/cancel
 
 # Check for players to add to teams
 scoreboard players add @a uhcp_ready 0
