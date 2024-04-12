@@ -18,6 +18,7 @@ execute if score @s uhcp_ready matches 1 run function uhcp:lobby/readyup/cancel
 
 
 # Manage player
+execute at @e[tag=UHCP_LobbyOrigin,limit=1] align y run function uhcp:left/lobby/return
 gamemode adventure @s
 execute unless items entity @s container.1 *[minecraft:custom_data~{uhcp_lobby:1b}] run clear @s
 function uhcp:reset/attributes
@@ -29,5 +30,4 @@ effect give @s minecraft:saturation infinite 255 true
 experience set @s 0 levels
 experience set @s 0 points
 execute in minecraft:overworld run forceload add -80 -80 79 79
-execute at @e[tag=UHCP_LobbyOrigin,limit=1] align y run function uhcp:left/lobby/return
 execute in minecraft:overworld run forceload remove -80 -80 79 79
