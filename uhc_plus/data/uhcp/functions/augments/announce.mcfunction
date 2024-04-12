@@ -156,7 +156,7 @@ execute as @a if score @s uhcp_augment matches 238 run tellraw @a[tag=UHCP_Augme
 execute as @a if score @s uhcp_augment matches 241 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Think Fast","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 242 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Diamond Grab Bag","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 243 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Radiant Relics","color":"gold"},{"text":"!","color":"white"}]
-execute as @a if score @s uhcp_augment matches 244 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Soulblaze","color":"gold"},{"text":"!","color":"white"}]
+execute as @a if score @s uhcp_augment matches 244 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Hedge Fund","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 245 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Immovable Object","color":"gold"},{"text":"!","color":"white"}]
 execute as @a if score @s uhcp_augment matches 246 run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Buzzy Bees","color":"gold"},{"text":"!","color":"white"}]
 

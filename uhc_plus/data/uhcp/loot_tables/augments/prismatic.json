@@ -1844,6 +1844,74 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:flowering_azalea_leaves",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:244s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Hedge Fund",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain 10 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Gold Ingots",
+                    "color": "white"
+                  },
+                  {
+                    "text": ". Every minute, gain a",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Gold Ingot",
+                    "color": "white"
+                  },
+                  {
+                    "text": " for every 10",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Gold Ingots",
+                    "color": "white"
+                  },
+                  {
+                    "text": " you have.",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:gold_nugget",
           "weight": 1,
           "functions": [
