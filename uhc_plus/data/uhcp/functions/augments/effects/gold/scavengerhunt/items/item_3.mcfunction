@@ -1,0 +1,9 @@
+execute if score %items_3 uhcp_aug_sh_item matches 0 if items entity @s container.* suspicious_stew run return run scoreboard players add @s uhcp_aug_count 1
+execute if score %items_3 uhcp_aug_sh_item matches 1 if items entity @s container.* chiseled_quartz_block run return run scoreboard players add @s uhcp_aug_count 1
+execute if score %items_3 uhcp_aug_sh_item matches 2 if items entity @s container.* fermented_spider_eye run return run scoreboard players add @s uhcp_aug_count 1
+execute if score %items_3 uhcp_aug_sh_item matches 3 if items entity @s container.* ender_pearl run return run scoreboard players add @s uhcp_aug_count 1
+execute if score %items_3 uhcp_aug_sh_item matches 4 if items entity @s container.* egg run return run scoreboard players add @s uhcp_aug_count 1
+execute if score %items_3 uhcp_aug_sh_item matches 5 if items entity @s container.* glowstone run return run scoreboard players add @s uhcp_aug_count 1
+execute if score %items_3 uhcp_aug_sh_item matches 6 if items entity @s container.* jukebox run return run scoreboard players add @s uhcp_aug_count 1
+execute if score %items_3 uhcp_aug_sh_item matches 7 if items entity @s container.* glow_ink_sac run return run scoreboard players add @s uhcp_aug_count 1
+execute if score %items_3 uhcp_aug_sh_item matches 8 if items entity @s container.* saddle run return run scoreboard players add @s uhcp_aug_count 1

@@ -2848,6 +2848,82 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:filled_map",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {}
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:25s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Scavenger Hunt",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Scavenger's Flyer",
+                    "color": "white"
+                  },
+                  {
+                    "text": ", which contains a",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "list of 5 random items. Collecting these items",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "grants you 10",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Golden Apples",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:ender_chest",
           "weight": 1,
           "functions": [

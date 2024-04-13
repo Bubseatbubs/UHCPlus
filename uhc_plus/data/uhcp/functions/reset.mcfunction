@@ -75,6 +75,8 @@ scoreboard players reset %lava_start uhcp_initStatus
 scoreboard players reset %update_display uhcp_game_time
 scoreboard players reset @a uhcp_lava_timeInterval
 scoreboard players reset @a uhcp_lava_maxHeight
+scoreboard players reset @a uhcp_aug_tier
+scoreboard players reset @a uhcp_aug_count
 scoreboard players reset @a uhcp_team
 scoreboard players reset @a uhcp_top_CD
 scoreboard players set @a uhcp_ready 0

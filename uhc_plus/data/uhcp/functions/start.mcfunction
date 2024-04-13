@@ -90,10 +90,10 @@ scoreboard players reset @a uhcp_aug_tier
 scoreboard players reset @a uhcp_arrowCount
 scoreboard players reset @a uhcp_bee_stacks
 scoreboard players reset %time uhcp_game_time
-scoreboard players reset @a uhcp_hb_killedCreeper
-scoreboard players reset @a uhcp_hb_killedSkeleton
-scoreboard players reset @a uhcp_hb_killedSpider
-scoreboard players reset @a uhcp_hb_killedZombie
+scoreboard players reset @a uhcp_aug_hb_killedCreeper
+scoreboard players reset @a uhcp_aug_hb_killedSkeleton
+scoreboard players reset @a uhcp_aug_hb_killedSpider
+scoreboard players reset @a uhcp_aug_hb_killedZombie
 scoreboard players reset @a uhcp_id
 scoreboard players reset @a uhcp_ready
 scoreboard players reset @a uhcp_lobby_item
