@@ -14,4 +14,4 @@ execute if score @s uhcp_team matches 10 run return run team join gray @s
 execute if score @s uhcp_team matches 11 run return run team join green @s
 execute if score @s uhcp_team matches 12 run return run team join light_purple @s
 execute if score @s uhcp_team matches 13 run return run team join red @s
-execute if score @s uhcp_team matches 14 run return run team join yellow @s
+execute if score @s uhcp_team matches 14 run team join yellow @s
