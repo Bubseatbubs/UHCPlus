@@ -7,11 +7,11 @@ playsound entity.bee.death master @a[distance=..24.5] ~ ~ ~ 1 1 0.25
 playsound entity.bee.hurt master @a[distance=..24.5] ~ ~ ~ 1 1 0.25
 playsound block.beehive.enter master @a[distance=..24.5] ~ ~ ~ 1 1 0.25
 execute if score %game uhcp_initStatus matches 1 run fill ~-2 ~-2 ~-2 ~2 ~2 ~2 honey_block replace #uhcp:titan_can_break
-function uhcp:augments/effects/bees/summon
-function uhcp:augments/effects/bees/summon
-function uhcp:augments/effects/bees/summon
-function uhcp:augments/effects/bees/summon
-function uhcp:augments/effects/bees/summon
+function uhcp:entity/bees/summon
+function uhcp:entity/bees/summon
+function uhcp:entity/bees/summon
+function uhcp:entity/bees/summon
+function uhcp:entity/bees/summon
 execute if entity @s[tag=UHCP_SpawnBeeKnight] run function uhcp:relics/buzzburst/summon_knight
 
 execute at @s as @e[tag=UHCP_Bee,tag=UHCP_New,sort=nearest,limit=6] run scoreboard players operation @s uhcp_id = @e[tag=UHCP_BuzzburstDisplay,sort=nearest,limit=1] uhcp_id

@@ -21,22 +21,14 @@ scoreboard objectives add settings_other trigger
 
 # Scoreboard Objectives
 scoreboard objectives add uhcp_arrowCount dummy
-scoreboard objectives add uhcp_aug_choosingAugment dummy
 scoreboard objectives add uhcp_aug_count dummy
 scoreboard objectives add uhcp_aug_durability dummy
 scoreboard objectives add uhcp_aug_gloryOfRa dummy
 scoreboard objectives add uhcp_aug_patron dummy
 scoreboard objectives add uhcp_aug_stack dummy
 scoreboard objectives add uhcp_aug_tier dummy
+scoreboard objectives add uhcp_aug_choosingAugment dummy
 scoreboard objectives add uhcp_aug_validSelection dummy
-scoreboard objectives add uhcp_augment dummy
-scoreboard objectives add uhcp_bee_stack dummy
-scoreboard objectives add uhcp_count dummy
-scoreboard objectives add uhcp_death deathCount
-scoreboard objectives add uhcp_deathTime dummy
-scoreboard objectives add uhcp_game_display dummy
-scoreboard objectives add uhcp_game_ID dummy
-scoreboard objectives add uhcp_game_time dummy
 scoreboard objectives add uhcp_aug_hb_killedZombie dummy
 scoreboard objectives add uhcp_aug_hb_killedCreeper dummy
 scoreboard objectives add uhcp_aug_hb_killedSkeleton dummy
@@ -47,6 +39,14 @@ scoreboard objectives add uhcp_aug_cd_thirdOption dummy
 scoreboard objectives add uhcp_aug_cd_upgrade dummy
 scoreboard objectives add uhcp_aug_cd_time dummy
 scoreboard objectives add uhcp_aug_sh_item dummy
+scoreboard objectives add uhcp_augment dummy
+scoreboard objectives add uhcp_bee_stack dummy
+scoreboard objectives add uhcp_count dummy
+scoreboard objectives add uhcp_death deathCount
+scoreboard objectives add uhcp_deathTime dummy
+scoreboard objectives add uhcp_game_display dummy
+scoreboard objectives add uhcp_game_ID dummy
+scoreboard objectives add uhcp_game_time dummy
 scoreboard objectives add uhcp_health health {"text":"Health","color":"red"}
 scoreboard objectives add uhcp_id dummy
 scoreboard objectives add uhcp_initStatus dummy

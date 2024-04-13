@@ -21,6 +21,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/bees/hit"
+    "function": "uhcp:augments/effects/gold/beekeeper/hit"
   }
 }

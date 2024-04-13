@@ -42,6 +42,6 @@ execute if entity @s[tag=UHCP_RaLaser] at @s run function uhcp:consumables/ras_g
 execute if entity @s[tag=UHCP_GraveMarker] at @s run function uhcp:titans/gigantus/graves/update
 execute if entity @s[tag=UHCP_FenrirMinion] at @s run function uhcp:titans/fenrir/wolves/update
 execute if entity @s[tag=UHCP_KungfuPanda] at @s run function uhcp:augments/effects/prismatic/kungfupanda/update
-execute if entity @s[tag=UHCP_Bee] at @s run return run function uhcp:augments/effects/bees/update
+execute if entity @s[tag=UHCP_Bee] at @s run return run function uhcp:entity/bees/update
 execute if entity @s[tag=UHCP_BeastWolf] at @s run return run function uhcp:augments/effects/wolves/update
 
