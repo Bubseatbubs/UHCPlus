@@ -2,8 +2,9 @@ tag @s add UHCP_CurrentTitan
 execute as @a[distance=..3] run damage @s 4 mob_attack by @e[tag=UHCP_CurrentTitan,sort=nearest,limit=1]
 tag @s remove UHCP_CurrentTitan
 
-execute store result score %blocksfilled uhcp_titans_count run fill ~-5 ~-0.5 ~-5 ~5 ~16 ~5 water replace #uhcp:titan_can_break
+execute store result score %blocksfilled uhcp_titans_count run fill ~-5 ~1.5 ~-5 ~5 ~16 ~5 water replace #uhcp:titan_can_break
 execute store result score %blocksfilled uhcp_titans_count run fill ~-5 ~8 ~-5 ~5 ~10 ~5 water keep
+execute store result score %blocksfilled uhcp_titans_count run fill ~-5 ~-0.5 ~-5 ~5 ~1.5 ~5 water keep
 execute if score %blocksfilled uhcp_titans_count matches 3.. run playsound minecraft:item.bucket.empty master @a[distance=..16] ~ ~ ~ 0.5 1.25 0.15
 effect give @a[distance=..16,gamemode=survival] water_breathing 5 0 false
 
