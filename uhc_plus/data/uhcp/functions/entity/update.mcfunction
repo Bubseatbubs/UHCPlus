@@ -43,5 +43,4 @@ execute if entity @s[tag=UHCP_GraveMarker] at @s run function uhcp:titans/gigant
 execute if entity @s[tag=UHCP_FenrirMinion] at @s run function uhcp:titans/fenrir/wolves/update
 execute if entity @s[tag=UHCP_KungfuPanda] at @s run function uhcp:augments/effects/prismatic/kungfupanda/update
 execute if entity @s[tag=UHCP_Bee] at @s run return run function uhcp:entity/bees/update
-execute if entity @s[tag=UHCP_BeastWolf] at @s run return run function uhcp:augments/effects/wolves/update
-
+#execute if entity @s[tag=UHCP_BeastWolf] at @s run return run function uhcp:augments/effects/wolves/update

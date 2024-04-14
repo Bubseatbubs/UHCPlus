@@ -2,7 +2,7 @@ advancement revoke @s only uhcp:augments/become_panda
 execute if entity @s[tag=UHCP_IsPanda] run function uhcp:augments/effects/prismatic/kungfupanda/reset
 function uhcp:entity/armor/store_armor
 tag @s add UHCP_IsPanda
-execute if score @s uhcp_team matches 15.. run team join no_collision @s
+execute if score @s uhcp_team matches 15.. if score %pvp uhcp_settings matches ..0 run team join no_collision @s
 playsound block.brewing_stand.brew master @a[distance=..4] ~ ~ ~ 1 1 0.75
 particle effect ~ ~ ~ 0.1 0.1 0.1 0.1 15 normal
 effect clear @s bad_omen
@@ -22,5 +22,5 @@ execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_id = @s uhcp_id
 scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_team = @s uhcp_team
 execute as @e[tag=UHCP_New,sort=nearest,limit=1] run function uhcp:teams/join
-execute as @e[tag=UHCP_New,sort=nearest,limit=1] if score @s uhcp_team matches 15.. run team join no_collision @s
+execute if score %pvp uhcp_settings matches ..0 run team join no_collision @e[tag=UHCP_New,sort=nearest,scores={uhcp_team=15..},limit=1]
 tag @e remove UHCP_New

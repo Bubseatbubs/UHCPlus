@@ -161,7 +161,7 @@ team modify grace_period friendlyFire false
 team modify grace_period seeFriendlyInvisibles false
 
 team add no_collision {"text":"No Collision"}
-team modify no_collision collisionRule never
+team modify no_collision collisionRule pushOwnTeam
 team modify no_collision friendlyFire true
 team modify no_collision seeFriendlyInvisibles false
 

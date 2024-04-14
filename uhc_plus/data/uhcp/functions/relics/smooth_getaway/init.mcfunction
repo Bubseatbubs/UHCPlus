@@ -25,4 +25,3 @@ playsound entity.zombie.converted_to_drowned master @a[distance=..8] ~ ~ ~ 1 0.5
 # End
 function uhcp:entity/armor/store_armor
 tag @s add UHCP_SmoothGetaway
-
