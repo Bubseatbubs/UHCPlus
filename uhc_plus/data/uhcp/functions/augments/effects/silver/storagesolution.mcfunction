@@ -1,2 +1,2 @@
-give @s shulker_box
-give @s golden_apple
+give @s minecraft:shulker_box
+give @s minecraft:golden_apple

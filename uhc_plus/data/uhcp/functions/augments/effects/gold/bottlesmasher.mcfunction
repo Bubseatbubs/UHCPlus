@@ -1,1 +1,1 @@
-give @s experience_bottle 35
+give @s minecraft:experience_bottle 35

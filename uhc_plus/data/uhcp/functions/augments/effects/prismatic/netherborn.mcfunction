@@ -12,6 +12,8 @@ item replace entity @s container.8 with minecraft:lava_bucket 2
 item replace entity @s armor.head with minecraft:iron_helmet
 item replace entity @s armor.chest with minecraft:iron_chestplate
 item replace entity @s armor.legs with minecraft:iron_leggings
+
+# Always replace the snow boots with augment's boots
 item replace entity @s armor.feet with minecraft:iron_boots
 
 # Teleport player to the Nether

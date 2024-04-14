@@ -1,2 +1,2 @@
-give @s wolf_spawn_egg 2
-give @s bone 12
+give @s minecraft:wolf_spawn_egg 2
+give @s minecraft:bone 12

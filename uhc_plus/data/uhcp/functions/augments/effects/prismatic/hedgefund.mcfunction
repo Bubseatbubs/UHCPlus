@@ -1,1 +1,1 @@
-give @s gold_ingot 10
+give @s minecraft:gold_ingot 10

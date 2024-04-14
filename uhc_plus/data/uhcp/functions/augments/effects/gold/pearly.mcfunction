@@ -1,1 +1,1 @@
-give @s ender_pearl 7
+give @s minecraft:ender_pearl 7

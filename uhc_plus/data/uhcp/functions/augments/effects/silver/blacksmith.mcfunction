@@ -1,1 +1,1 @@
-give @s damaged_anvil 1
+give @s minecraft:damaged_anvil 1

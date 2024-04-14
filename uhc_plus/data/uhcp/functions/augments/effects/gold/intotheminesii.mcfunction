@@ -1,1 +1,1 @@
-give @s diamond_pickaxe
+give @s minecraft:diamond_pickaxe

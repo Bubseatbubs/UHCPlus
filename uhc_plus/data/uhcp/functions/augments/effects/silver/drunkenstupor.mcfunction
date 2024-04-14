@@ -1,1 +1,1 @@
-effect give @s nausea 180 0 false
+effect give @s minecraft:nausea 180 0 false

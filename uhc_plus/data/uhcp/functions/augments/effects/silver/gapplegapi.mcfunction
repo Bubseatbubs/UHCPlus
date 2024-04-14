@@ -1,1 +1,1 @@
-give @s golden_apple 2
+give @s minecraft:golden_apple 2
