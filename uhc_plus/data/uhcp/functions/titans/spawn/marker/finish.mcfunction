@@ -1,7 +1,7 @@
 # Message
 tellraw @a [{"text":"A Titan","color":"#d46e1c","bold":true},{"text":" will rise at ","color":"#deb018","bold":false},{"text":"[","color":"dark_gray","bold":false},{"score":{"name":"@s","objective":"uhcp_motion_x1"},"color":"#9EE8FF","bold":false},{"text":", ","color":"dark_gray","bold":false},{"score":{"name":"@s","objective":"uhcp_motion_y1"},"color":"#9EE8FF","bold":false},{"text":", ","color":"dark_gray","bold":false},{"score":{"name":"@s","objective":"uhcp_motion_z1"},"color":"#9EE8FF","bold":false},{"text":"]","color":"dark_gray","bold":false},{"text":"...","color":"#deb018","bold":false}]
 
-# Place down the altrar
+# Place down the altar
 fill ~-5 ~-1 ~-5 ~5 ~-5 ~5 smooth_basalt
 fill ~-5 ~-6 ~-5 ~5 ~-36 ~5 smooth_basalt keep
 fill ~-5 ~ ~-5 ~5 ~5 ~5 air
