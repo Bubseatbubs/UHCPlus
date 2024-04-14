@@ -148,6 +148,7 @@ scoreboard players set @a[tag=!UHCP_Spectator,team=yellow] uhcp_team 14
 scoreboard players set %global uhcp_team 15
 execute as @a[tag=!UHCP_Spectator,scores={uhcp_team=0}] run function uhcp:start/teams
 
+team leave @a[scores={uhcp_team=0}]
 execute if score %pvp uhcp_settings matches ..0 run scoreboard players set %pvp uhcp_settings -1
 execute unless score %pvp uhcp_settings matches -1 run team join grace_period @a[tag=!UHCP_Spectator]
 
@@ -262,6 +263,5 @@ execute as @a[tag=!UHCP_Spectator] run function uhcp:start/augments
 clear @a[tag=UHCP_Spectator]
 tp @a[tag=UHCP_Spectator] 0 150 0
 gamemode spectator @a[tag=UHCP_Spectator]
-team leave @a[tag=UHCP_Spectator]
 tellraw @a[tag=UHCP_Spectator] [{"text":"You are spectating the current match.","color":"gray"}]
 tag @a remove UHCP_Spectator

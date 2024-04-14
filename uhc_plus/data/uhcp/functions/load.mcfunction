@@ -155,12 +155,12 @@ team modify light_purple color light_purple
 team modify red color red
 team modify yellow color yellow
 
-team add grace_period
+team add grace_period {"text":"Grace Period"}
 team modify grace_period collisionRule pushOwnTeam
 team modify grace_period friendlyFire false
 team modify grace_period seeFriendlyInvisibles false
 
-team add no_collision
+team add no_collision {"text":"No Collision"}
 team modify no_collision collisionRule never
 team modify no_collision friendlyFire true
 team modify no_collision seeFriendlyInvisibles false
