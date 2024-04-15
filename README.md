@@ -10,6 +10,7 @@ UHC+ is an alternate take on Minecraft’s **Ultra Hardcore** gamemode. Original
 - **Rising Lava** at the final stage of the game that will keep the competition hot.
 - Automatic system that stops players from entering the Nether and moves players in the Nether back to the Overworld.
 - **A grace period** system that stops players from attacking one another for a set time.
+- **Brand new structures** that will spice up exploration.
 - An arrow count limit to stop players from lugging too many Arrows around.
 - Classic UHC features like a shrinking world border, lack of natural regeneration, and permanent death.
 - Highly configurable settings for the above features!
