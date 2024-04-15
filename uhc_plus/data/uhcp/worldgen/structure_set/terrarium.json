@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 25314168,
+    "separation": 9,
+    "spacing": 20
+  },
+  "structures": [
+    {
+      "structure": "uhcp:terrarium",
+      "weight": 1
+    }
+  ]
+}

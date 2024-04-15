@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "uhcp:skytemple",
+      "weight": 1
+    },
+    {
+      "structure": "uhcp:blossom_skyship",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 60,
+    "separation": 25,
+    "salt": 653302785
+  }
+}
