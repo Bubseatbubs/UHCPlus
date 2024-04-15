@@ -6,6 +6,7 @@ execute if entity @s[tag=UHCP_Scout] at @s unless entity @a[distance=..3] run fu
 
 # Consumables
 execute if entity @s[tag=UHCP_WebSlinger] at @s run function uhcp:consumables/web_slinger/update
+
 # Relics
 execute if entity @s[tag=UHCP_Saber] run return run function uhcp:relics/soulflames_embrace/update
 execute if entity @s[tag=UHCP_Voltrune] run return run function uhcp:relics/voltrune/update
@@ -43,4 +44,4 @@ execute if entity @s[tag=UHCP_GraveMarker] at @s run function uhcp:titans/gigant
 execute if entity @s[tag=UHCP_FenrirMinion] at @s run function uhcp:titans/fenrir/wolves/update
 execute if entity @s[tag=UHCP_KungfuPanda] at @s run function uhcp:augments/effects/prismatic/kungfupanda/update
 execute if entity @s[tag=UHCP_Bee] at @s run return run function uhcp:entity/bees/update
-#execute if entity @s[tag=UHCP_BeastWolf] at @s run return run function uhcp:augments/effects/wolves/update
+execute if entity @s[tag=UHCP_RunicSentrySummon] at @s if entity @p[gamemode=survival,distance=..8] run function uhcp:entity/runic_sentry_summon

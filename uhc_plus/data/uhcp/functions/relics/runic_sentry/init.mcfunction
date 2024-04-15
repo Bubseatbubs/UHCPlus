@@ -8,7 +8,7 @@ summon minecraft:giant ~ -100 ~ {NoAI:1b,Silent:1b,Health:15f,Attributes:[{Name:
 scoreboard players add %global uhcp_id 1
 scoreboard players operation @e[tag=UHCP_New] uhcp_id = %global uhcp_id
 
-execute as @e[tag=UHCP_New] run scoreboard players operation @s uhcp_team = @p[tag=UHCP_Owner] uhcp_team
+execute as @e[tag=UHCP_New] run scoreboard players operation @s uhcp_team = @e[tag=UHCP_Owner,sort=nearest,limit=1] uhcp_team
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_radiant:1b}] run tag @e[tag=UHCP_Turret,tag=UHCP_New] add UHCP_WellEngineered
 
 playsound item.armor.equip_netherite master @a[distance=..4] ~ ~ ~ 1 1 1

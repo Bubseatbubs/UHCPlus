@@ -3,7 +3,8 @@ execute unless entity @s[tag=UHCP_WellEngineered] run scoreboard players add @s 
 execute if score @s uhcp_aug_tier matches 400.. run function uhcp:relics/runic_sentry/delete
 execute as @e[tag=UHCP_TurretHitbox] if score @s uhcp_id = @e[tag=UHCP_CurrentTurret,sort=nearest,limit=1] uhcp_id run tp @s @e[tag=UHCP_CurrentTurret,sort=nearest,limit=1]
 execute at @s unless entity @e[tag=UHCP_TurretHitbox,distance=..0.5] run function uhcp:relics/runic_sentry/delete
-execute as @e[predicate=uhcp:targetable,distance=..8] unless score @s uhcp_team = @e[tag=UHCP_CurrentTurret,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_TurretTarget
+execute unless score @s uhcp_team matches -1 as @e[predicate=uhcp:targetable,distance=..8] unless score @s uhcp_team = @e[tag=UHCP_CurrentTurret,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_TurretTarget
+execute if score @s uhcp_team matches -1 as @p[gamemode=survival,distance=..6] unless score @s uhcp_team = @e[tag=UHCP_CurrentTurret,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_TurretTarget
 tag @a[tag=UHCP_TurretTarget,gamemode=!survival] remove UHCP_TurretTarget
 execute if block ~ ~-0.1 ~ #uhcp:no_hitbox_blocks run tp @s ~ ~-0.1 ~
 execute unless entity @e[tag=UHCP_TurretTarget] on passengers if entity @s[tag=UHCP_TurretHead] at @s run tp @s ~ ~ ~ ~2 0
