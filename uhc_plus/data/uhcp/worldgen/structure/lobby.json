@@ -1,6 +1,6 @@
 {
 	"type": "minecraft:jigsaw",
-	"biomes": "minecraft:badlands",
+	"biomes": "uhcp:empty",
 	"step": "surface_structures",
 	"spawn_overrides": {},
 	"terrain_adaptation": "none",
