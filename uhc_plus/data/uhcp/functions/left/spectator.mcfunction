@@ -12,6 +12,8 @@ scoreboard players set @s uhcp_team 0
 # Remove tags
 tag @s remove UHCP_ChoosingItem
 tag @s remove UHCP_Died
+execute if score @s uhcp_augment matches 220 run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
+execute if score @s uhcp_augment matches 25 run function uhcp:augments/effects/gold/scavengerhunt/reset
 
 # Assign IDs
 scoreboard players operation @s uhcp_game_ID = %global uhcp_game_ID
