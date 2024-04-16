@@ -27,7 +27,7 @@ scoreboard players set %AUG_27 uhcp_game_time 12000
 scoreboard players set %AUG_107 uhcp_game_time 6000
 scoreboard players set %AUG_138 uhcp_game_time 1200
 scoreboard players set %AUG_203 uhcp_game_time 1200
-scoreboard players set %AUG_238 uhcp_game_time 12000
+scoreboard players set %AUG_238 uhcp_game_time 24000
 scoreboard players set %AUG_244 uhcp_game_time 1200
 execute store result score %random uhcp_game_ID run random value 0..3
 execute if score %random uhcp_game_ID matches 0 store result score %global uhcp_game_ID run random value -2147483648..-1073741825
