@@ -24,7 +24,7 @@ function uhcp:settings/tick
 
 # Top Command
 execute if entity @a[scores={top=1..}] run function uhcp:top/validate
-execute as @a if score @s uhcp_top_delay matches 1.. at @s run function uhcp:top/finish
+execute as @a[scores={uhcp_top_delay=1..}] at @s run function uhcp:top/finish
 scoreboard players remove @a[scores={uhcp_top_CD=1..}] uhcp_top_CD 1
 execute as @a[tag=UHCP_IsTeleporting] at @s unless entity @e[type=minecraft:marker,tag=UHCP_topCheck,distance=..1] run function uhcp:top/cancel
 

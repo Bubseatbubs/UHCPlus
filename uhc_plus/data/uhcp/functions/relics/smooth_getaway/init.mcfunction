@@ -15,7 +15,7 @@ item replace entity @s weapon.mainhand with minecraft:air
 # Player Effects
 effect give @s invisibility 10 0 true
 effect give @s resistance 3 5 true
-execute as @a if score @s uhcp_augment matches 239 run effect give @s speed 10 1 false
+execute as @a[scores={uhcp_augment=239}] run effect give @s minecraft:speed 10 1 false
 
 # Effects
 particle minecraft:campfire_signal_smoke ~ ~ ~ 2 0.5 2 0.1 100 normal

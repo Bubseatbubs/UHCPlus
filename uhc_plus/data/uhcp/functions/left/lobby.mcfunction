@@ -26,7 +26,7 @@ execute in minecraft:overworld run forceload remove -80 -80 79 79
 gamemode adventure @s
 execute unless items entity @s container.1 *[minecraft:custom_data~{uhcp_lobby:1b}] run clear @s
 function uhcp:reset/attributes
-execute as @a if score @s uhcp_augment matches 220 run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
+execute as @a[scores={uhcp_augment=220}] run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 effect clear @s
 effect give @s minecraft:instant_health 2 5 true
 effect give @s minecraft:resistance infinite 5 true

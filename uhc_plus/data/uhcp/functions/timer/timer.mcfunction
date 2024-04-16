@@ -92,7 +92,7 @@ execute if score %time uhcp_game_time >= %AUG_238 uhcp_game_time run scoreboard 
 execute if score %time uhcp_game_time >= %AUG_244 uhcp_game_time as @a[scores={uhcp_augment=244}] at @s run function uhcp:augments/effects/prismatic/hedgefund/init
 execute if score %time uhcp_game_time >= %AUG_244 uhcp_game_time run scoreboard players add %AUG_244 uhcp_game_time 1200
 
-execute as @a if score @s uhcp_augment matches 220 if score %time uhcp_game_time >= @s uhcp_aug_cd_time at @s run function uhcp:augments/effects/prismatic/cyberneticdownload/upgrade
+execute as @a[scores={uhcp_augment=220}] if score %time uhcp_game_time >= @s uhcp_aug_cd_time at @s run function uhcp:augments/effects/prismatic/cyberneticdownload/upgrade
 
 # Titans
 execute if score %time uhcp_game_time matches 6000 in minecraft:overworld positioned 0 64 0 run function uhcp:titans/spawn/init

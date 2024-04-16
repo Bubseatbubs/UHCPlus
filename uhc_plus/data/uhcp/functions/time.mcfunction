@@ -26,11 +26,11 @@ function uhcp:timer/timer
 
 # Announce Augments
 scoreboard players enable @a augments
-execute as @a if score @s augments matches 1.. run function uhcp:augments/announce
+execute as @a[scores={augments=1..}] run function uhcp:augments/announce
 
 # Testkit
 execute as @a[gamemode=survival] if score @s testkit matches 1.. run function uhcp:testkit/verify
-execute as @a if score @s uhcp_testkit matches 1 run function uhcp:testkit/kit
+execute as @a[scores={uhcp_testkit=1}] run function uhcp:testkit/kit
 
 # Milk bucket
 execute as @a[tag=UHCP_MilkBucket] run function uhcp:milk_bucket/apply
