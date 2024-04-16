@@ -54,6 +54,14 @@ execute as @a[tag=UHCP_IsPanda] run function uhcp:augments/effects/prismatic/kun
 execute as @a[tag=UHCP_IsRabbit] run function uhcp:consumables/magic_trick/reset
 execute as @a[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal_fluid/reset
 
+# Tags
+tag @a remove UHCP_ChoosingItem
+tag @a remove UHCP_Died
+tag @a remove UHCP_MilkBucket
+tag @a remove UHCP_Spectator
+execute as @a[scores={uhcp_augment=220}] run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
+execute as @a[scores={uhcp_augment=25}] run function uhcp:augments/effects/gold/scavengerhunt/reset
+
 # Reset scores
 scoreboard players reset @a testkit
 scoreboard players reset @a top
@@ -107,14 +115,6 @@ scoreboard players operation %players_select_teams uhcp_settings = %players_sele
 
 # Sidebar display
 scoreboard objectives setdisplay sidebar
-
-# Tags
-tag @a remove UHCP_ChoosingItem
-tag @a remove UHCP_Died
-tag @a remove UHCP_MilkBucket
-tag @a remove UHCP_Spectator
-execute as @a[scores={uhcp_augment=220}] run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
-execute as @a[scores={uhcp_augment=25}] run function uhcp:augments/effects/gold/scavengerhunt/reset
 
 # Players
 clear @a
