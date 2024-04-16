@@ -10,3 +10,5 @@ playsound block.end_portal.spawn master @a[distance=..16] ~ ~ ~ 1 1 0.6
 particle reverse_portal ~ ~ ~ 3 3 3 0.1 100 normal
 particle flash ~ ~ ~ 0.1 0.1 0.1 0.1 10 normal
 forceload remove ~-6 ~-6 ~6 ~6
+
+tellraw @a [{"text":"[","color":"dark_gray","bold":false},{"score":{"name":"@s","objective":"uhcp_motion_x1"},"color":"#9EE8FF","bold":false},{"text":", ","color":"dark_gray","bold":false},{"score":{"name":"@s","objective":"uhcp_motion_y1"},"color":"#9EE8FF","bold":false},{"text":", ","color":"dark_gray","bold":false},{"score":{"name":"@s","objective":"uhcp_motion_z1"},"color":"#9EE8FF","bold":false},{"text":"]","color":"dark_gray","bold":false}]
