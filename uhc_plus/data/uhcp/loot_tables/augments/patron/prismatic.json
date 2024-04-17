@@ -299,14 +299,16 @@
                       {
                         "text": " Speed I",
                         "color": "yellow"
-                      },
+                      }
+                    ],
+                    [
                       {
                         "text": " and gain ",
                         "color": "gray"
                       },
                       {
                         "text": " Boots of Swiftness",
-                        "color": "brown"
+                        "color": "#bf7830"
                       },
                       {
                         "text": ".",

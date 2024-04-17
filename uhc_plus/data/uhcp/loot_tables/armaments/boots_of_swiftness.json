@@ -53,13 +53,13 @@
                     "italic": false
                   },
                   {
-                    "text": " Grants ",
+                    "text": " Grants bonus",
                     "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "bonus movement speed",
+                    "text": "movement speed",
                     "color": "blue",
                     "italic": false
                   },
