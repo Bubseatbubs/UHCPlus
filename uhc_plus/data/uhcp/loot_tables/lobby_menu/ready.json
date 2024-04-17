@@ -54,6 +54,26 @@
                     "bold": false,
                     "italic": false
                   }
+                ],
+                [
+                  {
+                    "text": "Use this item to",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " cancel Readying Up",
+                    "color": "dark_gray",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false
+                  }
                 ]
               ],
               "mode": "replace_all"
