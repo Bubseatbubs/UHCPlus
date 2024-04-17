@@ -1,0 +1,1 @@
+scoreboard players add %soul_apples uhcp_settings 10

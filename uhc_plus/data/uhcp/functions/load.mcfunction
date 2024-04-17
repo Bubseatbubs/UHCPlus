@@ -193,8 +193,8 @@ scoreboard players set %border_shrink_speed_def uhcp_settings 24000
 # Dimension countdown
 scoreboard players set %dimension_def uhcp_settings 48000
 
-# Golden apples
-scoreboard players set %golden_apples_def uhcp_settings 3
+# Soul apples
+scoreboard players set %soul_apples_def uhcp_settings 1
 
 # Number of Titans
 scoreboard players set %titans_def uhcp_settings 3
