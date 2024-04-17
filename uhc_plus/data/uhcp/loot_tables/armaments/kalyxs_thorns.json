@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_enchantments",
                 "enchantments": {
-                  "minecraft:protection": 4,
+                  "minecraft:protection": 2,
                   "minecraft:fire_protection": 1,
                   "minecraft:unbreaking": 5
                 }
