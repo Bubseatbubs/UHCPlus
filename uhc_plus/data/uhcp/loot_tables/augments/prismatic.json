@@ -1209,6 +1209,20 @@
                   {
                     "text": ", ",
                     "color": "gray"
+                  },
+                  {
+                    "text": " it grants you",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "extremely powerful loot",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
                   }
                 ]
               ],

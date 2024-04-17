@@ -521,11 +521,11 @@
                   },
                   [
                     {
-                      "text": "Gain 6 ",
+                      "text": "Gain some basic ",
                       "color": "gray"
                     },
                     {
-                      "text": "a few trap materials",
+                      "text": "trap materials",
                       "color": "white"
                     }
                   ],
@@ -863,4 +863,3 @@
       }
     ]
   }
-  
