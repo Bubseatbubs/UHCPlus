@@ -22,7 +22,7 @@ scoreboard players operation %border_shrink_speed uhcp_settings = %border_shrink
 scoreboard players operation %dimension uhcp_settings = %dimension_def uhcp_settings
 
 # Set default golden apples
-scoreboard players operation %golden_apples uhcp_settings = %golden_apples_def uhcp_settings
+scoreboard players operation %soul_apples uhcp_settings = %soul_apples_def uhcp_settings
 
 # Set default PvP Grace Period countdown
 scoreboard players operation %pvp uhcp_settings = %pvp_def uhcp_settings

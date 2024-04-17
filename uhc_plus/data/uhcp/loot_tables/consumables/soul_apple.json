@@ -1,0 +1,93 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:apple",
+            "functions": [
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_soulapple:1b}"
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:rarity": "uncommon",
+                  "minecraft:enchantments": {
+                    "levels": {
+                      "minecraft:protection": 1
+                    },
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:food": {
+                    "nutrition": 4,
+                    "saturation": 0,
+                    "can_always_eat": true
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                    {
+                      "text": "Gain",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " 2🖤, Regeneration III",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": " and",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Speed I",
+                      "color": "yellow"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "for 12 seconds upon consumption.",
+                      "color": "gray"
+                    }
+                  ],
+                  {
+                    "text": "Additionally, gain 8 Levels.",
+                    "color": "gray"
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "target": "item_name",
+                "name": "Soul Apple"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "function": "minecraft:set_count",
+        "count": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "%soul_apples"
+          },
+          "score": "uhcp_settings",
+          "scale": 1
+        },
+        "add": false
+      }
+    ]
+  }
+  

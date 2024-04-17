@@ -24,10 +24,10 @@ execute unless score %border_shrink_speed uhcp_settings = %border_shrink_speed u
 # Set default dimension countdown
 execute unless score %dimension uhcp_settings matches -2147483648..2147483647 run scoreboard players operation %dimension uhcp_settings = %dimension_def uhcp_settings
 
-# Set default golden apples
-execute unless score %golden_apples uhcp_settings = %golden_apples uhcp_settings run scoreboard players operation %golden_apples uhcp_settings = %golden_apples_def uhcp_settings
+# Set default soul apples
+execute unless score %soul_apples uhcp_settings = %soul_apples uhcp_settings run scoreboard players operation %soul_apples uhcp_settings = %soul_apples_def uhcp_settings
 
-# Set default golden apples
+# Set default titans
 execute unless score %titans uhcp_settings = %titans uhcp_settings run scoreboard players operation %titans uhcp_settings = %titans_def uhcp_settings
 
 # Set default PvP Grace Period countdown
