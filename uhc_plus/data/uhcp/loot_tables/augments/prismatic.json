@@ -1406,11 +1406,19 @@
                 },
                 [
                   {
-                    "text": "When you slay a",
+                    "text": "At the start of the game",
                     "color": "gray"
-                  },
+                  }
+                ],
+                [
                   {
-                    "text": " Titan",
+                    "text": "and whenever you slay a",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Titan",
                     "color": "blue"
                   },
                   {
@@ -1428,12 +1436,8 @@
                 ],
                 [
                   {
-                    "text": "Consuming",
+                    "text": "Consuming it",
                     "color": "gray"
-                  },
-                  {
-                    "text": " Titan Spinal Fluid",
-                    "color": "white"
                   },
                   {
                     "text": " transforms you"

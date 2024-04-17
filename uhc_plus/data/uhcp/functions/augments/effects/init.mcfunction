@@ -107,6 +107,7 @@ execute if score @s uhcp_augment matches 203 run return run function uhcp:augmen
 execute if score @s uhcp_augment matches 204 run return run function uhcp:augments/effects/prismatic/gumgumfruit
 execute if score @s uhcp_augment matches 206 run return run function uhcp:augments/effects/prismatic/gapplegapiii
 execute if score @s uhcp_augment matches 207 run return run function uhcp:augments/effects/prismatic/gasgasgas
+execute if score @s uhcp_augment matches 207 run return run function uhcp:augments/effects/prismatic/attackontitan
 execute if score @s uhcp_augment matches 210 run return 0
 execute if score @s uhcp_augment matches 211 run return run function uhcp:augments/effects/prismatic/intotheminesiii
 execute if score @s uhcp_augment matches 212 run return run function uhcp:augments/effects/prismatic/laststand
