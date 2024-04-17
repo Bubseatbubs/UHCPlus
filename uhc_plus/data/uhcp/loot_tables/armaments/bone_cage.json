@@ -8,11 +8,18 @@
             "name": "minecraft:leather_chestplate",
             "functions": [
               {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:unbreakable": {
+                    "show_in_tooltip": true
+                  }
+                }
+              },
+              {
                 "function": "minecraft:set_enchantments",
                 "enchantments": {
                   "minecraft:protection": 3,
-                  "minecraft:projectile_protection": 3,
-                  "minecraft:unbreaking": 5
+                  "minecraft:projectile_protection": 3
                 }
               },
               {

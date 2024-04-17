@@ -17,8 +17,32 @@
                   "operation": "add_multiplied_total",
                   "id": "4726a4f8-4970-4b9b-9284-ee501abe50cb",
                   "slot": "feet"
+                },
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "id": "b9e3cf2d-2672-458f-b606-5506f1e2459a",
+                  "slot": "feet"
+                },
+                {
+                  "attribute": "minecraft:generic.armor_toughness",
+                  "name": "",
+                  "amount": 2,
+                  "operation": "add_value",
+                  "id": "ba0b6121-6c5d-4638-93c9-7d0a55f2cdb7",
+                  "slot": "feet"
                 }
               ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": true
+                }
+              }
             },
             {
               "function": "minecraft:set_lore",

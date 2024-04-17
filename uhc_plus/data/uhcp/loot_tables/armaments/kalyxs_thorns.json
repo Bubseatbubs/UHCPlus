@@ -8,11 +8,18 @@
             "name": "minecraft:golden_helmet",
             "functions": [
               {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:unbreakable": {
+                    "show_in_tooltip": true
+                  }
+                }
+              },
+              {
                 "function": "minecraft:set_enchantments",
                 "enchantments": {
                   "minecraft:protection": 2,
-                  "minecraft:fire_protection": 1,
-                  "minecraft:unbreaking": 5
+                  "minecraft:fire_protection": 1
                 }
               },
               {

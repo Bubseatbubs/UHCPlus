@@ -8,9 +8,17 @@
           "name": "minecraft:elytra",
           "functions": [
             {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:unbreaking": 3
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": true
+                },
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:luck_of_the_sea": 1
+                  },
+                  "show_in_tooltip": false
+                }
               }
             },
             {
