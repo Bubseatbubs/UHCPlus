@@ -806,6 +806,10 @@
                   "function": "minecraft:set_lore",
                   "entity": "this",
                   "lore": [
+                    {
+                      "text": "------------------------",
+                      "color": "blue"
+                    },
                     [
                       {
                         "text": "Gain a",
