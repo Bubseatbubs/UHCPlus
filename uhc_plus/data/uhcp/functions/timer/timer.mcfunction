@@ -89,7 +89,7 @@ execute if score %time uhcp_game_time >= %AUG_238 uhcp_game_time as @a[scores={u
 execute if score %time uhcp_game_time >= %AUG_238 uhcp_game_time run scoreboard players add %AUG_238 uhcp_game_time 24000
 
 execute if score %time uhcp_game_time >= %AUG_244 uhcp_game_time as @a[scores={uhcp_augment=244}] at @s run function uhcp:augments/effects/prismatic/hedgefund/init
-execute if score %time uhcp_game_time >= %AUG_244 uhcp_game_time run scoreboard players add %AUG_244 uhcp_game_time 1200
+execute if score %time uhcp_game_time >= %AUG_244 uhcp_game_time run scoreboard players add %AUG_244 uhcp_game_time 3600
 
 execute as @a[scores={uhcp_augment=220}] if score %time uhcp_game_time >= @s uhcp_aug_cd_time at @s run function uhcp:augments/effects/prismatic/cyberneticdownload/upgrade
 
@@ -99,4 +99,5 @@ execute if score %time uhcp_game_time matches 24000 in minecraft:overworld run f
 execute if score %time uhcp_game_time matches 42000 in minecraft:overworld run function uhcp:reset/titans
 
 # Rain random lab UHC player balance addons
-execute if score %time uhcp_game_time matches 2700 run function rain:tags
+# Temporarily disabled for Set 2 Playtests
+#execute if score %time uhcp_game_time matches 2700 run function rain:tags
