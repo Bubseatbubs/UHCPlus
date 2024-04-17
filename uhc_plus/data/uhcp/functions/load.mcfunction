@@ -62,10 +62,11 @@ scoreboard objectives add uhcp_lava_timeInterval dummy
 scoreboard objectives add uhcp_lobby_setItem dummy
 scoreboard objectives add uhcp_lobby_item dummy
 scoreboard objectives add uhcp_leave minecraft.custom:minecraft.leave_game
+scoreboard objectives add uhcp_mine_ancientDebris minecraft.mined:minecraft.ancient_debris
+scoreboard objectives add uhcp_mine_copperOre minecraft.mined:minecraft.copper_ore
 scoreboard objectives add uhcp_mine_dCopperOre minecraft.mined:minecraft.deepslate_copper_ore
 scoreboard objectives add uhcp_mine_dGoldOre minecraft.mined:minecraft.deepslate_gold_ore
 scoreboard objectives add uhcp_mine_dIronOre minecraft.mined:minecraft.deepslate_iron_ore
-scoreboard objectives add uhcp_mine_copperOre minecraft.mined:minecraft.copper_ore
 scoreboard objectives add uhcp_mine_goldOre minecraft.mined:minecraft.gold_ore
 scoreboard objectives add uhcp_mine_ironOre minecraft.mined:minecraft.iron_ore
 scoreboard objectives add uhcp_mine_rawCopperBlock minecraft.mined:minecraft.raw_copper_block

@@ -25,8 +25,8 @@ execute unless score %pvp uhcp_settings matches ..-1 run function uhcp:pvp/count
 function uhcp:timer/timer
 
 # Announce Augments
-scoreboard players enable @a augments
 execute as @a[scores={augments=1..}] run function uhcp:augments/announce
+scoreboard players enable @a augments
 
 # Testkit
 execute as @a[gamemode=survival] if score @s testkit matches 1.. run function uhcp:testkit/verify
@@ -34,6 +34,18 @@ execute as @a[scores={uhcp_testkit=1}] run function uhcp:testkit/kit
 
 # Milk bucket
 execute as @a[tag=UHCP_MilkBucket] run function uhcp:milk_bucket/apply
+
+# Experience orbs for mining metals
+execute as @a[scores={uhcp_mine_ancientDebris=1..},gamemode=survival] run function uhcp:mine/ancient_debris
+execute as @a[scores={uhcp_mine_copperOre=1..},gamemode=survival] run function uhcp:mine/copper_ore
+execute as @a[scores={uhcp_mine_dCopperOre=1..},gamemode=survival] run function uhcp:mine/deepslate_copper_ore
+execute as @a[scores={uhcp_mine_dGoldOre=1..},gamemode=survival] run function uhcp:mine/deepslate_gold_ore
+execute as @a[scores={uhcp_mine_dIronOre=1..},gamemode=survival] run function uhcp:mine/deepslate_iron_ore
+execute as @a[scores={uhcp_mine_goldOre=1..},gamemode=survival] run function uhcp:mine/gold_ore
+execute as @a[scores={uhcp_mine_ironOre=1..},gamemode=survival] run function uhcp:mine/iron_ore
+execute as @a[scores={uhcp_mine_rawCopperBlock=1..},gamemode=survival] run function uhcp:mine/raw_copper_block
+execute as @a[scores={uhcp_mine_rawGoldBlock=1..},gamemode=survival] run function uhcp:mine/raw_gold_block
+execute as @a[scores={uhcp_mine_rawIronBlock=1..},gamemode=survival] run function uhcp:mine/raw_iron_block
 
 # Enable triggers
 scoreboard players enable @a[gamemode=survival] top

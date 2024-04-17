@@ -97,6 +97,16 @@ scoreboard players reset @a uhcp_aug_hb_killedZombie
 scoreboard players reset @a uhcp_id
 scoreboard players reset @a uhcp_ready
 scoreboard players reset @a uhcp_lobby_item
+scoreboard players reset @a uhcp_mine_ancientDebris
+scoreboard players reset @a uhcp_mine_copperOre
+scoreboard players reset @a uhcp_mine_dCopperOre
+scoreboard players reset @a uhcp_mine_dGoldOre
+scoreboard players reset @a uhcp_mine_dIronOre
+scoreboard players reset @a uhcp_mine_goldOre
+scoreboard players reset @a uhcp_mine_ironOre
+scoreboard players reset @a uhcp_mine_rawCopperBlock
+scoreboard players reset @a uhcp_mine_rawGoldBlock
+scoreboard players reset @a uhcp_mine_rawIronBlock
 scoreboard players reset %global uhcp_id
 scoreboard players reset @a uhcp_leave
 scoreboard players reset @a uhcp_top_CD
