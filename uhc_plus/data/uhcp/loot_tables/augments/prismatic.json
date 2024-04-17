@@ -1776,16 +1776,16 @@
                   }
                 ],
                 {
-                  "text": "after 20 minutes, gain an",
+                  "text": " gain ",
                   "color": "gray"
                 },
                 [
                   {
-                    "text": "Enchanted Golden Apple",
+                    "text": "random powerful loot",
                     "color": "light_purple"
                   },
                   {
-                    "text": ".",
+                    "text": "!",
                     "color": "gray"
                   }
                 ]

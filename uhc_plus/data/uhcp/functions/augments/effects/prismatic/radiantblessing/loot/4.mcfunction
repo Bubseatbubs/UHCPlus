@@ -1,0 +1,5 @@
+give @s minecraft:diamond_helmet[minecraft:enchantments={levels:{"minecraft:protection":2}}]
+give @s minecraft:diamond_chestplate[minecraft:enchantments={levels:{"minecraft:protection":2}}]
+give @s minecraft:diamond_leggings[minecraft:enchantments={levels:{"minecraft:protection":2}}]
+give @s minecraft:diamond_boots[minecraft:enchantments={levels:{"minecraft:protection":2}}]
+tellraw @s ["You've gained a ",{"text":"full set of Protection II Diamond Armor","bold":true,"color":"light_purple"}," from your ",{"text":"Radiant Blessing","bold":true,"color":"aqua"},"!"]
