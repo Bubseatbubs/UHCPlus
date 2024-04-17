@@ -2295,22 +2295,14 @@
                 ],
                 [
                   {
-                    "text": "for 35 minutes. Gain 80",
+                    "text": "for 35 minutes. Afterwards, gain 100",
                     "color": "gray"
                   },
                   {
-                    "text": " Gold Ingots",
+                    "text": " Gold Ingots.",
                     "color": "white"
-                  },
-                  {
-                    "text": " after",
-                    "color": "gray"
                   }
-                ],
-                {
-                  "text": "35 minutes.",
-                  "color": "gray"
-                }
+                ]
               ],
               "mode": "replace_all"
             }
@@ -2955,7 +2947,7 @@
                 },
                 [
                   {
-                    "text": "Exciting loot is placed in your ",
+                    "text": "Exciting random loot is placed in your ",
                     "color": "gray"
                   },
                   {

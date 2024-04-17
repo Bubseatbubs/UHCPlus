@@ -1,1 +1,1 @@
-give @s gold_ingot 80
+give @s gold_ingot 100
