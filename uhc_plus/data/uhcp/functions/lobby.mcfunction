@@ -13,7 +13,7 @@ scoreboard players remove %lobby_parkour uhcp_game_time 1
 
 # Skip Travel
 execute as @a[scores={lobby=1}] run function uhcp:lobby/teleport/menu
-execute as @a[scores={lobby=2..5}] run function uhcp:lobby/teleport/select
+execute as @a[scores={lobby=2..6}] run function uhcp:lobby/teleport/select
 scoreboard players enable @a lobby
 
 # Relic Testing Chamber Entrance
