@@ -49,7 +49,7 @@
                 "mode": "replace_all",
                 "lore": [
                   {
-                    "text": "Throw this item to summon a 5x5",
+                    "text": "Instantly place down a 5x1x5",
                     "color": "gray"
                   },
                   [
