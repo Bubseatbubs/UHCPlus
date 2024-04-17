@@ -39,6 +39,17 @@
           {
             "type": "loot_table",
             "weight": 1,
+            "value": "uhcp:relics/radiant/web_o_rang",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "type": "loot_table",
+            "weight": 1,
             "value": "uhcp:relics/radiant/buzzburst",
             "functions": [
               {
