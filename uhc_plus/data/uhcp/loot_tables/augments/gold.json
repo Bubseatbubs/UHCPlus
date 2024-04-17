@@ -217,30 +217,10 @@
                     "color": "light_purple"
                   },
                   {
-                    "text": ". When thrown,",
+                    "text": ".",
                     "color": "gray"
                   }
-                ],
-                {
-                  "text": "they teleport you to your",
-                  "color": "gray"
-                },
-                [
-                  {
-                    "text": "Teammate",
-                    "color": "gold"
-                  },
-                  {
-                    "text": " (random teammate in",
-                    "color": "gray",
-                    "italic": true
-                  }
-                ],
-                {
-                  "text": "teams of 3 or more).",
-                  "color": "gray",
-                  "italic": true
-                }
+                ]
               ],
               "mode": "replace_all"
             }
@@ -2295,22 +2275,14 @@
                 ],
                 [
                   {
-                    "text": "for 35 minutes. Gain 80",
+                    "text": "for 35 minutes. Afterwards, gain 100",
                     "color": "gray"
                   },
                   {
-                    "text": " Gold Ingots",
+                    "text": " Gold Ingots.",
                     "color": "white"
-                  },
-                  {
-                    "text": " after",
-                    "color": "gray"
                   }
-                ],
-                {
-                  "text": "35 minutes.",
-                  "color": "gray"
-                }
+                ]
               ],
               "mode": "replace_all"
             }
@@ -2589,26 +2561,16 @@
                   "text": "------------------------",
                   "color": "blue"
                 },
-                [
-                  {
-                    "text": "Start with ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "permanent Jump Boost I",
-                    "color": "yellow"
-                  },
-                  {
-                    "text": ",",
-                    "color": "gray"
-                  }
-                ],
                 {
-                  "text": "greatly decrease your gravity,",
+                  "text": "Jump higher, greatly decrease",
                   "color": "gray"
                 },
                 {
-                  "text": "and become immune to fall damage.",
+                  "text": "your gravity, and become",
+                  "color": "gray"
+                },
+                {
+                  "text": "immune to fall damage.",
                   "color": "gray"
                 }
               ],
@@ -2955,7 +2917,7 @@
                 },
                 [
                   {
-                    "text": "Exciting loot is placed in your ",
+                    "text": "Exciting random loot is placed in your ",
                     "color": "gray"
                   },
                   {

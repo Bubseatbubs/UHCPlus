@@ -38,7 +38,61 @@
         {
           "type": "loot_table",
           "weight": 1,
+          "value": "uhcp:consumables/web_slinger",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "weight": 2,
+          "value": "uhcp:consumables/lesser_duplicator",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "weight": 1,
+          "value": "uhcp:consumables/suspicious_flesh",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "weight": 1,
+          "value": "uhcp:consumables/all-seeing_eye",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "weight": 1,
           "value": "uhcp:consumables/portable_lava_pool"
+        },
+        {
+          "type": "loot_table",
+          "weight": 1,
+          "value": "uhcp:consumables/groovy_disc"
+        },
+        {
+          "type": "loot_table",
+          "weight": 1,
+          "value": "uhcp:armaments/boots_of_swiftness"
         },
         {
           "type": "minecraft:item",

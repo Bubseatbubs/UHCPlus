@@ -1199,15 +1199,44 @@
                 ],
                 [
                   {
-                    "text": "At 9",
+                    "text": "At ",
                     "color": "gray"
+                  },
+                  {
+                    "score": {
+                      "name": "%ra_stacks",
+                      "objective": "uhcp_settings",
+                      "color": "gold"
+                    }
                   },
                   {
                     "text": " Charges",
                     "color": "gold"
                   },
                   {
-                    "text": ", ",
+                    "text": ", gain incredibly",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " powerful loot",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " it grants you",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "extremely powerful loot",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
                     "color": "gray"
                   }
                 ]

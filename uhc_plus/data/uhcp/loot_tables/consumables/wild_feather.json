@@ -45,11 +45,7 @@
                 "mode": "replace_all",
                 "lore": [
                   {
-                    "text": "Use this item to teleport to",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "a random teammate.",
+                    "text": "Teleport to a random teammate.",
                     "color": "gray"
                   }
                 ]
