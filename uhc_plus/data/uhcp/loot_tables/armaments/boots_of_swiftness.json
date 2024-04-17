@@ -1,0 +1,112 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.movement_speed",
+                  "name": "",
+                  "amount": 0.15,
+                  "operation": "add_multiplied_total",
+                  "id": "4726a4f8-4970-4b9b-9284-ee501abe50cb",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "ARMAMENT",
+                    "color": "#bf7830",
+                    "italic": false
+                  },
+                  {
+                    "text": ": Armaments are pieces",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "of Armor with special effects.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "EFFECT:",
+                    "color": "#e61c69",
+                    "italic": false
+                  },
+                  {
+                    "text": " Grants ",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "bonus movement speed",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": " while worn.",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Boo",
+                  "color": "#ab5b1a",
+                  "bold": true,
+                  "italic": false
+                },
+                {
+                  "text": "ts",
+                  "color": "#cf8817"
+                },
+                {
+                  "text": " of Swif",
+                  "color": "#debb10"
+                },
+                {
+                  "text": "tness",
+                  "color": "#e8d20c"
+                },
+                {
+                  "text": " 𝔸",
+                  "color": "white",
+                  "bold": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_armaments:3b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

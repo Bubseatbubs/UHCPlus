@@ -59,6 +59,27 @@
                   {
                     "text": "Additionally, gain 8 Levels.",
                     "color": "gray"
+                  },
+                  [
+                    {
+                      "text": "(Total healing: 10",
+                      "color": "gray"
+                    },
+                    {
+                      "text": "🖤",
+                      "color": "red"
+                    },
+                    {
+                      "text": ")",
+                      "color": "gray"
+                    }
+                  ],
+                  {
+                    "text":""
+                  },
+                  {
+                    "text": "An apple infused with the souls of fallen enemies...",
+                    "color": "light_purple"
                   }
                 ],
                 "mode": "replace_all"

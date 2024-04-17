@@ -54,3 +54,8 @@ attribute @s minecraft:generic.knockback_resistance modifier remove fae44ddd-2a2
 attribute @s minecraft:generic.jump_strength modifier remove 049fc60a-5ef5-470e-a8de-24da2f319d48
 attribute @s minecraft:generic.step_height modifier remove 1023977d-6dca-477b-a803-4ff0adcb32b1
 attribute @s minecraft:generic.fall_damage_multiplier modifier remove e86e3562-bef5-4501-8c52-69a36641913f
+
+# Movement Speed
+# Currently used by: Boots of Swiftness (Armament)
+#alias uuid UHCP_MovementSpeed 4726a4f8-4970-4b9b-9284-ee501abe50cb
+attribute @s minecraft:generic.movement_speed modifier remove 4726a4f8-4970-4b9b-9284-ee501abe50cb

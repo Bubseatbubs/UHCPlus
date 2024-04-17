@@ -15,7 +15,6 @@ execute if score %time uhcp_game_time matches 24000 as @a[scores={uhcp_augment=4
 execute if score %time uhcp_game_time matches 3600 as @a[scores={uhcp_augment=101}] run function uhcp:augments/effects/silver/afk/freedom
 execute if score %time uhcp_game_time matches 3600 as @a[scores={uhcp_augment=108}] run function uhcp:augments/effects/silver/drunkenstupor/cure
 execute if score %time uhcp_game_time matches 24000 as @a[scores={uhcp_augment=120}] run function uhcp:augments/effects/silver/onthehunt
-execute if score %time uhcp_game_time matches 36000 as @a[scores={uhcp_augment=207}] run function uhcp:augments/effects/prismatic/gasgasgas/speed
 execute if score %time uhcp_game_time matches 36000 as @a[scores={uhcp_augment=130}] run function uhcp:augments/effects/silver/supplydrop
 execute if score %time uhcp_game_time matches 24000 as @a[scores={uhcp_augment=214}] run function uhcp:augments/effects/prismatic/netherborn/portal
 execute if score %time uhcp_game_time matches 24000 run effect clear @a[scores={uhcp_augment=217}] minecraft:glowing

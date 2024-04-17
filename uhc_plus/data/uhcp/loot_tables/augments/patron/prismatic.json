@@ -293,20 +293,20 @@
                     },
                     [
                       {
-                        "text": "Start with",
-                        "color": "gray"
-                      },
-                      {
-                        "text": " Speed II",
-                        "color": "yellow"
-                      },
-                      {
-                        "text": " for 30 minutes. Afterwards, gain permanent",
+                        "text": "Start with permanent",
                         "color": "gray"
                       },
                       {
                         "text": " Speed I",
                         "color": "yellow"
+                      },
+                      {
+                        "text": " and gain ",
+                        "color": "gray"
+                      },
+                      {
+                        "text": " Boots of Swiftness",
+                        "color": "brown"
                       },
                       {
                         "text": ".",
