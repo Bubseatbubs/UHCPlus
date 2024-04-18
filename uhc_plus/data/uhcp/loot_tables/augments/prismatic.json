@@ -355,8 +355,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:netherite_upgrade_smithing_template",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -448,8 +448,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:apple",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -527,8 +527,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:enchanted_golden_apple",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -597,8 +597,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:grass_block",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -705,8 +705,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:totem_of_undying",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -756,8 +756,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:brewing_stand",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -813,8 +813,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:elytra",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -872,8 +872,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:rabbit_foot",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -923,8 +923,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:chest",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -982,8 +982,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:turtle_helmet",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:toggle_tooltips",
@@ -1053,8 +1053,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:blaze_powder",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1118,8 +1118,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:clock",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1204,9 +1204,9 @@
                   },
                   {
                     "score": {
+                      "type": "fixed",
                       "name": "%ra_stacks",
-                      "objective": "uhcp_settings",
-                      "color": "gold"
+                      "objective": "uhcp_settings"
                     }
                   },
                   {
@@ -1224,20 +1224,6 @@
                   {
                     "text": ".",
                     "color": "gray"
-                  },
-                  {
-                    "text": " it grants you",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "extremely powerful loot",
-                    "color": "light_purple"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
                   }
                 ]
               ],
@@ -1247,8 +1233,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:rib_armor_trim_smithing_template",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1563,8 +1549,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:clock",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1629,8 +1615,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:diamond",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1679,8 +1665,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:ice",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1769,8 +1755,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:nether_star",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -2452,8 +2438,8 @@
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 9,
-          "value": "uhcp:augments/patron/prismatic"
+          "value": "uhcp:augments/patron/prismatic",
+          "weight": 9
         }
       ],
       "functions": [
