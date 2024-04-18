@@ -1,6 +1,12 @@
 advancement revoke @s only uhcp:entity_actions/used_edible_item
 scoreboard players set @s uhcp_itemCount 6
 
+# Augments
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_sundisk:1b}] at @s run return run function uhcp:augments/effects/prismatic/gloryofra/state_stacks
+
+# Augments (Offhand)
+execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_sundisk:1b}] at @s run return run function uhcp:augments/effects/prismatic/gloryofra/state_stacks
+
 # Relics
 execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:0b}] at @s run return run function uhcp:relics/buzzburst/init
 execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:1b}] at @s run return run function uhcp:relics/soulflames_embrace/prepare

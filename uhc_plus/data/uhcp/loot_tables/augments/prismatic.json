@@ -1119,7 +1119,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:clock",
-          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1193,28 +1192,21 @@
                     "color": "gold"
                   },
                   {
-                    "text": " if you killed them.",
+                    "text": " if you killed them. Gaining ",
                     "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "At ",
+                    "text": "enough",
                     "color": "gray"
-                  },
-                  {
-                    "score": {
-                      "type": "fixed",
-                      "name": "%ra_stacks",
-                      "objective": "uhcp_settings"
-                    }
                   },
                   {
                     "text": " Charges",
                     "color": "gold"
                   },
                   {
-                    "text": ", gain incredibly",
+                    "text": " grants incredibly",
                     "color": "gray"
                   },
                   {
@@ -1233,7 +1225,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:rib_armor_trim_smithing_template",
+          "name": "minecraft:silence_armor_trim_smithing_template",
           "weight": 1,
           "functions": [
             {
