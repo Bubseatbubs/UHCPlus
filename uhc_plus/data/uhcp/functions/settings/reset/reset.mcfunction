@@ -21,6 +21,9 @@ scoreboard players operation %border_shrink_speed uhcp_settings = %border_shrink
 # Set default dimension countdown
 scoreboard players operation %dimension uhcp_settings = %dimension_def uhcp_settings
 
+# Set default titans
+scoreboard players operation %titans uhcp_settings = %titans_def uhcp_settings
+
 # Set default golden apples
 scoreboard players operation %soul_apples uhcp_settings = %soul_apples_def uhcp_settings
 

@@ -1,4 +1,4 @@
-execute unless predicate uhcp:titans/holding_shield_in_offhand run return 0
+execute unless predicate uhcp:titans/holding_shield_in_offhand run return run function uhcp:titans/fenrir/knock_shield_punish
 
 summon item ~ ~ ~ {Glowing:1b,PickupDelay:20,Motion:[0.0,1.0,0.0],Tags:["UHCP_FenrirShield"],Item:{id:"minecraft:stone",Count:1b}}
 data modify entity @e[type=item,limit=1,tag=UHCP_FenrirShield] Item set from entity @s Inventory[{Slot:-106b}]

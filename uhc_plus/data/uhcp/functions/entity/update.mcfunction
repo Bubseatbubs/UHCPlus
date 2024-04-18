@@ -27,12 +27,15 @@ execute if entity @s[tag=UHCP_ArachneSpiderAI] at @s unless entity @e[tag=UHCP_A
 execute if entity @s[tag=UHCP_GigantusCircleStrike] at @s run return run function uhcp:titans/gigantus/circle_strike/update
 execute if entity @s[tag=UHCP_GigaCreeperLightning] at @s run return run function uhcp:titans/giga_creeper/lightning/update
 execute if entity @s[tag=UHCP_SeraphimLaserIndicator] at @s run return run function uhcp:titans/seraphim/laser/indicator/update
+execute if entity @s[tag=UHCP_FerrumLanding] at @s run return run function uhcp:titans/ferrum/jump/update_indicator
 execute if entity @s[tag=UHCP_GigaCreeperTNT] at @s run return run function uhcp:titans/giga_creeper/tnt/update
 execute if entity @s[tag=UHCP_TritonTrident] at @s run return run function uhcp:titans/triton/trident/update
 execute if entity @s[tag=UHCP_SeraphimAI] at @s unless entity @e[tag=UHCP_Seraphim,distance=..16] run function uhcp:entity/instant_kill
 execute if entity @s[tag=UHCP_SeraphimLaser] at @s run return run function uhcp:titans/seraphim/laser/update
 execute if entity @s[tag=UHCP_TritonTridentHitbox,nbt={inGround:1b}] at @s run return run kill @s
 execute if entity @s[tag=UHCP_BoneBlock] run return run function uhcp:titans/bone_colossus/block/update
+execute if entity @s[tag=UHCP_AnvilBlock] run return run function uhcp:titans/ferrum/block/update
+execute if entity @s[tag=UHCP_FerrumBlockIndicator] run return run function uhcp:titans/ferrum/block/indicator/update
 
 # Augments
 execute if entity @s[tag=UHCP_PhantomClaw,tag=!UHCP_FlyingTowardsTarget] run return run function uhcp:augments/effects/gold/phantomclaw/update

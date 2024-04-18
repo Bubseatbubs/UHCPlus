@@ -8,3 +8,4 @@ execute if entity @s[tag=UHCP_BoneColossus] run function uhcp:titans/bone_coloss
 execute if entity @s[tag=UHCP_GigaCreeper] at @s run function uhcp:titans/giga_creeper/attack
 execute if entity @s[tag=UHCP_Triton] at @s run function uhcp:titans/triton/attack
 execute if entity @s[tag=UHCP_Seraphim] at @s run function uhcp:titans/seraphim/attack
+execute if entity @s[tag=UHCP_Ferrum] at @s run function uhcp:titans/ferrum/attack

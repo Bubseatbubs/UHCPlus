@@ -7,5 +7,6 @@ execute if entity @s[tag=UHCP_BoneColossus] at @s run function uhcp:titans/bone_
 execute if entity @s[tag=UHCP_GigaCreeper] at @s run function uhcp:titans/giga_creeper/update
 execute if entity @s[tag=UHCP_Triton] at @s run function uhcp:titans/triton/update
 execute if entity @s[tag=UHCP_Seraphim] at @s run function uhcp:titans/seraphim/update
+execute if entity @s[tag=UHCP_Ferrum] at @s run function uhcp:titans/ferrum/update
 
 execute if score @s uhcp_titans_timer matches 200.. run function uhcp:titans/attack
