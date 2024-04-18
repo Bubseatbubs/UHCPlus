@@ -92,12 +92,47 @@
                       "color": "gray"
                     },
                     {
-                      "text": " 3🖤",
+                      "text": " 5🖤",
                       "color": "red"
                     },
                     {
                       "text": ".",
                       "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "More",
+                      "color": "gray",
+                      "italic": false
+                    },
+                    {
+                      "text": " Ingots",
+                      "color": "blue"
+                    },
+                    {
+                      "text": " appear based on the amount",
+                      "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "of",
+                      "color": "gray",
+                      "italic": false
+                    },
+                    {
+                      "text": " Golden Apples",
+                      "color": "white"
+                    },
+                    {
+                      "text": " you have.",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " (Cap: 20)",
+                      "color": "dark_gray",
+                      "italic": true
                     }
                   ]
                 ],
