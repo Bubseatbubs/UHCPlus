@@ -58,6 +58,8 @@ execute as @a[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal
 tag @a remove UHCP_ChoosingItem
 tag @a remove UHCP_Died
 tag @a remove UHCP_MilkBucket
+tag @a remove UHCP_RelicTestingChamber
+tag @a remove UHCP_SoulflameEmbrace
 tag @a remove UHCP_Spectator
 execute as @a[scores={uhcp_augment=220}] run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 execute as @a[scores={uhcp_augment=25}] run function uhcp:augments/effects/gold/scavengerhunt/reset
@@ -84,6 +86,7 @@ scoreboard players reset %lava_start uhcp_initStatus
 scoreboard players reset %update_display uhcp_game_time
 scoreboard players reset @a uhcp_lava_timeInterval
 scoreboard players reset @a uhcp_lava_maxHeight
+scoreboard players reset @a uhcp_lobby_item
 scoreboard players reset @a uhcp_aug_tier
 scoreboard players reset @a uhcp_aug_count
 scoreboard players reset @a uhcp_team

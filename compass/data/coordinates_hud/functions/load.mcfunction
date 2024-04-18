@@ -1,9 +1,9 @@
 # Creates all scores required by the datapack
 
-
+scoreboard objectives add ch_help trigger "show coordinates hud config"
 scoreboard objectives add ch_toggle trigger "toggle coordinates hud"
-scoreboard objectives add ch_toggleConst dummy
-scoreboard players set #ch_toggleConst ch_toggleConst -1
+scoreboard objectives add ch_toggleCons dummy
+scoreboard players set #ch_toggleCons ch_toggleCons -1
 
 scoreboard objectives add ch_x dummy
 scoreboard objectives add ch_y dummy

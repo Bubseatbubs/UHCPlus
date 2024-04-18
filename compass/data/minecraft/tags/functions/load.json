@@ -1,5 +1,5 @@
 {
-    "values": [
-        "#main:init"
-    ]
+	"values": [
+		"coordinates_hud:load"
+	]
 }
