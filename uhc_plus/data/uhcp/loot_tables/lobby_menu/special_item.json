@@ -288,7 +288,7 @@
                   "minecraft:enchantments": {
                     "levels": {
                       "minecraft:luck_of_the_sea": 10,
-                      "minecraft:lure": 10
+                      "minecraft:lure": 5
                     },
                     "show_in_tooltip": true
                   }
