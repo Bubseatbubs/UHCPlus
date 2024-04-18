@@ -2,7 +2,7 @@ scoreboard players add @s uhcp_timer 1
 execute on passengers at @s run tp @s ~ ~ ~ ~30 ~
 execute if score @s uhcp_timer matches ..35 run tp @s ^ ^ ^0.25
 execute if score @s uhcp_timer matches 35..70 run tp @s ^ ^ ^-0.25
-execute unless block ~ ~ ~ #uhcp:no_hitbox_blocks run scoreboard players set @s uhcp_timer 45
+execute unless block ~ ~ ~ #uhcp:no_hitbox_blocks run scoreboard players set @s uhcp_timer 35
 particle enchanted_hit ~ ~0.5 ~ 0.01 0.01 0.01 0.1 1 normal
 
 tag @s add UHCP_CurrentWindfallPiece
