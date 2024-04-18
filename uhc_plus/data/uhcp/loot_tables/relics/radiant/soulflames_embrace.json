@@ -85,6 +85,21 @@
                       "text": " of damage after 5 seconds.",
                       "color": "gray"
                     }
+                  ],
+                  [
+                    {
+                      "text": "Mobs take",
+                      "color": "gray",
+                      "italic": false
+                    },
+                    {
+                      "text": " 6🖤",
+                      "color": "red"
+                    },
+                    {
+                      "text": " of damage.",
+                      "color": "gray"
+                    }
                   ]
                 ],
                 "mode": "append"
