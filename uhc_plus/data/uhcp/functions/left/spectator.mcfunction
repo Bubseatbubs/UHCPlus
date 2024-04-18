@@ -12,6 +12,8 @@ scoreboard players set @s uhcp_team 0
 # Remove tags
 tag @s remove UHCP_ChoosingItem
 tag @s remove UHCP_Died
+tag @s remove UHCP_RelicTestingChamber
+tag @s remove UHCP_SoulflameEmbrace
 execute if score @s uhcp_augment matches 220 run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 execute if score @s uhcp_augment matches 25 run function uhcp:augments/effects/gold/scavengerhunt/reset
 
