@@ -14,6 +14,7 @@ execute if entity @s[tag=UHCP_Buzzburst] at @s run return run function uhcp:reli
 execute if entity @s[tag=UHCP_TurretOrigin] at @s run function uhcp:relics/runic_sentry/update
 execute if entity @s[tag=UHCP_TurretShot] at @s run function uhcp:relics/runic_sentry/laser/update
 execute if entity @s[tag=UHCP_WebORang] at @s run function uhcp:relics/web_o_rang/update
+execute if entity @s[tag=UHCP_WindfallPiece] at @s run function uhcp:relics/windfall/piece/update
 execute if entity @s[tag=UHCP_TempCobweb] at @s run function uhcp:relics/web_o_rang/update_temp_cobweb
 execute if entity @s[tag=UHCP_GoldBlock] run return run function uhcp:relics/windfall/update
 execute if entity @s[tag=UHCP_SCloneStand] run return run function uhcp:relics/smooth_getaway/update

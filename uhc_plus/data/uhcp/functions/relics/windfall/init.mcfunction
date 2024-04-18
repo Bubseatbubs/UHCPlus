@@ -26,6 +26,7 @@ execute if score @s uhcp_aug_count matches 17..19 at @e[tag=UHCP_HarvesterTarget
 execute if score @s uhcp_aug_count matches 20.. at @e[tag=UHCP_HarvesterTarget,sort=nearest,limit=1] anchored eyes run summon armor_stand ~ ~5 ~ {NoGravity:0b,Silent:1b,Small:1b,Invisible:1b,Tags:["UHCP_New","UHCP_GoldBlock","UHCP_Summon"],Passengers:[{id:"minecraft:block_display",NoGravity:0b,Tags:["UHCP_GBDisplay"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-3f,-3f,-3f],scale:[6f,6f,6f]},block_state:{Name:"minecraft:gold_block"}}]}
 
 scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_aug_tier = @s uhcp_aug_count
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_radiant:1b}] run tag @e[tag=UHCP_New,sort=nearest,limit=1] add UHCP_WindfallRadiant
 
 execute at @e[tag=UHCP_HarvesterTarget,sort=nearest,limit=1] run playsound minecraft:block.anvil.place player @a[distance=..6] ~ ~ ~ 1.0 0.6 1.0
 

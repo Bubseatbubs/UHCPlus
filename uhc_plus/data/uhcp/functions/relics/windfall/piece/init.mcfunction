@@ -1,0 +1,2 @@
+execute positioned ~ ~1 ~ run summon block_display ^ ^ ^.25 {teleport_duration:1,Tags:["UHCP_Summon","UHCP_WindfallPiece","UHCP_New"],Passengers:[{id:"minecraft:item_display",teleport_duration:1,item:{id:"minecraft:gold_ingot",Count:1},item_display:"fixed",transformation:[1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,-0.0000f,1.0000f,0.5000f,0.0000f,-1.0000f,-0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}]}
+scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_team = @s uhcp_team

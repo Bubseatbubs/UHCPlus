@@ -1,0 +1,116 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "value": "uhcp:relics/windfall",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": [
+                  {
+                    "text": "Radiant ",
+                    "color": "light_purple",
+                    "bold": true
+                  },
+                  {
+                    "text": "Wi",
+                    "color": "#0800FF",
+                    "bold": true
+                  },
+                  {
+                    "text": "nd",
+                    "color": "#2B64FF"
+                  },
+                  {
+                    "text": "fa",
+                    "color": "#428EFF"
+                  },
+                  {
+                    "text": "ll",
+                    "color": "#54B5FF"
+                  },
+                  {
+                    "text": " ℝ",
+                    "color": "white",
+                    "bold": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "Radiant Bonus:",
+                      "color": "blue",
+                      "bold": false,
+                      "italic": false
+                    },
+                    {
+                      "text": " Upon landing, the",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Gold Block",
+                      "color": "blue"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "creates a ring of",
+                      "color": "gray",
+                      "italic": false
+                    },
+                    {
+                      "text": " Ingots",
+                      "color": "blue"
+                    },
+                    {
+                      "text": " that fly outwards"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "before returning to origin.",
+                      "color": "gray",
+                      "italic": false
+                    },
+                    {
+                      "text": " Ingots",
+                      "color": "blue"
+                    },
+                    {
+                      "text": " deal",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " 3🖤",
+                      "color": "red"
+                    },
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ]
+                ],
+                "mode": "append"
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:5b,uhcp_radiant:1b}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
