@@ -26,6 +26,7 @@ execute if score @s uhcp_augment matches 18 run return run function uhcp:augment
 execute if score @s uhcp_augment matches 19 run return run function uhcp:augments/effects/gold/luckylooter
 execute if score @s uhcp_augment matches 20 run return run function uhcp:augments/effects/gold/moneymoney
 execute if score @s uhcp_augment matches 21 run return run function uhcp:augments/effects/gold/pearly
+execute if score @s uhcp_augment matches 22 run return run function uhcp:augments/effects/gold/protectprotocolii
 execute if score @s uhcp_augment matches 23 run return run function uhcp:augments/effects/gold/lilbro
 execute if score @s uhcp_augment matches 24 run return run function uhcp:augments/effects/gold/moonwalking
 execute if score @s uhcp_augment matches 25 run return run function uhcp:augments/effects/gold/scavengerhunt
