@@ -1,5 +1,4 @@
 # Place features
-fill ^41 ^-10 ^21 ^60 ^-10 ^43 minecraft:black_concrete
 fill ^36 ^13 ^34 ^36 ^14 ^34 minecraft:structure_void
 fill ^52 ^11 ^20 ^52 ^12 ^20 minecraft:structure_void
 setblock ^53 ^22 ^44 minecraft:pointed_dripstone[vertical_direction=down]
