@@ -5,4 +5,4 @@ execute at @s if score @s uhcp_timer matches 25.. unless entity @e[tag=UHCP_Ferr
 execute unless score @s uhcp_timer matches 25.. run return 0
 execute if score @s uhcp_timer matches 25 run return run function uhcp:titans/ferrum/jump/prepare_land
 
-execute if score @s uhcp_timer matches 100.. run function uhcp:titans/ferrum/jump/land
+execute if score @s uhcp_timer matches 90.. run function uhcp:titans/ferrum/jump/land

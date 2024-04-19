@@ -8,6 +8,7 @@ execute if score %blocksfilled uhcp_titans_count matches 3.. run playsound entit
 scoreboard players reset %y_diff uhcp_titans_height
 
 execute if score @s uhcp_timer matches 10.. at @s if entity @s[tag=UHCP_IsJumping] if entity @e[tag=UHCP_FerrumLanding,distance=..2] run function uhcp:titans/ferrum/jump/land
+execute if score @s uhcp_timer matches 10.. at @s if entity @s[tag=UHCP_IsJumping] if entity @p[gamemode=survival,distance=..2] run function uhcp:titans/ferrum/jump/land
 execute if entity @s[tag=UHCP_IsJumping] run return run function uhcp:titans/ferrum/jump/update
 execute unless function uhcp:titans/check_aggression run return 0
 
