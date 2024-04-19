@@ -3,6 +3,7 @@
 # Other
 execute if entity @s[tag=UHCP_WarningSymbol] at @s run function uhcp:entity/warning_symbol/update
 execute if entity @s[tag=UHCP_Scout] at @s unless entity @a[distance=..3] run function uhcp:augments/effects/silver/structurescout/clear
+execute if entity @s[tag=UHCP_RunicSentrySummon] at @s if entity @p[gamemode=survival,distance=..8] run function uhcp:entity/runic_sentry_summon
 
 # Consumables
 execute if entity @s[tag=UHCP_WebSlinger] at @s run function uhcp:consumables/web_slinger/update
@@ -37,6 +38,9 @@ execute if entity @s[tag=UHCP_BoneBlock] run return run function uhcp:titans/bon
 execute if entity @s[tag=UHCP_AnvilBlock] run return run function uhcp:titans/ferrum/block/update
 execute if entity @s[tag=UHCP_FerrumBlockIndicator] run return run function uhcp:titans/ferrum/block/indicator/update
 execute if entity @s[tag=UHCP_InfernusCircleStrike] run return run function uhcp:titans/infernus/circle_fire/update
+execute if entity @s[tag=UHCP_TyrionSaber] run return run function uhcp:titans/tyrion/soulflames_embrace/update_soulflame
+execute if entity @s[tag=UHCP_TyrionSoulflame] run return run function uhcp:titans/tyrion/soulflames_embrace/update
+execute if entity @s[tag=UHCP_TyrionVoltrune] run return run function uhcp:titans/tyrion/voltrune/update
 
 # Augments
 execute if entity @s[tag=UHCP_PhantomClaw,tag=!UHCP_FlyingTowardsTarget] run return run function uhcp:augments/effects/gold/phantomclaw/update
@@ -49,4 +53,3 @@ execute if entity @s[tag=UHCP_GraveMarker] at @s run function uhcp:titans/gigant
 execute if entity @s[tag=UHCP_FenrirMinion] at @s run function uhcp:titans/fenrir/wolves/update
 execute if entity @s[tag=UHCP_KungfuPanda] at @s run function uhcp:augments/effects/prismatic/kungfupanda/update
 execute if entity @s[tag=UHCP_Bee] at @s run return run function uhcp:entity/bees/update
-execute if entity @s[tag=UHCP_RunicSentrySummon] at @s if entity @p[gamemode=survival,distance=..8] run function uhcp:entity/runic_sentry_summon

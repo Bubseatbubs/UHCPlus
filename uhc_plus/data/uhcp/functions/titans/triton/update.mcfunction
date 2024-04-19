@@ -1,5 +1,5 @@
 tag @s add UHCP_CurrentTitan
-execute as @a[distance=..3] run damage @s 4 mob_attack by @e[tag=UHCP_CurrentTitan,sort=nearest,limit=1]
+execute as @a[distance=..3.5] run damage @s 4 mob_attack by @e[tag=UHCP_CurrentTitan,sort=nearest,limit=1]
 tag @s remove UHCP_CurrentTitan
 
 execute store result score %blocksfilled uhcp_titans_count run fill ~-5 ~1.5 ~-5 ~5 ~16 ~5 water replace #uhcp:titan_can_break
