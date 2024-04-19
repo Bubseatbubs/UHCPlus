@@ -10,22 +10,22 @@
           "name": "minecraft:sniffer_spawn_egg"
         },
         {
-          "type": "loot_table",
+          "type": "minecraft:loot_table",
           "weight": 1,
           "value": "uhcp:armaments/armored_wings"
         },
         {
-          "type": "loot_table",
+          "type": "minecraft:loot_table",
           "weight": 1,
           "value": "uhcp:consumables/relic_invoker"
         },
         {
-          "type": "loot_table",
+          "type": "minecraft:loot_table",
           "weight": 1,
           "value": "uhcp:consumables/royal_jelly"
         },
         {
-          "type": "loot_table",
+          "type": "minecraft:loot_table",
           "weight": 1,
           "value": "uhcp:consumables/wild_feather",
           "functions": [
@@ -36,7 +36,7 @@
           ]
         },
         {
-          "type": "loot_table",
+          "type": "minecraft:loot_table",
           "weight": 1,
           "value": "uhcp:consumables/web_slinger",
           "functions": [
@@ -47,7 +47,7 @@
           ]
         },
         {
-          "type": "loot_table",
+          "type": "minecraft:loot_table",
           "weight": 2,
           "value": "uhcp:consumables/lesser_duplicator",
           "functions": [
@@ -58,7 +58,7 @@
           ]
         },
         {
-          "type": "loot_table",
+          "type": "minecraft:loot_table",
           "weight": 1,
           "value": "uhcp:consumables/suspicious_flesh",
           "functions": [
@@ -69,7 +69,7 @@
           ]
         },
         {
-          "type": "loot_table",
+          "type": "minecraft:loot_table",
           "weight": 1,
           "value": "uhcp:consumables/all-seeing_eye",
           "functions": [
@@ -80,17 +80,17 @@
           ]
         },
         {
-          "type": "loot_table",
+          "type": "minecraft:loot_table",
           "weight": 1,
           "value": "uhcp:consumables/portable_lava_pool"
         },
         {
-          "type": "loot_table",
+          "type": "minecraft:loot_table",
           "weight": 1,
           "value": "uhcp:consumables/groovy_disc"
         },
         {
-          "type": "loot_table",
+          "type": "minecraft:loot_table",
           "weight": 1,
           "value": "uhcp:armaments/boots_of_swiftness"
         },

@@ -5,7 +5,7 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "loot_table",
+          "type": "minecraft:loot_table",
           "weight": 1,
           "value": "uhcp:consumables/relic_invoker"
         },
