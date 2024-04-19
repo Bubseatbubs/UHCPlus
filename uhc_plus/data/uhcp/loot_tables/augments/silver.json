@@ -1202,7 +1202,7 @@
                     "color": "white"
                   },
                   {
-                    "text": " and a",
+                    "text": " and",
                     "color": "gray"
                   },
                   {
@@ -1825,6 +1825,10 @@
                   {
                     "text": " 🖤",
                     "color": "red"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
                   }
                 ]
               ],

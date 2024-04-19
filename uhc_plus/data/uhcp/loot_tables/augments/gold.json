@@ -722,7 +722,7 @@
                 ],
                 [
                   {
-                    "text": "and",
+                    "text": "and ",
                     "color": "gray"
                   },
                   {
@@ -1418,7 +1418,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Block of Diamond",
+                    "text": "Block of Diamond",
                     "color": "white"
                   },
                   {
@@ -1633,7 +1633,7 @@
                 ],
                 [
                   {
-                    "text": " into 30 seconds of",
+                    "text": "into 30 seconds of",
                     "color": "gray"
                   },
                   {
@@ -2791,7 +2791,7 @@
                 ],
                 [
                   {
-                    "text": " into",
+                    "text": "into",
                     "color": "gray"
                   },
                   {
