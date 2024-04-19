@@ -13,16 +13,17 @@ tag @s remove UHCP_Died
 execute if score @s uhcp_augment matches 220 run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 execute if score @s uhcp_augment matches 25 run function uhcp:augments/effects/gold/scavengerhunt/reset
 
+# Return player as needed
+execute in minecraft:overworld run forceload add -80 -80 79 79
+execute at @e[tag=UHCP_LobbyOrigin,limit=1] align y run function uhcp:left/lobby/reset
+execute in minecraft:overworld run forceload remove -80 -80 79 79
+
 # Lobby menu
 execute unless score @s uhcp_ready = @s uhcp_ready run scoreboard players set @s uhcp_ready 0
 function uhcp:lobby/menu
 execute if score @s uhcp_ready matches 1 run function uhcp:lobby/readyup/cancel
 
-
 # Manage player
-execute in minecraft:overworld run forceload add -80 -80 79 79
-execute at @e[tag=UHCP_LobbyOrigin,limit=1] align y run function uhcp:left/lobby/return
-execute in minecraft:overworld run forceload remove -80 -80 79 79
 gamemode adventure @s
 execute unless items entity @s container.1 *[minecraft:custom_data~{uhcp_lobby:1b}] run clear @s
 function uhcp:reset/attributes
