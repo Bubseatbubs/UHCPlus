@@ -4,7 +4,7 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:golden_apple",
           "functions": [
@@ -15,7 +15,7 @@
           ]
         },
         {
-          "type": "loot_table",
+          "type": "minecraft:loot_table",
           "weight": 4,
           "value": "uhcp:consumables/relic_invoker",
           "functions": [
@@ -26,7 +26,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 3,
           "name": "minecraft:enchanted_book",
           "functions": [
@@ -47,7 +47,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 3,
           "name": "minecraft:enchanted_book",
           "functions": [
@@ -68,7 +68,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 20,
           "name": "minecraft:enchanted_book",
           "functions": [
@@ -89,7 +89,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 20,
           "name": "minecraft:enchanted_book",
           "functions": [
@@ -110,7 +110,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 20,
           "name": "minecraft:diamond",
           "functions": [
@@ -121,7 +121,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:golden_apple",
           "functions": [
@@ -132,7 +132,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:golden_apple",
           "functions": [
