@@ -1,0 +1,4 @@
+summon blaze ~ ~ ~ {CustomNameVisible:0b,PersistenceRequired:1b,Health:750f,Tags:["UHCP_Titan","UHCP_Infernus","UHCP_New"],CustomName:'{"text":"Infernus","color":"red","bold":true}',Attributes:[{Name:generic.armor,Base:5},{Name:generic.attack_damage,Base:0},{Name:generic.fall_damage_multiplier,Base:0},{Name:generic.follow_range,Base:80},{Name:generic.gravity,Base:1},{Name:generic.jump_strength,Base:0},{Name:generic.knockback_resistance,Base:0.9},{Name:generic.max_health,Base:750},{Name:generic.movement_speed,Base:0.27},{Name:generic.scale,Base:9},{Name:generic.step_height,Base:2}]}
+scoreboard players add %global uhcp_id 1
+scoreboard players operation @e[tag=UHCP_New] uhcp_id = %global uhcp_id
+scoreboard players set @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] uhcp_titans_ID 9

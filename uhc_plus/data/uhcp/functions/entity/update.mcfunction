@@ -36,6 +36,7 @@ execute if entity @s[tag=UHCP_TritonTridentHitbox,nbt={inGround:1b}] at @s run r
 execute if entity @s[tag=UHCP_BoneBlock] run return run function uhcp:titans/bone_colossus/block/update
 execute if entity @s[tag=UHCP_AnvilBlock] run return run function uhcp:titans/ferrum/block/update
 execute if entity @s[tag=UHCP_FerrumBlockIndicator] run return run function uhcp:titans/ferrum/block/indicator/update
+execute if entity @s[tag=UHCP_InfernusCircleStrike] run return run function uhcp:titans/infernus/circle_fire/update
 
 # Augments
 execute if entity @s[tag=UHCP_PhantomClaw,tag=!UHCP_FlyingTowardsTarget] run return run function uhcp:augments/effects/gold/phantomclaw/update

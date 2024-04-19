@@ -9,3 +9,4 @@ execute if entity @s[tag=UHCP_GigaCreeper] at @s run function uhcp:titans/giga_c
 execute if entity @s[tag=UHCP_Triton] at @s run function uhcp:titans/triton/attack
 execute if entity @s[tag=UHCP_Seraphim] at @s run function uhcp:titans/seraphim/attack
 execute if entity @s[tag=UHCP_Ferrum] at @s run function uhcp:titans/ferrum/attack
+execute if entity @s[tag=UHCP_Infernus] at @s run function uhcp:titans/infernus/attack
