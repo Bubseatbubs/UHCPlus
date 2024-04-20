@@ -67,6 +67,24 @@
               ],
               "mode": "replace_all"
             }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:-1s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
           ]
         }
       ]
