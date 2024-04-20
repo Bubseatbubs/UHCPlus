@@ -5,6 +5,10 @@ execute as @a[scores={uhcp_leave=1..}] run function uhcp:left
 # Game Start Countdown
 execute if score %start_countdown uhcp_initStatus matches 1.. run function uhcp:lobby/countdown
 
+# On Player Death
+execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:kill/death
+execute if entity @a[tag=UHCP_Died] run function uhcp:kill/death/time
+
 # After time starts moving
 execute if score %time uhcp_initStatus matches 1 run function uhcp:time
 
@@ -17,9 +21,6 @@ execute if score %lava_start uhcp_initStatus matches 1 run function uhcp:lava/ru
 # Settings menu
 execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uhcp:settings/change
 function uhcp:settings/tick
-
-# On Player Death
-execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:kill/death
 
 # Augments
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
@@ -56,9 +57,6 @@ execute as @e[type=minecraft:ender_pearl] at @s run function uhcp:entity/ender_p
 
 # Instant pickup items
 execute as @e[tag=!UHCP_ItemPickup,predicate=uhcp:items/instant_pickup] run function uhcp:entity/items/instant_pickup
-
-# Death time
-execute if entity @a[tag=UHCP_Died] run function uhcp:kill/death/time
 
 # Item use timer
 scoreboard players remove @a[scores={uhcp_itemCount=1..}] uhcp_itemCount 1
