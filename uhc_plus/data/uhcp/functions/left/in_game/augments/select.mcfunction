@@ -1,11 +1,10 @@
 #>  uhcp:left/in_game/augments/select
-#   Runs for a player who left during augment selection
-#   Runs the effects that would've occurred if the player was in game when augment selection finished
+#   Runs for a player whom left during augment selection.
+#   Runs the effects that would've occurred if the player was in game when augment selection finished.
 #
 # @within  uhcp:left/in_game/alive
 
 gamemode survival @s
-bossbar set uhcp:augment players
 ride @s dismount
 execute at @s as @e[tag=UHCP_Lock,distance=..100] in uhcp:main run tp @s 0 -63 0
 
