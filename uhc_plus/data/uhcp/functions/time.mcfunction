@@ -26,11 +26,29 @@ function uhcp:timer/timer
 
 # Announce Augments
 execute as @a[scores={augments=1..}] run function uhcp:augments/announce
-scoreboard players enable @a augments
+
+# Player compass
+execute unless score %compass_time uhcp_itemCount matches 1.. if entity @a[predicate=uhcp:compass/player_compass/hand,gamemode=survival] run function uhcp:compass/determine
+execute unless score %compass_time uhcp_itemCount matches ..0 run scoreboard players remove %compass_time uhcp_itemCount 1
+
+# Top Command
+execute if entity @a[scores={top=1..}] run function uhcp:top/validate
+execute as @a[scores={uhcp_top_delay=1..}] at @s run function uhcp:top/finish
+scoreboard players remove @a[scores={uhcp_top_CD=1..}] uhcp_top_CD 1
+execute as @a[tag=UHCP_IsTeleporting] at @s unless entity @e[type=minecraft:marker,tag=UHCP_topCheck,distance=..1] run function uhcp:top/cancel
+execute as @a[tag=UHCP_IsTeleporting] at @s run function uhcp:top/updatecharge
 
 # Testkit
 execute as @a[gamemode=survival] if score @s testkit matches 1.. run function uhcp:testkit/verify
 execute as @a[scores={uhcp_testkit=1}] run function uhcp:testkit/kit
+
+# Consumables
+execute as @a[tag=UHCP_ListeningToPigstep] at @s run function uhcp:consumables/groovy_disc/update
+execute as @a[tag=UHCP_IsRabbit] at @s run function uhcp:consumables/magic_trick/update
+execute as @a[tag=UHCP_IsAttackTitan] at @s run function uhcp:consumables/titan_spinal_fluid/update
+
+# Ate Golden Apple Effect
+execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:entity/items/ate_golden_apple/update
 
 # Milk bucket
 execute as @a[tag=UHCP_MilkBucket] run function uhcp:milk_bucket/apply
@@ -48,5 +66,6 @@ execute as @a[scores={uhcp_mine_rawGoldBlock=1..},gamemode=survival] run functio
 execute as @a[scores={uhcp_mine_rawIronBlock=1..},gamemode=survival] run function uhcp:mine/raw_iron_block
 
 # Enable triggers
+scoreboard players enable @a augments
 scoreboard players enable @a[gamemode=survival] top
 scoreboard players enable @a[gamemode=survival] testkit

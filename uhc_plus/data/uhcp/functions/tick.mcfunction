@@ -1,9 +1,9 @@
-# Game Start Countdown
-execute if score %start_countdown uhcp_initStatus matches 1.. run function uhcp:lobby/countdown
-
 # Manage players
 execute as @a[tag=!UHCP_Player] run function uhcp:new
 execute as @a[scores={uhcp_leave=1..}] run function uhcp:left
+
+# Game Start Countdown
+execute if score %start_countdown uhcp_initStatus matches 1.. run function uhcp:lobby/countdown
 
 # After time starts moving
 execute if score %time uhcp_initStatus matches 1 run function uhcp:time
@@ -14,26 +14,12 @@ execute if score %game uhcp_initStatus matches 1 run function uhcp:timer/update_
 # Lava
 execute if score %lava_start uhcp_initStatus matches 1 run function uhcp:lava/run
 
-# Player compass
-execute unless score %compass_time uhcp_itemCount matches 1.. if entity @a[predicate=uhcp:compass/player_compass/hand,gamemode=survival] run function uhcp:compass/determine
-execute unless score %compass_time uhcp_itemCount matches ..0 run scoreboard players remove %compass_time uhcp_itemCount 1
-
 # Settings menu
 execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uhcp:settings/change
 function uhcp:settings/tick
 
-# Top Command
-execute if entity @a[scores={top=1..}] run function uhcp:top/validate
-execute as @a[scores={uhcp_top_delay=1..}] at @s run function uhcp:top/finish
-scoreboard players remove @a[scores={uhcp_top_CD=1..}] uhcp_top_CD 1
-execute as @a[tag=UHCP_IsTeleporting] at @s unless entity @e[type=minecraft:marker,tag=UHCP_topCheck,distance=..1] run function uhcp:top/cancel
-execute as @a[tag=UHCP_IsTeleporting] at @s run function uhcp:top/updatecharge
-
 # On Player Death
 execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:kill/death
-
-# Ate Golden Apple Effect
-execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:entity/items/ate_golden_apple/update
 
 # Augments
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
@@ -57,11 +43,6 @@ execute as @e[tag=UHCP_Summon] at @s run function uhcp:entity/update
 execute as @a at @s if entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/update
 execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/hide
 execute as @e[type=!player,tag=UHCP_Titan] at @s run function uhcp:titans/update
-
-# Consumables
-execute as @a[tag=UHCP_ListeningToPigstep] at @s run function uhcp:consumables/groovy_disc/update
-execute as @a[tag=UHCP_IsRabbit] at @s run function uhcp:consumables/magic_trick/update
-execute as @a[tag=UHCP_IsAttackTitan] at @s run function uhcp:consumables/titan_spinal_fluid/update
 
 # Relics
 execute as @a[tag=UHCP_SoulflameEmbrace] at @s run function uhcp:relics/soulflames_embrace/update_player
