@@ -110,6 +110,8 @@ scoreboard players reset @a uhcp_mine_rawIronBlock
 scoreboard players reset %global uhcp_id
 scoreboard players reset @a uhcp_leave
 scoreboard players reset @a uhcp_top_CD
+scoreboard players reset @a uhcp_top_charge
+scoreboard players reset @a uhcp_top_delay
 scoreboard players reset @a uhcp_wolf_stacks
 
 # Remove tags

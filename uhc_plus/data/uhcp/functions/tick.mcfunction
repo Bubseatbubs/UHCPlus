@@ -27,10 +27,7 @@ execute if entity @a[scores={top=1..}] run function uhcp:top/validate
 execute as @a[scores={uhcp_top_delay=1..}] at @s run function uhcp:top/finish
 scoreboard players remove @a[scores={uhcp_top_CD=1..}] uhcp_top_CD 1
 execute as @a[tag=UHCP_IsTeleporting] at @s unless entity @e[type=minecraft:marker,tag=UHCP_topCheck,distance=..1] run function uhcp:top/cancel
-
-# Top Chargeup
 execute as @a[tag=UHCP_IsTeleporting] at @s run function uhcp:top/updatecharge
-execute if entity @a[scores={top=1..}] run function uhcp:top/validate
 
 # On Player Death
 execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:kill/death
