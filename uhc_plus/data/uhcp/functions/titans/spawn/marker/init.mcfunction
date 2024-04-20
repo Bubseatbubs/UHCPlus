@@ -1,5 +1,5 @@
 tag @s add UHCP_TitanSpawn
-execute store result score @s uhcp_titans_count run random value 1..10
+execute store result score @s uhcp_titans_count run random value 1..11
 
 function uhcp:titans/spawn/marker/spread with storage uhcp:titan_radius radius
 execute at @s run forceload add ~-6 ~-6 ~6 ~6

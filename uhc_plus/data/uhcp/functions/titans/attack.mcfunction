@@ -11,3 +11,4 @@ execute if entity @s[tag=UHCP_Seraphim] at @s run function uhcp:titans/seraphim/
 execute if entity @s[tag=UHCP_Ferrum] at @s run function uhcp:titans/ferrum/attack
 execute if entity @s[tag=UHCP_Infernus] at @s run function uhcp:titans/infernus/attack
 execute if entity @s[tag=UHCP_Tyrion] at @s run function uhcp:titans/tyrion/attack
+execute if entity @s[tag=UHCP_Gerald] at @s run function uhcp:titans/gerald/attack
