@@ -62,42 +62,58 @@
             }
           ],
           "conditions": [
-              {
-                "condition": "minecraft:any_of",
-                "terms": [
-                  {
-                    "condition": "minecraft:entity_scores",
-                    "entity": "this",
-                    "scores": {
-                      "uhcp_aug_choosingAugment": 0,
-                      "uhcp_aug_patron": 0
-                    }
-                  },
-                  {
-                    "condition": "minecraft:all_of",
-                    "terms": [
-                      {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                          "condition": "minecraft:entity_scores",
-                          "entity": "this",
-                          "scores": {
-                            "uhcp_aug_patron": 0
-                          }
-                        }
-                      },
-                      {
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_patron": 0
+                  }
+                },
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
                         "condition": "minecraft:entity_scores",
                         "entity": "this",
                         "scores": {
-                          "uhcp_aug_choosingAugment": 1
+                          "uhcp_aug_patron": 0
                         }
                       }
-                    ]
+                    },
+                    {
+                      "condition": "minecraft:entity_scores",
+                      "entity": "this",
+                      "scores": {
+                        "uhcp_aug_choosingAugment": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:109s}"
+                      }
+                    }
                   }
-                ]
+                }
               }
-            ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -164,42 +180,58 @@
             }
           ],
           "conditions": [
-              {
-                "condition": "minecraft:any_of",
-                "terms": [
-                  {
-                    "condition": "minecraft:entity_scores",
-                    "entity": "this",
-                    "scores": {
-                      "uhcp_aug_choosingAugment": 0,
-                      "uhcp_aug_patron": 2
-                    }
-                  },
-                  {
-                    "condition": "minecraft:all_of",
-                    "terms": [
-                      {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                          "condition": "minecraft:entity_scores",
-                          "entity": "this",
-                          "scores": {
-                            "uhcp_aug_patron": 2
-                          }
-                        }
-                      },
-                      {
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_patron": 2
+                  }
+                },
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
                         "condition": "minecraft:entity_scores",
                         "entity": "this",
                         "scores": {
-                          "uhcp_aug_choosingAugment": 1
+                          "uhcp_aug_patron": 2
                         }
                       }
-                    ]
+                    },
+                    {
+                      "condition": "minecraft:entity_scores",
+                      "entity": "this",
+                      "scores": {
+                        "uhcp_aug_choosingAugment": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:119s}"
+                      }
+                    }
                   }
-                ]
+                }
               }
-            ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -254,42 +286,58 @@
             }
           ],
           "conditions": [
-              {
-                "condition": "minecraft:any_of",
-                "terms": [
-                  {
-                    "condition": "minecraft:entity_scores",
-                    "entity": "this",
-                    "scores": {
-                      "uhcp_aug_choosingAugment": 0,
-                      "uhcp_aug_patron": 6
-                    }
-                  },
-                  {
-                    "condition": "minecraft:all_of",
-                    "terms": [
-                      {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                          "condition": "minecraft:entity_scores",
-                          "entity": "this",
-                          "scores": {
-                            "uhcp_aug_patron": 6
-                          }
-                        }
-                      },
-                      {
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_patron": 6
+                  }
+                },
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
                         "condition": "minecraft:entity_scores",
                         "entity": "this",
                         "scores": {
-                          "uhcp_aug_choosingAugment": 1
+                          "uhcp_aug_patron": 6
                         }
                       }
-                    ]
+                    },
+                    {
+                      "condition": "minecraft:entity_scores",
+                      "entity": "this",
+                      "scores": {
+                        "uhcp_aug_choosingAugment": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:126s}"
+                      }
+                    }
                   }
-                ]
+                }
               }
-            ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -356,42 +404,58 @@
             }
           ],
           "conditions": [
-              {
-                "condition": "minecraft:any_of",
-                "terms": [
-                  {
-                    "condition": "minecraft:entity_scores",
-                    "entity": "this",
-                    "scores": {
-                      "uhcp_aug_choosingAugment": 0,
-                      "uhcp_aug_patron": 5
-                    }
-                  },
-                  {
-                    "condition": "minecraft:all_of",
-                    "terms": [
-                      {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                          "condition": "minecraft:entity_scores",
-                          "entity": "this",
-                          "scores": {
-                            "uhcp_aug_patron": 5
-                          }
-                        }
-                      },
-                      {
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_patron": 5
+                  }
+                },
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
                         "condition": "minecraft:entity_scores",
                         "entity": "this",
                         "scores": {
-                          "uhcp_aug_choosingAugment": 1
+                          "uhcp_aug_patron": 5
                         }
                       }
-                    ]
+                    },
+                    {
+                      "condition": "minecraft:entity_scores",
+                      "entity": "this",
+                      "scores": {
+                        "uhcp_aug_choosingAugment": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:114s}"
+                      }
+                    }
                   }
-                ]
+                }
               }
-            ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -450,42 +514,58 @@
             }
           ],
           "conditions": [
-              {
-                "condition": "minecraft:any_of",
-                "terms": [
-                  {
-                    "condition": "minecraft:entity_scores",
-                    "entity": "this",
-                    "scores": {
-                      "uhcp_aug_choosingAugment": 0,
-                      "uhcp_aug_patron": 4
-                    }
-                  },
-                  {
-                    "condition": "minecraft:all_of",
-                    "terms": [
-                      {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                          "condition": "minecraft:entity_scores",
-                          "entity": "this",
-                          "scores": {
-                            "uhcp_aug_patron": 4
-                          }
-                        }
-                      },
-                      {
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_patron": 4
+                  }
+                },
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
                         "condition": "minecraft:entity_scores",
                         "entity": "this",
                         "scores": {
-                          "uhcp_aug_choosingAugment": 1
+                          "uhcp_aug_patron": 4
                         }
                       }
-                    ]
+                    },
+                    {
+                      "condition": "minecraft:entity_scores",
+                      "entity": "this",
+                      "scores": {
+                        "uhcp_aug_choosingAugment": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:111s}"
+                      }
+                    }
                   }
-                ]
+                }
               }
-            ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -565,42 +645,58 @@
             }
           ],
           "conditions": [
-              {
-                "condition": "minecraft:any_of",
-                "terms": [
-                  {
-                    "condition": "minecraft:entity_scores",
-                    "entity": "this",
-                    "scores": {
-                      "uhcp_aug_choosingAugment": 0,
-                      "uhcp_aug_patron": 7
-                    }
-                  },
-                  {
-                    "condition": "minecraft:all_of",
-                    "terms": [
-                      {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                          "condition": "minecraft:entity_scores",
-                          "entity": "this",
-                          "scores": {
-                            "uhcp_aug_patron": 7
-                          }
-                        }
-                      },
-                      {
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_patron": 7
+                  }
+                },
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
                         "condition": "minecraft:entity_scores",
                         "entity": "this",
                         "scores": {
-                          "uhcp_aug_choosingAugment": 1
+                          "uhcp_aug_patron": 7
                         }
                       }
-                    ]
+                    },
+                    {
+                      "condition": "minecraft:entity_scores",
+                      "entity": "this",
+                      "scores": {
+                        "uhcp_aug_choosingAugment": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:126s}"
+                      }
+                    }
                   }
-                ]
+                }
               }
-            ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -642,42 +738,58 @@
             }
           ],
           "conditions": [
-              {
-                "condition": "minecraft:any_of",
-                "terms": [
-                  {
-                    "condition": "minecraft:entity_scores",
-                    "entity": "this",
-                    "scores": {
-                      "uhcp_aug_choosingAugment": 0,
-                      "uhcp_aug_patron": 3
-                    }
-                  },
-                  {
-                    "condition": "minecraft:all_of",
-                    "terms": [
-                      {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                          "condition": "minecraft:entity_scores",
-                          "entity": "this",
-                          "scores": {
-                            "uhcp_aug_patron": 3
-                          }
-                        }
-                      },
-                      {
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_patron": 3
+                  }
+                },
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
                         "condition": "minecraft:entity_scores",
                         "entity": "this",
                         "scores": {
-                          "uhcp_aug_choosingAugment": 1
+                          "uhcp_aug_patron": 3
                         }
                       }
-                    ]
+                    },
+                    {
+                      "condition": "minecraft:entity_scores",
+                      "entity": "this",
+                      "scores": {
+                        "uhcp_aug_choosingAugment": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:150s}"
+                      }
+                    }
                   }
-                ]
+                }
               }
-            ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -729,42 +841,58 @@
             }
           ],
           "conditions": [
-              {
-                "condition": "minecraft:any_of",
-                "terms": [
-                  {
-                    "condition": "minecraft:entity_scores",
-                    "entity": "this",
-                    "scores": {
-                      "uhcp_aug_choosingAugment": 0,
-                      "uhcp_aug_patron": 1
-                    }
-                  },
-                  {
-                    "condition": "minecraft:all_of",
-                    "terms": [
-                      {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                          "condition": "minecraft:entity_scores",
-                          "entity": "this",
-                          "scores": {
-                            "uhcp_aug_patron": 1
-                          }
-                        }
-                      },
-                      {
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_patron": 1
+                  }
+                },
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
                         "condition": "minecraft:entity_scores",
                         "entity": "this",
                         "scores": {
-                          "uhcp_aug_choosingAugment": 1
+                          "uhcp_aug_patron": 1
                         }
                       }
-                    ]
+                    },
+                    {
+                      "condition": "minecraft:entity_scores",
+                      "entity": "this",
+                      "scores": {
+                        "uhcp_aug_choosingAugment": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:149s}"
+                      }
+                    }
                   }
-                ]
+                }
               }
-            ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -860,6 +988,22 @@
                   ]
                 }
               ]
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:106s}"
+                      }
+                    }
+                  }
+                }
+              }
             }
           ]
         }
