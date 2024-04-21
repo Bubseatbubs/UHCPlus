@@ -68,7 +68,8 @@
                 [
                   {
                     "text": "Royal Guard",
-                    "color": "blue"
+                    "color": "blue",
+                    "italic": false
                   },
                   {
                     "text": ", a large ",
@@ -76,8 +77,7 @@
                   },
                   {
                     "text": "Bee",
-                    "color": "blue",
-                    "italic": false
+                    "color": "blue"
                   },
                   {
                     "text": " with",
