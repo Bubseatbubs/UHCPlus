@@ -1,94 +1,93 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:loot_table",
-            "value": "uhcp:relics/flux_factor",
-            "functions": [
-              {
-                "function": "minecraft:set_name",
-                "target": "item_name",
-                "name": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "uhcp:relics/flux_factor",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Radiant ",
+                  "color": "light_purple",
+                  "bold": true
+                },
+                {
+                  "text": "Fl",
+                  "color": "#0800FF",
+                  "bold": true
+                },
+                {
+                  "text": "ux",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": " Fa",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": "ct",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": "or",
+                  "color": "#54C0FF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": ""
+                },
+                [
                   {
-                    "text": "Radiant ",
-                    "color": "light_purple",
-                    "bold": true
+                    "text": "Radiant Bonus:",
+                    "color": "blue",
+                    "bold": false,
+                    "italic": false
                   },
                   {
-                    "text": "Fl",
-                    "color": "#0800FF",
-                    "bold": true
+                    "text": " After the zone disappears,",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "all enemies are struck by",
+                    "color": "gray",
+                    "italic": false
                   },
                   {
-                    "text": "ux",
-                    "color": "#2B64FF"
+                    "text": " Lightning",
+                    "color": "blue"
                   },
                   {
-                    "text": " Fa",
-                    "color": "#428EFF"
-                  },
-                  {
-                    "text": "ct",
-                    "color": "#54B5FF"
-                  },
-                  {
-                    "text": "or",
-                    "color": "#54C0FF"
-                  },
-                  {
-                    "text": " ℝ",
-                    "color": "white",
-                    "bold": false
+                    "text": ".",
+                    "color": "gray"
                   }
                 ]
-              },
-              {
-                "function": "minecraft:set_lore",
-                "entity": "this",
-                "lore": [
-                  {
-                    "text": ""
-                  },
-                  [
-                    {
-                      "text": "Radiant Bonus:",
-                      "color": "blue",
-                      "bold": false,
-                      "italic": false
-                    },
-                    {
-                      "text": " After the zone disappears,",
-                      "color": "gray"
-                    }
-                  ],
-                  [
-                    {
-                      "text": "all enemies are struck by",
-                      "color": "gray",
-                      "italic": false
-                    },
-                    {
-                      "text": " Lightning",
-                      "color": "blue"
-                    },
-                    {
-                      "text": ".",
-                      "color": "gray"
-                    }
-                  ]
-                ],
-                "mode": "append"
-              },
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:2b,uhcp_radiant:1b}"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:2b,uhcp_radiant:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

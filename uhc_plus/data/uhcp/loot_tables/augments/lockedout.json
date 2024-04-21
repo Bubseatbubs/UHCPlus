@@ -1,62 +1,61 @@
 {
-    "type": "minecraft:chest",
-    "pools": [
-      {
-        "rolls": 3,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:golden_apple",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": 3
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:golden_apple",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": 2
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:golden_apple"
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:loot_table",
-            "value": "uhcp:consumables/relic_invoker"
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:loot_table",
-            "value": "uhcp:augments/diamondgrabbag"
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:loot_table",
-            "value": "uhcp:augments/bookworm"
-          }
-        ]
-      }
-    ]
-  }
-  
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "uhcp:consumables/relic_invoker"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "uhcp:augments/diamondgrabbag"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "uhcp:augments/bookworm"
+        }
+      ]
+    }
+  ]
+}

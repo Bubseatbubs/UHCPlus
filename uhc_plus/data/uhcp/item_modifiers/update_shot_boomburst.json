@@ -1,14 +1,14 @@
 [
   {
-		"function": "minecraft:set_components",
-		"components": {
-			"minecraft:charged_projectiles": [
-				{
-					"id": "minecraft:arrow"
-				}
-			]
-		}
-	},
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:charged_projectiles": [
+        {
+          "id": "minecraft:arrow"
+        }
+      ]
+    }
+  },
   {
     "function": "minecraft:set_custom_data",
     "tag": "{hasTnt:0b}"

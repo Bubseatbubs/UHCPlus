@@ -1,105 +1,104 @@
 {
-    "replace": false,
-    "values": [
-      "minecraft:plains",
-      "minecraft:taiga",
-      "minecraft:birch_forest",
-      "minecraft:badlands",
-      "minecraft:swamp",
-      "minecraft:sunflower_plains",
-      "minecraft:flower_forest",
-      "minecraft:meadow",
-      "minecraft:old_growth_birch_forest",
-      "minecraft:old_growth_pine_taiga",
-      "minecraft:old_growth_spruce_taiga",
-      {
-        "id": "terralith:alpha_islands",
-        "required": false
-      },
-      {
-        "id": "terralith:amethyst_canyon",
-        "required": false
-      },
-      {
-        "id": "terralith:amethyst_rainforest",
-        "required": false
-      },
-      {
-        "id": "terralith:cloud_forest",
-        "required": false
-      },
-      {
-        "id": "terralith:lush_valley",
-        "required": false
-      },
-      {
-        "id": "terralith:lush_desert",
-        "required": false
-      },
-      {
-        "id": "terralith:highlands",
-        "required": false
-      },
-      {
-        "id": "terralith:blooming_plateau",
-        "required": false
-      },
-      {
-        "id": "terralith:blooming_valley",
-        "required": false
-      },
-      {
-        "id": "terralith:lavender_forest",
-        "required": false
-      },
-      {
-        "id": "terralith:lavender_valley",
-        "required": false
-      },
-      {
-        "id": "terralith:temperate_highlands",
-        "required": false
-      },
-      {
-        "id": "terralith:brushland",
-        "required": false
-      },
-      {
-        "id": "terralith:forested_highlands",
-        "required": false
-      },
-      {
-        "id": "terralith:snowy_badlands",
-        "required": false
-      },
-      {
-        "id": "terralith:snowy_cherry_grove",
-        "required": false
-      },
-      {
-        "id": "terralith:snowy_maple_forest",
-        "required": false
-      },
-      {
-        "id": "terralith:shield",
-        "required": false
-      },
-      {
-        "id": "terralith:shrubland",
-        "required": false
-      },
-      {
-        "id": "terralith:rocky_shrubland",
-        "required": false
-      },
-      {
-        "id": "terralith:hot_shrubland",
-        "required": false
-      },
-      {
-        "id": "terralith:alpine_highlands",
-        "required": false
-      }
-    ]
-  }
-  
+  "replace": false,
+  "values": [
+    "minecraft:plains",
+    "minecraft:taiga",
+    "minecraft:birch_forest",
+    "minecraft:badlands",
+    "minecraft:swamp",
+    "minecraft:sunflower_plains",
+    "minecraft:flower_forest",
+    "minecraft:meadow",
+    "minecraft:old_growth_birch_forest",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:old_growth_spruce_taiga",
+    {
+      "id": "terralith:alpha_islands",
+      "required": false
+    },
+    {
+      "id": "terralith:amethyst_canyon",
+      "required": false
+    },
+    {
+      "id": "terralith:amethyst_rainforest",
+      "required": false
+    },
+    {
+      "id": "terralith:cloud_forest",
+      "required": false
+    },
+    {
+      "id": "terralith:lush_valley",
+      "required": false
+    },
+    {
+      "id": "terralith:lush_desert",
+      "required": false
+    },
+    {
+      "id": "terralith:highlands",
+      "required": false
+    },
+    {
+      "id": "terralith:blooming_plateau",
+      "required": false
+    },
+    {
+      "id": "terralith:blooming_valley",
+      "required": false
+    },
+    {
+      "id": "terralith:lavender_forest",
+      "required": false
+    },
+    {
+      "id": "terralith:lavender_valley",
+      "required": false
+    },
+    {
+      "id": "terralith:temperate_highlands",
+      "required": false
+    },
+    {
+      "id": "terralith:brushland",
+      "required": false
+    },
+    {
+      "id": "terralith:forested_highlands",
+      "required": false
+    },
+    {
+      "id": "terralith:snowy_badlands",
+      "required": false
+    },
+    {
+      "id": "terralith:snowy_cherry_grove",
+      "required": false
+    },
+    {
+      "id": "terralith:snowy_maple_forest",
+      "required": false
+    },
+    {
+      "id": "terralith:shield",
+      "required": false
+    },
+    {
+      "id": "terralith:shrubland",
+      "required": false
+    },
+    {
+      "id": "terralith:rocky_shrubland",
+      "required": false
+    },
+    {
+      "id": "terralith:hot_shrubland",
+      "required": false
+    },
+    {
+      "id": "terralith:alpine_highlands",
+      "required": false
+    }
+  ]
+}

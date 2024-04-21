@@ -1,117 +1,116 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:loot_table",
-            "value": "uhcp:relics/soulflames_embrace",
-            "functions": [
-              {
-                "function": "minecraft:set_name",
-                "target": "item_name",
-                "name": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "uhcp:relics/soulflames_embrace",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Radiant ",
+                  "color": "light_purple",
+                  "bold": true
+                },
+                {
+                  "text": "So",
+                  "color": "#0800FF",
+                  "bold": true
+                },
+                {
+                  "text": "ul",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": "fl",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": "am",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": "e's E",
+                  "color": "#54C0FF"
+                },
+                {
+                  "text": "mbr",
+                  "color": "#4FE8FF"
+                },
+                {
+                  "text": "ace",
+                  "color": "#00FFFF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": ""
+                },
+                [
                   {
-                    "text": "Radiant ",
-                    "color": "light_purple",
-                    "bold": true
+                    "text": "Radiant Bonus:",
+                    "color": "blue",
+                    "bold": false,
+                    "italic": false
                   },
                   {
-                    "text": "So",
-                    "color": "#0800FF",
-                    "bold": true
+                    "text": " Enemies hurt by the flames",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "take an additional",
+                    "color": "gray",
+                    "italic": false
                   },
                   {
-                    "text": "ul",
-                    "color": "#2B64FF"
+                    "text": " 2🖤",
+                    "color": "red"
                   },
                   {
-                    "text": "fl",
-                    "color": "#428EFF"
+                    "text": " of damage after 5 seconds.",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Mobs take",
+                    "color": "gray",
+                    "italic": false
                   },
                   {
-                    "text": "am",
-                    "color": "#54B5FF"
+                    "text": " 6🖤",
+                    "color": "red"
                   },
                   {
-                    "text": "e's E",
-                    "color": "#54C0FF"
-                  },
-                  {
-                    "text": "mbr",
-                    "color": "#4FE8FF"
-                  },
-                  {
-                    "text": "ace",
-                    "color": "#00FFFF"
-                  },
-                  {
-                    "text": " ℝ",
-                    "color": "white",
-                    "bold": false
+                    "text": " of damage.",
+                    "color": "gray"
                   }
                 ]
-              },
-              {
-                "function": "minecraft:set_lore",
-                "entity": "this",
-                "lore": [
-                  {
-                    "text": ""
-                  },
-                  [
-                    {
-                      "text": "Radiant Bonus:",
-                      "color": "blue",
-                      "bold": false,
-                      "italic": false
-                    },
-                    {
-                      "text": " Enemies hurt by the flames",
-                      "color": "gray"
-                    }
-                  ],
-                  [
-                    {
-                      "text": "take an additional",
-                      "color": "gray",
-                      "italic": false
-                    },
-                    {
-                      "text": " 2🖤",
-                      "color": "red"
-                    },
-                    {
-                      "text": " of damage after 5 seconds.",
-                      "color": "gray"
-                    }
-                  ],
-                  [
-                    {
-                      "text": "Mobs take",
-                      "color": "gray",
-                      "italic": false
-                    },
-                    {
-                      "text": " 6🖤",
-                      "color": "red"
-                    },
-                    {
-                      "text": " of damage.",
-                      "color": "gray"
-                    }
-                  ]
-                ],
-                "mode": "append"
-              },
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:1b,uhcp_radiant:1b}"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:1b,uhcp_radiant:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

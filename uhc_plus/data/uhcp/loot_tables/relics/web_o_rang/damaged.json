@@ -1,22 +1,21 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:loot_table",
-            "value": "uhcp:relics/web_o_rang"
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "uhcp:relics/web_o_rang"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:damage": 300
           }
-        ],
-        "functions": [
-          {
-            "function": "minecraft:set_components",
-            "components": {
-              "minecraft:damage": 300
-            }
-          }
-        ]
-      }
-    ]
-  }
-  
+        }
+      ]
+    }
+  ]
+}

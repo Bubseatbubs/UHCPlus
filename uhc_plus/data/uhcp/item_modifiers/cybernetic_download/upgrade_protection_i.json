@@ -1,10 +1,9 @@
 [
-    {
-      "function": "minecraft:set_enchantments",
-      "enchantments": {
-        "minecraft:protection": 1
-      },
-      "add": true
-    }
-  ]
-  
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:protection": 1
+    },
+    "add": true
+  }
+]

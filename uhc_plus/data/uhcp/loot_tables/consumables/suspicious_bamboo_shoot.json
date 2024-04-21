@@ -1,118 +1,117 @@
 {
-    "type": "minecraft:generic",
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:sugar",
-            "functions": [
-              {
-                "function": "minecraft:set_lore",
-                "entity": "this",
-                "lore": [
-                  [
-                    {
-                      "text": "Transform into a",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " Panda",
-                      "color": "blue",
-                      "italic": true
-                    },
-                    {
-                      "text": " and gain",
-                      "color": "gray",
-                      "italic": true
-                    }
-                  ],
-                  [
-                    {
-                      "text": "+10🖤",
-                      "color": "yellow",
-                      "italic": true
-                    },
-                    {
-                      "text": ". Transform back when you",
-                      "color": "gray"
-                    }
-                  ],
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sugar",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
                   {
-                    "text": "have no Absorption.",
+                    "text": "Transform into a",
                     "color": "gray"
                   },
                   {
-                    "text": ""
-                  },
-                  [
-                    {
-                      "text": "Panda",
-                      "color": "blue"
-                    },
-                    {
-                      "text": ": Set your ⛊ to 30, and",
-                      "color": "gray",
-                      "italic": true
-                    }
-                  ],
-                  {
-                    "text": "automatically attack nearby enemies.",
-                    "color": "gray"
+                    "text": " Panda",
+                    "color": "blue",
+                    "italic": true
                   },
                   {
-                    "text": "You cannot equip Armor, manually",
-                    "color": "dark_red"
-                  },
-                  {
-                    "text": "attack, or use your Offhand.",
-                    "color": "dark_red"
+                    "text": " and gain",
+                    "color": "gray",
+                    "italic": true
                   }
                 ],
-                "mode": "replace_all"
-              },
-              {
-                "function": "minecraft:set_name",
-                "entity": "this",
-                "target": "item_name",
-                "name": {
-                  "text": "Suspicious Bamboo Sugar",
-                  "color": "light_purple"
-                }
-              },
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:food": {
-                    "nutrition": 4,
-                    "saturation": 0,
-                    "can_always_eat": true,
-                    "effects": [
-                      {
-                        "effect": {
-                          "id": "minecraft:bad_omen",
-                          "amplifier": 101,
-                          "duration": 1,
-                          "ambient": false,
-                          "show_particles": false,
-                          "show_icon": false
-                        }
-                      }
-                    ]
+                [
+                  {
+                    "text": "+10🖤",
+                    "color": "yellow",
+                    "italic": true
                   },
-                  "minecraft:enchantments": {
-                    "levels": {
-                      "minecraft:protection": 1
-                    },
-                    "show_in_tooltip": false
+                  {
+                    "text": ". Transform back when you",
+                    "color": "gray"
                   }
+                ],
+                {
+                  "text": "have no Absorption.",
+                  "color": "gray"
+                },
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Panda",
+                    "color": "blue"
+                  },
+                  {
+                    "text": ": Set your ⛊ to 30, and",
+                    "color": "gray",
+                    "italic": true
+                  }
+                ],
+                {
+                  "text": "automatically attack nearby enemies.",
+                  "color": "gray"
+                },
+                {
+                  "text": "You cannot equip Armor, manually",
+                  "color": "dark_red"
+                },
+                {
+                  "text": "attack, or use your Offhand.",
+                  "color": "dark_red"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "item_name",
+              "name": {
+                "text": "Suspicious Bamboo Sugar",
+                "color": "light_purple"
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:food": {
+                  "nutrition": 4,
+                  "saturation": 0,
+                  "can_always_eat": true,
+                  "effects": [
+                    {
+                      "effect": {
+                        "id": "minecraft:bad_omen",
+                        "amplifier": 101,
+                        "duration": 1,
+                        "ambient": false,
+                        "show_particles": false,
+                        "show_icon": false
+                      }
+                    }
+                  ]
+                },
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
+                  },
+                  "show_in_tooltip": false
                 }
               }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

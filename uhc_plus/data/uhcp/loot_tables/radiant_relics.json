@@ -1,108 +1,108 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:loot_table",
-            "weight": 1,
-            "value": "uhcp:relics/radiant/dragons_protection",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "minecraft:loot_table",
-            "weight": 1,
-            "value": "uhcp:relics/radiant/gravity_globe",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "minecraft:loot_table",
-            "weight": 1,
-            "value": "uhcp:relics/radiant/soulflames_embrace",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "minecraft:loot_table",
-            "weight": 1,
-            "value": "uhcp:relics/radiant/web_o_rang",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "minecraft:loot_table",
-            "weight": 1,
-            "value": "uhcp:relics/radiant/windfall",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "minecraft:loot_table",
-            "weight": 1,
-            "value": "uhcp:relics/radiant/buzzburst",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "minecraft:loot_table",
-            "weight": 1,
-            "value": "uhcp:relics/radiant/smooth_getaway",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "minecraft:loot_table",
-            "weight": 1,
-            "value": "uhcp:relics/radiant/runic_sentry",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "minecraft:loot_table",
-            "weight": 1,
-            "value": "uhcp:relics/radiant/flux_factor",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:relics/radiant/dragons_protection",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:relics/radiant/gravity_globe",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:relics/radiant/soulflames_embrace",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:relics/radiant/web_o_rang",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:relics/radiant/windfall",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:relics/radiant/buzzburst",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:relics/radiant/smooth_getaway",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:relics/radiant/runic_sentry",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:relics/radiant/flux_factor",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

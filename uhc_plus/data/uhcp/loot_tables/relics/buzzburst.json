@@ -1,188 +1,187 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:honeycomb",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": 1
-              },
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:max_stack_size": 1,
-                  "minecraft:max_damage": 1600,
-                  "minecraft:damage": 0,
-                  "minecraft:food": {
-                    "nutrition": 0,
-                    "saturation": 0,
-                    "can_always_eat": true,
-                    "eat_seconds": 2147483647
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:honeycomb",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:max_damage": 1600,
+                "minecraft:damage": 0,
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true,
+                  "eat_seconds": 2147483647
+                },
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 0
                   },
-                  "minecraft:enchantments": {
-                    "levels": {
-                      "minecraft:protection": 0
-                    },
-                    "show_in_tooltip": false
-                  },
-                  "minecraft:hide_additional_tooltip": {}
+                  "show_in_tooltip": false
+                },
+                "minecraft:hide_additional_tooltip": {}
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:0b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Bu",
+                  "color": "#0800FF",
+                  "bold": true
+                },
+                {
+                  "text": "zz",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": "bu",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": "rs",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": "t",
+                  "color": "#54C0FF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false
                 }
-              },
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:0b}"
-              },
-              {
-                "function": "minecraft:set_name",
-                "target": "item_name",
-                "name": [
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
                   {
-                    "text": "Bu",
-                    "color": "#0800FF",
-                    "bold": true
+                    "text": "RELIC",
+                    "color": "gold",
+                    "italic": false
                   },
                   {
-                    "text": "zz",
-                    "color": "#2B64FF"
-                  },
-                  {
-                    "text": "bu",
-                    "color": "#428EFF"
-                  },
-                  {
-                    "text": "rs",
-                    "color": "#54B5FF"
-                  },
-                  {
-                    "text": "t",
-                    "color": "#54C0FF"
-                  },
-                  {
-                    "text": " ℝ",
-                    "color": "white",
-                    "bold": false
+                    "text": ": Relics charge up when held.",
+                    "color": "gray",
+                    "italic": false
                   }
-                ]
-              },
-              {
-                "function": "minecraft:set_lore",
-                "lore": [
+                ],
+                [
                   {
-                    "text": "------------------------",
-                    "color": "blue"
+                    "text": "Right Click",
+                    "color": "#9EE8FF",
+                    "italic": false
                   },
-                  [
-                    {
-                      "text": "RELIC",
-                      "color": "gold",
-                      "italic": false
-                    },
-                    {
-                      "text": ": Relics charge up when held.",
-                      "color": "gray",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "text": "Right Click",
-                      "color": "#9EE8FF",
-                      "italic": false
-                    },
-                    {
-                      "text": " at max charge to activate",
-                      "color": "gray",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "text": "a Relic's",
-                      "color": "gray",
-                      "italic": false
-                    },
-                    {
-                      "text": " ABILITY",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": ". Using an",
-                      "color": "gray",
-                      "italic": false
-                    },
-                    {
-                      "text": " ABILITY",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ],
                   {
-                    "text": "resets the Relic's charge.",
+                    "text": " at max charge to activate",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "a Relic's",
                     "color": "gray",
                     "italic": false
                   },
                   {
-                    "text": " "
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
                   },
-                  [
-                    {
-                      "text": "ABILITY",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": ": Fire an explosive Hive.",
-                      "color": "gray"
-                    }
-                  ],
-                  [
-                    {
-                      "text": "Upon colliding with a block or player,",
-                      "color": "gray",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "text": "the Hive detonates, dealing",
-                      "color": "gray",
-                      "italic": false
-                    },
-                    {
-                      "text": " 2🖤",
-                      "color": "red"
-                    },
-                    {
-                      "text": " and"
-                    }
-                  ],
-                  [
-                    {
-                      "text": "summoning a horde of",
-                      "color": "gray",
-                      "italic": false
-                    },
-                    {
-                      "text": " Bees",
-                      "color": "blue"
-                    },
-                    {
-                      "text": ".",
-                      "color": "gray"
-                    }
-                  ]
+                  {
+                    "text": ". Using an",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  }
                 ],
-                "mode": "replace_all"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+                {
+                  "text": "resets the Relic's charge.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                [
+                  {
+                    "text": "ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ": Fire an explosive Hive.",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Upon colliding with a block or player,",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "the Hive detonates, dealing",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 2🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": " and"
+                  }
+                ],
+                [
+                  {
+                    "text": "summoning a horde of",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Bees",
+                    "color": "blue"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

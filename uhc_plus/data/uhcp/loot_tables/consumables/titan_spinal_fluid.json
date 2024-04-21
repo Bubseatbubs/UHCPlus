@@ -1,106 +1,105 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:potion",
-            "functions": [
-              {
-                "function": "minecraft:set_name",
-                "entity": "this",
-                "name": {
-                  "text": "Titan Spinal Fluid",
-                  "color": "light_purple",
-                  "italic": false
-                }
-              },
-              {
-                "function": "minecraft:set_lore",
-                "entity": "this",
-                "lore": [
-                  [
-                    {
-                      "text": "Consume this potion to become",
-                      "color": "gray"
-                    }
-                  ],
-                  [
-                    {
-                      "text": "a",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " Titan",
-                      "color": "light_purple"
-                    },
-                    {
-                      "text": ".",
-                      "color": "gray"
-                    }
-                  ],
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Titan Spinal Fluid",
+                "color": "light_purple",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
                   {
-                    "text": ""
-                  },
-                  [
-                    {
-                      "text": "Titan",
-                      "color": "light_purple"
-                    },
-                    {
-                      "text": ": Become colossal, gain",
-                      "color": "gray"
-                    }
-                  ],
-                  [
-                    {
-                      "text": "Resistance II",
-                      "color": "yellow"
-                    },
-                    [
-                      {
-                        "text": ", and damage enemies",
-                        "color": "gray"
-                      }
-                    ]
-                  ],
-                  {
-                    "text": "around you automatically and when",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "land from a jump.",
+                    "text": "Consume this potion to become",
                     "color": "gray"
                   }
                 ],
-                "mode": "replace_all"
-              }
-            ]
-          }
-        ],
-        "functions": [
-          {
-            "function": "minecraft:set_components",
-            "components": {
-              "minecraft:potion_contents": {
-                "custom_color": 328965,
-                "custom_effects": [
+                [
                   {
-                    "id": "minecraft:bad_omen",
-                    "amplifier": 100,
-                    "duration": 1,
-                    "ambient": false,
-                    "show_particles": false,
-                    "show_icon": false
+                    "text": "a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Titan",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
                   }
-                ]
-              },
-              "minecraft:hide_additional_tooltip": {}
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Titan",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ": Become colossal, gain",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Resistance II",
+                    "color": "yellow"
+                  },
+                  [
+                    {
+                      "text": ", and damage enemies",
+                      "color": "gray"
+                    }
+                  ]
+                ],
+                {
+                  "text": "around you automatically and when",
+                  "color": "gray"
+                },
+                {
+                  "text": "land from a jump.",
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
             }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:potion_contents": {
+              "custom_color": 328965,
+              "custom_effects": [
+                {
+                  "id": "minecraft:bad_omen",
+                  "amplifier": 100,
+                  "duration": 1,
+                  "ambient": false,
+                  "show_particles": false,
+                  "show_icon": false
+                }
+              ]
+            },
+            "minecraft:hide_additional_tooltip": {}
           }
-        ]
-      }
-    ]
-  }
-  
+        }
+      ]
+    }
+  ]
+}

@@ -1,72 +1,72 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:magma_cream",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:enchantments": {
-                    "levels": {
-                      "minecraft:protection": 1
-                    },
-                    "show_in_tooltip": false
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:magma_cream",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
                   },
-                  "minecraft:food": {
-                    "can_always_eat": true,
-                    "nutrition": 0,
-                    "saturation": 0,
-                    "eat_seconds": 2147483647
-                  },
-                  "minecraft:max_stack_size": 1
+                  "show_in_tooltip": false
+                },
+                "minecraft:food": {
+                  "can_always_eat": true,
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "eat_seconds": 2147483647
+                },
+                "minecraft:max_stack_size": 1
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:1b,uhcp_consumable:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Portable Lava Pool",
+                  "color": "light_purple"
                 }
-              },
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_rightclick:1b,uhcp_consumable:1b}"
-              },
-              {
-                "function": "minecraft:set_name",
-                "target": "item_name",
-                "name": [
+              ]
+            },
+            {
+              "function": "set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "Instantly place down a 5x1x5",
+                  "color": "gray"
+                },
+                [
                   {
-                    "text": "Portable Lava Pool",
-                    "color": "light_purple"
+                    "text": "Lava Pool ",
+                    "color": "red"
+                  },
+                  {
+                    "text": "in front of you.",
+                    "color": "gray"
                   }
                 ]
-              },
-              {
-                "function": "set_lore",
-                "mode": "replace_all",
-                "lore": [
-                  {
-                    "text": "Instantly place down a 5x1x5",
-                    "color": "gray"
-                  },
-                  [
-                    {
-                      "text": "Lava Pool ",
-                      "color": "red"
-                    },
-                    {
-                      "text": "in front of you.",
-                      "color": "gray"
-                    }
-                  ]
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,85 +1,84 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:loot_table",
-            "value": "uhcp:relics/runic_sentry",
-            "functions": [
-              {
-                "function": "minecraft:set_name",
-                "target": "item_name",
-                "name": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "uhcp:relics/runic_sentry",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Radiant ",
+                  "color": "light_purple",
+                  "bold": true
+                },
+                {
+                  "text": "Ru",
+                  "color": "#0800FF",
+                  "bold": true
+                },
+                {
+                  "text": "ni",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": "c S",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": "en",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": "tr",
+                  "color": "#54C0FF"
+                },
+                {
+                  "text": "y",
+                  "color": "#4FE8FF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": ""
+                },
+                [
                   {
-                    "text": "Radiant ",
-                    "color": "light_purple",
-                    "bold": true
-                  },
-                  {
-                    "text": "Ru",
-                    "color": "#0800FF",
-                    "bold": true
-                  },
-                  {
-                    "text": "ni",
-                    "color": "#2B64FF"
-                  },
-                  {
-                    "text": "c S",
-                    "color": "#428EFF"
-                  },
-                  {
-                    "text": "en",
-                    "color": "#54B5FF"
-                  },
-                  {
-                    "text": "tr",
-                    "color": "#54C0FF"
-                  },
-                  {
-                    "text": "y",
-                    "color": "#4FE8FF"
-                  },
-                  {
-                    "text": " ℝ",
-                    "color": "white",
-                    "bold": false
-                  }
-                ]
-              },
-              {
-                "function": "minecraft:set_lore",
-                "entity": "this",
-                "lore": [
-                  {
-                    "text": ""
+                    "text": "Radiant Bonus:",
+                    "color": "blue",
+                    "bold": false,
+                    "italic": false
                   },
                   [
                     {
-                      "text": "Radiant Bonus:",
-                      "color": "blue",
-                      "bold": false,
-                      "italic": false
-                    },
-                    [
-                      {
-                        "text": " Turrets last until destroyed.",
-                        "color": "gray"
-                      }
-                    ]
+                      "text": " Turrets last until destroyed.",
+                      "color": "gray"
+                    }
                   ]
-                ],
-                "mode": "append"
-              },
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:4b,uhcp_radiant:1b}"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+                ]
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:4b,uhcp_radiant:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

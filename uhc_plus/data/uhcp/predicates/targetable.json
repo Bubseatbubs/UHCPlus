@@ -1,26 +1,25 @@
 {
-    "condition": "minecraft:all_of",
-    "terms": [
-      {
-        "condition": "minecraft:inverted",
-        "term": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "team": "grace_period"
-          }
-        }
-      },
-      {
-        "condition": "minecraft:inverted",
-        "term": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "type": "#uhcp:inanimate_mobs"
-          }
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "team": "grace_period"
         }
       }
-    ]
-  }
-  
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "#uhcp:inanimate_mobs"
+        }
+      }
+    }
+  ]
+}

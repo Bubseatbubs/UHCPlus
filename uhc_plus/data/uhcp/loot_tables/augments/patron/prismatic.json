@@ -1,939 +1,220 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:target",
-            "functions": [
-                {
-                  "function": "set_count",
-                  "count": 1
-                },
-                {
-                  "function": "minecraft:set_custom_data",
-                  "tag": "{uhcp_augmentselect:1b,augment:217s}"
-                },
-                {
-                  "function": "minecraft:set_name",
-                  "target": "item_name",
-                  "name": [
-                    {
-                      "text": "Center of Attention",
-                      "color": "aqua",
-                      "bold": true
-                    }
-                  ]
-                },
-                {
-                  "function": "set_lore",
-                  "mode": "replace_all",
-                  "lore": [
-                    {
-                      "text": "------------------------",
-                      "color": "blue",
-                      "bold": true
-                    },
-                    [
-                      {
-                        "text": "Start with",
-                        "color": "gray"
-                      },
-                      {
-                        "text": " +20🖤",
-                        "color": "yellow"
-                      },
-                      {
-                        "text": ". You are",
-                        "color": "gray"
-                      },
-                      {
-                        "text": " Glowing",
-                        "color": "yellow"
-                      }
-                    ],
-                    {
-                      "text": "for the first 20 minutes.",
-                      "color": "gray"
-                    }
-                  ]
-                }
-              ],
-              "conditions": [
-                  {
-                    "condition": "minecraft:any_of",
-                    "terms": [
-                      {
-                        "condition": "minecraft:entity_scores",
-                        "entity": "this",
-                        "scores": {
-                          "uhcp_aug_choosingAugment": 0,
-                          "uhcp_aug_patron": 0
-                        }
-                      },
-                      {
-                        "condition": "minecraft:all_of",
-                        "terms": [
-                          {
-                            "condition": "minecraft:inverted",
-                            "term": {
-                              "condition": "minecraft:entity_scores",
-                              "entity": "this",
-                              "scores": {
-                                "uhcp_aug_patron": 0
-                              }
-                            }
-                          },
-                          {
-                            "condition": "minecraft:entity_scores",
-                            "entity": "this",
-                            "scores": {
-                              "uhcp_aug_choosingAugment": 1
-                            }
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:creeper_head",
-            "functions": [
-                {
-                  "function": "set_count",
-                  "count": 1
-                },
-                {
-                  "function": "minecraft:set_custom_data",
-                  "tag": "{uhcp_augmentselect:1b,augment:210s}"
-                },
-                {
-                  "function": "minecraft:set_name",
-                  "target": "item_name",
-                  "name": [
-                    {
-                      "text": "Hunter's Insight",
-                      "color": "aqua",
-                      "bold": true
-                    }
-                  ]
-                },
-                {
-                  "function": "set_lore",
-                  "mode": "replace_all",
-                  "lore": [
-                    {
-                      "text": "------------------------",
-                      "color": "blue"
-                    },
-                    {
-                      "text": "Gain abilities when you kill a certain number of mobs:",
-                      "color": "gray"
-                    },
-                    [
-                      {
-                        "text": "5 Creepers",
-                        "color": "dark_red"
-                      },
-                      {
-                        "text": ": Explode on your death.",
-                        "color": "gray"
-                      }
-                    ],
-                    [
-                      {
-                        "text": "5 Skeletons",
-                        "color": "dark_red"
-                      },
-                      {
-                        "text": ": Gain a",
-                        "color": "gray"
-                      },
-                      {
-                        "text": " Power II",
-                        "color": "dark_purple"
-                      },
-                      {
-                        "text": " Bow",
-                        "color": "white"
-                      },
-                      {
-                        "text": ".",
-                        "color": "gray"
-                      }
-                    ],
-                    [
-                      {
-                        "text": "5 Spiders",
-                        "color": "dark_red"
-                      },
-                      {
-                        "text": ": Gain",
-                        "color": "gray"
-                      },
-                      {
-                        "text": " Permanent Speed I",
-                        "color": "yellow"
-                      },
-                      {
-                        "text": ".",
-                        "color": "gray"
-                      }
-                    ],
-                    [
-                      {
-                        "text": "5 Zombies",
-                        "color": "dark_red"
-                      },
-                      {
-                        "text": ": Gain",
-                        "color": "gray"
-                      },
-                      {
-                        "text": " 4🖤",
-                        "color": "red"
-                      },
-                      {
-                        "text": " and ",
-                        "color": "gray"
-                      },
-                      {
-                        "text": "4🖤",
-                        "color": "yellow"
-                      },
-                      {
-                        "text": ".",
-                        "color": "gray"
-                      }
-                    ]
-                  ]
-                }
-              ],
-            "conditions": [
-                {
-                  "condition": "minecraft:any_of",
-                  "terms": [
-                    {
-                      "condition": "minecraft:entity_scores",
-                      "entity": "this",
-                      "scores": {
-                        "uhcp_aug_choosingAugment": 0,
-                        "uhcp_aug_patron": 2
-                      }
-                    },
-                    {
-                      "condition": "minecraft:all_of",
-                      "terms": [
-                        {
-                          "condition": "minecraft:inverted",
-                          "term": {
-                            "condition": "minecraft:entity_scores",
-                            "entity": "this",
-                            "scores": {
-                              "uhcp_aug_patron": 2
-                            }
-                          }
-                        },
-                        {
-                          "condition": "minecraft:entity_scores",
-                          "entity": "this",
-                          "scores": {
-                            "uhcp_aug_choosingAugment": 1
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:diamond_boots",
-            "functions": [
-                {
-                  "function": "minecraft:toggle_tooltips",
-                  "toggles": {
-                    "minecraft:attribute_modifiers": false
-                  }
-                },
-                {
-                  "function": "set_count",
-                  "count": 1
-                },
-                {
-                  "function": "minecraft:set_custom_data",
-                  "tag": "{uhcp_augmentselect:1b,augment:207s}"
-                },
-                {
-                  "function": "minecraft:set_name",
-                  "target": "item_name",
-                  "name": [
-                    {
-                      "text": "Gas Gas Gas",
-                      "color": "aqua",
-                      "bold": true
-                    }
-                  ]
-                },
-                {
-                  "function": "set_lore",
-                  "mode": "replace_all",
-                  "lore": [
-                    {
-                      "text": "------------------------",
-                      "color": "blue",
-                      "bold": true
-                    },
-                    [
-                      {
-                        "text": "Start with permanent",
-                        "color": "gray"
-                      },
-                      {
-                        "text": " Speed I",
-                        "color": "yellow"
-                      }
-                    ],
-                    [
-                      {
-                        "text": "and gain ",
-                        "color": "gray"
-                      },
-                      {
-                        "text": "Boots of Swiftness",
-                        "color": "#bf7830"
-                      },
-                      {
-                        "text": ".",
-                        "color": "gray"
-                      }
-                    ]
-                  ]
-                }
-              ],
-            "conditions": [
-                {
-                  "condition": "minecraft:any_of",
-                  "terms": [
-                    {
-                      "condition": "minecraft:entity_scores",
-                      "entity": "this",
-                      "scores": {
-                        "uhcp_aug_choosingAugment": 0,
-                        "uhcp_aug_patron": 6
-                      }
-                    },
-                    {
-                      "condition": "minecraft:all_of",
-                      "terms": [
-                        {
-                          "condition": "minecraft:inverted",
-                          "term": {
-                            "condition": "minecraft:entity_scores",
-                            "entity": "this",
-                            "scores": {
-                              "uhcp_aug_patron": 6
-                            }
-                          }
-                        },
-                        {
-                          "condition": "minecraft:entity_scores",
-                          "entity": "this",
-                          "scores": {
-                            "uhcp_aug_choosingAugment": 1
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:diamond_pickaxe",
-            "functions": [
-                {
-                  "function": "minecraft:toggle_tooltips",
-                  "toggles": {
-                    "minecraft:attribute_modifiers": false
-                  }
-                },
-                {
-                  "function": "set_count",
-                  "count": 1
-                },
-                {
-                  "function": "minecraft:set_custom_data",
-                  "tag": "{uhcp_augmentselect:1b,augment:211s}"
-                },
-                {
-                  "function": "minecraft:set_name",
-                  "target": "item_name",
-                  "name": [
-                    {
-                      "text": "Into the Mines III",
-                      "color": "aqua",
-                      "bold": true
-                    }
-                  ]
-                },
-                {
-                  "function": "set_lore",
-                  "mode": "replace_all",
-                  "lore": [
-                    {
-                      "text": "------------------------",
-                      "color": "blue",
-                      "bold": true
-                    },
-                    [
-                      {
-                        "text": "Gain a",
-                        "color": "gray"
-                      },
-                      {
-                        "text": " Diamond Pickaxe",
-                        "color": "white"
-                      },
-                      {
-                        "text": " with",
-                        "color": "gray"
-                      },
-                      {
-                        "text": " Fortune I",
-                        "color": "dark_purple"
-                      },
-                      {
-                        "text": ".",
-                        "color": "gray"
-                      }
-                    ]
-                  ]
-                }
-            ],
-            "conditions": [
-                {
-                  "condition": "minecraft:any_of",
-                  "terms": [
-                    {
-                      "condition": "minecraft:entity_scores",
-                      "entity": "this",
-                      "scores": {
-                        "uhcp_aug_choosingAugment": 0,
-                        "uhcp_aug_patron": 5
-                      }
-                    },
-                    {
-                      "condition": "minecraft:all_of",
-                      "terms": [
-                        {
-                          "condition": "minecraft:inverted",
-                          "term": {
-                            "condition": "minecraft:entity_scores",
-                            "entity": "this",
-                            "scores": {
-                              "uhcp_aug_patron": 5
-                            }
-                          }
-                        },
-                        {
-                          "condition": "minecraft:entity_scores",
-                          "entity": "this",
-                          "scores": {
-                            "uhcp_aug_choosingAugment": 1
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:golden_apple",
-            "functions": [
-                {
-                  "function": "set_count",
-                  "count": 1
-                },
-                {
-                  "function": "minecraft:set_components",
-                  "components": {
-                    "!minecraft:food": {}
-                  }
-                },
-                {
-                  "function": "minecraft:set_custom_data",
-                  "tag": "{uhcp_augmentselect:1b,augment:206s}"
-                },
-                {
-                  "function": "minecraft:set_name",
-                  "target": "item_name",
-                  "name": [
-                    {
-                      "text": "Gapple Gap III",
-                      "color": "aqua",
-                      "bold": true
-                    }
-                  ]
-                },
-                {
-                  "function": "set_lore",
-                  "mode": "replace_all",
-                  "lore": [
-                    {
-                      "text": "------------------------",
-                      "color": "blue",
-                      "bold": true
-                    },
-                    [
-                      {
-                        "text": "Gain 10",
-                        "color": "gray"
-                      },
-                      {
-                        "text": " Golden Apples",
-                        "color": "white"
-                      },
-                      {
-                        "text": " and",
-                        "color": "gray"
-                      },
-                      {
-                        "text": " Windfall",
-                        "color": "gold"
-                      },
-                      {
-                        "text": ".",
-                        "color": "gray"
-                      }
-                    ]
-                  ]
-                }
-              ],
-            "conditions": [
-                {
-                  "condition": "minecraft:any_of",
-                  "terms": [
-                    {
-                      "condition": "minecraft:entity_scores",
-                      "entity": "this",
-                      "scores": {
-                        "uhcp_aug_choosingAugment": 0,
-                        "uhcp_aug_patron": 4
-                      }
-                    },
-                    {
-                      "condition": "minecraft:all_of",
-                      "terms": [
-                        {
-                          "condition": "minecraft:inverted",
-                          "term": {
-                            "condition": "minecraft:entity_scores",
-                            "entity": "this",
-                            "scores": {
-                              "uhcp_aug_patron": 4
-                            }
-                          }
-                        },
-                        {
-                          "condition": "minecraft:entity_scores",
-                          "entity": "this",
-                          "scores": {
-                            "uhcp_aug_choosingAugment": 1
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:iron_trapdoor",
-            "functions": [
-                {
-                  "function": "set_count",
-                  "count": 1
-                },
-                
-                {
-                  "function": "minecraft:set_custom_data",
-                  "tag": "{uhcp_augmentselect:1b,augment:228s}"
-                },
-                {
-                  "function": "minecraft:set_name",
-                  "target": "item_name",
-                  "name": [
-                    {
-                      "text": "Trap God",
-                      "color": "aqua",
-                      "bold": true
-                    }
-                  ]
-                },
-                {
-                  "function": "set_lore",
-                  "mode": "replace_all",
-                  "lore": [
-                    {
-                      "text": "------------------------",
-                      "color": "blue",
-                      "bold": true
-                    },
-                    [
-                      {
-                        "text": "Gain",
-                        "color": "gray"
-                      },
-                      {
-                        "text": " all the materials you need to make a trap",
-                        "color": "white"
-                      },
-                      {
-                        "text": ","
-                      }
-                    ],
-                    [
-                      {
-                        "text": "full Iron Tools",
-                        "color": "white"
-                      },
-                      {
-                        "text": " with",
-                        "color": "gray"
-                      },
-                      {
-                        "text": " Efficiency I / Unbreaking III",
-                        "color": "dark_purple"
-                      },
-                      {
-                        "text": ",",
-                        "color": "gray"
-                      }
-                    ],
-                    [
-                      {
-                        "text": "Iron Armor, and Shield",
-                        "color": "white"
-                      },
-                      {
-                        "text": ". At the start of the game,",
-                        "color": "gray"
-                      }
-                    ],
-                    {
-                      "text": "teleport to (0, 0). You cannot be seen by",
-                      "color": "gray"
-                    },
-                    [
-                      {
-                        "text": "All-Seeing Eyes",
-                        "color": "light_purple"
-                      },
-                      {
-                        "text": "."
-                      }
-                    ]
-                  ]
-                }
-              ],
-            "conditions": [
-                {
-                  "condition": "minecraft:any_of",
-                  "terms": [
-                    {
-                      "condition": "minecraft:entity_scores",
-                      "entity": "this",
-                      "scores": {
-                        "uhcp_aug_choosingAugment": 0,
-                        "uhcp_aug_patron": 7
-                      }
-                    },
-                    {
-                      "condition": "minecraft:all_of",
-                      "terms": [
-                        {
-                          "condition": "minecraft:inverted",
-                          "term": {
-                            "condition": "minecraft:entity_scores",
-                            "entity": "this",
-                            "scores": {
-                              "uhcp_aug_patron": 7
-                            }
-                          }
-                        },
-                        {
-                          "condition": "minecraft:entity_scores",
-                          "entity": "this",
-                          "scores": {
-                            "uhcp_aug_choosingAugment": 1
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:bookshelf",
-            "functions": [
-                {
-                  "function": "set_count",
-                  "count": 1
-                },
-                {
-                  "function": "minecraft:set_custom_data",
-                  "tag": "{uhcp_augmentselect:1b,augment:213s}"
-                },
-                {
-                  "function": "minecraft:set_name",
-                  "target": "item_name",
-                  "name": [
-                    {
-                      "text": "Librarian",
-                      "color": "aqua",
-                      "bold": true
-                    }
-                  ]
-                },
-                {
-                  "function": "set_lore",
-                  "mode": "replace_all",
-                  "lore": [
-                    {
-                      "text": "------------------------",
-                      "color": "blue",
-                      "bold": true
-                    },
-                    [
-                      {
-                        "text": "Gain 10",
-                        "color": "gray"
-                      },
-                      {
-                        "text": " Bookshelves",
-                        "color": "white"
-                      },
-                      {
-                        "text": ". Start at Level 10.",
-                        "color": "gray"
-                      }
-                    ]
-                  ]
-                }
-              ],
-              "conditions": [
-                  {
-                    "condition": "minecraft:any_of",
-                    "terms": [
-                      {
-                        "condition": "minecraft:entity_scores",
-                        "entity": "this",
-                        "scores": {
-                          "uhcp_aug_choosingAugment": 0,
-                          "uhcp_aug_patron": 3
-                        }
-                      },
-                      {
-                        "condition": "minecraft:all_of",
-                        "terms": [
-                          {
-                            "condition": "minecraft:inverted",
-                            "term": {
-                              "condition": "minecraft:entity_scores",
-                              "entity": "this",
-                              "scores": {
-                                "uhcp_aug_patron": 3
-                              }
-                            }
-                          },
-                          {
-                            "condition": "minecraft:entity_scores",
-                            "entity": "this",
-                            "scores": {
-                              "uhcp_aug_choosingAugment": 1
-                            }
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:bow",
-            "functions": [
-                {
-                  "function": "set_count",
-                  "count": 1
-                },
-                
-                {
-                  "function": "minecraft:set_custom_data",
-                  "tag": "{uhcp_augmentselect:1b,augment:201s}"
-                },
-                {
-                  "function": "minecraft:set_name",
-                  "target": "item_name",
-                  "name": [
-                    {
-                      "text": "Bowmaster",
-                      "color": "aqua",
-                      "bold": true
-                    }
-                  ]
-                },
-                {
-                  "function": "minecraft:set_lore",
-                  "entity": "this",
-                  "lore": [
-                    {
-                      "text": "------------------------",
-                      "color": "blue"
-                    },
-                    [
-                      {
-                        "text": "Gain a",
-                        "color": "gray"
-                      },
-                      {
-                        "text": " Power II",
-                        "color": "dark_purple"
-                      },
-                      {
-                        "text": " Bow",
-                        "color": "white"
-                      },
-                      {
-                        "text": ". Your Arrow",
-                        "color": "gray"
-                      }
-                    ],
-                    {
-                      "text": "limit is increased to 64.",
-                      "color": "gray"
-                    }
-                  ],
-                  "mode": "replace_all"
-                }
-              ],
-              "conditions": [
-                  {
-                    "condition": "minecraft:any_of",
-                    "terms": [
-                      {
-                        "condition": "minecraft:entity_scores",
-                        "entity": "this",
-                        "scores": {
-                          "uhcp_aug_choosingAugment": 0,
-                          "uhcp_aug_patron": 1
-                        }
-                      },
-                      {
-                        "condition": "minecraft:all_of",
-                        "terms": [
-                          {
-                            "condition": "minecraft:inverted",
-                            "term": {
-                              "condition": "minecraft:entity_scores",
-                              "entity": "this",
-                              "scores": {
-                                "uhcp_aug_patron": 1
-                              }
-                            }
-                          },
-                          {
-                            "condition": "minecraft:entity_scores",
-                            "entity": "this",
-                            "scores": {
-                              "uhcp_aug_choosingAugment": 1
-                            }
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:fishing_rod",
-            "functions": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:target",
+          "functions": [
               {
                 "function": "set_count",
                 "count": 1
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_augmentselect:1b,augment:229s}"
+                "tag": "{uhcp_augmentselect:1b,augment:217s}"
               },
               {
                 "function": "minecraft:set_name",
                 "target": "item_name",
                 "name": [
                   {
-                    "text": "You have My Rod III",
-                    "color": "gray",
+                    "text": "Center of Attention",
+                    "color": "aqua",
                     "bold": true
                   }
                 ]
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
+                "mode": "replace_all",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue",
+                    "bold": true
+                  },
+                  [
+                    {
+                      "text": "Start with",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " +20🖤",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": ". You are",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Glowing",
+                      "color": "yellow"
+                    }
+                  ],
+                  {
+                    "text": "for the first 20 minutes.",
+                    "color": "gray"
+                  }
+                ]
+              }
+            ],
+            "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:entity_scores",
+                      "entity": "this",
+                      "scores": {
+                        "uhcp_aug_choosingAugment": 0,
+                        "uhcp_aug_patron": 0
+                      }
+                    },
+                    {
+                      "condition": "minecraft:all_of",
+                      "terms": [
+                        {
+                          "condition": "minecraft:inverted",
+                          "term": {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                              "uhcp_aug_patron": 0
+                            }
+                          }
+                        },
+                        {
+                          "condition": "minecraft:entity_scores",
+                          "entity": "this",
+                          "scores": {
+                            "uhcp_aug_choosingAugment": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:creeper_head",
+          "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_augmentselect:1b,augment:210s}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": [
+                  {
+                    "text": "Hunter's Insight",
+                    "color": "aqua",
+                    "bold": true
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "mode": "replace_all",
                 "lore": [
                   {
                     "text": "------------------------",
                     "color": "blue"
                   },
+                  {
+                    "text": "Gain abilities when you kill a certain number of mobs:",
+                    "color": "gray"
+                  },
                   [
                     {
-                      "text": "Gain a ",
-                      "color": "gray"
+                      "text": "5 Creepers",
+                      "color": "dark_red"
                     },
                     {
-                      "text": "Fishing Rod",
-                      "color": "white"
-                    },
-                    {
-                      "text": " with",
+                      "text": ": Explode on your death.",
                       "color": "gray"
                     }
                   ],
                   [
                     {
-                      "text": "Luck of the Sea X / Lure V",
+                      "text": "5 Skeletons",
+                      "color": "dark_red"
+                    },
+                    {
+                      "text": ": Gain a",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Power II",
                       "color": "dark_purple"
+                    },
+                    {
+                      "text": " Bow",
+                      "color": "white"
+                    },
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "5 Spiders",
+                      "color": "dark_red"
+                    },
+                    {
+                      "text": ": Gain",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Permanent Speed I",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "5 Zombies",
+                      "color": "dark_red"
+                    },
+                    {
+                      "text": ": Gain",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " 4🖤",
+                      "color": "red"
+                    },
+                    {
+                      "text": " and ",
+                      "color": "gray"
+                    },
+                    {
+                      "text": "4🖤",
+                      "color": "yellow"
                     },
                     {
                       "text": ".",
                       "color": "gray"
                     }
                   ]
-                ],
-                "mode": "replace_all"
+                ]
               }
             ],
-            "conditions": [
+          "conditions": [
               {
                 "condition": "minecraft:any_of",
                 "terms": [
@@ -942,7 +223,7 @@
                     "entity": "this",
                     "scores": {
                       "uhcp_aug_choosingAugment": 0,
-                      "uhcp_aug_patron": 9
+                      "uhcp_aug_patron": 2
                     }
                   },
                   {
@@ -954,7 +235,7 @@
                           "condition": "minecraft:entity_scores",
                           "entity": "this",
                           "scores": {
-                            "uhcp_aug_patron": 9
+                            "uhcp_aug_patron": 2
                           }
                         }
                       },
@@ -970,9 +251,727 @@
                 ]
               }
             ]
-          }
-        ]
-      }
-    ]
-  }
-  
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:diamond_boots",
+          "functions": [
+              {
+                "function": "minecraft:toggle_tooltips",
+                "toggles": {
+                  "minecraft:attribute_modifiers": false
+                }
+              },
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_augmentselect:1b,augment:207s}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": [
+                  {
+                    "text": "Gas Gas Gas",
+                    "color": "aqua",
+                    "bold": true
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "mode": "replace_all",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue",
+                    "bold": true
+                  },
+                  [
+                    {
+                      "text": "Start with permanent",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Speed I",
+                      "color": "yellow"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "and gain ",
+                      "color": "gray"
+                    },
+                    {
+                      "text": "Boots of Swiftness",
+                      "color": "#bf7830"
+                    },
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ]
+                ]
+              }
+            ],
+          "conditions": [
+              {
+                "condition": "minecraft:any_of",
+                "terms": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "uhcp_aug_choosingAugment": 0,
+                      "uhcp_aug_patron": 6
+                    }
+                  },
+                  {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                      {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                          "condition": "minecraft:entity_scores",
+                          "entity": "this",
+                          "scores": {
+                            "uhcp_aug_patron": 6
+                          }
+                        }
+                      },
+                      {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                          "uhcp_aug_choosingAugment": 1
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:diamond_pickaxe",
+          "functions": [
+              {
+                "function": "minecraft:toggle_tooltips",
+                "toggles": {
+                  "minecraft:attribute_modifiers": false
+                }
+              },
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_augmentselect:1b,augment:211s}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": [
+                  {
+                    "text": "Into the Mines III",
+                    "color": "aqua",
+                    "bold": true
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "mode": "replace_all",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue",
+                    "bold": true
+                  },
+                  [
+                    {
+                      "text": "Gain a",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Diamond Pickaxe",
+                      "color": "white"
+                    },
+                    {
+                      "text": " with",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Fortune I",
+                      "color": "dark_purple"
+                    },
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ]
+                ]
+              }
+          ],
+          "conditions": [
+              {
+                "condition": "minecraft:any_of",
+                "terms": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "uhcp_aug_choosingAugment": 0,
+                      "uhcp_aug_patron": 5
+                    }
+                  },
+                  {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                      {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                          "condition": "minecraft:entity_scores",
+                          "entity": "this",
+                          "scores": {
+                            "uhcp_aug_patron": 5
+                          }
+                        }
+                      },
+                      {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                          "uhcp_aug_choosingAugment": 1
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:golden_apple",
+          "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "!minecraft:food": {}
+                }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_augmentselect:1b,augment:206s}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": [
+                  {
+                    "text": "Gapple Gap III",
+                    "color": "aqua",
+                    "bold": true
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "mode": "replace_all",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue",
+                    "bold": true
+                  },
+                  [
+                    {
+                      "text": "Gain 10",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Golden Apples",
+                      "color": "white"
+                    },
+                    {
+                      "text": " and",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Windfall",
+                      "color": "gold"
+                    },
+                    {
+                      "text": ".",
+                      "color": "gray"
+                    }
+                  ]
+                ]
+              }
+            ],
+          "conditions": [
+              {
+                "condition": "minecraft:any_of",
+                "terms": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "uhcp_aug_choosingAugment": 0,
+                      "uhcp_aug_patron": 4
+                    }
+                  },
+                  {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                      {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                          "condition": "minecraft:entity_scores",
+                          "entity": "this",
+                          "scores": {
+                            "uhcp_aug_patron": 4
+                          }
+                        }
+                      },
+                      {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                          "uhcp_aug_choosingAugment": 1
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:iron_trapdoor",
+          "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_augmentselect:1b,augment:228s}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": [
+                  {
+                    "text": "Trap God",
+                    "color": "aqua",
+                    "bold": true
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "mode": "replace_all",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue",
+                    "bold": true
+                  },
+                  [
+                    {
+                      "text": "Gain",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " all the materials you need to make a trap",
+                      "color": "white"
+                    },
+                    {
+                      "text": ","
+                    }
+                  ],
+                  [
+                    {
+                      "text": "full Iron Tools",
+                      "color": "white"
+                    },
+                    {
+                      "text": " with",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Efficiency I / Unbreaking III",
+                      "color": "dark_purple"
+                    },
+                    {
+                      "text": ",",
+                      "color": "gray"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Iron Armor, and Shield",
+                      "color": "white"
+                    },
+                    {
+                      "text": ". At the start of the game,",
+                      "color": "gray"
+                    }
+                  ],
+                  {
+                    "text": "teleport to (0, 0). You cannot be seen by",
+                    "color": "gray"
+                  },
+                  [
+                    {
+                      "text": "All-Seeing Eyes",
+                      "color": "light_purple"
+                    },
+                    {
+                      "text": "."
+                    }
+                  ]
+                ]
+              }
+            ],
+          "conditions": [
+              {
+                "condition": "minecraft:any_of",
+                "terms": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "uhcp_aug_choosingAugment": 0,
+                      "uhcp_aug_patron": 7
+                    }
+                  },
+                  {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                      {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                          "condition": "minecraft:entity_scores",
+                          "entity": "this",
+                          "scores": {
+                            "uhcp_aug_patron": 7
+                          }
+                        }
+                      },
+                      {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                          "uhcp_aug_choosingAugment": 1
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:bookshelf",
+          "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_augmentselect:1b,augment:213s}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": [
+                  {
+                    "text": "Librarian",
+                    "color": "aqua",
+                    "bold": true
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "mode": "replace_all",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue",
+                    "bold": true
+                  },
+                  [
+                    {
+                      "text": "Gain 10",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Bookshelves",
+                      "color": "white"
+                    },
+                    {
+                      "text": ". Start at Level 10.",
+                      "color": "gray"
+                    }
+                  ]
+                ]
+              }
+            ],
+            "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:entity_scores",
+                      "entity": "this",
+                      "scores": {
+                        "uhcp_aug_choosingAugment": 0,
+                        "uhcp_aug_patron": 3
+                      }
+                    },
+                    {
+                      "condition": "minecraft:all_of",
+                      "terms": [
+                        {
+                          "condition": "minecraft:inverted",
+                          "term": {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                              "uhcp_aug_patron": 3
+                            }
+                          }
+                        },
+                        {
+                          "condition": "minecraft:entity_scores",
+                          "entity": "this",
+                          "scores": {
+                            "uhcp_aug_choosingAugment": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:bow",
+          "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{uhcp_augmentselect:1b,augment:201s}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": [
+                  {
+                    "text": "Bowmaster",
+                    "color": "aqua",
+                    "bold": true
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "------------------------",
+                    "color": "blue"
+                  },
+                  [
+                    {
+                      "text": "Gain a",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Power II",
+                      "color": "dark_purple"
+                    },
+                    {
+                      "text": " Bow",
+                      "color": "white"
+                    },
+                    {
+                      "text": ". Your Arrow",
+                      "color": "gray"
+                    }
+                  ],
+                  {
+                    "text": "limit is increased to 64.",
+                    "color": "gray"
+                  }
+                ],
+                "mode": "replace_all"
+              }
+            ],
+            "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:entity_scores",
+                      "entity": "this",
+                      "scores": {
+                        "uhcp_aug_choosingAugment": 0,
+                        "uhcp_aug_patron": 1
+                      }
+                    },
+                    {
+                      "condition": "minecraft:all_of",
+                      "terms": [
+                        {
+                          "condition": "minecraft:inverted",
+                          "term": {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                              "uhcp_aug_patron": 1
+                            }
+                          }
+                        },
+                        {
+                          "condition": "minecraft:entity_scores",
+                          "entity": "this",
+                          "scores": {
+                            "uhcp_aug_choosingAugment": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:229s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "You have My Rod III",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Gain a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Fishing Rod",
+                    "color": "white"
+                  },
+                  {
+                    "text": " with",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Luck of the Sea X / Lure V",
+                    "color": "dark_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_patron": 9
+                  }
+                },
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                          "uhcp_aug_patron": 9
+                        }
+                      }
+                    },
+                    {
+                      "condition": "minecraft:entity_scores",
+                      "entity": "this",
+                      "scores": {
+                        "uhcp_aug_choosingAugment": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

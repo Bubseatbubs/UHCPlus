@@ -1,135 +1,134 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:stored_enchantments": {
-                    "minecraft:fortune": 1
-                  }
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "minecraft:fortune": 1
                 }
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:stored_enchantments": {
-                    "minecraft:looting": 3
-                  }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "minecraft:looting": 3
                 }
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:stored_enchantments": {
-                    "minecraft:power": 4
-                  }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "minecraft:power": 4
                 }
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:stored_enchantments": {
-                    "minecraft:protection": 3
-                  }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "minecraft:protection": 3
                 }
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:stored_enchantments": {
-                    "minecraft:sharpness": 3
-                  }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "minecraft:sharpness": 3
                 }
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:stored_enchantments": {
-                    "minecraft:efficiency": 3
-                  }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "minecraft:efficiency": 3
                 }
               }
-            ]
-          }
-        ]
-      },
-      {
-        "rolls": 2,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:stored_enchantments": {
-                    "minecraft:protection": 2
-                  }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "minecraft:protection": 2
                 }
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:stored_enchantments": {
-                    "minecraft:sharpness": 2
-                  }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "minecraft:sharpness": 2
                 }
               }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,18 +1,17 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:consume_item",
-        "conditions": {
-          "item": {
-            "predicates": {
-              "minecraft:custom_data": "{uhcp_soulapple:1b}"
-            }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{uhcp_soulapple:1b}"
           }
         }
       }
-    },
-    "rewards": {
-      "function": "uhcp:consumables/soul_apple/init"
     }
+  },
+  "rewards": {
+    "function": "uhcp:consumables/soul_apple/init"
   }
-  
+}

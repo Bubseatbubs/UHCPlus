@@ -1,58 +1,58 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:feather",
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:enchantments": {
-                    "levels": {
-                      "minecraft:protection": 1
-                    },
-                    "show_in_tooltip": false
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
                   },
-                  "minecraft:food": {
-                    "can_always_eat": true,
-                    "nutrition": 0,
-                    "saturation": 0,
-                    "eat_seconds": 2147483647
-                  },
-                  "minecraft:max_stack_size": 64
-                }
-              },
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_rightclick:1b,uhcp_consumable:4b}"
-              },
-              {
-                "function": "minecraft:set_name",
-                "target": "item_name",
-                "name": [
-                  {
-                    "text": "Wild Feather",
-                    "color": "light_purple"
-                  }
-                ]
-              },
-              {
-                "function": "set_lore",
-                "mode": "replace_all",
-                "lore": [
-                  {
-                    "text": "Teleport to a random teammate.",
-                    "color": "gray"
-                  }
-                ]
+                  "show_in_tooltip": false
+                },
+                "minecraft:food": {
+                  "can_always_eat": true,
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "eat_seconds": 2147483647
+                },
+                "minecraft:max_stack_size": 64
               }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:1b,uhcp_consumable:4b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Wild Feather",
+                  "color": "light_purple"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "Teleport to a random teammate.",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

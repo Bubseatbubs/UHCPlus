@@ -1,59 +1,58 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:raiser_armor_trim_smithing_template"
-          }
-        ],
-        "functions": [
-          {
-            "function": "minecraft:set_lore",
-            "entity": "this",
-            "lore": [
-              {
-                "text": "Duplicates the item in your Offhand.",
-                "color": "gray"
-              }
-            ],
-            "mode": "replace_all"
-          },
-          {
-            "function": "minecraft:set_custom_data",
-            "tag": "{uhcp_rightclick:1b,uhcp_consumable:0b}"
-          },
-          {
-            "function": "minecraft:set_components",
-            "components": {
-              "minecraft:enchantments": {
-                "levels": {
-                  "minecraft:protection": 1
-                },
-                "show_in_tooltip": false
-              },
-              "minecraft:food": {
-                "nutrition": 0,
-                "saturation": 0,
-                "can_always_eat": true,
-                "eat_seconds": 2147483647
-              },
-              "minecraft:max_stack_size": 1,
-              "minecraft:hide_additional_tooltip": {}
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:raiser_armor_trim_smithing_template"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_lore",
+          "entity": "this",
+          "lore": [
+            {
+              "text": "Duplicates the item in your Offhand.",
+              "color": "gray"
             }
-          },
-          {
-            "function": "minecraft:set_name",
-            "entity": "this",
-            "target": "item_name",
-            "name": {
-              "text": "Item Duplicator",
-              "color": "light_purple"
-            }
+          ],
+          "mode": "replace_all"
+        },
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": "{uhcp_rightclick:1b,uhcp_consumable:0b}"
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:enchantments": {
+              "levels": {
+                "minecraft:protection": 1
+              },
+              "show_in_tooltip": false
+            },
+            "minecraft:food": {
+              "nutrition": 0,
+              "saturation": 0,
+              "can_always_eat": true,
+              "eat_seconds": 2147483647
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:hide_additional_tooltip": {}
           }
-        ]
-      }
-    ]
-  }
-  
+        },
+        {
+          "function": "minecraft:set_name",
+          "entity": "this",
+          "target": "item_name",
+          "name": {
+            "text": "Item Duplicator",
+            "color": "light_purple"
+          }
+        }
+      ]
+    }
+  ]
+}

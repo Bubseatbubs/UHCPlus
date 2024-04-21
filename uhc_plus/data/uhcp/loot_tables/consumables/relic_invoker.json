@@ -1,122 +1,122 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:silence_armor_trim_smithing_template",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:enchantments": {
-                    "levels": {
-                      "minecraft:protection": 1
-                    },
-                    "show_in_tooltip": false
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:silence_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
                   },
-                  "minecraft:food": {
-                    "can_always_eat": true,
-                    "nutrition": 0,
-                    "saturation": 0,
-                    "eat_seconds": 2147483647
-                  },
-                  "minecraft:max_stack_size": 1,
-                  "minecraft:hide_additional_tooltip": {}
+                  "show_in_tooltip": false
+                },
+                "minecraft:food": {
+                  "can_always_eat": true,
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "eat_seconds": 2147483647
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:hide_additional_tooltip": {}
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:1b,uhcp_consumable:3b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Relic Invoker",
+                  "color": "light_purple"
                 }
-              },
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_rightclick:1b,uhcp_consumable:3b}"
-              },
-              {
-                "function": "minecraft:set_name",
-                "target": "item_name",
-                "name": [
+              ]
+            },
+            {
+              "function": "set_lore",
+              "mode": "replace_all",
+              "lore": [
+                [
                   {
-                    "text": "Relic Invoker",
-                    "color": "light_purple"
+                    "text": "Obtain a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " random ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Relic",
+                    "color": "gold"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": " "
+                },
+                [
+                  {
+                    "text": "\"Yo",
+                    "color": "dark_purple",
+                    "obfuscated": false
+                  },
+                  {
+                    "text": "u",
+                    "obfuscated": true
+                  },
+                  {
+                    "text": " he"
+                  },
+                  {
+                    "text": "a",
+                    "obfuscated": true
+                  },
+                  {
+                    "text": "r whis"
+                  },
+                  {
+                    "text": "p",
+                    "obfuscated": true
+                  },
+                  {
+                    "text": "ers of a b"
+                  },
+                  {
+                    "text": "y",
+                    "obfuscated": true
+                  },
+                  {
+                    "text": "gone e"
+                  },
+                  {
+                    "text": "ra",
+                    "obfuscated": true
+                  },
+                  {
+                    "text": "...\""
                   }
                 ]
-              },
-              {
-                "function": "set_lore",
-                "mode": "replace_all",
-                "lore": [
-                  [
-                    {
-                      "text": "Obtain a",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " random ",
-                      "color": "gray"
-                    },
-                    {
-                      "text": "Relic",
-                      "color": "gold"
-                    },
-                    {
-                      "text": ".",
-                      "color": "gray"
-                    }
-                  ],
-                  {
-                    "text": " "
-                  },
-                  [
-                    {
-                      "text": "\"Yo",
-                      "color": "dark_purple",
-                      "obfuscated": false
-                    },
-                    {
-                      "text": "u",
-                      "obfuscated": true
-                    },
-                    {
-                      "text": " he"
-                    },
-                    {
-                      "text": "a",
-                      "obfuscated": true
-                    },
-                    {
-                      "text": "r whis"
-                    },
-                    {
-                      "text": "p",
-                      "obfuscated": true
-                    },
-                    {
-                      "text": "ers of a b"
-                    },
-                    {
-                      "text": "y",
-                      "obfuscated": true
-                    },
-                    {
-                      "text": "gone e"
-                    },
-                    {
-                      "text": "ra",
-                      "obfuscated": true
-                    },
-                    {
-                      "text": "...\""
-                    }
-                  ]
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

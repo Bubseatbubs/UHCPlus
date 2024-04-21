@@ -1,17 +1,16 @@
 {
-    "structures": [
-      {
-        "structure": "uhcp:abandoned_lab",
-        "weight": 1
-      }
-    ],
-    "placement": {
-      "type": "minecraft:random_spread",
-      "salt": 20083232,
-      "frequency_reduction_method": "legacy_type_3",
-      "frequency": 0.02,
-      "spacing": 5,
-      "separation": 2
+  "structures": [
+    {
+      "structure": "uhcp:abandoned_lab",
+      "weight": 1
     }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 20083232,
+    "frequency_reduction_method": "legacy_type_3",
+    "frequency": 0.02,
+    "spacing": 5,
+    "separation": 2
   }
-  
+}

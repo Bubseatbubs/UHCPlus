@@ -1,114 +1,113 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:apple",
-            "functions": [
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": "{uhcp_soulapple:1b}"
-              },
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:rarity": "uncommon",
-                  "minecraft:enchantments": {
-                    "levels": {
-                      "minecraft:protection": 1
-                    },
-                    "show_in_tooltip": false
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple",
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_soulapple:1b}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "uncommon",
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:protection": 1
                   },
-                  "minecraft:food": {
-                    "nutrition": 4,
-                    "saturation": 0,
-                    "can_always_eat": true
-                  }
+                  "show_in_tooltip": false
+                },
+                "minecraft:food": {
+                  "nutrition": 4,
+                  "saturation": 0,
+                  "can_always_eat": true
                 }
-              },
-              {
-                "function": "minecraft:set_lore",
-                "entity": "this",
-                "lore": [
-                  [
-                    {
-                      "text": "Gain",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " 2🖤, Regeneration III",
-                      "color": "yellow"
-                    },
-                    {
-                      "text": " and",
-                      "color": "gray"
-                    },
-                    {
-                      "text": " Speed I",
-                      "color": "yellow"
-                    }
-                  ],
-                  [
-                    {
-                      "text": "for 12 seconds upon consumption.",
-                      "color": "gray"
-                    }
-                  ],
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
                   {
-                    "text": "Additionally, gain 8 Levels.",
+                    "text": "Gain",
                     "color": "gray"
                   },
-                  [
-                    {
-                      "text": "(Total healing: 10",
-                      "color": "gray"
-                    },
-                    {
-                      "text": "🖤",
-                      "color": "red"
-                    },
-                    {
-                      "text": ")",
-                      "color": "gray"
-                    }
-                  ],
                   {
-                    "text":""
+                    "text": " 2🖤, Regeneration III",
+                    "color": "yellow"
                   },
                   {
-                    "text": "An apple infused with the souls of fallen enemies...",
-                    "color": "light_purple"
+                    "text": " and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Speed I",
+                    "color": "yellow"
                   }
                 ],
-                "mode": "replace_all"
-              },
-              {
-                "function": "minecraft:set_name",
-                "entity": "this",
-                "target": "item_name",
-                "name": "Soul Apple"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "functions": [
-      {
-        "function": "minecraft:set_count",
-        "count": {
-          "type": "minecraft:score",
-          "target": {
-            "type": "minecraft:fixed",
-            "name": "%soul_apples"
-          },
-          "score": "uhcp_settings",
-          "scale": 1
+                [
+                  {
+                    "text": "for 12 seconds upon consumption.",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "Additionally, gain 8 Levels.",
+                  "color": "gray"
+                },
+                [
+                  {
+                    "text": "(Total healing: 10",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": ")",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text":""
+                },
+                {
+                  "text": "An apple infused with the souls of fallen enemies...",
+                  "color": "light_purple"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "item_name",
+              "name": "Soul Apple"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:set_count",
+      "count": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "%soul_apples"
         },
-        "add": false
-      }
-    ]
-  }
-  
+        "score": "uhcp_settings",
+        "scale": 1
+      },
+      "add": false
+    }
+  ]
+}

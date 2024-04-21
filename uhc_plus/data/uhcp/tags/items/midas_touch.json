@@ -1,23 +1,22 @@
 {
-    "values": [
-      "minecraft:redstone_block",
-      "minecraft:lapis_block",
-      "minecraft:coal_block",
-      "minecraft:emerald_block",
-      "minecraft:netherite_block",
-      "minecraft:diamond_block",
-      "minecraft:copper_block",
-      "minecraft:iron_block",
-      "minecraft:emerald",
-      "minecraft:lapis_lazuli",
-      "minecraft:netherite_ingot",
-      "minecraft:quartz",
-      "minecraft:copper_ingot",
-      "minecraft:redstone",
-      "minecraft:coal",
-      "minecraft:diamond",
-      "minecraft:iron_ingot",
-      "minecraft:iron_nugget"
-    ]
-  }
-  
+  "values": [
+    "minecraft:redstone_block",
+    "minecraft:lapis_block",
+    "minecraft:coal_block",
+    "minecraft:emerald_block",
+    "minecraft:netherite_block",
+    "minecraft:diamond_block",
+    "minecraft:copper_block",
+    "minecraft:iron_block",
+    "minecraft:emerald",
+    "minecraft:lapis_lazuli",
+    "minecraft:netherite_ingot",
+    "minecraft:quartz",
+    "minecraft:copper_ingot",
+    "minecraft:redstone",
+    "minecraft:coal",
+    "minecraft:diamond",
+    "minecraft:iron_ingot",
+    "minecraft:iron_nugget"
+  ]
+}
