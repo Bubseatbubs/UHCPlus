@@ -2202,12 +2202,12 @@
                   {
                     "text": " 6🖤",
                     "color": "red"
+                  },
+                  {
+                    "text": ", gain ",
+                    "color": "gray"
                   }
                 ],
-                {
-                  "text": " gain ",
-                  "color": "gray"
-                },
                 [
                   {
                     "text": "random powerful loot",
