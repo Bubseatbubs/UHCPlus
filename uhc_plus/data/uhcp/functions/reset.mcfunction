@@ -3,6 +3,7 @@ kill @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs]
 execute as @e[tag=UHCP_WellEngineered] at @s run function uhcp:relics/runic_sentry/delete
 execute as @e[tag=UHCP_AltarDisplay] at @s run function uhcp:titans/spawn/reset_altar
 kill @e[tag=UHCP_Summon]
+kill @e[tag=UHCP_StoreAugment]
 kill @e[type=minecraft:experience_orb]
 kill @e[type=minecraft:ender_pearl]
 kill @e[type=minecraft:item]
@@ -57,6 +58,9 @@ execute as @a[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal
 
 # Tags
 tag @a remove UHCP_ChoosingItem
+tag @a remove UHCP_AugmentRerollSlot1
+tag @a remove UHCP_AugmentRerollSlot2
+tag @a remove UHCP_AugmentRerollSlot3
 tag @a remove UHCP_Died
 tag @a remove UHCP_MilkBucket
 tag @a remove UHCP_RelicTestingChamber

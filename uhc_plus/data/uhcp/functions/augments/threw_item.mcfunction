@@ -10,7 +10,7 @@
 scoreboard players set @s uhcp_aug_validSelection 0
 
 # Revert Black Stained Glass Pane
-clear @s minecraft:black_stained_glass_pane
+clear @s *[minecraft:custom_data~{uhcp_glass:1b}]
 function uhcp:augments/generate/panes
 
 # Revoke advancements

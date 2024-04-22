@@ -4,7 +4,6 @@
 # @within uhcp:augments/validate
 
 tag @s add UHCP_DisableChoose
-execute at @s run playsound block.note_block.snare master @s ~ ~ ~ 1 1 1
 
 # Swap augment selection item back into empty slot
 execute if items entity @s container.3 minecraft:black_stained_glass_pane run scoreboard players set @s uhcp_itemInv 3

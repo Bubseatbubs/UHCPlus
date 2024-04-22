@@ -4,7 +4,6 @@
 # @within uhcp:augments/validate
 
 tag @s add UHCP_DisableChoose
-execute at @s run playsound block.note_block.snare master @s ~ ~ ~ 1 1 1
 
 # Find slot item moved from
 execute unless items entity @s container.3 * run function uhcp:augments/return/slot/3
@@ -20,5 +19,5 @@ item replace entity @s armor.feet with minecraft:air
 item replace entity @s weapon.offhand with minecraft:air
 
 # Reform Glass
-clear @s minecraft:black_stained_glass_pane
+clear @s *[minecraft:custom_data~{uhcp_glass:1b}]
 function uhcp:augments/generate/panes
