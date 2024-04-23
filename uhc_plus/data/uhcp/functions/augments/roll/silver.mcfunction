@@ -10,7 +10,9 @@ loot replace entity @s container.31 loot uhcp:augments/silver
 loot replace entity @s container.32 loot uhcp:augments/silver
 
 # Add Patron Augment if Hera is selected
-execute if score @s uhcp_aug_patron matches 8 run loot replace entity @s hotbar.7 loot uhcp:augments/silver
+# Patrons disabled for Set 2 Testing
+#execute if score @s uhcp_aug_patron matches 8 run loot replace entity @s hotbar.7 loot uhcp:augments/silver
+item replace entity @s hotbar.7 with black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={}] 1
 
 # Store rerolled augments onto an armor stand
 execute in uhcp:main positioned 0 32 0 summon chest_minecart run function uhcp:augments/roll/store

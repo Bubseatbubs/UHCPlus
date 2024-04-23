@@ -2202,12 +2202,12 @@
                   {
                     "text": " 6🖤",
                     "color": "red"
+                  },
+                  {
+                    "text": ", gain ",
+                    "color": "gray"
                   }
                 ],
-                {
-                  "text": " gain ",
-                  "color": "gray"
-                },
                 [
                   {
                     "text": "random powerful loot",
@@ -2678,7 +2678,7 @@
                   }
                 ],
                 {
-                  "text": "mob, it has a 20% chance of",
+                  "text": "mob, it has a 40% chance of",
                   "color": "gray",
                   "italic": false
                 },

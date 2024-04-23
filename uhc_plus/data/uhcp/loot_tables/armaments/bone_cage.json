@@ -18,8 +18,8 @@
             {
               "function": "minecraft:set_enchantments",
               "enchantments": {
-                "minecraft:protection": 3,
-                "minecraft:projectile_protection": 3
+                "minecraft:protection": 1,
+                "minecraft:projectile_protection": 1
               }
             },
             {

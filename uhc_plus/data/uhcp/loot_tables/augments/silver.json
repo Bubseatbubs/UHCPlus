@@ -905,6 +905,20 @@
                     "text": ". (8 minute duration)",
                     "color": "gray"
                   }
+                ],
+                [
+                  {
+                    "text": "You cannot be seen by ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "All-Seeing Eyes",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
                 ]
               ],
               "mode": "replace_all"
@@ -2847,7 +2861,7 @@
                   }
                 ],
                 {
-                  "text": "mob, it has a 5% chance of",
+                  "text": "mob, it has a 10% chance of",
                   "color": "gray",
                   "italic": false
                 },

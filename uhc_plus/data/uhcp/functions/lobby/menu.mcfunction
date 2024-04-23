@@ -12,7 +12,11 @@ execute if entity @s[tag=UHCP_RelicTestingChamber] run function uhcp:lobby/relic
 # Create Player Hotbar
 execute unless score %team uhcp_settings matches 1 run item replace entity @s hotbar.0 with black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={}] 1
 execute if score %team uhcp_settings matches 1 run loot replace entity @s hotbar.0 loot uhcp:lobby_menu/team
-loot replace entity @s hotbar.1 loot uhcp:lobby_menu/patron
+
+# Patrons temporarily disabled for Set 2 testing
+#loot replace entity @s hotbar.1 loot uhcp:lobby_menu/patron
+item replace entity @s hotbar.1 with black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={}] 1
+
 loot replace entity @s hotbar.2 loot uhcp:lobby_menu/skip_travel
 loot replace entity @s hotbar.4 loot uhcp:lobby_menu/special_item
 loot replace entity @s hotbar.6 loot uhcp:lobby_menu/settings_display
