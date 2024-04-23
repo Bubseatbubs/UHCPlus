@@ -18,7 +18,7 @@
             {
               "function": "minecraft:set_enchantments",
               "enchantments": {
-                "minecraft:protection": 2,
+                "minecraft:protection": 1,
                 "minecraft:fire_protection": 1
               }
             },
@@ -82,20 +82,33 @@
                 ],
                 [
                   {
-                    "text": "enemy player or mob, summon",
+                    "text": "enemy player or mob, there is a",
                     "color": "gray",
                     "italic": false
                   }
                 ],
                 [
                   {
-                    "text": "Evoker Fangs",
+                    "text": "25% chance",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Evoker Fangs",
                     "color": "blue",
                     "italic": false
                   },
                   {
-                    "text": " beneath them.",
-                    "color": "gray"
+                    "text": " are",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "summoned beneath them.",
+                    "color": "gray",
+                    "italic": false
                   }
                 ]
               ],

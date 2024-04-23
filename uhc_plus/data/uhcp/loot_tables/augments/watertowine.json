@@ -6,7 +6,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:potion",
-          "weight": 1,
+          "weight": 12,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -17,6 +17,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:splash_potion",
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -27,6 +28,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:potion",
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -37,6 +39,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:potion",
+          "weight": 12,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -47,6 +50,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:potion",
+          "weight": 12,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -57,6 +61,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:potion",
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -67,6 +72,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:splash_potion",
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -77,6 +83,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:potion",
+          "weight": 12,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -87,6 +94,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:potion",
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -97,6 +105,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:potion",
+          "weight": 12,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -107,6 +116,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:potion",
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -117,6 +127,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:splash_potion",
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -127,6 +138,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:lingering_potion",
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -137,6 +149,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:lingering_potion",
+          "weight": 8,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -146,6 +159,7 @@
         },
         {
           "type": "minecraft:loot_table",
+          "weight": 2,
           "value": "uhcp:consumables/royal_jelly"
         }
       ]

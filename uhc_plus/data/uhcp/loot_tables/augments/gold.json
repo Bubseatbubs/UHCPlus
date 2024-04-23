@@ -1734,7 +1734,21 @@
                 {
                   "text": "when you sneak.",
                   "color": "gray"
-                }
+                },
+                [
+                  {
+                    "text": "You cannot be seen by ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "All-Seeing Eyes",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
               ],
               "mode": "replace_all"
             }
@@ -2504,12 +2518,8 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Diamonds",
+                    "text": " Diamonds.",
                     "color": "white"
-                  },
-                  {
-                    "text": " at a rate of 3 to 1.",
-                    "color": "gray"
                   }
                 ]
               ],
@@ -3102,7 +3112,7 @@
                   }
                 ],
                 {
-                  "text": "mob, it has a 10% chance of",
+                  "text": "mob, it has a 25% chance of",
                   "color": "gray"
                 },
                 {
@@ -3641,7 +3651,7 @@
                 ],
                 [
                   {
-                    "text": "grants you 10",
+                    "text": "grants you 14",
                     "color": "gray"
                   },
                   {
