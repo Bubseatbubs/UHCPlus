@@ -12,6 +12,7 @@ tag @s remove UHCP_ChoosingItem
 tag @s remove UHCP_Died
 execute if score @s uhcp_augment matches 220 run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 execute if score @s uhcp_augment matches 25 run function uhcp:augments/effects/gold/scavengerhunt/reset
+tag @s remove UHCP_Explode
 
 # Return player as needed
 execute in minecraft:overworld run forceload add -80 -80 79 79

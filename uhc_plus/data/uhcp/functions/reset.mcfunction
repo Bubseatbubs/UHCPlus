@@ -63,6 +63,7 @@ tag @a remove UHCP_AugmentRerollSlot2
 tag @a remove UHCP_AugmentRerollSlot3
 tag @a remove UHCP_Died
 tag @a remove UHCP_MilkBucket
+tag @a remove UHCP_Explode
 tag @a remove UHCP_RelicTestingChamber
 tag @a remove UHCP_SoulflameEmbrace
 tag @a remove UHCP_Spectator
