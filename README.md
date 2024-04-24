@@ -6,12 +6,12 @@ UHC+ is an alternate take on Minecraft’s **Ultra Hardcore** gamemode. Original
 
 - **A robust Augment system** in which players select a perk at the start of the game. There are 100+ augments and 3 different tiers of Augments, so there’s a lot of variety!
 - **Gigantic Titans** that spawn throughout the game. Taking on these behemoths will net you great rewards!
-- **Special items and equipment** that can be obtained through Augments or traversing through arduous structures. These items can do wonderous things...
+- **Special items and equipment** that can be obtained through Augments or traversing through arduous structures. These items can do wondrous things...
 - **Rising Lava** at the final stage of the game that will keep the competition hot.
 - Automatic system that stops players from entering the Nether and moves players in the Nether back to the Overworld.
 - **A grace period** system that stops players from attacking one another for a set time.
 - **Brand new structures** that will spice up exploration.
-- An arrow count limit to stop players from lugging too many Arrows around.
+- An arrow count limit to stop players from lugging too many arrows around.
 - Classic UHC features like a shrinking world border, lack of natural regeneration, and permanent death.
 - Highly configurable settings for the above features!
 
