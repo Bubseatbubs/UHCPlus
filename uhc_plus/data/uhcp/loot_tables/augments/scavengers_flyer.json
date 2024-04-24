@@ -39,7 +39,7 @@
               "lore": [
                 [
                   {
-                    "text": "Obtain the following items to gain 10",
+                    "text": "Obtain the following items to gain 14",
                     "color": "gray"
                   },
                   {
@@ -227,6 +227,32 @@
                         "scale": 1
                       },
                       "range": 1
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 1
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 1
                     }
                   ]
                 }
@@ -311,6 +337,32 @@
                         "target": {
                           "type": "minecraft:fixed",
                           "name": "%items_5"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 2
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 2
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
                         },
                         "score": "uhcp_aug_sh_item",
                         "scale": 1
@@ -405,6 +457,32 @@
                         "scale": 1
                       },
                       "range": 3
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 3
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 3
                     }
                   ]
                 }
@@ -489,6 +567,32 @@
                         "target": {
                           "type": "minecraft:fixed",
                           "name": "%items_5"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 4
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 4
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
                         },
                         "score": "uhcp_aug_sh_item",
                         "scale": 1
@@ -583,6 +687,32 @@
                         "scale": 1
                       },
                       "range": 5
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 5
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 5
                     }
                   ]
                 }
@@ -667,6 +797,32 @@
                         "target": {
                           "type": "minecraft:fixed",
                           "name": "%items_5"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 6
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 6
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
                         },
                         "score": "uhcp_aug_sh_item",
                         "scale": 1
@@ -761,6 +917,32 @@
                         "scale": 1
                       },
                       "range": 7
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 7
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 7
                     }
                   ]
                 }
@@ -850,6 +1032,1297 @@
                         "scale": 1
                       },
                       "range": 8
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 8
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 8
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "- ",
+                    "italic": false
+                  },
+                  {
+                    "text": "Golden Carrot",
+                    "color": "blue"
+                  }
+                ]
+              ],
+              "mode": "append",
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_1"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 9
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_2"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 9
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_3"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 9
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_4"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 9
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_5"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 9
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 9
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 9
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "- ",
+                    "italic": false
+                  },
+                  {
+                    "text": "Iron Horse Amor",
+                    "color": "blue"
+                  }
+                ]
+              ],
+              "mode": "append",
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_1"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 10
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_2"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 10
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_3"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 10
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_4"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 10
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_5"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 10
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 10
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 10
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "- ",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block of Emerald",
+                    "color": "blue"
+                  }
+                ]
+              ],
+              "mode": "append",
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_1"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 11
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_2"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 11
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_3"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 11
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_4"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 11
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_5"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 11
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 11
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 11
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "- ",
+                    "italic": false
+                  },
+                  {
+                    "text": "Sculk Shrieker",
+                    "color": "blue"
+                  }
+                ]
+              ],
+              "mode": "append",
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_1"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 12
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_2"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 12
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_3"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 12
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_4"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 12
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_5"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 12
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 12
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 12
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "- ",
+                    "italic": false
+                  },
+                  {
+                    "text": "Magma Cream",
+                    "color": "blue"
+                  }
+                ]
+              ],
+              "mode": "append",
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_1"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 13
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_2"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 13
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_3"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 13
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_4"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 13
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_5"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 13
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 13
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 13
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "- ",
+                    "italic": false
+                  },
+                  {
+                    "text": "Pumpkin Pie",
+                    "color": "blue"
+                  }
+                ]
+              ],
+              "mode": "append",
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_1"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 14
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_2"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 14
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_3"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 14
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_4"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 14
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_5"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 14
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 14
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 14
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "- ",
+                    "italic": false
+                  },
+                  {
+                    "text": "Cake",
+                    "color": "blue"
+                  }
+                ]
+              ],
+              "mode": "append",
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_1"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 15
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_2"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 15
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_3"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 15
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_4"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 15
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_5"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 15
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 15
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 15
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "- ",
+                    "italic": false
+                  },
+                  {
+                    "text": "Minecart with TNT",
+                    "color": "blue"
+                  }
+                ]
+              ],
+              "mode": "append",
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_1"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 16
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_2"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 16
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_3"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 16
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_4"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 16
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_5"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 16
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 16
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 16
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "- ",
+                    "italic": false
+                  },
+                  {
+                    "text": "Blue Ice",
+                    "color": "blue"
+                  }
+                ]
+              ],
+              "mode": "append",
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_1"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 17
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_2"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 17
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_3"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 17
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_4"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 17
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_5"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 17
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 17
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 17
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "- ",
+                    "italic": false
+                  },
+                  {
+                    "text": "Rabbit Hide",
+                    "color": "blue"
+                  }
+                ]
+              ],
+              "mode": "append",
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_1"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 18
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_2"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 18
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_3"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 18
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_4"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 18
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_5"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 18
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 18
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 18
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "- ",
+                    "italic": false
+                  },
+                  {
+                    "text": "Bell",
+                    "color": "blue"
+                  }
+                ]
+              ],
+              "mode": "append",
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_1"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 19
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_2"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 19
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_3"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 19
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_4"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 19
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_5"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 19
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_6"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 19
+                    },
+                    {
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%items_7"
+                        },
+                        "score": "uhcp_aug_sh_item",
+                        "scale": 1
+                      },
+                      "range": 19
                     }
                   ]
                 }

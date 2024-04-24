@@ -7,5 +7,7 @@ execute unless entity @s[tag=UHCP_SHItem2] run function uhcp:augments/effects/go
 execute unless entity @s[tag=UHCP_SHItem3] run function uhcp:augments/effects/gold/scavengerhunt/items/item_3
 execute unless entity @s[tag=UHCP_SHItem4] run function uhcp:augments/effects/gold/scavengerhunt/items/item_4
 execute unless entity @s[tag=UHCP_SHItem5] run function uhcp:augments/effects/gold/scavengerhunt/items/item_5
+execute unless entity @s[tag=UHCP_SHItem6] run function uhcp:augments/effects/gold/scavengerhunt/items/item_6
+execute unless entity @s[tag=UHCP_SHItem7] run function uhcp:augments/effects/gold/scavengerhunt/items/item_7
 
 execute if score @s uhcp_aug_count matches 5.. run function uhcp:augments/effects/gold/scavengerhunt/reward
