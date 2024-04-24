@@ -317,24 +317,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:black_stained_glass_pane",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:hide_tooltip": {}
-              }
-            },
-            {
-              "function": "minecraft:set_name",
-              "entity": "this",
-              "target": "item_name",
-              "name": {
-                "text": "Menu Selection",
-                "color": "gold"
-              }
-            }
-          ],
+          "name": "minecraft:air",
           "conditions": [
             {
               "condition": "minecraft:inverted",

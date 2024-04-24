@@ -12,7 +12,7 @@ tag @s remove UHCP_AugmentRerollSlot3
 clear @s
 scoreboard players set @s uhcp_aug_choosingAugment 0
 scoreboard players reset @s uhcp_augment
-function uhcp:augments/generate/patron
+execute if score %patrons uhcp_settings matches 1 run function uhcp:augments/generate/patron
 function uhcp:augments/generate/choices
 function uhcp:augments/generate/panes
 

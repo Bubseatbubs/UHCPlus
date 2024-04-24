@@ -1,6 +1,6 @@
 # Rewrite all of this at some point - Aeodine
 
-scoreboard players remove @a[scores={uhcp_timer=0..2147483647}] uhcp_timer 1
+scoreboard players remove @a[scores={uhcp_timer=0..}] uhcp_timer 1
 
 # One Time Effects
 # Some of these need to be implemented more carefully. - Aeodine (Leaving the game at the right time is enough to evade some effects.)

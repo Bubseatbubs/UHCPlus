@@ -1,4 +1,3 @@
-
 # Determine setting
 execute if score @s uhcp_settings matches 504 run function uhcp:settings/team/team_size/lower/1
 execute if score @s uhcp_settings matches 505 run function uhcp:settings/team/team_size/lower/3

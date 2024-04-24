@@ -10,7 +10,12 @@
 scoreboard players set @s uhcp_aug_validSelection 0
 
 # Revert Black Stained Glass Pane
-clear @s *[minecraft:custom_data~{uhcp_glass:1b}]
+item replace entity @s armor.head with minecraft:air
+item replace entity @s armor.chest with minecraft:air
+item replace entity @s armor.legs with minecraft:air
+item replace entity @s player.cursor with minecraft:air
+item replace entity @s weapon.offhand with minecraft:air
+item replace entity @s armor.feet with minecraft:air
 function uhcp:augments/generate/panes
 
 # Revoke advancements

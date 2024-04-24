@@ -1,7 +1,7 @@
 # Patron
 execute as @a[scores={patron=1..99}] run function uhcp:lobby/patron/menu
 execute as @a[scores={patron=100..109}] at @s run function uhcp:lobby/patron/select
-scoreboard players enable @a patron
+execute if score %patrons uhcp_settings matches 1 run scoreboard players enable @a patron
 
 # Team
 execute if score %team uhcp_settings matches 1 if score %players_select_teams uhcp_settings matches 1 run function uhcp:lobby/team

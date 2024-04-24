@@ -3,20 +3,22 @@
 ##
 advancement revoke @s only uhcp:update_menu
 tag @s add UHCP_DisableReset
-clear @s
-execute at @s run kill @e[type=item,distance=..4]
+item replace entity @s armor.head with minecraft:air
+item replace entity @s armor.chest with minecraft:air
+item replace entity @s armor.legs with minecraft:air
+item replace entity @s player.cursor with minecraft:air
+item replace entity @s weapon.offhand with minecraft:air
+item replace entity @s armor.feet with minecraft:air
+execute at @s run kill @e[type=minecraft:item,distance=..4]
 
 # Relic Testing Chamber
 execute if entity @s[tag=UHCP_RelicTestingChamber] run function uhcp:lobby/relic_testing/menu
 
 # Create Player Hotbar
-execute unless score %team uhcp_settings matches 1 run item replace entity @s hotbar.0 with black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={}] 1
+execute unless score %team uhcp_settings matches 1 run item replace entity @s hotbar.0 with minecraft:air
 execute if score %team uhcp_settings matches 1 run loot replace entity @s hotbar.0 loot uhcp:lobby_menu/team
-
-# Patrons temporarily disabled for Set 2 testing
-#loot replace entity @s hotbar.1 loot uhcp:lobby_menu/patron
-item replace entity @s hotbar.1 with black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={}] 1
-
+execute unless score %patrons uhcp_settings matches 1 run item replace entity @s hotbar.1 with minecraft:air
+execute if score %patrons uhcp_settings matches 1 run loot replace entity @s hotbar.1 loot uhcp:lobby_menu/patron
 loot replace entity @s hotbar.2 loot uhcp:lobby_menu/skip_travel
 loot replace entity @s hotbar.4 loot uhcp:lobby_menu/special_item
 loot replace entity @s hotbar.6 loot uhcp:lobby_menu/settings_display
