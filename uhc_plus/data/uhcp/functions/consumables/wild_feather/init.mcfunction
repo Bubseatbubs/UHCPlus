@@ -12,6 +12,8 @@ tag @s add UHCP_BirdMan
 execute as @a[tag=!UHCP_BirdMan,scores={uhcp_initStatus=1..}] at @s if score @a[tag=UHCP_BirdMan,sort=nearest,limit=1] uhcp_team = @s uhcp_initStatus run tag @s add UHCP_BirdMaybeTarget
 tag @r[tag=UHCP_BirdMaybeTarget] add UHCP_BirdTarget
 tp @a[tag=UHCP_BirdMan,sort=nearest,limit=1] @r[tag=UHCP_BirdTarget]
+execute unless entity @e[tag=UHCP_BirdTarget] run spreadplayers ~ ~ 16 10 true @s
+tag @s add UHCP_BirdTarget
 
 execute at @a[tag=UHCP_BirdTarget] run playsound minecraft:entity.breeze.jump master @a[distance=..4] ~ ~ ~ 1 1 0.75
 execute at @a[tag=UHCP_BirdTarget] run particle cloud ~ ~ ~ 0.5 0.5 0.5 1 100 normal
