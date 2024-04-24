@@ -3,7 +3,7 @@
 ##
 advancement revoke @s only uhcp:update_menu
 tag @s add UHCP_DisableReset
-item replace entity @s armor.head with minecraft:air
+execute unless score @s uhcp_lobby_item matches 7 run item replace entity @s armor.head with minecraft:air
 item replace entity @s armor.chest with minecraft:air
 item replace entity @s armor.legs with minecraft:air
 item replace entity @s player.cursor with minecraft:air
