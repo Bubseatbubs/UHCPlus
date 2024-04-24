@@ -2,6 +2,7 @@
 kill @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs]
 execute as @e[tag=UHCP_WellEngineered] at @s run function uhcp:relics/runic_sentry/delete
 execute as @e[tag=UHCP_AltarDisplay] at @s run function uhcp:titans/spawn/reset_altar
+execute as @e[tag=UHCP_GraveMarker] at @s run function uhcp:titans/gigantus/graves/delete
 kill @e[tag=UHCP_Summon]
 kill @e[tag=UHCP_StoreAugment]
 kill @e[type=minecraft:experience_orb]
