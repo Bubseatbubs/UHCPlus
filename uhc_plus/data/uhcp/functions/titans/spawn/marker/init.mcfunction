@@ -1,5 +1,5 @@
 tag @s add UHCP_TitanSpawn
-execute store result score @s uhcp_titans_count run random value 1..11
+execute store result score @s uhcp_titans_count run random value 1..12
 
 execute if score @s uhcp_titans_count matches 11 store result score %random uhcp_titans_count run random value 0..1
 execute if score @s uhcp_titans_count matches 11 if score %random uhcp_titans_count matches 0 store result score @s uhcp_titans_count run random value 1..11

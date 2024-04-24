@@ -9,6 +9,7 @@ execute if score @s uhcp_titans_count matches 8 at @s positioned ~ ~1 ~ run func
 execute if score @s uhcp_titans_count matches 9 at @s positioned ~ ~1 ~ run function uhcp:titans/infernus/init
 execute if score @s uhcp_titans_count matches 10 at @s positioned ~ ~1 ~ run function uhcp:titans/tyrion/init
 execute if score @s uhcp_titans_count matches 11 at @s positioned ~ ~1 ~ run function uhcp:titans/gerald/init
+execute if score @s uhcp_titans_count matches 12 at @s positioned ~ ~1 ~ run function uhcp:titans/gallie/init
 fill ~-4 ~ ~-4 ~4 ~8 ~4 air replace barrier
 playsound block.end_portal.spawn master @a[distance=..16] ~ ~ ~ 1 1 0.6
 particle reverse_portal ~ ~ ~ 3 3 3 0.1 100 normal

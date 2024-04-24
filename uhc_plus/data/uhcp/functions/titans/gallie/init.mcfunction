@@ -1,0 +1,6 @@
+summon hoglin ~ ~ ~ {CustomNameVisible:0b,PersistenceRequired:1b,Health:650f,IsImmuneToZombification:1b,Tags:["UHCP_Titan","UHCP_Gallie","UHCP_New"],Passengers:[{id:"minecraft:piglin",IsImmuneToZombification:1b,CannotHunt:1b,CustomName:'{"text":"Bellan"}',Tags:["UHCP_Summon","UHCP_Bellan"],HandItems:[{id:"minecraft:crossbow",count:1},{}],Attributes:[{Name:generic.scale,Base:2}]}],CustomName:'{"bold":true,"color":"red","text":"Gallie"}',active_effects:[{id:"minecraft:fire_resistance",amplifier:0b,duration:-1,show_particles:0b}],Attributes:[{Name:generic.armor,Base:5},{Name:generic.attack_damage,Base:4},{Name:generic.fall_damage_multiplier,Base:0},{Name:generic.follow_range,Base:80},{Name:generic.gravity,Base:0.3},{Name:generic.knockback_resistance,Base:1},{Name:generic.max_health,Base:600},{Name:generic.movement_speed,Base:0.2},{Name:generic.scale,Base:5},{Name:generic.step_height,Base:2}]}
+# Initialize boss ID
+scoreboard players add %global uhcp_id 1
+scoreboard players operation @e[tag=UHCP_New,tag=UHCP_Gallie,sort=nearest,limit=1] uhcp_id = %global uhcp_id
+scoreboard players set @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] uhcp_titans_ID 12
+tag @e remove UHCP_New

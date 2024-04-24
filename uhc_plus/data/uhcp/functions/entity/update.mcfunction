@@ -42,6 +42,10 @@ execute if entity @s[tag=UHCP_TyrionSaber] run return run function uhcp:titans/t
 execute if entity @s[tag=UHCP_TyrionSoulflame] run return run function uhcp:titans/tyrion/soulflames_embrace/update
 execute if entity @s[tag=UHCP_TyrionVoltrune] run return run function uhcp:titans/tyrion/voltrune/update
 execute if entity @s[tag=UHCP_InfernusFireball] run return run function uhcp:titans/infernus/fireball/update
+execute if entity @s[tag=UHCP_NetherPortal] run return run function uhcp:titans/gallie/nether_portal/update
+execute if entity @s[tag=UHCP_HoglinPortal] run return run function uhcp:titans/gallie/hoglin_portal/update
+execute if entity @s[tag=UHCP_GallieNetherPortal] run return run function uhcp:titans/gallie/nether_portal/indicator/update
+execute if entity @s[tag=UHCP_Bellan] unless entity @e[tag=UHCP_Gallie,distance=..12] run kill @s
 
 # Augments
 execute if entity @s[tag=UHCP_PhantomClaw,tag=!UHCP_FlyingTowardsTarget] run return run function uhcp:augments/effects/gold/phantomclaw/update

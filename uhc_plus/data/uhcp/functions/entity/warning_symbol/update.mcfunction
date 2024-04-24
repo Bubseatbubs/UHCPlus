@@ -1,3 +1,4 @@
+execute on vehicle if score @s uhcp_timer matches ..0 run return 0
 scoreboard players add @s uhcp_timer 1
 
 execute if score @s uhcp_timer matches 8 run playsound minecraft:block.note_block.bit master @a[distance=..12] ~ ~ ~ 1 2 1

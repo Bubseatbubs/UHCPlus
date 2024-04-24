@@ -11,5 +11,6 @@ execute if entity @s[tag=UHCP_Ferrum] at @s run function uhcp:titans/ferrum/upda
 execute if entity @s[tag=UHCP_Infernus] at @s run function uhcp:titans/infernus/update
 execute if entity @s[tag=UHCP_Tyrion] at @s run function uhcp:titans/tyrion/update
 execute if entity @s[tag=UHCP_Gerald] at @s run function uhcp:titans/gerald/update
+execute if entity @s[tag=UHCP_Gallie] at @s run function uhcp:titans/gallie/update
 
 execute if score @s uhcp_titans_timer matches 200.. run function uhcp:titans/attack
