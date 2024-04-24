@@ -1,34 +1,32 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:crossbow",
-            "functions": [
-              {
-                "function": "minecraft:set_name",
-                "entity": "this",
-                "target": "item_name",
-                "name": "Bellan's Crossbow"
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": "Bellan's Crossbow"
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:unbreaking": 3,
+                "minecraft:flame": 1,
+                "minecraft:power": 1,
+                "minecraft:multishot": 1,
+                "minecraft:piercing": 1,
+                "minecraft:quick_charge": 1
               },
-              {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:unbreaking": 3,
-                  "minecraft:flame": 1,
-                  "minecraft:power": 1,
-                  "minecraft:multishot": 1,
-                  "minecraft:piercing": 1,
-                  "minecraft:quick_charge": 1
-                },
-                "add": true
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+              "add": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

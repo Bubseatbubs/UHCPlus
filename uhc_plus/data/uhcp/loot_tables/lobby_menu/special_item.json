@@ -31,6 +31,52 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "STOP POSTING ABOUT AMONG US"
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": "Crewmate"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:profile": {
+                  "id": [
+                    1103181598,
+                    442909615,
+                    -1944221175,
+                    -54642410
+                  ],
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5YmNlNzM2YTRmZDc5M2VlMmEzODI3NTZhMjUzZjkyY2E3ZDdlYWMwMzFlNDViYTk3YWQwNmNlODYzZGQ0YiJ9fX0="
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "uhcp_lobby_item": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:stick",
           "functions": [
             {
@@ -234,6 +280,7 @@
             },
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "name": {
                 "text": "The Bow of Glow",
                 "color": "aqua",

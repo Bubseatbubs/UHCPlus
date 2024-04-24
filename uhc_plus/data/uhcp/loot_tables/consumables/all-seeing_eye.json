@@ -9,7 +9,6 @@
 					"functions": [
 						{
 							"function": "minecraft:set_name",
-							"entity": "this",
 							"target": "item_name",
 							"name": {
 								"text": "All-Seeing Eye",
