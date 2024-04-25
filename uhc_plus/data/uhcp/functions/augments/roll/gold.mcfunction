@@ -14,5 +14,6 @@ execute unless score %patrons uhcp_settings matches 1 run item replace entity @s
 execute if score @s uhcp_aug_patron matches 8 if score %patrons uhcp_settings matches 1 run loot replace entity @s hotbar.7 loot uhcp:augments/gold
 
 # Store rerolled augments onto an armor stand
+execute as @e[tag=UHCP_StoreAugment] if score @s uhcp_id = @p[tag=UHCP_GeneratingAugments] uhcp_id run kill @s
 execute in uhcp:main positioned 0 32 0 summon chest_minecart run function uhcp:augments/roll/store
 tag @s remove UHCP_GeneratingAugments
