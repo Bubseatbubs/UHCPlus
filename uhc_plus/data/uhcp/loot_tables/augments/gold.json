@@ -3741,6 +3741,20 @@
                 },
                 [
                   {
+                    "text": "Gain a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Blaze Powder",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
                     "text": "Exciting random loot is placed in your ",
                     "color": "gray"
                   },
