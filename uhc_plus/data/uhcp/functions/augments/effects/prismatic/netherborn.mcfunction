@@ -9,12 +9,12 @@ item replace entity @s container.5 with minecraft:crimson_stem 32
 item replace entity @s container.6 with minecraft:oak_boat 2
 item replace entity @s container.7 with minecraft:cooked_beef 12
 item replace entity @s container.8 with minecraft:lava_bucket 2
-item replace entity @s armor.head with minecraft:iron_helmet
-item replace entity @s armor.chest with minecraft:iron_chestplate
-item replace entity @s armor.legs with minecraft:iron_leggings
+item replace entity @s armor.head with minecraft:diamond_helmet
+item replace entity @s armor.chest with minecraft:diamond_chestplate
+item replace entity @s armor.legs with minecraft:diamond_leggings
 
 # Always replace the snow boots with augment's boots
-item replace entity @s armor.feet with minecraft:iron_boots
+item replace entity @s armor.feet with minecraft:diamond_boots
 
 # Teleport player to the Nether
 execute store success score %nether_spread uhcp_initStatus at @s in minecraft:the_nether run spreadplayers ~ ~ 0 1 under 127 false @s

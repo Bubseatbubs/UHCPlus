@@ -50,6 +50,7 @@ execute if score @s uhcp_augment matches 44 run return 0
 execute if score @s uhcp_augment matches 45 run return run function uhcp:augments/effects/gold/youhavemyrodii
 execute if score @s uhcp_augment matches 46 run return run function uhcp:augments/effects/gold/crazyconsumables
 execute if score @s uhcp_augment matches 47 run return run function uhcp:augments/effects/gold/imperfectreplica
+execute if score @s uhcp_augment matches 48 run return run function uhcp:augments/effects/gold/soulsiphon/init
 execute if score @s uhcp_augment matches 51 run return run function uhcp:augments/effects/gold/bookworm
 execute if score @s uhcp_augment matches 53 run return run function uhcp:augments/effects/gold/capped
 execute if score @s uhcp_augment matches 55 run return run function uhcp:augments/effects/gold/hardstuckiron

@@ -121,7 +121,7 @@
                 },
                 [
                   {
-                    "text": "Your Armor is increased by 33%.",
+                    "text": "Your Armor is increased by 35%.",
                     "color": "gray"
                   },
                   {
@@ -3215,23 +3215,23 @@
                     "color": "gray"
                   },
                   {
-                    "text": "Protection I ",
+                    "text": "Protection I",
                     "color": "dark_purple"
+                  },
+                  {
+                    "text": " Diamond Helmet, Leggings, and Boots",
+                    "color": "white",
+                    "extra": [
+                      {
+                        "text": " with",
+                        "color": "gray"
+                      }
+                    ]
                   }
                 ],
-                {
-                  "text": "Diamond Helmet, Leggings, and Boots",
-                  "color": "white",
-                  "extra": [
-                    {
-                      "text": " with",
-                      "color": "gray"
-                    }
-                  ]
-                },
                 [
                   {
-                    "text": "and a",
+                    "text": "and a ",
                     "color": "gray"
                   },
                   {
@@ -3802,6 +3802,88 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:56s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:48s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Soul Siphon",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "Your ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Soul Apples ",
+                    "color": "white"
+                  },
+                  {
+                    "text": "effects last ",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "33% longer. Gain a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Soul Apple",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:48s}"
                       }
                     }
                   }

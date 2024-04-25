@@ -1830,6 +1830,21 @@
                     "text": ".",
                     "color": "gray"
                   }
+                ],
+                [
+                  {
+                    "text": ". You cannot be seen by",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "All-Seeing Eyes",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": "."
+                  }
                 ]
               ],
               "mode": "replace_all"
@@ -2562,7 +2577,22 @@
                 {
                   "text": "when you take damage.",
                   "color": "gray"
-                }
+                },
+                [
+                  {
+                    "text": ". You cannot be seen by",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "All-Seeing Eyes",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
               ],
               "mode": "replace_all"
             }
