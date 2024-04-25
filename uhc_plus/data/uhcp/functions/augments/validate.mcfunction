@@ -28,7 +28,7 @@ execute unless items entity @s container.6 *[minecraft:custom_data~{uhcp_glass:1
 execute unless items entity @s container.8 *[minecraft:custom_data~{uhcp_glass:1b}] if items entity @s container.8 * run scoreboard players set @s uhcp_aug_validSelection 6
 
 # Case: inventory was changed in some manner that didn't involve clicking on a valid item; regenerate player inventory
-execute if score @s uhcp_aug_validSelection matches 0 unless items entity @s player.cursor *[!minecraft:custom_data~{uhcp_glass:1b}] run scoreboard players set @s uhcp_aug_validSelection 7
+execute if score @s uhcp_aug_validSelection matches 0 unless items entity @s player.cursor *[!minecraft:custom_data~{uhcp_panes:1b}] run scoreboard players set @s uhcp_aug_validSelection 7
 
 # If no cases were met, continue with optionselected, else handle case
 execute if score @s uhcp_aug_validSelection matches 1.. run playsound block.note_block.snare master @s ~ ~ ~ 1 1 1

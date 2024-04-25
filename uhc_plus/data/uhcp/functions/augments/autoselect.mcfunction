@@ -8,8 +8,8 @@
 tag @s remove UHCP_ChoosingItem
 
 # Randomize selection
-execute unless score %patron uhcp_settings matches 1 store result score %augment_roll uhcp_augment run random value 0..2
-execute if score %patron uhcp_settings matches 1 store result score %augment_roll uhcp_augment run random value 0..3
+execute unless score %patrons uhcp_settings matches 1 store result score %augment_roll uhcp_augment run random value 0..2
+execute if score %patrons uhcp_settings matches 1 store result score %augment_roll uhcp_augment run random value 0..3
 execute if score %augment_roll uhcp_augment matches 0 run item replace entity @s player.cursor from entity @s container.3
 execute if score %augment_roll uhcp_augment matches 1 run item replace entity @s player.cursor from entity @s container.4
 execute if score %augment_roll uhcp_augment matches 2 run item replace entity @s player.cursor from entity @s container.5
