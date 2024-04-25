@@ -6,10 +6,10 @@
 tag @s add UHCP_DisableChoose
 
 # Swap augment selection item back into empty slot
-execute if items entity @s container.3 minecraft:black_stained_glass_pane run scoreboard players set @s uhcp_itemInv 3
-execute if items entity @s container.4 minecraft:black_stained_glass_pane run scoreboard players set @s uhcp_itemInv 4
-execute if items entity @s container.5 minecraft:black_stained_glass_pane run scoreboard players set @s uhcp_itemInv 5
-execute if items entity @s container.7 minecraft:black_stained_glass_pane run scoreboard players set @s uhcp_itemInv 7
+execute if items entity @s container.3 *[minecraft:custom_data~{uhcp_panes:1b}] run scoreboard players set @s uhcp_itemInv 3
+execute if items entity @s container.4 *[minecraft:custom_data~{uhcp_panes:1b}] run scoreboard players set @s uhcp_itemInv 4
+execute if items entity @s container.5 *[minecraft:custom_data~{uhcp_panes:1b}] run scoreboard players set @s uhcp_itemInv 5
+execute if score %patrons uhcp_settings matches 1 if items entity @s container.7 *[minecraft:custom_data~{uhcp_panes:1b}] run scoreboard players set @s uhcp_itemInv 7
 
 execute if score @s uhcp_aug_validSelection matches 2 run function uhcp:augments/return/slot/swap/0
 execute if score @s uhcp_aug_validSelection matches 3 run function uhcp:augments/return/slot/swap/1
