@@ -3191,16 +3191,16 @@
                 },
                 [
                   {
-                    "text": "Gain full ",
+                    "text": "Gain ",
                     "color": "gray"
                   },
                   {
-                    "text": "Protection II ",
+                    "text": "Protection I ",
                     "color": "dark_purple"
                   }
                 ],
                 {
-                  "text": "Diamond Armor",
+                  "text": "Diamond Helmet, Leggings, and Boots",
                   "color": "white",
                   "extra": [
                     {
@@ -3209,16 +3209,38 @@
                     }
                   ]
                 },
-                {
-                  "text": "Curse of Binding",
-                  "color": "dark_red",
-                  "extra": [
-                    {
-                      "text": ".",
-                      "color": "gray"
-                    }
-                  ]
-                }
+                [
+                  {
+                    "text": "and a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Protection II ",
+                    "color": "dark_purple"
+                  },
+                  {
+                    "text": "Diamond Chestplate",
+                    "color": "white",
+                    "extra": [
+                      {
+                        "text": ".",
+                        "color": "gray"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "text": "Your armor has Curse of Binding",
+                    "color": "dark_red",
+                    "extra": [
+                      {
+                        "text": ".",
+                        "color": "gray"
+                      }
+                    ]
+                  }
+                ]
               ],
               "mode": "replace_all"
             }
@@ -3651,7 +3673,7 @@
                 ],
                 [
                   {
-                    "text": "grants you 14",
+                    "text": "grants you 10",
                     "color": "gray"
                   },
                   {
