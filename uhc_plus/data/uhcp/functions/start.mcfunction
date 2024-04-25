@@ -191,6 +191,12 @@ execute if score %spread uhcp_initStatus matches 0 in minecraft:overworld run fu
 
 execute if score %spread uhcp_initStatus matches 1 run function uhcp:start/spreadplayers/secondary
 
+# Setup Augments
+kill @e[tag=UHCP_StoreAugment]
+tag @a remove UHCP_AugmentRerollSlot1
+tag @a remove UHCP_AugmentRerollSlot2
+tag @a remove UHCP_AugmentRerollSlot3
+
 # Augment Selection
 execute unless score %tier uhcp_aug_tier = %tier uhcp_aug_tier store result score %tier uhcp_aug_tier run random value 10..109
 execute if score %random uhcp_aug_tier matches 1 store result score %tier uhcp_aug_tier run random value 10..109
