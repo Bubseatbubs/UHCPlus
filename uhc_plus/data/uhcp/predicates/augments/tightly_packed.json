@@ -3,6 +3,6 @@
 	"entity": "this",
 	"predicate": {
 		"type": "minecraft:item",
-		"nbt": "{Item:{components:{\"minecraft:custom_data\":{relicexcavator:1b}}}}"
+		"nbt": "{Item:{components:{\"minecraft:custom_data\":{uhcp_lockedslot:1b}}}}"
 	}
 }
