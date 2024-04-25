@@ -62,11 +62,11 @@
                 },
                 [
                   {
-                    "text": "(Total healing: 10",
+                    "text": "(Total healing: ",
                     "color": "gray"
                   },
                   {
-                    "text": "🖤",
+                    "text": "10🖤",
                     "color": "red"
                   },
                   {

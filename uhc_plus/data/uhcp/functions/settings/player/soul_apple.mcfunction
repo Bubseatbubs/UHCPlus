@@ -12,4 +12,4 @@ execute if score @s uhcp_settings matches 415 run function uhcp:settings/player/
 execute if score %soul_apples uhcp_settings matches ..-1 run scoreboard players set %soul_apples uhcp_settings 0
 execute if score %soul_apples uhcp_settings matches 2368.. run scoreboard players set %soul_apples uhcp_settings 2368
 
-tellraw @s [{"text":"Killing players will grant "},{"score":{"name":"%soul_apples","objective":"uhcp_settings"},"color":"gold"},{"text":" Soul Apples."}]
+tellraw @s [{"text":"On death, players will drop "},{"score":{"name":"%soul_apples","objective":"uhcp_settings"},"color":"gold"},{"text":" Soul Apples."}]
