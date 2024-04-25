@@ -334,6 +334,16 @@
           ],
           "conditions": [
             {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "uhcp_team": {
+                  "min": 1,
+                  "max": 14
+                }
+              }
+            },
+            {
               "condition": "minecraft:inverted",
               "term": {
                 "condition": "minecraft:entity_properties",
@@ -2367,7 +2377,7 @@
                 },
                 [
                   {
-                    "text": "in a",
+                    "text": "on a",
                     "color": "dark_gray"
                   },
                   {
@@ -2375,7 +2385,7 @@
                     "color": "aqua"
                   },
                   {
-                    "text": " game.)",
+                    "text": " team.)",
                     "color": "dark_gray"
                   }
                 ]
