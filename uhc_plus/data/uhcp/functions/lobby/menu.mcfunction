@@ -7,9 +7,9 @@ execute unless score @s uhcp_lobby_item matches 7 run item replace entity @s arm
 execute if score @s uhcp_lobby_item matches 7 run item replace entity @s armor.head with minecraft:player_head[minecraft:item_name='{"text":"Crewmate"}',minecraft:lore=['{"text":"STOP POSTING ABOUT AMONG US"}'],profile={id:[I;1103181598,442909615,-1944221175,-54642410],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5YmNlNzM2YTRmZDc5M2VlMmEzODI3NTZhMjUzZjkyY2E3ZDdlYWMwMzFlNDViYTk3YWQwNmNlODYzZGQ0YiJ9fX0="}]}] 1
 item replace entity @s armor.chest with minecraft:air
 item replace entity @s armor.legs with minecraft:air
+item replace entity @s armor.feet with minecraft:air
 item replace entity @s player.cursor with minecraft:air
 item replace entity @s weapon.offhand with minecraft:air
-item replace entity @s armor.feet with minecraft:air
 execute at @s run kill @e[type=minecraft:item,distance=..4]
 
 # Relic Testing Chamber

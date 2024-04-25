@@ -11,10 +11,8 @@ scoreboard players set @s uhcp_aug_validSelection 0
 # Case: reroll was selected; begin reroll process
 execute if items entity @s player.cursor *[minecraft:custom_data~{uhcp_reroll:1b}] run return run function uhcp:augments/reroll
 
-# Case: item was thrown out of inventory; return item using 0s PickupDelay
-execute if entity @e[predicate=uhcp:augments/choice_items,distance=..4] run scoreboard players set @s uhcp_aug_validSelection 100
-execute if score @s uhcp_aug_validSelection matches 100 as @e[predicate=uhcp:augments/choice_items,distance=..4,sort=nearest,limit=1] run data modify entity @s PickupDelay set value 0s
-execute if score @s uhcp_aug_validSelection matches 100 run return 0
+# Kill selection items
+kill @e[predicate=uhcp:augments/choice_items,distance=..4]
 
 # Case: player's offhand or armor slots are filled; return to player
 execute store success score @s[scores={uhcp_aug_validSelection=0}] uhcp_aug_validSelection if items entity @s armor.* #uhcp:wearable
