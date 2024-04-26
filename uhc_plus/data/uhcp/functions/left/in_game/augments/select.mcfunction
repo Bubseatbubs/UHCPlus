@@ -12,7 +12,7 @@ effect clear @s
 effect give @s minecraft:speed 15 0 false
 effect give @s minecraft:resistance 120 4 false
 attribute @s minecraft:player.block_break_speed modifier add 4329681b-2b41-4dc1-8b3a-4a5ebae3c1ce "" 1.2 add_multiplied_total
-effect give @s minecraft:night_vision infinite 0 true
+execute if score %night_vision uhcp_settings matches 1 run effect give @s minecraft:night_vision infinite 0 true
 
 # Initialize augment
 function uhcp:augments/autoselect

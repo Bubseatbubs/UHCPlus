@@ -1,5 +1,5 @@
 # Apply default effects
-effect give @s minecraft:night_vision infinite 0 true
+execute if score %night_vision uhcp_settings matches 1 run effect give @s minecraft:night_vision infinite 0 true
 
 # Remove tag
 tag @s remove UHCP_MilkBucket

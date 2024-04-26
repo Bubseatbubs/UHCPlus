@@ -221,6 +221,9 @@ scoreboard players set %ra_stacks_def uhcp_settings 9
 # Patron augments
 scoreboard players set %patrons_def uhcp_settings 0
 
+# Night Vision
+scoreboard players set %night_vision_def uhcp_settings 1
+
 # Difficulty
 scoreboard players set %difficulty_def uhcp_settings 0
 

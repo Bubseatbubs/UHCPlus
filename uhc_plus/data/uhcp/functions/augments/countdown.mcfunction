@@ -39,6 +39,6 @@ effect clear @a[gamemode=survival]
 effect give @a[gamemode=survival] minecraft:speed 15 0 false
 effect give @a[gamemode=survival] minecraft:resistance 120 4 false
 execute as @a[gamemode=survival] run attribute @s minecraft:player.block_break_speed modifier add 4329681b-2b41-4dc1-8b3a-4a5ebae3c1ce "" 1.2 add_multiplied_total
-effect give @a[gamemode=survival] minecraft:night_vision infinite 0 true
+execute if score %night_vision uhcp_settings matches 1 run effect give @a[gamemode=survival] minecraft:night_vision infinite 0 true
 
 execute as @a[gamemode=survival] at @s run function uhcp:augments/countdown/end

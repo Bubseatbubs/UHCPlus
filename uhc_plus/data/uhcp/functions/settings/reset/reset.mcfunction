@@ -33,6 +33,10 @@ scoreboard players operation %pvp uhcp_settings = %pvp_def uhcp_settings
 # Set default Ra Stacks
 scoreboard players operation %ra_stacks uhcp_settings = %ra_stacks_def uhcp_settings
 
+# Default Night Vision
+scoreboard players operation %night_vision uhcp_settings = %night_vision_def uhcp_settings
+
+
 # Set default difficulty
 scoreboard players operation %difficulty uhcp_settings = %difficulty_def uhcp_settings
 execute in minecraft:overworld run difficulty easy

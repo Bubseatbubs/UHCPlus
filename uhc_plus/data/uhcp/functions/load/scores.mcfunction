@@ -54,6 +54,9 @@ execute unless score %patrons uhcp_settings = %patrons uhcp_settings run scorebo
 # Set default difficulty
 execute unless score %difficulty uhcp_settings = %difficulty uhcp_settings run scoreboard players operation %difficulty uhcp_settings = %difficulty_def uhcp_settings
 
+# Night Vision
+execute unless score %night_vision uhcp_settings = %night_vision uhcp_settings run scoreboard players operation %night_vision uhcp_settings = %night_vision_def uhcp_settings
+
 # Set default lava scoreboard values
 execute unless score %lava_countdown uhcp_settings = %lava_countdown uhcp_settings run scoreboard players operation %lava_countdown uhcp_settings = %lava_countdown_def uhcp_settings
 execute unless score %lava_init uhcp_initStatus matches 1 run function uhcp:load/scores/lava

@@ -25,6 +25,9 @@ tellraw @s [{"text":"Number of Titans: ","color":"white","bold":true},{"score":{
 # Player
 function uhcp:lobby/settings_display/player/countdown
 tellraw @s [{"text":"Maximum Arrow Limit: ","color":"white","bold":true},{"score":{"name":"%arrow_limit","objective":"uhcp_arrowCount"},"color":"gray","bold":false}]
+tellraw @s [{"text":"Soul Apples Dropped On Death: ","color":"white","bold":true},{"score":{"name":"%soul_apples","objective":"uhcp_settings"},"color":"gray","bold":false}]
+execute if score %night_vision uhcp_settings matches 0 run tellraw @s [{"text":"Night Vision: ","color":"white","bold":true},{"text":"OFF","color":"red"}]
+execute if score %night_vision uhcp_settings matches 1 run tellraw @s [{"text":"Night Vision: ","color":"white","bold":true},{"text":"ON","color":"green"}]
 
 # Team
 function uhcp:lobby/settings_display/teams/team_game
