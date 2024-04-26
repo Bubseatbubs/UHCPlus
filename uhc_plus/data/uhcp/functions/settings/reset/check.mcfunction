@@ -1,2 +1,2 @@
-execute unless score %game uhcp_initStatus matches 1 run function uhcp:settings/reset/reset
-execute if score %game uhcp_initStatus matches 1 run tellraw @s "Settings couldn't be reset as there is currently a game in progress."
+execute unless score %game uhcp_initStatus matches 1 run return run function uhcp:settings/reset/reset
+tellraw @s "Settings couldn't be reset as there is currently a game in progress."
