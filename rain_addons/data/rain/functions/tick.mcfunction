@@ -1,0 +1,1 @@
+execute if score %time uhcp_game_time matches 2700 run function rain:tags
