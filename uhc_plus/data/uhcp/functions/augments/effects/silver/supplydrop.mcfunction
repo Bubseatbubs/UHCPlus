@@ -1,1 +1,1 @@
-give @s minecraft:diamond 8
+give @s minecraft:diamond 32
