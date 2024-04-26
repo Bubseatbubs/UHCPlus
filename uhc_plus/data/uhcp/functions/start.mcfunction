@@ -123,15 +123,6 @@ tag @a remove UHCP_MilkBucket
 tag @a remove UHCP_RelicTestingChamber
 tag @a remove UHCP_SoulflameEmbrace
 
-# Set difficulty
-execute unless score %difficulty uhcp_settings matches 1.. run function uhcp:start/difficulty/easy
-execute if score %difficulty uhcp_settings matches 1 run function uhcp:start/difficulty/normal
-execute if score %difficulty uhcp_settings matches 2 run function uhcp:start/difficulty/hard
-
-# Friendly fire
-execute unless score %friendly_fire uhcp_settings matches 1 run function uhcp:start/friendly_fire/off
-execute if score %friendly_fire uhcp_settings matches 1 run function uhcp:start/friendly_fire/on
-
 # Set world border size
 execute store result storage uhcp:border distance int 1 run scoreboard players get %border_size uhcp_settings
 function uhcp:start/border with storage uhcp:border

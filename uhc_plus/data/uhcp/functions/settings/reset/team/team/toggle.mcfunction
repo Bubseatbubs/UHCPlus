@@ -3,7 +3,6 @@ execute if score %team_def uhcp_settings matches 1 run return run function uhcp:
 
 # Turn teams off
 scoreboard players set %team uhcp_settings 0
-
 scoreboard players reset @a team
 team empty aqua
 team empty blue
@@ -19,5 +18,4 @@ team empty green
 team empty light_purple
 team empty red
 team empty yellow
-
 execute as @a[gamemode=!creative] run function uhcp:lobby/menu

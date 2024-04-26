@@ -43,9 +43,10 @@ execute unless score %patrons uhcp_settings = %patrons_def uhcp_settings run fun
 scoreboard players operation %night_vision uhcp_settings = %night_vision_def uhcp_settings
 
 # Set default difficulty
-execute unless score %difficulty_def uhcp_settings matches 1.. run function uhcp:start/difficulty/easy
-execute if score %difficulty_def uhcp_settings matches 1 run function uhcp:start/difficulty/normal
-execute if score %difficulty_def uhcp_settings matches 2 run function uhcp:start/difficulty/hard
+execute unless score %difficulty_def uhcp_settings matches 1.. run function uhcp:settings/reset/difficulty/easy
+execute if score %difficulty_def uhcp_settings matches 1 run function uhcp:settings/reset/difficulty/normal
+execute if score %difficulty_def uhcp_settings matches 2 run function uhcp:settings/reset/difficulty/hard
+execute if score %difficulty_def uhcp_settings matches 3 run function uhcp:settings/reset/difficulty/peaceful
 scoreboard players operation %difficulty uhcp_settings = %difficulty_def uhcp_settings
 
 # Set default lava scoreboard values
@@ -59,4 +60,7 @@ scoreboard players operation %players_select_teams uhcp_settings = %players_sele
 execute unless score %friendly_fire uhcp_settings = %friendly_fire_def uhcp_settings run function uhcp:settings/reset/team/friendly_fire/toggle
 scoreboard players operation %friendly_fire uhcp_settings = %friendly_fire_def uhcp_settings
 
-function uhcp:settings/reset/page
+# Display page
+function uhcp:settings/pages/main
+tellraw @s "Settings were reset to their default values."
+title @a actionbar [{"text":"Settings were reset","color":"dark_red"}]
