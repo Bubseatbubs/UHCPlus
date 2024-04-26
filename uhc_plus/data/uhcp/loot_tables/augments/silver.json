@@ -2575,18 +2575,16 @@
                   }
                 ],
                 {
-                  "text": "when you take damage.",
+                  "text": "when you take damage. You cannot",
                   "color": "gray"
                 },
                 [
                   {
-                    "text": ". You cannot be seen by",
+                    "text": "be seen by",
                     "color": "gray"
-                  }
-                ],
-                [
+                  },
                   {
-                    "text": "All-Seeing Eyes",
+                    "text": " All-Seeing Eyes",
                     "color": "light_purple"
                   },
                   {
