@@ -67,7 +67,7 @@ execute if score %time uhcp_game_time matches 34800 as @a[scores={uhcp_augment=4
 execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=101}] run function uhcp:augments/effects/silver/afk/lock
 
 execute if score %time uhcp_game_time >= %AUG_7 uhcp_game_time run give @a[scores={uhcp_augment=7}] gold_ingot 1
-execute if score %time uhcp_game_time >= %AUG_7 uhcp_game_time run scoreboard players add %AUG_7 uhcp_game_time 2400
+execute if score %time uhcp_game_time >= %AUG_7 uhcp_game_time run scoreboard players add %AUG_7 uhcp_game_time 1200
 
 execute if score %time uhcp_game_time >= %AUG_15 uhcp_game_time run give @a[scores={uhcp_augment=15}] apple 1
 execute if score %time uhcp_game_time >= %AUG_15 uhcp_game_time run scoreboard players add %AUG_15 uhcp_game_time 2400
