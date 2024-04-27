@@ -10,14 +10,14 @@ execute if score @s uhcp_settings matches 407 run function uhcp:settings/player/
 
 # Check whether this setting is within the correct range
 execute if score %arrow_limit uhcp_arrowCount matches ..-1 run scoreboard players set %arrow_limit uhcp_arrowCount 0
-execute if score %arrow_limit uhcp_arrowCount matches 2368.. run scoreboard players set %arrow_limit uhcp_arrowCount 2368
+execute if score %arrow_limit uhcp_arrowCount matches 2369.. run scoreboard players set %arrow_limit uhcp_arrowCount 2368
 
 # Update apollo arrow limit augments
 scoreboard players operation %arrow_limit149 uhcp_arrowCount = %arrow_limit uhcp_arrowCount
 scoreboard players operation %arrow_limit5 uhcp_arrowCount = %arrow_limit uhcp_arrowCount
 scoreboard players operation %arrow_limit201 uhcp_arrowCount = %arrow_limit uhcp_arrowCount
-scoreboard players operation %arrow_limit149 uhcp_arrowCount += %arrow_limit149_def uhcp_arrowCount
-scoreboard players operation %arrow_limit5 uhcp_arrowCount += %arrow_limit5_def uhcp_arrowCount
-scoreboard players operation %arrow_limit201 uhcp_arrowCount += %arrow_limit201_def uhcp_arrowCount
+scoreboard players operation %arrow_limit149 uhcp_arrowCount += %arrow_limit149_def uhcp_settings
+scoreboard players operation %arrow_limit5 uhcp_arrowCount += %arrow_limit5_def uhcp_settings
+scoreboard players operation %arrow_limit201 uhcp_arrowCount += %arrow_limit201_def uhcp_settings
 
 tellraw @s [{"text":"The maximum arrow count has been set to "},{"score":{"name":"%arrow_limit","objective":"uhcp_arrowCount"},"color":"gold"},{"text":" Arrows."}]
