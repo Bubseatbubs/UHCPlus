@@ -6,6 +6,8 @@ tellraw @s [{"text":"\n\n————","color":"#217AFF","bold":true,"strikethro
 #Augments
 function uhcp:lobby/settings_display/augment/tier
 tellraw @s [{"text":"Glory of Ra Stacks Required: ","color":"white","bold":true},{"score":{"name":"%ra_stacks","objective":"uhcp_settings"},"color":"gray","bold":false}]
+execute unless score %patrons uhcp_settings matches 1 run tellraw @s [{"text":"Patron Augments: ","color":"white","bold":true},{"text":"OFF","color":"red","bold":false}]
+execute if score %patrons uhcp_settings matches 1 run tellraw @s [{"text":"Patron Augments: ","color":"white","bold":true},{"text":"ON","color":"green","bold":false}]
 
 # Border
 tellraw @s [{"text":"\nBorder Size: ","color":"white","bold":true},{"score":{"name":"%border_size","objective":"uhcp_settings"},"color":"gray","bold":false}]
@@ -26,8 +28,8 @@ tellraw @s [{"text":"Number of Titans: ","color":"white","bold":true},{"score":{
 function uhcp:lobby/settings_display/player/countdown
 tellraw @s [{"text":"Maximum Arrow Limit: ","color":"white","bold":true},{"score":{"name":"%arrow_limit","objective":"uhcp_arrowCount"},"color":"gray","bold":false}]
 tellraw @s [{"text":"Soul Apples Dropped On Death: ","color":"white","bold":true},{"score":{"name":"%soul_apples","objective":"uhcp_settings"},"color":"gray","bold":false}]
-execute if score %night_vision uhcp_settings matches 0 run tellraw @s [{"text":"Night Vision: ","color":"white","bold":true},{"text":"OFF","color":"red"}]
-execute if score %night_vision uhcp_settings matches 1 run tellraw @s [{"text":"Night Vision: ","color":"white","bold":true},{"text":"ON","color":"green"}]
+execute if score %night_vision uhcp_settings matches 0 run tellraw @s [{"text":"Night Vision: ","color":"white","bold":true},{"text":"OFF","color":"red","bold":false}]
+execute if score %night_vision uhcp_settings matches 1 run tellraw @s [{"text":"Night Vision: ","color":"white","bold":true},{"text":"ON","color":"green","bold":false}]
 
 # Team
 function uhcp:lobby/settings_display/teams/team_game
