@@ -16,8 +16,8 @@ execute if score %arrow_limit uhcp_arrowCount matches 2368.. run scoreboard play
 scoreboard players operation %arrow_limit149 uhcp_arrowCount = %arrow_limit uhcp_arrowCount
 scoreboard players operation %arrow_limit5 uhcp_arrowCount = %arrow_limit uhcp_arrowCount
 scoreboard players operation %arrow_limit201 uhcp_arrowCount = %arrow_limit uhcp_arrowCount
-scoreboard players add %arrow_limit149 uhcp_arrowCount 8
-scoreboard players add %arrow_limit5 uhcp_arrowCount 20
-scoreboard players add %arrow_limit201 uhcp_arrowCount 52
+scoreboard players operation %arrow_limit149 uhcp_arrowCount += %arrow_limit149_def uhcp_arrowCount
+scoreboard players operation %arrow_limit5 uhcp_arrowCount += %arrow_limit5_def uhcp_arrowCount
+scoreboard players operation %arrow_limit201 uhcp_arrowCount += %arrow_limit201_def uhcp_arrowCount
 
 tellraw @s [{"text":"The maximum arrow count has been set to "},{"score":{"name":"%arrow_limit","objective":"uhcp_arrowCount"},"color":"gold"},{"text":" Arrows."}]

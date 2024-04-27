@@ -1,4 +1,4 @@
 function uhcp:settings/pages/other/1
-execute unless score %game uhcp_initStatus matches 1 if score @s uhcp_settings matches 300..307 run function uhcp:settings/other/dimensions
-execute if score @s uhcp_settings matches 308..311 run function uhcp:settings/other/difficulty
+execute unless score %game uhcp_initStatus matches 1 if score @s uhcp_settings matches 300..307 run return run function uhcp:settings/other/dimensions
+execute if score @s uhcp_settings matches 308..311 run return run function uhcp:settings/other/difficulty
 execute if score @s uhcp_settings matches 312..319 run function uhcp:settings/other/titans

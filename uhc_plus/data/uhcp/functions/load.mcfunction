@@ -179,8 +179,11 @@ team modify no_collision seeFriendlyInvisibles false
 # Augment tier
 scoreboard players set %random_def uhcp_aug_tier 1
 
-# Arrow limit
+# Arrow limits (special arrow limits are additive)
 scoreboard players set %arrow_limit_def uhcp_settings 12
+scoreboard players add %arrow_limit149_def uhcp_arrowCount 8
+scoreboard players add %arrow_limit5_def uhcp_arrowCount 20
+scoreboard players add %arrow_limit201_def uhcp_arrowCount 52
 
 # Border Size
 scoreboard players set %border_size_def uhcp_settings 1500

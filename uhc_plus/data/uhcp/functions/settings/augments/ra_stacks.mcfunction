@@ -10,6 +10,6 @@ execute if score @s uhcp_settings matches 12 run function uhcp:settings/augments
 
 # Check whether this setting is within the correct range
 execute if score %ra_stacks uhcp_settings matches ..0 run scoreboard players set %ra_stacks uhcp_settings 1
-execute if score %ra_stacks uhcp_settings matches 9999.. run scoreboard players set %ra_stacks uhcp_settings 9999
+execute if score %ra_stacks uhcp_settings matches 10000.. run scoreboard players set %ra_stacks uhcp_settings 9999
 
 tellraw @s [{"score":{"name":"%ra_stacks","objective":"uhcp_settings"},"color":"gold"},{"text":" stacks are required.","color":"white"}]

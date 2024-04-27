@@ -1,16 +1,8 @@
 # Augment tier
 scoreboard players operation %random uhcp_aug_tier = %random_def uhcp_aug_tier
 
-# Arrow limit
-scoreboard players operation %arrow_limit uhcp_arrowCount = %arrow_limit_def uhcp_settings
-
-# Update apollo arrow limit augments
-scoreboard players operation %arrow_limit149 uhcp_arrowCount = %arrow_limit uhcp_arrowCount
-scoreboard players operation %arrow_limit5 uhcp_arrowCount = %arrow_limit uhcp_arrowCount
-scoreboard players operation %arrow_limit201 uhcp_arrowCount = %arrow_limit uhcp_arrowCount
-scoreboard players add %arrow_limit149 uhcp_arrowCount 8
-scoreboard players add %arrow_limit5 uhcp_arrowCount 20
-scoreboard players add %arrow_limit201 uhcp_arrowCount 52
+# Arrow limits
+function uhcp:load/scores/arrow_limit
 
 # Border size
 scoreboard players operation %border_size uhcp_settings = %border_size_def uhcp_settings
