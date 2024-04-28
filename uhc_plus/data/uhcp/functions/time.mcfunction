@@ -38,6 +38,11 @@ scoreboard players remove @a[scores={uhcp_top_CD=1..}] uhcp_top_CD 1
 execute as @a[tag=UHCP_IsTeleporting] at @s unless entity @e[type=minecraft:marker,tag=UHCP_topCheck,distance=..1] run function uhcp:top/cancel
 execute as @a[tag=UHCP_IsTeleporting] at @s run function uhcp:top/updatecharge
 
+# Update Titans
+execute as @a at @s if entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/update
+execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/hide
+execute as @e[type=!minecraft:player,tag=UHCP_Titan] at @s run function uhcp:titans/update
+
 # Testkit
 execute as @a[gamemode=survival] if score @s testkit matches 1.. run function uhcp:testkit/verify
 execute as @a[scores={uhcp_testkit=1}] run function uhcp:testkit/kit
@@ -64,6 +69,9 @@ execute as @a[scores={uhcp_mine_ironOre=1..},gamemode=survival] run function uhc
 execute as @a[scores={uhcp_mine_rawCopperBlock=1..},gamemode=survival] run function uhcp:mine/raw_copper_block
 execute as @a[scores={uhcp_mine_rawGoldBlock=1..},gamemode=survival] run function uhcp:mine/raw_gold_block
 execute as @a[scores={uhcp_mine_rawIronBlock=1..},gamemode=survival] run function uhcp:mine/raw_iron_block
+
+# Disable Ender Pearl Damage
+execute as @e[type=minecraft:ender_pearl] at @s run function uhcp:entity/ender_pearl
 
 # Enable triggers
 scoreboard players enable @a augments

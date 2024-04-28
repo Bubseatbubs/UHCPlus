@@ -20,7 +20,20 @@ execute if score %lava_start uhcp_initStatus matches 1 run function uhcp:lava/ru
 
 # Settings menu
 execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uhcp:settings/change
-function uhcp:settings/tick
+execute as @a[scores={settings=1..}] run function uhcp:settings/pages/main
+execute as @a[scores={settings_player=1..}] run function uhcp:settings/pages/player/1
+execute as @a[scores={settings_augments=1..}] run function uhcp:settings/pages/augments/1
+execute as @a[scores={settings_other=1..}] run function uhcp:settings/pages/other/1
+execute as @a[scores={settings_lava=1..}] run function uhcp:settings/pages/lava/check
+execute as @a[scores={settings_border=1..}] run function uhcp:settings/pages/border/1
+execute as @a[scores={settings_team=1..}] run function uhcp:settings/pages/team/1
+scoreboard players enable @a settings
+scoreboard players enable @a settings_player
+scoreboard players enable @a settings_augments
+scoreboard players enable @a settings_other
+scoreboard players enable @a settings_lava
+scoreboard players enable @a settings_border
+scoreboard players enable @a settings_team
 
 # Augments
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
@@ -40,20 +53,12 @@ execute as @a if score @s uhcp_lobby_setItem = @s uhcp_lobby_setItem run functio
 # Update Summoned Entities
 execute as @e[tag=UHCP_Summon] at @s run function uhcp:entity/update
 
-# Update Titans
-execute as @a at @s if entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/update
-execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/hide
-execute as @e[type=!player,tag=UHCP_Titan] at @s run function uhcp:titans/update
-
 # Relics
 execute as @a[tag=UHCP_SoulflameEmbrace] at @s run function uhcp:relics/soulflames_embrace/update_player
 execute as @a[tag=UHCP_InflictedWithGravityGlobe] at @s run function uhcp:relics/gravity_globe/update
 execute as @e[tag=UHCP_InflictedWithPhantomPain] at @s run function uhcp:relics/soulflames_embrace/update_phantom_pains
 execute as @e[predicate=uhcp:relics/smooth_getaway/hitbox_hurt] at @s run function uhcp:relics/smooth_getaway/hurt
 execute as @e[predicate=uhcp:relics/runic_sentry/hitbox_hurt] at @s run function uhcp:relics/runic_sentry/hurt
-
-# Disable Ender Pearl Damage
-execute as @e[type=minecraft:ender_pearl] at @s run function uhcp:entity/ender_pearl
 
 # Instant pickup items
 execute as @e[tag=!UHCP_ItemPickup,predicate=uhcp:items/instant_pickup] run function uhcp:entity/items/instant_pickup
