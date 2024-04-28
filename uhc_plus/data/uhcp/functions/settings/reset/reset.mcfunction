@@ -48,7 +48,7 @@ scoreboard players operation %lava_countdown uhcp_settings = %lava_countdown_def
 # Set default team values
 scoreboard players operation %team_size uhcp_settings = %team_size_def uhcp_settings
 execute unless score %team uhcp_settings = %team_def uhcp_settings run function uhcp:settings/reset/team/team/toggle
-scoreboard players operation %players_select_teams uhcp_settings = %players_select_teams_def uhcp_settings
+execute unless score %players_select_teams uhcp_settings = %players_select_teams_def uhcp_settings run function uhcp:settings/reset/team/selection/toggle
 execute unless score %friendly_fire uhcp_settings = %friendly_fire_def uhcp_settings run function uhcp:settings/reset/team/friendly_fire/toggle
 scoreboard players operation %friendly_fire uhcp_settings = %friendly_fire_def uhcp_settings
 
