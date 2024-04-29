@@ -6,13 +6,13 @@
   ],
   "step": "underground_structures",
   "spawn_overrides": {},
-  "terrain_adaptation": "beard_box",
+  "terrain_adaptation": "beard_thin",
   "start_pool": "uhcp:piglin_camp/warped_piglin_camp",
   "size": 1,
   "start_height": {
     "type": "minecraft:uniform",
     "min_inclusive": {
-      "absolute": 30
+      "absolute": 34
     },
     "max_inclusive": {
       "absolute": 80

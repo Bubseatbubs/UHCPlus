@@ -1,18 +1,17 @@
 {
   "type": "minecraft:jigsaw",
   "biomes": [
-    "minecraft:crimson_forest",
-    "minecraft:nether_wastes"
+    "minecraft:basalt_deltas"
   ],
   "step": "underground_structures",
   "spawn_overrides": {},
   "terrain_adaptation": "beard_thin",
-  "start_pool": "uhcp:piglin_camp/crimson_piglin_camp",
+  "start_pool": "uhcp:basalt_castle",
   "size": 1,
   "start_height": {
     "type": "minecraft:uniform",
     "min_inclusive": {
-      "absolute": 34
+      "absolute": 30
     },
     "max_inclusive": {
       "absolute": 80

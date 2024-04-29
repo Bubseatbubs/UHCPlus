@@ -1,10 +1,10 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#uhcp:sniffer_enclosure",
+  "biomes": "#minecraft:stronghold_biased_to",
   "step": "surface_structures",
   "spawn_overrides": {},
   "terrain_adaptation": "beard_thin",
-  "start_pool": "uhcp:sniffer_enclosure",
+  "start_pool": "uhcp:mushroom_house",
   "size": 1,
   "start_height": {
     "absolute": 0
