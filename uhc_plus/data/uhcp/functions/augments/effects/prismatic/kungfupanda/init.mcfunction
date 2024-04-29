@@ -27,3 +27,7 @@ scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_team = @
 execute as @e[tag=UHCP_New,sort=nearest,limit=1] run function uhcp:teams/join
 execute if score %pvp uhcp_settings matches ..0 run team join no_collision @e[tag=UHCP_New,sort=nearest,scores={uhcp_team=15..},limit=1]
 tag @e remove UHCP_New
+
+# If player has Kung-Fu Panda, regenerate Bamboo
+execute if score @s uhcp_augment matches 147 run scoreboard players operation @s uhcp_aug_regenItem = %time uhcp_game_time
+execute if score @s uhcp_augment matches 147 run scoreboard players add @s uhcp_aug_regenItem 6000

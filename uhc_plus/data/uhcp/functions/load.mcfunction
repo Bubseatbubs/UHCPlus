@@ -93,6 +93,7 @@ scoreboard objectives add uhcp_top_CD dummy
 scoreboard objectives add uhcp_top_charge dummy
 scoreboard objectives add uhcp_top_delay dummy
 scoreboard objectives add uhcp_transformDuration dummy
+scoreboard objectives add uhcp_aug_regenItem dummy
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health

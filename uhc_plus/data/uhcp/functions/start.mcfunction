@@ -29,6 +29,8 @@ scoreboard players set %AUG_138 uhcp_game_time 1200
 scoreboard players set %AUG_203 uhcp_game_time 1200
 scoreboard players set %AUG_238 uhcp_game_time 24000
 scoreboard players set %AUG_244 uhcp_game_time 3600
+scoreboard players set %AUG_227 uhcp_game_time 3600
+scoreboard players set %AUG_230 uhcp_game_time 6000
 execute store result score %random uhcp_game_ID run random value 0..3
 execute if score %random uhcp_game_ID matches 0 store result score %global uhcp_game_ID run random value -2147483648..-1073741825
 execute if score %random uhcp_game_ID matches 1 store result score %global uhcp_game_ID run random value -1073741824..-1
@@ -122,6 +124,7 @@ tag @a remove UHCP_Zombie
 tag @a remove UHCP_MilkBucket
 tag @a remove UHCP_RelicTestingChamber
 tag @a remove UHCP_SoulflameEmbrace
+tag @a remove UHCP_Explode
 
 # Set world border size
 execute store result storage uhcp:border distance int 1 run scoreboard players get %border_size uhcp_settings

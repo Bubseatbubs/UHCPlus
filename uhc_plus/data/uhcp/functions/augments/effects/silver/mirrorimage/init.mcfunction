@@ -3,7 +3,8 @@ scoreboard players set @s uhcp_aug_tier 1
 tag @s add UHCP_MirrorImage
 
 
-execute at @s positioned ~ ~ ~ run function uhcp:relics/smooth_getaway/summon
+execute at @s positioned ~-1 ~ ~ run function uhcp:relics/smooth_getaway/summon
+execute at @s positioned ~1 ~ ~ run function uhcp:relics/smooth_getaway/summon
 
 # Player Effects
 effect give @s invisibility 30 0 true

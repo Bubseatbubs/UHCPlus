@@ -4,7 +4,7 @@ scoreboard players remove @a[scores={uhcp_timer=0..}] uhcp_timer 1
 
 # One Time Effects
 # Some of these need to be implemented more carefully. - Aeodine (Leaving the game at the right time is enough to evade some effects.)
-execute if score %time uhcp_game_time matches 42000 as @a[scores={uhcp_augment=143}] run function uhcp:augments/effects/silver/delayedprotection
+execute if score %time uhcp_game_time matches 30000 as @a[scores={uhcp_augment=143}] run function uhcp:augments/effects/silver/delayedprotection
 execute if score %time uhcp_game_time matches 9600 as @a[scores={uhcp_augment=18}] run function uhcp:augments/effects/gold/latelooter/haste
 execute if score %time uhcp_game_time matches 42000 as @a[scores={uhcp_augment=145}] run function uhcp:augments/effects/silver/secondwind
 execute if score %time uhcp_game_time matches 42000 as @a[scores={uhcp_augment=35}] run function uhcp:augments/effects/gold/coppercollector/convert
@@ -90,6 +90,12 @@ execute if score %time uhcp_game_time >= %AUG_238 uhcp_game_time run scoreboard 
 
 execute if score %time uhcp_game_time >= %AUG_244 uhcp_game_time as @a[scores={uhcp_augment=244}] at @s run function uhcp:augments/effects/prismatic/hedgefund/init
 execute if score %time uhcp_game_time >= %AUG_244 uhcp_game_time run scoreboard players add %AUG_244 uhcp_game_time 3600
+
+execute if score %time uhcp_game_time >= %AUG_227 uhcp_game_time as @a[scores={uhcp_augment=227}] at @s run give @s minecraft:firework_rocket
+execute if score %time uhcp_game_time >= %AUG_227 uhcp_game_time run scoreboard players add %AUG_227 uhcp_game_time 3600
+
+execute if score %time uhcp_game_time >= %AUG_230 uhcp_game_time as @a[scores={uhcp_augment=230}] at @s run loot give @s loot uhcp:consumables/wild_feather
+execute if score %time uhcp_game_time >= %AUG_230 uhcp_game_time run scoreboard players add %AUG_230 uhcp_game_time 6000
 
 execute as @a[scores={uhcp_augment=220}] if score %time uhcp_game_time >= @s uhcp_aug_cd_time at @s run function uhcp:augments/effects/prismatic/cyberneticdownload/upgrade
 

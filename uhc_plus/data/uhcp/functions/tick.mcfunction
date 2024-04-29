@@ -65,3 +65,6 @@ execute as @e[tag=!UHCP_ItemPickup,predicate=uhcp:items/instant_pickup] run func
 
 # Item use timer
 scoreboard players remove @a[scores={uhcp_itemCount=1..}] uhcp_itemCount 1
+
+# Check regenerating consumables
+execute as @a[scores={uhcp_aug_regenItem=0..}] if score %time uhcp_game_time >= @s uhcp_aug_regenItem run function uhcp:augments/effects/regenerateconsumables

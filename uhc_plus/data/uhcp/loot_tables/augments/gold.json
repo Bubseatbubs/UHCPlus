@@ -41,7 +41,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Emeralds, 12 Gold Ingots",
+                    "text": " Emeralds, 16 Gold Ingots",
                     "color": "white"
                   }
                 ],
@@ -51,7 +51,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 4 Iron Ingots",
+                    "text": " 8 Iron Ingots",
                     "color": "white"
                   },
                   {
@@ -1897,7 +1897,7 @@
                     "color": "yellow"
                   },
                   {
-                    "text": " after killing any",
+                    "text": " for 30 seconds after killing any",
                     "color": "gray"
                   }
                 ],
@@ -2210,77 +2210,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:barrel",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:37s}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "target": "item_name",
-              "name": [
-                {
-                  "text": "Like Fish in a Barrel",
-                  "color": "gold",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain 3 ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Splash Potions of Levitation",
-                    "color": "white"
-                  }
-                ],
-                [
-                  {
-                    "text": "(40 second duration).",
-                    "color": "gray"
-                  }
-                ]
-              ],
-              "mode": "replace_all"
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "slots": {
-                    "container.*": {
-                      "predicates": {
-                        "minecraft:custom_data": "{augment:37s}"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:trident",
           "weight": 1,
           "functions": [
@@ -2335,17 +2264,13 @@
                     "color": "dark_purple"
                   },
                   {
-                    "text": ", and",
+                    "text": ",",
                     "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "an",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Iron Helmet",
+                    "text": " Diamond Helmet and Boots",
                     "color": "white"
                   },
                   {
@@ -2353,17 +2278,17 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Respiration III / Unbreaking III /",
+                    "text": " Respiration III, Aqua Affinity, and Depth Strider",
                     "color": "dark_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "Aqua Affinity",
-                    "color": "dark_purple"
-                  },
-                  {
-                    "text": ". Start with permanent ",
+                    "text": "Start with permanent ",
                     "color": "gray"
                   },
                   {

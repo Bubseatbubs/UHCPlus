@@ -336,11 +336,11 @@
                 ],
                 [
                   {
-                    "text": "seconds and spawn a",
+                    "text": "seconds and spawn 2",
                     "color": "gray"
                   },
                   {
-                    "text": " Mirage",
+                    "text": " Mirages",
                     "color": "blue"
                   },
                   {
@@ -806,13 +806,13 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 2 Slime Balls, 2 Snow Balls,",
+                    "text": " 3 Slime Balls, 3 Snow Balls,",
                     "color": "white"
                   }
                 ],
                 [
                   {
-                    "text": "2 Clay Balls,",
+                    "text": "3 Clay Balls,",
                     "color": "white"
                   },
                   {
@@ -820,7 +820,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": "2 Ender Pearls",
+                    "text": "3 Ender Pearls",
                     "color": "white"
                   },
                   {
@@ -977,15 +977,15 @@
                 },
                 [
                   {
-                    "text": "Gain",
+                    "text": "You are ",
                     "color": "gray"
                   },
                   {
-                    "text": " Resistance V",
+                    "text": " invulnerable",
                     "color": "yellow"
                   },
                   {
-                    "text": " for 15 minutes.",
+                    "text": " during the Grace Period.",
                     "color": "gray"
                   }
                 ]
@@ -2177,7 +2177,7 @@
                 },
                 [
                   {
-                    "text": "After 35 minutes, gain a set of full",
+                    "text": "After 25 minutes, gain a set of full",
                     "color": "gray"
                   },
                   {
@@ -2262,7 +2262,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 3 Durability Wooden Sword",
+                    "text": " 20 Durability Wooden Sword",
                     "color": "white"
                   },
                   {
@@ -2808,6 +2808,21 @@
                     "text": ".",
                     "color": "gray"
                   }
+                ],
+                [
+                  {
+                    "text": "Gain a Diamond Helmet with ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Respiration III",
+                    "color": "dark_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
                 ]
               ],
               "mode": "replace_all"
@@ -3056,6 +3071,20 @@
                     "text": "that starts a party!",
                     "color": "gray"
                   }
+                ],
+                [
+                  {
+                    "text": "Whenever you use a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Groovy Disc",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ", gain another after 5 minutes.",
+                    "color": "gray"
+                  }
                 ]
               ],
               "mode": "replace_all"
@@ -3113,11 +3142,11 @@
                 },
                 [
                   {
-                    "text": "Gain 2 ",
+                    "text": "Gain a ",
                     "color": "gray"
                   },
                   {
-                    "text": "Magic Tricks",
+                    "text": "Magic Trick",
                     "color": "light_purple"
                   },
                   {
@@ -3148,7 +3177,21 @@
                       "color": "gray"
                     }
                   ]
-                }
+                },
+                [
+                  {
+                    "text": "Whenever you use a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Magic Trick",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ", gain another after 3 minutes.",
+                    "color": "gray"
+                  }
+                ]
               ],
               "mode": "replace_all"
             }
@@ -3164,6 +3207,77 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:122s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augmentselect:1b,augment:37s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Like Fish in a Barrel",
+                  "color": "gray",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain 2 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Splash Potions of Levitation",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "(40 second duration).",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:37s}"
                       }
                     }
                   }

@@ -287,7 +287,7 @@
                 },
                 [
                   {
-                    "text": "Gain 10",
+                    "text": "Gain 3",
                     "color": "gray"
                   },
                   {
@@ -295,11 +295,15 @@
                     "color": "white"
                   },
                   {
-                    "text": ". When you use a",
+                    "text": " and an additional every 5 minutes.",
                     "color": "gray"
                   }
                 ],
                 [
+                  {
+                    "text": ". When you use a",
+                    "color": "gray"
+                  },
                   {
                     "text": "Wild Feather",
                     "color": "white"
@@ -317,10 +321,12 @@
                     "color": "gray"
                   }
                 ],
-                {
-                  "text": "original location.",
-                  "color": "gray"
-                }
+                [
+                  {
+                    "text": "original location.",
+                    "color": "gray"
+                  }
+                ]
               ],
               "mode": "replace_all"
             }
@@ -397,7 +403,7 @@
                     "color": "gray"
                   },
                   {
-                    "text": " permanent Fire Resistance",
+                    "text": " permanent Fire Resistance and Speed",
                     "color": "yellow"
                   },
                   {
@@ -1032,19 +1038,21 @@
                     "color": "gray"
                   },
                   {
-                    "text": " 15 Firework Rockets and an Elytra",
+                    "text": " 5 Firework Rockets and ",
                     "color": "white"
                   },
                   {
-                    "text": " with",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Unbreaking III",
-                    "color": "dark_purple"
+                    "text": " Armored Wings",
+                    "color": "light_purple"
                   },
                   {
                     "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Gain an additional rocket every 3 minutes.",
                     "color": "gray"
                   }
                 ]
@@ -1832,7 +1840,7 @@
               "target": "item_name",
               "name": [
                 {
-                  "text": "Kung Fu Panda",
+                  "text": "Kung-Fu Panda",
                   "color": "aqua",
                   "bold": true
                 }
@@ -1847,7 +1855,7 @@
                 },
                 [
                   {
-                    "text": "Gain 2",
+                    "text": "Gain a",
                     "color": "gray"
                   },
                   {
@@ -1876,6 +1884,20 @@
                   },
                   {
                     "text": "!",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Whenever you eat a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Suspicious Bamboo",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ", gain another after 5 minutes.",
                     "color": "gray"
                   }
                 ]
@@ -3018,6 +3040,37 @@
                   {
                     "text": "Royal Jelly",
                     "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "As long as you are standing on ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Honey",
+                    "color": "blue"
+                  }
+                ],
+                [
+                  {
+                    "text": "gain ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Strength",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " and "
+                  },
+                  {
+                    "text": "Resistance",
+                    "color": "yellow"
                   },
                   {
                     "text": ".",
