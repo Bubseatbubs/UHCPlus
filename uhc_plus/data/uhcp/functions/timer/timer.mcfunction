@@ -24,8 +24,8 @@ execute if score %time uhcp_game_time matches 1200 run clear @a[scores={uhcp_aug
 execute if score %time uhcp_game_time matches 18000 as @a[scores={uhcp_augment=150}] run function uhcp:augments/effects/silver/cramsession
 
 # Notifications
-execute if score %time uhcp_game_time matches 16800 as @a[scores={uhcp_augment=115}] run tellraw @s {"text":"Your Iron Will Resistance will wear off in 1 minute!","color":"red"}
-execute if score %time uhcp_game_time matches 16800 as @a[scores={uhcp_augment=115}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
+execute if score %time uhcp_game_time matches 22800 as @a[scores={uhcp_augment=115}] run tellraw @s {"text":"Your Iron Will's Invulnerability duration is almost over!","color":"red"}
+execute if score %time uhcp_game_time matches 22800 as @a[scores={uhcp_augment=115}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
 
 execute if score %time uhcp_game_time matches 36000 as @a[scores={uhcp_augment=35}] run tellraw @s {"text":"Copper will convert to Gold in 5 minutes!","color":"red"}
 execute if score %time uhcp_game_time matches 36000 as @a[scores={uhcp_augment=35}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
