@@ -1,6 +1,11 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#minecraft:is_dry/overworld",
+  "biomes": [
+    "minecraft:badlands",
+    "minecraft:desert",
+    "minecraft:eroded_badlands",
+    "minecraft:wooded_badlands"
+  ],
   "step": "surface_structures",
   "spawn_overrides": {},
   "terrain_adaptation": "beard_thin",
