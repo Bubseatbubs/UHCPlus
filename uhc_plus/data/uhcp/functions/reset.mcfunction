@@ -6,6 +6,7 @@ execute as @e[tag=UHCP_GraveMarker] at @s run function uhcp:titans/gigantus/grav
 kill @e[tag=UHCP_Summon]
 kill @e[tag=UHCP_Minion]
 kill @e[tag=UHCP_StoreAugment]
+kill @e[tag=UHCP_SnifferControl]
 kill @e[type=minecraft:experience_orb]
 kill @e[type=minecraft:ender_pearl]
 kill @e[type=minecraft:item]
