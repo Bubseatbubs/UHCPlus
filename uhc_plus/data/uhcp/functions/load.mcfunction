@@ -228,6 +228,9 @@ scoreboard players set %patrons_def uhcp_settings 0
 # Night Vision
 scoreboard players set %night_vision_def uhcp_settings 1
 
+# Ender Pearl Immunity
+scoreboard players set %ender_pearl_def uhcp_settings 1
+
 # Difficulty
 scoreboard players set %difficulty_def uhcp_settings 0
 

@@ -71,7 +71,7 @@ execute as @a[scores={uhcp_mine_rawGoldBlock=1..},gamemode=survival] run functio
 execute as @a[scores={uhcp_mine_rawIronBlock=1..},gamemode=survival] run function uhcp:mine/raw_iron_block
 
 # Disable Ender Pearl Damage
-execute as @e[type=minecraft:ender_pearl] at @s run function uhcp:entity/ender_pearl
+execute if score %ender_pearl uhcp_settings matches 1 as @e[type=minecraft:ender_pearl] at @s run function uhcp:entity/ender_pearl
 
 # Enable triggers
 scoreboard players enable @a augments

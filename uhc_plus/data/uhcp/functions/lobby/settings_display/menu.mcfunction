@@ -30,6 +30,9 @@ tellraw @s [{"text":"Maximum Arrow Limit: ","color":"white","bold":true},{"score
 tellraw @s [{"text":"Soul Apples Dropped On Death: ","color":"white","bold":true},{"score":{"name":"%soul_apples","objective":"uhcp_settings"},"color":"gray","bold":false}]
 execute if score %night_vision uhcp_settings matches 0 run tellraw @s [{"text":"Night Vision: ","color":"white","bold":true},{"text":"OFF","color":"red","bold":false}]
 execute if score %night_vision uhcp_settings matches 1 run tellraw @s [{"text":"Night Vision: ","color":"white","bold":true},{"text":"ON","color":"green","bold":false}]
+execute if score %ender_pearl uhcp_settings matches 0 run tellraw @s [{"text":"Ender Pearl Immunity: ","color":"white","bold":true},{"text":"OFF","color":"red","bold":false}]
+execute if score %ender_pearl uhcp_settings matches 1 run tellraw @s [{"text":"Ender Pearl Immunity: ","color":"white","bold":true},{"text":"ON","color":"green","bold":false}]
+
 
 # Team
 function uhcp:lobby/settings_display/teams/team_game
