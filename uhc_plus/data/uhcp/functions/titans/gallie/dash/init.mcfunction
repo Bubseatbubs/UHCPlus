@@ -8,3 +8,4 @@ playsound entity.zoglin.attack master @a[distance=..16] ~ ~ ~ 1 1 1
 playsound entity.zoglin.attack master @a[distance=..16] ~ ~ ~ 1 1 1
 particle minecraft:angry_villager ~ ~ ~ 1.5 1.5 1.5 0.1 100 normal
 scoreboard players operation @e[tag=UHCP_GallieDashMarker,tag=UHCP_New,sort=nearest,limit=1] uhcp_id = @s uhcp_id
+tag @e remove UHCP_New
