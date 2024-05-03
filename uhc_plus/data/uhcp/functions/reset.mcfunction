@@ -1,4 +1,6 @@
 # Kill entities (kill items last)
+gamerule showDeathMessages false
+
 kill @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs]
 execute as @e[tag=UHCP_WellEngineered] at @s run function uhcp:relics/runic_sentry/delete
 execute as @e[tag=UHCP_AltarDisplay] at @s run function uhcp:titans/spawn/reset_altar
@@ -10,6 +12,8 @@ kill @e[tag=UHCP_SnifferControl]
 kill @e[type=minecraft:experience_orb]
 kill @e[type=minecraft:ender_pearl]
 kill @e[type=minecraft:item]
+
+gamerule showDeathMessages true
 
 # Augment selection reset
 execute in uhcp:main run tp @e[tag=UHCP_Lock] 0 -63 0
