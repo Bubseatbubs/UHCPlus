@@ -10,7 +10,7 @@ execute as @e[tag=UHCP_Death] if score @s uhcp_id = @a[tag=UHCP_CurrentDeadPlaye
 execute at @s summon minecraft:marker run function uhcp:kill/death/spawn_marker
 
 # Soul Apple
-execute at @s run loot spawn ~ ~ ~ loot uhcp:consumables/soul_apple
+execute at @s on attacker run function uhcp:kill/soul_apple/init
 
 # General Effects
 playsound minecraft:entity.bogged.death master @s ~ ~ ~ 1 0.5 1

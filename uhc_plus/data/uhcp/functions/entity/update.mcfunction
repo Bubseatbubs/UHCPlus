@@ -4,6 +4,7 @@
 execute if entity @s[tag=UHCP_WarningSymbol] at @s run function uhcp:entity/warning_symbol/update
 execute if entity @s[tag=UHCP_Scout] at @s unless entity @a[distance=..3] run function uhcp:augments/effects/silver/structurescout/clear
 execute if entity @s[tag=UHCP_RunicSentrySummon] at @s if entity @p[gamemode=survival,distance=..8] run function uhcp:entity/runic_sentry_summon
+execute if entity @s[tag=UHCP_SoulApple] at @s run function uhcp:kill/soul_apple/update
 
 # Consumables
 execute if entity @s[tag=UHCP_WebSlinger] at @s run function uhcp:consumables/web_slinger/update
