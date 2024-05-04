@@ -28,6 +28,7 @@ execute if items entity @s contents *[minecraft:custom_data~{uhcp_titan_id:11b}]
 execute if items entity @s contents *[minecraft:custom_data~{uhcp_titan_id:12b}] run loot insert ~ ~ ~ loot uhcp:titans/gallie
 execute if items entity @s contents *[minecraft:custom_data~{uhcp_titan_id:12b}] if entity @p[gamemode=survival,distance=..12] run tellraw @a [{"text":"Gallie","color":"gold"},{"text":" has been vanquished by ","color":"white"},{"selector":"@a[gamemode=survival,distance=..12]","color":"gold"},{"text":"!","color":"white"}]
 
+execute as @a[distance=..16,gamemode=survival,scores={uhcp_augment=208}] run loot insert ~ ~ ~ loot uhcp:consumables/titan_spinal_fluid
 particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.1 100 normal
 playsound ui.toast.challenge_complete master @a[distance=..12] ~ ~ ~ 1 1 1
 playsound minecraft:block.trial_spawner.eject_item master @a[distance=..16] ~ ~ ~ 1 1 0.75
