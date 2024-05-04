@@ -115,7 +115,7 @@
           ]
         }
       ]
-    }, 
+    },
     {
       "rolls": 1,
       "entries": [
@@ -149,6 +149,24 @@
             {
               "function": "minecraft:set_count",
               "count": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 12,
+                "max": 16
+              }
             }
           ]
         }

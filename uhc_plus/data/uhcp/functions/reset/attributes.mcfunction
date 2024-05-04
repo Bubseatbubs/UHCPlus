@@ -46,6 +46,12 @@ attribute @s minecraft:generic.max_absorption modifier remove 13ede9ff-b146-49ae
 #alias uuid UHCP_ArmorMultiplier b386305a-d2c2-4494-bb84-836a1ddebedc
 attribute @s minecraft:generic.armor modifier remove b386305a-d2c2-4494-bb84-836a1ddebedc
 
+# Knockback Resistance (Ferrum Scrap Metal)
+# Used by: Ferrum Scrap Metal
+# This attribute should be unique to Ferrum Scrap Metal only. Please make a new attribute modifier for Knockback Resistance if need be.
+#alias uuid UHCP_FerrumScrapMetal eec70b56-2393-4869-aa19-4c832bba6d15
+attribute @s minecraft:generic.knockback_resistance modifier remove eec70b56-2393-4869-aa19-4c832bba6d15
+
 # Titan Spinal Fluid Attributes
 # Many unique attributes for when the player becomes a Titan.
 attribute @s minecraft:generic.scale modifier remove 41072b91-1c8b-485e-be92-53b6eeb9660b

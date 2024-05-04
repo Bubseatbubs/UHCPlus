@@ -27,6 +27,10 @@ execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consuma
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:7b}] at @s run return run function uhcp:consumables/groovy_disc/init
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:12b}] at @s run return run function uhcp:consumables/magic_trick/init
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:14b}] at @s run return run function uhcp:consumables/web_slinger/init
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:15b}] at @s run return run function uhcp:consumables/grand_gunpowder/init
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:16b}] at @s run return run function uhcp:consumables/ferrum_scrap_metal/init
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:17b}] at @s run return run function uhcp:consumables/ragnarok_bone/init
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:18b}] at @s run return run function uhcp:consumables/high_tide/init
 
 
 # Consumables (Offhand)

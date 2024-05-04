@@ -77,3 +77,6 @@ execute if score %ender_pearl uhcp_settings matches 1 as @e[type=minecraft:ender
 scoreboard players enable @a augments
 scoreboard players enable @a[gamemode=survival] top
 scoreboard players enable @a[gamemode=survival] testkit
+
+# Titan Loot
+execute as @e[predicate=uhcp:titans/titan_loot] at @s run function uhcp:titans/loot
