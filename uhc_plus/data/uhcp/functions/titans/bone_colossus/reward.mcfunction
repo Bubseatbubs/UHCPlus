@@ -1,2 +1,0 @@
-advancement revoke @s only uhcp:titans/killed_bonecolossus
-tellraw @a [{"text":"Bone Colossus","color":"gold"},{"text":" has been vanquished by ","color":"white"},{"selector":"@s","color":"gold"},{"text":"!","color":"white"}]

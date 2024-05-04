@@ -1,2 +1,0 @@
-advancement revoke @s only uhcp:titans/killed_fenrir
-tellraw @a [{"text":"Fenrir","color":"gold"},{"text":" has been vanquished by ","color":"white"},{"selector":"@s","color":"gold"},{"text":"!","color":"white"}]
