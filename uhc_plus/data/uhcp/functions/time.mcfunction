@@ -80,3 +80,6 @@ scoreboard players enable @a[gamemode=survival] testkit
 
 # Titan Loot
 execute as @e[predicate=uhcp:titans/titan_loot] at @s run function uhcp:titans/loot
+
+# Check regenerating consumables
+execute as @a[scores={uhcp_aug_regenItem=0..}] if score %time uhcp_game_time >= @s uhcp_aug_regenItem at @s run function uhcp:augments/effects/regenerate_consumables

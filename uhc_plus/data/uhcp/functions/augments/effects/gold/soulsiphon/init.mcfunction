@@ -1,1 +1,1 @@
-loot give @s loot uhcp:consumables/soul_apple
+loot give @s loot uhcp:augments/soul_siphon

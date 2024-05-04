@@ -1,5 +1,7 @@
-scoreboard players set %eyes uhcp_aug_count 30
-function uhcp:augments/effects/prismatic/gloryofra/allseeingeyes
+function uhcp:entity/items/loot/summon
+loot replace entity @e[type=item,tag=UHCP_NewLoot,sort=nearest,limit=1] contents loot uhcp:augments/ra/10
+function uhcp:entity/items/loot/finish
+
 effect give @s strength infinite 0 false
 effect give @s speed infinite 0 false
 effect give @s resistance infinite 0 false

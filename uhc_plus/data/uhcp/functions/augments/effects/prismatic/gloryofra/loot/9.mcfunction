@@ -1,4 +1,7 @@
-loot give @s loot uhcp:relics/dragons_protection
+function uhcp:entity/items/loot/summon
+loot replace entity @e[type=item,tag=UHCP_NewLoot,sort=nearest,limit=1] contents loot uhcp:relics/dragons_protection
+function uhcp:entity/items/loot/finish
+
 give @s minecraft:potion[minecraft:potion_contents={"potion":"minecraft:strong_regeneration"}] 2
 
 execute store result score %health uhcp_aug_count run attribute @s generic.max_health get 1

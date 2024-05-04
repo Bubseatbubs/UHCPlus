@@ -1,5 +1,7 @@
 clear @s *[custom_data~{uhcp_consumable:3b}] 1
-loot give @s loot uhcp:relics
+function uhcp:entity/items/loot/summon
+loot replace entity @e[type=item,tag=UHCP_NewLoot,sort=nearest,limit=1] contents loot uhcp:relics
+function uhcp:entity/items/loot/finish
 playsound entity.breeze.death master @s ~ ~ ~ 1 0.5 1
 playsound block.bell.resonate master @s ~ ~ ~ 1 2 1
 particle end_rod ~ ~1 ~ 0.25 0.25 0.25 0.1 25 normal

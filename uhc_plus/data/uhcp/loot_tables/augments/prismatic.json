@@ -1748,46 +1748,21 @@
                 },
                 [
                   {
-                    "text": "At the start of the game",
+                    "text": "At the start of the game, gain 2",
                     "color": "gray"
+                  },
+                  {
+                    "text": " Titan Spinal",
+                    "color": "white"
                   }
                 ],
                 [
                   {
-                    "text": "and whenever you a",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "Titan",
-                    "color": "blue"
-                  },
-                  {
-                    "text": "dies near you, gain",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Titan Spinal Fluid",
+                    "text": "Fluid",
                     "color": "white"
                   },
                   {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "Consuming it",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " transforms you"
-                  }
-                ],
-                [
-                  {
-                    "text": "into a",
+                    "text": ". Additionally, when a",
                     "color": "gray"
                   },
                   {
@@ -1795,8 +1770,34 @@
                     "color": "blue"
                   },
                   {
-                    "text": " for 30 seconds.",
+                    "text": " dies 16 blocks",
                     "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "near you, gain",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Titan Spinal Fluid",
+                    "color": "white"
+                  },
+                  {
+                    "text": ". Consuming it",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "transforms you into a Titan",
+                    "color": "dark_purple",
+                    "bold": true
+                  },
+                  {
+                    "text": " for 30 seconds.",
+                    "color": "gray",
+                    "bold": false
                   }
                 ]
               ],
