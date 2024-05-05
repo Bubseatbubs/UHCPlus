@@ -13,4 +13,4 @@ function uhcp:augments/effects/silver/crazycatlady/macro_heal with storage uhcp:
 tag @s remove UHCP_Owner
 
 scoreboard players add @s uhcp_game_time 1200
-execute if score %time uhcp_game_time >= @s uhcp_game_time run function uhcp:augments/effects/timed
+execute if score %time uhcp_game_time >= @s uhcp_game_time run function uhcp:augments/effects/silver/crazycatlady/count

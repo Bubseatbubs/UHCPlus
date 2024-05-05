@@ -13,4 +13,4 @@ execute store result storage uhcp:augment input.amount float 1 run scoreboard pl
 function uhcp:augments/effects/prismatic/hedgefund/give with storage uhcp:augment input
 
 scoreboard players add @s uhcp_game_time 3600
-execute if score %time uhcp_game_time >= @s uhcp_game_time run function uhcp:augments/effects/timed
+execute if score %time uhcp_game_time >= @s uhcp_game_time run function uhcp:augments/effects/prismatic/hedgefund/init

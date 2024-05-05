@@ -31,7 +31,7 @@ execute if score %time uhcp_game_time matches ..45000 run function uhcp:augments
 execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp_game_time >= @s uhcp_game_time run function uhcp:augments/effects/timed
 
 # AFK augment
-execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=101}] run function uhcp:augments/effects/silver/afk/lock
+execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=101},gamemode=survival] run function uhcp:augments/effects/silver/afk/lock
 
 # Announce Augments
 execute as @a[scores={augments=1..}] run function uhcp:augments/announce
