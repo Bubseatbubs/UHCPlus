@@ -39,18 +39,20 @@ execute if score @s uhcp_augment matches 31 run return run function uhcp:augment
 execute if score @s uhcp_augment matches 32 run return run function uhcp:augments/effects/gold/trapmaster
 execute if score @s uhcp_augment matches 33 run return run function uhcp:augments/effects/gold/villageidol
 execute if score @s uhcp_augment matches 34 run return run function uhcp:augments/effects/gold/bottlesmasher
-execute if score @s uhcp_augment matches 35 run return 0
+execute if score @s uhcp_augment matches 35..36 run return run scoreboard players set @s uhcp_game_time 42000
 execute if score @s uhcp_augment matches 37 run return run function uhcp:augments/effects/gold/likefishinabarrel
 execute if score @s uhcp_augment matches 38 run return run function uhcp:augments/effects/gold/oppenheimer
 execute if score @s uhcp_augment matches 39 run return run function uhcp:augments/effects/gold/poseidonsblessing
 execute if score @s uhcp_augment matches 40 run return run function uhcp:augments/effects/gold/relicsofthepast
 execute if score @s uhcp_augment matches 41 run return run function uhcp:augments/effects/gold/sniffa
+execute if score @s uhcp_augment matches 42 run return run scoreboard players set @s uhcp_game_time 24000
 execute if score @s uhcp_augment matches 43 run return run function uhcp:augments/effects/gold/mansbestfriend
 execute if score @s uhcp_augment matches 44 run return 0
 execute if score @s uhcp_augment matches 45 run return run function uhcp:augments/effects/gold/youhavemyrodii
 execute if score @s uhcp_augment matches 46 run return run function uhcp:augments/effects/gold/crazyconsumables
 execute if score @s uhcp_augment matches 47 run return run function uhcp:augments/effects/gold/imperfectreplica
 execute if score @s uhcp_augment matches 48 run return run function uhcp:augments/effects/gold/soulsiphon/init
+execute if score @s uhcp_augment matches 49..50 run return run scoreboard players set @s uhcp_game_time 42000
 execute if score @s uhcp_augment matches 51 run return run function uhcp:augments/effects/gold/bookworm
 execute if score @s uhcp_augment matches 53 run return run function uhcp:augments/effects/gold/capped
 execute if score @s uhcp_augment matches 55 run return run function uhcp:augments/effects/gold/hardstuckiron
@@ -75,7 +77,7 @@ execute if score @s uhcp_augment matches 116 run return run function uhcp:augmen
 execute if score @s uhcp_augment matches 117 run return 0
 execute if score @s uhcp_augment matches 118 run return run function uhcp:augments/effects/silver/raveparty
 execute if score @s uhcp_augment matches 119 run return run function uhcp:augments/effects/silver/monsterhunter
-execute if score @s uhcp_augment matches 120 run return 0
+execute if score @s uhcp_augment matches 120 run return run scoreboard players set @s uhcp_game_time 24000
 execute if score @s uhcp_augment matches 121 run return run function uhcp:augments/effects/silver/cheapimitation
 execute if score @s uhcp_augment matches 122 run return run function uhcp:augments/effects/silver/sleightofhand
 execute if score @s uhcp_augment matches 125 run return run function uhcp:augments/effects/silver/sneaky
@@ -83,7 +85,7 @@ execute if score @s uhcp_augment matches 126 run return run function uhcp:augmen
 execute if score @s uhcp_augment matches 127 run return run function uhcp:augments/effects/silver/starterkiti
 execute if score @s uhcp_augment matches 128 run return run function uhcp:augments/effects/silver/stickysituation
 execute if score @s uhcp_augment matches 129 run return run function uhcp:augments/effects/silver/storagesolution
-execute if score @s uhcp_augment matches 130 run return 0
+execute if score @s uhcp_augment matches 130 run return run scoreboard players set @s uhcp_game_time 36000
 execute if score @s uhcp_augment matches 133 run return run function uhcp:augments/effects/silver/trapenthusiast
 execute if score @s uhcp_augment matches 135 run return run function uhcp:augments/effects/silver/structurescout
 execute if score @s uhcp_augment matches 136 run return run function uhcp:augments/effects/silver/fishybusiness
@@ -92,14 +94,14 @@ execute if score @s uhcp_augment matches 139 run return run function uhcp:augmen
 execute if score @s uhcp_augment matches 140 run return run function uhcp:augments/effects/silver/thewatcher
 execute if score @s uhcp_augment matches 141 run return run function uhcp:augments/effects/silver/finalupgrade
 execute if score @s uhcp_augment matches 142 run return run function uhcp:augments/effects/silver/tunnelvision
-execute if score @s uhcp_augment matches 143 run return 0
+execute if score @s uhcp_augment matches 143 run return run scoreboard players set @s uhcp_game_time 30000
 execute if score @s uhcp_augment matches 144 run return run function uhcp:augments/effects/silver/backoff
-execute if score @s uhcp_augment matches 145 run return 0
+execute if score @s uhcp_augment matches 145 run return run scoreboard players set @s uhcp_game_time 42000
 execute if score @s uhcp_augment matches 146 run return run function uhcp:augments/effects/silver/portablelavapool
 execute if score @s uhcp_augment matches 147 run return run function uhcp:augments/effects/silver/parasite
 execute if score @s uhcp_augment matches 148 run return run function uhcp:augments/effects/silver/littlebuddies
 execute if score @s uhcp_augment matches 149 run return run function uhcp:augments/effects/silver/takeaimi
-execute if score @s uhcp_augment matches 150 run return 0
+execute if score @s uhcp_augment matches 150 run return run scoreboard players set @s uhcp_game_time 18000
 
 # Prismatic Augments
 execute if score @s uhcp_augment matches 200 run return run function uhcp:augments/effects/prismatic/beastmaster

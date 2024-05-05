@@ -21,8 +21,17 @@ execute if score %time uhcp_game_time matches 24000..24500 in minecraft:overworl
 # Grace period end
 execute unless score %pvp uhcp_settings matches ..-1 run function uhcp:pvp/countdown
 
-# Augment timer
-function uhcp:timer/timer
+# Timer
+scoreboard players remove @a[scores={uhcp_timer=0..}] uhcp_timer 1
+
+# Augment notifications
+execute if score %time uhcp_game_time matches ..45000 run function uhcp:augments/notifications
+
+# Timed augment effects
+execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp_game_time >= @s uhcp_game_time run function uhcp:augments/effects/timed
+
+# AFK augment
+execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=101}] run function uhcp:augments/effects/silver/afk/lock
 
 # Announce Augments
 execute as @a[scores={augments=1..}] run function uhcp:augments/announce
@@ -37,6 +46,9 @@ execute as @a[scores={uhcp_top_delay=1..}] at @s run function uhcp:top/finish
 scoreboard players remove @a[scores={uhcp_top_CD=1..}] uhcp_top_CD 1
 execute as @a[tag=UHCP_IsTeleporting] at @s unless entity @e[type=minecraft:marker,tag=UHCP_topCheck,distance=..1] run function uhcp:top/cancel
 execute as @a[tag=UHCP_IsTeleporting] at @s run function uhcp:top/updatecharge
+
+# Timed Titan events
+execute if score %titans uhcp_game_time = %time uhcp_game_time run function uhcp:titans/timed
 
 # Update Titans
 execute as @a at @s if entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/update

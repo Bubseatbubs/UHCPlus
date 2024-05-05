@@ -14,6 +14,6 @@ execute if score @s uhcp_aug_cd_upgrade matches 7..13 run function uhcp:augments
 execute if score @s uhcp_aug_cd_upgrade matches 14..20 run function uhcp:augments/effects/prismatic/cyberneticdownload/upgrade/long
 
 scoreboard players reset @s uhcp_aug_cd_upgrade
-scoreboard players reset @s uhcp_aug_cd_time
+scoreboard players set @s uhcp_game_time -1
 
 function uhcp:entity/armor/store_armor

@@ -17,3 +17,5 @@ scoreboard players set @s uhcp_initStatus 1
 execute if items entity @s armor.feet * run scoreboard players set @s uhcp_initStatus 0
 execute if score @s uhcp_initStatus matches 0 run give @s minecraft:diamond_boots
 execute if score @s uhcp_initStatus matches 1 run item replace entity @s armor.feet with minecraft:diamond_boots
+
+scoreboard players set @s uhcp_game_time -1

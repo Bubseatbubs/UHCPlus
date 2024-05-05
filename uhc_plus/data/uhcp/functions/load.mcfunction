@@ -1,5 +1,4 @@
 # Add Scoreboard Objectives
-
 # Triggers
 scoreboard objectives add augments trigger
 scoreboard objectives add menu trigger

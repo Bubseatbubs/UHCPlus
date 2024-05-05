@@ -1,4 +1,4 @@
-#>  uhcp:left/in_game/augments/select
+#>  uhcp:left/in_game/augment_select
 #   Runs for a player whom left during augment selection.
 #   Runs the effects that would've occurred if the player was in game when augment selection finished.
 #

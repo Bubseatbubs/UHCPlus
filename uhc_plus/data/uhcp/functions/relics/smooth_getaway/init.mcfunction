@@ -2,7 +2,7 @@
 execute if entity @s[tag=UHCP_SmoothGetaway,tag=UHCP_ShadowClone] run function uhcp:relics/smooth_getaway/return_shadowclone
 
 execute if entity @s[tag=UHCP_SmoothGetaway,tag=!UHCP_ShadowClone] unless score @s uhcp_augment matches 239 run function uhcp:entity/items/loot/summon
-execute if entity @s[tag=UHCP_SmoothGetaway,tag=!UHCP_ShadowClone] unless score @s uhcp_augment matches 239 run loot replace entity @e[type=item,tag=UHCP_NewLoot,sort=nearest,limit=1] contents loot uhcp:relics/smooth_getaway/damaged
+execute if entity @s[tag=UHCP_SmoothGetaway,tag=!UHCP_ShadowClone] unless score @s uhcp_augment matches 239 run loot replace entity @e[type=minecraft:item,tag=UHCP_NewLoot,sort=nearest,limit=1] contents loot uhcp:relics/smooth_getaway/damaged
 execute if entity @s[tag=UHCP_SmoothGetaway,tag=!UHCP_ShadowClone] unless score @s uhcp_augment matches 239 run function uhcp:entity/items/loot/finish
 execute unless entity @s[tag=!UHCP_IsPanda,tag=!UHCP_IsRabbit] run return 0
 function uhcp:relics/durability/reset

@@ -11,3 +11,6 @@ scoreboard players operation %gold uhcp_aug_count /= %CONST_10 uhcp_aug_count
 
 execute store result storage uhcp:augment input.amount float 1 run scoreboard players get %gold uhcp_aug_count
 function uhcp:augments/effects/prismatic/hedgefund/give with storage uhcp:augment input
+
+scoreboard players add @s uhcp_game_time 3600
+execute if score %time uhcp_game_time >= @s uhcp_game_time run function uhcp:augments/effects/timed

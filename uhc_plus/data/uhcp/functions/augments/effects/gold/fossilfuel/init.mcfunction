@@ -16,3 +16,5 @@ function uhcp:augments/effects/gold/fossilfuel/speed with storage uhcp:fossil_fu
 playsound minecraft:entity.breeze.jump master @s ~ ~ ~ 1 1 1
 particle minecraft:small_gust ~ ~ ~ 0.5 1 0.5 0.1 100 normal
 particle minecraft:effect ~ ~ ~ 0.5 1 0.5 0.01 50 normal
+
+scoreboard players set @s uhcp_game_time -1

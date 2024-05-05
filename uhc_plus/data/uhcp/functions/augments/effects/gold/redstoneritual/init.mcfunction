@@ -36,3 +36,5 @@ effect clear @s absorption
 playsound minecraft:block.enchantment_table.use master @s ~ ~ ~ 1 1 1
 particle minecraft:composter ~ ~ ~ 0.5 1 0.5 0.01 50 normal
 particle minecraft:effect ~ ~ ~ 0.5 1 0.5 0.01 50 normal
+
+scoreboard players set @s uhcp_game_time -1

@@ -6,3 +6,5 @@ execute as @e[tag=UHCP_AltarDisplay] run kill @s
 
 execute as @a at @s run playsound minecraft:event.mob_effect.raid_omen master @s ~ ~ ~ 1 1 1
 execute as @a at @s run playsound minecraft:event.mob_effect.trial_omen master @s ~ ~ ~ 1 1 1
+
+scoreboard players set %titans uhcp_game_time 42000
