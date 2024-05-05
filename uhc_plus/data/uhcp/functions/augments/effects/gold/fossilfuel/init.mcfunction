@@ -2,7 +2,7 @@
 scoreboard players set %CONST_30 uhcp_aug_count 30
 
 # Store bone amount
-execute store result score %bone uhcp_aug_count run clear @s bone
+execute store result score %bone uhcp_aug_count run clear @s minecraft:bone
 
 execute if score %bone uhcp_aug_count matches 0 run return 0
 
