@@ -2,4 +2,5 @@ effect give @s minecraft:strength 1500 0 false
 effect give @s minecraft:resistance 1500 0 false
 effect clear @s minecraft:nausea
 
-scoreboard players set @s uhcp_game_time 33600
+scoreboard players add @s uhcp_game_time 30000
+execute if score %time uhcp_game_time >= @s uhcp_game_time run function uhcp:augments/effects/timed
