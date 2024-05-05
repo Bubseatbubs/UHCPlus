@@ -11,6 +11,6 @@ execute unless score @s uhcp_game_time matches 48000 if score %time uhcp_game_ti
 # May start running at time of 42000 (apologies for this function, hopefully the timing never needs changed)
 execute unless score @s uhcp_game_time matches 48000 run return fail
 execute store result score @s uhcp_initStatus run clear @s minecraft:potion[minecraft:potion_contents={potion:"minecraft:water"}]
-execute unless score @s uhcp_initStatus matches ..0 run function uhcp:augments/effects/gold/watertowine/convert
+execute unless score @s uhcp_initStatus matches ..0 at @s run function uhcp:augments/effects/gold/watertowine/convert
 
 execute if score %time uhcp_game_time >= @s uhcp_game_time run function uhcp:augments/effects/timed

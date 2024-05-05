@@ -1,5 +1,5 @@
 # Clear previous effects
-effect clear @s absorption
+effect clear @s minecraft:absorption
 function uhcp:augments/effects/gold/redstoneritual/reset
 
 # Define constants
@@ -29,8 +29,8 @@ scoreboard players operation %redstone uhcp_aug_count /= %CONST_64 uhcp_aug_coun
 scoreboard players operation %redstone uhcp_aug_count *= %CONST_2 uhcp_aug_count
 execute store result storage uhcp:redstone_ritual input.absorption float 1 run scoreboard players get %redstone uhcp_aug_count
 function uhcp:augments/effects/gold/redstoneritual/absorption with storage uhcp:redstone_ritual input
-effect give @s absorption infinite 255 true
-effect clear @s absorption
+effect give @s minecraft:absorption infinite 255 true
+effect clear @s minecraft:absorption
 
 # Effects
 playsound minecraft:block.enchantment_table.use master @s ~ ~ ~ 1 1 1
