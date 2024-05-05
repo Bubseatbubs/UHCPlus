@@ -3226,7 +3226,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:37s}"
+              "tag": "{uhcp_augmentselect:1b,augment:123s}"
             },
             {
               "function": "minecraft:set_name",
@@ -3277,7 +3277,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:37s}"
+                        "minecraft:custom_data": "{augment:123s}"
                       }
                     }
                   }

@@ -40,7 +40,6 @@ execute if score @s uhcp_augment matches 32 run return run function uhcp:augment
 execute if score @s uhcp_augment matches 33 run return run function uhcp:augments/effects/gold/villageidol
 execute if score @s uhcp_augment matches 34 run return run function uhcp:augments/effects/gold/bottlesmasher
 execute if score @s uhcp_augment matches 35..36 run return run scoreboard players set @s uhcp_game_time 42000
-execute if score @s uhcp_augment matches 37 run return run function uhcp:augments/effects/gold/likefishinabarrel
 execute if score @s uhcp_augment matches 38 run return run function uhcp:augments/effects/gold/oppenheimer
 execute if score @s uhcp_augment matches 39 run return run function uhcp:augments/effects/gold/poseidonsblessing
 execute if score @s uhcp_augment matches 40 run return run function uhcp:augments/effects/gold/relicsofthepast
@@ -80,6 +79,7 @@ execute if score @s uhcp_augment matches 119 run return run function uhcp:augmen
 execute if score @s uhcp_augment matches 120 run return run scoreboard players set @s uhcp_game_time 24000
 execute if score @s uhcp_augment matches 121 run return run function uhcp:augments/effects/silver/cheapimitation
 execute if score @s uhcp_augment matches 122 run return run function uhcp:augments/effects/silver/sleightofhand
+execute if score @s uhcp_augment matches 123 run return run function uhcp:augments/effects/silver/likefishinabarrel
 execute if score @s uhcp_augment matches 125 run return run function uhcp:augments/effects/silver/sneaky
 execute if score @s uhcp_augment matches 126 run return run function uhcp:augments/effects/silver/speedystart
 execute if score @s uhcp_augment matches 127 run return run function uhcp:augments/effects/silver/starterkiti
