@@ -10,6 +10,7 @@ scoreboard players reset @s uhcp_augment
 # Remove tags
 tag @s remove UHCP_ChoosingItem
 tag @s remove UHCP_Died
+tag @s remove UHCP_DisableArmorAndOffhand
 execute if score @s uhcp_augment matches 220 run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 execute if score @s uhcp_augment matches 25 run function uhcp:augments/effects/gold/scavengerhunt/reset
 tag @s remove UHCP_Explode

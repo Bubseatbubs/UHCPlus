@@ -74,6 +74,7 @@ tag @a remove UHCP_Explode
 tag @a remove UHCP_RelicTestingChamber
 tag @a remove UHCP_SoulflameEmbrace
 tag @a remove UHCP_Spectator
+tag @a remove UHCP_DisableArmorAndOffhand
 execute as @a[scores={uhcp_augment=220}] run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 execute as @a[scores={uhcp_augment=25}] run function uhcp:augments/effects/gold/scavengerhunt/reset
 
