@@ -21,12 +21,12 @@ execute if score %lava_start uhcp_initStatus matches 1 run function uhcp:lava/ru
 # Settings menu
 execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uhcp:settings/change
 execute as @a[scores={settings=1..}] run function uhcp:settings/pages/main
-execute as @a[scores={settings_player=1..}] run function uhcp:settings/pages/player/1
-execute as @a[scores={settings_augments=1..}] run function uhcp:settings/pages/augments/1
-execute as @a[scores={settings_other=1..}] run function uhcp:settings/pages/other/1
+execute as @a[scores={settings_player=1..}] run function uhcp:settings/pages/player
+execute as @a[scores={settings_augments=1..}] run function uhcp:settings/pages/augments
+execute as @a[scores={settings_other=1..}] run function uhcp:settings/pages/other
 execute as @a[scores={settings_lava=1..}] run function uhcp:settings/pages/lava/check
-execute as @a[scores={settings_border=1..}] run function uhcp:settings/pages/border/1
-execute as @a[scores={settings_team=1..}] run function uhcp:settings/pages/team/1
+execute as @a[scores={settings_border=1..}] run function uhcp:settings/pages/border
+execute as @a[scores={settings_team=1..}] run function uhcp:settings/pages/team
 scoreboard players enable @a settings
 scoreboard players enable @a settings_player
 scoreboard players enable @a settings_augments
