@@ -9,6 +9,7 @@ item replace entity @s container.6 with minecraft:cobweb 8
 item replace entity @s container.7 with minecraft:cobblestone 64
 item replace entity @s container.8 with minecraft:golden_apple 12
 item replace entity @s container.27 with minecraft:arrow 12
+item replace entity @s container.35 with minecraft:golden_carrot 64
 
 attribute @s minecraft:generic.max_health modifier add 5ae70886-031a-42b7-aa86-783c9536c746 "" 20 add_value
 
