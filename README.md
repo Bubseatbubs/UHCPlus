@@ -18,4 +18,4 @@ UHC+ is an alternate take on Minecraft’s **Ultra Hardcore** gamemode. Original
 ## To install:
 1. Download the Zip.
 2. Open the Zip file "UHCPlus-main" and extract the contents (another folder called UHCPlus-main).
-3. Put the contents of UHCPlus-main (the folder) into a Minecraft datapack folder.
+3. Put the contents of UHCPlus-main (the folder) into a Minecraft datapack folder. (Compatible with Paper servers.)
