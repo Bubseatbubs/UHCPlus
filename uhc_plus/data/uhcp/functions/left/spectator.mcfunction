@@ -27,7 +27,7 @@ scoreboard players operation @s uhcp_id = %global uhcp_id
 execute unless score %players uhcp_id matches ..0 run function uhcp:left/spectator/bossbar
 
 # Augment countdown bossbar
-execute if score %augment_countdown uhcp_game_time matches 1.. run bossbar set uhcp:augment players @a
+execute if score %augment_countdown uhcp_game_time matches 1.. unless score %tier uhcp_aug_tier matches -1 run bossbar set uhcp:augment players @a
 
 # Manage player
 gamemode spectator @s
