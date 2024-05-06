@@ -7,7 +7,7 @@
 
 tag @s add UHCP_AugmentAnnounce
 
-# Silver Augments
+# Silver augments
 execute as @a[scores={uhcp_augment=100}] run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" !shoma","color":"gold"},{"text":"! balls","color":"white"}]
 execute as @a[scores={uhcp_augment=101}] run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" AFK","color":"gold"},{"text":"!","color":"white"}]
 execute as @a[scores={uhcp_augment=102}] run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Blacksmith","color":"gold"},{"text":"!","color":"white"}]
@@ -59,7 +59,7 @@ execute as @a[scores={uhcp_augment=149}] run tellraw @a[tag=UHCP_AugmentAnnounce
 execute as @a[scores={uhcp_augment=150}] run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Cram Session","color":"gold"},{"text":"!","color":"white"}]
 execute as @a[scores={uhcp_augment=151}] run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Harvest Season I","color":"gold"},{"text":"!","color":"white"}]
 
-# Gold Augments
+# Gold augments
 execute as @a[scores={uhcp_augment=0}] run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Bee Keeper","color":"gold"},{"text":"!","color":"white"}]
 execute as @a[scores={uhcp_augment=1}] run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Birds of a Feather","color":"gold"},{"text":"!","color":"white"}]
 execute as @a[scores={uhcp_augment=2}] run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Blood Diamonds","color":"gold"},{"text":"!","color":"white"}]
@@ -117,7 +117,7 @@ execute as @a[scores={uhcp_augment=54}] run tellraw @a[tag=UHCP_AugmentAnnounce,
 execute as @a[scores={uhcp_augment=55}] run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Hardstuck Iron","color":"gold"},{"text":"!","color":"white"}]
 execute as @a[scores={uhcp_augment=56}] run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Locked Out","color":"gold"},{"text":"!","color":"white"}]
 
-# Prismatic Augments
+# Prismatic augments
 execute as @a[scores={uhcp_augment=200}] run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Beastmaster","color":"gold"},{"text":"!","color":"white"}]
 execute as @a[scores={uhcp_augment=201}] run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Bowmaster","color":"gold"},{"text":"!","color":"white"}]
 execute as @a[scores={uhcp_augment=202}] run tellraw @a[tag=UHCP_AugmentAnnounce,limit=1] [{"selector":"@s","color":"blue"},{"text":" selected","color":"white"},{"text":" Cold Blooded","color":"gold"},{"text":"!","color":"white"}]

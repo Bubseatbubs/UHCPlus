@@ -10,4 +10,3 @@ execute as @a[tag=!UHCP_Spectator] at @s if biome ~ ~-1 ~ #uhcp:snowy run loot r
 effect give @a[tag=!UHCP_Spectator] minecraft:speed 15 0 false
 effect give @a[tag=!UHCP_Spectator] minecraft:resistance 120 4 false
 execute as @a[tag=!UHCP_Spectator] run attribute @s minecraft:player.block_break_speed modifier add 4329681b-2b41-4dc1-8b3a-4a5ebae3c1ce "" 1.2 add_multiplied_total
-execute if score %night_vision uhcp_settings matches 1 run effect give @a[tag=!UHCP_Spectator] minecraft:night_vision infinite 0 true

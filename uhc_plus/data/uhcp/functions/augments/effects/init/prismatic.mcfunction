@@ -13,7 +13,7 @@ execute if score @s uhcp_augment matches 212 run return run function uhcp:augmen
 execute if score @s uhcp_augment matches 213 run return run function uhcp:augments/effects/prismatic/librarian
 execute if score @s uhcp_augment matches 214 run return run function uhcp:augments/effects/prismatic/netherborn
 execute if score @s uhcp_augment matches 216 run return run function uhcp:augments/effects/prismatic/potionmaster
-execute if score @s uhcp_augment matches 217 run return run function uhcp:augments/effects/prismatic/primetarget
+execute if score @s uhcp_augment matches 217 run return run function uhcp:augments/effects/prismatic/centerofattention
 execute if score @s uhcp_augment matches 218 run return 0
 execute if score @s uhcp_augment matches 219 run return run function uhcp:augments/effects/prismatic/lilestbro
 execute if score @s uhcp_augment matches 220 run return run function uhcp:augments/effects/prismatic/cyberneticdownload

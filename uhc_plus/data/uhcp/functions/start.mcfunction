@@ -200,9 +200,9 @@ execute unless score %tier uhcp_aug_tier matches -1 run tellraw @a[tag=!UHCP_Spe
 # Effects
 effect clear @a
 effect give @a[tag=!UHCP_Spectator] minecraft:regeneration 10 5 true
-effect give @a[tag=!UHCP_Spectator] minecraft:resistance infinite 5 true
-effect give @a[tag=!UHCP_Spectator] minecraft:saturation infinite 255 true
-effect give @a[tag=!UHCP_Spectator] minecraft:weakness infinite 4 true
+execute unless score %tier uhcp_aug_tier matches -1 run effect give @a[tag=!UHCP_Spectator] minecraft:resistance infinite 5 true
+execute unless score %tier uhcp_aug_tier matches -1 run effect give @a[tag=!UHCP_Spectator] minecraft:saturation infinite 255 true
+execute unless score %tier uhcp_aug_tier matches -1 run effect give @a[tag=!UHCP_Spectator] minecraft:weakness infinite 4 true
 execute if score %night_vision uhcp_settings matches 1 run effect give @a minecraft:night_vision infinite 0 true
 execute unless score %night_vision uhcp_settings matches 1 run effect give @a[tag=UHCP_Spectator] minecraft:night_vision infinite 0 true
 
