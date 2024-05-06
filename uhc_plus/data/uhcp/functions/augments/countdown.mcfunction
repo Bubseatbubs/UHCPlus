@@ -28,7 +28,7 @@ execute if score %augment_countdown uhcp_game_time matches 1 as @a[gamemode=adve
 
 execute if score %augment_countdown uhcp_game_time matches 1.. run return 0
 
-# Ran once countdown reaches 0. Initializes the game as UHC Pack would've done, and gives all players their selected augments
+# Ran once countdown reaches 0. Initializes the game
 scoreboard players set %time uhcp_initStatus 1
 
 gamemode survival @a[gamemode=adventure]

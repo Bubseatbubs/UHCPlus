@@ -268,8 +268,9 @@ item replace entity @a enderchest.26 with minecraft:air
 
 # Augments
 scoreboard players set %augment_countdown uhcp_game_time 900
-bossbar set uhcp:augment players @a
-execute as @a[tag=!UHCP_Spectator] run function uhcp:start/augments
+execute unless score %tier uhcp_aug_tier matches -1 run bossbar set uhcp:augment players @a
+execute unless score %tier uhcp_aug_tier matches -1 as @a[tag=!UHCP_Spectator] run function uhcp:start/augments
+execute if score %tier uhcp_aug_tier matches -1 run function uhcp:start/no_augments
 
 # Spectators
 clear @a[tag=UHCP_Spectator]
