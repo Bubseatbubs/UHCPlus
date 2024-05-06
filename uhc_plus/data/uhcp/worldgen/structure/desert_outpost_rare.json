@@ -3,8 +3,7 @@
   "biomes": [
     "minecraft:badlands",
     "minecraft:desert",
-    "minecraft:eroded_badlands",
-    "minecraft:wooded_badlands"
+    "minecraft:eroded_badlands"
   ],
   "step": "surface_structures",
   "spawn_overrides": {},
