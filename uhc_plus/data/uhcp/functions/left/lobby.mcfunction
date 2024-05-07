@@ -1,4 +1,12 @@
 # Move player to lobby
+# Remove tags
+tag @s remove UHCP_ChoosingItem
+tag @s remove UHCP_Died
+tag @s remove UHCP_DisableArmorAndOffhand
+tag @s remove UHCP_Explode
+execute if score @s uhcp_augment matches 220 run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
+execute if score @s uhcp_augment matches 25 run function uhcp:augments/effects/gold/scavengerhunt/reset
+
 # Scores
 scoreboard players reset @s lobby
 scoreboard players reset @s patron
@@ -6,14 +14,7 @@ scoreboard players reset @s team
 scoreboard players reset @s testkit
 scoreboard players reset @s top
 scoreboard players reset @s uhcp_augment
-
-# Remove tags
-tag @s remove UHCP_ChoosingItem
-tag @s remove UHCP_Died
-tag @s remove UHCP_DisableArmorAndOffhand
-execute if score @s uhcp_augment matches 220 run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
-execute if score @s uhcp_augment matches 25 run function uhcp:augments/effects/gold/scavengerhunt/reset
-tag @s remove UHCP_Explode
+scoreboard players reset @s uhcp_game_time
 
 # Return player as needed
 execute in minecraft:overworld run forceload add -80 -80 79 79

@@ -1,14 +1,4 @@
-# Reset player whom is not part of game as spectator
-# Scores
-scoreboard players reset @s lobby
-scoreboard players reset @s patron
-scoreboard players reset @s team
-scoreboard players reset @s testkit
-scoreboard players reset @s top
-scoreboard players reset @s uhcp_augment
-scoreboard players reset @s uhcp_lobby_item
-scoreboard players set @s uhcp_team 0
-
+# Reset player whom is not part of current game as spectator
 # Remove tags
 tag @s remove UHCP_ChoosingItem
 tag @s remove UHCP_Died
@@ -17,6 +7,17 @@ tag @s remove UHCP_RelicTestingChamber
 tag @s remove UHCP_SoulflameEmbrace
 execute if score @s uhcp_augment matches 220 run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 execute if score @s uhcp_augment matches 25 run function uhcp:augments/effects/gold/scavengerhunt/reset
+
+# Scores
+scoreboard players reset @s lobby
+scoreboard players reset @s patron
+scoreboard players reset @s team
+scoreboard players reset @s testkit
+scoreboard players reset @s top
+scoreboard players reset @s uhcp_augment
+scoreboard players reset @s uhcp_lobby_item
+scoreboard players reset @s uhcp_game_time
+scoreboard players set @s uhcp_team 0
 
 # Assign IDs
 scoreboard players operation @s uhcp_game_ID = %global uhcp_game_ID
@@ -39,4 +40,5 @@ experience set @s 0 levels
 experience set @s 0 points
 team leave @s
 execute in minecraft:overworld run tp @s 0 150 0
+tp @s @r[gamemode=survival]
 tellraw @s {"text":"You are spectating the current match.","color":"red"}
