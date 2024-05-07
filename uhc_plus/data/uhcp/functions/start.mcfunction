@@ -194,15 +194,10 @@ execute if score %tier uhcp_aug_tier matches 90..109 run scoreboard players set 
 execute if score %tier uhcp_aug_tier matches 0 run title @a subtitle [{"text":"Augment Tier:","color":"#CCFCFF"},{"text":" Silver","color":"#B0B1D6","bold":true}]
 execute if score %tier uhcp_aug_tier matches 1 run title @a subtitle [{"text":"Augment Tier:","color":"#CCFCFF"},{"text":" Gold","color":"gold","bold":true}]
 execute if score %tier uhcp_aug_tier matches 2 run title @a subtitle [{"text":"Augment Tier:","color":"#CCFCFF"},{"text":" Pr","color":"#22CAD6","bold":true},{"text":"is","color":"#59FFE9","bold":true},{"text":"ma","color":"#99FAED","bold":true},{"text":"tic","color":"#D4FAEB","bold":true}]
-execute unless score %tier uhcp_aug_tier matches -1 run title @a title [{"text":"Aug","color":"#2c50f2","bold":true},{"text":"men","color":"#3D8BFF"},{"text":"t Se","color":"#59B7FF"},{"text":"lec","color":"#85EFFF"},{"text":"tion","color":"#B8FFF1"}]
-execute unless score %tier uhcp_aug_tier matches -1 run tellraw @a[tag=!UHCP_Spectator] [{"text":"[","color":"white"},{"text":"Aug","color":"#2c50f2"},{"text":"men","color":"#3D8BFF"},{"text":"t Se","color":"#59B7FF"},{"text":"lec","color":"#85EFFF"},{"text":"tion","color":"#B8FFF1"},{"text":"]\n","color":"white"},{"text":"Choose one of three augments from your inventory.\nTo choose an augment, open your inventory and\nclick on the augment you want.","color":"gray"}]
 
 # Effects
 effect clear @a
 effect give @a[tag=!UHCP_Spectator] minecraft:regeneration 10 5 true
-execute unless score %tier uhcp_aug_tier matches -1 run effect give @a[tag=!UHCP_Spectator] minecraft:resistance infinite 5 true
-execute unless score %tier uhcp_aug_tier matches -1 run effect give @a[tag=!UHCP_Spectator] minecraft:saturation infinite 255 true
-execute unless score %tier uhcp_aug_tier matches -1 run effect give @a[tag=!UHCP_Spectator] minecraft:weakness infinite 4 true
 execute if score %night_vision uhcp_settings matches 1 run effect give @a minecraft:night_vision infinite 0 true
 execute unless score %night_vision uhcp_settings matches 1 run effect give @a[tag=UHCP_Spectator] minecraft:night_vision infinite 0 true
 
@@ -237,7 +232,8 @@ function uhcp:augments/effects/prismatic/sololeveling/prepare
 # Titan Bossbars
 execute as @a run function uhcp:titans/bossbar/create
 
-# Clear ender chests
+# Clear inventories
+clear @a
 item replace entity @a enderchest.0 with minecraft:air
 item replace entity @a enderchest.1 with minecraft:air
 item replace entity @a enderchest.2 with minecraft:air
@@ -268,12 +264,10 @@ item replace entity @a enderchest.26 with minecraft:air
 
 # Augments
 scoreboard players set %augment_countdown uhcp_game_time 900
-execute unless score %tier uhcp_aug_tier matches -1 run bossbar set uhcp:augment players @a
-execute unless score %tier uhcp_aug_tier matches -1 as @a[tag=!UHCP_Spectator] run function uhcp:start/augments
+execute unless score %tier uhcp_aug_tier matches -1 run function uhcp:start/augments
 execute if score %tier uhcp_aug_tier matches -1 run function uhcp:start/no_augments
 
 # Spectators
-clear @a[tag=UHCP_Spectator]
 tp @a[tag=UHCP_Spectator] 0 150 0
 execute as @a[tag=UHCP_Spectator] run tp @s @r[tag=!UHCP_Spectator]
 gamemode spectator @a[tag=UHCP_Spectator]
