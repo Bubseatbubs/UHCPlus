@@ -901,6 +901,20 @@
                     "text": ".",
                     "color": "gray"
                   }
+                ],
+                [
+                  {
+                    "text": "After you use it, permanently gain ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "10% increased armor",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
                 ]
               ],
               "mode": "replace_all"

@@ -9,7 +9,7 @@ execute if score @s uhcp_augment matches 207 run return run function uhcp:augmen
 execute if score @s uhcp_augment matches 208 run return run function uhcp:augments/effects/prismatic/attackontitan
 execute if score @s uhcp_augment matches 210 run return 0
 execute if score @s uhcp_augment matches 211 run return run function uhcp:augments/effects/prismatic/intotheminesiii
-execute if score @s uhcp_augment matches 212 run return run function uhcp:augments/effects/prismatic/laststand
+execute if score @s uhcp_augment matches 212 run return run function uhcp:augments/effects/prismatic/laststand/init
 execute if score @s uhcp_augment matches 213 run return run function uhcp:augments/effects/prismatic/librarian
 execute if score @s uhcp_augment matches 214 run return run function uhcp:augments/effects/prismatic/netherborn
 execute if score @s uhcp_augment matches 216 run return run function uhcp:augments/effects/prismatic/potionmaster
