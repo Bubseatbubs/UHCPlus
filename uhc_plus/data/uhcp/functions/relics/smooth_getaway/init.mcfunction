@@ -16,6 +16,7 @@ execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_radiant
 item replace entity @s weapon.mainhand with minecraft:air
 
 # Player Effects
+effect clear @s invisibility
 effect give @s invisibility 10 0 true
 effect give @s resistance 3 5 true
 execute as @a[scores={uhcp_augment=239}] run effect give @s minecraft:speed 10 1 false
