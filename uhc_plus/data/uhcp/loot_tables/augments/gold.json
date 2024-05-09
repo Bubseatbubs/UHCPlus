@@ -2270,7 +2270,7 @@
                 ],
                 [
                   {
-                    "text": " Diamond Helmet and Boots",
+                    "text": "Diamond Helmet and Boots",
                     "color": "white"
                   },
                   {
@@ -2278,15 +2278,15 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Respiration III, Aqua Affinity, and Depth Strider",
+                    "text": " Respiration III,",
                     "color": "dark_purple"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
                   }
                 ],
                 [
+                  {
+                    "text": "Aqua Affinity, and Depth Strider.",
+                    "color": "dark_purple"
+                  },
                   {
                     "text": "Start with permanent ",
                     "color": "gray"
