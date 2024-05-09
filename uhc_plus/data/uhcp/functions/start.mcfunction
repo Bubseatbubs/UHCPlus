@@ -154,7 +154,7 @@ execute unless score %pvp uhcp_settings matches -1 run team join grace_period @a
 execute if score %end uhcp_initStatus matches 0 run function uhcp:start/teams/check
 
 # Move players away from lobby
-execute as @a at @s run tp @s ~ ~300 ~
+execute as @a at @s run tp @s ~ ~1000 ~
 
 # Remove lobby
 execute in minecraft:overworld run function uhcp:lobby/remove
