@@ -9,6 +9,12 @@ tag @s[scores={uhcp_augment=0..}] remove UHCP_SoulflameEmbrace
 execute if score @s uhcp_augment matches 220 run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 execute if score @s uhcp_augment matches 25 run function uhcp:augments/effects/gold/scavengerhunt/reset
 
+# Reset states
+execute as @a[tag=UHCP_IsTeleporting] run function uhcp:top/cancel
+execute as @a[tag=UHCP_IsPanda] run function uhcp:augments/effects/prismatic/kungfupanda/reset
+execute as @a[tag=UHCP_IsRabbit] run function uhcp:consumables/magic_trick/reset
+execute as @a[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal_fluid/reset
+
 # Scores
 scoreboard players reset @s lobby
 scoreboard players reset @s patron
