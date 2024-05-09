@@ -4,6 +4,8 @@ tag @s remove UHCP_ChoosingItem
 tag @s remove UHCP_Died
 tag @s remove UHCP_DisableArmorAndOffhand
 tag @s remove UHCP_Explode
+tag @a remove UHCP_SLLock
+tag @s[scores={uhcp_augment=0..}] remove UHCP_SoulflameEmbrace
 execute if score @s uhcp_augment matches 220 run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 execute if score @s uhcp_augment matches 25 run function uhcp:augments/effects/gold/scavengerhunt/reset
 
@@ -28,7 +30,7 @@ execute if score @s uhcp_ready matches 1 run function uhcp:lobby/readyup/cancel
 
 # Manage player
 gamemode adventure @s
-execute unless items entity @s container.1 *[minecraft:custom_data~{uhcp_lobby:1b}] run clear @s
+execute unless items entity @s container.2 *[minecraft:custom_data~{uhcp_lobby:7b}] run function uhcp:lobby/menu
 function uhcp:reset/attributes
 execute as @a[scores={uhcp_augment=220}] run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 effect clear @s

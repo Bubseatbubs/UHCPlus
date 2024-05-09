@@ -215,7 +215,7 @@ experience set @a 0 points
 execute as @a run function uhcp:start/id/assign
 scoreboard players operation %players uhcp_id = %global uhcp_id
 
-# Solo leveling
+# Solo leveling upgrades
 tag @a remove UHCP_SLUpg
 tag @a remove UHCP_SLAxe
 tag @a remove UHCP_SLBoots

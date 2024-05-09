@@ -33,6 +33,15 @@ execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp
 # AFK augment
 execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=101},gamemode=survival] run function uhcp:augments/effects/silver/afk/lock
 
+# Solo leveling
+execute as @a[scores={uhcp_lava_timeInterval=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
+execute as @a[scores={uhcp_lava_maxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
+
+# Cybernetic download
+execute as @a[scores={upgrade=1..3}] at @s run function uhcp:augments/effects/prismatic/cyberneticdownload/select
+execute as @a[tag=UHCP_CDSelectUpgrade] at @s run function uhcp:augments/effects/prismatic/cyberneticdownload/update_menu
+scoreboard players enable @a[tag=UHCP_CDSelectUpgrade] upgrade
+
 # Announce Augments
 execute as @a[scores={augments=1..}] run function uhcp:augments/announce
 
@@ -85,13 +94,13 @@ execute as @a[scores={uhcp_mine_rawIronBlock=1..},gamemode=survival] run functio
 # Disable Ender Pearl Damage
 execute if score %ender_pearl uhcp_settings matches 1 as @e[type=minecraft:ender_pearl] at @s run function uhcp:entity/ender_pearl
 
-# Enable triggers
-scoreboard players enable @a augments
-scoreboard players enable @a[gamemode=survival] top
-scoreboard players enable @a[gamemode=survival] testkit
-
 # Titan Loot
 execute as @e[predicate=uhcp:titans/titan_loot] at @s run function uhcp:titans/loot
 
 # Check regenerating consumables
 execute as @a[scores={uhcp_aug_regenItem=0..}] if score %time uhcp_game_time >= @s uhcp_aug_regenItem at @s run function uhcp:augments/effects/regenerate_consumables
+
+# Enable triggers
+scoreboard players enable @a augments
+scoreboard players enable @a[gamemode=survival] top
+scoreboard players enable @a[gamemode=survival] testkit

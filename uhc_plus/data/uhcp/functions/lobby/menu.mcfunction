@@ -1,7 +1,6 @@
 ##
 # Generate augment choices
 ##
-advancement revoke @s only uhcp:update_menu
 tag @s add UHCP_DisableReset
 execute unless score @s uhcp_lobby_item matches 7 run item replace entity @s armor.head with minecraft:air
 execute if score @s uhcp_lobby_item matches 7 run item replace entity @s armor.head with minecraft:player_head[minecraft:item_name='{"text":"Crewmate"}',minecraft:lore=['{"text":"STOP POSTING ABOUT AMONG US"}'],profile={id:[I;1103181598,442909615,-1944221175,-54642410],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5YmNlNzM2YTRmZDc5M2VlMmEzODI3NTZhMjUzZjkyY2E3ZDdlYWMwMzFlNDViYTk3YWQwNmNlODYzZGQ0YiJ9fX0="}]}] 1
@@ -62,3 +61,4 @@ item replace entity @s inventory.25 with minecraft:black_stained_glass_pane[mine
 item replace entity @s inventory.26 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={}] 1
 
 tag @s remove UHCP_DisableReset
+advancement revoke @s only uhcp:update_menu

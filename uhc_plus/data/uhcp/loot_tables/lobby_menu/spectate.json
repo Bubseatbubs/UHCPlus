@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_rightclick:1b,uhcp_lobby:1b,uhcp_lobby:5b}"
+              "tag": "{uhcp_rightclick:1b,uhcp_lobby:5b}"
             },
             {
               "function": "minecraft:set_components",

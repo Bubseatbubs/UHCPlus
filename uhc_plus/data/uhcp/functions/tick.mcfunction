@@ -35,13 +35,8 @@ scoreboard players enable @a settings_lava
 scoreboard players enable @a settings_border
 scoreboard players enable @a settings_team
 
-# Augments
+# Augment routines (that should be in tick function)
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
-execute as @a[scores={uhcp_lava_timeInterval=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
-execute as @a[scores={uhcp_lava_maxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
-execute as @a[scores={upgrade=1..3}] at @s run function uhcp:augments/effects/prismatic/cyberneticdownload/select
-execute as @a[tag=UHCP_CDSelectUpgrade] at @s run function uhcp:augments/effects/prismatic/cyberneticdownload/update_menu
-scoreboard players enable @a[tag=UHCP_CDSelectUpgrade] upgrade
 
 # Augment Countdown
 execute if score %augment_countdown uhcp_game_time matches 1.. run function uhcp:augments/countdown

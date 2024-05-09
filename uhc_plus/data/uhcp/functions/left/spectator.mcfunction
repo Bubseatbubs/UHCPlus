@@ -2,8 +2,10 @@
 # Remove tags
 tag @s remove UHCP_ChoosingItem
 tag @s remove UHCP_Died
+tag @s remove UHCP_DisableArmorAndOffhand
 tag @s remove UHCP_Explode
 tag @s remove UHCP_RelicTestingChamber
+tag @a remove UHCP_SLLock
 tag @s remove UHCP_SoulflameEmbrace
 execute if score @s uhcp_augment matches 220 run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 execute if score @s uhcp_augment matches 25 run function uhcp:augments/effects/gold/scavengerhunt/reset
