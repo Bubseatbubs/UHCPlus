@@ -2288,7 +2288,13 @@
                     "color": "dark_purple"
                   },
                   {
-                    "text": "Start with permanent ",
+                    "text": " Start with",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "permanent ",
                     "color": "gray"
                   },
                   {
