@@ -9,7 +9,7 @@
             "entity": "this",
             "predicate": {
               "slots": {
-                "weapon.mainhand": {
+                "container.*": {
                   "predicates": {
                     "minecraft:custom_data": "{uhcp_relic:1b}",
                     "minecraft:damage": {
@@ -27,6 +27,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:relics/durability/increase"
+    "function": "uhcp:relics/durability/update_inventory"
   }
 }

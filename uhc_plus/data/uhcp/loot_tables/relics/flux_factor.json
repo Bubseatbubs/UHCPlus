@@ -16,7 +16,7 @@
               "components": {
                 "minecraft:enchantments": {
                   "levels": {
-                    "minecraft:vanishing_curse": 1
+                    "minecraft:protection": 1
                   },
                   "show_in_tooltip": false
                 },
@@ -28,7 +28,7 @@
                 },
                 "minecraft:max_stack_size": 1,
                 "minecraft:damage": 0,
-                "minecraft:max_damage": 1700,
+                "minecraft:max_damage": 3200,
                 "minecraft:repair_cost": 100,
                 "minecraft:hide_additional_tooltip": {}
               }

@@ -26,5 +26,6 @@ tag @s remove UHCP_Owner
 tag @e remove UHCP_SaberTarget
 tag @e remove UHCP_New
 tag @s remove UHCP_PreparePhantomPains
+scoreboard players reset @s uhcp_relic_sfe_time
 scoreboard players reset @e[distance=..6] uhcp_aug_count
 scoreboard players reset @s uhcp_aug_stack

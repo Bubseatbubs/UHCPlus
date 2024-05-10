@@ -15,7 +15,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:max_stack_size": 1,
-                "minecraft:max_damage": 800,
+                "minecraft:max_damage": 1400,
                 "minecraft:damage": 0,
                 "minecraft:repair_cost": 100,
                 "minecraft:food": {
