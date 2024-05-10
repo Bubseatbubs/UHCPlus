@@ -21,3 +21,6 @@ scoreboard players operation %arrow_limit5 uhcp_arrowCount += %arrow_limit5_def 
 scoreboard players operation %arrow_limit201 uhcp_arrowCount += %arrow_limit201_def uhcp_settings
 
 tellraw @s [{"text":"The maximum arrow count has been set to "},{"score":{"name":"%arrow_limit","objective":"uhcp_arrowCount"},"color":"gold"},{"text":" Arrows."}]
+
+# Grant advancement under proper conditions
+execute unless score %game uhcp_initStatus matches 1 if score @s uhcp_settings matches 400..403 run advancement grant @a[gamemode=survival] only uhcp:arrow_limit
