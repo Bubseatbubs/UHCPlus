@@ -1,6 +1,3 @@
-# Less than 3
-execute if score @s uhcp_augment matches 17 run return run function uhcp:milk_bucket/apply/augments/gold/lessthan3
-
 # Late Looter
 execute if score @s uhcp_augment matches 18 run return run function uhcp:milk_bucket/apply/augments/gold/latelooter
 
