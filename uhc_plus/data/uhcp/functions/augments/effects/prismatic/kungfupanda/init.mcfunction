@@ -25,7 +25,6 @@ execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_id = @s uhcp_id
 scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_team = @s uhcp_team
 execute as @e[tag=UHCP_New,sort=nearest,limit=1] run function uhcp:teams/join
-execute if score %pvp uhcp_settings matches 1.. run team join grace_period @e[type=panda,tag=UHCP_New]
 execute if score %pvp uhcp_settings matches ..0 run team join no_collision @e[tag=UHCP_New,sort=nearest,scores={uhcp_team=15..},limit=1]
 tag @e remove UHCP_New
 
