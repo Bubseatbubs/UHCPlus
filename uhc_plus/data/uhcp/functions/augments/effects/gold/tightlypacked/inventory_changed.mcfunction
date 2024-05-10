@@ -1,5 +1,3 @@
-advancement revoke @s only uhcp:augments/tightly_packed_changed
-
 # Check if pane was thrown
 execute as @e[type=item,distance=..8] if predicate uhcp:augments/tightly_packed run kill @s
 
@@ -12,3 +10,5 @@ execute if score %panes uhcp_aug_count matches 10.. run clear @s *[minecraft:cus
 execute if score %panes uhcp_aug_count matches 10.. run function uhcp:augments/effects/gold/tightlypacked/regenerate
 
 execute if score %success uhcp_aug_count matches 1 run function uhcp:augments/effects/gold/tightlypacked/checkslots
+
+advancement revoke @s only uhcp:augments/tightly_packed_changed
