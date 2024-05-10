@@ -21,6 +21,7 @@ scoreboard players operation @e[tag=UHCP_InitScore] uhcp_id = %global uhcp_id
 scoreboard players operation @e[tag=UHCP_InitScore] uhcp_team = @p[tag=UHCP_Owner] uhcp_team
 execute as @e[tag=UHCP_InitScore] run function uhcp:teams/join
 execute as @e[tag=UHCP_InitScore] if score @s uhcp_team matches 15.. run team join no_collision @s
+execute if score %pvp uhcp_settings matches 1.. run team join grace_period @e[tag=UHCP_InitScore]
 tag @e[tag=UHCP_InitScore] remove UHCP_InitScore
 tag @s remove UHCP_Owner
 tag @e remove UHCP_New
