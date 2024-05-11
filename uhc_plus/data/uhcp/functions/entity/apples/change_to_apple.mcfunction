@@ -1,0 +1,1 @@
+data merge entity @s {Item:{id:"minecraft:apple",count:1}}

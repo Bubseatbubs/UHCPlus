@@ -104,3 +104,7 @@ execute as @a[scores={uhcp_aug_regenItem=0..}] if score %time uhcp_game_time >= 
 scoreboard players enable @a augments
 scoreboard players enable @a[gamemode=survival] top
 scoreboard players enable @a[gamemode=survival] testkit
+
+# Fake Apples
+execute as @e[predicate=uhcp:apple_head] at @s run function uhcp:entity/apples/change_to_apple
+execute as @e[predicate=uhcp:golden_apple_head] at @s run function uhcp:entity/apples/change_to_golden_apple
