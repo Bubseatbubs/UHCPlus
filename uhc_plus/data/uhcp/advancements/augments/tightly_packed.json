@@ -12,6 +12,18 @@
             }
           },
           {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%time"
+              },
+              "score": "uhcp_initStatus"
+            },
+            "range": 1
+          },
+          {
             "condition": "minecraft:inverted",
             "term": {
               "condition": "minecraft:entity_scores",
