@@ -1,3 +1,2 @@
-summon minecraft:item ~ ~ ~ {PickupDelay:40s,Tags:["UHCP_TightlyPackedItem"],Item:{id:"minecraft:stone",count:1,components:{"minecraft:custom_data":{uhcp_lockedslot:1b}}}}
-data modify entity @e[tag=UHCP_TightlyPackedItem,sort=nearest,limit=1] Item set from entity @s Inventory[{Slot:32b}]
-tag @e remove UHCP_TightlyPackedItem
+execute if items entity @s container.32 * run function uhcp:augments/effects/gold/tightlypacked/drop/32
+item replace entity @s container.32 with minecraft:gray_stained_glass_pane[custom_data={uhcp_lockedslot:1b},item_name='{"text":"Locked Slot"}',lore=['{"bold":true,"color":"dark_red","text":"This slot is locked because"}','{"bold":true,"color":"dark_red","text":"of Tightly Packed."}'],enchantments={levels:{"minecraft:blast_protection":1},show_in_tooltip:false},max_stack_size=1] 1
