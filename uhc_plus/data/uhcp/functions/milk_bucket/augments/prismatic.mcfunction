@@ -17,4 +17,7 @@ execute if score @s uhcp_augment matches 225 run return run function uhcp:milk_b
 execute if score @s uhcp_augment matches 226 run return run function uhcp:milk_bucket/augments/prismatic/thehare
 
 # Trailblazer
-execute if score @s uhcp_augment matches 231 run function uhcp:milk_bucket/augments/prismatic/netherborn
+execute if score @s uhcp_augment matches 231 run return run function uhcp:milk_bucket/augments/prismatic/trailblazer
+
+# Think Fast
+execute if score @s uhcp_augment matches 241 run return run execute if score %time uhcp_game_time matches ..11999 run function uhcp:milk_bucket/augments/prismatic/thinkfast
