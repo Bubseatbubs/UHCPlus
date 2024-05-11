@@ -55,5 +55,5 @@ item replace entity @s container.33 with minecraft:gray_stained_glass_pane[custo
 item replace entity @s container.34 with minecraft:gray_stained_glass_pane[custom_data={uhcp_lockedslot:1b},item_name='{"text":"Locked Slot"}',lore=['{"bold":true,"color":"dark_red","text":"This slot is locked because"}','{"bold":true,"color":"dark_red","text":"of Tightly Packed."}'],enchantments={levels:{"minecraft:blast_protection":1},show_in_tooltip:false},max_stack_size=1] 1
 item replace entity @s container.35 with minecraft:gray_stained_glass_pane[custom_data={uhcp_lockedslot:1b},item_name='{"text":"Locked Slot"}',lore=['{"bold":true,"color":"dark_red","text":"This slot is locked because"}','{"bold":true,"color":"dark_red","text":"of Tightly Packed."}'],enchantments={levels:{"minecraft:blast_protection":1},show_in_tooltip:false},max_stack_size=1] 1
 
-playsound block.note_block.snare master @s ~ ~ ~ 1 1 1
+playsound minecraft:block.note_block.snare master @s ~ ~ ~ 1 1 1
 advancement revoke @s only uhcp:augments/tightly_packed

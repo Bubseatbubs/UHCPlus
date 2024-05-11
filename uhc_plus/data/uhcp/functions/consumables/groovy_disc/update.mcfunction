@@ -1,1 +1,1 @@
-particle note ~ ~ ~ 1.5 1.5 1.5 0.001 2 normal @s
+particle minecraft:note ~ ~ ~ 1.5 1.5 1.5 0.001 2 normal @s

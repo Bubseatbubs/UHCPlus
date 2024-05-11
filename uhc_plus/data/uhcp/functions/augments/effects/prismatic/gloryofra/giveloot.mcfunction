@@ -1,9 +1,9 @@
 advancement revoke @s only uhcp:augments/gained_enough_stacks
 scoreboard players set @s uhcp_aug_gloryOfRa -10
-playsound ui.toast.challenge_complete master @s ~ ~ ~ 1 1 1
-particle end_rod ~ ~ ~ 0.3 10 0.3 0.1 1000 normal
-clear @s clock[minecraft:custom_data~{uhcp_sundisk:1b}]
-effect give @s absorption 10 5 true
+playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 1 1
+particle minecraft:end_rod ~ ~ ~ 0.3 10 0.3 0.1 1000 normal
+clear @s minecraft:clock[minecraft:custom_data~{uhcp_sundisk:1b}]
+effect give @s minecraft:absorption 10 5 true
 
 execute store result score %random uhcp_aug_count run random value 0..10
 

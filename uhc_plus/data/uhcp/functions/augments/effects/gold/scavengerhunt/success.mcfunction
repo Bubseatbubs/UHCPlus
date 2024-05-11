@@ -37,5 +37,5 @@ execute if score %item uhcp_aug_count matches 17 if items entity @s container.* 
 execute if score %item uhcp_aug_count matches 18 if items entity @s container.* rabbit_hide run tellraw @s [{"text":"You obtained ","color":"gray"},{"text":"Rabbit Hide","color":"white","bold":true},{"text":". [","color":"gray"},{"score":{"name":"@s","objective":"uhcp_aug_count"},"color":"light_purple"},{"text":"/5]","color":"gray"}]
 execute if score %item uhcp_aug_count matches 19 if items entity @s container.* bell run tellraw @s [{"text":"You obtained ","color":"gray"},{"text":"Bell","color":"white","bold":true},{"text":". [","color":"gray"},{"score":{"name":"@s","objective":"uhcp_aug_count"},"color":"light_purple"},{"text":"/5]","color":"gray"}]
 
-playsound block.note_block.chime master @s ~ ~ ~ 1 1 1
+playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
 

@@ -1,5 +1,5 @@
-summon vex ~ ~ ~ {Tags:["UHCP_Minion"],Health:4f,HandItems:[{id:"minecraft:stone_sword",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}}}},{}],Attributes:[{Name:"generic.scale",Base:3}]}
-summon vex ~ ~ ~ {Tags:["UHCP_Minion"],Health:4f,HandItems:[{id:"minecraft:stone_sword",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}}}},{}],Attributes:[{Name:"generic.scale",Base:3}]}
-summon vex ~ ~ ~ {Tags:["UHCP_Minion"],Health:4f,HandItems:[{id:"minecraft:stone_sword",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}}}},{}],Attributes:[{Name:"generic.scale",Base:3}]}
-summon vex ~ ~ ~ {Tags:["UHCP_Minion"],Health:4f,HandItems:[{id:"minecraft:stone_sword",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}}}},{}],Attributes:[{Name:"generic.scale",Base:3}]}
-execute as @a[gamemode=survival,distance=..16] at @s run playsound entity.elder_guardian.curse master @s ~ ~ ~ 1 1 1
+summon minecraft:vex ~ ~ ~ {Tags:["UHCP_Minion"],Health:4f,HandItems:[{id:"minecraft:stone_sword",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}}}},{}],Attributes:[{Name:"generic.scale",Base:3}]}
+summon minecraft:vex ~ ~ ~ {Tags:["UHCP_Minion"],Health:4f,HandItems:[{id:"minecraft:stone_sword",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}}}},{}],Attributes:[{Name:"generic.scale",Base:3}]}
+summon minecraft:vex ~ ~ ~ {Tags:["UHCP_Minion"],Health:4f,HandItems:[{id:"minecraft:stone_sword",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}}}},{}],Attributes:[{Name:"generic.scale",Base:3}]}
+summon minecraft:vex ~ ~ ~ {Tags:["UHCP_Minion"],Health:4f,HandItems:[{id:"minecraft:stone_sword",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}}}},{}],Attributes:[{Name:"generic.scale",Base:3}]}
+execute as @a[gamemode=survival,distance=..16] at @s run playsound minecraft:entity.elder_guardian.curse master @s ~ ~ ~ 1 1 1

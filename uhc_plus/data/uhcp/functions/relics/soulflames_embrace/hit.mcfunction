@@ -11,11 +11,11 @@ execute unless entity @e[tag=UHCP_SaberTarget,distance=..6] run tag @s add UHCP_
 execute unless entity @e[tag=UHCP_SaberTarget] run tag @s remove UHCP_Owner
 execute unless entity @e[tag=UHCP_SaberTarget] run return 0
 
-execute at @e[tag=UHCP_SaberTarget] run playsound entity.blaze.shoot master @a[distance=..9] ~ ~ ~ 1 1 0.5
-execute at @e[tag=UHCP_SaberTarget] run playsound block.fire.ambient master @a[distance=..9] ~ ~ ~ 1 1 0.5
-execute at @e[tag=UHCP_SaberTarget] run particle soul_fire_flame ~ ~2 ~ 0.25 0.5 0.25 1 300 normal
-execute at @e[tag=UHCP_SaberTarget] run particle soul ~ ~2 ~ 0.25 0.5 0.25 1 100 normal
-execute at @e[tag=UHCP_SaberTarget] run summon marker ~ ~ ~ {Tags:["UHCP_Summon","UHCP_Saber","UHCP_New"]}
+execute at @e[tag=UHCP_SaberTarget] run playsound minecraft:entity.blaze.shoot master @a[distance=..9] ~ ~ ~ 1 1 0.5
+execute at @e[tag=UHCP_SaberTarget] run playsound minecraft:block.fire.ambient master @a[distance=..9] ~ ~ ~ 1 1 0.5
+execute at @e[tag=UHCP_SaberTarget] run particle minecraft:soul_fire_flame ~ ~2 ~ 0.25 0.5 0.25 1 300 normal
+execute at @e[tag=UHCP_SaberTarget] run particle minecraft:soul ~ ~2 ~ 0.25 0.5 0.25 1 100 normal
+execute at @e[tag=UHCP_SaberTarget] run summon minecraft:marker ~ ~ ~ {Tags:["UHCP_Summon","UHCP_Saber","UHCP_New"]}
 
 
 # Gets team value

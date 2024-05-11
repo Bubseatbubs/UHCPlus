@@ -2,7 +2,7 @@ advancement revoke @s only uhcp:consumables/ate_soul_apple
 
 playsound minecraft:entity.allay.death master @s ~ ~ ~ 1 1.5 1
 playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1 1
-particle soul ~ ~ ~ 1 1 1 0.1 100 normal
+particle minecraft:soul ~ ~ ~ 1 1 1 0.1 100 normal
 
 execute if score @s uhcp_augment matches 48 run return run function uhcp:augments/effects/gold/soulsiphon/atesoulapple
 

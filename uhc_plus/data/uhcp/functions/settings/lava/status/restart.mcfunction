@@ -25,8 +25,8 @@ scoreboard players set %lava_secondary uhcp_initStatus 1
 execute if score %lava_barrier uhcp_lava_time matches ..15 run scoreboard players set %lava_barrier uhcp_lava_time 10
 
 # Lava notification
-execute as @a at @s run playsound block.lava.pop master @s ~ ~ ~ 1 1 1
-execute as @a at @s run playsound item.bucket.empty_lava master @s ~ ~ ~ 1 1 1
+execute as @a at @s run playsound minecraft:block.lava.pop master @s ~ ~ ~ 1 1 1
+execute as @a at @s run playsound minecraft:item.bucket.empty_lava master @s ~ ~ ~ 1 1 1
 
 # Start raising lava
 scoreboard players set %lava_start uhcp_initStatus 1

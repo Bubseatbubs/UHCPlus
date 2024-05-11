@@ -1,4 +1,4 @@
-playsound block.note_block.chime master @s ~ ~ ~ 1 1 1
+playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
 tag @s remove UHCP_CDSelectUpgrade
 
 execute if score @s upgrade matches 1 run function uhcp:augments/effects/prismatic/cyberneticdownload/select/short

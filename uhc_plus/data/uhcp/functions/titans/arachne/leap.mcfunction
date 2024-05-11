@@ -13,6 +13,6 @@ execute store result entity @s Motion[0] double 0.2 run scoreboard players opera
 execute store result entity @s Motion[1] double 0.09 run scoreboard players operation @s uhcp_motion_y2 -= @s uhcp_motion_y1
 execute store result entity @s Motion[2] double 0.2 run scoreboard players operation @s uhcp_motion_z2 -= @s uhcp_motion_z1
 
-execute at @s run playsound entity.spider.ambient hostile @a[distance=..48] ~ ~ ~ 100 0.5 0.3
-execute at @s run playsound entity.polar_bear.warning hostile @a[distance=..16] ~ ~ ~ 100 0.5 0.3
-execute at @s run particle cloud ~ ~ ~ 0.5 1 1 1 100 normal
+execute at @s run playsound minecraft:entity.spider.ambient hostile @a[distance=..48] ~ ~ ~ 100 0.5 0.3
+execute at @s run playsound minecraft:entity.polar_bear.warning hostile @a[distance=..16] ~ ~ ~ 100 0.5 0.3
+execute at @s run particle minecraft:cloud ~ ~ ~ 0.5 1 1 1 100 normal

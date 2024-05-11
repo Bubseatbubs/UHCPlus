@@ -1,1 +1,1 @@
-$give @s redstone $(remainder)
+$give @s minecraft:redstone $(remainder)

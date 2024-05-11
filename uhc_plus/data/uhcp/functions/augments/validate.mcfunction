@@ -32,7 +32,7 @@ execute if items entity @s player.cursor *[minecraft:custom_data~{uhcp_panes:1b}
 execute if score @s uhcp_aug_validSelection matches 0 unless items entity @s player.cursor *[!minecraft:custom_data~{uhcp_panes:1b}] run scoreboard players set @s uhcp_aug_validSelection 8
 
 # If no cases were met, continue with optionselected, else handle case
-execute if score @s uhcp_aug_validSelection matches 1.. run playsound block.note_block.snare master @s ~ ~ ~ 1 1 1
+execute if score @s uhcp_aug_validSelection matches 1.. run playsound minecraft:block.note_block.snare master @s ~ ~ ~ 1 1 1
 execute as @s[scores={uhcp_aug_validSelection=0},tag=!UHCP_DisableChoose] run function uhcp:augments/optionselected
 execute as @s[scores={uhcp_aug_validSelection=1},tag=!UHCP_DisableChoose] run function uhcp:augments/return
 execute as @s[scores={uhcp_aug_validSelection=2..6},tag=!UHCP_DisableChoose] run function uhcp:augments/return/swap

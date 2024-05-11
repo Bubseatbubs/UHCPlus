@@ -11,6 +11,6 @@ execute if score %random uhcp_aug_count matches 2 run function uhcp:augments/eff
 execute if score %random uhcp_aug_count matches 3 run function uhcp:augments/effects/prismatic/radiantblessing/loot/3
 execute if score %random uhcp_aug_count matches 4 run function uhcp:augments/effects/prismatic/radiantblessing/loot/4
 
-execute at @s run particle end_rod ~ ~ ~ 0.1 2 0.1 0.1 50 normal
-execute at @s run playsound entity.player.levelup master @s ~ ~ ~ 1 1.5 1
-effect give @s absorption 10 4 true
+execute at @s run particle minecraft:end_rod ~ ~ ~ 0.1 2 0.1 0.1 50 normal
+execute at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1.5 1
+effect give @s minecraft:absorption 10 4 true

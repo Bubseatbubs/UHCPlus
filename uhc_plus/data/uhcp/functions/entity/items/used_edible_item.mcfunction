@@ -32,7 +32,6 @@ execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consuma
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:17b}] at @s run return run function uhcp:consumables/ragnarok_bone/init
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:18b}] at @s run return run function uhcp:consumables/high_tide/init
 
-
 # Consumables (Offhand)
 execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumable:1b}] at @s run return run function uhcp:consumables/portable_lava_pool/init
 execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumable:3b}] at @s run return run function uhcp:consumables/relic_invoker/use
@@ -52,4 +51,3 @@ execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_lobby:7
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_lobby:8b}] at @s run return run function uhcp:lobby/relic_testing/back
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_lobby:9b}] at @s run return run function uhcp:lobby/relic_testing/forward
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_lobby:10b}] at @s run return run function uhcp:lobby/settings_display/menu
-

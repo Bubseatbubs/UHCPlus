@@ -1,5 +1,5 @@
 tag @s add UHCP_CurrentFluxFactor
-execute if entity @s[tag=UHCP_ZeusFavor] as @a[gamemode=survival] if score @s uhcp_team = @e[tag=UHCP_CurrentFluxFactor,sort=nearest,limit=1] uhcp_team run effect give @s resistance 1 5 true
+execute if entity @s[tag=UHCP_ZeusFavor] as @a[gamemode=survival] if score @s uhcp_team = @e[tag=UHCP_CurrentFluxFactor,sort=nearest,limit=1] uhcp_team run effect give @s minecraft:resistance 1 5 true
 execute if entity @s[tag=UHCP_ZeusFavor] as @a[gamemode=survival] if score @s uhcp_team = @e[tag=UHCP_CurrentFluxFactor,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_Invulnerable
 
 particle minecraft:cloud ~ ~1 ~ 0.1 0.1 0.1 1 50 normal

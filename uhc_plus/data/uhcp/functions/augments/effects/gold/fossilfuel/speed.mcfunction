@@ -1,1 +1,1 @@
-$effect give @s speed $(amount) 0 false
+$effect give @s minecraft:speed $(amount) 0 false
