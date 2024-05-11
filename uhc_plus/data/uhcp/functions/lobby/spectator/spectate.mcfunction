@@ -1,7 +1,6 @@
 tag @s add UHCP_DisableReset
 scoreboard players set @s uhcp_ready 2
 team leave @s
-clear @s *[minecraft:custom_data~{uhcp_lobby:5b}]
 loot replace entity @s container.8 loot uhcp:lobby_menu/ready
 loot replace entity @s container.7 loot uhcp:lobby_menu/stop_spectate
 function uhcp:lobby/readyup/check

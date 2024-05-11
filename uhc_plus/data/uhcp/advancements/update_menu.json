@@ -15,6 +15,15 @@
               "condition": "minecraft:any_of",
               "terms": [
                 {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "uhcp_leave": {
+                      "min": 1
+                    }
+                  }
+                },
+                {
                   "condition": "minecraft:entity_properties",
                   "entity": "this",
                   "predicate": {
@@ -30,23 +39,20 @@
                       "gamemode": "creative"
                     }
                   }
+                },
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "%game"
+                    },
+                    "score": "uhcp_initStatus"
+                  },
+                  "range": 1
                 }
               ]
-            }
-          },
-          {
-            "condition": "minecraft:inverted",
-            "term": {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "%game"
-                },
-                "score": "uhcp_initStatus"
-              },
-              "range": 1
             }
           }
         ]

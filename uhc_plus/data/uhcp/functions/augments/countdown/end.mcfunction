@@ -3,4 +3,4 @@
 execute if biome ~ ~-1 ~ #uhcp:snowy run loot replace entity @s armor.feet loot uhcp:snow_boots
 
 execute at @s run function uhcp:augments/effects/init
-execute at @s run function uhcp:augments/announce
+function uhcp:augments/announce

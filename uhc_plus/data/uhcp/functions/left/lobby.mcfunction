@@ -29,7 +29,6 @@ scoreboard players reset @s uhcp_id
 scoreboard players reset @s uhcp_itemCount
 scoreboard players reset @s uhcp_lava_timeInterval
 scoreboard players reset @s uhcp_lava_maxHeight
-scoreboard players reset @s uhcp_lobby_item
 scoreboard players reset @s uhcp_aug_tier
 scoreboard players reset @s uhcp_aug_count
 scoreboard players reset @s uhcp_relic_count
@@ -39,8 +38,6 @@ scoreboard players reset @s uhcp_team
 scoreboard players reset @s uhcp_top_CD
 scoreboard players reset @s uhcp_top_charge
 scoreboard players reset @s uhcp_top_delay
-scoreboard players set @s uhcp_ready 0
-
 
 # Return player as needed
 execute in minecraft:overworld run forceload add -80 -80 79 79
@@ -48,15 +45,12 @@ execute at @e[tag=UHCP_LobbyOrigin,limit=1] align y run function uhcp:left/lobby
 execute in minecraft:overworld run forceload remove -80 -80 79 79
 
 # Lobby menu
-execute unless score @s uhcp_ready = @s uhcp_ready run scoreboard players set @s uhcp_ready 0
-function uhcp:lobby/menu
 execute if score @s uhcp_ready matches 1 run function uhcp:lobby/readyup/cancel
+execute unless items entity @s container.2 *[minecraft:custom_data~{uhcp_lobby:7b}] run function uhcp:lobby/menu
 
 # Manage player
 gamemode adventure @s
-execute unless items entity @s container.2 *[minecraft:custom_data~{uhcp_lobby:7b}] run function uhcp:lobby/menu
 function uhcp:reset/attributes
-execute as @s[scores={uhcp_augment=220}] run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 effect clear @s
 effect give @s minecraft:instant_health 2 5 true
 effect give @s minecraft:resistance infinite 5 true
