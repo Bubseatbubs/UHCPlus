@@ -51,6 +51,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/gold/tightlypacked/panes"
+    "function": "uhcp:augments/effects/gold/tightlypacked/pane"
   }
 }
