@@ -49,8 +49,8 @@ execute if entity @s[tag=UHCP_GallieNetherPortal] run return run function uhcp:t
 execute if entity @s[tag=UHCP_Bellan] unless entity @e[tag=UHCP_Gallie,distance=..12] run kill @s
 
 # Augments
-execute if entity @s[tag=UHCP_PhantomClaw,tag=!UHCP_FlyingTowardsTarget] run return run function uhcp:augments/effects/gold/phantomclaw/update
-execute if entity @s[tag=UHCP_FlyingTowardsTarget] at @s run return run function uhcp:augments/effects/gold/phantomclaw/update_flight
+execute if entity @s[tag=UHCP_PhantomSaber,tag=!UHCP_FlyingTowardsTarget] run return run function uhcp:augments/effects/gold/phantomsaber/update
+execute if entity @s[tag=UHCP_FlyingTowardsTarget] at @s run return run function uhcp:augments/effects/gold/phantomsaber/update_flight
 execute if entity @s[tag=UHCP_TrailblazeMarker] at @s run return run function uhcp:augments/effects/prismatic/trailblazer/update_fire
 execute if entity @s[tag=UHCP_Sniffa] at @s run function uhcp:augments/effects/gold/sniffa/update
 execute if entity @s[tag=UHCP_Prop] at @s run function uhcp:augments/effects/silver/prophunt/update

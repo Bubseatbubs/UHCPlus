@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:augments/attacked_with_phantom_claw
+advancement revoke @s only uhcp:augments/attacked_with_phantom_saber
 
 # 20% chance to proc follow up
 execute store result score @s uhcp_aug_stack run random value 0..4 
@@ -11,13 +11,13 @@ execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
 tag @s add UHCP_Owner
 execute as @e[tag=UHCP_PhantomDestination] if score @s uhcp_id = @a[tag=UHCP_Owner,sort=nearest,limit=1] uhcp_id run kill @s
-execute as @e[tag=UHCP_PhantomClaw] if score @s uhcp_id = @a[tag=UHCP_Owner,sort=nearest,limit=1] uhcp_id run tag @s add UHCP_FlyingTowardsTarget
-execute as @e[tag=UHCP_PhantomClaw] if score @s uhcp_id = @a[tag=UHCP_Owner,sort=nearest,limit=1] uhcp_id run data merge entity @s {teleport_duration:1}
+execute as @e[tag=UHCP_PhantomSaber] if score @s uhcp_id = @a[tag=UHCP_Owner,sort=nearest,limit=1] uhcp_id run tag @s add UHCP_FlyingTowardsTarget
+execute as @e[tag=UHCP_PhantomSaber] if score @s uhcp_id = @a[tag=UHCP_Owner,sort=nearest,limit=1] uhcp_id run data merge entity @s {teleport_duration:1}
 
 playsound item.trident.throw master @a[distance=..4] ~ ~ ~ 1 1 0.75
 
 scoreboard players reset @e[distance=..5] uhcp_aug_count
-execute as @e[tag=!UHCP_Owner,type=!#uhcp:inanimate_mobs,distance=..5] store result score @s uhcp_aug_count run function uhcp:augments/effects/gold/phantomclaw/checkattacker
+execute as @e[tag=!UHCP_Owner,type=!#uhcp:inanimate_mobs,distance=..5] store result score @s uhcp_aug_count run function uhcp:augments/effects/gold/phantomsaber/checkattacker
 tag @e[scores={uhcp_aug_count=1},distance=..5,sort=nearest,limit=1] add UHCP_PhantomTarget
 execute unless entity @e[tag=UHCP_PhantomTarget,distance=..5] run tag @s add UHCP_PhantomTarget
 execute as @e[tag=UHCP_PhantomTarget,sort=nearest,limit=1] at @s anchored feet run summon marker ~ ~1.5 ~ {Tags:["UHCP_New","UHCP_PhantomDestination"]}

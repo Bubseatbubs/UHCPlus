@@ -17,7 +17,7 @@ execute if score @s uhcp_augment matches 217 run return run function uhcp:augmen
 execute if score @s uhcp_augment matches 218 run return 0
 execute if score @s uhcp_augment matches 219 run return run function uhcp:augments/effects/prismatic/lilestbro
 execute if score @s uhcp_augment matches 220 run return run function uhcp:augments/effects/prismatic/cyberneticdownload
-execute if score @s uhcp_augment matches 221 run return run function uhcp:augments/effects/gold/phantomclaw
+execute if score @s uhcp_augment matches 221 run return run function uhcp:augments/effects/gold/phantomsaber
 execute if score @s uhcp_augment matches 222 run return run function uhcp:augments/effects/prismatic/sololeveling
 execute if score @s uhcp_augment matches 223 run return 0
 execute if score @s uhcp_augment matches 224 run return run function uhcp:augments/effects/prismatic/starterkitiii

@@ -5,10 +5,13 @@ execute if score @s uhcp_augment matches 207 run return run effect give @s minec
 execute if score @s uhcp_augment matches 214 run return run function uhcp:milk_bucket/augments/prismatic/netherborn
 
 # Center of Attention
-execute if score @s uhcp_augment matches 217 run return run execute if score %time uhcp_game_time matches ..23999 run effect give @s minecraft:glowing infinite 1 false
+execute if score @s uhcp_augment matches 217 run return run execute if score %time uhcp_game_time matches ..23999 run effect give @s minecraft:glowing infinite 0 false
 
 # Solo Leveling
 execute if score @s uhcp_augment matches 222 run return run function uhcp:milk_bucket/augments/prismatic/sololeveling
+
+# Surface Duty
+execute if score @s uhcp_augment matches 225 run return run function uhcp:milk_bucket/augments/prismatic/surfaceduty
 
 # The Hare
 execute if score @s uhcp_augment matches 226 run return run function uhcp:milk_bucket/augments/prismatic/thehare

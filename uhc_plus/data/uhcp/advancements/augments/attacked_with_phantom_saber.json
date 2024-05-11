@@ -28,6 +28,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/gold/phantomclaw/hit"
+    "function": "uhcp:augments/effects/gold/phantomsaber/hit"
   }
 }

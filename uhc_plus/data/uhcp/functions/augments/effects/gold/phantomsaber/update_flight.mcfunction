@@ -1,13 +1,13 @@
-tag @s add UHCP_CurrentPhantomClaw
+tag @s add UHCP_CurrentPhantomSaber
 particle end_rod ~ ~ ~ 0.01 0.01 0.01 0.01 1 normal
-execute as @e[tag=UHCP_PhantomDestination] if score @s uhcp_id = @e[tag=UHCP_CurrentPhantomClaw,sort=nearest,limit=1] uhcp_id run tag @s add UHCP_CurrentDestination
+execute as @e[tag=UHCP_PhantomDestination] if score @s uhcp_id = @e[tag=UHCP_CurrentPhantomSaber,sort=nearest,limit=1] uhcp_id run tag @s add UHCP_CurrentDestination
 execute as @e[tag=UHCP_CurrentDestination] at @s run tp @s ~ ~ ~ ~15 ~
 execute facing entity @e[tag=UHCP_CurrentDestination,sort=nearest,limit=1] feet run tp @s ^ ^ ^0.5 ~ 90
-execute as @e[tag=UHCP_PhantomDestination,distance=..0.35] if score @s uhcp_id = @e[tag=UHCP_CurrentPhantomClaw,sort=nearest,limit=1] uhcp_id run tag @e[tag=UHCP_CurrentPhantomClaw,sort=nearest,limit=1] add UHCP_MadeToDestination
-tag @s remove UHCP_CurrentPhantomClaw
+execute as @e[tag=UHCP_PhantomDestination,distance=..0.35] if score @s uhcp_id = @e[tag=UHCP_CurrentPhantomSaber,sort=nearest,limit=1] uhcp_id run tag @e[tag=UHCP_CurrentPhantomSaber,sort=nearest,limit=1] add UHCP_MadeToDestination
+tag @s remove UHCP_CurrentPhantomSaber
 
 
-# Run this part only if phantom claw has made it to location
+# Run this part only if phantom saber has made it to location
 execute unless entity @s[tag=UHCP_MadeToDestination] run return 0
 execute as @a if score @s uhcp_id = @e[tag=UHCP_MadeToDestination,sort=nearest,limit=1] uhcp_id run tag @s add UHCP_Owner
 execute as @a if score @s uhcp_team = @a[tag=UHCP_Owner,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_TeamMember
