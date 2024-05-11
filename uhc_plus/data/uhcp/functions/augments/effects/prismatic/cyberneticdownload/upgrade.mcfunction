@@ -1,8 +1,8 @@
 function uhcp:augments/effects/prismatic/cyberneticdownload/init
 
 # Sounds
-playsound block.note_block.chime master @s ~ ~ ~ 1 1 1
-playsound block.anvil.use master @s ~ ~ ~ 1 1 1
+playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
+playsound minecraft:block.anvil.use master @s ~ ~ ~ 1 1 1
 playsound minecraft:block.trial_spawner.open_shutter master @s ~ ~ ~ 1 1 1
 particle minecraft:electric_spark ~ ~ ~ 0.5 1 0.5 0.1 100 normal
 

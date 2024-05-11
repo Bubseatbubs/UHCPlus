@@ -9,5 +9,5 @@ execute if entity @p[gamemode=survival,distance=..4] store result score %random 
 execute if score %random uhcp_titans_count matches 1 as @a[tag=!UHCP_InflictedWithPhantomPain,gamemode=survival,distance=..4] run tag @s add UHCP_InflictedWithPhantomPain
 tag @s remove UHCP_Damage
 
-execute if score @s uhcp_timer matches 100.. run playsound block.fire.extinguish master @a[distance=..9] ~ ~ ~ 1 1 0.5
+execute if score @s uhcp_timer matches 100.. run playsound minecraft:block.fire.extinguish master @a[distance=..9] ~ ~ ~ 1 1 0.5
 execute if score @s uhcp_timer matches 100.. run kill @s

@@ -5,4 +5,4 @@ loot replace entity @s hotbar.8 loot uhcp:lobby_menu/not_ready
 function uhcp:lobby/readyup/check
 tellraw @a [{"selector":"@s"},{"text":" is now","color":"gray"},{"text":" Not Ready","color":"dark_gray"},{"text":".","color":"gray"},{"text":" [","color":"white"},{"score":{"name":"%ready","objective":"uhcp_ready"},"color":"gold"},{"text":"/","color":"gray"},{"score":{"name":"%total","objective":"uhcp_ready"},"color":"aqua"},{"text":"]","color":"white"}]
 tag @s remove UHCP_DisableReset
-execute as @a at @s run playsound block.note_block.snare master @s ~ ~ ~ 1 1 1
+execute as @a at @s run playsound minecraft:block.note_block.snare master @s ~ ~ ~ 1 1 1

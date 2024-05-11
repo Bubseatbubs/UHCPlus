@@ -10,4 +10,4 @@ execute if score @s uhcp_augment matches 200..299 run function uhcp:augments/eff
 
 # Universal effects
 scoreboard players reset @s uhcp_aug_stack
-particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.25 100 normal
+particle minecraft:totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.25 100 normal

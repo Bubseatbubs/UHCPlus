@@ -6,6 +6,6 @@ attribute @s minecraft:player.entity_interaction_range modifier remove 606e0f11-
 attribute @s minecraft:generic.scale modifier remove 20f5990b-6593-47ed-a6e5-a88f081766d5
 attribute @s minecraft:generic.armor modifier remove aca4cdb1-6fb8-494f-8700-5dcac4742191
 function uhcp:entity/armor/load_armor
-effect clear @s invisibility
+effect clear @s minecraft:invisibility
 tag @s remove UHCP_Owner
 tag @s remove UHCP_IsPanda

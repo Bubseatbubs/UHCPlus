@@ -4,7 +4,7 @@ function uhcp:entity/items/loot/finish
 
 give @s minecraft:potion[minecraft:potion_contents={"potion":"minecraft:strong_regeneration"}] 2
 
-execute store result score %health uhcp_aug_count run attribute @s generic.max_health get 1
+execute store result score %health uhcp_aug_count run attribute @s minecraft:generic.max_health get 1
 scoreboard players set %CONST_2 uhcp_aug_count 2
 scoreboard players operation %health uhcp_aug_count *= %CONST_2 uhcp_aug_count
 

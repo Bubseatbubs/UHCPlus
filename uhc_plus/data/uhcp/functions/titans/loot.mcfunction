@@ -1,5 +1,5 @@
-setblock ~ ~ ~ chest destroy
-fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 reinforced_deepslate
+setblock ~ ~ ~ minecraft:chest destroy
+fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 minecraft:reinforced_deepslate
 loot insert ~ ~ ~ loot uhcp:titans/loot
 loot insert ~ ~ ~ loot uhcp:titans/loot
 
@@ -32,7 +32,7 @@ execute as @a[distance=..16,gamemode=survival,scores={uhcp_augment=208}] at @s r
 execute as @a[distance=..16,gamemode=survival,scores={uhcp_augment=208}] at @s run loot replace entity @e[type=minecraft:item,tag=UHCP_NewLoot,sort=nearest,limit=1] contents loot uhcp:consumables/titan_spinal_fluid
 execute as @a[distance=..16,gamemode=survival,scores={uhcp_augment=208}] at @s run function uhcp:entity/items/loot/finish
 
-particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.1 100 normal
-playsound ui.toast.challenge_complete master @a[distance=..12] ~ ~ ~ 1 1 1
+particle minecraft:totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.1 100 normal
+playsound minecraft:ui.toast.challenge_complete master @a[distance=..12] ~ ~ ~ 1 1 1
 playsound minecraft:block.trial_spawner.eject_item master @a[distance=..16] ~ ~ ~ 1 1 0.75
 kill @s

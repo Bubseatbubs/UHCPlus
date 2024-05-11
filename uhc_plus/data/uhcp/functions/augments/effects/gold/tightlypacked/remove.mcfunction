@@ -12,5 +12,5 @@ execute if items entity @s container.8 *[minecraft:custom_data~{uhcp_lockedslot:
 execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_lockedslot:1b}] run item replace entity @s weapon.offhand with minecraft:air
 execute if items entity @s player.cursor *[minecraft:custom_data~{uhcp_lockedslot:1b}] run item replace entity @s player.cursor with minecraft:air
 
-playsound block.note_block.snare master @s ~ ~ ~ 1 1 1
+playsound minecraft:block.note_block.snare master @s ~ ~ ~ 1 1 1
 advancement revoke @s only uhcp:augments/tightly_packed

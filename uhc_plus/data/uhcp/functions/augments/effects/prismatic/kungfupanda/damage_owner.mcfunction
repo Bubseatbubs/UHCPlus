@@ -1,1 +1,1 @@
-$damage @s $(value) generic
+$damage @s $(value) minecraft:generic

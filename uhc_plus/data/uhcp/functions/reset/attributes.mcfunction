@@ -19,7 +19,7 @@ attribute @s minecraft:player.block_break_speed modifier remove 4329681b-2b41-4d
 # Player Scale
 # Currently used by: Prop Hunt, Lil'Bro, Lil'est Bro
 #alias uuid UHCP_Scale 46eca67f-7103-4d35-a3b7-1576bf42ca48
-attribute @s generic.scale modifier remove 46eca67f-7103-4d35-a3b7-1576bf42ca48
+attribute @s minecraft:generic.scale modifier remove 46eca67f-7103-4d35-a3b7-1576bf42ca48
 
 # Fall Damage Multiplier
 # Currently used by: Moon Walking

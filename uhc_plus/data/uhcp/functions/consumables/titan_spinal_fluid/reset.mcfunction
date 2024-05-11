@@ -5,8 +5,8 @@ attribute @s minecraft:generic.jump_strength modifier remove 049fc60a-5ef5-470e-
 attribute @s minecraft:generic.step_height modifier remove 1023977d-6dca-477b-a803-4ff0adcb32b1
 attribute @s minecraft:generic.fall_damage_multiplier modifier remove e86e3562-bef5-4501-8c52-69a36641913f
 
-effect give @s resistance 2 5 true
-playsound entity.breeze.jump master @a[distance=..16] ~ ~ ~ 1 1 1
+effect give @s minecraft:resistance 2 5 true
+playsound minecraft:entity.breeze.jump master @a[distance=..16] ~ ~ ~ 1 1 1
 
 tag @s remove UHCP_Titan
 tag @s remove UHCP_IsAttackTitan

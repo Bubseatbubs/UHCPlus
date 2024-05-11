@@ -8,5 +8,5 @@ execute as @e[predicate=uhcp:targetable,distance=..4] unless score @s uhcp_team 
 execute if entity @s[tag=UHCP_PhantomPains] as @e[tag=!UHCP_InflictedWithPhantomPain,predicate=uhcp:targetable,distance=..4] unless score @s uhcp_team = @e[tag=UHCP_Damage,sort=nearest,limit=1] uhcp_team at @s run tag @s add UHCP_InflictedWithPhantomPain
 tag @s remove UHCP_Damage
 
-execute if score @s uhcp_timer matches 100.. run playsound block.fire.extinguish master @a[distance=..9] ~ ~ ~ 1 1 0.5
+execute if score @s uhcp_timer matches 100.. run playsound minecraft:block.fire.extinguish master @a[distance=..9] ~ ~ ~ 1 1 0.5
 execute if score @s uhcp_timer matches 100.. run kill @s

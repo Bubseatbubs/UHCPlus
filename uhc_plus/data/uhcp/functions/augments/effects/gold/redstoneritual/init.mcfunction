@@ -8,8 +8,8 @@ scoreboard players set %CONST_2 uhcp_aug_count 2
 scoreboard players set %CONST_8 uhcp_aug_count 8
 
 # Store redstone amount
-execute store result score %redstone uhcp_aug_count run clear @s redstone
-execute store result score %redstone_block uhcp_aug_count run clear @s redstone_block
+execute store result score %redstone uhcp_aug_count run clear @s minecraft:redstone
+execute store result score %redstone_block uhcp_aug_count run clear @s minecraft:redstone_block
 
 # Convert blocks to redstone dust
 scoreboard players operation %redstone_block uhcp_aug_count *= %CONST_8 uhcp_aug_count

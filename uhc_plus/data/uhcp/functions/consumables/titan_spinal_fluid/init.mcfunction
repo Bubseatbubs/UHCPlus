@@ -16,9 +16,9 @@ attribute @s minecraft:generic.fall_damage_multiplier modifier add e86e3562-bef5
 playsound minecraft:entity.polar_bear.warning master @a[distance=..32] ~ ~ ~ 1000 0.5 1
 playsound minecraft:entity.polar_bear.warning master @a[distance=..32] ~ ~ ~ 1000 0.5 1
 playsound minecraft:entity.lightning_bolt.thunder master @a[distance=..32] ~ ~ ~ 1000 0.5 1
-particle flash ~ ~ ~ 5 5 5 0.1 300 normal
+particle minecraft:flash ~ ~ ~ 5 5 5 0.1 300 normal
 
-effect give @s resistance 30 1 false
-effect clear @s invisibility
+effect give @s minecraft:resistance 30 1 false
+effect clear @s minecraft:invisibility
 tag @s add UHCP_Titan
 tag @s add UHCP_IsAttackTitan

@@ -6,7 +6,7 @@ execute as @e[tag=UHCP_New,tag=UHCP_Anubis] run data modify entity @s Owner set 
 execute at @s run spreadplayers ~ ~ 1 30 true @e[tag=UHCP_New,tag=UHCP_Anubis]
 tag @s remove UHCP_Owner
 tag @e remove UHCP_New
-effect give @s strength infinite 0 false
-give @s enchanted_golden_apple 1
+effect give @s minecraft:strength infinite 0 false
+give @s minecraft:enchanted_golden_apple 1
 gamerule maxEntityCramming 24
 tellraw @s [{"text":"Ra blesses you with his pack! ","color":"gold"},{"text":"You've received ","color":"gray"},{"text":"25 tamed Wolves","color":"light_purple","bold":true},{"text":", ","color":"gray"},{"text":"permanent Strength","color":"light_purple","bold":true},{"text":", and an ","color":"gray"},{"text":"Enchanted Golden Apple","color":"light_purple"},{"text":".","color":"gray"}]

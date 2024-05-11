@@ -8,7 +8,7 @@ execute if entity @s[tag=UHCP_ReturnRadiant] as @a if score @s uhcp_id = @e[tag=
 execute unless entity @s[tag=UHCP_Radiant] run function uhcp:entity/items/loot/finish
 
 tag @s remove UHCP_CurrentSlinger
-playsound item.armor.equip_chain master @a[distance=..4] ~ ~ ~ 1 0.5 1
-fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace cobweb
+playsound minecraft:item.armor.equip_chain master @a[distance=..4] ~ ~ ~ 1 0.5 1
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:air replace minecraft:cobweb
 execute on passengers run kill @s
 kill @s

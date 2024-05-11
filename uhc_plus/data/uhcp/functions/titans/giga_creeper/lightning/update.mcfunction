@@ -4,5 +4,5 @@ execute if score @s uhcp_timer matches 1 on passengers run data merge entity @s 
 execute if score @s uhcp_timer matches 32 on passengers run kill @s
 execute unless score @s uhcp_timer matches 32.. run return 0
 
-summon lightning_bolt ~ ~-1 ~
+summon minecraft:lightning_bolt ~ ~-1 ~
 kill @s

@@ -1,2 +1,2 @@
-give @s enchanted_golden_apple 1
+give @s minecraft:enchanted_golden_apple 1
 tellraw @s ["You've gained an ",{"text":"Enchanted Golden Apple","bold":true,"color":"light_purple"}," from your ",{"text":"Radiant Blessing","bold":true,"color":"aqua"},"!"]

@@ -16,15 +16,15 @@ execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_radiant
 item replace entity @s weapon.mainhand with minecraft:air
 
 # Player Effects
-effect clear @s invisibility
-effect give @s invisibility 10 0 true
-effect give @s resistance 3 5 true
+effect clear @s minecraft:invisibility
+effect give @s minecraft:invisibility 10 0 true
+effect give @s minecraft:resistance 3 5 true
 execute as @a[scores={uhcp_augment=239}] run effect give @s minecraft:speed 10 1 false
 
 # Effects
 particle minecraft:campfire_signal_smoke ~ ~ ~ 2 0.5 2 0.1 100 normal
 particle minecraft:flash ~ ~ ~ 1 0.5 1 0.1 10 normal
-playsound entity.zombie.converted_to_drowned master @a[distance=..8] ~ ~ ~ 1 0.5 0.5
+playsound minecraft:entity.zombie.converted_to_drowned master @a[distance=..8] ~ ~ ~ 1 0.5 0.5
 
 # End
 function uhcp:entity/armor/store_armor

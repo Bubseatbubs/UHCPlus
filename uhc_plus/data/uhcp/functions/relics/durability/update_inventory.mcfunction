@@ -38,4 +38,4 @@ execute if items entity @s container.34 *[minecraft:custom_data~{uhcp_relic:1b},
 execute if items entity @s container.35 *[minecraft:custom_data~{uhcp_relic:1b},!minecraft:damage=0] run function uhcp:relics/durability/increase with entity @s Inventory[{Slot:35b}]
 execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_relic:1b},!minecraft:damage=0] run function uhcp:relics/durability/increase_offhand
 
-playsound block.amethyst_block.resonate master @s ~ ~ ~ 1 2 1
+playsound minecraft:block.amethyst_block.resonate master @s ~ ~ ~ 1 2 1

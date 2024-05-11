@@ -53,7 +53,7 @@ execute unless score %compass_time uhcp_itemCount matches ..0 run scoreboard pla
 execute if entity @a[scores={top=1..}] run function uhcp:top/validate
 execute as @a[scores={uhcp_top_delay=1..}] at @s run function uhcp:top/finish
 scoreboard players remove @a[scores={uhcp_top_CD=1..}] uhcp_top_CD 1
-execute as @a[tag=UHCP_IsTeleporting] at @s unless entity @e[type=minecraft:marker,tag=UHCP_topCheck,distance=..1] run function uhcp:top/cancel
+execute as @a[tag=UHCP_IsTeleporting] at @s unless entity @e[type=minecraft:marker,tag=UHCP_TopCheck,distance=..1] run function uhcp:top/cancel
 execute as @a[tag=UHCP_IsTeleporting] at @s run function uhcp:top/updatecharge
 
 # Timed Titan events

@@ -8,10 +8,10 @@ tag @s add UHCP_CurrentGallie
 playsound minecraft:item.mace.smash_ground_heavy master @a[distance=..24] ~ ~ ~ 1 1 0.75
 playsound minecraft:item.mace.smash_ground_heavy master @a[distance=..24] ~ ~ ~ 1 1 0.75
 particle minecraft:lava ~ ~ ~ 2 0.25 2 0.1 100 normal
-particle minecraft:block{block_state: "minecraft:netherrack"} ~ ~ ~ 3 0.25 3 0.1 100 normal
+particle minecraft:block{block_state:"minecraft:netherrack"} ~ ~ ~ 3 0.25 3 0.1 100 normal
 particle minecraft:dust_plume ~ ~ ~ 1 1 1 1 100 normal
 execute as @e[tag=UHCP_GallieDashMarker] if score @s uhcp_id = @e[tag=UHCP_CurrentGallie,sort=nearest,limit=1] uhcp_id run kill @s
-execute as @a[distance=..5] run damage @s 6 mob_attack by @e[tag=UHCP_Gallie,sort=nearest,limit=1]
+execute as @a[distance=..5] run damage @s 6 minecraft:mob_attack by @e[tag=UHCP_Gallie,sort=nearest,limit=1]
 tag @s remove UHCP_CurrentGallie
 scoreboard players reset @s uhcp_timer
 scoreboard players add @s uhcp_titans_count 1

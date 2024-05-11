@@ -17,6 +17,6 @@ execute if score @s uhcp_initStatus matches 3 run item replace entity @s player.
 execute store result score @s uhcp_augment run function uhcp:augments/assign
 clear @s
 
-playsound block.note_block.chime master @s ~ ~ ~ 1 1 1
-particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 1 100 normal
+playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
+particle minecraft:totem_of_undying ~ ~ ~ 0.5 0.5 0.5 1 100 normal
 tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected an augment!","color":"white"}]

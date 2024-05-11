@@ -1,2 +1,2 @@
-give @s enchanted_golden_apple 3
+give @s minecraft:enchanted_golden_apple 3
 tellraw @s [{"text":"Ra blesses your harvest!","color":"gold"},{"text":" You've received ","color":"gray"},{"text":"3  Enchanted Golden Apples!","color":"light_purple","bold":true}]

@@ -7,14 +7,14 @@ execute at @s positioned ~-1 ~ ~ run function uhcp:relics/smooth_getaway/summon
 execute at @s positioned ~1 ~ ~ run function uhcp:relics/smooth_getaway/summon
 
 # Player Effects
-effect give @s invisibility 30 0 true
-effect give @s speed 30 0 true
-effect give @s resistance 5 4 true
+effect give @s minecraft:invisibility 30 0 true
+effect give @s minecraft:speed 30 0 true
+effect give @s minecraft:resistance 5 4 true
 
 # Effects
 particle minecraft:campfire_signal_smoke ~ ~ ~ 2 0.5 2 0.1 100 normal
 particle minecraft:flash ~ ~ ~ 1 0.5 1 0.1 10 normal
-playsound entity.zombie.converted_to_drowned master @a[distance=..8] ~ ~ ~ 1 0.5 0.5
+playsound minecraft:entity.zombie.converted_to_drowned master @a[distance=..8] ~ ~ ~ 1 0.5 0.5
 
 # End
 function uhcp:entity/armor/store_armor

@@ -7,7 +7,7 @@ execute if score @s uhcp_settings matches 400..499 run function uhcp:settings/ch
 execute if score @s uhcp_settings matches 500..599 run function uhcp:settings/change/team
 execute if score @s uhcp_settings matches 1000 run function uhcp:settings/reset/check
 
-playsound block.note_block.harp master @s ~ ~ ~ 10 1 1
+playsound minecraft:block.note_block.harp master @s ~ ~ ~ 10 1 1
 scoreboard players reset @s uhcp_settings
 
 # Record player as operator

@@ -5,7 +5,7 @@ attribute @s minecraft:player.entity_interaction_range modifier remove 606e0f11-
 attribute @s minecraft:player.block_interaction_range modifier remove f27d9082-575a-4cec-80ab-1baa22414ade
 attribute @s minecraft:generic.scale modifier remove 46eca67f-7103-4d35-a3b7-1576bf42ca48
 function uhcp:entity/armor/load_armor
-effect clear @s invisibility
+effect clear @s minecraft:invisibility
 tag @s remove UHCP_Owner
 tag @s remove UHCP_IsRabbit
 scoreboard players reset @s uhcp_transformDuration

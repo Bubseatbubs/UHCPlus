@@ -19,5 +19,5 @@ execute if score @s team matches 112 run function uhcp:lobby/team/select/dark_re
 execute if score @s team matches 113 run function uhcp:lobby/team/select/yellow
 execute if score @s team matches 114 run function uhcp:lobby/team/select/leave
 
-execute as @a at @s run playsound block.note_block.harp master @s ~ ~ ~ 1 1 1
+execute as @a at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 1 1
 scoreboard players reset @s team

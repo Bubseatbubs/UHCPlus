@@ -1,1 +1,1 @@
-$give @s gold_ingot $(amount)
+$give @s minecraft:gold_ingot $(amount)
