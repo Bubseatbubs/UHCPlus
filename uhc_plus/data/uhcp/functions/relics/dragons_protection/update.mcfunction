@@ -1,12 +1,12 @@
 scoreboard players add @s uhcp_timer 1
 execute if entity @s[tag=UHCP_EndChosen] run scoreboard players add @s uhcp_aug_count 1
 
-execute if score %game uhcp_initStatus matches 1 run fill ~1 ~ ~2 ~-1 ~2 ~2 minecraft:obsidian replace #uhcp:titan_can_break
-execute if score %game uhcp_initStatus matches 1 run fill ~1 ~ ~-2 ~-1 ~2 ~-2 minecraft:obsidian replace #uhcp:titan_can_break
-execute if score %game uhcp_initStatus matches 1 run fill ~2 ~ ~1 ~2 ~2 ~-1 minecraft:obsidian replace #uhcp:titan_can_break
-execute if score %game uhcp_initStatus matches 1 run fill ~-2 ~ ~1 ~-2 ~2 ~-1 minecraft:obsidian replace #uhcp:titan_can_break
-execute if score %game uhcp_initStatus matches 1 run fill ~1 ~3 ~1 ~-1 ~3 ~-1 minecraft:obsidian replace #uhcp:titan_can_break
-execute if score %game uhcp_initStatus matches 1 run fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 minecraft:obsidian replace #uhcp:titan_can_break
+execute if score %game uhcp_initStatus matches 1 run fill ~1 ~ ~2 ~-1 ~2 ~2 minecraft:obsidian replace #uhcp:breakable
+execute if score %game uhcp_initStatus matches 1 run fill ~1 ~ ~-2 ~-1 ~2 ~-2 minecraft:obsidian replace #uhcp:breakable
+execute if score %game uhcp_initStatus matches 1 run fill ~2 ~ ~1 ~2 ~2 ~-1 minecraft:obsidian replace #uhcp:breakable
+execute if score %game uhcp_initStatus matches 1 run fill ~-2 ~ ~1 ~-2 ~2 ~-1 minecraft:obsidian replace #uhcp:breakable
+execute if score %game uhcp_initStatus matches 1 run fill ~1 ~3 ~1 ~-1 ~3 ~-1 minecraft:obsidian replace #uhcp:breakable
+execute if score %game uhcp_initStatus matches 1 run fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 minecraft:obsidian replace #uhcp:breakable
 
 execute unless score %game uhcp_initStatus matches 1 run fill ~1 ~ ~2 ~-1 ~2 ~2 minecraft:obsidian keep
 execute unless score %game uhcp_initStatus matches 1 run fill ~1 ~ ~-2 ~-1 ~2 ~-2 minecraft:obsidian keep
