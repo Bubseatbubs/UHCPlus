@@ -18,4 +18,6 @@ execute if items entity @s armor.feet * run scoreboard players set @s uhcp_initS
 execute if score @s uhcp_initStatus matches 0 run give @s minecraft:diamond_boots
 execute if score @s uhcp_initStatus matches 1 run item replace entity @s armor.feet with minecraft:diamond_boots
 
+execute at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
+
 scoreboard players set @s uhcp_game_time -1

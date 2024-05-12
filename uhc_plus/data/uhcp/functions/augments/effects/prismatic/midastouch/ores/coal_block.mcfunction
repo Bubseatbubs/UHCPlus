@@ -1,3 +1,3 @@
-clear @s minecraft:coal_block 1
 give @s minecraft:gold_ingot 1
-execute if items entity @s container.* coal_block run function uhcp:augments/effects/prismatic/midastouch/ores/coal_block
+scoreboard players remove @s uhcp_initStatus 1
+execute if score @s uhcp_initStatus matches 1.. run function uhcp:augments/effects/prismatic/midastouch/ores/coal_block

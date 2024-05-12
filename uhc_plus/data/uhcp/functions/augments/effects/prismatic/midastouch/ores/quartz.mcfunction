@@ -1,3 +1,3 @@
-clear @s minecraft:quartz 1
 give @s minecraft:gold_nugget 3
-execute if items entity @s container.* quartz run function uhcp:augments/effects/prismatic/midastouch/ores/quartz
+scoreboard players remove @s uhcp_initStatus 1
+execute if score @s uhcp_initStatus matches 1.. run function uhcp:augments/effects/prismatic/midastouch/ores/quartz

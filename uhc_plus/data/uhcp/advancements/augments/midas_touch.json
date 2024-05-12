@@ -30,13 +30,35 @@
               "type_specific": {
                 "type": "minecraft:player",
                 "gamemode": "survival"
-              },
-              "slots": {
-                "container.*": {
-                  "items": "#uhcp:midas_touch"
-                }
               }
             }
+          },
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "items": "#uhcp:midas_touch"
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "weapon.offhand": {
+                      "items": "#uhcp:midas_touch"
+                    }
+                  }
+                }
+              }
+            ]
           }
         ]
       }

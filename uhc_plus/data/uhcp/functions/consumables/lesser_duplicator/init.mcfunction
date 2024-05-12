@@ -1,5 +1,5 @@
 execute unless items entity @s weapon.offhand * run return 0
-execute if items entity @s weapon.offhand enchanted_book run return 0
+execute if items entity @s weapon.offhand minecraft:enchanted_book run return 0
 execute if items entity @s weapon.offhand *[custom_data~{uhcp_consumable:0b}|custom_data~{uhcp_consumable:2b}] run return 0
 
 clear @s *[custom_data~{uhcp_consumable:2b}] 1
