@@ -27,6 +27,10 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
+              "type_specific": {
+                "type": "minecraft:player",
+                "gamemode": "survival"
+              },
               "slots": {
                 "container.*": {
                   "items": "#uhcp:midas_touch"

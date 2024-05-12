@@ -2455,22 +2455,34 @@
                 },
                 [
                   {
-                    "text": "After 20 minutes, all",
+                    "text": "Compress all ",
                     "color": "gray"
                   },
                   {
-                    "text": " Coal and Coal Blocks",
+                    "text": "Coal",
                     "color": "white"
+                  },
+                  {
+                    "text": " and ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Coal Blocks",
+                    "color": "white"
+                  },
+                  {
+                    "text": " into",
+                    "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "become",
-                    "color": "gray"
+                    "text": "Diamonds",
+                    "color": "white"
                   },
                   {
-                    "text": " Diamonds.",
-                    "color": "white"
+                    "text": " in your inventory.",
+                    "color": "gray"
                   }
                 ]
               ],

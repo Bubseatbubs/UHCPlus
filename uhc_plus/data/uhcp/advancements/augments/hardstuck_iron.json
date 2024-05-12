@@ -27,6 +27,10 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
+              "type_specific": {
+                "type": "minecraft:player",
+                "gamemode": "survival"
+              },
               "slots": {
                 "armor.*": {
                   "items": "#uhcp:hardstuck_iron_banned",

@@ -10,6 +10,16 @@
             "scores": {
               "uhcp_augment": 212
             }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "minecraft:player",
+                "gamemode": "survival"
+              }
+            }
           }
         ]
       }

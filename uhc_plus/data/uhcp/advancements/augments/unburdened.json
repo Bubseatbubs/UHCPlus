@@ -17,6 +17,10 @@
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
+                "type_specific": {
+                  "type": "minecraft:player",
+                  "gamemode": "survival"
+                },
                 "equipment": {
                   "feet": {
                     "items": "#uhcp:wearable"

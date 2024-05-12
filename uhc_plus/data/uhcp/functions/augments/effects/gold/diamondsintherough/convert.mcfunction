@@ -1,4 +1,3 @@
-function uhcp:augments/effects/gold/diamondsintherough/coal
-function uhcp:augments/effects/gold/diamondsintherough/block
-
-scoreboard players set @s uhcp_game_time -1
+execute if items entity @s container.* minecraft:coal run function uhcp:augments/effects/gold/diamondsintherough/coal
+execute if items entity @s container.* minecraft:coal_block run function uhcp:augments/effects/gold/diamondsintherough/block
+advancement revoke @s only uhcp:augments/diamonds_in_the_rough

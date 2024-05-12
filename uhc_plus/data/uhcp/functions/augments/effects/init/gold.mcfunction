@@ -39,7 +39,7 @@ execute if score @s uhcp_augment matches 38 run return run function uhcp:augment
 execute if score @s uhcp_augment matches 39 run return run function uhcp:augments/effects/gold/poseidonsblessing
 execute if score @s uhcp_augment matches 40 run return run function uhcp:augments/effects/gold/relicsofthepast
 execute if score @s uhcp_augment matches 41 run return run function uhcp:augments/effects/gold/sniffa
-execute if score @s uhcp_augment matches 42 run return run scoreboard players set @s uhcp_game_time 24000
+execute if score @s uhcp_augment matches 42 run return 0
 execute if score @s uhcp_augment matches 43 run return run function uhcp:augments/effects/gold/mansbestfriend
 execute if score @s uhcp_augment matches 44 run return 0
 execute if score @s uhcp_augment matches 45 run return run function uhcp:augments/effects/gold/youhavemyrodii

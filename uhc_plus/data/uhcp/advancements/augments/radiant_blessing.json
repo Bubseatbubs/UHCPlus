@@ -24,8 +24,18 @@
               },
               "uhcp_augment": 218
             }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "minecraft:player",
+                "gamemode": "survival"
+              }
+            }
           }
-          ]
+        ]
       }
     }
   },
