@@ -38,16 +38,41 @@
 									"type_specific": {
 										"type": "minecraft:player",
 										"gamemode": "survival"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:any_of",
+								"terms": [
+									{
+										"condition": "minecraft:entity_properties",
+										"entity": "this",
+										"predicate": {
+											"slots": {
+												"container.*": {
+													"items": "#uhcp:tools",
+													"predicates": {
+														"minecraft:custom_data": "{solo_level:1b}"
+													}
+												}
+											}
+										}
 									},
-									"slots": {
-										"container.*": {
-											"items": "#uhcp:tools",
-											"predicates": {
-                								"minecraft:custom_data": "{solo_level:1b}"
+									{
+										"condition": "minecraft:entity_properties",
+										"entity": "this",
+										"predicate": {
+											"slots": {
+												"weapon.offhand": {
+													"items": "#uhcp:tools",
+													"predicates": {
+														"minecraft:custom_data": "{solo_level:1b}"
+													}
+												}
 											}
 										}
 									}
-								}
+								]
 							}
 						]
 					}

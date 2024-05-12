@@ -11,22 +11,53 @@
               "type_specific": {
                 "type": "minecraft:player",
                 "gamemode": "survival"
-              },
-              "slots": {
-                "container.*": {
-                  "items": "minecraft:bone",
-                  "predicates": {
-                    "minecraft:custom_data": "{uhcp_bonecage:1b}"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "items": "minecraft:bone",
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_bonecage:1b}"
+                      }
+                    },
+                    "armor.chest": {
+                      "items": "minecraft:leather_chestplate",
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_armaments:0b}"
+                      }
+                    }
                   }
-                },
-                "armor.chest": {
-                  "items": "minecraft:leather_chestplate",
-                  "predicates": {
-                    "minecraft:custom_data": "{uhcp_armaments:0b}"
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "weapon.offhand": {
+                      "items": "minecraft:bone",
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_bonecage:1b}"
+                      }
+                    },
+                    "armor.chest": {
+                      "items": "minecraft:leather_chestplate",
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_armaments:0b}"
+                      }
+                    }
                   }
                 }
               }
-            }
+            ]
           },
           {
             "condition": "minecraft:inverted",

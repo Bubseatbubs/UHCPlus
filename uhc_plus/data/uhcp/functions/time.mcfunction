@@ -100,11 +100,11 @@ execute as @e[predicate=uhcp:titans/titan_loot] at @s run function uhcp:titans/l
 # Check regenerating consumables
 execute as @a[scores={uhcp_aug_regenItem=0..}] if score %time uhcp_game_time >= @s uhcp_aug_regenItem at @s run function uhcp:augments/effects/regenerate_consumables
 
+# Fake Apples
+execute as @e[type=minecraft:item,predicate=uhcp:apple_head] at @s run function uhcp:entity/apples/change_to_apple
+execute as @e[type=minecraft:item,predicate=uhcp:golden_apple_head] at @s run function uhcp:entity/apples/change_to_golden_apple
+
 # Enable triggers
 scoreboard players enable @a augments
 scoreboard players enable @a[gamemode=survival] top
 scoreboard players enable @a[gamemode=survival] testkit
-
-# Fake Apples
-execute as @e[predicate=uhcp:apple_head] at @s run function uhcp:entity/apples/change_to_apple
-execute as @e[predicate=uhcp:golden_apple_head] at @s run function uhcp:entity/apples/change_to_golden_apple

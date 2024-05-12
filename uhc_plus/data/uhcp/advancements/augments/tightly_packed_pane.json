@@ -35,17 +35,40 @@
               "type_specific": {
                 "type": "minecraft:player",
                 "gamemode": "survival"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
               },
-              "slots": {
-                "container.*": {
-                  "predicates": {
-                    "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "weapon.offhand": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
                   }
                 }
               }
-            }
+            ]
           }
-          
         ]
       }
     }
