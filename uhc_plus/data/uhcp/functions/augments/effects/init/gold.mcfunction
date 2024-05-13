@@ -26,9 +26,9 @@ execute if score @s uhcp_augment matches 23 run return run function uhcp:augment
 execute if score @s uhcp_augment matches 24 run return run function uhcp:augments/effects/gold/moonwalking
 execute if score @s uhcp_augment matches 25 run return run function uhcp:augments/effects/gold/scavengerhunt
 execute if score @s uhcp_augment matches 26 run return run function uhcp:augments/effects/gold/shinyspawn
-execute if score @s uhcp_augment matches 27 run return run scoreboard players set @s uhcp_game_time 12000
+execute if score @s uhcp_augment matches 27 run return run scoreboard players set @s uhcp_game_time 42000
+execute if score @s uhcp_augment matches 28 run return 0
 execute if score @s uhcp_augment matches 29 run return run function uhcp:augments/effects/gold/starterkitii
-execute if score @s uhcp_augment matches 27 run return 0
 execute if score @s uhcp_augment matches 30 run return 0
 execute if score @s uhcp_augment matches 31 run return run function uhcp:augments/effects/gold/tightlypacked
 execute if score @s uhcp_augment matches 32 run return run function uhcp:augments/effects/gold/trapmaster

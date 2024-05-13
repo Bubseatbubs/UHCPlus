@@ -1,3 +1,6 @@
-summon minecraft:item ~ ~ ~ {PickupDelay:20s,Tags:["UHCP_PlannedEconomyItemBlock"],Item:{id:"minecraft:gold_block"}}
-execute store result entity @e[tag=UHCP_PlannedEconomyItemBlock,sort=nearest,limit=1] Item.count int 1 run scoreboard players get %gold uhcp_initStatus
-tag @e remove UHCP_PlannedEconomyItemBlock
+scoreboard players operation @s uhcp_arrowCount = %gold_block uhcp_aug_count
+scoreboard players operation @s uhcp_arrowCount /= @s uhcp_initStatus
+execute if score @s uhcp_arrowCount matches 1.. run function uhcp:augments/effects/gold/plannedeconomy/block/stack
+
+scoreboard players operation %gold_block uhcp_aug_count %= @s uhcp_initStatus
+execute if score %gold_block uhcp_aug_count matches 1.. run function uhcp:augments/effects/gold/plannedeconomy/block/single
