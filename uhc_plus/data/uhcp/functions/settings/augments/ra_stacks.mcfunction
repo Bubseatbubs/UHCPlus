@@ -6,4 +6,5 @@ execute if score @s uhcp_settings matches 10..13 run function uhcp:settings/augm
 execute if score %ra_stacks uhcp_settings matches ..0 run scoreboard players set %ra_stacks uhcp_settings 1
 execute if score %ra_stacks uhcp_settings matches 100.. run scoreboard players set %ra_stacks uhcp_settings 99
 
-tellraw @s [{"score":{"name":"%ra_stacks","objective":"uhcp_settings"},"color":"gold"},{"text":" stacks are required.","color":"white"}]
+execute unless score %ra_stacks uhcp_settings matches 1 run return run tellraw @s [{"score":{"name":"%ra_stacks","objective":"uhcp_settings"},"color":"gold"},{"text":" stacks are required.","color":"white"}]
+tellraw @s [{"text":"1","color":"gold"},{"text":" stack is required.","color":"white"}]
