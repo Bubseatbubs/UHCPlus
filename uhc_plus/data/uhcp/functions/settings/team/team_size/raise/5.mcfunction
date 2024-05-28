@@ -1,1 +1,0 @@
-scoreboard players add %team_size uhcp_settings 5

@@ -1,1 +1,0 @@
-scoreboard players remove %team_size uhcp_settings 1

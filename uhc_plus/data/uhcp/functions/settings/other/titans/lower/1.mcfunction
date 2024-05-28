@@ -1,1 +1,0 @@
-scoreboard players remove %titans uhcp_settings 1

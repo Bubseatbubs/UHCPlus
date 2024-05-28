@@ -1,1 +1,0 @@
-scoreboard players remove %arrow_limit uhcp_arrowCount 1
