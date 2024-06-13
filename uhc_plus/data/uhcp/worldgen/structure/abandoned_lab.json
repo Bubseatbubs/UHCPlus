@@ -1,6 +1,7 @@
 {
 	"type": "minecraft:jigsaw",
 	"biomes": "#minecraft:is_overworld",
+	"liquid_settings": "ignore_waterlogging",
 	"step": "underground_structures",
 	"spawn_overrides": {},
 	"terrain_adaptation": "encapsulate",

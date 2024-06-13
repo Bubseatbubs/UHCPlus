@@ -1,0 +1,1 @@
+attribute @s minecraft:generic.scale modifier add uhcp:scale -0.25 add_value

@@ -1,0 +1,132 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:elytra",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": true
+                },
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:luck_of_the_sea": 1
+                  },
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "uhcp:wings_armor",
+                  "attribute": "minecraft:generic.armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "uhcp:wings_armor_toughness",
+                  "attribute": "minecraft:generic.armor_toughness",
+                  "amount": 2,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "ARMAMENT",
+                    "color": "#bf7830",
+                    "italic": false
+                  },
+                  {
+                    "text": ": Armaments are pieces",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "of Armor with special effects.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "EFFECT:",
+                    "color": "#e61c69",
+                    "italic": false
+                  },
+                  {
+                    "text": " Grants Armor equal to a",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Diamond Chestplate",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Arm",
+                  "color": "#ab5b1a",
+                  "bold": true,
+                  "italic": false
+                },
+                {
+                  "text": "ored",
+                  "color": "#cf8817"
+                },
+                {
+                  "text": " Wi",
+                  "color": "#debb10"
+                },
+                {
+                  "text": "ngs",
+                  "color": "#e8d20c"
+                },
+                {
+                  "text": " 𝔸",
+                  "color": "white",
+                  "bold": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_armaments:3b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

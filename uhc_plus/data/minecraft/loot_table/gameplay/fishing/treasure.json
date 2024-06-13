@@ -1,0 +1,431 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:sniffer_spawn_egg"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:armaments/armored_wings"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:consumables/relic_invoker"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:consumables/royal_jelly"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:consumables/wild_feather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:consumables/web_slinger",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "value": "uhcp:consumables/lesser_duplicator",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:consumables/suspicious_flesh",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:consumables/all-seeing_eye",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:consumables/portable_lava_pool"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:consumables/groovy_disc"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "uhcp:armaments/boots_of_swiftness"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0.3
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "max": 30.0,
+                "min": 10.0
+              },
+              "options": "#minecraft:on_random_loot"
+            }
+          ],
+          "weight": 8,
+          "name": "minecraft:trident"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0.3
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 8.0,
+                "max": {
+                  "max": 20.0,
+                  "min": 12.0
+                }
+              },
+              "options": "#minecraft:on_random_loot"
+            }
+          ],
+          "weight": 10,
+          "name": "minecraft:bow"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0.3
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 8.0,
+                "max": {
+                  "max": 20.0,
+                  "min": 12.0
+                }
+              },
+              "options": "#minecraft:on_random_loot"
+            }
+          ],
+          "weight": 10,
+          "name": "minecraft:diamond_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0.3
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 8.0,
+                "max": {
+                  "max": 20.0,
+                  "min": 12.0
+                }
+              },
+              "options": "#minecraft:on_random_loot"
+            }
+          ],
+          "weight": 10,
+          "name": "minecraft:diamond_pickaxe"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0.3
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 8.0,
+                "max": {
+                  "max": 20.0,
+                  "min": 12.0
+                }
+              },
+              "options": "#minecraft:on_random_loot"
+            }
+          ],
+          "weight": 10,
+          "name": "minecraft:diamond_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0.3
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 10.0,
+                "max": {
+                  "max": 30.0,
+                  "min": 20.0
+                }
+              },
+              "options": "#minecraft:on_random_loot"
+            }
+          ],
+          "weight": 4,
+          "name": "minecraft:diamond_hoe"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0.3
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 8.0,
+                "max": {
+                  "max": 20.0,
+                  "min": 12.0
+                }
+              },
+              "options": "#minecraft:on_random_loot"
+            }
+          ],
+          "weight": 10,
+          "name": "minecraft:diamond_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0.3
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 8.0,
+                "max": {
+                  "max": 20.0,
+                  "min": 12.0
+                }
+              },
+              "options": "#minecraft:on_random_loot"
+            }
+          ],
+          "weight": 10,
+          "name": "minecraft:diamond_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0.3
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 8.0,
+                "max": {
+                  "max": 20.0,
+                  "min": 12.0
+                }
+              },
+              "options": "#minecraft:on_random_loot"
+            }
+          ],
+          "weight": 10,
+          "name": "minecraft:diamond_leggings"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0.3
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 8.0,
+                "max": {
+                  "max": 20.0,
+                  "min": 12.0
+                }
+              },
+              "options": "#minecraft:on_random_loot"
+            }
+          ],
+          "weight": 10,
+          "name": "minecraft:diamond_boots"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 8.0,
+                "max": 20.0
+              },
+              "options": "#minecraft:on_random_loot"
+            }
+          ],
+          "weight": 24,
+          "name": "minecraft:book"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "max": 2,
+                "min": 1
+              }
+            }
+          ],
+          "weight": 36
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 6
+            }
+          ],
+          "weight": 12
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 32
+            }
+          ],
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:obsidian",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 8
+            }
+          ],
+          "weight": 2
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/fishing/treasure"
+}

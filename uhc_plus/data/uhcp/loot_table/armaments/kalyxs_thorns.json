@@ -1,0 +1,166 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": true
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 1,
+                "minecraft:fire_protection": 1
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "uhcp:kalyx_armor",
+                  "attribute": "minecraft:generic.armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "uhcp:kalyx_armor_toughness",
+                  "attribute": "minecraft:generic.armor_toughness",
+                  "amount": 2,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "ARMAMENT",
+                    "color": "#bf7830",
+                    "italic": false
+                  },
+                  {
+                    "text": ": Armaments are pieces",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "of Armor with special effects.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "EFFECT:",
+                    "color": "#e61c69",
+                    "italic": false
+                  },
+                  {
+                    "text": " When you are hurt by an",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "enemy player or mob, there is a",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "25% chance",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Evoker Fangs",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": " are",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "summoned beneath them.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Ka",
+                  "color": "#ab5b1a",
+                  "bold": true
+                },
+                {
+                  "text": "lyx's",
+                  "color": "#cf8817"
+                },
+                {
+                  "text": " Tho",
+                  "color": "#debb10"
+                },
+                {
+                  "text": "rns",
+                  "color": "#e8d20c"
+                },
+                {
+                  "text": " 𝔸",
+                  "color": "white",
+                  "bold": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:dyed_color": {
+                  "rgb": 16711680,
+                  "show_in_tooltip": false
+                },
+                "minecraft:trim": {
+                  "material": "minecraft:netherite",
+                  "pattern": "minecraft:spire",
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_armaments:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

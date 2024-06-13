@@ -1,0 +1,2 @@
+item replace entity @s armor.head with minecraft:leather_helmet[minecraft:item_name='{"text":"Bald Head","color":"light_purple"}',minecraft:lore=['{"text":"The lack of hair somehow grants"}','{"text":"you protection."}'],minecraft:attribute_modifiers=[{id:"uhcp:boat_armor",type:"minecraft:generic.armor",amount:3.0d,operation:"add_value",slot:"head"}],minecraft:enchantments={levels:{"minecraft:protection":1}},minecraft:repair_cost=100] 1
+give @s minecraft:oak_boat 1

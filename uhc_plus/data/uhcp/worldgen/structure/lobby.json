@@ -1,6 +1,7 @@
 {
 	"type": "minecraft:jigsaw",
 	"biomes": "uhcp:empty",
+	"liquid_settings": "ignore_waterlogging",
 	"step": "surface_structures",
 	"spawn_overrides": {},
 	"terrain_adaptation": "none",

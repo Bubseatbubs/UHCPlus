@@ -1,0 +1,44 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "minecraft:player",
+                "gamemode": [
+                  "survival"
+                ]
+              }
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "offsetX": 0,
+            "offsetY": -1,
+            "offsetZ": 0,
+            "predicate": {
+              "block": {
+                "blocks": "#minecraft:ice"
+              }
+            }
+          },
+          {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "uhcp_augment": 202
+              }
+            }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "uhcp:augments/effects/prismatic/coldblooded/effect"
+  }
+}
