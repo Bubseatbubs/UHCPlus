@@ -12,7 +12,7 @@ execute as @a[distance=..36,gamemode=survival] run tag @s add UHCP_LaserTarget
 execute facing entity @p[tag=UHCP_LaserTarget] feet run tp @s ^ ^ ^0.24
 
 execute store result score %blocksfilled uhcp_titans_count run fill ~-1.5 ~-0.5 ~-1.5 ~1.5 ~128 ~1.5 minecraft:air replace #uhcp:visible_breakable
-execute store result score %blocksfilled uhcp_titans_count run fill ~-1.5 ~-1.5 ~-1.5 ~1.5 ~-1.5 ~1.5 minecraft:smooth_quartz replace #uhcp:visible_breakable
+execute store result score %blocksfilled uhcp_titans_count run fill ~-1.5 ~-1.5 ~-1.5 ~1.5 ~-1.5 ~1.5 minecraft:smooth_quartz replace #uhcp:no_fluids_breakable
 execute if score %blocksfilled uhcp_titans_count matches 1.. run playsound minecraft:entity.wither.break_block master @a[distance=..16] ~ ~ ~ 1 1 0.5
 
 playsound minecraft:block.ancient_debris.break master @a[distance=..36] ~ ~ ~ 1 0.5 0.05

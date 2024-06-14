@@ -4,8 +4,8 @@ playsound minecraft:block.glass.break master @a[distance=..12] ~ ~ ~ 1 0.8 0.75
 particle minecraft:reverse_portal ~ ~ ~ 1 2 1 0.1 100 normal
 particle minecraft:block{block_state:"minecraft:nether_portal"} ~ ~ ~ 2 2 2 0.1 300 normal
 execute as @a[distance=..3,gamemode=survival] run damage @s 6 minecraft:falling_block
-fill ~-3 ~-2 ~-4 ~3 ~ ~4 minecraft:netherrack replace #uhcp:visible_breakable
-fill ~-4 ~-2 ~-3 ~4 ~ ~3 minecraft:netherrack replace #uhcp:visible_breakable
+fill ~-3 ~-2 ~-4 ~3 ~ ~4 minecraft:netherrack replace #uhcp:no_fluids_breakable
+fill ~-4 ~-2 ~-3 ~4 ~ ~3 minecraft:netherrack replace #uhcp:no_fluids_breakable
 execute store result score %random uhcp_titans_count run random value 0..4
 execute if score %random uhcp_titans_count matches 0 run summon minecraft:piglin ~ ~ ~ {Health:4f,IsImmuneToZombification:1b,CannotHunt:1b,Tags:["UHCP_Minion"],HandItems:[{id:"minecraft:crossbow",count:1},{}],HandDropChances:[0.000F,0.085F],ArmorItems:[{},{},{},{id:"minecraft:golden_helmet",count:1,components:{"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:snout"}}}],ArmorDropChances:[0.085F,0.085F,0.085F,0.000F],attributes:[{id:"minecraft:generic.max_health",base:6.0d}]}
 execute if score %random uhcp_titans_count matches 0 run summon minecraft:piglin ~ ~ ~ {Health:4f,IsImmuneToZombification:1b,CannotHunt:1b,Tags:["UHCP_Minion"],HandItems:[{id:"minecraft:crossbow",count:1},{}],HandDropChances:[0.000F,0.085F],ArmorItems:[{},{},{},{id:"minecraft:golden_helmet",count:1,components:{"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:snout"}}}],ArmorDropChances:[0.085F,0.085F,0.085F,0.000F],attributes:[{id:"minecraft:generic.max_health",base:6.0d}]}
