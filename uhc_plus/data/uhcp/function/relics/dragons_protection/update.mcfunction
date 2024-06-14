@@ -24,8 +24,8 @@ execute if score @s uhcp_aug_count matches 5.. run scoreboard players reset @s u
 
 execute if score @s uhcp_timer matches ..80 run return fail
 
-execute if entity @s[tag=UHCP_EndChosen] at @s as @a[distance=..4] if score @s uhcp_team = @e[tag=UHCP_EndChosen,sort=nearest,limit=1] uhcp_team run effect give @s minecraft:resistance 45 0 false
-execute if entity @s[tag=UHCP_EndChosen] at @s as @a[distance=..4] if score @s uhcp_team = @e[tag=UHCP_EndChosen,sort=nearest,limit=1] uhcp_team run effect give @s minecraft:fire_resistance 45 0 false
+execute if entity @s[tag=UHCP_EndChosen] at @s as @a[distance=..4] if score @s uhcp_team = @n[tag=UHCP_EndChosen] uhcp_team run effect give @s minecraft:resistance 45 0 false
+execute if entity @s[tag=UHCP_EndChosen] at @s as @a[distance=..4] if score @s uhcp_team = @n[tag=UHCP_EndChosen] uhcp_team run effect give @s minecraft:fire_resistance 45 0 false
 execute if entity @s[tag=UHCP_EndChosen] at @s run tag @e[tag=UHCP_DragonBreath,distance=..20] add UHCP_TeleportBack
 execute if entity @s[tag=UHCP_EndChosen] at @s run tag @e[distance=..20] remove UHCP_DragonBreath
 execute if entity @s[tag=UHCP_EndChosen] at @s in uhcp:main run tp @e[tag=UHCP_TeleportBack] 0 -63 0

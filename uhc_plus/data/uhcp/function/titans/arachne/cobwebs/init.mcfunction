@@ -3,7 +3,7 @@ execute at @s run function uhcp:titans/arachne/cobwebs/summon_indicator
 execute at @s run function uhcp:titans/arachne/cobwebs/summon_indicator
 execute at @s as @a[gamemode=survival,distance=..16] run function uhcp:titans/arachne/cobwebs/summon_indicator
 
-execute as @s at @s run spreadplayers ~ ~ 1 18 false @e[tag=UHCP_ArachneCobweb]
+execute at @s run spreadplayers ~ ~ 1 18 false @e[tag=UHCP_ArachneCobweb]
 
 
 

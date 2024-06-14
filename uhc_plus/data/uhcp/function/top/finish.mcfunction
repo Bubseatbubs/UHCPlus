@@ -3,8 +3,8 @@ execute if score @s uhcp_augment matches 104 run scoreboard players set @s uhcp_
 
 scoreboard players reset @s uhcp_top_delay
 scoreboard players set @s uhcp_initStatus 0
-execute if entity @e[type=minecraft:marker,tag=UHCP_TopCheck,distance=..3,limit=1] as @s at @s run function uhcp:top/refresh
-kill @e[type=minecraft:marker,tag=UHCP_TopCheck,limit=1]
+execute if entity @e[tag=UHCP_TopCheck,distance=..3,limit=1] at @s run function uhcp:top/refresh
+kill @e[tag=UHCP_TopCheck,limit=1]
 execute if score @s uhcp_initStatus matches 1 run return fail
 
 execute at @s run playsound minecraft:block.end_portal.spawn master @a[distance=..84] ~ ~ ~ 1 1 0.25

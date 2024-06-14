@@ -3,10 +3,10 @@ tag @s add UHCP_CurrentFluxFactor
 scoreboard players add @s uhcp_timer 1
 scoreboard players add @s uhcp_game_time 1
 
-execute if entity @s[tag=UHCP_ZeusFavor] if score @s uhcp_game_time matches 118 as @e[tag=!UHCP_Invulnerable,predicate=uhcp:targetable,distance=..12.5] unless score @s uhcp_team = @e[tag=UHCP_CurrentFluxFactor,sort=nearest,limit=1] uhcp_team at @s run function uhcp:titans/giga_creeper/lightning/summon_indicator
-execute at @s[tag=UHCP_Voltrune_Active] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] unless score @s uhcp_team = @e[tag=UHCP_CurrentFluxFactor,sort=nearest,limit=1] uhcp_team run effect give @s minecraft:slowness 1 0 false
-execute at @s[tag=UHCP_Voltrune_Active] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] if score @s uhcp_team = @e[tag=UHCP_CurrentFluxFactor,sort=nearest,limit=1] uhcp_team run effect give @s minecraft:speed 1 1 false
-execute at @s[tag=UHCP_Voltrune_Active] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] if score @s uhcp_team = @e[tag=UHCP_CurrentFluxFactor,sort=nearest,limit=1] uhcp_team run effect give @s minecraft:jump_boost 1 0 false
+execute if entity @s[tag=UHCP_ZeusFavor] if score @s uhcp_game_time matches 118 as @e[tag=!UHCP_Invulnerable,predicate=uhcp:targetable,distance=..12.5] unless score @s uhcp_team = @n[tag=UHCP_CurrentFluxFactor] uhcp_team at @s run function uhcp:titans/giga_creeper/lightning/summon_indicator
+execute at @s[tag=UHCP_Voltrune_Active] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] unless score @s uhcp_team = @n[tag=UHCP_CurrentFluxFactor] uhcp_team run effect give @s minecraft:slowness 1 0 false
+execute at @s[tag=UHCP_Voltrune_Active] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] if score @s uhcp_team = @n[tag=UHCP_CurrentFluxFactor] uhcp_team run effect give @s minecraft:speed 1 1 false
+execute at @s[tag=UHCP_Voltrune_Active] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] if score @s uhcp_team = @n[tag=UHCP_CurrentFluxFactor] uhcp_team run effect give @s minecraft:jump_boost 1 0 false
 
 execute as @s[tag=!UHCP_Voltrune_Active,nbt={Motion:[0.0,0.0,0.0]}] run tag @s add UHCP_Voltrune_Active
 execute as @s[tag=UHCP_Voltrune_Active] run tp @s ~ ~ ~ ~5 ~

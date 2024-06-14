@@ -20,8 +20,8 @@ effect give @s minecraft:resistance 10 4 true
 execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
 # Owner set to player
-scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_id = @s uhcp_id
-scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_team = @s uhcp_team
-execute as @e[tag=UHCP_New,sort=nearest,limit=1] run function uhcp:teams/join
-execute if score %pvp uhcp_settings matches ..0 run team join no_collision @e[tag=UHCP_New,sort=nearest,scores={uhcp_team=15..},limit=1]
+scoreboard players operation @n[tag=UHCP_New] uhcp_id = @s uhcp_id
+scoreboard players operation @n[tag=UHCP_New] uhcp_team = @s uhcp_team
+execute as @n[tag=UHCP_New] run function uhcp:teams/join
+execute if score %pvp uhcp_settings matches ..0 run team join no_collision @n[tag=UHCP_New,scores={uhcp_team=15..}]
 tag @e remove UHCP_New

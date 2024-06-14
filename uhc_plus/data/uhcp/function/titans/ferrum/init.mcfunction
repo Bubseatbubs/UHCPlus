@@ -1,4 +1,4 @@
 summon minecraft:iron_golem ~ ~ ~ {CustomNameVisible:0b,PersistenceRequired:1b,Health:850f,PlayerCreated:0b,Tags:["UHCP_Titan","UHCP_Ferrum","UHCP_New"],ArmorItems:[{},{},{id:"minecraft:chest",count:1,components:{"minecraft:max_stack_size":1,"minecraft:custom_data":{uhcp_titan_loot:1b,uhcp_titan_id:8b}}},{}],ArmorDropChances:[0.085F,0.085F,1.000F,0.085F],CustomName:'{"text":"Ferrum","color":"red","bold":true}',attributes:[{id:"minecraft:generic.armor",base:5.0d},{id:"minecraft:generic.attack_damage",base:6.0d},{id:"minecraft:generic.fall_damage_multiplier",base:0.0d},{id:"minecraft:generic.follow_range",base:80.0d},{id:"minecraft:generic.max_health",base:850.0d},{id:"minecraft:generic.movement_speed",base:0.3d},{id:"minecraft:generic.scale",base:5.0d},{id:"minecraft:generic.step_height",base:2.0d}]}
 
 # Initialize boss ID
-scoreboard players set @e[tag=UHCP_New,tag=UHCP_Titan,sort=nearest,limit=1] uhcp_titans_ID 8
+scoreboard players set @n[tag=UHCP_New,tag=UHCP_Titan] uhcp_titans_ID 8

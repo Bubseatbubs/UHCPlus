@@ -29,7 +29,7 @@ execute if items entity @s contents *[minecraft:custom_data~{uhcp_titan_id:12b}]
 execute if items entity @s contents *[minecraft:custom_data~{uhcp_titan_id:12b}] if entity @p[gamemode=survival,distance=..12] run tellraw @a [{"text":"Gallie","color":"gold"},{"text":" has been vanquished by ","color":"white"},{"selector":"@a[gamemode=survival,distance=..12]","color":"gold"},{"text":"!","color":"white"}]
 
 execute as @a[distance=..16,gamemode=survival,scores={uhcp_augment=208}] at @s run function uhcp:entity/items/loot/summon
-execute as @a[distance=..16,gamemode=survival,scores={uhcp_augment=208}] at @s run loot replace entity @e[type=minecraft:item,tag=UHCP_NewLoot,sort=nearest,limit=1] contents loot uhcp:consumables/titan_spinal_fluid
+execute as @a[distance=..16,gamemode=survival,scores={uhcp_augment=208}] at @s run loot replace entity @n[type=minecraft:item,tag=UHCP_NewLoot] contents loot uhcp:consumables/titan_spinal_fluid
 execute as @a[distance=..16,gamemode=survival,scores={uhcp_augment=208}] at @s run function uhcp:entity/items/loot/finish
 
 particle minecraft:totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.1 100 normal

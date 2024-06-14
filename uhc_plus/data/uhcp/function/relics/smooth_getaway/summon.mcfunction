@@ -4,16 +4,16 @@ summon minecraft:wolf ~ ~ ~ {Silent:1b,Health:50f,CustomNameVisible:0b,CustomNam
 summon minecraft:giant ~ ~ ~ {NoAI:1b,Silent:1b,Health:15f,attributes:[{id:"minecraft:generic.max_health",base:15.0d},{id:"minecraft:generic.scale",base:0.166d}],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:2000,show_particles:0b}],Tags:["UHCP_Hitbox","UHCP_InitScore","UHCP_New"]}
 
 # Initialize aspects of clone
-loot replace entity @e[tag=UHCP_SCloneStand,tag=UHCP_New,sort=nearest,limit=1] weapon.mainhand loot uhcp:relics/smooth_getaway/weapon
-loot replace entity @e[tag=UHCP_SCloneStand,tag=UHCP_New,sort=nearest,limit=1] armor.head loot uhcp:player_head
-execute if items entity @s armor.chest * run item replace entity @e[tag=UHCP_SCloneStand,tag=UHCP_New,sort=nearest,limit=1] armor.chest from entity @s armor.chest
-execute if items entity @s armor.legs * run item replace entity @e[tag=UHCP_SCloneStand,tag=UHCP_New,sort=nearest,limit=1] armor.legs from entity @s armor.legs
-execute if items entity @s armor.feet * run item replace entity @e[tag=UHCP_SCloneStand,tag=UHCP_New,sort=nearest,limit=1] armor.feet from entity @s armor.feet
-execute as @e[tag=UHCP_SCloneStand,tag=UHCP_New,sort=nearest,limit=1] run data modify entity @s CustomName set from entity @s ArmorItems[3].components."minecraft:profile".name
+loot replace entity @n[tag=UHCP_SCloneStand,tag=UHCP_New] weapon.mainhand loot uhcp:relics/smooth_getaway/weapon
+loot replace entity @n[tag=UHCP_SCloneStand,tag=UHCP_New] armor.head loot uhcp:player_head
+execute if items entity @s armor.chest * run item replace entity @n[tag=UHCP_SCloneStand,tag=UHCP_New] armor.chest from entity @s armor.chest
+execute if items entity @s armor.legs * run item replace entity @n[tag=UHCP_SCloneStand,tag=UHCP_New] armor.legs from entity @s armor.legs
+execute if items entity @s armor.feet * run item replace entity @n[tag=UHCP_SCloneStand,tag=UHCP_New] armor.feet from entity @s armor.feet
+execute as @n[tag=UHCP_SCloneStand,tag=UHCP_New] run data modify entity @s CustomName set from entity @s ArmorItems[3].components."minecraft:profile".name
 execute as @e[type=minecraft:wolf,tag=UHCP_New] at @s run data modify entity @s Owner set from entity @p[tag=UHCP_Owner] UUID
 
 # Mirror Image
-execute if entity @s[tag=UHCP_MirrorImage] as @e[tag=UHCP_SCloneStand,tag=UHCP_New,sort=nearest,limit=1] run scoreboard players set @s uhcp_timer -400
+execute if entity @s[tag=UHCP_MirrorImage] as @n[tag=UHCP_SCloneStand,tag=UHCP_New] run scoreboard players set @s uhcp_timer -400
 
 # Init IDs
 scoreboard players add %global uhcp_id 1

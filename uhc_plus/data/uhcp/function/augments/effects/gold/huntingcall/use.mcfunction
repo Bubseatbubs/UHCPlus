@@ -25,7 +25,7 @@ execute as @a[gamemode=survival] run scoreboard players operation @s uhcp_initSt
 
 tag @s add UHCP_HuntingCall
 effect give @s minecraft:speed 20 0 false
-execute as @a[distance=..150,scores={uhcp_initStatus=1..}] unless score @s uhcp_initStatus = @a[tag=UHCP_HuntingCall,sort=nearest,limit=1] uhcp_initStatus run effect give @s minecraft:glowing 20 0 true
+execute as @a[distance=..150,scores={uhcp_initStatus=1..}] unless score @s uhcp_initStatus = @p[tag=UHCP_HuntingCall] uhcp_initStatus run effect give @s minecraft:glowing 20 0 true
 execute as @a at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 1 1
 tellraw @a [{"selector":"@s","color":"blue"},{"text":" used","color":"white"},{"text":" Hunting Call","color":"gold"},{"text":"!","color":"white"}]
 

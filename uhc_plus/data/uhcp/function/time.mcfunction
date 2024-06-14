@@ -31,7 +31,7 @@ execute if score %time uhcp_game_time matches ..45000 run function uhcp:augments
 execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp_game_time >= @s uhcp_game_time run function uhcp:augments/effects/timed
 
 # AFK augment
-execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=101},gamemode=survival] at @s run ride @s mount @e[tag=UHCP_Lock,distance=..15,sort=nearest,limit=1]
+execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=101},gamemode=survival] at @s run ride @s mount @n[tag=UHCP_Lock,distance=..15]
 
 # Solo leveling
 execute as @a[scores={uhcp_lava_timeInterval=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
@@ -53,7 +53,7 @@ execute unless score %compass_time uhcp_itemCount matches ..0 run scoreboard pla
 execute if entity @a[scores={top=1..}] run function uhcp:top/validate
 execute as @a[scores={uhcp_top_delay=1..}] at @s run function uhcp:top/finish
 scoreboard players remove @a[scores={uhcp_top_CD=1..}] uhcp_top_CD 1
-execute as @a[tag=UHCP_IsTeleporting] at @s unless entity @e[type=minecraft:marker,tag=UHCP_TopCheck,distance=..1] run function uhcp:top/cancel
+execute as @a[tag=UHCP_IsTeleporting] at @s unless entity @e[tag=UHCP_TopCheck,distance=..1] run function uhcp:top/cancel
 execute as @a[tag=UHCP_IsTeleporting] at @s run function uhcp:top/updatecharge
 
 # Timed Titan events

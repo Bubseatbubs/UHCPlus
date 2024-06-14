@@ -10,4 +10,4 @@ scoreboard players set @e[tag=UHCP_NetherPortalWave2] uhcp_timer -15
 tag @e[tag=!UHCP_NetherPortalWave1,tag=!UHCP_NetherPortalWave2,tag=UHCP_GallieNetherPortal,limit=1] add UHCP_NetherPortalWave3
 scoreboard players set @e[tag=UHCP_NetherPortalWave3] uhcp_timer -30
 
-execute as @s at @s run spreadplayers ~ ~ 1 9 false @e[tag=UHCP_GallieNetherPortal]
+execute at @s run spreadplayers ~ ~ 1 9 false @e[tag=UHCP_GallieNetherPortal]

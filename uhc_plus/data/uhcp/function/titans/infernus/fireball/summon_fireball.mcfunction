@@ -1,7 +1,7 @@
 tag @s add UHCP_InfernusFireball
 tag @s add UHCP_Summon
 data merge entity @s {Motion:[0.0,0.25,0.0]}
-execute at @s run scoreboard players operation @s uhcp_id = @e[tag=UHCP_Infernus,sort=nearest,limit=1] uhcp_id
+execute at @s run scoreboard players operation @s uhcp_id = @n[tag=UHCP_Infernus] uhcp_id
 scoreboard players set %motion uhcp_motion_x1 -100
 scoreboard players set %motion uhcp_motion_z1 -100
 execute store result score %motion uhcp_motion_x2 run random value 0..200

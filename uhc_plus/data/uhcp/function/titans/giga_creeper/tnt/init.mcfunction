@@ -3,6 +3,6 @@ execute at @s run function uhcp:titans/giga_creeper/tnt/summon_indicator
 execute at @s run function uhcp:titans/giga_creeper/tnt/summon_indicator
 execute at @s run function uhcp:titans/giga_creeper/tnt/summon_indicator
 
-execute as @s at @s run spreadplayers ~ ~ 1 8 false @e[tag=UHCP_GigaCreeperTNT]
+execute at @s run spreadplayers ~ ~ 1 8 false @e[tag=UHCP_GigaCreeperTNT]
 
 execute on target at @s run function uhcp:titans/giga_creeper/tnt/summon_indicator

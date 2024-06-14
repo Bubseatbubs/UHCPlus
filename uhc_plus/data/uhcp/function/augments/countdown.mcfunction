@@ -5,7 +5,7 @@
 # @within  uhcp:tick
 
 scoreboard players remove %augment_countdown uhcp_game_time 1
-execute if score %augment_countdown uhcp_game_time matches ..890 as @a[gamemode=adventure] at @s run ride @s mount @e[tag=UHCP_Lock,distance=..2,sort=nearest,limit=1]
+execute if score %augment_countdown uhcp_game_time matches ..890 as @a[gamemode=adventure] at @s run ride @s mount @n[tag=UHCP_Lock,distance=..2]
 execute if score %augment_countdown uhcp_game_time matches 880 as @a[gamemode=adventure] at @s run forceload remove ~ ~
 
 # Spawn armor stand if there are none near the player

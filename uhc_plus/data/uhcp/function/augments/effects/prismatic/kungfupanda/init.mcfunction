@@ -11,10 +11,10 @@ attribute @s minecraft:player.entity_interaction_range modifier add uhcp:titan_e
 attribute @s minecraft:generic.armor modifier add uhcp:panda_armor 30 add_value
 attribute @s minecraft:generic.scale modifier add uhcp:panda_scale 0.65 add_value
 summon minecraft:panda ~ ~ ~ {Silent:1b,NoAI:1b,Health:1000f,MainGene:"normal",HiddenGene:"normal",Tags:["UHCP_New","UHCP_Summon","UHCP_KungfuPanda"],attributes:[{id:"minecraft:generic.scale",base:1.2d},{id:"minecraft:generic.armor",base:25.0d},{id:"minecraft:generic.max_health",base:1000.0d}]}
-execute as @e[tag=UHCP_New,sort=nearest,limit=1] store result score @s uhcp_aug_tier run data get entity @s Health
-execute if score @s uhcp_augment matches 23 as @e[tag=UHCP_New,sort=nearest,limit=1] run attribute @s minecraft:generic.scale modifier add uhcp:panda_scale -0.3 add_value
-execute if score @s uhcp_augment matches 219 as @e[tag=UHCP_New,sort=nearest,limit=1] run attribute @s minecraft:generic.scale modifier add uhcp:panda_scale -0.4 add_value
-execute if score @s uhcp_augment matches 14 as @e[tag=UHCP_New,sort=nearest,limit=1] run attribute @s minecraft:generic.scale modifier add uhcp:panda_scale 0.25 add_value
+execute as @n[tag=UHCP_New] store result score @s uhcp_aug_tier run data get entity @s Health
+execute if score @s uhcp_augment matches 23 run attribute @n[tag=UHCP_New] minecraft:generic.scale modifier add uhcp:panda_scale -0.3 add_value
+execute if score @s uhcp_augment matches 219 run attribute @n[tag=UHCP_New] minecraft:generic.scale modifier add uhcp:panda_scale -0.4 add_value
+execute if score @s uhcp_augment matches 14 run attribute @n[tag=UHCP_New] minecraft:generic.scale modifier add uhcp:panda_scale 0.25 add_value
 effect give @s minecraft:invisibility infinite 0 true
 effect give @s minecraft:absorption infinite 4 true
 
@@ -22,10 +22,10 @@ effect give @s minecraft:absorption infinite 4 true
 execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
 # Owner set to player
-scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_id = @s uhcp_id
-scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_team = @s uhcp_team
-execute as @e[tag=UHCP_New,sort=nearest,limit=1] run function uhcp:teams/join
-execute if score %pvp uhcp_settings matches ..0 run team join no_collision @e[tag=UHCP_New,sort=nearest,scores={uhcp_team=15..},limit=1]
+scoreboard players operation @n[tag=UHCP_New] uhcp_id = @s uhcp_id
+scoreboard players operation @n[tag=UHCP_New] uhcp_team = @s uhcp_team
+execute as @n[tag=UHCP_New] run function uhcp:teams/join
+execute if score %pvp uhcp_settings matches ..0 run team join no_collision @n[tag=UHCP_New,scores={uhcp_team=15..}]
 tag @e remove UHCP_New
 
 # If player has Kung-Fu Panda, regenerate Bamboo

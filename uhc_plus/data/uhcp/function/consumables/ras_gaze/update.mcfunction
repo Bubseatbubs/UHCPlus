@@ -9,11 +9,11 @@ execute if score @s uhcp_timer matches 20 run particle minecraft:flash ~ ~ ~ 1 1
 execute unless score @s uhcp_timer matches 20.. run return 0
 
 tp @s ~ ~ ~ ~5 0
-execute as @a[team=!grace_period,distance=..36,gamemode=survival] unless score @s uhcp_team = @e[tag=UHCP_CurrentRaLaser,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_RaTarget
-execute as @e[predicate=uhcp:targetable,distance=..36] if score @s uhcp_team = @e[tag=UHCP_CurrentRaLaser,sort=nearest,limit=1] uhcp_team run tag @s add UHCP_RaImmune
-execute as @a[distance=..36,gamemode=survival] if score @s uhcp_id = @e[tag=UHCP_CurrentRaLaser,sort=nearest,limit=1] uhcp_id run tag @s remove UHCP_RaTarget
+execute as @a[team=!grace_period,distance=..36,gamemode=survival] unless score @s uhcp_team = @n[tag=UHCP_CurrentRaLaser] uhcp_team run tag @s add UHCP_RaTarget
+execute as @e[predicate=uhcp:targetable,distance=..36] if score @s uhcp_team = @n[tag=UHCP_CurrentRaLaser] uhcp_team run tag @s add UHCP_RaImmune
+execute as @a[distance=..36,gamemode=survival] if score @s uhcp_id = @n[tag=UHCP_CurrentRaLaser] uhcp_id run tag @s remove UHCP_RaTarget
 execute facing entity @p[tag=UHCP_RaTarget] feet run tp @s ^ ^ ^0.36
-execute unless entity @a[tag=UHCP_RaTarget] facing entity @e[tag=!UHCP_Invulnerable,tag=!UHCP_RaImmune,type=!minecraft:player,type=!#uhcp:inanimate_mobs,distance=..32,sort=nearest,limit=1] feet run tp @s ^ ^ ^0.36
+execute unless entity @a[tag=UHCP_RaTarget] facing entity @n[tag=!UHCP_Invulnerable,tag=!UHCP_RaImmune,type=!minecraft:player,type=!#uhcp:inanimate_mobs,distance=..32] feet run tp @s ^ ^ ^0.36
 
 execute store result score %blocksfilled uhcp_titans_count run fill ~-2.5 ~-0.5 ~-2.5 ~2.5 ~128 ~2.5 minecraft:air replace #uhcp:visible_breakable
 execute store result score %blocksfilled uhcp_titans_count run fill ~-2.5 ~-1.5 ~-2.5 ~2.5 ~-1.5 ~2.5 minecraft:basalt replace #uhcp:visible_breakable
@@ -26,7 +26,7 @@ playsound minecraft:block.ancient_debris.break master @a[distance=..36] ~ ~ ~ 1 
 playsound minecraft:entity.iron_golem.hurt master @a[distance=..36] ~ ~ ~ 1 0.5 0.05
 particle minecraft:campfire_cosy_smoke ~ ~ ~ 2 2 2 0.01 10 normal
 particle minecraft:lava ~ ~ ~ 2 2 2 0.01 20 normal
-execute as @e[predicate=uhcp:targetable,distance=..3] unless score @s uhcp_team = @e[tag=UHCP_CurrentRaLaser,sort=nearest,limit=1] uhcp_team run damage @s 10 uhcp:instant_damage by @e[tag=UHCP_RaLaser,sort=nearest,limit=1]
+execute as @e[predicate=uhcp:targetable,distance=..3] unless score @s uhcp_team = @n[tag=UHCP_CurrentRaLaser] uhcp_team run damage @s 10 uhcp:instant_damage by @n[tag=UHCP_RaLaser]
 tag @a remove UHCP_RaTarget
 tag @e remove UHCP_RaImmune
 

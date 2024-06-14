@@ -1,4 +1,4 @@
-execute at @s run kill @e[tag=UHCP_Lock,distance=..15,sort=nearest,limit=1]
+execute at @s run kill @n[tag=UHCP_Lock,distance=..15]
 effect clear @s minecraft:mining_fatigue
 effect clear @s minecraft:weakness
 give @s minecraft:gold_ingot 24

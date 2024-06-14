@@ -1,9 +1,9 @@
 function uhcp:entity/items/loot/summon
-loot replace entity @e[type=minecraft:item,tag=UHCP_NewLoot,sort=nearest,limit=1] contents loot uhcp:relics/soulflames_embrace
+loot replace entity @n[type=minecraft:item,tag=UHCP_NewLoot] contents loot uhcp:relics/soulflames_embrace
 function uhcp:entity/items/loot/finish
 
 function uhcp:entity/items/loot/summon
-loot replace entity @e[type=minecraft:item,tag=UHCP_NewLoot,sort=nearest,limit=1] contents loot uhcp:relics/windfall
+loot replace entity @n[type=minecraft:item,tag=UHCP_NewLoot] contents loot uhcp:relics/windfall
 function uhcp:entity/items/loot/finish
 
 give @s minecraft:golden_apple 30

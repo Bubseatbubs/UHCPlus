@@ -9,7 +9,7 @@ execute as @a[gamemode=survival] run scoreboard players operation @s uhcp_initSt
 
 # Teleport player
 tag @s add UHCP_BirdMan
-execute as @a[tag=!UHCP_BirdMan,scores={uhcp_initStatus=1..}] at @s if score @a[tag=UHCP_BirdMan,sort=nearest,limit=1] uhcp_team = @s uhcp_initStatus run tag @s add UHCP_BirdMaybeTarget
+execute as @a[tag=!UHCP_BirdMan,scores={uhcp_initStatus=1..}] at @s if score @p[tag=UHCP_BirdMan] uhcp_team = @s uhcp_initStatus run tag @s add UHCP_BirdMaybeTarget
 tag @r[tag=UHCP_BirdMaybeTarget] add UHCP_BirdTarget
 tp @s @r[tag=UHCP_BirdTarget]
 execute unless entity @e[tag=UHCP_BirdTarget] at @s run function uhcp:consumables/wild_feather/solo

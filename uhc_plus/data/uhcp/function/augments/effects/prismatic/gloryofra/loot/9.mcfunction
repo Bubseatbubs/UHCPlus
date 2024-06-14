@@ -1,5 +1,5 @@
 function uhcp:entity/items/loot/summon
-loot replace entity @e[type=minecraft:item,tag=UHCP_NewLoot,sort=nearest,limit=1] contents loot uhcp:relics/dragons_protection
+loot replace entity @n[type=minecraft:item,tag=UHCP_NewLoot] contents loot uhcp:relics/dragons_protection
 function uhcp:entity/items/loot/finish
 
 give @s minecraft:potion[minecraft:potion_contents={"potion":"minecraft:strong_regeneration"}] 2

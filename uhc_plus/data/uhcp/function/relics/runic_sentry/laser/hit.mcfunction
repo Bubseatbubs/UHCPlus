@@ -1,3 +1,3 @@
-execute as @s unless score @s uhcp_team = @e[tag=UHCP_CurrentLaser,sort=nearest,limit=1] uhcp_team run damage @s 4 minecraft:fireworks by @e[tag=UHCP_CurrentLaser,sort=nearest,limit=1]
+execute unless score @s uhcp_team = @n[tag=UHCP_CurrentLaser] uhcp_team run damage @s 4 minecraft:fireworks by @n[tag=UHCP_CurrentLaser]
 playsound minecraft:item.trident.thunder master @a[distance=..6] 1 1 0.6
-kill @e[tag=UHCP_CurrentLaser,sort=nearest,limit=1]
+kill @n[tag=UHCP_CurrentLaser]

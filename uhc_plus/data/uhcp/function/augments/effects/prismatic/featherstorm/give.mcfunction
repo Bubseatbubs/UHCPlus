@@ -1,5 +1,5 @@
 function uhcp:entity/items/loot/summon
-loot replace entity @e[type=minecraft:item,tag=UHCP_NewLoot,sort=nearest,limit=1] contents loot uhcp:consumables/wild_feather
+loot replace entity @n[type=minecraft:item,tag=UHCP_NewLoot] contents loot uhcp:consumables/wild_feather
 function uhcp:entity/items/loot/finish
 
 scoreboard players add @s uhcp_game_time 6000

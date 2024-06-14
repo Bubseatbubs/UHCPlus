@@ -7,15 +7,15 @@ summon minecraft:item_display ~ ~1.5 ~ {Tags:["UHCP_Voltrune","UHCP_Summon","UHC
 playsound minecraft:block.enchantment_table.use player @a[distance=..6] ~ ~ ~ 1.0 0.6 1.0
 playsound minecraft:entity.blaze.death player @a[distance=..6] ~ ~ ~ 1.0 2.0 1.0
 
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_radiant:1b}] at @s run tag @e[tag=UHCP_Voltrune,tag=UHCP_New,sort=nearest,limit=1] add UHCP_ZeusFavor
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_radiant:1b}] at @s run tag @n[tag=UHCP_Voltrune,tag=UHCP_New] add UHCP_ZeusFavor
 
 # Gets team value
-scoreboard players operation @e[tag=UHCP_Voltrune,tag=UHCP_New,sort=nearest,limit=1] uhcp_team = @s uhcp_team
+scoreboard players operation @n[tag=UHCP_Voltrune,tag=UHCP_New] uhcp_team = @s uhcp_team
 
-execute at @e[tag=UHCP_New,sort=nearest,limit=1] positioned ~ ~0.6 ~ run function uhcp:relics/voltrune/particles
-execute at @e[tag=UHCP_New,sort=nearest,limit=1] positioned ~ ~0.6 ~ rotated ~90 ~ run function uhcp:relics/voltrune/particles
-execute at @e[tag=UHCP_New,sort=nearest,limit=1] positioned ~ ~0.6 ~ rotated ~180 ~ run function uhcp:relics/voltrune/particles
-execute at @e[tag=UHCP_New,sort=nearest,limit=1] positioned ~ ~0.6 ~ rotated ~270 ~ run function uhcp:relics/voltrune/particles
+execute at @n[tag=UHCP_New] positioned ~ ~0.6 ~ run function uhcp:relics/voltrune/particles
+execute at @n[tag=UHCP_New] positioned ~ ~0.6 ~ rotated ~90 ~ run function uhcp:relics/voltrune/particles
+execute at @n[tag=UHCP_New] positioned ~ ~0.6 ~ rotated ~180 ~ run function uhcp:relics/voltrune/particles
+execute at @n[tag=UHCP_New] positioned ~ ~0.6 ~ rotated ~270 ~ run function uhcp:relics/voltrune/particles
 
 tag @s remove UHCP_Owner
 tag @e remove UHCP_New

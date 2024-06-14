@@ -4,5 +4,5 @@ summon minecraft:item_display ~ ~ ~ {billboard:"fixed",start_interpolation:0,int
 execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
 # Owner is set to player
-scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_id = @s uhcp_id
+scoreboard players operation @n[tag=UHCP_New] uhcp_id = @s uhcp_id
 tag @e remove UHCP_New

@@ -1,6 +1,6 @@
 # Initialize
 execute if entity @s[tag=UHCP_SmoothGetaway,tag=!UHCP_ShadowClone] run function uhcp:entity/items/loot/summon
-execute if entity @s[tag=UHCP_SmoothGetaway,tag=!UHCP_ShadowClone] run loot replace entity @e[type=minecraft:item,tag=UHCP_NewLoot,sort=nearest,limit=1] contents loot uhcp:relics/smooth_getaway/damaged
+execute if entity @s[tag=UHCP_SmoothGetaway,tag=!UHCP_ShadowClone] run loot replace entity @n[type=minecraft:item,tag=UHCP_NewLoot] contents loot uhcp:relics/smooth_getaway/damaged
 execute if entity @s[tag=UHCP_SmoothGetaway,tag=!UHCP_ShadowClone] run function uhcp:entity/items/loot/finish
 
 execute if entity @s[tag=UHCP_SmoothGetaway,tag=UHCP_ShadowClone] run function uhcp:relics/smooth_getaway/return_shadowclone

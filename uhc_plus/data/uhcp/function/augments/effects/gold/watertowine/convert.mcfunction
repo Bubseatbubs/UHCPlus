@@ -1,5 +1,5 @@
 function uhcp:entity/items/loot/summon
-loot replace entity @e[type=minecraft:item,tag=UHCP_NewLoot,sort=nearest,limit=1] contents loot uhcp:augments/watertowine
+loot replace entity @n[type=minecraft:item,tag=UHCP_NewLoot] contents loot uhcp:augments/watertowine
 function uhcp:entity/items/loot/finish
 
 scoreboard players remove @s uhcp_initStatus 1

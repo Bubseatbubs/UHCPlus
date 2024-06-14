@@ -19,7 +19,7 @@ playsound minecraft:block.ancient_debris.break master @a[distance=..36] ~ ~ ~ 1 
 playsound minecraft:entity.guardian.hurt master @a[distance=..36] ~ ~ ~ 1 0.5 0.05
 particle minecraft:glow ~ ~ ~ 2 2 2 0.01 10 normal
 particle minecraft:glow_squid_ink ~ ~ ~ 2 2 2 0.01 15 normal
-execute as @a[distance=..2] run damage @s 4 uhcp:instant_damage by @e[tag=UHCP_CurrentLaser,sort=nearest,limit=1]
+execute as @a[distance=..2] run damage @s 4 uhcp:instant_damage by @n[tag=UHCP_CurrentLaser]
 tag @a remove UHCP_LaserTarget
 
 execute if score @s uhcp_timer matches 45 run data merge entity @s {interpolation_duration:10,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-50f,0f],scale:[0f,1000f,0f]}}

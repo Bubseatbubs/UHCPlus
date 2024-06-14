@@ -16,4 +16,4 @@ scoreboard players set @e[tag=UHCP_LightningWave2] uhcp_timer -10
 tag @e[tag=!UHCP_LightningWave1,tag=!UHCP_LightningWave2,tag=UHCP_GigaCreeperLightning,limit=3] add UHCP_LightningWave3
 scoreboard players set @e[tag=UHCP_LightningWave3] uhcp_timer -20
 
-execute as @s at @s run spreadplayers ~ ~ 1 9 false @e[tag=UHCP_GigaCreeperLightning]
+execute at @s run spreadplayers ~ ~ 1 9 false @e[tag=UHCP_GigaCreeperLightning]

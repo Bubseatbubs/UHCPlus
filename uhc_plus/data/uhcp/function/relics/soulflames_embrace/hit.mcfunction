@@ -4,7 +4,7 @@ advancement revoke @s only uhcp:relics/soulflames_embrace/hit
 tag @s add UHCP_Owner
 scoreboard players reset @e[distance=..6] uhcp_aug_count
 execute as @e[tag=!UHCP_Owner,predicate=uhcp:targetable,distance=..6] store result score @s uhcp_aug_count run function uhcp:relics/checkattacker
-tag @e[distance=..6,scores={uhcp_aug_count=1},sort=nearest,limit=1] add UHCP_SaberTarget
+tag @n[distance=..6,scores={uhcp_aug_count=1}] add UHCP_SaberTarget
 execute unless entity @e[tag=UHCP_SaberTarget,distance=..6] run tag @s add UHCP_SaberTarget
 
 # Stop function if no targets are near
@@ -19,8 +19,8 @@ execute at @e[tag=UHCP_SaberTarget] run summon minecraft:marker ~ ~ ~ {Tags:["UH
 
 
 # Gets team value
-scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=1] uhcp_team = @s uhcp_team
-execute if entity @s[tag=UHCP_PreparePhantomPains] run tag @e[tag=UHCP_New,sort=nearest,limit=1] add UHCP_PhantomPains
+scoreboard players operation @n[tag=UHCP_New] uhcp_team = @s uhcp_team
+execute if entity @s[tag=UHCP_PreparePhantomPains] run tag @n[tag=UHCP_New] add UHCP_PhantomPains
 
 tag @s remove UHCP_Owner
 tag @e remove UHCP_SaberTarget

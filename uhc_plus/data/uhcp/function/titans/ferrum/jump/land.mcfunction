@@ -7,7 +7,7 @@ particle minecraft:block{block_state:"minecraft:iron_block"} ~ ~ ~ 3 1 3 0.1 100
 fill ~-9 ~-0.5 ~-9 ~9 ~ ~9 minecraft:air replace #uhcp:titan_can_break
 attribute @s minecraft:generic.gravity modifier remove uhcp:gravity_globe
 particle minecraft:dust_plume ~ ~ ~ 1 1 1 1 100 normal
-kill @e[tag=UHCP_FerrumLanding,sort=nearest,limit=1,distance=..16]
-execute as @a[distance=..8] run damage @s 10 minecraft:falling_block by @e[tag=UHCP_CurrentFerrum,sort=nearest,limit=1]
+kill @n[tag=UHCP_FerrumLanding,distance=..16]
+execute as @a[distance=..8] run damage @s 10 minecraft:falling_block by @n[tag=UHCP_CurrentFerrum]
 execute as @a[distance=..8] run attribute @s minecraft:generic.gravity modifier add uhcp:gravity_globe -0.25 add_value
 tag @a[distance=..8] add UHCP_InflictedWithGravityGlobe

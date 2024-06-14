@@ -10,8 +10,8 @@ tag @s add UHCP_Owner
 
 scoreboard players reset @e[distance=..5] uhcp_aug_count
 execute as @e[tag=!UHCP_Owner,tag=!UHCP_Bee,type=!#uhcp:inanimate_mobs,distance=..5] store result score @s uhcp_aug_count run function uhcp:augments/effects/gold/beekeeper/checkattacker
-tag @e[scores={uhcp_aug_count=1},distance=..5,sort=nearest,limit=1] add UHCP_BeeTarget
-execute at @e[tag=UHCP_BeeTarget,sort=nearest,limit=1] run function uhcp:entity/bees/summon
+tag @n[scores={uhcp_aug_count=1},distance=..5] add UHCP_BeeTarget
+execute at @n[tag=UHCP_BeeTarget] run function uhcp:entity/bees/summon
 tag @s remove UHCP_Owner
 tag @e remove UHCP_BeeTarget
 scoreboard players reset @e[distance=..5] uhcp_aug_count
@@ -20,11 +20,11 @@ scoreboard players reset @e[distance=..5] uhcp_aug_count
 execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
 # Bee owner is set to player
-scoreboard players operation @e[tag=UHCP_New,tag=UHCP_Bee,sort=nearest,limit=1] uhcp_id = @s uhcp_id
+scoreboard players operation @n[tag=UHCP_New,tag=UHCP_Bee] uhcp_id = @s uhcp_id
 tag @e remove UHCP_New
 
 # Bee Sin! :o
 execute store result score %random uhcp_aug_count run random value 1..100
-execute if score %random uhcp_aug_count matches 100 run data merge entity @e[tag=UHCP_Bee,sort=nearest,limit=1] {CustomName:'{"text":"Bee Sin","color":"gold"}',CustomNameVisible:1b}
+execute if score %random uhcp_aug_count matches 100 run data merge entity @n[tag=UHCP_Bee] {CustomName:'{"text":"Bee Sin","color":"gold"}',CustomNameVisible:1b}
 
 scoreboard players reset @s uhcp_aug_count

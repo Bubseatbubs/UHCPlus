@@ -1,5 +1,5 @@
 function uhcp:entity/items/loot/summon
-loot replace entity @e[type=minecraft:item,tag=UHCP_NewLoot,sort=nearest,limit=1] contents loot uhcp:augments/ra/10
+loot replace entity @n[type=minecraft:item,tag=UHCP_NewLoot] contents loot uhcp:augments/ra/10
 function uhcp:entity/items/loot/finish
 
 effect give @s minecraft:strength infinite 0 false
