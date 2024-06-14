@@ -16,6 +16,20 @@ UHC+ is an alternate take on Minecraft’s **Ultra Hardcore** gamemode. Original
 - Highly configurable settings for the above features!
 
 ## To install:
-1. Download the Zip.
-2. Open the Zip file "UHCPlus-main" and extract the contents (another folder called UHCPlus-main).
-3. Put the contents of UHCPlus-main (the folder) into a Minecraft datapack folder. (Compatible with Paper servers.)
+### Download from releases:
+ 1. Navigate to [Releases](https://github.com/Bubseatbubs/UHCPlus/releases).
+ 2. Download "uhc_plus-v..." Zip file from the desired release.
+ 3. As is, place the Zip file in a Minecraft datapack folder.
+### Download from source:
+ 1. Download the Zip.
+ 2. Open the Zip file "UHCPlus-main" and extract the contents (another folder called UHCPlus-main).
+ 3. Put the contents of UHCPlus-main (the folder) into a Minecraft datapack folder. (Compatible with Paper servers.)
+
+## Credits:
+- [Misode](https://misode.github.io): Invaluable generators. (Especially while 1.20.5 snapshots were coming out.)
+- [BDStudio](https://eszesbalint.github.io/bdstudio/editor): Necessary for creating most block models. E.g. Runic Sentry, Titan portal.
+- [MCStacker](https://mcstacker.net): Great help with generating entities.
+- [Particle Plotter](https://cloudwolfyt.github.io/pages/gens/particle-plots.html) by Cloudwolf.
+- [Minecraft-heads](https://minecraft-heads.com): Provides custom heads.
+- [Cosmian UHC](https://www.planetminecraft.com/data-pack/cosmian-uhc-v3-1-18): UHC+ was originally an add-on.
+- [TitleMC](https://titlemc.app): Generated the logo on [Planet Minecraft](https://www.planetminecraft.com/data-pack/uhc-6257030).
