@@ -1,4 +1,3 @@
-
 execute on passengers at @s as @e[distance=..2.5,predicate=uhcp:targetable] unless score @s uhcp_team = @n[tag=UHCP_BuzzburstDisplay] uhcp_team run damage @s 4 minecraft:fireworks
 particle minecraft:dripping_honey ~ ~ ~ 2.5 2.5 2.5 0.1 500 normal
 particle minecraft:effect ~ ~ ~ 2.5 2.5 2.5 0.1 500 normal
