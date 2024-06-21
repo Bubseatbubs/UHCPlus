@@ -1,4 +1,4 @@
-clear @s *[custom_data~{uhcp_consumable:14b}] 1
+clear @s *[minecraft:custom_data~{uhcp_consumable:14b}] 1
 
 tag @s add UHCP_Owner
 item replace entity @s weapon.mainhand with minecraft:air

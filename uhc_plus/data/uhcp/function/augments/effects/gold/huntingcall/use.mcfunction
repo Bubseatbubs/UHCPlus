@@ -19,7 +19,7 @@ execute if score @s uhcp_timer matches 1.. if score %augment_sec uhcp_timer matc
 execute if score @s uhcp_timer matches 0.. run return 0
 
 # Hunting Call Effect
-# Assign Team Scoreboards
+# Assign team scoreboards
 scoreboard players set @a uhcp_initStatus 0
 execute as @a[gamemode=survival] run scoreboard players operation @s uhcp_initStatus = @s uhcp_team
 

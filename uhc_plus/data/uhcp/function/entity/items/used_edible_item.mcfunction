@@ -8,15 +8,15 @@ execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_sundisk
 execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_sundisk:1b}] at @s run return run function uhcp:augments/effects/prismatic/gloryofra/state_stacks
 
 # Relics
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:0b}] at @s run return run function uhcp:relics/buzzburst/init
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:1b}] at @s run return run function uhcp:relics/soulflames_embrace/prepare
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:2b}] at @s run return run function uhcp:relics/voltrune/init
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:3b}] at @s run return run function uhcp:relics/gravity_globe/init
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:4b}] at @s run return run function uhcp:relics/runic_sentry/init
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:5b}] at @s run return run function uhcp:relics/windfall/init
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:6b}] at @s run return run function uhcp:relics/smooth_getaway/init
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:7b}] at @s run return run function uhcp:relics/web_o_rang/init
-execute if items entity @s weapon.mainhand *[!damage|damage=0,minecraft:custom_data~{uhcp_relic_id:8b}] at @s run return run function uhcp:relics/dragons_protection/init
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_relic_id:0b},!minecraft:damage|minecraft:damage=0] at @s run return run function uhcp:relics/buzzburst/init
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_relic_id:1b},!minecraft:damage|minecraft:damage=0] at @s run return run function uhcp:relics/soulflames_embrace/prepare
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_relic_id:2b},!minecraft:damage|minecraft:damage=0] at @s run return run function uhcp:relics/voltrune/init
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_relic_id:3b},!minecraft:damage|minecraft:damage=0] at @s run return run function uhcp:relics/gravity_globe/init
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_relic_id:4b},!minecraft:damage|minecraft:damage=0] at @s run return run function uhcp:relics/runic_sentry/init
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_relic_id:5b},!minecraft:damage|minecraft:damage=0] at @s run return run function uhcp:relics/windfall/init
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_relic_id:6b},!minecraft:damage|minecraft:damage=0] at @s run return run function uhcp:relics/smooth_getaway/init
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_relic_id:7b},!minecraft:damage|minecraft:damage=0] at @s run return run function uhcp:relics/web_o_rang/init
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_relic_id:8b},!minecraft:damage|minecraft:damage=0] at @s run return run function uhcp:relics/dragons_protection/init
 
 # Consumables
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_consumable:0b}] at @s run return run function uhcp:consumables/duplicator/init

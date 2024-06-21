@@ -17,7 +17,7 @@ execute as @a[scores={lobby=2..6}] run function uhcp:lobby/teleport/select
 scoreboard players enable @a lobby
 
 # Relic Testing Chamber Entrance
-execute at @e[tag=UHCP_LobbyOrigin,limit=1] positioned ^57 ^7 ^32 as @a[distance=..3,gamemode=!spectator,tag=!UHCP_RelicTestingChamber] run function uhcp:lobby/relic_testing/init
+execute at @e[tag=UHCP_LobbyOrigin,limit=1] positioned ^57 ^7 ^32 run function uhcp:lobby/relic_testing/entrance
 
 # Credits - player head rotation
 execute as @e[tag=UHCP_LobbyCredits] at @s run tp @s ~ ~ ~ ~1 ~

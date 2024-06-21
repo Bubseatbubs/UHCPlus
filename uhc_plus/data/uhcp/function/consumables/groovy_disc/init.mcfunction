@@ -1,4 +1,4 @@
-clear @s *[custom_data~{uhcp_consumable:7b}] 1
+clear @s *[minecraft:custom_data~{uhcp_consumable:7b}] 1
 effect give @a[distance=..50,gamemode=survival] minecraft:glowing 30 0 true 
 effect give @a[distance=..50,gamemode=survival] minecraft:blindness 30 0 true 
 

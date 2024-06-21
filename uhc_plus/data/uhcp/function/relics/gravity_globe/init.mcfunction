@@ -1,7 +1,7 @@
 tag @s add UHCP_Owner
 function uhcp:relics/durability/reset
 
-# Assign Team Scoreboards
+# Assign team scoreboards
 scoreboard players set @a uhcp_initStatus 0
 execute as @a[gamemode=survival] run scoreboard players operation @s uhcp_initStatus = @s uhcp_team
 

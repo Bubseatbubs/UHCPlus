@@ -1,4 +1,4 @@
-clear @s *[custom_data~{uhcp_consumable:3b}] 1
+clear @s *[minecraft:custom_data~{uhcp_consumable:3b}] 1
 function uhcp:entity/items/loot/summon
 loot replace entity @n[type=minecraft:item,tag=UHCP_NewLoot] contents loot uhcp:relics
 function uhcp:entity/items/loot/finish
