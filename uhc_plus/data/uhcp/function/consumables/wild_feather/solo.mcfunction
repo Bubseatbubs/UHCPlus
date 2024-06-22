@@ -7,4 +7,4 @@ execute if score @s uhcp_initStatus matches 1 run return fail
 execute unless block ~ 62 ~ minecraft:water run return fail
 
 execute store result score @s uhcp_initStatus run data get entity @s Pos[1]
-execute if score @s uhcp_initStatus matches ..61 run tp @s ~ 64 ~
+tp @s[scores={uhcp_initStatus=..61}] ~ 64 ~

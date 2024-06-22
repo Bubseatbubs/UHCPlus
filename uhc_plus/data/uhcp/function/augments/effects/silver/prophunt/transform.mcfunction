@@ -1,6 +1,6 @@
 # Assign ID if player doesn't have one already
 scoreboard players set @s uhcp_aug_tier 1
-execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
+execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/assign_id
 
 
 scoreboard players reset @s uhcp_aug_count

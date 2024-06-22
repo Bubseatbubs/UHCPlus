@@ -1,7 +1,7 @@
 tag @s add UHCP_Owner
 scoreboard players reset @s uhcp_aug_count
-execute as @e[type=minecraft:cat] on owner if entity @s[tag=UHCP_Owner] run scoreboard players add @s uhcp_aug_count 1
-execute if score @s uhcp_aug_count matches 1.. run scoreboard players add @s uhcp_aug_count 1
+execute as @e[type=minecraft:cat] on owner run scoreboard players add @s[tag=UHCP_Owner] uhcp_aug_count 1
+scoreboard players add @s[scores={uhcp_aug_count=1..}] uhcp_aug_count 1
 
 execute unless score @s uhcp_aug_count matches 1.. run return run tag @s remove UHCP_Owner
 

@@ -20,7 +20,7 @@ execute at @e[tag=UHCP_SaberTarget] run summon minecraft:marker ~ ~ ~ {Tags:["UH
 
 # Gets team value
 scoreboard players operation @n[tag=UHCP_New] uhcp_team = @s uhcp_team
-execute if entity @s[tag=UHCP_PreparePhantomPains] run tag @n[tag=UHCP_New] add UHCP_PhantomPains
+execute as @s[tag=UHCP_PreparePhantomPains] run tag @n[tag=UHCP_New] add UHCP_PhantomPains
 
 tag @s remove UHCP_Owner
 tag @e remove UHCP_SaberTarget

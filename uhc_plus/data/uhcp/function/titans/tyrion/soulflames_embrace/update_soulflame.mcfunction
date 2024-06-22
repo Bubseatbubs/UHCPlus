@@ -10,4 +10,4 @@ execute if score %random uhcp_titans_count matches 1 as @a[tag=!UHCP_InflictedWi
 tag @s remove UHCP_Damage
 
 execute if score @s uhcp_timer matches 100.. run playsound minecraft:block.fire.extinguish master @a[distance=..9] ~ ~ ~ 1 1 0.5
-execute if score @s uhcp_timer matches 100.. run kill @s
+kill @s[scores={uhcp_timer=100..}]

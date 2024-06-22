@@ -1,4 +1,4 @@
 # Apply effects
-execute if score @s uhcp_aug_tier matches 22.. run effect give @s minecraft:resistance infinite 0 false
-execute if score @s uhcp_aug_tier matches 23.. run effect give @s minecraft:speed infinite 0 false
-execute if score @s uhcp_aug_tier matches 24.. run effect give @s minecraft:strength infinite 0 false
+effect give @s[scores={uhcp_aug_tier=22..}] minecraft:resistance infinite 0 false
+effect give @s[scores={uhcp_aug_tier=23..}] minecraft:speed infinite 0 false
+effect give @s[scores={uhcp_aug_tier=24..}] minecraft:strength infinite 0 false

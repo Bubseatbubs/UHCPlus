@@ -65,7 +65,7 @@ execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan
 execute as @e[type=!minecraft:player,tag=UHCP_Titan] at @s run function uhcp:titans/update
 
 # Testkit
-execute as @a[gamemode=survival] if score @s testkit matches 1.. run function uhcp:testkit/verify
+execute as @a[gamemode=survival,scores={testkit=1..}] run function uhcp:testkit/verify
 execute as @a[scores={uhcp_testkit=1}] run function uhcp:testkit/kit
 
 # Consumables
@@ -73,7 +73,7 @@ execute as @a[tag=UHCP_ListeningToPigstep] at @s run function uhcp:consumables/g
 execute as @a[tag=UHCP_IsRabbit] at @s run function uhcp:consumables/magic_trick/update
 execute as @a[tag=UHCP_IsAttackTitan] at @s run function uhcp:consumables/titan_spinal_fluid/update
 
-# Ate Golden Apple Effect
+# Ate golden apple effect
 execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:entity/items/ate_golden_apple/update
 
 # Milk bucket

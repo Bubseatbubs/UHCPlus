@@ -9,7 +9,7 @@ execute if score @s uhcp_aug_count matches ..2 run return 0
 tag @s add UHCP_Owner
 
 scoreboard players reset @e[distance=..5] uhcp_aug_count
-execute as @e[tag=!UHCP_Owner,tag=!UHCP_Bee,type=!#uhcp:inanimate_mobs,distance=..5] store result score @s uhcp_aug_count run function uhcp:augments/effects/gold/beekeeper/checkattacker
+execute as @e[tag=!UHCP_Owner,tag=!UHCP_Bee,type=!#uhcp:inanimate_mobs,distance=..5] store result score @s uhcp_aug_count run function uhcp:relics/checkattacker
 tag @n[scores={uhcp_aug_count=1},distance=..5] add UHCP_BeeTarget
 execute at @n[tag=UHCP_BeeTarget] run function uhcp:entity/bees/summon
 tag @s remove UHCP_Owner
@@ -17,7 +17,7 @@ tag @e remove UHCP_BeeTarget
 scoreboard players reset @e[distance=..5] uhcp_aug_count
 
 # Assign ID if player doesn't have one already
-execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
+execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/assign_id
 
 # Bee owner is set to player
 scoreboard players operation @n[tag=UHCP_New,tag=UHCP_Bee] uhcp_id = @s uhcp_id

@@ -38,4 +38,4 @@ function uhcp:lobby/settings_display/teams/team_game
 execute if score %team uhcp_settings matches 1 run function uhcp:lobby/settings_display/teams/friendly_fire
 
 tellraw @s [{"text":"————","color":"#217AFF","bold":true,"strikethrough":true},{"text":"————","color":"#38A9FF","bold":true,"strikethrough":true},{"text":"————","color":"#5CD9FF","bold":true,"strikethrough":true},{"text":"————","color":"#80FFEE","bold":true,"strikethrough":true},{"text":"————","color":"#80FFEE","bold":true,"strikethrough":true},{"text":"————","color":"#5CD9FF","bold":true,"strikethrough":true},{"text":"————","color":"#38A9FF","bold":true,"strikethrough":true},{"text":"————","color":"#217AFF","bold":true,"strikethrough":true}]
-execute if score @s patron matches 1..99 run scoreboard players reset @s patron
+scoreboard players reset @s[scores={patron=1..99}] patron

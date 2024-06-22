@@ -7,11 +7,10 @@ execute if score %blocksfilled uhcp_titans_count matches 3.. run playsound minec
 
 scoreboard players reset %y_diff uhcp_titans_height
 
-execute if score @s uhcp_timer matches 10.. at @s if entity @s[tag=UHCP_IsJumping] if entity @e[tag=UHCP_FerrumLanding,distance=..2] run function uhcp:titans/ferrum/jump/land
-execute if score @s uhcp_timer matches 10.. at @s if entity @s[tag=UHCP_IsJumping] if entity @p[gamemode=survival,distance=..2] run function uhcp:titans/ferrum/jump/land
-execute if entity @s[tag=UHCP_IsJumping] run return run function uhcp:titans/ferrum/jump/update
+execute at @s[tag=UHCP_IsJumping,scores={uhcp_timer=10..}] if entity @e[tag=UHCP_FerrumLanding,distance=..2] run function uhcp:titans/ferrum/jump/land
+execute at @s[tag=UHCP_IsJumping,scores={uhcp_timer=10..}] if entity @p[gamemode=survival,distance=..2] run function uhcp:titans/ferrum/jump/land
+execute as @s[tag=UHCP_IsJumping] run return run function uhcp:titans/ferrum/jump/update
 execute unless function uhcp:titans/check_aggression run return 0
-
 
 execute store result score %titan_y uhcp_titans_height run data get entity @s Pos[1] 1
 execute on target store result score %player_y uhcp_titans_height run data get entity @s Pos[1] 1
@@ -20,6 +19,6 @@ execute store result score %y_diff uhcp_titans_height run scoreboard players ope
 execute on target run tag @s add UHCP_FerrumTarget
 execute if score %y_diff uhcp_titans_height matches 2.. facing entity @p[tag=UHCP_FerrumTarget] feet run tp @s ^ ^ ^0.3 ~ ~20
 execute if score %y_diff uhcp_titans_height matches ..-2 facing entity @p[tag=UHCP_FerrumTarget] feet run tp @s ^ ^ ^0.3 ~ ~20
-execute if entity @a[tag=UHCP_FerrumTarget] facing entity @p[tag=UHCP_FerrumTarget] feet run tp @s ^ ^ ^0.1 ~ ~20
-execute if entity @s[tag=!UHCP_IsJumping] if entity @a[tag=UHCP_FerrumTarget,distance=16..] run function uhcp:titans/ferrum/jump/jump
+execute as @a[tag=UHCP_FerrumTarget] facing entity @p[tag=UHCP_FerrumTarget] feet run tp @s ^ ^ ^0.1 ~ ~20
+execute as @s[tag=!UHCP_IsJumping] if entity @a[tag=UHCP_FerrumTarget,distance=16..] run function uhcp:titans/ferrum/jump/jump
 tag @a remove UHCP_FerrumTarget

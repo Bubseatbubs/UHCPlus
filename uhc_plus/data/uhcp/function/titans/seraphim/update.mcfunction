@@ -1,6 +1,6 @@
 scoreboard players reset @s uhcp_aug_tier
 execute store success score @s uhcp_aug_tier run data get entity @e[tag=UHCP_Seraphim,limit=1] Brain.memories."minecraft:liked_player"
-execute if score @s uhcp_aug_tier matches 1 run data remove entity @s Brain.memories
+data remove entity @s[scores={uhcp_aug_tier=1}] Brain.memories
 
 tag @s add UHCP_CurrentTitan
 execute as @e[type=!#uhcp:inanimate_mobs,tag=!UHCP_Titan,tag=!UHCP_Minion,distance=..2.5] run damage @s 4 minecraft:mob_attack by @n[tag=UHCP_CurrentTitan]
@@ -9,7 +9,7 @@ tag @s remove UHCP_CurrentTitan
 execute store result score %blocksfilled uhcp_titans_count run fill ~-3 ~ ~-3 ~3 ~7 ~3 minecraft:air replace #uhcp:titan_can_break
 execute if score %blocksfilled uhcp_titans_count matches 3.. run playsound minecraft:entity.wither.break_block master @a[distance=..16] ~ ~ ~ 0.5 1.25 0.15
 
-execute if entity @s[tag=UHCP_Bite] run return run function uhcp:titans/seraphim/bite/update
+execute as @s[tag=UHCP_Bite] run return run function uhcp:titans/seraphim/bite/update
 
 scoreboard players reset %y_diff uhcp_titans_height
 

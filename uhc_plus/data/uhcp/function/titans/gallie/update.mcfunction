@@ -5,7 +5,7 @@ tag @s remove UHCP_CurrentTitan
 execute store result score %blocksfilled uhcp_titans_count run fill ~-5 ~ ~-5 ~5 ~7 ~5 minecraft:air replace #uhcp:titan_can_break
 execute if score %blocksfilled uhcp_titans_count matches 3.. run playsound minecraft:entity.wither.break_block master @a[distance=..16] ~ ~ ~ 0.5 1.25 0.15
 
-execute if entity @s[tag=UHCP_IsDashing] run return run function uhcp:titans/gallie/dash/update
+execute as @s[tag=UHCP_IsDashing] run return run function uhcp:titans/gallie/dash/update
 
 scoreboard players reset %y_diff uhcp_titans_height
 execute unless function uhcp:titans/check_aggression run return 0

@@ -1,9 +1,9 @@
 advancement revoke @s only uhcp:consumables/become_titan
 
 # Overwrite other effects that may be occurring
-execute if entity @s[tag=UHCP_IsPanda] run function uhcp:augments/effects/prismatic/kungfupanda/reset
-execute if entity @s[tag=UHCP_IsRabbit] run function uhcp:consumables/magic_trick/reset
-execute if entity @s[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal_fluid/reset
+execute as @s[tag=UHCP_IsPanda] run function uhcp:augments/effects/prismatic/kungfupanda/reset
+execute as @s[tag=UHCP_IsRabbit] run function uhcp:consumables/magic_trick/reset
+execute as @s[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal_fluid/reset
 
 # Attributes
 attribute @s minecraft:generic.scale modifier add uhcp:titan_scale 6 add_value

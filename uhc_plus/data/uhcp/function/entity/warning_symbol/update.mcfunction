@@ -3,15 +3,15 @@ execute on vehicle if score @s uhcp_timer matches ..0 run return 0
 
 execute if score @s uhcp_timer matches 8 run playsound minecraft:block.note_block.bit master @a[distance=..12] ~ ~ ~ 1 2 1
 execute if score @s uhcp_timer matches 8 run playsound minecraft:block.note_block.bit master @a[distance=..12] ~ ~ ~ 1 2 1
-execute if score @s uhcp_timer matches 8 run data merge entity @s {text:'{"text":"!","color":"white","bold":true}'}
-execute if score @s uhcp_timer matches 12 run data merge entity @s {text:'{"text":"!","color":"dark_red","bold":true}'}
+data merge entity @s[scores={uhcp_timer=8}] {text:'{"text":"!","color":"white","bold":true}'}
+data merge entity @s[scores={uhcp_timer=12}] {text:'{"text":"!","color":"dark_red","bold":true}'}
 execute if score @s uhcp_timer matches 16 run playsound minecraft:block.note_block.bit master @a[distance=..12] ~ ~ ~ 1 2 1
 execute if score @s uhcp_timer matches 16 run playsound minecraft:block.note_block.bit master @a[distance=..12] ~ ~ ~ 1 2 1
-execute if score @s uhcp_timer matches 16 run data merge entity @s {text:'{"text":"!","color":"white","bold":true}'}
-execute if score @s uhcp_timer matches 20 run data merge entity @s {text:'{"text":"!","color":"dark_red","bold":true}'}
+data merge entity @s[scores={uhcp_timer=16}] {text:'{"text":"!","color":"white","bold":true}'}
+data merge entity @s[scores={uhcp_timer=20}] {text:'{"text":"!","color":"dark_red","bold":true}'}
 execute if score @s uhcp_timer matches 24 run playsound minecraft:block.note_block.bit master @a[distance=..12] ~ ~ ~ 1 2 1
 execute if score @s uhcp_timer matches 24 run playsound minecraft:block.note_block.bit master @a[distance=..12] ~ ~ ~ 1 2 1
-execute if score @s uhcp_timer matches 24 run data merge entity @s {text:'{"text":"!","color":"white","bold":true}'}
-execute if score @s uhcp_timer matches 28 run data merge entity @s {text:'{"text":"!","color":"dark_red","bold":true}'}
+data merge entity @s[scores={uhcp_timer=24}] {text:'{"text":"!","color":"white","bold":true}'}
+data merge entity @s[scores={uhcp_timer=28}] {text:'{"text":"!","color":"dark_red","bold":true}'}
 
-execute if score @s uhcp_timer matches 32 run kill @s
+kill @s[scores={uhcp_timer=32}]

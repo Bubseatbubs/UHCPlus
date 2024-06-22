@@ -11,9 +11,9 @@ execute as @s[tag=!UHCP_Spider,advancements={uhcp:augments/hunters_blessing/kill
 tellraw @s[tag=!UHCP_Spider,advancements={uhcp:augments/hunters_blessing/killed_spider=true}] [{"text":"Spiders ","color":"dark_red","bold":true},{"text":"Slain","color":"gray"},{"text":": [","color":"gray"},{"score":{"name":"@s","objective":"uhcp_aug_hb_killedSpider"},"color":"light_purple"},{"text":"/5]","color":"gray"}]
 
 # Reward
-execute if score @s[tag=!UHCP_Creeper] uhcp_aug_hb_killedCreeper matches 5.. run function uhcp:augments/effects/prismatic/huntersblessing/creeper
-execute if score @s[tag=!UHCP_Zombie] uhcp_aug_hb_killedZombie matches 5.. run function uhcp:augments/effects/prismatic/huntersblessing/zombie
-execute if score @s[tag=!UHCP_Skeleton] uhcp_aug_hb_killedSkeleton matches 5.. run function uhcp:augments/effects/prismatic/huntersblessing/skeleton
-execute if score @s[tag=!UHCP_Spider] uhcp_aug_hb_killedSpider matches 5.. run function uhcp:augments/effects/prismatic/huntersblessing/spider
+execute as @s[tag=!UHCP_Creeper,scores={uhcp_aug_hb_killedCreeper=5..}] run function uhcp:augments/effects/prismatic/huntersblessing/creeper
+execute as @s[tag=!UHCP_Zombie,scores={uhcp_aug_hb_killedZombie=5..}] run function uhcp:augments/effects/prismatic/huntersblessing/zombie
+execute as @s[tag=!UHCP_Skeleton,scores={uhcp_aug_hb_killedSkeleton=5..}] run function uhcp:augments/effects/prismatic/huntersblessing/skeleton
+execute as @s[tag=!UHCP_Spider,scores={uhcp_aug_hb_killedSpider=5..}] run function uhcp:augments/effects/prismatic/huntersblessing/spider
 
 advancement revoke @s through uhcp:augments/hunters_blessing/killed

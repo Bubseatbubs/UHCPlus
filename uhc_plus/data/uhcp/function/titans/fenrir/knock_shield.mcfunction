@@ -1,6 +1,6 @@
 execute unless predicate uhcp:titans/holding_shield_in_offhand run return run function uhcp:titans/fenrir/knock_shield_punish
 
-summon minecraft:item ~ ~ ~ {Glowing:1b,PickupDelay:40s,Motion:[0.0,1.0,0.0],Tags:["UHCP_FenrirShield"],Item:{id:"minecraft:stone"}}
+summon minecraft:item ~ ~ ~ {Glowing:1b,PickupDelay:40s,Motion:[0.0d,1.0d,0.0d],Tags:["UHCP_FenrirShield"],Item:{id:"minecraft:stone"}}
 data modify entity @e[type=minecraft:item,limit=1,tag=UHCP_FenrirShield] Item set from entity @s Inventory[{Slot:-106b}]
 item replace entity @s weapon.offhand with air 1
 damage @s 0.00000001 minecraft:generic by @n[tag=UHCP_Fenrir]

@@ -1,7 +1,7 @@
 clear @s *[minecraft:custom_data~{uhcp_consumable:4b}] 1
 
 # Featherstorm
-execute if score @s uhcp_augment matches 230 at @s run function uhcp:augments/effects/prismatic/featherstorm/lightning
+execute at @s[scores={uhcp_augment=230}] run function uhcp:augments/effects/prismatic/featherstorm/lightning
 
 # Assign team scoreboards
 scoreboard players set @a uhcp_initStatus 0

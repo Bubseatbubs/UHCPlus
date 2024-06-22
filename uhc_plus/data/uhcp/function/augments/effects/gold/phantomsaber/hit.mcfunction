@@ -7,7 +7,7 @@ execute if score @s uhcp_augment matches 221 store result score @s uhcp_aug_stac
 execute unless score @s uhcp_aug_stack matches 4 run return 0
 
 # Assign ID if player doesn't have one already
-execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
+execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/assign_id
 
 tag @s add UHCP_Owner
 execute as @e[tag=UHCP_PhantomDestination] if score @s uhcp_id = @p[tag=UHCP_Owner] uhcp_id run kill @s
@@ -17,7 +17,7 @@ execute as @e[tag=UHCP_PhantomSaber] if score @s uhcp_id = @p[tag=UHCP_Owner] uh
 playsound minecraft:item.trident.throw master @a[distance=..4] ~ ~ ~ 1 1 0.75
 
 scoreboard players reset @e[distance=..5] uhcp_aug_count
-execute as @e[tag=!UHCP_Owner,type=!#uhcp:inanimate_mobs,distance=..5] store result score @s uhcp_aug_count run function uhcp:augments/effects/gold/phantomsaber/checkattacker
+execute as @e[tag=!UHCP_Owner,type=!#uhcp:inanimate_mobs,distance=..5] store result score @s uhcp_aug_count run function uhcp:relics/checkattacker
 tag @n[scores={uhcp_aug_count=1},distance=..5] add UHCP_PhantomTarget
 execute unless entity @e[tag=UHCP_PhantomTarget,distance=..5] run tag @s add UHCP_PhantomTarget
 execute as @n[tag=UHCP_PhantomTarget] at @s anchored feet run summon minecraft:marker ~ ~1.5 ~ {Tags:["UHCP_New","UHCP_PhantomDestination"]}

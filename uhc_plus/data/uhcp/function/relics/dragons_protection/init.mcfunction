@@ -11,8 +11,8 @@ execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_radiant
 
 # Assign team scoreboards
 scoreboard players set @e[type=!minecraft:player] uhcp_initStatus -1
-scoreboard players set @e[distance=..4,predicate=uhcp:animate] uhcp_initStatus 0
-execute as @e[distance=..4,predicate=uhcp:animate] run scoreboard players operation @s uhcp_initStatus = @s uhcp_team
+scoreboard players set @e[distance=..4,type=!#uhcp:inanimate_mobs] uhcp_initStatus 0
+execute as @e[distance=..4,type=!#uhcp:inanimate_mobs] run scoreboard players operation @s uhcp_initStatus = @s uhcp_team
 scoreboard players set @a[gamemode=!survival] uhcp_initStatus -1
 
 # Finish

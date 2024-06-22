@@ -7,5 +7,5 @@ execute as @a[distance=..50,gamemode=survival] at @s run playsound minecraft:ite
 execute as @a[distance=..50,gamemode=survival,tag=!UHCP_ListeningToPigstep] at @s run playsound minecraft:music_disc.pigstep record @s ~ ~ ~ 1000 1 1
 tag @a[distance=..50] add UHCP_ListeningToPigstep
 
-execute if score @s uhcp_augment matches 118 run scoreboard players operation @s uhcp_aug_regenItem = %time uhcp_game_time
-execute if score @s uhcp_augment matches 118 run scoreboard players add @s uhcp_aug_regenItem 6000
+scoreboard players operation @s[scores={uhcp_augment=118}] uhcp_aug_regenItem = %time uhcp_game_time
+scoreboard players add @s[scores={uhcp_augment=118}] uhcp_aug_regenItem 6000

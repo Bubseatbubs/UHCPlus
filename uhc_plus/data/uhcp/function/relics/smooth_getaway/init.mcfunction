@@ -1,9 +1,10 @@
 # Initialize
-execute if entity @s[tag=UHCP_SmoothGetaway,tag=!UHCP_ShadowClone] run function uhcp:entity/items/loot/summon
-execute if entity @s[tag=UHCP_SmoothGetaway,tag=!UHCP_ShadowClone] run loot replace entity @n[type=minecraft:item,tag=UHCP_NewLoot] contents loot uhcp:relics/smooth_getaway/damaged
-execute if entity @s[tag=UHCP_SmoothGetaway,tag=!UHCP_ShadowClone] run function uhcp:entity/items/loot/finish
+execute unless score %game uhcp_initStatus matches 1 run return run function uhcp:relics/smooth_getaway/lobby
+execute as @s[tag=UHCP_SmoothGetaway,tag=!UHCP_ShadowClone] run function uhcp:entity/items/loot/summon
+execute as @s[tag=UHCP_SmoothGetaway,tag=!UHCP_ShadowClone] run loot replace entity @n[type=minecraft:item,tag=UHCP_NewLoot] contents loot uhcp:relics/smooth_getaway/damaged
+execute as @s[tag=UHCP_SmoothGetaway,tag=!UHCP_ShadowClone] run function uhcp:entity/items/loot/finish
 
-execute if entity @s[tag=UHCP_SmoothGetaway,tag=UHCP_ShadowClone] run function uhcp:relics/smooth_getaway/return_shadowclone
+execute as @s[tag=UHCP_SmoothGetaway,tag=UHCP_ShadowClone] run function uhcp:relics/smooth_getaway/return_shadowclone
 execute unless entity @s[tag=!UHCP_IsPanda,tag=!UHCP_IsRabbit] run return 0
 function uhcp:relics/durability/reset
 

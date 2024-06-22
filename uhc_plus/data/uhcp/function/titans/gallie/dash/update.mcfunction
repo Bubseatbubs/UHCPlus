@@ -10,11 +10,11 @@ playsound minecraft:item.mace.smash_ground_heavy master @a[distance=..24] ~ ~ ~ 
 particle minecraft:lava ~ ~ ~ 2 0.25 2 0.1 100 normal
 particle minecraft:block{block_state:"minecraft:netherrack"} ~ ~ ~ 3 0.25 3 0.1 100 normal
 particle minecraft:dust_plume ~ ~ ~ 1 1 1 1 100 normal
-execute as @e[tag=UHCP_GallieDashMarker] if score @s uhcp_id = @n[tag=UHCP_CurrentGallie] uhcp_id run kill @s
+execute as @e[tag=UHCP_GallieDashMarker] if score @s uhcp_game_id = @n[tag=UHCP_CurrentGallie] uhcp_game_id run kill @s
 execute as @a[distance=..5] run damage @s 6 minecraft:mob_attack by @n[tag=UHCP_Gallie]
 tag @s remove UHCP_CurrentGallie
 scoreboard players reset @s uhcp_timer
 scoreboard players add @s uhcp_titans_count 1
 tag @s remove UHCP_IsDashing
 execute if score @s uhcp_titans_count matches ..2 run function uhcp:titans/gallie/dash/init
-execute if score @s uhcp_titans_count matches 3.. run scoreboard players reset @s uhcp_titans_count
+scoreboard players reset @s[scores={uhcp_titans_count=3..}] uhcp_titans_count

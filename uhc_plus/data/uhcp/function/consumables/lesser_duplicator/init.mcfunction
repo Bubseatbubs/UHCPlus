@@ -3,7 +3,7 @@ execute if items entity @s weapon.offhand minecraft:enchanted_book run return 0
 execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumable:0b}|minecraft:custom_data~{uhcp_consumable:2b}] run return 0
 
 clear @s *[minecraft:custom_data~{uhcp_consumable:2b}] 1
-summon minecraft:item ~ ~ ~ {Glowing:1b,PickupDelay:0s,Motion:[0.0,0.2,0.0],Tags:["UHCP_DuplicatorItem"],Item:{id:"minecraft:stone"}}
+summon minecraft:item ~ ~ ~ {Glowing:1b,PickupDelay:0s,Motion:[0.0d,0.2d,0.0d],Tags:["UHCP_DuplicatorItem"],Item:{id:"minecraft:stone"}}
 data modify entity @e[type=minecraft:item,limit=1,tag=UHCP_DuplicatorItem] Item.id set from entity @s Inventory[{Slot:-106b}].id
 data modify entity @e[type=minecraft:item,limit=1,tag=UHCP_DuplicatorItem] Item.count set value 1
 

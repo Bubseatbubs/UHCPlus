@@ -1,5 +1,5 @@
 scoreboard players set @s uhcp_top_CD 12000
-execute if score @s uhcp_augment matches 104 run scoreboard players set @s uhcp_top_CD 6000
+scoreboard players set @s[scores={uhcp_augment=104}] uhcp_top_CD 6000
 
 scoreboard players reset @s uhcp_top_delay
 scoreboard players set @s uhcp_initStatus 0

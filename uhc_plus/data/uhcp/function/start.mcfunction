@@ -22,12 +22,12 @@ scoreboard players operation %border_countdown uhcp_game_time = %border_countdow
 scoreboard players set %border_stage uhcp_itemCount 0
 execute if score %dimension uhcp_settings matches ..-1 run scoreboard players set %dimension uhcp_settings 0
 execute as @a unless score @s uhcp_aug_patron = @s uhcp_aug_patron run scoreboard players set @s uhcp_aug_patron 8
-execute store result score %random uhcp_game_ID run random value 0..3
-execute if score %random uhcp_game_ID matches 0 store result score %global uhcp_game_ID run random value -2147483648..-1073741825
-execute if score %random uhcp_game_ID matches 1 store result score %global uhcp_game_ID run random value -1073741824..-1
-execute if score %random uhcp_game_ID matches 2 store result score %global uhcp_game_ID run random value 0..1073741823
-execute if score %random uhcp_game_ID matches 3 store result score %global uhcp_game_ID run random value 1073741824..2147483647
-scoreboard players operation @a uhcp_game_ID = %global uhcp_game_ID
+execute store result score %random uhcp_game_id run random value 0..3
+execute if score %random uhcp_game_id matches 0 store result score %global uhcp_game_id run random value -2147483648..-1073741825
+execute if score %random uhcp_game_id matches 1 store result score %global uhcp_game_id run random value -1073741824..-1
+execute if score %random uhcp_game_id matches 2 store result score %global uhcp_game_id run random value 0..1073741823
+execute if score %random uhcp_game_id matches 3 store result score %global uhcp_game_id run random value 1073741824..2147483647
+scoreboard players operation @a uhcp_game_id = %global uhcp_game_id
 scoreboard players set @a uhcp_game_time -1
 
 # Store border size
@@ -78,18 +78,21 @@ scoreboard players reset @a lobby
 scoreboard players reset @a patron
 scoreboard players reset @a team
 scoreboard players reset @a top
-scoreboard players reset @a uhcp_aug_gloryOfRa
-scoreboard players reset @a uhcp_augment
-scoreboard players reset @a uhcp_aug_tier
 scoreboard players reset @a uhcp_arrowCount
-scoreboard players reset @a uhcp_bee_stacks
-scoreboard players reset %time uhcp_game_time
+scoreboard players reset @a uhcp_aug_gloryOfRa
 scoreboard players reset @a uhcp_aug_hb_killedCreeper
 scoreboard players reset @a uhcp_aug_hb_killedSkeleton
 scoreboard players reset @a uhcp_aug_hb_killedSpider
 scoreboard players reset @a uhcp_aug_hb_killedZombie
+scoreboard players reset @a uhcp_aug_tier
+scoreboard players reset @a uhcp_augment
+scoreboard players reset @a uhcp_bee_stacks
+scoreboard players reset %entities uhcp_game_id
+scoreboard players reset @a uhcp_game_time
+scoreboard players reset %time uhcp_game_time
 scoreboard players reset @a uhcp_id
-scoreboard players reset @a uhcp_ready
+scoreboard players reset %global uhcp_id
+scoreboard players reset @a uhcp_leave
 scoreboard players reset @a uhcp_lobby_item
 scoreboard players reset @a uhcp_mine_ancientDebris
 scoreboard players reset @a uhcp_mine_copperOre
@@ -101,8 +104,7 @@ scoreboard players reset @a uhcp_mine_ironOre
 scoreboard players reset @a uhcp_mine_rawCopperBlock
 scoreboard players reset @a uhcp_mine_rawGoldBlock
 scoreboard players reset @a uhcp_mine_rawIronBlock
-scoreboard players reset %global uhcp_id
-scoreboard players reset @a uhcp_leave
+scoreboard players reset @a uhcp_ready
 scoreboard players reset @a uhcp_top_CD
 scoreboard players reset @a uhcp_top_charge
 scoreboard players reset @a uhcp_top_delay
@@ -212,7 +214,7 @@ experience set @a 0 levels
 experience set @a 0 points
 
 # Assign player IDs
-execute as @a run function uhcp:start/id/assign
+execute as @a run function uhcp:start/assign_id
 scoreboard players operation %players uhcp_id = %global uhcp_id
 
 # Solo leveling upgrades

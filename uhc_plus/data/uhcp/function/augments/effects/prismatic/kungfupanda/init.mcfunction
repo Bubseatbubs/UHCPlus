@@ -1,8 +1,8 @@
 advancement revoke @s only uhcp:augments/become_panda
-execute if entity @s[tag=UHCP_IsPanda] run function uhcp:augments/effects/prismatic/kungfupanda/reset
+execute as @s[tag=UHCP_IsPanda] run function uhcp:augments/effects/prismatic/kungfupanda/reset
 function uhcp:entity/armor/store_armor
 tag @s add UHCP_IsPanda
-execute if score @s uhcp_team matches 15.. if score %pvp uhcp_settings matches ..0 run team join no_collision @s
+execute if score %pvp uhcp_settings matches ..0 run team join no_collision @s[scores={uhcp_team=15..}]
 playsound minecraft:block.brewing_stand.brew master @a[distance=..4] ~ ~ ~ 1 1 0.75
 particle minecraft:effect ~ ~ ~ 0.1 0.1 0.1 0.1 15 normal
 effect clear @s minecraft:bad_omen
@@ -19,7 +19,7 @@ effect give @s minecraft:invisibility infinite 0 true
 effect give @s minecraft:absorption infinite 4 true
 
 # Assign ID if player doesn't have one already
-execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
+execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/assign_id
 
 # Owner set to player
 scoreboard players operation @n[tag=UHCP_New] uhcp_id = @s uhcp_id
@@ -29,5 +29,5 @@ execute if score %pvp uhcp_settings matches ..0 run team join no_collision @n[ta
 tag @e remove UHCP_New
 
 # If player has Kung-Fu Panda, regenerate Bamboo
-execute if score @s uhcp_augment matches 232 run scoreboard players operation @s uhcp_aug_regenItem = %time uhcp_game_time
-execute if score @s uhcp_augment matches 232 run scoreboard players add @s uhcp_aug_regenItem 6000
+scoreboard players operation @s[scores={uhcp_augment=232}] uhcp_aug_regenItem = %time uhcp_game_time
+scoreboard players add @s[scores={uhcp_augment=232}] uhcp_aug_regenItem 6000

@@ -8,7 +8,7 @@ tag @s remove UHCP_CurrentPhantomSaber
 
 
 # Run this part only if phantom saber has made it to location
-execute unless entity @s[tag=UHCP_MadeToDestination] run return 0
+execute as @s[tag=!UHCP_MadeToDestination] run return 0
 execute as @a if score @s uhcp_id = @n[tag=UHCP_MadeToDestination] uhcp_id run tag @s add UHCP_Owner
 execute as @a if score @s uhcp_team = @p[tag=UHCP_Owner] uhcp_team run tag @s add UHCP_TeamMember
 execute at @s as @e[tag=!UHCP_Owner,tag=!UHCP_TeamMember,predicate=uhcp:targetable,distance=..2.5] run damage @s 7 uhcp:instant_damage by @p[tag=UHCP_Owner]

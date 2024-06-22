@@ -13,6 +13,6 @@ particle minecraft:infested ~ ~ ~ 1.5 1 1.5 0.1 15 normal
 execute positioned ~ ~1 ~ rotated 0 90 run function uhcp:titans/gigantus/circle_strike/particles
 execute as @a[distance=..4,gamemode=survival] run damage @s 4 minecraft:magic
 
-execute if score @s uhcp_aug_tier matches 2 run scoreboard players reset @s uhcp_aug_tier
+scoreboard players reset @s[scores={uhcp_aug_tier=2}] uhcp_aug_tier
 
-execute if score @s uhcp_timer matches 42 run kill @s
+kill @s[scores={uhcp_timer=42}]

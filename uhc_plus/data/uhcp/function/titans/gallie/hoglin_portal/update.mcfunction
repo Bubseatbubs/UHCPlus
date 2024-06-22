@@ -1,5 +1,5 @@
 scoreboard players add @s uhcp_timer 1
 
-execute if score @s uhcp_timer matches 10.. if entity @s[nbt={OnGround:1b}] at @s run scoreboard players add @s uhcp_titans_timer 1
+scoreboard players add @s[scores={uhcp_timer=10..},predicate=uhcp:on_ground] uhcp_titans_timer 1
 
-execute if score @s uhcp_titans_timer matches 5.. at @s run function uhcp:titans/gallie/hoglin_portal/land
+execute at @s[scores={uhcp_titans_timer=5..}] run function uhcp:titans/gallie/hoglin_portal/land

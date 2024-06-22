@@ -13,11 +13,11 @@ execute as @n[tag=UHCP_SCloneStand,tag=UHCP_New] run data modify entity @s Custo
 execute as @e[type=minecraft:wolf,tag=UHCP_New] at @s run data modify entity @s Owner set from entity @p[tag=UHCP_Owner] UUID
 
 # Mirror Image
-execute if entity @s[tag=UHCP_MirrorImage] as @n[tag=UHCP_SCloneStand,tag=UHCP_New] run scoreboard players set @s uhcp_timer -400
+execute as @s[tag=UHCP_MirrorImage] run scoreboard players set @n[tag=UHCP_SCloneStand,tag=UHCP_New] uhcp_timer -400
 
 # Init IDs
-scoreboard players add %global uhcp_id 1
-scoreboard players operation @e[tag=UHCP_InitScore] uhcp_id = %global uhcp_id
+scoreboard players add %entities uhcp_game_id 1
+scoreboard players operation @e[tag=UHCP_InitScore] uhcp_game_id = %entities uhcp_game_id
 scoreboard players operation @e[tag=UHCP_InitScore] uhcp_team = @p[tag=UHCP_Owner] uhcp_team
 execute as @e[tag=UHCP_InitScore] run function uhcp:teams/join
 execute if score %pvp uhcp_settings matches ..0 run team join no_collision @e[tag=UHCP_InitScore,scores={uhcp_team=15..}]

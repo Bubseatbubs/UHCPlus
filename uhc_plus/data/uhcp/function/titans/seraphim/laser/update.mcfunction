@@ -1,9 +1,9 @@
 scoreboard players add @s uhcp_timer 1
 tag @s add UHCP_CurrentLaser
 
-execute if score @s uhcp_timer matches 5 run data merge entity @s {start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1.5f,-50f,-1.5f],scale:[2f,1000f,2f]}}
-execute if score @s uhcp_timer matches 5 at @s as @a[distance=..32] at @s run playsound minecraft:block.beacon.activate master @s ~ ~ ~ 100 2 1
-execute if score @s uhcp_timer matches 5 at @s as @a[distance=..32] at @s run playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 100 0.5 1
+data merge entity @s[scores={uhcp_timer=5}] {start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1.5f,-50f,-1.5f],scale:[2f,1000f,2f]}}
+execute at @s[scores={uhcp_timer=5}] as @a[distance=..32] at @s run playsound minecraft:block.beacon.activate master @s ~ ~ ~ 100 2 1
+execute at @s[scores={uhcp_timer=5}] as @a[distance=..32] at @s run playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 100 0.5 1
 execute if score @s uhcp_timer matches 20 run particle minecraft:flash ~ ~ ~ 1 1 1 1 5 force
 execute unless score @s uhcp_timer matches 20.. run return 0
 
@@ -22,7 +22,7 @@ particle minecraft:glow_squid_ink ~ ~ ~ 2 2 2 0.01 15 normal
 execute as @a[distance=..2] run damage @s 4 uhcp:instant_damage by @n[tag=UHCP_CurrentLaser]
 tag @a remove UHCP_LaserTarget
 
-execute if score @s uhcp_timer matches 45 run data merge entity @s {interpolation_duration:10,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-50f,0f],scale:[0f,1000f,0f]}}
+data merge entity @s[scores={uhcp_timer=45}] {interpolation_duration:10,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-50f,0f],scale:[0f,1000f,0f]}}
 execute if score @s uhcp_timer matches 50 run particle minecraft:flash ~ ~ ~ 1 1 1 1 5 force
-execute if score @s uhcp_timer matches 50 run kill @s
+kill @s[scores={uhcp_timer=50}]
 tag @s remove UHCP_CurrentLaser

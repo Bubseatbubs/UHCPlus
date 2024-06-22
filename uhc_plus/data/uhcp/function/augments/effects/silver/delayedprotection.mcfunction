@@ -1,22 +1,14 @@
-scoreboard players set @s uhcp_initStatus 1
-execute if items entity @s armor.head * run scoreboard players set @s uhcp_initStatus 0
-execute if score @s uhcp_initStatus matches 0 run give @s minecraft:diamond_helmet
-execute if score @s uhcp_initStatus matches 1 run item replace entity @s armor.head with minecraft:diamond_helmet
+execute store success score @s uhcp_initStatus if items entity @s armor.head *
+function uhcp:augments/effects/silver/delayedprotection/head
 
-scoreboard players set @s uhcp_initStatus 1
-execute if items entity @s armor.chest * run scoreboard players set @s uhcp_initStatus 0
-execute if score @s uhcp_initStatus matches 0 run give @s minecraft:diamond_chestplate
-execute if score @s uhcp_initStatus matches 1 run item replace entity @s armor.chest with minecraft:diamond_chestplate
+execute store success score @s uhcp_initStatus if items entity @s armor.chest *
+function uhcp:augments/effects/silver/delayedprotection/chest
 
-scoreboard players set @s uhcp_initStatus 1
-execute if items entity @s armor.legs * run scoreboard players set @s uhcp_initStatus 0
-execute if score @s uhcp_initStatus matches 0 run give @s minecraft:diamond_leggings
-execute if score @s uhcp_initStatus matches 1 run item replace entity @s armor.legs with minecraft:diamond_leggings
+execute store success score @s uhcp_initStatus if items entity @s armor.legs *
+function uhcp:augments/effects/silver/delayedprotection/legs
 
-scoreboard players set @s uhcp_initStatus 1
-execute if items entity @s armor.feet * run scoreboard players set @s uhcp_initStatus 0
-execute if score @s uhcp_initStatus matches 0 run give @s minecraft:diamond_boots
-execute if score @s uhcp_initStatus matches 1 run item replace entity @s armor.feet with minecraft:diamond_boots
+execute store success score @s uhcp_initStatus if items entity @s armor.feet *
+function uhcp:augments/effects/silver/delayedprotection/feet
 
 execute at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
 

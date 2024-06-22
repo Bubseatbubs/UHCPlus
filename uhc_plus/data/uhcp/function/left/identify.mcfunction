@@ -1,5 +1,5 @@
 # Check player's game ID
-execute unless score @s uhcp_game_ID = %global uhcp_game_ID run function uhcp:left/spectator
+execute unless score @s uhcp_game_id = %global uhcp_game_id run function uhcp:left/spectator
 
 # Run for players whom are part of game
 execute as @s[gamemode=!spectator] run function uhcp:left/in_game/alive

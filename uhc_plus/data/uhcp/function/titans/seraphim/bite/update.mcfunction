@@ -5,5 +5,5 @@ tag @s add UHCP_CurrentSeraphim
 execute at @s anchored eyes facing entity @p[gamemode=survival,distance=..16] eyes positioned ^ ^ ^0.5 rotated as @s positioned ^ ^ ^5 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run tp @s ^ ^0.15 ^0.6 ~ ~
 execute at @s align xyz positioned over world_surface run summon minecraft:evoker_fangs
 
-execute if score @s uhcp_timer matches 30.. run tag @s remove UHCP_Bite
-execute if score @s uhcp_timer matches 30.. run scoreboard players reset @s uhcp_timer
+tag @s[scores={uhcp_timer=30..}] remove UHCP_Bite
+scoreboard players reset @s[scores={uhcp_timer=30..}] uhcp_timer

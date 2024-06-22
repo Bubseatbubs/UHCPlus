@@ -1,6 +1,6 @@
-execute if entity @s[predicate=uhcp:dimensions/minecraft/overworld] run function uhcp:top/overworld
-execute if entity @s[predicate=uhcp:dimensions/minecraft/the_end] run spreadplayers ~ ~ 0 1 false @s
-execute if entity @s[predicate=uhcp:dimensions/minecraft/the_nether] run spreadplayers ~ ~ 0 1 under 127 false @s
+execute as @s[predicate=uhcp:dimensions/minecraft/overworld] run function uhcp:top/overworld
+spreadplayers ~ ~ 0 1 false @s[predicate=uhcp:dimensions/minecraft/the_end]
+spreadplayers ~ ~ 0 1 under 127 false @s[predicate=uhcp:dimensions/minecraft/the_nether]
 scoreboard players add @s uhcp_top_delay 1
 tag @s remove UHCP_IsTeleporting
 

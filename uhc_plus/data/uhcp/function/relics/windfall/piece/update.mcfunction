@@ -1,7 +1,7 @@
 scoreboard players add @s uhcp_timer 1
 execute on passengers at @s run tp @s ~ ~ ~ ~30 ~
-execute if score @s uhcp_timer matches ..35 run tp @s ^ ^ ^0.25
-execute if score @s uhcp_timer matches 35..70 run tp @s ^ ^ ^-0.25
+tp @s[scores={uhcp_timer=..35}] ^ ^ ^0.25
+tp @s[scores={uhcp_timer=35..70}] ^ ^ ^-0.25
 execute unless block ~ ~ ~ #uhcp:no_hitbox_blocks run scoreboard players set @s uhcp_timer 35
 particle minecraft:enchanted_hit ~ ~0.5 ~ 0.01 0.01 0.01 0.1 1 normal
 

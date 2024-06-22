@@ -1,4 +1,4 @@
-advancement revoke @s only uhcp:relics/flux_factor/ability
+execute unless score %game uhcp_initStatus matches 1 run return run function uhcp:relics/voltrune/lobby
 tag @s add UHCP_Owner
 
 function uhcp:relics/durability/reset

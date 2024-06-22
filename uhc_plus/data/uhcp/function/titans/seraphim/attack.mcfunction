@@ -1,3 +1,3 @@
-execute if score @s uhcp_titans_attack matches 0 at @s run function uhcp:titans/seraphim/laser/indicator/init
-execute if score @s uhcp_titans_attack matches 1 at @s run function uhcp:titans/seraphim/bite/init
-execute if score @s uhcp_titans_attack matches 2 at @s run function uhcp:titans/seraphim/vex
+execute at @s[scores={uhcp_titans_attack=0}] run function uhcp:titans/seraphim/laser/indicator/init
+execute at @s[scores={uhcp_titans_attack=1}] run function uhcp:titans/seraphim/bite/init
+execute at @s[scores={uhcp_titans_attack=2}] run function uhcp:titans/seraphim/vex

@@ -4,6 +4,6 @@ execute if score @s lobby matches 4 at @e[tag=UHCP_Destination3,limit=1] run tp 
 execute if score @s lobby matches 5 at @e[tag=UHCP_Destination4,limit=1] run tp @s ~ ~ ~ ~180 ~
 execute if score @s lobby matches 6 at @e[tag=UHCP_Destination5,limit=1] run tp @s ~ ~ ~ ~-60 ~
 
-execute if entity @s[tag=UHCP_RelicTestingChamber] run function uhcp:lobby/relic_testing/reset
+execute as @s[tag=UHCP_RelicTestingChamber] run function uhcp:lobby/relic_testing/reset
 execute at @s run function uhcp:lobby/teleport/effects
 scoreboard players reset @s lobby

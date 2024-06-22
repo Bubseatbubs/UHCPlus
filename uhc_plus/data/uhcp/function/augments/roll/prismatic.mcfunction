@@ -11,7 +11,7 @@ loot replace entity @s container.32 loot uhcp:augments/prismatic
 
 # Add Patron Augment if Hera is selected
 execute unless score %patrons uhcp_settings matches 1 run item replace entity @s hotbar.7 with minecraft:black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={}] 1
-execute if score @s uhcp_aug_patron matches 8 if score %patrons uhcp_settings matches 1 run loot replace entity @s hotbar.7 loot uhcp:augments/prismatic
+execute if score %patrons uhcp_settings matches 1 run loot replace entity @s[scores={uhcp_aug_patron=8}] hotbar.7 loot uhcp:augments/prismatic
 
 # Store rerolled augments onto an armor stand
 execute as @e[tag=UHCP_StoreAugment] if score @s uhcp_id = @p[tag=UHCP_GeneratingAugments] uhcp_id run kill @s

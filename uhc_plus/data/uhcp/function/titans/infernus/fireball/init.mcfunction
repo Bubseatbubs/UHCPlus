@@ -6,6 +6,6 @@ execute if score @s uhcp_timer matches 85 as @a[gamemode=survival,distance=..16]
 execute unless score @s uhcp_timer matches 100.. run return 0
 
 tag @s add UHCP_CurrentInfernus
-execute as @e[tag=UHCP_InfernusFireball] if score @s uhcp_id = @n[tag=UHCP_CurrentInfernus] uhcp_id at @s run data merge entity @s {Motion:[0.0,-4.0,0.0]}
+execute as @e[tag=UHCP_InfernusFireball] if score @s uhcp_game_id = @n[tag=UHCP_CurrentInfernus] uhcp_game_id at @s run data modify entity @s Motion[1] set value -4.0d
 scoreboard players reset @s uhcp_timer
 tag @s remove UHCP_CurrentInfernus

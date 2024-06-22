@@ -2,7 +2,7 @@
 gamerule showDeathMessages false
 
 kill @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs]
-execute as @e[tag=UHCP_WellEngineered] at @s run function uhcp:relics/runic_sentry/delete
+execute as @e[tag=UHCP_TurretOrigin] at @s run function uhcp:relics/runic_sentry/delete
 execute as @e[tag=UHCP_AltarDisplay] at @s run function uhcp:titans/spawn/reset_altar
 execute as @e[tag=UHCP_GraveMarker] at @s run function uhcp:titans/gigantus/graves/delete
 kill @e[tag=UHCP_Minion]
@@ -85,35 +85,36 @@ execute as @a[scores={uhcp_augment=25}] run function uhcp:augments/effects/gold/
 
 # Reset scores
 # System scores
+scoreboard players reset %entities uhcp_game_id
+scoreboard players reset %global uhcp_game_id
+scoreboard players reset %augment_countdown uhcp_game_time
+scoreboard players reset %update_display uhcp_game_time
+scoreboard players reset %time uhcp_game_time
 scoreboard players reset %global uhcp_id
 scoreboard players reset %end uhcp_initStatus
 scoreboard players reset %day uhcp_initStatus
 scoreboard players reset %game uhcp_initStatus
-scoreboard players reset %global uhcp_game_ID
-scoreboard players reset %augment_countdown uhcp_game_time
-scoreboard players reset %time uhcp_game_time
+scoreboard players reset %lava_start uhcp_initStatus
 scoreboard players reset %time uhcp_initStatus
 scoreboard players reset %time_freeze uhcp_initStatus
-scoreboard players reset %lava_start uhcp_initStatus
-scoreboard players reset %update_display uhcp_game_time
 
 # Player scores
 scoreboard players reset @a testkit
 scoreboard players reset @a top
 scoreboard players reset @a uhcp_aug_choosingAugment
+scoreboard players reset @a uhcp_aug_count
+scoreboard players reset @a uhcp_aug_tier
 scoreboard players reset @a uhcp_augment
 scoreboard players reset @a uhcp_deathTime
-scoreboard players reset @a uhcp_game_ID
+scoreboard players reset @a uhcp_game_id
+scoreboard players reset @a uhcp_game_time
 scoreboard players reset @a uhcp_id
 scoreboard players reset @a uhcp_itemCount
-scoreboard players reset @a uhcp_lava_timeInterval
 scoreboard players reset @a uhcp_lava_maxHeight
+scoreboard players reset @a uhcp_lava_timeInterval
 scoreboard players reset @a uhcp_lobby_item
-scoreboard players reset @a uhcp_aug_tier
-scoreboard players reset @a uhcp_aug_count
 scoreboard players reset @a uhcp_relic_count
 scoreboard players reset @a uhcp_relic_sfe_time
-scoreboard players reset @s uhcp_game_time
 scoreboard players reset @a uhcp_team
 scoreboard players reset @a uhcp_top_CD
 scoreboard players reset @a uhcp_top_charge

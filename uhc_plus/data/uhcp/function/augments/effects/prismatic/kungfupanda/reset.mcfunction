@@ -1,6 +1,6 @@
 advancement revoke @s only uhcp:augments/reset_panda
 tag @s add UHCP_Owner
-execute if score @s uhcp_team matches 15.. if score %pvp uhcp_settings matches ..0 run team leave @s
+execute if score %pvp uhcp_settings matches ..0 run team leave @s[scores={uhcp_team=15..}]
 execute as @e[tag=UHCP_KungfuPanda] if score @s uhcp_id = @p[tag=UHCP_Owner] uhcp_id at @s run function uhcp:entity/instant_kill
 attribute @s minecraft:player.entity_interaction_range modifier remove uhcp:titan_entity_range
 attribute @s minecraft:generic.scale modifier remove uhcp:panda_scale

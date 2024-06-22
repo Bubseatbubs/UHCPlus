@@ -1,5 +1,5 @@
 tellraw @s [{"text":"Upgrade Complete: [","color":"dark_gray","bold":true},{"text":"Netherite Configuration","color":"gray","bold":false},{"text":"]"}]
-execute unless entity @s[tag=!UHCP_CD_Netherite] run return run function uhcp:augments/effects/prismatic/cyberneticdownload/upgrade/short/alternate/2
+execute as @s[tag=UHCP_CD_Netherite] run return run function uhcp:augments/effects/prismatic/cyberneticdownload/upgrade/short/alternate/2
 
 item modify entity @s armor.chest uhcp:cybernetic_download/upgrade_to_netherite
 tag @s add UHCP_CD_Netherite

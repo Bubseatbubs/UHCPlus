@@ -11,7 +11,7 @@ function uhcp:entity/bees/summon
 function uhcp:entity/bees/summon
 function uhcp:entity/bees/summon
 function uhcp:entity/bees/summon
-execute if entity @s[tag=UHCP_SpawnBeeKnight] run function uhcp:relics/buzzburst/summon_knight
+execute as @s[tag=UHCP_SpawnBeeKnight] run function uhcp:relics/buzzburst/summon_knight
 
 execute at @s as @e[tag=UHCP_Bee,tag=UHCP_New,sort=nearest,limit=6] run scoreboard players operation @s uhcp_id = @n[tag=UHCP_BuzzburstDisplay] uhcp_id
 tag @e remove UHCP_New

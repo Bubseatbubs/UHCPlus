@@ -1,13 +1,12 @@
-advancement revoke @s only uhcp:relics/windfall/ability
+execute unless score %game uhcp_initStatus matches 1 run return run function uhcp:relics/windfall/lobby
 tag @s add UHCP_Owner
-#Get Player Gapple amount
 
+# Get number of player's golden apples
 execute as @a[tag=!UHCP_Owner,team=!grace_period,distance=..9,gamemode=survival] unless score @s uhcp_team = @p[tag=UHCP_Owner] uhcp_team run tag @s add UHCP_HarvesterTarget
-execute unless entity @e[tag=UHCP_HarvesterTarget] as @e[tag=!UHCP_Invulnerable,type=!#uhcp:inanimate_mobs,type=!minecraft:player,distance=..9] unless score @s uhcp_id = @p[tag=UHCP_Owner] uhcp_id run tag @s add UHCP_HarvesterTarget
+execute unless entity @e[tag=UHCP_HarvesterTarget] as @e[tag=!UHCP_Invulnerable,type=!#uhcp:inanimate_mobs,type=!minecraft:player,distance=..9] unless score @s uhcp_id = @p[tag=UHCP_Owner] uhcp_id unless score @s uhcp_team = @p[tag=UHCP_Owner] uhcp_team run tag @s add UHCP_HarvesterTarget
 
 # Stop function if no targets are near
-execute unless entity @e[tag=UHCP_HarvesterTarget] run tag @s remove UHCP_Owner
-execute unless entity @e[tag=UHCP_HarvesterTarget] run return 0
+execute unless entity @e[tag=UHCP_HarvesterTarget] run return run tag @s remove UHCP_Owner
 
 function uhcp:relics/durability/reset
 

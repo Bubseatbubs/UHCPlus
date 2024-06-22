@@ -7,8 +7,8 @@ execute if score %blocksfilled uhcp_titans_count matches 3.. run playsound minec
 scoreboard players reset %y_diff uhcp_titans_height
 
 execute unless function uhcp:titans/check_aggression run return 0
-execute if entity @s[tag=UHCP_IsJumping,nbt={OnGround:1b}] run function uhcp:titans/bone_colossus/bone_jump/land
-execute if entity @s[tag=UHCP_IsJumping] run return 0
+execute as @s[tag=UHCP_IsJumping,predicate=uhcp:on_ground] run function uhcp:titans/bone_colossus/bone_jump/land
+execute as @s[tag=UHCP_IsJumping] run return 0
 
 execute store result score %titan_y uhcp_titans_height run data get entity @s Pos[1] 1
 execute on target store result score %player_y uhcp_titans_height run data get entity @s Pos[1] 1

@@ -44,7 +44,7 @@ scoreboard objectives add uhcp_count dummy
 scoreboard objectives add uhcp_death deathCount
 scoreboard objectives add uhcp_deathTime dummy
 scoreboard objectives add uhcp_game_display dummy
-scoreboard objectives add uhcp_game_ID dummy
+scoreboard objectives add uhcp_game_id dummy
 scoreboard objectives add uhcp_game_time dummy
 scoreboard objectives add uhcp_health health {"text":"Health","color":"red"}
 scoreboard objectives add uhcp_id dummy

@@ -5,5 +5,5 @@ particle minecraft:gust_emitter_large ~ ~ ~ 0.25 0.25 0.25 0.1 3 normal
 playsound minecraft:entity.breeze.jump master @a[distance=..16] ~ ~ ~ 1 1 1
 playsound minecraft:entity.elder_guardian.curse master @a[distance=..16] ~ ~ ~ 1 1 1
 execute on target at @s run function uhcp:titans/ferrum/jump/indicator
-data merge entity @s {Motion:[0.0,6.5,0.0]}
+data modify entity @s Motion[1] set value 6.5d
 tag @s add UHCP_IsJumping

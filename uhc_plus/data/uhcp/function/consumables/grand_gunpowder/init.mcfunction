@@ -1,4 +1,4 @@
-execute if entity @s[tag=UHCP_Explode] run return 0
+execute as @s[tag=UHCP_Explode] run return 0
 
 clear @s *[minecraft:custom_data~{uhcp_consumable:15b}] 1
 tag @s add UHCP_Explode

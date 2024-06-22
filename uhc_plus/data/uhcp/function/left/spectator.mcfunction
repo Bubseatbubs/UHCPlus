@@ -23,32 +23,34 @@ scoreboard players reset @s team
 scoreboard players reset @s testkit
 scoreboard players reset @s top
 scoreboard players reset @s uhcp_aug_choosingAugment
+scoreboard players reset @s uhcp_aug_count
+scoreboard players reset @s uhcp_aug_tier
 scoreboard players reset @s uhcp_augment
 scoreboard players reset @s uhcp_deathTime
-scoreboard players reset @s uhcp_game_ID
+scoreboard players reset @s uhcp_game_id
+scoreboard players reset @s uhcp_game_time
 scoreboard players reset @s uhcp_id
 scoreboard players reset @s uhcp_itemCount
-scoreboard players reset @s uhcp_lava_timeInterval
 scoreboard players reset @s uhcp_lava_maxHeight
+scoreboard players reset @s uhcp_lava_timeInterval
 scoreboard players reset @s uhcp_lobby_item
-scoreboard players reset @s uhcp_aug_tier
-scoreboard players reset @s uhcp_aug_count
 scoreboard players reset @s uhcp_relic_count
 scoreboard players reset @s uhcp_relic_sfe_time
-scoreboard players reset @s uhcp_game_time
 scoreboard players reset @s uhcp_top_CD
 scoreboard players reset @s uhcp_top_charge
 scoreboard players reset @s uhcp_top_delay
-scoreboard players set @a uhcp_ready 0
+scoreboard players set @s uhcp_ready 0
 scoreboard players set @s uhcp_team 0
 
 # Assign IDs
-scoreboard players operation @s uhcp_game_ID = %global uhcp_game_ID
-scoreboard players add %global uhcp_id 1
-scoreboard players operation @s uhcp_id = %global uhcp_id
+scoreboard players operation @s uhcp_game_id = %global uhcp_game_id
+function uhcp:start/assign_id
+
+# Track number of players for later Titan bossbar removal
+scoreboard players add %players uhcp_id 1
 
 # Create Titan health bossbar
-execute unless score %players uhcp_id matches ..0 run function uhcp:left/spectator/bossbar
+function uhcp:titans/bossbar/create
 
 # Augment countdown bossbar
 execute if score %augment_countdown uhcp_game_time matches 1.. unless score %tier uhcp_aug_tier matches -1 run bossbar set uhcp:augment players @a

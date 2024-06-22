@@ -1,15 +1,15 @@
-execute if score @s uhcp_titans_count matches 1 at @s positioned ~ ~1 ~ run function uhcp:titans/arachne/init
-execute if score @s uhcp_titans_count matches 2 at @s positioned ~ ~1 ~ run function uhcp:titans/gigantus/init
-execute if score @s uhcp_titans_count matches 3 at @s positioned ~ ~1 ~ run function uhcp:titans/fenrir/init
-execute if score @s uhcp_titans_count matches 4 at @s positioned ~ ~1 ~ run function uhcp:titans/bone_colossus/init
-execute if score @s uhcp_titans_count matches 5 at @s positioned ~ ~1 ~ run function uhcp:titans/giga_creeper/init
-execute if score @s uhcp_titans_count matches 6 at @s positioned ~ ~1 ~ run function uhcp:titans/triton/init
-execute if score @s uhcp_titans_count matches 7 at @s positioned ~ ~1 ~ run function uhcp:titans/seraphim/init
-execute if score @s uhcp_titans_count matches 8 at @s positioned ~ ~1 ~ run function uhcp:titans/ferrum/init
-execute if score @s uhcp_titans_count matches 9 at @s positioned ~ ~1 ~ run function uhcp:titans/infernus/init
-execute if score @s uhcp_titans_count matches 10 at @s positioned ~ ~1 ~ run function uhcp:titans/tyrion/init
-execute if score @s uhcp_titans_count matches 11 at @s positioned ~ ~1 ~ run function uhcp:titans/gerald/init
-execute if score @s uhcp_titans_count matches 12 at @s positioned ~ ~1 ~ run function uhcp:titans/gallie/init
+execute at @s[scores={uhcp_titans_count=1}] positioned ~ ~1 ~ run function uhcp:titans/arachne/init
+execute at @s[scores={uhcp_titans_count=2}] positioned ~ ~1 ~ run function uhcp:titans/gigantus/init
+execute at @s[scores={uhcp_titans_count=3}] positioned ~ ~1 ~ run function uhcp:titans/fenrir/init
+execute at @s[scores={uhcp_titans_count=4}] positioned ~ ~1 ~ run function uhcp:titans/bone_colossus/init
+execute at @s[scores={uhcp_titans_count=5}] positioned ~ ~1 ~ run function uhcp:titans/giga_creeper/init
+execute at @s[scores={uhcp_titans_count=6}] positioned ~ ~1 ~ run function uhcp:titans/triton/init
+execute at @s[scores={uhcp_titans_count=7}] positioned ~ ~1 ~ run function uhcp:titans/seraphim/init
+execute at @s[scores={uhcp_titans_count=8}] positioned ~ ~1 ~ run function uhcp:titans/ferrum/init
+execute at @s[scores={uhcp_titans_count=9}] positioned ~ ~1 ~ run function uhcp:titans/infernus/init
+execute at @s[scores={uhcp_titans_count=10}] positioned ~ ~1 ~ run function uhcp:titans/tyrion/init
+execute at @s[scores={uhcp_titans_count=11}] positioned ~ ~1 ~ run function uhcp:titans/gerald/init
+execute at @s[scores={uhcp_titans_count=12}] positioned ~ ~1 ~ run function uhcp:titans/gallie/init
 fill ~-4 ~ ~-4 ~4 ~8 ~4 minecraft:air replace minecraft:barrier
 playsound minecraft:block.end_portal.spawn master @a[distance=..16] ~ ~ ~ 1 1 0.6
 particle minecraft:reverse_portal ~ ~ ~ 3 3 3 0.1 100 normal

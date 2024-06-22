@@ -1,4 +1,4 @@
-execute unless entity @s[tag=UHCP_DisableArmorAndOffhand] run return 0
+execute as @s[tag=!UHCP_DisableArmorAndOffhand] run return 0
 playsound minecraft:block.note_block.snare master @s ~ ~ ~ 1 1 1
 tag @s add UHCP_Owner
 tag @s remove UHCP_DisableArmorAndOffhand
@@ -13,4 +13,3 @@ item replace entity @s weapon.offhand from entity @e[tag=UHCP_CurrentStoredArmor
 kill @e[tag=UHCP_CurrentStoredArmor,limit=1]
 
 tag @s remove UHCP_Owner
-
