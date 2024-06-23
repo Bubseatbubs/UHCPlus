@@ -1,9 +1,14 @@
 # Reset player whom is not part of current game as spectator
 # Remove tags
+tag @s remove UHCP_AteApple
+tag @s remove UHCP_AugmentRerollSlot1
+tag @s remove UHCP_AugmentRerollSlot2
+tag @s remove UHCP_AugmentRerollSlot3
 tag @s remove UHCP_ChoosingItem
 tag @s remove UHCP_Died
 tag @s remove UHCP_DisableArmorAndOffhand
 tag @s remove UHCP_Explode
+tag @s remove UHCP_MilkBucket
 tag @s remove UHCP_RelicTestingChamber
 tag @a remove UHCP_SLLock
 tag @s remove UHCP_SoulflameEmbrace
