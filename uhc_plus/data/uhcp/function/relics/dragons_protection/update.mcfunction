@@ -17,7 +17,7 @@ execute at @s[tag=UHCP_EndChosen] as @a[distance=..4] if score @s uhcp_team = @n
 execute at @s[tag=UHCP_EndChosen] as @a[distance=..4] if score @s uhcp_team = @n[tag=UHCP_EndChosen] uhcp_team run effect give @s minecraft:fire_resistance 45 0 false
 execute at @s[tag=UHCP_EndChosen] run tag @e[tag=UHCP_DragonBreath,distance=..20] add UHCP_TeleportBack
 execute at @s[tag=UHCP_EndChosen] run tag @e[distance=..20] remove UHCP_DragonBreath
-execute at @s[tag=UHCP_EndChosen] in uhcp:main run tp @e[tag=UHCP_TeleportBack] 0 -63 0
+execute as @s[tag=UHCP_EndChosen] in uhcp:main run tp @e[tag=UHCP_TeleportBack] 0 -63 0
 execute as @s[tag=UHCP_EndChosen] run tag @e remove UHCP_TeleportBack
 fill ~1 ~ ~-2 ~-1 ~2 ~-2 minecraft:air replace minecraft:obsidian
 fill ~2 ~ ~1 ~2 ~2 ~-1 minecraft:air replace minecraft:obsidian
