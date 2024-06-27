@@ -19,7 +19,7 @@ execute if score %game uhcp_initStatus matches 1 run function uhcp:timer/update_
 execute if score %lava_start uhcp_initStatus matches 1 run function uhcp:lava/run
 
 # Settings menu
-execute as @a at @s if score @s uhcp_settings = @s uhcp_settings run function uhcp:settings/change
+execute as @a[scores={uhcp_settings=0..}] at @s run function uhcp:settings/change
 execute as @a[scores={settings=1..}] run function uhcp:settings/pages/main
 execute as @a[scores={settings_player=1..}] run function uhcp:settings/pages/player
 execute as @a[scores={settings_augments=1..}] run function uhcp:settings/pages/augments
