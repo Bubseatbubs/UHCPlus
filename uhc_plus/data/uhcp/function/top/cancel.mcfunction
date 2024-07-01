@@ -9,6 +9,6 @@ scoreboard players reset @s uhcp_top_delay
 
 tellraw @s {"text":"Teleportation canceled.","color":"dark_red","hoverEvent":{"action":"show_text","value":[{"text":"","bold":true}]}}
 playsound minecraft:block.amethyst_cluster.break master @s ~ ~ ~ 1 1 1
-scoreboard players set @s uhcp_top_CD 100
+scoreboard players set @s uhcp_top_cd 100
 
 kill @n[tag=UHCP_TopCheck,distance=..3]

@@ -1,44 +1,44 @@
 # Add Scoreboard Objectives
 # Triggers
 scoreboard objectives add augments trigger
+scoreboard objectives add lobby trigger
 scoreboard objectives add menu trigger
 scoreboard objectives add patron trigger
 scoreboard objectives add team trigger
 scoreboard objectives add testkit trigger
 scoreboard objectives add top trigger
 scoreboard objectives add upgrade trigger
-scoreboard objectives add lobby trigger
 
 # Settings Triggers
 scoreboard objectives add settings trigger
 scoreboard objectives add settings_augments trigger
 scoreboard objectives add settings_border trigger
 scoreboard objectives add settings_lava trigger
+scoreboard objectives add settings_other trigger
 scoreboard objectives add settings_player trigger
 scoreboard objectives add settings_team trigger
-scoreboard objectives add settings_other trigger
 
 # Scoreboard Objectives
 scoreboard objectives add uhcp_arrowCount dummy
-scoreboard objectives add uhcp_aug_choosingAugment dummy
-scoreboard objectives add uhcp_aug_count dummy
-scoreboard objectives add uhcp_aug_durability dummy
-scoreboard objectives add uhcp_aug_gloryOfRa dummy
-scoreboard objectives add uhcp_aug_patron dummy
-scoreboard objectives add uhcp_aug_stack dummy
-scoreboard objectives add uhcp_aug_tier dummy
-scoreboard objectives add uhcp_aug_time dummy
-scoreboard objectives add uhcp_aug_validSelection dummy
-scoreboard objectives add uhcp_aug_hb_killedZombie dummy
-scoreboard objectives add uhcp_aug_hb_killedCreeper dummy
-scoreboard objectives add uhcp_aug_hb_killedSkeleton dummy
-scoreboard objectives add uhcp_aug_hb_killedSpider dummy
 scoreboard objectives add uhcp_aug_cd_firstOption dummy
 scoreboard objectives add uhcp_aug_cd_secondOption dummy
 scoreboard objectives add uhcp_aug_cd_thirdOption dummy
 scoreboard objectives add uhcp_aug_cd_upgrade dummy
+scoreboard objectives add uhcp_aug_choosingAugment dummy
+scoreboard objectives add uhcp_aug_count dummy
+scoreboard objectives add uhcp_aug_durability dummy
+scoreboard objectives add uhcp_aug_gloryOfRa dummy
+scoreboard objectives add uhcp_aug_hb_killedZombie dummy
+scoreboard objectives add uhcp_aug_hb_killedCreeper dummy
+scoreboard objectives add uhcp_aug_hb_killedSkeleton dummy
+scoreboard objectives add uhcp_aug_hb_killedSpider dummy
+scoreboard objectives add uhcp_aug_patron dummy
 scoreboard objectives add uhcp_aug_regenItem dummy
 scoreboard objectives add uhcp_aug_sh_item dummy
+scoreboard objectives add uhcp_aug_stack dummy
+scoreboard objectives add uhcp_aug_tier dummy
+scoreboard objectives add uhcp_aug_time dummy
+scoreboard objectives add uhcp_aug_validSelection dummy
 scoreboard objectives add uhcp_augment dummy
 scoreboard objectives add uhcp_count dummy
 scoreboard objectives add uhcp_death deathCount
@@ -58,9 +58,9 @@ scoreboard objectives add uhcp_lava_height dummy
 scoreboard objectives add uhcp_lava_maxHeight dummy
 scoreboard objectives add uhcp_lava_time dummy
 scoreboard objectives add uhcp_lava_timeInterval dummy
-scoreboard objectives add uhcp_lobby_setItem dummy
-scoreboard objectives add uhcp_lobby_item dummy
 scoreboard objectives add uhcp_leave minecraft.custom:minecraft.leave_game
+scoreboard objectives add uhcp_lobby_item dummy
+scoreboard objectives add uhcp_lobby_setItem dummy
 scoreboard objectives add uhcp_mine_ancientDebris minecraft.mined:minecraft.ancient_debris
 scoreboard objectives add uhcp_mine_copperOre minecraft.mined:minecraft.copper_ore
 scoreboard objectives add uhcp_mine_dCopperOre minecraft.mined:minecraft.deepslate_copper_ore
@@ -81,15 +81,15 @@ scoreboard objectives add uhcp_ready dummy
 scoreboard objectives add uhcp_relic_count dummy
 scoreboard objectives add uhcp_relic_sfe_time dummy
 scoreboard objectives add uhcp_settings dummy
-scoreboard objectives add uhcp_titans_attack dummy
-scoreboard objectives add uhcp_titans_count dummy
-scoreboard objectives add uhcp_titans_timer dummy
-scoreboard objectives add uhcp_titans_ID dummy
-scoreboard objectives add uhcp_titans_height dummy
 scoreboard objectives add uhcp_team dummy
 scoreboard objectives add uhcp_testkit dummy
 scoreboard objectives add uhcp_timer dummy
-scoreboard objectives add uhcp_top_CD dummy
+scoreboard objectives add uhcp_titans_attack dummy
+scoreboard objectives add uhcp_titans_count dummy
+scoreboard objectives add uhcp_titans_height dummy
+scoreboard objectives add uhcp_titans_id dummy
+scoreboard objectives add uhcp_titans_timer dummy
+scoreboard objectives add uhcp_top_cd dummy
 scoreboard objectives add uhcp_top_charge dummy
 scoreboard objectives add uhcp_top_delay dummy
 scoreboard objectives add uhcp_transformDuration dummy
@@ -186,13 +186,13 @@ scoreboard players set %arrow_limit149_def uhcp_settings 8
 scoreboard players set %arrow_limit5_def uhcp_settings 20
 scoreboard players set %arrow_limit201_def uhcp_settings 52
 
-# Border Size
+# Border size
 scoreboard players set %border_size_def uhcp_settings 1500
 
-# Border Countdown
+# Border countdown
 scoreboard players set %border_countdown_def uhcp_settings 24000
 
-# Border Shrink Speed
+# Border shrink speed
 scoreboard players set %border_shrink_speed_def uhcp_settings 24000
 
 # Dimension countdown
@@ -213,22 +213,22 @@ scoreboard players set %team_def uhcp_settings 1
 # Team size
 scoreboard players set %team_size_def uhcp_settings 2
 
-# Friendly Fire
+# Friendly fire
 scoreboard players set %friendly_fire_def uhcp_settings 0
 
-# Player Select Teams
+# Players select teams
 scoreboard players set %players_select_teams_def uhcp_settings 1
 
-# Ra Stacks
+# Ra stacks
 scoreboard players set %ra_stacks_def uhcp_settings 9
 
 # Patron augments
 scoreboard players set %patrons_def uhcp_settings 0
 
-# Night Vision
+# Night vision
 scoreboard players set %night_vision_def uhcp_settings 1
 
-# Ender Pearl Immunity
+# Ender pearl immunity
 scoreboard players set %ender_pearl_def uhcp_settings 1
 
 # Difficulty

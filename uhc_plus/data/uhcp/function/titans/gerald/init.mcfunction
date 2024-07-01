@@ -1,4 +1,4 @@
 summon minecraft:sniffer ~ ~ ~ {CustomNameVisible:0b,ArmorItems:[{},{},{id:"minecraft:chest",count:1,components:{"minecraft:max_stack_size":1,"minecraft:custom_data":{uhcp_titan_loot:1b,uhcp_titan_id:11b}}},{}],ArmorDropChances:[0.085F,0.085F,1.000F,0.085F],PersistenceRequired:1b,Health:1000f,Tags:["UHCP_Titan","UHCP_Gerald","UHCP_New"],CustomName:'{"bold":true,"color":"red","text":"Gerald"}',attributes:[{id:"minecraft:generic.armor",base:5.0d},{id:"minecraft:generic.attack_damage",base:0.0d},{id:"minecraft:generic.fall_damage_multiplier",base:0.0d},{id:"minecraft:generic.knockback_resistance",base:1.0d},{id:"minecraft:generic.max_health",base:500.0d},{id:"minecraft:generic.movement_speed",base:0.15d},{id:"minecraft:generic.scale",base:3.0d},{id:"minecraft:generic.step_height",base:5.0d}]}
 
 # Initialize boss ID
-scoreboard players set @n[tag=UHCP_New,tag=UHCP_Titan] uhcp_titans_ID 11
+scoreboard players set @n[tag=UHCP_New,tag=UHCP_Titan] uhcp_titans_id 11

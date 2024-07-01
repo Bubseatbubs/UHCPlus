@@ -104,7 +104,7 @@ scoreboard players reset @a uhcp_mine_rawCopperBlock
 scoreboard players reset @a uhcp_mine_rawGoldBlock
 scoreboard players reset @a uhcp_mine_rawIronBlock
 scoreboard players reset @a uhcp_ready
-scoreboard players reset @a uhcp_top_CD
+scoreboard players reset @a uhcp_top_cd
 scoreboard players reset @a uhcp_top_charge
 scoreboard players reset @a uhcp_top_delay
 

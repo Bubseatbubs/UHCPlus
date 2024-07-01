@@ -2,5 +2,5 @@ summon minecraft:hoglin ~ ~ ~ {CustomNameVisible:0b,ArmorItems:[{},{},{id:"minec
 # Initialize boss ID
 scoreboard players add %entities uhcp_game_id 1
 scoreboard players operation @n[tag=UHCP_New,tag=UHCP_Gallie] uhcp_game_id = %entities uhcp_game_id
-scoreboard players set @n[tag=UHCP_New,tag=UHCP_Titan] uhcp_titans_ID 12
+scoreboard players set @n[tag=UHCP_New,tag=UHCP_Titan] uhcp_titans_id 12
 tag @e remove UHCP_New

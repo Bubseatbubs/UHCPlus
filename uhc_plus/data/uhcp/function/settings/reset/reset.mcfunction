@@ -26,14 +26,17 @@ scoreboard players operation %soul_apples uhcp_settings = %soul_apples_def uhcp_
 # Grace period countdown
 scoreboard players operation %pvp uhcp_settings = %pvp_def uhcp_settings
 
-# Set default Ra Stacks
+# Set default Ra stacks
 scoreboard players operation %ra_stacks uhcp_settings = %ra_stacks_def uhcp_settings
 
 # Patron augments
 execute unless score %patrons uhcp_settings = %patrons_def uhcp_settings run function uhcp:settings/reset/patrons/toggle
 
-# Night Vision
+# Night vision
 scoreboard players operation %night_vision uhcp_settings = %night_vision_def uhcp_settings
+
+# Ender pearl immunity
+scoreboard players operation %ender_pearl uhcp_settings = %ender_pearl_def uhcp_settings
 
 # Set default difficulty
 execute unless score %difficulty_def uhcp_settings matches 1.. run function uhcp:settings/reset/difficulty/easy

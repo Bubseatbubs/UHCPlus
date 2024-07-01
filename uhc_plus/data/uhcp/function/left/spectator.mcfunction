@@ -41,7 +41,7 @@ scoreboard players reset @s uhcp_lava_timeInterval
 scoreboard players reset @s uhcp_lobby_item
 scoreboard players reset @s uhcp_relic_count
 scoreboard players reset @s uhcp_relic_sfe_time
-scoreboard players reset @s uhcp_top_CD
+scoreboard players reset @s uhcp_top_cd
 scoreboard players reset @s uhcp_top_charge
 scoreboard players reset @s uhcp_top_delay
 scoreboard players set @s uhcp_ready 0

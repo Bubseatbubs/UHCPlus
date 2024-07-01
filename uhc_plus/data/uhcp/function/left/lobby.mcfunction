@@ -37,7 +37,7 @@ scoreboard players reset @s uhcp_lava_maxHeight
 scoreboard players reset @s uhcp_lava_timeInterval
 scoreboard players reset @s uhcp_relic_count
 scoreboard players reset @s uhcp_relic_sfe_time
-scoreboard players reset @s uhcp_top_CD
+scoreboard players reset @s uhcp_top_cd
 scoreboard players reset @s uhcp_top_charge
 scoreboard players reset @s uhcp_top_delay
 execute if score @s uhcp_game_id = @s uhcp_game_id run function uhcp:left/lobby/identification
