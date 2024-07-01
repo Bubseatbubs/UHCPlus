@@ -29,10 +29,6 @@ tag @s remove UHCP_SLSword
 
 # Remove Recipes
 recipe take @s minecraft:bow
-recipe take @s minecraft:chainmail_boots
-recipe take @s minecraft:chainmail_chestplate
-recipe take @s minecraft:chainmail_helmet
-recipe take @s minecraft:chainmail_leggings
 recipe take @s minecraft:crossbow
 recipe take @s minecraft:diamond_axe
 recipe take @s minecraft:diamond_boots
@@ -66,15 +62,6 @@ recipe take @s minecraft:leather_chestplate
 recipe take @s minecraft:leather_helmet
 recipe take @s minecraft:leather_leggings
 recipe take @s minecraft:mace
-recipe take @s minecraft:netherite_axe
-recipe take @s minecraft:netherite_boots
-recipe take @s minecraft:netherite_chestplate
-recipe take @s minecraft:netherite_helmet
-recipe take @s minecraft:netherite_hoe
-recipe take @s minecraft:netherite_leggings
-recipe take @s minecraft:netherite_pickaxe
-recipe take @s minecraft:netherite_shovel
-recipe take @s minecraft:netherite_sword
 recipe take @s minecraft:stone_axe
 recipe take @s minecraft:stone_hoe
 recipe take @s minecraft:stone_pickaxe

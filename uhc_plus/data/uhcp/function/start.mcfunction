@@ -86,7 +86,6 @@ scoreboard players reset @a uhcp_aug_hb_killedSpider
 scoreboard players reset @a uhcp_aug_hb_killedZombie
 scoreboard players reset @a uhcp_aug_tier
 scoreboard players reset @a uhcp_augment
-scoreboard players reset @a uhcp_bee_stacks
 scoreboard players reset %entities uhcp_game_id
 scoreboard players reset @a uhcp_game_time
 scoreboard players reset %time uhcp_game_time
@@ -108,7 +107,6 @@ scoreboard players reset @a uhcp_ready
 scoreboard players reset @a uhcp_top_CD
 scoreboard players reset @a uhcp_top_charge
 scoreboard players reset @a uhcp_top_delay
-scoreboard players reset @a uhcp_wolf_stacks
 
 # Remove tags
 tag @a remove UHCP_Creeper

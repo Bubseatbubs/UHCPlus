@@ -9,10 +9,5 @@ execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_radiant
 # Gets team value
 scoreboard players operation @n[tag=UHCP_TyrionVoltrune,tag=UHCP_New] uhcp_team = @s uhcp_team
 
-execute at @n[tag=UHCP_New] positioned ~ ~0.6 ~ run function uhcp:titans/tyrion/voltrune/particles
-execute at @n[tag=UHCP_New] positioned ~ ~0.6 ~ rotated ~90 ~ run function uhcp:titans/tyrion/voltrune/particles
-execute at @n[tag=UHCP_New] positioned ~ ~0.6 ~ rotated ~180 ~ run function uhcp:titans/tyrion/voltrune/particles
-execute at @n[tag=UHCP_New] positioned ~ ~0.6 ~ rotated ~270 ~ run function uhcp:titans/tyrion/voltrune/particles
-
 tag @s remove UHCP_Owner
 tag @e remove UHCP_New

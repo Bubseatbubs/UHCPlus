@@ -40,7 +40,7 @@ scoreboard players reset @s uhcp_relic_sfe_time
 scoreboard players reset @s uhcp_top_CD
 scoreboard players reset @s uhcp_top_charge
 scoreboard players reset @s uhcp_top_delay
-execute if score @s uhcp_game_id = @s uhcp_game_id run function left/lobby/identification
+execute if score @s uhcp_game_id = @s uhcp_game_id run function uhcp:left/lobby/identification
 
 # Return player as needed
 execute in minecraft:overworld run forceload add -80 -80 79 79

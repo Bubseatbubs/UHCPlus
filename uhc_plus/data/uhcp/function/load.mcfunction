@@ -37,9 +37,9 @@ scoreboard objectives add uhcp_aug_cd_firstOption dummy
 scoreboard objectives add uhcp_aug_cd_secondOption dummy
 scoreboard objectives add uhcp_aug_cd_thirdOption dummy
 scoreboard objectives add uhcp_aug_cd_upgrade dummy
+scoreboard objectives add uhcp_aug_regenItem dummy
 scoreboard objectives add uhcp_aug_sh_item dummy
 scoreboard objectives add uhcp_augment dummy
-scoreboard objectives add uhcp_bee_stack dummy
 scoreboard objectives add uhcp_count dummy
 scoreboard objectives add uhcp_death deathCount
 scoreboard objectives add uhcp_deathTime dummy
@@ -93,7 +93,6 @@ scoreboard objectives add uhcp_top_CD dummy
 scoreboard objectives add uhcp_top_charge dummy
 scoreboard objectives add uhcp_top_delay dummy
 scoreboard objectives add uhcp_transformDuration dummy
-scoreboard objectives add uhcp_aug_regenItem dummy
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health

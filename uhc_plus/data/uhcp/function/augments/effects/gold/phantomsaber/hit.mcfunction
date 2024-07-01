@@ -1,8 +1,8 @@
 advancement revoke @s only uhcp:augments/attacked_with_phantom_saber
 
 # 20% chance to proc follow up
-execute store result score @s uhcp_aug_stack run random value 0..4 
-execute if score @s uhcp_augment matches 221 store result score @s uhcp_aug_stack run random value 3..4 
+execute store result score @s uhcp_aug_stack run random value 0..4
+execute if score @s uhcp_augment matches 221 store result score @s uhcp_aug_stack run random value 3..4
 
 execute unless score @s uhcp_aug_stack matches 4 run return 0
 
