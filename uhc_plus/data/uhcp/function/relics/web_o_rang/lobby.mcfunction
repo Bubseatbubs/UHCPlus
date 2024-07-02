@@ -7,7 +7,7 @@ item replace entity @s weapon.mainhand with minecraft:air
 playsound minecraft:item.trident.throw master @a[distance=..4] ~ ~ ~ 1 1 1
 
 # Assign ID if player doesn't have one already
-execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/assign_id
+execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
 # Owner is set to player
 scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=3] uhcp_id = @s uhcp_id

@@ -49,7 +49,7 @@ scoreboard players set @s uhcp_team 0
 
 # Assign IDs
 scoreboard players operation @s uhcp_game_id = %global uhcp_game_id
-function uhcp:start/assign_id
+function uhcp:start/id/assign
 
 # Track number of players for later Titan bossbar removal
 scoreboard players add %players uhcp_id 1

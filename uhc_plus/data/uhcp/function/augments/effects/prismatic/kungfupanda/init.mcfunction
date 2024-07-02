@@ -19,7 +19,7 @@ effect give @s minecraft:invisibility infinite 0 true
 effect give @s minecraft:absorption infinite 4 true
 
 # Assign ID if player doesn't have one already
-execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/assign_id
+execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
 # Owner set to player
 scoreboard players operation @n[tag=UHCP_New] uhcp_id = @s uhcp_id

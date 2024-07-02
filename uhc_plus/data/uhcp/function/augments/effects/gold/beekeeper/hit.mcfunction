@@ -17,7 +17,7 @@ tag @e remove UHCP_BeeTarget
 scoreboard players reset @e[distance=..5] uhcp_aug_count
 
 # Assign ID if player doesn't have one already
-execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/assign_id
+execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
 # Bee owner is set to player
 scoreboard players operation @n[tag=UHCP_New,tag=UHCP_Bee] uhcp_id = @s uhcp_id

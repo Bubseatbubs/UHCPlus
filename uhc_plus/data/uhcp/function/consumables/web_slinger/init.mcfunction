@@ -6,7 +6,7 @@ execute anchored feet positioned ~ ~0.5 ~ run summon minecraft:block_display ^ ^
 playsound minecraft:item.trident.throw master @a[distance=..4] ~ ~ ~ 1 1 1
 
 # Assign ID if player doesn't have one already
-execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/assign_id
+execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
 # Owner is set to player
 scoreboard players operation @n[tag=UHCP_New] uhcp_id = @s uhcp_id

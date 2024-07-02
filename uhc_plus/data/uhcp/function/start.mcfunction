@@ -11,22 +11,18 @@ tag @a[tag=UHCP_Died] add UHCP_Spectator
 
 # Set scores
 scoreboard players operation %titans uhcp_initStatus = %titans uhcp_settings
-scoreboard players reset %start_countdown
+scoreboard players operation %border_countdown uhcp_game_time = %border_countdown uhcp_settings
+scoreboard players set %border_stage uhcp_itemCount 0
+scoreboard players set %day uhcp_initStatus 0
+scoreboard players set %end uhcp_initStatus 0
 scoreboard players set %game uhcp_initStatus 1
 scoreboard players set %time uhcp_initStatus 0
 scoreboard players set %time_freeze uhcp_initStatus 0
 scoreboard players set %titans uhcp_game_time 6000
-scoreboard players set %end uhcp_initStatus 0
-scoreboard players set %day uhcp_initStatus 0
-scoreboard players operation %border_countdown uhcp_game_time = %border_countdown uhcp_settings
-scoreboard players set %border_stage uhcp_itemCount 0
 execute if score %dimension uhcp_settings matches ..-1 run scoreboard players set %dimension uhcp_settings 0
 execute as @a unless score @s uhcp_aug_patron = @s uhcp_aug_patron run scoreboard players set @s uhcp_aug_patron 8
 execute store result score %random uhcp_game_id run random value 0..3
-execute if score %random uhcp_game_id matches 0 store result score %global uhcp_game_id run random value -2147483648..-1073741825
-execute if score %random uhcp_game_id matches 1 store result score %global uhcp_game_id run random value -1073741824..-1
-execute if score %random uhcp_game_id matches 2 store result score %global uhcp_game_id run random value 0..1073741823
-execute if score %random uhcp_game_id matches 3 store result score %global uhcp_game_id run random value 1073741824..2147483647
+execute store result score %global uhcp_game_id run function uhcp:start/id/game
 scoreboard players operation @a uhcp_game_id = %global uhcp_game_id
 scoreboard players set @a uhcp_game_time -1
 
@@ -74,6 +70,7 @@ advancement grant @a only uhcp:base_recipes
 # Revoke all special augment recipes here.
 
 # Reset scoreboards
+scoreboard players reset %start_countdown
 scoreboard players reset @a lobby
 scoreboard players reset @a patron
 scoreboard players reset @a team
@@ -87,7 +84,6 @@ scoreboard players reset @a uhcp_aug_hb_killedZombie
 scoreboard players reset @a uhcp_aug_tier
 scoreboard players reset @a uhcp_augment
 scoreboard players reset %entities uhcp_game_id
-scoreboard players reset @a uhcp_game_time
 scoreboard players reset %time uhcp_game_time
 scoreboard players reset @a uhcp_id
 scoreboard players reset %global uhcp_id
@@ -212,7 +208,7 @@ experience set @a 0 levels
 experience set @a 0 points
 
 # Assign player IDs
-execute as @a run function uhcp:start/assign_id
+execute as @a run function uhcp:start/id/assign
 scoreboard players operation %players uhcp_id = %global uhcp_id
 
 # Solo leveling upgrades

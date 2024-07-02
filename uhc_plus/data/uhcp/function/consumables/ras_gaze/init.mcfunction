@@ -11,7 +11,7 @@ execute as @a[distance=..16] at @s run playsound minecraft:item.trident.thunder 
 execute as @a[distance=..16] at @s run playsound minecraft:item.trident.thunder master @s ~ ~ ~ 100 0.75 1
 
 # Assign ID if player doesn't have one already
-execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/assign_id
+execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
 # Bee owner is set to player
 scoreboard players operation @n[tag=UHCP_New,tag=UHCP_RaLaser] uhcp_id = @s uhcp_id

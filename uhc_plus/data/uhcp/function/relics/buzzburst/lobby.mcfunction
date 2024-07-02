@@ -8,7 +8,7 @@ scoreboard players operation @n[tag=UHCP_CurrentBuzzburst] uhcp_team = @s uhcp_t
 execute as @n[tag=UHCP_CurrentBuzzburst] at @s run function uhcp:relics/buzzburst/launch
 
 # Assign ID if player doesn't have one already
-execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/assign_id
+execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
 scoreboard players operation @n[tag=UHCP_BuzzburstDisplay] uhcp_id = @s uhcp_id
 scoreboard players operation @n[tag=UHCP_BuzzburstDisplay] uhcp_team = @s uhcp_team

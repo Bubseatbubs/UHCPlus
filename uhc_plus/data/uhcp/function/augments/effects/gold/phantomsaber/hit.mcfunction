@@ -7,7 +7,7 @@ execute if score @s uhcp_augment matches 221 store result score @s uhcp_aug_stac
 execute unless score @s uhcp_aug_stack matches 4 run return 0
 
 # Assign ID if player doesn't have one already
-execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/assign_id
+execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
 tag @s add UHCP_Owner
 execute as @e[tag=UHCP_PhantomDestination] if score @s uhcp_id = @p[tag=UHCP_Owner] uhcp_id run kill @s
