@@ -6,7 +6,7 @@
 # @within  uhcp:augments/return/swap
 # @within  uhcp:augments/threw_item
 
-# Reroll Panes
+# Reroll panes
 item replace entity @s[tag=!UHCP_AugmentRerollSlot1] inventory.21 with minecraft:lime_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_reroll:1b,uhcp_reroll_slot:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Reroll Augment Choice","color":"gold"}',minecraft:lore=['{"color":"gray","text":"Select this option to reroll the Augment"}','{"color":"gray","text":"below. You can only reroll a slot once."}']] 1
 item replace entity @s[tag=!UHCP_AugmentRerollSlot2] inventory.22 with minecraft:lime_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_reroll:1b,uhcp_reroll_slot:2b,uhcp_glass:1b},minecraft:item_name='{"text":"Reroll Augment Choice","color":"gold"}',minecraft:lore=['{"color":"gray","text":"Select this option to reroll the Augment"}','{"color":"gray","text":"below. You can only reroll a slot once."}']] 1
 item replace entity @s[tag=!UHCP_AugmentRerollSlot3] inventory.23 with minecraft:lime_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_reroll:1b,uhcp_reroll_slot:3b,uhcp_glass:1b},minecraft:item_name='{"text":"Reroll Augment Choice","color":"gold"}',minecraft:lore=['{"color":"gray","text":"Select this option to reroll the Augment"}','{"color":"gray","text":"below. You can only reroll a slot once."}']] 1
@@ -14,7 +14,7 @@ item replace entity @s[tag=UHCP_AugmentRerollSlot1] inventory.21 with minecraft:
 item replace entity @s[tag=UHCP_AugmentRerollSlot2] inventory.22 with minecraft:red_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={}] 1
 item replace entity @s[tag=UHCP_AugmentRerollSlot3] inventory.23 with minecraft:red_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={}] 1
 
-# Rest of the Panes
+# Rest of the panes
 item replace entity @s hotbar.0 with minecraft:black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={}] 1
 item replace entity @s hotbar.1 with minecraft:black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={}] 1
 item replace entity @s hotbar.2 with minecraft:black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={}] 1

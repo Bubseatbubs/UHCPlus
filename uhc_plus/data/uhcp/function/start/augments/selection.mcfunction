@@ -1,4 +1,3 @@
 # Initialize augment selection
-execute at @s run tp @e[tag=UHCP_Lock,predicate=uhcp:dimensions/uhcp/main,limit=1] ~ ~1 ~
-execute at @s run forceload add ~ ~
+execute at @s run function uhcp:start/augments/location
 function uhcp:augments/init

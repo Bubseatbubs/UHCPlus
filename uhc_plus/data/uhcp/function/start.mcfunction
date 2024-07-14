@@ -21,6 +21,7 @@ scoreboard players set %time_freeze uhcp_initStatus 0
 scoreboard players set %titans uhcp_game_time 6000
 execute if score %dimension uhcp_settings matches ..-1 run scoreboard players set %dimension uhcp_settings 0
 execute as @a unless score @s uhcp_aug_patron = @s uhcp_aug_patron run scoreboard players set @s uhcp_aug_patron 8
+scoreboard players set @a uhcp_aug_choosingAugment 0
 execute store result score %random uhcp_game_id run random value 0..3
 execute store result score %global uhcp_game_id run function uhcp:start/id/game
 scoreboard players operation @a uhcp_game_id = %global uhcp_game_id
@@ -175,6 +176,7 @@ execute if score %spread uhcp_initStatus matches 1 run function uhcp:start/sprea
 
 # Setup Augments
 kill @e[tag=UHCP_StoreAugment]
+tag @a remove UHCP_ChoosingItem
 tag @a remove UHCP_AugmentRerollSlot1
 tag @a remove UHCP_AugmentRerollSlot2
 tag @a remove UHCP_AugmentRerollSlot3

@@ -73,7 +73,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:-20s}"
+                        "minecraft:custom_data": "{augment:20s}"
                       }
                     }
                   }
