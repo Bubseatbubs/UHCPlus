@@ -6,6 +6,7 @@ team join no_collision @s
 
 # Roll patron augment
 function uhcp:augments/roll/silver/patron
+scoreboard players set @s uhcp_aug_choosingAugment 1
 
 # Roll silver augments
 function uhcp:augments/roll/silver/roll/1

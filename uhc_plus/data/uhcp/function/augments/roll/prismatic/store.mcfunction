@@ -6,6 +6,7 @@ team join no_collision @s
 
 # Roll patron augment
 function uhcp:augments/roll/prismatic/patron
+scoreboard players set @s uhcp_aug_choosingAugment 1
 
 # Roll prismatic augments
 function uhcp:augments/roll/prismatic/roll/1
