@@ -50,7 +50,7 @@ execute in minecraft:overworld run forceload remove -80 -80 79 79
 # Lobby menu
 execute if score @s uhcp_ready matches 1 run function uhcp:lobby/readyup/cancel
 execute unless score @s uhcp_ready = @s uhcp_ready run scoreboard players set @s uhcp_ready 0
-execute unless items entity @s container.2 *[minecraft:custom_data~{uhcp_lobby:7b}] run function uhcp:lobby/menu
+function uhcp:left/lobby/menu
 
 # Manage player
 gamemode adventure @s

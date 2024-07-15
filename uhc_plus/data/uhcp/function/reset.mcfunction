@@ -162,7 +162,7 @@ team leave @a
 
 # Lobby Menu
 scoreboard players set @a uhcp_ready 0
-execute as @a at @s run function uhcp:lobby/menu
+execute as @a run function uhcp:lobby/menu
 
 # Notify players of reset
 title @a subtitle {"text":"RESET","color":"gray"}

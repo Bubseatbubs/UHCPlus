@@ -1,6 +1,6 @@
 # Augment tier
 scoreboard players operation %random uhcp_aug_tier = %random_def uhcp_aug_tier
-scoreboard players operation %tier uhcp_aug_tier = %tier_def uhcp_aug_tier
+function uhcp:settings/reset/augment
 
 # Arrow limits
 function uhcp:load/scores/arrow_limit

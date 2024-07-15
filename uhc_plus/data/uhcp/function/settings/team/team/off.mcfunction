@@ -17,7 +17,10 @@ team empty light_purple
 team empty red
 team empty yellow
 
-execute as @a[gamemode=!creative] run function uhcp:lobby/menu
+tag @a add UHCP_DisableReset
+item replace entity @a[gamemode=!creative] container.0 with minecraft:air
+tag @a remove UHCP_DisableReset
+
 function uhcp:settings/pages/team
 tellraw @s [{"text":"Teams have been turned "},{"text":"OFF","color":"red"},{"text":". It is now a Solo game."}]
 title @a actionbar [{"text":"Game type set to "},{"text":"SOLO","color":"aqua"}]
