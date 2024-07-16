@@ -39,7 +39,7 @@ scoreboard players operation %border_shrink_speed_retain uhcp_settings = %border
 # Store dimension countdown
 scoreboard players operation %dimension_retain uhcp_settings = %dimension uhcp_settings
 
-# Store PvP Grace Period countdown
+# Store PvP grace period
 scoreboard players operation %pvp_retain uhcp_settings = %pvp uhcp_settings
 
 # Store lava countdown
