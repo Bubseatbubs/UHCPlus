@@ -3088,6 +3088,12 @@
                 ]
               ],
               "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:jukebox_playable": {}
+              }
             }
           ],
           "conditions": [
