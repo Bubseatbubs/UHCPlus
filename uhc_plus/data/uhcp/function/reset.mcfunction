@@ -140,11 +140,6 @@ scoreboard players operation %pvp uhcp_settings = %pvp_retain uhcp_settings
 # Load lava scoreboard values
 scoreboard players operation %lava_countdown uhcp_settings = %lava_countdown_retain uhcp_settings
 
-# Load team values
-scoreboard players operation %team_size uhcp_settings = %team_size_retain uhcp_settings
-scoreboard players operation %team uhcp_settings = %team_retain uhcp_settings
-scoreboard players operation %players_select_teams uhcp_settings = %players_select_teams_retain uhcp_settings
-
 # Sidebar display
 scoreboard objectives setdisplay sidebar
 

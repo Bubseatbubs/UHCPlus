@@ -8,8 +8,8 @@ playsound minecraft:entity.rabbit.hurt master @a[distance=..4] ~ ~ ~ 1 1 0.75
 particle minecraft:effect ~ ~ ~ 0.1 0.1 0.1 0.1 15 normal
 
 tellraw @s {"text":"You've been transformed into a harmless Rabbit!","color":"dark_red"}
-attribute @s minecraft:player.entity_interaction_range modifier add uhcp:titan_entity_range -3 add_value
-attribute @s minecraft:player.block_interaction_range modifier add uhcp:rabbit_block_range -4.5 add_value
+attribute @s minecraft:player.entity_interaction_range modifier add uhcp:titan_entity_range -1 add_multiplied_total
+attribute @s minecraft:player.block_interaction_range modifier add uhcp:rabbit_block_range -1 add_multiplied_total
 attribute @s minecraft:generic.scale modifier add uhcp:scale -0.5 add_value
 summon minecraft:rabbit ~ ~ ~ {Invulnerable:1b,Tags:["UHCP_New","UHCP_Summon","UHCP_MagicRabbit","UHCP_Invulnerable"],attributes:[{id:"minecraft:generic.scale",base:1.25d}]}
 effect give @s minecraft:invisibility 10 0 true

@@ -7,7 +7,7 @@ playsound minecraft:block.brewing_stand.brew master @a[distance=..4] ~ ~ ~ 1 1 0
 particle minecraft:effect ~ ~ ~ 0.1 0.1 0.1 0.1 15 normal
 effect clear @s minecraft:bad_omen
 
-attribute @s minecraft:player.entity_interaction_range modifier add uhcp:titan_entity_range -3 add_value
+attribute @s minecraft:player.entity_interaction_range modifier add uhcp:titan_entity_range -1 add_multiplied_total
 attribute @s minecraft:generic.armor modifier add uhcp:panda_armor 30 add_value
 attribute @s minecraft:generic.scale modifier add uhcp:panda_scale 0.65 add_value
 summon minecraft:panda ~ ~ ~ {Silent:1b,NoAI:1b,Health:1000f,MainGene:"normal",HiddenGene:"normal",Tags:["UHCP_New","UHCP_Summon","UHCP_KungfuPanda"],attributes:[{id:"minecraft:generic.scale",base:1.2d},{id:"minecraft:generic.armor",base:25.0d},{id:"minecraft:generic.max_health",base:1000.0d}]}

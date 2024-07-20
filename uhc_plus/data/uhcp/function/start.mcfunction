@@ -45,11 +45,6 @@ scoreboard players operation %pvp_retain uhcp_settings = %pvp uhcp_settings
 # Store lava countdown
 scoreboard players operation %lava_countdown_retain uhcp_settings = %lava_countdown uhcp_settings
 
-# Store team values
-scoreboard players operation %team_size_retain uhcp_settings = %team_size uhcp_settings
-scoreboard players operation %team_retain uhcp_settings = %team uhcp_settings
-scoreboard players operation %players_select_teams_retain uhcp_settings = %players_select_teams uhcp_settings
-
 # Display statistics
 scoreboard players display numberformat %display uhcp_game_display fixed {"text":"0:00"}
 scoreboard players operation %border uhcp_game_display = %border_size uhcp_settings
@@ -162,6 +157,7 @@ scoreboard players set %const uhcp_initStatus 7
 scoreboard players operation %spread uhcp_initStatus /= %const uhcp_initStatus
 scoreboard players set %const uhcp_initStatus 3
 scoreboard players operation %spread uhcp_initStatus *= %const uhcp_initStatus
+execute if score %spread uhcp_initStatus matches ..0 run scoreboard players set %spread uhcp_initStatus 1
 execute store result storage uhcp:border max_range int 1 run scoreboard players get %spread uhcp_initStatus
 
 scoreboard players set %const uhcp_initStatus 10

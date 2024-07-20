@@ -7,7 +7,7 @@ execute as @s[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal
 
 # Attributes
 attribute @s minecraft:generic.scale modifier add uhcp:titan_scale 6 add_value
-attribute @s minecraft:player.entity_interaction_range modifier add uhcp:titan_entity_range -3 add_value
+attribute @s minecraft:player.entity_interaction_range modifier add uhcp:titan_entity_range -1 add_multiplied_total
 attribute @s minecraft:generic.knockback_resistance modifier add uhcp:titan_knockback_resistance -0.8 add_value
 attribute @s minecraft:generic.jump_strength modifier add uhcp:titan_jump_strength 0.75 add_value
 attribute @s minecraft:generic.step_height modifier add uhcp:titan_step_height 2 add_value
