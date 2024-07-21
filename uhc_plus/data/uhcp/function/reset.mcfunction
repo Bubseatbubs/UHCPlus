@@ -122,22 +122,13 @@ scoreboard players reset @a uhcp_top_charge
 scoreboard players reset @a uhcp_top_delay
 scoreboard players set @a uhcp_ready 0
 
-# Load border size
-scoreboard players operation %border_size uhcp_settings = %border_size_retain uhcp_settings
-
-# Load border countdown
-scoreboard players operation %border_countdown uhcp_settings = %border_countdown_retain uhcp_settings
-
-# Load border shrink speed
-scoreboard players operation %border_shrink_speed uhcp_settings = %border_shrink_speed_retain uhcp_settings
-
 # Load dimension countdown
 scoreboard players operation %dimension uhcp_settings = %dimension_retain uhcp_settings
 
 # Load PvP Grace Period countdown
 scoreboard players operation %pvp uhcp_settings = %pvp_retain uhcp_settings
 
-# Load lava scoreboard values
+# Load lava countdown
 scoreboard players operation %lava_countdown uhcp_settings = %lava_countdown_retain uhcp_settings
 
 # Sidebar display

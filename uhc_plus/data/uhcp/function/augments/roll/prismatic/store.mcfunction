@@ -9,14 +9,14 @@ function uhcp:augments/roll/prismatic/patron
 scoreboard players set @s uhcp_aug_choosingAugment 1
 
 # Roll prismatic augments
-function uhcp:augments/roll/prismatic/roll/1
-function uhcp:augments/roll/prismatic/roll/2
-function uhcp:augments/roll/prismatic/roll/3
+loot replace entity @s container.0 loot uhcp:augments/prismatic
+loot replace entity @s container.1 loot uhcp:augments/prismatic
+loot replace entity @s container.2 loot uhcp:augments/prismatic
 
 # Roll reroll augments
-function uhcp:augments/roll/prismatic/reroll/1
-function uhcp:augments/roll/prismatic/reroll/2
-function uhcp:augments/roll/prismatic/reroll/3
+loot replace entity @s container.4 loot uhcp:augments/prismatic
+loot replace entity @s container.5 loot uhcp:augments/prismatic
+loot replace entity @s container.6 loot uhcp:augments/prismatic
 
 # Give player rolled augments
 item replace entity @a[tag=UHCP_GeneratingAugments,limit=1] container.3 from entity @s container.0

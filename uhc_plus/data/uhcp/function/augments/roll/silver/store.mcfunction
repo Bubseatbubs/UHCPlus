@@ -9,14 +9,14 @@ function uhcp:augments/roll/silver/patron
 scoreboard players set @s uhcp_aug_choosingAugment 1
 
 # Roll silver augments
-function uhcp:augments/roll/silver/roll/1
-function uhcp:augments/roll/silver/roll/2
-function uhcp:augments/roll/silver/roll/3
+loot replace entity @s container.0 loot uhcp:augments/silver
+loot replace entity @s container.1 loot uhcp:augments/silver
+loot replace entity @s container.2 loot uhcp:augments/silver
 
 # Roll reroll augments
-function uhcp:augments/roll/silver/reroll/1
-function uhcp:augments/roll/silver/reroll/2
-function uhcp:augments/roll/silver/reroll/3
+loot replace entity @s container.4 loot uhcp:augments/silver
+loot replace entity @s container.5 loot uhcp:augments/silver
+loot replace entity @s container.6 loot uhcp:augments/silver
 
 # Give player rolled augments
 item replace entity @a[tag=UHCP_GeneratingAugments,limit=1] container.3 from entity @s container.0

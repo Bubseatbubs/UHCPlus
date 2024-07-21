@@ -27,15 +27,6 @@ execute store result score %global uhcp_game_id run function uhcp:start/id/game
 scoreboard players operation @a uhcp_game_id = %global uhcp_game_id
 scoreboard players set @a uhcp_game_time -1
 
-# Store border size
-scoreboard players operation %border_size_retain uhcp_settings = %border_size uhcp_settings
-
-# Store border countdown
-scoreboard players operation %border_countdown_retain uhcp_settings = %border_countdown uhcp_settings
-
-# Store border shrink speed
-scoreboard players operation %border_shrink_speed_retain uhcp_settings = %border_shrink_speed uhcp_settings
-
 # Store dimension countdown
 scoreboard players operation %dimension_retain uhcp_settings = %dimension uhcp_settings
 
