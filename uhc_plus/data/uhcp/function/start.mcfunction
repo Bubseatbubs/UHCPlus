@@ -27,15 +27,6 @@ execute store result score %global uhcp_game_id run function uhcp:start/id/game
 scoreboard players operation @a uhcp_game_id = %global uhcp_game_id
 scoreboard players set @a uhcp_game_time -1
 
-# Store dimension countdown
-scoreboard players operation %dimension_retain uhcp_settings = %dimension uhcp_settings
-
-# Store PvP grace period
-scoreboard players operation %pvp_retain uhcp_settings = %pvp uhcp_settings
-
-# Store lava countdown
-scoreboard players operation %lava_countdown_retain uhcp_settings = %lava_countdown uhcp_settings
-
 # Display statistics
 scoreboard players display numberformat %display uhcp_game_display fixed {"text":"0:00"}
 scoreboard players operation %border uhcp_game_display = %border_size uhcp_settings

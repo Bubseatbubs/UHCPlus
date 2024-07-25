@@ -1,4 +1,4 @@
-# Set arrow limits
+# Set arrow limit defaults
 scoreboard players operation %arrow_limit uhcp_arrowCount = %arrow_limit_def uhcp_settings
 execute if score %arrow_limit uhcp_arrowCount matches ..-1 run scoreboard players set %arrow_limit uhcp_arrowCount 0
 execute if score %arrow_limit uhcp_arrowCount matches 2369.. run scoreboard players set %arrow_limit uhcp_arrowCount 2368

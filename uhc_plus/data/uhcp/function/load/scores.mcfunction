@@ -15,7 +15,7 @@ execute unless score %border_countdown uhcp_settings = %border_countdown uhcp_se
 execute unless score %border_shrink_speed uhcp_settings = %border_shrink_speed uhcp_settings run scoreboard players operation %border_shrink_speed uhcp_settings = %border_shrink_speed_def uhcp_settings
 
 # Dimension countdown
-execute unless score %dimension uhcp_settings = %dimension uhcp_settings run scoreboard players operation %dimension uhcp_settings = %dimension_def uhcp_settings
+execute unless score %dimension uhcp_settings = %dimension uhcp_settings run function uhcp:load/scores/dimensions
 
 # Soul apples
 execute unless score %soul_apples uhcp_settings = %soul_apples uhcp_settings run scoreboard players operation %soul_apples uhcp_settings = %soul_apples_def uhcp_settings
@@ -24,7 +24,7 @@ execute unless score %soul_apples uhcp_settings = %soul_apples uhcp_settings run
 execute unless score %titans uhcp_settings = %titans uhcp_settings run scoreboard players operation %titans uhcp_settings = %titans_def uhcp_settings
 
 # PvP countdown
-execute unless score %pvp uhcp_settings = %pvp uhcp_settings run scoreboard players operation %pvp uhcp_settings = %pvp_def uhcp_settings
+execute unless score %pvp uhcp_settings = %pvp uhcp_settings run function uhcp:load/scores/pvp
 
 # Team game
 execute unless score %team uhcp_settings = %team uhcp_settings run scoreboard players operation %team uhcp_settings = %team_def uhcp_settings
@@ -54,5 +54,5 @@ execute unless score %night_vision uhcp_settings = %night_vision uhcp_settings r
 execute unless score %ender_pearl uhcp_settings = %ender_pearl uhcp_settings run scoreboard players operation %ender_pearl uhcp_settings = %ender_pearl_def uhcp_settings
 
 # Set default lava scoreboard values
-execute unless score %lava_countdown uhcp_settings = %lava_countdown uhcp_settings run scoreboard players operation %lava_countdown uhcp_settings = %lava_countdown_def uhcp_settings
+execute unless score %lava_countdown uhcp_settings = %lava_countdown uhcp_settings run function uhcp:load/scores/lava_countdown
 execute unless score %lava_init uhcp_initStatus matches 1 run function uhcp:load/scores/lava

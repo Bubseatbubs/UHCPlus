@@ -1,6 +1,8 @@
 # Kill entities (kill items last)
 gamerule showDeathMessages false
 
+effect clear @e[type=!minecraft:player] minecraft:oozing
+execute as @e[type=minecraft:slime] run data modify entity @s Size set value 0
 kill @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs]
 execute as @e[tag=UHCP_TurretOrigin] at @s run function uhcp:relics/runic_sentry/delete
 execute as @e[tag=UHCP_AltarDisplay] at @s run function uhcp:titans/spawn/reset_altar
@@ -125,7 +127,7 @@ scoreboard players set @a uhcp_ready 0
 # Load dimension countdown
 scoreboard players operation %dimension uhcp_settings = %dimension_retain uhcp_settings
 
-# Load PvP Grace Period countdown
+# Load PvP grace period countdown
 scoreboard players operation %pvp uhcp_settings = %pvp_retain uhcp_settings
 
 # Load lava countdown

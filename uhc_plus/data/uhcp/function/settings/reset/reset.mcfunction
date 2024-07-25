@@ -15,7 +15,7 @@ scoreboard players operation %border_countdown uhcp_settings = %border_countdown
 scoreboard players operation %border_shrink_speed uhcp_settings = %border_shrink_speed_def uhcp_settings
 
 # Dimension countdown
-scoreboard players operation %dimension uhcp_settings = %dimension_def uhcp_settings
+function uhcp:load/scores/dimensions
 
 # Number of Titans
 scoreboard players operation %titans uhcp_settings = %titans_def uhcp_settings
@@ -24,7 +24,7 @@ scoreboard players operation %titans uhcp_settings = %titans_def uhcp_settings
 scoreboard players operation %soul_apples uhcp_settings = %soul_apples_def uhcp_settings
 
 # Grace period countdown
-scoreboard players operation %pvp uhcp_settings = %pvp_def uhcp_settings
+function uhcp:load/scores/pvp
 
 # Set default Ra stacks
 scoreboard players operation %ra_stacks uhcp_settings = %ra_stacks_def uhcp_settings
@@ -47,7 +47,7 @@ scoreboard players operation %difficulty uhcp_settings = %difficulty_def uhcp_se
 
 # Set default lava scoreboard values
 execute unless score %lava_init uhcp_initStatus matches 1 run function uhcp:settings/reset/lava
-scoreboard players operation %lava_countdown uhcp_settings = %lava_countdown_def uhcp_settings
+function uhcp:load/scores/lava_countdown
 
 # Set default team values
 scoreboard players operation %team_size uhcp_settings = %team_size_def uhcp_settings

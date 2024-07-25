@@ -6,6 +6,9 @@ execute unless score %border_size uhcp_settings matches 100 run function uhcp:se
 execute if score %border_size uhcp_settings matches 100 run scoreboard players set %border_time uhcp_initStatus 0
 execute if score %lava_countdown uhcp_settings < %border_time uhcp_initStatus run function uhcp:settings/lava/countdown/border/limit
 
+# Set retained setting score
+scoreboard players operation %lava_countdown_retain uhcp_settings = %lava_countdown uhcp_settings
+
 # Notify player of time
 scoreboard players operation %time_calc uhcp_settings = %lava_countdown uhcp_settings
 function uhcp:settings/time_calc
