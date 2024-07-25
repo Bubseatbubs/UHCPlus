@@ -253,5 +253,8 @@ execute unless score %init uhcp_initStatus matches 1 run function uhcp:load/init
 
 # Schedule delayed load
 scoreboard players add %load uhcp_initStatus 1
-execute unless score %load uhcp_initStatus matches 2.. run schedule function uhcp:load 20t
-execute if score %load uhcp_initStatus matches 2.. run function uhcp:load/message
+execute unless score %load uhcp_initStatus matches 2.. run return run schedule function uhcp:load 20t
+
+# Finish loading attempts
+scoreboard players reset %load
+tellraw @a [{"text":"Loaded "},{"text":"<","color":"#2F05FF","hoverEvent":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}},{"text":"U","color":"#0346FF","hoverEvent":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}},{"text":"H","color":"#0080FF","hoverEvent":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}},{"text":"C","color":"#0091FF","hoverEvent":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}},{"text":"+","color":"#05CDFF","bold":true,"hoverEvent":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}},{"text":">","color":"#00EEFF","hoverEvent":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}}]
