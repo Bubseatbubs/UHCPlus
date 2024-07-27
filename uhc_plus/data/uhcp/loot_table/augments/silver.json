@@ -981,11 +981,21 @@
                     "color": "gray"
                   },
                   {
-                    "text": " invulnerable",
+                    "text": "invulnerable",
                     "color": "yellow"
                   },
                   {
                     "text": " during the Grace Period.",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Invulnerability",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " lasts for at least 4 minutes.",
                     "color": "gray"
                   }
                 ]
