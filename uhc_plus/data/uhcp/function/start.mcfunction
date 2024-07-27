@@ -140,11 +140,9 @@ scoreboard players operation %spread uhcp_initStatus /= %const uhcp_initStatus
 scoreboard players set %const uhcp_initStatus 3
 scoreboard players operation %spread uhcp_initStatus *= %const uhcp_initStatus
 execute if score %spread uhcp_initStatus matches ..0 run scoreboard players set %spread uhcp_initStatus 1
-execute store result storage uhcp:border max_range int 1 run scoreboard players get %spread uhcp_initStatus
 
-scoreboard players set %const uhcp_initStatus 10
-scoreboard players operation %spread uhcp_initStatus /= %const uhcp_initStatus
-execute store result storage uhcp:border spread_distance int 1 run scoreboard players get %spread uhcp_initStatus
+execute store result storage uhcp:border max_range int 1 run scoreboard players get %spread uhcp_initStatus
+execute store result storage uhcp:border spread_distance int 0.1 run scoreboard players get %spread uhcp_initStatus
 
 execute in minecraft:overworld run function uhcp:start/spreadplayers/initial with storage uhcp:border
 execute if score %spread uhcp_initStatus matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/initial/failure_1 with storage uhcp:border

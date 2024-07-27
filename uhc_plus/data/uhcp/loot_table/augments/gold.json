@@ -37,21 +37,33 @@
                 },
                 [
                   {
-                    "text": "Gain 32",
+                    "text": "Gain 32 ",
                     "color": "gray"
                   },
                   {
-                    "text": " Emeralds, 16 Gold Ingots",
+                    "text": "Emeralds",
                     "color": "white"
+                  },
+                  {
+                    "text": ", 16 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Gold Ingots",
+                    "color": "white"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "and",
+                    "text": "and 8 ",
                     "color": "gray"
                   },
                   {
-                    "text": " 8 Iron Ingots",
+                    "text": "Iron Ingots",
                     "color": "white"
                   },
                   {
