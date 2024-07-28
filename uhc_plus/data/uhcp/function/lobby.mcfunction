@@ -22,6 +22,6 @@ execute at @e[tag=UHCP_LobbyOrigin,limit=1] positioned ^57 ^7 ^32 run function u
 # Credits - player head rotation
 execute as @e[tag=UHCP_LobbyCredits] at @s run tp @s ~ ~ ~ ~1 ~
 
-# Kill spectral arrows in ground
+# Kill arrows in ground
 execute unless score %lobby_arrows uhcp_game_time matches 1.. run function uhcp:lobby/kill_arrows
 scoreboard players remove %lobby_arrows uhcp_game_time 1
