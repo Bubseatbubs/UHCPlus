@@ -1,15 +1,19 @@
-# Death messages are shown later, do not worry
-execute in minecraft:overworld run gamerule showDeathMessages false
-execute in minecraft:the_end run gamerule showDeathMessages false
-execute in minecraft:the_nether run gamerule showDeathMessages false
+# Apply gamerules prior to killing entities
+execute in minecraft:overworld run function uhcp:reset/kill_gamerules
+execute in minecraft:the_end run function uhcp:reset/kill_gamerules
+execute in minecraft:the_nether run function uhcp:reset/kill_gamerules
 
 # Kill entities; kill items last
-effect clear @e[type=!minecraft:player] minecraft:infested
-effect clear @e[type=!minecraft:player] minecraft:oozing
-effect clear @e[type=!minecraft:player] minecraft:weaving
-effect clear @e[type=!minecraft:player] minecraft:wind_charged
+effect clear @e[type=!minecraft:player,type=!#uhcp:reset/save] minecraft:infested
+effect clear @e[type=!minecraft:player,type=!#uhcp:reset/save] minecraft:oozing
+effect clear @e[type=!minecraft:player,type=!#uhcp:reset/save] minecraft:weaving
+effect clear @e[type=!minecraft:player,type=!#uhcp:reset/save] minecraft:wind_charged
 execute as @e[type=#uhcp:cube] run data modify entity @s Size set value 0
-kill @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs,type=!minecraft:ender_dragon]
+
+effect clear @e[type=#uhcp:reset/save]
+effect give @e[type=#uhcp:reset/save] minecraft:instant_health 1 10 true
+
+kill @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs,type=!#uhcp:reset/save]
 execute as @e[tag=UHCP_TurretOrigin] at @s run function uhcp:relics/runic_sentry/delete
 execute as @e[tag=UHCP_AltarDisplay] at @s run function uhcp:titans/spawn/reset_altar
 execute as @e[tag=UHCP_GraveMarker] at @s run function uhcp:titans/gigantus/graves/delete
@@ -21,7 +25,7 @@ kill @e[tag=UHCP_SnifferControl]
 kill @e[tag=UHCP_StoreAugment]
 kill @e[tag=UHCP_Summon]
 kill @e[tag=UHCP_WindfallPieceDisplay]
-kill @e[type=#uhcp:kill_on_reset]
+kill @e[type=#uhcp:reset/kill]
 kill @e[type=minecraft:item]
 
 # Within dimensions
