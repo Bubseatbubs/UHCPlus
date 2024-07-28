@@ -1,9 +1,15 @@
-# Kill entities (kill items last)
-gamerule showDeathMessages false
+# Death messages are shown later, do not worry
+execute in minecraft:overworld run gamerule showDeathMessages false
+execute in minecraft:the_end run gamerule showDeathMessages false
+execute in minecraft:the_nether run gamerule showDeathMessages false
 
+# Kill entities; kill items last
+effect clear @e[type=!minecraft:player] minecraft:infested
 effect clear @e[type=!minecraft:player] minecraft:oozing
-execute as @e[type=minecraft:slime] run data modify entity @s Size set value 0
-kill @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs]
+effect clear @e[type=!minecraft:player] minecraft:weaving
+effect clear @e[type=!minecraft:player] minecraft:wind_charged
+execute as @e[type=#uhcp:cube] run data modify entity @s Size set value 0
+kill @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs,type=!minecraft:ender_dragon]
 execute as @e[tag=UHCP_TurretOrigin] at @s run function uhcp:relics/runic_sentry/delete
 execute as @e[tag=UHCP_AltarDisplay] at @s run function uhcp:titans/spawn/reset_altar
 execute as @e[tag=UHCP_GraveMarker] at @s run function uhcp:titans/gigantus/graves/delete
@@ -13,31 +19,19 @@ kill @e[tag=UHCP_SLBlock]
 kill @e[tag=UHCP_SLBTP]
 kill @e[tag=UHCP_SnifferControl]
 kill @e[tag=UHCP_StoreAugment]
-kill @e[tag=UHCP_WindfallPieceDisplay]
 kill @e[tag=UHCP_Summon]
-kill @e[type=minecraft:experience_orb]
-kill @e[type=minecraft:ender_pearl]
+kill @e[tag=UHCP_WindfallPieceDisplay]
+kill @e[type=#uhcp:kill_on_reset]
 kill @e[type=minecraft:item]
 
-gamerule showDeathMessages true
-
-# Augment selection reset
-execute in uhcp:main run tp @e[tag=UHCP_Lock] 0 -63 0
-bossbar set uhcp:augment players
-
 # Within dimensions
-execute in minecraft:overworld run function uhcp:reset/game/overworld
-execute in minecraft:the_end run function uhcp:reset/game/the_end
-execute in minecraft:the_nether run function uhcp:reset/game/the_nether
+execute in minecraft:overworld run function uhcp:reset/dimensions/minecraft/overworld
+execute in minecraft:the_end run function uhcp:reset/dimensions/minecraft/the_end
+execute in minecraft:the_nether run function uhcp:reset/dimensions/minecraft/the_nether
 
 # Remove force loads
 execute in uhcp:hell run forceload remove all
-execute in uhcp:main run forceload remove all
-execute in uhcp:main run forceload add 0 0
-
-# Reset experience
-experience set @a 0 levels
-experience set @a 0 points
+execute in uhcp:main run function uhcp:reset/dimensions/uhcp/main
 
 # Reset storages
 data remove storage uhcp:compass Track
@@ -137,6 +131,7 @@ scoreboard players operation %lava_countdown uhcp_settings = %lava_countdown_ret
 scoreboard objectives setdisplay sidebar
 
 # Players
+bossbar set uhcp:augment players
 clear @a
 execute as @a run function uhcp:reset/attributes
 effect clear @a
@@ -146,7 +141,6 @@ effect give @a minecraft:saturation infinite 255 true
 experience set @a 0 levels
 experience set @a 0 points
 gamemode adventure @a
-team leave @a
 
 # Lobby Menu
 scoreboard players set @a uhcp_ready 0
