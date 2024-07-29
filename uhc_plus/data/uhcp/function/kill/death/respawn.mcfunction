@@ -1,8 +1,6 @@
 # Check for respawn
 tag @s add UHCP_RespawnCheck
-execute if predicate uhcp:dimensions/minecraft/overworld in minecraft:overworld positioned 0 0 0 if entity @a[tag=UHCP_RespawnCheck,distance=..42426385] run tag @s remove UHCP_Died
-execute if predicate uhcp:dimensions/minecraft/the_end in minecraft:the_end positioned 0 0 0 if entity @a[tag=UHCP_RespawnCheck,distance=..42426385] run tag @s remove UHCP_Died
-execute if predicate uhcp:dimensions/minecraft/the_nether in minecraft:the_nether positioned 0 0 0 if entity @a[tag=UHCP_RespawnCheck,distance=..42426385] run tag @s remove UHCP_Died
+function uhcp:kill/death/respawn_check
 tag @s remove UHCP_RespawnCheck
 
 # Return if not yet respawned
@@ -14,6 +12,10 @@ execute unless score %game uhcp_initStatus matches 1 run return run function uhc
 # Respawn during game
 effect give @s minecraft:night_vision infinite 0 true
 
+# Check if spawnpoint worked
+execute unless data entity @s {SpawnForced:1b} run function uhcp:kill/death/location
+
 # Death message
+execute if score %end uhcp_initStatus matches 1 run return fail
 title @s subtitle {"text":"You are now spectating the match.","color":"gray","bold":true}
 title @s title {"text":"YOU DIED","color":"dark_red","bold":true}

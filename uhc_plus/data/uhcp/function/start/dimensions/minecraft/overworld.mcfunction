@@ -4,6 +4,7 @@ forceload remove all
 # Gamerules
 gamerule doDaylightCycle true
 gamerule doMobSpawning true
+gamerule keepInventory false
 gamerule randomTickSpeed 18
 
 # Time

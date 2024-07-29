@@ -3,6 +3,7 @@ worldborder set 59999968
 
 # Gamerules
 gamerule doMobLoot true
+gamerule keepInventory true
 gamerule randomTickSpeed 0
 gamerule showDeathMessages true
 
