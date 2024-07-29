@@ -158,16 +158,7 @@ tag @a remove UHCP_AugmentRerollSlot2
 tag @a remove UHCP_AugmentRerollSlot3
 
 # Augment tier
-execute unless score %tier uhcp_aug_tier = %tier uhcp_aug_tier store result score %tier uhcp_aug_tier run random value 10..109
-execute if score %random uhcp_aug_tier matches 1 store result score %tier uhcp_aug_tier run random value 10..109
-execute if score %tier uhcp_aug_tier matches 10..34 run scoreboard players set %tier uhcp_aug_tier 0
-execute if score %tier uhcp_aug_tier matches 35..89 run scoreboard players set %tier uhcp_aug_tier 1
-execute if score %tier uhcp_aug_tier matches 90..109 run scoreboard players set %tier uhcp_aug_tier 2
-
-# Augment tier notifications
-execute if score %tier uhcp_aug_tier matches 0 run title @a subtitle [{"text":"Augment Tier:","color":"#CCFCFF"},{"text":" Silver","color":"#B0B1D6","bold":true}]
-execute if score %tier uhcp_aug_tier matches 1 run title @a subtitle [{"text":"Augment Tier:","color":"#CCFCFF"},{"text":" Gold","color":"gold","bold":true}]
-execute if score %tier uhcp_aug_tier matches 2 run title @a subtitle [{"text":"Augment Tier:","color":"#CCFCFF"},{"text":" Pr","color":"#22CAD6","bold":true},{"text":"is","color":"#59FFE9","bold":true},{"text":"ma","color":"#99FAED","bold":true},{"text":"tic","color":"#D4FAEB","bold":true}]
+execute if score %random uhcp_aug_tier matches 1 store result score %tier uhcp_aug_tier run function uhcp:start/augments/tier/randomize
 
 # Effects
 effect clear @a
@@ -237,9 +228,7 @@ item replace entity @a enderchest.25 with minecraft:air
 item replace entity @a enderchest.26 with minecraft:air
 
 # Augments
-scoreboard players set %augment_countdown uhcp_game_time 900
-execute unless score %tier uhcp_aug_tier matches -1 run function uhcp:start/augments
-execute if score %tier uhcp_aug_tier matches -1 run function uhcp:start/no_augments
+function uhcp:start/augments
 
 # Spectators
 tp @a[tag=UHCP_Spectator] 0 150 0
