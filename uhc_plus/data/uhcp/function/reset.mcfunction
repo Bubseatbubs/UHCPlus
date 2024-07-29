@@ -4,13 +4,8 @@ execute in minecraft:the_end run function uhcp:reset/kill_gamerules
 execute in minecraft:the_nether run function uhcp:reset/kill_gamerules
 
 # Kill entities; kill items last
-effect clear @e[type=!minecraft:player,type=!#uhcp:reset/save] minecraft:infested
-effect clear @e[type=!minecraft:player,type=!#uhcp:reset/save] minecraft:oozing
-effect clear @e[type=!minecraft:player,type=!#uhcp:reset/save] minecraft:weaving
-effect clear @e[type=!minecraft:player,type=!#uhcp:reset/save] minecraft:wind_charged
+effect clear @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs]
 execute as @e[type=#uhcp:cube] run data modify entity @s Size set value 0
-
-effect clear @e[type=#uhcp:reset/save,tag=!UHCP_Minion]
 effect give @e[type=#uhcp:reset/save,tag=!UHCP_Minion] minecraft:instant_health 1 10 true
 
 kill @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs,type=!#uhcp:reset/save]

@@ -150,6 +150,10 @@ execute if score %spread uhcp_initStatus matches 0 in minecraft:overworld run fu
 
 execute if score %spread uhcp_initStatus matches 1 run function uhcp:start/spreadplayers/secondary
 
+# Teleport spectators
+tp @a[tag=UHCP_Spectator] 0 150 0
+execute as @a[tag=UHCP_Spectator] run tp @s @r[tag=!UHCP_Spectator]
+
 # Setup Augments
 kill @e[tag=UHCP_StoreAugment]
 tag @a remove UHCP_ChoosingItem
@@ -231,8 +235,6 @@ item replace entity @a enderchest.26 with minecraft:air
 function uhcp:start/augments
 
 # Spectators
-tp @a[tag=UHCP_Spectator] 0 150 0
-execute as @a[tag=UHCP_Spectator] run tp @s @r[tag=!UHCP_Spectator]
 gamemode spectator @a[tag=UHCP_Spectator]
 tellraw @a[tag=UHCP_Spectator] [{"text":"You are spectating the current match.","color":"gray"}]
 tag @a remove UHCP_Spectator
