@@ -6,13 +6,8 @@ particle minecraft:block{block_state:"minecraft:nether_portal"} ~ ~ ~ 2 2 2 0.1 
 execute as @a[distance=..3,gamemode=survival] run damage @s 6 minecraft:falling_block
 fill ~-3 ~-2 ~-4 ~3 ~ ~4 minecraft:netherrack replace #uhcp:no_fluids_breakable
 fill ~-4 ~-2 ~-3 ~4 ~ ~3 minecraft:netherrack replace #uhcp:no_fluids_breakable
-execute store result score %random uhcp_titans_count run random value 0..4
-execute if score %random uhcp_titans_count matches 0 run summon minecraft:piglin ~ ~ ~ {Health:4f,IsImmuneToZombification:1b,CannotHunt:1b,Tags:["UHCP_Minion"],HandItems:[{id:"minecraft:crossbow",count:1},{}],HandDropChances:[0.000F,0.085F],ArmorItems:[{},{},{},{id:"minecraft:golden_helmet",count:1,components:{"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:snout"}}}],ArmorDropChances:[0.085F,0.085F,0.085F,0.000F],attributes:[{id:"minecraft:generic.max_health",base:6.0d}]}
-execute if score %random uhcp_titans_count matches 0 run summon minecraft:piglin ~ ~ ~ {Health:4f,IsImmuneToZombification:1b,CannotHunt:1b,Tags:["UHCP_Minion"],HandItems:[{id:"minecraft:crossbow",count:1},{}],HandDropChances:[0.000F,0.085F],ArmorItems:[{},{},{},{id:"minecraft:golden_helmet",count:1,components:{"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:snout"}}}],ArmorDropChances:[0.085F,0.085F,0.085F,0.000F],attributes:[{id:"minecraft:generic.max_health",base:6.0d}]}
-execute if score %random uhcp_titans_count matches 1 run summon minecraft:magma_cube ~ ~ ~ {Health:3f,Size:2,Tags:["UHCP_Minion"],attributes:[{id:"minecraft:generic.attack_damage",base:4.0d},{id:"minecraft:generic.scale",base:3.0d}]}
-execute if score %random uhcp_titans_count matches 2 run summon minecraft:wither_skeleton ~ ~ ~ {Health:3f,Tags:["UHCP_Minion"],HandItems:[{id:"minecraft:stone_sword",count:1},{}],HandDropChances:[0.000F,0.085F]} 
-execute if score %random uhcp_titans_count matches 3 run summon minecraft:piglin_brute ~ ~ ~ {Health:6f,IsImmuneToZombification:1b,CannotHunt:1b,Tags:["UHCP_Minion"],HandItems:[{id:"minecraft:golden_axe",count:1},{}],HandDropChances:[0.000F,0.085F],ArmorItems:[{},{},{},{id:"minecraft:netherite_helmet",count:1,components:{"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:snout"}}}],ArmorDropChances:[0.085F,0.085F,0.085F,0.000F],attributes:[{id:"minecraft:generic.max_health",base:6.0d},{id:"minecraft:generic.attack_damage",base:4.0d}]}
-execute if score %random uhcp_titans_count matches 4 run summon minecraft:strider ~ ~ ~ {Health:1f,Tags:["UHCP_Minion"]} 
+
+function uhcp:titans/gallie/nether_portal/summon
 
 execute on passengers run kill @s
 kill @s

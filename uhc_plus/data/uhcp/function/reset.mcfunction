@@ -10,8 +10,8 @@ effect clear @e[type=!minecraft:player,type=!#uhcp:reset/save] minecraft:weaving
 effect clear @e[type=!minecraft:player,type=!#uhcp:reset/save] minecraft:wind_charged
 execute as @e[type=#uhcp:cube] run data modify entity @s Size set value 0
 
-effect clear @e[type=#uhcp:reset/save]
-effect give @e[type=#uhcp:reset/save] minecraft:instant_health 1 10 true
+effect clear @e[type=#uhcp:reset/save,tag=!UHCP_Minion]
+effect give @e[type=#uhcp:reset/save,tag=!UHCP_Minion] minecraft:instant_health 1 10 true
 
 kill @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs,type=!#uhcp:reset/save]
 execute as @e[tag=UHCP_TurretOrigin] at @s run function uhcp:relics/runic_sentry/delete
