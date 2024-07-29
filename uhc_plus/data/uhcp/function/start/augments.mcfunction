@@ -15,6 +15,6 @@ effect give @a[tag=!UHCP_Spectator] minecraft:weakness infinite 4 true
 bossbar set uhcp:augment players @a
 
 scoreboard players set %augment_countdown uhcp_game_time 900
-execute as @a[tag=!UHCP_Spectator] run function uhcp:start/augments/selection
+function uhcp:start/augments/selection
 
 execute as @a at @s run function uhcp:start/augments/sounds

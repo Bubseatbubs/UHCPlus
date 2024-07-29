@@ -1,10 +1,11 @@
 #>  uhcp:augments/generate/panes
 #   Replaces much of the player's inventory with stained glass panes
 #
-# @within  uhcp:augments/init
+# @within  uhcp:augments/generate/silver
+# @within  uhcp:augments/generate/gold
+# @within  uhcp:augments/generate/prismatic
 # @within  uhcp:augments/return
 # @within  uhcp:augments/return/swap
-# @within  uhcp:augments/threw_item
 
 # Reroll panes
 item replace entity @s[tag=!UHCP_AugmentRerollSlot1] inventory.21 with minecraft:lime_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_reroll:1b,uhcp_reroll_slot:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Reroll Augment Choice","color":"gold"}',minecraft:lore=['{"color":"gray","text":"Select this option to reroll the Augment"}','{"color":"gray","text":"below. You can only reroll a slot once."}']] 1
