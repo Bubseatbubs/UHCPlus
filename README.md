@@ -32,4 +32,6 @@ UHC+ is an alternative take on Minecraft’s **Ultra Hardcore** gamemode. Origin
 - [Particle Plotter](https://cloudwolfyt.github.io/pages/gens/particle-plots.html) by Cloudwolf.
 - [Minecraft-heads](https://minecraft-heads.com): Provides custom heads.
 - [Cosmian UHC](https://www.planetminecraft.com/data-pack/cosmian-uhc-v3-1-18): UHC+ was originally an add-on.
+- [world-pregen](https://github.com/GoldenDelicios/world-pregen): Data pack written by [GoldenDelicios](https://github.com/GoldenDelicios); adjusted to work with UHC+, not included in releases.
+- Coordinates HUD: Data pack from [Vanilla Tweaks](https://vanillatweaks.net); adjusted to work with UHC+, not included in releases.
 - [TitleMC](https://titlemc.app): Generated the logo on [Planet Minecraft](https://www.planetminecraft.com/data-pack/uhc-6257030).
