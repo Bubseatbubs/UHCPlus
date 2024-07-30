@@ -1,4 +1,8 @@
 # TESTING ONLY
+execute unless score %game uhcp_initStatus matches 1 run return fail
+execute if score %time uhcp_initStatus matches 1 run return fail
+execute as @s[tag=!UHCP_ChoosingItem] run return fail
+
 # Roll augments again during augment selection
 tag @s remove UHCP_ChoosingItem
 tag @s remove UHCP_AugmentRerollSlot1
