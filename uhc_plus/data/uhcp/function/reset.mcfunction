@@ -131,7 +131,6 @@ scoreboard objectives setdisplay sidebar
 
 # Players
 bossbar set uhcp:augment players
-clear @a
 execute as @a run function uhcp:reset/attributes
 effect clear @a
 effect give @a minecraft:instant_health 2 5 true
@@ -143,7 +142,56 @@ gamemode adventure @a
 
 # Lobby Menu
 scoreboard players set @a uhcp_ready 0
-execute as @a run function uhcp:lobby/menu
+tag @a add UHCP_DisableReset
+
+execute unless score %team uhcp_settings matches 1 run item replace entity @a hotbar.0 with minecraft:air
+execute unless score %players_select_teams uhcp_settings matches 1 run item replace entity @a hotbar.0 with minecraft:air
+execute if score %team uhcp_settings matches 1 if score %players_select_teams uhcp_settings matches 1 run loot replace entity @a hotbar.0 loot uhcp:lobby_menu/team
+execute unless score %patrons uhcp_settings matches 1 run item replace entity @a hotbar.1 with minecraft:air
+execute if score %patrons uhcp_settings matches 1 run loot replace entity @a hotbar.1 loot uhcp:lobby_menu/patron
+loot replace entity @a hotbar.2 loot uhcp:lobby_menu/skip_travel
+item replace entity @a hotbar.3 with minecraft:air
+loot replace entity @a hotbar.4 loot uhcp:lobby_menu/special_item
+item replace entity @a hotbar.5 with minecraft:air
+loot replace entity @a hotbar.6 loot uhcp:lobby_menu/settings_display
+loot replace entity @a hotbar.7 loot uhcp:lobby_menu/spectate
+loot replace entity @a hotbar.8 loot uhcp:lobby_menu/not_ready
+
+item replace entity @a inventory.0 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.1 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.2 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.3 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.4 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.5 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.6 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.7 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.8 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.9 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.10 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.11 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.12 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.13 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.14 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.15 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.16 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.17 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.18 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.19 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.20 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.21 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.22 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.23 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.24 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.25 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a inventory.26 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+
+item replace entity @a armor.head with minecraft:air
+item replace entity @a armor.chest with minecraft:air
+item replace entity @a armor.legs with minecraft:air
+item replace entity @a armor.feet with minecraft:air
+item replace entity @a weapon.offhand with minecraft:air
+
+tag @a remove UHCP_DisableReset
 
 # Notify players of reset
 title @a subtitle {"text":"RESET","color":"gray"}
