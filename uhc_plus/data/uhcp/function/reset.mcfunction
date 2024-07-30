@@ -4,7 +4,7 @@ execute in minecraft:the_end run function uhcp:reset/kill_gamerules
 execute in minecraft:the_nether run function uhcp:reset/kill_gamerules
 
 # Kill entities; kill items last
-effect clear @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs]
+effect clear @e[type=!#uhcp:inanimate_mobs]
 execute as @e[type=#uhcp:cube] run data modify entity @s Size set value 0
 effect give @e[type=#uhcp:reset/save,tag=!UHCP_Minion] minecraft:instant_health 1 10 true
 
@@ -101,6 +101,7 @@ scoreboard players reset @a uhcp_aug_choosingAugment
 scoreboard players reset @a uhcp_aug_count
 scoreboard players reset @a uhcp_aug_tier
 scoreboard players reset @a uhcp_augment
+scoreboard players reset @a uhcp_death
 scoreboard players reset @a uhcp_deathTime
 scoreboard players reset @a uhcp_game_id
 scoreboard players reset @a uhcp_game_time
@@ -132,7 +133,7 @@ scoreboard objectives setdisplay sidebar
 # Players
 bossbar set uhcp:augment players
 execute as @a run function uhcp:reset/attributes
-effect clear @a
+# effects already cleared
 effect give @a minecraft:instant_health 2 5 true
 effect give @a minecraft:resistance infinite 5 true
 effect give @a minecraft:saturation infinite 255 true

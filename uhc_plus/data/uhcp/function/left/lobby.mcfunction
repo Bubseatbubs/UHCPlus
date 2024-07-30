@@ -30,6 +30,7 @@ scoreboard players reset @s uhcp_aug_choosingAugment
 scoreboard players reset @s uhcp_aug_count
 scoreboard players reset @s uhcp_aug_tier
 scoreboard players reset @s uhcp_augment
+scoreboard players reset @s uhcp_death
 scoreboard players reset @s uhcp_deathTime
 scoreboard players reset @s uhcp_game_time
 scoreboard players reset @s uhcp_itemCount

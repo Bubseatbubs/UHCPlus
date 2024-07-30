@@ -1,24 +1,43 @@
-# Run upon player's death
-scoreboard players reset @s uhcp_death
-tag @s add UHCP_CurrentDeadPlayer
-tag @s add UHCP_Died
-scoreboard players reset @s uhcp_deathTime
-
-# Run during game
-execute if score %game uhcp_initStatus matches 1 run function uhcp:kill/death/during_game
-
-# Situational Checks
-execute as @s[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal_fluid/reset
-
-# General Effects
-gamemode spectator @s
+# General effects
 effect clear @s
-effect give @s minecraft:night_vision infinite 0 true
 scoreboard players reset @s lobby
 scoreboard players reset @s patron
 scoreboard players reset @s team
 scoreboard players reset @s testkit
 scoreboard players reset @s top
+scoreboard players reset @s uhcp_death
 
-tag @e remove UHCP_CurrentDeathMarker
+# Situational checks
+execute as @s[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal_fluid/reset
+
+# In lobby
+execute unless score %game uhcp_initStatus matches 1 run return run function uhcp:kill/death/lobby
+
+# During game
+scoreboard players reset @s uhcp_deathTime
+tag @s add UHCP_CurrentDeadPlayer
+tag @s add UHCP_Died
+
+# Set spawnpoint at death location
+execute at @s run spawnpoint @s ~ ~ ~ ~
+
+# Augments effects
+function uhcp:kill/death/augments
+
+# Marker
+execute as @e[tag=UHCP_Summon] if score @s uhcp_id = @a[tag=UHCP_CurrentDeadPlayer,limit=1] uhcp_id run kill @s
+execute as @e[tag=UHCP_Death] if score @s uhcp_id = @a[tag=UHCP_CurrentDeadPlayer,limit=1] uhcp_id run kill @s
+execute summon minecraft:marker run function uhcp:kill/death/spawn_marker
+
+# Soul apples
+execute at @s on attacker run function uhcp:kill/soul_apple/init
+
+# General effects
+gamemode spectator @s
+effect give @s minecraft:night_vision infinite 0 true
+
 tag @s remove UHCP_CurrentDeadPlayer
+
+playsound minecraft:entity.bogged.death master @s ~ ~ ~ 1 0.5 1
+playsound minecraft:block.beacon.deactivate master @s ~ ~ ~ 1 0.5 1
+playsound minecraft:block.beacon.deactivate master @s ~ ~ ~ 1 0.5 1

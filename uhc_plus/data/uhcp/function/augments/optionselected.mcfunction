@@ -6,6 +6,7 @@
 tag @s remove UHCP_ChoosingItem
 tag @s add UHCP_Owner
 execute as @e[tag=UHCP_StoreAugment] if score @s uhcp_id = @p[tag=UHCP_Owner] uhcp_id run kill @s
+kill @e[type=minecraft:item,predicate=uhcp:dimensions/uhcp/main]
 tag @s remove UHCP_Owner
 playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
 particle minecraft:totem_of_undying ~ ~ ~ 0.5 0.5 0.5 1 100 normal

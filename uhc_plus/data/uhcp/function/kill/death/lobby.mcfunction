@@ -1,5 +1,5 @@
 # Run on dead player in lobby
-advancement grant @s only uhcp:update_menu
+function uhcp:left/lobby/menu
 
 gamemode adventure @s
 

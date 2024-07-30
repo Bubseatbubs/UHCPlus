@@ -2,6 +2,7 @@
 forceload remove all
 
 # Gamerules
+gamerule doImmediateRespawn false
 gamerule doDaylightCycle true
 gamerule doMobSpawning true
 gamerule keepInventory false

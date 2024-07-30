@@ -2,10 +2,10 @@
 execute as @a[tag=!UHCP_Player] run function uhcp:new
 execute as @a[scores={uhcp_leave=1..}] run function uhcp:left
 
-# Game Start Countdown
+# Game start countdown
 execute if score %start_countdown uhcp_initStatus matches 1.. run function uhcp:lobby/countdown
 
-# On Player Death
+# On player death
 execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:kill/death
 execute if entity @a[tag=UHCP_Died] run function uhcp:kill/death/time
 
@@ -38,15 +38,15 @@ scoreboard players enable @a settings_team
 # Augment routines (that should be in tick function)
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
 
-# Augment Countdown
+# Augment countdown
 execute if score %augment_countdown uhcp_game_time matches 1.. run function uhcp:augments/countdown
 
 # Lobby
 execute unless score %game uhcp_initStatus matches 1 run function uhcp:lobby
 execute as @a if score @s uhcp_lobby_setItem = @s uhcp_lobby_setItem run function uhcp:lobby/item
 
-# Update Summoned Entities
-execute as @e[tag=UHCP_Summon] at @s run function uhcp:entity/update
+# Update summoned entities (does not execute as every entity to be more efficient with more entities; still inefficient)
+execute if entity @e[tag=UHCP_Summon] run function uhcp:entity/update
 
 # Relics
 execute as @a[tag=UHCP_SoulflameEmbrace] at @s run function uhcp:relics/soulflames_embrace/update_player

@@ -3,6 +3,7 @@ worldborder set 59999968
 
 # Gamerules
 gamerule doDaylightCycle false
+gamerule doImmediateRespawn true
 gamerule doMobLoot true
 gamerule keepInventory true
 gamerule randomTickSpeed 0

@@ -156,6 +156,7 @@ execute as @a[tag=UHCP_Spectator] run tp @s @r[tag=!UHCP_Spectator]
 
 # Setup Augments
 kill @e[tag=UHCP_StoreAugment]
+kill @e[type=minecraft:item,predicate=uhcp:dimensions/uhcp/main]
 tag @a remove UHCP_ChoosingItem
 tag @a remove UHCP_AugmentRerollSlot1
 tag @a remove UHCP_AugmentRerollSlot2
@@ -201,8 +202,7 @@ function uhcp:augments/effects/prismatic/sololeveling/prepare
 # Titan Bossbars
 execute as @a run function uhcp:titans/bossbar/create
 
-# Clear inventories
-clear @a
+# Clear ender chests
 item replace entity @a enderchest.0 with minecraft:air
 item replace entity @a enderchest.1 with minecraft:air
 item replace entity @a enderchest.2 with minecraft:air

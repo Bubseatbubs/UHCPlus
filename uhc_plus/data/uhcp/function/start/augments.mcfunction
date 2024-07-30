@@ -16,15 +16,20 @@ bossbar set uhcp:augment players @a
 
 # Generate augment selections
 scoreboard players set %augment_countdown uhcp_game_time 900
-function uhcp:start/augments/selection
 
-# Augment selection glass panes
+# Augment selection (returns do not behave with execute as)
+execute if score %tier uhcp_aug_tier matches 0 as @a[tag=!UHCP_Spectator] run function uhcp:augments/generate/silver
+execute if score %tier uhcp_aug_tier matches 1 as @a[tag=!UHCP_Spectator] run function uhcp:augments/generate/gold
+execute if score %tier uhcp_aug_tier matches 2 as @a[tag=!UHCP_Spectator] run function uhcp:augments/generate/prismatic
+
+# Augment selection glass panes and inventory
 item replace entity @a[tag=!UHCP_Spectator] hotbar.0 with minecraft:black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
 item replace entity @a[tag=!UHCP_Spectator] hotbar.1 with minecraft:black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
 item replace entity @a[tag=!UHCP_Spectator] hotbar.2 with minecraft:black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
 item replace entity @a[tag=!UHCP_Spectator] hotbar.6 with minecraft:black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
 execute unless score %patrons uhcp_settings matches 1 run item replace entity @a[tag=!UHCP_Spectator] hotbar.7 with minecraft:black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
 item replace entity @a[tag=!UHCP_Spectator] hotbar.8 with minecraft:black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+
 item replace entity @a[tag=!UHCP_Spectator] inventory.0 with minecraft:black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
 item replace entity @a[tag=!UHCP_Spectator] inventory.1 with minecraft:black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
 item replace entity @a[tag=!UHCP_Spectator] inventory.2 with minecraft:black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
@@ -53,7 +58,16 @@ item replace entity @a[tag=!UHCP_Spectator] inventory.24 with minecraft:black_st
 item replace entity @a[tag=!UHCP_Spectator] inventory.25 with minecraft:black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
 item replace entity @a[tag=!UHCP_Spectator] inventory.26 with minecraft:black_stained_glass_pane[minecraft:custom_data={uhcp_augmentselect:1b,uhcp_panes:1b,uhcp_glass:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
 
+item replace entity @a[tag=!UHCP_Spectator] armor.head with minecraft:air
+item replace entity @a[tag=!UHCP_Spectator] armor.chest with minecraft:air
+item replace entity @a[tag=!UHCP_Spectator] armor.legs with minecraft:air
+item replace entity @a[tag=!UHCP_Spectator] armor.feet with minecraft:air
+item replace entity @a[tag=!UHCP_Spectator] weapon.offhand with minecraft:air
+
 tag @a[tag=!UHCP_Spectator] add UHCP_ChoosingItem
+
+# Clear spectators
+clear @a[tag=UHCP_Spectator]
 
 # Play game start sounds to all players
 execute as @a at @s run function uhcp:start/augments/sounds

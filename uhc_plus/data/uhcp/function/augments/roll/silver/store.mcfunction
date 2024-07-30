@@ -1,5 +1,5 @@
 # Prepare chest minecart
-data merge entity @s {PersistenceRequired:1b,NoGravity:1b,Invulnerable:1b}
+data merge entity @s {NoGravity:1b,Invulnerable:1b}
 tag @s add UHCP_StoreAugment
 scoreboard players operation @s uhcp_id = @a[tag=UHCP_GeneratingAugments,limit=1] uhcp_id
 team join no_collision @s

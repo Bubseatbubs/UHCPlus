@@ -31,6 +31,7 @@ scoreboard players reset @s uhcp_aug_choosingAugment
 scoreboard players reset @s uhcp_aug_count
 scoreboard players reset @s uhcp_aug_tier
 scoreboard players reset @s uhcp_augment
+scoreboard players reset @s uhcp_death
 scoreboard players reset @s uhcp_deathTime
 scoreboard players reset @s uhcp_game_id
 scoreboard players reset @s uhcp_game_time
@@ -70,5 +71,5 @@ experience set @s 0 levels
 experience set @s 0 points
 team leave @s
 execute in minecraft:overworld run tp @s 0 150 0
-tp @s @r[gamemode=survival]
+tp @a @r[predicate=uhcp:player_gamemodes]
 tellraw @s {"text":"You are spectating the current match.","color":"red"}

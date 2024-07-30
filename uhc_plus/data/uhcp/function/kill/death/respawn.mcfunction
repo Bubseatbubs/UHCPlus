@@ -6,10 +6,7 @@ tag @s remove UHCP_RespawnCheck
 # Return if not yet respawned
 execute as @s[tag=UHCP_Died] run return fail
 
-# Respawn in lobby
-execute unless score %game uhcp_initStatus matches 1 run return run function uhcp:kill/death/lobby
-
-# Respawn during game
+# Grant night vision
 effect give @s minecraft:night_vision infinite 0 true
 
 # Check if spawnpoint worked
