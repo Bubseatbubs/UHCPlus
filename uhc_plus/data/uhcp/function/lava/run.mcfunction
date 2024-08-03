@@ -13,7 +13,7 @@ execute if score %lava uhcp_lava_timeInterval matches ..0 if score %lava uhcp_la
 execute if score %lava uhcp_lava_currentHeight matches -62.. run function uhcp:lava/secondary
 
 # Fill top layers
-execute if score %lava uhcp_lava_currentHeight >= %lava uhcp_lava_maxHeight if score %lava_top uhcp_lava_time matches ..0 run function uhcp:lava/top
+execute if score %lava_top uhcp_lava_time matches ..0 run function uhcp:lava/top
 
 # Lava barriers
 execute if score %lava_barrier uhcp_lava_currentLayers matches 16.. run return fail
