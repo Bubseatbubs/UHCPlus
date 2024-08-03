@@ -9,6 +9,9 @@ scoreboard players operation %lava uhcp_lava_height -= %lava uhcp_lava_currentLa
 scoreboard players operation %lava uhcp_lava_timeInterval = %lava uhcp_lava_time
 scoreboard players operation %lava uhcp_lava_timeInterval /= %lava uhcp_lava_height
 
+# Set top timer
+scoreboard players set %lava_top uhcp_lava_time 75
+
 # Add to current number of filled layers
 scoreboard players add %lava uhcp_lava_currentLayers 1
 
