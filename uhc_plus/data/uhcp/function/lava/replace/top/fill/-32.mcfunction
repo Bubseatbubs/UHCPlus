@@ -1,3 +1,3 @@
 # Fill y levels [-34..-32] with lava
-fill -55 -31 -55 55 -31 55 minecraft:air replace minecraft:water
+fill -51 -31 -51 51 -30 51 minecraft:air replace minecraft:water
 fill -50 -34 -50 50 -32 50 minecraft:lava
