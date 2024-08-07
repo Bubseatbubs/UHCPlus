@@ -5,7 +5,7 @@ execute in minecraft:overworld run function uhcp:start/dimensions/minecraft/over
 execute in uhcp:hell run forceload remove all
 execute in uhcp:main run function uhcp:start/dimensions/uhcp/main
 
-# Prepare Spectators
+# Prepare spectators
 tag @a[scores={uhcp_ready=2}] add UHCP_Spectator
 tag @a[tag=UHCP_Died] add UHCP_Spectator
 
@@ -34,18 +34,6 @@ execute store result score %players uhcp_game_display if entity @a[tag=!UHCP_Spe
 execute if score %players uhcp_game_display matches 6.. run scoreboard players display numberformat %players uhcp_game_display styled {"color":"white"}
 execute if score %players uhcp_game_display matches ..5 run scoreboard players display numberformat %players uhcp_game_display styled {"color":"red"}
 scoreboard objectives setdisplay sidebar uhcp_game_display
-
-# Recipes and advancements
-advancement revoke @a from minecraft:adventure/root
-advancement revoke @a from minecraft:end/root
-advancement revoke @a from minecraft:husbandry/root
-advancement revoke @a from minecraft:nether/root
-advancement revoke @a from minecraft:recipes/root
-advancement revoke @a from minecraft:story/root
-advancement revoke @a only uhcp:base_recipes
-advancement grant @a from minecraft:recipes/root
-advancement grant @a only uhcp:base_recipes
-# Revoke all special augment recipes here.
 
 # Reset scoreboards
 scoreboard players reset %start_countdown
@@ -154,7 +142,7 @@ execute if score %spread uhcp_initStatus matches 1 run function uhcp:start/sprea
 tp @a[tag=UHCP_Spectator] 0 150 0
 execute as @a[tag=UHCP_Spectator] run tp @s @r[tag=!UHCP_Spectator]
 
-# Setup Augments
+# Augment selection setup
 kill @e[tag=UHCP_StoreAugment]
 kill @e[type=minecraft:item,predicate=uhcp:dimensions/uhcp/main]
 tag @a remove UHCP_ChoosingItem
@@ -199,7 +187,7 @@ tag @a remove UHCP_SLShovel
 tag @a remove UHCP_SLSword
 function uhcp:augments/effects/prismatic/sololeveling/prepare
 
-# Titan Bossbars
+# Titan bossbars
 execute as @a run function uhcp:titans/bossbar/create
 
 # Clear ender chests

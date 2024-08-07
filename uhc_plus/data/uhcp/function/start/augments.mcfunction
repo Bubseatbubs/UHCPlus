@@ -14,10 +14,13 @@ effect give @a[tag=!UHCP_Spectator] minecraft:weakness infinite 4 true
 
 bossbar set uhcp:augment players @a
 
-# Generate augment selections
+# Recipes and advancements (reset now and later)
+function uhcp:start/advancements/reset_all
+
+# Start augment selection countdown 
 scoreboard players set %augment_countdown uhcp_game_time 900
 
-# Augment selection (returns do not behave with execute as)
+# Generate sugment selections (returns do not behave with execute as)
 execute if score %tier uhcp_aug_tier matches 0 as @a[tag=!UHCP_Spectator] run function uhcp:augments/generate/silver
 execute if score %tier uhcp_aug_tier matches 1 as @a[tag=!UHCP_Spectator] run function uhcp:augments/generate/gold
 execute if score %tier uhcp_aug_tier matches 2 as @a[tag=!UHCP_Spectator] run function uhcp:augments/generate/prismatic

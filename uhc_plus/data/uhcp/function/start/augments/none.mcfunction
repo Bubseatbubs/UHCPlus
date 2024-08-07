@@ -10,3 +10,6 @@ execute as @a[tag=!UHCP_Spectator] at @s if biome ~ ~-1 ~ #uhcp:snowy run loot r
 effect give @a[tag=!UHCP_Spectator] minecraft:speed 15 0 false
 effect give @a[tag=!UHCP_Spectator] minecraft:resistance 120 4 false
 execute as @a[tag=!UHCP_Spectator] run attribute @s minecraft:player.block_break_speed modifier add uhcp:block_break_speed 1.2 add_multiplied_total
+
+# Recipes and advancements
+function uhcp:start/advancements/reset_all

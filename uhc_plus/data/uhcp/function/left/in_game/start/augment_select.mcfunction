@@ -13,9 +13,14 @@ execute if score %time uhcp_game_time matches ..2380 run function uhcp:left/in_g
 attribute @s minecraft:player.block_break_speed modifier add uhcp:block_break_speed 1.2 add_multiplied_total
 execute if score %night_vision uhcp_settings matches 1 run effect give @s minecraft:night_vision infinite 0 true
 
-# Initialize augment
+# Select augment
 function uhcp:augments/autoselect
+
+# Recipes and advancements
+function uhcp:start/advancements/reset
+
+# Initialize augment
 execute at @s run function uhcp:augments/effects/init
 
-# Give player Snow Boots if in Snowy Biome
+# Give player snow boots if in snowy biome
 execute if biome ~ ~-1 ~ #uhcp:snowy run loot replace entity @s armor.feet loot uhcp:snow_boots

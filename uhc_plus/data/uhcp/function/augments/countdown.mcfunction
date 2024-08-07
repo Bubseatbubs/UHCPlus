@@ -28,7 +28,7 @@ execute if score %augment_countdown uhcp_game_time matches 1 as @a[gamemode=adve
 
 execute if score %augment_countdown uhcp_game_time matches 1.. run return 0
 
-# Ran once countdown reaches 0. Initializes the game
+# Runs once countdown reaches 0; initializes the game
 scoreboard players set %time uhcp_initStatus 1
 
 gamemode survival @a[gamemode=adventure]
@@ -42,4 +42,17 @@ execute as @a[gamemode=survival] run attribute @s minecraft:player.block_break_s
 execute if score %night_vision uhcp_settings matches 1 run effect give @a[gamemode=survival] minecraft:night_vision infinite 0 true
 execute if entity @a[scores={uhcp_augment=25}] run function uhcp:augments/effects/gold/scavengerhunt/init
 
-execute as @a[gamemode=survival] at @s run function uhcp:augments/countdown/end
+# Recipes and advancements
+function uhcp:start/advancements/reset_all
+
+# Announce augments
+tag @a add UHCP_AugmentAnnounce
+
+execute if entity @a[scores={uhcp_augment=0..99}] run function uhcp:augments/announce/gold
+execute if entity @a[scores={uhcp_augment=100..199}] run function uhcp:augments/announce/silver
+execute if entity @a[scores={uhcp_augment=200..299}] run function uhcp:augments/announce/prismatic
+
+tag @a remove UHCP_AugmentAnnounce
+
+# Finish player initialization 
+execute as @a[gamemode=survival] run function uhcp:augments/countdown/end
