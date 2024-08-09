@@ -20,7 +20,7 @@ function uhcp:start/advancements/reset_all
 # Start augment selection countdown 
 scoreboard players set %augment_countdown uhcp_game_time 900
 
-# Generate sugment selections (returns do not behave with execute as)
+# Generate augment selections (avoids use of return)
 execute if score %tier uhcp_aug_tier matches 0 as @a[tag=!UHCP_Spectator] run function uhcp:augments/generate/silver
 execute if score %tier uhcp_aug_tier matches 1 as @a[tag=!UHCP_Spectator] run function uhcp:augments/generate/gold
 execute if score %tier uhcp_aug_tier matches 2 as @a[tag=!UHCP_Spectator] run function uhcp:augments/generate/prismatic
