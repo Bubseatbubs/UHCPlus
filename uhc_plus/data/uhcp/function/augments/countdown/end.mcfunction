@@ -1,4 +1,6 @@
 # Runs once the countdown ends
-execute at @s run function uhcp:augments/countdown/location
+# Give player snow boots if in snowy biome
+execute if biome ~ ~-1 ~ #uhcp:snowy run loot replace entity @s armor.feet loot uhcp:snow_boots
 
-function uhcp:augments/announce
+# Initialize augment
+function uhcp:augments/effects/init

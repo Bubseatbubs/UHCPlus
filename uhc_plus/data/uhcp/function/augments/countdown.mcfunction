@@ -55,4 +55,4 @@ execute if entity @a[scores={uhcp_augment=200..299}] run function uhcp:augments/
 tag @a remove UHCP_AugmentAnnounce
 
 # Finish player initialization 
-execute as @a[gamemode=survival] run function uhcp:augments/countdown/end
+execute as @a[gamemode=survival] at @s run function uhcp:augments/countdown/end

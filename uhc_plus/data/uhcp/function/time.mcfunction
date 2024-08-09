@@ -47,7 +47,7 @@ execute as @a[scores={augments=1..}] run function uhcp:augments/announce
 
 # Player compass
 execute unless score %compass_time uhcp_itemCount matches 1.. if entity @a[predicate=uhcp:compass/player_compass/hand,gamemode=survival] run function uhcp:compass/determine
-execute unless score %compass_time uhcp_itemCount matches ..0 run scoreboard players remove %compass_time uhcp_itemCount 1
+scoreboard players remove %compass_time uhcp_itemCount 1
 
 # Top Command
 execute if entity @a[scores={top=1..}] run function uhcp:top/validate
