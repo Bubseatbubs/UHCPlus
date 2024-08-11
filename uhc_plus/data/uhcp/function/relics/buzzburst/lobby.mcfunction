@@ -2,7 +2,7 @@
 execute store result score @s uhcp_initStatus run data get entity @s Pos[1]
 execute unless score @s uhcp_initStatus matches 273..282 run return fail
 tag @s add UHCP_Owner
-execute anchored eyes positioned ~ ~0.5 ~ run summon minecraft:arrow ^ ^0.5 ^1.25 {PierceLevel:100b,Tags:["UHCP_CurrentBuzzburst","UHCP_Buzzburst","UHCP_Summon"],Silent:1b}
+execute anchored eyes positioned ~ ~0.5 ~ run summon minecraft:arrow ^ ^0.5 ^1.25 {pickup:0b,PierceLevel:127b,Tags:["UHCP_CurrentBuzzburst","UHCP_Buzzburst","UHCP_Summon"],Silent:1b}
 scoreboard players operation @s uhcp_initStatus = @s uhcp_team
 scoreboard players operation @n[tag=UHCP_CurrentBuzzburst] uhcp_team = @s uhcp_team
 execute as @n[tag=UHCP_CurrentBuzzburst] at @s run function uhcp:relics/buzzburst/launch
