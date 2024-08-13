@@ -12,6 +12,7 @@ execute as @s[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal
 
 # In lobby
 execute unless score %game uhcp_initStatus matches 1 run return run function uhcp:kill/death/lobby
+execute as @s[gamemode=spectator] run return fail
 
 # During game
 scoreboard players reset @s uhcp_deathTime
@@ -19,7 +20,8 @@ tag @s add UHCP_CurrentDeadPlayer
 tag @s add UHCP_Died
 
 # Set spawnpoint at death location
-execute at @s run spawnpoint @s ~ ~ ~ ~
+execute store result score @s uhcp_initStatus run data get entity @s Pos[1]
+function uhcp:kill/death/height
 
 # Augments effects
 function uhcp:kill/death/augments
