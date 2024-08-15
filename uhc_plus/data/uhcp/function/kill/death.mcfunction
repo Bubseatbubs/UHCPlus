@@ -27,7 +27,7 @@ function uhcp:kill/death/height
 function uhcp:kill/death/augments
 
 # Marker
-execute as @e[tag=UHCP_Summon] if score @s uhcp_id = @a[tag=UHCP_CurrentDeadPlayer,limit=1] uhcp_id run kill @s
+execute as @e[tag=UHCP_Summon] if score @s uhcp_id = @a[tag=UHCP_CurrentDeadPlayer,limit=1] uhcp_id run function uhcp:entity/instant_kill
 execute as @e[tag=UHCP_Death] if score @s uhcp_id = @a[tag=UHCP_CurrentDeadPlayer,limit=1] uhcp_id run kill @s
 execute summon minecraft:marker run function uhcp:kill/death/spawn_marker
 

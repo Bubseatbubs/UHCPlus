@@ -12,7 +12,7 @@ item replace entity @s weapon.offhand with minecraft:air
 function uhcp:augments/generate/panes
 
 tag @s add UHCP_LoadAugment
-execute as @e[tag=UHCP_StoreAugment] if score @s uhcp_id = @p[tag=UHCP_LoadAugment] uhcp_id run tag @s add UHCP_CurrentStoreAugment
+function uhcp:augments/current_store
 item replace entity @s[tag=!UHCP_AugmentRerollSlot1] hotbar.3 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.0
 item replace entity @s[tag=!UHCP_AugmentRerollSlot2] hotbar.4 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.1
 item replace entity @s[tag=!UHCP_AugmentRerollSlot3] hotbar.5 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.2
