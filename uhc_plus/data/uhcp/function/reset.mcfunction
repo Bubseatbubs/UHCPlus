@@ -12,6 +12,7 @@ kill @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs,type=!#uhcp:reset/save
 execute as @e[tag=UHCP_TurretOrigin] at @s run function uhcp:relics/runic_sentry/delete
 execute as @e[tag=UHCP_AltarDisplay] at @s run function uhcp:titans/spawn/reset_altar
 execute as @e[tag=UHCP_GraveMarker] at @s run function uhcp:titans/gigantus/graves/delete
+kill @e[tag=UHCP_Death]
 kill @e[tag=UHCP_Minion]
 execute as @e[tag=UHCP_SLBlock] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:air replace minecraft:nether_portal
 kill @e[tag=UHCP_SLBlock]
