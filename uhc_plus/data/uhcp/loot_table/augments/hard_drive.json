@@ -31,49 +31,49 @@
               "modifiers": [
                 {
                   "id": "uhcp:cd_armor",
-                  "attribute": "minecraft:generic.armor",
+                  "attribute": "minecraft:armor",
                   "amount": 8,
                   "operation": "add_value",
                   "slot": "chest"
                 },
                 {
                   "id": "uhcp:cd_armor_toughness",
-                  "attribute": "minecraft:generic.armor_toughness",
+                  "attribute": "minecraft:armor_toughness",
                   "amount": 2,
                   "operation": "add_value",
                   "slot": "chest"
                 },
                 {
                   "id": "uhcp:cd_entity_range",
-                  "attribute": "minecraft:player.entity_interaction_range",
+                  "attribute": "minecraft:entity_interaction_range",
                   "amount": 0,
                   "operation": "add_value",
                   "slot": "chest"
                 },
                 {
                   "id": "uhcp:cd_movement_speed",
-                  "attribute": "minecraft:generic.movement_speed",
+                  "attribute": "minecraft:movement_speed",
                   "amount": 0,
                   "operation": "add_multiplied_total",
                   "slot": "chest"
                 },
                 {
                   "id": "uhcp:cd_attack_speed",
-                  "attribute": "minecraft:generic.attack_speed",
+                  "attribute": "minecraft:attack_speed",
                   "amount": 0,
                   "operation": "add_multiplied_total",
                   "slot": "chest"
                 },
                 {
                   "id": "uhcp:cd_attack_damage",
-                  "attribute": "minecraft:generic.attack_damage",
+                  "attribute": "minecraft:attack_damage",
                   "amount": 0,
                   "operation": "add_value",
                   "slot": "chest"
                 },
                 {
                   "id": "uhcp:cd_max_health",
-                  "attribute": "minecraft:generic.max_health",
+                  "attribute": "minecraft:max_health",
                   "amount": 0,
                   "operation": "add_value",
                   "slot": "chest"

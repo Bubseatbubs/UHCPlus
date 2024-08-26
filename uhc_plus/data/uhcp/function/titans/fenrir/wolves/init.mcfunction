@@ -7,7 +7,7 @@ execute at @s run summon minecraft:marker ~ ~ ~ {CustomNameVisible:0b,Tags:["UHC
 execute at @s run summon minecraft:marker ~ ~ ~ {CustomNameVisible:0b,Tags:["UHCP_WolfMarker"]}
 
 spreadplayers ~ ~ 5 15 false @e[tag=UHCP_WolfMarker,distance=..16]
-execute at @e[tag=UHCP_WolfMarker] run summon minecraft:wolf ~ ~ ~ {Tags:["UHCP_Minion"],variant:"black",Tags:["UHCP_FenrirMinion","UHCP_Summon"],Health:5f,Motion:[0.0d,0.25d,0.0d],CustomNameVisible:0b,PersistenceRequired:1b,attributes:[{id:"minecraft:generic.max_health",base:20.0d},{id:"minecraft:generic.knockback_resistance",base:0.0d},{id:"minecraft:generic.attack_damage",base:5.0d},{id:"minecraft:generic.armor",base:1.0d}]}
+execute at @e[tag=UHCP_WolfMarker] run summon minecraft:wolf ~ ~ ~ {Tags:["UHCP_Minion"],variant:"black",Tags:["UHCP_FenrirMinion","UHCP_Summon"],Health:5f,Motion:[0.0d,0.25d,0.0d],CustomNameVisible:0b,PersistenceRequired:1b,attributes:[{id:"minecraft:max_health",base:20.0d},{id:"minecraft:knockback_resistance",base:0.0d},{id:"minecraft:attack_damage",base:5.0d},{id:"minecraft:armor",base:1.0d}]}
 execute at @e[tag=UHCP_WolfMarker] run particle minecraft:cloud ~ ~ ~ 0.5 0.5 0.5 0.1 10 normal
 
 kill @e[tag=UHCP_WolfMarker]

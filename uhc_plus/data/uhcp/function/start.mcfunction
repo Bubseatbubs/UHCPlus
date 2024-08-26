@@ -53,6 +53,7 @@ scoreboard players reset %entities uhcp_game_id
 scoreboard players reset %time uhcp_game_time
 scoreboard players reset @a uhcp_id
 scoreboard players reset %global uhcp_id
+scoreboard players reset %hunting_call uhcp_id
 scoreboard players reset @a uhcp_leave
 scoreboard players reset @a uhcp_lobby_item
 scoreboard players reset @a uhcp_mine_ancientDebris
@@ -163,7 +164,7 @@ execute unless score %night_vision uhcp_settings matches 1 run effect give @a[ta
 execute as @a run function uhcp:reset/attributes
 
 # Grant players +20 health
-execute as @a[tag=!UHCP_Spectator] run attribute @s minecraft:generic.max_health modifier add uhcp:game_max_health 20 add_value
+execute as @a[tag=!UHCP_Spectator] run attribute @s minecraft:max_health modifier add uhcp:game_max_health 20 add_value
 
 # Reset experience
 experience set @a 0 levels

@@ -20,16 +20,16 @@
                   },
                   "show_in_tooltip": false
                 },
-                "minecraft:food": {
-                  "nutrition": 0,
-                  "saturation": 0,
-                  "can_always_eat": true,
-                  "eat_seconds": 2147483647
+                "minecraft:consumable": {
+                  "consume_seconds": 2147483647,
+                  "animation": "none",
+                  "has_consume_particles": false
                 },
                 "minecraft:max_stack_size": 1,
                 "minecraft:max_damage": 1200,
                 "minecraft:damage": 0,
-                "minecraft:repair_cost": 100,
+                "minecraft:repair_cost": 500,
+                "!minecraft:repairable": {},
                 "minecraft:hide_additional_tooltip": {}
               }
             },

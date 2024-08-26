@@ -1,5 +1,5 @@
 tag @s add UHCP_Owner
-attribute @s minecraft:generic.scale modifier remove uhcp:scale
+attribute @s minecraft:scale modifier remove uhcp:scale
 effect clear @s minecraft:invisibility
 effect give @s minecraft:resistance 1 5
 particle minecraft:cloud ~ ~ ~ 0.5 0.5 0.5 0.1 10 normal

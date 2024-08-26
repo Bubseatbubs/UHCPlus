@@ -15,7 +15,7 @@ execute if score @s uhcp_aug_count matches 0 run return run function uhcp:augmen
 
 # Transform into block
 effect give @s minecraft:invisibility infinite 0 true
-attribute @s minecraft:generic.scale modifier add uhcp:scale -0.55 add_multiplied_base
+attribute @s minecraft:scale modifier add uhcp:scale -0.55 add_multiplied_base
 playsound minecraft:entity.breeze.deflect master @s ~ ~ ~ 1 1 1
 particle minecraft:cloud ~ ~ ~ 0.5 0.5 0.5 0.1 10 normal @s
 execute at @s run summon minecraft:block_display ~ ~ ~ {teleport_duration:1,Tags:["UHCP_Prop","UHCP_Summon","UHCP_New"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.0f,0.0f],scale:[1f,1f,1f]},block_state:{Name:"minecraft:air"}}

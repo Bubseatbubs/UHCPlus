@@ -13,12 +13,7 @@
                 "minecraft:unbreakable": {
                   "show_in_tooltip": true
                 },
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:luck_of_the_sea": 1
-                  },
-                  "show_in_tooltip": false
-                }
+                "minecraft:enchantment_glint_override": true
               }
             },
             {
@@ -26,14 +21,14 @@
               "modifiers": [
                 {
                   "id": "uhcp:wings_armor",
-                  "attribute": "minecraft:generic.armor",
+                  "attribute": "minecraft:armor",
                   "amount": 8,
                   "operation": "add_value",
                   "slot": "chest"
                 },
                 {
                   "id": "uhcp:wings_armor_toughness",
-                  "attribute": "minecraft:generic.armor_toughness",
+                  "attribute": "minecraft:armor_toughness",
                   "amount": 2,
                   "operation": "add_value",
                   "slot": "chest"

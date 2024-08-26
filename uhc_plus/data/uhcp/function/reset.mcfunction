@@ -13,6 +13,7 @@ execute as @e[tag=UHCP_TurretOrigin] at @s run function uhcp:relics/runic_sentry
 execute as @e[tag=UHCP_AltarDisplay] at @s run function uhcp:titans/spawn/reset_altar
 execute as @e[tag=UHCP_GraveMarker] at @s run function uhcp:titans/gigantus/graves/delete
 kill @e[tag=UHCP_Death]
+kill @e[tag=UHCP_HuntingCall]
 kill @e[tag=UHCP_Minion]
 execute as @e[tag=UHCP_SLBlock] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:air replace minecraft:nether_portal
 kill @e[tag=UHCP_SLBlock]
@@ -88,6 +89,7 @@ scoreboard players reset %augment_countdown uhcp_game_time
 scoreboard players reset %update_display uhcp_game_time
 scoreboard players reset %time uhcp_game_time
 scoreboard players reset %global uhcp_id
+scoreboard players reset %hunting_call uhcp_id
 scoreboard players reset %end uhcp_initStatus
 scoreboard players reset %day uhcp_initStatus
 scoreboard players reset %game uhcp_initStatus

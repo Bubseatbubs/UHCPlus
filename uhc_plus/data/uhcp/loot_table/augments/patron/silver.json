@@ -469,6 +469,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "!minecraft:consumable": {},
                   "!minecraft:food": {}
               }
             },

@@ -4,7 +4,7 @@
     "modifiers": [
       {
         "id": "uhcp:cd_max_health",
-        "attribute": "minecraft:generic.max_health",
+        "attribute": "minecraft:max_health",
         "amount": {
           "type": "minecraft:score",
           "target": {
@@ -19,7 +19,7 @@
       },
       {
         "id": "uhcp:cd_attack_damage",
-        "attribute": "minecraft:generic.attack_damage",
+        "attribute": "minecraft:attack_damage",
         "amount": {
           "type": "minecraft:score",
           "target": {
@@ -34,7 +34,7 @@
       },
       {
         "id": "uhcp:cd_attack_speed",
-        "attribute": "minecraft:generic.attack_speed",
+        "attribute": "minecraft:attack_speed",
         "amount": {
           "type": "minecraft:score",
           "target": {
@@ -49,7 +49,7 @@
       },
       {
         "id": "uhcp:cd_movement_speed",
-        "attribute": "minecraft:generic.movement_speed",
+        "attribute": "minecraft:movement_speed",
         "amount": {
           "type": "minecraft:score",
           "target": {
@@ -64,7 +64,7 @@
       },
       {
         "id": "uhcp:cd_entity_range",
-        "attribute": "minecraft:player.entity_interaction_range",
+        "attribute": "minecraft:entity_interaction_range",
         "amount": {
           "type": "minecraft:score",
           "target": {
@@ -79,7 +79,7 @@
       },
       {
         "id": "uhcp:cd_armor_toughness",
-        "attribute": "minecraft:generic.armor_toughness",
+        "attribute": "minecraft:armor_toughness",
         "amount": {
           "type": "minecraft:score",
           "target": {
@@ -94,7 +94,7 @@
       },
       {
         "id": "uhcp:cd_armor",
-        "attribute": "minecraft:generic.armor",
+        "attribute": "minecraft:armor",
         "amount": {
           "type": "minecraft:score",
           "target": {

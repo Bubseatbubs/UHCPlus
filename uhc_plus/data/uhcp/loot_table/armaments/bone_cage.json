@@ -27,14 +27,14 @@
               "modifiers": [
                 {
                   "id": "uhcp:bone_cage_armor",
-                  "attribute": "minecraft:generic.armor",
+                  "attribute": "minecraft:armor",
                   "amount": 8,
                   "operation": "add_value",
                   "slot": "chest"
                 },
                 {
                   "id": "uhcp:bone_cage_armor_toughness",
-                  "attribute": "minecraft:generic.armor_toughness",
+                  "attribute": "minecraft:armor_toughness",
                   "amount": 2,
                   "operation": "add_value",
                   "slot": "chest"

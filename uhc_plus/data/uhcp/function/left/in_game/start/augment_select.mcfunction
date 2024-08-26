@@ -6,11 +6,11 @@
 
 gamemode survival @s
 ride @s dismount
-execute at @s as @e[tag=UHCP_Lock,distance=..100] in uhcp:main run tp @s 0 -63 0
+execute in uhcp:main run tp @e[tag=UHCP_Lock,predicate=uhcp:dimensions/minecraft] 0 -63 0
 
 effect clear @s
 execute if score %time uhcp_game_time matches ..2380 run function uhcp:left/in_game/start/effects
-attribute @s minecraft:player.block_break_speed modifier add uhcp:block_break_speed 1.2 add_multiplied_total
+attribute @s minecraft:block_break_speed modifier add uhcp:block_break_speed 1.2 add_multiplied_total
 execute if score %night_vision uhcp_settings matches 1 run effect give @s minecraft:night_vision infinite 0 true
 
 # Select augment

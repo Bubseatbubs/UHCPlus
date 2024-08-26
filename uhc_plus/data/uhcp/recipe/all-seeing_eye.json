@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:redstone"
-    },
-    "X": {
-      "item": "minecraft:diamond"
-    }
+    "#": "minecraft:redstone",
+    "X": "minecraft:diamond"
   },
   "pattern": [
     "###",
@@ -19,12 +15,7 @@
     "components": {
       "minecraft:item_name": "{\"text\":\"All-Seeing Eye\",\"color\":\"light_purple\"}",
       "minecraft:lore": ["{\"text\":\"Causes \",\"color\":\"gray\",\"italic\":true,\"extra\":[{\"text\":\"all enemies\",\"color\":\"gold\"},\" to glow\"]}","{\"text\":\"for \",\"color\":\"gray\",\"italic\":true,\"extra\":[{\"text\":\"10\",\"color\":\"gold\"},\" seconds. Consumed\"]}","{\"text\":\"upon use.\",\"color\":\"gray\",\"italic\":true}"],
-      "minecraft:enchantments": {
-        "levels": {
-          "minecraft:protection": 1
-        },
-        "show_in_tooltip": false
-      },
+      "minecraft:enchantment_glint_override": true,
       "minecraft:custom_data": {
         "uhcp_instantpickup": 1,
         "uhcp_sight": 1

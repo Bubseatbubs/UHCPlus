@@ -14,7 +14,7 @@
                   "modifiers": [
                     {
                       "id": "uhcp:snow_boots_armor",
-                      "type": "minecraft:generic.armor",
+                      "type": "minecraft:armor",
                       "amount": 0,
                       "operation": "add_value",
                       "slot": "feet"

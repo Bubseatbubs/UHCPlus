@@ -534,6 +534,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "!minecraft:consumable": {},
                 "!minecraft:food": {}
               }
             },
@@ -1120,12 +1121,7 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:enchantments": {
-              "levels": {
-                "minecraft:protection": 1
-              },
-              "show_in_tooltip": false
-            }
+            "minecraft:enchantment_glint_override": true
           }
         }
       ]

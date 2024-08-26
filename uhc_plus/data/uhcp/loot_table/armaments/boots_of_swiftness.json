@@ -12,21 +12,21 @@
               "modifiers": [
                 {
                   "id": "uhcp:movement_speed",
-                  "attribute": "minecraft:generic.movement_speed",
+                  "attribute": "minecraft:movement_speed",
                   "amount": 0.15,
                   "operation": "add_multiplied_total",
                   "slot": "feet"
                 },
                 {
                   "id": "uhcp:swiftness_boots_armor",
-                  "attribute": "minecraft:generic.armor",
+                  "attribute": "minecraft:armor",
                   "amount": 3,
                   "operation": "add_value",
                   "slot": "feet"
                 },
                 {
                   "id": "uhcp:swiftness_boots_armor_toughness",
-                  "attribute": "minecraft:generic.armor_toughness",
+                  "attribute": "minecraft:armor_toughness",
                   "amount": 2,
                   "operation": "add_value",
                   "slot": "feet"

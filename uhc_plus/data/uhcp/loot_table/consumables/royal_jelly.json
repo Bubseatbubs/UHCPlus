@@ -23,16 +23,6 @@
                       "show_icon": true
                     },
                     {
-                      "id": "minecraft:saturation",
-                      "duration": 1000,
-                      "hidden_effect": {
-                        "amplifier": 40,
-                        "ambient": false,
-                        "show_particles": false,
-                        "show_icon": false
-                      }
-                    },
-                    {
                       "id": "minecraft:absorption",
                       "amplifier": 0,
                       "duration": 1000
@@ -55,12 +45,7 @@
                     }
                   ]
                 },
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  },
-                  "show_in_tooltip": false
-                }
+                "minecraft:enchantment_glint_override": true
               }
             },
             {

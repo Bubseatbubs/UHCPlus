@@ -27,14 +27,14 @@
               "modifiers": [
                 {
                   "id": "uhcp:kalyx_armor",
-                  "attribute": "minecraft:generic.armor",
+                  "attribute": "minecraft:armor",
                   "amount": 3,
                   "operation": "add_value",
                   "slot": "head"
                 },
                 {
                   "id": "uhcp:kalyx_armor_toughness",
-                  "attribute": "minecraft:generic.armor_toughness",
+                  "attribute": "minecraft:armor_toughness",
                   "amount": 2,
                   "operation": "add_value",
                   "slot": "head"

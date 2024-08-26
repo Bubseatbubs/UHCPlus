@@ -47,40 +47,46 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:food": {
-                  "nutrition": 4,
-                  "saturation": 0,
-                  "can_always_eat": true,
-                  "effects": [
+                "minecraft:consumable": {
+                  "animation": "eat",
+                  "has_consume_particles": true,
+                  "on_consume_effects": [
                     {
-                      "effect": {
-                        "id": "minecraft:hunger",
-                        "amplifier": 0,
-                        "duration": 600,
-                        "ambient": false,
-                        "show_particles": true,
-                        "show_icon": true
-                      },
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:hunger",
+                          "amplifier": 0,
+                          "duration": 600,
+                          "ambient": false,
+                          "show_particles": true,
+                          "show_icon": true
+                        }
+                      ],
                       "probability": 0.8
                     },
                     {
-                      "effect": {
-                        "id": "minecraft:absorption",
-                        "amplifier": 1,
-                        "duration": 600,
-                        "ambient": false,
-                        "show_particles": true,
-                        "show_icon": true
-                      }
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:absorption",
+                          "amplifier": 1,
+                          "duration": 600,
+                          "ambient": false,
+                          "show_particles": true,
+                          "show_icon": true
+                        }
+                      ]
                     }
-                  ]
+                  ],
+                  "sound": "entity.generic.eat"
                 },
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 0
-                  },
-                  "show_in_tooltip": false
-                }
+                "minecraft:food": {
+                  "nutrition": 4,
+                  "saturation": 0,
+                  "can_always_eat": true
+                },
+                "minecraft:enchantment_glint_override": true
               }
             }
           ]

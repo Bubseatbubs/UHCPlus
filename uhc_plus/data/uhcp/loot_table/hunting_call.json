@@ -1,0 +1,85 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:goat_horn",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Hunting Call",
+                "color": "light_purple"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                [
+                  {
+                    "text": "For ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "20",
+                    "color": "gold"
+                  },
+                  {
+                    "text": " seconds, gain "
+                  },
+                  {
+                    "text": "Speed",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " and"
+                  }
+                ],
+                [
+                  {
+                    "text": "cause ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "nearby enemies",
+                    "color": "gold"
+                  },
+                  {
+                    "text": " to "
+                  },
+                  {
+                    "text": "Glow",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": "."
+                  }
+                ],
+                {
+                    "text": "(3 minute cooldown.)",
+                    "color": "red"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:instrument": "minecraft:ponder_goat_horn",
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:hide_additional_tooltip": {}
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_huntingcall:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

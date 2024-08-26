@@ -831,6 +831,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "!minecraft:consumable": {},
                 "!minecraft:food": {}
               }
             },
@@ -1080,7 +1081,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:instrument": "minecraft:call_goat_horn"
+                "minecraft:instrument": "minecraft:call_goat_horn",
+                "minecraft:hide_additional_tooltip": {}
               }
             },
             {
@@ -1097,12 +1099,6 @@
                   "bold": true
                 }
               ]
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:hide_additional_tooltip": {}
-              }
             },
             {
               "function": "minecraft:set_lore",
@@ -3513,7 +3509,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:glass_bottle",
+          "name": "minecraft:potion",
           "weight": 1,
           "functions": [
             {
@@ -3534,6 +3530,16 @@
                   "bold": true
                 }
               ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:consumable": {},
+                "minecraft:potion_contents": {
+                  "custom_color": 8467002
+                },
+                "minecraft:hide_additional_tooltip": {}
+              }
             },
             {
               "function": "minecraft:set_lore",

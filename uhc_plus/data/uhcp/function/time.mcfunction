@@ -21,8 +21,9 @@ execute if score %time uhcp_game_time matches 24000..24500 in minecraft:overworl
 # Grace period end
 execute unless score %pvp uhcp_settings matches ..-1 run function uhcp:pvp/countdown
 
-# Timer
+# Timers
 scoreboard players remove @a[scores={uhcp_timer=0..}] uhcp_timer 1
+scoreboard players remove @e[tag=UHCP_HuntingCall,scores={uhcp_itemCount=1..}] uhcp_itemCount 1
 
 # Augment notifications
 execute if score %time uhcp_game_time matches ..45000 run function uhcp:augments/notifications
@@ -91,7 +92,7 @@ execute as @a[scores={uhcp_mine_rawCopperBlock=1..},gamemode=survival] run funct
 execute as @a[scores={uhcp_mine_rawGoldBlock=1..},gamemode=survival] run function uhcp:mine/raw_gold_block
 execute as @a[scores={uhcp_mine_rawIronBlock=1..},gamemode=survival] run function uhcp:mine/raw_iron_block
 
-# Disable Ender Pearl Damage
+# Disable ender pearl damage
 execute if score %ender_pearl uhcp_settings matches 1 as @e[type=minecraft:ender_pearl] at @s run function uhcp:entity/ender_pearl
 
 # Titan Loot
@@ -100,7 +101,7 @@ execute as @e[predicate=uhcp:titans/titan_loot] at @s run function uhcp:titans/l
 # Check regenerating consumables
 execute as @a[scores={uhcp_aug_regenItem=0..}] if score %time uhcp_game_time >= @s uhcp_aug_regenItem at @s run function uhcp:augments/effects/regenerate_consumables
 
-# Fake Apples
+# Fake apples
 execute as @e[type=minecraft:item,predicate=uhcp:apple_head] at @s run function uhcp:entity/apples/change_to_apple
 execute as @e[type=minecraft:item,predicate=uhcp:golden_apple_head] at @s run function uhcp:entity/apples/change_to_golden_apple
 

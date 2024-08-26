@@ -1,5 +1,5 @@
 give @s minecraft:enchanted_golden_apple
-execute store result score %health uhcp_aug_count run attribute @s minecraft:generic.max_health get 1
+execute store result score %health uhcp_aug_count run attribute @s minecraft:max_health get 1
 scoreboard players add %health uhcp_aug_count 20
 
 execute store result storage uhcp:health input.health float 1 run scoreboard players get %health uhcp_aug_count

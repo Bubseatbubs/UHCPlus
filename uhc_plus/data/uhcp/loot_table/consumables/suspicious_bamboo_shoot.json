@@ -83,29 +83,32 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:consumable": {
+                  "animation": "eat",
+                  "has_consume_particles": true,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:bad_omen",
+                          "amplifier": 101,
+                          "duration": 1,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      ]
+                    }
+                  ],
+                  "sound": "entity.generic.eat"
+                },
                 "minecraft:food": {
                   "nutrition": 4,
                   "saturation": 0,
-                  "can_always_eat": true,
-                  "effects": [
-                    {
-                      "effect": {
-                        "id": "minecraft:bad_omen",
-                        "amplifier": 101,
-                        "duration": 1,
-                        "ambient": false,
-                        "show_particles": false,
-                        "show_icon": false
-                      }
-                    }
-                  ]
+                  "can_always_eat": true
                 },
-                "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  },
-                  "show_in_tooltip": false
-                }
+                "minecraft:enchantment_glint_override": true
               }
             }
           ]

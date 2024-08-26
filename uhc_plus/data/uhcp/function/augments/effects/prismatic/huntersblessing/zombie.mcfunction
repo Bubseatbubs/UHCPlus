@@ -1,5 +1,5 @@
 # Probably change to a dynamic health increase later on.
-attribute @s minecraft:generic.max_health modifier add uhcp:max_health 8 add_value
+attribute @s minecraft:max_health modifier add uhcp:max_health 8 add_value
 effect give @s minecraft:instant_health 1 2
 effect give @s minecraft:absorption infinite 1 true
 tag @s add UHCP_Zombie

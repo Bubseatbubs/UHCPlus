@@ -54,13 +54,7 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:enchantments": {
-									"levels": {
-										"minecraft:protection": 1
-									},
-									"show_in_tooltip": false
-								},
-								"minecraft:lodestone_tracker": {}
+								"minecraft:enchantment_glint_override": true
 							}
 						},
 						{

@@ -473,6 +473,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "!minecraft:consumable": {},
                 "!minecraft:food": {}
               }
             },
@@ -709,7 +710,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:glass_bottle",
+          "name": "minecraft:potion",
           "weight": 1,
           "functions": [
             {
@@ -730,6 +731,16 @@
                   "bold": true
                 }
               ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:consumable": {},
+                "minecraft:potion_contents": {
+                  "custom_color": 13959090
+                },
+                "minecraft:hide_additional_tooltip": {}
+              }
             },
             {
               "function": "minecraft:set_lore",

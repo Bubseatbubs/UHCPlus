@@ -8,5 +8,5 @@ particle minecraft:nautilus ~ ~ ~ 6 0.1 6 0.001 30 normal
 particle minecraft:trial_spawner_detection ~ ~ ~ 6 0.1 6 0.01 300 normal
 
 execute as @a[gamemode=survival,distance=..12] run tag @s add UHCP_InflictedWithGravityGlobe
-execute as @a[gamemode=survival,distance=..12] run attribute @s minecraft:generic.gravity modifier add uhcp:gravity_globe -0.6 add_value
+execute as @a[gamemode=survival,distance=..12] run attribute @s minecraft:gravity modifier add uhcp:gravity_globe -0.6 add_value
 execute as @a[gamemode=survival,distance=..12] at @s run particle minecraft:end_rod ~ ~ ~ 0.1 0.1 0.1 0.1 50 normal
