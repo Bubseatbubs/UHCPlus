@@ -22,7 +22,7 @@ scoreboard players set %titans uhcp_game_time 6000
 execute if score %dimension uhcp_settings matches ..-1 run scoreboard players set %dimension uhcp_settings 0
 execute as @a unless score @s uhcp_aug_patron = @s uhcp_aug_patron run scoreboard players set @s uhcp_aug_patron 8
 scoreboard players set @a uhcp_aug_choosingAugment 0
-execute store result score %random uhcp_game_id run random value 0..3
+execute store result score %global uhcp_game_id run random value 0..3
 execute store result score %global uhcp_game_id run function uhcp:start/id/game
 scoreboard players operation @a uhcp_game_id = %global uhcp_game_id
 scoreboard players set @a uhcp_game_time -1

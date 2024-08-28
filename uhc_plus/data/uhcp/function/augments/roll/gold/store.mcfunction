@@ -2,6 +2,7 @@
 data merge entity @s {NoGravity:1b,Invulnerable:1b}
 tag @s add UHCP_StoreAugment
 scoreboard players operation @s uhcp_id = @a[tag=UHCP_GeneratingAugments,limit=1] uhcp_id
+scoreboard players operation @s uhcp_team = @a[tag=UHCP_GeneratingAugments,limit=1] uhcp_team
 team join no_collision @s
 
 # Roll patron augment

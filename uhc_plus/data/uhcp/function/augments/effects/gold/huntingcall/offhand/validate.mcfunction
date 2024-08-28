@@ -1,5 +1,6 @@
 # Check cooldown
-tag @s add UHCP_Hunter
+execute store result score @s uhcp_initStatus run data get storage uhcp:hunting_call Horn.components."minecraft:custom_data".id
 execute store result score @s uhcp_initStatus run function uhcp:augments/effects/gold/huntingcall/search
-function uhcp:augments/effects/gold/huntingcall/mainhand/determine
-tag @s remove UHCP_Hunter
+execute if score @s uhcp_initStatus matches 1.. run return run function uhcp:augments/effects/gold/huntingcall/calculate
+execute if score @s uhcp_initStatus matches 0 run return run function uhcp:augments/effects/gold/huntingcall/effect
+function uhcp:augments/effects/gold/huntingcall/offhand/new

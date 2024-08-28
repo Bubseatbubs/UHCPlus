@@ -27,6 +27,18 @@
                 ]
               }
             }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%game"
+              },
+              "score": "uhcp_initStatus"
+            },
+            "range": 1
           }
         ],
         "item": {

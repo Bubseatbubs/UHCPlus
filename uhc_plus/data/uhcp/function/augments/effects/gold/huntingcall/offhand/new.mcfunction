@@ -1,5 +1,4 @@
 # New horn
-data modify storage uhcp:hunting_call Horn set from entity @s Inventory[{Slot:-106b}]
 data remove storage uhcp:hunting_call Horn.Slot
 function uhcp:augments/effects/gold/huntingcall/new
 

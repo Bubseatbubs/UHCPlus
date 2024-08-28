@@ -367,6 +367,15 @@
               "count": 1
             },
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
               "function": "minecraft:set_custom_data",
               "tag": "{uhcp_augmentselect:1b,augment:13s}"
             },

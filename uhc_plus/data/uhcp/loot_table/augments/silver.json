@@ -1025,82 +1025,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:golden_apple",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "!minecraft:consumable": {},
-                "!minecraft:food": {}
-              }
-            },
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:111s}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "target": "item_name",
-              "name": [
-                {
-                  "text": "Gapple Gap I",
-                  "color": "gray",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain 2",
-                    "color": "gray"
-                  },
-                  {
-                    "text": " Golden Apples",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ],
-              "mode": "replace_all"
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "slots": {
-                    "container.*": {
-                      "predicates": {
-                        "minecraft:custom_data": "{augment:111s}"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:shulker_box",
           "weight": 1,
           "functions": [
@@ -1705,6 +1629,14 @@
               "count": 1
             },
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
               "function": "minecraft:set_custom_data",
               "tag": "{uhcp_augmentselect:1b,augment:139s}"
             },
@@ -2245,6 +2177,15 @@
             {
               "function": "minecraft:set_count",
               "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
             },
             {
               "function": "minecraft:set_custom_data",

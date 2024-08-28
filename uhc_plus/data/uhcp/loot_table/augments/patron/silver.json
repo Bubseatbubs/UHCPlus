@@ -355,6 +355,15 @@
               "count": 1
             },
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
               "function": "minecraft:set_custom_data",
               "tag": "{uhcp_augmentselect:1b,augment:114s}"
             },
@@ -579,7 +588,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:126s}"
+              "tag": "{uhcp_augmentselect:1b,augment:133s}"
             },
             {
               "function": "minecraft:set_name",
@@ -690,7 +699,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:126s}"
+                        "minecraft:custom_data": "{augment:133s}"
                       }
                     }
                   }

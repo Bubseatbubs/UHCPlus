@@ -104,6 +104,14 @@
               "count": 1
             },
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
               "function": "minecraft:set_custom_data",
               "tag": "{uhcp_augmentselect:1b,augment:55s}"
             },
@@ -415,7 +423,10 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:hide_additional_tooltip": {}
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
               }
             },
             {
@@ -520,25 +531,45 @@
                 },
                 [
                   {
-                    "text": "Gain a",
+                    "text": "Gain a ",
                     "color": "gray"
                   },
                   {
-                    "text": " Leather Helmet, Lead, Saddle,",
+                    "text": "Leather Helmet",
                     "color": "white"
+                  },
+                  {
+                    "text": ", ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Lead",
+                    "color": "white"
+                  },
+                  {
+                    "text": ", ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Saddle",
+                    "color": "white"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "Horse Spawn Egg, ",
+                    "text": "Horse Spawn Egg",
                     "color": "white"
                   },
                   {
-                    "text": "and",
+                    "text": ", and ",
                     "color": "gray"
                   },
                   {
-                    "text": " 8 Cow Spawn Eggs",
+                    "text": "8 Cow Spawn Eggs",
                     "color": "white"
                   },
                   {
@@ -774,21 +805,33 @@
                 },
                 [
                   {
-                    "text": "Gain",
+                    "text": "Gain ",
                     "color": "gray"
                   },
                   {
-                    "text": " 12 Apples, 12 Sugar Cane",
+                    "text": "12 Apples",
                     "color": "white"
+                  },
+                  {
+                    "text": ", ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "12 Sugar Cane",
+                    "color": "white"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "and a",
+                    "text": "and a ",
                     "color": "gray"
                   },
                   {
-                    "text": " Diamond Shovel",
+                    "text": "Diamond Shovel",
                     "color": "white"
                   },
                   {
@@ -933,12 +976,32 @@
                 },
                 [
                   {
-                    "text": "Gain",
+                    "text": "Gain ",
                     "color": "gray"
                   },
                   {
-                    "text": " 15 TNT, 64 Redstone, Minecarts and Rails,",
+                    "text": "15 TNT",
                     "color": "white"
+                  },
+                  {
+                    "text": ", ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "64 Redstone",
+                    "color": "white"
+                  },
+                  {
+                    "text": ", ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Minecarts and Rails",
+                    "color": "white"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
                   }
                 ],
                 [
@@ -1124,7 +1187,7 @@
                 ],
                 [
                   {
-                    "text": "Blowing a",
+                    "text": "Blowing the",
                     "color": "gray"
                   },
                   {
@@ -1230,11 +1293,19 @@
                 },
                 [
                   {
-                    "text": "Gain 2",
+                    "text": "Gain 2 ",
                     "color": "gray"
                   },
                   {
-                    "text": " Wolf Spawn Eggs and 12 Bones",
+                    "text": "Wolf Spawn Eggs",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and 12 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Bones",
                     "color": "white"
                   },
                   {
@@ -1499,17 +1570,29 @@
                 },
                 [
                   {
-                    "text": "Gain an",
+                    "text": "Gain an ",
                     "color": "gray"
                   },
                   {
-                    "text": " Iron Pickaxe, Iron Axe,",
+                    "text": "Iron Pickaxe",
                     "color": "white"
+                  },
+                  {
+                    "text": ", ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Iron Axe",
+                    "color": "white"
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "and an ",
+                    "text": "and ",
                     "color": "gray"
                   },
                   {
@@ -1517,11 +1600,15 @@
                     "color": "white"
                   },
                   {
-                    "text": ". They all have",
+                    "text": " enchanted",
                     "color": "gray"
                   }
                 ],
                 [
+                  {
+                    "text": "with",
+                    "color": "gray"
+                  },
                   {
                     "text": "Efficiency I",
                     "color": "dark_purple"
@@ -1562,6 +1649,14 @@
             {
               "function": "minecraft:set_count",
               "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
             },
             {
               "function": "minecraft:set_custom_data",
@@ -1905,12 +2000,12 @@
                     "color": "yellow"
                   },
                   {
-                    "text": " for 30 seconds after killing any",
+                    "text": " for 30 seconds",
                     "color": "gray"
                   }
                 ],
                 {
-                  "text": "mob.",
+                  "text": "after killing any mob.",
                   "color": "gray"
                 }
               ],
@@ -1969,29 +2064,29 @@
                 },
                 [
                   {
-                    "text": "At 35 minutes, convert",
+                    "text": "At 35 minutes, convert ",
                     "color": "gray"
                   },
                   {
-                    "text": " Redstone",
+                    "text": "Redstone",
                     "color": "white"
                   }
                 ],
                 [
                   {
-                    "text": "and",
+                    "text": "and ",
                     "color": "gray"
                   },
                   {
-                    "text": " Redstone Blocks",
+                    "text": "Redstone Blocks",
                     "color": "white"
                   },
                   {
-                    "text": " into",
+                    "text": " into ",
                     "color": "gray"
                   },
                   {
-                    "text": " Absorption",
+                    "text": "Absorption",
                     "color": "yellow"
                   }
                 ],
@@ -2001,29 +2096,29 @@
                     "color": "yellow"
                   },
                   {
-                    "text": ". Gain 1",
+                    "text": ". Gain 1 ",
                     "color": "gray"
                   },
                   {
-                    "text": " Heart",
+                    "text": "Heart",
                     "color": "yellow"
                   },
                   {
-                    "text": " per 64",
+                    "text": " per 64 ",
                     "color": "gray"
                   },
                   {
-                    "text": " Redstone",
+                    "text": "Redstone",
                     "color": "white"
                   }
                 ],
                 [
                   {
-                    "text": "/ 8",
+                    "text": "/ 8 ",
                     "color": "gray"
                   },
                   {
-                    "text": " Redstone Blocks",
+                    "text": "Redstone Blocks",
                     "color": "white"
                   },
                   {
@@ -2087,21 +2182,21 @@
                 },
                 [
                   {
-                    "text": "At 35 minutes, convert each",
+                    "text": "At 35 minutes, convert each ",
                     "color": "gray"
                   },
                   {
-                    "text": " Bone",
+                    "text": "Bone",
                     "color": "white"
                   }
                 ],
                 [
                   {
-                    "text": "into 30 seconds of",
+                    "text": "into 30 seconds of ",
                     "color": "gray"
                   },
                   {
-                    "text": " Speed I",
+                    "text": "Speed I",
                     "color": "yellow"
                   },
                   {
@@ -2165,21 +2260,21 @@
                 },
                 [
                   {
-                    "text": "Gain",
+                    "text": "Gain ",
                     "color": "gray"
                   },
                   {
-                    "text": " Strength I",
+                    "text": "Strength I",
                     "color": "yellow"
                   },
                   {
-                    "text": " if you are at least 4 blocks",
+                    "text": " if you are within",
                     "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "near a teammate.",
+                    "text": "4 blocks of another teammate.",
                     "color": "gray"
                   }
                 ]
@@ -2226,6 +2321,15 @@
               "count": 1
             },
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_damage": 1,
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
               "function": "minecraft:set_custom_data",
               "tag": "{uhcp_augmentselect:1b,augment:39s}"
             },
@@ -2256,19 +2360,19 @@
                 },
                 [
                   {
-                    "text": "Gain a",
+                    "text": "Gain a ",
                     "color": "gray"
                   },
                   {
-                    "text": " Trident",
+                    "text": "Trident",
                     "color": "white"
                   },
                   {
-                    "text": " with",
+                    "text": " with ",
                     "color": "gray"
                   },
                   {
-                    "text": " Riptide II / Unbreaking II",
+                    "text": "Riptide II / Unbreaking II",
                     "color": "dark_purple"
                   },
                   {
@@ -2286,17 +2390,25 @@
                     "color": "gray"
                   },
                   {
-                    "text": " Respiration III,",
+                    "text": " Respiration III /",
                     "color": "dark_purple"
                   }
                 ],
                 [
                   {
-                    "text": "Aqua Affinity, and Depth Strider.",
+                    "text": "Aqua Affinity",
                     "color": "dark_purple"
                   },
                   {
-                    "text": " Start with",
+                    "text": ", and ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Depth Strider",
+                    "color": "dark_purple"
+                  },
+                  {
+                    "text": ". Start with",
                     "color": "gray"
                   }
                 ],
@@ -2549,7 +2661,13 @@
                 },
                 [
                   {
-                    "text": "When a player dies 10 blocks near you, heal",
+                    "text": "When a player dies within",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "10 blocks of you, heal",
                     "color": "gray"
                   },
                   {
@@ -2901,7 +3019,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:gold_nugget",
+          "name": "minecraft:iron_nugget",
           "weight": 1,
           "functions": [
             {
@@ -3136,6 +3254,14 @@
               "function": "minecraft:toggle_tooltips",
               "toggles": {
                 "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
               }
             },
             {
