@@ -3503,7 +3503,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:bundle",
+          "name": "minecraft:chest",
           "weight": 1,
           "functions": [
             {
