@@ -1,4 +1,4 @@
-#>  uhcp:augments/optionselected
+#>  uhcp:augments/select
 #   Reset player's inventory and give them a score based on their remaining item
 #
 # @within  uhcp:augments/validate
@@ -12,4 +12,6 @@ playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
 particle minecraft:totem_of_undying ~ ~ ~ 0.5 0.5 0.5 1 100 normal
 tellraw @a [{"selector":"@s","color":"blue"},{"text":" selected an augment!","color":"white"}]
 
-execute at @s store result score @s uhcp_augment run function uhcp:augments/assign
+execute in uhcp:main store result score @s uhcp_augment run function uhcp:augments/assign
+clear @s
+advancement revoke @s only uhcp:augments/chosen_item

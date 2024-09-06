@@ -193,6 +193,11 @@ item replace entity @a armor.head with minecraft:air
 item replace entity @a armor.chest with minecraft:air
 item replace entity @a armor.legs with minecraft:air
 item replace entity @a armor.feet with minecraft:air
+item replace entity @a player.crafting.0 with minecraft:air
+item replace entity @a player.crafting.1 with minecraft:air
+item replace entity @a player.crafting.2 with minecraft:air
+item replace entity @a player.crafting.3 with minecraft:air
+item replace entity @a player.cursor with minecraft:air
 item replace entity @a weapon.offhand with minecraft:air
 
 tag @a remove UHCP_DisableReset

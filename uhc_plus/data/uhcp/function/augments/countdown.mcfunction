@@ -24,7 +24,7 @@ execute if score %augment_countdown uhcp_game_time matches 80 as @a at @s run pl
 execute if score %augment_countdown uhcp_game_time matches 60 as @a at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 1 1
 execute if score %augment_countdown uhcp_game_time matches 40 as @a at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 1 1
 execute if score %augment_countdown uhcp_game_time matches 20 as @a at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 1 1
-execute if score %augment_countdown uhcp_game_time matches 1 as @a[gamemode=adventure] unless score @s uhcp_augment = @s uhcp_augment at @s run function uhcp:augments/autoselect
+execute if score %augment_countdown uhcp_game_time matches 1 as @a[gamemode=adventure] unless score @s uhcp_augment = @s uhcp_augment at @s run function uhcp:augments/auto_select
 
 execute if score %augment_countdown uhcp_game_time matches 1.. run return 0
 

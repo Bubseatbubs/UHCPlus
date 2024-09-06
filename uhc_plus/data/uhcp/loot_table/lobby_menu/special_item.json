@@ -43,6 +43,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "!minecraft:equippable": {},
                 "minecraft:profile": {
                   "id": [
                     1103181598,

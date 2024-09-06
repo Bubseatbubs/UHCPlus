@@ -14,7 +14,7 @@ attribute @s minecraft:block_break_speed modifier add uhcp:block_break_speed 1.2
 execute if score %night_vision uhcp_settings matches 1 run effect give @s minecraft:night_vision infinite 0 true
 
 # Select augment
-function uhcp:augments/autoselect
+function uhcp:augments/auto_select
 
 # Recipes and advancements
 function uhcp:start/advancements/reset

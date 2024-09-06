@@ -1,43 +1,46 @@
 #>  uhcp:augments/validate
-#   Ran when player selects an item (by checking if their inventory changed)
-#   System to detect if a player moved an item to their armor/offhand slot during selection
-#   Additionally checks if player throws an item out of their inventory
+#   Run when player selects an item (by checking if their inventory changed)
+#   System to detect if a player moved an item to their offhand slot during selection
+#   Additional checks and fallback strategy
+#   Fallback accounts for items thrown by player
 # @within  uhcp:augments/chosen_item
 
 #declare advancement uhcp:augments/chosen_item
 
-scoreboard players set @s uhcp_aug_validSelection 0
+# Case: item clicked on
+execute if items entity @s player.cursor * run return run function uhcp:augments/cursor
 
-# Case: reroll was selected; begin reroll process
-execute if items entity @s player.cursor *[minecraft:custom_data~{uhcp_reroll:1b}] run return run function uhcp:augments/reroll
+# Case: item moved to offhand slot
+execute if items entity @s weapon.offhand * run return run function uhcp:augments/offhand
 
-# Kill selection items
-kill @e[predicate=uhcp:augments/choice_items,distance=..4]
+# Case: augment selection item is swapped with glass pane in hotbar; return items to proper slots
+execute if items entity @s container.0 *[minecraft:custom_data~{uhcp_augSelect:1b}] run return run function uhcp:augments/return/0
+execute if items entity @s container.1 *[minecraft:custom_data~{uhcp_augSelect:1b}] run return run function uhcp:augments/return/1
+execute if items entity @s container.2 *[minecraft:custom_data~{uhcp_augSelect:1b}] run return run function uhcp:augments/return/2
+execute if items entity @s container.6 *[minecraft:custom_data~{uhcp_augSelect:1b}] run return run function uhcp:augments/return/6
+execute if items entity @s container.8 *[minecraft:custom_data~{uhcp_augSelect:1b}] run return run function uhcp:augments/return/8
+execute unless score %patrons uhcp_settings matches 1 if items entity @s container.7 *[minecraft:custom_data~{uhcp_augSelect:1b}] run return run function uhcp:augments/return/7
 
-# Case: player's offhand or armor slots are filled; return to player
-execute store success score @s[scores={uhcp_aug_validSelection=0}] uhcp_aug_validSelection if items entity @s armor.* #uhcp:wearable
-execute store success score @s[scores={uhcp_aug_validSelection=0}] uhcp_aug_validSelection if items entity @s weapon.offhand *
+# Case: inventory was changed in another manner; regenerate player inventory from scratch
+item replace entity @s player.cursor with minecraft:air
+item replace entity @s weapon.offhand with minecraft:air
+function uhcp:augments/generate/panes
 
-# Case: augment selection item is in slot containing black stained glass pane; return to proper slot
-execute unless items entity @s container.0 *[minecraft:custom_data~{uhcp_glass:1b}] if items entity @s container.0 * run scoreboard players set @s uhcp_aug_validSelection 2
-execute unless items entity @s container.1 *[minecraft:custom_data~{uhcp_glass:1b}] if items entity @s container.1 * run scoreboard players set @s uhcp_aug_validSelection 3
-execute unless items entity @s container.2 *[minecraft:custom_data~{uhcp_glass:1b}] if items entity @s container.2 * run scoreboard players set @s uhcp_aug_validSelection 4
-execute unless items entity @s container.6 *[minecraft:custom_data~{uhcp_glass:1b}] if items entity @s container.6 * run scoreboard players set @s uhcp_aug_validSelection 5
-execute unless items entity @s container.8 *[minecraft:custom_data~{uhcp_glass:1b}] if items entity @s container.8 * run scoreboard players set @s uhcp_aug_validSelection 6
+tag @s add UHCP_LoadAugment
+function uhcp:augments/current_store
+item replace entity @s[tag=!UHCP_AugmentRerollSlot1] hotbar.3 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.0
+item replace entity @s[tag=!UHCP_AugmentRerollSlot2] hotbar.4 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.1
+item replace entity @s[tag=!UHCP_AugmentRerollSlot3] hotbar.5 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.2
+execute if score %patrons uhcp_settings matches 1 run item replace entity @s hotbar.7 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.3
 
-# Case: clicked on glass pane
-execute if items entity @s player.cursor *[minecraft:custom_data~{uhcp_panes:1b}] run scoreboard players set @s uhcp_aug_validSelection 7
+item replace entity @s[tag=UHCP_AugmentRerollSlot1] hotbar.3 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.4
+item replace entity @s[tag=UHCP_AugmentRerollSlot2] hotbar.4 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.5
+item replace entity @s[tag=UHCP_AugmentRerollSlot3] hotbar.5 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.6
+tag @e remove UHCP_CurrentStoreAugment
+tag @s remove UHCP_LoadAugment
 
-# Case: inventory was changed in some manner that didn't involve clicking on a valid item; regenerate player inventory
-execute unless items entity @s[scores={uhcp_aug_validSelection=0}] player.cursor *[!minecraft:custom_data~{uhcp_panes:1b}] run scoreboard players set @s uhcp_aug_validSelection 8
+# Kill augment selection menu items
+kill @e[type=minecraft:item,predicate=uhcp:augments/choice_items,distance=..4]
 
-# If no cases were met, continue with optionselected, else handle case
-playsound minecraft:block.note_block.snare master @s[scores={uhcp_aug_validSelection=1..}] ~ ~ ~ 1 1 1
-execute as @s[scores={uhcp_aug_validSelection=0},tag=!UHCP_DisableChoose] run function uhcp:augments/optionselected
-execute as @s[scores={uhcp_aug_validSelection=1},tag=!UHCP_DisableChoose] run function uhcp:augments/return
-execute as @s[scores={uhcp_aug_validSelection=2..6},tag=!UHCP_DisableChoose] run function uhcp:augments/return/swap
-execute as @s[scores={uhcp_aug_validSelection=7},tag=!UHCP_DisableChoose] run function uhcp:augments/panes
-execute as @s[scores={uhcp_aug_validSelection=8},tag=!UHCP_DisableChoose] run function uhcp:augments/regenerate
-tag @s remove UHCP_DisableChoose
-
-advancement revoke @s only uhcp:augments/chosen_item
+# Finalize
+function uhcp:augments/retry

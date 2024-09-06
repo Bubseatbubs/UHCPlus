@@ -14,7 +14,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:214s}"
+              "tag": "{uhcp_augSelect:1b,augment:214s}"
             },
             {
               "function": "minecraft:set_name",
@@ -120,6 +120,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "!minecraft:equippable": {},
                 "minecraft:profile": {
                   "id": [
                     -1541302639,
@@ -142,7 +143,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:220s}"
+              "tag": "{uhcp_augSelect:1b,augment:220s}"
             },
             {
               "function": "minecraft:set_name",
@@ -265,7 +266,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:230s}"
+              "tag": "{uhcp_augSelect:1b,augment:230s}"
             },
             {
               "function": "minecraft:set_name",
@@ -371,7 +372,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:231s}"
+              "tag": "{uhcp_augSelect:1b,augment:231s}"
             },
             {
               "function": "minecraft:set_name",
@@ -451,7 +452,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:222s}"
+              "tag": "{uhcp_augSelect:1b,augment:222s}"
             },
             {
               "function": "minecraft:set_name",
@@ -563,7 +564,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:223s}"
+              "tag": "{uhcp_augSelect:1b,augment:223s}"
             },
             {
               "function": "minecraft:set_name",
@@ -661,7 +662,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:209s}"
+              "tag": "{uhcp_augSelect:1b,augment:209s}"
             },
             {
               "function": "minecraft:set_name",
@@ -743,7 +744,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:225s}"
+              "tag": "{uhcp_augSelect:1b,augment:225s}"
             },
             {
               "function": "minecraft:set_name",
@@ -869,7 +870,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:212s}"
+              "tag": "{uhcp_augSelect:1b,augment:212s}"
             },
             {
               "function": "minecraft:set_name",
@@ -952,7 +953,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:216s}"
+              "tag": "{uhcp_augSelect:1b,augment:216s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1026,8 +1027,23 @@
               "count": 1
             },
             {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:equippable": {},
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:227s}"
+              "tag": "{uhcp_augSelect:1b,augment:227s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1106,7 +1122,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:226s}"
+              "tag": "{uhcp_augSelect:1b,augment:226s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1175,7 +1191,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:224s}"
+              "tag": "{uhcp_augSelect:1b,augment:224s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1260,6 +1276,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "!minecraft:equippable": {},
                 "minecraft:unbreakable": {
                   "show_in_tooltip": false
                 }
@@ -1267,7 +1284,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:236s}"
+              "tag": "{uhcp_augSelect:1b,augment:236s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1350,7 +1367,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:203s}"
+              "tag": "{uhcp_augSelect:1b,augment:203s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1432,7 +1449,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:237s}"
+              "tag": "{uhcp_augSelect:1b,augment:237s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1564,7 +1581,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:238s}"
+              "tag": "{uhcp_augSelect:1b,augment:238s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1651,7 +1668,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:221s}"
+              "tag": "{uhcp_augSelect:1b,augment:221s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1725,6 +1742,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "!minecraft:equippable": {},
                 "minecraft:profile": {
                   "id": [
                     955755449,
@@ -1753,7 +1771,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:208s}"
+              "tag": "{uhcp_augSelect:1b,augment:208s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1862,7 +1880,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:232s}"
+              "tag": "{uhcp_augSelect:1b,augment:232s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1964,7 +1982,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:241s}"
+              "tag": "{uhcp_augSelect:1b,augment:241s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2048,7 +2066,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:242s}"
+              "tag": "{uhcp_augSelect:1b,augment:242s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2116,7 +2134,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:202s}"
+              "tag": "{uhcp_augSelect:1b,augment:202s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2228,7 +2246,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:218s}"
+              "tag": "{uhcp_augSelect:1b,augment:218s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2306,7 +2324,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:204s}"
+              "tag": "{uhcp_augSelect:1b,augment:204s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2372,7 +2390,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:239s}"
+              "tag": "{uhcp_augSelect:1b,augment:239s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2467,7 +2485,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:244s}"
+              "tag": "{uhcp_augSelect:1b,augment:244s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2553,7 +2571,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:219s}"
+              "tag": "{uhcp_augSelect:1b,augment:219s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2614,7 +2632,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:234s}"
+              "tag": "{uhcp_augSelect:1b,augment:234s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2686,7 +2704,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:235s}"
+              "tag": "{uhcp_augSelect:1b,augment:235s}"
             },
             {
               "function": "minecraft:toggle_tooltips",
@@ -2785,7 +2803,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:233s}"
+              "tag": "{uhcp_augSelect:1b,augment:233s}"
             },
             {
               "function": "minecraft:set_components",
@@ -2862,7 +2880,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:243s}"
+              "tag": "{uhcp_augSelect:1b,augment:243s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2931,7 +2949,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:245s}"
+              "tag": "{uhcp_augSelect:1b,augment:245s}"
             },
             {
               "function": "minecraft:set_name",
@@ -3026,7 +3044,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:246s}"
+              "tag": "{uhcp_augSelect:1b,augment:246s}"
             },
             {
               "function": "minecraft:set_name",

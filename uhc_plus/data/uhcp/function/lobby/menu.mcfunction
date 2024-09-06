@@ -7,6 +7,10 @@ execute if score @s uhcp_lobby_item matches 7 run item replace entity @s armor.h
 item replace entity @s armor.chest with minecraft:air
 item replace entity @s armor.legs with minecraft:air
 item replace entity @s armor.feet with minecraft:air
+item replace entity @s player.crafting.0 with minecraft:air
+item replace entity @s player.crafting.1 with minecraft:air
+item replace entity @s player.crafting.2 with minecraft:air
+item replace entity @s player.crafting.3 with minecraft:air
 item replace entity @s player.cursor with minecraft:air
 item replace entity @s weapon.offhand with minecraft:air
 execute at @s run kill @e[type=minecraft:item,distance=..4]

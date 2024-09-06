@@ -14,7 +14,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augmentselect:1b,augment:0s}"
+              "tag": "{uhcp_augSelect:1b,augment:0s}"
             },
             {
               "function": "minecraft:set_name",
