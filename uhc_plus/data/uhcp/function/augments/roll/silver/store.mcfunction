@@ -6,7 +6,7 @@ scoreboard players operation @s uhcp_team = @a[tag=UHCP_GeneratingAugments,limit
 team join no_collision @s
 
 # Roll patron augment
-function uhcp:augments/roll/silver/patron
+execute if score %patrons uhcp_settings matches 1 run function uhcp:augments/roll/silver/patron
 scoreboard players set @s uhcp_aug_choosingAugment 1
 
 # Roll silver augments
