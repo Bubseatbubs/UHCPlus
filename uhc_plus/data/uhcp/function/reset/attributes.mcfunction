@@ -13,6 +13,10 @@ attribute @s minecraft:max_health modifier remove uhcp:game_max_health
 # Given to all players at the start of the game
 attribute @s minecraft:block_break_speed modifier remove uhcp:block_break_speed
 
+# Augment selection interaction ranges
+attribute @s minecraft:block_interaction_range modifier remove uhcp:start_block_range
+attribute @s minecraft:entity_interaction_range modifier remove uhcp:start_entity_range
+
 # Player Scale
 # Currently used by: Prop Hunt, Lil'Bro, Lil'est Bro
 attribute @s minecraft:scale modifier remove uhcp:scale
@@ -54,3 +58,13 @@ attribute @s minecraft:fall_damage_multiplier modifier remove uhcp:titan_fall_da
 # Movement Speed
 # Currently used by: Boots of Swiftness (Armament)
 attribute @s minecraft:movement_speed modifier remove uhcp:movement_speed
+
+# Gravity globe
+attribute @s minecraft:gravity modifier remove uhcp:gravity_globe
+
+# Panda transformation attributes
+attribute @s minecraft:armor modifier remove uhcp:panda_armor
+attribute @s minecraft:scale modifier remove uhcp:panda_scale
+
+# Rabbit transformation block range
+attribute @s minecraft:block_interaction_range modifier remove uhcp:rabbit_block_range

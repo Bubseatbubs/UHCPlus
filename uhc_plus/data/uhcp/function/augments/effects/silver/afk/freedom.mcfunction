@@ -1,6 +1,5 @@
 execute at @s run kill @n[tag=UHCP_Lock,distance=..15]
-effect clear @s minecraft:mining_fatigue
-effect clear @s minecraft:weakness
+function uhcp:augments/countdown/interaction_range
 give @s minecraft:gold_ingot 24
 
 tellraw @s {"text":"You have been freed!","color":"yellow"}

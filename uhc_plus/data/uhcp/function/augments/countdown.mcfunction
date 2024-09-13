@@ -39,7 +39,7 @@ execute in uhcp:main run tp @e[tag=UHCP_Lock] 0 -63 0
 effect clear @a[gamemode=survival]
 effect give @a[gamemode=survival] minecraft:speed 15 0 false
 effect give @a[gamemode=survival] minecraft:resistance 120 4 false
-execute as @a[gamemode=survival] run attribute @s minecraft:block_break_speed modifier add uhcp:block_break_speed 1.2 add_multiplied_total
+execute as @a[gamemode=survival] run function uhcp:augments/countdown/attributes
 execute if score %night_vision uhcp_settings matches 1 run effect give @a[gamemode=survival] minecraft:night_vision infinite 0 true
 execute if entity @a[scores={uhcp_augment=25}] run function uhcp:augments/effects/gold/scavengerhunt/init
 

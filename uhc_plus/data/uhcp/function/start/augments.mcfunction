@@ -10,7 +10,7 @@ gamemode adventure @a[tag=!UHCP_Spectator]
 
 effect give @a[tag=!UHCP_Spectator] minecraft:resistance infinite 5 true
 effect give @a[tag=!UHCP_Spectator] minecraft:saturation infinite 255 true
-effect give @a[tag=!UHCP_Spectator] minecraft:weakness infinite 4 true
+execute as @a[tag=!UHCP_Spectator] run function uhcp:start/augments/attributes
 
 bossbar set uhcp:augment players @a
 
