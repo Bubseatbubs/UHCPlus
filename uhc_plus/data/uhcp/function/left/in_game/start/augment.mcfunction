@@ -1,4 +1,4 @@
-#>  uhcp:left/in_game/start/augment_select
+#>  uhcp:left/in_game/start/augment
 #   Runs for a player whom left during augment selection.
 #   Runs the effects that would've occurred if the player was in game when augment selection finished.
 #
@@ -14,7 +14,7 @@ function uhcp:augments/countdown/attributes
 execute if score %night_vision uhcp_settings matches 1 run effect give @s minecraft:night_vision infinite 0 true
 
 # Select augment
-function uhcp:augments/auto_select
+execute as @s[tag=UHCP_ChoosingItem] run function uhcp:augments/auto_select
 
 # Recipes and advancements
 function uhcp:start/advancements/reset
