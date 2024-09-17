@@ -1,4 +1,4 @@
-execute at @s run kill @n[tag=UHCP_Lock,distance=..15]
+execute at @s run kill @n[tag=UHCP_AFKLock,distance=..15]
 function uhcp:augments/countdown/interaction_range
 give @s minecraft:gold_ingot 24
 
