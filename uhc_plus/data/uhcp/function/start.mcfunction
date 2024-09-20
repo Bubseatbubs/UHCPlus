@@ -157,8 +157,7 @@ execute if score %random uhcp_aug_tier matches 1 store result score %tier uhcp_a
 # Effects
 effect clear @a
 effect give @a[tag=!UHCP_Spectator] minecraft:regeneration 10 5 true
-execute if score %night_vision uhcp_settings matches 1 run effect give @a minecraft:night_vision infinite 0 true
-execute unless score %night_vision uhcp_settings matches 1 run effect give @a[tag=UHCP_Spectator] minecraft:night_vision infinite 0 true
+function uhcp:start/night_vision
 
 # Reset attribute modifiers
 execute as @a run function uhcp:reset/attributes

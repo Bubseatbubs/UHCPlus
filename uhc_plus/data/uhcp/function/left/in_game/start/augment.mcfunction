@@ -5,8 +5,9 @@
 # @within  uhcp:left/in_game/alive
 
 gamemode survival @s
+execute on vehicle run tag @s add UHCP_VehicleLock
 ride @s dismount
-execute in uhcp:main run tp @e[tag=UHCP_Lock,predicate=uhcp:dimensions/minecraft] 0 -63 0
+execute as @e[tag=UHCP_VehicleLock] run function uhcp:left/in_game/start/vehicle
 
 effect clear @s
 execute if score %time uhcp_game_time matches ..2380 run function uhcp:left/in_game/start/effects
