@@ -3503,7 +3503,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:chest",
+          "name": "minecraft:bundle",
           "weight": 1,
           "functions": [
             {
@@ -3528,6 +3528,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "!minecraft:bundle_contents": {},
                 "minecraft:hide_additional_tooltip": {}
               }
             },
