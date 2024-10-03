@@ -1,7 +1,7 @@
 tag @s add UHCP_CurrentPhantomSaber
 particle minecraft:end_rod ~ ~ ~ 0.01 0.01 0.01 0.01 1 normal
 execute as @e[tag=UHCP_PhantomDestination] if score @s uhcp_id = @n[tag=UHCP_CurrentPhantomSaber] uhcp_id run tag @s add UHCP_CurrentDestination
-execute as @e[tag=UHCP_CurrentDestination] at @s run tp @s ~ ~ ~ ~15 ~
+execute as @e[tag=UHCP_CurrentDestination] at @s run rotate @s ~15 ~
 execute facing entity @n[tag=UHCP_CurrentDestination] feet run tp @s ^ ^ ^0.5 ~ 90
 execute as @e[tag=UHCP_PhantomDestination,distance=..0.35] if score @s uhcp_id = @n[tag=UHCP_CurrentPhantomSaber] uhcp_id run tag @n[tag=UHCP_CurrentPhantomSaber] add UHCP_MadeToDestination
 tag @s remove UHCP_CurrentPhantomSaber

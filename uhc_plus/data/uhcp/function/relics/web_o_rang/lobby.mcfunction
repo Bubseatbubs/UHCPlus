@@ -11,5 +11,5 @@ execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
 
 # Owner is set to player
 scoreboard players operation @e[tag=UHCP_New,sort=nearest,limit=3] uhcp_id = @s uhcp_id
-execute as @e[tag=UHCP_New] at @s rotated as @p[tag=UHCP_Owner] run tp @s ~ ~ ~ ~ ~
+execute as @e[tag=UHCP_New] rotated as @p[tag=UHCP_Owner] run rotate @s ~ ~
 tag @e remove UHCP_New

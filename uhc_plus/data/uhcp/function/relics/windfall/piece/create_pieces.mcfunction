@@ -2,15 +2,15 @@ playsound minecraft:item.mace.smash_ground_heavy master @a[distance=..16] ~ ~ ~ 
 tag @s add UHCP_Owner
 
 function uhcp:relics/windfall/piece/init
-execute as @n[tag=UHCP_New] at @s rotated as @n[tag=UHCP_Owner] run tp @s ~ ~ ~ 60 0
+execute as @n[tag=UHCP_New] rotated as @n[tag=UHCP_Owner] run rotate @s 60 0
 tag @e remove UHCP_New
 
 function uhcp:relics/windfall/piece/init
-execute as @n[tag=UHCP_New] at @s rotated as @n[tag=UHCP_Owner] run tp @s ~ ~ ~ 180 0
+execute as @n[tag=UHCP_New] rotated as @n[tag=UHCP_Owner] run rotate @s 180 0
 tag @e remove UHCP_New
 
 function uhcp:relics/windfall/piece/init
-execute as @n[tag=UHCP_New] at @s rotated as @n[tag=UHCP_Owner] run tp @s ~ ~ ~ 300 0
+execute as @n[tag=UHCP_New] rotated as @n[tag=UHCP_Owner] run rotate @s 300 0
 tag @e remove UHCP_New
 
 execute if score @s uhcp_aug_tier matches 1.. run function uhcp:relics/windfall/piece/create_pieces_2

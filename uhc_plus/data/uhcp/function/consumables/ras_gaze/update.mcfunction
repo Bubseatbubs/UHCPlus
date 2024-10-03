@@ -8,7 +8,7 @@ execute at @s[scores={uhcp_timer=5}] as @a[distance=..32] at @s run playsound mi
 execute if score @s uhcp_timer matches 20 run particle minecraft:flash ~ ~ ~ 1 1 1 1 5 force
 execute unless score @s uhcp_timer matches 20.. run return 0
 
-tp @s ~ ~ ~ ~5 0
+rotate @s ~5 0
 execute as @a[team=!grace_period,distance=..36,gamemode=survival] unless score @s uhcp_team = @n[tag=UHCP_CurrentRaLaser] uhcp_team run tag @s add UHCP_RaTarget
 execute as @e[predicate=uhcp:targetable,distance=..36] if score @s uhcp_team = @n[tag=UHCP_CurrentRaLaser] uhcp_team run tag @s add UHCP_RaImmune
 execute as @a[distance=..36,gamemode=survival] if score @s uhcp_id = @n[tag=UHCP_CurrentRaLaser] uhcp_id run tag @s remove UHCP_RaTarget

@@ -7,7 +7,7 @@ execute at @s[scores={uhcp_timer=5}] as @a[distance=..32] at @s run playsound mi
 execute if score @s uhcp_timer matches 20 run particle minecraft:flash ~ ~ ~ 1 1 1 1 5 force
 execute unless score @s uhcp_timer matches 20.. run return 0
 
-tp @s ~ ~ ~ ~5 0
+rotate @s ~5 0
 execute as @a[distance=..36,gamemode=survival] run tag @s add UHCP_LaserTarget
 execute facing entity @p[tag=UHCP_LaserTarget] feet run tp @s ^ ^ ^0.24
 

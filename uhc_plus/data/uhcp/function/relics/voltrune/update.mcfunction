@@ -9,7 +9,7 @@ execute at @s[tag=UHCP_VoltruneActive] as @e[type=!#uhcp:inanimate_mobs,distance
 execute at @s[tag=UHCP_VoltruneActive] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] if score @s uhcp_team = @n[tag=UHCP_CurrentFluxFactor] uhcp_team run effect give @s minecraft:jump_boost 1 0 false
 
 tag @s[tag=!UHCP_VoltruneActive,predicate=uhcp:not_moving] add UHCP_VoltruneActive
-tp @s[tag=UHCP_VoltruneActive] ~ ~ ~ ~5 ~
+rotate @s[tag=UHCP_VoltruneActive] ~5 ~
 
 execute if score @s uhcp_timer matches 3.. positioned ~ ~0.6 ~ run particle minecraft:enchant ~ ~1 ~ -0.1 -0.1 -0.1 1 10 normal
 execute if score @s uhcp_timer matches 3.. positioned ~ ~0.6 ~ run particle minecraft:enchant ~ ~1 ~ 6 6 6 10 35 normal

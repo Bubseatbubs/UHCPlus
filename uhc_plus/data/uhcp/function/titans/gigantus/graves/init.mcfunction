@@ -11,5 +11,3 @@ execute at @e[tag=UHCP_GraveMarker,tag=UHCP_New] run playsound minecraft:block.d
 execute at @e[tag=UHCP_GraveMarker,tag=UHCP_New] run particle minecraft:block{block_state:"minecraft:chiseled_deepslate"} ~0.5 ~0.5 ~0.5 0.5 0.5 0.5 0.1 25 normal
 execute at @e[tag=UHCP_GraveMarker,tag=UHCP_New] run particle minecraft:end_rod ~0.5 ~0.5 ~0.5 0.6 0.6 0.6 0.1 70 normal
 tag @e[tag=UHCP_GraveMarker,tag=UHCP_New] remove UHCP_New
-
-
