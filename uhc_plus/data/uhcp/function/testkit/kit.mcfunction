@@ -1,3 +1,4 @@
+# Test kit
 clear @s
 item replace entity @s container.0 with minecraft:diamond_sword[minecraft:enchantments={levels:{"minecraft:sharpness":3}}]
 item replace entity @s container.1 with minecraft:diamond_pickaxe[minecraft:enchantments={levels:{"minecraft:efficiency":1}}]
@@ -10,8 +11,6 @@ item replace entity @s container.7 with minecraft:cobblestone 64
 item replace entity @s container.8 with minecraft:golden_apple 12
 item replace entity @s container.27 with minecraft:arrow 12
 item replace entity @s container.35 with minecraft:golden_carrot 64
-
-effect give @s minecraft:regeneration 5 10 true
 
 loot replace entity @s container.9 loot uhcp:relics/buzzburst
 loot replace entity @s container.10 loot uhcp:relics/dragons_protection
@@ -42,7 +41,6 @@ item replace entity @s armor.legs with minecraft:diamond_leggings[minecraft:ench
 item replace entity @s armor.feet with minecraft:diamond_boots[minecraft:enchantments={levels:{"minecraft:protection":2}}]
 item replace entity @s weapon.offhand with minecraft:shield
 
-tellraw @a [{"selector":"@s","color":"gold"},{"text":" was given a Test Kit!","color":"gray"}]
-scoreboard players reset @s uhcp_testkit
+effect give @s minecraft:regeneration 5 10 true
 
-tag @s add UHCP_Operator
+tellraw @a [{"selector":"@s","color":"gold"},{"text":" received a ","color":"gray"},{"text":"Test Kit","color":"white"},{"text":"!","color":"gray"}]

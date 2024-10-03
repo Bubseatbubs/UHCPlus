@@ -1,5 +1,5 @@
 scoreboard players add @s uhcp_timer 1
-execute on passengers at @s run tp @s ~ ~ ~ ~30 ~
+execute on passengers at @s run rotate @s ~30 0
 tp @s[scores={uhcp_timer=..35}] ^ ^ ^0.25
 tp @s[scores={uhcp_timer=35..70}] ^ ^ ^-0.25
 execute unless block ~ ~ ~ #uhcp:no_hitbox_blocks run scoreboard players set @s uhcp_timer 35

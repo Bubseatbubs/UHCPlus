@@ -21,7 +21,9 @@ function uhcp:start/advancements/reset_all
 scoreboard players set %augment_countdown uhcp_game_time 900
 
 # Determine augment tier
-function uhcp:start/augments/tier
+execute if score %tier uhcp_aug_tier matches 0 run execute as @a[tag=!UHCP_Spectator] run function uhcp:augments/generate/silver
+execute if score %tier uhcp_aug_tier matches 1 run execute as @a[tag=!UHCP_Spectator] run function uhcp:augments/generate/gold
+execute if score %tier uhcp_aug_tier matches 2 run execute as @a[tag=!UHCP_Spectator] run function uhcp:augments/generate/prismatic
 
 # Augment selection glass panes and inventory
 item replace entity @a[tag=!UHCP_Spectator] hotbar.0 with minecraft:black_stained_glass_pane[minecraft:custom_data={uhcp_augPane:1b},minecraft:item_name='{"text":"Select an Augment!","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1

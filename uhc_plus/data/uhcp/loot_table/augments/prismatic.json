@@ -64,20 +64,19 @@
                     "color": "white"
                   },
                   {
-                    "text": ",",
-                    "color": "gray",
-                    "bold": true
-                  }
-                ],
-                [
-                  {
-                    "text": " and essentials. After 20 minutes, gain the",
+                    "text": ", and essentials.",
                     "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "materials needed to craft an",
+                    "text": "After 20 minutes, gain the materials",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "needed to craft an",
                     "color": "gray"
                   },
                   {
@@ -3041,6 +3040,12 @@
             {
               "function": "minecraft:set_count",
               "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {}
+              }
             },
             {
               "function": "minecraft:set_custom_data",

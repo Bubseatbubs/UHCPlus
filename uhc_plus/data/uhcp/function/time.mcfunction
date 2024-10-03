@@ -66,8 +66,8 @@ execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan
 execute as @e[type=!minecraft:player,tag=UHCP_Titan] at @s run function uhcp:titans/update
 
 # Testkit
-execute as @a[gamemode=survival,scores={testkit=1..}] run function uhcp:testkit/verify
-execute as @a[scores={uhcp_testkit=1}] run function uhcp:testkit/kit
+execute as @a[scores={testkit=1..}] run function uhcp:testkit/verify
+execute as @a[scores={uhcp_testkit=1}] run function uhcp:testkit/operator
 
 # Consumables
 execute as @a[tag=UHCP_ListeningToPigstep] at @s run function uhcp:consumables/groovy_disc/update
