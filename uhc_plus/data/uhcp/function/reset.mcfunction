@@ -94,6 +94,17 @@ scoreboard players reset %end uhcp_initStatus
 scoreboard players reset %day uhcp_initStatus
 scoreboard players reset %game uhcp_initStatus
 scoreboard players reset %lava_start uhcp_initStatus
+scoreboard players reset %lobby_firework uhcp_initStatus
+scoreboard players reset %lobby_item_0 uhcp_initStatus
+scoreboard players reset %lobby_item_1 uhcp_initStatus
+scoreboard players reset %lobby_item_2 uhcp_initStatus
+scoreboard players reset %lobby_item_3 uhcp_initStatus
+scoreboard players reset %lobby_item_4 uhcp_initStatus
+scoreboard players reset %lobby_item_5 uhcp_initStatus
+scoreboard players reset %lobby_item_6 uhcp_initStatus
+scoreboard players reset %lobby_item_7 uhcp_initStatus
+scoreboard players reset %lobby_item_8 uhcp_initStatus
+scoreboard players reset %lobby_speed uhcp_initStatus
 scoreboard players reset %time uhcp_initStatus
 scoreboard players reset %time_freeze uhcp_initStatus
 

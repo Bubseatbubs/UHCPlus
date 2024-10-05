@@ -7,8 +7,7 @@ execute if score %patrons uhcp_settings matches 1 run scoreboard players enable 
 execute if score %team uhcp_settings matches 1 if score %players_select_teams uhcp_settings matches 1 run function uhcp:lobby/team
 
 # Lobby parkour
-execute unless score %lobby_parkour uhcp_game_time matches 1.. at @e[tag=UHCP_LobbyOrigin,limit=1] align y run function uhcp:lobby/parkour/red_candles
-execute if score %lobby_parkour uhcp_game_time matches 20 at @e[tag=UHCP_LobbyOrigin,limit=1] align y run function uhcp:lobby/parkour/yellow_candles
+function uhcp:lobby/parkour
 scoreboard players remove %lobby_parkour uhcp_game_time 1
 
 # Skip Travel
@@ -25,3 +24,18 @@ execute as @e[tag=UHCP_LobbyCredits] at @s run rotate @s ~1 ~
 # Kill arrows in ground
 execute unless score %lobby_arrows uhcp_game_time matches 1.. run function uhcp:lobby/kill_arrows
 scoreboard players remove %lobby_arrows uhcp_game_time 1
+
+# Lobby items
+execute if score %lobby_item_0 uhcp_initStatus matches 1 run function uhcp:lobby/item/reset/fishing_rod
+function uhcp:lobby/item/glow_bow/status
+execute if score %lobby_item_2 uhcp_initStatus matches 1 run function uhcp:lobby/item/reset/slowness_potion
+execute if score %lobby_item_3 uhcp_initStatus matches 1 run function uhcp:lobby/item/reset/goat_horn
+execute if score %lobby_item_4 uhcp_initStatus matches 1 run function uhcp:lobby/item/reset/firework_rocket_ball
+execute if score %lobby_item_5 uhcp_initStatus matches 1 run function uhcp:lobby/item/reset/firework_rocket_star
+function uhcp:lobby/item/knockback_stick/status
+execute if score %lobby_item_7 uhcp_initStatus matches 1 run function uhcp:lobby/item/reset/player_head
+execute if score %lobby_item_8 uhcp_initStatus matches 1 run function uhcp:lobby/item/reset/snowball
+
+# Lobby effects
+execute if score %lobby_firework uhcp_initStatus matches 1 run function uhcp:lobby/effect/reset_firework
+function uhcp:lobby/effect/speed/status

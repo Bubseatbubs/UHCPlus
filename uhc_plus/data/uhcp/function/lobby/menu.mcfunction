@@ -65,4 +65,4 @@ item replace entity @s inventory.25 with minecraft:black_stained_glass_pane[mine
 item replace entity @s inventory.26 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
 
 tag @s remove UHCP_DisableReset
-advancement revoke @s only uhcp:update_menu
+advancement revoke @s only uhcp:lobby/update_menu

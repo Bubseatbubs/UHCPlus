@@ -43,7 +43,6 @@ execute if score %augment_countdown uhcp_game_time matches 1.. run function uhcp
 
 # Lobby
 execute unless score %game uhcp_initStatus matches 1 run function uhcp:lobby
-execute as @a if score @s uhcp_lobby_setItem = @s uhcp_lobby_setItem run function uhcp:lobby/item
 
 # Update summoned entities (does not execute as every entity to be more efficient with more entities; still inefficient)
 execute if entity @e[tag=UHCP_Summon] run function uhcp:entity/update

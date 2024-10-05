@@ -131,9 +131,13 @@
                   ]
                 },
                 "minecraft:enchantment_glint_override": true,
-                "minecraft:can_place_on": {},
-                "minecraft:hide_additional_tooltip": {},
-                "minecraft:hide_tooltip": {}
+                "minecraft:can_place_on": {
+                  "predicates": [
+                    {}
+                  ],
+                  "show_in_tooltip": false
+                },
+                "minecraft:hide_additional_tooltip": {}
               }
             }
           ],
@@ -184,9 +188,13 @@
                   ]
                 },
                 "minecraft:enchantment_glint_override": true,
-                "minecraft:can_place_on": {},
-                "minecraft:hide_additional_tooltip": {},
-                "minecraft:hide_tooltip": {}
+                "minecraft:can_place_on": {
+                  "predicates": [
+                    {}
+                  ],
+                  "show_in_tooltip": false
+                },
+                "minecraft:hide_additional_tooltip": {}
               }
             }
           ],
@@ -252,11 +260,25 @@
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
-                {
-                  "text": "Shoots Arrows that make people Glow...",
-                  "color": "gray",
-                  "italic": true
-                }
+                [
+                  {
+                    "text": "Shoots arrows that make",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "people ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "glow",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": "..."
+                  }
+                ]
               ],
               "mode": "replace_all"
             },
@@ -285,7 +307,8 @@
                     "id": "minecraft:spectral_arrow",
                     "count": 1
                   }
-                ]
+                ],
+                "minecraft:hide_additional_tooltip": {}
               }
             }
           ],
