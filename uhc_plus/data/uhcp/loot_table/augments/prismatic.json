@@ -399,16 +399,25 @@
                 ],
                 [
                   {
-                    "text": "Start with",
+                    "text": "Start with permanent ",
                     "color": "gray"
                   },
                   {
-                    "text": " permanent Fire Resistance and Speed",
+                    "text": "Fire Resistance",
+                    "color": "yellow"
+                  }
+                ],
+                [
+                  {
+                    "text": "and ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Speed",
                     "color": "yellow"
                   },
                   {
-                    "text": ".",
-                    "color": "gray"
+                    "text": "."
                   }
                 ]
               ],
@@ -906,9 +915,11 @@
                 ],
                 [
                   {
-                    "text": "After you use it, permanently gain ",
+                    "text": "After you use it, permanently gain",
                     "color": "gray"
-                  },
+                  }
+                ],
+                [
                   {
                     "text": "25% increased armor",
                     "color": "light_purple"
@@ -975,22 +986,49 @@
                 },
                 [
                   {
-                    "text": "Gain a",
+                    "text": "Gain a ",
                     "color": "gray"
                   },
                   {
-                    "text": " Brewing Stand, 3 Blaze Rods, 4 Nether Wart,",
+                    "text": "Brewing Stand",
                     "color": "white"
+                  },
+                  {
+                    "text": ", 3 "
+                  },
+                  {
+                    "text": "Blaze Rods",
+                    "color": "white"
+                  },
+                  {
+                    "text": ", 4 "
+                  },
+                  {
+                    "text": "Nether Wart",
+                    "color": "white"
+                  },
+                  {
+                    "text": ","
                   }
                 ],
                 [
                   {
-                    "text": "2 Glistening Melons, and 1 Magma Cream",
+                    "text": "2 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Glistening Melons",
                     "color": "white"
                   },
                   {
-                    "text": ".",
-                    "color": "gray"
+                    "text": ", and 1 "
+                  },
+                  {
+                    "text": "Magma Cream",
+                    "color": "white"
+                  },
+                  {
+                    "text": "."
                   }
                 ]
               ],
@@ -1065,12 +1103,15 @@
                 },
                 [
                   {
-                    "text": "Gain",
+                    "text": "Gain 5 ",
                     "color": "gray"
                   },
                   {
-                    "text": " 5 Firework Rockets and ",
+                    "text": "Firework Rockets",
                     "color": "white"
+                  },
+                  {
+                    "text": " and "
                   },
                   {
                     "text": "Armored Wings",
@@ -1144,16 +1185,25 @@
                 },
                 [
                   {
-                    "text": "Start with permanent",
+                    "text": "Start with permanent ",
                     "color": "gray"
                   },
                   {
-                    "text": " Speed I and Jump Boost II",
+                    "text": "Speed I",
+                    "color": "yellow"
+                  }
+                ],
+                [
+                  {
+                    "text": "and ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Jump Boost II",
                     "color": "yellow"
                   },
                   {
-                    "text": ".",
-                    "color": "gray"
+                    "text": "."
                   }
                 ]
               ],
@@ -1703,11 +1753,11 @@
                   }
                 ],
                 {
-                  "text": "50% of your attacks cause it to strike for",
+                  "text": "50% of your attacks cause it to",
                   "color": "gray"
                 },
                 {
-                  "text": "additional damage.",
+                  "text": "strike for additional damage.",
                   "color": "gray"
                 }
               ],
@@ -1901,11 +1951,11 @@
                 },
                 [
                   {
-                    "text": "Gain a",
+                    "text": "Gain a ",
                     "color": "gray"
                   },
                   {
-                    "text": " Suspicious Bamboo Sugar",
+                    "text": "Suspicious Bamboo Sugar",
                     "color": "white"
                   },
                   {
@@ -1915,17 +1965,11 @@
                 ],
                 [
                   {
-                    "text": "Eating these transforms you into",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "a",
+                    "text": "Eating these transforms you into a ",
                     "color": "gray"
                   },
                   {
-                    "text": " Panda",
+                    "text": "Panda",
                     "color": "blue"
                   },
                   {
@@ -1943,7 +1987,12 @@
                     "color": "light_purple"
                   },
                   {
-                    "text": ", gain another after 5 minutes.",
+                    "text": ","
+                  }
+                ],
+                [
+                  {
+                    "text": "gain another after 5 minutes.",
                     "color": "gray"
                   }
                 ]
@@ -3080,13 +3129,7 @@
                     "color": "light_purple"
                   },
                   {
-                    "text": " and",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "5 ",
+                    "text": " and 5 ",
                     "color": "gray"
                   },
                   {

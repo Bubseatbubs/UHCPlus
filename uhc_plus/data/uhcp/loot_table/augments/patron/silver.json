@@ -836,20 +836,26 @@
                 },
                 [
                   {
-                    "text": "Gain a",
+                    "text": "Gain a ",
                     "color": "gray"
                   },
                   {
-                    "text": " Bow and 10 arrows",
+                    "text": "Bow",
                     "color": "white"
                   },
                   {
-                    "text": ". Your Arrow",
-                    "color": "gray"
+                    "text": " and 10 "
+                  },
+                  {
+                    "text": "Arrows",
+                    "color": "white"
+                  },
+                  {
+                    "text": ". Your"
                   }
                 ],
                 {
-                  "text": "limit is increased to 20.",
+                  "text": "Arrow limit is increased by 8.",
                   "color": "gray"
                 }
               ],

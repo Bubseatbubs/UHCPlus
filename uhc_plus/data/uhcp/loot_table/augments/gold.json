@@ -142,18 +142,23 @@
                 },
                 [
                   {
-                    "text": "Your Armor is increased by 35%.",
+                    "text": "Your Armor is increased by 35%. ",
                     "color": "gray"
-                  },
-                  {
-                    "text": " You cannot equip",
-                    "color": "dark_red",
-                    "bold": true
                   }
                 ],
                 [
                   {
-                    "text": "Diamond or Netherite Armor.",
+                    "text": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "You cannot equip Diamond ",
+                    "color": "dark_red",
+                    "bold": true
+                  },
+                  {
+                    "text": "or Netherite Armor.",
                     "color": "dark_red",
                     "bold": true
                   }
@@ -468,11 +473,11 @@
                   }
                 ],
                 {
-                  "text": "20% of your attacks cause it to strike for",
+                  "text": "20% of your attacks cause it to",
                   "color": "gray"
                 },
                 {
-                  "text": "additional damage.",
+                  "text": "strike for additional damage.",
                   "color": "gray"
                 }
               ],
@@ -742,7 +747,11 @@
                 ],
                 [
                   {
-                    "text": "Depth Strider II Diamond Boots"
+                    "text": "Depth Strider II "
+                  },
+                  {
+                    "text": "Diamond Boots",
+                    "color": "white"
                   },
                   {
                     "text": ".",
@@ -1607,7 +1616,7 @@
                 ],
                 [
                   {
-                    "text": "with",
+                    "text": "with ",
                     "color": "gray"
                   },
                   {
@@ -3296,19 +3305,13 @@
                     "color": "dark_purple"
                   },
                   {
-                    "text": " Diamond Helmet, Leggings, and Boots",
-                    "color": "white",
-                    "extra": [
-                      {
-                        "text": " with",
-                        "color": "gray"
-                      }
-                    ]
+                    "text": " Diamond Leggings, Boots, and Helmet",
+                    "color": "white"
                   }
                 ],
                 [
                   {
-                    "text": "and a ",
+                    "text": "along with a ",
                     "color": "gray"
                   },
                   {
@@ -3328,14 +3331,14 @@
                 ],
                 [
                   {
-                    "text": "Your armor has Curse of Binding",
+                    "text": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "Your armor has Curse of Binding.",
                     "color": "dark_red",
-                    "extra": [
-                      {
-                        "text": ".",
-                        "color": "gray"
-                      }
-                    ]
+                    "bold": true
                   }
                 ]
               ],
@@ -3776,13 +3779,13 @@
                 ],
                 [
                   {
-                    "text": "list of 7 random items. Collecting 5 of the items",
+                    "text": "list of 7 random items. Collecting 5 of the",
                     "color": "gray"
                   }
                 ],
                 [
                   {
-                    "text": "grants you 10",
+                    "text": "item grants you 10",
                     "color": "gray"
                   },
                   {

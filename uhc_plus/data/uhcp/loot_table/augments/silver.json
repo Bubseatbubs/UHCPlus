@@ -200,8 +200,7 @@
                 [
                   {
                     "text": "Every minute, heal",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   },
                   {
                     "text": " 0.5🖤",
@@ -357,8 +356,7 @@
                 [
                   {
                     "text": "(While",
-                    "color": "dark_gray",
-                    "italic": true
+                    "color": "dark_gray"
                   },
                   {
                     "text": " Invisible",
@@ -502,11 +500,11 @@
                 },
                 [
                   {
-                    "text": "Gain",
+                    "text": "Gain 32 ",
                     "color": "gray"
                   },
                   {
-                    "text": " 32 Gold Ingots",
+                    "text": "Gold Ingots",
                     "color": "white"
                   },
                   {
@@ -804,30 +802,42 @@
                 },
                 [
                   {
-                    "text": "Gain",
+                    "text": "Gain 3 ",
                     "color": "gray"
                   },
                   {
-                    "text": " 3 Slime Balls, 3 Snow Balls,",
+                    "text": "Slime Balls",
                     "color": "white"
+                  },
+                  {
+                    "text": ", 3 "
+                  },
+                  {
+                    "text": "Snow Balls",
+                    "color": "white"
+                  },
+                  {
+                    "text": ","
                   }
                 ],
                 [
                   {
-                    "text": "3 Clay Balls,",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and ",
+                    "text": "3 ",
                     "color": "gray"
                   },
                   {
-                    "text": "3 Ender Pearls",
+                    "text": "Clay Balls",
                     "color": "white"
                   },
                   {
-                    "text": ".",
-                    "color": "gray"
+                    "text": ", and 3 "
+                  },
+                  {
+                    "text": "Ender Pearls",
+                    "color": "white"
+                  },
+                  {
+                    "text": "."
                   }
                 ],
                 {
@@ -886,28 +896,35 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
                 [
                   {
-                    "text": "Gain an",
+                    "text": "Gain an ",
                     "color": "gray"
                   },
                   {
-                    "text": " Invisibility Potion",
+                    "text": "Invisibility Potion",
                     "color": "white"
                   },
                   {
-                    "text": " and",
-                    "color": "gray"
+                    "text": " and "
                   },
                   {
-                    "text": " Speed Potion",
+                    "text": "Speed Potion",
                     "color": "white"
                   },
                   {
-                    "text": ". (8 minute duration)",
-                    "color": "gray"
+                    "text": "."
                   }
                 ],
+                {
+                  "text": "(8 minute duration)",
+                  "color": "gray"
+                },
                 [
                   {
                     "text": "You cannot be seen by ",
@@ -918,8 +935,7 @@
                     "color": "light_purple"
                   },
                   {
-                    "text": ".",
-                    "color": "gray"
+                    "text": "."
                   }
                 ]
               ],
@@ -1137,18 +1153,18 @@
                 },
                 [
                   {
-                    "text": "Gain ",
+                    "text": "Gain 16 ",
                     "color": "gray"
                   },
                   {
-                    "text": "16 Cobwebs",
+                    "text": "Cobwebs",
                     "color": "white"
                   },
                   {
-                    "text": ", "
+                    "text": ", 2 "
                   },
                   {
-                    "text": "2 Slime Blocks",
+                    "text": "Slime Blocks",
                     "color": "white"
                   },
                   {
@@ -1561,20 +1577,31 @@
                     "color": "gray"
                   },
                   {
-                    "text": "Water Bucket, Lava Bucket,",
+                    "text": "Water Bucket",
                     "color": "white"
+                  },
+                  {
+                    "text": ", "
+                  },
+                  {
+                    "text": "Lava Bucket",
+                    "color": "white"
+                  },
+                  {
+                    "text": ","
                   }
                 ],
                 [
                   {
-                    "text": "empty Bucket"
+                    "text": "empty Bucket",
+                    "color": "white"
                   },
                   {
-                    "text": ",",
+                    "text": ", 12 ",
                     "color": "gray"
                   },
                   {
-                    "text": " 12 paper"
+                    "text": "paper"
                   },
                   {
                     "text": ", and",
@@ -1583,7 +1610,11 @@
                 ],
                 [
                   {
-                    "text": "2 leather",
+                    "text": "2 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "leather",
                     "color": "white"
                   },
                   {
@@ -1850,26 +1881,28 @@
                 },
                 [
                   {
-                    "text": "Gain ",
+                    "text": "Gain 2 ",
                     "color": "gray"
                   },
                   {
-                    "text": "2 Netherite Ingots",
+                    "text": "Netherite Ingots",
                     "color": "white"
                   },
                   {
-                    "text": " and",
-                    "color": "gray"
+                    "text": " and"
                   }
                 ],
                 [
                   {
-                    "text": "2 Upgrade Templates",
+                    "text": "2 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Upgrade Templates",
                     "color": "white"
                   },
                   {
-                    "text": ".",
-                    "color": "gray"
+                    "text": "."
                   }
                 ]
               ],
@@ -1929,11 +1962,11 @@
                 },
                 [
                   {
-                    "text": "Gain ",
+                    "text": "Gain a ",
                     "color": "gray"
                   },
                   {
-                    "text": "a Potion",
+                    "text": "Potion",
                     "color": "white"
                   },
                   {
@@ -2684,8 +2717,7 @@
                 [
                   {
                     "text": "Create ",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   },
                   {
                     "text": "a Village",
@@ -2753,8 +2785,7 @@
                 [
                   {
                     "text": "Start with ",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   },
                   {
                     "text": "permanent Dolphin's Grace",
@@ -2768,8 +2799,7 @@
                 [
                   {
                     "text": "Gain a Diamond Helmet with ",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   },
                   {
                     "text": "Respiration III",
@@ -2855,19 +2885,16 @@
                 [
                   {
                     "text": "Whenever you kill a hostile",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   }
                 ],
                 {
                   "text": "mob, it has a 10% chance of",
-                  "color": "gray",
-                  "italic": false
+                  "color": "gray"
                 },
                 {
                   "text": "dropping a ",
                   "color": "gray",
-                  "italic": false,
                   "extra": [
                     {
                       "text": "Golden Apple",
@@ -2942,8 +2969,7 @@
                 [
                   {
                     "text": "Gain 2",
-                    "color": "gray",
-                    "italic": false
+                    "color": "gray"
                   },
                   {
                     "text": " Lesser Duplicators",
@@ -3038,7 +3064,13 @@
                     "color": "light_purple"
                   },
                   {
-                    "text": ", gain another after 5 minutes.",
+                    "text": ",",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "gain another after 5 minutes.",
                     "color": "gray"
                   }
                 ]
@@ -3150,10 +3182,13 @@
                     "color": "light_purple"
                   },
                   {
-                    "text": ", gain another after 3 minutes.",
-                    "color": "gray"
+                    "text": ","
                   }
-                ]
+                ],
+                {
+                  "text": "gain another after 3 minutes.",
+                  "color": "gray"
+                }
               ],
               "mode": "replace_all"
             }

@@ -50,7 +50,7 @@
                 ],
                 [
                   {
-                    "text": " 2 empty 🖤",
+                    "text": "2 empty 🖤",
                     "color": "red"
                   },
                   {
@@ -880,12 +880,12 @@
                     "color": "white"
                   },
                   {
-                    "text": ". Your Arrow",
+                    "text": ". Your",
                     "color": "gray"
                   }
                 ],
                 {
-                  "text": "limit is increased to 32.",
+                  "text": "Arrow limit is increased by 20.",
                   "color": "gray"
                 }
               ],
