@@ -5,5 +5,6 @@ playsound minecraft:block.vault.insert_item master @s ~ ~ ~ 1 1 1
 playsound minecraft:block.vault.activate master @s ~ ~ ~ 1 1 1
 
 tag @s add UHCP_DisableReset
+item replace entity @s armor.head with minecraft:air
 function uhcp:lobby/menu/relic_testing
 tag @s remove UHCP_DisableReset
