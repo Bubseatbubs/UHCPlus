@@ -1,9 +1,6 @@
-##
-# Generate augment choices
-##
+# Generate lobby menu
 tag @s add UHCP_DisableReset
-execute unless score @s uhcp_lobby_item matches 7 run item replace entity @s armor.head with minecraft:air
-execute if score @s uhcp_lobby_item matches 7 run item replace entity @s armor.head with minecraft:player_head[minecraft:item_name='{"text":"Crewmate"}',minecraft:lore=['{"text":"STOP POSTING ABOUT AMONG US"}'],minecraft:profile={id:[I;1103181598,442909615,-1944221175,-54642410],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5YmNlNzM2YTRmZDc5M2VlMmEzODI3NTZhMjUzZjkyY2E3ZDdlYWMwMzFlNDViYTk3YWQwNmNlODYzZGQ0YiJ9fX0="}]}] 1
+function uhcp:lobby/menu/head
 item replace entity @s armor.chest with minecraft:air
 item replace entity @s armor.legs with minecraft:air
 item replace entity @s armor.feet with minecraft:air
@@ -15,25 +12,14 @@ item replace entity @s player.cursor with minecraft:air
 item replace entity @s weapon.offhand with minecraft:air
 execute at @s run kill @e[type=minecraft:item,distance=..4]
 
-# Relic Testing Chamber
-execute as @s[tag=UHCP_RelicTestingChamber] run function uhcp:lobby/relic_testing/menu
-
 # Create Player Hotbar
-execute unless score %team uhcp_settings matches 1 run item replace entity @s hotbar.0 with minecraft:air
-execute unless score %players_select_teams uhcp_settings matches 1 run item replace entity @s hotbar.0 with minecraft:air
-execute if score %team uhcp_settings matches 1 if score %players_select_teams uhcp_settings matches 1 run loot replace entity @s hotbar.0 loot uhcp:lobby_menu/team
-execute unless score %patrons uhcp_settings matches 1 run item replace entity @s hotbar.1 with minecraft:air
-execute if score %patrons uhcp_settings matches 1 run loot replace entity @s hotbar.1 loot uhcp:lobby_menu/patron
+function uhcp:lobby/menu/team
+function uhcp:lobby/menu/patron
 loot replace entity @s hotbar.2 loot uhcp:lobby_menu/skip_travel
-loot replace entity @s hotbar.4 loot uhcp:lobby_menu/special_item
+function uhcp:lobby/menu/special_item
 loot replace entity @s hotbar.6 loot uhcp:lobby_menu/settings_display
-execute unless score @s uhcp_ready matches 2 run loot replace entity @s hotbar.7 loot uhcp:lobby_menu/spectate
-execute if score @s uhcp_ready matches 2 run loot replace entity @s hotbar.7 loot uhcp:lobby_menu/stop_spectate
-execute if score @s uhcp_ready matches 1..2 run loot replace entity @s hotbar.8 loot uhcp:lobby_menu/ready
-execute unless score @s uhcp_ready matches 1.. run loot replace entity @s hotbar.8 loot uhcp:lobby_menu/not_ready
-
-execute as @s[tag=!UHCP_RelicTestingChamber] run item replace entity @s hotbar.3 with minecraft:air
-execute as @s[tag=!UHCP_RelicTestingChamber] run item replace entity @s hotbar.5 with minecraft:air
+function uhcp:lobby/menu/spectate
+function uhcp:lobby/menu/ready
 
 # Fill Rest of Player Inventory
 item replace entity @s inventory.0 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1

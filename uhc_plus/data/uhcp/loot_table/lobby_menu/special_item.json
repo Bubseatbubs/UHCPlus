@@ -351,24 +351,6 @@
               }
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:air",
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_scores",
-                "entity": "this",
-                "scores": {
-                  "uhcp_lobby_item": {
-                    "min": 0
-                  }
-                }
-              }
-            }
-          ]
         }
       ]
     }
