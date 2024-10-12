@@ -159,14 +159,11 @@ gamemode adventure @a
 scoreboard players set @a uhcp_ready 0
 tag @a add UHCP_DisableReset
 
-execute unless score %team uhcp_settings matches 1 run item replace entity @a hotbar.0 with minecraft:air
-execute unless score %players_select_teams uhcp_settings matches 1 run item replace entity @a hotbar.0 with minecraft:air
-execute if score %team uhcp_settings matches 1 if score %players_select_teams uhcp_settings matches 1 run loot replace entity @a hotbar.0 loot uhcp:lobby_menu/team
-execute unless score %patrons uhcp_settings matches 1 run item replace entity @a hotbar.1 with minecraft:air
-execute if score %patrons uhcp_settings matches 1 run loot replace entity @a hotbar.1 loot uhcp:lobby_menu/patron
+function uhcp:lobby/menu/team_all
+function uhcp:lobby/menu/patron_all
 loot replace entity @a hotbar.2 loot uhcp:lobby_menu/skip_travel
 item replace entity @a hotbar.3 with minecraft:air
-loot replace entity @a hotbar.4 loot uhcp:lobby_menu/special_item
+item replace entity @a hotbar.4 with minecraft:air
 item replace entity @a hotbar.5 with minecraft:air
 loot replace entity @a hotbar.6 loot uhcp:lobby_menu/settings_display
 loot replace entity @a hotbar.7 loot uhcp:lobby_menu/spectate
