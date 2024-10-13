@@ -1,3 +1,4 @@
+# Minimum of 3 minutes
 effect clear @s minecraft:resistance
 
 scoreboard players set @s uhcp_game_time -1
