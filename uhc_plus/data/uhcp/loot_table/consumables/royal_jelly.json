@@ -53,7 +53,8 @@
               "target": "custom_name",
               "name": {
                 "text": "Royal Jelly",
-                "color": "light_purple"
+                "color": "light_purple",
+                "italic": false
               }
             },
             {

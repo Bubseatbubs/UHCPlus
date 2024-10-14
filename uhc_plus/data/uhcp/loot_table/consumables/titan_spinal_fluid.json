@@ -12,7 +12,8 @@
               "target": "custom_name",
               "name": {
                 "text": "Titan Spinal Fluid",
-                "color": "light_purple"
+                "color": "light_purple",
+                "italic": false
               }
             },
             {
