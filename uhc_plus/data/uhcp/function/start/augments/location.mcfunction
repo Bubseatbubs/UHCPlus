@@ -1,6 +1,7 @@
 # At player's location
-execute if block ~ ~ ~ minecraft:powder_snow run tp @s ~ ~1 ~
-function uhcp:start/augments/lock
-ride @s mount @n[tag=UHCP_Lock]
-particle minecraft:trial_spawner_detection_ominous ~ ~ ~ 0.5 0.5 0.5 0.001 100 normal
 forceload add ~ ~
+execute if block ~ ~ ~ minecraft:powder_snow run tp @s ~ ~1 ~
+tag @s add UHCP_CurrentLock
+function uhcp:start/augments/lock
+tag @s remove UHCP_CurrentLock
+particle minecraft:trial_spawner_detection_ominous ~ ~ ~ 0.5 0.5 0.5 0.001 100 normal

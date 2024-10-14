@@ -18,7 +18,7 @@ bossbar set uhcp:augment players @a
 function uhcp:start/advancements/reset_all
 
 # Start augment selection countdown 
-scoreboard players set %augment_countdown uhcp_game_time 900
+scoreboard players set %augment_countdown uhcp_game_time 901
 
 # Determine augment tier
 execute if score %tier uhcp_aug_tier matches 0 run execute as @a[tag=!UHCP_Spectator] run function uhcp:augments/generate/silver

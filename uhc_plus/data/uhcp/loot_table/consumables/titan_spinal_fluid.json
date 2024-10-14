@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "target": "item_name",
+              "target": "custom_name",
               "name": {
                 "text": "Titan Spinal Fluid",
                 "color": "light_purple"

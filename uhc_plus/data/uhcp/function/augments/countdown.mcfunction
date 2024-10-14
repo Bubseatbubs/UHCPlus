@@ -5,7 +5,7 @@
 # @within  uhcp:tick
 
 scoreboard players remove %augment_countdown uhcp_game_time 1
-execute if score %augment_countdown uhcp_game_time matches ..890 as @a[gamemode=adventure] at @s run ride @s mount @n[tag=UHCP_Lock,distance=..2]
+execute if score %augment_countdown uhcp_game_time matches ..897 as @a[gamemode=adventure] at @s run ride @s mount @n[tag=UHCP_Lock,distance=..20]
 execute if score %augment_countdown uhcp_game_time matches 880 as @a[gamemode=adventure] at @s run forceload remove ~ ~
 
 # If all players selected an augment, skip to 5 seconds left
