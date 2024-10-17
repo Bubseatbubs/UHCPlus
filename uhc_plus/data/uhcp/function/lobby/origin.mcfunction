@@ -5,16 +5,16 @@ function uhcp:lobby/parkour
 execute positioned ^57 ^7 ^32 run function uhcp:lobby/relic_testing/entrance
 
 # Lobby items
-execute if score %lobby_item_0 uhcp_initStatus matches 1 run function uhcp:lobby/item/reset/fishing_rod
+function uhcp:lobby/item/fishing_rod/check
 function uhcp:lobby/item/glow_bow/status
-execute if score %lobby_item_2 uhcp_initStatus matches 1 run function uhcp:lobby/item/reset/slowness_potion
-execute if score %lobby_item_3 uhcp_initStatus matches 1 run function uhcp:lobby/item/reset/goat_horn
-execute if score %lobby_item_4 uhcp_initStatus matches 1 run function uhcp:lobby/item/reset/firework_rocket_ball
-execute if score %lobby_item_5 uhcp_initStatus matches 1 run function uhcp:lobby/item/reset/firework_rocket_star
+function uhcp:lobby/item/slowness_potion/check
+function uhcp:lobby/item/goat_horn/check
+function uhcp:lobby/item/firework_rocket_ball/check
+function uhcp:lobby/item/firework_rocket_star/check
 function uhcp:lobby/item/knockback_stick/status
-execute if score %lobby_item_7 uhcp_initStatus matches 1 run function uhcp:lobby/item/reset/player_head
-execute if score %lobby_item_8 uhcp_initStatus matches 1 run function uhcp:lobby/item/reset/snowball
+execute if score %lobby_item_7 uhcp_initStatus matches 1 run function uhcp:lobby/item/player_head/reset
+execute if score %lobby_item_8 uhcp_initStatus matches 1 run function uhcp:lobby/item/snowball/reset
 
 # Lobby effects
-execute if score %lobby_firework uhcp_initStatus matches 1 run function uhcp:lobby/effect/reset_firework
+execute if score %lobby_firework uhcp_initStatus matches 1 run function uhcp:lobby/effect/firework/reset
 function uhcp:lobby/effect/speed/status
