@@ -27,6 +27,7 @@ execute if score %augment_countdown uhcp_game_time matches 1.. run return 0
 
 # Runs once countdown reaches 0; initializes the game
 scoreboard players set %time uhcp_initStatus 1
+scoreboard players set %update_display uhcp_game_time 0
 
 gamemode survival @a[gamemode=adventure]
 bossbar set uhcp:augment players

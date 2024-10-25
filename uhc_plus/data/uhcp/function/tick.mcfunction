@@ -12,8 +12,11 @@ execute if entity @a[tag=UHCP_Died] run function uhcp:kill/death/time
 # After time starts moving
 execute if score %time uhcp_initStatus matches 1 run function uhcp:time
 
+# Augment countdown
+execute if score %augment_countdown uhcp_game_time matches 1.. run function uhcp:augments/countdown
+
 # Display time
-execute if score %game uhcp_initStatus matches 1 run function uhcp:timer/update_display
+execute if score %game uhcp_initStatus matches 1 run function uhcp:display/update
 
 # Lava
 execute if score %lava_start uhcp_initStatus matches 1 run function uhcp:lava/run
@@ -37,9 +40,6 @@ scoreboard players enable @a settings_team
 
 # Augment routines (that should be in tick function)
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
-
-# Augment countdown
-execute if score %augment_countdown uhcp_game_time matches 1.. run function uhcp:augments/countdown
 
 # Lobby
 execute unless score %game uhcp_initStatus matches 1 run function uhcp:lobby

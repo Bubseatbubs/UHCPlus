@@ -1,4 +1,4 @@
-# Add Scoreboard Objectives
+# Scoreboard objectives
 # Triggers
 scoreboard objectives add augments trigger
 scoreboard objectives add lobby trigger
@@ -9,7 +9,7 @@ scoreboard objectives add testkit trigger
 scoreboard objectives add top trigger
 scoreboard objectives add upgrade trigger
 
-# Settings Triggers
+# Settings triggers
 scoreboard objectives add settings trigger
 scoreboard objectives add settings_augments trigger
 scoreboard objectives add settings_border trigger
@@ -18,7 +18,7 @@ scoreboard objectives add settings_other trigger
 scoreboard objectives add settings_player trigger
 scoreboard objectives add settings_team trigger
 
-# Scoreboard Objectives
+# Objectives
 scoreboard objectives add uhcp_arrowCount dummy
 scoreboard objectives add uhcp_aug_cd_firstOption dummy
 scoreboard objectives add uhcp_aug_cd_secondOption dummy
@@ -43,7 +43,7 @@ scoreboard objectives add uhcp_augment dummy
 scoreboard objectives add uhcp_count dummy
 scoreboard objectives add uhcp_death deathCount
 scoreboard objectives add uhcp_deathTime dummy
-scoreboard objectives add uhcp_game_display dummy
+scoreboard objectives add uhcp_game_display dummy {"text":"Game Stats","color":"aqua","bold":true}
 scoreboard objectives add uhcp_game_id dummy
 scoreboard objectives add uhcp_game_time dummy
 scoreboard objectives add uhcp_health health {"text":"Health","color":"red"}
@@ -97,14 +97,14 @@ scoreboard objectives add uhcp_transformDuration dummy
 scoreboard objectives setdisplay below_name uhcp_health
 scoreboard objectives setdisplay list uhcp_health
 
-# Add Display Timer Names
-scoreboard players set %display uhcp_game_display 59999969
-scoreboard players display name %display uhcp_game_display {"text":"Time:","color":"gold"}
-scoreboard objectives modify uhcp_game_display displayname {"text":"Game Stats","color":"aqua","bold":true}
+# Game display
+scoreboard players set %time uhcp_game_display 2
+scoreboard players display name %time uhcp_game_display {"text":"Time:","color":"gold"}
 
+scoreboard players set %border uhcp_game_display 1
 scoreboard players display name %border uhcp_game_display {"text":"Border Size:","color":"gold"}
 
-scoreboard players set %players uhcp_game_display 0
+scoreboard players set %players uhcp_game_display -1
 scoreboard players display name %players uhcp_game_display {"text":"Players Left:","color":"gold"}
 
 # Add bossbars

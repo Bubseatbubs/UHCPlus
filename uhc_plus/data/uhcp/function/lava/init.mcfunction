@@ -24,6 +24,8 @@ scoreboard players set %lava_secondary uhcp_initStatus 1
 # Set height scoreboards
 scoreboard players set %lava uhcp_lava_currentHeight -64
 scoreboard players set %lava uhcp_lava_currentLayers 0
+scoreboard players display name %lava_height uhcp_game_display {"text":"Lava Height:","color":"gold"}
+function uhcp:display/lava
 
 # Replace bordering non-solid blocks with barriers
 scoreboard players set %lava_barrier uhcp_lava_time 10

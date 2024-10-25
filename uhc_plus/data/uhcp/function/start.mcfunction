@@ -19,6 +19,7 @@ scoreboard players set %game uhcp_initStatus 1
 scoreboard players set %time uhcp_initStatus 0
 scoreboard players set %time_freeze uhcp_initStatus 0
 scoreboard players set %titans uhcp_game_time 6000
+scoreboard players set %update_display uhcp_game_time 11
 execute if score %dimension uhcp_settings matches ..-1 run scoreboard players set %dimension uhcp_settings 0
 execute as @a unless score @s uhcp_aug_patron = @s uhcp_aug_patron run scoreboard players set @s uhcp_aug_patron 8
 scoreboard players set @a uhcp_aug_choosingAugment 0
@@ -28,11 +29,11 @@ scoreboard players operation @a uhcp_game_id = %global uhcp_game_id
 scoreboard players set @a uhcp_game_time -1
 
 # Display statistics
-scoreboard players display numberformat %display uhcp_game_display fixed {"text":"0:00"}
-scoreboard players operation %border uhcp_game_display = %border_size uhcp_settings
-execute store result score %players uhcp_game_display if entity @a[tag=!UHCP_Spectator]
-execute if score %players uhcp_game_display matches 6.. run scoreboard players display numberformat %players uhcp_game_display styled {"color":"white"}
-execute if score %players uhcp_game_display matches ..5 run scoreboard players display numberformat %players uhcp_game_display styled {"color":"red"}
+scoreboard players display numberformat %time uhcp_game_display fixed {"text":"0:00"}
+execute store result storage uhcp:display border.size int 1 run scoreboard players get %border_size uhcp_settings
+function uhcp:display/border with storage uhcp:display border
+execute store result score %players uhcp_initStatus if entity @a[tag=!UHCP_Spectator]
+function uhcp:display/players
 scoreboard objectives setdisplay sidebar uhcp_game_display
 
 # Reset scoreboards
@@ -86,7 +87,6 @@ execute store result storage uhcp:border distance int 1 run scoreboard players g
 function uhcp:start/border with storage uhcp:border
 
 # Allow one-player games to not end
-execute store result score %players uhcp_initStatus if entity @a[tag=!UHCP_Spectator]
 execute if score %players uhcp_initStatus matches ..1 run scoreboard players set %end uhcp_initStatus 1
 
 # Team logic

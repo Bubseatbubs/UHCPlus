@@ -6,7 +6,7 @@ execute if score @s uhcp_settings matches 122..125 run function uhcp:settings/bo
 execute if score %border_shrink_speed uhcp_settings matches ..1119 run scoreboard players set %border_shrink_speed uhcp_settings 1200
 
 # Notify player of time
-scoreboard players operation %time_calc uhcp_settings = %border_shrink_speed uhcp_settings
+scoreboard players operation %time_calcH uhcp_game_time = %border_shrink_speed uhcp_settings
 function uhcp:settings/time_calc
 function uhcp:settings/border/shrink_speed/notify
 

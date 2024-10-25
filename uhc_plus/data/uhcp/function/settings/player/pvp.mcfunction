@@ -9,6 +9,6 @@ execute if score %pvp uhcp_settings matches ..-1 run scoreboard players set %pvp
 scoreboard players operation %pvp_retain uhcp_settings = %pvp uhcp_settings
 
 # Notify player of time
-scoreboard players operation %time_calc uhcp_settings = %pvp uhcp_settings
+scoreboard players operation %time_calcH uhcp_game_time = %pvp uhcp_settings
 function uhcp:settings/time_calc
 function uhcp:settings/player/pvp/notify
