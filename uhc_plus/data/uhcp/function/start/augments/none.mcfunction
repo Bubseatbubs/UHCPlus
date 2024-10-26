@@ -4,7 +4,6 @@ title @a title {"text":"GO!","color":"gold"}
 execute as @a at @s run playsound minecraft:item.goat_horn.sound.1 master @s ~ ~ ~ 1 1 1
 scoreboard players set %augment_countdown uhcp_game_time 0
 scoreboard players set %time uhcp_initStatus 1
-scoreboard players set %update_display uhcp_game_time 0
 clear @a
 gamemode survival @a[tag=!UHCP_Spectator]
 execute as @a[tag=!UHCP_Spectator] at @s if biome ~ ~-1 ~ #uhcp:snowy run loot replace entity @s armor.feet loot uhcp:snow_boots

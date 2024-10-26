@@ -19,7 +19,7 @@ scoreboard players set %game uhcp_initStatus 1
 scoreboard players set %time uhcp_initStatus 0
 scoreboard players set %time_freeze uhcp_initStatus 0
 scoreboard players set %titans uhcp_game_time 6000
-scoreboard players set %update_display uhcp_game_time 11
+scoreboard players set %update_display uhcp_game_time 10
 execute if score %dimension uhcp_settings matches ..-1 run scoreboard players set %dimension uhcp_settings 0
 execute as @a unless score @s uhcp_aug_patron = @s uhcp_aug_patron run scoreboard players set @s uhcp_aug_patron 8
 scoreboard players set @a uhcp_aug_choosingAugment 0
