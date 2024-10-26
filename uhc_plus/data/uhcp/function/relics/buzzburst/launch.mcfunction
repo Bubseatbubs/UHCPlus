@@ -2,18 +2,10 @@ summon minecraft:block_display ~ ~ ~ {teleport_duration:1,Silent:1b,HasVisualFir
 ride @n[tag=UHCP_BuzzburstDisplay,tag=UHCP_New] mount @n[tag=UHCP_CurrentBuzzburst]
 
 # Launch Buzzburst
-execute store result score @s uhcp_motion_x1 run data get entity @s Pos[0] 1000
-execute store result score @s uhcp_motion_y1 run data get entity @s Pos[1] 1000
-execute store result score @s uhcp_motion_z1 run data get entity @s Pos[2] 1000
-
-execute rotated as @p[tag=UHCP_Owner] run tp @s ^ ^ ^0.2 ~ ~
-
-execute store result score @s uhcp_motion_x2 run data get entity @s Pos[0] 1000
-execute store result score @s uhcp_motion_y2 run data get entity @s Pos[1] 1000
-execute store result score @s uhcp_motion_z2 run data get entity @s Pos[2] 1000
-
-execute store result entity @s Motion[0] double 0.01 run scoreboard players operation @s uhcp_motion_x2 -= @s uhcp_motion_x1
-execute store result entity @s Motion[1] double 0.01 run scoreboard players operation @s uhcp_motion_y2 -= @s uhcp_motion_y1
-execute store result entity @s Motion[2] double 0.01 run scoreboard players operation @s uhcp_motion_z2 -= @s uhcp_motion_z1
+execute as @e[tag=UHCP_Motion,limit=1] at @s rotated as @p[tag=UHCP_Owner] run tp @s ^ ^ ^0.1
+execute store result entity @s Motion[0] double 0.00002 run data get entity @e[tag=UHCP_Motion,limit=1] Pos[0] 1000000
+execute store result entity @s Motion[1] double 0.00002 run data get entity @e[tag=UHCP_Motion,limit=1] Pos[1] 1000000
+execute store result entity @s Motion[2] double 0.00002 run data get entity @e[tag=UHCP_Motion,limit=1] Pos[2] 1000000
+execute in uhcp:main run tp @e[tag=UHCP_Motion] 0.0 0.0 0.0
 
 tag @s remove UHCP_CurrentBuzzburst
