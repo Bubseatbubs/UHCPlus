@@ -36,7 +36,7 @@ execute if score @s uhcp_augment matches 237 run return run function uhcp:augmen
 execute if score @s uhcp_augment matches 238 run return run function uhcp:augments/effects/prismatic/relicmaster
 execute if score @s uhcp_augment matches 239 run return run function uhcp:augments/effects/prismatic/midastouch
 execute if score @s uhcp_augment matches 241 run return run function uhcp:augments/effects/prismatic/thinkfast
-execute if score @s uhcp_augment matches 242 run return run loot give @s loot uhcp:augments/diamond_grab_bag
+execute if score @s uhcp_augment matches 242 run return run return run function uhcp:augments/effects/prismatic/diamondgrabbag
 execute if score @s uhcp_augment matches 243 run return run loot give @s loot uhcp:radiant_relics
 execute if score @s uhcp_augment matches 244 run return run function uhcp:augments/effects/prismatic/hedgefund
 execute if score @s uhcp_augment matches 245 run return run function uhcp:augments/effects/prismatic/immovableobject
