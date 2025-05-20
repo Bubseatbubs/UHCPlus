@@ -1,0 +1,1 @@
+# TODO: Create custom load functions to reset all scoreboard objectives and initialie the datapack

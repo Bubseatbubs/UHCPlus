@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "uhcp:desert_outpost",
+      "weight": 19
+    },
+    {
+      "structure": "uhcp:desert_outpost_rare",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 25314168,
+    "separation": 14,
+    "spacing": 40
+  }
+}

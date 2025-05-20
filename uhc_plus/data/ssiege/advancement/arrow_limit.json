@@ -1,0 +1,69 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "uhcp_leave": {
+                  "min": 1000
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%time"
+              },
+              "score": "uhcp_initStatus"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%arrow_limit"
+              },
+              "score": "uhcp_arrowCount"
+            },
+            "range": {
+              "min": 0,
+              "max": 2368
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "minecraft:player",
+                "gamemode": [
+                  "survival"
+                ]
+              }
+            }
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "uhcp:non_tipped_arrows"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "uhcp:arrow_limit/defer"
+  }
+}

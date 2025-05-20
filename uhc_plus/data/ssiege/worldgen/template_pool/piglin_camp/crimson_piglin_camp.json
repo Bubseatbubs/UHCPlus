@@ -1,0 +1,15 @@
+{
+  "name": "uhcp:piglin_camp",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "uhcp:piglin_camp/crimson_piglin_camp",
+        "projection": "rigid",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

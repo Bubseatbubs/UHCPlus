@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#minecraft:is_overworld", 
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none",
+  "start_pool": "uhcp:blossom_skyship",
+  "size": 1,
+  "project_start_to_heightmap":"WORLD_SURFACE",
+  "start_height": {
+    "absolute": 24
+  },
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
+}

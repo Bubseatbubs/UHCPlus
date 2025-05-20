@@ -1,0 +1,1 @@
+TODO: Remake all ported loot tables from uhcp

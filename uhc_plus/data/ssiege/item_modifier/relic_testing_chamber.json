@@ -1,0 +1,27 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    {
+        "text": ""
+    },
+    [
+      {
+        "text": "Relic Testing Chamber:",
+        "color": "dark_red",
+        "italic": false
+      },
+      {
+        "text": " In this area, Relics",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    {
+      "text": "have no Cooldown and may be slightly modified.",
+      "color": "gray",
+      "italic": false
+    }
+  ],
+  "mode": "append"
+}

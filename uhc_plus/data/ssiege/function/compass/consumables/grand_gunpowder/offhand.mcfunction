@@ -1,0 +1,3 @@
+execute as @s[tag=UHCP_Explode] run return run scoreboard players reset @s uhcp_leave
+item replace entity @s weapon.offhand with minecraft:air
+function uhcp:consumables/grand_gunpowder/init

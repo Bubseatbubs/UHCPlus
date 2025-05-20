@@ -1,0 +1,18 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:player",
+    "equipment": {
+      "head": {
+        "items": "minecraft:netherite_helmet",
+        "predicates": {
+          "minecraft:damage": {
+            "durability": 407
+          },
+          "minecraft:custom_data": "{uhcp_relic_id:9b}"
+        }
+      }
+    }
+  }
+}

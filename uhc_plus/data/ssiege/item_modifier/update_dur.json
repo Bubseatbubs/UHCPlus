@@ -1,0 +1,62 @@
+[
+  {
+    "function": "minecraft:set_damage",
+    "damage": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "%damage"
+      },
+      "score": "uhcp_aug_durability",
+      "scale": 0.00001
+    },
+    "add": true
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:consumable": {
+        "consume_seconds": 2147483647,
+        "animation": "none",
+        "has_consume_particles": false
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "%current_damage"
+          },
+          "score": "uhcp_aug_durability"
+        },
+        "range": {
+          "min": 90,
+          "max": 110
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:consumable": {}
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "%damage"
+          },
+          "score": "uhcp_aug_durability"
+        },
+        "range": -1000000
+      }
+    ]
+  }
+]

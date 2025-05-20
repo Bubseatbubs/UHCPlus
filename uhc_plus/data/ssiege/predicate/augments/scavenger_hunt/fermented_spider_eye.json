@@ -1,0 +1,29 @@
+[
+  {
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "slots": {
+            "container.*": {
+              "items": "minecraft:fermented_spider_eye"
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "slots": {
+            "weapon.offhand": {
+              "items": "minecraft:fermented_spider_eye"
+            }
+          }
+        }
+      }
+    ]
+  }
+]
