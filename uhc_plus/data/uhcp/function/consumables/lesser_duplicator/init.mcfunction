@@ -1,4 +1,3 @@
-data modify entity @n[type=minecraft:item,tag=UHCP_DuplicatorItem] Item.count set value 1
 tag @e remove UHCP_DuplicatorItem
 
 playsound minecraft:entity.breeze.death master @s ~ ~ ~ 1 0.5 1
