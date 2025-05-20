@@ -1,6 +1,6 @@
 execute unless score %difficulty uhcp_settings matches 1.. run return run tellraw @s [{"text":"Difficulty:","color":"white","bold":true},{"text":" Easy","color":"gray","bold":false}]
 execute if score %difficulty uhcp_settings matches 1 run return run tellraw @s [{"text":"Difficulty:","color":"white","bold":true},{"text":" Normal","color":"red","bold":false}]
-execute if score %difficulty uhcp_settings matches 2 run tellraw @s [{"text":"Difficulty:","color":"white","bold":true},{"text":" Hard","color":"dark_red","bold":false}]
+execute if score %difficulty uhcp_settings matches 2 run return run tellraw @s [{"text":"Difficulty:","color":"white","bold":true},{"text":" Hard","color":"dark_red","bold":false}]
 execute if score %difficulty uhcp_settings matches 3 run tellraw @s [{"text":"Difficulty:","color":"white","bold":true},{"text":" Peaceful","color":"aqua","bold":false}]
 
 #execute store result score %diff uhcp_settings run difficulty

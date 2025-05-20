@@ -55,8 +55,8 @@ team empty no_collision
 team empty red
 team empty yellow
 
-# Reset Titans
-function uhcp:reset/titans
+# Remove bossbars
+execute if score %global uhcp_id matches 1.. run function uhcp:reset/bossbar
 
 # Reset any players in a current state
 execute as @a[tag=UHCP_IsTeleporting] run function uhcp:top/cancel
@@ -65,6 +65,7 @@ execute as @a[tag=UHCP_IsRabbit] run function uhcp:consumables/magic_trick/reset
 execute as @a[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal_fluid/reset
 
 # Tags
+tag @a remove UHCP_ArrowCheck
 tag @a remove UHCP_AteApple
 tag @a remove UHCP_AugmentRerollSlot1
 tag @a remove UHCP_AugmentRerollSlot2
@@ -73,23 +74,24 @@ tag @a remove UHCP_ChoosingItem
 tag @a remove UHCP_Died
 tag @a remove UHCP_DisableArmorAndOffhand
 tag @a remove UHCP_Explode
+tag @a remove UHCP_HighTide
 tag @a remove UHCP_MilkBucket
 tag @a remove UHCP_RelicTestingChamber
 tag @a remove UHCP_SLLock
 tag @a remove UHCP_SoulflameEmbrace
 tag @a remove UHCP_Spectator
 execute as @a[scores={uhcp_augment=220}] run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
-execute as @a[scores={uhcp_augment=25}] run function uhcp:augments/effects/gold/scavengerhunt/reset
+function uhcp:augments/effects/gold/scavengerhunt/reset_all
 
-# Reset scores
 # System scores
 scoreboard players reset %entities uhcp_game_id
-scoreboard players reset %global uhcp_game_id
 scoreboard players reset %augment_countdown uhcp_game_time
 scoreboard players reset %update_display uhcp_game_time
 scoreboard players reset %time uhcp_game_time
+scoreboard players reset %titans uhcp_game_time
 scoreboard players reset %global uhcp_id
 scoreboard players reset %hunting_call uhcp_id
+scoreboard players reset %players uhcp_id
 scoreboard players reset %end uhcp_initStatus
 scoreboard players reset %day uhcp_initStatus
 scoreboard players reset %game uhcp_initStatus
@@ -105,6 +107,7 @@ scoreboard players reset %lobby_item_6 uhcp_initStatus
 scoreboard players reset %lobby_item_7 uhcp_initStatus
 scoreboard players reset %lobby_item_8 uhcp_initStatus
 scoreboard players reset %lobby_speed uhcp_initStatus
+scoreboard players reset %start_countdown uhcp_initStatus
 scoreboard players reset %time uhcp_initStatus
 scoreboard players reset %time_freeze uhcp_initStatus
 
@@ -127,10 +130,13 @@ scoreboard players reset @a uhcp_lobby_item
 scoreboard players reset @a uhcp_relic_count
 scoreboard players reset @a uhcp_relic_sfe_time
 scoreboard players reset @a uhcp_team
-scoreboard players reset @a uhcp_top_cd
 scoreboard players reset @a uhcp_top_charge
 scoreboard players reset @a uhcp_top_delay
+scoreboard players operation @a uhcp_top_cd = %global uhcp_game_id
 scoreboard players set @a uhcp_ready 0
+
+# Necessary advancments
+advancement revoke @a only uhcp:arrow_limit
 
 # Load dimension countdown
 scoreboard players operation %dimension uhcp_settings = %dimension_retain uhcp_settings
@@ -169,33 +175,33 @@ loot replace entity @a hotbar.6 loot uhcp:lobby_menu/settings_display
 loot replace entity @a hotbar.7 loot uhcp:lobby_menu/spectate
 loot replace entity @a hotbar.8 loot uhcp:lobby_menu/not_ready
 
-item replace entity @a inventory.0 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.1 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.2 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.3 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.4 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.5 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.6 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.7 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.8 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.9 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.10 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.11 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.12 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.13 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.14 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.15 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.16 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.17 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.18 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.19 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.20 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.21 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.22 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.23 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.24 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.25 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
-item replace entity @a inventory.26 with minecraft:black_stained_glass_pane[minecraft:item_name='{"text":"Menu Selection","color":"gold"}',minecraft:hide_tooltip={},minecraft:max_stack_size=1] 1
+item replace entity @a container.9 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.10 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.11 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.12 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.13 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.14 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.15 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.16 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.17 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.18 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.19 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.20 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.21 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.22 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.23 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.24 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.25 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.26 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.27 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.28 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.29 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.30 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.31 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.32 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.33 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.34 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
+item replace entity @a container.35 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
 
 item replace entity @a armor.head with minecraft:air
 item replace entity @a armor.chest with minecraft:air

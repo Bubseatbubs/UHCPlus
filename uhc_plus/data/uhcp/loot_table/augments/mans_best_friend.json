@@ -9,7 +9,7 @@
           "name": "minecraft:golden_apple",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 4
             }
           ]
@@ -20,7 +20,7 @@
           "value": "uhcp:consumables/relic_invoker",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             }
           ]
@@ -31,16 +31,14 @@
           "name": "minecraft:enchanted_book",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:stored_enchantments": {
-									"levels": {
-										"minecraft:sharpness": 2
-									}
+									"minecraft:sharpness": 2
 								}
 							}
 						}
@@ -52,16 +50,14 @@
           "name": "minecraft:enchanted_book",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:stored_enchantments": {
-									"levels": {
-										"minecraft:protection": 2
-									}
+									"minecraft:protection": 2
 								}
 							}
 						}
@@ -73,16 +69,14 @@
           "name": "minecraft:enchanted_book",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:stored_enchantments": {
-									"levels": {
-										"minecraft:protection": 1
-									}
+									"minecraft:protection": 1
 								}
 							}
 						}
@@ -94,16 +88,14 @@
           "name": "minecraft:enchanted_book",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:stored_enchantments": {
-									"levels": {
-										"minecraft:sharpness": 1
-									}
+									"minecraft:sharpness": 1
 								}
 							}
 						}
@@ -115,7 +107,7 @@
           "name": "minecraft:diamond",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 12
             }
           ]
@@ -126,7 +118,7 @@
           "name": "minecraft:golden_apple",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 3
             }
           ]
@@ -137,7 +129,7 @@
           "name": "minecraft:golden_apple",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 2
             }
           ]

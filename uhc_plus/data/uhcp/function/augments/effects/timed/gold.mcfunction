@@ -7,4 +7,4 @@ execute if score @s uhcp_augment matches 35 run return run function uhcp:augment
 execute at @s[scores={uhcp_augment=36}] run return run function uhcp:augments/effects/gold/redstoneritual/init
 execute at @s[scores={uhcp_augment=43}] run return run function uhcp:augments/effects/gold/mansbestfriend/giveloot
 execute if score @s uhcp_augment matches 49 run return run function uhcp:augments/effects/gold/fossilfuel/init
-execute if score @s uhcp_augment matches 50 run return run function uhcp:augments/effects/gold/plannedeconomy/give
+execute if score @s uhcp_augment matches 50 run function uhcp:augments/effects/gold/plannedeconomy/give

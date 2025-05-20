@@ -1,9 +1,10 @@
-advancement revoke @s only uhcp:relics/smooth_getaway/finish
+scoreboard players set @s uhcp_leave 1
 function uhcp:entity/armor/load_armor
-playsound minecraft:block.note_block.snare master @s ~ ~ ~ 1 1 1
 tag @s remove UHCP_SmoothGetaway
-execute as @s[tag=UHCP_MirrorImage] run return run tag @s remove UHCP_MirrorImage
-execute as @s[tag=UHCP_ShadowClone] run return run function uhcp:relics/smooth_getaway/return_shadowclone
-function uhcp:entity/items/loot/summon
-loot replace entity @n[type=minecraft:item,tag=UHCP_NewLoot] contents loot uhcp:relics/smooth_getaway/damaged
-function uhcp:entity/items/loot/finish
+tag @s remove UHCP_MirrorImage
+
+scoreboard players set %current_damage uhcp_aug_durability 0
+scoreboard players set @s uhcp_leave 1000
+execute if score @s uhcp_relic_sg_radiant matches 1.. run function uhcp:relics/smooth_getaway/radiant/return
+execute if score @s uhcp_relic_sg matches 1.. run function uhcp:relics/smooth_getaway/return
+scoreboard players reset @s uhcp_leave

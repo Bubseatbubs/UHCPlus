@@ -96,7 +96,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:8b,uhcp_radiant:1b}"
+              "tag": "{uhcp_rightclick:true,uhcp_relic:true,uhcp_relic_id:8b,uhcp_radiant:true}"
             }
           ]
         }

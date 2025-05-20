@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_rightclick:1b,uhcp_lobby:6b}"
+              "tag": "{uhcp_rightclick:true,uhcp_lobby:true,uhcp_lobby_id:6b}"
             },
             {
               "function": "minecraft:set_components",
@@ -21,8 +21,7 @@
                   "animation": "none",
                   "has_consume_particles": false
                 },
-                "minecraft:max_stack_size": 1,
-                "minecraft:hide_additional_tooltip": {}
+                "minecraft:max_stack_size": 1
               }
             },
             {

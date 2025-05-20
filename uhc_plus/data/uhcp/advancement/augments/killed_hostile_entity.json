@@ -3,7 +3,6 @@
     "requirement": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
-        "player": [],
         "entity": [
           {
             "condition": "minecraft:any_of",

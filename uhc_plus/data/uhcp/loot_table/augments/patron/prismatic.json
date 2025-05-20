@@ -9,7 +9,7 @@
           "name": "minecraft:target",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
@@ -28,7 +28,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
                 {
@@ -121,7 +121,7 @@
           "name": "minecraft:creeper_head",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
@@ -146,7 +146,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
                 {
@@ -298,20 +298,19 @@
             {
               "function": "minecraft:toggle_tooltips",
               "toggles": {
-                "minecraft:attribute_modifiers": false
+                "minecraft:attribute_modifiers": false,
+                "minecraft:unbreakable": false
               }
             },
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
               "function": "minecraft:set_components",
               "components": {
                 "!minecraft:equippable": {},
-                "minecraft:unbreakable": {
-                  "show_in_tooltip": false
-                }
+                "minecraft:unbreakable": {}
               }
             },
             {
@@ -330,7 +329,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
                 {
@@ -427,20 +426,18 @@
               {
                 "function": "minecraft:toggle_tooltips",
                 "toggles": {
-                  "minecraft:attribute_modifiers": false
+                  "minecraft:attribute_modifiers": false,
+                  "minecraft:unbreakable": false
                 }
               },
               {
-                "function": "set_count",
+                "function": "minecraft:set_count",
                 "count": 1
               },
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:hide_additional_tooltip": {},
-                  "minecraft:unbreakable": {
-                    "show_in_tooltip": false
-                  }
+                  "minecraft:unbreakable": {}
                 }
               },
               {
@@ -459,7 +456,7 @@
                 ]
               },
               {
-                "function": "set_lore",
+                "function": "minecraft:set_lore",
                 "mode": "replace_all",
                 "lore": [
                   {
@@ -552,7 +549,7 @@
           "name": "minecraft:golden_apple",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
@@ -578,7 +575,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
                 {
@@ -671,7 +668,7 @@
           "name": "minecraft:iron_trapdoor",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             
@@ -691,7 +688,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
                 {
@@ -816,7 +813,7 @@
           "name": "minecraft:bookshelf",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
@@ -835,7 +832,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
                 {
@@ -920,7 +917,7 @@
           "name": "minecraft:bow",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             
@@ -1033,20 +1030,25 @@
           "name": "minecraft:fishing_rod",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:unbreakable": {
-                  "show_in_tooltip": false
-                }
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false,
+                "minecraft:unbreakable": false
               }
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:229s}"
+              "tag": "{uhcp_augSelect:1b,augment:229s,uhcp_cat_lady:0b}"
             },
             {
               "function": "minecraft:set_name",

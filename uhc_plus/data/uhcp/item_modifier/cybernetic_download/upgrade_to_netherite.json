@@ -1,6 +1,4 @@
-[
-    {
-        "function": "minecraft:set_item",
-        "item": "minecraft:netherite_chestplate"
-    }
-]
+{
+  "function": "minecraft:set_item",
+  "item": "minecraft:netherite_chestplate"
+}

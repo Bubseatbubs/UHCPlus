@@ -1,5 +1,6 @@
 # Reset player whom is not part of current game as spectator
 # Remove tags
+tag @s remove UHCP_ArrowCheck
 tag @s remove UHCP_AteApple
 tag @s remove UHCP_AugmentRerollSlot1
 tag @s remove UHCP_AugmentRerollSlot2
@@ -8,6 +9,7 @@ tag @s remove UHCP_ChoosingItem
 tag @s remove UHCP_Died
 tag @s remove UHCP_DisableArmorAndOffhand
 tag @s remove UHCP_Explode
+tag @s remove UHCP_HighTide
 tag @s remove UHCP_MilkBucket
 tag @s remove UHCP_RelicTestingChamber
 tag @a remove UHCP_SLLock
@@ -40,6 +42,16 @@ scoreboard players reset @s uhcp_itemCount
 scoreboard players reset @s uhcp_lava_maxHeight
 scoreboard players reset @s uhcp_lava_timeInterval
 scoreboard players reset @s uhcp_lobby_item
+scoreboard players reset @s uhcp_mine_ancientDebris
+scoreboard players reset @s uhcp_mine_copperOre
+scoreboard players reset @s uhcp_mine_dCopperOre
+scoreboard players reset @s uhcp_mine_dGoldOre
+scoreboard players reset @s uhcp_mine_dIronOre
+scoreboard players reset @s uhcp_mine_goldOre
+scoreboard players reset @s uhcp_mine_ironOre
+scoreboard players reset @s uhcp_mine_rawCopperBlock
+scoreboard players reset @s uhcp_mine_rawGoldBlock
+scoreboard players reset @s uhcp_mine_rawIronBlock
 scoreboard players reset @s uhcp_relic_count
 scoreboard players reset @s uhcp_relic_sfe_time
 scoreboard players reset @s uhcp_top_cd
@@ -48,15 +60,12 @@ scoreboard players reset @s uhcp_top_delay
 scoreboard players set @s uhcp_ready 0
 scoreboard players set @s uhcp_team 0
 
+# Necessary advancements
+advancement revoke @s only uhcp:arrow_limit
+
 # Assign IDs
 scoreboard players operation @s uhcp_game_id = %global uhcp_game_id
-function uhcp:start/id/assign
-
-# Track number of players for later Titan bossbar removal
-scoreboard players add %players uhcp_id 1
-
-# Create Titan health bossbar
-function uhcp:titans/bossbar/create
+function uhcp:start/id/spectator
 
 # Augment countdown bossbar
 execute if score %augment_countdown uhcp_game_time matches 1.. unless score %tier uhcp_aug_tier matches -1 run bossbar set uhcp:augment players @a

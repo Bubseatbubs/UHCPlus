@@ -6,15 +6,55 @@
       "bonus_rolls": 0,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:golden_apple",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "function": "minecraft:set_count",
-              "count": 2
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 2
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "%apple_limit"
+                    },
+                    "score": "uhcp_settings"
+                  },
+                  "range": 1
+                }
+              ],
+              "name": "minecraft:golden_apple",
+              "weight": 41
+            },
+            {
+              "type": "minecraft:group",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:golden_apple",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": 2
+                    }
+                  ],
+                  "weight": 40
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:enchanted_golden_apple",
+                  "weight": 1
+                }
+              ]
             }
-          ],
-          "weight": 40
+          ]
         },
         {
           "type": "minecraft:item",
@@ -67,14 +107,23 @@
           "weight": 20
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:enchanted_golden_apple",
-          "weight": 1
-        },
-        {
           "type": "minecraft:loot_table",
           "weight": 7,
-          "value": "uhcp:consumables/relic_invoker"
+          "value": "uhcp:consumables/relic_invoker",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "%uhcp_loot"
+                },
+                "score": "uhcp_settings"
+              },
+              "range": 1
+            }
+          ]
         }
       ]
     }

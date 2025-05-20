@@ -25,7 +25,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_rightclick:1b,uhcp_instantpickup:1b,uhcp_sundisk:1b}"
+              "tag": "{uhcp_rightclick:true,uhcp_instantpickup:1b,uhcp_sundisk:true}"
             },
             {
               "function": "minecraft:set_name",

@@ -5,14 +5,30 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Item:{components:{\"minecraft:custom_data\":{uhcp_augSelect:1b}}}}"
+        "slots": {
+          "contents": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "uhcp_augSelect": true
+              }
+            }
+          }
+        }
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Item:{components:{\"minecraft:custom_data\":{uhcp_augPane:1b}}}}"
+        "slots": {
+          "contents": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "uhcp_augPane": true
+              }
+            }
+          }
+        }
       }
     }
   ]

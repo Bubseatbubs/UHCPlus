@@ -22,20 +22,18 @@ execute if items entity @s container.8 *[minecraft:custom_data~{uhcp_augSelect:1
 execute unless score %patrons uhcp_settings matches 1 if items entity @s container.7 *[minecraft:custom_data~{uhcp_augSelect:1b}] run return run function uhcp:augments/return/7
 
 # Case: inventory was changed in another manner; regenerate player inventory from scratch
-item replace entity @s player.cursor with minecraft:air
-item replace entity @s weapon.offhand with minecraft:air
+item replace entity @s player.crafting.0 with minecraft:air
+item replace entity @s player.crafting.1 with minecraft:air
+item replace entity @s player.crafting.2 with minecraft:air
+item replace entity @s player.crafting.3 with minecraft:air
 function uhcp:augments/generate/panes
 
 tag @s add UHCP_LoadAugment
 function uhcp:augments/current_store
-item replace entity @s[tag=!UHCP_AugmentRerollSlot1] hotbar.3 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.0
-item replace entity @s[tag=!UHCP_AugmentRerollSlot2] hotbar.4 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.1
-item replace entity @s[tag=!UHCP_AugmentRerollSlot3] hotbar.5 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.2
-execute if score %patrons uhcp_settings matches 1 run item replace entity @s hotbar.7 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.3
-
-item replace entity @s[tag=UHCP_AugmentRerollSlot1] hotbar.3 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.4
-item replace entity @s[tag=UHCP_AugmentRerollSlot2] hotbar.4 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.5
-item replace entity @s[tag=UHCP_AugmentRerollSlot3] hotbar.5 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.6
+function uhcp:augments/reroll/items/1
+function uhcp:augments/reroll/items/2
+function uhcp:augments/reroll/items/3
+execute if score %patrons uhcp_settings matches 1 run item replace entity @s container.7 from entity @e[tag=UHCP_CurrentStoreAugment,limit=1] container.3
 tag @e remove UHCP_CurrentStoreAugment
 tag @s remove UHCP_LoadAugment
 

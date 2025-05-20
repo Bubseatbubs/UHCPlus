@@ -1,0 +1,15 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "contents": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "uhcp_lockedslot": true
+          }
+        }
+      }
+    }
+  }
+}

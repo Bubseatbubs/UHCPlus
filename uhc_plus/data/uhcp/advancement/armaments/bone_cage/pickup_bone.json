@@ -17,6 +17,18 @@
             }
           },
           {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "uhcp_leave": {
+                  "min": 1
+                }
+              }
+            }
+          },
+          {
             "condition": "minecraft:any_of",
             "terms": [
               {
@@ -27,7 +39,9 @@
                     "container.*": {
                       "items": "minecraft:bone",
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_bonecage:1b}"
+                        "minecraft:custom_data": {
+                          "uhcp_bonecage": true
+                        }
                       }
                     },
                     "armor.chest": {
@@ -47,7 +61,9 @@
                     "weapon.offhand": {
                       "items": "minecraft:bone",
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_bonecage:1b}"
+                        "minecraft:custom_data": {
+                          "uhcp_bonecage": true
+                        }
                       }
                     },
                     "armor.chest": {
@@ -60,18 +76,6 @@
                 }
               }
             ]
-          },
-          {
-            "condition": "minecraft:inverted",
-            "term": {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "uhcp_leave": {
-                  "min": 1
-                }
-              }
-            }
           }
         ]
       }

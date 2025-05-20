@@ -365,7 +365,8 @@
             {
               "function": "minecraft:toggle_tooltips",
               "toggles": {
-                "minecraft:attribute_modifiers": false
+                "minecraft:attribute_modifiers": false,
+                "minecraft:unbreakable": false
               }
             },
             {
@@ -375,10 +376,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:hide_additional_tooltip": {},
-                "minecraft:unbreakable": {
-                  "show_in_tooltip": false
-                }
+                "minecraft:unbreakable": {}
               }
             },
             {
@@ -754,8 +752,13 @@
                 "!minecraft:consumable": {},
                 "minecraft:potion_contents": {
                   "custom_color": 13959090
-                },
-                "minecraft:hide_additional_tooltip": {}
+                }
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:potion_contents": false
               }
             },
             {
@@ -958,14 +961,19 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:unbreakable": {
-                  "show_in_tooltip": false
-                }
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false,
+                "minecraft:unbreakable": false
               }
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:45s}"
+              "tag": "{uhcp_augSelect:1b,augment:45s,uhcp_cat_lady:0b}"
             },
             {
               "function": "minecraft:set_name",

@@ -18,9 +18,6 @@ execute if score @s uhcp_augment matches 14 run attribute @n[tag=UHCP_New] minec
 effect give @s minecraft:invisibility infinite 0 true
 effect give @s minecraft:absorption infinite 4 true
 
-# Assign ID if player doesn't have one already
-execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
-
 # Owner set to player
 scoreboard players operation @n[tag=UHCP_New] uhcp_id = @s uhcp_id
 scoreboard players operation @n[tag=UHCP_New] uhcp_team = @s uhcp_team
@@ -29,5 +26,6 @@ execute if score %pvp uhcp_settings matches ..0 run team join no_collision @n[ta
 tag @e remove UHCP_New
 
 # If player has Kung-Fu Panda, regenerate Bamboo
-scoreboard players operation @s[scores={uhcp_augment=232}] uhcp_aug_regenItem = %time uhcp_game_time
-scoreboard players add @s[scores={uhcp_augment=232}] uhcp_aug_regenItem 6000
+execute unless score @s uhcp_augment matches 232 run return fail
+scoreboard players operation @s uhcp_game_time = %time uhcp_game_time
+scoreboard players add @s uhcp_game_time 6000

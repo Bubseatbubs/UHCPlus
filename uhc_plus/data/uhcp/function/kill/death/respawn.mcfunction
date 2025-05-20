@@ -10,7 +10,7 @@ execute as @s[tag=UHCP_Died] run return fail
 effect give @s minecraft:night_vision infinite 0 true
 
 # Check if spawnpoint worked
-execute unless data entity @s {SpawnForced:1b} run function uhcp:kill/death/location
+execute unless data entity @s respawn.forced run function uhcp:kill/death/location
 
 # Death message
 execute if score %end uhcp_initStatus matches 1 run return fail

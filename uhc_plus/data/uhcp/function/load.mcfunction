@@ -33,8 +33,13 @@ scoreboard objectives add uhcp_aug_hb_killedCreeper dummy
 scoreboard objectives add uhcp_aug_hb_killedSkeleton dummy
 scoreboard objectives add uhcp_aug_hb_killedSpider dummy
 scoreboard objectives add uhcp_aug_patron dummy
-scoreboard objectives add uhcp_aug_regenItem dummy
-scoreboard objectives add uhcp_aug_sh_item dummy
+scoreboard objectives add uhcp_aug_sh_item1 dummy
+scoreboard objectives add uhcp_aug_sh_item2 dummy
+scoreboard objectives add uhcp_aug_sh_item3 dummy
+scoreboard objectives add uhcp_aug_sh_item4 dummy
+scoreboard objectives add uhcp_aug_sh_item5 dummy
+scoreboard objectives add uhcp_aug_sh_item6 dummy
+scoreboard objectives add uhcp_aug_sh_item7 dummy
 scoreboard objectives add uhcp_aug_stack dummy
 scoreboard objectives add uhcp_aug_tier dummy
 scoreboard objectives add uhcp_aug_time dummy
@@ -46,6 +51,7 @@ scoreboard objectives add uhcp_deathTime dummy
 scoreboard objectives add uhcp_game_display dummy {"text":"Game Stats","color":"aqua","bold":true}
 scoreboard objectives add uhcp_game_id dummy
 scoreboard objectives add uhcp_game_time dummy
+scoreboard objectives add uhcp_groovy dummy
 scoreboard objectives add uhcp_health health {"text":"Health","color":"red"}
 scoreboard objectives add uhcp_id dummy
 scoreboard objectives add uhcp_initStatus dummy
@@ -79,9 +85,10 @@ scoreboard objectives add uhcp_motion_z2 dummy
 scoreboard objectives add uhcp_ready dummy
 scoreboard objectives add uhcp_relic_count dummy
 scoreboard objectives add uhcp_relic_sfe_time dummy
+scoreboard objectives add uhcp_relic_sg dummy
+scoreboard objectives add uhcp_relic_sg_radiant dummy
 scoreboard objectives add uhcp_settings dummy
 scoreboard objectives add uhcp_team dummy
-scoreboard objectives add uhcp_testkit dummy
 scoreboard objectives add uhcp_timer dummy
 scoreboard objectives add uhcp_titans_attack dummy
 scoreboard objectives add uhcp_titans_count dummy
@@ -102,17 +109,12 @@ scoreboard players set %time uhcp_game_display 2
 scoreboard players display name %time uhcp_game_display {"text":"Time:","color":"gold"}
 
 scoreboard players set %border uhcp_game_display 1
-scoreboard players display name %border uhcp_game_display {"text":"Border Size:","color":"gold"}
+scoreboard players display name %border uhcp_game_display {"text":"Border Width:","color":"gold"}
 
 scoreboard players set %players uhcp_game_display -1
 scoreboard players display name %players uhcp_game_display {"text":"Players Left:","color":"gold"}
 
 # Add bossbars
-bossbar add uhcp:top_charge "Time Until Teleport:"
-bossbar set uhcp:top_charge color purple
-bossbar set uhcp:top_charge style notched_6
-bossbar set uhcp:top_charge max 60
-
 bossbar add uhcp:augment "Time Remaining:"
 bossbar set uhcp:augment color white
 bossbar set uhcp:augment style notched_6
@@ -238,6 +240,21 @@ scoreboard players set %lava_countdown_def uhcp_settings 48000
 scoreboard players set %lava_def uhcp_lava_maxHeight 50
 scoreboard players set %lava_def uhcp_lava_time 8400
 
+# Auto-cook
+scoreboard players set %auto_cook_def uhcp_settings 1
+
+# Auto-smelt
+scoreboard players set %auto_smelt_def uhcp_settings 1
+
+# Increased rates/drops of apples for leaves loot tables
+scoreboard players set %apple_leaves_def uhcp_settings 1
+
+# Remove enchanted golden apples from loot tables
+scoreboard players set %apple_limit_def uhcp_settings 1
+
+# UHC Plus loot
+scoreboard players set %uhcp_loot_def uhcp_settings 1
+
 # Set default scores when unset
 execute unless score %game uhcp_initStatus matches 1 run function uhcp:load/scores
 
@@ -256,4 +273,4 @@ execute unless score %load uhcp_initStatus matches 2.. run return run schedule f
 
 # Finish loading attempts
 scoreboard players reset %load
-tellraw @a [{"text":"Loaded "},{"text":"<","color":"#2F05FF","hoverEvent":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}},{"text":"U","color":"#0346FF","hoverEvent":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}},{"text":"H","color":"#0080FF","hoverEvent":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}},{"text":"C","color":"#0091FF","hoverEvent":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}},{"text":"+","color":"#05CDFF","bold":true,"hoverEvent":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}},{"text":">","color":"#00EEFF","hoverEvent":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}}]
+tellraw @a [{"text":"Loaded "},{"text":"<","color":"#2F05FF","hover_event":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}},{"text":"U","color":"#0346FF","hover_event":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}},{"text":"H","color":"#0080FF","hover_event":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}},{"text":"C","color":"#0091FF","hover_event":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}},{"text":"+","color":"#05CDFF","bold":true,"hover_event":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}},{"text":">","color":"#00EEFF","hover_event":{"action":"show_text","value":[{"text":"UHC","color":"#00EEFF"},{"text":" with... a few more ","color":"white"},{"text":"features","color":"#fff547"},{"text":".","color":"white"}]}}]

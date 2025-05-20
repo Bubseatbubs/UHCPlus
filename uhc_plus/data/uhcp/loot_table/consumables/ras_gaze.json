@@ -37,7 +37,10 @@
         },
         {
           "function": "minecraft:set_custom_data",
-          "tag": "{uhcp_instantpickup:1b,uhcp_raseye:1b}"
+          "tag": {
+            "uhcp_instantpickup": true,
+            "uhcp_raseye": true
+          }
         }
       ]
     }

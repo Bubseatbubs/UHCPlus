@@ -22,7 +22,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_rightclick:1b,uhcp_consumable:4b}"
+              "tag": "{uhcp_rightclick:true,uhcp_consumable:true,uhcp_consumable_id:4b}"
             },
             {
               "function": "minecraft:set_name",

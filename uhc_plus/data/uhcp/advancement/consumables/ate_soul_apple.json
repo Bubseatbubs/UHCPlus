@@ -5,7 +5,9 @@
       "conditions": {
         "item": {
           "predicates": {
-            "minecraft:custom_data": "{uhcp_soulapple:1b}"
+            "minecraft:custom_data": {
+              "uhcp_soulapple": true
+            }
           }
         }
       }

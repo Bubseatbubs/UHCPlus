@@ -1,7 +1,7 @@
 {
-	"processors": [
-		{
-			"processor_type": "minecraft:nop"
-		}
-	]
+  "processors": [
+    {
+      "processor_type": "minecraft:nop"
+    }
+  ]
 }

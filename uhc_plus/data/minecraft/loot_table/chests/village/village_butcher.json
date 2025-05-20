@@ -19,9 +19,26 @@
                 "min": 1.0
               },
               "function": "minecraft:set_count"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "%auto_cook"
+                    },
+                    "score": "uhcp_settings"
+                  },
+                  "range": 1
+                }
+              ],
+              "function": "minecraft:furnace_smelt"
             }
           ],
-          "name": "minecraft:cooked_porkchop",
+          "name": "minecraft:porkchop",
           "weight": 6
         },
         {
@@ -51,9 +68,26 @@
                 "min": 1.0
               },
               "function": "minecraft:set_count"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "%auto_cook"
+                    },
+                    "score": "uhcp_settings"
+                  },
+                  "range": 1
+                }
+              ],
+              "function": "minecraft:furnace_smelt"
             }
           ],
-          "name": "minecraft:cooked_beef",
+          "name": "minecraft:beef",
           "weight": 6
         },
         {
@@ -67,9 +101,26 @@
                 "min": 1.0
               },
               "function": "minecraft:set_count"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "%auto_cook"
+                    },
+                    "score": "uhcp_settings"
+                  },
+                  "range": 1
+                }
+              ],
+              "function": "minecraft:furnace_smelt"
             }
           ],
-          "name": "minecraft:cooked_mutton",
+          "name": "minecraft:mutton",
           "weight": 6
         },
         {

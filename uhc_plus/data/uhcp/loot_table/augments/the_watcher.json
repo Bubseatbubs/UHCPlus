@@ -1,0 +1,13 @@
+{
+  "pools": [
+    {
+      "rolls": 10,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "uhcp:consumables/all-seeing_eye"
+        }
+      ]
+    }
+  ]
+}

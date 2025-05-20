@@ -9,7 +9,9 @@
           "functions": [
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_soulapple:1b}"
+              "tag": {
+                "uhcp_soulapple": true
+              }
             },
             {
               "function": "minecraft:set_components",

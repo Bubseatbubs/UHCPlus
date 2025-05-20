@@ -2,7 +2,7 @@
   "type": "minecraft:generic",
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 2,
       "entries": [
         {
           "type": "minecraft:loot_table",
@@ -55,9 +55,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:stored_enchantments": {
-                  "levels": {
-                    "minecraft:protection": 1
-                  }
+                  "minecraft:protection": 1
                 }
               }
             }
@@ -72,9 +70,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:stored_enchantments": {
-                  "levels": {
-                    "minecraft:sharpness": 1
-                  }
+                  "minecraft:sharpness": 1
                 }
               }
             }
@@ -89,9 +85,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:stored_enchantments": {
-                  "levels": {
-                    "minecraft:protection": 2
-                  }
+                  "minecraft:protection": 2
                 }
               }
             }
@@ -106,9 +100,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:stored_enchantments": {
-                  "levels": {
-                    "minecraft:sharpness": 2
-                  }
+                  "minecraft:sharpness": 2
                 }
               }
             }
@@ -117,7 +109,7 @@
       ]
     },
     {
-      "rolls": 1,
+      "rolls": 2,
       "entries": [
         {
           "type": "minecraft:item",
@@ -155,7 +147,7 @@
       ]
     },
     {
-      "rolls": 1,
+      "rolls": 2,
       "entries": [
         {
           "type": "minecraft:item",

@@ -15,10 +15,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:vanishing_curse": 1
-                  },
-                  "show_in_tooltip": false
+                  "minecraft:vanishing_curse": 1
                 },
                 "minecraft:consumable": {
                   "consume_seconds": 2147483647,
@@ -28,14 +25,19 @@
                 "minecraft:max_stack_size": 1,
                 "minecraft:max_damage": 1200,
                 "minecraft:damage": 0,
-                "minecraft:repair_cost": 500,
-                "!minecraft:repairable": {},
-                "minecraft:hide_additional_tooltip": {}
+                "minecraft:repair_cost": 2147483647,
+                "!minecraft:repairable": {}
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:enchantments": false
               }
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:6b}"
+              "tag": "{uhcp_rightclick:true,uhcp_relic:true,uhcp_relic_id:6b}"
             },
             {
               "function": "minecraft:set_name",
@@ -87,7 +89,7 @@
                     "italic": false
                   },
                   {
-                    "text": ": Relics charge up when held.",
+                    "text": ": Relics charge up in inventory.",
                     "color": "gray",
                     "italic": false
                   }

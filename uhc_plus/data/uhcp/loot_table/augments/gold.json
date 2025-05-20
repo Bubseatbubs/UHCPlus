@@ -107,9 +107,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "!minecraft:equippable": {},
-                "minecraft:unbreakable": {
-                  "show_in_tooltip": false
-                }
+                "minecraft:unbreakable": {}
               }
             },
             {
@@ -130,7 +128,8 @@
             {
               "function": "minecraft:toggle_tooltips",
               "toggles": {
-                "minecraft:attribute_modifiers": false
+                "minecraft:attribute_modifiers": false,
+                "minecraft:unbreakable": false
               }
             },
             {
@@ -142,7 +141,7 @@
                 },
                 [
                   {
-                    "text": "Your Armor is increased by 35%. ",
+                    "text": "Your armor is increased by 35%. ",
                     "color": "gray"
                   }
                 ],
@@ -158,7 +157,7 @@
                     "bold": true
                   },
                   {
-                    "text": "or Netherite Armor.",
+                    "text": "or Netherite armor.",
                     "color": "dark_red",
                     "bold": true
                   }
@@ -419,7 +418,8 @@
             {
               "function": "minecraft:toggle_tooltips",
               "toggles": {
-                "minecraft:attribute_modifiers": false
+                "minecraft:attribute_modifiers": false,
+                "minecraft:unbreakable": false
               }
             },
             {
@@ -429,10 +429,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:hide_additional_tooltip": {},
-                "minecraft:unbreakable": {
-                  "show_in_tooltip": false
-                }
+                "minecraft:unbreakable": {}
               }
             },
             {
@@ -1154,8 +1151,13 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:instrument": "minecraft:call_goat_horn",
-                "minecraft:hide_additional_tooltip": {}
+                "minecraft:instrument": "minecraft:call_goat_horn"
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:instrument": false
               }
             },
             {
@@ -1550,9 +1552,11 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:hide_additional_tooltip": {}
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:block_entity_data": false,
+                "minecraft:container": false,
+                "minecraft:container_loot": false
               }
             },
             {
@@ -1664,9 +1668,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "!minecraft:equippable": {},
-                "minecraft:unbreakable": {
-                  "show_in_tooltip": false
-                }
+                "minecraft:unbreakable": {}
               }
             },
             {
@@ -1687,7 +1689,8 @@
             {
               "function": "minecraft:toggle_tooltips",
               "toggles": {
-                "minecraft:attribute_modifiers": false
+                "minecraft:attribute_modifiers": false,
+                "minecraft:unbreakable": false
               }
             },
             {
@@ -1745,10 +1748,8 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:hide_additional_tooltip": {}
-              }
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {}
             },
             {
               "function": "minecraft:set_custom_data",
@@ -3184,18 +3185,6 @@
               ]
             },
             {
-              "function": "minecraft:toggle_tooltips",
-              "toggles": {
-                "minecraft:attribute_modifiers": false
-              }
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:hide_additional_tooltip": {}
-              }
-            },
-            {
               "function": "minecraft:set_lore",
               "lore": [
                 {
@@ -3261,16 +3250,15 @@
             {
               "function": "minecraft:toggle_tooltips",
               "toggles": {
-                "minecraft:attribute_modifiers": false
+                "minecraft:attribute_modifiers": false,
+                "minecraft:unbreakable": false
               }
             },
             {
               "function": "minecraft:set_components",
               "components": {
                 "!minecraft:equippable": {},
-                "minecraft:unbreakable": {
-                  "show_in_tooltip": false
-                }
+                "minecraft:unbreakable": {}
               }
             },
             {
@@ -3440,10 +3428,8 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:hide_additional_tooltip": {}
-              }
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {}
             },
             {
               "function": "minecraft:set_custom_data",
@@ -3531,8 +3517,13 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "!minecraft:bundle_contents": {},
-                "minecraft:hide_additional_tooltip": {}
+                "!minecraft:bundle_contents": {}
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:bundle_contents": false
               }
             },
             {
@@ -3668,8 +3659,13 @@
                 "!minecraft:consumable": {},
                 "minecraft:potion_contents": {
                   "custom_color": 8467002
-                },
-                "minecraft:hide_additional_tooltip": {}
+                }
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:potion_contents": false
               }
             },
             {
@@ -3731,12 +3727,6 @@
           "name": "minecraft:filled_map",
           "weight": 1,
           "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:hide_additional_tooltip": {}
-              }
-            },
             {
               "function": "minecraft:set_count",
               "count": 1

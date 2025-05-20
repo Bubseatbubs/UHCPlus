@@ -31,9 +31,26 @@
                 "min": 2.0
               },
               "function": "minecraft:set_count"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "%auto_cook"
+                    },
+                    "score": "uhcp_settings"
+                  },
+                  "range": 1
+                }
+              ],
+              "function": "minecraft:furnace_smelt"
             }
           ],
-          "name": "minecraft:baked_potato",
+          "name": "minecraft:potato",
           "weight": 7
         },
         {

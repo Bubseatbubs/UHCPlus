@@ -1,8 +1,16 @@
 {
-	"condition": "minecraft:entity_properties",
-	"entity": "this",
-	"predicate": {
-		"type": "minecraft:item",
-		"nbt": "{Item:{components:{\"minecraft:custom_data\":{uhcp_instantpickup:1b}}}}"
-	}
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:item",
+    "slots": {
+      "contents": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "uhcp_instantpickup": true
+          }
+        }
+      }
+    }
+  }
 }

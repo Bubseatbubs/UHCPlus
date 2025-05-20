@@ -79,10 +79,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:knockback": 10
-                  },
-                  "show_in_tooltip": true
+                  "minecraft:knockback": 10
                 }
               }
             }
@@ -132,12 +129,15 @@
                 },
                 "minecraft:enchantment_glint_override": true,
                 "minecraft:can_place_on": {
-                  "predicates": [
-                    {}
-                  ],
-                  "show_in_tooltip": false
-                },
-                "minecraft:hide_additional_tooltip": {}
+                  "predicates": {}
+                }
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:fireworks": false,
+                "minecraft:can_place_on": false
               }
             }
           ],
@@ -189,12 +189,15 @@
                 },
                 "minecraft:enchantment_glint_override": true,
                 "minecraft:can_place_on": {
-                  "predicates": [
-                    {}
-                  ],
-                  "show_in_tooltip": false
-                },
-                "minecraft:hide_additional_tooltip": {}
+                  "predicates": {}
+                }
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:fireworks": false,
+                "minecraft:can_place_on": false
               }
             }
           ],
@@ -298,17 +301,21 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:unbreakable": {
-                  "show_in_tooltip": false
-                },
+                "minecraft:unbreakable": {},
                 "minecraft:enchantment_glint_override": true,
                 "minecraft:charged_projectiles": [
                   {
                     "id": "minecraft:spectral_arrow",
                     "count": 1
                   }
-                ],
-                "minecraft:hide_additional_tooltip": {}
+                ]
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:unbreakable": false,
+                "minecraft:charged_projectiles": false
               }
             }
           ],
@@ -329,16 +336,23 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:unbreakable": {
-                  "show_in_tooltip": false
-                },
+                "minecraft:unbreakable": {},
                 "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:luck_of_the_sea": 10,
-                    "minecraft:lure": 5
-                  },
-                  "show_in_tooltip": true
+                  "minecraft:luck_of_the_sea": 10,
+                  "minecraft:lure": 5
                 }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "uhcp_cat_lady": false
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:unbreakable": false
               }
             }
           ],

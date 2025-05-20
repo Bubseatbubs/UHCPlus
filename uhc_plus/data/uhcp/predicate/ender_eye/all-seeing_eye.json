@@ -1,8 +1,16 @@
 {
-	"condition": "minecraft:entity_properties",
-	"entity": "this",
-	"predicate": {
-		"type": "minecraft:eye_of_ender",
-		"nbt": "{Item:{components:{\"minecraft:custom_data\":{uhcp_sight:1b}}}}"
-	}
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:eye_of_ender",
+    "slots": {
+      "contents": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "uhcp_sight": true
+          }
+        }
+      }
+    }
+  }
 }

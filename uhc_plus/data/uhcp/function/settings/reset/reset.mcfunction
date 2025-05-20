@@ -39,10 +39,7 @@ scoreboard players operation %night_vision uhcp_settings = %night_vision_def uhc
 scoreboard players operation %ender_pearl uhcp_settings = %ender_pearl_def uhcp_settings
 
 # Set default difficulty
-execute unless score %difficulty_def uhcp_settings matches 1.. run function uhcp:settings/reset/difficulty/easy
-execute if score %difficulty_def uhcp_settings matches 1 run function uhcp:settings/reset/difficulty/normal
-execute if score %difficulty_def uhcp_settings matches 2 run function uhcp:settings/reset/difficulty/hard
-execute if score %difficulty_def uhcp_settings matches 3 run function uhcp:settings/reset/difficulty/peaceful
+function uhcp:settings/reset/difficulty
 scoreboard players operation %difficulty uhcp_settings = %difficulty_def uhcp_settings
 
 # Set default lava scoreboard values
@@ -55,6 +52,21 @@ execute unless score %team uhcp_settings = %team_def uhcp_settings run function 
 execute unless score %players_select_teams uhcp_settings = %players_select_teams_def uhcp_settings run function uhcp:settings/reset/team/selection/toggle
 execute unless score %friendly_fire uhcp_settings = %friendly_fire_def uhcp_settings run function uhcp:settings/reset/team/friendly_fire/toggle
 scoreboard players operation %friendly_fire uhcp_settings = %friendly_fire_def uhcp_settings
+
+# Auto-cook
+scoreboard players operation %auto_cook uhcp_settings = %auto_cook_def uhcp_settings
+
+# Auto-smelt
+scoreboard players operation %auto_smelt uhcp_settings = %auto_smelt_def uhcp_settings
+
+# Increased rates/drops of apples for leaves loot tables
+scoreboard players operation %apple_leaves uhcp_settings = %apple_leaves_def uhcp_settings
+
+# Remove enchanted golden apples from loot tables
+scoreboard players operation %apple_limit uhcp_settings = %apple_limit_def uhcp_settings
+
+# UHC Plus loot
+scoreboard players operation %uhcp_loot uhcp_settings = %uhcp_loot_def uhcp_settings
 
 # Display page
 function uhcp:settings/pages/main

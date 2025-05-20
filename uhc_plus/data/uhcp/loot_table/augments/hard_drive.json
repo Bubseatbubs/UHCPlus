@@ -83,15 +83,17 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:unbreakable": {
-                  "show_in_tooltip": false
-                },
+                "minecraft:unbreakable": {},
                 "minecraft:enchantments": {
-                  "levels": {
-                    "minecraft:binding_curse": 1,
-                    "minecraft:vanishing_curse": 1
-                  }
+                  "minecraft:binding_curse": 1,
+                  "minecraft:vanishing_curse": 1
                 }
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:unbreakable": false
               }
             },
             {

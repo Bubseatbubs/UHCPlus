@@ -1,4 +1,5 @@
 {
+  "type": "minecraft:chest",
   "pools": [
     {
       "rolls": 1,
@@ -166,9 +167,22 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.008
+          "chance": 0.08
+        },
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "%uhcp_loot"
+            },
+            "score": "uhcp_settings"
+          },
+          "range": 1
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "uhcp:structures/blossom_skyship"
 }

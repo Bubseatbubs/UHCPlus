@@ -298,34 +298,74 @@
           "name": "minecraft:string"
         },
         {
-          "type": "minecraft:item",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 2.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:cooked_porkchop"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 5.0,
+                    "min": 2.0
+                  },
+                  "function": "minecraft:set_count"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "%auto_cook"
+                    },
+                    "score": "uhcp_settings"
+                  },
+                  "range": 1
+                }
+              ],
+              "name": "minecraft:cooked_porkchop",
+              "weight": 2
+            },
             {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 2.0
-              },
-              "function": "minecraft:set_count"
+              "type": "minecraft:group",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": {
+                        "type": "minecraft:uniform",
+                        "max": 5.0,
+                        "min": 2.0
+                      },
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:porkchop"
+                },
+                {
+                  "type": "minecraft:item",
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": {
+                        "type": "minecraft:uniform",
+                        "max": 5.0,
+                        "min": 2.0
+                      },
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:cooked_porkchop"
+                }
+              ]
             }
-          ],
-          "name": "minecraft:cooked_porkchop"
+          ]
         },
         {
           "type": "minecraft:item",

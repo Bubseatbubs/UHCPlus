@@ -46,12 +46,259 @@
                 ]
               }
             }
+          },
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:reference",
+                "name": "uhcp:augments/tightly_packed/missing"
+              },
+              {
+                "condition": "minecraft:reference",
+                "name": "uhcp:augments/tightly_packed/swap"
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.9": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.10": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.11": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.12": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.13": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.14": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.15": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.16": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.17": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.18": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.19": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.20": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.21": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.22": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.23": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.24": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.25": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.26": {
+                      "predicates": {
+                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           }
         ]
       }
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/gold/tightlypacked/inventory_changed"
+    "function": "uhcp:augments/effects/gold/tightlypacked/determine"
   }
 }

@@ -1,20 +1,13 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:loot_table",
-            "value": "uhcp:consumables/ras_gaze",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": 5
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+  "pools": [
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "uhcp:consumables/ras_gaze"
+        }
+      ]
+    }
+  ]
+}

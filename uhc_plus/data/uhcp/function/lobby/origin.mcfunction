@@ -1,7 +1,4 @@
-# Lobby parkour
-function uhcp:lobby/parkour
-
-# Relic Testing Chamber entrance
+# Relic testing chamber entrance
 execute positioned ^57 ^7 ^32 run function uhcp:lobby/relic_testing/entrance
 
 # Lobby items

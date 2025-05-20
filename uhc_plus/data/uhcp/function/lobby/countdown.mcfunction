@@ -1,4 +1,3 @@
-
 scoreboard players remove %start_countdown uhcp_initStatus 1
 
 # Countdown noise

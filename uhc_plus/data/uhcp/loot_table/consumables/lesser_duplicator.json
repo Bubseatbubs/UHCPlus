@@ -14,7 +14,7 @@
           "entity": "this",
           "lore": [
             {
-              "text": "Somewhat duplicates the item in your Offhand.",
+              "text": "Somewhat duplicates the item in your offhand.",
               "color": "gray"
             },
             [
@@ -32,7 +32,7 @@
         },
         {
           "function": "minecraft:set_custom_data",
-          "tag": "{uhcp_rightclick:1b,uhcp_consumable:2b}"
+          "tag": "{uhcp_rightclick:true,uhcp_consumable:true,uhcp_consumable_id:2b}"
         },
         {
           "function": "minecraft:set_components",
@@ -43,9 +43,12 @@
               "animation": "none",
               "has_consume_particles": false
             },
-            "minecraft:max_stack_size": 1,
-            "minecraft:hide_additional_tooltip": {}
+            "minecraft:max_stack_size": 1
           }
+        },
+        {
+          "function": "minecraft:toggle_tooltips",
+          "toggles": {}
         },
         {
           "function": "minecraft:set_name",

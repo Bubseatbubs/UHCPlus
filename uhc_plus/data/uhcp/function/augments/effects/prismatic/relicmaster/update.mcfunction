@@ -1,6 +1,5 @@
-function uhcp:entity/items/loot/summon
-loot replace entity @n[type=minecraft:item,tag=UHCP_NewLoot] contents loot uhcp:consumables/relic_invoker
-function uhcp:entity/items/loot/finish
+execute store result score @s uhcp_lava_currentLayers run loot give @s loot uhcp:consumables/relic_invoker
+execute if score @s uhcp_lava_currentLayers matches 0 run function uhcp:augments/effects/prismatic/relicmaster/loot
 
 scoreboard players add @s uhcp_game_time 24000
 execute if score %time uhcp_game_time >= @s uhcp_game_time run function uhcp:augments/effects/prismatic/relicmaster/update

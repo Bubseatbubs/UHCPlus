@@ -1,8 +1,12 @@
 {
-	"condition": "minecraft:entity_properties",
-	"entity": "this",
-	"predicate": {
-		"type": "minecraft:item",
-		"nbt": "{Item:{id:\"minecraft:copper_block\"}}"
-	}
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:item",
+    "slots": {
+      "contents": {
+        "items": "minecraft:copper_block"
+      }
+    }
+  }
 }

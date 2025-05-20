@@ -1,5 +1,5 @@
 #Verify player was teleported to starting position
-execute if score VerifyAttempts WorldPregen matches 0 run tellraw @s {"text":"Verifying...", "color":"gold", "hoverEvent":{"action":"show_text","value":"Verifying player was correctly teleported to starting position. This is needed to prevent errors."}}
+execute if score VerifyAttempts WorldPregen matches 0 run tellraw @s {"text":"Verifying...", "color":"gold", "hover_event":{"action":"show_text","value":"Verifying player was correctly teleported to starting position. This is needed to prevent errors."}}
 
 #Get player coordinates
 execute store result score PosX WorldPregen run data get entity @s Pos[0]

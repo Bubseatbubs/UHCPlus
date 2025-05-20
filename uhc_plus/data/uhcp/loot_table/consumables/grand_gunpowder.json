@@ -37,7 +37,8 @@
                   "animation": "none",
                   "has_consume_particles": false
                 },
-                "minecraft:enchantment_glint_override": true
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:max_stack_size": 1
               }
             }
           ]
@@ -45,14 +46,8 @@
       ],
       "functions": [
         {
-          "function": "minecraft:set_components",
-          "components": {
-            "minecraft:hide_additional_tooltip": {}
-          }
-        },
-        {
           "function": "minecraft:set_custom_data",
-          "tag": "{uhcp_rightclick:1b,uhcp_consumable:15b}"
+          "tag": "{uhcp_rightclick:true,uhcp_consumable:true,uhcp_consumable_id:8b}"
         }
       ]
     }

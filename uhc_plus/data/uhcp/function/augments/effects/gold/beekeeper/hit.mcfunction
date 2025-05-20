@@ -16,15 +16,12 @@ tag @s remove UHCP_Owner
 tag @e remove UHCP_BeeTarget
 scoreboard players reset @e[distance=..5] uhcp_aug_count
 
-# Assign ID if player doesn't have one already
-execute unless score @s uhcp_id = @s uhcp_id run function uhcp:start/id/assign
-
 # Bee owner is set to player
 scoreboard players operation @n[tag=UHCP_New,tag=UHCP_Bee] uhcp_id = @s uhcp_id
 tag @e remove UHCP_New
 
 # Bee Sin! :o
 execute store result score %random uhcp_aug_count run random value 1..100
-execute if score %random uhcp_aug_count matches 100 run data merge entity @n[tag=UHCP_Bee] {CustomName:'{"text":"Bee Sin","color":"gold"}',CustomNameVisible:1b}
+execute if score %random uhcp_aug_count matches 100 run data merge entity @n[tag=UHCP_Bee] {CustomName:{"text":"Bee Sin","color":"gold"},CustomNameVisible:1b}
 
 scoreboard players reset @s uhcp_aug_count

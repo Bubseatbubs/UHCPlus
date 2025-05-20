@@ -23,14 +23,17 @@
                 "minecraft:max_stack_size": 1,
                 "minecraft:damage": 0,
                 "minecraft:max_damage": 3200,
-                "minecraft:repair_cost": 500,
-                "!minecraft:repairable": {},
-                "minecraft:hide_additional_tooltip": {}
+                "minecraft:repair_cost": 2147483647,
+                "!minecraft:repairable": {}
               }
             },
             {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {}
+            },
+            {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_rightclick:1b,uhcp_relic:1b,uhcp_relic_id:2b}"
+              "tag": "{uhcp_rightclick:true,uhcp_relic:true,uhcp_relic_id:2b}"
             },
             {
               "function": "minecraft:set_name",
@@ -78,7 +81,7 @@
                     "italic": false
                   },
                   {
-                    "text": ": Relics charge up when held.",
+                    "text": ": Relics charge up in inventory.",
                     "color": "gray",
                     "italic": false
                   }

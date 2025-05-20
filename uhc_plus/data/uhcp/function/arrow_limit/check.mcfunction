@@ -1,20 +1,29 @@
-execute store result score @s uhcp_arrowCount run clear @s minecraft:arrow 0
+# Check if player is over arrow limit
+execute store result score @s uhcp_arrowCount run clear @s #minecraft:arrows 0
+execute store result score @s uhcp_initStatus run function uhcp:arrow_limit/maximum
+execute if score @s uhcp_arrowCount <= @s uhcp_initStatus run return run advancement revoke @s only uhcp:arrow_limit
 
-execute store result score %limit uhcp_arrowCount run function uhcp:arrow_limit/maximum
-execute if score @s uhcp_arrowCount <= %limit uhcp_arrowCount run return run advancement revoke @s only uhcp:arrow_limit
+scoreboard players operation @s uhcp_arrowCount -= @s uhcp_initStatus
+scoreboard players set @s uhcp_leave 1000
 
-scoreboard players set @s uhcp_initStatus 64
-scoreboard players operation @s uhcp_arrowCount -= %limit uhcp_arrowCount
-scoreboard players operation %extra_stacks uhcp_arrowCount = @s uhcp_arrowCount
-scoreboard players operation %extra_stacks uhcp_arrowCount /= @s uhcp_initStatus
-scoreboard players operation %limit uhcp_arrowCount = %extra_stacks uhcp_arrowCount
-execute if score %limit uhcp_arrowCount matches 1.. run function uhcp:arrow_limit/remove/stack
+# Check for arrows
+execute store result score @s uhcp_initStatus run clear @s minecraft:arrow 0
+execute unless score @s uhcp_initStatus matches 0 run return run function uhcp:arrow_limit/arrow/limit
 
-scoreboard players operation @s uhcp_arrowCount %= @s uhcp_initStatus
-scoreboard players operation %limit uhcp_arrowCount = @s uhcp_arrowCount
-execute if score @s uhcp_arrowCount matches 1.. run function uhcp:arrow_limit/remove/single
+# Remove excess spectral arrows over limit
+execute store result score @s uhcp_initStatus run clear @s minecraft:spectral_arrow 0
+execute if score @s uhcp_arrowCount <= @s uhcp_initStatus run return run function uhcp:arrow_limit/spectral/all/early
 
-execute if score %extra_stacks uhcp_arrowCount matches 1.. run function uhcp:arrow_limit/summon/arrow_stack
-execute if score %limit uhcp_arrowCount matches 1.. at @s run function uhcp:arrow_limit/summon/arrow
+scoreboard players set %stack uhcp_arrowCount 64
+scoreboard players operation %limit uhcp_arrowCount = @s uhcp_initStatus
+scoreboard players operation @s uhcp_initStatus /= %stack uhcp_arrowCount
+execute if score @s uhcp_initStatus matches 1.. run function uhcp:arrow_limit/spectral/stack
 
-advancement revoke @s only uhcp:arrow_limit
+scoreboard players operation %limit uhcp_arrowCount %= %stack uhcp_arrowCount
+execute if score %limit uhcp_arrowCount matches 0 run return run function uhcp:arrow_limit/end/early
+
+tag @s add UHCP_ArrowLimit
+summon minecraft:item ~ ~ ~ {Tags:["UHCP_New"],PickupDelay:40s,Item:{id:"minecraft:spectral_arrow"}}
+execute as @n[tag=UHCP_New] run function uhcp:arrow_limit/spectral/count
+
+function uhcp:arrow_limit/end/late

@@ -1,6 +1,8 @@
 # Set scores
 scoreboard players set %init uhcp_initStatus 1
 scoreboard players set %lock uhcp_itemCount 50
+execute store result score %global uhcp_game_id run random value 0..3
+execute store result score %global uhcp_game_id run function uhcp:start/id/game
 
 # Dimension-specific commands
 execute in minecraft:the_end run function uhcp:load/dimensions/minecraft/init/the_end
@@ -13,7 +15,4 @@ execute in uhcp:main run function uhcp:load/dimensions/uhcp/init/main
 function uhcp:settings/reset/team/friendly_fire/toggle
 
 # Difficulty
-execute unless score %difficulty_def uhcp_settings matches 1.. run return run function uhcp:settings/reset/difficulty/easy
-execute if score %difficulty_def uhcp_settings matches 1 run return run function uhcp:settings/reset/difficulty/normal
-execute if score %difficulty_def uhcp_settings matches 2 run return run function uhcp:settings/reset/difficulty/hard
-execute if score %difficulty_def uhcp_settings matches 3 run function uhcp:settings/reset/difficulty/peaceful
+function uhcp:settings/reset/difficulty

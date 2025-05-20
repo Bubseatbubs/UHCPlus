@@ -13,8 +13,41 @@
   "result": {
     "id": "minecraft:ender_eye",
     "components": {
-      "minecraft:item_name": "{\"text\":\"All-Seeing Eye\",\"color\":\"light_purple\"}",
-      "minecraft:lore": ["{\"text\":\"Causes \",\"color\":\"gray\",\"italic\":true,\"extra\":[{\"text\":\"all enemies\",\"color\":\"gold\"},\" to glow\"]}","{\"text\":\"for \",\"color\":\"gray\",\"italic\":true,\"extra\":[{\"text\":\"10\",\"color\":\"gold\"},\" seconds. Consumed\"]}","{\"text\":\"upon use.\",\"color\":\"gray\",\"italic\":true}"],
+      "minecraft:item_name": {
+        "text": "All-Seeing Eye",
+        "color": "light_purple"
+      },
+      "minecraft:lore": [
+        {
+          "text": "Causes ",
+          "color": "gray",
+          "italic": true,
+          "extra": [
+            {
+              "text": "all enemies",
+              "color": "gold"
+            },
+            " to glow"
+          ]
+        },
+        {
+          "text": "for ",
+          "color": "gray",
+          "italic":true,
+          "extra": [
+            {
+              "text": "10",
+              "color": "gold"
+            },
+            " seconds. Consumed "
+          ]
+        },
+        {
+          "text": "upon use.",
+          "color": "gray",
+          "italic": true
+        }
+      ],
       "minecraft:enchantment_glint_override": true,
       "minecraft:custom_data": {
         "uhcp_instantpickup": 1,

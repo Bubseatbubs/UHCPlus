@@ -1,5 +1,5 @@
 effect give @s minecraft:fire_resistance infinite 0 false
-item replace entity @s container.0 with minecraft:diamond_pickaxe[minecraft:enchantments={levels:{"minecraft:efficiency":1,"minecraft:unbreaking":3}}]
+item replace entity @s container.0 with minecraft:diamond_pickaxe[minecraft:enchantments={"minecraft:efficiency":1,"minecraft:unbreaking":3}]
 item replace entity @s container.1 with minecraft:diamond_axe
 item replace entity @s container.2 with minecraft:diamond_shovel
 item replace entity @s container.3 with minecraft:diamond_sword

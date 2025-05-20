@@ -1,1 +1,0 @@
-loot give @s loot uhcp:augments/soul_siphon

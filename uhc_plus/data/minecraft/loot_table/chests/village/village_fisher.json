@@ -19,9 +19,36 @@
                 "min": 1.0
               },
               "function": "minecraft:set_count"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "%auto_cook"
+                    },
+                    "score": "uhcp_settings"
+                  },
+                  "range": 1
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "uhcp_augment": 138
+                    }
+                  }
+                }
+              ],
+              "function": "minecraft:furnace_smelt"
             }
           ],
-          "name": "minecraft:cooked_cod",
+          "name": "minecraft:cod",
           "weight": 2
         },
         {
@@ -35,9 +62,36 @@
                 "min": 1.0
               },
               "function": "minecraft:set_count"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "%auto_cook"
+                    },
+                    "score": "uhcp_settings"
+                  },
+                  "range": 1
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "uhcp_augment": 138
+                    }
+                  }
+                }
+              ],
+              "function": "minecraft:furnace_smelt"
             }
           ],
-          "name": "minecraft:cooked_salmon"
+          "name": "minecraft:salmon"
         },
         {
           "type": "minecraft:item",

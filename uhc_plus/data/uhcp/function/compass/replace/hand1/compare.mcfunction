@@ -1,12 +1,13 @@
-# Fail-safe
-scoreboard players set %compass_found uhcp_itemInv 0
-execute store result score %compass_track uhcp_itemInv run data get storage uhcp:compass Track
+# Get stored count
+$execute store result score %compass_count uhcp_itemInv run data get storage uhcp:compass Track[{uuid:$(uuid)}].count
+execute if score %compass_count uhcp_itemInv matches 0 run return run function uhcp:compass/replace/hand1/assign
 
-# Find item in array
-execute if score %compass_track uhcp_itemInv matches 1.. store result score %compass_found uhcp_itemInv run function uhcp:compass/replace/hand1/compare/find
-execute if score %compass_found uhcp_itemInv matches 1 run return run function uhcp:compass/replace/hand1/compare/count
+# Compare item counts
+execute store result score %compass_newCount uhcp_itemInv run data get storage uhcp:compass Compass.hand[1].count
+scoreboard players operation %compass_count uhcp_itemInv -= %compass_newCount uhcp_itemInv
+execute if score %compass_count uhcp_itemInv matches 0 run return fail
 
-# Add missing compass
-data modify storage uhcp:compass Track append value {}
-data modify storage uhcp:compass Track[-1].uuid set from storage uhcp:compass Compass.hand[1].components."minecraft:custom_data".uuid
-data modify storage uhcp:compass Track[-1].count set from storage uhcp:compass Compass.hand[1].count
+# Reassign and reset item
+$execute store result storage uhcp:compass Track[{uuid:$(uuid)}].count int 1 run scoreboard players get %compass_count uhcp_itemInv
+function uhcp:compass/replace/hand1/assign
+data modify storage uhcp:compass Compass.hand[1].components."minecraft:custom_data".compass_age set value 0b

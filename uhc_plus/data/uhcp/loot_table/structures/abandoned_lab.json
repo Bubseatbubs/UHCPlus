@@ -10,6 +10,20 @@
           "value": "uhcp:relics/runic_sentry",
           "weight": 1
         }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "%uhcp_loot"
+            },
+            "score": "uhcp_settings"
+          },
+          "range": 1
+        }
       ]
     },
     {
@@ -42,6 +56,20 @@
               "function": "minecraft:set_count",
               "count": 1,
               "add": false
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "%uhcp_loot"
+                },
+                "score": "uhcp_settings"
+              },
+              "range": 1
             }
           ]
         },
@@ -255,5 +283,6 @@
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "uhcp:structures/abandoned_lab"
 }

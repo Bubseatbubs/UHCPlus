@@ -5,7 +5,7 @@ tag @s add UHCP_HCallCurrent
 
 # Find hand with horn
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_huntingcall:1b}] run return run function uhcp:augments/effects/gold/huntingcall/mainhand
-data modify storage uhcp:hunting_call Horn set from entity @s Inventory[{Slot:-106b}]
+data modify storage uhcp:hunting_call Horn set from entity @s equipment.offhand
 
 # Check IDs
 execute unless data storage uhcp:hunting_call Horn.components."minecraft:custom_data".game_id run return run function uhcp:augments/effects/gold/huntingcall/offhand/new

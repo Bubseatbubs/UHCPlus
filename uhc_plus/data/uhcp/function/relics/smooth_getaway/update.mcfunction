@@ -24,7 +24,7 @@ execute as @e[tag=UHCP_SClone] if score @s uhcp_game_id = @n[tag=UHCP_CurrentSta
 execute as @e[tag=UHCP_Hitbox] if score @s uhcp_game_id = @n[tag=UHCP_CurrentStand] uhcp_game_id run tp @s 0 -64 0
 execute as @e[tag=UHCP_Hitbox] if score @s uhcp_game_id = @n[tag=UHCP_CurrentStand] uhcp_game_id run kill @s
 kill @e[type=minecraft:experience_orb,distance=..1.5]
-gamerule showDeathMessages true
+execute if score %game uhcp_initStatus matches 1 run gamerule showDeathMessages true
 tag @s remove UHCP_CurrentStand
 tp @s 0 -64 0
 kill @s

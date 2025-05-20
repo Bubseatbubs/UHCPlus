@@ -1,9 +1,8 @@
 # Modify inventory
-setblock 0 0 0 minecraft:barrel
 data remove block 0 0 0 Items
 data remove storage uhcp:solo_level Load
 
-#Load 1
+# Load 1
 data modify block 0 0 0 Items set from storage uhcp:solo_level Inventory
 item replace entity @s container.0 from block 0 0 0 container.0
 item replace entity @s container.1 from block 0 0 0 container.1
@@ -33,7 +32,7 @@ item replace entity @s container.24 from block 0 0 0 container.24
 item replace entity @s container.25 from block 0 0 0 container.25
 item replace entity @s container.26 from block 0 0 0 container.26
 
-#Load 2
+# Load 2
 data remove block 0 0 0 Items
 data modify storage uhcp:solo_level Load set value [{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b},{no_slot:1b}]
 data modify storage uhcp:solo_level Load[0] set from storage uhcp:solo_level Inventory[{Slot:27b}]

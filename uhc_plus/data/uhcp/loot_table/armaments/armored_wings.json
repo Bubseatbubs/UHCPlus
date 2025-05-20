@@ -10,9 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:unbreakable": {
-                  "show_in_tooltip": true
-                },
+                "minecraft:unbreakable": {},
                 "minecraft:enchantment_glint_override": true
               }
             },
@@ -54,7 +52,7 @@
                   }
                 ],
                 {
-                  "text": "of Armor with special effects.",
+                  "text": "of armor with special effects.",
                   "color": "gray",
                   "italic": false
                 },
@@ -68,7 +66,7 @@
                     "italic": false
                   },
                   {
-                    "text": " Grants Armor equal to a",
+                    "text": " Grants armor equal to a",
                     "color": "gray"
                   }
                 ],

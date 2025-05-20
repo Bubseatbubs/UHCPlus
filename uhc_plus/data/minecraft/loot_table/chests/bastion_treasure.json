@@ -7,7 +7,21 @@
         {
           "type": "minecraft:loot_table",
           "weight": 2,
-          "value": "uhcp:consumables/relic_invoker"
+          "value": "uhcp:consumables/relic_invoker",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "%uhcp_loot"
+                },
+                "score": "uhcp_settings"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -199,16 +213,47 @@
           "weight": 5
         },
         {
-          "type": "minecraft:item",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "add": false,
-              "count": 1.0,
-              "function": "minecraft:set_count"
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "add": false,
+                  "count": 1.0,
+                  "function": "minecraft:set_count"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "%apple_limit"
+                    },
+                    "score": "uhcp_settings"
+                  },
+                  "range": 1
+                }
+              ],
+              "name": "minecraft:golden_apple",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "add": false,
+                  "count": 1.0,
+                  "function": "minecraft:set_count"
+                }
+              ],
+              "name": "minecraft:enchanted_golden_apple",
+              "weight": 2
             }
-          ],
-          "name": "minecraft:golden_apple",
-          "weight": 2
+          ]
         }
       ],
       "rolls": 3.0

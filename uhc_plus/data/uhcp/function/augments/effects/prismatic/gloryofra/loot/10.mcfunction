@@ -1,6 +1,5 @@
-function uhcp:entity/items/loot/summon
-loot replace entity @n[type=minecraft:item,tag=UHCP_NewLoot] contents loot uhcp:augments/ra/10
-function uhcp:entity/items/loot/finish
+execute store result score @s uhcp_lava_currentLayers run loot give @s loot uhcp:augments/ra/10
+execute unless score @s uhcp_lava_currentLayers matches 30 run function uhcp:augments/effects/prismatic/gloryofra/loot/all-seeing_eye
 
 effect give @s minecraft:strength infinite 0 false
 effect give @s minecraft:speed infinite 0 false

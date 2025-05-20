@@ -1,5 +1,5 @@
 # Find items to upgrade
-execute as @s[tag=!UHCP_SLModify] run data modify storage uhcp:solo_level Inventory set from entity @s Inventory
+execute as @s[tag=!UHCP_SLModify] run function uhcp:augments/effects/prismatic/sololeveling/storage
 data modify storage uhcp:solo_level InventoryWork set from storage uhcp:solo_level Inventory
 execute store result score %sL_slot uhcp_itemCount run data get storage uhcp:solo_level Inventory
 execute if score %sL_slot uhcp_itemCount matches 1.. run function uhcp:augments/effects/prismatic/sololeveling/inventory/upgrade/search

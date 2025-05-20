@@ -1,7 +1,6 @@
-function uhcp:entity/items/loot/summon
-loot replace entity @n[type=minecraft:item,tag=UHCP_NewLoot] contents loot uhcp:player_compass
-function uhcp:entity/items/loot/finish
+execute store result score @s uhcp_lava_currentLayers run loot give @s loot uhcp:player_compass
+execute if score @s uhcp_lava_currentLayers matches 0 run function uhcp:augments/effects/silver/onthehunt/loot
 
-execute at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
+playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
 
 scoreboard players set @s uhcp_game_time -1

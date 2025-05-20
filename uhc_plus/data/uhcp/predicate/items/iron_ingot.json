@@ -1,8 +1,12 @@
 {
-	"condition": "minecraft:entity_properties",
-	"entity": "this",
-	"predicate": {
-		"type": "minecraft:item",
-		"nbt": "{Item:{id:\"minecraft:iron_ingot\"}}"
-	}
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:item",
+    "slots": {
+      "contents": {
+        "items": "minecraft:iron_ingot"
+      }
+    }
+  }
 }

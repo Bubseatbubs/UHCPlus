@@ -1,6 +1,5 @@
-execute as @s[tag=UHCP_Explode] run return 0
+scoreboard players reset @s uhcp_leave
 
-clear @s *[minecraft:custom_data~{uhcp_consumable:15b}] 1
 tag @s add UHCP_Explode
 playsound minecraft:entity.tnt.primed master @s ~ ~ ~ 1 1 1
-tellraw @s {"text":"Your organs were altered... You'll explode when you die!","color":"green"}
+tellraw @s {"text":"Your organs were altered... you'll explode when you die!","color":"green"}

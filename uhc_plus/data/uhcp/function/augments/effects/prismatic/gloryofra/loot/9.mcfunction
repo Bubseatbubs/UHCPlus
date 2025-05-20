@@ -1,6 +1,5 @@
-function uhcp:entity/items/loot/summon
-loot replace entity @n[type=minecraft:item,tag=UHCP_NewLoot] contents loot uhcp:relics/dragons_protection
-function uhcp:entity/items/loot/finish
+execute store result score @s uhcp_lava_currentLayers run loot give @s loot uhcp:relics/dragons_protection
+execute if score @s uhcp_lava_currentLayers matches 0 run function uhcp:augments/effects/prismatic/gloryofra/loot/dragons_protection
 
 give @s minecraft:potion[minecraft:potion_contents={"potion":"minecraft:strong_regeneration"}] 2
 

@@ -10,9 +10,19 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:unbreakable": {
-                  "show_in_tooltip": true
+                "minecraft:unbreakable": {},
+                "minecraft:dyed_color": 16711680,
+                "minecraft:trim": {
+                  "material": "minecraft:netherite",
+                  "pattern": "minecraft:spire"
                 }
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:dyed_color": false,
+                "minecraft:trim": false
               }
             },
             {
@@ -60,7 +70,7 @@
                   }
                 ],
                 {
-                  "text": "of Armor with special effects.",
+                  "text": "of armor with special effects.",
                   "color": "gray",
                   "italic": false
                 },
@@ -139,20 +149,6 @@
                   "bold": false
                 }
               ]
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:dyed_color": {
-                  "rgb": 16711680,
-                  "show_in_tooltip": false
-                },
-                "minecraft:trim": {
-                  "material": "minecraft:netherite",
-                  "pattern": "minecraft:spire",
-                  "show_in_tooltip": false
-                }
-              }
             },
             {
               "function": "minecraft:set_custom_data",

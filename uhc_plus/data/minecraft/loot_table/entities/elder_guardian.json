@@ -35,20 +35,134 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:item",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
-              },
-              "enchantment": "minecraft:looting",
-              "function": "minecraft:enchanted_count_increase"
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 1.0,
+                    "min": 0.0
+                  },
+                  "enchantment": "minecraft:looting",
+                  "function": "minecraft:enchanted_count_increase"
+                },
+                {
+                  "conditions": [
+                    {
+                      "condition": "minecraft:any_of",
+                      "terms": [
+                        {
+                          "condition": "minecraft:entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                            "flags": {
+                              "is_on_fire": true
+                            }
+                          }
+                        },
+                        {
+                          "condition": "minecraft:entity_properties",
+                          "entity": "direct_attacker",
+                          "predicate": {
+                            "equipment": {
+                              "mainhand": {
+                                "predicates": {
+                                  "minecraft:enchantments": [
+                                    {
+                                      "enchantments": "#minecraft:smelts_loot"
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "function": "minecraft:furnace_smelt"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "direct_attacker",
+                  "scores": {
+                    "uhcp_augment": 138
+                  }
+                }
+              ],
+              "name": "minecraft:cod",
+              "weight": 3
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 1.0,
+                    "min": 0.0
+                  },
+                  "enchantment": "minecraft:looting",
+                  "function": "minecraft:enchanted_count_increase"
+                },
+                {
+                  "conditions": [
+                    {
+                      "condition": "minecraft:any_of",
+                      "terms": [
+                        {
+                          "condition": "minecraft:value_check",
+                          "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                              "type": "minecraft:fixed",
+                              "name": "%auto_cook"
+                            },
+                            "score": "uhcp_settings"
+                          },
+                          "range": 1
+                        },
+                        {
+                          "condition": "minecraft:entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                            "flags": {
+                              "is_on_fire": true
+                            }
+                          }
+                        },
+                        {
+                          "condition": "minecraft:entity_properties",
+                          "entity": "direct_attacker",
+                          "predicate": {
+                            "equipment": {
+                              "mainhand": {
+                                "predicates": {
+                                  "minecraft:enchantments": [
+                                    {
+                                      "enchantments": "#minecraft:smelts_loot"
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "function": "minecraft:furnace_smelt"
+                }
+              ],
+              "name": "minecraft:cod",
+              "weight": 3
             }
-          ],
-          "name": "minecraft:cooked_cod",
-          "weight": 3
+          ]
         },
         {
           "type": "minecraft:item",
@@ -106,8 +220,114 @@
       ],
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "value": "minecraft:gameplay/fishing/fish"
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "functions": [
+                {
+                  "conditions": [
+                    {
+                      "condition": "minecraft:any_of",
+                      "terms": [
+                        {
+                          "condition": "minecraft:entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                            "flags": {
+                              "is_on_fire": true
+                            }
+                          }
+                        },
+                        {
+                          "condition": "minecraft:entity_properties",
+                          "entity": "direct_attacker",
+                          "predicate": {
+                            "equipment": {
+                              "mainhand": {
+                                "predicates": {
+                                  "minecraft:enchantments": [
+                                    {
+                                      "enchantments": "#minecraft:smelts_loot"
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "function": "minecraft:furnace_smelt"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "direct_attacker",
+                  "scores": {
+                    "uhcp_augment": 138
+                  }
+                }
+              ],
+              "value": "minecraft:gameplay/fishing/fish_entity"
+            },
+            {
+              "type": "minecraft:loot_table",
+              "functions": [
+                {
+                  "conditions": [
+                    {
+                      "condition": "minecraft:any_of",
+                      "terms": [
+                        {
+                          "condition": "minecraft:value_check",
+                          "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                              "type": "minecraft:fixed",
+                              "name": "%auto_cook"
+                            },
+                            "score": "uhcp_settings"
+                          },
+                          "range": 1
+                        },
+                        {
+                          "condition": "minecraft:entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                            "flags": {
+                              "is_on_fire": true
+                            }
+                          }
+                        },
+                        {
+                          "condition": "minecraft:entity_properties",
+                          "entity": "direct_attacker",
+                          "predicate": {
+                            "equipment": {
+                              "mainhand": {
+                                "predicates": {
+                                  "minecraft:enchantments": [
+                                    {
+                                      "enchantments": "#minecraft:smelts_loot"
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "function": "minecraft:furnace_smelt"
+                }
+              ],
+              "value": "minecraft:gameplay/fishing/fish_entity"
+            }
+          ]
         }
       ],
       "rolls": 1.0

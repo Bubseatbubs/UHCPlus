@@ -13,6 +13,7 @@ tag @a[tag=UHCP_Died] add UHCP_Spectator
 scoreboard players operation %titans uhcp_initStatus = %titans uhcp_settings
 scoreboard players operation %border_countdown uhcp_game_time = %border_countdown uhcp_settings
 scoreboard players set %border_stage uhcp_itemCount 0
+scoreboard players set %containers uhcp_settings 1
 scoreboard players set %day uhcp_initStatus 0
 scoreboard players set %end uhcp_initStatus 0
 scoreboard players set %game uhcp_initStatus 1
@@ -26,13 +27,15 @@ scoreboard players set @a uhcp_aug_choosingAugment 0
 execute store result score %global uhcp_game_id run random value 0..3
 execute store result score %global uhcp_game_id run function uhcp:start/id/game
 scoreboard players operation @a uhcp_game_id = %global uhcp_game_id
+execute store result storage uhcp:id game.id int 1 run scoreboard players get %global uhcp_game_id
 scoreboard players set @a uhcp_game_time -1
 
 # Display statistics
 scoreboard players display numberformat %time uhcp_game_display fixed {"text":"0:00"}
 execute store result storage uhcp:display border.size int 1 run scoreboard players get %border_size uhcp_settings
 function uhcp:display/border with storage uhcp:display border
-execute store result score %players uhcp_initStatus if entity @a[tag=!UHCP_Spectator]
+execute store result score %players uhcp_id if entity @a[tag=!UHCP_Spectator]
+scoreboard players operation %players uhcp_initStatus = %players uhcp_id
 function uhcp:display/players
 scoreboard objectives setdisplay sidebar uhcp_game_display
 
@@ -43,6 +46,7 @@ scoreboard players reset @a patron
 scoreboard players reset @a team
 scoreboard players reset @a top
 scoreboard players reset @a uhcp_arrowCount
+scoreboard players reset @a uhcp_aug_count
 scoreboard players reset @a uhcp_aug_gloryOfRa
 scoreboard players reset @a uhcp_aug_hb_killedCreeper
 scoreboard players reset @a uhcp_aug_hb_killedSkeleton
@@ -83,11 +87,11 @@ tag @a remove UHCP_SoulflameEmbrace
 tag @a remove UHCP_Explode
 
 # Set world border size
-execute store result storage uhcp:border distance int 1 run scoreboard players get %border_size uhcp_settings
-function uhcp:start/border with storage uhcp:border
+execute store result storage uhcp:border size.width int 1 run scoreboard players get %border_size uhcp_settings
+function uhcp:start/border with storage uhcp:border size
 
 # Allow one-player games to not end
-execute if score %players uhcp_initStatus matches ..1 run scoreboard players set %end uhcp_initStatus 1
+execute if score %players uhcp_id matches ..1 run scoreboard players set %end uhcp_initStatus 1
 
 # Team logic
 scoreboard players set @a uhcp_team 0
@@ -123,18 +127,11 @@ execute as @a at @s in minecraft:overworld run tp @s ~ ~1000 ~
 execute in minecraft:overworld run function uhcp:lobby/remove
 
 # Spread players
-scoreboard players operation %spread uhcp_initStatus = %border_size uhcp_settings
-scoreboard players set %const uhcp_initStatus 7
-scoreboard players operation %spread uhcp_initStatus /= %const uhcp_initStatus
-scoreboard players set %const uhcp_initStatus 3
-scoreboard players operation %spread uhcp_initStatus *= %const uhcp_initStatus
-execute if score %spread uhcp_initStatus matches ..0 run scoreboard players set %spread uhcp_initStatus 1
+execute store result storage uhcp:border spread.max_range int 0.428571 run scoreboard players get %border_size uhcp_settings
+execute store result storage uhcp:border spread.distance int 0.042857 run scoreboard players get %border_size uhcp_settings
 
-execute store result storage uhcp:border max_range int 1 run scoreboard players get %spread uhcp_initStatus
-execute store result storage uhcp:border spread_distance int 0.1 run scoreboard players get %spread uhcp_initStatus
-
-execute in minecraft:overworld run function uhcp:start/spreadplayers/initial with storage uhcp:border
-execute if score %spread uhcp_initStatus matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/initial/failure_1 with storage uhcp:border
+execute in minecraft:overworld run function uhcp:start/spreadplayers/initial with storage uhcp:border spread
+execute if score %spread uhcp_initStatus matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/initial/failure_1 with storage uhcp:border spread
 execute if score %spread uhcp_initStatus matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/initial/failure_2
 
 execute if score %spread uhcp_initStatus matches 1 run function uhcp:start/spreadplayers/secondary
@@ -170,8 +167,8 @@ experience set @a 0 levels
 experience set @a 0 points
 
 # Assign player IDs
-execute as @a run function uhcp:start/id/assign
-scoreboard players operation %players uhcp_id = %global uhcp_id
+execute as @a[tag=!UHCP_Spectator] run function uhcp:start/id/player
+execute as @a[tag=UHCP_Spectator] run function uhcp:start/id/spectator
 
 # Solo leveling upgrades
 tag @a remove UHCP_SLUpg
@@ -186,9 +183,6 @@ tag @a remove UHCP_SLPick
 tag @a remove UHCP_SLShovel
 tag @a remove UHCP_SLSword
 function uhcp:augments/effects/prismatic/sololeveling/prepare
-
-# Titan bossbars
-execute as @a run function uhcp:titans/bossbar/create
 
 # Clear ender chests
 item replace entity @a enderchest.0 with minecraft:air

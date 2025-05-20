@@ -6,5 +6,4 @@
 #declare advancement uhcp:entity_actions/consume_milk_bucket
 
 tag @s add UHCP_MilkBucket
-
 advancement revoke @s only uhcp:entity_actions/consume_milk_bucket

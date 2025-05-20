@@ -1,6 +1,3 @@
-# Unready ready players
-execute as @a[scores={uhcp_ready=1}] run function uhcp:lobby/readyup/cancel
-
 # Check for players to add to teams
 scoreboard players add @a uhcp_ready 0
 execute unless entity @a[scores={uhcp_ready=0..1}] run return run function uhcp:settings/team/randomize/fail
@@ -26,6 +23,9 @@ function uhcp:settings/team/randomize/array
 function uhcp:settings/team/randomize/assign
 function uhcp:settings/team/randomize/assign/teams
 function uhcp:teams/join_all
+
+# Unready players
+execute if entity @a[scores={uhcp_ready=1}] run function uhcp:settings/team/randomize/unready
 
 # Notification
 function uhcp:settings/pages/team

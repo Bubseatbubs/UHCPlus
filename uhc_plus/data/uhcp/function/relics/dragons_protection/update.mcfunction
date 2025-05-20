@@ -8,7 +8,7 @@ execute at @s[scores={uhcp_timer=20}] run playsound minecraft:block.note_block.h
 execute at @s[scores={uhcp_timer=40}] run playsound minecraft:block.note_block.harp master @a[distance=..2] ~ ~ ~ 1 1 1
 execute at @s[scores={uhcp_timer=60}] run playsound minecraft:block.note_block.harp master @a[distance=..2] ~ ~ ~ 1 1 1
 
-execute at @s[tag=UHCP_EndChosen,scores={uhcp_aug_count=5..}] as @e[tag=UHCP_DragonBreath,distance=..20,sort=random,limit=1] at @s run function uhcp:relics/dragons_protection/summonfireball
+execute at @s[tag=UHCP_EndChosen,scores={uhcp_aug_count=5..}] as @e[tag=UHCP_DragonBreath,distance=..20,sort=random,limit=1] at @s positioned ~ ~10 ~ run function uhcp:relics/dragons_protection/summonfireball
 scoreboard players reset @s[scores={uhcp_aug_count=5..}] uhcp_aug_count
 
 execute if score @s uhcp_timer matches ..80 run return fail

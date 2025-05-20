@@ -1,10 +1,10 @@
 {
-    "values": [
-        "minecraft:anvil",
-        "minecraft:chipped_anvil",
-        "minecraft:damaged_anvil",
-        "minecraft:enchanting_table",
-        "minecraft:grindstone",
-        "minecraft:smithing_table"
-    ]
+  "values": [
+    "minecraft:anvil",
+    "minecraft:chipped_anvil",
+    "minecraft:damaged_anvil",
+    "minecraft:enchanting_table",
+    "minecraft:grindstone",
+    "minecraft:smithing_table"
+  ]
 }

@@ -1,3 +1,6 @@
+# First half of array
+execute if score %teams_range uhcp_initStatus matches 0..6 run return run function uhcp:settings/team/randomize/array/first_half
+
 # Second half of array
 execute if score %teams_range uhcp_initStatus matches 7 run return run function uhcp:settings/team/randomize/array/second_half/7
 execute if score %teams_range uhcp_initStatus matches 8 run return run function uhcp:settings/team/randomize/array/second_half/8

@@ -1,21 +1,11 @@
-[
-  {
-    "condition": "minecraft:entity_scores",
-    "entity": "this",
-    "scores": {
-      "uhcp_augment": 225
-    }
-  },
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "type": "minecraft:player",
-      "location": {
-        "position": {
-          "y": 50
-        }
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "location": {
+      "position": {
+        "y": 50
       }
     }
   }
-]
+}

@@ -1,5 +1,5 @@
 # Find normal tools
-data modify storage uhcp:solo_level Inventory set from entity @s Inventory
+function uhcp:augments/effects/prismatic/sololeveling/storage
 data modify storage uhcp:solo_level InventoryWork set from storage uhcp:solo_level Inventory
 execute store result score %sL_slot uhcp_itemCount run data get storage uhcp:solo_level Inventory
 execute store result score %sL_tool_tot uhcp_itemCount run data get storage uhcp:solo_level ToolList

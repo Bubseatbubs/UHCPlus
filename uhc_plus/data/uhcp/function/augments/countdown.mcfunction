@@ -39,7 +39,6 @@ effect give @a[gamemode=survival] minecraft:speed 15 0 false
 effect give @a[gamemode=survival] minecraft:resistance 120 4 false
 execute as @a[gamemode=survival] run function uhcp:augments/countdown/attributes
 execute if score %night_vision uhcp_settings matches 1 run effect give @a[gamemode=survival] minecraft:night_vision infinite 0 true
-execute if entity @a[scores={uhcp_augment=25}] run function uhcp:augments/effects/gold/scavengerhunt/init
 
 # Recipes and advancements
 function uhcp:start/advancements/reset_all
@@ -53,5 +52,7 @@ execute if entity @a[scores={uhcp_augment=200..299}] run function uhcp:augments/
 
 tag @a remove UHCP_AugmentAnnounce
 
-# Finish player initialization 
+# Finish player initialization
+scoreboard players set @a uhcp_leave 1
 execute as @a[gamemode=survival] at @s run function uhcp:augments/countdown/end
+scoreboard players reset @a uhcp_leave

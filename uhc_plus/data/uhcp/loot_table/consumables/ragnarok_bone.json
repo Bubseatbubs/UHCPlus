@@ -15,13 +15,13 @@
                 [
                   [
                     {
-                      "text": "Spawn a tamed, large Wolf that",
+                      "text": "Spawn a large, tamed wolf that",
                       "color": "gray"
                     }
                   ]
                 ],
                 {
-                  "text": "can disable enemy Shields on hit.",
+                  "text": "can disable enemy shields on hit.",
                   "color": "gray"
                 }
               ],
@@ -51,14 +51,8 @@
       ],
       "functions": [
         {
-          "function": "minecraft:set_components",
-          "components": {
-            "minecraft:hide_additional_tooltip": {}
-          }
-        },
-        {
           "function": "minecraft:set_custom_data",
-          "tag": "{uhcp_rightclick:1b,uhcp_consumable:17b}"
+          "tag": "{uhcp_rightclick:true,uhcp_consumable:true,uhcp_consumable_id:10b}"
         }
       ]
     }

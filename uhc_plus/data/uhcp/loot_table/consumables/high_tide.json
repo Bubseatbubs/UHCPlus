@@ -63,14 +63,8 @@
       ],
       "functions": [
         {
-          "function": "minecraft:set_components",
-          "components": {
-            "minecraft:hide_additional_tooltip": {}
-          }
-        },
-        {
           "function": "minecraft:set_custom_data",
-          "tag": "{uhcp_rightclick:1b,uhcp_consumable:18b}"
+          "tag": "{uhcp_rightclick:true,uhcp_consumable:true,uhcp_consumable_id:11b}"
         }
       ]
     }

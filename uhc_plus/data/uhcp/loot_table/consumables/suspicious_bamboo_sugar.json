@@ -1,0 +1,119 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sugar",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Transform into a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Panda",
+                    "color": "blue",
+                    "italic": true
+                  },
+                  {
+                    "text": " and gain",
+                    "color": "gray",
+                    "italic": true
+                  }
+                ],
+                [
+                  {
+                    "text": "+10🖤",
+                    "color": "yellow",
+                    "italic": true
+                  },
+                  {
+                    "text": ". Transform back when you",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "have no Absorption.",
+                  "color": "gray"
+                },
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Panda",
+                    "color": "blue"
+                  },
+                  {
+                    "text": ": Set your ⛊ to 30, and",
+                    "color": "gray",
+                    "italic": true
+                  }
+                ],
+                {
+                  "text": "automatically attack nearby enemies.",
+                  "color": "gray"
+                },
+                {
+                  "text": "You cannot equip armor, manually",
+                  "color": "dark_red"
+                },
+                {
+                  "text": "attack, or use your offhand.",
+                  "color": "dark_red"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Suspicious Bamboo Sugar",
+                "color": "light_purple"
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "animation": "eat",
+                  "has_consume_particles": true,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:bad_omen",
+                          "amplifier": 101,
+                          "duration": 1,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      ]
+                    }
+                  ],
+                  "sound": "entity.generic.eat"
+                },
+                "minecraft:food": {
+                  "nutrition": 4,
+                  "saturation": 0,
+                  "can_always_eat": true
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

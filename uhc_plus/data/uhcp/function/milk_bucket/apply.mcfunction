@@ -1,5 +1,6 @@
 # Apply default effects
 execute if score %night_vision uhcp_settings matches 1 run effect give @s minecraft:night_vision infinite 0 true
+execute as @s[tag=UHCP_HighTide] run effect give @s minecraft:dolphins_grace infinite 4 false
 
 # Remove tag
 tag @s remove UHCP_MilkBucket

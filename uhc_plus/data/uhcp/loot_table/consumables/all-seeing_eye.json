@@ -1,72 +1,75 @@
 {
-	"pools": [
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:ender_eye",
-					"functions": [
-						{
-							"function": "minecraft:set_name",
-							"target": "item_name",
-							"name": {
-								"text": "All-Seeing Eye",
-								"color": "light_purple"
-							}
-						},
-						{
-							"function": "minecraft:set_lore",
-							"mode": "replace_all",
-							"lore": [
-								[
-									{
-										"text": "Causes ",
-										"color": "gray",
-										"italic": true
-									},
-									{
-										"text": "all enemies",
-										"color": "gold"
-									},
-									{
-										"text": " to glow"
-									}
-								],
-								[
-									{
-										"text": "for ",
-										"color": "gray",
-										"italic": true
-									},
-									{
-										"text": "10",
-										"color": "gold"
-									},
-									{
-										"text": " seconds. Consumed"
-									}
-								],
-								{
-									"text": "upon use.",
-									"color": "gray",
-									"italic": true
-								}
-							]
-						},
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:enchantment_glint_override": true
-							}
-						},
-						{
-							"function": "minecraft:set_custom_data",
-							"tag": "{uhcp_instantpickup:1b,uhcp_sight:1b}"
-						}
-					]
-				}
-			]
-		}
-	]
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_eye",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "All-Seeing Eye",
+                "color": "light_purple"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                [
+                  {
+                    "text": "Causes ",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "all enemies",
+                    "color": "gold"
+                  },
+                  {
+                    "text": " to glow"
+                  }
+                ],
+                [
+                  {
+                    "text": "for ",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "10",
+                    "color": "gold"
+                  },
+                  {
+                    "text": " seconds. Consumed"
+                  }
+                ],
+                {
+                  "text": "upon use.",
+                  "color": "gray",
+                  "italic": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "uhcp_instantpickup": true,
+                "uhcp_sight": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

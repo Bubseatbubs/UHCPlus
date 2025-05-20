@@ -95,8 +95,13 @@
                   "show_icon": false
                 }
               ]
-            },
-            "minecraft:hide_additional_tooltip": {}
+            }
+          }
+        },
+        {
+          "function": "minecraft:toggle_tooltips",
+          "toggles": {
+            "minecraft:potion_contents": false
           }
         }
       ]

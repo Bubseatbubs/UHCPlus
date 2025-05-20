@@ -6,6 +6,16 @@ scoreboard players reset @s team
 scoreboard players reset @s testkit
 scoreboard players reset @s top
 scoreboard players reset @s uhcp_death
+scoreboard players reset @s uhcp_mine_ancientDebris
+scoreboard players reset @s uhcp_mine_copperOre
+scoreboard players reset @s uhcp_mine_dCopperOre
+scoreboard players reset @s uhcp_mine_dGoldOre
+scoreboard players reset @s uhcp_mine_dIronOre
+scoreboard players reset @s uhcp_mine_goldOre
+scoreboard players reset @s uhcp_mine_ironOre
+scoreboard players reset @s uhcp_mine_rawCopperBlock
+scoreboard players reset @s uhcp_mine_rawGoldBlock
+scoreboard players reset @s uhcp_mine_rawIronBlock
 
 # Situational checks
 execute as @s[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal_fluid/reset
@@ -32,7 +42,7 @@ execute as @e[tag=UHCP_Death] if score @s uhcp_id = @a[tag=UHCP_CurrentDeadPlaye
 execute summon minecraft:marker run function uhcp:kill/death/spawn_marker
 
 # Soul apples
-execute at @s on attacker run function uhcp:kill/soul_apple/init
+execute if score %soul_apples uhcp_settings matches 1.. at @s on attacker run function uhcp:kill/soul_apple/init
 
 # General effects
 gamemode spectator @s

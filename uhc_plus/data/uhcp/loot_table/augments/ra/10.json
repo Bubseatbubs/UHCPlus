@@ -1,20 +1,13 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:loot_table",
-            "value": "uhcp:consumables/all-seeing_eye",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": 30
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+  "pools": [
+    {
+      "rolls": 30,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "uhcp:consumables/all-seeing_eye"
+        }
+      ]
+    }
+  ]
+}

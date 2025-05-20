@@ -1,4 +1,4 @@
-
+# When player is hurt
 advancement revoke @s only uhcp:entity_actions/hurt
 
 # Armaments

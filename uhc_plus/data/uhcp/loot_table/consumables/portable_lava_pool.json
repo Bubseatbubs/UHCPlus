@@ -9,7 +9,7 @@
           "name": "minecraft:magma_cream",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
@@ -26,7 +26,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_rightclick:1b,uhcp_consumable:1b}"
+              "tag": "{uhcp_rightclick:true,uhcp_consumable:true,uhcp_consumable_id:1b}"
             },
             {
               "function": "minecraft:set_name",
@@ -39,7 +39,7 @@
               ]
             },
             {
-              "function": "set_lore",
+              "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
                 {

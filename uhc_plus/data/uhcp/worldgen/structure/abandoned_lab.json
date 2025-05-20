@@ -1,21 +1,22 @@
 {
-	"type": "minecraft:jigsaw",
-	"biomes": "#minecraft:is_overworld",
-	"liquid_settings": "ignore_waterlogging",
-	"step": "underground_structures",
-	"spawn_overrides": {},
-	"terrain_adaptation": "encapsulate",
-	"start_pool": "uhcp:abandoned_lab",
-	"size": 6,
-	"start_height": {
-		"type": "minecraft:uniform",
-		"max_inclusive": {
-		  "absolute": -20
-		},
-		"min_inclusive": {
-		  "absolute": -32
-		}
-	  },
-	"max_distance_from_center": 16,
-	"use_expansion_hack": false
+  "type": "minecraft:jigsaw",
+  "biomes": "#minecraft:is_overworld",
+  "dimension_padding": 6,
+  "liquid_settings": "ignore_waterlogging",
+  "step": "underground_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "encapsulate",
+  "start_pool": "uhcp:abandoned_lab",
+  "size": 1,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "max_inclusive": {
+      "absolute": -20
+    },
+    "min_inclusive": {
+      "absolute": -32
+    }
+    },
+  "max_distance_from_center": 16,
+  "use_expansion_hack": false
 }

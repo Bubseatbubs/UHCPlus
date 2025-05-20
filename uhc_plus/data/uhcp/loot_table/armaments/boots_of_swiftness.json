@@ -36,9 +36,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:unbreakable": {
-                  "show_in_tooltip": true
-                }
+                "minecraft:unbreakable": {}
               }
             },
             {
@@ -60,7 +58,7 @@
                   }
                 ],
                 {
-                  "text": "of Armor with special effects.",
+                  "text": "of armor with special effects.",
                   "color": "gray",
                   "italic": false
                 },

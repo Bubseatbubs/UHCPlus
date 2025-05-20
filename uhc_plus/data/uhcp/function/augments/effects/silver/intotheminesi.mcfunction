@@ -1,1 +1,1 @@
-give @s minecraft:iron_pickaxe[minecraft:enchantments={levels:{"minecraft:efficiency":1}}] 1
+give @s minecraft:iron_pickaxe[minecraft:enchantments={"minecraft:efficiency":1}] 1

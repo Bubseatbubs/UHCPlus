@@ -1,6 +1,11 @@
+# Move along return path
 tag @s add UHCP_CurrentSlinger
-execute as @a if score @s uhcp_id = @n[tag=UHCP_CurrentSlinger] uhcp_id run tag @s add UHCP_Owner
-execute facing entity @p[tag=UHCP_Owner] feet run tp @s ^ ^ ^1.5
-execute if entity @p[tag=UHCP_Owner,distance=..1] run scoreboard players set @s uhcp_timer 180
+function uhcp:relics/web_o_rang/owner
+rotate @s facing entity @p[tag=UHCP_Owner] eyes
+execute at @s run rotate @s ~ ~3
+tp @s ^ ^ ^1.5
+execute if entity @a[tag=UHCP_Owner,distance=..1.75] run return run function uhcp:relics/web_o_rang/near
+
+function uhcp:relics/web_o_rang/cobweb
 tag @s remove UHCP_CurrentSlinger
 tag @a remove UHCP_Owner

@@ -1,4 +1,4 @@
-execute as @s[tag=!UHCP_DisableArmorAndOffhand] run return 0
+execute as @s[tag=!UHCP_DisableArmorAndOffhand] run return fail
 playsound minecraft:block.note_block.snare master @s ~ ~ ~ 1 1 1
 tag @s add UHCP_Owner
 tag @s remove UHCP_DisableArmorAndOffhand

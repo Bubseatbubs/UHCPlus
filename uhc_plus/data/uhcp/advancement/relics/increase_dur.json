@@ -12,9 +12,11 @@
                 "entity": "this",
                 "predicate": {
                   "slots": {
-                    "weapon.offhand": {
+                    "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_relic:1b}",
+                        "minecraft:custom_data": {
+                          "uhcp_relic": true
+                        },
                         "minecraft:damage": {
                           "damage": {
                             "min": 1
@@ -30,9 +32,11 @@
                 "entity": "this",
                 "predicate": {
                   "slots": {
-                    "container.*": {
+                    "weapon.offhand": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_relic:1b}",
+                        "minecraft:custom_data": {
+                          "uhcp_relic": true
+                        },
                         "minecraft:damage": {
                           "damage": {
                             "min": 1

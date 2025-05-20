@@ -7,6 +7,7 @@ gamerule doImmediateRespawn false
 gamerule doMobSpawning true
 gamerule keepInventory false
 gamerule randomTickSpeed 18
+gamerule showDeathMessages true
 
 # Time
 time set 1000

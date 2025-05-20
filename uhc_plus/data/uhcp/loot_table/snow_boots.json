@@ -10,18 +10,21 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [
-                    {
-                      "id": "uhcp:snow_boots_armor",
-                      "type": "minecraft:armor",
-                      "amount": 0,
-                      "operation": "add_value",
-                      "slot": "feet"
-                    }
-                  ],
-                  "show_in_tooltip": false
-                }
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "uhcp:snow_boots_armor",
+                    "type": "minecraft:armor",
+                    "amount": 0,
+                    "operation": "add_value",
+                    "slot": "feet"
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
               }
             },
             {

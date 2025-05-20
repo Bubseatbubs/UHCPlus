@@ -73,34 +73,53 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "value": "uhcp:armaments/armored_wings"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "value": "uhcp:consumables/relic_invoker"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "value": "uhcp:consumables/wild_feather",
-          "functions": [
+          "type": "minecraft:group",
+          "children": [
             {
-              "function": "minecraft:set_count",
-              "count": 2
+              "type": "minecraft:loot_table",
+              "weight": 1,
+              "value": "uhcp:armaments/armored_wings"
+            },
+            {
+              "type": "minecraft:loot_table",
+              "weight": 1,
+              "value": "uhcp:consumables/relic_invoker"
+            },
+            {
+              "type": "minecraft:loot_table",
+              "weight": 1,
+              "value": "uhcp:consumables/wild_feather",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "weight": 1,
+              "value": "uhcp:consumables/portable_lava_pool",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 1
+                }
+              ]
             }
-          ]
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "value": "uhcp:consumables/portable_lava_pool",
-          "functions": [
+          ],
+          "conditions": [
             {
-              "function": "minecraft:set_count",
-              "count": 1
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "%uhcp_loot"
+                },
+                "score": "uhcp_settings"
+              },
+              "range": 1
             }
           ]
         },

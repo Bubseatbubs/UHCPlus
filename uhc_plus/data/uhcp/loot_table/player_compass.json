@@ -1,69 +1,71 @@
 {
-	"pools": [
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:compass",
-					"functions": [
-						{
-							"function": "minecraft:set_name",
-							"target": "item_name",
-							"name": {
-								"text": "Player Compass",
-								"color": "light_purple"
-							}
-						},
-						{
-							"function": "minecraft:set_lore",
-							"mode": "replace_all",
-							"lore": [
-								[
-									{
-										"text": "Tracks the ",
-										"color": "gray",
-										"italic": true
-									},
-									{
-										"text": "closest enemy",
-										"color": "gold"
-									}
-								],
-								{
-									"text": "while held. The location",
-									"color": "gray",
-									"italic": true
-								},
-								[
-									{
-										"text": "updates every ",
-										"color": "gray",
-										"italic": true
-									},
-									{
-										"text": "5",
-										"color": "gold"
-									},
-									{
-										"text": " seconds."
-									}
-								]
-							]
-						},
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:enchantment_glint_override": true
-							}
-						},
-						{
-							"function": "minecraft:set_custom_data",
-							"tag": "{uhcp_player:1b,compass_time:0b,uuid:[I;-2147483648,-2147483648,-2147483648,-2147483648]}"
-						}
-					]
-				}
-			]
-		}
-	]
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "custom_name",
+              "name": {
+                "text": "Player Compass",
+                "color": "light_purple",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                [
+                  {
+                    "text": "Tracks the ",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "closest enemy",
+                    "color": "gold"
+                  }
+                ],
+                {
+                  "text": "while held. The location",
+                  "color": "gray",
+                  "italic": true
+                },
+                [
+                  {
+                    "text": "updates every ",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "5",
+                    "color": "gold"
+                  },
+                  {
+                    "text": " seconds."
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:lodestone_tracker": {}
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_player:1b,compass_age:0b,uuid:[I;-2147483648,-2147483648,-2147483648,-2147483648]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

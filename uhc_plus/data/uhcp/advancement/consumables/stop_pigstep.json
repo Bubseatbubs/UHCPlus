@@ -14,16 +14,18 @@
                   "entity": "this",
                   "predicate": {
                     "effects": {
-                      "minecraft:blindness": {}
+                      "minecraft:blindness": {
+                        "amplifier": 1
+                      }
                     }
                   }
                 }
               },
               {
-                "condition": "minecraft:entity_properties",
+                "condition": "minecraft:entity_scores",
                 "entity": "this",
-                "predicate": {
-                  "nbt": "{Tags:[\"UHCP_ListeningToPigstep\"]}"
+                "scores": {
+                  "uhcp_groovy": 1
                 }
               }
             ]

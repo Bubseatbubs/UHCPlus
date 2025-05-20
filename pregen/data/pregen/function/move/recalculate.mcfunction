@@ -21,8 +21,8 @@ scoreboard players operation Minutes WorldPregen %= TimeVar WorldPregen
 
 #	Post progress update
 tellraw @s {"text":"Progress update:","color":"dark_aqua"}
-tellraw @s [{"text":"","hoverEvent":{"action":"show_text","value":"The radius is half the length of the area"}},{"text":"Generated a "},{"score":{"name":"Area","objective":"WorldPregen"},"color":"green"},{"text":"x"},{"score":{"name":"Area","objective":"WorldPregen"},"color":"green"},{"text":" area."}]
-tellraw @s [{"text":"","hoverEvent":{"action":"show_text","value":"May be faster or slower depending on your hardware"}},{"text":"Estimated time remaining: "},{"score":{"name":"Hours","objective":"WorldPregen"},"color":"green"},{"text":"h"},{"score":{"name":"Minutes","objective":"WorldPregen"},"color":"green"},{"text":"m "},{"text":"[Stop]","color":"red","clickEvent":{"action":"run_command","value":"/tag @s add WorldGenStop"},"hoverEvent":{"action":"show_text","value":"Save progress and stop early"}}]
+tellraw @s [{"text":"","hover_event":{"action":"show_text","value":"The radius is half the length of the area"}},{"text":"Generated a "},{"score":{"name":"Area","objective":"WorldPregen"},"color":"green"},{"text":"x"},{"score":{"name":"Area","objective":"WorldPregen"},"color":"green"},{"text":" area."}]
+tellraw @s [{"text":"","hover_event":{"action":"show_text","value":"May be faster or slower depending on your hardware"}},{"text":"Estimated time remaining: "},{"score":{"name":"Hours","objective":"WorldPregen"},"color":"green"},{"text":"h"},{"score":{"name":"Minutes","objective":"WorldPregen"},"color":"green"},{"text":"m "},{"text":"[Stop]","color":"red","click_event":{"action":"run_command","command":"/tag @s add WorldGenStop"},"hover_event":{"action":"show_text","value":"Save progress and stop early"}}]
 
 #Calculate moves for next cycle:
 #	toLeft = toDown = (2s+1) * ChunkVar

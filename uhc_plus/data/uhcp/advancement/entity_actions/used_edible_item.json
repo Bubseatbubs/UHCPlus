@@ -19,7 +19,9 @@
         ],
         "item": {
           "predicates": {
-            "minecraft:custom_data": "{uhcp_rightclick:1b}"
+            "minecraft:custom_data": {
+              "uhcp_rightclick": true
+            }
           }
         }
       }

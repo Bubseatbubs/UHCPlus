@@ -11,4 +11,4 @@ playsound minecraft:block.enchantment_table.use master @a[distance=..4] ~ ~ ~ 1 
 playsound minecraft:entity.ender_eye.death master @a[distance=..4] ~ ~ ~ 1 1 0.4
 particle minecraft:enchanted_hit ~ ~ ~ 0.5 1 0.5 0.1 100 normal
 tag @s remove UHCP_GTrack
-kill @e[distance=..5,predicate=uhcp:ender_eye/all-seeing_eye]
+kill @n[predicate=uhcp:ender_eye/all-seeing_eye]

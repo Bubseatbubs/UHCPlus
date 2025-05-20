@@ -1,8 +1,7 @@
 {
-	"condition": "minecraft:entity_properties",
-	"entity": "this",
-	"predicate": {
-		"type": "minecraft:player",
-		"nbt": "{HurtTime:9s}"
-	}
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{HurtTime:9s}"
+  }
 }

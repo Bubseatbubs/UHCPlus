@@ -1,15 +1,15 @@
 {
-	"type": "minecraft:jigsaw",
-	"biomes": "uhcp:empty",
-	"liquid_settings": "ignore_waterlogging",
-	"step": "surface_structures",
-	"spawn_overrides": {},
-	"terrain_adaptation": "none",
-	"start_pool": "uhcp:lobby/origin",
-	"size": 6,
-	"start_height": {
-		"absolute": 273
-	},
-	"max_distance_from_center": 80,
-	"use_expansion_hack": false
+  "type": "minecraft:jigsaw",
+  "biomes": "uhcp:empty",
+  "liquid_settings": "ignore_waterlogging",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none",
+  "start_pool": "uhcp:lobby/origin",
+  "size": 6,
+  "start_height": {
+    "absolute": 273
+  },
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
 }

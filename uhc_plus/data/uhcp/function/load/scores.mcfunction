@@ -56,3 +56,18 @@ execute unless score %ender_pearl uhcp_settings = %ender_pearl uhcp_settings run
 # Set default lava scoreboard values
 execute unless score %lava_countdown uhcp_settings = %lava_countdown uhcp_settings run function uhcp:load/scores/lava_countdown
 execute unless score %lava_init uhcp_initStatus matches 1 run function uhcp:load/scores/lava
+
+# Auto-cook
+execute unless score %auto_cook uhcp_settings = %auto_cook uhcp_settings run scoreboard players operation %auto_cook uhcp_settings = %auto_cook_def uhcp_settings
+
+# Auto-smelt
+execute unless score %auto_smelt uhcp_settings = %auto_smelt uhcp_settings run scoreboard players operation %auto_smelt uhcp_settings = %auto_smelt_def uhcp_settings
+
+# Increased rates/drops of apples for leaves loot tables
+execute unless score %apple_leaves uhcp_settings = %apple_leaves uhcp_settings run scoreboard players operation %apple_leaves uhcp_settings = %apple_leaves_def uhcp_settings
+
+# Remove enchanted golden apples from loot tables
+execute unless score %apple_limit uhcp_settings = %apple_limit uhcp_settings run scoreboard players operation %apple_limit uhcp_settings = %apple_limit_def uhcp_settings
+
+# UHC Plus loot
+execute unless score %uhcp_loot uhcp_settings = %uhcp_loot uhcp_settings run scoreboard players operation %uhcp_loot uhcp_settings = %uhcp_loot_def uhcp_settings
