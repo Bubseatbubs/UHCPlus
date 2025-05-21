@@ -24,7 +24,7 @@ scoreboard objectives add uhcp_aug_cd_firstOption dummy
 scoreboard objectives add uhcp_aug_cd_secondOption dummy
 scoreboard objectives add uhcp_aug_cd_thirdOption dummy
 scoreboard objectives add uhcp_aug_cd_upgrade dummy
-scoreboard objectives add uhcp_aug_choosingAugment dummy
+scoreboard objectives add uhcp_aug_choosing dummy
 scoreboard objectives add uhcp_aug_count dummy
 scoreboard objectives add uhcp_aug_durability dummy
 scoreboard objectives add uhcp_aug_gloryOfRa dummy
@@ -43,7 +43,6 @@ scoreboard objectives add uhcp_aug_sh_item7 dummy
 scoreboard objectives add uhcp_aug_stack dummy
 scoreboard objectives add uhcp_aug_tier dummy
 scoreboard objectives add uhcp_aug_time dummy
-scoreboard objectives add uhcp_aug_validSelection dummy
 scoreboard objectives add uhcp_augment dummy
 scoreboard objectives add uhcp_count dummy
 scoreboard objectives add uhcp_death deathCount

@@ -4,7 +4,7 @@ scoreboard players set @s uhcp_lobby_item 10
 playsound minecraft:block.vault.insert_item master @s ~ ~ ~ 1 1 1
 playsound minecraft:block.vault.activate master @s ~ ~ ~ 1 1 1
 
-tag @s add UHCP_DisableReset
+scoreboard players set @s uhcp_leave 1000
 item replace entity @s armor.head with minecraft:air
 function uhcp:lobby/menu/relic_testing
-tag @s remove UHCP_DisableReset
+scoreboard players reset @s uhcp_leave

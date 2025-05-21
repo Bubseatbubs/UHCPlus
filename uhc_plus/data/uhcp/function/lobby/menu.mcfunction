@@ -1,5 +1,5 @@
 # Generate lobby menu
-tag @s add UHCP_DisableReset
+scoreboard players set @s uhcp_leave 1000
 function uhcp:lobby/menu/head
 item replace entity @s armor.chest with minecraft:air
 item replace entity @s armor.legs with minecraft:air
@@ -50,5 +50,5 @@ item replace entity @s container.33 with minecraft:black_stained_glass_pane[mine
 item replace entity @s container.34 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
 item replace entity @s container.35 with minecraft:black_stained_glass_pane[minecraft:item_name={"text":"Menu Selection","color":"gold"},minecraft:max_stack_size=1,minecraft:enchantments={"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={hide_tooltip:true}] 1
 
-tag @s remove UHCP_DisableReset
+scoreboard players reset @s uhcp_leave
 advancement revoke @s only uhcp:lobby/update_menu

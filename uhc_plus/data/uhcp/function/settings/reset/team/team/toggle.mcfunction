@@ -19,6 +19,6 @@ team empty light_purple
 team empty red
 team empty yellow
 
-tag @a add UHCP_DisableReset
+scoreboard players set @a uhcp_leave 1000
 item replace entity @a[gamemode=!creative] container.0 with minecraft:air
-tag @a remove UHCP_DisableReset
+scoreboard players reset @a uhcp_leave

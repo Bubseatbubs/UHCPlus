@@ -1,9 +1,9 @@
 # Turn teams on
 scoreboard players set %team uhcp_settings 1
 
-tag @a add UHCP_DisableReset
+scoreboard players set @a uhcp_leave 1000
 execute if score %players_select_teams uhcp_settings matches 1 run loot replace entity @a[gamemode=!creative] container.0 loot uhcp:lobby_menu/team
-tag @a remove UHCP_DisableReset
+scoreboard players reset @a uhcp_leave
 
 function uhcp:settings/pages/team
 tellraw @s [{"text":"Teams have been turned "},{"text":"ON","color":"green"},{"text":"."}]

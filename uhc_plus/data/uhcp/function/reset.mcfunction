@@ -70,7 +70,6 @@ tag @a remove UHCP_AteApple
 tag @a remove UHCP_AugmentRerollSlot1
 tag @a remove UHCP_AugmentRerollSlot2
 tag @a remove UHCP_AugmentRerollSlot3
-tag @a remove UHCP_ChoosingItem
 tag @a remove UHCP_Died
 tag @a remove UHCP_DisableArmorAndOffhand
 tag @a remove UHCP_Explode
@@ -114,7 +113,7 @@ scoreboard players reset %time_freeze uhcp_initStatus
 # Player scores
 scoreboard players reset @a testkit
 scoreboard players reset @a top
-scoreboard players reset @a uhcp_aug_choosingAugment
+scoreboard players reset @a uhcp_aug_choosing
 scoreboard players reset @a uhcp_aug_count
 scoreboard players reset @a uhcp_aug_tier
 scoreboard players reset @a uhcp_augment
@@ -163,7 +162,7 @@ gamemode adventure @a
 
 # Lobby Menu
 scoreboard players set @a uhcp_ready 0
-tag @a add UHCP_DisableReset
+scoreboard players set @a uhcp_leave 1000
 
 function uhcp:lobby/menu/team_all
 function uhcp:lobby/menu/patron_all
@@ -214,7 +213,7 @@ item replace entity @a player.crafting.3 with minecraft:air
 item replace entity @a player.cursor with minecraft:air
 item replace entity @a weapon.offhand with minecraft:air
 
-tag @a remove UHCP_DisableReset
+scoreboard players reset @a uhcp_leave
 
 # Notify players of reset
 title @a subtitle {"text":"RESET","color":"gray"}

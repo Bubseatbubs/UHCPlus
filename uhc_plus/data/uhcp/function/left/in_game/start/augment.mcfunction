@@ -15,7 +15,7 @@ function uhcp:augments/countdown/attributes
 execute if score %night_vision uhcp_settings matches 1 run effect give @s minecraft:night_vision infinite 0 true
 
 # Select augment
-execute as @s[tag=UHCP_ChoosingItem] run function uhcp:augments/auto_select
+execute if score @s uhcp_aug_choosing matches 1 run function uhcp:augments/auto_select
 
 # Recipes and advancements
 function uhcp:start/advancements/reset

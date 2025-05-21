@@ -9,7 +9,7 @@ execute if score %augment_countdown uhcp_game_time matches ..897 as @a[gamemode=
 execute if score %augment_countdown uhcp_game_time matches 880 as @a[gamemode=adventure] at @s run forceload remove ~ ~
 
 # If all players selected an augment, skip to 5 seconds left
-execute if score %augment_countdown uhcp_game_time matches 101.. unless entity @a[gamemode=adventure,tag=UHCP_ChoosingItem] run scoreboard players set %augment_countdown uhcp_game_time 100
+execute if score %augment_countdown uhcp_game_time matches 101.. unless entity @a[gamemode=adventure,scores={uhcp_aug_choosing=1}] run scoreboard players set %augment_countdown uhcp_game_time 100
 execute store result bossbar uhcp:augment value run scoreboard players get %augment_countdown uhcp_game_time
 
 # If < 5 seconds, stop function

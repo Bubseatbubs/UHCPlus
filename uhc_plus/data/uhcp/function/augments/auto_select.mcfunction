@@ -5,7 +5,7 @@
 # @within  uhcp:augments/countdown
 # @within  uhcp:left/in_game/augment_select
 
-tag @s remove UHCP_ChoosingItem
+scoreboard players reset @s uhcp_aug_choosing
 
 # Randomize selection
 execute store result score @s uhcp_initStatus run function uhcp:augments/generate/slot

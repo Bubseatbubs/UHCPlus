@@ -72,7 +72,7 @@ item replace entity @a[tag=!UHCP_Spectator] player.crafting.3 with minecraft:air
 item replace entity @a[tag=!UHCP_Spectator] player.cursor with minecraft:air
 item replace entity @a[tag=!UHCP_Spectator] weapon.offhand with minecraft:air
 
-tag @a[tag=!UHCP_Spectator] add UHCP_ChoosingItem
+scoreboard players set @a[tag=!UHCP_Spectator] uhcp_aug_choosing 1
 
 # Clear spectators
 clear @a[tag=UHCP_Spectator]

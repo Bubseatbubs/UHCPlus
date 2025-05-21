@@ -7,32 +7,20 @@
           {
             "condition": "minecraft:inverted",
             "term": {
-              "condition": "minecraft:any_of",
-              "terms": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "uhcp_leave": {
-                      "min": 1
-                    }
-                  }
-                },
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "uhcp_aug_validSelection": 100
-                  }
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "uhcp_leave": {
+                  "min": 1
                 }
-              ]
+              }
             }
           },
           {
-            "condition": "minecraft:entity_properties",
+            "condition": "minecraft:entity_scores",
             "entity": "this",
-            "predicate": {
-              "nbt": "{Tags:[\"UHCP_ChoosingItem\"]}"
+            "scores": {
+              "uhcp_aug_choosing": 1
             }
           }
         ]

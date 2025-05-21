@@ -5,6 +5,6 @@ execute if score %players_select_teams_def uhcp_settings matches 1 run return ru
 scoreboard players set %players_select_teams uhcp_settings 0
 scoreboard players reset @a team
 
-tag @a add UHCP_DisableReset
+scoreboard players set @a uhcp_leave 1000
 item replace entity @a[gamemode=!creative] container.0 with minecraft:air
-tag @a remove UHCP_DisableReset
+scoreboard players reset @a uhcp_leave

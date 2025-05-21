@@ -22,8 +22,7 @@ scoreboard players set %time_freeze uhcp_initStatus 0
 scoreboard players set %titans uhcp_game_time 6000
 scoreboard players set %update_display uhcp_game_time 10
 execute if score %dimension uhcp_settings matches ..-1 run scoreboard players set %dimension uhcp_settings 0
-execute as @a unless score @s uhcp_aug_patron = @s uhcp_aug_patron run scoreboard players set @s uhcp_aug_patron 8
-scoreboard players set @a uhcp_aug_choosingAugment 0
+execute as @a[tag=!UHCP_Spectator] unless score @s uhcp_aug_patron = @s uhcp_aug_patron run scoreboard players set @s uhcp_aug_patron 8
 execute store result score %global uhcp_game_id run random value 0..3
 execute store result score %global uhcp_game_id run function uhcp:start/id/game
 scoreboard players operation @a uhcp_game_id = %global uhcp_game_id
@@ -46,6 +45,7 @@ scoreboard players reset @a patron
 scoreboard players reset @a team
 scoreboard players reset @a top
 scoreboard players reset @a uhcp_arrowCount
+scoreboard players reset @a uhcp_aug_choosing
 scoreboard players reset @a uhcp_aug_count
 scoreboard players reset @a uhcp_aug_gloryOfRa
 scoreboard players reset @a uhcp_aug_hb_killedCreeper
@@ -143,7 +143,6 @@ execute as @a[tag=UHCP_Spectator] run tp @s @r[tag=!UHCP_Spectator]
 # Augment selection setup
 kill @e[tag=UHCP_StoreAugment]
 kill @e[type=minecraft:item,predicate=uhcp:dimensions/uhcp/main]
-tag @a remove UHCP_ChoosingItem
 tag @a remove UHCP_AugmentRerollSlot1
 tag @a remove UHCP_AugmentRerollSlot2
 tag @a remove UHCP_AugmentRerollSlot3

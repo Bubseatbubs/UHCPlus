@@ -69,7 +69,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
-                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_choosing": 0,
                     "uhcp_aug_patron": 0
                   }
                 },
@@ -90,7 +90,7 @@
                       "condition": "minecraft:entity_scores",
                       "entity": "this",
                       "scores": {
-                        "uhcp_aug_choosingAugment": 1
+                        "uhcp_aug_choosing": 1
                       }
                     }
                   ]
@@ -244,7 +244,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
-                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_choosing": 0,
                     "uhcp_aug_patron": 2
                   }
                 },
@@ -265,7 +265,7 @@
                       "condition": "minecraft:entity_scores",
                       "entity": "this",
                       "scores": {
-                        "uhcp_aug_choosingAugment": 1
+                        "uhcp_aug_choosing": 1
                       }
                     }
                   ]
@@ -372,7 +372,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
-                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_choosing": 0,
                     "uhcp_aug_patron": 6
                   }
                 },
@@ -393,7 +393,7 @@
                       "condition": "minecraft:entity_scores",
                       "entity": "this",
                       "scores": {
-                        "uhcp_aug_choosingAugment": 1
+                        "uhcp_aug_choosing": 1
                       }
                     }
                   ]
@@ -497,7 +497,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
-                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_choosing": 0,
                     "uhcp_aug_patron": 5
                   }
                 },
@@ -518,7 +518,7 @@
                       "condition": "minecraft:entity_scores",
                       "entity": "this",
                       "scores": {
-                        "uhcp_aug_choosingAugment": 1
+                        "uhcp_aug_choosing": 1
                       }
                     }
                   ]
@@ -616,7 +616,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
-                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_choosing": 0,
                     "uhcp_aug_patron": 4
                   }
                 },
@@ -637,7 +637,7 @@
                       "condition": "minecraft:entity_scores",
                       "entity": "this",
                       "scores": {
-                        "uhcp_aug_choosingAugment": 1
+                        "uhcp_aug_choosing": 1
                       }
                     }
                   ]
@@ -761,7 +761,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
-                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_choosing": 0,
                     "uhcp_aug_patron": 7
                   }
                 },
@@ -782,7 +782,7 @@
                       "condition": "minecraft:entity_scores",
                       "entity": "this",
                       "scores": {
-                        "uhcp_aug_choosingAugment": 1
+                        "uhcp_aug_choosing": 1
                       }
                     }
                   ]
@@ -865,7 +865,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
-                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_choosing": 0,
                     "uhcp_aug_patron": 3
                   }
                 },
@@ -886,7 +886,7 @@
                       "condition": "minecraft:entity_scores",
                       "entity": "this",
                       "scores": {
-                        "uhcp_aug_choosingAugment": 1
+                        "uhcp_aug_choosing": 1
                       }
                     }
                   ]
@@ -978,7 +978,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
-                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_choosing": 0,
                     "uhcp_aug_patron": 1
                   }
                 },
@@ -999,7 +999,7 @@
                       "condition": "minecraft:entity_scores",
                       "entity": "this",
                       "scores": {
-                        "uhcp_aug_choosingAugment": 1
+                        "uhcp_aug_choosing": 1
                       }
                     }
                   ]
@@ -1104,7 +1104,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
-                    "uhcp_aug_choosingAugment": 0,
+                    "uhcp_aug_choosing": 0,
                     "uhcp_aug_patron": 9
                   }
                 },
@@ -1125,7 +1125,7 @@
                       "condition": "minecraft:entity_scores",
                       "entity": "this",
                       "scores": {
-                        "uhcp_aug_choosingAugment": 1
+                        "uhcp_aug_choosing": 1
                       }
                     }
                   ]

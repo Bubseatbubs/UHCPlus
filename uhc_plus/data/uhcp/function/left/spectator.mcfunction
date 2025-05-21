@@ -5,7 +5,6 @@ tag @s remove UHCP_AteApple
 tag @s remove UHCP_AugmentRerollSlot1
 tag @s remove UHCP_AugmentRerollSlot2
 tag @s remove UHCP_AugmentRerollSlot3
-tag @s remove UHCP_ChoosingItem
 tag @s remove UHCP_Died
 tag @s remove UHCP_DisableArmorAndOffhand
 tag @s remove UHCP_Explode
@@ -29,7 +28,7 @@ scoreboard players reset @s patron
 scoreboard players reset @s team
 scoreboard players reset @s testkit
 scoreboard players reset @s top
-scoreboard players reset @s uhcp_aug_choosingAugment
+scoreboard players reset @s uhcp_aug_choosing
 scoreboard players reset @s uhcp_aug_count
 scoreboard players reset @s uhcp_aug_tier
 scoreboard players reset @s uhcp_augment

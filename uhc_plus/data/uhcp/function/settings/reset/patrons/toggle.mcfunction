@@ -5,6 +5,6 @@ execute if score %patrons_def uhcp_settings matches 1 unless score %tier uhcp_au
 scoreboard players set %patrons uhcp_settings 0
 scoreboard players reset @a patron
 
-tag @a add UHCP_DisableReset
+scoreboard players set @a uhcp_leave 1000
 item replace entity @a[gamemode=!creative] container.1 with minecraft:air
-tag @a remove UHCP_DisableReset
+scoreboard players reset @a uhcp_leave

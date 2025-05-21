@@ -3,7 +3,7 @@
 #
 # @within  uhcp:augments/validate
 
-tag @s remove UHCP_ChoosingItem
+scoreboard players reset @s uhcp_aug_choosing
 tag @s add UHCP_Owner
 execute as @e[tag=UHCP_StoreAugment] if score @s uhcp_id = @a[tag=UHCP_Owner,limit=1] uhcp_id run kill @s
 kill @e[type=minecraft:item,predicate=uhcp:dimensions/uhcp/main]
