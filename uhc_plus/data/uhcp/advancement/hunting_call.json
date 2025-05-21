@@ -44,7 +44,9 @@
         "item": {
           "items": "minecraft:goat_horn",
           "predicates": {
-            "minecraft:custom_data": "{uhcp_huntingcall:1b}"
+            "minecraft:custom_data": {
+              "uhcp_huntingcall": true
+            }
           }
         }
       }

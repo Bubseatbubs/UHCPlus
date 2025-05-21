@@ -1,7 +1,7 @@
 {
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:used_ender_eye"
+      "trigger": "minecraft:impossible"
     }
   },
   "rewards": {
