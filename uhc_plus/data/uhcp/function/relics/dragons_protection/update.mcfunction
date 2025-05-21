@@ -19,12 +19,7 @@ execute at @s[tag=UHCP_EndChosen] run tag @e[tag=UHCP_DragonBreath,distance=..20
 execute at @s[tag=UHCP_EndChosen] run tag @e[distance=..20] remove UHCP_DragonBreath
 execute as @s[tag=UHCP_EndChosen] in uhcp:main run tp @e[tag=UHCP_TeleportBack] 0 -63 0
 execute as @s[tag=UHCP_EndChosen] run tag @e remove UHCP_TeleportBack
-fill ~1 ~ ~-2 ~-1 ~2 ~-2 minecraft:air replace minecraft:obsidian
-fill ~2 ~ ~1 ~2 ~2 ~-1 minecraft:air replace minecraft:obsidian
-fill ~1 ~ ~2 ~-1 ~2 ~2 minecraft:air replace minecraft:obsidian
-fill ~-2 ~ ~1 ~-2 ~2 ~-1 minecraft:air replace minecraft:obsidian
-fill ~1 ~3 ~1 ~-1 ~3 ~-1 minecraft:air replace minecraft:obsidian
-fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 minecraft:air replace minecraft:obsidian
+fill ~-2 ~-1 ~-2 ~2 ~3 ~2 minecraft:air replace minecraft:obsidian
 playsound minecraft:block.stone.break master @a[distance=..10] ~ ~ ~ 1 0.5 1
 particle minecraft:block{block_state:"minecraft:obsidian"} ~ ~ ~ 3 3 3 0.01 1000 normal
 

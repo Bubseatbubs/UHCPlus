@@ -3,7 +3,10 @@ execute as @a[distance=..3.5] run damage @s 1 minecraft:mob_attack by @n[tag=UHC
 execute as @e[type=!minecraft:player,type=!#uhcp:inanimate_mobs,tag=!UHCP_Titan,tag=!UHCP_Minion,distance=..3.5] run damage @s 10 minecraft:mob_attack by @n[tag=UHCP_CurrentTitan]
 tag @s remove UHCP_CurrentTitan
 
+scoreboard players set %containers uhcp_settings 0
+fill ~-5 ~ ~-5 ~5 ~18 ~5 minecraft:air replace #uhcp:containers destroy
 execute store result score %blocksfilled uhcp_titans_count run fill ~-5 ~ ~-5 ~5 ~18 ~5 minecraft:air replace #uhcp:titan_can_break
+scoreboard players set %containers uhcp_settings 1
 execute if score %blocksfilled uhcp_titans_count matches 3.. run playsound minecraft:entity.wither.break_block master @a[distance=..16] ~ ~ ~ 0.5 1.25 0.15
 
 scoreboard players reset %y_diff uhcp_titans_height

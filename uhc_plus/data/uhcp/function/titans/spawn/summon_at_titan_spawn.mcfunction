@@ -10,7 +10,7 @@ execute at @s[scores={uhcp_titans_count=9}] positioned ~ ~1 ~ run function uhcp:
 execute at @s[scores={uhcp_titans_count=10}] positioned ~ ~1 ~ run function uhcp:titans/tyrion/init
 execute at @s[scores={uhcp_titans_count=11}] positioned ~ ~1 ~ run function uhcp:titans/gerald/init
 execute at @s[scores={uhcp_titans_count=12}] positioned ~ ~1 ~ run function uhcp:titans/gallie/init
-fill ~-4 ~ ~-4 ~4 ~8 ~4 minecraft:air replace minecraft:barrier
+fill ~-4 ~ ~-4 ~4 ~8 ~4 minecraft:air replace minecraft:barrier strict
 playsound minecraft:block.end_portal.spawn master @a[distance=..16] ~ ~ ~ 1 1 0.6
 particle minecraft:reverse_portal ~ ~ ~ 3 3 3 0.1 100 normal
 particle minecraft:flash ~ ~ ~ 0.1 0.1 0.1 0.1 10 normal

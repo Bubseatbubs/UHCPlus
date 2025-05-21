@@ -2,7 +2,10 @@ tag @s add UHCP_CurrentTitan
 execute as @e[type=!#uhcp:inanimate_mobs,tag=!UHCP_Titan,tag=!UHCP_Minion,distance=..4.25] run damage @s 4 minecraft:mob_attack by @n[tag=UHCP_CurrentTitan]
 tag @s remove UHCP_CurrentTitan
 
+scoreboard players set %containers uhcp_settings 0
+fill ~-5 ~ ~-5 ~5 ~7 ~5 minecraft:air replace #uhcp:containers destroy
 execute store result score %blocksfilled uhcp_titans_count run fill ~-5 ~ ~-5 ~5 ~7 ~5 minecraft:air replace #uhcp:titan_can_break
+scoreboard players set %containers uhcp_settings 1
 execute if score %blocksfilled uhcp_titans_count matches 3.. run playsound minecraft:entity.wither.break_block master @a[distance=..16] ~ ~ ~ 0.5 1.25 0.15
 
 execute as @s[tag=UHCP_IsDashing] run return run function uhcp:titans/gallie/dash/update

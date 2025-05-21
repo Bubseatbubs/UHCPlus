@@ -2,10 +2,15 @@
 tellraw @a [{"text":"A Titan","color":"#d46e1c","bold":true},{"text":" will rise at ","color":"#deb018","bold":false},{"text":"[","color":"dark_gray","bold":false},{"score":{"name":"@s","objective":"uhcp_motion_x1"},"color":"#9EE8FF","bold":false},{"text":", ","color":"dark_gray","bold":false},{"score":{"name":"@s","objective":"uhcp_motion_y1"},"color":"#9EE8FF","bold":false},{"text":", ","color":"dark_gray","bold":false},{"score":{"name":"@s","objective":"uhcp_motion_z1"},"color":"#9EE8FF","bold":false},{"text":"]","color":"dark_gray","bold":false},{"text":"...","color":"#deb018","bold":false}]
 
 # Place down the altar
-fill ~-5 ~-1 ~-5 ~5 ~-5 ~5 minecraft:smooth_basalt
+scoreboard players set %containers uhcp_settings 0
+fill ~-5 ~-1 ~-5 ~5 ~-36 ~5 minecraft:smooth_basalt replace #uhcp:containers destroy
+fill ~-5 ~-1 ~-5 ~5 ~-5 ~5 minecraft:smooth_basalt replace #uhcp:breakable
 fill ~-5 ~-6 ~-5 ~5 ~-36 ~5 minecraft:smooth_basalt replace #uhcp:no_hitbox_blocks
+fill ~-5 ~ ~-5 ~5 ~5 ~5 minecraft:air replace #uhcp:containers destroy
+fill ~-2 ~ ~-2 ~2 ~7 ~2 minecraft:barrier replace #uhcp:containers destroy
 fill ~-5 ~ ~-5 ~5 ~5 ~5 minecraft:air
 fill ~-2 ~ ~-2 ~2 ~7 ~2 minecraft:barrier
+scoreboard players set %containers uhcp_settings 1
 playsound minecraft:block.end_portal.spawn master @a[distance=..16] ~ ~ ~ 1 1 0.6
 particle minecraft:reverse_portal ~ ~ ~ 3 3 3 0.1 100 normal
 particle minecraft:flash ~ ~ ~ 0.1 0.1 0.1 0.1 10 normal

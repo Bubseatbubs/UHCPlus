@@ -13,7 +13,7 @@ execute as @e[distance=..4,type=!#uhcp:inanimate_mobs] run scoreboard players op
 scoreboard players set @a[gamemode=!survival] uhcp_initStatus -1
 
 # Finish
-execute at @n[tag=UHCP_New] run fill ~-1 ~ ~-1 ~1 ~2 ~1 minecraft:air replace #uhcp:breakable
+execute at @n[tag=UHCP_New] run function uhcp:relics/dragons_protection/fill
 execute as @e[distance=..3,scores={uhcp_initStatus=0..}] unless score @s uhcp_initStatus = @p[tag=UHCP_Init] uhcp_team at @s run tp @s ~ ~5 ~
 tp @s ~ ~1 ~
 tag @s remove UHCP_Init

@@ -4,7 +4,10 @@ playsound minecraft:item.mace.smash_ground_heavy master @a[distance=..16] ~ ~ ~ 
 playsound minecraft:item.mace.smash_ground_heavy master @a[distance=..16] ~ ~ ~ 1 1 1
 particle minecraft:explosion_emitter ~ ~ ~ 0.25 0.25 0.25 0.1 10 normal
 particle minecraft:block{block_state:"minecraft:iron_block"} ~ ~ ~ 3 1 3 0.1 100 normal
+scoreboard players set %containers uhcp_settings 0
+fill ~-9 ~-0.5 ~-9 ~9 ~ ~9 minecraft:air replace #uhcp:containers destroy
 fill ~-9 ~-0.5 ~-9 ~9 ~ ~9 minecraft:air replace #uhcp:titan_can_break
+scoreboard players set %containers uhcp_settings 1
 attribute @s minecraft:gravity modifier remove uhcp:gravity_globe
 particle minecraft:dust_plume ~ ~ ~ 1 1 1 1 100 normal
 kill @n[tag=UHCP_FerrumLanding,distance=..16]

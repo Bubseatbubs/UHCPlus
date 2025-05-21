@@ -15,9 +15,13 @@ execute as @a[distance=..36,gamemode=survival] if score @s uhcp_id = @n[tag=UHCP
 execute facing entity @p[tag=UHCP_RaTarget] feet run tp @s ^ ^ ^0.36
 execute unless entity @a[tag=UHCP_RaTarget] facing entity @n[tag=!UHCP_Invulnerable,tag=!UHCP_RaImmune,type=!minecraft:player,type=!#uhcp:inanimate_mobs,distance=..32] feet run tp @s ^ ^ ^0.36
 
-execute store result score %blocksfilled uhcp_titans_count run fill ~-2.5 ~-0.5 ~-2.5 ~2.5 ~128 ~2.5 minecraft:air replace #uhcp:visible_breakable
-execute store result score %blocksfilled uhcp_titans_count run fill ~-2.5 ~-1.5 ~-2.5 ~2.5 ~-1.5 ~2.5 minecraft:basalt replace #uhcp:no_fluids_breakable
-execute if score %blocksfilled uhcp_titans_count matches 1.. run playsound minecraft:entity.wither.break_block master @a[distance=..16] ~ ~ ~ 1 1 0.5
+scoreboard players set %containers uhcp_settings 0
+fill ~-2.5 ~-0.5 ~-2.5 ~2.5 ~128 ~2.5 minecraft:air replace #uhcp:containers destroy
+fill ~-2.5 ~-0.5 ~-2.5 ~2.5 ~128 ~2.5 minecraft:air replace #uhcp:visible_breakable
+fill ~-2.5 ~-1.5 ~-2.5 ~2.5 ~-1.5 ~2.5 minecraft:basalt replace #uhcp:containers destroy
+execute store success score %blocksfilled uhcp_titans_count run fill ~-2.5 ~-1.5 ~-2.5 ~2.5 ~-1.5 ~2.5 minecraft:basalt replace #uhcp:no_fluids_breakable
+scoreboard players set %containers uhcp_settings 1
+execute if score %blocksfilled uhcp_titans_count matches 1 run playsound minecraft:entity.wither.break_block master @a[distance=..16] ~ ~ ~ 1 1 0.5
 
 execute as @a[distance=..8,gamemode=survival,predicate=uhcp:on_ground] at @s run tp @s ~ ~0.074 ~
 execute as @a[distance=8..16,gamemode=survival,predicate=uhcp:on_ground] at @s run tp @s ~ ~0.044 ~

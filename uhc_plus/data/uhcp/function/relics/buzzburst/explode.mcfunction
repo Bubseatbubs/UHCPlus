@@ -5,7 +5,7 @@ particle minecraft:explosion_emitter ~ ~ ~ 0.1 0.1 0.1 0.1 1 normal
 playsound minecraft:entity.bee.death master @a[distance=..24.5] ~ ~ ~ 1 1 0.25
 playsound minecraft:entity.bee.hurt master @a[distance=..24.5] ~ ~ ~ 1 1 0.25
 playsound minecraft:block.beehive.enter master @a[distance=..24.5] ~ ~ ~ 1 1 0.25
-execute if score %game uhcp_initStatus matches 1 run fill ~-2 ~-2 ~-2 ~2 ~2 ~2 minecraft:honey_block replace #uhcp:no_fluids_breakable
+execute if score %game uhcp_initStatus matches 1 run function uhcp:relics/buzzburst/fill
 function uhcp:entity/bees/summon
 function uhcp:entity/bees/summon
 function uhcp:entity/bees/summon
