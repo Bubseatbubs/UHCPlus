@@ -8,7 +8,7 @@
         "predicate": {
           "slots": {
             "container.*": {
-              "items": "minecraft:egg"
+              "items": "#minecraft:eggs"
             }
           }
         }
@@ -19,7 +19,7 @@
         "predicate": {
           "slots": {
             "weapon.offhand": {
-              "items": "minecraft:egg"
+              "items": "#minecraft:eggs"
             }
           }
         }
