@@ -1,0 +1,1 @@
+# TODO: Check if either Sniffer is dead, and execute ssiege:end/end if so
