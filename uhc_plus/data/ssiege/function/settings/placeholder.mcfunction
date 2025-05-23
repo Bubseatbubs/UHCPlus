@@ -1,1 +1,1 @@
-# TODO: Write functions that allow users to adjust game settings
+# TODO: Sniffer Siege settings menu

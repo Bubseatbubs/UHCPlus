@@ -1,0 +1,1 @@
+# Any Sniffer Siege exclusive entities go in this folder (ie. Sniffer Turret)

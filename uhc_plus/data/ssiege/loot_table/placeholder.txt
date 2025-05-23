@@ -1,1 +1,1 @@
-TODO: Remake all ported loot tables from uhcp
+Any Sniffer Siege specific loot tables, including Augments, Fishing, Titans, etc. (either changed from UHCP or completely new) go here

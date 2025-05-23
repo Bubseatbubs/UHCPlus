@@ -1,3 +1,0 @@
-# Player clone armor stand
-data merge entity @s {CustomNameVisible:true,Invulnerable:true,ShowArms:true,NoBasePlate:true,Tags:["UHCP_SCloneStand","UHCP_Summon","UHCP_NewSCS","UHCP_New"],Pose:{LeftArm:[275f,0f,0f],RightArm:[267f,0f,0f],LeftLeg:[330f,0f,0f],RightLeg:[12f,0f,0f]},DisabledSlots:4144959,equipment:{feet:{id:"minecraft:leather_boots",components:{"minecraft:dyed_color":6260410}},legs:{id:"minecraft:leather_leggings",components:{"minecraft:dyed_color":2367520}},chest:{id:"minecraft:leather_chestplate",components:{"minecraft:dyed_color":4866626}}},CustomName:{text:"ShadowClone",color:"white"}}
-loot replace entity @s weapon.mainhand loot uhcp:relics/smooth_getaway/weapon

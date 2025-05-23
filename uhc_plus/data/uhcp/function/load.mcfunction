@@ -98,6 +98,10 @@ scoreboard objectives add uhcp_top_cd dummy
 scoreboard objectives add uhcp_top_charge dummy
 scoreboard objectives add uhcp_top_delay dummy
 scoreboard objectives add uhcp_transformDuration dummy
+scoreboard objectives add ssiege_recall_cd dummy
+scoreboard objectives add ssiege_recall_charge dummy
+scoreboard objectives add ssiege_recall_delay dummy
+scoreboard objectives add ssiege_current_encounter dummy
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health
@@ -255,6 +259,7 @@ scoreboard players set %apple_limit_def uhcp_settings 1
 scoreboard players set %uhcp_loot_def uhcp_settings 1
 
 # Set default scores when unset
+# TODO: Sniffer Siege version of this function, also make sure to update defaults whenever mode is swapped
 execute unless score %game uhcp_initStatus matches 1 run function uhcp:load/scores
 
 # Dimension-specific commands
