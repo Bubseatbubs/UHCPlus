@@ -1,0 +1,4 @@
+# Headpat Encounter
+give @a[gamemode=survival] potion[potion_contents={custom_effects:[{id:"minecraft:strength",amplifier:0,duration:1200}]},custom_name={"bold":false,"color":"yellow","italic":false,"text":"Headpat's Homebrew"}] 1
+give @a[gamemode=survival] potion[potion_contents={custom_effects:[{id:"minecraft:speed",amplifier:0,duration:1200}]},custom_name={"bold":false,"color":"blue","italic":false,"text":"Headpat's Homebrew"}] 1
+give @a[gamemode=survival] potion[potion_contents={custom_effects:[{id:"minecraft:regeneration",amplifier:2,duration:192}]},custom_name={"bold":false,"color":"red","italic":false,"text":"Headpat's Homebrew"}] 1

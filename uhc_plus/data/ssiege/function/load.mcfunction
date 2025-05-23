@@ -98,6 +98,8 @@ scoreboard objectives add ssiege_recall_cd dummy
 scoreboard objectives add ssiege_recall_charge dummy
 scoreboard objectives add ssiege_recall_delay dummy
 scoreboard objectives add uhcp_transformDuration dummy
+scoreboard objectives add encounterTimer dummy
+scoreboard objectives add currentEncounter dummy
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health
