@@ -32,7 +32,7 @@ tag @a remove UHCP_AugmentRerollSlot2
 tag @a remove UHCP_AugmentRerollSlot3
 
 # Augment tier
-execute if score %random uhcp_aug_tier matches 1 store result score %tier uhcp_aug_tier run function ssiege:start/augments/tier/randomize
+execute if score %random uhcp_aug_tier matches 1 store result score %tier uhcp_aug_tier run function ssiege:start/randomize_aug_tier
 
 # Effects
 effect clear @a
@@ -95,7 +95,7 @@ item replace entity @a enderchest.26 with minecraft:air
 
 # Encounter Modifications
 # superiority encounter changes augment to Prismatic
-execute if score %encounter ssiege_current_encounter matches 3 run scoreboard players set %tier_def uhcp_aug_tier 2
+execute if score %encounter ssiege_current_encounter matches 3 run scoreboard players set %tier uhcp_aug_tier 2
 # TODO: Aeodine sets everyone's augment to Solo Leveling
 
 function uhcp:start/augments
