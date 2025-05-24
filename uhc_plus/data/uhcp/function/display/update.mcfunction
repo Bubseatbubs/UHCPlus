@@ -5,11 +5,11 @@ scoreboard players set %update_display uhcp_game_time 10
 
 # Border size
 execute store result storage uhcp:display border.size int 1 run worldborder get
-function uhcp:display/border with storage uhcp:display border
+execute if score %current_mode mode matches 0 run function uhcp:display/border with storage uhcp:display border
 
 # Player count
 execute store result score %players uhcp_initStatus if entity @a[gamemode=!creative,gamemode=!spectator]
-function uhcp:display/players
+execute if score %current_mode mode matches 0 run function uhcp:display/players
 
 # Display time
 execute if score %time_freeze uhcp_initStatus matches 1 run return fail
