@@ -13,7 +13,6 @@ tag @a[scores={uhcp_ready=2}] add UHCP_Spectator
 tag @a[tag=UHCP_Died] add UHCP_Spectator
 
 # Set scores
-scoreboard players set %current_mode mode 0
 scoreboard players operation %titans uhcp_initStatus = %titans uhcp_settings
 scoreboard players operation %border_countdown uhcp_game_time = %border_countdown uhcp_settings
 scoreboard players set %border_stage uhcp_itemCount 0
