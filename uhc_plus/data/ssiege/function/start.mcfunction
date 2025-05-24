@@ -1,3 +1,6 @@
+# Double check mode is correct
+scoreboard players set %current_mode mode 1
+
 # Dimension-specific commands
 execute in minecraft:the_end run function uhcp:start/dimensions/minecraft/the_end
 execute in minecraft:the_nether run function uhcp:start/dimensions/minecraft/the_nether
@@ -30,6 +33,8 @@ scoreboard players set @a uhcp_game_time -1
 # Display statistics
 scoreboard players display numberformat %time uhcp_game_display fixed {"text":"0:00"}
 scoreboard objectives setdisplay sidebar uhcp_game_display
+
+function ssiege:start/encounters/set_encounter_name
 
 # Reset scoreboards
 scoreboard players reset %start_countdown

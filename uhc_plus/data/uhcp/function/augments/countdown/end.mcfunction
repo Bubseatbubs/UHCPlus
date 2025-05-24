@@ -3,7 +3,8 @@
 execute if biome ~ ~-1 ~ #uhcp:snowy run loot replace entity @s armor.feet loot uhcp:snow_boots
 
 # Initialize augment
-function uhcp:augments/effects/init
+execute if score %current_mode mode matches 0 run function uhcp:augments/effects/init
+execute if score %current_mode mode matches 1 run function ssiege:augments/effects/init
 
 # In Sniffer Siege game, also apply Opening Encounter effects
 execute if score %encounter ssiege_current_encounter matches 0 run return fail

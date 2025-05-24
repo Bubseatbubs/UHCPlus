@@ -101,7 +101,8 @@ scoreboard objectives add uhcp_transformDuration dummy
 scoreboard objectives add ssiege_recall_cd dummy
 scoreboard objectives add ssiege_recall_charge dummy
 scoreboard objectives add ssiege_recall_delay dummy
-scoreboard objectives add ssiege_current_encounter dummy
+scoreboard objectives add ssiege_current_encounter dummy "Encounter: "
+scoreboard objectives add mode dummy
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health
@@ -180,6 +181,10 @@ team modify no_collision friendlyFire true
 team modify no_collision seeFriendlyInvisibles false
 
 # Default scores
+
+# Game Mode (0 = UHC, 1 = Sniffer Siege)
+scoreboard players set %current_mode mode 0
+
 # Augment tier
 scoreboard players set %random_def uhcp_aug_tier 1
 scoreboard players set %tier_def uhcp_aug_tier 1
@@ -259,8 +264,8 @@ scoreboard players set %apple_limit_def uhcp_settings 1
 scoreboard players set %uhcp_loot_def uhcp_settings 1
 
 # Set default scores when unset
-# TODO: Sniffer Siege version of this function, also make sure to update defaults whenever mode is swapped
-execute unless score %game uhcp_initStatus matches 1 run function uhcp:load/scores
+execute unless score %game uhcp_initStatus matches 1 run execute if score %current_mode mode matches 0 run function uhcp:load/scores
+execute unless score %game uhcp_initStatus matches 1 run execute if score %current_mode mode matches 1 run function ssiege:load/scores
 
 # Dimension-specific commands
 execute in minecraft:the_end run function uhcp:load/dimensions/minecraft/the_end
