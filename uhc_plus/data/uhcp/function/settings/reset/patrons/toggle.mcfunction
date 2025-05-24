@@ -1,5 +1,5 @@
 # Turn patron augments on
-execute if score %patrons_def uhcp_settings matches 1 unless score %tier uhcp_aug_tier matches -1 run return run function uhcp:settings/reset/patrons/on
+execute if score %patrons_def_uhcp uhcp_settings matches 1 unless score %tier uhcp_aug_tier matches -1 run return run function uhcp:settings/reset/patrons/on
 
 # Turn patron augments off
 scoreboard players set %patrons uhcp_settings 0
