@@ -3,14 +3,6 @@ scoreboard players remove %update_display uhcp_game_time 1
 execute if score %update_display uhcp_game_time matches 1.. run return 0
 scoreboard players set %update_display uhcp_game_time 10
 
-# Border size
-execute store result storage uhcp:display border.size int 1 run worldborder get
-execute if score %current_mode mode matches 0 run function uhcp:display/border with storage uhcp:display border
-
-# Player count
-execute store result score %players uhcp_initStatus if entity @a[gamemode=!creative,gamemode=!spectator]
-execute if score %current_mode mode matches 0 run function uhcp:display/players
-
 # Display time
 execute if score %time_freeze uhcp_initStatus matches 1 run return fail
 execute if score %time uhcp_game_time matches 72000.. run return run function uhcp:display/time/hours

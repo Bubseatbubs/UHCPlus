@@ -1,3 +1,6 @@
+# Game mode check
+execute unless score %current_mode mode matches 0 run return fail
+
 # Manage players
 execute as @a[tag=!UHCP_Player] run function uhcp:new
 execute as @a[scores={uhcp_leave=1..}] run function uhcp:left
