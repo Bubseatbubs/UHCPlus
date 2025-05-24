@@ -47,7 +47,7 @@ scoreboard objectives add uhcp_augment dummy
 scoreboard objectives add uhcp_count dummy
 scoreboard objectives add uhcp_death deathCount
 scoreboard objectives add uhcp_deathTime dummy
-scoreboard objectives add uhcp_game_display dummy {"text":"Game Stats","color":"aqua","bold":true}
+scoreboard objectives add uhcp_game_display dummy {"text":"Game Info","color":"aqua","bold":true}
 scoreboard objectives add uhcp_game_id dummy
 scoreboard objectives add uhcp_game_time dummy
 scoreboard objectives add uhcp_groovy dummy
@@ -103,6 +103,7 @@ scoreboard objectives add ssiege_recall_charge dummy
 scoreboard objectives add ssiege_recall_delay dummy
 scoreboard objectives add ssiege_current_encounter dummy "Encounter: "
 scoreboard objectives add mode dummy
+scoreboard objectives add ssiege_death_timer dummy
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health

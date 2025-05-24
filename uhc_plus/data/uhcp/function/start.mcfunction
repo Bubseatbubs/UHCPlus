@@ -1,3 +1,6 @@
+# Set game mode
+scoreboard players set %current_mode mode 0
+
 # Dimension-specific commands
 execute in minecraft:the_end run function uhcp:start/dimensions/minecraft/the_end
 execute in minecraft:the_nether run function uhcp:start/dimensions/minecraft/the_nether

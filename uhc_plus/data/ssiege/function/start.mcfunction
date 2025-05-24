@@ -30,12 +30,6 @@ scoreboard players operation @a uhcp_game_id = %global uhcp_game_id
 execute store result storage uhcp:id game.id int 1 run scoreboard players get %global uhcp_game_id
 scoreboard players set @a uhcp_game_time -1
 
-# Display statistics
-scoreboard players display numberformat %time uhcp_game_display fixed {"text":"0:00"}
-scoreboard objectives setdisplay sidebar uhcp_game_display
-
-function ssiege:start/encounters/set_encounter_name
-
 # Reset scoreboards
 scoreboard players reset %start_countdown
 scoreboard players reset @a lobby
@@ -103,6 +97,10 @@ execute unless score %pvp uhcp_settings matches -1 run team join grace_period @a
 
 # Allow one-team games to not end
 execute if score %end uhcp_initStatus matches 0 run function uhcp:start/teams/check
+
+# Set initial death timer
+scoreboard players set @a ssiege_death_timer -1
+scoreboard players set %respawn_time ssiege_death_timer 6000
 
 # Initialize Opening Encounter
 function ssiege:start/encounters/init

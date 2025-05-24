@@ -6,3 +6,6 @@ execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp
 # TODO: Titan spawning logic
 
 # TODO: Time-based Encounters logic
+
+# Death timer advancement
+function ssiege:kill/advance_timers

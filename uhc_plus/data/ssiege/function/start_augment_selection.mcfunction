@@ -1,5 +1,10 @@
 # Phase 2 of the start function, teleporting players to starting positions and beginning augment selection
 
+# Display statistics
+scoreboard players display numberformat %time uhcp_game_display fixed {"text":"0:00"}
+function ssiege:start/encounters/set_encounter_name
+scoreboard objectives setdisplay sidebar uhcp_game_display
+
 # Clean up the encounter entity
 kill @e[tag=encounter_entity]
 
@@ -98,6 +103,7 @@ item replace entity @a enderchest.26 with minecraft:air
 execute if score %encounter ssiege_current_encounter matches 3 run scoreboard players set %tier uhcp_aug_tier 2
 # TODO: Aeodine sets everyone's augment to Solo Leveling
 
+# Borrowing uhcp's Augment Selection infrastructure, pulls from different pool of augments later on
 function uhcp:start/augments
 
 # Spectators
