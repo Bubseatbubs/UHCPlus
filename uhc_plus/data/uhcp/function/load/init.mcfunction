@@ -1,5 +1,6 @@
 # Set scores
 scoreboard players set %init uhcp_initStatus 1
+scoreboard players set %current_mode mode 0
 scoreboard players set %lock uhcp_itemCount 50
 execute store result score %global uhcp_game_id run random value 0..3
 execute store result score %global uhcp_game_id run function uhcp:start/id/game
