@@ -112,12 +112,6 @@ scoreboard objectives setdisplay list uhcp_health
 scoreboard players set %time uhcp_game_display 2
 scoreboard players display name %time uhcp_game_display {"text":"Time:","color":"gold"}
 
-scoreboard players set %border uhcp_game_display 1
-scoreboard players display name %border uhcp_game_display {"text":"Border Width:","color":"gold"}
-
-scoreboard players set %players uhcp_game_display -1
-scoreboard players display name %players uhcp_game_display {"text":"Players Left:","color":"gold"}
-
 # Add bossbars
 bossbar add uhcp:augment "Time Remaining:"
 bossbar set uhcp:augment color white

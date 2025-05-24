@@ -29,7 +29,15 @@ scoreboard players operation @a uhcp_game_id = %global uhcp_game_id
 execute store result storage uhcp:id game.id int 1 run scoreboard players get %global uhcp_game_id
 scoreboard players set @a uhcp_game_time -1
 
-# Display statistics
+# Game display
+scoreboard players set %border uhcp_game_display 1
+scoreboard players display name %border uhcp_game_display {"text":"Border Width:","color":"gold"}
+
+execute if score %lava_init uhcp_initStatus matches 1 run function uhcp:display/lava/init
+
+scoreboard players set %players uhcp_game_display -1
+scoreboard players display name %players uhcp_game_display {"text":"Players Left:","color":"gold"}
+
 scoreboard players display numberformat %time uhcp_game_display fixed {"text":"0:00"}
 execute store result storage uhcp:display border.size int 1 run scoreboard players get %border_size uhcp_settings
 function uhcp:display/border with storage uhcp:display border

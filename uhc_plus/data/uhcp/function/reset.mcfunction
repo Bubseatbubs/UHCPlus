@@ -83,6 +83,9 @@ execute as @a[scores={uhcp_augment=220}] run function uhcp:augments/effects/pris
 function uhcp:augments/effects/gold/scavengerhunt/reset_all
 
 # System scores
+scoreboard players reset %border uhcp_game_display
+scoreboard players reset %lava_height uhcp_game_display
+scoreboard players reset %players uhcp_game_display
 scoreboard players reset %entities uhcp_game_id
 scoreboard players reset %augment_countdown uhcp_game_time
 scoreboard players reset %update_display uhcp_game_time
