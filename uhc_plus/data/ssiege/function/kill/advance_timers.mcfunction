@@ -3,8 +3,13 @@ scoreboard players add %minute_passed ssiege_death_timer 1
 execute if score %minute_passed ssiege_death_timer matches 1200.. run scoreboard players add %respawn_time ssiege_death_timer 20
 execute if score %minute_passed ssiege_death_timer matches 1200.. run scoreboard players set %minute_passed ssiege_death_timer 0
 
-# Increment all currently dead player's death timers by 1 second
-execute as @a[scores={ssiege_death_timer=0..},gamemode=survival] run scoreboard players add @s ssiege_death_timer 20
+# Every second, decrement all currently dead player's death timers by 1 second
+scoreboard players add %second_passed ssiege_death_timer 1
+execute if score %second_passed ssiege_death_timer matches 20.. run execute as @a[scores={ssiege_death_timer=0..},gamemode=survival] run scoreboard players remove @s ssiege_death_timer 1
+execute if score %second_passed ssiege_death_timer matches 20.. run scoreboard players set %second_passed ssiege_death_timer 0
+
+# Update death timer display for dead players
+execute as @a[gamemode=spectator] if score @s ssiege_death_timer matches 0.. run title @s title [{"score":{"objective":"ssiege_death_timer","name":"*"}}]
 
 # If any dead players have waited as long as the current respawn time, handle their respawn
-execute as @a[scores={ssiege_death_timer=0..},gamemode=survival] if score @s ssiege_death_timer >= %respawn_time ssiege_death_timer run function ssiege:kill/respawn
+execute as @a[scores={ssiege_death_timer=0..},gamemode=spectator] if score @s ssiege_death_timer matches 0 run execute as @s run function ssiege:kill/respawn

@@ -6,3 +6,6 @@
 
 # Reset player's death timer
 scoreboard players set @s ssiege_death_timer -1
+tp @s 0 100 0
+effect give @s resistance 10 4 true
+gamemode survival @s

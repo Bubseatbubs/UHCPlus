@@ -1,4 +1,5 @@
 # Death/Respawn Logic
+gamemode spectator @s
 
 # Situational checks
 execute as @s[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal_fluid/reset
