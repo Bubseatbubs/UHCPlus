@@ -30,7 +30,7 @@ scoreboard players enable @a settings_team
 execute if score %time uhcp_initStatus matches 1 run function uhcp:time
 
 # Augment countdown
-execute if score %augment_countdown uhcp_game_time matches 1.. run function uhcp:augments/countdown
+execute if score %augment_countdown uhcp_game_time matches 1.. run function ssiege:augments/countdown
 
 # Game statistics display
 execute if score %game uhcp_initStatus matches 1 run function uhcp:display/update

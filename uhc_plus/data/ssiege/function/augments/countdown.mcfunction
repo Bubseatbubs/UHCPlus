@@ -59,5 +59,5 @@ tag @a remove UHCP_AugmentAnnounce
 
 # Finish player initialization
 scoreboard players set @a uhcp_leave 1
-execute as @a[gamemode=survival] at @s run function uhcp:augments/countdown/end
+execute as @a[gamemode=survival] at @s run function ssiege:augments/countdown/end
 scoreboard players reset @a uhcp_leave
