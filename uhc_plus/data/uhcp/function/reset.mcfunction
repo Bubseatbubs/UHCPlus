@@ -79,6 +79,7 @@ tag @a remove UHCP_RelicTestingChamber
 tag @a remove UHCP_SLLock
 tag @a remove UHCP_SoulflameEmbrace
 tag @a remove UHCP_Spectator
+tag @a remove SSIEGE_dead
 execute as @a[scores={uhcp_augment=220}] run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 function uhcp:augments/effects/gold/scavengerhunt/reset_all
 
@@ -217,6 +218,9 @@ item replace entity @a player.cursor with minecraft:air
 item replace entity @a weapon.offhand with minecraft:air
 
 scoreboard players reset @a uhcp_leave
+
+# Reset gamerules
+gamerule doImmediateRespawn false
 
 # Notify players of reset
 title @a subtitle {"text":"RESET","color":"gray"}

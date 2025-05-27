@@ -1,5 +1,7 @@
 # Death/Respawn Logic
 gamemode spectator @s
+tag @s add SSIEGE_dead
+execute unless score @s ssiege_death_timer matches 0.. run scoreboard players operation @s ssiege_death_timer = %respawn_time ssiege_death_timer
 
 # Situational checks
 execute as @s[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal_fluid/reset

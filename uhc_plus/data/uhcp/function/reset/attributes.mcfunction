@@ -68,3 +68,6 @@ attribute @s minecraft:scale modifier remove uhcp:panda_scale
 
 # Rabbit transformation block range
 attribute @s minecraft:block_interaction_range modifier remove uhcp:rabbit_block_range
+
+# Sniffer Siege Majority encounter
+attribute @s minecraft:safe_fall_distance modifier remove uhcp:safe_fall_distance

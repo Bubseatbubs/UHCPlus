@@ -98,9 +98,12 @@ execute unless score %pvp uhcp_settings matches -1 run team join grace_period @a
 # Allow one-team games to not end
 execute if score %end uhcp_initStatus matches 0 run function uhcp:start/teams/check
 
+# Force immediate respawns for death/respawn system
+gamerule doImmediateRespawn true
+
 # Set initial death timer
 scoreboard players set @a ssiege_death_timer -1
-scoreboard players set %respawn_time ssiege_death_timer 6000
+scoreboard players set %respawn_time ssiege_death_timer 5
 
 # Initialize Opening Encounter
 function ssiege:start/encounters/init

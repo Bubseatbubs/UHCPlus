@@ -6,8 +6,14 @@ execute as @a[tag=!UHCP_Player] run function uhcp:new
 execute as @a[scores={uhcp_leave=1..}] run function uhcp:left
 
 # On player death
-execute as @a[scores={uhcp_death=1..}] at @s run function uhcp:kill/death
-execute if entity @a[tag=UHCP_Died] run function uhcp:kill/death/time
+execute as @a[scores={uhcp_death=1..}] at @s run function ssiege:kill/death
+
+# Handle death timers
+function ssiege:kill/advance_timers
+
+# Force dead players to spectate their nearest teammate
+execute as @a[tag=SSIEGE_dead] run tp @s @p
+execute as @a[tag=SSIEGE_dead] run spectate @p
 
 # Settings menu
 execute as @a[scores={uhcp_settings=0..}] at @s run function uhcp:settings/change
