@@ -8,13 +8,6 @@ execute as @a[scores={uhcp_leave=1..}] run function uhcp:left
 # On player death
 execute as @a[scores={uhcp_death=1..}] at @s run function ssiege:kill/death
 
-# Handle death timers
-function ssiege:kill/advance_timers
-
-# Force dead players to spectate their nearest teammate
-execute as @a[tag=SSIEGE_dead] run tp @s @p
-execute as @a[tag=SSIEGE_dead] run spectate @p
-
 # Settings menu
 execute as @a[scores={uhcp_settings=0..}] at @s run function uhcp:settings/change
 execute as @a[scores={settings=1..}] run function uhcp:settings/pages/main
@@ -33,16 +26,13 @@ scoreboard players enable @a settings_border
 scoreboard players enable @a settings_team
 
 # After time starts moving
-execute if score %time uhcp_initStatus matches 1 run function uhcp:time
+execute if score %time uhcp_initStatus matches 1 run function ssiege:time
 
 # Augment countdown
 execute if score %augment_countdown uhcp_game_time matches 1.. run function ssiege:augments/countdown
 
 # Game statistics display
 execute if score %game uhcp_initStatus matches 1 run function uhcp:display/update
-
-# Lava
-execute if score %lava_start uhcp_initStatus matches 1 run function uhcp:lava/run
 
 # Augment routines (that should be in tick function)
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
