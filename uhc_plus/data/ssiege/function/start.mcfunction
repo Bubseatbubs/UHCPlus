@@ -95,6 +95,8 @@ team leave @a[scores={uhcp_team=0}]
 execute if score %pvp uhcp_settings matches ..0 run scoreboard players set %pvp uhcp_settings -1
 execute unless score %pvp uhcp_settings matches -1 run team join grace_period @a[tag=!UHCP_Spectator]
 
+
+
 # Allow one-team games to not end
 execute if score %end uhcp_initStatus matches 0 run function uhcp:start/teams/check
 
@@ -107,6 +109,9 @@ scoreboard players set %respawn_time ssiege_death_timer 5
 
 # Initialize Opening Encounter
 function ssiege:start/encounters/init
+
+# Set up Titan health storage
+data modify storage ssiege_titan_health input set value {"hp":1}
 
 # After a 10 second delay, start augment selection
 schedule function ssiege:start_augment_selection 200

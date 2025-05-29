@@ -1,1 +1,0 @@
-$execute in minecraft:overworld run spreadplayers 0 0 10 $(amount) under 125 false @s
