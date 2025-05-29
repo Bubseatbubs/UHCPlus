@@ -11,7 +11,7 @@ execute if score %encounter ssiege_current_encounter matches 10 run tellraw @a [
 execute if score %encounter ssiege_current_encounter matches 11 run tellraw @a [{"text":"kramsey","color":"gold"},{"text":" makes everyone bald.","color":"white"}]
 execute if score %encounter ssiege_current_encounter matches 12 run tellraw @a [{"text":"Headpat","color":"gold"},{"text":" brews up an assortment of Potions for everyone.","color":"white"}]
 execute if score %encounter ssiege_current_encounter matches 13 run tellraw @a [{"text":"flamez","color":"gold"},{"text":" causes hostile mobs to occassionally drop Golden Apples on death.","color":"white"}]
-execute if score %encounter ssiege_current_encounter matches 14 run tellraw @a [{"text":"V1L3","color":"gold"},{"text":" gives everyone a bed.","color":"white"}]
+execute if score %encounter ssiege_current_encounter matches 14 run tellraw @a [{"text":"V1L3","color":"gold"},{"text":" fell asleep. No encounter.","color":"white"}]
 execute if score %encounter ssiege_current_encounter matches 15 run tellraw @a [{"text":"dehua","color":"gold"},{"text":" summons special pandas all over the map that drop special loot.","color":"white"}]
 execute if score %encounter ssiege_current_encounter matches 16 run tellraw @a [{"text":"Aelwyn","color":"gold"},{"text":" gives everyone a Relic Invoker.","color":"white"}]
 execute if score %encounter ssiege_current_encounter matches 17 run tellraw @a [{"text":"Weird","color":"gold"},{"text":" lets everyone go to the Nether.","color":"white"}]
