@@ -1,6 +1,8 @@
 kill @e[tag=BLUE_BASE]
 kill @e[tag=RED_BASE]
 
+forceload add 176 176 286 224
+forceload add -178 -225 -289 -178
 summon minecraft:marker 176 63 176 {Tags:["BLUE_BASE"]}
 spreadplayers 176 176 0 1 false @n[tag=BLUE_BASE]
 
