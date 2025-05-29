@@ -1,0 +1,3 @@
+#grabs sniff cd and stores to sniff_cooldowwn dummy score, then sets sniffers to 3000 if >
+execute as @e[type=sniffer,tag=babysitting] store result score @s sniff_cooldown run data get entity @s Brain.memories."minecraft:sniff_cooldown".ttl
+execute as @e[type=sniffer,tag=babysitting,scores={sniff_cooldown=3000..}] store result entity @s Brain.memories."minecraft:sniff_cooldown".ttl long 1 run return run scoreboard players set @s sniff_cooldown 3000

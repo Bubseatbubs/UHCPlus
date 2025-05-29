@@ -58,4 +58,8 @@ execute as @e[tag=!UHCP_ItemPickup,predicate=uhcp:items/instant_pickup] run func
 # Item use timer
 scoreboard players remove @a[scores={uhcp_itemCount=1..}] uhcp_itemCount 1
 
-place structure uhcp:mushroom_house -9866 70 -10022
+#babysitting augment
+function ssiege:augments/effects/gold/babysitting/sniffcd
+
+#babysitting augment
+function ssiege:augments/effects/gold/babysitting/sniffcd
