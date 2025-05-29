@@ -38,6 +38,9 @@ execute as @a[scores={upgrade=1..3}] at @s run function uhcp:augments/effects/pr
 execute as @a[tag=UHCP_CDSelectUpgrade] at @s run function uhcp:augments/effects/prismatic/cyberneticdownload/update_menu
 scoreboard players enable @a[tag=UHCP_CDSelectUpgrade] upgrade
 
+# Babysitting
+function ssiege:augments/effects/gold/babysitting/digcd
+
 # Announce Augments
 execute as @a[scores={augments=1..}] run function uhcp:augments/announce
 
