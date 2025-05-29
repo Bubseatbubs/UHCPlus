@@ -60,6 +60,3 @@ scoreboard players remove @a[scores={uhcp_itemCount=1..}] uhcp_itemCount 1
 
 #babysitting augment
 function ssiege:augments/effects/gold/babysitting/sniffcd
-
-#babysitting augment
-function ssiege:augments/effects/gold/babysitting/sniffcd
