@@ -1,28 +1,5 @@
 kill @e[tag=BLUE_BASE]
 kill @e[tag=RED_BASE]
 
-execute in minecraft:overworld run forceload add 176 176 286 224
-
-function ssiege:start/bases/clear_blue_surface
-summon minecraft:marker 176 63 176 {Tags:["BLUE_BASE"]}
-spreadplayers 176 176 0 1 false @n[tag=BLUE_BASE]
-
-execute at @n[tag=BLUE_BASE] positioned ~ ~ ~ run place template ssiege:blue_base/origin ~ ~ ~ none none 1 0 strict
-execute at @n[tag=BLUE_BASE] positioned ~ ~-1 ~ run place template ssiege:blue_base/bottom ~ ~ ~ none none 1 0 strict
-execute at @n[tag=BLUE_BASE] positioned ~47 ~-11 ~20 run place template ssiege:blue_base/walkway ~ ~ ~ none none 1 0 strict
-execute at @n[tag=BLUE_BASE] positioned ~90 ~-11 ~13 run place template ssiege:blue_base/spawn ~ ~ ~ none none 1 0 strict
-
-execute in minecraft:overworld run forceload remove 176 176 286 224
-
-execute in minecraft:overworld run forceload add -178 -225 -289 -178
-
-function ssiege:start/bases/clear_red_surface
-summon minecraft:marker -224 63 -224 {Tags:["RED_BASE"]}
-spreadplayers -224 -224 0 1 false @n[tag=RED_BASE]
-
-execute at @n[tag=RED_BASE] positioned ~ ~ ~ run place template ssiege:red_base/origin ~ ~ ~ none none 1 0 strict
-execute at @n[tag=RED_BASE] positioned ~ ~-1 ~ run place template ssiege:red_base/bottom ~ ~ ~ none none 1 0 strict
-execute at @n[tag=RED_BASE] positioned ~-1 ~-11 ~27 run place template ssiege:red_base/walkway ~ ~ ~ 180 none 1 0 strict
-execute at @n[tag=RED_BASE] positioned ~-44 ~-11 ~34 run place template ssiege:red_base/spawn ~ ~ ~ 180 none 1 0 strict
-
-execute in minecraft:overworld run forceload remove -178 -225 -289 -178
+execute positioned 176 63 176 run execute summon marker run function ssiege:start/bases/place_blue_base
+execute positioned -224 63 -224 run execute summon marker run function ssiege:start/bases/place_red_base
