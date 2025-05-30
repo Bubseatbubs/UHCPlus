@@ -137,7 +137,7 @@ execute as @a at @s in minecraft:overworld run tp @s ~ ~1000 ~
 # Remove lobby
 execute in minecraft:overworld run function uhcp:lobby/remove
 
-# Spread players
+# Spread players (3/7 of border from (0, 0))
 execute store result storage uhcp:border spread.max_range int 0.428571 run scoreboard players get %border_size uhcp_settings
 execute store result storage uhcp:border spread.distance int 0.042857 run scoreboard players get %border_size uhcp_settings
 
