@@ -1,0 +1,1 @@
+loot give @s loot uhcp:consumables/wild_feather
