@@ -113,5 +113,8 @@ function ssiege:start/encounters/init
 # Set up Titan health storage
 data modify storage ssiege_titan_health input set value {"hp":1}
 
+# Place the base structures on the map
+function ssiege:start/bases/init
+
 # After a 10 second delay, start augment selection
 schedule function ssiege:start_augment_selection 200

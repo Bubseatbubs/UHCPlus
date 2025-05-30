@@ -14,15 +14,9 @@ execute as @a at @s in minecraft:overworld run tp @s ~ ~1000 ~
 # Remove lobby
 execute in minecraft:overworld run function uhcp:lobby/remove
 
-# Spread players
-execute store result storage uhcp:border spread.max_range int 0.428571 run scoreboard players get %border_size uhcp_settings
-execute store result storage uhcp:border spread.distance int 0.042857 run scoreboard players get %border_size uhcp_settings
-
-execute in minecraft:overworld run function uhcp:start/spreadplayers/initial with storage uhcp:border spread
-execute if score %spread uhcp_initStatus matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/initial/failure_1 with storage uhcp:border spread
-execute if score %spread uhcp_initStatus matches 0 in minecraft:overworld run function uhcp:start/spreadplayers/initial/failure_2
-
-execute if score %spread uhcp_initStatus matches 1 run function uhcp:start/spreadplayers/secondary
+# Teleport players
+spreadplayers 279 200 0 1 true @a[tag=!UHCP_Spectator,team=blue]
+spreadplayers -279 -199 0 1 true @a[tag=!UHCP_Spectator,team=red]
 
 # Teleport spectators
 tp @a[tag=UHCP_Spectator] 0 150 0

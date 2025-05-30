@@ -1,0 +1,1 @@
+$attribute @n[tag=UHCP_Fenrir] max_health base set $(hp)

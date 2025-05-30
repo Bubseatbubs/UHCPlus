@@ -12,4 +12,4 @@ scoreboard players operation %hp uhcp_team *= %MULT uhcp_titans_id
 scoreboard players operation %hp uhcp_team += %BASE uhcp_titans_id
 
 execute store result storage ssiege_titan_health hp int 1 run scoreboard players get %hp uhcp_team
-execute in minecraft:overworld run function ssiege:titans/set_fenrir_health with storage uhcp:titan_health hp
+execute in minecraft:overworld run function ssiege:titans/fenrir/set_fenrir_health with storage ssiege_titan_health hp
