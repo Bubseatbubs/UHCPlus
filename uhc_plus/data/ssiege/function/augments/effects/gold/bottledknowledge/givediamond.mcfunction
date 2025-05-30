@@ -1,8 +1,8 @@
 # Give diamond to player who reached new level
 give @s minecraft:diamond 1
 
-# Add 1 to counter
-scoreboard players add @s xp_level 1
+# Adds 1 to max_level_achieved
+scoreboard players add @s max_level_achieved 1
 
 # Particle effect at player location
 execute at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 10
