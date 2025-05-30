@@ -105,6 +105,7 @@ scoreboard objectives add ssiege_recall_delay dummy
 scoreboard objectives add ssiege_current_encounter dummy "Encounter: "
 scoreboard objectives add mode dummy
 scoreboard objectives add ssiege_death_timer dummy
+scoreboard objectives add ssiege_giants dummy
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health
