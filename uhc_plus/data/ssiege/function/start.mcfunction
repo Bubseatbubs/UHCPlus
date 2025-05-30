@@ -110,9 +110,6 @@ scoreboard players set %respawn_time ssiege_death_timer 5
 # Initialize Opening Encounter
 function ssiege:start/encounters/init
 
-# Set up Titan health storage
-data modify storage ssiege_titan_health input set value {"hp":1}
-
 # Place the base structures on the map
 function ssiege:start/bases/init
 
