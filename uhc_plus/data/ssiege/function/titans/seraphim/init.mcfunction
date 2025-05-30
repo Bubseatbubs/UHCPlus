@@ -3,10 +3,11 @@ spreadplayers 0 0 0 1 false @n[tag=UHCP_Titan]
 
 # Initialize boss ID
 scoreboard players set @n[tag=UHCP_New,tag=UHCP_Titan] uhcp_titans_id 3
+tag @e remove UHCP_New
 
 # Scale Titan health based on team size
 execute store result score %hp uhcp_team run execute if entity @a[team=blue]
-scoreboard players set %MULT uhcp_titans_id 60
+scoreboard players set %MULT uhcp_titans_id 70
 scoreboard players set %BASE uhcp_titans_id 125
 scoreboard players operation %hp uhcp_team *= %MULT uhcp_titans_id
 scoreboard players operation %hp uhcp_team += %BASE uhcp_titans_id
