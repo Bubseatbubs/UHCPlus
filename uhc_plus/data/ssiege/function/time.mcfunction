@@ -41,6 +41,9 @@ scoreboard players enable @a[tag=UHCP_CDSelectUpgrade] upgrade
 # Babysitting
 function ssiege:augments/effects/gold/babysitting/digcd
 
+# Bottled Knowledge
+execute as @a[scores={uhcp_augment=6}] run function ssiege:augments/effects/gold/bottledknowledge/levelcheck
+
 # Announce Augments
 execute as @a[scores={augments=1..}] run function uhcp:augments/announce
 
