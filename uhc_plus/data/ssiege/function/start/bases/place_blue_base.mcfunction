@@ -4,6 +4,7 @@ execute in minecraft:overworld run forceload add 176 176 286 224
 
 function ssiege:start/bases/clear_blue_surface
 spreadplayers 176 176 0 1 false @n[tag=BLUE_BASE]
+tp @n[tag=BLUE_BASE] 176 ~ 176
 
 place template ssiege:blue_base/origin ~ ~ ~ none none 1 0 strict
 place template ssiege:blue_base/bottom ~ ~-1 ~ none none 1 0 strict

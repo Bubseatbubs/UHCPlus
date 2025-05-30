@@ -4,6 +4,7 @@ execute in minecraft:overworld run forceload add -178 -225 -289 -178
 
 function ssiege:start/bases/clear_red_surface
 spreadplayers -224 -224 0 1 false @n[tag=RED_BASE]
+tp @n[tag=RED_BASE] -224 ~ -224
 
 place template ssiege:red_base/origin ~ ~ ~ none none 1 0 strict
 place template ssiege:red_base/bottom ~ ~-1 ~ none none 1 0 strict
