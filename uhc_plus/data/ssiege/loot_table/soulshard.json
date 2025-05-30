@@ -13,18 +13,6 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:enchantment_glint_override": true,
-                "minecraft:consumable": {
-                  "consume_seconds": 2147483647,
-                  "animation": "none",
-                  "has_consume_particles": false
-                },
-                "minecraft:max_stack_size": 1
-              }
-            },
-            {
               "function": "minecraft:toggle_tooltips",
               "toggles": {}
             },
@@ -37,6 +25,10 @@
                   "color": "light_purple"
                 }
               ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{ssiege_soulshard:true}"
             },
             {
               "function": "minecraft:set_lore",
