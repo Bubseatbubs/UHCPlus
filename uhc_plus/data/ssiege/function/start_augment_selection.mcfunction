@@ -15,8 +15,8 @@ execute as @a at @s in minecraft:overworld run tp @s ~ ~1000 ~
 execute in minecraft:overworld run function uhcp:lobby/remove
 
 # Teleport players
-spreadplayers 279 200 0 1 true @a[tag=!UHCP_Spectator,team=blue]
-spreadplayers -279 -199 0 1 true @a[tag=!UHCP_Spectator,team=red]
+spreadplayers 280 200 1 3 true @a[tag=!UHCP_Spectator,team=blue]
+spreadplayers -281 -200 1 3 true @a[tag=!UHCP_Spectator,team=red]
 
 # Teleport spectators
 tp @a[tag=UHCP_Spectator] 0 150 0
