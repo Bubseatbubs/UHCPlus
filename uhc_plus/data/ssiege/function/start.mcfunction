@@ -23,7 +23,6 @@ scoreboard players set %time_freeze uhcp_initStatus 0
 scoreboard players set %titans uhcp_game_time 6000
 scoreboard players set %update_display uhcp_game_time 10
 execute if score %dimension uhcp_settings matches ..-1 run scoreboard players set %dimension uhcp_settings 0
-scoreboard players set @a uhcp_aug_choosingAugment 0
 execute store result score %global uhcp_game_id run random value 0..3
 execute store result score %global uhcp_game_id run function uhcp:start/id/game
 scoreboard players operation @a uhcp_game_id = %global uhcp_game_id
@@ -82,23 +81,6 @@ function uhcp:start/border with storage uhcp:border size
 
 # Allow one-player games to not end
 execute if score %players uhcp_id matches ..1 run scoreboard players set %end uhcp_initStatus 1
-
-# Team logic
-scoreboard players set @a uhcp_team 0
-scoreboard players set @a[tag=!UHCP_Spectator,team=blue] uhcp_team 1
-scoreboard players set @a[tag=!UHCP_Spectator,team=red] uhcp_team 2
-
-scoreboard players set %global uhcp_team 15
-execute as @a[tag=!UHCP_Spectator,scores={uhcp_team=0}] run function uhcp:start/teams
-
-team leave @a[scores={uhcp_team=0}]
-execute if score %pvp uhcp_settings matches ..0 run scoreboard players set %pvp uhcp_settings -1
-execute unless score %pvp uhcp_settings matches -1 run team join grace_period @a[tag=!UHCP_Spectator]
-
-
-
-# Allow one-team games to not end
-execute if score %end uhcp_initStatus matches 0 run function uhcp:start/teams/check
 
 # Force immediate respawns for death/respawn system
 gamerule doImmediateRespawn true
