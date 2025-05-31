@@ -14,9 +14,8 @@ execute as @a at @s in minecraft:overworld run tp @s ~ ~1000 ~
 # Remove lobby
 execute in minecraft:overworld run function uhcp:lobby/remove
 
-# Teleport players
-spreadplayers 280 200 1 3 true @a[tag=!UHCP_Spectator,team=blue]
-spreadplayers -281 -200 1 3 true @a[tag=!UHCP_Spectator,team=red]
+# Place the base structures on the map and spawn players in
+function ssiege:start/bases/init
 
 # Teleport spectators
 tp @a[tag=UHCP_Spectator] 0 150 0

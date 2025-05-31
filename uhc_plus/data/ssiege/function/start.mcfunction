@@ -94,9 +94,6 @@ scoreboard players set %respawn_time ssiege_death_timer 5
 # Initialize Opening Encounter
 function ssiege:start/encounters/init
 
-# Place the base structures on the map
-function ssiege:start/bases/init
-
 # Giants don't start spawning until 15 minutes
 scoreboard players set %giant_timer ssiege_giants -1
 
