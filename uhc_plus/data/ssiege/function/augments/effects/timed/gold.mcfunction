@@ -5,3 +5,7 @@ execute if score @s uhcp_augment matches 101 run return run function ssiege:augm
 
 #Caerbannog
 execute if score @s uhcp_augment matches 7 run return run function ssiege:augments/effects/gold/caerbannog
+
+#drip economy 2
+execute if score @s uhcp_augment matches 13 run return run function ssiege:augments/effects/gold/dripeconomyii
+
