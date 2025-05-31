@@ -82,8 +82,9 @@ function uhcp:start/border with storage uhcp:border size
 # Allow one-player games to not end
 execute if score %players uhcp_id matches ..1 run scoreboard players set %end uhcp_initStatus 1
 
-# Force immediate respawns for death/respawn system
+# Set gamerules
 gamerule doImmediateRespawn true
+gamerule keepInventory true
 
 # Set initial death related variables
 scoreboard players set @a ssiege_reverse_bounty 0
