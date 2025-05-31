@@ -18,3 +18,9 @@ scoreboard players operation @s ssiege_shards += %kill_bounty ssiege_shards
 execute if score @s ssiege_shards matches ..0 run scoreboard players set @s ssiege_shards 1
 
 function ssiege:kill/soul_shard/drop_shards
+
+# If player did not kill anyone this life, add 10 minutes to their reverse bounty timer
+execute if score @s ssiege_killstreak matches 0 run scoreboard players add @s ssiege_reverse_bounty 12000
+
+# Reset player's killstreak
+scoreboard players set @s ssiege_killstreak 0

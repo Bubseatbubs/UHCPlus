@@ -15,7 +15,7 @@ execute as @a at @s in minecraft:overworld run tp @s ~ ~1000 ~
 execute in minecraft:overworld run function uhcp:lobby/remove
 
 # Place the base structures on the map and spawn players in
-function ssiege:start/bases/init
+function ssiege:bases/init
 
 # Teleport spectators
 tp @a[tag=UHCP_Spectator] 0 150 0

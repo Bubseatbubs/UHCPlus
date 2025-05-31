@@ -19,7 +19,7 @@ scoreboard players remove @e[tag=UHCP_HuntingCall,scores={uhcp_itemCount=1..}] u
 
 # Clear lava and water in bases
 scoreboard players add %fill_liquid_timer uhcp_game_time 1
-execute if score %fill_liquid_timer uhcp_game_time matches 10.. run function ssiege:start/bases/clear_liquids
+execute if score %fill_liquid_timer uhcp_game_time matches 10.. run function ssiege:bases/clear_liquids
 execute if score %fill_liquid_timer uhcp_game_time matches 10.. run scoreboard players set %fill_liquid_timer uhcp_game_time 0
 
 # Augment notifications
