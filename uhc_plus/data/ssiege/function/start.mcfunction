@@ -85,7 +85,9 @@ execute if score %players uhcp_id matches ..1 run scoreboard players set %end uh
 # Force immediate respawns for death/respawn system
 gamerule doImmediateRespawn true
 
-# Set initial death timer
+# Set initial death related variables
+scoreboard players set @a ssiege_reverse_bounty 0
+scoreboard players set @a ssiege_killstreak 0
 scoreboard players set @a ssiege_death_timer -1
 scoreboard players set %respawn_time ssiege_death_timer 5
 

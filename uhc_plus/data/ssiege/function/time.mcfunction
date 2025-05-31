@@ -62,7 +62,8 @@ execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan
 execute as @e[type=!minecraft:player,tag=UHCP_Titan] at @s run function uhcp:titans/update
 
 # Test kit
-execute as @a[scores={testkit=1..}] run function uhcp:testkit/verify
+# TODO: Make a Sniffer Siege testkit
+#execute as @a[scores={testkit=1..}] run function uhcp:testkit/verify
 
 # Consumables
 execute as @a[scores={uhcp_groovy=1}] at @s run particle minecraft:note ~ ~ ~ 1.5 1.5 1.5 0.001 2 normal @s
@@ -93,11 +94,16 @@ scoreboard players enable @a augments
 scoreboard players enable @a[gamemode=survival] top
 scoreboard players enable @a[gamemode=survival] testkit
 
+# Handle reverse bounties
+scoreboard players remove @a[scores={ssiege_reverse_bounty=1..}] ssiege_reverse_bounty 1
+scoreboard players set @a[scores={ssiege_reverse_bounty=..-1}] ssiege_reverse_bounty 0
+
 # Handle death timers
 function ssiege:kill/advance_timers
 
 # Force dead players to spectate their nearest teammate
-execute as @a[tag=SSIEGE_dead] run tp @s @p
+execute as @a[tag=SSIEGE_dead,team=blue] run tp @s @p[team=blue]
+execute as @a[tag=SSIEGE_dead,team=red] run tp @s @p[team=red]
 execute as @a[tag=SSIEGE_dead] run spectate @p
 
 # Augment-based time events

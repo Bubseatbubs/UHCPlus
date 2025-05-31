@@ -137,6 +137,11 @@ scoreboard players reset @a uhcp_top_charge
 scoreboard players reset @a uhcp_top_delay
 scoreboard players operation @a uhcp_top_cd = %global uhcp_game_id
 scoreboard players set @a uhcp_ready 0
+scoreboard players reset @a ssiege_death_timer
+scoreboard players reset @a ssiege_giants
+scoreboard players reset @a ssiege_reverse_bounty
+scoreboard players reset @a ssiege_killstreak
+scoreboard players reset @a ssiege_shards
 
 # Necessary advancments
 advancement revoke @a only uhcp:arrow_limit

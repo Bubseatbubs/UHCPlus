@@ -106,6 +106,9 @@ scoreboard objectives add ssiege_current_encounter dummy "Encounter: "
 scoreboard objectives add mode dummy
 scoreboard objectives add ssiege_death_timer dummy
 scoreboard objectives add ssiege_giants dummy
+scoreboard objectives add ssiege_reverse_bounty dummy
+scoreboard objectives add ssiege_killstreak dummy
+scoreboard objectives add ssiege_shards dummy
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health
