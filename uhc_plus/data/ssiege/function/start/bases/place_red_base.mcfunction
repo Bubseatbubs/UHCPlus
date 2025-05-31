@@ -12,4 +12,8 @@ place template ssiege:red_base/spawn ~-44 ~-11 ~34 180 none 1 0 strict
 
 execute at @s positioned ~ ~ ~ run function ssiege:start/bases/spawn_red_shopkeepers
 
+execute at @s positioned ~ ~ ~ run fill -224 ~15 -177 -177 ~15 -224 minecraft:barrier
+execute at @s positioned ~ ~ ~ run fill -267 ~15 -204 -225 ~15 -197 minecraft:barrier
+execute at @s positioned ~ ~ ~ run fill -268 ~15 -190 -288 ~15 -211 minecraft:barrier
+
 execute in minecraft:overworld run forceload remove -178 -225 -289 -178

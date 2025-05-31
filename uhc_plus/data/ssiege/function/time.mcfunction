@@ -17,6 +17,11 @@ execute if score %time uhcp_game_time matches 24000..24500 in minecraft:overworl
 scoreboard players remove @a[scores={uhcp_timer=0..}] uhcp_timer 1
 scoreboard players remove @e[tag=UHCP_HuntingCall,scores={uhcp_itemCount=1..}] uhcp_itemCount 1
 
+# Clear lava and water in bases
+scoreboard players add %fill_liquid_timer uhcp_game_time 1
+execute if score %fill_liquid_timer uhcp_game_time matches 10.. run function ssiege:start/bases/clear_liquids
+execute if score %fill_liquid_timer uhcp_game_time matches 10.. run scoreboard players set %fill_liquid_timer uhcp_game_time 0
+
 # Augment notifications
 execute if score %time uhcp_game_time matches ..45000 run function ssiege:augments/notifications
 
