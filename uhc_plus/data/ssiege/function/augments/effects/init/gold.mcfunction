@@ -7,3 +7,6 @@ execute if score @s uhcp_augment matches 6 run function ssiege:augments/effects/
 execute if score @s uhcp_augment matches 7 run function ssiege:augments/effects/gold/caerbannog
 execute if score @s uhcp_augment matches 10 run function ssiege:augments/effects/gold/cowboycosplay
 execute if score @s uhcp_augment matches 17 run function ssiege:augments/effects/gold/fireandwater
+execute if score @s uhcp_augment matches 20 run function ssiege:augments/effects/gold/gapplegap
+execute if score @s uhcp_augment matches 29 run function ssiege:augments/effects/gold/jumpking/givemace
+execute if score @s uhcp_augment matches 29 run function ssiege:augments/effects/gold/lessthan3
