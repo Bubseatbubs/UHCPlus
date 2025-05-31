@@ -106,3 +106,8 @@ execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp
 # TODO: Titan spawning logic
 
 # TODO: Time-based Encounters logic
+
+# Giants
+execute if score %time uhcp_game_time matches 18000 in minecraft:overworld run scoreboard players set %giant_timer ssiege_giants 4200
+execute if score %giant_timer ssiege_giants matches 4200.. run function ssiege:giants/init_wave
+execute if score %giant_timer ssiege_giants matches 0.. run scoreboard players add %giant_timer ssiege_giants 1
