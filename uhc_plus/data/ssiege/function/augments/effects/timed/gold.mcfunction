@@ -9,3 +9,6 @@ execute if score @s uhcp_augment matches 7 run return run function ssiege:augmen
 #drip economy 2
 execute if score @s uhcp_augment matches 13 run return run function ssiege:augments/effects/gold/dripeconomyii
 
+#echolocation
+execute if score @s uhcp_augment matches 15 run return run function ssiege:augments/effects/gold/echolocation
+
