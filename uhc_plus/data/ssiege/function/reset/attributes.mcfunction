@@ -39,11 +39,11 @@ attribute @s step_height modifier remove uhcp:step_height
 
 # Entity Interaction Range
 # Currently used by: large and in charge
-attribute @s entity_interaction_range modifier remove uhcp:step_height
+attribute @s entity_interaction_range modifier remove uhcp:entity_interaction_range
 
-# Entity Interaction Range
+# Block Interaction Range
 # Currently used by: large and in charge
-attribute @s entity_interaction_range modifier remove uhcp:step_height
+attribute @s block_interaction_range modifier remove uhcp:block_interaction_range
 
 # Max Absorption
 # Currently used by: Redstone Ritual, Cybernetic Download
