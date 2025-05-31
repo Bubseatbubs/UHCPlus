@@ -95,5 +95,8 @@ function ssiege:start/encounters/init
 # Place the base structures on the map
 function ssiege:start/bases/init
 
+# Giants don't start spawning until 15 minutes
+scoreboard players set %giant_timer ssiege_giants -1
+
 # After a 10 second delay, start augment selection
 schedule function ssiege:start_augment_selection 200

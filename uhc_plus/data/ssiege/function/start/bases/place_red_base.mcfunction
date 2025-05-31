@@ -3,8 +3,7 @@ execute in minecraft:overworld run forceload add -178 -225 -289 -178
 tag @s add RED_BASE
 
 function ssiege:start/bases/clear_red_surface
-spreadplayers -224 -224 0 1 false @s
-tp @s -224 ~ -224
+execute positioned over motion_blocking_no_leaves run tp @s -200 ~ -200
 
 place template ssiege:red_base/origin ~ ~ ~ none none 1 0 strict
 place template ssiege:red_base/bottom ~ ~-1 ~ none none 1 0 strict
