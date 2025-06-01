@@ -1,0 +1,2 @@
+$attribute @s minecraft:armor modifier add ssiege:rune_armor $(armor_value) add_value
+$attribute @s minecraft:armor_toughness modifier add ssiege:rune_armor_toughness $(armor_toughness_value) add_value
