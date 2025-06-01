@@ -11,7 +11,7 @@ execute store result storage ssiege:temp perk_titanslayer int 1 run scoreboard p
 execute store result storage ssiege:temp buff_titanslayer int 1 run scoreboard players get @s ssiege_buff_titanslayer
 
 # Calculate total bonus damage and apply it using a macro function
-function ssiege:damage_buffs/player_hit_blue_sniffer with storage ssiege:temp
+function ssiege:damage_buffs/blue_sniffer_damage with storage ssiege:temp
 
 # Remove the temporary tag
 tag @s remove ssiege_attacker
