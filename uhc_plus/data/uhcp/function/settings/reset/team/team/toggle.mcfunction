@@ -1,5 +1,5 @@
 # Turn teams on
-execute if score %team_def_uhcp uhcp_settings matches 1 run return run function uhcp:settings/reset/team/team/on
+execute if score %team_def uhcp_settings matches 1 run return run function uhcp:settings/reset/team/team/on
 
 # Turn teams off
 scoreboard players set %team uhcp_settings 0

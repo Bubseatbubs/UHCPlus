@@ -20,6 +20,7 @@ scoreboard objectives add settings_player trigger
 scoreboard objectives add settings_team trigger
 
 # Objectives
+scoreboard objectives add mode dummy
 scoreboard objectives add uhcp_arrowCount dummy
 scoreboard objectives add uhcp_aug_cd_firstOption dummy
 scoreboard objectives add uhcp_aug_cd_secondOption dummy
@@ -99,18 +100,24 @@ scoreboard objectives add uhcp_top_cd dummy
 scoreboard objectives add uhcp_top_charge dummy
 scoreboard objectives add uhcp_top_delay dummy
 scoreboard objectives add uhcp_transformDuration dummy
+scoreboard objectives add ssiege_buff_titanslayer dummy
+scoreboard objectives add ssiege_current_encounter dummy "Encounter: "
+scoreboard objectives add ssiege_death_timer dummy
+scoreboard objectives add ssiege_drop_shards dummy
+scoreboard objectives add ssiege_giants dummy
+scoreboard objectives add ssiege_killstreak dummy
+scoreboard objectives add ssiege_perk_regen dummy
+scoreboard objectives add ssiege_perk_aura dummy
+scoreboard objectives add ssiege_perk_turret dummy
+scoreboard objectives add ssiege_perk_recall dummy
+scoreboard objectives add ssiege_perk_swimspeed dummy
+scoreboard objectives add ssiege_perk_featherfalling dummy
+scoreboard objectives add ssiege_perk_sonar dummy
+scoreboard objectives add ssiege_perk_titanslayer dummy
 scoreboard objectives add ssiege_recall_cd dummy
 scoreboard objectives add ssiege_recall_charge dummy
 scoreboard objectives add ssiege_recall_delay dummy
-scoreboard objectives add ssiege_current_encounter dummy "Encounter: "
-scoreboard objectives add mode dummy
-scoreboard objectives add ssiege_death_timer dummy
-scoreboard objectives add ssiege_giants dummy
 scoreboard objectives add ssiege_reverse_bounty dummy
-scoreboard objectives add ssiege_killstreak dummy
-scoreboard objectives add ssiege_shards dummy
-scoreboard objectives add ssiege_drop_shards dummy
-scoreboard objectives add ssiege_unlocked_runesmith dummy
 scoreboard objectives add ssiege_rune_strength dummy
 scoreboard objectives add ssiege_rune_toughness dummy
 scoreboard objectives add ssiege_rune_swiftness dummy
@@ -121,15 +128,9 @@ scoreboard objectives add ssiege_rune_steadfast dummy
 scoreboard objectives add ssiege_rune_leaping dummy
 scoreboard objectives add ssiege_rune_vitality dummy
 scoreboard objectives add ssiege_rune_fireproof dummy
-scoreboard objectives add ssiege_perk_regen dummy
-scoreboard objectives add ssiege_perk_aura dummy
-scoreboard objectives add ssiege_perk_turret dummy
-scoreboard objectives add ssiege_perk_recall dummy
-scoreboard objectives add ssiege_perk_swimspeed dummy
-scoreboard objectives add ssiege_perk_featherfalling dummy
-scoreboard objectives add ssiege_perk_sonar dummy
-scoreboard objectives add ssiege_perk_titanslayer dummy
-scoreboard objectives add ssiege_buff_titanslayer dummy
+scoreboard objectives add ssiege_settings dummy
+scoreboard objectives add ssiege_shards dummy
+scoreboard objectives add ssiege_unlocked_runesmith dummy
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health
@@ -206,82 +207,82 @@ team modify no_collision seeFriendlyInvisibles false
 scoreboard players set %default mode 0
 
 # Augment tier
-scoreboard players set %random_def_uhcp uhcp_aug_tier 1
-scoreboard players set %tier_def_uhcp uhcp_aug_tier 1
+scoreboard players set %random_def uhcp_aug_tier 1
+scoreboard players set %tier_def uhcp_aug_tier 1
 
 # Arrow limits (special arrow limits are additive)
-scoreboard players set %arrow_limit_def_uhcp uhcp_settings 12
-scoreboard players set %arrow_limit149_def_uhcp uhcp_settings 8
-scoreboard players set %arrow_limit5_def_uhcp uhcp_settings 20
-scoreboard players set %arrow_limit201_def_uhcp uhcp_settings 52
+scoreboard players set %arrow_limit_def uhcp_settings 12
+scoreboard players set %arrow_limit149_def uhcp_settings 8
+scoreboard players set %arrow_limit5_def uhcp_settings 20
+scoreboard players set %arrow_limit201_def uhcp_settings 52
 
 # Border size
-scoreboard players set %border_size_def_uhcp uhcp_settings 1500
+scoreboard players set %border_size_def uhcp_settings 1500
 
 # Border countdown
-scoreboard players set %border_countdown_def_uhcp uhcp_settings 24000
+scoreboard players set %border_countdown_def uhcp_settings 24000
 
 # Border shrink speed
-scoreboard players set %border_shrink_speed_def_uhcp uhcp_settings 24000
+scoreboard players set %border_shrink_speed_def uhcp_settings 24000
 
 # Dimension countdown
-scoreboard players set %dimension_def_uhcp uhcp_settings 48000
+scoreboard players set %dimension_def uhcp_settings 48000
 
 # Soul apples
-scoreboard players set %soul_apples_def_uhcp uhcp_settings 1
+scoreboard players set %soul_apples_def uhcp_settings 1
 
 # Number of Titans
-scoreboard players set %titans_def_uhcp uhcp_settings 3
+scoreboard players set %titans_def uhcp_settings 3
 
 # PvP countdown
-scoreboard players set %pvp_def_uhcp uhcp_settings 24000
+scoreboard players set %pvp_def uhcp_settings 24000
 
 # Team game
-scoreboard players set %team_def_uhcp uhcp_settings 1
+scoreboard players set %team_def uhcp_settings 1
 
 # Team size
-scoreboard players set %team_size_def_uhcp uhcp_settings 2
+scoreboard players set %team_size_def uhcp_settings 2
 
 # Friendly fire
-scoreboard players set %friendly_fire_def_uhcp uhcp_settings 0
+scoreboard players set %friendly_fire_def uhcp_settings 0
 
 # Players select teams
-scoreboard players set %players_select_teams_def_uhcp uhcp_settings 1
+scoreboard players set %players_select_teams_def uhcp_settings 1
 
 # Ra stacks
-scoreboard players set %ra_stacks_def_uhcp uhcp_settings 9
+scoreboard players set %ra_stacks_def uhcp_settings 9
 
 # Patron augments
-scoreboard players set %patrons_def_uhcp uhcp_settings 0
+scoreboard players set %patrons_def uhcp_settings 0
 
 # Night vision
-scoreboard players set %night_vision_def_uhcp uhcp_settings 1
+scoreboard players set %night_vision_def uhcp_settings 1
 
 # Ender pearl immunity
-scoreboard players set %ender_pearl_def_uhcp uhcp_settings 1
+scoreboard players set %ender_pearl_def uhcp_settings 1
 
 # Difficulty
-scoreboard players set %difficulty_def_uhcp uhcp_settings 0
+scoreboard players set %difficulty_def uhcp_settings 0
 
 # Lava
-scoreboard players set %lava_countdown_def_uhcp uhcp_settings 48000
-scoreboard players set %lava_def_uhcp uhcp_lava_maxHeight 50
-scoreboard players set %lava_def_uhcp uhcp_lava_time 8400
+scoreboard players set %lava_countdown_def uhcp_settings 48000
+scoreboard players set %lava_def uhcp_lava_maxHeight 50
+scoreboard players set %lava_def uhcp_lava_time 8400
 
 # Auto-cook
-scoreboard players set %auto_cook_def_uhcp uhcp_settings 1
+scoreboard players set %auto_cook_def uhcp_settings 1
 
 # Auto-smelt
-scoreboard players set %auto_smelt_def_uhcp uhcp_settings 1
+scoreboard players set %auto_smelt_def uhcp_settings 1
 
 # Increased rates/drops of apples for leaves loot tables
-scoreboard players set %apple_leaves_def_uhcp uhcp_settings 1
+scoreboard players set %apple_leaves_def uhcp_settings 1
 
 # Remove enchanted golden apples from loot tables
-scoreboard players set %apple_limit_def_uhcp uhcp_settings 1
+scoreboard players set %apple_limit_def uhcp_settings 1
 
 # UHC Plus loot
-scoreboard players set %uhcp_loot_def_uhcp uhcp_settings 1
+scoreboard players set %uhcp_loot_def uhcp_settings 1
 
 # Set default scores when unset
 execute unless score %game uhcp_initStatus matches 1 run function uhcp:load/scores
