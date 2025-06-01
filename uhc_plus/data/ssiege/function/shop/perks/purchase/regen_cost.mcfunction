@@ -1,0 +1,1 @@
+tellraw @s "You purchased regen"
