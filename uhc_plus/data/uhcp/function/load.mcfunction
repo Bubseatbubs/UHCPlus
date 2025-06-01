@@ -109,6 +109,21 @@ scoreboard objectives add ssiege_giants dummy
 scoreboard objectives add ssiege_reverse_bounty dummy
 scoreboard objectives add ssiege_killstreak dummy
 scoreboard objectives add ssiege_shards dummy
+scoreboard objectives add ssiege_rune_strength dummy
+scoreboard objectives add ssiege_rune_toughness dummy
+scoreboard objectives add ssiege_rune_swiftness dummy
+scoreboard objectives add ssiege_rune_steadfast dummy
+scoreboard objectives add ssiege_rune_leaping dummy
+scoreboard objectives add ssiege_rune_vitality dummy
+scoreboard objectives add ssiege_rune_fireproof dummy
+scoreboard objectives add ssiege_perk_regen dummy
+scoreboard objectives add ssiege_perk_aura dummy
+scoreboard objectives add ssiege_perk_turret dummy
+scoreboard objectives add ssiege_perk_recall dummy
+scoreboard objectives add ssiege_perk_swimspeed dummy
+scoreboard objectives add ssiege_perk_featherfalling dummy
+scoreboard objectives add ssiege_perk_sonar dummy
+scoreboard objectives add ssiege_perk_titanslayer dummy
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health
