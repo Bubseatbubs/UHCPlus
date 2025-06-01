@@ -7,4 +7,4 @@ execute store result storage temp:ssiege attackspeed_value double .16 run scoreb
 execute store result storage temp:ssiege movespeed_value double .04 run scoreboard players get @s ssiege_rune_swiftness
 
 # Apply the attribute modifier using macro
-function ssiege:shop/runes/swiftness_macro with storage temp:ssiege
+function ssiege:shop/runes/effects/swiftness_macro with storage temp:ssiege

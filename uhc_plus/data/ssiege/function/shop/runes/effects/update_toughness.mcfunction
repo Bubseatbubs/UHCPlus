@@ -7,4 +7,4 @@ execute store result storage temp:ssiege armor_value double .134 run scoreboard 
 execute store result storage temp:ssiege armor_toughness_value double 1.2 run scoreboard players get @s ssiege_rune_toughness
 
 # Apply the attribute modifier using macro
-function ssiege:shop/runes/toughness_macro with storage temp:ssiege
+function ssiege:shop/runes/effects/toughness_macro with storage temp:ssiege
