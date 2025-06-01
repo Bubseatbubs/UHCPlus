@@ -5,11 +5,11 @@
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "entity": {
-          "nbt": "{Tags:[\"redsniffer\"]}"
+          "nbt": "{Tags:[\"bluesniffer\"]}"
         },
         "damage": {
           "dealt": {
-            "min": 2
+            "min": 2.0
           }
         }
       }

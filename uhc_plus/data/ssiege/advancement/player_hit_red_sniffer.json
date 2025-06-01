@@ -9,7 +9,7 @@
         },
         "damage": {
           "dealt": {
-            "min": 2
+            "min": 2.0
           }
         }
       }
