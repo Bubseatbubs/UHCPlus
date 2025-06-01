@@ -1,0 +1,24 @@
+{
+
+  "criteria": {
+    "hurt_tagged_mob": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"your_custom_tag\"]}"
+        },
+        "damage": {
+          "dealt": {
+            "min": 1.0
+          },
+          "type": {
+            "is_projectile": false
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ssiege:hurt_tagged_mob_reward"
+  }
+}
