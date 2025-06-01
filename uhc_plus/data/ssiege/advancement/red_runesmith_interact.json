@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "ssiege:shop/runes/interact_blue_runesmith"
+    "function": "ssiege:shop/runes/interact_red_runesmith"
   }
 }
