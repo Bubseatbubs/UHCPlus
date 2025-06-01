@@ -1,0 +1,1 @@
+$attribute @s minecraft:attack_damage modifier add ssiege:rune_strength $(modifier_value) add_value
