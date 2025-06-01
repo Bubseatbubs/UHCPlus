@@ -130,6 +130,7 @@ function ssiege:shop/perks/update_red_perk_costs
 scoreboard players set %sonar uhcp_game_time 0
 scoreboard players set %red_regen uhcp_game_time 0
 scoreboard players set %blue_regen uhcp_game_time 0
+scoreboard players set %regen uhcp_game_time 0
 
 # Keep 0 0 forceloaded for Titans
 forceload add 0 0
