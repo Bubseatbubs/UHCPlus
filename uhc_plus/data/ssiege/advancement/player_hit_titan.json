@@ -5,20 +5,17 @@
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "entity": {
-          "nbt": "{Tags:[\"your_custom_tag\"]}"
+          "nbt": "{Tags:[\"UHCP_Titan\"]}"
         },
         "damage": {
           "dealt": {
-            "min": 1.0
-          },
-          "type": {
-            "is_projectile": false
+            "min": 2.0
           }
         }
       }
     }
   },
   "rewards": {
-    "function": "ssiege:hurt_tagged_mob_reward"
+    "function": "ssiege:damage_buffs/player_hit_titan"
   }
 }
