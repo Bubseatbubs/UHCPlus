@@ -127,9 +127,8 @@ execute unless score %blue ssiege_unlocked_runesmith matches 1 at @e[type=wander
 # Red Runesmith
 execute unless score %red ssiege_unlocked_runesmith matches 1 at @e[type=wandering_trader,tag=SSIEGE_RED_RUNESMITH] if block ~ ~ ~1 minecraft:anvil run function ssiege:shop/runes/unlock_red_runesmith
 
-# Blue Shopkeeper
-
-# Red Shopkeeper
+# Check when players leave shopping area
+execute as @a unless entity @n[tag=SSIEGE_SHOPKEEPER,distance=..32] run scoreboard players set @s ssiege_currently_shopping 0
 
 # TODO: Titan spawning logic
 
