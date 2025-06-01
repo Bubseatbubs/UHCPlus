@@ -84,12 +84,17 @@ execute if score %players uhcp_id matches ..1 run scoreboard players set %end uh
 # Set gamerules
 gamerule doImmediateRespawn true
 gamerule keepInventory true
+gamerule doDaylightCycle false
 
 # Set initial death related variables
 scoreboard players set @a ssiege_reverse_bounty 0
 scoreboard players set @a ssiege_killstreak 0
 scoreboard players set @a ssiege_death_timer -1
 scoreboard players set %respawn_time ssiege_death_timer 5
+
+# Disable both Runesmiths
+scoreboard players set %blue ssiege_unlocked_runesmith 0
+scoreboard players set %red ssiege_unlocked_runesmith 0
 
 # Initialize Opening Encounter
 function ssiege:start/encounters/init

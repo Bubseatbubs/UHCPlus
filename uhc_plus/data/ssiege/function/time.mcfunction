@@ -120,6 +120,17 @@ execute as @a[tag=SSIEGE_dead] run spectate @p[gamemode=survival]
 # Augment-based time events
 execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp_game_time >= @s uhcp_game_time run function ssiege:augments/effects/timed
 
+# Shop Interactions
+# Blue Runesmith
+execute unless score %blue ssiege_unlocked_runesmith matches 1 at @e[type=wandering_trader,tag=SSIEGE_BLUE_RUNESMITH] if block ~ ~ ~-1 minecraft:anvil run function ssiege:shop/runes/unlock_blue_runesmith
+
+# Red Runesmith
+execute unless score %red ssiege_unlocked_runesmith matches 1 at @e[type=wandering_trader,tag=SSIEGE_RED_RUNESMITH] if block ~ ~ ~1 minecraft:anvil run function ssiege:shop/runes/unlock_red_runesmith
+
+# Blue Shopkeeper
+
+# Red Shopkeeper
+
 # TODO: Titan spawning logic
 
 # TODO: Time-based Encounters logic
