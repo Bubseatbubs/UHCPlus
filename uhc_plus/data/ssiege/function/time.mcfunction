@@ -130,6 +130,13 @@ execute unless score %red ssiege_unlocked_runesmith matches 1 at @e[type=wanderi
 # Check when players leave shopping area
 execute as @a unless entity @n[tag=SSIEGE_SHOPKEEPER,distance=..32] run scoreboard players set @s ssiege_currently_shopping 0
 
+# Sniffer Sonar Perk
+execute if score %time uhcp_game_time >= %sonar uhcp_game_time run function ssiege:shop/perks/effects/sniffer_sonar
+
+# Regen Perk
+execute if score %red ssiege_perk_regen matches 2.. if score %time uhcp_game_time >= %red_regen uhcp_game_time run function ssiege:shop/perks/effects/red_regen
+execute if score %blue ssiege_perk_regen matches 2.. if score %time uhcp_game_time >= %blue_regen uhcp_game_time run function ssiege:shop/perks/effects/blue_regen
+
 # TODO: Titan spawning logic
 
 # TODO: Time-based Encounters logic
