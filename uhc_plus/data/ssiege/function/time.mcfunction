@@ -127,9 +127,8 @@ execute unless score %blue ssiege_unlocked_runesmith matches 1 at @e[type=wander
 # Red Runesmith
 execute unless score %red ssiege_unlocked_runesmith matches 1 at @e[type=wandering_trader,tag=SSIEGE_RED_RUNESMITH] if block ~ ~ ~1 minecraft:anvil run function ssiege:shop/runes/unlock_red_runesmith
 
-# Blue Shopkeeper
-
-# Red Shopkeeper
+# Check when players leave shopping area
+execute as @a unless entity @n[tag=SSIEGE_SHOPKEEPER,distance=..32] run scoreboard players set @s ssiege_currently_shopping 0
 
 # Sniffer Sonar Perk
 execute if score %time uhcp_game_time >= %sonar uhcp_game_time run function ssiege:shop/perks/effects/sniffer_sonar
@@ -142,6 +141,8 @@ execute if score %blue ssiege_perk_regen matches 2.. if score %time uhcp_game_ti
 function ssiege:shop/perks/effects/sniffer_aura
 
 # TODO: Titan spawning logic
+# Titans
+function ssiege:titans/timed
 
 # TODO: Time-based Encounters logic
 

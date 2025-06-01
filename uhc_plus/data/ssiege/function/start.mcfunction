@@ -120,9 +120,14 @@ scoreboard players set %red ssiege_perk_featherfalling 1
 scoreboard players set %red ssiege_perk_sonar 1
 scoreboard players set %red ssiege_perk_titanslayer 1
 
+scoreboard players set @a ssiege_currently_shopping 0
+
 # Set Perk Costs
 function ssiege:shop/perks/update_blue_perk_costs
 function ssiege:shop/perks/update_red_perk_costs
+
+# Keep 0 0 forceloaded for Titans
+forceload add 0 0
 
 # Initialize Opening Encounter
 function ssiege:start/encounters/init
