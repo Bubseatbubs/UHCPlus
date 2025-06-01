@@ -4,7 +4,6 @@
 scoreboard players set @s ssiege_shards 4
 scoreboard players operation %temp_reverse_bounty_timer ssiege_shards = @s ssiege_reverse_bounty
 scoreboard players operation %temp_killstreak ssiege_shards = @s ssiege_killstreak
-execute store result storage debug temp_killstreak int 1 run scoreboard players get %temp_killstreak ssiege_shards
 scoreboard players set %reverse_bounty ssiege_shards 0
 scoreboard players set %kill_bounty ssiege_shards 0
 scoreboard players set %REVERSE_BOUNTY_CONST ssiege_shards 12000
@@ -16,11 +15,3 @@ execute if score @s ssiege_killstreak matches 3.. store result score %kill_bount
 scoreboard players operation @s ssiege_shards -= %reverse_bounty ssiege_shards
 scoreboard players operation @s ssiege_shards += %kill_bounty ssiege_shards
 execute if score @s ssiege_shards matches ..0 run scoreboard players set @s ssiege_shards 1
-
-function ssiege:kill/soul_shard/drop_shards
-
-# If player did not kill anyone this life, add 10 minutes to their reverse bounty timer
-execute if score @s ssiege_killstreak matches 0 run scoreboard players add @s ssiege_reverse_bounty 12000
-
-# Reset player's killstreak
-scoreboard players set @s ssiege_killstreak 0

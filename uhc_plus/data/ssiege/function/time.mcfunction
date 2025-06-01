@@ -102,6 +102,9 @@ scoreboard players enable @a augments
 scoreboard players enable @a[gamemode=survival] top
 scoreboard players enable @a[gamemode=survival] testkit
 
+# Calculate player bounties
+execute as @a run function ssiege:kill/soul_shard/calculate_shards_dropped
+
 # Handle reverse bounties
 scoreboard players remove @a[scores={ssiege_reverse_bounty=1..}] ssiege_reverse_bounty 1
 scoreboard players set @a[scores={ssiege_reverse_bounty=..-1}] ssiege_reverse_bounty 0
@@ -110,9 +113,9 @@ scoreboard players set @a[scores={ssiege_reverse_bounty=..-1}] ssiege_reverse_bo
 function ssiege:kill/advance_timers
 
 # Force dead players to spectate their nearest teammate
-execute as @a[tag=SSIEGE_dead,team=blue] run tp @s @p[team=blue]
-execute as @a[tag=SSIEGE_dead,team=red] run tp @s @p[team=red]
-execute as @a[tag=SSIEGE_dead] run spectate @p
+execute as @a[tag=SSIEGE_dead,team=blue] run tp @s @p[team=blue,gamemode=survival]
+execute as @a[tag=SSIEGE_dead,team=red] run tp @s @p[team=red,gamemode=survival]
+execute as @a[tag=SSIEGE_dead] run spectate @p[gamemode=survival]
 
 # Augment-based time events
 execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp_game_time >= @s uhcp_game_time run function ssiege:augments/effects/timed

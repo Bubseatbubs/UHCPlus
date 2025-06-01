@@ -5,9 +5,6 @@ execute unless score %current_mode mode matches 1 run return fail
 execute as @a[tag=!UHCP_Player] run function uhcp:new
 execute as @a[scores={uhcp_leave=1..}] run function uhcp:left
 
-# On player death
-execute as @a[scores={uhcp_death=1..}] at @s run function ssiege:kill/death
-
 # Settings menu
 execute as @a[scores={uhcp_settings=0..}] at @s run function uhcp:settings/change
 execute as @a[scores={settings=1..}] run function uhcp:settings/pages/main
@@ -58,5 +55,5 @@ execute as @e[tag=!UHCP_ItemPickup,predicate=uhcp:items/instant_pickup] run func
 # Item use timer
 scoreboard players remove @a[scores={uhcp_itemCount=1..}] uhcp_itemCount 1
 
-#babysitting augment
+# Babysitting augment
 function ssiege:augments/effects/gold/babysitting/sniffcd

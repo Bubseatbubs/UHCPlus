@@ -75,9 +75,8 @@ tag @a remove UHCP_RelicTestingChamber
 tag @a remove UHCP_SoulflameEmbrace
 tag @a remove UHCP_Explode
 
-# Set world border size
-execute store result storage uhcp:border size.width int 1 run scoreboard players get %border_size uhcp_settings
-function uhcp:start/border with storage uhcp:border size
+# Set up scoreboard display
+scoreboard objectives setdisplay list ssiege_shards
 
 # Allow one-player games to not end
 execute if score %players uhcp_id matches ..1 run scoreboard players set %end uhcp_initStatus 1

@@ -109,6 +109,7 @@ scoreboard objectives add ssiege_giants dummy
 scoreboard objectives add ssiege_reverse_bounty dummy
 scoreboard objectives add ssiege_killstreak dummy
 scoreboard objectives add ssiege_shards dummy
+scoreboard objectives add ssiege_drop_shards dummy
 scoreboard objectives add ssiege_rune_strength dummy
 scoreboard objectives add ssiege_rune_toughness dummy
 scoreboard objectives add ssiege_rune_swiftness dummy
