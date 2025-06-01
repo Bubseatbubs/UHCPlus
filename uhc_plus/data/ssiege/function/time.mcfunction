@@ -138,7 +138,7 @@ execute if score %red ssiege_perk_regen matches 2.. if score %time uhcp_game_tim
 execute if score %blue ssiege_perk_regen matches 2.. if score %time uhcp_game_time >= %blue_regen uhcp_game_time run function ssiege:shop/perks/effects/blue_regen
 
 # Sniffer Aura Perk
-function ssiege:shop/perks/effects/sniffer_aura
+execute if score %time uhcp_game_time >= %regen uhcp_game_time run function ssiege:shop/perks/effects/sniffer_aura
 
 # TODO: Titan spawning logic
 # Titans
