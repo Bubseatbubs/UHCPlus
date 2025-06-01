@@ -129,6 +129,7 @@ scoreboard objectives add ssiege_perk_swimspeed dummy
 scoreboard objectives add ssiege_perk_featherfalling dummy
 scoreboard objectives add ssiege_perk_sonar dummy
 scoreboard objectives add ssiege_perk_titanslayer dummy
+scoreboard objectives add ssiege_buff_titanslayer dummy
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health

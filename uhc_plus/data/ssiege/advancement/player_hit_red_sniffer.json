@@ -5,7 +5,7 @@
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "entity": {
-          "nbt": "{Tags:[\"TEST\"]}"
+          "nbt": "{Tags:[\"redsniffer\"]}"
         },
         "damage": {
           "dealt": {
@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "ssiege:damage_buffs/player_hit_sniffer"
+    "function": "ssiege:damage_buffs/player_hit_red_sniffer"
   }
 }
