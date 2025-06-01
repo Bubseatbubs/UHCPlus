@@ -1,0 +1,21 @@
+{
+
+  "criteria": {
+    "hurt_tagged_mob": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"redsniffer\"]}"
+        },
+        "damage": {
+          "dealt": {
+            "min": 2
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ssiege:damage_buffs/player_hit_red_sniffer"
+  }
+}
