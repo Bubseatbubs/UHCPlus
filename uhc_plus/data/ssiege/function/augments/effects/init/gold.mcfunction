@@ -7,7 +7,7 @@ execute if score @s uhcp_augment matches 6 run function ssiege:augments/effects/
 execute if score @s uhcp_augment matches 7 run function ssiege:augments/effects/gold/caerbannog
 execute if score @s uhcp_augment matches 10 run function ssiege:augments/effects/gold/cowboycosplay
 execute if score @s uhcp_augment matches 17 run function ssiege:augments/effects/gold/fireandwater
-execute if score @s uhcp_augment matches 20 run function ssiege:augments/effects/gold/gapplegap
+execute if score @s uhcp_augment matches 20 run function ssiege:augments/effects/gold/gapplegapi
 execute if score @s uhcp_augment matches 29 run function ssiege:augments/effects/gold/jumpking/givemace
 execute if score @s uhcp_augment matches 34 run function ssiege:augments/effects/gold/lessthan3
 execute if score @s uhcp_augment matches 35 run function ssiege:augments/effects/gold/lilbro
@@ -15,5 +15,7 @@ execute if score @s uhcp_augment matches 39 run function ssiege:augments/effects
 execute if score @s uhcp_augment matches 42 run function ssiege:augments/effects/gold/oppenheimer
 execute if score @s uhcp_augment matches 43 run function ssiege:augments/effects/gold/parasite
 execute if score @s uhcp_augment matches 47 run function ssiege:augments/effects/gold/poseidonsblessing
-execute if score @s uhcp_augment matches 60 run function ssiege:augments/effects/gold/starterkit
+execute if score @s uhcp_augment matches 49 run function ssiege:augments/effects/gold/protectprotocol
+execute if score @s uhcp_augment matches 60 run function ssiege:augments/effects/gold/starterkiti
 execute if score @s uhcp_augment matches 66 run function ssiege:augments/effects/gold/theboat
+execute if score @s uhcp_augment matches 78 run function ssiege:augments/effects/gold/youhavemyrodi

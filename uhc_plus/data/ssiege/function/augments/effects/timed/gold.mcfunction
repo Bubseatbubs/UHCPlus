@@ -14,3 +14,6 @@ execute if score @s uhcp_augment matches 15 run return run function ssiege:augme
 
 #jump king
 execute if score @s uhcp_augment matches 29 run return run function ssiege:augments/effects/gold/jumpking/givecharge
+
+# Unleash the Beast
+execute if score @s uhcp_augment matches 75 run return run function ssiege:augments/effects/gold/unleashthebeast
