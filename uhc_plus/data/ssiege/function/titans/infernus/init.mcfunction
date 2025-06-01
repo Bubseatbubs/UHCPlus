@@ -1,16 +1,14 @@
-summon minecraft:blaze ~ ~ ~ {PersistenceRequired:1b,CanPickUpLoot:0b,CustomNameVisible:0b,equipment:{chest:{id:"minecraft:chest",count:1,components:{"minecraft:max_stack_size":1,"minecraft:custom_data":{uhcp_titan_loot:1b,uhcp_titan_id:9b}}}},drop_chances:{chest:1.000},Health:750f,Tags:["UHCP_Titan","UHCP_Infernus","UHCP_New"],CustomName:{"text":"Infernus","color":"red","bold":true},attributes:[{id:"minecraft:armor",base:5.0d},{id:"minecraft:attack_damage",base:0.0d},{id:"minecraft:fall_damage_multiplier",base:0.0d},{id:"minecraft:follow_range",base:80.0d},{id:"minecraft:gravity",base:1.0d},{id:"minecraft:jump_strength",base:0.0d},{id:"minecraft:knockback_resistance",base:0.9d},{id:"minecraft:max_health",base:750.0d},{id:"minecraft:movement_speed",base:0.27d},{id:"minecraft:scale",base:9.0d},{id:"minecraft:step_height",base:2.0d}]}
-spreadplayers 0 0 0 1 false @n[tag=UHCP_Titan]
-
-# Initialize boss ID
-scoreboard players set @n[tag=UHCP_New,tag=UHCP_Titan] uhcp_titans_id 9
-tag @e remove UHCP_New
-
-# Scale Titan health based on team size
-execute store result score %hp uhcp_team run execute if entity @a[team=blue]
-scoreboard players set %MULT uhcp_titans_id 80
-scoreboard players set %BASE uhcp_titans_id 150
+# Calculate Titan health based on player count
+execute store result score %hp uhcp_team run execute if entity @a
+scoreboard players set %MULT uhcp_titans_id 50
+scoreboard players set %BASE uhcp_titans_id 200
 scoreboard players operation %hp uhcp_team *= %MULT uhcp_titans_id
 scoreboard players operation %hp uhcp_team += %BASE uhcp_titans_id
+execute store result storage ssiege:titan_health input.hp double 1 run scoreboard players get %hp uhcp_team
 
-execute store result entity @n[tag=UHCP_Titan] attributes[{Name:"minecraft:generic.max_health"}].base float 1 run scoreboard players get %hp uhcp_team
-execute store result entity @n[tag=UHCP_Titan] Health float 1 run scoreboard players get %hp uhcp_team
+# Spawn Titan
+execute in minecraft:overworld positioned 0 100 0 summon minecraft:blaze run function ssiege:titans/ferrum/init_helper with storage ssiege:titan_health input
+execute positioned 0 63 0 run spreadplayers 0 0 0 1 true @n[tag=UHCP_Titan]
+
+# Announce
+tellraw @a ["",{"text":"Infernus","bold":true,"color":"red"},{"text":" has spawned! Defeat him to give your team permanent "},{"text":"fire damage on-hit","bold":true,"color":"yellow"},{"text":"."}]

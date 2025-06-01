@@ -126,6 +126,9 @@ scoreboard players set @a ssiege_currently_shopping 0
 function ssiege:shop/perks/update_blue_perk_costs
 function ssiege:shop/perks/update_red_perk_costs
 
+# Keep 0 0 forceloaded for Titans
+forceload add 0 0
+
 # Initialize Opening Encounter
 function ssiege:start/encounters/init
 

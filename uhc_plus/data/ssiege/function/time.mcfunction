@@ -137,7 +137,8 @@ execute if score %time uhcp_game_time >= %sonar uhcp_game_time run function ssie
 execute if score %red ssiege_perk_regen matches 2.. if score %time uhcp_game_time >= %red_regen uhcp_game_time run function ssiege:shop/perks/effects/red_regen
 execute if score %blue ssiege_perk_regen matches 2.. if score %time uhcp_game_time >= %blue_regen uhcp_game_time run function ssiege:shop/perks/effects/blue_regen
 
-# TODO: Titan spawning logic
+# Titans
+function ssiege:titans/timed
 
 # TODO: Time-based Encounters logic
 
