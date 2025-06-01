@@ -5,4 +5,4 @@ attribute @s minecraft:attack_damage modifier remove ssiege:rune_strength
 execute store result storage temp:ssiege modifier_value double 0.32 run scoreboard players get @s ssiege_rune_strength
 
 # Apply the attribute modifier using macro
-function ssiege:shop/runes/applystrength with storage temp:ssiege
+function ssiege:shop/runes/strength_macro with storage temp:ssiege
