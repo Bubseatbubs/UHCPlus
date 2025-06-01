@@ -49,6 +49,9 @@ function ssiege:augments/effects/gold/babysitting/sniffcd
 # Bottled Knowledge
 execute as @a[scores={uhcp_augment=6}] run function ssiege:augments/effects/gold/bottledknowledge/levelcheck
 
+# Cram Session
+execute as @a[scores={uhcp_augment=11}] run function ssiege:augments/effects/gold/cramsession/levelcheck
+
 # Announce Augments
 execute as @a[scores={augments=1..}] run function uhcp:augments/announce
 
