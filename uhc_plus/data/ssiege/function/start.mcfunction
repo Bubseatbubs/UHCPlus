@@ -96,6 +96,11 @@ scoreboard players set %respawn_time ssiege_death_timer 5
 scoreboard players set %blue ssiege_unlocked_runesmith 0
 scoreboard players set %red ssiege_unlocked_runesmith 0
 
+# Reset Rune costs
+scoreboard players set @a ssiege_rune_strength_cost 1
+scoreboard players set @a ssiege_rune_toughness_cost 1
+scoreboard players set @a ssiege_rune_swiftness_cost 1
+
 # Initialize Opening Encounter
 function ssiege:start/encounters/init
 

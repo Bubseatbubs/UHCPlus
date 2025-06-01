@@ -114,6 +114,9 @@ scoreboard objectives add ssiege_unlocked_runesmith dummy
 scoreboard objectives add ssiege_rune_strength dummy
 scoreboard objectives add ssiege_rune_toughness dummy
 scoreboard objectives add ssiege_rune_swiftness dummy
+scoreboard objectives add ssiege_rune_strength_cost dummy
+scoreboard objectives add ssiege_rune_toughness_cost dummy
+scoreboard objectives add ssiege_rune_swiftness_cost dummy
 scoreboard objectives add ssiege_rune_steadfast dummy
 scoreboard objectives add ssiege_rune_leaping dummy
 scoreboard objectives add ssiege_rune_vitality dummy
