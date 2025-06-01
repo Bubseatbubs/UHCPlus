@@ -96,10 +96,33 @@ scoreboard players set %respawn_time ssiege_death_timer 5
 scoreboard players set %blue ssiege_unlocked_runesmith 0
 scoreboard players set %red ssiege_unlocked_runesmith 0
 
-# Reset Rune costs
+# Set Rune costs
 scoreboard players set @a ssiege_rune_strength_cost 1
 scoreboard players set @a ssiege_rune_toughness_cost 1
 scoreboard players set @a ssiege_rune_swiftness_cost 1
+
+# Set Perk Levels
+scoreboard players set %blue ssiege_perk_regen 1
+scoreboard players set %blue ssiege_perk_aura 1
+scoreboard players set %blue ssiege_perk_turret 1
+scoreboard players set %blue ssiege_perk_recall 1
+scoreboard players set %blue ssiege_perk_swimspeed 1
+scoreboard players set %blue ssiege_perk_featherfalling 1
+scoreboard players set %blue ssiege_perk_sonar 1
+scoreboard players set %blue ssiege_perk_titanslayer 1
+
+scoreboard players set %red ssiege_perk_regen 1
+scoreboard players set %red ssiege_perk_aura 1
+scoreboard players set %red ssiege_perk_turret 1
+scoreboard players set %red ssiege_perk_recall 1
+scoreboard players set %red ssiege_perk_swimspeed 1
+scoreboard players set %red ssiege_perk_featherfalling 1
+scoreboard players set %red ssiege_perk_sonar 1
+scoreboard players set %red ssiege_perk_titanslayer 1
+
+# Set Perk Costs
+function ssiege:shop/perks/update_blue_perk_costs
+function ssiege:shop/perks/update_red_perk_costs
 
 # Initialize Opening Encounter
 function ssiege:start/encounters/init
