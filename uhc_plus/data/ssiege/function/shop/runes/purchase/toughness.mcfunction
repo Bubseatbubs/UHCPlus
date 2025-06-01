@@ -17,4 +17,4 @@ execute if score @s ssiege_rune_toughness_cost matches 1 run scoreboard players 
 # Re-render the shop with new prices
 function ssiege:shop/runes/show_rune_shop
 
-tellraw @s ["",{"text":"The "},{"text":"Rune of Toughness","color":"yellow"},{"text":" granted you "},{"text":"+4% armor","color":"green"},{"text":"!"}]
+tellraw @s ["",{"text":"The "},{"text":"Rune of Toughness","color":"yellow"},{"text":" granted you "},{"text":"+4% armor","color":"green"},{"text":"!\nTotal Purchased: "},{"score":{"name":"@s","objective":"ssiege_rune_toughness"}}]
