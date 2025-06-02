@@ -154,7 +154,10 @@ scoreboard players add %infernus_check uhcp_game_time 1
 execute if score %infernus_check uhcp_game_time matches 20.. run function ssiege:titans/infernus/handle_burning
 execute if score %infernus_check uhcp_game_time matches 20.. run scoreboard players set %infernus_check uhcp_game_time 0
 
-# TODO: Time-based Encounters logic
+# Encounters
+scoreboard players add %encounter_timer uhcp_game_time 1
+execute if score %encounter_timer uhcp_game_time matches 6000.. if score %encounter ssiege_current_encounter matches 5 run function ssiege:start/encounters/effects/5
+execute if score %encounter_timer uhcp_game_time matches 6000.. if score %encounter ssiege_current_encounter matches 7 run function ssiege:start/encounters/effects/7
 
 # Giants
 execute if score %time uhcp_game_time matches 18000 in minecraft:overworld run scoreboard players set %giant_timer ssiege_giants 4200

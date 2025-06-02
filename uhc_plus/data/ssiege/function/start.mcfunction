@@ -126,6 +126,10 @@ scoreboard players set @a ssiege_currently_shopping 0
 function ssiege:shop/perks/update_blue_perk_costs
 function ssiege:shop/perks/update_red_perk_costs
 
+# Set Timers
+scoreboard players set %titans uhcp_game_time 0
+scoreboard players set %encounter_timer uhcp_game_time 0
+
 # Set Perk Timers
 scoreboard players set %sonar uhcp_game_time 0
 scoreboard players set %red_regen uhcp_game_time 0

@@ -21,7 +21,9 @@ execute if score %random_encounter ssiege_current_encounter matches 861..890 run
 execute if score %random_encounter ssiege_current_encounter matches 891..920 run scoreboard players set %encounter ssiege_current_encounter 17
 execute if score %random_encounter ssiege_current_encounter matches 921..950 run scoreboard players set %encounter ssiege_current_encounter 18
 execute if score %random_encounter ssiege_current_encounter matches 951..980 run scoreboard players set %encounter ssiege_current_encounter 19
-execute if score %random_encounter ssiege_current_encounter matches 981..990 run scoreboard players set %encounter ssiege_current_encounter 20
-execute if score %random_encounter ssiege_current_encounter matches 991..1000 run scoreboard players set %encounter ssiege_current_encounter 21
+
+# Temporarily replace these encounters with V1L3 until they are implemented
+execute if score %random_encounter ssiege_current_encounter matches 981..990 run scoreboard players set %encounter ssiege_current_encounter 14
+execute if score %random_encounter ssiege_current_encounter matches 991..1000 run scoreboard players set %encounter ssiege_current_encounter 14
 
 function ssiege:start/encounters/start_encounter_phase
