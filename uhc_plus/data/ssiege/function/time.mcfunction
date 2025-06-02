@@ -145,6 +145,11 @@ execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssieg
 scoreboard players add %titans uhcp_game_time 1
 function ssiege:titans/timed
 
+# Infernus Blessing
+scoreboard players add %infernus_check uhcp_game_time 1
+execute if score %infernus_check uhcp_game_time matches 20.. run function ssiege:titans/infernus/handle_burning
+execute if score %infernus_check uhcp_game_time matches 20.. run scoreboard players set %infernus_check uhcp_game_time 0
+
 # TODO: Time-based Encounters logic
 
 # Giants

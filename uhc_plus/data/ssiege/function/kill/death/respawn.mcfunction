@@ -16,4 +16,7 @@ gamemode survival @s
 # Poseidon's Blessing
 execute if score @s uhcp_augment matches 47 run effect give @s dolphins_grace infinite 0 true
 
+# Infernus Blessing
+tag @s remove SSIEGE_hit_by_Infernus_Blessing
+
 tellraw @s {text: "You've respawned!"}
