@@ -1,0 +1,1 @@
+scoreboard players set @a ssiege_buff_titanslayer 0
