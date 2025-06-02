@@ -1,5 +1,5 @@
 # Game mode check
-execute unless score %current_mode mode matches 0 run return fail
+execute unless score %mode uhcp_settings matches 0 run return fail
 
 # Manage players
 execute as @a[tag=!UHCP_Player] run function uhcp:new

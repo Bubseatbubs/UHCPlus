@@ -1,6 +1,7 @@
 {
   "values": [
     "#minecraft:leaves",
+    "#uhcp:containers",
     "#uhcp:no_hitbox_blocks",
     "minecraft:grass_block",
     "minecraft:snow"
