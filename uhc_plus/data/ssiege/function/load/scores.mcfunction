@@ -1,1 +1,0 @@
-# TODO: Set default settings for Sniffer Siege

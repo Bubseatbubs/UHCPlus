@@ -1,0 +1,19 @@
+{
+  "anvil_cost": 0,
+  "description": {
+    "translate": "enchantment.minecraft.flame"
+  },
+  "effects": {},
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "slots": [],
+  "supported_items": "minecraft:air",
+  "weight": 1
+}

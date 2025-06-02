@@ -1,1 +1,0 @@
-# TODO: Sniffer Siege settings menu

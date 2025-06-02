@@ -1,8 +1,7 @@
 # Turn friendly fire on
-execute if score %friendly_fire_def uhcp_settings matches 1 run return run function uhcp:settings/reset/team/friendly_fire/on
+execute if score %friendly_fire uhcp_settings matches 1 run return run function uhcp:settings/reset/team/friendly_fire/on
 
 # Turn friendly fire off
-scoreboard players set %friendly_fire uhcp_settings 0
 team modify aqua friendlyFire false
 team modify blue friendlyFire false
 team modify dark_aqua friendlyFire false

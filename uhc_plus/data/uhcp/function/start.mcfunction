@@ -1,5 +1,5 @@
 # Set game mode
-scoreboard players set %current_mode mode 0
+execute unless score %mode uhcp_settings matches 0 run function uhcp:settings/mode/uhcp
 
 # Dimension-specific commands
 execute in minecraft:the_end run function uhcp:start/dimensions/minecraft/the_end
