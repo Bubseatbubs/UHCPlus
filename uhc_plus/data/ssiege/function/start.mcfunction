@@ -132,8 +132,11 @@ scoreboard players set %red_regen uhcp_game_time 0
 scoreboard players set %blue_regen uhcp_game_time 0
 scoreboard players set %aura uhcp_game_time 0
 
-# Keep 0 0 forceloaded for Titans
+# Keep 0 0 forceloaded for Titans and Bases
 forceload add 0 0
+forceload add 176 176 286 224
+forceload add -178 -225 -289 -178
+
 
 # Initialize Opening Encounter
 function ssiege:start/encounters/init

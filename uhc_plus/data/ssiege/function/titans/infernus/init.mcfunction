@@ -7,7 +7,7 @@ scoreboard players operation %hp uhcp_team += %BASE uhcp_titans_id
 execute store result storage ssiege:titan_health input.hp double 1 run scoreboard players get %hp uhcp_team
 
 # Spawn Titan
-execute in minecraft:overworld positioned 0 100 0 summon minecraft:blaze run function ssiege:titans/ferrum/init_helper with storage ssiege:titan_health input
+execute in minecraft:overworld positioned 0 100 0 summon minecraft:blaze run function ssiege:titans/infernus/init_helper with storage ssiege:titan_health input
 execute positioned 0 63 0 run spreadplayers 0 0 0 1 true @n[tag=UHCP_Titan]
 
 # Announce
