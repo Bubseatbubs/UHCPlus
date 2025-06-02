@@ -1,7 +1,10 @@
 # Sniffer Siege time based events
 
-# TODO: Write Sniffer Siege End game check/function
-# execute unless score %end uhcp_initStatus matches 1 if entity @a run function uhcp:end
+# Stop running time after game end
+execute if score %time_freeze uhcp_initStatus matches 1 run return fail
+
+# Check for end of game
+function ssiege:end/check
 
 # Game time
 scoreboard players add %time uhcp_game_time 1
@@ -68,6 +71,10 @@ execute if score %titans uhcp_game_time = %time uhcp_game_time run function ssie
 execute as @a at @s if entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/update
 execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/hide
 execute as @e[type=!minecraft:player,tag=UHCP_Titan] at @s run function uhcp:titans/update
+
+# Update Sniffer Bossbar
+execute as @a at @s if entity @e[tag=SSIEGE_sniffer,distance=..64] run function ssiege:bossbar/update
+execute as @a[tag=SSIEGE_SnifferHealthVisible] at @s unless entity @e[tag=SSIEGE_sniffer,distance=..64] run function ssiege:bossbar/hide
 
 # Test kit
 # TODO: Make a Sniffer Siege testkit
