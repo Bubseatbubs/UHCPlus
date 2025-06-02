@@ -319,7 +319,7 @@ execute in minecraft:overworld run function uhcp:load/dimensions/minecraft/overw
 execute in uhcp:main run function uhcp:load/dimensions/uhcp/main
 
 # Initial logic
-execute unless score %init uhcp_initStatus matches 1 run function uhcp:load/init
+execute unless score %init uhcp_initStatus matches 1 if score %load uhcp_initStatus matches 1 run function uhcp:load/init
 
 # Schedule delayed load
 scoreboard players add %load uhcp_initStatus 1
