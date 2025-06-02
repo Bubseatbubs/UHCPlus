@@ -5,6 +5,9 @@ execute unless score %tier uhcp_aug_tier = %tier uhcp_aug_tier if score %random 
 # Arrow limits
 execute unless score %arrow_limit uhcp_arrowCount = %arrow_limit uhcp_arrowCount run function uhcp:load/scores/ssiege/arrow_limit
 
+# Border size
+execute unless score %border_size uhcp_settings = %border_size uhcp_settings run scoreboard players operation %border_size uhcp_settings = %border_size_def ssiege_settings
+
 # Dimension countdown
 execute unless score %dimension uhcp_settings = %dimension uhcp_settings run function uhcp:load/scores/ssiege/dimensions
 

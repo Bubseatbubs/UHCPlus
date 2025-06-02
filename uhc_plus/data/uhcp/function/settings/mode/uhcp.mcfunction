@@ -41,7 +41,7 @@ scoreboard players operation %soul_apples uhcp_settings = %soul_apples_store uhc
 scoreboard players operation %pvp uhcp_settings = %pvp_store uhcp_settings
 scoreboard players operation %pvp_retain uhcp_settings = %pvp_store uhcp_settings
 
-# Set default Ra stacks
+# Ra stacks
 scoreboard players operation %ra_stacks uhcp_settings = %ra_stacks_store uhcp_settings
 
 # Patron augments
@@ -53,16 +53,16 @@ scoreboard players operation %night_vision uhcp_settings = %night_vision_store u
 # Ender pearl immunity
 scoreboard players operation %ender_pearl uhcp_settings = %ender_pearl_store uhcp_settings
 
-# Set default difficulty
+# Difficulty
 scoreboard players operation %difficulty uhcp_settings = %difficulty_store uhcp_settings
 function uhcp:settings/reset/difficulty
 
-# Set default lava scoreboard values
+# Rising lava
 execute unless score %lava_init uhcp_initStatus matches 1 run function uhcp:settings/mode/uhcp/lava
 scoreboard players operation %lava_countdown uhcp_settings = %lava_countdown_store uhcp_settings
 scoreboard players operation %lava_countdown_retain uhcp_settings = %lava_countdown_store uhcp_settings
 
-# Set default team values
+# Team
 scoreboard players operation %team_size uhcp_settings = %team_size_store uhcp_settings
 scoreboard players operation %team uhcp_settings = %team_store uhcp_settings
 scoreboard players operation %players_select_teams uhcp_settings = %players_select_teams_store uhcp_settings

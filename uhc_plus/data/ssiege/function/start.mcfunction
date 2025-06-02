@@ -1,5 +1,5 @@
-# Double check mode is correct
-scoreboard players set %current_mode mode 1
+# Game mode settings
+execute unless score %mode uhcp_settings matches 1 run function uhcp:settings/mode/ssiege
 
 # Dimension-specific commands
 execute in minecraft:the_end run function uhcp:start/dimensions/minecraft/the_end

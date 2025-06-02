@@ -8,7 +8,7 @@
         "predicate": {
           "slots": {
             "container.*": {
-              "items": "minecraft:iron_horse_armor"
+              "items": "#uhcp:horse_armor"
             }
           }
         }
@@ -19,7 +19,7 @@
         "predicate": {
           "slots": {
             "weapon.offhand": {
-              "items": "minecraft:iron_horse_armor"
+              "items": "#uhcp:horse_armor"
             }
           }
         }

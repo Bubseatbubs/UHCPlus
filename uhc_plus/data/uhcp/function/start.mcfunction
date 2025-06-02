@@ -1,4 +1,4 @@
-# Set game mode
+# Game mode settings
 execute unless score %mode uhcp_settings matches 0 run function uhcp:settings/mode/uhcp
 
 # Dimension-specific commands

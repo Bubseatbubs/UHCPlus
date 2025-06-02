@@ -204,7 +204,7 @@ team modify no_collision seeFriendlyInvisibles false
 
 # Default scores
 # Game Mode (0 = UHC Plus, 1 = Sniffer Siege)
-scoreboard players set %mode_def uhcp_settings 0
+scoreboard players set %mode_def uhcp_settings 1
 
 # Augment tier
 scoreboard players set %random_def uhcp_settings 1
@@ -224,6 +224,7 @@ scoreboard players set %arrow_limit201_def ssiege_settings 52
 
 # Border size
 scoreboard players set %border_size_def uhcp_settings 1500
+scoreboard players set %border_size_def ssiege_settings -1
 
 # Border countdown
 scoreboard players set %border_countdown_def uhcp_settings 24000

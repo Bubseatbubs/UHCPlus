@@ -5,6 +5,9 @@ function uhcp:settings/reset/ssiege/augment
 # Arrow limits
 function uhcp:load/scores/ssiege/arrow_limit
 
+# Border size
+scoreboard players operation %border_size uhcp_settings = %border_size_def ssiege_settings
+
 # Dimension countdown
 function uhcp:load/scores/ssiege/dimensions
 

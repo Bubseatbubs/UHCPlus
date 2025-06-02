@@ -9,6 +9,9 @@ scoreboard players operation %arrow_limit149 ssiege_settings = %arrow_limit149 u
 scoreboard players operation %arrow_limit5 ssiege_settings = %arrow_limit5 uhcp_arrowCount
 scoreboard players operation %arrow_limit201 ssiege_settings = %arrow_limit201 uhcp_arrowCount
 
+# Border size
+scoreboard players operation %border_size ssiege_settings = %border_size uhcp_settings
+
 # Dimension countdown
 scoreboard players operation %dimension ssiege_settings = %dimension uhcp_settings
 

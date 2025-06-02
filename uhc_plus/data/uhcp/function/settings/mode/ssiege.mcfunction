@@ -21,18 +21,9 @@ scoreboard players operation %arrow_limit201 uhcp_settings = %arrow_limit201 ssi
 # Border size
 scoreboard players operation %border_size uhcp_settings = %border_size ssiege_settings
 
-# Border countdown
-scoreboard players operation %border_countdown uhcp_settings = %border_countdown ssiege_settings
-
-# Border shrink speed
-scoreboard players operation %border_shrink_speed uhcp_settings = %border_shrink_speed ssiege_settings
-
 # Dimension countdown
 scoreboard players operation %dimension uhcp_settings = %dimension ssiege_settings
 scoreboard players operation %dimension_retain uhcp_settings = %dimension ssiege_settings
-
-# Number of Titans
-scoreboard players operation %titans uhcp_settings = %titans ssiege_settings
 
 # Soul apples
 scoreboard players operation %soul_apples uhcp_settings = %soul_apples ssiege_settings
@@ -40,9 +31,6 @@ scoreboard players operation %soul_apples uhcp_settings = %soul_apples ssiege_se
 # Grace period countdown
 scoreboard players operation %pvp uhcp_settings = %pvp ssiege_settings
 scoreboard players operation %pvp_retain uhcp_settings = %pvp ssiege_settings
-
-# Set default Ra stacks
-scoreboard players operation %ra_stacks uhcp_settings = %ra_stacks ssiege_settings
 
 # Patron augments
 scoreboard players operation %patrons uhcp_settings = %patrons ssiege_settings
@@ -53,18 +41,11 @@ scoreboard players operation %night_vision uhcp_settings = %night_vision ssiege_
 # Ender pearl immunity
 scoreboard players operation %ender_pearl uhcp_settings = %ender_pearl ssiege_settings
 
-# Set default difficulty
+# Difficulty
 scoreboard players operation %difficulty uhcp_settings = %difficulty ssiege_settings
 function uhcp:settings/reset/difficulty
 
-# Set default lava scoreboard values
-execute unless score %lava_init uhcp_initStatus matches 1 run function uhcp:settings/mode/uhcp/lava
-scoreboard players operation %lava_countdown uhcp_settings = %lava_countdown ssiege_settings
-scoreboard players operation %lava_countdown_retain uhcp_settings = %lava_countdown ssiege_settings
-
-# Set default team values
-scoreboard players operation %team_size uhcp_settings = %team_size ssiege_settings
-scoreboard players operation %team uhcp_settings = %team ssiege_settings
+# Team
 scoreboard players operation %players_select_teams uhcp_settings = %players_select_teams ssiege_settings
 scoreboard players operation %friendly_fire uhcp_settings = %friendly_fire ssiege_settings
 function uhcp:settings/reset/team/friendly_fire/toggle
