@@ -18,5 +18,9 @@ execute if score @s uhcp_augment matches 29 run return run function ssiege:augme
 # Late Looter
 execute if score @s uhcp_augment matches 33 run return run function ssiege:augments/effects/gold/latelooter/givehaste
 
+# Summoned Help
+execute if score @s uhcp_augment matches 63 run function ssiege:augments/effects/gold/summonedhelp
+
 # Unleash the Beast
 execute if score @s uhcp_augment matches 75 run return run function ssiege:augments/effects/gold/unleashthebeast
+
