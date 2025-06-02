@@ -10,6 +10,7 @@ execute if score @s uhcp_augment matches 10 run function ssiege:augments/effects
 execute if score @s uhcp_augment matches 11 run function ssiege:augments/effects/gold/cramsession/init
 execute if score @s uhcp_augment matches 17 run function ssiege:augments/effects/gold/fireandwater
 execute if score @s uhcp_augment matches 20 run function ssiege:augments/effects/gold/gapplegapi
+execute if score @s uhcp_augment matches 27 run function ssiege:augments/effects/gold/rushorder
 execute if score @s uhcp_augment matches 29 run function ssiege:augments/effects/gold/jumpking/givemace
 execute if score @s uhcp_augment matches 34 run function ssiege:augments/effects/gold/lessthan3
 execute if score @s uhcp_augment matches 35 run function ssiege:augments/effects/gold/lilbro
