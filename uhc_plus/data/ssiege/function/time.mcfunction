@@ -64,9 +64,6 @@ scoreboard players remove %compass_time uhcp_itemCount 1
 
 # TODO: Recall command
 
-# Timed Titan events
-execute if score %titans uhcp_game_time = %time uhcp_game_time run function ssiege:titans/timed
-
 # Update Titans
 execute as @a at @s if entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/update
 execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/hide
