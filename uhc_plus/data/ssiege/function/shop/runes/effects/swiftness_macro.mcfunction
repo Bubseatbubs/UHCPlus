@@ -1,2 +1,2 @@
 $attribute @s minecraft:attack_speed modifier add ssiege:rune_aspeed $(attackspeed_value) add_value
-$attribute @s minecraft:movement_speed modifier add ssiege:rune_mspeed $(movespeed_value) add_value
+$attribute @s minecraft:movement_speed modifier add ssiege:rune_mspeed $(movespeed_value) add_multiplied_total

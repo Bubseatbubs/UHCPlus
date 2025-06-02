@@ -15,4 +15,4 @@ execute if score %red ssiege_perk_aura matches 3 run effect give @a[team=red,x=-
 execute if score %red ssiege_perk_aura matches 4 run effect give @a[team=red,x=-288,y=60,z=-211,dx=20,dy=255,dz=21] regeneration 4 2 true
 
 # Schedules for 2 second later (40 ticks)
-scoreboard players add %regen uhcp_game_time 40
+scoreboard players add %aura uhcp_game_time 40
