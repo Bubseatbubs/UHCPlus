@@ -1,1 +1,2 @@
+execute as @a[scores={ssiege_buff_titanslayer = 1..}] run tellraw @s [{"text":"Your ", color:white},{"text":"Titan Slayer","color":"red","hover_event":{"action":"show_text","value":"Titan Slayer grants movement speed and bonus damage to Sniffers, increasing as the game goes on."}},{"text":" buff wore off.", color:white},]
 scoreboard players set @a ssiege_buff_titanslayer 0

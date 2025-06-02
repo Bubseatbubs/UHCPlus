@@ -1,14 +1,14 @@
 advancement revoke @s only ssiege:titans/player_killed_fenrir
 
 # Spawn Soul Shards
-scoreboard players set %MULT_CONST uhcp_initStatus 3
+scoreboard players set %MULT_CONST uhcp_initStatus 8
 execute as @s at @s run function ssiege:titans/spreadloot
 
 # Fenrir Team Buff
-execute as @s[team=blue] as @a[team=blue,gamemode=survival] at @s run summon wolf ~ ~ ~ {Team:"blue",Tags:["SSIEGE_fenrir_reward"],variant:"black"}
+execute as @s[team=blue] as @a[team=blue,gamemode=survival] at @s run summon wolf ~ ~ ~ {Team:"blue",PersistenceRequired:1b,Health:60f,variant:"black",Tags:["SSIEGE_fenrir_reward"],CustomName:"Fenrir Pup",equipment:{mainhand:{id:"minecraft:diamond_axe",count:1}},drop_chances:{mainhand:0.000},attributes:[{id:"minecraft:max_health",base:60},{id:"minecraft:scale",base:2}]}
 execute as @e[type=wolf,tag=SSIEGE_fenrir_reward,team=blue] run data modify entity @s Owner set from entity @p[team=blue,gamemode=survival] UUID
 
-execute as @s[team=red] as @a[team=red,gamemode=survival] at @s run summon wolf ~ ~ ~ {Team:"red",Tags:["SSIEGE_fenrir_reward"],variant:"black"}
+execute as @s[team=red] as @a[team=red,gamemode=survival] at @s run summon wolf ~ ~ ~ {Team:"red",PersistenceRequired:1b,Health:60f,variant:"black",Tags:["SSIEGE_fenrir_reward"],CustomName:"Fenrir Pup",equipment:{mainhand:{id:"minecraft:diamond_axe",count:1}},drop_chances:{mainhand:0.000},attributes:[{id:"minecraft:max_health",base:60},{id:"minecraft:scale",base:2}]}
 execute as @e[type=wolf,tag=SSIEGE_fenrir_reward,team=red] run data modify entity @s Owner set from entity @p[team=red,gamemode=survival] UUID
 
 # Titan Slayer buff
