@@ -29,8 +29,9 @@ tag @a remove UHCP_AugmentRerollSlot1
 tag @a remove UHCP_AugmentRerollSlot2
 tag @a remove UHCP_AugmentRerollSlot3
 
-# Augment tier
-execute if score %random uhcp_aug_tier matches 1 store result score %tier uhcp_aug_tier run function ssiege:start/randomize_aug_tier
+# Augment tier - Temporarily limit to Golds while Prismatics are still under development
+#execute if score %random uhcp_aug_tier matches 1 store result score %tier uhcp_aug_tier run function ssiege:start/randomize_aug_tier
+scoreboard players set %random uhcp_aug_tier 1
 
 # Effects
 effect clear @a
