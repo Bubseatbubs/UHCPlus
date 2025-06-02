@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"You don't have enough ","color":"red"},{"text":"Diamonds","color":"aqua"},{"text":" for that ","color":"red"},{"text":"Perk","color":"yellow"},{"text":" (need $(cost)).","color":"red"}]
