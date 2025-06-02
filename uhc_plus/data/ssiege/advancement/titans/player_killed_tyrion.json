@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"UHCP_Tyrion\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ssiege:titans/tyrion/reward"
+  }
+}

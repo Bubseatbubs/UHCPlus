@@ -1,7 +1,11 @@
-$execute store success score @s ssiege_perk_swimspeed run clear @s diamond $(cost)
+$execute store result score @s ssiege_perk_swimspeed run clear @s diamond $(cost)
 execute as @s[team=blue] unless entity @n[tag=SSIEGE_BLUE_SHOPKEEPER,distance=..20] run return run tellraw @s ["",{"text":"You are "},{"text":"too far away","color":"red"},{"text":" from your "},{"text":"Shopkeeper","color":"yellow"},{"text":"!"}]
 execute as @s[team=red] unless entity @n[tag=SSIEGE_RED_SHOPKEEPER,distance=..20] run return run tellraw @s ["",{"text":"You are "},{"text":"too far away","color":"red"},{"text":" from your "},{"text":"Shopkeeper","color":"yellow"},{"text":"!"}]
-execute if score @s ssiege_perk_swimspeed matches 0 run return run tellraw @s ["",{"text":"You don't have enough ","color":"red"},{"text":"Diamonds","color":"aqua"},{"text":" for that ","color":"red"},{"text":"Perk","color":"yellow"},{"text":" (need $(cost).","color":"red"}]
+
+execute as @s[team=blue] if score @s ssiege_perk_swimspeed < %blue_cost ssiege_perk_swimspeed run execute store result storage ssiege:temp refund int 1 run scoreboard players get @s ssiege_perk_swimspeed
+execute as @s[team=blue] if score @s ssiege_perk_swimspeed < %blue_cost ssiege_perk_swimspeed run return run function ssiege:shop/perks/purchase/refund with storage ssiege:temp
+execute as @s[team=red] if score @s ssiege_perk_swimspeed < %red_cost ssiege_perk_swimspeed run execute store result storage ssiege:temp refund int 1 run scoreboard players get @s ssiege_perk_swimspeed
+execute as @s[team=red] if score @s ssiege_perk_swimspeed < %red_cost ssiege_perk_swimspeed run return run function ssiege:shop/perks/purchase/refund with storage ssiege:temp
 
 # Successful purchase
 tellraw @a[team=blue] ["",{"selector":"@s"},{"text":" purchased "},{"text":"Swim Speed Level ","color":"green"},{"score":{"name":"%blue","objective":"ssiege_perk_swimspeed"},"color":"green"},{"text":" for ","color":"white"},{"text":"your team!","color":"blue"}]
