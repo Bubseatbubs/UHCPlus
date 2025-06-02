@@ -5,6 +5,10 @@ scoreboard players set %MULT_CONST uhcp_initStatus 3
 execute as @s at @s run function ssiege:titans/spreadloot
 
 # Arachne Team Buff
+execute as @s[team=blue] run loot give @a[team=blue] loot uhcp:consumables/web_slinger
+execute as @s[team=blue] run loot give @a[team=blue] loot uhcp:consumables/web_slinger
+execute as @s[team=red] run loot give @a[team=red] loot uhcp:consumables/web_slinger
+execute as @s[team=red] run loot give @a[team=red] loot uhcp:consumables/web_slinger
 
 # Titan Slayer buff
 execute as @s[team=blue] run scoreboard players add @a[team=blue] ssiege_buff_titanslayer 2
