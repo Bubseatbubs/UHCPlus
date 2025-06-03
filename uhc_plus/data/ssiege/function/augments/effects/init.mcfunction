@@ -4,8 +4,8 @@
 ##
 
 # Augment tiers
-execute if score @s uhcp_augment matches 0..199 run function ssiege:augments/effects/init/gold
-execute if score @s uhcp_augment matches 200..399 run function ssiege:augments/effects/init/prismatic
+execute if score @s uhcp_augment matches 300..499 run function ssiege:augments/effects/init/gold
+execute if score @s uhcp_augment matches 500..699 run function ssiege:augments/effects/init/prismatic
 
 # Universal effects
 scoreboard players reset @s uhcp_aug_stack

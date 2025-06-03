@@ -32,10 +32,10 @@ execute if score %time uhcp_game_time matches ..45000 run function ssiege:augmen
 execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp_game_time >= @s uhcp_game_time run function ssiege:augments/effects/timed
 
 # AFK augment
-execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=0},gamemode=survival] at @s run ride @s mount @n[tag=UHCP_AFKLock,distance=..15]
+execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=300},gamemode=survival] at @s run ride @s mount @n[tag=UHCP_AFKLock,distance=..15]
 
 # Prop hunt
-execute as @a[scores={uhcp_augment=49}] at @s run function uhcp:augments/effects/silver/prophunt/status
+execute as @a[scores={uhcp_augment=349}] at @s run function uhcp:augments/effects/silver/prophunt/status
 
 # Solo leveling
 execute as @a[scores={uhcp_lava_timeInterval=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
@@ -50,13 +50,13 @@ scoreboard players enable @a[tag=UHCP_CDSelectUpgrade] upgrade
 function ssiege:augments/effects/gold/babysitting/sniffcd
 
 # Bottled Knowledge
-execute as @a[scores={uhcp_augment=6}] run function ssiege:augments/effects/gold/bottledknowledge/levelcheck
+execute as @a[scores={uhcp_augment=306}] run function ssiege:augments/effects/gold/bottledknowledge/levelcheck
 
 # Cram Session
-execute as @a[scores={uhcp_augment=11}] run function ssiege:augments/effects/gold/cramsession/levelcheck
+execute as @a[scores={uhcp_augment=311}] run function ssiege:augments/effects/gold/cramsession/levelcheck
 
 # Late Game Specialist
-execute as @a[scores={uhcp_augment=32}] run function ssiege:augments/effects/gold/lategamespecialist/levelcheck
+execute as @a[scores={uhcp_augment=332}] run function ssiege:augments/effects/gold/lategamespecialist/levelcheck
 
 # Announce Augments
 execute as @a[scores={augments=1..}] run function uhcp:augments/announce
