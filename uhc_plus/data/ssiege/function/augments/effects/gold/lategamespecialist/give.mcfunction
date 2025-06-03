@@ -1,4 +1,4 @@
-give @s diamond 16
+give @s diamond 20
 loot give @s loot ssiege:soulshard
 loot give @s loot ssiege:soulshard
 loot give @s loot ssiege:soulshard

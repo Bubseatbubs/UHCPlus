@@ -55,6 +55,9 @@ execute as @a[scores={uhcp_augment=6}] run function ssiege:augments/effects/gold
 # Cram Session
 execute as @a[scores={uhcp_augment=11}] run function ssiege:augments/effects/gold/cramsession/levelcheck
 
+# Late Game Specialist
+execute as @a[scores={uhcp_augment=32}] run function ssiege:augments/effects/gold/lategamespecialist/levelcheck
+
 # Announce Augments
 execute as @a[scores={augments=1..}] run function uhcp:augments/announce
 

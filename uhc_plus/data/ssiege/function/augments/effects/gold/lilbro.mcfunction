@@ -1,1 +1,1 @@
-attribute @s minecraft:scale modifier add uhcp:scale -0.1 add_value
+attribute @s minecraft:scale modifier add uhcp:scale -0.1 add_multiplied_total

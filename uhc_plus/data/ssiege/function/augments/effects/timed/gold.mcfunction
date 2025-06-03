@@ -3,16 +3,16 @@
 # AFK
 execute if score @s uhcp_augment matches 0 run return run function ssiege:augments/effects/gold/afk/freedom
 
-#Caerbannog
+# Caerbannog
 execute if score @s uhcp_augment matches 7 run return run function ssiege:augments/effects/gold/caerbannog
 
-#drip economy 2
+# drip economy 2
 execute if score @s uhcp_augment matches 13 run return run function ssiege:augments/effects/gold/dripeconomyii
 
-#echolocation
+# echolocation
 execute if score @s uhcp_augment matches 15 run return run function ssiege:augments/effects/gold/echolocation
 
-#jump king
+# jump king
 execute if score @s uhcp_augment matches 29 run return run function ssiege:augments/effects/gold/jumpking/givecharge
 
 # Late Looter
