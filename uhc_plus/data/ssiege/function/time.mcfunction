@@ -101,6 +101,10 @@ execute if score %ender_pearl uhcp_settings matches 1 as @e[type=minecraft:ender
 item replace entity @e[type=minecraft:item,predicate=uhcp:apple_head] contents with minecraft:apple 1
 item replace entity @e[type=minecraft:item,predicate=uhcp:golden_apple_head] contents with minecraft:golden_apple 1
 
+# Kill stupid decorative inventory clutters
+execute as @e[tag=UHCP_titan] run kill @e[type=item,distance=..32,nbt={Item:{id:"minecraft:leaf_litter"}}]
+execute as @e[tag=UHCP_titan] run kill @e[type=item,distance=..32,nbt={Item:{id:"minecraft:pink_petals"}}]
+
 # Enable triggers
 scoreboard players enable @a augments
 scoreboard players enable @a[gamemode=survival] top
