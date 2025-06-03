@@ -1,4 +1,4 @@
-title @a times 1 4 1
+title @a times 20 80 20
 execute if entity @e[tag=bluesniffer] run title @a title {"text":"Blue Team Wins!","color":"blue"}
 execute if entity @e[tag=redsniffer] run title @a title {"text":"Red Team Wins!","color":"red"}
 data merge entity @n[tag=SSIEGE_sniffer] {Invulnerable:1b}
