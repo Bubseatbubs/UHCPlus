@@ -13,6 +13,8 @@ execute store result storage ssiege:temp buff_titanslayer int 1 run scoreboard p
 # Calculate total bonus damage and apply it using a macro function
 function ssiege:damage_buffs/red_sniffer_damage with storage ssiege:temp
 
+tellraw @a[team=red] "Your Sniffer is under attack!"
+
 # Remove the temporary tag
 tag @s remove ssiege_attacker
 
