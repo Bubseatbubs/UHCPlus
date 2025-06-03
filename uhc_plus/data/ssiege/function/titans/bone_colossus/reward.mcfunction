@@ -1,7 +1,7 @@
 advancement revoke @s only ssiege:titans/player_killed_bone_colossus
 
 # Spawn Soul Shards
-scoreboard players set %MULT_CONST uhcp_initStatus 6
+scoreboard players set %MULT_CONST uhcp_initStatus 8
 execute as @s at @s run function ssiege:titans/spreadloot
 
 # Bone Colossus Team Buff - 6 Absorption Hearts (12 hit points)

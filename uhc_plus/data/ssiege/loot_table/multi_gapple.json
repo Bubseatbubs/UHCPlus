@@ -1,0 +1,21 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:context",
+          "target": "this"
+        },
+        "score": "ssiege_drop_shards"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:nether_star"
+        }
+      ]
+    }
+  ]
+}
