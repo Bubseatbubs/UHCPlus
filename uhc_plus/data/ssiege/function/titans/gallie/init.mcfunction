@@ -11,4 +11,7 @@ execute in minecraft:overworld positioned 0 100 0 summon minecraft:hoglin run fu
 execute positioned 0 63 0 run spreadplayers 0 0 0 1 true @n[tag=UHCP_Titan]
 
 # Announce
+title @a times 20 40 20
+title @a subtitle {"text":"have spawned!","color":"red"}
+title @a title {"text":"Gallie & Bellan","color":"red"}
 tellraw @a ["",{"text":"Gallie & Bellan","bold":true,"color":"red"},{"text":" have spawned! Defeat them to gain "},{"text":"permanent max HP","bold":true,"color":"yellow"},{"text":" for your team."}]

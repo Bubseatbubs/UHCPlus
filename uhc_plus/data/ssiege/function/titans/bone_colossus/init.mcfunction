@@ -11,4 +11,7 @@ execute in minecraft:overworld positioned 0 100 0 summon minecraft:skeleton run 
 execute positioned 0 63 0 run spreadplayers 0 0 0 1 true @n[tag=UHCP_Titan]
 
 # Announce
+title @a times 20 40 20
+title @a subtitle {"text":"has spawned!","color":"red"}
+title @a title {"text":"Bone Colossus","color":"red"}
 tellraw @a ["",{"text":"Bone Colossus","bold":true,"color":"red"},{"text":" has spawned! Defeat him to earn "},{"text":"Absorption Hearts","bold":true,"color":"yellow"},{"text":" for your team."}]
