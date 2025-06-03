@@ -51,8 +51,8 @@ function uhcp:start/advancements/reset_all
 # Announce augments
 tag @a add UHCP_AugmentAnnounce
 
-execute if entity @a[scores={uhcp_augment=0..199}] run function ssiege:augments/announce/gold
-execute if entity @a[scores={uhcp_augment=200..}] run function ssiege:augments/announce/prismatic
+execute if entity @a[scores={uhcp_augment=300..499}] run function ssiege:augments/announce/gold
+execute if entity @a[scores={uhcp_augment=500..}] run function ssiege:augments/announce/prismatic
 
 tag @a remove UHCP_AugmentAnnounce
 

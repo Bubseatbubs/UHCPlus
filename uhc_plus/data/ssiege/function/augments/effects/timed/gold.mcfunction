@@ -1,26 +1,26 @@
 # Gold Augment time-based effects (eg. Drip economy)
 
 # AFK
-execute if score @s uhcp_augment matches 0 run return run function ssiege:augments/effects/gold/afk/freedom
+execute if score @s uhcp_augment matches 300 run return run function ssiege:augments/effects/gold/afk/freedom
 
 # Caerbannog
-execute if score @s uhcp_augment matches 7 run return run function ssiege:augments/effects/gold/caerbannog
+execute if score @s uhcp_augment matches 307 run return run function ssiege:augments/effects/gold/caerbannog
 
 # drip economy 2
-execute if score @s uhcp_augment matches 13 run return run function ssiege:augments/effects/gold/dripeconomyii
+execute if score @s uhcp_augment matches 313 run return run function ssiege:augments/effects/gold/dripeconomyii
 
 # echolocation
-execute if score @s uhcp_augment matches 15 run return run function ssiege:augments/effects/gold/echolocation
+execute if score @s uhcp_augment matches 315 run return run function ssiege:augments/effects/gold/echolocation
 
 # jump king
-execute if score @s uhcp_augment matches 29 run return run function ssiege:augments/effects/gold/jumpking/givecharge
+execute if score @s uhcp_augment matches 329 run return run function ssiege:augments/effects/gold/jumpking/givecharge
 
 # Late Looter
-execute if score @s uhcp_augment matches 33 run return run function ssiege:augments/effects/gold/latelooter/givehaste
+execute if score @s uhcp_augment matches 333 run return run function ssiege:augments/effects/gold/latelooter/givehaste
 
 # Summoned Help
-execute if score @s uhcp_augment matches 63 run function ssiege:augments/effects/gold/summonedhelp
+execute if score @s uhcp_augment matches 363 run function ssiege:augments/effects/gold/summonedhelp
 
 # Unleash the Beast
-execute if score @s uhcp_augment matches 75 run return run function ssiege:augments/effects/gold/unleashthebeast
+execute if score @s uhcp_augment matches 375 run return run function ssiege:augments/effects/gold/unleashthebeast
 
