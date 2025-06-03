@@ -160,9 +160,8 @@ execute if score %infernus_check uhcp_game_time matches 20.. run function ssiege
 execute if score %infernus_check uhcp_game_time matches 20.. run scoreboard players set %infernus_check uhcp_game_time 0
 
 # Encounters
-scoreboard players add %encounter_timer uhcp_game_time 1
-execute if score %encounter_timer uhcp_game_time matches 6000.. if score %encounter ssiege_current_encounter matches 5 run function ssiege:start/encounters/effects/5
-execute if score %encounter_timer uhcp_game_time matches 6000.. if score %encounter ssiege_current_encounter matches 7 run function ssiege:start/encounters/effects/7
+execute if score %time uhcp_game_time >= %encounter_time uhcp_game_time run function ssiege:start/encounters/effects/timed
+execute if score %time uhcp_game_time >= %encounter_time uhcp_game_time run scoreboard players add %encounter_time uhcp_game_time 6000
 
 # Giants
 execute if score %time uhcp_game_time matches 18000 in minecraft:overworld run scoreboard players set %giant_timer ssiege_giants 4200
