@@ -3,9 +3,15 @@ execute as @e[type=!#uhcp:inanimate_mobs,tag=!UHCP_Titan,tag=!UHCP_Minion,distan
 tag @s remove UHCP_CurrentTitan
 
 scoreboard players set %containers uhcp_settings 0
-fill ~-5 ~ ~-5 ~5 ~5 ~5 minecraft:air replace #uhcp:containers destroy
-execute store result score %blocksfilled uhcp_titans_count run fill ~-5 ~ ~-5 ~5 ~5 ~5 minecraft:air replace #uhcp:arachne_can_break
+scoreboard players set #100 uhcp_initStatus 100
+scoreboard players operation %temp uhcp_initStatus = %time uhcp_game_time
+scoreboard players operation %temp uhcp_initStatus %= #100 uhcp_initStatus
+fill ~-5 ~1 ~-5 ~5 ~5 ~5 minecraft:air replace #uhcp:containers destroy
+execute if score %temp uhcp_initStatus matches 0 run fill ~-5 ~ ~-5 ~5 ~ ~5 minecraft:air replace #uhcp:containers destroy
+execute store result score %blocksfilled uhcp_titans_count run fill ~-5 ~1 ~-5 ~5 ~5 ~5 minecraft:air replace #uhcp:arachne_can_break
+execute if score %temp uhcp_initStatus matches 0 run execute store result score %blocksfilled2 uhcp_titans_count run fill ~-5 ~ ~-5 ~5 ~ ~5 minecraft:air replace #uhcp:arachne_can_break
 scoreboard players set %containers uhcp_settings 1
+scoreboard players operation %blocksfilled uhcp_titans_count += %blocksfilled2 uhcp_titans_count
 execute if score %blocksfilled uhcp_titans_count matches 3.. run playsound minecraft:entity.wither.break_block master @a[distance=..16] ~ ~ ~ 0.5 1.25 0.15
 
 tag @s[tag=UHCP_IsJumping,predicate=uhcp:on_ground] remove UHCP_IsJumping
