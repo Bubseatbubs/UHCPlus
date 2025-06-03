@@ -17,6 +17,9 @@ execute in minecraft:overworld run function uhcp:lobby/remove
 # Place the base structures on the map and spawn players in
 function ssiege:bases/init
 
+# Reset time augs
+scoreboard players set @a uhcp_game_time -1
+
 # Teleport spectators
 tp @a[tag=UHCP_Spectator] 0 150 0
 execute as @a[tag=UHCP_Spectator] run tp @s @r[tag=!UHCP_Spectator]

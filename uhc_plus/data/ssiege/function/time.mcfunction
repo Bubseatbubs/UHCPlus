@@ -32,7 +32,7 @@ execute if score %time uhcp_game_time matches ..45000 run function ssiege:augmen
 execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp_game_time >= @s uhcp_game_time run function ssiege:augments/effects/timed
 
 # AFK augment
-execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=1},gamemode=survival] at @s run ride @s mount @n[tag=UHCP_AFKLock,distance=..15]
+execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=0},gamemode=survival] at @s run ride @s mount @n[tag=UHCP_AFKLock,distance=..15]
 
 # Prop hunt
 execute as @a[scores={uhcp_augment=49}] at @s run function uhcp:augments/effects/silver/prophunt/status
@@ -93,9 +93,6 @@ execute if score %auto_smelt uhcp_settings matches 1 run function uhcp:mine/expe
 
 # Disable ender pearl damage
 execute if score %ender_pearl uhcp_settings matches 1 as @e[type=minecraft:ender_pearl] at @s run function uhcp:entity/ender_pearl
-
-# Titan Loot
-execute as @e[predicate=uhcp:titans/titan_loot] at @s run function uhcp:titans/loot
 
 # Fake apples
 item replace entity @e[type=minecraft:item,predicate=uhcp:apple_head] contents with minecraft:apple 1
