@@ -8,8 +8,8 @@ execute as @s[team=red] if score @s ssiege_perk_regen < %red_cost ssiege_perk_re
 execute as @s[team=red] if score @s ssiege_perk_regen < %red_cost ssiege_perk_regen run return run function ssiege:shop/perks/purchase/refund with storage ssiege:temp
 
 # Successful purchase
-execute as @s[team=blue] run tellraw @a ["",{"selector":"@s"},{"text":" purchased "},{"text":"Passive Healing Level ","color":"green"},{"score":{"name":"%blue","objective":"ssiege_perk_regen"},"color":"green"},{"text":" for ","color":"white"},{"text":"your team!","color":"blue"}]
-execute as @s[team=red] run tellraw @a ["",{"selector":"@s"},{"text":" purchased "},{"text":"Passive Healing Level ","color":"green"},{"score":{"name":"%red","objective":"ssiege_perk_regen"},"color":"green"},{"text":" for ","color":"white"},{"text":"your team!","color":"red"}]
+execute as @s[team=blue] run tellraw @a ["",{"selector":"@s"},{"text":" purchased "},{"text":"Passive Healing Level ","color":"green"},{"score":{"name":"%blue","objective":"ssiege_perk_regen"},"color":"green"},{"text":" for ","color":"white"},{"text":"Blue team!","color":"blue"}]
+execute as @s[team=red] run tellraw @a ["",{"selector":"@s"},{"text":" purchased "},{"text":"Passive Healing Level ","color":"green"},{"score":{"name":"%red","objective":"ssiege_perk_regen"},"color":"green"},{"text":" for ","color":"white"},{"text":"Red team!","color":"red"}]
 
 # Update Perk score
 execute as @s[team=blue] run scoreboard players add %blue ssiege_perk_regen 1
