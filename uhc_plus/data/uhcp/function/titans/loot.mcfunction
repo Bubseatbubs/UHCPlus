@@ -1,1 +1,0 @@
-# TODO: New Titan loot function, create a random "explosion" of items flying all around

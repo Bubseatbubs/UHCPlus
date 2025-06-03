@@ -1,5 +1,7 @@
 advancement revoke @s only ssiege:titans/player_killed_seraphim
 
+kill @e[type=vex]
+
 # Spawn Soul Shards
 scoreboard players set %MULT_CONST uhcp_initStatus 4
 execute as @s at @s run function ssiege:titans/spreadloot

@@ -1,5 +1,5 @@
-# Double check mode is correct
-scoreboard players set %current_mode mode 1
+# Game mode settings
+execute unless score %mode uhcp_settings matches 1 run function uhcp:settings/mode/ssiege
 
 # Dimension-specific commands
 execute in minecraft:the_end run function uhcp:start/dimensions/minecraft/the_end
@@ -125,6 +125,10 @@ scoreboard players set @a ssiege_currently_shopping 0
 # Set Perk Costs
 function ssiege:shop/perks/update_blue_perk_costs
 function ssiege:shop/perks/update_red_perk_costs
+
+# Set Timers
+scoreboard players set %titans uhcp_game_time 0
+scoreboard players set %encounter_timer uhcp_game_time 0
 
 # Set Perk Timers
 scoreboard players set %sonar uhcp_game_time 0

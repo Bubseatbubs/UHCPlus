@@ -9,4 +9,4 @@ execute if score %encounter ssiege_current_encounter matches 6 run function ssie
 execute if score %encounter ssiege_current_encounter matches 7 run return fail
 execute if score %encounter ssiege_current_encounter matches 8 run function ssiege:start/encounters/effects/8
 execute if score %encounter ssiege_current_encounter matches 9 run function ssiege:start/encounters/effects/9
-execute if score %encounter ssiege_current_encounter matches 10 run return fail
+execute if score %encounter ssiege_current_encounter matches 10 run function ssiege:start/encounters/effects/10

@@ -51,9 +51,8 @@ function uhcp:start/advancements/reset_all
 # Announce augments
 tag @a add UHCP_AugmentAnnounce
 
-execute if entity @a[scores={uhcp_augment=0..99}] run function uhcp:augments/announce/gold
-execute if entity @a[scores={uhcp_augment=100..199}] run function uhcp:augments/announce/silver
-execute if entity @a[scores={uhcp_augment=200..299}] run function uhcp:augments/announce/prismatic
+execute if entity @a[scores={uhcp_augment=0..199}] run function ssiege:augments/announce/gold
+execute if entity @a[scores={uhcp_augment=200..}] run function ssiege:augments/announce/prismatic
 
 tag @a remove UHCP_AugmentAnnounce
 
@@ -61,3 +60,7 @@ tag @a remove UHCP_AugmentAnnounce
 scoreboard players set @a uhcp_leave 1
 execute as @a[gamemode=survival] at @s run function ssiege:augments/countdown/end
 scoreboard players reset @a uhcp_leave
+
+# Apply Opening Encounter effects
+execute if score %encounter ssiege_current_encounter matches 0..10 run return run function ssiege:start/encounters/first_half
+function ssiege:start/encounters/second_half

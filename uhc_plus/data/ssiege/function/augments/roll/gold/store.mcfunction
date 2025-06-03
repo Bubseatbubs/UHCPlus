@@ -5,6 +5,8 @@ scoreboard players operation @s uhcp_id = @a[tag=UHCP_GeneratingAugments,limit=1
 scoreboard players operation @s uhcp_team = @a[tag=UHCP_GeneratingAugments,limit=1] uhcp_team
 team join no_collision @s
 
+scoreboard players set @s uhcp_aug_choosing 1
+
 # Roll gold augments
 loot replace entity @s container.0 loot ssiege:augments/gold
 loot replace entity @s container.1 loot ssiege:augments/gold

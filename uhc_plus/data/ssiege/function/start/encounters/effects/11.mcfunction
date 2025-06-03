@@ -1,2 +1,3 @@
 # Kramsey Encounter
 item replace entity @a[gamemode=survival] armor.head with minecraft:leather_helmet[minecraft:item_name={"text":"Bald Head","color":"light_purple"},minecraft:lore=[{"text":"The lack of hair somehow grants"},{"text":"you protection."}],minecraft:attribute_modifiers=[{id:"uhcp:boat_armor",type:"minecraft:armor",amount:3.0d,operation:"add_value",slot:"head"}],minecraft:enchantments={"minecraft:protection":1},!minecraft:enchantable,minecraft:repair_cost=2147483647,!minecraft:repairable,minecraft:dyed_color=16639958] 1
+tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"kramsey gave everyone "},{"text":"a bald head","bold":true,"color":"red"},{"text":"!"}]

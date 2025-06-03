@@ -16,3 +16,6 @@ function uhcp:settings/reset/team/friendly_fire/toggle
 
 # Difficulty
 function uhcp:settings/reset/difficulty
+
+# Enchantment reduction
+function uhcp:settings/reset/enchant_reduce

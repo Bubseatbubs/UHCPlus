@@ -1,5 +1,5 @@
 tag @s add UHCP_CurrentTitan
-execute as @e[type=!#uhcp:inanimate_mobs,tag=!UHCP_Titan,tag=!UHCP_Minion,distance=..3.25] run damage @s 4 minecraft:mob_attack by @n[tag=UHCP_CurrentTitan]
+execute as @e[type=!#uhcp:inanimate_mobs,tag=!UHCP_Titan,tag=!UHCP_Minion,distance=..3.25] run damage @s 3 minecraft:mob_attack by @n[tag=UHCP_CurrentTitan]
 tag @s remove UHCP_CurrentTitan
 
 scoreboard players set %containers uhcp_settings 0

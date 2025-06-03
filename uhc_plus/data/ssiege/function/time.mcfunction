@@ -32,7 +32,7 @@ execute if score %time uhcp_game_time matches ..45000 run function ssiege:augmen
 execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp_game_time >= @s uhcp_game_time run function ssiege:augments/effects/timed
 
 # AFK augment
-execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=1},gamemode=survival] at @s run ride @s mount @n[tag=UHCP_AFKLock,distance=..15]
+execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=0},gamemode=survival] at @s run ride @s mount @n[tag=UHCP_AFKLock,distance=..15]
 
 # Prop hunt
 execute as @a[scores={uhcp_augment=49}] at @s run function uhcp:augments/effects/silver/prophunt/status
@@ -64,9 +64,6 @@ scoreboard players remove %compass_time uhcp_itemCount 1
 
 # TODO: Recall command
 
-# Timed Titan events
-execute if score %titans uhcp_game_time = %time uhcp_game_time run function ssiege:titans/timed
-
 # Update Titans
 execute as @a at @s if entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/update
 execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/hide
@@ -96,9 +93,6 @@ execute if score %auto_smelt uhcp_settings matches 1 run function uhcp:mine/expe
 
 # Disable ender pearl damage
 execute if score %ender_pearl uhcp_settings matches 1 as @e[type=minecraft:ender_pearl] at @s run function uhcp:entity/ender_pearl
-
-# Titan Loot
-execute as @e[predicate=uhcp:titans/titan_loot] at @s run function uhcp:titans/loot
 
 # Fake apples
 item replace entity @e[type=minecraft:item,predicate=uhcp:apple_head] contents with minecraft:apple 1
@@ -157,7 +151,10 @@ scoreboard players add %infernus_check uhcp_game_time 1
 execute if score %infernus_check uhcp_game_time matches 20.. run function ssiege:titans/infernus/handle_burning
 execute if score %infernus_check uhcp_game_time matches 20.. run scoreboard players set %infernus_check uhcp_game_time 0
 
-# TODO: Time-based Encounters logic
+# Encounters
+scoreboard players add %encounter_timer uhcp_game_time 1
+execute if score %encounter_timer uhcp_game_time matches 6000.. if score %encounter ssiege_current_encounter matches 5 run function ssiege:start/encounters/effects/5
+execute if score %encounter_timer uhcp_game_time matches 6000.. if score %encounter ssiege_current_encounter matches 7 run function ssiege:start/encounters/effects/7
 
 # Giants
 execute if score %time uhcp_game_time matches 18000 in minecraft:overworld run scoreboard players set %giant_timer ssiege_giants 4200

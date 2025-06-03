@@ -3,8 +3,10 @@
 execute store result score %random_encounter ssiege_current_encounter run random value 1..1000
 
 execute if score %random_encounter ssiege_current_encounter matches 1..75 run scoreboard players set %encounter ssiege_current_encounter 1
-execute if score %random_encounter ssiege_current_encounter matches 76..150 run scoreboard players set %encounter ssiege_current_encounter 2
-execute if score %random_encounter ssiege_current_encounter matches 151..225 run scoreboard players set %encounter ssiege_current_encounter 3
+
+# Temporarily disable superiority encounter while most Prismatics and structures are still in development
+execute if score %random_encounter ssiege_current_encounter matches 76..150 run scoreboard players set %encounter ssiege_current_encounter 14
+execute if score %random_encounter ssiege_current_encounter matches 151..225 run scoreboard players set %encounter ssiege_current_encounter 14
 execute if score %random_encounter ssiege_current_encounter matches 226..300 run scoreboard players set %encounter ssiege_current_encounter 4
 execute if score %random_encounter ssiege_current_encounter matches 301..360 run scoreboard players set %encounter ssiege_current_encounter 5
 execute if score %random_encounter ssiege_current_encounter matches 361..420 run scoreboard players set %encounter ssiege_current_encounter 6
@@ -21,7 +23,9 @@ execute if score %random_encounter ssiege_current_encounter matches 861..890 run
 execute if score %random_encounter ssiege_current_encounter matches 891..920 run scoreboard players set %encounter ssiege_current_encounter 17
 execute if score %random_encounter ssiege_current_encounter matches 921..950 run scoreboard players set %encounter ssiege_current_encounter 18
 execute if score %random_encounter ssiege_current_encounter matches 951..980 run scoreboard players set %encounter ssiege_current_encounter 19
-execute if score %random_encounter ssiege_current_encounter matches 981..990 run scoreboard players set %encounter ssiege_current_encounter 20
-execute if score %random_encounter ssiege_current_encounter matches 991..1000 run scoreboard players set %encounter ssiege_current_encounter 21
+
+# Temporarily replace these encounters with V1L3 until they are implemented
+execute if score %random_encounter ssiege_current_encounter matches 981..990 run scoreboard players set %encounter ssiege_current_encounter 14
+execute if score %random_encounter ssiege_current_encounter matches 991..1000 run scoreboard players set %encounter ssiege_current_encounter 14
 
 function ssiege:start/encounters/start_encounter_phase
