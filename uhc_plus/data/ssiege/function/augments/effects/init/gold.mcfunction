@@ -8,6 +8,7 @@ execute if score @s uhcp_augment matches 6 run function ssiege:augments/effects/
 execute if score @s uhcp_augment matches 7 run function ssiege:augments/effects/gold/caerbannog
 execute if score @s uhcp_augment matches 10 run function ssiege:augments/effects/gold/cowboycosplay
 execute if score @s uhcp_augment matches 11 run function ssiege:augments/effects/gold/cramsession/init
+execute if score @s uhcp_augment matches 15 run function ssiege:augments/effects/gold/echolocation
 execute if score @s uhcp_augment matches 17 run function ssiege:augments/effects/gold/fireandwater
 execute if score @s uhcp_augment matches 20 run function ssiege:augments/effects/gold/gapplegapi
 execute if score @s uhcp_augment matches 27 run function ssiege:augments/effects/gold/rushorder
@@ -23,5 +24,6 @@ execute if score @s uhcp_augment matches 49 run function ssiege:augments/effects
 execute if score @s uhcp_augment matches 60 run function ssiege:augments/effects/gold/starterkiti
 execute if score @s uhcp_augment matches 63 run function ssiege:augments/effects/gold/summonedhelp
 execute if score @s uhcp_augment matches 66 run function ssiege:augments/effects/gold/theboat
+execute if score @s uhcp_augment matches 75 run function ssiege:augments/effects/gold/unleashthebeast
 execute if score @s uhcp_augment matches 78 run function ssiege:augments/effects/gold/youhavemyrodi
 execute if score @s uhcp_augment matches 79 run function ssiege:augments/effects/gold/gomugomu
