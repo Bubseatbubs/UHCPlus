@@ -141,6 +141,8 @@ forceload add 0 0
 forceload add 176 176 286 224
 forceload add -178 -225 -289 -178
 
+# Assign player IDs
+execute as @a[tag=!UHCP_Spectator] run function uhcp:start/id/player
 
 # Initialize Opening Encounter
 function ssiege:start/encounters/init
