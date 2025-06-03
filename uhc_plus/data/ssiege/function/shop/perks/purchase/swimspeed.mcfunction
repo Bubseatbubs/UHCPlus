@@ -8,8 +8,8 @@ execute as @s[team=red] if score @s ssiege_perk_swimspeed < %red_cost ssiege_per
 execute as @s[team=red] if score @s ssiege_perk_swimspeed < %red_cost ssiege_perk_swimspeed run return run function ssiege:shop/perks/purchase/refund with storage ssiege:temp
 
 # Successful purchase
-execute as @s[team=blue] run tellraw @a ["",{"selector":"@s"},{"text":" purchased "},{"text":"Swim Speed Level ","color":"green"},{"score":{"name":"%blue","objective":"ssiege_perk_swimspeed"},"color":"green"},{"text":" for ","color":"white"},{"text":"your team!","color":"blue"}]
-execute as @s[team=red] run tellraw @a ["",{"selector":"@s"},{"text":" purchased "},{"text":"Swim Speed Level ","color":"green"},{"score":{"name":"%red","objective":"ssiege_perk_swimspeed"},"color":"green"},{"text":" for ","color":"white"},{"text":"your team!","color":"red"}]
+execute as @s[team=blue] run tellraw @a ["",{"selector":"@s"},{"text":" purchased "},{"text":"Swim Speed Level ","color":"green"},{"score":{"name":"%blue","objective":"ssiege_perk_swimspeed"},"color":"green"},{"text":" for ","color":"white"},{"text":"Blue team!","color":"blue"},{"text":" (Cost: ","color":"white"},{"score":{"name":"%blue_cost","objective":"ssiege_perk_swimspeed"},"color":"white"},{"text":")","color":"white"}]
+execute as @s[team=red] run tellraw @a ["",{"selector":"@s"},{"text":" purchased "},{"text":"Swim Speed Level ","color":"green"},{"score":{"name":"%red","objective":"ssiege_perk_swimspeed"},"color":"green"},{"text":" for ","color":"white"},{"text":"Red team!","color":"red"},{"text":" (Cost: ","color":"white"},{"score":{"name":"%red_cost","objective":"ssiege_perk_swimspeed"},"color":"white"},{"text":")","color":"white"}]
 
 # Update Perk score
 execute as @s[team=blue] run scoreboard players add %blue ssiege_perk_swimspeed 1

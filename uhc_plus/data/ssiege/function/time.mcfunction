@@ -73,8 +73,9 @@ execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan
 execute as @e[type=!minecraft:player,tag=UHCP_Titan] at @s run function uhcp:titans/update
 
 # Update Sniffer Bossbar
-execute as @a at @s if entity @e[tag=SSIEGE_sniffer,distance=..64] run function ssiege:bossbar/update
-execute as @a[tag=SSIEGE_SnifferHealthVisible] at @s unless entity @e[tag=SSIEGE_sniffer,distance=..64] run function ssiege:bossbar/hide
+# Temporary testing change - have both Sniffer bossbars be visible at all times
+execute as @a at @s if entity @e[tag=SSIEGE_sniffer] run function ssiege:bossbar/update
+#execute as @a[tag=SSIEGE_SnifferHealthVisible] at @s unless entity @e[tag=SSIEGE_sniffer,distance=..64] run function ssiege:bossbar/hide
 
 # Test kit
 # TODO: Make a Sniffer Siege testkit
@@ -150,7 +151,7 @@ execute if score %blue ssiege_perk_regen matches 2.. if score %time uhcp_game_ti
 # Sniffer Aura Perk
 execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssiege:shop/perks/effects/sniffer_aura
 
-# Titans
+# Titans TODO: Cleanup implementation with >= check to account for any possible change in time
 scoreboard players add %titans uhcp_game_time 1
 function ssiege:titans/timed
 
