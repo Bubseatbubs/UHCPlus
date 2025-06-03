@@ -4,9 +4,9 @@ execute store result score %random_encounter ssiege_current_encounter run random
 
 execute if score %random_encounter ssiege_current_encounter matches 1..75 run scoreboard players set %encounter ssiege_current_encounter 1
 
-# Temporarily disable superiority encounter while most Prismatics are still in development
+# Temporarily disable superiority encounter while most Prismatics and structures are still in development
 execute if score %random_encounter ssiege_current_encounter matches 76..150 run scoreboard players set %encounter ssiege_current_encounter 14
-execute if score %random_encounter ssiege_current_encounter matches 151..225 run scoreboard players set %encounter ssiege_current_encounter 3
+execute if score %random_encounter ssiege_current_encounter matches 151..225 run scoreboard players set %encounter ssiege_current_encounter 14
 execute if score %random_encounter ssiege_current_encounter matches 226..300 run scoreboard players set %encounter ssiege_current_encounter 4
 execute if score %random_encounter ssiege_current_encounter matches 301..360 run scoreboard players set %encounter ssiege_current_encounter 5
 execute if score %random_encounter ssiege_current_encounter matches 361..420 run scoreboard players set %encounter ssiege_current_encounter 6
