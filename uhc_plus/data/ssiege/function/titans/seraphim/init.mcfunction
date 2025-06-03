@@ -1,3 +1,6 @@
+execute store success score %prev_killed uhcp_titans_id run kill @e[tag=UHCP_Arachne]
+execute if score %prev_killed uhcp_titans_id matches 1.. run tellraw @a ["",{"text":"Arachne","bold":true,"color":"red"},{"text":" disappeared..."}]
+
 # Calculate Titan health based on player count
 execute store result score %hp uhcp_team run execute if entity @a
 scoreboard players set %MULT uhcp_titans_id 17

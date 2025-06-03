@@ -13,7 +13,7 @@ execute as @s[team=blue] run scoreboard players add @a[team=blue] ssiege_buff_ti
 execute as @s[team=red] run scoreboard players add @a[team=red] ssiege_buff_titanslayer 12
 
 # Schedule buff removal after 3 minutes
-schedule function ssiege:titans/reset_titanslayer 3600 append
+schedule function ssiege:titans/reset_titanslayer 3600t
 
 execute as @s[team=blue] run tellraw @a[team=blue] ["",{"selector":"@s"},{"text":" has slain "},{"text":"Gallie & Bellan","bold":true,"color":"red"},{"text":"! Your team gains "},{"text":"2 max ❤","color":"yellow"},{"text":" and the "},{"text":"Titan Slayer","color":"red","hover_event":{"action":"show_text","value":"Titan Slayer grants movement speed and bonus damage to Sniffers, increasing as the game goes on."}},{"text":" buff for 3 minutes!"}]
 
