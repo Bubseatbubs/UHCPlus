@@ -7,8 +7,8 @@ scoreboard players set #30 uhcp_initStatus 30
 scoreboard players operation %temp uhcp_initStatus = %time uhcp_game_time
 scoreboard players operation %temp uhcp_initStatus %= #30 uhcp_initStatus
 fill ~-5 ~ ~-5 ~5 ~18 ~5 minecraft:air replace #uhcp:containers destroy
-execute store result score %blocksfilled uhcp_titans_count run fill ~-5 ~ ~-5 ~5 ~18 ~5 minecraft:air replace #uhcp:titan_can_break
-execute if score %temp uhcp_initStatus matches 0 run execute store result score %blocksfilled2 uhcp_titans_count run fill ~-5 ~ ~-5 ~5 ~18 ~5 minecraft:air replace #uhcp:titan_can_break
+execute store result score %blocksfilled uhcp_titans_count run fill ~-5 ~1 ~-5 ~5 ~18 ~5 minecraft:air replace #uhcp:titan_can_break
+execute if score %temp uhcp_initStatus matches 0 run execute store result score %blocksfilled2 uhcp_titans_count run fill ~-5 ~ ~-5 ~5 ~ ~5 minecraft:air replace #uhcp:titan_can_break
 execute if score %temp uhcp_initStatus matches 0 run scoreboard players operation %blocksfilled uhcp_titans_count += %blocksfilled2 uhcp_titans_count
 scoreboard players set %containers uhcp_settings 1
 execute if score %blocksfilled uhcp_titans_count matches 3.. run playsound minecraft:entity.wither.break_block master @a[distance=..16] ~ ~ ~ 0.5 1.25 0.15
