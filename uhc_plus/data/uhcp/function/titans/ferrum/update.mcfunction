@@ -22,6 +22,6 @@ execute store result score %y_diff uhcp_titans_height run scoreboard players ope
 execute on target run tag @s add UHCP_FerrumTarget
 execute if score %y_diff uhcp_titans_height matches 2.. facing entity @p[tag=UHCP_FerrumTarget] feet run tp @s ^ ^ ^0.3 ~ ~20
 execute if score %y_diff uhcp_titans_height matches ..-2 facing entity @p[tag=UHCP_FerrumTarget] feet run tp @s ^ ^ ^0.3 ~ ~20
-execute at @a[tag=UHCP_FerrumTarget] facing entity @p[tag=UHCP_FerrumTarget] feet run tp @s ^ ^ ^0.1 ~ ~20
+execute as @a[tag=UHCP_FerrumTarget] facing entity @p[tag=UHCP_FerrumTarget] feet run tp @s ^ ^ ^0.1 ~ ~20
 execute as @s[tag=!UHCP_IsJumping] if entity @a[tag=UHCP_FerrumTarget,distance=16..] run function uhcp:titans/ferrum/jump/jump
 tag @a remove UHCP_FerrumTarget
