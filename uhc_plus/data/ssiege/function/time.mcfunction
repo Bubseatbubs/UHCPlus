@@ -103,7 +103,7 @@ item replace entity @e[type=minecraft:item,predicate=uhcp:apple_head] contents w
 item replace entity @e[type=minecraft:item,predicate=uhcp:golden_apple_head] contents with minecraft:golden_apple 1
 
 # Check apples
-execute if score %time uhcp_game_time >= %apple uhcp_game_time run function ssiege:bases/give_apples
+execute if score %time uhcp_game_time >= %apple uhcp_game_time run function ssiege:bases/apples/applecursion
 
 # Kill stupid decorative inventory clutters
 execute as @e[tag=UHCP_Titan] run kill @e[type=item,distance=..32,nbt={Item:{id:"minecraft:leaf_litter"}}]
