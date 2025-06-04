@@ -5,10 +5,10 @@ execute positioned over motion_blocking run tp @s ~ ~ ~
 execute positioned over motion_blocking run tp @s ~ ~ ~
 forceload add ~ ~
 
-place template ssiege:blue_base/origin ~ ~ ~ none none 1 0 strict
-place template ssiege:blue_base/bottom ~ ~-1 ~ none none 1 0 strict
-place template ssiege:blue_base/walkway ~47 ~-11 ~20 none none 1 0 strict
-place template ssiege:blue_base/spawn ~90 ~-11 ~13 none none 1 0 strict
+execute at @s run place template ssiege:blue_base/origin ~-24 ~ ~-24 none none 1 0 strict
+execute at @s run place template ssiege:blue_base/bottom ~-24 ~-1 ~-24 none none 1 0 strict
+execute at @s run place template ssiege:blue_base/walkway ~23 ~-11 ~-4 none none 1 0 strict
+execute at @s run place template ssiege:blue_base/spawn ~66 ~-11 ~-11 none none 1 0 strict
 
 execute at @s positioned ~ ~ ~ run function ssiege:bases/sniffers/blue_sniffer_init
 execute at @s positioned ~ ~ ~ run function ssiege:bases/spawn_blue_shopkeepers

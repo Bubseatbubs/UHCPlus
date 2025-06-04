@@ -5,10 +5,10 @@ execute positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
 execute positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
 forceload add ~ ~
 
-place template ssiege:red_base/origin ~ ~ ~ none none 1 0 strict
-place template ssiege:red_base/bottom ~ ~-1 ~ none none 1 0 strict
-place template ssiege:red_base/walkway ~-1 ~-11 ~27 180 none 1 0 strict
-place template ssiege:red_base/spawn ~-44 ~-11 ~34 180 none 1 0 strict
+execute at @s run place template ssiege:red_base/origin ~-24 ~ ~-24 none none 1 0 strict
+execute at @s run place template ssiege:red_base/bottom ~-24 ~-1 ~-24 none none 1 0 strict
+execute at @s run place template ssiege:red_base/walkway ~-25 ~-11 ~3 180 none 1 0 strict
+execute at @s run place template ssiege:red_base/spawn ~-68 ~-11 ~10 180 none 1 0 strict
 
 execute at @s positioned ~ ~ ~ run function ssiege:bases/sniffers/red_sniffer_init
 execute at @s positioned ~ ~ ~ run function ssiege:bases/spawn_red_shopkeepers
