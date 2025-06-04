@@ -22,4 +22,4 @@ execute if score @s uhcp_augment matches 347 run effect give @s dolphins_grace i
 tag @s remove SSIEGE_hit_by_Infernus_Blessing
 
 tellraw @s {text: "You've respawned!",color:"green"}
-playsound minecraft:entity.allay.ambient_without_item master @s ~ ~ ~ 1 1 1
+function uhcp:start/augments/sounds
