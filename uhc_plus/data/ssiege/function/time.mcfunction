@@ -9,6 +9,10 @@ function ssiege:end/check
 # Game time
 scoreboard players add %time uhcp_game_time 1
 
+# Sniffer Invulnerability
+execute if score %time uhcp_game_time matches ..18000 run effect give @e[tag=SSIEGE_sniffer] resistance 1 4 true
+execute if score %time uhcp_game_time matches 18000 run tellraw @a "The Sniffers are no longer invulnerable!"
+
 # Arrow limit
 execute as @a[tag=UHCP_ArrowCheck] at @s run function uhcp:arrow_limit/check
 tag @a remove UHCP_ArrowCheck
