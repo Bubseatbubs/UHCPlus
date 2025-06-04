@@ -62,9 +62,7 @@ scoreboard players reset @a uhcp_mine_rawCopperBlock
 scoreboard players reset @a uhcp_mine_rawGoldBlock
 scoreboard players reset @a uhcp_mine_rawIronBlock
 scoreboard players reset @a uhcp_ready
-scoreboard players reset @a ssiege_recall_cd
 scoreboard players reset @a ssiege_recall_charge
-scoreboard players reset @a ssiege_recall_delay
 
 # Remove tags
 tag @a remove UHCP_Creeper
@@ -136,6 +134,9 @@ scoreboard players set %sonar uhcp_game_time 0
 scoreboard players set %red_regen uhcp_game_time 0
 scoreboard players set %blue_regen uhcp_game_time 0
 scoreboard players set %aura uhcp_game_time 0
+
+# Reset recall timers
+scoreboard players set @a ssiege_recall_charge -1
 
 # Keep 0 0 forceloaded for Titans and Bases
 forceload add 0 0

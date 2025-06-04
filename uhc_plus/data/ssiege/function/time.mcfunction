@@ -65,7 +65,12 @@ execute as @a[scores={augments=1..}] run function uhcp:augments/announce
 execute unless score %compass_time uhcp_itemCount matches 1.. if entity @a[predicate=uhcp:player_compass/hand,gamemode=survival] run function uhcp:compass/determine
 scoreboard players remove %compass_time uhcp_itemCount 1
 
-# TODO: Recall command
+# Recall
+scoreboard players enable @a recall
+execute as @a[scores={recall=1..}] run scoreboard players set @s ssiege_recall_charge 0
+execute as @a[scores={ssiege_recall_charge=0..}] run scoreboard players add @s ssiege_recall_charge 1
+execute as @a[scores={ssiege_recall_charge=0..}] run function ssiege:recall/recall
+scoreboard players reset @a[scores={recall=1..}] recall
 
 # Update Titans
 execute as @a at @s if entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/update
