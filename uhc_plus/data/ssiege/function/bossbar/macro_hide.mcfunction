@@ -1,1 +1,0 @@
-$bossbar set uhcp:titan_health.$(id) visible false

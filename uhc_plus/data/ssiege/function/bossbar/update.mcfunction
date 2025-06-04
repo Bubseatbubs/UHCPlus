@@ -1,3 +1,2 @@
-tag @s[tag=!SSIEGE_SnifferHealthVisible] add SSIEGE_SnifferHealthVisible
-execute store result storage uhcp:id player.id short 1 run scoreboard players get @s uhcp_id
-function ssiege:bossbar/macro_update with storage uhcp:id player
+execute store result storage ssiege:sniffer_health input.blue_hp double 1 run data get entity @n[tag=bluesniffer] Health
+execute store result storage ssiege:sniffer_health input.red_hp double 1 run data get entity @n[tag=redsniffer] Health

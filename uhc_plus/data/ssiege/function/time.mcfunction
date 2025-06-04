@@ -74,8 +74,7 @@ execute as @e[type=!minecraft:player,tag=UHCP_Titan] at @s run function uhcp:tit
 
 # Update Sniffer Bossbar
 # Temporary testing change - have both Sniffer bossbars be visible at all times
-execute as @a at @s if entity @e[tag=SSIEGE_sniffer] run function ssiege:bossbar/update
-#execute as @a[tag=SSIEGE_SnifferHealthVisible] at @s unless entity @e[tag=SSIEGE_sniffer,distance=..64] run function ssiege:bossbar/hide
+function ssiege:bossbar/update
 
 # Test kit
 # TODO: Make a Sniffer Siege testkit
