@@ -14,7 +14,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:0s}"
+              "tag": "{uhcp_augSelect:1b,augment:300s}"
             },
             {
               "function": "minecraft:set_name",
@@ -69,98 +69,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:0s}"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:sniffer_spawn_egg",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:1s}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "target": "item_name",
-              "name": [
-                {
-                  "text": "Babysitting",
-                  "color": "gold",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Spawn 2 Baby ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Sniffers",
-                    "color": "white"
-                  },
-                  {
-                    "text": " near your ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Sniffer",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "Throughout the game, they dig up exciting random",
-                  "color": "gray"
-                },
-                {
-                  "text": "loot!",
-                  "color": "gray"
-                }
-              ],
-              "mode": "replace_all"
-            },
-            {
-              "function": "minecraft:toggle_tooltips",
-              "toggles": {
-                "minecraft:attribute_modifiers": false
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "slots": {
-                    "container.*": {
-                      "predicates": {
-                        "minecraft:custom_data": "{augment:1s}"
+                        "minecraft:custom_data": "{augment:300s}"
                       }
                     }
                   }
@@ -180,7 +89,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:2s}"
+              "tag": "{uhcp_augSelect:1b,augment:302s}"
             },
             {
               "function": "minecraft:set_name",
@@ -243,7 +152,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:2s}"
+                        "minecraft:custom_data": "{augment:302s}"
                       }
                     }
                   }
@@ -254,7 +163,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:book",
+          "name": "minecraft:book__",
           "weight": 1,
           "functions": [
             {
@@ -263,7 +172,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:5s}"
+              "tag": "{uhcp_augSelect:1b,augment:305s}"
             },
             {
               "function": "minecraft:set_name",
@@ -318,7 +227,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:5s}"
+                        "minecraft:custom_data": "{augment:305s}"
                       }
                     }
                   }
@@ -338,7 +247,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:6s}"
+              "tag": "{uhcp_augSelect:1b,augment:306s}"
             },
             {
               "function": "minecraft:set_name",
@@ -407,7 +316,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:6s}"
+                        "minecraft:custom_data": "{augment:306s}"
                       }
                     }
                   }
@@ -427,7 +336,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:7s}"
+              "tag": "{uhcp_augSelect:1b,augment:307s}"
             },
             {
               "function": "minecraft:set_name",
@@ -476,7 +385,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:7s}"
+                        "minecraft:custom_data": "{augment:307s}"
                       }
                     }
                   }
@@ -496,7 +405,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:10s}"
+              "tag": "{uhcp_augSelect:1b,augment:310s}"
             },
             {
               "function": "minecraft:set_name",
@@ -541,7 +450,7 @@
                     "color": "white"
                   },
                   {
-                    "text": " Horse armor, and 24 ",
+                    "text": " Horse armor, and 32 ",
                     "color": "gray"
                   },
                   {
@@ -577,7 +486,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:10s}"
+                        "minecraft:custom_data": "{augment:310s}"
                       }
                     }
                   }
@@ -588,7 +497,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:writable_book",
+          "name": "minecraft:writeable_book",
           "weight": 1,
           "functions": [
             {
@@ -597,7 +506,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:11s}"
+              "tag": "{uhcp_augSelect:1b,augment:311s}"
             },
             {
               "function": "minecraft:set_name",
@@ -633,7 +542,7 @@
                   }
                 ],
                 {
-                  "text": "reach levels 5, 10, 15, 20, 25, etc.",
+                  "text": "reach every 3rd level.",
                   "color": "gray"
                 }
               ],
@@ -656,7 +565,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:11s}"
+                        "minecraft:custom_data": "{augment:311s}"
                       }
                     }
                   }
@@ -676,7 +585,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:13s}"
+              "tag": "{uhcp_augSelect:1b,augment:313s}"
             },
             {
               "function": "minecraft:set_name",
@@ -724,7 +633,7 @@
                   }
                 ],
                 {
-                  "text": "of each every 90 seconds.",
+                  "text": "of each every 60 seconds.",
                   "color": "gray"
                 }
               ],
@@ -747,7 +656,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:13s}"
+                        "minecraft:custom_data": "{augment:313s}"
                       }
                     }
                   }
@@ -767,7 +676,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:15s}"
+              "tag": "{uhcp_augSelect:1b,augment:315s}"
             },
             {
               "function": "minecraft:set_name",
@@ -816,98 +725,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:15s}"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:netherite_upgrade_smithing_template",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:16s}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "target": "item_name",
-              "name": [
-                {
-                  "text": "Final Upgrade",
-                  "color": "gold",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain 2 ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Netherite",
-                    "color": "white"
-                  },
-                  {
-                    "text": "Ingots",
-                    "color": "white"
-                  },
-                  {
-                    "text": " and 2 ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Netherite",
-                    "color": "white"
-                  },
-                  {
-                    "text": " Upgrade",
-                    "color": "gray"
-                  }
-                ],
-                {
-                  "text": "Templates.",
-                  "color": "gray"
-                }
-              ],
-              "mode": "replace_all"
-            },
-            {
-              "function": "minecraft:toggle_tooltips",
-              "toggles": {
-                "minecraft:attribute_modifiers": false
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "slots": {
-                    "container.*": {
-                      "predicates": {
-                        "minecraft:custom_data": "{augment:16s}"
+                        "minecraft:custom_data": "{augment:315s}"
                       }
                     }
                   }
@@ -927,7 +745,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:17s}"
+              "tag": "{uhcp_augSelect:1b,augment:317s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1024,7 +842,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:17s}"
+                        "minecraft:custom_data": "{augment:317s}"
                       }
                     }
                   }
@@ -1044,7 +862,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:20s}"
+              "tag": "{uhcp_augSelect:1b,augment:320s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1103,7 +921,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:20s}"
+                        "minecraft:custom_data": "{augment:320s}"
                       }
                     }
                   }
@@ -1123,7 +941,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:27s}"
+              "tag": "{uhcp_augSelect:1b,augment:327s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1196,7 +1014,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:27s}"
+                        "minecraft:custom_data": "{augment:327s}"
                       }
                     }
                   }
@@ -1216,7 +1034,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:29s}"
+              "tag": "{uhcp_augSelect:1b,augment:329s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1255,12 +1073,12 @@
                     "color": "white"
                   },
                   {
-                    "text": " every",
+                    "text": " every 120",
                     "color": "gray"
                   }
                 ],
                 {
-                  "text": "minute.",
+                  "text": "seconds.",
                   "color": "gray"
                 }
               ],
@@ -1283,7 +1101,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:29s}"
+                        "minecraft:custom_data": "{augment:329s}"
                       }
                     }
                   }
@@ -1303,7 +1121,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:30s}"
+              "tag": "{uhcp_augSelect:1b,augment:330s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1358,7 +1176,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:30s}"
+                        "minecraft:custom_data": "{augment:330s}"
                       }
                     }
                   }
@@ -1378,7 +1196,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:32s}"
+              "tag": "{uhcp_augSelect:1b,augment:332s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1401,7 +1219,7 @@
                 },
                 [
                   {
-                    "text": "Gain 16 ",
+                    "text": "Gain 20 ",
                     "color": "gray"
                   },
                   {
@@ -1445,7 +1263,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:32s}"
+                        "minecraft:custom_data": "{augment:332s}"
                       }
                     }
                   }
@@ -1465,7 +1283,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:34s}"
+              "tag": "{uhcp_augSelect:1b,augment:334s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1532,7 +1350,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:34s}"
+                        "minecraft:custom_data": "{augment:334s}"
                       }
                     }
                   }
@@ -1552,7 +1370,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:35s}"
+              "tag": "{uhcp_augSelect:1b,augment:335s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1597,7 +1415,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:35s}"
+                        "minecraft:custom_data": "{augment:335s}"
                       }
                     }
                   }
@@ -1617,7 +1435,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:39s}"
+              "tag": "{uhcp_augSelect:1b,augment:339s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1684,7 +1502,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:39s}"
+                        "minecraft:custom_data": "{augment:339s}"
                       }
                     }
                   }
@@ -1704,7 +1522,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:42s}"
+              "tag": "{uhcp_augSelect:1b,augment:342s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1793,7 +1611,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:42s}"
+                        "minecraft:custom_data": "{augment:342s}"
                       }
                     }
                   }
@@ -1813,7 +1631,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:43s}"
+              "tag": "{uhcp_augSelect:1b,augment:343s}"
             },
             {
               "function": "minecraft:set_name",
@@ -1886,148 +1704,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:43s}"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:trident",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:47s}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "target": "item_name",
-              "name": [
-                {
-                  "text": "Poseidon's Blessing",
-                  "color": "gold",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "------------------------",
-                  "color": "blue",
-                  "bold": true
-                },
-                [
-                  {
-                    "text": "Gain a ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Trident",
-                    "color": "white"
-                  },
-                  {
-                    "text": " with ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Riptide",
-                    "color": "white"
-                  },
-                  {
-                    "text": " II and ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Unbreaking",
-                    "color": "white"
-                  },
-                  {
-                    "text": " III",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "and a ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Diamond",
-                    "color": "white"
-                  },
-                  {
-                    "text": "Helmet",
-                    "color": "white"
-                  },
-                  {
-                    "text": " with ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Respiration",
-                    "color": "white"
-                  },
-                  {
-                    "text": " III",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "Unbreaking",
-                    "color": "white"
-                  },
-                  {
-                    "text": " III and Aqua Afinity. Start with",
-                    "color": "gray"
-                  }
-                ],
-                [
-                  {
-                    "text": "permanent ",
-                    "color": "gray"
-                  },
-                  {
-                    "text": "Dolphin's Grace",
-                    "color": "white"
-                  },
-                  {
-                    "text": ".",
-                    "color": "gray"
-                  }
-                ]
-              ],
-              "mode": "replace_all"
-            },
-            {
-              "function": "minecraft:toggle_tooltips",
-              "toggles": {
-                "minecraft:attribute_modifiers": false
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "slots": {
-                    "container.*": {
-                      "predicates": {
-                        "minecraft:custom_data": "{augment:47s}"
+                        "minecraft:custom_data": "{augment:343s}"
                       }
                     }
                   }
@@ -2047,7 +1724,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:49s}"
+              "tag": "{uhcp_augSelect:1b,augment:349s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2136,7 +1813,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:49s}"
+                        "minecraft:custom_data": "{augment:349s}"
                       }
                     }
                   }
@@ -2156,7 +1833,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:60s}"
+              "tag": "{uhcp_augSelect:1b,augment:360s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2275,7 +1952,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:60s}"
+                        "minecraft:custom_data": "{augment:360s}"
                       }
                     }
                   }
@@ -2295,7 +1972,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:63s}"
+              "tag": "{uhcp_augSelect:1b,augment:363s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2358,7 +2035,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:63s}"
+                        "minecraft:custom_data": "{augment:363s}"
                       }
                     }
                   }
@@ -2378,7 +2055,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:66s}"
+              "tag": "{uhcp_augSelect:1b,augment:366s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2445,7 +2122,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:66s}"
+                        "minecraft:custom_data": "{augment:366s}"
                       }
                     }
                   }
@@ -2465,7 +2142,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:75s}"
+              "tag": "{uhcp_augSelect:1b,augment:375s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2528,7 +2205,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:75s}"
+                        "minecraft:custom_data": "{augment:375s}"
                       }
                     }
                   }
@@ -2548,7 +2225,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:78s}"
+              "tag": "{uhcp_augSelect:1b,augment:378s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2623,7 +2300,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:78s}"
+                        "minecraft:custom_data": "{augment:378s}"
                       }
                     }
                   }
@@ -2643,7 +2320,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:79s}"
+              "tag": "{uhcp_augSelect:1b,augment:379s}"
             },
             {
               "function": "minecraft:set_name",
@@ -2688,7 +2365,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:79s}"
+                        "minecraft:custom_data": "{augment:379s}"
                       }
                     }
                   }

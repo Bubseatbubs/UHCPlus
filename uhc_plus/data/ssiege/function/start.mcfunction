@@ -138,11 +138,6 @@ scoreboard players set %aura uhcp_game_time 0
 # Reset recall timers
 scoreboard players set @a ssiege_recall_charge -1
 
-# Keep 0 0 forceloaded for Titans and Bases
-forceload add 0 0
-forceload add 176 176 286 224
-forceload add -178 -225 -289 -178
-
 # Assign player IDs
 execute as @a[tag=!UHCP_Spectator] run function uhcp:start/id/player
 

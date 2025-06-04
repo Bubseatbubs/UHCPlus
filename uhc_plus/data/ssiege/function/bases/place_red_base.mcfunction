@@ -2,6 +2,7 @@ tag @s add RED_BASE
 
 function ssiege:bases/clear_red_surface
 execute positioned over motion_blocking_no_leaves run tp @s -120 ~ -120
+forceload add ~ ~
 
 place template ssiege:red_base/origin ~ ~ ~ none none 1 0 strict
 place template ssiege:red_base/bottom ~ ~-1 ~ none none 1 0 strict

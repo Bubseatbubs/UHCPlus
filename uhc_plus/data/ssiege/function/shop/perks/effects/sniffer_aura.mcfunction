@@ -4,6 +4,9 @@
 # Red base: -268,-190 to -288,-211
 # Unupgraded: Regen I, Level 1: Regen II, Level 2: Regen III, Level 3: Regen IIII
 
+execute at @e[tag=BLUE_BASE,limit=1] run execute positioned ~77 ~ ~ run effect give @a[team=blue,distance=..10] saturation 4 0 true
+execute at @e[tag=RED_BASE,limit=1] run execute positioned ~-77 ~ ~ run effect give @a[team=red,distance=..10] saturation 4 0 true
+
 # Blue team aura effects
 execute if score %blue ssiege_perk_aura matches 1 run execute at @e[tag=BLUE_BASE,limit=1] run execute positioned ~77 ~ ~ run effect give @a[team=blue,distance=..10] regeneration 4 0 true
 execute if score %blue ssiege_perk_aura matches 2 run execute at @e[tag=BLUE_BASE,limit=1] run execute positioned ~77 ~ ~ run effect give @a[team=blue,distance=..10] regeneration 4 1 true
