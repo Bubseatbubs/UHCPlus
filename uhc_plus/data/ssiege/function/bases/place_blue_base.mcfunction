@@ -1,7 +1,8 @@
 tag @s add BLUE_BASE
 
 function ssiege:bases/clear_blue_surface
-execute positioned over motion_blocking_no_leaves run tp @s 120 ~ 120
+execute positioned over motion_blocking run tp @s ~ ~ ~
+execute positioned over motion_blocking run tp @s ~ ~ ~
 forceload add ~ ~
 
 place template ssiege:blue_base/origin ~ ~ ~ none none 1 0 strict
