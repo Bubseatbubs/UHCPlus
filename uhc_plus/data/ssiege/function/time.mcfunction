@@ -67,10 +67,11 @@ scoreboard players remove %compass_time uhcp_itemCount 1
 
 # Recall
 scoreboard players enable @a recall
-execute as @a[scores={recall=1..}] run scoreboard players set @s ssiege_recall_charge 0
-execute as @a[scores={ssiege_recall_charge=0..}] run scoreboard players add @s ssiege_recall_charge 1
-execute as @a[scores={ssiege_recall_charge=0..}] run function ssiege:recall/recall
+execute as @a[scores={recall=1..}] as @s run function ssiege:recall/init
 scoreboard players reset @a[scores={recall=1..}] recall
+execute as @a[scores={ssiege_recall_charge=1..}] as @s run function ssiege:recall/countdown
+execute as @a[scores={ssiege_recall_charge=1..}] run function ssiege:recall/detect_movement
+execute as @a[scores={ssiege_recall_charge=0}] run function ssiege:recall/finish
 
 # Update Titans
 execute as @a at @s if entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/update

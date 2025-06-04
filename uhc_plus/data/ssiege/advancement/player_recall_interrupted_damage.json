@@ -18,6 +18,6 @@
     }
   },
   "rewards": {
-    "function": "ssiege:recall/interrupt"
+    "function": "ssiege:recall/interrupt_damage"
   }
 }
