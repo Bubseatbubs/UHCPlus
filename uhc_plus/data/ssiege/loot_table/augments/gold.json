@@ -163,7 +163,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:book__",
+          "name": "minecraft:book",
           "weight": 1,
           "functions": [
             {
@@ -497,7 +497,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:writeable_book",
+          "name": "minecraft:writable_book",
           "weight": 1,
           "functions": [
             {
