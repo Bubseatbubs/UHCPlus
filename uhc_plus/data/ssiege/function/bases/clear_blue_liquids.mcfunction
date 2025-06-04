@@ -1,17 +1,22 @@
-fill 176 ~-1 223 223 ~9 173 minecraft:air replace minecraft:lava
-fill 176 ~10 223 223 ~14 173 minecraft:air replace minecraft:lava
+# Clear Blue Liquids - Relative positioning from x=200, z=200
 
-fill 176 ~ 223 223 ~9 173 minecraft:air replace minecraft:water
-fill 176 ~10 223 223 ~14 173 minecraft:air replace minecraft:water
+# First area: Original coords (176,223) to (223,173) -> Relative (-24,23) to (23,-27)
+fill ~-24 ~1 ~23 ~23 ~9 ~-27 minecraft:air replace minecraft:lava
+fill ~-24 ~10 ~23 ~23 ~14 ~-27 minecraft:air replace minecraft:lava
 
-fill 224 ~-1 196 265 ~9 203 minecraft:air replace minecraft:lava
-fill 224 ~10 196 265 ~14 203 minecraft:air replace minecraft:lava
+fill ~-24 ~1 ~23 ~23 ~9 ~-27 minecraft:air replace minecraft:water
+fill ~-24 ~10 ~23 ~23 ~14 ~-27 minecraft:air replace minecraft:water
 
-fill 224 ~ 196 265 ~9 203 minecraft:air replace minecraft:water
-fill 224 ~10 196 265 ~14 203 minecraft:air replace minecraft:water
+# Second area: Original coords (224,196) to (265,203) -> Relative (24,-4) to (65,3) 
+fill ~24 ~1 ~-4 ~65 ~9 ~3 minecraft:air replace minecraft:lava
+fill ~24 ~10 ~-4 ~65 ~14 ~3 minecraft:air replace minecraft:lava
 
-fill 266 ~-1 189 286 ~9 210 minecraft:air replace minecraft:lava
-fill 266 ~10 189 286 ~14 210 minecraft:air replace minecraft:lava
+fill ~24 ~1 ~-4 ~65 ~9 ~3 minecraft:air replace minecraft:water
+fill ~24 ~10 ~-4 ~65 ~14 ~3 minecraft:air replace minecraft:water
 
-fill 266 ~ 189 286 ~9 210 minecraft:air replace minecraft:water
-fill 266 ~10 189 286 ~14 210 minecraft:air replace minecraft:water
+# Third area: Original coords (266,286) to (189,210) -> Relative (66,86) to (-11,10)
+fill ~66 ~1 ~-11 ~86 ~9 ~10 minecraft:air replace minecraft:lava
+fill ~66 ~10 ~-11 ~86 ~14 ~10 minecraft:air replace minecraft:lava
+
+fill ~66 ~1 ~-11 ~86 ~9 ~10 minecraft:air replace minecraft:water
+fill ~66 ~10 ~-11 ~86 ~14 ~10 minecraft:air replace minecraft:water

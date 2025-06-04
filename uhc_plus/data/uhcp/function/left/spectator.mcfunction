@@ -79,5 +79,5 @@ experience set @s 0 levels
 experience set @s 0 points
 team leave @s
 execute in minecraft:overworld run tp @s 0 150 0
-tp @a @r[gamemode=!creative,gamemode=!spectator]
+tp @s @r[gamemode=!creative,gamemode=!spectator]
 tellraw @s {"text":"You are spectating the current match.","color":"red"}
