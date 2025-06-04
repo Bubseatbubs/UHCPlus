@@ -13,8 +13,8 @@ execute as @e[type=marker,tag=SSIEGE_loot,limit=1,sort=nearest] at @s run tag @e
 # Apply random velocities to all spawned soul shard items
 execute as @e[type=item,tag=SSIEGE_loot,distance=..10] run data modify entity @s Motion set value [0.0,0.3,0.0]
 execute as @e[type=item,tag=SSIEGE_loot,distance=..10] store result entity @s Motion[0] double 0.01 run random value -50..50
-execute as @e[type=item,tag=SSIEGE_loot,distance=..10] store result entity @s Motion[2] double 0.01 run random value -50..50
 execute as @e[type=item,tag=SSIEGE_loot,distance=..10] store result entity @s Motion[1] double 0.01 run random value 20..60
+execute as @e[type=item,tag=SSIEGE_loot,distance=..10] store result entity @s Motion[2] double 0.01 run random value -50..50
 
 execute as @e[type=item,tag=SSIEGE_loot,distance=..10] run data merge entity @s {Glowing:1b}
 
