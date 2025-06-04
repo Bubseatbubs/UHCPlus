@@ -21,6 +21,7 @@ scoreboard players set %game uhcp_initStatus 1
 scoreboard players set %time uhcp_initStatus 0
 scoreboard players set %time_freeze uhcp_initStatus 0
 scoreboard players set %titans uhcp_game_time 6000
+scoreboard players set %apple uhcp_game_time 0
 scoreboard players set %update_display uhcp_game_time 10
 execute if score %dimension uhcp_settings matches ..-1 run scoreboard players set %dimension uhcp_settings 0
 execute store result score %global uhcp_game_id run random value 0..3
