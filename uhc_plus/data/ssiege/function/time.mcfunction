@@ -133,11 +133,9 @@ scoreboard players set @a[scores={ssiege_reverse_bounty=..-1}] ssiege_reverse_bo
 # Handle death timers
 function ssiege:kill/advance_timers
 
-# Force dead players to spectate their nearest teammate
-execute as @a[tag=SSIEGE_dead,team=blue] run tp @s @p[team=blue,gamemode=survival]
-execute as @a[tag=SSIEGE_dead,team=red] run tp @s @p[team=red,gamemode=survival]
-execute as @a[tag=SSIEGE_dead,team=blue] run spectate @p[gamemode=survival,team=blue]
-execute as @a[tag=SSIEGE_dead,team=red] run spectate @p[gamemode=survival,team=red]
+# Handle dead players spectating
+execute as @e[tag=SSIEGE_dead,team=blue,gamemode=spectator] run function ssiege:kill/death/spectate_blue
+execute as @e[tag=SSIEGE_dead,team=red,gamemode=spectator] run function ssiege:kill/death/spectate_red
 
 # Augment-based time events
 execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp_game_time >= @s uhcp_game_time run function ssiege:augments/effects/timed
