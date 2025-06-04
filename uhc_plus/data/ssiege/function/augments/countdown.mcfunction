@@ -61,9 +61,9 @@ scoreboard players set @a uhcp_leave 1
 execute as @a[gamemode=survival] at @s run function ssiege:augments/countdown/end
 scoreboard players reset @a uhcp_leave
 
+# Set up Sniffer Bossbars
+function ssiege:bossbar/init
+
 # Apply Opening Encounter effects
 execute if score %encounter ssiege_current_encounter matches 0..10 run return run function ssiege:start/encounters/first_half
 function ssiege:start/encounters/second_half
-
-# Set up Sniffer Bossbars
-function ssiege:bossbar/init

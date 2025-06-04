@@ -57,6 +57,8 @@ team empty yellow
 
 # Remove bossbars
 execute if score %global uhcp_id matches 1.. run function uhcp:reset/bossbar
+bossbar remove ssiege:blue_sniffer
+bossbar remove ssiege:red_sniffer
 
 # Reset any players in a current state
 execute as @a[tag=UHCP_IsTeleporting] run function uhcp:top/cancel

@@ -1,5 +1,5 @@
-bossbar add ssiege:blue_sniffer "Blue Sniffer"
-bossbar add ssiege:red_sniffer "Red Sniffer"
+bossbar add ssiege:blue_sniffer {text:"Blue Sniffer",color:blue}
+bossbar add ssiege:red_sniffer {text:"Red Sniffer",color:red}
 
 bossbar set ssiege:blue_sniffer color blue
 bossbar set ssiege:red_sniffer color red
