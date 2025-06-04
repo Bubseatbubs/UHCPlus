@@ -8,6 +8,7 @@ execute if entity @s[team=red] run function ssiege:bases/teleport_red
 
 effect give @s resistance 10 4 true
 effect give @s night_vision infinite 0 true
+title @s clear
 gamemode survival @s
 
 # Re-apply any permanent augment effects
