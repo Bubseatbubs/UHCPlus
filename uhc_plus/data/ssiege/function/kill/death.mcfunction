@@ -17,6 +17,8 @@ tag @s add SSIEGE_dead
 
 # Set death timer
 scoreboard players operation @s ssiege_death_timer = %respawn_time ssiege_death_timer
+scoreboard players display name @s uhcp_game_display [{"selector":"@s"},{text:" Respawn:"}]
+scoreboard players operation @s uhcp_game_display = @s ssiege_death_timer
 
 # Situational checks
 execute as @s[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal_fluid/reset
