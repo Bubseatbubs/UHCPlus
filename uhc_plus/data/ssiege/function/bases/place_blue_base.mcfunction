@@ -20,3 +20,6 @@ execute at @s run fill ~-24 ~10 ~23 ~23 ~14 ~-27 minecraft:air
 execute at @s run fill ~-24 ~35 ~23 ~23 ~35 ~-27 minecraft:barrier
 execute at @s run fill ~24 ~35 ~-4 ~65 ~35 ~3 minecraft:barrier
 execute at @s run fill ~66 ~35 ~-11 ~86 ~35 ~10 minecraft:barrier
+
+execute at @s run fill ~-5 ~2 ~-5 ~4 ~6 ~4 minecraft:barrier
+execute at @s run fill ~-5 ~8 ~-5 ~4 ~10 ~4 minecraft:barrier

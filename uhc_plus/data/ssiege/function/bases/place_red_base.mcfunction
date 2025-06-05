@@ -20,3 +20,5 @@ execute at @s positioned ~ ~ ~ run fill ~-24 ~10 ~23 ~23 ~14 ~-24 minecraft:air
 execute at @s positioned ~ ~ ~ run fill ~-24 ~35 ~23 ~23 ~35 ~-24 minecraft:barrier
 execute at @s positioned ~ ~ ~ run fill ~-67 ~35 ~-4 ~-25 ~35 ~3 minecraft:barrier
 execute at @s positioned ~ ~ ~ run fill ~-68 ~35 ~10 ~-88 ~35 ~-11 minecraft:barrier
+
+execute at @s run fill ~-5 ~2 ~-5 ~4 ~5 ~4 minecraft:barrier
