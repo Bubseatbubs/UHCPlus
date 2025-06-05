@@ -1,7 +1,6 @@
 scoreboard players add %giant_timer ssiege_giants 4200
 scoreboard players set %spawned ssiege_giants 0
-#execute store result score %count ssiege_giants run execute if entity @a
-scoreboard players set %count ssiege_giants 15
+execute store result score %count ssiege_giants run execute if entity @a
 
 # Bubson spawns extra Giants
 execute if score %encounter ssiege_current_encounter matches 1 run function ssiege:start/encounters/effects/1
