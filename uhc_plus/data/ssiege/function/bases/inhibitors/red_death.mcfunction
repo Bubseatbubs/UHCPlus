@@ -1,4 +1,5 @@
 kill @e[type=guardian,tag=SSIEGE_red_turret]
+kill @e[type=item,nbt={Item:{id:"minecraft:lightning_rod"}}]
 scoreboard players set %red_inhib_respawn uhcp_game_time 3600
 scoreboard players set %red_inhib_up uhcp_game_time 0
 
