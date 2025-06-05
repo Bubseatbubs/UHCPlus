@@ -1,4 +1,4 @@
-execute store result score %humbug uhcp_initStatus run random roll 0..9
+execute store result score %humbug uhcp_initStatus run random value 0..9
 execute if score %humbug uhcp_initStatus matches 0 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"humbug gave everyone "},{"text":"2 stacks of gold","bold":true,"color":"yellow"},{"text":"!"}]
 execute if score %humbug uhcp_initStatus matches 0 run return run give @a gold_ingot 128
 

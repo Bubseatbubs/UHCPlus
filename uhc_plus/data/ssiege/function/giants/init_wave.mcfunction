@@ -1,13 +1,15 @@
-scoreboard players set %giant_timer ssiege_giants 0
+scoreboard players add %giant_timer ssiege_giants 4200
 scoreboard players set %spawned ssiege_giants 0
-scoreboard players set #2 ssiege_giants 2
-scoreboard players set #3 ssiege_giants 3
-execute store result score %count ssiege_giants run execute if entity @a
-execute unless score %encounter ssiege_current_encounter matches 1 run scoreboard players operation %count ssiege_giants *= #2 ssiege_giants
+#execute store result score %count ssiege_giants run execute if entity @a
+scoreboard players set %count ssiege_giants 15
 
 # Bubson spawns extra Giants
-execute if score %encounter ssiege_current_encounter matches 1 run scoreboard players operation %count ssiege_giants *= #3 ssiege_giants
-execute if score %encounter ssiege_current_encounter matches 1 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"Bubson spawned "},{"text":"extra Giants","bold":true,"color":"red"},{"text":"!"}]
+execute if score %encounter ssiege_current_encounter matches 1 run function ssiege:start/encounters/effects/1
 
-playsound minecraft:entity.lightning_bolt.thunder master @a 0 0 0 1 1 1
-function ssiege:giants/spawn_wave
+# Spawn waves centered on each base
+execute as @e[type=marker,tag=SSIEGE_BASE] at @s run function ssiege:giants/spawn_wave
+
+# Remove the temporary tag
+tag @e[tag=SSIEGE_NEW_GIANT] remove SSIEGE_NEW_GIANT
+
+execute if score %encounter ssiege_current_encounter matches 15 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"dehua replaced the Giants with "},{"text":"Pandas","bold":true,"color":"white"},{"text":"!"}]

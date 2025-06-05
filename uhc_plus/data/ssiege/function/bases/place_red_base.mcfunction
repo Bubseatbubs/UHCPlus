@@ -1,4 +1,5 @@
 tag @s add RED_BASE
+tag @s add SSIEGE_BASE
 
 function ssiege:bases/clear_red_surface
 execute positioned over motion_blocking_no_leaves run tp @s ~ ~ ~

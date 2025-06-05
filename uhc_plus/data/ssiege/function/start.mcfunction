@@ -144,8 +144,8 @@ execute as @a[tag=!UHCP_Spectator] run function uhcp:start/id/player
 # Initialize Opening Encounter
 function ssiege:start/encounters/init
 
-# Giants don't start spawning until 15 minutes
-scoreboard players set %giant_timer ssiege_giants -1
+# Giants don't start spawning until 10 minutes
+scoreboard players set %giant_timer ssiege_giants 12000
 
 # After a 10 second delay, start augment selection
 schedule function ssiege:start_augment_selection 200

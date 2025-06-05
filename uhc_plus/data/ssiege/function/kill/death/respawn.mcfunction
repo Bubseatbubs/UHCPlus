@@ -12,6 +12,7 @@ effect give @s night_vision infinite 0 true
 title @s clear
 gamemode survival @s
 
+
 # Re-apply any permanent augment effects
 # Reset any once-per-life augments
 

@@ -1,5 +1,5 @@
 # Dinodan Encounter
-execute store result score %rand ssiege_current_encounter run random roll 0..3
+execute store result score %rand ssiege_current_encounter run random value 0..3
 
 # Temporary choices, will have room for more fun outcomes later when more augments are implemented
 execute if score %rand ssiege_current_encounter matches 0 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"Dinodan gave everyone "},{"text":"Gapple Gap II","bold":true,"color":"gold"},{"text":"!"}]

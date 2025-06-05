@@ -1,4 +1,5 @@
 tag @s add BLUE_BASE
+tag @s add SSIEGE_BASE
 
 function ssiege:bases/clear_blue_surface
 execute positioned over motion_blocking run tp @s ~ ~ ~

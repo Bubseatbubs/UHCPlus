@@ -14,7 +14,19 @@
               "lore": [
                 [
                   {
-                    "text": "Explode when you die.",
+                    "text": "Right click while holding to activate.",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "When activated, your body will explode",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "the next time you die.",
                     "color": "gray"
                   }
                 ]

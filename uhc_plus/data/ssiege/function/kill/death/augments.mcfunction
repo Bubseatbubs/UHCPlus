@@ -1,3 +1,6 @@
 # Proc on-death effects of Augments
 
-execute if score @s uhcp_augment matches 33 run effect give @s haste infinite 2 true
+# Grand Gunpowder / Hunter's Blessing Creeper Buff
+execute as @s[tag=UHCP_Explode] run summon minecraft:creeper ~ ~ ~ {Fuse:0s,CanPickUpLoot:false,powered:true}
+execute as @s[tag=UHCP_Explode] run tag @s remove UHCP_Explode
+execute as @s[tag=UHCP_Explode] run tellraw @s ["",{"text":"The "},{"text":"Grand Gunpowder","bold":true,"color":"light_purple"},{"text":" made you "},{"text":"explod","bold":true,"color":"yellow"},{"text":"e","color":"yellow"},{"text":"!"}]

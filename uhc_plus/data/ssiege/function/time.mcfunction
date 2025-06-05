@@ -175,6 +175,4 @@ execute if score %time uhcp_game_time >= %encounter_time uhcp_game_time run func
 execute if score %time uhcp_game_time >= %encounter_time uhcp_game_time run scoreboard players add %encounter_time uhcp_game_time 6000
 
 # Giants
-execute if score %time uhcp_game_time matches 18000 in minecraft:overworld run scoreboard players set %giant_timer ssiege_giants 4200
-execute if score %giant_timer ssiege_giants matches 4200.. run function ssiege:giants/init_wave
-execute if score %giant_timer ssiege_giants matches 0.. run scoreboard players add %giant_timer ssiege_giants 1
+execute if score %time uhcp_game_time >= %giant_timer ssiege_giants in minecraft:overworld run function ssiege:giants/init_wave
