@@ -1,0 +1,131 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:green_wool",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:399s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Beginner's Luck",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "(",
+                    "color": "yellow",
+                    "bold": false
+                  },
+                  {
+                    "text": "HIGHLY",
+                    "color": "yellow",
+                    "bold": true
+                  },
+                  {
+                    "text": " recommended for beginners)",
+                    "color": "yellow",
+                    "bold": false
+                  }
+                ],
+                [
+                  {
+                    "text": "------------------------",
+                    "color": "blue",
+                    "bold": true
+                  }
+                ],
+                [
+                  {
+                    "text": "Gain a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Diamond",
+                    "color": "white"
+                  },
+                  {
+                    "text": " Pickaxe",
+                    "color": "white"
+                  },
+                  {
+                    "text": " with Fortune II and ",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "other various items",
+                    "color": "gray"
+                  },
+                  {
+                    "text": ". After 12 minutes, gain",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "3 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Soul Shards",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:399s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

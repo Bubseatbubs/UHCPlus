@@ -17,6 +17,9 @@ loot replace entity @s container.4 loot ssiege:augments/gold
 loot replace entity @s container.5 loot ssiege:augments/gold
 loot replace entity @s container.6 loot ssiege:augments/gold
 
+# Give Beginner's luck augment to beginners
+execute as @s[tag=SSIEGE_beginner] run loot replace entity @s container.3 loot ssiege:augments/beginners_luck
+
 # Give player rolled augments
 item replace entity @a[tag=UHCP_GeneratingAugments,limit=1] container.3 from entity @s container.0
 item replace entity @a[tag=UHCP_GeneratingAugments,limit=1] container.4 from entity @s container.1
