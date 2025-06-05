@@ -1,6 +1,10 @@
 # red_regen.mcfunction
 # Heals red team members based on their regeneration perk level
 
+# Level 0: Every 60 seconds (1200 ticks)
+execute if score %red ssiege_perk_regen matches 1 run effect give @a[team=red] regeneration 3 0 true
+execute if score %red ssiege_perk_regen matches 1 run scoreboard players add %red_regen uhcp_game_time 1200
+
 # Level 1: Every 40 seconds (800 ticks)
 execute if score %red ssiege_perk_regen matches 2 run effect give @a[team=red] regeneration 3 0 true
 execute if score %red ssiege_perk_regen matches 2 run scoreboard players add %red_regen uhcp_game_time 800
