@@ -1,5 +1,6 @@
 # Featherstorm
 execute if score @s uhcp_augment matches 230 run function uhcp:augments/effects/prismatic/featherstorm/lightning
+execute if score %mode settings matches 1 run function ssiege:recall/finish
 
 # Assign team scoreboards
 scoreboard players set @a uhcp_initStatus 0
