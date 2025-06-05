@@ -13,6 +13,7 @@ execute if score @s uhcp_augment matches 317 run function ssiege:augments/effect
 execute if score @s uhcp_augment matches 320 run function ssiege:augments/effects/gold/gapplegapi
 execute if score @s uhcp_augment matches 327 run function ssiege:augments/effects/gold/rushorder
 execute if score @s uhcp_augment matches 329 run function ssiege:augments/effects/gold/jumpking/givemace
+execute if score @s uhcp_augment matches 330 run function ssiege:augments/effects/gold/largeandincharge
 execute if score @s uhcp_augment matches 333 run function ssiege:augments/effects/gold/latelooter/applyfatigue
 execute if score @s uhcp_augment matches 334 run function ssiege:augments/effects/gold/lessthan3
 execute if score @s uhcp_augment matches 335 run function ssiege:augments/effects/gold/lilbro

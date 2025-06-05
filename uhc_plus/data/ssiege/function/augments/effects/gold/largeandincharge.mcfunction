@@ -1,5 +1,5 @@
 #scale modifier
-attribute @s minecraft:scale modifier add uhcp:scale 0.5 add_value
+attribute @s minecraft:scale modifier add uhcp:scale 0.5 add_multiplied_total
 
 #step height modifier
 #attribute @s step_height base set 1.1 
