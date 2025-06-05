@@ -9,9 +9,12 @@ function ssiege:end/check
 # Game time
 scoreboard players add %time uhcp_game_time 1
 
-# Sniffer Invulnerability
-execute if score %time uhcp_game_time matches ..18000 run effect give @e[tag=SSIEGE_sniffer] resistance 1 4 true
-execute if score %time uhcp_game_time matches 18000 run tellraw @a "The Sniffers are no longer invulnerable!"
+# Inhibitor Invulnerability
+execute if score %time uhcp_game_time matches ..17980 run effect give @e[tag=SSIEGE_inhib] resistance 1 4 true
+execute if score %time uhcp_game_time matches 18000 run tellraw @a "The Inhibitors are no longer invulnerable!"
+
+# Inhibitor/Turret update
+function ssiege:bases/inhibitors/update
 
 # Arrow limit
 execute as @a[tag=UHCP_ArrowCheck] at @s run function uhcp:arrow_limit/check
@@ -166,9 +169,9 @@ scoreboard players add %titans uhcp_game_time 1
 function ssiege:titans/timed
 
 # Infernus Blessing
-scoreboard players add %infernus_check uhcp_game_time 1
-execute if score %infernus_check uhcp_game_time matches 20.. run function ssiege:titans/infernus/handle_burning
-execute if score %infernus_check uhcp_game_time matches 20.. run scoreboard players set %infernus_check uhcp_game_time 0
+execute if score %titans uhcp_game_time matches 60000.. run scoreboard players add %infernus_check uhcp_game_time 1
+execute if score %titans uhcp_game_time matches 60000.. if score %infernus_check uhcp_game_time matches 20.. run function ssiege:titans/infernus/handle_burning
+execute if score %titans uhcp_game_time matches 60000.. if score %infernus_check uhcp_game_time matches 20.. run scoreboard players set %infernus_check uhcp_game_time 0
 
 # Encounters
 execute if score %time uhcp_game_time >= %encounter_time uhcp_game_time run function ssiege:start/encounters/effects/timed

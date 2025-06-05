@@ -12,6 +12,8 @@ execute at @s run place template ssiege:blue_base/walkway ~23 ~-11 ~-4 none none
 execute at @s run place template ssiege:blue_base/spawn ~66 ~-11 ~-11 none none 1 0 strict
 
 execute at @s positioned ~ ~ ~ run function ssiege:bases/sniffers/blue_sniffer_init
+execute at @s positioned ~ ~ ~ run function ssiege:bases/inhibitors/init_blue
+execute at @s positioned ~ ~ ~ run function ssiege:bases/turrets/init_blue
 execute at @s positioned ~ ~ ~ run function ssiege:bases/spawn_blue_shopkeepers
 
 execute at @s positioned ~80 ~ ~ run spreadplayers ~ ~ 1 3 true @a[tag=!UHCP_Spectator,team=blue]

@@ -138,6 +138,17 @@ scoreboard players set %aura uhcp_game_time 0
 # Reset recall timers
 scoreboard players set @a ssiege_recall_charge -1
 
+# Set Inhibitor Respawn timers
+scoreboard players set %blue_inhib_respawn uhcp_game_time 0
+scoreboard players set %red_inhib_respawn uhcp_game_time 0
+scoreboard players set %blue_inhib_up uhcp_game_time 1
+scoreboard players set %red_inhib_up uhcp_game_time 1
+scoreboard players set %INHIB_SECONDS uhcp_game_time 20
+
+# Turn off friendly invisibles
+team modify blue seeFriendlyInvisibles false
+team modify red seeFriendlyInvisibles false
+
 # Assign player IDs
 execute as @a[tag=!UHCP_Spectator] run function uhcp:start/id/player
 

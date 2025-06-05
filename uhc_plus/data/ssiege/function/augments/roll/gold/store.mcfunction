@@ -5,6 +5,8 @@ scoreboard players operation @s uhcp_id = @a[tag=UHCP_GeneratingAugments,limit=1
 scoreboard players operation @s uhcp_team = @a[tag=UHCP_GeneratingAugments,limit=1] uhcp_team
 team join no_collision @s
 
+# Give Beginner's luck augment to beginners
+execute if score @s tips matches 1 run function ssiege:augments/roll/beginner
 scoreboard players set @s uhcp_aug_choosing 1
 
 # Roll gold augments
@@ -16,9 +18,6 @@ loot replace entity @s container.2 loot ssiege:augments/gold
 loot replace entity @s container.4 loot ssiege:augments/gold
 loot replace entity @s container.5 loot ssiege:augments/gold
 loot replace entity @s container.6 loot ssiege:augments/gold
-
-# Give Beginner's luck augment to beginners
-execute as @s[tag=SSIEGE_beginner] run loot replace entity @s container.3 loot ssiege:augments/beginners_luck
 
 # Give player rolled augments
 item replace entity @a[tag=UHCP_GeneratingAugments,limit=1] container.3 from entity @s container.0

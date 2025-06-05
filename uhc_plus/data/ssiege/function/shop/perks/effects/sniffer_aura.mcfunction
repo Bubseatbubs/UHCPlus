@@ -19,5 +19,11 @@ execute if score %red ssiege_perk_aura matches 2 run execute at @e[tag=RED_BASE,
 execute if score %red ssiege_perk_aura matches 3 run execute at @e[tag=RED_BASE,limit=1] run execute positioned ~-77 ~ ~ run effect give @a[team=red,distance=..10] regeneration 4 2 true
 execute if score %red ssiege_perk_aura matches 4 run execute at @e[tag=RED_BASE,limit=1] run execute positioned ~-77 ~ ~ run effect give @a[team=red,distance=..10] regeneration 4 3 true
 
+# Spawn protection
+execute at @e[tag=BLUE_BASE,limit=1] run execute positioned ~77 ~ ~ as @a[team=red,distance=..15,gamemode=survival] run damage @s 6.67 magic at ~ ~ ~
+execute at @e[tag=RED_BASE,limit=1] run execute positioned ~-77 ~ ~ as @a[team=blue,distance=..15,gamemode=survival] run damage @s 6.67 magic at ~ ~ ~
+execute at @e[tag=BLUE_BASE,limit=1] run execute positioned ~77 ~ ~ run tellraw @a[team=red,distance=..15,gamemode=survival] {"text":"You are too close to the enemy spawn!","color":"red"}
+execute at @e[tag=RED_BASE,limit=1] run execute positioned ~-77 ~ ~ run tellraw @a[team=blue,distance=..15,gamemode=survival] {"text":"You are too close to the enemy spawn!","color":"red"}
+
 # Schedules for 2 second later (40 ticks)
 scoreboard players add %aura uhcp_game_time 40
