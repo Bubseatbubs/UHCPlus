@@ -1,8 +1,8 @@
 # 15 minutes: Titan 1 (Arachne)
-execute if score %titans uhcp_game_time matches 18000 in minecraft:overworld run return run function ssiege:titans/arachne/init
+execute if score %titans uhcp_game_time matches 18000 in minecraft:overworld run return run function ssiege:titans/giga_creeper/init
 
 # 22 minutes: Titan 2 (Seraphim)
-execute if score %titans uhcp_game_time matches 26400 in minecraft:overworld run return run function ssiege:titans/seraphim/init
+execute if score %titans uhcp_game_time matches 26400 in minecraft:overworld run return run function ssiege:titans/arachne/init
 
 # 29 minutes: Titan 3 (Ferrum)
 execute if score %titans uhcp_game_time matches 34800 in minecraft:overworld run return run function ssiege:titans/ferrum/init
