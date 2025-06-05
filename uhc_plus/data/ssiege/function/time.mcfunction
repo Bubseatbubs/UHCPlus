@@ -13,6 +13,9 @@ scoreboard players add %time uhcp_game_time 1
 execute if score %time uhcp_game_time matches ..17980 run effect give @e[tag=SSIEGE_inhib] resistance 1 4 true
 execute if score %time uhcp_game_time matches 18000 run tellraw @a "The Inhibitors are no longer invulnerable!"
 
+# Low sniffer regen
+function ssiege:bases/sniffers/low_health_regen
+
 # Inhibitor/Turret update
 function ssiege:bases/inhibitors/update
 
