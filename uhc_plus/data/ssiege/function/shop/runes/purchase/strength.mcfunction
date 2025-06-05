@@ -9,6 +9,8 @@ function ssiege:shop/runes/effects/update_strength
 # Update Strength rune score
 scoreboard players add @s ssiege_rune_strength 1
 
+playsound minecraft:block.anvil.use master @s ~ ~ ~ 1 1 1
+
 # After purchase, increase the cost
 execute if score @s ssiege_rune_strength_cost matches 16 run scoreboard players set @s ssiege_rune_strength_cost 999
 execute if score @s ssiege_rune_strength_cost matches 8 run scoreboard players set @s ssiege_rune_strength_cost 16
