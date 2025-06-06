@@ -1,9 +1,9 @@
 {
-  "feature": "minecraft:ore_diamond_small",
+  "feature": "minecraft:ore_nether_gold",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 8
+      "count": 10
     },
     {
       "type": "minecraft:in_square"
@@ -11,12 +11,12 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "type": "minecraft:trapezoid",
-        "min_inclusive": {
-          "absolute": -80
-        },
+        "type": "minecraft:uniform",
         "max_inclusive": {
-          "absolute": 16
+          "below_top": 10
+        },
+        "min_inclusive": {
+          "above_bottom": 10
         }
       }
     },
