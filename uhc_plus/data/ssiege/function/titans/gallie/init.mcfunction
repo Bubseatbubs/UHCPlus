@@ -13,6 +13,7 @@ execute store result storage ssiege:titan_health input.hp double 1 run scoreboar
 summon minecraft:hoglin 0 200 0 {Tags:["UHCP_Titan","UHCP_Gallie","UHCP_New"],Passengers:[{id:"minecraft:piglin",PersistenceRequired:1b,CanPickUpLoot:0b,IsImmuneToZombification:1b,CannotHunt:1b,equipment:{mainhand:{id:"minecraft:crossbow",count:1,components:{"minecraft:enchantments":{"minecraft:vanishing_curse":1},"minecraft:enchantment_glint_override":false}}},drop_chances:{mainhand:0.000},Tags:["UHCP_Summon","UHCP_Bellan"],attributes:[{id:"minecraft:fall_damage_multiplier",base:0},{id:"minecraft:scale",base:2.0d}]}],CustomName:{"bold":true,"color":"gold","text":"Bellan"}}
 execute as @e[tag=UHCP_Gallie] run function ssiege:titans/gallie/init_helper with storage ssiege:titan_health input
 execute positioned over motion_blocking_no_leaves as @e[tag=UHCP_Titan] run tp @s ~ ~ ~
+effect give @e[tag=UHCP_Titan] glowing infinite 0 true
 
 # Announce
 title @a clear

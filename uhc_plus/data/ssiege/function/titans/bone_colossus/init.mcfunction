@@ -12,6 +12,7 @@ execute store result storage ssiege:titan_health input.hp double 1 run scoreboar
 # Spawn Titan
 execute in minecraft:overworld positioned 0 200 0 summon minecraft:skeleton run function ssiege:titans/bone_colossus/init_helper with storage ssiege:titan_health input
 execute positioned over motion_blocking_no_leaves as @e[tag=UHCP_Titan] run tp @s ~ ~ ~
+effect give @e[tag=UHCP_Titan] glowing infinite 0 true
 
 # Announce
 title @a clear
