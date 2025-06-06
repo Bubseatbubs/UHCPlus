@@ -7,13 +7,13 @@ execute as @s[team=blue] if score @s ssiege_perk_aura < %blue_cost ssiege_perk_a
 execute as @s[team=red] if score @s ssiege_perk_aura < %red_cost ssiege_perk_aura run execute store result storage ssiege:temp refund int 1 run scoreboard players get @s ssiege_perk_aura
 execute as @s[team=red] if score @s ssiege_perk_aura < %red_cost ssiege_perk_aura run return run function ssiege:shop/perks/purchase/refund with storage ssiege:temp
 
-# Update Perk score
-execute as @s[team=blue] run scoreboard players add %blue ssiege_perk_aura 1
-execute as @s[team=red] run scoreboard players add %red ssiege_perk_aura 1
-
 # Successful purchase
 execute as @s[team=blue] run tellraw @a ["",{"selector":"@s"},{"text":" purchased "},{"text":"Sniffer Base Regeneration Level ","color":"green"},{"score":{"name":"%blue","objective":"ssiege_perk_aura"},"color":"green"},{"text":" for ","color":"white"},{"text":"Blue team!","color":"blue"},{"text":" (Cost: ","color":"white"},{"score":{"name":"%blue_cost","objective":"ssiege_perk_aura"},"color":"white"},{"text":")","color":"white"}]
 execute as @s[team=red] run tellraw @a ["",{"selector":"@s"},{"text":" purchased "},{"text":"Sniffer Base Regeneration Level ","color":"green"},{"score":{"name":"%red","objective":"ssiege_perk_aura"},"color":"green"},{"text":" for ","color":"white"},{"text":"Red team!","color":"red"},{"text":" (Cost: ","color":"white"},{"score":{"name":"%red_cost","objective":"ssiege_perk_aura"},"color":"white"},{"text":")","color":"white"}]
+
+# Update Perk score
+execute as @s[team=blue] run scoreboard players add %blue ssiege_perk_aura 1
+execute as @s[team=red] run scoreboard players add %red ssiege_perk_aura 1
 
 # Update Price
 execute as @s[team=blue] run function ssiege:shop/perks/update_blue_perk_costs
