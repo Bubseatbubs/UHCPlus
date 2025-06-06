@@ -4,4 +4,5 @@ scoreboard players operation %blue_inhib_sec uhcp_game_time /= %TICKS_PER_SEC uh
 scoreboard players operation %blue_inhib_sec uhcp_game_time %= %SEC_PER_MIN uhcp_game_time
 scoreboard players operation %blue_inhib_min uhcp_game_time /= %SEC_PER_MIN uhcp_game_time
 
-bossbar set ssiege:blue_sniffer name [{text:"Blue Sniffer [Vulnerable for ",color:blue},{score:{name:"%blue_inhib_min",objective:uhcp_game_time},color:blue},{text:":",color:blue},{score:{name:"%sec",objective:uhcp_game_time},color:blue},{text:"]",color:blue}]
+bossbar set ssiege:blue_sniffer name [{text:"Blue Sniffer [Vulnerable for ",color:blue},{score:{name:"%blue_inhib_min",objective:uhcp_game_time},color:blue},{text:":",color:blue},{score:{name:"%blue_inhib_sec",objective:uhcp_game_time},color:blue},{text:"]",color:blue}]
+execute if score %blue_inhib_sec uhcp_game_time matches ..9 run bossbar set ssiege:blue_sniffer name [{text:"blue Sniffer [Vulnerable for ",color:blue},{score:{name:"%blue_inhib_min",objective:uhcp_game_time},color:blue},{text:":0",color:blue},{score:{name:"%blue_inhib_sec",objective:uhcp_game_time},color:blue},{text:"]",color:blue}]
