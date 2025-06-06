@@ -7,9 +7,7 @@ scoreboard players operation %n uhcp_initStatus *= %MULT_CONST uhcp_initStatus
 scoreboard players operation @e[type=marker,tag=SSIEGE_loot,limit=1,sort=nearest] ssiege_drop_shards = %n uhcp_initStatus
 
 execute as @e[type=marker,tag=SSIEGE_loot,limit=1,sort=nearest] at @s run loot spawn ~ ~ ~ loot ssiege:multi_soulshard
-execute as @e[type=marker,tag=SSIEGE_loot,limit=1,sort=nearest] at @s run loot spawn ~ ~ ~ loot ssiege:multi_gapple
 execute as @e[type=marker,tag=SSIEGE_loot,limit=1,sort=nearest] at @s run tag @e[type=item,nbt={Item:{id:"minecraft:nether_star"}}] add SSIEGE_loot
-execute as @e[type=marker,tag=SSIEGE_loot,limit=1,sort=nearest] at @s run tag @e[type=item,nbt={Item:{id:"minecraft:golden_apple"}}] add SSIEGE_loot
 
 # Apply random velocities to all spawned soul shard items
 execute as @e[type=item,tag=SSIEGE_loot,distance=..10] run data modify entity @s Motion set value [0.0,0.3,0.0]

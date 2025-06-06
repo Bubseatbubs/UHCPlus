@@ -14,6 +14,7 @@ execute in minecraft:overworld positioned 0 200 0 summon minecraft:allay run fun
 execute positioned over motion_blocking_no_leaves as @e[tag=UHCP_Titan] run tp @s ~ ~ ~
 
 # Announce
+title @a clear
 title @a times 20 40 20
 title @a subtitle {"text":"has spawned!","color":"gold"}
 title @a title {"text":"Seraphim","color":"gold"}
