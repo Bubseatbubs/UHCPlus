@@ -11,10 +11,14 @@ execute as @s[team=red] if score @s ssiege_perk_aura < %red_cost ssiege_perk_aur
 execute as @s[team=blue] run scoreboard players add %blue ssiege_perk_aura 1
 execute as @s[team=red] run scoreboard players add %red ssiege_perk_aura 1
 
-# Update Price
-execute as @s[team=blue] run return run function ssiege:shop/perks/update_blue_perk_costs
-execute as @s[team=red] run function ssiege:shop/perks/update_red_perk_costs
-
 # Successful purchase
 execute as @s[team=blue] run tellraw @a ["",{"selector":"@s"},{"text":" purchased "},{"text":"Sniffer Base Regeneration Level ","color":"green"},{"score":{"name":"%blue","objective":"ssiege_perk_aura"},"color":"green"},{"text":" for ","color":"white"},{"text":"Blue team!","color":"blue"},{"text":" (Cost: ","color":"white"},{"score":{"name":"%blue_cost","objective":"ssiege_perk_aura"},"color":"white"},{"text":")","color":"white"}]
 execute as @s[team=red] run tellraw @a ["",{"selector":"@s"},{"text":" purchased "},{"text":"Sniffer Base Regeneration Level ","color":"green"},{"score":{"name":"%red","objective":"ssiege_perk_aura"},"color":"green"},{"text":" for ","color":"white"},{"text":"Red team!","color":"red"},{"text":" (Cost: ","color":"white"},{"score":{"name":"%red_cost","objective":"ssiege_perk_aura"},"color":"white"},{"text":")","color":"white"}]
+
+# Update Price
+execute as @s[team=blue] run function ssiege:shop/perks/update_blue_perk_costs
+execute as @s[team=red] run function ssiege:shop/perks/update_red_perk_costs
+
+# Re-render the shop with new prices for all currently shopping players
+execute as @s[team=blue] as @a[team=blue,scores={ssiege_currently_shopping=1}] run function ssiege:shop/perks/show_blue_perk_shop
+execute as @s[team=red] as @a[team=red,scores={ssiege_currently_shopping=1}] run function ssiege:shop/perks/show_red_perk_shop

@@ -85,6 +85,3 @@ execute if score %red ssiege_perk_titanslayer matches 4 run scoreboard players s
 execute if score %red ssiege_perk_titanslayer matches 4 run scoreboard players operation %red_cost ssiege_perk_titanslayer *= #24 uhcp_initStatus
 
 execute if score %red ssiege_perk_titanslayer matches 5.. run scoreboard players set %red_cost ssiege_perk_titanslayer 999
-
-# Re-render the shop with new prices for all currently shopping players
-execute as @s[team=red] as @a[team=red,scores={ssiege_currently_shopping=1}] run function ssiege:shop/perks/show_red_perk_shop

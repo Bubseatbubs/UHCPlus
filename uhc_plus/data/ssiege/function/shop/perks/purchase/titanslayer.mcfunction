@@ -13,10 +13,15 @@ execute as @s[team=red] run scoreboard players add %red ssiege_perk_titanslayer 
 
 function ssiege:shop/perks/effects/titan_slayer
 
-# Update Price
-execute as @s[team=blue] run return run function ssiege:shop/perks/update_blue_perk_costs
-execute as @s[team=red] run function ssiege:shop/perks/update_red_perk_costs
+
 
 # Successful purchase
 execute as @s[team=blue] run tellraw @a ["",{"selector":"@s"},{"text":" purchased "},{"text":"Titan Slayer Level ","color":"green"},{"score":{"name":"%blue","objective":"ssiege_perk_titanslayer"},"color":"green"},{"text":" for ","color":"white"},{"text":"Blue team!","color":"blue"},{"text":" (Cost: ","color":"white"},{"score":{"name":"%blue_cost","objective":"ssiege_perk_titanslayer"},"color":"white"},{"text":")","color":"white"}]
 execute as @s[team=red] run tellraw @a ["",{"selector":"@s"},{"text":" purchased "},{"text":"Titan Slayer Level ","color":"green"},{"score":{"name":"%red","objective":"ssiege_perk_titanslayer"},"color":"green"},{"text":" for ","color":"white"},{"text":"Red team!","color":"red"},{"text":" (Cost: ","color":"white"},{"score":{"name":"%red_cost","objective":"ssiege_perk_titanslayer"},"color":"white"},{"text":")","color":"white"}]
+
+# Update Price
+execute as @s[team=blue] run function ssiege:shop/perks/update_blue_perk_costs
+execute as @s[team=red] run function ssiege:shop/perks/update_red_perk_costs
+# Re-render the shop with new prices for all currently shopping players
+execute as @s[team=blue] as @a[team=blue,scores={ssiege_currently_shopping=1}] run function ssiege:shop/perks/show_blue_perk_shop
+execute as @s[team=red] as @a[team=red,scores={ssiege_currently_shopping=1}] run function ssiege:shop/perks/show_red_perk_shop
