@@ -13,9 +13,6 @@ scoreboard players add %time uhcp_game_time 1
 execute if score %time uhcp_game_time matches ..17980 run effect give @e[tag=SSIEGE_inhib] resistance 1 4 true
 execute if score %time uhcp_game_time matches 18000 run tellraw @a "The Inhibitors are no longer invulnerable!"
 
-# Low sniffer regen
-function ssiege:bases/sniffers/low_health_regen
-
 # Inhibitor/Turret update
 function ssiege:bases/inhibitors/update
 
@@ -164,9 +161,10 @@ execute if score %time uhcp_game_time >= %sonar uhcp_game_time run function ssie
 execute if score %red ssiege_perk_regen matches 2.. if score %time uhcp_game_time >= %red_regen uhcp_game_time run function ssiege:shop/perks/effects/red_regen
 execute if score %blue ssiege_perk_regen matches 2.. if score %time uhcp_game_time >= %blue_regen uhcp_game_time run function ssiege:shop/perks/effects/blue_regen
 
-# Sniffer Aura Perk
-execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssiege:shop/perks/effects/sniffer_aura
+# Sniffer Aura Perk - sniffer regen must be run first as %aura is updated in second function
 execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssiege:bases/sniffers/low_health_regen
+execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssiege:shop/perks/effects/sniffer_aura
+
 
 # Titans TODO: Cleanup implementation with >= check to account for any possible change in time
 scoreboard players add %titans uhcp_game_time 1
