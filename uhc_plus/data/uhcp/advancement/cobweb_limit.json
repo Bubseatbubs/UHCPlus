@@ -11,7 +11,7 @@
               "entity": "this",
               "scores": {
                 "uhcp_leave": {
-                  "min": 1000
+                  "min": 950
                 }
               }
             }
@@ -36,7 +36,7 @@
                 "type": "minecraft:fixed",
                 "name": "%cobweb_limit"
               },
-              "score": "ssiege_cobwebCount"
+              "score": "uhcp_settings"
             },
             "range": {
               "min": 0,
@@ -57,13 +57,13 @@
           },
           {
             "condition": "minecraft:reference",
-            "name": "ssiege:cobwebs"
+            "name": "uhcp:cobwebs"
           }
         ]
       }
     }
   },
   "rewards": {
-    "function": "ssiege:cobweb_limit/defer"
+    "function": "uhcp:cobweb_limit/defer"
   }
 }

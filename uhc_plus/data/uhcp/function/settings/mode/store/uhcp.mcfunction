@@ -9,6 +9,9 @@ scoreboard players operation %arrow_limit149_store uhcp_settings = %arrow_limit1
 scoreboard players operation %arrow_limit5_store uhcp_settings = %arrow_limit5 uhcp_arrowCount
 scoreboard players operation %arrow_limit201_store uhcp_settings = %arrow_limit201 uhcp_arrowCount
 
+# Cobweb limit
+scoreboard players operation %cobweb_limit_store uhcp_settings = %cobweb_limit uhcp_settings
+
 # Border size
 scoreboard players operation %border_size_store uhcp_settings = %border_size uhcp_settings
 

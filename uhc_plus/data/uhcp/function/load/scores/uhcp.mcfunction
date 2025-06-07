@@ -5,6 +5,9 @@ execute unless score %tier uhcp_aug_tier = %tier uhcp_aug_tier if score %random 
 # Arrow limits
 execute unless score %arrow_limit uhcp_arrowCount = %arrow_limit uhcp_arrowCount run function uhcp:load/scores/arrow_limit
 
+# Cobweb limit
+execute unless score %cobweb_limit uhcp_settings = %cobweb_limit uhcp_settings run scoreboard players operation %cobweb_limit uhcp_settings = %cobweb_limit_def uhcp_settings
+
 # Border size
 execute unless score %border_size uhcp_settings = %border_size uhcp_settings run scoreboard players operation %border_size uhcp_settings = %border_size_def uhcp_settings
 

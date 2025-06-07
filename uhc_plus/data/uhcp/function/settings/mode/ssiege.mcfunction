@@ -13,10 +13,13 @@ scoreboard players operation %random uhcp_aug_tier = %random ssiege_settings
 function uhcp:settings/mode/ssiege/augment
 
 # Arrow limits
-scoreboard players operation %arrow_limit uhcp_settings = %arrow_limit ssiege_settings
-scoreboard players operation %arrow_limit149 uhcp_settings = %arrow_limit149 ssiege_settings
-scoreboard players operation %arrow_limit5 uhcp_settings = %arrow_limit5 ssiege_settings
-scoreboard players operation %arrow_limit201 uhcp_settings = %arrow_limit201 ssiege_settings
+scoreboard players operation %arrow_limit uhcp_arrowCount = %arrow_limit ssiege_settings
+scoreboard players operation %arrow_limit149 uhcp_arrowCount = %arrow_limit149 ssiege_settings
+scoreboard players operation %arrow_limit5 uhcp_arrowCount = %arrow_limit5 ssiege_settings
+scoreboard players operation %arrow_limit201 uhcp_arrowCount = %arrow_limit201 ssiege_settings
+
+# Cobweb limit
+scoreboard players operation %cobweb_limit uhcp_settings = %cobweb_limit ssiege_settings
 
 # Border size
 scoreboard players operation %border_size uhcp_settings = %border_size ssiege_settings

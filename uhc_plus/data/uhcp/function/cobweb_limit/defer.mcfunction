@@ -1,2 +1,2 @@
 # Tag player to be checked for cobweb limit
-tag @s add SSIEGE_CobwebCheck
+tag @s add UHCP_CobwebCheck

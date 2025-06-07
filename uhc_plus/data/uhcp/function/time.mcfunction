@@ -8,6 +8,10 @@ scoreboard players add %time uhcp_game_time 1
 execute as @a[tag=UHCP_ArrowCheck] at @s run function uhcp:arrow_limit/check
 tag @a remove UHCP_ArrowCheck
 
+# Cobweb limit
+execute as @a[tag=UHCP_CobwebCheck] at @s run function uhcp:cobweb_limit/check
+tag @a remove UHCP_CobwebCheck
+
 # World border
 execute unless score %border_countdown uhcp_game_time matches ..-1 run function uhcp:border
 
