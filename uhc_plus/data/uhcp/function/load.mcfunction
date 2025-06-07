@@ -130,6 +130,7 @@ scoreboard objectives add ssiege_rune_vitality dummy
 scoreboard objectives add ssiege_settings dummy
 scoreboard objectives add ssiege_shards dummy
 scoreboard objectives add ssiege_unlocked_runesmith dummy
+scoreboard objectives add ssiege_cobwebCount dummy
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health
