@@ -1,10 +1,7 @@
 # Test kit
 scoreboard players set @s uhcp_leave 1000
 
-item replace entity @s container.0 with minecraft:diamond_sword[minecraft:enchantments={"minecraft:sharpness":3}]
 item replace entity @s container.1 with minecraft:diamond_pickaxe[minecraft:enchantments={"minecraft:efficiency":1}]
-item replace entity @s container.2 with minecraft:diamond_axe[minecraft:enchantments={"minecraft:sharpness":2}]
-item replace entity @s container.3 with minecraft:bow[minecraft:enchantments={"minecraft:power":2}]
 item replace entity @s container.4 with minecraft:water_bucket
 item replace entity @s container.5 with minecraft:lava_bucket
 item replace entity @s container.6 with minecraft:cobweb 8
@@ -30,10 +27,7 @@ loot replace entity @s container.24 loot uhcp:relics/radiant/soulflames_embrace
 loot replace entity @s container.25 loot uhcp:relics/radiant/web_o_rang
 loot replace entity @s container.26 loot uhcp:relics/radiant/windfall
 
-item replace entity @s armor.head with minecraft:diamond_helmet[minecraft:enchantments={"minecraft:protection":2}]
-item replace entity @s armor.chest with minecraft:diamond_chestplate[minecraft:enchantments={"minecraft:protection":2}]
-item replace entity @s armor.legs with minecraft:diamond_leggings[minecraft:enchantments={"minecraft:protection":2}]
-item replace entity @s armor.feet with minecraft:diamond_boots[minecraft:enchantments={"minecraft:protection":2}]
+function uhcp:testkit/enchantments
 item replace entity @s weapon.offhand with minecraft:shield
 
 function uhcp:testkit/last_row

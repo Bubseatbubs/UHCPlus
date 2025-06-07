@@ -304,7 +304,7 @@ scoreboard players set %apple_limit_def ssiege_settings 1
 scoreboard players set %uhcp_loot_def uhcp_settings 1
 scoreboard players set %uhcp_loot_def ssiege_settings 1
 
-# Enchantment reduction (Sharpness I / Protection I cap, remove Fire Aspect / Flame)
+# Enchantment reduction (cap: Sharpness I / Protection I / Power I; remove: Fire Aspect / Flame)
 scoreboard players set %enchant_reduce_def uhcp_settings 0
 scoreboard players set %enchant_reduce_def ssiege_settings 1
 

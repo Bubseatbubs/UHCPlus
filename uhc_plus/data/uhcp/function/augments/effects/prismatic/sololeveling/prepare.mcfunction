@@ -113,3 +113,9 @@ data modify storage uhcp:solo_level Item[4] append value {id:"minecraft:netherit
 data modify storage uhcp:solo_level Item[5] append value {id:"minecraft:netherite_chestplate",components:{"minecraft:custom_data":{solo_item:5b,solo_level:1b,solo_stage:7b,uhcp_instantpickup:1b},"minecraft:enchantments":{"minecraft:protection":4,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1},"!minecraft:enchantable":{},"minecraft:repair_cost":2147483647,"!minecraft:repairable":{}}}
 data modify storage uhcp:solo_level Item[6] append value {id:"minecraft:netherite_leggings",components:{"minecraft:custom_data":{solo_item:6b,solo_level:1b,solo_stage:7b,uhcp_instantpickup:1b},"minecraft:enchantments":{"minecraft:protection":4,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1},"!minecraft:enchantable":{},"minecraft:repair_cost":2147483647,"!minecraft:repairable":{}}}
 data modify storage uhcp:solo_level Item[7] append value {id:"minecraft:netherite_boots",components:{"minecraft:custom_data":{solo_item:7b,solo_level:1b,solo_stage:7b,uhcp_instantpickup:1b},"minecraft:enchantments":{"minecraft:protection":4,"minecraft:unbreaking":3,"minecraft:mending":1,"minecraft:binding_curse":1},"!minecraft:enchantable":{},"minecraft:repair_cost":2147483647,"!minecraft:repairable":{}}}
+
+# Restrict sharpness, protection, and power
+execute unless score %enchant_reduce uhcp_settings matches 1 run return fail
+data modify storage uhcp:solo_level Item[][].components."minecraft:enchantments"."minecraft:sharpness" set value 1
+data modify storage uhcp:solo_level Item[][].components."minecraft:enchantments"."minecraft:power" set value 1
+data modify storage uhcp:solo_level Item[][].components."minecraft:enchantments"."minecraft:protection" set value 1

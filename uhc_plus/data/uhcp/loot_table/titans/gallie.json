@@ -16,7 +16,7 @@
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:unbreaking": 3,
-                "minecraft:flame": 1,
+                "uhcp:flame": 1,
                 "minecraft:power": 1,
                 "minecraft:multishot": 1,
                 "minecraft:piercing": 1,

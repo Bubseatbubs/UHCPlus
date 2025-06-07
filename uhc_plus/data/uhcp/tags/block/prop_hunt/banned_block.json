@@ -3,6 +3,7 @@
     "#minecraft:leaves",
     "#uhcp:containers",
     "#uhcp:no_hitbox_blocks",
+    "minecraft:flower_pot",
     "minecraft:grass_block",
     "minecraft:snow"
   ]
