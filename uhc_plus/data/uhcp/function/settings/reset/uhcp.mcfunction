@@ -5,6 +5,9 @@ function uhcp:settings/reset/augment
 # Arrow limits
 function uhcp:load/scores/arrow_limit
 
+# Cobweb limit
+scoreboard players operation %cobweb_limit uhcp_settings = %cobweb_limit_def uhcp_settings
+
 # Border size
 scoreboard players operation %border_size uhcp_settings = %border_size_def uhcp_settings
 

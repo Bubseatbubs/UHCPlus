@@ -72,6 +72,7 @@ tag @a remove UHCP_AteApple
 tag @a remove UHCP_AugmentRerollSlot1
 tag @a remove UHCP_AugmentRerollSlot2
 tag @a remove UHCP_AugmentRerollSlot3
+tag @a remove UHCP_CobwebCheck
 tag @a remove UHCP_Died
 tag @a remove UHCP_DisableArmorAndOffhand
 tag @a remove UHCP_Explode

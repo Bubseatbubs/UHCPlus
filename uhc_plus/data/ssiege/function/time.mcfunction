@@ -21,8 +21,8 @@ execute as @a[tag=UHCP_ArrowCheck] at @s run function uhcp:arrow_limit/check
 tag @a remove UHCP_ArrowCheck
 
 # Cobweb limit
-execute as @a[tag=SSIEGE_CobwebCheck] at @s run function ssiege:cobweb_limit/check
-tag @a remove SSIEGE_CobwebCheck
+execute as @a[tag=UHCP_CobwebCheck] at @s run function uhcp:cobweb_limit/check
+tag @a remove UHCP_CobwebCheck
 
 # Eternal day
 execute if score %time uhcp_game_time matches 24000..24500 in minecraft:overworld run function uhcp:day/run

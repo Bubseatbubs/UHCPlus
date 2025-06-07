@@ -13,10 +13,13 @@ scoreboard players operation %random uhcp_aug_tier = %random_store uhcp_settings
 function uhcp:settings/mode/uhcp/augment
 
 # Arrow limits
-scoreboard players operation %arrow_limit uhcp_settings = %arrow_limit_store uhcp_settings
-scoreboard players operation %arrow_limit149 uhcp_settings = %arrow_limit149_store uhcp_settings
-scoreboard players operation %arrow_limit5 uhcp_settings = %arrow_limit5_store uhcp_settings
-scoreboard players operation %arrow_limit201 uhcp_settings = %arrow_limit201_store uhcp_settings
+scoreboard players operation %arrow_limit uhcp_arrowCount = %arrow_limit_store uhcp_settings
+scoreboard players operation %arrow_limit149 uhcp_arrowCount = %arrow_limit149_store uhcp_settings
+scoreboard players operation %arrow_limit5 uhcp_arrowCount = %arrow_limit5_store uhcp_settings
+scoreboard players operation %arrow_limit201 uhcp_arrowCount = %arrow_limit201_store uhcp_settings
+
+# Cobweb limit
+scoreboard players operation %cobweb_limit uhcp_settings = %cobweb_limit_store uhcp_settings
 
 # Border size
 scoreboard players operation %border_size uhcp_settings = %border_size_store uhcp_settings

@@ -4,6 +4,7 @@ tag @s remove UHCP_AteApple
 tag @s remove UHCP_AugmentRerollSlot1
 tag @s remove UHCP_AugmentRerollSlot2
 tag @s remove UHCP_AugmentRerollSlot3
+tag @s remove UHCP_CobwebCheck
 tag @s remove UHCP_Died
 tag @s remove UHCP_DisableArmorAndOffhand
 tag @s remove UHCP_Explode
