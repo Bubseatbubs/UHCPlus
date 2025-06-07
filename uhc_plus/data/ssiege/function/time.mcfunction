@@ -158,8 +158,8 @@ execute as @e[type=villager,tag=SSIEGE_RED_SHOPKEEPER] at @s run scoreboard play
 execute if score %time uhcp_game_time >= %sonar uhcp_game_time run function ssiege:shop/perks/effects/sniffer_sonar
 
 # Regen Perk
-execute if score %red ssiege_perk_regen matches 2.. if score %time uhcp_game_time >= %red_regen uhcp_game_time run function ssiege:shop/perks/effects/red_regen
-execute if score %blue ssiege_perk_regen matches 2.. if score %time uhcp_game_time >= %blue_regen uhcp_game_time run function ssiege:shop/perks/effects/blue_regen
+execute if score %red ssiege_perk_regen matches 1.. if score %time uhcp_game_time >= %red_regen uhcp_game_time run function ssiege:shop/perks/effects/red_regen
+execute if score %blue ssiege_perk_regen matches 1.. if score %time uhcp_game_time >= %blue_regen uhcp_game_time run function ssiege:shop/perks/effects/blue_regen
 
 # Sniffer Aura Perk - sniffer regen must be run first as %aura is updated in second function
 execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssiege:bases/sniffers/low_health_regen
