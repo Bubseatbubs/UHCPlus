@@ -6,12 +6,11 @@ scoreboard players operation @s uhcp_initStatus -= %cobweb_limit uhcp_settings
 scoreboard players set @s uhcp_leave 1000
 
 # Remove excess cobwebs
-scoreboard players set %stack uhcp_arrowCount 64
 scoreboard players operation %limit uhcp_arrowCount = @s uhcp_initStatus
-scoreboard players operation @s uhcp_initStatus /= %stack uhcp_arrowCount
+scoreboard players operation @s uhcp_initStatus /= #64 uhcp_const
 execute if score @s uhcp_initStatus matches 1.. run function uhcp:cobweb_limit/stack
 
-scoreboard players operation %limit uhcp_arrowCount %= %stack uhcp_arrowCount
+scoreboard players operation %limit uhcp_arrowCount %= #64 uhcp_const
 execute if score %limit uhcp_arrowCount matches 0 run return run function uhcp:cobweb_limit/end
 
 # Following stacks

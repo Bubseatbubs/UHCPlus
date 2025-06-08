@@ -2,12 +2,11 @@
 execute if score @s uhcp_arrowCount <= @s uhcp_initStatus run return run function uhcp:arrow_limit/arrow/all
 scoreboard players operation @s uhcp_arrowCount -= @s uhcp_initStatus
 
-scoreboard players set %stack uhcp_arrowCount 64
 scoreboard players operation %limit uhcp_arrowCount = @s uhcp_initStatus
-scoreboard players operation @s uhcp_initStatus /= %stack uhcp_arrowCount
+scoreboard players operation @s uhcp_initStatus /= #64 uhcp_const
 execute if score @s uhcp_initStatus matches 1.. run function uhcp:arrow_limit/arrow/stack
 
-scoreboard players operation %limit uhcp_arrowCount %= %stack uhcp_arrowCount
+scoreboard players operation %limit uhcp_arrowCount %= #64 uhcp_const
 execute if score %limit uhcp_arrowCount matches 0 run return run function uhcp:arrow_limit/spectral/limit
 
 tag @s add UHCP_ArrowLimit
@@ -21,12 +20,11 @@ execute if score @s uhcp_initStatus matches 0 run return run function uhcp:arrow
 # Remove excess spectral arrows over limit
 execute if score @s uhcp_arrowCount <= @s uhcp_initStatus run return run function uhcp:arrow_limit/spectral/all/late
 
-scoreboard players set %stack uhcp_arrowCount 64
 scoreboard players operation %limit uhcp_arrowCount = @s uhcp_initStatus
-scoreboard players operation @s uhcp_initStatus /= %stack uhcp_arrowCount
+scoreboard players operation @s uhcp_initStatus /= #64 uhcp_const
 execute if score @s uhcp_initStatus matches 1.. run function uhcp:arrow_limit/spectral/stack
 
-scoreboard players operation %limit uhcp_arrowCount %= %stack uhcp_arrowCount
+scoreboard players operation %limit uhcp_arrowCount %= #64 uhcp_const
 execute if score %limit uhcp_arrowCount matches 0 run return run function uhcp:arrow_limit/end/late
 
 summon minecraft:item ~ ~ ~ {Tags:["UHCP_New"],PickupDelay:40s,Item:{id:"minecraft:spectral_arrow"}}

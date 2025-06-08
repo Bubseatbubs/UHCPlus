@@ -3,9 +3,8 @@ execute as @e[type=!#uhcp:inanimate_mobs,tag=!UHCP_Titan,tag=!UHCP_Minion,distan
 tag @s remove UHCP_CurrentTitan
 
 scoreboard players set %containers uhcp_settings 0
-scoreboard players set #30 uhcp_initStatus 30
 scoreboard players operation %temp uhcp_initStatus = %time uhcp_game_time
-scoreboard players operation %temp uhcp_initStatus %= #30 uhcp_initStatus
+scoreboard players operation %temp uhcp_initStatus %= #30 uhcp_const
 fill ~-4.5 ~ ~-4.5 ~4.5 ~16 ~4.5 minecraft:air replace #uhcp:containers destroy
 execute store result score %blocksfilled uhcp_titans_count run fill ~-4.5 ~1 ~-4.5 ~4.5 ~16 ~4.5 minecraft:air replace #uhcp:titan_can_break
 execute if score %temp uhcp_initStatus matches 0 run execute store result score %blocksfilled2 uhcp_titans_count run fill ~-4.5 ~ ~-4.5 ~4.5 ~ ~4.5 minecraft:air replace #uhcp:titan_can_break

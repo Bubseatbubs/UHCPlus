@@ -2,9 +2,8 @@ execute store result score @s uhcp_titans_count run data get entity @s Health
 execute as @s[tag=!UHCP_Threshold4] run function uhcp:titans/gerald/threshold
 
 scoreboard players set %containers uhcp_settings 0
-scoreboard players set #30 uhcp_initStatus 30
 scoreboard players operation %temp uhcp_initStatus = %time uhcp_game_time
-scoreboard players operation %temp uhcp_initStatus %= #30 uhcp_initStatus
+scoreboard players operation %temp uhcp_initStatus %= #30 uhcp_const
 fill ~-4 ~ ~-4 ~4 ~6 ~4 minecraft:air replace #uhcp:containers destroy
 execute store result score %blocksfilled uhcp_titans_count run fill ~-4 ~1 ~-4 ~4 ~6 ~4 minecraft:air replace #uhcp:titan_can_break
 execute if score %temp uhcp_initStatus matches 0 run execute store result score %blocksfilled2 uhcp_titans_count run fill ~-4 ~ ~-4 ~4 ~ ~4 minecraft:air replace #uhcp:titan_can_break

@@ -46,6 +46,7 @@ scoreboard objectives add uhcp_aug_stack dummy
 scoreboard objectives add uhcp_aug_tier dummy
 scoreboard objectives add uhcp_aug_time dummy
 scoreboard objectives add uhcp_augment dummy
+scoreboard objectives add uhcp_const dummy
 scoreboard objectives add uhcp_count dummy
 scoreboard objectives add uhcp_death deathCount
 scoreboard objectives add uhcp_deathTime dummy
