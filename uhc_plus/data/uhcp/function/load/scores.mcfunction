@@ -9,6 +9,8 @@ scoreboard players set #24 uhcp_const 24
 scoreboard players set #30 uhcp_const 30
 scoreboard players set #60 uhcp_const 60
 scoreboard players set #64 uhcp_const 64
+scoreboard players set %TICKS_PER_SEC uhcp_game_time 20
+scoreboard players set %SEC_PER_MIN uhcp_game_time 60
 
 # Set game mode if unset
 execute unless score %mode uhcp_settings = %mode uhcp_settings run scoreboard players operation %mode uhcp_settings = %mode_def uhcp_settings

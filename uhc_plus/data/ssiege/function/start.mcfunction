@@ -143,8 +143,6 @@ scoreboard players set %blue_inhib_respawn uhcp_game_time 0
 scoreboard players set %red_inhib_respawn uhcp_game_time 0
 scoreboard players set %blue_inhib_up uhcp_game_time 1
 scoreboard players set %red_inhib_up uhcp_game_time 1
-scoreboard players set %TICKS_PER_SEC uhcp_game_time 20
-scoreboard players set %SEC_PER_MIN uhcp_game_time 60
 
 # Turn off friendly invisibles
 team modify blue seeFriendlyInvisibles false
