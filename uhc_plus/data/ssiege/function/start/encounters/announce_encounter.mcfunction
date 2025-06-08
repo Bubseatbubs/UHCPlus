@@ -2,7 +2,7 @@ execute if score %encounter ssiege_current_encounter matches 1 run tellraw @a [{
 execute if score %encounter ssiege_current_encounter matches 2 run tellraw @a [{"text":"Rainsplosion","color":"gold"},{"text":" generates extra structures on the map.","color":"white"}]
 execute if score %encounter ssiege_current_encounter matches 3 run tellraw @a [{"text":"superiority","color":"gold"},{"text":" changes the Augment to Prismatic this game.","color":"white"}]
 execute if score %encounter ssiege_current_encounter matches 4 run tellraw @a [{"text":"biribiri","color":"gold"},{"text":" gives everyone a Fishing Rod.","color":"white"}]
-execute if score %encounter ssiege_current_encounter matches 5 run tellraw @a [{"text":"azienbarney","color":"gold"},{"text":" gives everyone money every few minutes.","color":"white"}]
+execute if score %encounter ssiege_current_encounter matches 5 run tellraw @a [{"text":"azienbarney","color":"gold"},{"text":" gives everyone Gold every few minutes.","color":"white"}]
 execute if score %encounter ssiege_current_encounter matches 6 run tellraw @a [{"text":"Shoma","color":"gold"},{"text":" balls","color":"white"}]
 execute if score %encounter ssiege_current_encounter matches 7 run tellraw @a [{"text":"Every 5 minutes, ","color":"white"},{"text":"humbug","color":"gold"},{"text":" gives everyone loot from a highly varied pool!","color":"white"}]
 execute if score %encounter ssiege_current_encounter matches 8 run tellraw @a [{"text":"Upsetmax","color":"gold"},{"text":" grants everyone materials to build traps.","color":"white"}]

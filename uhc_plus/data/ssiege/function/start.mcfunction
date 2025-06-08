@@ -20,7 +20,6 @@ scoreboard players set %end uhcp_initStatus 0
 scoreboard players set %game uhcp_initStatus 1
 scoreboard players set %time uhcp_initStatus 0
 scoreboard players set %time_freeze uhcp_initStatus 0
-scoreboard players set %titans uhcp_game_time 6000
 scoreboard players set %apple uhcp_game_time 0
 scoreboard players set %update_display uhcp_game_time 10
 execute if score %dimension uhcp_settings matches ..-1 run scoreboard players set %dimension uhcp_settings 0
@@ -126,8 +125,9 @@ function ssiege:shop/perks/update_blue_perk_costs
 function ssiege:shop/perks/update_red_perk_costs
 
 # Set Timers
-scoreboard players set %titans uhcp_game_time 0
-scoreboard players set %encounter_timer uhcp_game_time 0
+scoreboard players set %titans uhcp_game_time 18000
+scoreboard players set %giant_timer ssiege_giants 12000
+scoreboard players set %infernus_check uhcp_game_time 60000
 
 # Set Perk Timers
 scoreboard players set %sonar uhcp_game_time 0
@@ -153,9 +153,6 @@ execute as @a[tag=!UHCP_Spectator] run function uhcp:start/id/player
 
 # Initialize Opening Encounter
 function ssiege:start/encounters/init
-
-# Giants don't start spawning until 10 minutes
-scoreboard players set %giant_timer ssiege_giants 12000
 
 # After a 10 second delay, start augment selection
 schedule function ssiege:start_augment_selection 200

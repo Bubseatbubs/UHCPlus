@@ -164,19 +164,14 @@ execute if score %blue ssiege_perk_regen matches 1.. if score %time uhcp_game_ti
 execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssiege:bases/sniffers/low_health_regen
 execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssiege:shop/perks/effects/sniffer_aura
 
-
-# Titans TODO: Cleanup implementation with >= check to account for any possible change in time
-scoreboard players add %titans uhcp_game_time 1
-function ssiege:titans/timed
+# Titan Spawning
+execute if score %time uhcp_game_time = %titans uhcp_game_time run function ssiege:titans/timed
 
 # Infernus Blessing
-execute if score %titans uhcp_game_time matches 60000.. run scoreboard players add %infernus_check uhcp_game_time 1
-execute if score %titans uhcp_game_time matches 60000.. if score %infernus_check uhcp_game_time matches 20.. run function ssiege:titans/infernus/handle_burning
-execute if score %titans uhcp_game_time matches 60000.. if score %infernus_check uhcp_game_time matches 20.. run scoreboard players set %infernus_check uhcp_game_time 0
+execute if score %time uhcp_game_time >= %infernus_check uhcp_game_time run function ssiege:titans/infernus/update_blessing
 
-# Encounters
+# Time-Based Encounters
 execute if score %time uhcp_game_time >= %encounter_time uhcp_game_time run function ssiege:start/encounters/effects/timed
-execute if score %time uhcp_game_time >= %encounter_time uhcp_game_time run scoreboard players add %encounter_time uhcp_game_time 6000
 
 # Giants
 execute if score %time uhcp_game_time >= %giant_timer ssiege_giants in minecraft:overworld run function ssiege:giants/init_wave
