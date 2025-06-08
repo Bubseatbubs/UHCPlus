@@ -6,13 +6,15 @@ tag @s remove UHCP_AugmentRerollSlot1
 tag @s remove UHCP_AugmentRerollSlot2
 tag @s remove UHCP_AugmentRerollSlot3
 tag @s remove UHCP_CobwebCheck
+tag @s remove UHCP_Defer
+tag @s remove UHCP_DiamondRough
 tag @s remove UHCP_Died
 tag @s remove UHCP_DisableArmorAndOffhand
 tag @s remove UHCP_Explode
 tag @s remove UHCP_HighTide
 tag @s remove UHCP_MilkBucket
 tag @s remove UHCP_RelicTestingChamber
-tag @a remove UHCP_SLLock
+tag @s remove UHCP_SLLock
 tag @s remove UHCP_SoulflameEmbrace
 execute if score @s uhcp_augment matches 220 run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 execute if score @s uhcp_augment matches 25 run function uhcp:augments/effects/gold/scavengerhunt/reset
@@ -61,7 +63,7 @@ scoreboard players set @s uhcp_ready 0
 scoreboard players set @s uhcp_team 0
 
 # Necessary advancements
-advancement revoke @s only uhcp:arrow_limit
+advancement revoke @s from uhcp:defer
 
 # Assign IDs
 scoreboard players operation @s uhcp_game_id = %global uhcp_game_id

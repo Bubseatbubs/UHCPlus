@@ -16,13 +16,8 @@ execute if score %time uhcp_game_time matches 18000 run tellraw @a "The Inhibito
 # Inhibitor/Turret update
 function ssiege:bases/inhibitors/update
 
-# Arrow limit
-execute as @a[tag=UHCP_ArrowCheck] at @s run function uhcp:arrow_limit/check
-tag @a remove UHCP_ArrowCheck
-
-# Cobweb limit
-execute as @a[tag=UHCP_CobwebCheck] at @s run function uhcp:cobweb_limit/check
-tag @a remove UHCP_CobwebCheck
+# Deferred inventory management
+execute if entity @a[tag=UHCP_Defer] run function uhcp:defer
 
 # Eternal day
 execute if score %time uhcp_game_time matches 24000..24500 in minecraft:overworld run function uhcp:day/run

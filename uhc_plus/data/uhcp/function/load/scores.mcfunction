@@ -1,4 +1,5 @@
 # Constants
+scoreboard players set #-15 uhcp_const -15
 scoreboard players set #2 uhcp_const 2
 scoreboard players set #3 uhcp_const 3
 scoreboard players set #4 uhcp_const 4

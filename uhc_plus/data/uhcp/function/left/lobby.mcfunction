@@ -5,6 +5,8 @@ tag @s remove UHCP_AugmentRerollSlot1
 tag @s remove UHCP_AugmentRerollSlot2
 tag @s remove UHCP_AugmentRerollSlot3
 tag @s remove UHCP_CobwebCheck
+tag @s remove UHCP_Defer
+tag @s remove UHCP_DiamondRough
 tag @s remove UHCP_Died
 tag @s remove UHCP_DisableArmorAndOffhand
 tag @s remove UHCP_Explode
@@ -44,7 +46,7 @@ scoreboard players reset @s uhcp_top_delay
 function uhcp:left/lobby/identification
 
 # Necessary advancements
-advancement revoke @s only uhcp:arrow_limit
+advancement revoke @s from uhcp:defer
 
 # Return player as needed
 execute in minecraft:overworld run forceload add -80 -80 79 79

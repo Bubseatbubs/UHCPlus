@@ -73,6 +73,8 @@ tag @a remove UHCP_AugmentRerollSlot1
 tag @a remove UHCP_AugmentRerollSlot2
 tag @a remove UHCP_AugmentRerollSlot3
 tag @a remove UHCP_CobwebCheck
+tag @a remove UHCP_Defer
+tag @a remove UHCP_DiamondRough
 tag @a remove UHCP_Died
 tag @a remove UHCP_DisableArmorAndOffhand
 tag @a remove UHCP_Explode
@@ -147,7 +149,7 @@ scoreboard players reset @a ssiege_killstreak
 scoreboard players reset @a ssiege_shards
 
 # Necessary advancments
-advancement revoke @a only uhcp:arrow_limit
+advancement revoke @a from uhcp:defer
 
 # Load dimension countdown
 scoreboard players operation %dimension uhcp_settings = %dimension_retain uhcp_settings

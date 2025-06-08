@@ -4,13 +4,8 @@ execute unless score %end uhcp_initStatus matches 1 if entity @a run function uh
 # Game time
 scoreboard players add %time uhcp_game_time 1
 
-# Arrow limit
-execute as @a[tag=UHCP_ArrowCheck] at @s run function uhcp:arrow_limit/check
-tag @a remove UHCP_ArrowCheck
-
-# Cobweb limit
-execute as @a[tag=UHCP_CobwebCheck] at @s run function uhcp:cobweb_limit/check
-tag @a remove UHCP_CobwebCheck
+# Deferred inventory management
+execute if entity @a[tag=UHCP_Defer] run function uhcp:defer
 
 # World border
 execute unless score %border_countdown uhcp_game_time matches ..-1 run function uhcp:border

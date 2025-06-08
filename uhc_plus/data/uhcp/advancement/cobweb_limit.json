@@ -1,4 +1,5 @@
 {
+  "parent": "uhcp:defer",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

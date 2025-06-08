@@ -1,5 +1,3 @@
-execute if score %mode settings matches 0 run advancement revoke @s only uhcp:augments/attacked_with_bees
-
 # Increase attack stacks
 scoreboard players add @s uhcp_aug_count 1
 
