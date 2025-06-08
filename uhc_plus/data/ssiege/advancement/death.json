@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "ssiege:kill/death"
+    "function": "ssiege:kill/death/init"
   }
 }

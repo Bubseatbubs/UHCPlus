@@ -22,7 +22,7 @@ execute as @s[tag=UHCP_Explode] run schedule function ssiege:kill/explode_specta
 
 # Set death timer
 scoreboard players operation @s ssiege_death_timer = %respawn_time ssiege_death_timer
-scoreboard players display name @s uhcp_game_display [{"selector":"@s"},{text:" Respawn:"}]
+scoreboard players display name @s uhcp_game_display [{"selector":"@s"},{text:" respawn:"}]
 scoreboard players operation @s uhcp_game_display = @s ssiege_death_timer
 
 # Situational checks

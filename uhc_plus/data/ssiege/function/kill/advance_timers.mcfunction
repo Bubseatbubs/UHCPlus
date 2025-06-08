@@ -9,7 +9,7 @@ execute if score %second_passed ssiege_death_timer matches 20.. run execute as @
 execute if score %second_passed ssiege_death_timer matches 20.. run scoreboard players set %second_passed ssiege_death_timer 0
 
 # Update death timer display for dead players
-execute as @a[gamemode=spectator, tag=SSIEGE_dead] if score @s ssiege_death_timer matches 0.. run title @a times 0 20 0
+execute as @a[gamemode=spectator, tag=SSIEGE_dead] if score @s ssiege_death_timer matches 0.. run title @s times 0 20 0
 execute as @a[gamemode=spectator, tag=SSIEGE_dead] if score @s ssiege_death_timer matches 0.. run title @s subtitle {text:"seconds until respawn"}
 execute as @a[gamemode=spectator, tag=SSIEGE_dead] if score @s ssiege_death_timer matches 0.. run title @s title [{"score":{"objective":"ssiege_death_timer","name":"*"}}]
 
