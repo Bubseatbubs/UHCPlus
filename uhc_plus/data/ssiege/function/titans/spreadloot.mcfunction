@@ -4,7 +4,7 @@ summon marker ~ ~7 ~ {Tags:["SSIEGE_loot"]}
 execute as @s[team=blue] store result score %n uhcp_initStatus run execute if entity @a[team=blue]
 execute as @s[team=red] store result score %n uhcp_initStatus run execute if entity @a[team=red]
 scoreboard players operation %n uhcp_initStatus *= %MULT_CONST uhcp_initStatus
-scoreboard players operation @e[type=marker,tag=SSIEGE_loot,limit=1,sort=nearest] ssiege_drop_shards = %n uhcp_initStatus
+scoreboard players operation @e[type=marker,tag=SSIEGE_loot,limit=1,sort=nearest] ssiege_multi = %n uhcp_initStatus
 
 execute as @e[type=marker,tag=SSIEGE_loot,limit=1,sort=nearest] at @s run loot spawn ~ ~ ~ loot ssiege:multi_soulshard
 execute as @e[type=marker,tag=SSIEGE_loot,limit=1,sort=nearest] at @s run tag @e[type=item,nbt={Item:{id:"minecraft:nether_star"}}] add SSIEGE_loot

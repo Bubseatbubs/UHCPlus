@@ -10,6 +10,6 @@
     }
   },
   "rewards": {
-    "function": "ssiege:kill/kill"
+    "function": "ssiege:kill/init"
   }
 }

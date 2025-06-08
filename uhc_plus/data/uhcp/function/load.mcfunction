@@ -105,7 +105,7 @@ scoreboard objectives add ssiege_buff_titanslayer dummy
 scoreboard objectives add ssiege_current_encounter dummy "Encounter: "
 scoreboard objectives add ssiege_currently_shopping dummy
 scoreboard objectives add ssiege_death_timer dummy
-scoreboard objectives add ssiege_drop_shards dummy
+scoreboard objectives add ssiege_multi dummy
 scoreboard objectives add ssiege_giants dummy
 scoreboard objectives add ssiege_killstreak dummy
 scoreboard objectives add ssiege_perk_aura dummy

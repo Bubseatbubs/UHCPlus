@@ -4,7 +4,7 @@ execute if score %humbug uhcp_initStatus matches 0 run tellraw @a ["",{"text":"E
 execute if score %humbug uhcp_initStatus matches 0 run return run give @a gold_ingot 128
 
 execute if score %humbug uhcp_initStatus matches 1 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"humbug gave everyone "},{"text":"10 Soul Shards","bold":true,"color":"light_purple"},{"text":"!"}]
-execute if score %humbug uhcp_initStatus matches 1 run return run execute as @a run scoreboard players set @s ssiege_drop_shards 10
+execute if score %humbug uhcp_initStatus matches 1 run return run execute as @a run scoreboard players set @s ssiege_multi 10
 execute if score %humbug uhcp_initStatus matches 1 run return run loot give @a loot ssiege:multi_soulshard
 
 execute if score %humbug uhcp_initStatus matches 2 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"humbug gave everyone "},{"text":"48 Diamonds","bold":true,"color":"aqua"},{"text":"!"}]

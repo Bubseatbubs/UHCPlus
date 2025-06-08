@@ -1,3 +1,3 @@
 tellraw @s ["",{"text":"You don't have enough ","color":"red"},{"text":"Soul Shards","color":"light_purple"},{"text":" for that ","color":"red"},{"text":"Rune","color":"yellow"},{"text":"!","color":"white"},{"text":" (need ","color":"red"},{"score":{"name":"@s","objective":"ssiege_rune_strength_cost"},"color":"red"},{"text":")","color":"red"}]
-$scoreboard players set @s ssiege_drop_shards $(refund)
+$scoreboard players set @s ssiege_multi $(refund)
 loot give @s loot ssiege:multi_soulshard
