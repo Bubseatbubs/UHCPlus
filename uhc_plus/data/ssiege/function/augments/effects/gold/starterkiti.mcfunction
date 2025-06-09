@@ -1,7 +1,7 @@
 give @s iron_pickaxe
 give @s iron_shovel
 give @s iron_axe[enchantments={"minecraft:efficiency":1}]
-give @s book
+give @s book 2
 give @s oak_log 16
 give @s cooked_beef 16
 item replace entity @s weapon.offhand with shield 1
