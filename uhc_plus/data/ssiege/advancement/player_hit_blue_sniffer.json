@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "ssiege:damage_buffs/player_hit_red_sniffer"
+    "function": "ssiege:damage_buffs/player_hit_blue_sniffer"
   }
 }
