@@ -1,13 +1,10 @@
-# Define constants
-scoreboard players set %CONST_30 uhcp_aug_count 30
-
 # Store bone amount
 execute store result score %bone uhcp_aug_count run clear @s minecraft:bone
 
 execute if score %bone uhcp_aug_count matches 0 run return 0
 
 # Convert bone into absorption hearts
-scoreboard players operation %bone uhcp_aug_count *= %CONST_30 uhcp_aug_count
+scoreboard players operation %bone uhcp_aug_count *= #30 uhcp_const
 
 execute store result storage uhcp:fossil_fuel input.amount float 1 run scoreboard players get %bone uhcp_aug_count
 function uhcp:augments/effects/gold/fossilfuel/speed with storage uhcp:fossil_fuel input
