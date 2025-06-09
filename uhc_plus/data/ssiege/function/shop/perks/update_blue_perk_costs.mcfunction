@@ -9,14 +9,14 @@ execute store result score %blue_cost ssiege_perk_regen run execute if entity @a
 # Store n in a temporary variable for calculations
 scoreboard players operation %temp uhcp_initStatus = %blue_cost ssiege_perk_regen
 
-# Update Regeneration costs (n/3n/12n/24n for levels 1-4)
+# Update Regeneration costs (n/3n/6n/12n for levels 1-4)
 execute if score %blue ssiege_perk_regen matches 1 run scoreboard players operation %blue_cost ssiege_perk_regen = %temp uhcp_initStatus
 execute if score %blue ssiege_perk_regen matches 2 run scoreboard players operation %blue_cost ssiege_perk_regen = %temp uhcp_initStatus
 execute if score %blue ssiege_perk_regen matches 2 run scoreboard players operation %blue_cost ssiege_perk_regen *= #3 uhcp_const
 execute if score %blue ssiege_perk_regen matches 3 run scoreboard players operation %blue_cost ssiege_perk_regen = %temp uhcp_initStatus
-execute if score %blue ssiege_perk_regen matches 3 run scoreboard players operation %blue_cost ssiege_perk_regen *= #12 uhcp_const
+execute if score %blue ssiege_perk_regen matches 3 run scoreboard players operation %blue_cost ssiege_perk_regen *= #6 uhcp_const
 execute if score %blue ssiege_perk_regen matches 4 run scoreboard players operation %blue_cost ssiege_perk_regen = %temp uhcp_initStatus
-execute if score %blue ssiege_perk_regen matches 4 run scoreboard players operation %blue_cost ssiege_perk_regen *= #24 uhcp_const
+execute if score %blue ssiege_perk_regen matches 4 run scoreboard players operation %blue_cost ssiege_perk_regen *= #12 uhcp_const
 
 execute if score %blue ssiege_perk_regen matches 5 run scoreboard players set %blue_cost ssiege_perk_regen 999
 
@@ -35,12 +35,14 @@ execute if score %blue ssiege_perk_turret matches 1 run scoreboard players opera
 
 execute if score %blue ssiege_perk_turret matches 2.. run scoreboard players set %blue_cost ssiege_perk_turret 999
 
-# Update Recall Speed costs (n/4n for levels 1-2)
+# Update Recall Speed costs (n/3n/6n for levels 1-3)
 execute if score %blue ssiege_perk_recall matches 1 run scoreboard players operation %blue_cost ssiege_perk_recall = %temp uhcp_initStatus
 execute if score %blue ssiege_perk_recall matches 2 run scoreboard players operation %blue_cost ssiege_perk_recall = %temp uhcp_initStatus
-execute if score %blue ssiege_perk_recall matches 2 run scoreboard players operation %blue_cost ssiege_perk_recall *= #4 uhcp_const
+execute if score %blue ssiege_perk_recall matches 2 run scoreboard players operation %blue_cost ssiege_perk_recall *= #3 uhcp_const
+execute if score %blue ssiege_perk_recall matches 3 run scoreboard players operation %blue_cost ssiege_perk_recall = %temp uhcp_initStatus
+execute if score %blue ssiege_perk_recall matches 3 run scoreboard players operation %blue_cost ssiege_perk_recall *= #6 uhcp_const
 
-execute if score %blue ssiege_perk_recall matches 3.. run scoreboard players set %blue_cost ssiege_perk_recall 999
+execute if score %blue ssiege_perk_recall matches 4.. run scoreboard players set %blue_cost ssiege_perk_recall 999
 
 # Update Swim Speed costs (n/3n for levels 1-2)
 execute if score %blue ssiege_perk_swimspeed matches 1 run scoreboard players operation %blue_cost ssiege_perk_swimspeed = %temp uhcp_initStatus
@@ -70,13 +72,13 @@ execute if score %blue ssiege_perk_homeguard matches 1 run scoreboard players op
 
 execute if score %blue ssiege_perk_homeguard matches 2.. run scoreboard players set %blue_cost ssiege_perk_homeguard 999
 
-# Update Titan Slayer costs (n/3n/12n/24n for levels 1-4)
+# Update Titan Slayer costs (n/3n/6n/12n for levels 1-4)
 execute if score %blue ssiege_perk_titanslayer matches 1 run scoreboard players operation %blue_cost ssiege_perk_titanslayer = %temp uhcp_initStatus
 execute if score %blue ssiege_perk_titanslayer matches 2 run scoreboard players operation %blue_cost ssiege_perk_titanslayer = %temp uhcp_initStatus
 execute if score %blue ssiege_perk_titanslayer matches 2 run scoreboard players operation %blue_cost ssiege_perk_titanslayer *= #3 uhcp_const
 execute if score %blue ssiege_perk_titanslayer matches 3 run scoreboard players operation %blue_cost ssiege_perk_titanslayer = %temp uhcp_initStatus
-execute if score %blue ssiege_perk_titanslayer matches 3 run scoreboard players operation %blue_cost ssiege_perk_titanslayer *= #12 uhcp_const
+execute if score %blue ssiege_perk_titanslayer matches 3 run scoreboard players operation %blue_cost ssiege_perk_titanslayer *= #6 uhcp_const
 execute if score %blue ssiege_perk_titanslayer matches 4 run scoreboard players operation %blue_cost ssiege_perk_titanslayer = %temp uhcp_initStatus
-execute if score %blue ssiege_perk_titanslayer matches 4 run scoreboard players operation %blue_cost ssiege_perk_titanslayer *= #24 uhcp_const
+execute if score %blue ssiege_perk_titanslayer matches 4 run scoreboard players operation %blue_cost ssiege_perk_titanslayer *= #12 uhcp_const
 
 execute if score %blue ssiege_perk_titanslayer matches 5.. run scoreboard players set %blue_cost ssiege_perk_titanslayer 999
