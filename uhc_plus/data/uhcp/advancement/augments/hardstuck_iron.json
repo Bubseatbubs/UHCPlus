@@ -35,10 +35,7 @@
               },
               "slots": {
                 "armor.*": {
-                  "items": "#uhcp:hardstuck_iron_banned",
-                  "count": {
-                    "min": 1
-                  }
+                  "items": "#uhcp:hardstuck_iron_banned"
                 }
               }
             }

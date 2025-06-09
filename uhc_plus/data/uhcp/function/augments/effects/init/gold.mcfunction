@@ -34,7 +34,8 @@ execute if score @s uhcp_augment matches 31 run return run function uhcp:augment
 execute if score @s uhcp_augment matches 32 run return run function uhcp:augments/effects/gold/trapmaster
 execute if score @s uhcp_augment matches 33 run return run function uhcp:augments/effects/gold/villageidol
 execute if score @s uhcp_augment matches 34 run return run function uhcp:augments/effects/gold/bottlesmasher
-execute if score @s uhcp_augment matches 35..36 run return run scoreboard players set @s uhcp_game_time 42000
+execute if score @s uhcp_augment matches 35 run return run function uhcp:augments/effects/gold/coppercollector
+execute if score @s uhcp_augment matches 36 run return run scoreboard players set @s uhcp_game_time 42000
 execute if score @s uhcp_augment matches 38 run return run function uhcp:augments/effects/gold/oppenheimer
 execute if score @s uhcp_augment matches 39 run return run function uhcp:augments/effects/gold/poseidonsblessing
 execute if score @s uhcp_augment matches 40 run return run loot give @s loot uhcp:consumables/relic_invoker
@@ -46,8 +47,9 @@ execute if score @s uhcp_augment matches 45 run return run function uhcp:augment
 execute if score @s uhcp_augment matches 46 run return run loot give @s loot uhcp:augments/crazy_consumables
 execute if score @s uhcp_augment matches 47 run return run loot give @s loot uhcp:augments/imperfect_replica
 execute if score @s uhcp_augment matches 48 run return run loot give @s loot uhcp:augments/soul_siphon
-execute if score @s uhcp_augment matches 49..50 run return run scoreboard players set @s uhcp_game_time 42000
+execute if score @s uhcp_augment matches 49 run return run function uhcp:augments/effects/gold/fossilfuel
+execute if score @s uhcp_augment matches 50 run return run scoreboard players set @s uhcp_game_time 42000
 execute if score @s uhcp_augment matches 51 run return run loot give @s loot uhcp:augments/bookworm
 execute if score @s uhcp_augment matches 53 run return run function uhcp:augments/effects/gold/capped
-execute if score @s uhcp_augment matches 55 run return run function uhcp:augments/effects/gold/hardstuckiron
+execute if score @s uhcp_augment matches 55 run return run attribute @s minecraft:armor modifier add uhcp:armor_multiplier 0.35 add_multiplied_total
 execute if score @s uhcp_augment matches 56 run function uhcp:augments/effects/gold/lockedout

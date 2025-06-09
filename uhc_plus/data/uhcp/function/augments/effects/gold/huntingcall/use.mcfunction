@@ -4,7 +4,7 @@ scoreboard players set @s uhcp_itemCount 6
 tag @s add UHCP_HCallCurrent
 
 # Find hand with horn
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_huntingcall:1b}] run return run function uhcp:augments/effects/gold/huntingcall/mainhand
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{uhcp_huntingcall:true}] run return run function uhcp:augments/effects/gold/huntingcall/mainhand
 data modify storage uhcp:hunting_call Horn set from entity @s equipment.offhand
 
 # Check IDs
