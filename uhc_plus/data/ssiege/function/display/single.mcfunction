@@ -1,0 +1,1 @@
+$scoreboard players display numberformat %next_titan uhcp_game_display fixed [{"text":"$(titan_minutes)"},{"text":":0"},{"text":"$(titan_seconds)"}]

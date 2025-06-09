@@ -1,5 +1,5 @@
 scoreboard players display name %encounter_name uhcp_game_display {"text":"Encounter:","color":"gold"}
-
+scoreboard players set %encounter_name uhcp_game_display -1
 execute if score %encounter ssiege_current_encounter matches 0 run scoreboard players display numberformat %encounter_name uhcp_game_display fixed "None"
 execute if score %encounter ssiege_current_encounter matches 1 run scoreboard players display numberformat %encounter_name uhcp_game_display fixed "Bubson"
 execute if score %encounter ssiege_current_encounter matches 2 run scoreboard players display numberformat %encounter_name uhcp_game_display fixed "Rainsplosion"

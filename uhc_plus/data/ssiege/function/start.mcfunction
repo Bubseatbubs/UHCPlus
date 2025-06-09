@@ -130,6 +130,8 @@ function ssiege:shop/perks/update_red_perk_costs
 scoreboard players set %titans uhcp_game_time 18000
 scoreboard players set %giant_timer ssiege_giants 12000
 scoreboard players set %infernus_check uhcp_game_time 60000
+scoreboard players set %next_titan uhcp_game_time 18000
+scoreboard players display name %next_titan uhcp_game_display {"text":"Next Titan at:","color":"gold"}
 
 # Set Perk Timers
 scoreboard players set %sonar uhcp_game_time 0

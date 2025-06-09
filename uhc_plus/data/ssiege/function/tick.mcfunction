@@ -29,7 +29,7 @@ execute if score %time uhcp_initStatus matches 1 run function ssiege:time
 execute if score %augment_countdown uhcp_game_time matches 1.. run function ssiege:augments/countdown
 
 # Game statistics display
-execute if score %game uhcp_initStatus matches 1 run function uhcp:display/update
+execute if score %game uhcp_initStatus matches 1 run function ssiege:display/update
 
 # Augment routines (that should be in tick function)
 execute if entity @e[tag=UHCP_SLBlock] run function uhcp:augments/effects/prismatic/sololeveling/interact/revert
