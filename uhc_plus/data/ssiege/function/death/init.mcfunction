@@ -1,5 +1,4 @@
 advancement revoke @s only ssiege:death
-
 # Situational checks
 execute as @s[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal_fluid/reset
 execute unless score %game uhcp_initStatus matches 1 run return run function uhcp:kill/death/lobby
@@ -8,7 +7,7 @@ spawnpoint @s ~ ~3 ~
 
 # Give Soulshards to killer, if there is one
 scoreboard players operation %temp ssiege_multi = @s ssiege_shards
-scoreboard players set %kiler_exists ssiege_multi 0
+scoreboard players set %killer_exists ssiege_multi 0
 execute on attacker as @s[type=player,advancements={ssiege:killed_player=true}] run function ssiege:kill/reward
 execute if score %killer_exists ssiege_multi matches 0 run function ssiege:death/pve_death
 
