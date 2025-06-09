@@ -127,6 +127,7 @@ function ssiege:shop/perks/update_blue_perk_costs
 function ssiege:shop/perks/update_red_perk_costs
 
 # Set Timers
+scoreboard players set %fill_liquid_timer uhcp_game_time 0
 scoreboard players set %titans uhcp_game_time 18000
 scoreboard players set %giant_timer ssiege_giants 12000
 scoreboard players set %infernus_check uhcp_game_time 60000
