@@ -56,11 +56,13 @@ execute if score %red ssiege_perk_featherfalling matches 2 run scoreboard player
 
 execute if score %red ssiege_perk_featherfalling matches 3.. run scoreboard players set %red_cost ssiege_perk_featherfalling 999
 
-# Update Sniffer Sonar costs (2n for level 1 only)
+# Update Sniffer Sonar costs (2n/5n for levels 1-2)
 execute if score %red ssiege_perk_sonar matches 1 run scoreboard players operation %red_cost ssiege_perk_sonar = %temp uhcp_initStatus
 execute if score %red ssiege_perk_sonar matches 1 run scoreboard players operation %red_cost ssiege_perk_sonar *= #2 uhcp_const
+execute if score %red ssiege_perk_sonar matches 2 run scoreboard players operation %red_cost ssiege_perk_sonar = %temp uhcp_initStatus
+execute if score %red ssiege_perk_sonar matches 2 run scoreboard players operation %red_cost ssiege_perk_sonar *= #5 uhcp_const
 
-execute if score %red ssiege_perk_sonar matches 2.. run scoreboard players set %red_cost ssiege_perk_sonar 999
+execute if score %red ssiege_perk_sonar matches 3.. run scoreboard players set %red_cost ssiege_perk_sonar 999
 
 # Update Homeguard costs (2n for level 1 only)
 execute if score %red ssiege_perk_homeguard matches 1 run scoreboard players operation %red_cost ssiege_perk_homeguard = %temp uhcp_initStatus

@@ -4,10 +4,20 @@
 # Runs every 10 seconds (200 ticks), applies glowing for 10 seconds (200 ticks)
 
 # Blue team sonar: Apply glowing to red team players near blue base (if blue has sonar perk)
-execute if score %blue ssiege_perk_sonar matches 2.. at @e[type=marker,tag=BLUE_BASE,limit=1] run effect give @a[team=red,distance=..50] glowing 10 0 true
+execute if score %blue ssiege_perk_sonar matches 2 at @e[type=marker,tag=BLUE_BASE,limit=1] run effect give @a[team=red,distance=..35] glowing 10 0 true
+execute if score %blue ssiege_perk_sonar matches 3.. at @e[type=marker,tag=BLUE_BASE,limit=1] run effect give @a[team=red,distance=..50] glowing 10 0 true
+
+# Sonar Plinks
+execute if score %blue ssiege_perk_sonar matches 2 at @e[type=marker,tag=BLUE_BASE,limit=1] run execute as @a[team=red,distance=..35] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.8 1.8 0.1
+execute if score %blue ssiege_perk_sonar matches 3.. at @e[type=marker,tag=BLUE_BASE,limit=1] run execute as @a[team=red,distance=..50] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.8 1.8 0.1
 
 # Red team sonar: Apply glowing to blue team players near red base (if red has sonar perk)
-execute if score %red ssiege_perk_sonar matches 2.. at @e[type=marker,tag=RED_BASE,limit=1] run effect give @a[team=blue,distance=..50] glowing 10 0 true
+execute if score %red ssiege_perk_sonar matches 2 at @e[type=marker,tag=RED_BASE,limit=1] run effect give @a[team=blue,distance=..35] glowing 10 0 true
+execute if score %red ssiege_perk_sonar matches 3.. at @e[type=marker,tag=RED_BASE,limit=1] run effect give @a[team=blue,distance=..50] glowing 10 0 true
+
+# Red Sonar Plinks
+execute if score %red ssiege_perk_sonar matches 2 at @e[type=marker,tag=RED_BASE,limit=1] run execute as @a[team=blue,distance=..35] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.8 1.8 0.1
+execute if score %red ssiege_perk_sonar matches 3.. at @e[type=marker,tag=RED_BASE,limit=1] run execute as @a[team=blue,distance=..50] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.8 1.8 0.1
 
 # Schedule next sonar activation (10 seconds = 200 ticks from now)
 scoreboard players add %sonar uhcp_game_time 200
