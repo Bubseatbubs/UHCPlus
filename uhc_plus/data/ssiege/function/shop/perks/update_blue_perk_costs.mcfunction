@@ -62,6 +62,12 @@ execute if score %blue ssiege_perk_sonar matches 1 run scoreboard players operat
 
 execute if score %blue ssiege_perk_sonar matches 2.. run scoreboard players set %blue_cost ssiege_perk_sonar 999
 
+# Update Homeguard costs (2n for level 1 only)
+execute if score %blue ssiege_perk_homeguard matches 1 run scoreboard players operation %blue_cost ssiege_perk_homeguard = %temp uhcp_initStatus
+execute if score %blue ssiege_perk_homeguard matches 1 run scoreboard players operation %blue_cost ssiege_perk_homeguard *= #2 uhcp_const
+
+execute if score %blue ssiege_perk_homeguard matches 2.. run scoreboard players set %blue_cost ssiege_perk_homeguard 999
+
 # Update Titan Slayer costs (n/3n/12n/24n for levels 1-4)
 execute if score %blue ssiege_perk_titanslayer matches 1 run scoreboard players operation %blue_cost ssiege_perk_titanslayer = %temp uhcp_initStatus
 execute if score %blue ssiege_perk_titanslayer matches 2 run scoreboard players operation %blue_cost ssiege_perk_titanslayer = %temp uhcp_initStatus

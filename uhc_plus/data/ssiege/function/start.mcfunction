@@ -108,6 +108,7 @@ scoreboard players set %blue ssiege_perk_swimspeed 1
 scoreboard players set %blue ssiege_perk_featherfalling 1
 scoreboard players set %blue ssiege_perk_sonar 1
 scoreboard players set %blue ssiege_perk_titanslayer 1
+scoreboard players set %blue ssiege_perk_homeguard 1
 
 scoreboard players set %red ssiege_perk_regen 1
 scoreboard players set %red ssiege_perk_aura 1
@@ -117,6 +118,7 @@ scoreboard players set %red ssiege_perk_swimspeed 1
 scoreboard players set %red ssiege_perk_featherfalling 1
 scoreboard players set %red ssiege_perk_sonar 1
 scoreboard players set %red ssiege_perk_titanslayer 1
+scoreboard players set %red ssiege_perk_homeguard 1
 
 scoreboard players set @a ssiege_currently_shopping 0
 
@@ -134,6 +136,7 @@ scoreboard players set %sonar uhcp_game_time 0
 scoreboard players set %red_regen uhcp_game_time 0
 scoreboard players set %blue_regen uhcp_game_time 0
 scoreboard players set %aura uhcp_game_time 0
+scoreboard players set %homeguard uhcp_game_time 0
 
 # Reset recall timers
 scoreboard players set @a ssiege_recall_charge -1

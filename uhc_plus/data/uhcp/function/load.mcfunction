@@ -116,7 +116,7 @@ scoreboard objectives add ssiege_perk_turret dummy
 scoreboard objectives add ssiege_perk_sonar dummy
 scoreboard objectives add ssiege_perk_swimspeed dummy
 scoreboard objectives add ssiege_perk_titanslayer dummy
-scoreboard objectives add ssiege_recall_charge dummy
+scoreboard objectives add ssiege_perk_homeguard dummy
 scoreboard objectives add ssiege_reverse_bounty dummy
 scoreboard objectives add ssiege_rune_fireproof dummy
 scoreboard objectives add ssiege_rune_leaping dummy
@@ -129,6 +129,7 @@ scoreboard objectives add ssiege_rune_toughness dummy
 scoreboard objectives add ssiege_rune_toughness_cost dummy
 scoreboard objectives add ssiege_rune_vitality dummy
 scoreboard objectives add ssiege_settings dummy
+scoreboard objectives add ssiege_recall_charge dummy
 scoreboard objectives add ssiege_shards dummy
 scoreboard objectives add ssiege_unlocked_runesmith dummy
 
