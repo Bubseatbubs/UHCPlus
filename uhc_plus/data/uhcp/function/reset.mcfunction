@@ -82,6 +82,7 @@ tag @a remove UHCP_DisableArmorAndOffhand
 tag @a remove UHCP_Explode
 tag @a remove UHCP_HighTide
 tag @a remove UHCP_MilkBucket
+tag @a remove UHCP_PlannedEcon
 tag @a remove UHCP_RelicTestingChamber
 tag @a remove UHCP_SLLock
 tag @a remove UHCP_SoulflameEmbrace

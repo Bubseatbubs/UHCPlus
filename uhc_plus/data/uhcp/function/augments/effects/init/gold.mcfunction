@@ -48,7 +48,7 @@ execute if score @s uhcp_augment matches 46 run return run loot give @s loot uhc
 execute if score @s uhcp_augment matches 47 run return run loot give @s loot uhcp:augments/imperfect_replica
 execute if score @s uhcp_augment matches 48 run return run loot give @s loot uhcp:augments/soul_siphon
 execute if score @s uhcp_augment matches 49 run return run function uhcp:augments/effects/gold/fossilfuel
-execute if score @s uhcp_augment matches 50 run return run scoreboard players set @s uhcp_game_time 42000
+execute if score @s uhcp_augment matches 50 run return run function uhcp:augments/effects/gold/plannedeconomy
 execute if score @s uhcp_augment matches 51 run return run loot give @s loot uhcp:augments/bookworm
 execute if score @s uhcp_augment matches 53 run return run function uhcp:augments/effects/gold/capped
 execute if score @s uhcp_augment matches 55 run return run attribute @s minecraft:armor modifier add uhcp:armor_multiplier 0.35 add_multiplied_total

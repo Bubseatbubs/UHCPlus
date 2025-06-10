@@ -1,4 +1,5 @@
 # Convert coal to diamonds
+tag @s remove UHCP_DiamondRough
 scoreboard players set @s uhcp_leave 1000
 
 # Coal

@@ -12,6 +12,7 @@ tag @s remove UHCP_DisableArmorAndOffhand
 tag @s remove UHCP_Explode
 tag @s remove UHCP_HighTide
 tag @s remove UHCP_MilkBucket
+tag @s remove UHCP_PlannedEcon
 tag @s remove UHCP_SLLock
 tag @s[scores={uhcp_augment=0..}] remove UHCP_SoulflameEmbrace
 execute if score @s uhcp_augment matches 220 run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
