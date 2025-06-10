@@ -9,6 +9,7 @@ function ssiege:shop/runes/effects/update_toughness
 # Update Toughness rune score
 scoreboard players add @s ssiege_rune_toughness 1
 
+$scoreboard players add @s ssiege_shards_spent $(cost)
 playsound minecraft:block.anvil.use master @s ~ ~ ~ 1 1 1
 
 # After purchase, increase the cost

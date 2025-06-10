@@ -106,6 +106,7 @@ scoreboard objectives add ssiege_current_encounter dummy "Encounter: "
 scoreboard objectives add ssiege_currently_shopping dummy
 scoreboard objectives add ssiege_death_timer dummy
 scoreboard objectives add ssiege_multi dummy
+scoreboard objectives add ssiege_shards_spent dummy
 scoreboard objectives add ssiege_giants dummy
 scoreboard objectives add ssiege_killstreak dummy
 scoreboard objectives add ssiege_perk_aura dummy
