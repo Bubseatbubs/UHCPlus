@@ -18,6 +18,7 @@
                   "score": "uhcp_game_time"
                 },
                 "range": {
+                  "min": 0,
                   "max": 41999
                 }
               },
@@ -86,6 +87,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/gold/plannedeconomy/init"
+    "function": "uhcp:augments/effects/gold/plannedeconomy/defer"
   }
 }
