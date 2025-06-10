@@ -12,4 +12,7 @@ scoreboard players reset @s uhcp_mine_rawIronBlock
 
 # Augment selection status
 execute if score %augment_countdown uhcp_game_time matches 1.. run return run execute unless score %tier uhcp_aug_tier matches -1 run bossbar set uhcp:augment players @a
-execute as @s[gamemode=adventure] run function uhcp:left/in_game/start/augment
+execute as @s[gamemode=adventure] run return run function uhcp:left/in_game/start/augment
+
+# Phantom Saber
+execute as @s[predicate=uhcp:augments/phantom_saber] run function uhcp:augments/effects/gold/phantomsaber
