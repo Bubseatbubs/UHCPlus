@@ -74,7 +74,7 @@ tag @a remove UHCP_SoulflameEmbrace
 tag @a remove UHCP_Explode
 
 # Set up scoreboard display
-scoreboard objectives setdisplay list ssiege_shards_spent
+scoreboard objectives setdisplay list ssiege_runes_purchased
 
 # Allow one-player games to not end
 execute if score %players uhcp_id matches ..1 run scoreboard players set %end uhcp_initStatus 1
@@ -121,7 +121,7 @@ scoreboard players set %red ssiege_perk_titanslayer 1
 scoreboard players set %red ssiege_perk_homeguard 1
 
 scoreboard players set @a ssiege_currently_shopping 0
-scoreboard players set @a ssiege_shards_spent 0
+scoreboard players set @a ssiege_runes_purchased 0
 
 # Set Perk Costs
 function ssiege:shop/perks/update_blue_perk_costs
