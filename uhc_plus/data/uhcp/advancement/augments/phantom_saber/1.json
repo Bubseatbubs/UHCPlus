@@ -1,7 +1,7 @@
 {
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:location",
+      "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "player": [
           {
@@ -20,18 +20,14 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "uhcp_health": {
-                "min": 0,
-                "max": 20
-              },
-              "uhcp_augment": 16
+              "uhcp_augment": 6
             }
           }
-          ]
+        ]
       }
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/gold/knifesedge"
+    "function": "uhcp:augments/effects/gold/phantomsaber/hit/1"
   }
 }

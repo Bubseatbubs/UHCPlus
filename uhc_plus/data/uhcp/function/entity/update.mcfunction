@@ -48,8 +48,7 @@ execute as @e[tag=UHCP_GallieNetherPortal] at @s run function uhcp:titans/gallie
 execute as @e[tag=UHCP_Bellan] at @s unless entity @n[tag=UHCP_Gallie,distance=..12] run kill @s
 
 # Augments
-execute as @e[tag=UHCP_PhantomSaber,tag=!UHCP_FlyingTowardsTarget] at @s run function uhcp:augments/effects/gold/phantomsaber/update
-execute as @e[tag=UHCP_FlyingTowardsTarget] at @s run function uhcp:augments/effects/gold/phantomsaber/update_flight
+execute as @e[tag=UHCP_PhantomSaber] at @s run function uhcp:augments/effects/gold/phantomsaber/update
 execute as @e[tag=UHCP_TrailblazeMarker] at @s run function uhcp:augments/effects/prismatic/trailblazer/update_fire
 execute as @e[tag=UHCP_Sniffa] at @s run function uhcp:augments/effects/gold/sniffa/update
 execute as @e[tag=UHCP_Prop] at @s run function uhcp:augments/effects/silver/prophunt/update
