@@ -1,12 +1,13 @@
 # Store bone amount
-execute store result score %bone uhcp_aug_count run clear @s minecraft:bone
-
-execute if score %bone uhcp_aug_count matches 0 run return 0
+scoreboard players set @s uhcp_leave 1000
+execute store result score @s uhcp_initStatus run clear @s minecraft:bone
+scoreboard players reset @s uhcp_leave
+execute if score @s uhcp_initStatus matches 0 run return run playsound minecraft:block.note_block.snare master @s ~ ~ ~ 1 1 1
 
 # Convert bone into absorption hearts
-scoreboard players operation %bone uhcp_aug_count *= #30 uhcp_const
+scoreboard players operation @s uhcp_initStatus *= #30 uhcp_const
 
-execute store result storage uhcp:fossil_fuel input.amount float 1 run scoreboard players get %bone uhcp_aug_count
+execute store result storage uhcp:fossil_fuel input.amount float 1 run scoreboard players get @s uhcp_initStatus
 function uhcp:augments/effects/gold/fossilfuel/speed with storage uhcp:fossil_fuel input
 
 # Effects

@@ -32,6 +32,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/gold/knifesedge/effect"
+    "function": "uhcp:augments/effects/gold/knifesedge"
   }
 }

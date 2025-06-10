@@ -2,6 +2,7 @@
 scoreboard players set #2 uhcp_const 2
 scoreboard players set #3 uhcp_const 3
 scoreboard players set #4 uhcp_const 4
+scoreboard players set #5 uhcp_const 5
 scoreboard players set #6 uhcp_const 6
 scoreboard players set #12 uhcp_const 12
 scoreboard players set #20 uhcp_const 20
@@ -9,6 +10,7 @@ scoreboard players set #24 uhcp_const 24
 scoreboard players set #30 uhcp_const 30
 scoreboard players set #60 uhcp_const 60
 scoreboard players set #64 uhcp_const 64
+scoreboard players set #1200 uhcp_const 1200
 
 # Set game mode if unset
 execute unless score %mode uhcp_settings = %mode uhcp_settings run scoreboard players operation %mode uhcp_settings = %mode_def uhcp_settings
