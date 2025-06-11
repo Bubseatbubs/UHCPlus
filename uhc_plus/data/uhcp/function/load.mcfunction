@@ -105,10 +105,9 @@ scoreboard objectives add ssiege_buff_titanslayer dummy
 scoreboard objectives add ssiege_current_encounter dummy "Encounter: "
 scoreboard objectives add ssiege_currently_shopping dummy
 scoreboard objectives add ssiege_death_timer dummy
-scoreboard objectives add ssiege_multi dummy
-scoreboard objectives add ssiege_runes_purchased dummy
 scoreboard objectives add ssiege_giants dummy
 scoreboard objectives add ssiege_killstreak dummy
+scoreboard objectives add ssiege_multi dummy
 scoreboard objectives add ssiege_perk_aura dummy
 scoreboard objectives add ssiege_perk_featherfalling dummy
 scoreboard objectives add ssiege_perk_recall dummy
@@ -118,6 +117,7 @@ scoreboard objectives add ssiege_perk_sonar dummy
 scoreboard objectives add ssiege_perk_swimspeed dummy
 scoreboard objectives add ssiege_perk_titanslayer dummy
 scoreboard objectives add ssiege_perk_homeguard dummy
+scoreboard objectives add ssiege_recall_charge dummy
 scoreboard objectives add ssiege_reverse_bounty dummy
 scoreboard objectives add ssiege_rune_fireproof dummy
 scoreboard objectives add ssiege_rune_leaping dummy
@@ -129,8 +129,8 @@ scoreboard objectives add ssiege_rune_swiftness_cost dummy
 scoreboard objectives add ssiege_rune_toughness dummy
 scoreboard objectives add ssiege_rune_toughness_cost dummy
 scoreboard objectives add ssiege_rune_vitality dummy
+scoreboard objectives add ssiege_runes_purchased dummy
 scoreboard objectives add ssiege_settings dummy
-scoreboard objectives add ssiege_recall_charge dummy
 scoreboard objectives add ssiege_shards dummy
 scoreboard objectives add ssiege_unlocked_runesmith dummy
 
