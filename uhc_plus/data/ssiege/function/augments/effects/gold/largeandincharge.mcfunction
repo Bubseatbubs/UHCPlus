@@ -10,10 +10,10 @@ attribute @s minecraft:max_health modifier add uhcp:max_health 20 add_value
 
 #entity interaction range modifier
 #attribute @s minecraft:entity_interaction_range base set 3.3
-attribute @s entity_interaction_range modifier add uhcp:entity_interaction_range .3 add_value
+attribute @s entity_interaction_range modifier add uhcp:entity_interaction_range .5 add_value
 
 #block interaction range modifier
 #attribute @s minecraft:block_interaction_range base set 5.3
-attribute @s block_interaction_range modifier add uhcp:block_interaction_range .3 add_value
+attribute @s block_interaction_range modifier add uhcp:block_interaction_range .5 add_value
 
 effect give @s instant_health 2 10 true
