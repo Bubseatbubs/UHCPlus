@@ -88,6 +88,7 @@ tag @a remove UHCP_SLLock
 tag @a remove UHCP_SoulflameEmbrace
 tag @a remove UHCP_Spectator
 tag @a remove SSIEGE_dead
+tag @a remove SSIEGE_AugmentTriggered
 execute as @a[scores={uhcp_augment=220}] run function uhcp:augments/effects/prismatic/cyberneticdownload/reset
 function uhcp:augments/effects/gold/scavengerhunt/reset_all
 
