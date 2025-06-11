@@ -12,6 +12,11 @@ attribute @s minecraft:attack_damage modifier remove ssiege:rune_strength
 attribute @s minecraft:water_movement_efficiency modifier remove ssiege:perk_waterspeed
 attribute @s minecraft:fall_damage_multiplier modifier remove ssiege:perk_ffall
 
+# PLAYER BALANCE BUFF ATTRIBUTES
+attribute @s minecraft:armor modifier remove ssiege:buff_armor
+attribute @s minecraft:armor_toughness modifier remove ssiege:buff_armor_toughness
+attribute @s minecraft:movement_speed modifier remove ssiege:buff_movement_speed
+
 # Max health
 # Currently used by: Large and in Charge, Surface Duty, Zombie, Empty Hearted
 attribute @s minecraft:max_health modifier remove uhcp:max_health

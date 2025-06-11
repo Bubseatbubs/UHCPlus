@@ -92,6 +92,10 @@ execute as @a[scores={uhcp_groovy=1}] at @s run particle minecraft:note ~ ~ ~ 1.
 execute as @a[tag=UHCP_IsRabbit] at @s run function uhcp:consumables/magic_trick/update
 execute as @a[tag=UHCP_IsAttackTitan] at @s run function uhcp:consumables/titan_spinal_fluid/update
 
+# Update speed of golden apples
+execute as @a[tag=SSIEGE_Buff,gamemode=survival] run function ssiege:buffs/faster_gapples
+execute as @a[tag=!SSIEGE_Buff,gamemode=survival] run function ssiege:buffs/slower_gapples
+
 # Ate golden apple effect
 execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:entity/items/ate_golden_apple/update
 

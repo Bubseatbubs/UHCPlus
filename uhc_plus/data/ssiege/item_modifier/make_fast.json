@@ -1,0 +1,19 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:consumable": {
+      "consume_seconds": 0.96,
+      "animation": "eat",
+      "sound": "entity.generic.eat",
+      "has_consume_particles": true
+    },
+    "minecraft:food": {
+      "nutrition": 4,
+      "saturation": 1.2,
+      "can_always_eat": true
+    },
+    "minecraft:custom_data": {
+      "fast_golden_apple": true
+    }
+  }
+}
