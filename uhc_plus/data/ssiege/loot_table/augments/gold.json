@@ -2311,7 +2311,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:slime_ball",
+          "name": "minecraft:totem_of_undying",
           "weight": 1,
           "functions": [
             {
@@ -2320,14 +2320,14 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:379s}"
+              "tag": "{uhcp_augSelect:1b,augment:331s}"
             },
             {
               "function": "minecraft:set_name",
               "target": "item_name",
               "name": [
                 {
-                  "text": "Gomu Gomu",
+                  "text": "Last Stand",
                   "color": "gold",
                   "bold": true
                 }
@@ -2342,7 +2342,7 @@
                   "bold": true
                 },
                 {
-                  "text": "Gain a Gomu Gomu Fruit (Held Version)",
+                  "text": "when less than 5 hearts gain res 1",
                   "color": "gray"
                 }
               ],
@@ -2365,7 +2365,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:379s}"
+                        "minecraft:custom_data": "{augment:331s}"
                       }
                     }
                   }
