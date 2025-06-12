@@ -2341,8 +2341,87 @@
                   "color": "blue",
                   "bold": true
                 },
+                [
+                  {
+                    "text": "When below 5 hearts, gain ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Resistance",
+                    "color": "white"
+                  },
+                  {
+                    "text": " I.",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:331s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:324s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
                 {
-                  "text": "when less than 5 hearts gain res 1",
+                  "text": "Healing Orbs II",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                {
+                  "text": "Whenever an enemy player dies within 15 blocks of",
+                  "color": "gray"
+                },
+                {
+                  "text": "you, heal 4 hearts.",
                   "color": "gray"
                 }
               ],
@@ -2365,7 +2444,86 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:331s}"
+                        "minecraft:custom_data": "{augment:324s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_dye",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:376s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Vengeance",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Strength",
+                    "color": "white"
+                  },
+                  {
+                    "text": " 1 for 6 seconds whenever an ally",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "dies within 32 blocks of you.",
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:376s}"
                       }
                     }
                   }
