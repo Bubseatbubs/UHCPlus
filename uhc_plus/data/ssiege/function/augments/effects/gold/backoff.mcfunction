@@ -1,1 +1,1 @@
-give @s wooden_sword[repair_cost=2147483647,enchantments={"minecraft:knockback":10}]
+give @s golden_sword[repair_cost=2147483647,enchantments={"minecraft:knockback":10},damage=16]
