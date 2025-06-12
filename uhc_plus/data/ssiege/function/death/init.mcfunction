@@ -4,6 +4,7 @@ execute as @s[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal
 execute unless score %game uhcp_initStatus matches 1 run return run function uhcp:kill/death/lobby
 
 spawnpoint @s ~ ~3 ~
+scoreboard players add @s ssiege_deaths 1
 
 # Give Soulshards to killer, if there is one
 scoreboard players operation %temp ssiege_multi = @s ssiege_shards

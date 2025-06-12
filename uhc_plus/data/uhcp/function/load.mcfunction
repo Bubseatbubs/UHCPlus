@@ -108,6 +108,9 @@ scoreboard objectives add ssiege_death_timer dummy
 scoreboard objectives add ssiege_multi dummy
 scoreboard objectives add ssiege_runes_purchased dummy
 scoreboard objectives add ssiege_giants dummy
+scoreboard objectives add ssiege_kills dummy
+scoreboard objectives add ssiege_deaths dummy
+scoreboard objectives add ssiege_sniffer_hits dummy
 scoreboard objectives add ssiege_killstreak dummy
 scoreboard objectives add ssiege_perk_aura dummy
 scoreboard objectives add ssiege_perk_featherfalling dummy

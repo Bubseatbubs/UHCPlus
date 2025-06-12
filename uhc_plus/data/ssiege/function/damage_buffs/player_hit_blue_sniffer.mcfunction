@@ -3,6 +3,9 @@
 # It calculates and applies bonus damage based on titanslayer buffs
 # Context: Executed as the player who triggered the advancement
 
+execute as @s[team=blue] run return fail
+scoreboard players add @s ssiege_sniffer_hits 1
+
 # Tag the attacker temporarily
 tag @s add ssiege_attacker
 

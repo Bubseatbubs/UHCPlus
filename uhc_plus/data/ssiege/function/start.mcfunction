@@ -62,6 +62,9 @@ scoreboard players reset @a uhcp_mine_rawGoldBlock
 scoreboard players reset @a uhcp_mine_rawIronBlock
 scoreboard players reset @a uhcp_ready
 scoreboard players reset @a ssiege_recall_charge
+scoreboard players set @a ssiege_kills 0
+scoreboard players set @a ssiege_deaths 0
+scoreboard players set @a ssiege_sniffer_hits 0
 
 # Remove tags
 tag @a remove UHCP_Creeper
