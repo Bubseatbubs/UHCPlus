@@ -21,6 +21,14 @@ scoreboard players set @s ssiege_killstreak 0
 # On-death Augment effects
 function ssiege:death/augments
 
+# Grant healing orbs to enemies with augments
+execute as @s[team=blue] run execute as @a[distance=..15,team=red] run execute if score @s uhcp_augment matches 324 run function ssiege:augments/effects/gold/healingorbs
+execute as @s[team=red] run execute as @a[distance=..15,team=blue] run execute if score @s uhcp_augment matches 324 run function ssiege:augments/effects/gold/healingorbs
+
+# Grants vengeance to allies with augments
+execute as @s[team=blue] run execute as @a[distance=..30,team=blue] run execute if score @s uhcp_augment matches 376 run function ssiege:augments/effects/gold/vengeance
+execute as @s[team=red] run execute as @a[distance=..30,team=red] run execute if score @s uhcp_augment matches 376 run function ssiege:augments/effects/gold/vengeance
+
 # Set up death spectator mode
 gamemode spectator @s
 execute as @s[tag=!UHCP_Explode] run tag @s add SSIEGE_dead
