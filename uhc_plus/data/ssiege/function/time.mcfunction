@@ -56,6 +56,9 @@ execute as @a[scores={uhcp_augment=306}] run function ssiege:augments/effects/go
 # Cram Session
 execute as @a[scores={uhcp_augment=311}] run function ssiege:augments/effects/gold/cramsession/levelcheck
 
+# Last Stand
+execute as @a[scores={uhcp_augment=331}] run function ssiege:augments/effects/gold/laststand
+
 # Late Game Specialist
 execute as @a[scores={uhcp_augment=332}] run function ssiege:augments/effects/gold/lategamespecialist/levelcheck
 

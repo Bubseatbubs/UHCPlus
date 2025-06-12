@@ -15,6 +15,9 @@ execute if score @s uhcp_augment matches 315 run return run function ssiege:augm
 # jump king
 execute if score @s uhcp_augment matches 329 run return run function ssiege:augments/effects/gold/jumpking/givecharge
 
+# Last Stand
+execute if score @s uhcp_augment matches 331 run function ssiege:augments/effects/gold/laststand
+
 # Late Looter
 execute if score @s uhcp_augment matches 333 run return run function ssiege:augments/effects/gold/latelooter/givehaste
 
