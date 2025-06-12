@@ -35,7 +35,7 @@ execute if score @s uhcp_augment matches 32 run return run function uhcp:augment
 execute if score @s uhcp_augment matches 33 run return run function uhcp:augments/effects/gold/villageidol
 execute if score @s uhcp_augment matches 34 run return run function uhcp:augments/effects/gold/bottlesmasher
 execute if score @s uhcp_augment matches 35 run return run function uhcp:augments/effects/gold/coppercollector
-execute if score @s uhcp_augment matches 36 run return run scoreboard players set @s uhcp_game_time 42000
+execute if score @s uhcp_augment matches 36 run return run function uhcp:augments/effects/gold/redstoneritual
 execute if score @s uhcp_augment matches 38 run return run function uhcp:augments/effects/gold/oppenheimer
 execute if score @s uhcp_augment matches 39 run return run function uhcp:augments/effects/gold/poseidonsblessing
 execute if score @s uhcp_augment matches 40 run return run loot give @s loot uhcp:consumables/relic_invoker

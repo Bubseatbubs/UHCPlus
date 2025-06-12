@@ -166,3 +166,6 @@ function ssiege:start/encounters/init
 
 # After a 10 second delay, start augment selection
 schedule function ssiege:start_augment_selection 200
+
+# Add on custom player balancing buffs
+execute as @a[tag=SSIEGE_Buff] run function ssiege:buffs/give_attributes
