@@ -65,6 +65,8 @@ scoreboard players reset @a ssiege_recall_charge
 scoreboard players set @a ssiege_kills 0
 scoreboard players set @a ssiege_deaths 0
 scoreboard players set @a ssiege_sniffer_hits 0
+scoreboard players set @a[team=blue] uhcp_team 0
+scoreboard players set @a[team=red] uhcp_team 1
 
 # Remove tags
 tag @a remove UHCP_Creeper
