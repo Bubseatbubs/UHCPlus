@@ -51,7 +51,7 @@ execute if score %blue ssiege_perk_swimspeed matches 1 run scoreboard players op
 execute if score %blue ssiege_perk_swimspeed matches 2 run scoreboard players operation %blue_cost ssiege_perk_swimspeed = %temp uhcp_initStatus
 execute if score %blue ssiege_perk_swimspeed matches 2 run scoreboard players operation %blue_cost ssiege_perk_swimspeed *= #3 uhcp_const
 
-execute if score %blue ssiege_perk_aura matches 3.. run scoreboard players set %blue_cost ssiege_perk_aura 999
+execute if score %blue ssiege_perk_swimspeed matches 3.. run scoreboard players set %blue_cost ssiege_perk_swimspeed 999
 
 # Update Feather Falling costs (n/3n for levels 1-2)
 execute if score %blue ssiege_perk_featherfalling matches 1 run scoreboard players operation %blue_cost ssiege_perk_featherfalling = %temp uhcp_initStatus
