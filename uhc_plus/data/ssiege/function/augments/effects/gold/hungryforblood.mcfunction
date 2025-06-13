@@ -1,0 +1,13 @@
+loot give @s loot uhcp:player_compass
+loot give @s loot uhcp:consumables/all-seeing_eye
+loot give @s loot uhcp:consumables/all-seeing_eye
+loot give @s loot uhcp:consumables/all-seeing_eye
+loot give @s loot uhcp:consumables/all-seeing_eye
+loot give @s loot uhcp:consumables/all-seeing_eye
+loot give @s loot uhcp:consumables/all-seeing_eye
+loot give @s loot uhcp:consumables/all-seeing_eye
+loot give @s loot uhcp:consumables/all-seeing_eye
+loot give @s loot uhcp:consumables/all-seeing_eye
+loot give @s loot uhcp:consumables/all-seeing_eye
+loot give @s loot uhcp:consumables/all-seeing_eye
+loot give @s loot uhcp:consumables/all-seeing_eye

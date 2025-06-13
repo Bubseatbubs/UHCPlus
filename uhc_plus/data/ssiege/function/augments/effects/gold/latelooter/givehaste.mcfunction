@@ -1,1 +1,0 @@
-effect give @s haste infinite 2 true

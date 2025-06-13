@@ -13,11 +13,13 @@ execute if score @s uhcp_augment matches 315 run function ssiege:augments/effect
 execute if score @s uhcp_augment matches 317 run function ssiege:augments/effects/gold/fireandwater
 execute if score @s uhcp_augment matches 320 run function ssiege:augments/effects/gold/gapplegapi
 execute if score @s uhcp_augment matches 322 run attribute @s max_health base set 40
+execute if score @s uhcp_augment matches 325 run function ssiege:augments/effects/gold/hungryforblood
 execute if score @s uhcp_augment matches 326 run loot give @s loot uhcp:hunting_call
 execute if score @s uhcp_augment matches 327 run function ssiege:augments/effects/gold/rushorder
 execute if score @s uhcp_augment matches 329 run function ssiege:augments/effects/gold/jumpking/givemace
 execute if score @s uhcp_augment matches 330 run function ssiege:augments/effects/gold/largeandincharge
-execute if score @s uhcp_augment matches 333 run function ssiege:augments/effects/gold/latelooter/applyfatigue
+execute if score @s uhcp_augment matches 333 run scoreboard players set @s uhcp_game_time 9600
+execute if score @s uhcp_augment matches 336 run function ssiege:augments/effects/gold/lockedout
 execute if score @s uhcp_augment matches 334 run function ssiege:augments/effects/gold/lessthan3
 execute if score @s uhcp_augment matches 335 run function ssiege:augments/effects/gold/lilbro
 execute if score @s uhcp_augment matches 339 run function ssiege:augments/effects/gold/moneymoney

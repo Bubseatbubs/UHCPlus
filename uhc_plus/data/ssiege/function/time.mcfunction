@@ -62,6 +62,9 @@ execute as @a[scores={uhcp_augment=332}] run function ssiege:augments/effects/go
 # Hunting Call
 scoreboard players remove @e[tag=UHCP_HuntingCall,scores={uhcp_itemCount=1..}] uhcp_itemCount 1
 
+# Late Looter
+execute as @a[scores={uhcp_augment=333}] run function ssiege:augments/effects/gold/latelooter/update
+
 # Announce Augments
 execute as @a[scores={augments=1..}] run function ssiege:augments/announce
 

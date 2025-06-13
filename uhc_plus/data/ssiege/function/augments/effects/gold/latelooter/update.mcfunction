@@ -1,0 +1,3 @@
+execute if score @s uhcp_game_time > %time uhcp_game_time run return run effect give @s mining_fatigue 1 0 true
+execute if score @s uhcp_game_time = %time uhcp_game_time run tellraw @s ["",{"text":"[Late Looter]","bold":true,"color":"gold"},{"text":" Your "},{"text":"Mining Fatigue","color":"dark_red"},{"text":" wore off and was replaced with permanent "},{"text":"Haste III","color":"yellow"},{"text":"!"}]
+execute if score @s uhcp_game_time < %time uhcp_game_time run effect give @s haste 1 2 true

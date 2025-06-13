@@ -15,9 +15,6 @@ execute if score @s uhcp_augment matches 315 run return run function ssiege:augm
 # jump king
 execute if score @s uhcp_augment matches 329 run return run function ssiege:augments/effects/gold/jumpking/givecharge
 
-# Late Looter
-execute if score @s uhcp_augment matches 333 run return run function ssiege:augments/effects/gold/latelooter/givehaste
-
 # Summoned Help
 execute if score @s uhcp_augment matches 363 run function ssiege:augments/effects/gold/summonedhelp
 
