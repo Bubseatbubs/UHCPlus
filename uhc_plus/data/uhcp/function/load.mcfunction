@@ -220,13 +220,13 @@ scoreboard players set %tier_def ssiege_settings 1
 
 # Arrow limits (special arrow limits are additive)
 scoreboard players set %arrow_limit_def uhcp_settings 12
-scoreboard players set %arrow_limit_def ssiege_settings 12
+scoreboard players set %arrow_limit_def ssiege_settings 16
 scoreboard players set %arrow_limit149_def uhcp_settings 8
 scoreboard players set %arrow_limit149_def ssiege_settings 8
 scoreboard players set %arrow_limit5_def uhcp_settings 20
-scoreboard players set %arrow_limit5_def ssiege_settings 20
+scoreboard players set %arrow_limit5_def ssiege_settings 24
 scoreboard players set %arrow_limit201_def uhcp_settings 52
-scoreboard players set %arrow_limit201_def ssiege_settings 52
+scoreboard players set %arrow_limit201_def ssiege_settings 48
 
 # Cobweb limit
 scoreboard players set %cobweb_limit_def uhcp_settings -1
