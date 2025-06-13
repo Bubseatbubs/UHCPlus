@@ -136,6 +136,7 @@ scoreboard objectives add ssiege_runes_purchased dummy
 scoreboard objectives add ssiege_settings dummy
 scoreboard objectives add ssiege_shards dummy
 scoreboard objectives add ssiege_unlocked_runesmith dummy
+scoreboard objectives add ssiege_gapples_eaten dummy
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health

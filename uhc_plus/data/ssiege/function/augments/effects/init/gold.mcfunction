@@ -26,6 +26,7 @@ execute if score @s uhcp_augment matches 347 run function ssiege:augments/effect
 execute if score @s uhcp_augment matches 349 run function ssiege:augments/effects/gold/protectprotocol
 execute if score @s uhcp_augment matches 360 run function ssiege:augments/effects/gold/starterkiti
 execute if score @s uhcp_augment matches 363 run function ssiege:augments/effects/gold/summonedhelp
+execute if score @s uhcp_augment matches 365 run function ssiege:augments/effects/gold/takeaim
 execute if score @s uhcp_augment matches 366 run function ssiege:augments/effects/gold/theboat
 execute if score @s uhcp_augment matches 375 run function ssiege:augments/effects/gold/unleashthebeast
 execute if score @s uhcp_augment matches 378 run function ssiege:augments/effects/gold/youhavemyrodi
