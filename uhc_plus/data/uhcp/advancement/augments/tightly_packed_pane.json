@@ -20,9 +20,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
-                    "uhcp_leave": {
-                      "min": 1
-                    }
+                    "uhcp_augment": 375
                   }
                 }
               ]
