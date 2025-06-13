@@ -65,6 +65,9 @@ scoreboard players remove @e[tag=UHCP_HuntingCall,scores={uhcp_itemCount=1..}] u
 # Late Looter
 execute as @a[scores={uhcp_augment=333}] run function ssiege:augments/effects/gold/latelooter/update
 
+# Prop hunt
+execute as @a[scores={uhcp_augment=348}] at @s run function uhcp:augments/effects/silver/prophunt/status
+
 # Announce Augments
 execute as @a[scores={augments=1..}] run function ssiege:augments/announce
 
