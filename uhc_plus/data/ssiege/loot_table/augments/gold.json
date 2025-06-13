@@ -396,6 +396,119 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:copper_ingot",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:309s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Copper Collector",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "You can trade ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Copper",
+                    "color": "white"
+                  },
+                  {
+                    "text": " for ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Soul Shards",
+                    "color": "white"
+                  },
+                  {
+                    "text": " with your",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Runesmith. (3 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Blocks",
+                    "color": "white"
+                  },
+                  {
+                    "text": " of ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Copper",
+                    "color": "white"
+                  },
+                  {
+                    "text": " per ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Soul Shard",
+                    "color": "white"
+                  },
+                  {
+                    "text": ")",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:309s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:lead",
           "weight": 1,
           "functions": [
@@ -2455,7 +2568,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:red_dye",
+          "name": "minecraft:copper_ingot",
           "weight": 1,
           "functions": [
             {
@@ -2464,14 +2577,14 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:376s}"
+              "tag": "{uhcp_augSelect:1b,augment:309s}"
             },
             {
               "function": "minecraft:set_name",
               "target": "item_name",
               "name": [
                 {
-                  "text": "Vengeance",
+                  "text": "Copper Collector",
                   "color": "gold",
                   "bold": true
                 }
@@ -2487,20 +2600,224 @@
                 },
                 [
                   {
-                    "text": "Gain ",
+                    "text": "You can trade ",
                     "color": "gray"
                   },
                   {
-                    "text": "Strength",
+                    "text": "Copper",
                     "color": "white"
                   },
                   {
-                    "text": " 1 for 6 seconds whenever an ally",
+                    "text": " for ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Soul Shards",
+                    "color": "white"
+                  },
+                  {
+                    "text": " with your",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Runesmith. (3 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Blocks",
+                    "color": "white"
+                  },
+                  {
+                    "text": " of ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Copper",
+                    "color": "white"
+                  },
+                  {
+                    "text": " per ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Soul Shard",
+                    "color": "white"
+                  },
+                  {
+                    "text": ")",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:309s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:zombie_head",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:323s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Harvest Season II",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                {
+                  "text": "Whenever you kill a hostile mob, it has a 50%",
+                  "color": "gray"
+                },
+                [
+                  {
+                    "text": "chance to drop a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Golden",
+                    "color": "white"
+                  },
+                  {
+                    "text": "Apple",
+                    "color": "white"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:323s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:365s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Take Aim",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue",
+                  "bold": true
+                },
+                [
+                  {
+                    "text": "Gain a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Power",
+                    "color": "white"
+                  },
+                  {
+                    "text": " I ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Bow",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and 16 arrows. Your arrow limit",
                     "color": "gray"
                   }
                 ],
                 {
-                  "text": "dies within 32 blocks of you.",
+                  "text": "is increased to 32.",
                   "color": "gray"
                 }
               ],
@@ -2523,7 +2840,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:376s}"
+                        "minecraft:custom_data": "{augment:365s}"
                       }
                     }
                   }
