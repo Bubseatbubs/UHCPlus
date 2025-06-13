@@ -109,7 +109,7 @@ execute as @a[tag=UHCP_MilkBucket] run function uhcp:milk_bucket/apply
 # Experience orbs from mining auto-smelted metals
 execute if score %auto_smelt uhcp_settings matches 1 run function uhcp:mine/experience
 
-# Disable ender pearl damage
+# Used ender pearl
 execute if score %ender_pearl uhcp_settings matches 1 as @e[type=minecraft:ender_pearl] at @s run function uhcp:entity/ender_pearl
 
 # Fake apples

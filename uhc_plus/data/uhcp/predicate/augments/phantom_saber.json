@@ -14,6 +14,13 @@
       "scores": {
         "uhcp_augment": 221
       }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "uhcp_augment": 345
+      }
     }
   ]
 }

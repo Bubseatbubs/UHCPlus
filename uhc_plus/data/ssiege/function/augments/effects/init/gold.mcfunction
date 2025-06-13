@@ -22,6 +22,8 @@ execute if score @s uhcp_augment matches 335 run function ssiege:augments/effect
 execute if score @s uhcp_augment matches 339 run function ssiege:augments/effects/gold/moneymoney
 execute if score @s uhcp_augment matches 342 run function ssiege:augments/effects/gold/oppenheimer
 execute if score @s uhcp_augment matches 343 run function ssiege:augments/effects/gold/parasite
+execute if score @s uhcp_augment matches 344 run give @s ender_pearl 3
+execute if score @s uhcp_augment matches 345 run function ssiege:augments/effects/gold/phantomsaber
 execute if score @s uhcp_augment matches 347 run function ssiege:augments/effects/gold/poseidonsblessing
 execute if score @s uhcp_augment matches 349 run function ssiege:augments/effects/gold/protectprotocol
 execute if score @s uhcp_augment matches 360 run function ssiege:augments/effects/gold/starterkiti
