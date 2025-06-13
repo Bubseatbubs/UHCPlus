@@ -16,7 +16,7 @@ execute at @s positioned ~ ~ ~ run function ssiege:bases/inhibitors/init_red
 execute at @s positioned ~ ~ ~ run function ssiege:bases/turrets/init_red
 execute at @s positioned ~ ~ ~ run function ssiege:bases/spawn_red_shopkeepers
 
-execute at @s positioned ~-81 ~ ~ run spreadplayers ~ ~ 1 3 true @a[tag=!UHCP_Spectator,team=red]
+execute as @a[team=red] run function ssiege:bases/teleport_red
 
 execute at @s positioned ~ ~ ~ run fill ~-24 ~10 ~23 ~23 ~14 ~-24 minecraft:air
 execute at @s positioned ~ ~ ~ run fill ~-24 ~35 ~23 ~23 ~35 ~-24 minecraft:barrier
