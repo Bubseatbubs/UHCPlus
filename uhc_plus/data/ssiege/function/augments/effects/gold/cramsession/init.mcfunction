@@ -1,4 +1,5 @@
 give @s experience_bottle 20
+loot give @s loot ssiege:soulshard
 
 # max level reached
 scoreboard objectives add max_level_achieved dummy

@@ -1,7 +1,7 @@
 # Give diamond to player who reached new level
 loot give @s loot ssiege:soulshard
 
-# Adds 1 to max_level_achieved
+# Adds 3 to max_level_achieved
 scoreboard players add @s max_level_achieved 3
 
 # Particle effect at player location

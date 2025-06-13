@@ -35,9 +35,6 @@ execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp
 # AFK augment
 execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=300},gamemode=survival] at @s run ride @s mount @n[tag=UHCP_AFKLock,distance=..15]
 
-# Prop hunt
-execute as @a[scores={uhcp_augment=349}] at @s run function uhcp:augments/effects/silver/prophunt/status
-
 # Solo leveling
 execute as @a[scores={uhcp_lava_timeInterval=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
 execute as @a[scores={uhcp_lava_maxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
