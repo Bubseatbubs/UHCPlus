@@ -1,2 +1,2 @@
-tellraw @s ["",{"text":"You don't have enough ","color":"red"},{"text":"Copper Blocks","color":"#B87333"},{"text":" to sell! (3 Copper Blocks for 1 Soul Shard)","color":"red"}]
+tellraw @s ["",{"text":"You don't have enough ","color":"red"},{"text":"Copper Blocks","color":"#B87333"},{"text":" to sell! (8 Copper Blocks for 1 Soul Shard)","color":"red"}]
 $give @s copper_block $(refund)
