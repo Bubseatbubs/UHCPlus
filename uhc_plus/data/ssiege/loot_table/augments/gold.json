@@ -2499,7 +2499,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:splash_potion",
+          "name": "minecraft:redstone",
           "weight": 1,
           "functions": [
             {
