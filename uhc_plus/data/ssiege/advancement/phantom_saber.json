@@ -23,7 +23,12 @@
               "uhcp_augment": 345
             }
           }
-        ]
+        ],
+        "damage": {
+          "dealt": {
+            "min": 2
+          }
+        }
       }
     }
   },
