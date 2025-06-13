@@ -1,3 +1,5 @@
 .vscode/**
 **/data/.vscode/**
 **/data/**/.vscode/**
+scripts/*.csv
+scripts/*.json
