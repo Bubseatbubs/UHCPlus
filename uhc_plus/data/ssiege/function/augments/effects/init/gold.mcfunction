@@ -12,6 +12,7 @@ execute if score @s uhcp_augment matches 313 run function ssiege:augments/effect
 execute if score @s uhcp_augment matches 315 run function ssiege:augments/effects/gold/echolocation
 execute if score @s uhcp_augment matches 317 run function ssiege:augments/effects/gold/fireandwater
 execute if score @s uhcp_augment matches 320 run function ssiege:augments/effects/gold/gapplegapi
+execute if score @s uhcp_augment matches 326 run loot give @s loot uhcp:hunting_call
 execute if score @s uhcp_augment matches 327 run function ssiege:augments/effects/gold/rushorder
 execute if score @s uhcp_augment matches 329 run function ssiege:augments/effects/gold/jumpking/givemace
 execute if score @s uhcp_augment matches 330 run function ssiege:augments/effects/gold/largeandincharge

@@ -59,8 +59,11 @@ execute as @a[scores={uhcp_augment=331}] run function ssiege:augments/effects/go
 # Late Game Specialist
 execute as @a[scores={uhcp_augment=332}] run function ssiege:augments/effects/gold/lategamespecialist/levelcheck
 
+# Hunting Call
+scoreboard players remove @e[tag=UHCP_HuntingCall,scores={uhcp_itemCount=1..}] uhcp_itemCount 1
+
 # Announce Augments
-execute as @a[scores={augments=1..}] run function uhcp:augments/announce
+execute as @a[scores={augments=1..}] run function ssiege:augments/announce
 
 # Player compass
 execute unless score %compass_time uhcp_itemCount matches 1.. if entity @a[predicate=uhcp:player_compass/hand,gamemode=survival] run function uhcp:compass/determine
