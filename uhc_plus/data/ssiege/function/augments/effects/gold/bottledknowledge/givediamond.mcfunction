@@ -1,5 +1,5 @@
 # Give diamond to player who reached new level
-give @s minecraft:diamond 1
+give @s minecraft:diamond 2
 
 # Adds 1 to max_level_achieved
 scoreboard players add @s max_level_achieved 1
