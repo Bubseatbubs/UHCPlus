@@ -1,0 +1,2 @@
+tellraw @a[scores={uhcp_augment=361}] ["",{"text":"[Stay Alert]","bold":true,"color":"gold"},{"text":" No more "},{"text":"Creepers","color":"green"},{"text":" will spawn behind you."}]
+execute as @a[scores={uhcp_augment=361}] run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1

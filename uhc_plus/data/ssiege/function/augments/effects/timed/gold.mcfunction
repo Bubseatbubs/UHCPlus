@@ -15,9 +15,11 @@ execute if score @s uhcp_augment matches 315 run return run function ssiege:augm
 # jump king
 execute if score @s uhcp_augment matches 329 run return run function ssiege:augments/effects/gold/jumpking/givecharge
 
+# Stay Alert
+execute if score @s uhcp_augment matches 361 run return run function ssiege:augments/effects/gold/stayalert/spawn
+
 # Summoned Help
 execute if score @s uhcp_augment matches 363 run function ssiege:augments/effects/gold/summonedhelp
 
 # Unleash the Beast
 execute if score @s uhcp_augment matches 375 run return run function ssiege:augments/effects/gold/unleashthebeast
-
