@@ -10,25 +10,7 @@
     "minecraft:food": {
       "nutrition": 4,
       "saturation": 9.6,
-      "can_always_eat": true,
-      "effects": [
-        {
-          "effect": {
-            "id": "minecraft:regeneration",
-            "amplifier": 1,
-            "duration": 100
-          },
-          "probability": 1.0
-        },
-        {
-          "effect": {
-            "id": "minecraft:absorption",
-            "amplifier": 0,
-            "duration": 2400
-          },
-          "probability": 1.0
-        }
-      ]
+      "can_always_eat": true
     }
   }
 }

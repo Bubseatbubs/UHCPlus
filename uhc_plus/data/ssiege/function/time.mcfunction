@@ -96,7 +96,7 @@ execute as @a[tag=UHCP_IsRabbit] at @s run function uhcp:consumables/magic_trick
 execute as @a[tag=UHCP_IsAttackTitan] at @s run function uhcp:consumables/titan_spinal_fluid/update
 
 # Update speed of golden apples
-#execute as @a[gamemode=survival] run function ssiege:buffs/medium_gapples
+execute as @a[gamemode=survival] run function ssiege:buffs/medium_gapples
 #execute as @a[tag=SSIEGE_Buff,gamemode=survival] run function ssiege:buffs/faster_gapples
 #execute as @a[tag=!SSIEGE_Buff,gamemode=survival] run function ssiege:buffs/slower_gapples
 
