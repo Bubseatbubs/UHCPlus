@@ -38,7 +38,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "uhcp_augment": 44
+              "uhcp_augment": 358
             }
           },
           {
