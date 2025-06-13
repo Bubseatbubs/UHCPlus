@@ -2,18 +2,33 @@
   "function": "minecraft:set_components",
   "components": {
     "minecraft:consumable": {
-      "consume_seconds": 0.96,
+      "consume_seconds": 1.4,
       "animation": "eat",
       "sound": "entity.generic.eat",
       "has_consume_particles": true
     },
     "minecraft:food": {
       "nutrition": 4,
-      "saturation": 1.2,
-      "can_always_eat": true
-    },
-    "minecraft:custom_data": {
-      "fast_golden_apple": true
+      "saturation": 9.6,
+      "can_always_eat": true,
+      "effects": [
+        {
+          "effect": {
+            "id": "minecraft:regeneration",
+            "amplifier": 1,
+            "duration": 100
+          },
+          "probability": 1.0
+        },
+        {
+          "effect": {
+            "id": "minecraft:absorption",
+            "amplifier": 0,
+            "duration": 2400
+          },
+          "probability": 1.0
+        }
+      ]
     }
   }
 }
