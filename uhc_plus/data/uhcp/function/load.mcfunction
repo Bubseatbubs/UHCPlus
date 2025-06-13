@@ -230,7 +230,7 @@ scoreboard players set %arrow_limit201_def ssiege_settings 48
 
 # Cobweb limit
 scoreboard players set %cobweb_limit_def uhcp_settings -1
-scoreboard players set %cobweb_limit_def ssiege_settings 12
+scoreboard players set %cobweb_limit_def ssiege_settings 0
 
 # Border size
 scoreboard players set %border_size_def uhcp_settings 1500
