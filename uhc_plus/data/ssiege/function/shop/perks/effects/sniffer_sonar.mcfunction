@@ -19,6 +19,5 @@ execute if score %red ssiege_perk_sonar matches 3.. at @e[type=marker,tag=RED_BA
 execute if score %red ssiege_perk_sonar matches 2 at @e[type=marker,tag=RED_BASE,limit=1] run effect give @a[team=blue,distance=..35] glowing 10 0 true
 execute if score %red ssiege_perk_sonar matches 3.. at @e[type=marker,tag=RED_BASE,limit=1] run effect give @a[team=blue,distance=..50] glowing 10 0 true
 
-
 # Schedule next sonar activation (5 seconds = 100 ticks from now)
 scoreboard players add %sonar uhcp_game_time 100
