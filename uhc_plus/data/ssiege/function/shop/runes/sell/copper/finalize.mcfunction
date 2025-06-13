@@ -1,0 +1,3 @@
+execute if score @s ssiege_multi matches 0 run return run tellraw @s [{"text":"You don't have enough ","color":"red"},{"text":"Copper Blocks","color":"#B87333"},{"text":" to sell! (8 Copper Blocks for 1 Soul Shard)","color":"red"}]
+tellraw @s ["",{"text":"You sold your "},{"text":"Copper Blocks","color":"#B87333"},{"text":" for "},{"score":{name:"@s",objective:"ssiege_multi"}},{"text":" Soul Shards","color":"light_purple"},{"text":"!"}]
+loot give @s loot ssiege:multi_soulshard
