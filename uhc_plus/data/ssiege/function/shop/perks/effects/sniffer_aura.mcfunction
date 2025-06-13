@@ -12,12 +12,14 @@ execute if score %blue ssiege_perk_aura matches 1 run execute at @e[tag=BLUE_BAS
 execute if score %blue ssiege_perk_aura matches 2 run execute at @e[tag=BLUE_BASE,limit=1] run execute positioned ~77 ~ ~ run effect give @a[team=blue,distance=..10] regeneration 4 1 true
 execute if score %blue ssiege_perk_aura matches 3 run execute at @e[tag=BLUE_BASE,limit=1] run execute positioned ~77 ~ ~ run effect give @a[team=blue,distance=..10] regeneration 4 2 true
 execute if score %blue ssiege_perk_aura matches 4 run execute at @e[tag=BLUE_BASE,limit=1] run execute positioned ~77 ~ ~ run effect give @a[team=blue,distance=..10] regeneration 4 3 true
+execute if score %blue ssiege_perk_aura matches 5.. run execute at @e[tag=BLUE_BASE,limit=1] run execute positioned ~77 ~ ~ run effect give @a[team=blue,distance=..10] regeneration 4 6 true
 
 # Red team aura effects
 execute if score %red ssiege_perk_aura matches 1 run execute at @e[tag=RED_BASE,limit=1] run execute positioned ~-77 ~ ~ run effect give @a[team=red,distance=..10] regeneration 4 0 true
 execute if score %red ssiege_perk_aura matches 2 run execute at @e[tag=RED_BASE,limit=1] run execute positioned ~-77 ~ ~ run effect give @a[team=red,distance=..10] regeneration 4 1 true
 execute if score %red ssiege_perk_aura matches 3 run execute at @e[tag=RED_BASE,limit=1] run execute positioned ~-77 ~ ~ run effect give @a[team=red,distance=..10] regeneration 4 2 true
 execute if score %red ssiege_perk_aura matches 4 run execute at @e[tag=RED_BASE,limit=1] run execute positioned ~-77 ~ ~ run effect give @a[team=red,distance=..10] regeneration 4 3 true
+execute if score %red ssiege_perk_aura matches 5.. run execute at @e[tag=RED_BASE,limit=1] run execute positioned ~-77 ~ ~ run effect give @a[team=red,distance=..10] regeneration 4 6 true
 
 # Spawn protection
 execute at @e[tag=BLUE_BASE,limit=1] run execute positioned ~77 ~ ~ as @a[team=red,distance=..15,gamemode=survival] run damage @s 6.67 magic at ~ ~ ~
