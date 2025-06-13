@@ -15,6 +15,9 @@ execute if score @s uhcp_augment matches 315 run return run function ssiege:augm
 # jump king
 execute if score @s uhcp_augment matches 329 run return run function ssiege:augments/effects/gold/jumpking/givecharge
 
+# Regenerative Shields
+execute if score @s uhcp_augment matches 350 run return run function ssiege:augments/effects/gold/regenerativeshields
+
 # Stay Alert
 execute if score @s uhcp_augment matches 361 run return run function ssiege:augments/effects/gold/stayalert/spawn
 

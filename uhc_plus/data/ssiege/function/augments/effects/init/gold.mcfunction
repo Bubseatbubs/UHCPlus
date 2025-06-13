@@ -30,6 +30,7 @@ execute if score @s uhcp_augment matches 344 run give @s ender_pearl 3
 execute if score @s uhcp_augment matches 345 run function ssiege:augments/effects/gold/phantom_saber/phantomsaber
 execute if score @s uhcp_augment matches 347 run function ssiege:augments/effects/gold/poseidonsblessing
 execute if score @s uhcp_augment matches 349 run function ssiege:augments/effects/gold/protectprotocol
+execute if score @s uhcp_augment matches 350 run scoreboard players set @s uhcp_game_time 1200
 execute if score @s uhcp_augment matches 360 run function ssiege:augments/effects/gold/starterkiti
 execute if score @s uhcp_augment matches 361 run scoreboard players set @s uhcp_game_time 1200
 execute if score @s uhcp_augment matches 363 run function ssiege:augments/effects/gold/summonedhelp
