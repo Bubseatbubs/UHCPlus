@@ -21,6 +21,6 @@
     }
   },
   "rewards": {
-    "function": "ssiege:start/encounters/effects/13"
+    "function": "ssiege:augments/killed_hostile"
   }
 }
