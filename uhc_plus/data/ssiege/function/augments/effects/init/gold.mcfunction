@@ -19,11 +19,11 @@ execute if score @s uhcp_augment matches 327 run function ssiege:augments/effect
 execute if score @s uhcp_augment matches 329 run function ssiege:augments/effects/gold/jumpking/givemace
 execute if score @s uhcp_augment matches 330 run function ssiege:augments/effects/gold/largeandincharge
 execute if score @s uhcp_augment matches 333 run scoreboard players set @s uhcp_game_time 9600
-execute if score @s uhcp_augment matches 336 run function ssiege:augments/effects/gold/lockedout
 execute if score @s uhcp_augment matches 334 run function ssiege:augments/effects/gold/lessthan3
 execute if score @s uhcp_augment matches 335 run function ssiege:augments/effects/gold/lilbro
+execute if score @s uhcp_augment matches 336 run function ssiege:augments/effects/gold/lockedout
 execute if score @s uhcp_augment matches 339 run function ssiege:augments/effects/gold/moneymoney
-execute if score @s uhcp_augment matches 339 run function ssiege:augments/effects/gold/moonwalking
+execute if score @s uhcp_augment matches 340 run function ssiege:augments/effects/gold/moonwalking
 execute if score @s uhcp_augment matches 342 run function ssiege:augments/effects/gold/oppenheimer
 execute if score @s uhcp_augment matches 343 run function ssiege:augments/effects/gold/parasite
 execute if score @s uhcp_augment matches 344 run give @s ender_pearl 3
