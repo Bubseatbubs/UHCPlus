@@ -37,10 +37,28 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {
-                  "text": "Right-click while holding to instantly recall back to your base.",
-                  "color": "gray"
-                }
+                [
+                  {
+                    "text": "Right-click while holding to instantly",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "randomly teleport",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " a short distance.",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Cannot be used underground.",
+                    "color": "red"
+                  }
+                ]
               ],
               "mode": "replace_all"
             }

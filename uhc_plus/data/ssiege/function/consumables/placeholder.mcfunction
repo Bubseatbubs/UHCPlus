@@ -1,1 +1,0 @@
-# Any Sniffer Siege exclusive consumables go here (ie. Duel Invitation, Infinite Dirt)

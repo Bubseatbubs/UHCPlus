@@ -1,5 +1,7 @@
+# Sniffer Siege
+execute if score %mode uhcp_settings matches 1 run return run execute at @s run function ssiege:consumables/wild_feather/init
+
 # Featherstorm
-execute if score %mode uhcp_settings matches 1 run return run function ssiege:recall/finish
 execute if score @s uhcp_augment matches 230 run function uhcp:augments/effects/prismatic/featherstorm/lightning
 
 # Assign team scoreboards
