@@ -10,5 +10,5 @@ playsound minecraft:block.cobweb.place master @a[distance=..4] 1 1 1
 particle minecraft:item_cobweb ~ ~ ~ 1 1 1 1 40 normal
 fill ~-2 ~ ~ ~2 ~ ~ minecraft:cobweb keep
 fill ~ ~ ~-2 ~ ~ ~2 minecraft:cobweb keep
-#summon minecraft:marker ~ ~0.5 ~ {Tags:["UHCP_Arachne_Cobweb","UHCP_Summon"]}
+summon minecraft:marker ~ ~0.5 ~ {Tags:["UHCP_Arachne_Cobweb","UHCP_Summon"]}
 kill @s
