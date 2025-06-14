@@ -89,7 +89,6 @@ execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan
 execute as @e[type=!minecraft:player,tag=UHCP_Titan] at @s run function uhcp:titans/update
 
 # Update Sniffer Bossbar
-# Temporary testing change - have both Sniffer bossbars be visible at all times
 function ssiege:bossbar/update
 
 # Test kit
@@ -178,6 +177,9 @@ execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssieg
 
 # Titan Spawning
 execute if score %time uhcp_game_time = %titans uhcp_game_time run function ssiege:titans/timed
+
+# Titan's Might
+execute if score %time uhcp_game_time >= %titan_might uhcp_game_time run execute as @a[scores={ssiege_buff_titanslayer = 1..}] at @s run function ssiege:titans/titans_might
 
 # Infernus Blessing
 execute if score %time uhcp_game_time >= %infernus_check uhcp_game_time run function ssiege:titans/infernus/update_blessing
