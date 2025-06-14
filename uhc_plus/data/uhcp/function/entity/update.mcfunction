@@ -7,6 +7,7 @@ execute as @e[tag=UHCP_SoulApple] at @s run function uhcp:kill/soul_apple/update
 
 # Consumables
 execute as @e[tag=UHCP_WebSlinger] at @s run function uhcp:consumables/web_slinger/update
+execute as @e[tag=UHCP_Cobweb] at @s run function uhcp:consumables/web_slinger/clear
 
 # Relics
 execute as @e[tag=UHCP_Saber] at @s run function uhcp:relics/soulflames_embrace/update

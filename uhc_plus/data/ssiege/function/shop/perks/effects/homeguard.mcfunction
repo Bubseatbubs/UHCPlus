@@ -18,6 +18,5 @@ execute if score %red ssiege_perk_homeguard matches 3.. at @e[type=marker,tag=RE
 execute if score %red ssiege_perk_homeguard matches 3.. at @e[type=marker,tag=RED_BASE,limit=1] run execute positioned ~-77 ~1 ~ run effect give @a[team=red,distance=..20] speed 2 1 true
 execute if score %red ssiege_perk_homeguard matches 3.. at @e[type=marker,tag=RED_BASE,limit=1] run execute positioned ~-40 ~1 ~ run effect give @a[team=red,distance=..20] speed 2 1 true
 
-
 # Schedule next homeguard activation
 scoreboard players add %homeguard uhcp_game_time 20
