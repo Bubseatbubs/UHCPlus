@@ -1,0 +1,176 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sentry_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:consumable": {
+                  "consume_seconds": 2147483647,
+                  "animation": "none",
+                  "has_consume_particles": false
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:damage": 0,
+                "minecraft:max_damage": 9000,
+                "minecraft:repair_cost": 2147483647,
+                "!minecraft:repairable": {}
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {}
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:true,uhcp_relic:true,uhcp_relic_id:2b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Fl",
+                  "color": "#0800FF",
+                  "bold": true
+                },
+                {
+                  "text": "ux",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": " Fa",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": "ct",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": "or",
+                  "color": "#54C0FF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "RELIC",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ": Relics charge up in inventory.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Right click",
+                    "color": "#9EE8FF",
+                    "italic": false
+                  },
+                  {
+                    "text": " at max charge to activate",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "a Relic's",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ". Using an",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": "resets the Relic's charge.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                [
+                  {
+                    "text": "ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ": Deploy a magnetic field over 7 seconds",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "that inflicts",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Slowness I",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " on enemies and grants",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Speed II & Jump Boost I",
+                    "color": "yellow",
+                    "italic": false
+                  },
+                  {
+                    "text": " to allies.",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

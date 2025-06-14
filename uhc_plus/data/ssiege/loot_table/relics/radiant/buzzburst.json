@@ -1,0 +1,106 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "ssiege:relics/buzzburst",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Radiant ",
+                  "color": "light_purple",
+                  "bold": true
+                },
+                {
+                  "text": "Bu",
+                  "color": "#0800FF",
+                  "bold": true
+                },
+                {
+                  "text": "zz",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": "bu",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": "rs",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": "t",
+                  "color": "#54C0FF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Radiant Bonus:",
+                    "color": "blue",
+                    "bold": false,
+                    "italic": false
+                  },
+                  [
+                    {
+                      "text": " Additionally spawn a",
+                      "color": "gray"
+                    }         
+                  ]
+                ],
+                [
+                  {
+                    "text": "Royal Guard",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ", a large ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Bee",
+                    "color": "blue"
+                  },
+                  {
+                    "text": " with",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "increased health and damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:true,uhcp_relic:true,uhcp_relic_id:0b,uhcp_radiant:true}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

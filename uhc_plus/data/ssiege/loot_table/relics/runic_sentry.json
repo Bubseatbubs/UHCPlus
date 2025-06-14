@@ -1,0 +1,216 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dune_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:max_damage": 3000,
+                "minecraft:damage": 0,
+                "minecraft:consumable": {
+                  "consume_seconds": 2147483647,
+                  "animation": "none",
+                  "has_consume_particles": false
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {}
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:true,uhcp_relic:true,uhcp_relic_id:4b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Ru",
+                  "color": "#0800FF",
+                  "bold": true
+                },
+                {
+                  "text": "ni",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": "c S",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": "en",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": "tr",
+                  "color": "#54C0FF"
+                },
+                {
+                  "text": "y",
+                  "color": "#4FE8FF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "RELIC",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ": Relics charge up in inventory.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Right click",
+                    "color": "#9EE8FF",
+                    "italic": false
+                  },
+                  {
+                    "text": " at max charge to activate",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "a Relic's",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ". Using an",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": "resets the Relic's charge.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                [
+                  {
+                    "text": "ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ": Place down a",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Runic Sentry",
+                    "color": "blue"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Runic Sentries",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": " aim and fire at nearby",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "enemy players and mobs, dealing",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 12 damage",
+                    "color": "red"
+                  },
+                  {
+                    "text": "."
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "(",
+                    "color": "dark_gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "Runic Sentries",
+                    "color": "blue"
+                  },
+                  {
+                    "text": " last for 20 seconds"
+                  }
+                ],
+                [
+                  {
+                    "text": "and have",
+                    "color": "dark_gray",
+                    "italic": true
+                  },
+                  {
+                    "text": " 20🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": ".)"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

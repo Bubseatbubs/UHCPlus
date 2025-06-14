@@ -1,0 +1,101 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "ssiege:relics/smooth_getaway",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Radiant ",
+                  "color": "light_purple",
+                  "bold": true
+                },
+                {
+                  "text": "Sm",
+                  "color": "#0800FF",
+                  "bold": true
+                },
+                {
+                  "text": "oo",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": "th",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": " Ge",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": "ta",
+                  "color": "#54C0FF"
+                },
+                {
+                  "text": "way",
+                  "color": "#4FE8FF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Radiant Bonus:",
+                    "color": "blue",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " Create 2 more",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Mirages",
+                    "color": "blue"
+                  },
+                  {
+                    "text": ", and",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Mirages",
+                    "color": "blue"
+                  }
+                ],
+                [
+                  {
+                    "text": "deal double damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:true,uhcp_relic:true,uhcp_relic_id:6b,uhcp_radiant:true}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:max_damage": 3000,
+                "minecraft:damage": 0,
+                "minecraft:consumable": {
+                  "consume_seconds": 2147483647,
+                  "animation": "none",
+                  "has_consume_particles": false
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:true,uhcp_relic:true,uhcp_relic_id:5b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Wi",
+                  "color": "#0800FF",
+                  "bold": true
+                },
+                {
+                  "text": "nd",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": "fa",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": "ll",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "RELIC",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ": Relics charge up in inventory.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Right click",
+                    "color": "#9EE8FF",
+                    "italic": false
+                  },
+                  {
+                    "text": " at max charge to activate",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "a Relic's",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ". Using an",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": "resets the Relic's charge.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                [
+                  {
+                    "text": "ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  [
+                    {
+                      "text": ": Summon a giant falling",
+                      "color": "gray",
+                      "italic": false
+                    },
+                    {
+                      "text": " Gold Block",
+                      "color": "blue"
+                    }
+                  ]
+                ],
+                [
+                  {
+                    "text": "above the nearest enemy. When it lands, it",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "deals",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 2🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": ". The size & damage of the",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Gold",
+                    "color": "blue"
+                  }
+                ],
+                [
+                  {
+                    "text": "Block ",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": "increase based on the number of",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Golden Apples",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": " you have eaten.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " (Cap: 20)",
+                    "color": "dark_gray",
+                    "italic": true
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

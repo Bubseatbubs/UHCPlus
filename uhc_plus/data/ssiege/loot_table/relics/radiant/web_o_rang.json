@@ -1,0 +1,78 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "ssiege:relics/web_o_rang",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Radiant ",
+                  "color": "light_purple",
+                  "bold": true
+                },
+                {
+                  "text": "We",
+                  "color": "#0800FF",
+                  "bold": true
+                },
+                {
+                  "text": "b-o",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": "-Ra",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": "ng",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Radiant Bonus:",
+                    "color": "blue",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " Throw 2 additional",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " Web-o-Rangs.",
+                    "color": "blue"
+                  }
+                ]
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:true,uhcp_relic:true,uhcp_relic_id:7b,uhcp_radiant:true}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

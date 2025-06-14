@@ -1,0 +1,87 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "ssiege:relics/gravity_globe",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Radiant ",
+                  "color": "light_purple",
+                  "bold": true
+                },
+                {
+                  "text": "Gra",
+                  "color": "#0800FF",
+                  "bold": true
+                },
+                {
+                  "text": "vit",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": "y Gl",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": "ob",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": "e",
+                  "color": "#54C0FF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Radiant Bonus:",
+                    "color": "blue",
+                    "bold": false,
+                    "italic": false
+                  },
+                  [
+                    {
+                      "text": " Enemies are launched double",
+                      "color": "gray"
+                    }
+                  ]
+                ],
+                [
+                  {
+                    "text": "the height.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:true,uhcp_relic:true,uhcp_relic_id:3b,uhcp_radiant:true}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

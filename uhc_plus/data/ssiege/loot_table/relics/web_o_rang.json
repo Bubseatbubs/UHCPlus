@@ -1,0 +1,195 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:max_damage": 6000,
+                "minecraft:damage": 0,
+                "minecraft:consumable": {
+                  "consume_seconds": 2147483647,
+                  "animation": "none",
+                  "has_consume_particles": false
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:true,uhcp_relic:true,uhcp_relic_id:7b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "We",
+                  "color": "#0800FF",
+                  "bold": true
+                },
+                {
+                  "text": "b-o-",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": "Ra",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": "ng",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "RELIC",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ": Relics charge up in inventory.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Right click",
+                    "color": "#9EE8FF",
+                    "italic": false
+                  },
+                  {
+                    "text": " at max charge to activate",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "a Relic's",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ". Using an",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": "resets the Relic's charge.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                [
+                  {
+                    "text": "ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  [
+                    {
+                      "text": ": Throw a",
+                      "color": "gray"
+                    },
+                    {
+                      "text": " Web-o-Rang",
+                      "color": "blue"
+                    },
+                    {
+                      "text": ", which"
+                    }
+                  ]
+                ],
+                [
+                  {
+                    "text": "places cobwebs as it travels. After",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "a short duration or upon block collision,",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Web-o-Rang",
+                    "color": "blue"
+                  },
+                  {
+                    "text": " travels back to its user."
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "(",
+                    "color": "dark_gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "Web-o-Rang",
+                    "color": "blue",
+                    "italic": true
+                  },
+                  {
+                    "text": " cobwebs are temporary.)"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

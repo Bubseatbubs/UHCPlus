@@ -1,0 +1,22 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "ssiege:relics/smooth_getaway"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "!minecraft:consumable": {},
+            "minecraft:damage": 8000
+          }
+        }
+      ]
+    }
+  ]
+}

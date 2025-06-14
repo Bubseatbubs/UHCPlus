@@ -1,0 +1,199 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:honeycomb",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:max_damage": 9000,
+                "minecraft:damage": 0,
+                "minecraft:consumable": {
+                  "consume_seconds": 2147483647,
+                  "animation": "none",
+                  "has_consume_particles": false
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_rightclick:true,uhcp_relic:true,uhcp_relic_id:0b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Bu",
+                  "color": "#0800FF",
+                  "bold": true
+                },
+                {
+                  "text": "zz",
+                  "color": "#2B64FF"
+                },
+                {
+                  "text": "bu",
+                  "color": "#428EFF"
+                },
+                {
+                  "text": "rs",
+                  "color": "#54B5FF"
+                },
+                {
+                  "text": "t",
+                  "color": "#54C0FF"
+                },
+                {
+                  "text": " ℝ",
+                  "color": "white",
+                  "bold": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "------------------------",
+                  "color": "blue"
+                },
+                [
+                  {
+                    "text": "RELIC",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ": Relics charge up in inventory.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Right click",
+                    "color": "#9EE8FF",
+                    "italic": false
+                  },
+                  {
+                    "text": " at max charge to activate",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "a Relic's",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ". Using an",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": "resets the Relic's charge.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                [
+                  {
+                    "text": "ABILITY",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": ": Fire an explosive Hive.",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "Upon colliding with a block or player,",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "the Hive detonates, turning the ground",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "into ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Honey",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " dealing 2🖤",
+                    "color": "red"
+                  },
+                  {
+                    "text": ", and summoning",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "a horde of",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Angry Bees",
+                    "color": "blue"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
