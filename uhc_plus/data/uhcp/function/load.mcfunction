@@ -133,10 +133,17 @@ scoreboard objectives add ssiege_rune_toughness dummy
 scoreboard objectives add ssiege_rune_toughness_cost dummy
 scoreboard objectives add ssiege_rune_vitality dummy
 scoreboard objectives add ssiege_runes_purchased dummy
+scoreboard objectives add ssiege_shards_spent dummy
 scoreboard objectives add ssiege_settings dummy
 scoreboard objectives add ssiege_shards dummy
 scoreboard objectives add ssiege_unlocked_runesmith dummy
 scoreboard objectives add ssiege_gapples_eaten dummy
+scoreboard objectives add ssiege_mine_ddiamonds minecraft.mined:minecraft.deepslate_diamond_ore
+scoreboard objectives add ssiege_mine_diamonds minecraft.mined:minecraft.diamond_ore
+scoreboard objectives add ssiege_mine_dgold minecraft.mined:minecraft.deepslate_gold_ore
+scoreboard objectives add ssiege_mine_gold minecraft.mined:minecraft.gold_ore
+scoreboard objectives add ssiege_giants_killed dummy
+scoreboard objectives add ssiege_titans_slain dummy
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health

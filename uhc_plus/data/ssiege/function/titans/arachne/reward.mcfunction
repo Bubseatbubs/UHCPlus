@@ -3,6 +3,7 @@ advancement revoke @s only ssiege:titans/player_killed_arachne
 # Spawn Soul Shards
 scoreboard players set %MULT_CONST uhcp_initStatus 4
 execute as @s at @s run function ssiege:titans/spreadloot
+scoreboard players add @s ssiege_titans_slain 1
 
 # Arachne Team Buff
 execute as @s[team=blue] run loot give @a[team=blue] loot uhcp:consumables/web_slinger

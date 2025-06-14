@@ -3,6 +3,7 @@ advancement revoke @s only ssiege:titans/player_killed_infernus
 # Spawn Soul Shards
 scoreboard players set %MULT_CONST uhcp_initStatus 25
 execute as @s at @s run function ssiege:titans/spreadloot
+scoreboard players add @s ssiege_titans_slain 1
 
 # Infernus Team Buff
 execute as @s[team=blue] run tag @a[team=blue] add SSIEGE_Infernus_Blessing

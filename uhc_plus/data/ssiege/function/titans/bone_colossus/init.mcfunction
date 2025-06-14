@@ -15,9 +15,6 @@ execute positioned over motion_blocking_no_leaves as @e[tag=UHCP_Titan] run tp @
 effect give @e[tag=UHCP_Titan] glowing infinite 0 true
 
 # Announce
-execute at @a run playsound entity.lightning_bolt.thunder master @s ~ ~ ~ 1 1 1
-title @a clear
-title @a times 20 40 20
-title @a subtitle {"text":"has spawned!","color":"gold"}
+function ssiege:titans/announcement
 title @a title {"text":"Bone Colossus","color":"gold"}
 tellraw @a ["",{"text":"Bone Colossus","bold":true,"color":"gold"},{"text":" has spawned! Defeat him to earn "},{"text":"Absorption Hearts","bold":true,"color":"yellow"},{"text":" for your team."}]

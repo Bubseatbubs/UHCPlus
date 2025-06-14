@@ -3,6 +3,7 @@ advancement revoke @s only ssiege:titans/player_killed_gallie
 # Spawn Soul Shards
 scoreboard players set %MULT_CONST uhcp_initStatus 14
 execute as @s at @s run function ssiege:titans/spreadloot
+scoreboard players add @s ssiege_titans_slain 1
 
 # Gallie team buff
 execute as @s[team=blue] as @a[team=blue] run attribute @s minecraft:max_health modifier add uhcp:max_health 4 add_value

@@ -11,3 +11,6 @@ gamemode creative @a
 
 # Freeze time
 scoreboard players set %time_freeze uhcp_initStatus 1
+
+# Show Stats
+function ssiege:end/stats

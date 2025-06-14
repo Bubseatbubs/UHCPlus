@@ -5,6 +5,7 @@ kill @e[type=vex]
 # Spawn Soul Shards
 scoreboard players set %MULT_CONST uhcp_initStatus 4
 execute as @s at @s run function ssiege:titans/spreadloot
+scoreboard players add @s ssiege_titans_slain 1
 
 # Seraphim Team Buff - 6 Wind Charges per player
 execute as @s[team=blue] as @a[team=blue,gamemode=survival] at @s run give @s minecraft:wind_charge 6
