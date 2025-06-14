@@ -10,6 +10,10 @@ scoreboard players set #9 uhcp_const 9
 scoreboard players set #10 uhcp_const 10
 scoreboard players set #11 uhcp_const 11
 scoreboard players set #12 uhcp_const 12
+scoreboard players set #13 uhcp_const 13
+scoreboard players set #14 uhcp_const 14
+scoreboard players set #15 uhcp_const 15
+scoreboard players set #16 uhcp_const 16
 scoreboard players set #20 uhcp_const 20
 scoreboard players set #24 uhcp_const 24
 scoreboard players set #30 uhcp_const 30
