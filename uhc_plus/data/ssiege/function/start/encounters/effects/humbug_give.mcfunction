@@ -1,23 +1,23 @@
-scoreboard players add %encounter_time uhcp_game_time 6000
+scoreboard players add %encounter_time uhcp_game_time 12000
 execute store result score %humbug uhcp_initStatus run random value 0..9
-execute if score %humbug uhcp_initStatus matches 0 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"humbug gave everyone "},{"text":"2 stacks of gold","bold":true,"color":"yellow"},{"text":"!"}]
-execute if score %humbug uhcp_initStatus matches 0 run return run give @a gold_ingot 128
+execute if score %humbug uhcp_initStatus matches 0 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"humbug gave everyone "},{"text":"16 gold","bold":true,"color":"yellow"},{"text":"!"}]
+execute if score %humbug uhcp_initStatus matches 0 run return run give @a gold_ingot 16
 
-execute if score %humbug uhcp_initStatus matches 1 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"humbug gave everyone "},{"text":"10 Soul Shards","bold":true,"color":"light_purple"},{"text":"!"}]
-execute if score %humbug uhcp_initStatus matches 1 run return run execute as @a run scoreboard players set @s ssiege_multi 10
+execute if score %humbug uhcp_initStatus matches 1 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"humbug gave everyone "},{"text":"2 Soul Shards","bold":true,"color":"light_purple"},{"text":"!"}]
+execute if score %humbug uhcp_initStatus matches 1 run return run execute as @a run scoreboard players set @s ssiege_multi 2
 execute if score %humbug uhcp_initStatus matches 1 run return run loot give @a loot ssiege:multi_soulshard
 
-execute if score %humbug uhcp_initStatus matches 2 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"humbug gave everyone "},{"text":"48 Diamonds","bold":true,"color":"aqua"},{"text":"!"}]
-execute if score %humbug uhcp_initStatus matches 2 run return run give @a diamond 48
+execute if score %humbug uhcp_initStatus matches 2 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"humbug gave everyone "},{"text":"8 Diamonds","bold":true,"color":"aqua"},{"text":"!"}]
+execute if score %humbug uhcp_initStatus matches 2 run return run give @a diamond 8
 
 execute if score %humbug uhcp_initStatus matches 3 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"humbug gave everyone a "},{"text":"Trident","bold":true,"color":"aqua"},{"text":"!"}]
 execute if score %humbug uhcp_initStatus matches 3 run return run give @a trident[damage=230,repair_cost=2147483647] 1
 
-execute if score %humbug uhcp_initStatus matches 4 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"humbug gave everyone "},{"text":"12 Wind Charges","bold":true,"color":"white"},{"text":"!"}]
-execute if score %humbug uhcp_initStatus matches 4 run return run give @a wind_charge 12
+execute if score %humbug uhcp_initStatus matches 4 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"humbug gave everyone "},{"text":"2 Wind Charges","bold":true,"color":"white"},{"text":"!"}]
+execute if score %humbug uhcp_initStatus matches 4 run return run give @a wind_charge 2
 
-execute if score %humbug uhcp_initStatus matches 5 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"humbug gave everyone "},{"text":"5 Ender Pearls","bold":true,"color":"dark_purple"},{"text":"!"}]
-execute if score %humbug uhcp_initStatus matches 5 run return run give @a ender_pearl 5
+execute if score %humbug uhcp_initStatus matches 5 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"humbug gave everyone an"},{"text":" Ender Pearls","bold":true,"color":"dark_purple"},{"text":"!"}]
+execute if score %humbug uhcp_initStatus matches 5 run return run give @a ender_pearl 1
 
 execute if score %humbug uhcp_initStatus matches 6 run tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"humbug gave everyone an "},{"text":"Totem of Undying","bold":true,"color":"yellow"},{"text":"!"}]
 execute if score %humbug uhcp_initStatus matches 6 run return run give @a totem_of_undying
