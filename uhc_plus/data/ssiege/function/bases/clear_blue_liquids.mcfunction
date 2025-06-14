@@ -20,6 +20,8 @@ fill ~24 ~10 ~-4 ~65 ~14 ~3 minecraft:air replace minecraft:water
 fill ~24 ~1 ~-4 ~65 ~9 ~3 minecraft:air replace minecraft:cobweb
 fill ~24 ~10 ~-4 ~65 ~14 ~3 minecraft:air replace minecraft:cobweb
 
+fill ~24 ~ ~-3 ~69 ~ ~2 white_stained_glass
+
 # Third area: Original coords (266,286) to (189,210) -> Relative (66,86) to (-11,10)
 fill ~66 ~1 ~-11 ~86 ~9 ~10 minecraft:air replace minecraft:lava
 fill ~66 ~10 ~-11 ~86 ~14 ~10 minecraft:air replace minecraft:lava
@@ -29,3 +31,5 @@ fill ~66 ~10 ~-11 ~86 ~14 ~10 minecraft:air replace minecraft:water
 
 fill ~66 ~1 ~-11 ~86 ~9 ~10 minecraft:air replace minecraft:cobweb
 fill ~66 ~10 ~-11 ~86 ~14 ~10 minecraft:air replace minecraft:cobweb
+
+fill ~70 ~ ~-7 ~82 ~ ~6 minecraft:white_stained_glass replace air

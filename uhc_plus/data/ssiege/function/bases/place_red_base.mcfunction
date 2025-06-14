@@ -23,3 +23,4 @@ execute at @s positioned ~ ~ ~ run fill ~-24 ~35 ~23 ~23 ~35 ~-24 minecraft:barr
 
 execute at @s run fill ~-5 ~2 ~-5 ~4 ~6 ~4 minecraft:barrier
 execute at @s run fill ~-5 ~8 ~-5 ~4 ~10 ~4 minecraft:barrier
+execute at @s run fill ~-5 ~4 ~-5 ~4 ~4 ~4 minecraft:glass

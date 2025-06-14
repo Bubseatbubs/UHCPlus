@@ -118,7 +118,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:stored_enchantments": {
-                  "minecraft:sharpness": 1
+                  "minecraft:looting": 1
                 }
               }
             }
