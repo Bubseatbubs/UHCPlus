@@ -6,15 +6,15 @@ execute as @s at @s run function ssiege:titans/spreadloot
 scoreboard players add @s ssiege_titans_slain 1
 
 # Bone Colossus Team Buff - Wolves
-execute as @s[team=blue] as @a[team=blue,gamemode=survival] at @s run summon wolf ~ ~ ~ {Team:"blue",PersistenceRequired:1b,Health:60f,variant:"black",Tags:["SSIEGE_fenrir_reward"],CustomName:"Fenrir Pup",attributes:[{id:"minecraft:max_health",base:30},{id:"minecraft:scale",base:2}]}
+execute as @s[team=blue] as @a[team=blue,gamemode=survival] at @s run summon wolf ~ ~ ~ {Team:"blue",PersistenceRequired:1b,Health:60f,variant:"black",Tags:["SSIEGE_fenrir_reward"],CustomName:"Fenrir Jr",attributes:[{id:"minecraft:max_health",base:60},{id:"minecraft:scale",base:2}]}
 execute as @e[type=wolf,tag=SSIEGE_fenrir_reward,team=blue] run data modify entity @s Owner set from entity @p[team=blue,gamemode=survival] UUID
 
-execute as @s[team=red] as @a[team=red,gamemode=survival] at @s run summon wolf ~ ~ ~ {Team:"red",PersistenceRequired:1b,Health:60f,variant:"black",Tags:["SSIEGE_fenrir_reward"],CustomName:"Fenrir Pup",attributes:[{id:"minecraft:max_health",base:30},{id:"minecraft:scale",base:2}]}
+execute as @s[team=red] as @a[team=red,gamemode=survival] at @s run summon wolf ~ ~ ~ {Team:"red",PersistenceRequired:1b,Health:60f,variant:"black",Tags:["SSIEGE_fenrir_reward"],CustomName:"Fenrir Jr",attributes:[{id:"minecraft:max_health",base:60},{id:"minecraft:scale",base:2}]}
 execute as @e[type=wolf,tag=SSIEGE_fenrir_reward,team=red] run data modify entity @s Owner set from entity @p[team=red,gamemode=survival] UUID
 
 # Titan's Might buff
-execute as @s[team=blue] run scoreboard players add @a[team=blue] ssiege_buff_titanslayer 6
-execute as @s[team=red] run scoreboard players add @a[team=red] ssiege_buff_titanslayer 6
+execute as @s[team=blue] run scoreboard players add @a[team=blue] ssiege_buff_titanslayer 8
+execute as @s[team=red] run scoreboard players add @a[team=red] ssiege_buff_titanslayer 8
 
 # Schedule buff removal after 5 minutes
 schedule clear ssiege:titans/reset_titanslayer
