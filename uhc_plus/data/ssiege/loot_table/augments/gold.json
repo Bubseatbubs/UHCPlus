@@ -443,7 +443,7 @@
                   "italic": false
                 },
                 {
-                  "text": "with your Runesmith. (3 Blocks of Copper",
+                  "text": "with your Runesmith. (8 Blocks of Copper",
                   "color": "white",
                   "italic": false
                 },
@@ -751,7 +751,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:netherite_upgrade_smithing_template",
+          "name": "minecraft:netherite_ingot",
           "weight": 1,
           "functions": [
             {
@@ -2052,7 +2052,7 @@
                   "italic": false
                 },
                 {
-                  "text": "Helmet) that gives +1 damage.",
+                  "text": "Helmet) that gives +2 damage.",
                   "color": "white",
                   "italic": false
                 }
@@ -2152,6 +2152,97 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:348s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Prop Hunt",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "After sneaking on a block for 3 seconds,",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "transform into that block. Taking damage",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "or holding sneak again grants you",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Resistance I for 3 seconds and reverts",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "your appearance back to normal. You",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "cannot be detected by Sniffer Sonar or",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "All-Seeing Eyes..",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:348s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:netherite_chestplate",
           "weight": 1,
           "functions": [
@@ -2208,6 +2299,148 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:349s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:350s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Regenerative Shields",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Every minute, set your Absorption Hearts",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "to 4 if you have less than 4 Absorption",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "hearts.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:350s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:feather",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:358s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Sneaky Sneaky",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Gain Invisibility for 5 seconds when you",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "sneak. You can no longer be detected by",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Sniffer Sonar or All-Seeing Eyes.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:358s}"
                       }
                     }
                   }
@@ -2284,6 +2517,77 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:360s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gunpowder",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:361s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Stay Alert",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Whenever you kill a Creeper, gain 3",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Diamonds. For the first 10 minutes,",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Creepers will randomly spawn behind you.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:361s}"
                       }
                     }
                   }
