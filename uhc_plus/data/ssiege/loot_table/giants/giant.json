@@ -11,8 +11,20 @@
         {
           "type": "minecraft:loot_table",
           "value": "ssiege:soulshard",
-          "functions": []
-        }
+          "functions": [
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": 1,
+              "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.25
+                  }
+                ],
+              "enchantment": "minecraft:looting"
+            }
+      ]
+    }
       ]
     },
     {
@@ -53,8 +65,11 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 2,
-                "min": 0
+                "min": 0,
+                "max": {
+                  "min":1, 
+                  "max":2
+                }
               },
               "function": "minecraft:set_count"
             },

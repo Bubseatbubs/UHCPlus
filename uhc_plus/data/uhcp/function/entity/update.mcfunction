@@ -24,9 +24,9 @@ execute as @e[tag=UHCP_DragonsProtection] at @s run function uhcp:relics/dragons
 
 # Titans
 execute as @e[tag=UHCP_BigBone] at @s run function uhcp:titans/bone_colossus/bone_jump/update
-execute as @e[tag=UHCP_Arachne_Cobweb] at @s run function uhcp:titans/arachne/cobwebs/update
+execute as @e[tag=UHCP_ArachneCobweb] at @s run function uhcp:titans/arachne/cobwebs/update
+execute as @e[tag=UHCP_ArachneCobwebClear] at @s run function uhcp:titans/arachne/cobwebs/clear
 execute as @e[tag=UHCP_ArachneSpiderAI] at @s unless entity @n[tag=UHCP_ArachneSpider,distance=..2.5] run function uhcp:entity/instant_kill
-execute as @e[tag=UHCP_Arachne_Cobweb_Cleanup] at @s run function uhcp:titans/arachne/cobwebs/clear
 execute as @e[tag=UHCP_GigantusCircleStrike] at @s run function uhcp:titans/gigantus/circle_strike/update
 execute as @e[tag=UHCP_GigaCreeperLightning] at @s run function uhcp:titans/giga_creeper/lightning/update
 execute as @e[tag=UHCP_SeraphimLaserIndicator] at @s run function uhcp:titans/seraphim/laser/indicator/update
