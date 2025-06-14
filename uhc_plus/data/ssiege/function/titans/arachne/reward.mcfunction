@@ -8,6 +8,8 @@ scoreboard players add @s ssiege_titans_slain 1
 # Arachne Team Buff
 execute as @s[team=blue] run loot give @a[team=blue] loot uhcp:consumables/web_slinger
 execute as @s[team=red] run loot give @a[team=red] loot uhcp:consumables/web_slinger
+execute as @s[team=blue] run loot give @a[team=blue] loot uhcp:consumables/web_slinger
+execute as @s[team=red] run loot give @a[team=red] loot uhcp:consumables/web_slinger
 
 # Titan's Might buff
 execute as @s[team=blue] run scoreboard players add @a[team=blue] ssiege_buff_titanslayer 4
