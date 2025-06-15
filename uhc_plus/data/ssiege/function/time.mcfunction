@@ -53,6 +53,12 @@ execute as @a[scores={uhcp_augment=304}] run function ssiege:augments/effects/go
 # Bottled Knowledge
 execute as @a[scores={uhcp_augment=306}] run function ssiege:augments/effects/gold/bottledknowledge/levelcheck
 
+# Copper Collector
+execute as @a[scores={uhcp_augment=309}] run function ssiege:augments/effects/gold/copper_collector
+
+# Diamonds in the Rough
+execute as @a[scores={uhcp_augment=312}] run function ssiege:augments/effects/gold/diamondsintherough
+
 # Cram Session
 execute as @a[scores={uhcp_augment=311}] run function ssiege:augments/effects/gold/cramsession/levelcheck
 
