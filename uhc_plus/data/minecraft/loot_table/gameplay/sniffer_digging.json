@@ -9,103 +9,80 @@
           "type": "minecraft:alternatives",
           "children": [
             {
-              "type": "minecraft:item",
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": 2
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:value_check",
-                  "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "%apple_limit"
-                    },
-                    "score": "uhcp_settings"
-                  },
-                  "range": 1
-                }
-              ],
-              "name": "minecraft:golden_apple",
-              "weight": 41
-            },
-            {
               "type": "minecraft:group",
               "children": [
                 {
                   "type": "minecraft:item",
-                  "name": "minecraft:golden_apple",
+                  "name": "minecraft:gold_ingot",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": 3
+                    }
+                  ],
+                  "weight": 25
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:diamond",
                   "functions": [
                     {
                       "function": "minecraft:set_count",
                       "count": 2
                     }
                   ],
-                  "weight": 40
+                  "weight": 25
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "weight": 25,
+                  "value": "uhcp:consumables/all-seeing_eye"
                 },
                 {
                   "type": "minecraft:item",
-                  "name": "minecraft:enchanted_golden_apple",
-                  "weight": 1
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:group",
-              "children": [
-                {
-                  "type": "minecraft:item",
-                  "name": "minecraft:enchanted_book",
-                  "weight": 20,
+                  "name": "minecraft:wind_charge",
                   "functions": [
                     {
-                      "function": "minecraft:set_components",
-                      "components": {
-                        "minecraft:stored_enchantments": {
-                          "minecraft:protection": 1
-                        }
-                      }
+                      "function": "minecraft:set_count",
+                      "count": 2
                     }
-                  ]
+                  ],
+                  "weight": 5
                 },
                 {
                   "type": "minecraft:item",
-                  "name": "minecraft:enchanted_book",
-                  "weight": 20,
-                  "functions": [
-                    {
-                      "function": "minecraft:set_components",
-                      "components": {
-                        "minecraft:stored_enchantments": {
-                          "minecraft:sharpness": 1
-                        }
-                      }
-                    }
-                  ]
+                  "name": "minecraft:golden_apple",
+                  "weight": 5
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "weight": 5,
+                  "value": "ssiege:soulshard"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "weight": 2,
+                  "value": "uhcp:consumables/web_slinger"
                 },
                 {
                   "type": "minecraft:item",
-                  "name": "minecraft:enchanted_book",
-                  "weight": 20,
-                  "functions": [
-                    {
-                      "function": "minecraft:set_components",
-                      "components": {
-                        "minecraft:stored_enchantments": {
-                          "minecraft:power": 1
-                        }
-                      }
-                    }
-                  ]
+                  "name": "minecraft:ender_pearl",
+                  "weight": 2
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "weight": 2,
+                  "value": "uhcp:consumables/wild_feather"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "weight": 1,
+                  "value": "uhcp:consumables/royal_jelly"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "weight": 1,
+                  "value": "uhcp:consumables/relic_invoker"
                 }
               ],
               "conditions": [
@@ -115,7 +92,7 @@
                     "type": "minecraft:score",
                     "target": {
                       "type": "minecraft:fixed",
-                      "name": "%enchant_reduce"
+                      "name": "%uhcp_loot"
                     },
                     "score": "uhcp_settings"
                   },
@@ -127,81 +104,206 @@
               "type": "minecraft:group",
               "children": [
                 {
-                  "type": "minecraft:item",
-                  "name": "minecraft:enchanted_book",
-                  "weight": 20,
-                  "functions": [
+                  "type": "minecraft:alternatives",
+                  "children": [
                     {
-                      "function": "minecraft:set_components",
-                      "components": {
-                        "minecraft:stored_enchantments": {
-                          "minecraft:protection": 2
+                      "type": "minecraft:item",
+                      "functions": [
+                        {
+                          "function": "minecraft:set_count",
+                          "count": 2
                         }
-                      }
+                      ],
+                      "conditions": [
+                        {
+                          "condition": "minecraft:value_check",
+                          "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                              "type": "minecraft:fixed",
+                              "name": "%apple_limit"
+                            },
+                            "score": "uhcp_settings"
+                          },
+                          "range": 1
+                        }
+                      ],
+                      "name": "minecraft:golden_apple",
+                      "weight": 41
+                    },
+                    {
+                      "type": "minecraft:group",
+                      "children": [
+                        {
+                          "type": "minecraft:item",
+                          "name": "minecraft:golden_apple",
+                          "functions": [
+                            {
+                              "function": "minecraft:set_count",
+                              "count": 2
+                            }
+                          ],
+                          "weight": 40
+                        },
+                        {
+                          "type": "minecraft:item",
+                          "name": "minecraft:enchanted_golden_apple",
+                          "weight": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:alternatives",
+                  "children": [
+                    {
+                      "type": "minecraft:group",
+                      "children": [
+                        {
+                          "type": "minecraft:item",
+                          "name": "minecraft:enchanted_book",
+                          "weight": 20,
+                          "functions": [
+                            {
+                              "function": "minecraft:set_components",
+                              "components": {
+                                "minecraft:stored_enchantments": {
+                                  "minecraft:protection": 1
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "minecraft:item",
+                          "name": "minecraft:enchanted_book",
+                          "weight": 20,
+                          "functions": [
+                            {
+                              "function": "minecraft:set_components",
+                              "components": {
+                                "minecraft:stored_enchantments": {
+                                  "minecraft:sharpness": 1
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "minecraft:item",
+                          "name": "minecraft:enchanted_book",
+                          "weight": 20,
+                          "functions": [
+                            {
+                              "function": "minecraft:set_components",
+                              "components": {
+                                "minecraft:stored_enchantments": {
+                                  "minecraft:power": 1
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "conditions": [
+                        {
+                          "condition": "minecraft:value_check",
+                          "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                              "type": "minecraft:fixed",
+                              "name": "%enchant_reduce"
+                            },
+                            "score": "uhcp_settings"
+                          },
+                          "range": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "minecraft:group",
+                      "children": [
+                        {
+                          "type": "minecraft:item",
+                          "name": "minecraft:enchanted_book",
+                          "weight": 20,
+                          "functions": [
+                            {
+                              "function": "minecraft:set_components",
+                              "components": {
+                                "minecraft:stored_enchantments": {
+                                  "minecraft:protection": 2
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "minecraft:item",
+                          "name": "minecraft:enchanted_book",
+                          "weight": 20,
+                          "functions": [
+                            {
+                              "function": "minecraft:set_components",
+                              "components": {
+                                "minecraft:stored_enchantments": {
+                                  "minecraft:sharpness": 2
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "minecraft:item",
+                          "name": "minecraft:enchanted_book",
+                          "weight": 20,
+                          "functions": [
+                            {
+                              "function": "minecraft:set_components",
+                              "components": {
+                                "minecraft:stored_enchantments": {
+                                  "minecraft:power": 2
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 },
                 {
                   "type": "minecraft:item",
-                  "name": "minecraft:enchanted_book",
-                  "weight": 20,
+                  "name": "minecraft:diamond",
                   "functions": [
                     {
-                      "function": "minecraft:set_components",
-                      "components": {
-                        "minecraft:stored_enchantments": {
-                          "minecraft:sharpness": 2
-                        }
-                      }
+                      "function": "minecraft:set_count",
+                      "count": 5
                     }
-                  ]
+                  ],
+                  "weight": 20
                 },
                 {
-                  "type": "minecraft:item",
-                  "name": "minecraft:enchanted_book",
-                  "weight": 20,
-                  "functions": [
+                  "type": "minecraft:loot_table",
+                  "weight": 7,
+                  "value": "uhcp:consumables/relic_invoker",
+                  "conditions": [
                     {
-                      "function": "minecraft:set_components",
-                      "components": {
-                        "minecraft:stored_enchantments": {
-                          "minecraft:power": 2
-                        }
-                      }
+                      "condition": "minecraft:value_check",
+                      "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "%uhcp_loot"
+                        },
+                        "score": "uhcp_settings"
+                      },
+                      "range": 1
                     }
                   ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 5
-            }
-          ],
-          "weight": 20
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 7,
-          "value": "uhcp:consumables/relic_invoker",
-          "conditions": [
-            {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "%uhcp_loot"
-                },
-                "score": "uhcp_settings"
-              },
-              "range": 1
             }
           ]
         }

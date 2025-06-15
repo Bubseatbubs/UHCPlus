@@ -80,6 +80,9 @@ execute as @a[scores={uhcp_augment=356},gamemode=survival] at @s run function ss
 # Res Tier Player
 execute as @a[scores={uhcp_augment=502}] run function ssiege:augments/effects/prismatic/res_tier_remove_shield
 
+# Babysitting augment - Sniffer modifier
+function ssiege:augments/effects/gold/babysitting/sniffcd
+
 # Announce Augments
 execute as @a[scores={augments=1..}] run function ssiege:augments/announce
 
