@@ -1,10 +1,5 @@
 # Portal Active Phase - Runs when marker age > 3 seconds
 
-# Play end portal opening sound (only once when portal first opens)
-execute as @s if score %time uhcp_game_time matches 1.. run scoreboard players operation #temp uhcp_game_time = %time uhcp_game_time
-execute as @s if score %time uhcp_game_time matches 1.. run scoreboard players operation #temp uhcp_game_time -= @s uhcp_game_time
-execute as @s if score #temp uhcp_game_time matches 60 run playsound minecraft:block.end_portal.spawn master @a[distance=..32] ~ ~ ~ 1 1
-
 # Summon particles every tick at pos1 and pos2
 # Get pos1 coordinates from scoreboard and convert to world coordinates
 execute store result storage ssiege:temp pos1_x int 1 run scoreboard players get @s ssiege_posx
@@ -23,5 +18,5 @@ execute positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/
 execute positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/spawn_particles_pos2
 
 # Check for teleportation - same team players near pos1 teleport to pos2
-execute as @s[team=UHCP_TeamRed] positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/check_teleport_red
-execute as @s[team=UHCP_TeamBlue] positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/check_teleport_blue
+execute as @s[tag=UHCP_TeamRed] positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/check_teleport_red
+execute as @s[tag=UHCP_TeamBlue] positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/check_teleport_blue
