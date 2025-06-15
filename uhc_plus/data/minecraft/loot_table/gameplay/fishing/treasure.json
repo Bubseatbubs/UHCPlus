@@ -20,12 +20,12 @@
                     },
                     {
                       "type": "minecraft:loot_table",
-                      "weight": 8,
+                      "weight": 10,
                       "value": "uhcp:consumables/royal_jelly"
                     },
                     {
                       "type": "minecraft:loot_table",
-                      "weight": 1,
+                      "weight": 4,
                       "value": "uhcp:consumables/wild_feather",
                       "functions": [
                         {
@@ -52,8 +52,13 @@
                     },
                     {
                       "type": "minecraft:loot_table",
-                      "weight": 4,
+                      "weight": 6,
                       "value": "ssiege:soulshard"
+                    },
+                    {
+                      "type": "minecraft:loot_table",
+                      "weight": 6,
+                      "value": "ssiege:consumables/bridge_ball"
                     }
                   ],
                   "conditions": [
@@ -396,7 +401,7 @@
                       }
                     }
                   ],
-                  "weight": 60
+                  "weight": 80
                 },
                 {
                   "type": "minecraft:item",
@@ -442,7 +447,7 @@
                 {
                   "type": "minecraft:item",
                   "name": "minecraft:wind_charge",
-                  "weight": 4,
+                  "weight": 8,
                   "functions": [
                     {
                       "function": "minecraft:set_count",
