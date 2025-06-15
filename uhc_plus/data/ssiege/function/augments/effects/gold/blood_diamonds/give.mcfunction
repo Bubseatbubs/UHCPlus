@@ -1,0 +1,2 @@
+give @s minecraft:diamond 5
+tellraw @s ["",{"text":"[Blood Diamonds]","bold":true,"color":"gold"},{"text":" You gained 5 ", "color":"white", "bold": false},{"text":"Diamonds","bold":true,"color":"aqua"},{"text":"!"}]

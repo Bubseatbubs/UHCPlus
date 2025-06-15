@@ -47,6 +47,9 @@ scoreboard players enable @a[tag=UHCP_CDSelectUpgrade] upgrade
 # Babysitting
 function ssiege:augments/effects/gold/babysitting/sniffcd
 
+# Blood Diamonds
+execute as @a[scores={uhcp_augment=304}] run function ssiege:augments/effects/gold/blood_diamonds/clear_diamonds
+
 # Bottled Knowledge
 execute as @a[scores={uhcp_augment=306}] run function ssiege:augments/effects/gold/bottledknowledge/levelcheck
 
