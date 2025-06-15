@@ -142,6 +142,7 @@ scoreboard objectives add ssiege_mine_ddiamonds minecraft.mined:minecraft.deepsl
 scoreboard objectives add ssiege_mine_diamonds minecraft.mined:minecraft.diamond_ore
 scoreboard objectives add ssiege_mine_dgold minecraft.mined:minecraft.deepslate_gold_ore
 scoreboard objectives add ssiege_mine_gold minecraft.mined:minecraft.gold_ore
+scoreboard objectives add ssiege_place_dirt minecraft.used:minecraft.dirt
 scoreboard objectives add ssiege_giants_killed dummy
 scoreboard objectives add ssiege_titans_slain dummy
 

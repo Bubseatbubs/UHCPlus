@@ -56,6 +56,9 @@ execute as @a[scores={uhcp_augment=306}] run function ssiege:augments/effects/go
 # Cram Session
 execute as @a[scores={uhcp_augment=311}] run function ssiege:augments/effects/gold/cramsession/levelcheck
 
+# Earthbender
+execute as @a[scores={uhcp_augment=314}] run function ssiege:augments/effects/gold/earthbender/replace_dirt
+
 # Last Stand
 execute as @a[scores={uhcp_augment=331}] run function ssiege:augments/effects/gold/laststand
 
