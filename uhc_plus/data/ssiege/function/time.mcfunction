@@ -105,6 +105,8 @@ function ssiege:bossbar/update
 execute as @a[scores={uhcp_groovy=1}] at @s run particle minecraft:note ~ ~ ~ 1.5 1.5 1.5 0.001 2 normal @s
 execute as @a[tag=UHCP_IsRabbit] at @s run function uhcp:consumables/magic_trick/update
 execute as @a[tag=UHCP_IsAttackTitan] at @s run function uhcp:consumables/titan_spinal_fluid/update
+# Pretty sure this shouldn't actually be here but oops i gave up - rain
+function ssiege:consumables/bridge_ball/update
 
 # Update speed of golden apples
 execute as @a[gamemode=survival] run function ssiege:buffs/medium_gapples
