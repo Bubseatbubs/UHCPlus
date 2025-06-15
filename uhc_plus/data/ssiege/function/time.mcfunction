@@ -74,6 +74,9 @@ execute as @a[scores={uhcp_augment=333}] run function ssiege:augments/effects/go
 # Prop hunt
 execute as @a[scores={uhcp_augment=348}] at @s run function uhcp:augments/effects/silver/prophunt/status
 
+# Res Tier Player
+execute as @a[scores={uhcp_augment=502}] run function ssiege:augments/effects/prismatic/res_tier_remove_shield
+
 # Announce Augments
 execute as @a[scores={augments=1..}] run function ssiege:augments/announce
 

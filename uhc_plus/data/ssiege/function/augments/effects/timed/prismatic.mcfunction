@@ -1,1 +1,1 @@
-# Prismatic Augment time based effects (eg. To the Skies!)
+# Prismatic Augment time based effects
