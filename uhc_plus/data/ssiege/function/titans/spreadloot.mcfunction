@@ -19,3 +19,9 @@ execute as @e[type=item,tag=SSIEGE_loot,distance=..10] run data merge entity @s 
 
 # Clean up the temporary marker
 kill @e[type=marker,tag=SSIEGE_loot]
+
+# Augment effects
+execute as @s[team=blue] as @a[team=blue,scores={uhcp_augment=504}] run loot give @s loot uhcp:consumables/titan_spinal_fluid
+execute as @s[team=blue] as @a[team=blue,scores={uhcp_augment=504}] run tellraw @a ["",{"text":"[Attack on Titan]","bold":true,"color":"aqua"},{"text":" ","color":"white"},{"selector":"@s","color":"blue"},{"text":" gained ","color":"blue"},{"text":"Titan Spinal Fluid","bold":true,"color":"yellow"},{"text":"!","color":"yellow"}]
+execute as @s[team=red] as @a[team=red,scores={uhcp_augment=504}] run loot give @s loot uhcp:consumables/titan_spinal_fluid
+execute as @s[team=red] as @a[team=red,scores={uhcp_augment=504}] run tellraw @a ["",{"text":"[Attack on Titan]","bold":true,"color":"aqua"},{"text":" ","color":"white"},{"selector":"@s","color":"red"},{"text":" gained ","color":"red"},{"text":"Titan Spinal Fluid","bold":true,"color":"yellow"},{"text":"!","color":"yellow"}]
