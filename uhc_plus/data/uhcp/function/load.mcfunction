@@ -144,6 +144,8 @@ scoreboard objectives add ssiege_mine_dgold minecraft.mined:minecraft.deepslate_
 scoreboard objectives add ssiege_mine_gold minecraft.mined:minecraft.gold_ore
 scoreboard objectives add ssiege_mine_copper minecraft.mined:minecraft.copper_ore
 scoreboard objectives add ssiege_mine_dcopper minecraft.mined:minecraft.deepslate_copper_ore
+scoreboard objectives add ssiege_mine_coal minecraft.mined:minecraft.coal_ore
+scoreboard objectives add ssiege_mine_dcoal minecraft.mined:minecraft.deepslate_coal_ore
 scoreboard objectives add ssiege_place_dirt minecraft.used:minecraft.dirt
 scoreboard objectives add ssiege_giants_killed dummy
 scoreboard objectives add ssiege_titans_slain dummy

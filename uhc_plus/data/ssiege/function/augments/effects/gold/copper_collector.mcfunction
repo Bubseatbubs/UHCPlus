@@ -12,7 +12,5 @@ execute at @s as @e[type=item,nbt={Item:{id:"minecraft:nether_star"}},distance=.
 execute as @e[type=item,distance=..15] if score @s uhcp_initStatus matches ..10 run tag @s add SSIEGE_new
 
 execute at @s run tp @e[type=item,distance=..15,nbt={Item:{id:"minecraft:nether_star"}},tag=SSIEGE_new] @n[type=item,tag=SSIEGE_new,nbt={Item:{id:"minecraft:copper_ingot"}},distance=..15]
-
-tellraw @s ["",{"text":"[Copper Collector]","bold":true,"color":"gold"},{"text":" You found a ","color":"white"},{"text":"Soul Shard","color":"light_purple"},{"text":"!","color":"white"}]
-
+playsound minecraft:block.amethyst_block.break master @s ~ ~ ~ 1 1 1
 tag @e remove SSIEGE_new
