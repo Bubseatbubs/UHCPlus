@@ -20,4 +20,12 @@ execute as @s if score @s uhcp_initStatus matches 240 run playsound minecraft:bl
 # Age 13 seconds - Summon explosion particle, play sound, delete marker
 execute as @s if score @s uhcp_initStatus matches 260.. run particle minecraft:explosion ~ ~ ~ 0.5 0.5 0.5 0 5 force
 execute as @s if score @s uhcp_initStatus matches 260.. run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 0.5 1.2
-execute as @s if score @s uhcp_initStatus matches 260.. run kill @s
+execute as @s if score @s uhcp_initStatus matches 261.. run kill @s
+
+# Get pos2 coordinates from scoreboard and convert to world coordinates
+execute store result storage ssiege:temp pos2_x int 1 run scoreboard players get @s ssiege_posx2
+execute store result storage ssiege:temp pos2_y int 1 run scoreboard players get @s ssiege_posy2
+execute store result storage ssiege:temp pos2_z int 1 run scoreboard players get @s ssiege_posz2
+
+# Play sounds at pos2
+execute positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/playsound_pos2 with storage ssiege:temp

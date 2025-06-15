@@ -12,10 +12,10 @@ execute store result storage ssiege:temp pos2_y int 1 run scoreboard players get
 execute store result storage ssiege:temp pos2_z int 1 run scoreboard players get @s ssiege_posz2
 
 # Summon portal particles at pos1
-execute positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/spawn_particles_pos1
+execute positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/spawn_particles_pos1 with storage ssiege:temp
 
 # Summon portal particles at pos2
-execute positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/spawn_particles_pos2
+execute positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/spawn_particles_pos2 with storage ssiege:temp
 
 # Check for teleportation - same team players near pos1 teleport to pos2
 execute as @s[tag=UHCP_TeamRed] positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/check_teleport_red
