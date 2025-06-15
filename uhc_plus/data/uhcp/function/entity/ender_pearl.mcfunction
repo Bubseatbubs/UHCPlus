@@ -12,6 +12,3 @@ execute store result storage uhcp:ender_pearl z2 double 1.22 run data get storag
 
 # Check for hitboxes
 execute on origin run function uhcp:entity/ender_pearl/hitbox with storage uhcp:ender_pearl
-
-execute as @s[team=blue] if score @s uhcp_augment matches 344 at @s run summon endermite ~ ~ ~ {Team:blue}
-execute as @s[team=red] if score @s uhcp_augment matches 344 at @s run summon endermite ~ ~ ~ {Team:red}
