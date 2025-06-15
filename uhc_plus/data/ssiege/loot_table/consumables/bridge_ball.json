@@ -1,0 +1,56 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{trail_snowball:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Bridge Ball",
+                  "color": "aqua"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "When thrown, leave behind a trail",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "of ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Stone Bricks",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " along its path.",
+                    "color": "gray"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
