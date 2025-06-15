@@ -3,6 +3,9 @@
 # AFK
 execute if score @s uhcp_augment matches 300 run return run function ssiege:augments/effects/gold/afk/freedom
 
+# Featherstorm
+execute if score @s uhcp_augment matches 303 run return run function ssiege:augments/effects/gold/featherstorm
+
 # Caerbannog
 execute if score @s uhcp_augment matches 307 run return run function ssiege:augments/effects/gold/caerbannog
 

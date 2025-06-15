@@ -1,4 +1,5 @@
 # Summon and spread teleport markers
+summon marker ~ ~ ~ {Tags:["wild_feather_origin"]}
 summon marker ~ ~ ~ {Tags:["SSIEGE_wild_feather"]}
 summon marker ~ ~ ~ {Tags:["SSIEGE_wild_feather"]}
 summon marker ~ ~ ~ {Tags:["SSIEGE_wild_feather"]}
@@ -33,11 +34,18 @@ execute unless entity @e[tag=SSIEGE_wild_feather] run return run function ssiege
 
 # If a valid "far" location exists, eliminate all "near" locations
 execute if entity @e[tag=SSIEGE_wild_feather,distance=7..] run kill @e[tag=SSIEGE_wild_feather,distance=..7]
+
+# Featherstorm
+execute if score @s uhcp_augment matches 303 run function ssiege:consumables/wild_feather/featherstorm
+
+# Teleport player to random valid marker
 tp @s @e[type=marker, tag=SSIEGE_wild_feather, sort=random, limit=1]
+execute at @s facing entity @n[tag=wild_feather_origin] feet run tp @s ~ ~ ~ ~ ~
 
 # Sound/Particle Effects
 execute at @s run playsound minecraft:entity.breeze.jump master @a[distance=..16] ~ ~ ~ 1 1 0.5
 execute at @s run particle minecraft:cloud ~ ~ ~ 0.5 0.5 0.5 1 100 normal
 
 # Cleanup markers
+kill @e[type=marker,tag=wild_feather_origin]
 kill @e[type=marker,tag=SSIEGE_wild_feather]

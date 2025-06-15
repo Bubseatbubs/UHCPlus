@@ -2,7 +2,7 @@
 execute if score @s uhcp_augment matches 300 run function ssiege:augments/effects/gold/afk/init
 execute if score @s uhcp_augment matches 301 run function ssiege:augments/effects/gold/babysitting/give
 execute if score @s uhcp_augment matches 302 run function ssiege:augments/effects/gold/backoff
-execute if score @s uhcp_augment matches 303 run function ssiege:augments/effects/gold/birdsofafeather
+execute if score @s uhcp_augment matches 303 run function ssiege:augments/effects/gold/featherstorm
 execute if score @s uhcp_augment matches 305 run function ssiege:augments/effects/gold/bookwormi
 execute if score @s uhcp_augment matches 306 run function ssiege:augments/effects/gold/bottledknowledge/init
 execute if score @s uhcp_augment matches 307 run function ssiege:augments/effects/gold/caerbannog
