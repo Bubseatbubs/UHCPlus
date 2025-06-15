@@ -15,6 +15,7 @@ gamemode survival @s
 
 # Re-apply any permanent augment effects
 # Reset any once-per-life augments
+execute if score @s uhcp_augment matches 501 run function ssiege:augments/effects/prismatic/adrenal_surge/reset
 
 # Poseidon's Blessing
 execute if score @s uhcp_augment matches 347 run effect give @s dolphins_grace infinite 0 true
