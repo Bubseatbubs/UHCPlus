@@ -1,4 +1,4 @@
-# Runs when player is hurt by PVP
+# Runs when player is hurt by PVP, >1 damage (no spam click attacks)
 advancement revoke @s only ssiege:hurt_by_player
 tag @s add SSIEGE_hurt_by_player
 
