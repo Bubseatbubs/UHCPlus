@@ -71,6 +71,77 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:sniffer_spawn_egg",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:301s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Babysitting",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Spawn 2 Baby Sniffers near your Sniffer.",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Throughout the game, they dig up",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "exciting random loot!",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:301s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:stick",
           "weight": 1,
           "functions": [
@@ -153,7 +224,7 @@
               "target": "item_name",
               "name": [
                 {
-                  "text": "Birds of a Feather",
+                  "text": "Featherstorm",
                   "color": "gold",
                   "bold": true
                 }
@@ -169,12 +240,27 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain 3 Wild Feathers that instantly",
+                  "text": "Gain a Wild Feather, and another every 5",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "teleport you to your team's Sniffer.",
+                  "text": "minutes. Whenever you use one, lightning",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "strikes your previous location. (Wild",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Feathers are consumable items that",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "randomly teleport you a short distance)",
                   "color": "white",
                   "italic": false
                 }
@@ -193,6 +279,77 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:303s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:304s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Blood Diamonds",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Diamond Ores you mine drop nothing.",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Instead, gain 5 Diamonds every time you",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "kill a hostile mob.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:304s}"
                       }
                     }
                   }
@@ -438,17 +595,12 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "You can trade Copper for Soul Shards",
+                  "text": "Copper Ore you mine has a 15% chance to",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "with your Runesmith. (8 Blocks of Copper",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "per Soul Shard)",
+                  "text": "drop a Soul Shard.",
                   "color": "white",
                   "italic": false
                 }
@@ -619,6 +771,72 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:coal_block",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:312s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Diamonds in the Rough",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Coal Ore you mine has a 33% chance to",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "drop a Diamond.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:312s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:pointed_dripstone",
           "weight": 1,
           "functions": [
@@ -675,6 +893,72 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:313s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dirt",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:314s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Earthbender",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "You can place Dirt infinitely and are",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "immune to fall damage. Gain a Dirt.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:314s}"
                       }
                     }
                   }
@@ -1245,12 +1529,12 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain a Diamond Pickaxe, Shovel, Hoe and",
+                  "text": "Gain a Diamond Pickaxe, Axe, Shovel, and",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "Axe, all enchanted with Efficiency I.",
+                  "text": "Hoe, all enchanted with Efficiency I.",
                   "color": "white",
                   "italic": false
                 }
@@ -1316,7 +1600,7 @@
                   "italic": false
                 },
                 {
-                  "text": "every 120 seconds.",
+                  "text": "every 90 seconds.",
                   "color": "white",
                   "italic": false
                 }
@@ -2189,32 +2473,32 @@
                   "italic": false
                 },
                 {
-                  "text": "transform into that block. Taking damage",
+                  "text": "transform into that block. Taking",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "or holding sneak again grants you",
+                  "text": "damage, dealing damage or holding sneak",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "Resistance I for 3 seconds and reverts",
+                  "text": "again grants you Resistance I for 3",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "your appearance back to normal. You",
+                  "text": "seconds and reverts your appearance back",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "cannot be detected by Sniffer Sonar or",
+                  "text": "to normal. You cannot be detected by",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "All-Seeing Eyes..",
+                  "text": "Sniffer Sonar or All-Seeing Eyes..",
                   "color": "white",
                   "italic": false
                 }
@@ -2341,17 +2625,17 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Every minute, set your Absorption Hearts",
+                  "text": "Every 30 seconds, set your Absorption",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "to 4 if you have less than 4 Absorption",
+                  "text": "Hearts to 2 if you have less than 2",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "hearts.",
+                  "text": "Absorption hearts.",
                   "color": "white",
                   "italic": false
                 }
@@ -2370,6 +2654,138 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:350s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:silence_armor_trim_smithing_template",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:351s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Relics of the Past",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Gain a Relic Invoker.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:351s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:slime_block",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:356s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Slime Time",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "You leave a trail of Slime Blocks behind",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "you. Summon 2 Large Slimes whenever you",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "die.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:356s}"
                       }
                     }
                   }
@@ -2412,17 +2828,12 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain Invisibility for 5 seconds when you",
+                  "text": "Gain Invisibility for 6 seconds when you",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "sneak. You can no longer be detected by",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "Sniffer Sonar or All-Seeing Eyes.",
+                  "text": "sneak for 2 seconds.",
                   "color": "white",
                   "italic": false
                 }
@@ -2441,6 +2852,77 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:358s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:359s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Soul Siphon",
+                  "color": "gold",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Whenever you are within 32 blocks of a",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "player death (ally or enemy), gain a",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Soul Shard.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:359s}"
                       }
                     }
                   }
@@ -2838,7 +3320,7 @@
                   "italic": false
                 },
                 {
-                  "text": "a Lightning Bolt on yhour target.",
+                  "text": "a Lightning Bolt on your target.",
                   "color": "white",
                   "italic": false
                 }

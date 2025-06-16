@@ -3,3 +3,5 @@
 **/data/**/.vscode/**
 scripts/*.csv
 scripts/*.json
+scripts/*.mcfunction
+scripts/announce.mcfunction
