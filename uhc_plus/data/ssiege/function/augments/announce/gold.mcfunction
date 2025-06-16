@@ -1,5 +1,3 @@
-tellraw @s {"text":"Augments Selected","bold":true,"color":"gold"}
-tellraw @s {"text":"(hover over Augment to description)","italic":true,"color":"gray"}
 execute as @a[scores={uhcp_augment=300},tag=UHCP_CurrentAnnounce] run tellraw @a[tag=UHCP_AugmentAnnounce] [{"selector":"@s"},{"text": ": ","color":"white"},{"text":"AFK","color":"gold","hover_event":{"action":"show_text","value":"You cannot move for 3 minutes. Gain 24 Diamonds and 2 Soul Shards after."}}]
 execute as @a[scores={uhcp_augment=301},tag=UHCP_CurrentAnnounce] run tellraw @a[tag=UHCP_AugmentAnnounce] [{"selector":"@s"},{"text": ": ","color":"white"},{"text":"Babysitting","color":"gold","hover_event":{"action":"show_text","value":"Spawn 2 Baby Sniffers near your Sniffer. Throughout the game, they dig up exciting random loot!"}}]
 execute as @a[scores={uhcp_augment=302},tag=UHCP_CurrentAnnounce] run tellraw @a[tag=UHCP_AugmentAnnounce] [{"selector":"@s"},{"text": ": ","color":"white"},{"text":"Back Off!","color":"gold","hover_event":{"action":"show_text","value":"Gain an unrepairable Golden Sword with 16 durabilty and Knockback X."}}]
