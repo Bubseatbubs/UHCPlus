@@ -86,6 +86,9 @@ execute as @a[scores={uhcp_augment=356},gamemode=survival] at @s run function ss
 # Res Tier Player
 execute as @a[scores={uhcp_augment=502}] run function ssiege:augments/effects/prismatic/res_tier_remove_shield
 
+# Open the Gates
+execute as @a[scores={uhcp_augment=341},nbt={SelectedItem:{id:"minecraft:ender_eye"}}] at @s run function ssiege:augments/effects/gold/gates/laser/init
+
 # Babysitting augment - Sniffer modifier
 function ssiege:augments/effects/gold/babysitting/sniffcd
 
@@ -125,6 +128,7 @@ function ssiege:consumables/bridge_ball/update
 
 # Update speed of golden apples
 execute as @a[gamemode=survival] run function ssiege:buffs/medium_gapples
+item modify entity @e[type=item,nbt={Item:{id:"minecraft:golden_apple"}}] contents ssiege:make_medium
 #execute as @a[tag=SSIEGE_Buff,gamemode=survival] run function ssiege:buffs/faster_gapples
 #execute as @a[tag=!SSIEGE_Buff,gamemode=survival] run function ssiege:buffs/slower_gapples
 

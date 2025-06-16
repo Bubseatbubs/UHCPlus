@@ -2,7 +2,7 @@
   "function": "minecraft:set_components",
   "components": {
     "minecraft:consumable": {
-      "consume_seconds": 1.4,
+      "consume_seconds": 1.3,
       "animation": "eat",
       "sound": "entity.generic.eat",
       "has_consume_particles": true
