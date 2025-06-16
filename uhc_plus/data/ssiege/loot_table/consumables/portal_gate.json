@@ -1,0 +1,85 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:recovery_compass",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_gate:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Portal Gate",
+                  "color": "light_purple"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "Right-click while holding to summon ",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "a ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "two-way Portal ",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": "between your",
+                    "color": "gray"
+                  }
+                ],
+                {
+                  "text": "current location and a medium",
+                  "color": "gray"
+                },
+                {
+                  "text": "distance away. It can be utilized",
+                  "color": "gray"
+                },
+                {
+                  "text": "by both teams.",
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 2147483647,
+                  "animation": "none",
+                  "has_consume_particles": false
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": "{uhcp_rightclick:true,uhcp_consumable:true,uhcp_consumable_id:19b}"
+        }
+      ]
+    }
+  ]
+}
