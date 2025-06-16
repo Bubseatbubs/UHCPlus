@@ -128,6 +128,7 @@ function ssiege:consumables/bridge_ball/update
 
 # Update speed of golden apples
 execute as @a[gamemode=survival] run function ssiege:buffs/medium_gapples
+item modify entity @e[type=item,nbt={Item:{id:"minecraft:golden_apple"}}] contents ssiege:make_medium
 #execute as @a[tag=SSIEGE_Buff,gamemode=survival] run function ssiege:buffs/faster_gapples
 #execute as @a[tag=!SSIEGE_Buff,gamemode=survival] run function ssiege:buffs/slower_gapples
 
