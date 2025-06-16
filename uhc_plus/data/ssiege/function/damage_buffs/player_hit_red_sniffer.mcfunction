@@ -20,4 +20,4 @@ function ssiege:damage_buffs/red_sniffer_damage with storage ssiege:temp
 tag @s remove ssiege_attacker
 
 # Revoke the advancement so it can trigger again
-advancement revoke @s only ssiege:player_hit_red_sniffer
+advancement revoke @s only ssiege:player_hit_entity/player_hit_red_sniffer
