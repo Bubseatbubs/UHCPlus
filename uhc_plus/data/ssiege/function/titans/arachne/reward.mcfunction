@@ -12,8 +12,8 @@ execute as @s[team=blue] run loot give @a[team=blue] loot uhcp:consumables/web_s
 execute as @s[team=red] run loot give @a[team=red] loot uhcp:consumables/web_slinger
 
 # Titan's Might buff
-execute as @s[team=blue] run scoreboard players add @a[team=blue] ssiege_buff_titanslayer 4
-execute as @s[team=red] run scoreboard players add @a[team=red] ssiege_buff_titanslayer 4
+execute as @s[team=blue] run scoreboard players add @a[team=blue] ssiege_buff_titanslayer 5
+execute as @s[team=red] run scoreboard players add @a[team=red] ssiege_buff_titanslayer 5
 
 # Schedule buff removal after 5 minutes
 schedule clear ssiege:titans/reset_titanslayer
