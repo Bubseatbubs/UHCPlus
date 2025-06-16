@@ -1,5 +1,4 @@
 advancement revoke @s only ssiege:augments/prop_hunt/prop_hunt_deal_dmg
-advancement revoke @s only ssiege:augments/prop_hunt/prop_hunt_take_dmg
 
 tag @s add UHCP_Owner
 attribute @s minecraft:scale modifier remove uhcp:scale

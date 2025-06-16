@@ -208,9 +208,6 @@ execute if score %time uhcp_game_time = %titans uhcp_game_time run function ssie
 # Titan's Might
 execute if score %time uhcp_game_time >= %titan_might uhcp_game_time run execute as @a[scores={ssiege_buff_titanslayer = 1..}] at @s run function ssiege:titans/titans_might
 
-# Infernus Blessing
-execute if score %time uhcp_game_time >= %infernus_check uhcp_game_time run function ssiege:titans/infernus/update_blessing
-
 # Time-Based Encounters
 execute if score %time uhcp_game_time >= %encounter_time uhcp_game_time run function ssiege:start/encounters/effects/timed
 

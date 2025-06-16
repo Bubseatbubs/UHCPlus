@@ -1,5 +1,12 @@
-effect clear @e[distance=..6,nbt={HurtTime:10s},limit=1,sort=nearest] fire_resistance
-execute as @e[distance=..6,nbt={HurtTime:10s},limit=1,sort=nearest] run tag @s add SSIEGE_hit_by_Infernus_Blessing
-data merge entity @e[distance=..6,nbt={HurtTime:10s},limit=1,sort=nearest] {Fire:200}
+effect clear @s fire_resistance
+execute at @s run summon small_fireball ~ ~1.8 ~ {Motion:[0.0, -0.5, 0.0]}
+execute at @s run summon small_fireball ~ ~1.8 ~-1 {Motion:[0.0, -0.5, 0.0]}
+execute at @s run summon small_fireball ~ ~1.8 ~1 {Motion:[0.0, -0.5, 0.0]}
 
-advancement revoke @s only ssiege:titans/player_hit_entity_with_infernus_blessing
+execute at @s run summon small_fireball ~-1 ~1.8 ~-1 {Motion:[0.0, -0.5, 0.0]}
+execute at @s run summon small_fireball ~-1 ~1.8 ~ {Motion:[0.0, -0.5, 0.0]}
+execute at @s run summon small_fireball ~-1 ~1.8 ~1 {Motion:[0.0, -0.5, 0.0]}
+
+execute at @s run summon small_fireball ~1 ~1.8 ~1 {Motion:[0.0, -0.5, 0.0]}
+execute at @s run summon small_fireball ~1 ~1.8 ~ {Motion:[0.0, -0.5, 0.0]}
+execute at @s run summon small_fireball ~1 ~1.8 ~-1 {Motion:[0.0, -0.5, 0.0]}

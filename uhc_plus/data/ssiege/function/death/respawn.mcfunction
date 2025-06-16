@@ -26,6 +26,9 @@ execute if score @s uhcp_augment matches 502 run effect give @s resistance infin
 execute if score @s uhcp_augment matches 347 run effect give @s dolphins_grace infinite 0 true
 
 # Infernus Blessing
+execute as @s[tag=SSIEGE_InfernusBlessing] run effect give @s fire_resistance infinite 0 true
+
+# Infernus Blessing
 tag @s remove SSIEGE_hit_by_Infernus_Blessing
 
 tellraw @s {text: "You've respawned!",color:"green"}
