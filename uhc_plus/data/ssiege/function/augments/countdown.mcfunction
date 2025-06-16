@@ -49,16 +49,7 @@ execute as @a[gamemode=survival] run function uhcp:augments/countdown/haste
 function uhcp:start/advancements/reset_all
 
 # Announce augments
-tag @a add UHCP_AugmentAnnounce
-
-tag @a[team=blue] add UHCP_CurrentAnnounce
-execute if entity @a[scores={uhcp_augment=300..499}] run function ssiege:augments/announce/gold
-execute if entity @a[scores={uhcp_augment=500..}] run function ssiege:augments/announce/prismatic
-tag @a[team=red] add UHCP_CurrentAnnounce
-execute if entity @a[scores={uhcp_augment=300..499}] run function ssiege:augments/announce/gold
-execute if entity @a[scores={uhcp_augment=500..}] run function ssiege:augments/announce/prismatic
-
-tag @a remove UHCP_AugmentAnnounce
+execute as @a run function ssiege:augments/announce
 
 # Finish player initialization
 scoreboard players set @a uhcp_leave 1
