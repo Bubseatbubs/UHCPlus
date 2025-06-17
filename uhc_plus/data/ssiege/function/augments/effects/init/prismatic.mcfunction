@@ -15,6 +15,7 @@ execute if score @s uhcp_augment matches 533 run return run attribute @s scale m
 execute if score @s uhcp_augment matches 536 run return run function ssiege:augments/effects/prismatic/midas_touch/init
 execute if score @s uhcp_augment matches 537 run return run function ssiege:augments/effects/prismatic/goldenless_apples/init
 execute if score @s uhcp_augment matches 539 run return run function ssiege:augments/effects/prismatic/phantom_saber_ii/phantomsaber
+execute if score @s uhcp_augment matches 542 run return run loot give @s loot ssiege:relics/radiant_relics
 execute if score @s uhcp_augment matches 550 run return run function ssiege:augments/effects/prismatic/starterkitiii
 execute if score @s uhcp_augment matches 552 run return run function ssiege:augments/effects/prismatic/thehare
 execute if score @s uhcp_augment matches 554 run return run function ssiege:augments/effects/prismatic/thinkfast
