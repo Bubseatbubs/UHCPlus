@@ -27,5 +27,8 @@ execute at @e[tag=RED_BASE,limit=1] run execute positioned ~-77 ~ ~ as @a[team=b
 execute at @e[tag=BLUE_BASE,limit=1] run execute positioned ~77 ~ ~ run tellraw @a[team=red,distance=..15,gamemode=survival] {"text":"You are too close to the enemy spawn!","color":"red"}
 execute at @e[tag=RED_BASE,limit=1] run execute positioned ~-77 ~ ~ run tellraw @a[team=blue,distance=..15,gamemode=survival] {"text":"You are too close to the enemy spawn!","color":"red"}
 
+# Trophy Hunter Camel Effect
+execute as @a[tag=TH_Camel] run effect give @s absorption 120 0 true
+
 # Schedules for 2 second later (40 ticks)
 scoreboard players add %aura uhcp_game_time 40

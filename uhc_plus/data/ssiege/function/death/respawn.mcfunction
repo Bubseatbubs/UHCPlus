@@ -24,6 +24,10 @@ execute if score @s uhcp_augment matches 516 run execute if score %time uhcp_gam
 # The Hare
 execute if score @s uhcp_augment matches 552 run effect give @s jump_boost infinite 1 true
 
+# Trophy Hunter Permanet Effects
+execute as @s[tag=TH_MagmaCube] run effect give @s fire_resistance infinite 0 true
+execute as @s[tag=TH_Rabbit] run effect give @s jump_boost infinite 1 true
+
 # Infernus Blessing
 execute as @s[tag=SSIEGE_InfernusBlessing] run effect give @s fire_resistance infinite 0 true
 

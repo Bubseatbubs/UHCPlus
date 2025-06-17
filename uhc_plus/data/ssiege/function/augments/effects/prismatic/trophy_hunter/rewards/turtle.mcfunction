@@ -1,0 +1,3 @@
+give @s splash_potion[potion_contents={potion:"minecraft:turtle_master"}] 1
+execute as @a at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 2 1
+tellraw @s ["",{"text":"[Trophy Hunter]","bold":true,"color":"aqua"},{"text":" The "},{"text":"Turtle","color":"yellow"},{"text":" gave you a ","color":"white"},{"text":"Splash Potion of the Turtle Master","color":"yellow"},{"text":"!"}]
