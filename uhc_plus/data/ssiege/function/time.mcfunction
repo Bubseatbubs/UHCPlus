@@ -44,8 +44,6 @@ execute as @a[scores={upgrade=1..3}] at @s run function uhcp:augments/effects/pr
 execute as @a[tag=UHCP_CDSelectUpgrade] at @s run function uhcp:augments/effects/prismatic/cyberneticdownload/update_menu
 scoreboard players enable @a[tag=UHCP_CDSelectUpgrade] upgrade
 
-# Babysitting
-function ssiege:augments/effects/gold/babysitting/sniffcd
 
 # Blood Diamonds
 execute as @a[scores={uhcp_augment=304}] run function ssiege:augments/effects/gold/blood_diamonds/clear_diamonds
@@ -88,6 +86,10 @@ execute as @a[scores={uhcp_augment=502}] run function ssiege:augments/effects/pr
 
 # Open the Gates
 execute as @a[scores={uhcp_augment=341},nbt={SelectedItem:{id:"minecraft:ender_eye"}}] at @s run function ssiege:augments/effects/gold/gates/laser/init
+
+# Goldenless Apples
+execute as @a[scores={uhcp_augment=537}] at @s run function ssiege:augments/effects/prismatic/goldenless_apples/effect
+
 
 # Babysitting augment - Sniffer modifier
 function ssiege:augments/effects/gold/babysitting/sniffcd

@@ -1,0 +1,1 @@
+attribute @s max_health modifier add uhcp:max_health 20 add_value
