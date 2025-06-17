@@ -18,7 +18,7 @@
               "conditions": [
                   {
                     "condition": "minecraft:random_chance",
-                    "chance": 0.25
+                    "chance": 0.2
                   }
                 ],
               "enchantment": "minecraft:looting"
@@ -44,11 +44,13 @@
             },
             {
               "function": "minecraft:enchanted_count_increase",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 1
-              },
+              "count": 1,
+              "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.33
+                  }
+                ],
               "enchantment": "minecraft:looting"
             }
           ]
@@ -74,13 +76,15 @@
               "function": "minecraft:set_count"
             },
             {
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 1,
-                "min": 0
-              },
-              "enchantment": "minecraft:looting",
-              "function": "minecraft:enchanted_count_increase"
+              "function": "minecraft:enchanted_count_increase",
+              "count": 1,
+              "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.33
+                  }
+                ],
+              "enchantment": "minecraft:looting"
             }
           ],
           "name": "minecraft:golden_apple"
