@@ -4,6 +4,8 @@ execute if score @s uhcp_augment matches 504 run loot give @s loot uhcp:consumab
 execute if score @s uhcp_augment matches 508 run function ssiege:augments/effects/prismatic/bowmaster
 execute if score @s uhcp_augment matches 509 run function ssiege:augments/effects/prismatic/buzzy_bees/init
 execute if score @s uhcp_augment matches 510 run function ssiege:augments/effects/prismatic/center_of_attention
+execute if score @s uhcp_augment matches 522 run give @s golden_apple 3
+execute if score @s uhcp_augment matches 526 run function ssiege:augments/effects/prismatic/gomugomu
 execute if score @s uhcp_augment matches 531 run function ssiege:augments/effects/prismatic/immovable_object
 execute if score @s uhcp_augment matches 532 run give @s diamond_pickaxe[enchantments={"minecraft:efficiency":2,"minecraft:fortune":2}] 1
 execute if score @s uhcp_augment matches 533 run attribute @s scale base set 0.7
