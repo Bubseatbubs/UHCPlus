@@ -54,3 +54,7 @@ execute as @e[tag=!UHCP_ItemPickup,predicate=uhcp:items/instant_pickup] run func
 
 # Item use timer
 scoreboard players remove @a[scores={uhcp_itemCount=1..}] uhcp_itemCount 1
+
+# Set players on correct uhcp teams
+execute as @a[team=blue] unless score @s uhcp_team matches 2 run scoreboard players set @s uhcp_team 2
+execute as @a[team=red] unless score @s uhcp_team matches 13 run scoreboard players set @s uhcp_team 13
