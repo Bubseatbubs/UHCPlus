@@ -86,9 +86,6 @@ execute as @a[scores={uhcp_augment=356},gamemode=survival] at @s run function ss
 # Res Tier Player
 execute as @a[scores={uhcp_augment=502}] run function ssiege:augments/effects/prismatic/res_tier_remove_shield
 
-# Buzzy Bees
-execute as @a[scores={uhcp_augment=509}] run function ssiege:augments/effects/prismatic/buzzy_bees/regen
-
 # Open the Gates
 execute as @a[scores={uhcp_augment=341},nbt={SelectedItem:{id:"minecraft:ender_eye"}}] at @s run function ssiege:augments/effects/gold/gates/laser/init
 
