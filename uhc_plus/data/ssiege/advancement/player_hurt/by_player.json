@@ -29,6 +29,6 @@
     }
   },
   "rewards": {
-    "function": "ssiege:augments/effects/hurt_by_player"
+    "function": "ssiege:augments/effects/player_hurt/by_player"
   }
 }

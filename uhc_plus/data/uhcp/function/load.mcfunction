@@ -137,6 +137,7 @@ scoreboard objectives add ssiege_shards_spent dummy
 scoreboard objectives add ssiege_settings dummy
 scoreboard objectives add ssiege_shards dummy
 scoreboard objectives add ssiege_unlocked_runesmith dummy
+scoreboard objectives add ssiege_exposed dummy
 scoreboard objectives add ssiege_gapples_eaten dummy
 scoreboard objectives add ssiege_mine_ddiamonds minecraft.mined:minecraft.deepslate_diamond_ore
 scoreboard objectives add ssiege_mine_diamonds minecraft.mined:minecraft.diamond_ore

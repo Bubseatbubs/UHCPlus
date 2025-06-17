@@ -90,6 +90,8 @@ execute as @a[scores={uhcp_augment=341},nbt={SelectedItem:{id:"minecraft:ender_e
 # Goldenless Apples
 execute as @a[scores={uhcp_augment=537}] at @s run function ssiege:augments/effects/prismatic/goldenless_apples/effect
 
+# Expose Weakness
+execute as @a[scores={ssiege_exposed=1..}] run function ssiege:augments/effects/exposed/update
 
 # Babysitting augment - Sniffer modifier
 function ssiege:augments/effects/gold/babysitting/sniffcd
