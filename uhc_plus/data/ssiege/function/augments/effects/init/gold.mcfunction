@@ -13,7 +13,7 @@ execute if score @s uhcp_augment matches 314 run function ssiege:augments/effect
 execute if score @s uhcp_augment matches 315 run function ssiege:augments/effects/gold/echolocation
 execute if score @s uhcp_augment matches 317 run function ssiege:augments/effects/gold/fireandwater
 execute if score @s uhcp_augment matches 320 run function ssiege:augments/effects/gold/gapplegapi
-execute if score @s uhcp_augment matches 322 run attribute @s max_health base set 40
+execute if score @s uhcp_augment matches 322 run attribute @s max_health modifier add uhcp:max_health 20 add_value
 execute if score @s uhcp_augment matches 325 run function ssiege:augments/effects/gold/hungryforblood
 execute if score @s uhcp_augment matches 326 run loot give @s loot uhcp:hunting_call
 execute if score @s uhcp_augment matches 327 run function ssiege:augments/effects/gold/rushorder
