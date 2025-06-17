@@ -18,3 +18,4 @@ execute if score @s uhcp_augment matches 550 run function ssiege:augments/effect
 execute if score @s uhcp_augment matches 552 run function ssiege:augments/effects/prismatic/thehare
 execute if score @s uhcp_augment matches 554 run function ssiege:augments/effects/prismatic/thinkfast
 execute if score @s uhcp_augment matches 560 run give @s fishing_rod[enchantments={"minecraft:luck_of_the_sea":11,"minecraft:lure":5},unbreakable={}] 1
+execute if score @s uhcp_augment matches 562 run function ssiege:augments/effects/prismatic/unleashthebeastii
