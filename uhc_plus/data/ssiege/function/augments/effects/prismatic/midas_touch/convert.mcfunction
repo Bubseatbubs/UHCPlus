@@ -1,6 +1,3 @@
-advancement revoke @s only uhcp:augments/midas_touch
-execute if score %mode uhcp_settings matches 1 run return run function ssiege:augments/effects/prismatic/midas_touch/convert
-
 execute store result score @s uhcp_initStatus run clear @s minecraft:coal
 execute if score @s uhcp_initStatus matches 1.. run function uhcp:augments/effects/prismatic/midastouch/ores/coal
 execute store result score @s uhcp_initStatus run clear @s minecraft:coal_block
