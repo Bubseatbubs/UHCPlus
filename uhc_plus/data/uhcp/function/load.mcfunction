@@ -256,7 +256,7 @@ scoreboard players set %border_shrink_speed_def uhcp_settings 24000
 
 # Dimension countdown
 scoreboard players set %dimension_def uhcp_settings 48000
-scoreboard players set %dimension_def ssiege_settings -1
+scoreboard players set %dimension_def ssiege_settings 18000
 
 # Soul apples
 scoreboard players set %soul_apples_def uhcp_settings 1
