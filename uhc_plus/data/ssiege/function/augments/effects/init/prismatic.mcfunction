@@ -8,6 +8,7 @@ execute if score @s uhcp_augment matches 516 run return run give @s totem_of_und
 execute if score @s uhcp_augment matches 519 run return run function ssiege:augments/effects/prismatic/gapplegapiii
 execute if score @s uhcp_augment matches 520 run return run loot give @s loot uhcp:armaments/boots_of_swiftness
 execute if score @s uhcp_augment matches 522 run return run give @s golden_apple 3
+execute if score @s uhcp_augment matches 528 run return run function ssiege:augments/effects/prismatic/hedge_fund/init
 execute if score @s uhcp_augment matches 526 run return run function ssiege:augments/effects/prismatic/gomugomu
 execute if score @s uhcp_augment matches 531 run return run function ssiege:augments/effects/prismatic/immovable_object
 execute if score @s uhcp_augment matches 532 run return run give @s diamond_pickaxe[enchantments={"minecraft:efficiency":2,"minecraft:fortune":2}] 1
