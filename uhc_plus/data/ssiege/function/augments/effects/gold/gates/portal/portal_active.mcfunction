@@ -17,6 +17,16 @@ execute positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/
 # Summon portal particles at pos2
 execute positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/spawn_particles_pos2 with storage ssiege:temp
 
+# Play sounds at pos2
+execute positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/playsound_pos2 with storage ssiege:temp
+
+# Check for players near pos1 and teleport to pos2
+execute positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/check_teleport_pos1_to_pos2 with storage ssiege:temp
+
+# Check for players near pos2 and teleport to pos1
+execute positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/check_teleport_pos2_to_pos1 with storage ssiege:temp
+
+#UNUSED - team based tp
 # Check for teleportation - same team players near pos1 teleport to pos2
-execute as @s[tag=UHCP_TeamRed] positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/check_teleport_red
-execute as @s[tag=UHCP_TeamBlue] positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/check_teleport_blue
+#execute as @s[tag=UHCP_TeamRed] positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/check_teleport_red
+#execute as @s[tag=UHCP_TeamBlue] positioned ~ ~ ~ run function ssiege:augments/effects/gold/gates/portal/check_teleport_blue

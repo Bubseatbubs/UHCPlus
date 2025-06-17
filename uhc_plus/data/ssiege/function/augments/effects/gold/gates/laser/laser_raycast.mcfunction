@@ -13,7 +13,7 @@ execute if score @s uhcp_initStatus matches ..0 run function ssiege:augments/eff
 execute if score @s uhcp_initStatus matches 1.. run execute rotated ~ ~.9 positioned ^ ^ ^0.4 run function ssiege:augments/effects/gold/gates/laser/laser_raycast
 
 
-
+# UNUSED for now, might come back if I decide to implement true gravitational calcs
 # Calculate parabolic drop: negative thousandth of remaining steps
 #scoreboard players set @s laser_drop 100
 #scoreboard players operation @s laser_drop -= @s uhcp_initStatus

@@ -150,6 +150,15 @@ scoreboard objectives add ssiege_place_dirt minecraft.used:minecraft.dirt
 scoreboard objectives add ssiege_giants_killed dummy
 scoreboard objectives add ssiege_titans_slain dummy
 
+# Sniffer Siege Portal System - Wasteful, but wasn't super sure how else to define 2 positions that are only tagged to each other - for example if two people on the same team have this augment
+scoreboard objectives add ssiege_posx dummy
+scoreboard objectives add ssiege_posy dummy
+scoreboard objectives add ssiege_posz dummy
+scoreboard objectives add ssiege_posx2 dummy
+scoreboard objectives add ssiege_posy2 dummy
+scoreboard objectives add ssiege_posz2 dummy
+scoreboard objectives add uhcp_gate_time dummy
+
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health
 scoreboard objectives setdisplay list uhcp_health
