@@ -44,7 +44,7 @@ def csv_to_loot_table(csv_file_path: str, output_file_path: str):
                         "name": [
                             {
                                 "text": aug_name,
-                                "color": "gold",
+                                "color": "aqua",
                                 "bold": True
                             }
                         ]
@@ -94,5 +94,5 @@ def csv_to_loot_table(csv_file_path: str, output_file_path: str):
 
 if __name__ == "__main__":
     csv_in = "scripts/augments.csv"
-    json_out = "scripts/gold.json"
+    json_out = "scripts/prismatic.json"
     csv_to_loot_table(csv_in, json_out)

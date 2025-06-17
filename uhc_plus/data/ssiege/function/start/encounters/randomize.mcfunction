@@ -2,7 +2,7 @@ execute store result score %random_encounter ssiege_current_encounter run random
 
 execute if score %random_encounter ssiege_current_encounter matches 1..7 run return 1
 execute if score %random_encounter ssiege_current_encounter matches 8..14 run return 14
-execute if score %random_encounter ssiege_current_encounter matches 15..21 run return 14
+execute if score %random_encounter ssiege_current_encounter matches 15..21 run return 3
 execute if score %random_encounter ssiege_current_encounter matches 22..24 run return 4
 execute if score %random_encounter ssiege_current_encounter matches 25..30 run return 5
 execute if score %random_encounter ssiege_current_encounter matches 31..37 run return 6

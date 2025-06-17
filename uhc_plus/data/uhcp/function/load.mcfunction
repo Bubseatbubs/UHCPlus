@@ -226,7 +226,7 @@ scoreboard players set %mode_def uhcp_settings 1
 
 # Augment tier
 scoreboard players set %random_def uhcp_settings 1
-scoreboard players set %random_def ssiege_settings 0
+scoreboard players set %random_def ssiege_settings 1
 scoreboard players set %tier_def uhcp_settings 1
 scoreboard players set %tier_def ssiege_settings 1
 
