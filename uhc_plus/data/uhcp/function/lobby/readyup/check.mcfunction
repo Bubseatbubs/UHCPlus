@@ -11,5 +11,5 @@ execute as @a[scores={uhcp_team=1..14}] unless score @s uhcp_team = @p[tag=UHCP_
 tag @a remove UHCP_Compare
 execute if score %ready uhcp_ready = %total uhcp_ready if score %can_start uhcp_initStatus matches 0 run return run tellraw @a {"text":"The game cannot start while everyone is on the same team!","color":"dark_red"}
 
-
+execute if score %ready uhcp_ready matches 2.. if score %ready uhcp_ready = %total uhcp_ready if score %can_start uhcp_initStatus matches 1 if score %mode uhcp_settings matches 1 run return run function ssiege:start
 execute if score %ready uhcp_ready matches 2.. if score %ready uhcp_ready = %total uhcp_ready if score %can_start uhcp_initStatus matches 1 run scoreboard players set %start_countdown uhcp_initStatus 80

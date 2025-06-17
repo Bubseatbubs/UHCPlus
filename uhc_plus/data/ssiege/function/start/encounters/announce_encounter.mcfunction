@@ -16,6 +16,6 @@ execute if score %encounter ssiege_current_encounter matches 15 run tellraw @a [
 execute if score %encounter ssiege_current_encounter matches 16 run tellraw @a [{"text":"Aelwyn","color":"gold"},{"text":" gives everyone a Relic Invoker.","color":"white"}]
 execute if score %encounter ssiege_current_encounter matches 17 run tellraw @a [{"text":"Weird","color":"gold"},{"text":" lets everyone go to the Nether.","color":"white"}]
 execute if score %encounter ssiege_current_encounter matches 18 run tellraw @a [{"text":"Majority","color":"gold"},{"text":" makes everyone immune to fall damage.","color":"white"}]
-execute if score %encounter ssiege_current_encounter matches 19 run tellraw @a [{"text":"Neo","color":"gold"},{"text":" gives everyone secret tech.","color":"white"}]
+execute if score %encounter ssiege_current_encounter matches 19 run tellraw @a [{"text":"Neo","color":"gold"},{"text":" gives everyone secret mining tech.","color":"white"}]
 execute if score %encounter ssiege_current_encounter matches 20 run tellraw @a [{"text":"Aeodine","color":"gold"},{"text":" makes everyone's Augment Solo Leveling.","color":"white"}]
 execute if score %encounter ssiege_current_encounter matches 21 run tellraw @a [{"text":"Vanilla","color":"gold"},{"text":" gives everyone a chance to capture hostile mobs on kill. Gotta Catch 'em All!","color":"white"}]
