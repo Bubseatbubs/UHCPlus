@@ -166,6 +166,10 @@ execute as @a[tag=!UHCP_Spectator] run function uhcp:start/id/player
 # Initialize Opening Encounter
 function ssiege:start/encounters/init
 
+# Forceload base locations
+forceload add 90 90 170 90
+forceload add -90 -90 -170 -90
+
 # After a 10 second delay, start augment selection
 schedule function ssiege:start_augment_selection 200
 
