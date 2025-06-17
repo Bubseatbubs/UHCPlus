@@ -8,5 +8,7 @@ data modify entity @n[type=zombie,tag=SSIEGE_NewRaise] equipment.feet set from e
 
 execute as @s[team=blue] run execute as @n[type=zombie,tag=SSIEGE_NewRaise] run team join blue
 execute as @s[team=red] run execute as @n[type=zombie,tag=SSIEGE_NewRaise] run team join red
+execute at @n[type=zombie,tag=SSIEGE_NewRaise] run playsound entity.zombie.ambient master @a[distance=..32] ~ ~ ~ 1 1 0.15
+execute at @s run tellraw @a[distance=..32] ["",{"text":"[Raise the Dead]","bold":true,"color":"aqua"},{"text":" "},{"selector":"@s"},{"text":" was reanimated!"}]
 
 execute as @e[tag=SSIEGE_NewRaise] run tag @s remove SSIEGE_NewRaise

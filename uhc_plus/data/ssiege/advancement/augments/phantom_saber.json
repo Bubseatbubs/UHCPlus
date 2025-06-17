@@ -17,11 +17,23 @@
             }
           },
           {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "uhcp_augment": 345
-            }
+            "condition": "any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "uhcp_augment": 345
+                }
+              },
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "uhcp_augment": 539
+                }
+              }
+            ]
           }
         ],
         "damage": {

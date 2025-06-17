@@ -18,5 +18,5 @@ execute as @s[team=red] run execute as @a[distance=..30,team=red] run execute if
 # Grants Soul Siphon Effect to all players
 execute as @a[distance=..32,scores={uhcp_augment=359}] run function ssiege:augments/effects/gold/soulsiphon
 
-execute as @s[team=blue] if entity @a[team=blue,distance=..32,scores={uhcp_augment=543}] at @s run function ssiege:augments/effects/prismatic/raise_the_dead/summon
-execute as @s[team=red] if entity @a[team=red,distance=..32,scores={uhcp_augment=543}] at @s run function ssiege:augments/effects/prismatic/raise_the_dead/summon
+execute as @s[team=blue] if entity @a[team=blue,distance=..32,scores={uhcp_augment=543}] at @s run function ssiege:augments/effects/prismatic/raise_the_dead
+execute as @s[team=red] if entity @a[team=red,distance=..32,scores={uhcp_augment=543}] at @s run function ssiege:augments/effects/prismatic/raise_the_dead
