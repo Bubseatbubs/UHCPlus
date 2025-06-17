@@ -4,7 +4,8 @@ execute if score @s uhcp_augment matches 504 run loot give @s loot uhcp:consumab
 execute if score @s uhcp_augment matches 508 run function ssiege:augments/effects/prismatic/bowmaster
 execute if score @s uhcp_augment matches 509 run function ssiege:augments/effects/prismatic/buzzy_bees/init
 execute if score @s uhcp_augment matches 510 run function ssiege:augments/effects/prismatic/center_of_attention
-execute if score @s uhcp_augment matches 510 run function ssiege:augments/effects/prismatic/gapplegapiii
+execute if score @s uhcp_augment matches 516 run give @s totem_of_undying
+execute if score @s uhcp_augment matches 519 run function ssiege:augments/effects/prismatic/gapplegapiii
 execute if score @s uhcp_augment matches 520 run loot give @s loot uhcp:armaments/boots_of_swiftness
 execute if score @s uhcp_augment matches 522 run give @s golden_apple 3
 execute if score @s uhcp_augment matches 526 run function ssiege:augments/effects/prismatic/gomugomu

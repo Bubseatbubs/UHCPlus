@@ -18,6 +18,9 @@ execute if score @s uhcp_augment matches 347 run effect give @s dolphins_grace i
 # Center of Attention
 execute if score @s uhcp_augment matches 510 run effect give @s glowing infinite
 
+# Emergency Reserves
+execute if score @s uhcp_augment matches 516 run execute if score %time uhcp_game_time matches 18000.. run give @s totem_of_undying
+
 # The Hare
 execute if score @s uhcp_augment matches 552 run effect give @s jump_boost infinite 1 true
 
