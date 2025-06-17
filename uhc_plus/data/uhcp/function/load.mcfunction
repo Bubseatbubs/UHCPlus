@@ -267,13 +267,15 @@ scoreboard players set %titans_def uhcp_settings 3
 
 # PvP countdown
 scoreboard players set %pvp_def uhcp_settings 24000
-scoreboard players set %pvp_def ssiege_settings 18000
+scoreboard players set %pvp_def ssiege_settings 0
 
 # Team game
 scoreboard players set %team_def uhcp_settings 1
+scoreboard players set %team_def ssiege_settings 1
 
 # Team size
 scoreboard players set %team_size_def uhcp_settings 2
+scoreboard players set %team_size_def ssiege_settings 5
 
 # Friendly fire
 scoreboard players set %friendly_fire_def uhcp_settings 0
@@ -327,7 +329,7 @@ scoreboard players set %apple_limit_def ssiege_settings 1
 scoreboard players set %uhcp_loot_def uhcp_settings 1
 scoreboard players set %uhcp_loot_def ssiege_settings 1
 
-# Enchantment reduction (cap: Sharpness I / Protection I / Power I; remove: Fire Aspect / Flame)
+# Enchantment reduction (cap: Sharpness I / Protection I; remove: Fire Aspect / Flame)
 scoreboard players set %enchant_reduce_def uhcp_settings 0
 scoreboard players set %enchant_reduce_def ssiege_settings 1
 
