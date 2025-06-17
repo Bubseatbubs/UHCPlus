@@ -18,6 +18,9 @@ execute if score @s uhcp_augment matches 347 run effect give @s dolphins_grace i
 # Center of Attention
 execute if score @s uhcp_augment matches 510 run effect give @s glowing infinite
 
+# The Hare
+execute if score @s uhcp_augment matches 552 run effect give @s jump_boost infinite 1 true
+
 # Infernus Blessing
 execute as @s[tag=SSIEGE_InfernusBlessing] run effect give @s fire_resistance infinite 0 true
 
