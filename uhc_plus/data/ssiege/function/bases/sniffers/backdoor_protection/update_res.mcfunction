@@ -7,6 +7,6 @@ execute as @a[distance=..26,gamemode=survival] unless score @s uhcp_team = @n[ta
 execute if score %nearby uhcp_initStatus matches ..1 run return fail
 
 scoreboard players operation @s uhcp_game_time = %time uhcp_game_time
-scoreboard players operation @s uhcp_game_time += #200 uhcp_const
+scoreboard players add @s uhcp_game_time 200
 
 tag @s remove SSIEGE_sniffer_check
