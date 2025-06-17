@@ -2,6 +2,7 @@
 execute if score @s uhcp_augment matches 502 run effect give @s resistance infinite 0 true
 execute if score @s uhcp_augment matches 504 run loot give @s loot uhcp:consumables/titan_spinal_fluid
 execute if score @s uhcp_augment matches 508 run function ssiege:augments/effects/prismatic/bowmaster
-execute if score @s uhcp_augment matches 508 run function ssiege:augments/effects/prismatic/buzzy_bees/init
+execute if score @s uhcp_augment matches 509 run function ssiege:augments/effects/prismatic/buzzy_bees/init
+execute if score @s uhcp_augment matches 510 run function ssiege:augments/effects/prismatic/center_of_attention
 execute if score @s uhcp_augment matches 531 run function ssiege:augments/effects/prismatic/immovable_object
 execute if score @s uhcp_augment matches 539 run function ssiege:augments/effects/prismatic/phantom_saber_ii/phantomsaber
