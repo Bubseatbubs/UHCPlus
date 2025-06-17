@@ -202,6 +202,9 @@ execute if score %blue ssiege_perk_regen matches 1.. if score %time uhcp_game_ti
 execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssiege:bases/sniffers/low_health_regen
 execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssiege:shop/perks/effects/sniffer_aura
 
+# Sniffer backdoor protection
+execute as @e[type=sniffer,tag=SSIEGE_sniffer] at @s run function ssiege:bases/sniffers/backdoor_protection/update_res
+
 # Titan Spawning
 execute if score %time uhcp_game_time = %titans uhcp_game_time run function ssiege:titans/timed
 
