@@ -1,4 +1,5 @@
 # Check for players to add to teams
+execute if score %mode uhcp_settings matches 1 run return run function uhcp:settings/ssiege_randomize
 scoreboard players add @a uhcp_ready 0
 execute unless entity @a[scores={uhcp_ready=0..1}] run return run function uhcp:settings/team/randomize/fail
 

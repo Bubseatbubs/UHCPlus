@@ -23,6 +23,9 @@ execute unless score %pvp uhcp_settings = %pvp uhcp_settings run function uhcp:l
 # Friendly fire
 execute unless score %friendly_fire uhcp_settings = %friendly_fire uhcp_settings run scoreboard players operation %friendly_fire uhcp_settings = %friendly_fire_def ssiege_settings
 
+# Teams
+scoreboard players set %team uhcp_settings 1
+
 # Players select teams
 execute unless score %players_select_teams uhcp_settings = %players_select_teams uhcp_settings run scoreboard players operation %players_select_teams uhcp_settings = %players_select_teams_def ssiege_settings
 
