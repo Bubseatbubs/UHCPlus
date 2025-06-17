@@ -1,0 +1,2 @@
+give @s minecraft:golden_apple
+tellraw @s ["",{"text":"[Harvest Season III]","bold":true,"color":"aqua"},{"text":" You harvested a ", "color":"white", "bold": false},{"text":"Golden Apple","bold":true,"color":"gold"},{"text":"!"}]
