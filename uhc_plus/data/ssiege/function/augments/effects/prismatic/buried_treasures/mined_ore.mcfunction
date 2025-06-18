@@ -1,0 +1,16 @@
+execute if score @s ssiege_mine_copper matches 1.. run function ssiege:augments/effects/prismatic/buried_treasures/roll
+execute if score @s ssiege_mine_dcopper matches 1.. run function ssiege:augments/effects/prismatic/buried_treasures/roll
+execute if score @s ssiege_mine_coal matches 1.. run function ssiege:augments/effects/prismatic/buried_treasures/roll
+execute if score @s ssiege_mine_dcoal matches 1.. run function ssiege:augments/effects/prismatic/buried_treasures/roll
+execute if score @s ssiege_mine_iron matches 1.. run function ssiege:augments/effects/prismatic/buried_treasures/roll
+execute if score @s ssiege_mine_diron matches 1.. run function ssiege:augments/effects/prismatic/buried_treasures/roll
+execute if score @s ssiege_mine_gold matches 1.. run function ssiege:augments/effects/prismatic/buried_treasures/roll
+execute if score @s ssiege_mine_dgold matches 1.. run function ssiege:augments/effects/prismatic/buried_treasures/roll
+execute if score @s ssiege_mine_redstone matches 1.. run function ssiege:augments/effects/prismatic/buried_treasures/roll
+execute if score @s ssiege_mine_dredstone matches 1.. run function ssiege:augments/effects/prismatic/buried_treasures/roll
+execute if score @s ssiege_mine_emerald matches 1.. run function ssiege:augments/effects/prismatic/buried_treasures/roll
+execute if score @s ssiege_mine_demerald matches 1.. run function ssiege:augments/effects/prismatic/buried_treasures/roll
+execute if score @s ssiege_mine_lapis matches 1.. run function ssiege:augments/effects/prismatic/buried_treasures/roll
+execute if score @s ssiege_mine_dlapis matches 1.. run function ssiege:augments/effects/prismatic/buried_treasures/roll
+execute if score @s ssiege_mine_ddiamonds matches 1.. run function ssiege:augments/effects/prismatic/buried_treasures/roll
+execute if score @s ssiege_mine_diamonds matches 1.. run function ssiege:augments/effects/prismatic/buried_treasures/roll

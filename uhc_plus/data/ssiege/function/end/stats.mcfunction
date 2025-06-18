@@ -45,10 +45,10 @@ execute if score %blue ssiege_kills matches 10.. run tellraw @a [{"bold":false,"
 # Diamonds Mined
 scoreboard players set %blue ssiege_kills 0
 scoreboard players set %red ssiege_kills 0
-execute as @a[team=blue] run scoreboard players operation %blue ssiege_kills += @s ssiege_mine_ddiamonds
-execute as @a[team=blue] run scoreboard players operation %blue ssiege_kills += @s ssiege_mine_diamonds
-execute as @a[team=red] run scoreboard players operation %red ssiege_kills += @s ssiege_mine_ddiamonds
-execute as @a[team=red] run scoreboard players operation %red ssiege_kills += @s ssiege_mine_diamonds
+execute as @a[team=blue] run scoreboard players operation %blue ssiege_kills += @s ssiege_mine_ddiamonds_stat
+execute as @a[team=blue] run scoreboard players operation %blue ssiege_kills += @s ssiege_mine_diamonds_stat
+execute as @a[team=red] run scoreboard players operation %red ssiege_kills += @s ssiege_mine_ddiamonds_stat
+execute as @a[team=red] run scoreboard players operation %red ssiege_kills += @s ssiege_mine_diamonds_stat
 execute if score %blue ssiege_kills matches ..9 run tellraw @a [{"bold":false,"color":"yellow","text":"Diamonds Mined"},{"bold":true,"text":" "},{"bold":false,"text":" "},{"bold":false,"color":"blue","score":{objective:ssiege_kills,name:"%blue"}},{"bold":true,"text":"         "},{"bold":false,"color":"red","score":{objective:ssiege_kills,name:"%red"}}]
 execute if score %blue ssiege_kills matches 10..99 run tellraw @a [{"bold":false,"color":"yellow","text":"Diamonds Mined"},{"bold":true,"text":" "},{"bold":false,"text":" "},{"bold":false,"color":"blue","score":{objective:ssiege_kills,name:"%blue"}},{"bold":true,"text":"        "},{"bold":false,"color":"red","score":{objective:ssiege_kills,name:"%red"}}]
 execute if score %blue ssiege_kills matches 100.. run tellraw @a [{"bold":false,"color":"yellow","text":"Diamonds Mined"},{"bold":true,"text":" "},{"bold":false,"text":" "},{"bold":false,"color":"blue","score":{objective:ssiege_kills,name:"%blue"}},{"bold":true,"text":"       "},{"bold":false,"color":"red","score":{objective:ssiege_kills,name:"%red"}}]
@@ -56,10 +56,10 @@ execute if score %blue ssiege_kills matches 100.. run tellraw @a [{"bold":false,
 # Gold Mined
 scoreboard players set %blue ssiege_kills 0
 scoreboard players set %red ssiege_kills 0
-execute as @a[team=blue] run scoreboard players operation %blue ssiege_kills += @s ssiege_mine_dgold
-execute as @a[team=blue] run scoreboard players operation %blue ssiege_kills += @s ssiege_mine_gold
-execute as @a[team=red] run scoreboard players operation %red ssiege_kills += @s ssiege_mine_dgold
-execute as @a[team=red] run scoreboard players operation %red ssiege_kills += @s ssiege_mine_gold
+execute as @a[team=blue] run scoreboard players operation %blue ssiege_kills += @s ssiege_mine_dgold_stat
+execute as @a[team=blue] run scoreboard players operation %blue ssiege_kills += @s ssiege_mine_gold_stat
+execute as @a[team=red] run scoreboard players operation %red ssiege_kills += @s ssiege_mine_dgold_stat
+execute as @a[team=red] run scoreboard players operation %red ssiege_kills += @s ssiege_mine_gold_stat
 execute if score %blue ssiege_kills matches ..9 run tellraw @a [{"bold":false,"color":"yellow","text":"Gold Mined"},{"bold":true,"text":"      "},{"bold":false,"text":" "},{"bold":false,"color":"blue","score":{objective:ssiege_kills,name:"%blue"}},{"bold":true,"text":"         "},{"bold":false,"color":"red","score":{objective:ssiege_kills,name:"%red"}}]
 execute if score %blue ssiege_kills matches 10..99 run tellraw @a [{"bold":false,"color":"yellow","text":"Gold Mined"},{"bold":true,"text":"      "},{"bold":false,"text":" "},{"bold":false,"color":"blue","score":{objective:ssiege_kills,name:"%blue"}},{"bold":true,"text":"        "},{"bold":false,"color":"red","score":{objective:ssiege_kills,name:"%red"}}]
 execute if score %blue ssiege_kills matches 100.. run tellraw @a [{"bold":false,"color":"yellow","text":"Gold Mined"},{"bold":true,"text":"    "},{"bold":false,"text":"   "},{"bold":false,"color":"blue","score":{objective:ssiege_kills,name:"%blue"}},{"bold":true,"text":"       "},{"bold":false,"color":"red","score":{objective:ssiege_kills,name:"%red"}}]

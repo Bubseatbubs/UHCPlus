@@ -139,15 +139,10 @@ scoreboard objectives add ssiege_shards dummy
 scoreboard objectives add ssiege_unlocked_runesmith dummy
 scoreboard objectives add ssiege_exposed dummy
 scoreboard objectives add ssiege_gapples_eaten dummy
-scoreboard objectives add ssiege_mine_ddiamonds minecraft.mined:minecraft.deepslate_diamond_ore
-scoreboard objectives add ssiege_mine_diamonds minecraft.mined:minecraft.diamond_ore
-scoreboard objectives add ssiege_mine_dgold minecraft.mined:minecraft.deepslate_gold_ore
-scoreboard objectives add ssiege_mine_gold minecraft.mined:minecraft.gold_ore
-scoreboard objectives add ssiege_mine_copper minecraft.mined:minecraft.copper_ore
-scoreboard objectives add ssiege_mine_dcopper minecraft.mined:minecraft.deepslate_copper_ore
-scoreboard objectives add ssiege_mine_coal minecraft.mined:minecraft.coal_ore
-scoreboard objectives add ssiege_mine_dcoal minecraft.mined:minecraft.deepslate_coal_ore
-scoreboard objectives add ssiege_place_dirt minecraft.used:minecraft.dirt
+scoreboard objectives add ssiege_mine_ddiamonds_stat minecraft.mined:minecraft.deepslate_diamond_ore
+scoreboard objectives add ssiege_mine_diamonds_stat minecraft.mined:minecraft.diamond_ore
+scoreboard objectives add ssiege_mine_dgold_stat minecraft.mined:minecraft.deepslate_gold_ore
+scoreboard objectives add ssiege_mine_gold_stat minecraft.mined:minecraft.gold_ore
 scoreboard objectives add ssiege_giants_killed dummy
 scoreboard objectives add ssiege_titans_slain dummy
 
@@ -159,6 +154,25 @@ scoreboard objectives add ssiege_posx2 dummy
 scoreboard objectives add ssiege_posy2 dummy
 scoreboard objectives add ssiege_posz2 dummy
 scoreboard objectives add uhcp_gate_time dummy
+
+# Statistics Tracking for Various Augments
+scoreboard objectives add ssiege_place_dirt minecraft.used:minecraft.dirt
+scoreboard objectives add ssiege_mine_copper minecraft.mined:minecraft.copper_ore
+scoreboard objectives add ssiege_mine_dcopper minecraft.mined:minecraft.deepslate_copper_ore
+scoreboard objectives add ssiege_mine_coal minecraft.mined:minecraft.coal_ore
+scoreboard objectives add ssiege_mine_dcoal minecraft.mined:minecraft.deepslate_coal_ore
+scoreboard objectives add ssiege_mine_iron minecraft.mined:minecraft.iron_ore
+scoreboard objectives add ssiege_mine_diron minecraft.mined:minecraft.deepslate_iron_ore
+scoreboard objectives add ssiege_mine_gold minecraft.mined:minecraft.gold_ore
+scoreboard objectives add ssiege_mine_dgold minecraft.mined:minecraft.deepslate_gold_ore
+scoreboard objectives add ssiege_mine_redstone minecraft.mined:minecraft.redstone_ore
+scoreboard objectives add ssiege_mine_dredstone minecraft.mined:minecraft.deepslate_redstone_ore
+scoreboard objectives add ssiege_mine_emerald minecraft.mined:minecraft.emerald_ore
+scoreboard objectives add ssiege_mine_demerald minecraft.mined:minecraft.deepslate_emerald_ore
+scoreboard objectives add ssiege_mine_lapis minecraft.mined:minecraft.lapis_ore
+scoreboard objectives add ssiege_mine_dlapis minecraft.mined:minecraft.deepslate_lapis_ore
+scoreboard objectives add ssiege_mine_ddiamonds minecraft.mined:minecraft.deepslate_diamond_ore
+scoreboard objectives add ssiege_mine_diamonds minecraft.mined:minecraft.diamond_ore
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health

@@ -93,6 +93,9 @@ execute as @a[scores={uhcp_augment=537}] at @s run function ssiege:augments/effe
 # Expose Weakness
 execute as @a[scores={ssiege_exposed=1..}] run function ssiege:augments/effects/exposed/update
 
+# Buried Treasure
+execute as @a[scores={uhcp_augment=518}] run function ssiege:augments/effects/prismatic/buried_treasures/mined_ore
+
 # Babysitting augment - Sniffer modifier
 function ssiege:augments/effects/gold/babysitting/sniffcd
 
