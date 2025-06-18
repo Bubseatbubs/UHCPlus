@@ -155,6 +155,21 @@
                   ]
                 },
                 {
+                  "type": "minecraft:item",
+                  "name": "minecraft:enchanted_book",
+                  "weight": 20,
+                  "functions": [
+                    {
+                      "function": "minecraft:set_components",
+                      "components": {
+                        "minecraft:stored_enchantments": {
+                          "minecraft:power": 2
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
                   "type": "minecraft:alternatives",
                   "children": [
                     {
@@ -185,21 +200,6 @@
                               "components": {
                                 "minecraft:stored_enchantments": {
                                   "minecraft:sharpness": 1
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "minecraft:item",
-                          "name": "minecraft:enchanted_book",
-                          "weight": 20,
-                          "functions": [
-                            {
-                              "function": "minecraft:set_components",
-                              "components": {
-                                "minecraft:stored_enchantments": {
-                                  "minecraft:power": 1
                                 }
                               }
                             }
@@ -249,21 +249,6 @@
                               "components": {
                                 "minecraft:stored_enchantments": {
                                   "minecraft:sharpness": 2
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "minecraft:item",
-                          "name": "minecraft:enchanted_book",
-                          "weight": 20,
-                          "functions": [
-                            {
-                              "function": "minecraft:set_components",
-                              "components": {
-                                "minecraft:stored_enchantments": {
-                                  "minecraft:power": 2
                                 }
                               }
                             }
