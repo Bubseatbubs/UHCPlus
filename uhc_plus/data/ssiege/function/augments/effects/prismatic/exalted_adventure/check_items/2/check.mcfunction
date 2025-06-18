@@ -1,0 +1,19 @@
+execute if score @s exalted_item_2 matches -1 run return 1
+execute if score @s exalted_item_2 matches 0 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/nether_brick
+execute if score @s exalted_item_2 matches 1 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/redstone_repeater
+execute if score @s exalted_item_2 matches 2 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/paper
+execute if score @s exalted_item_2 matches 3 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/red_glazed_terracotta
+execute if score @s exalted_item_2 matches 4 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/glowstone_dust
+execute if score @s exalted_item_2 matches 5 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/lantern
+execute if score @s exalted_item_2 matches 6 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/light_blue_concrete
+execute if score @s exalted_item_2 matches 7 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/yellow_dye
+execute if score @s exalted_item_2 matches 8 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/copper_door
+execute if score @s exalted_item_2 matches 9 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/chiseled_sandstone
+execute if score @s exalted_item_2 matches 10 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/orange_glass_pane
+execute if score @s exalted_item_2 matches 11 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/dried_kelp_block
+execute if score @s exalted_item_2 matches 12 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/trapped_chest
+execute if score @s exalted_item_2 matches 13 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/campfire
+execute if score @s exalted_item_2 matches 14 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/oak_sapling
+execute if score @s exalted_item_2 matches 15 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/bush
+execute if score @s exalted_item_2 matches 16 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/armor_stand
+execute if score @s exalted_item_2 matches 17 run return run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/mossy_stone_bricks

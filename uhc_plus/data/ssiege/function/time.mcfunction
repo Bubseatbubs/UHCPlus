@@ -99,6 +99,9 @@ execute as @a[scores={uhcp_augment=518}] run function ssiege:augments/effects/pr
 # Hungry for Blood
 execute as @a[scores={uhcp_augment=529}] run function ssiege:augments/effects/prismatic/hungry_for_blood
 
+# An Exalted Adventure
+execute as @a[scores={uhcp_augment=503}] run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/update
+
 # Babysitting augment - Sniffer modifier
 function ssiege:augments/effects/gold/babysitting/sniffcd
 

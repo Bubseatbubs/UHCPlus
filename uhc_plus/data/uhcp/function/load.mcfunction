@@ -146,6 +146,11 @@ scoreboard objectives add ssiege_mine_gold_stat minecraft.mined:minecraft.gold_o
 scoreboard objectives add ssiege_giants_killed dummy
 scoreboard objectives add ssiege_titans_slain dummy
 
+# Exalted Adventure Item Tracking
+scoreboard objectives add exalted_item_1 dummy
+scoreboard objectives add exalted_item_2 dummy
+scoreboard objectives add exalted_item_3 dummy
+
 # Sniffer Siege Portal System - Wasteful, but wasn't super sure how else to define 2 positions that are only tagged to each other - for example if two people on the same team have this augment
 scoreboard objectives add ssiege_posx dummy
 scoreboard objectives add ssiege_posy dummy

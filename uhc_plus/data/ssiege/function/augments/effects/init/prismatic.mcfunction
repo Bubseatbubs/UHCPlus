@@ -1,5 +1,6 @@
 # Sniffer Siege Prismatic Augments
 execute if score @s uhcp_augment matches 502 run return run effect give @s resistance infinite 0 true
+execute if score @s uhcp_augment matches 503 run return run function ssiege:augments/effects/prismatic/exalted_adventure/init
 execute if score @s uhcp_augment matches 504 run return run loot give @s loot uhcp:consumables/titan_spinal_fluid
 execute if score @s uhcp_augment matches 508 run return run function ssiege:augments/effects/prismatic/bowmaster
 execute if score @s uhcp_augment matches 509 run return run function ssiege:augments/effects/prismatic/buzzy_bees/init
@@ -20,6 +21,7 @@ execute if score @s uhcp_augment matches 542 run return run loot give @s loot ss
 execute if score @s uhcp_augment matches 545 run return run function ssiege:augments/effects/prismatic/perseverence/init
 execute if score @s uhcp_augment matches 550 run return run function ssiege:augments/effects/prismatic/starterkitiii
 execute if score @s uhcp_augment matches 552 run return run function ssiege:augments/effects/prismatic/thehare
+execute if score @s uhcp_augment matches 553 run return run function ssiege:augments/effects/prismatic/thetortoise
 execute if score @s uhcp_augment matches 554 run return run function ssiege:augments/effects/prismatic/thinkfast
 execute if score @s uhcp_augment matches 559 run return run scoreboard players set @s uhcp_game_time 0
 execute if score @s uhcp_augment matches 560 run return run give @s fishing_rod[enchantments={"minecraft:luck_of_the_sea":11,"minecraft:lure":5},unbreakable={}] 1
