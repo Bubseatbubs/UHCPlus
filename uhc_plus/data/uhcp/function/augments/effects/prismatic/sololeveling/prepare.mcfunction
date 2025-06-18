@@ -117,5 +117,4 @@ data modify storage uhcp:solo_level Item[7] append value {id:"minecraft:netherit
 # Restrict sharpness, protection, and power
 execute unless score %enchant_reduce uhcp_settings matches 1 run return fail
 data modify storage uhcp:solo_level Item[][].components."minecraft:enchantments"."minecraft:sharpness" set value 1
-data modify storage uhcp:solo_level Item[][].components."minecraft:enchantments"."minecraft:power" set value 1
 data modify storage uhcp:solo_level Item[][].components."minecraft:enchantments"."minecraft:protection" set value 1

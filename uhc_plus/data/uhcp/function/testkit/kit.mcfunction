@@ -2,6 +2,7 @@
 scoreboard players set @s uhcp_leave 1000
 
 item replace entity @s container.1 with minecraft:diamond_pickaxe[minecraft:enchantments={"minecraft:efficiency":1}]
+item replace entity @s container.3 with minecraft:bow[minecraft:enchantments={"minecraft:power":2}]
 item replace entity @s container.4 with minecraft:water_bucket
 item replace entity @s container.5 with minecraft:lava_bucket
 item replace entity @s container.7 with minecraft:cobblestone 64
