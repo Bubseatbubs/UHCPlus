@@ -123,7 +123,7 @@ execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan
 execute as @e[type=!minecraft:player,tag=UHCP_Titan] at @s run function uhcp:titans/update
 
 # Update Entity Teams
-function ssiege:entity/join_team
+execute as @e[type=!player,scores={uhcp_team=2..}] run function ssiege:entity/join_team
 
 # Update Sniffer Bossbar
 function ssiege:bossbar/update
