@@ -39,5 +39,6 @@ execute if score @s uhcp_augment matches 363 run return run function ssiege:augm
 execute if score @s uhcp_augment matches 365 run return run function ssiege:augments/effects/gold/takeaim
 execute if score @s uhcp_augment matches 366 run return run function ssiege:augments/effects/gold/theboat
 execute if score @s uhcp_augment matches 370 run return run function ssiege:augments/effects/gold/tightlypacked
+execute if score @s uhcp_augment matches 373 run return run function ssiege:augments/effects/gold/trapmaster
 execute if score @s uhcp_augment matches 375 run return run function ssiege:augments/effects/gold/unleashthebeast
 execute if score @s uhcp_augment matches 378 run return run function ssiege:augments/effects/gold/youhavemyrodi
