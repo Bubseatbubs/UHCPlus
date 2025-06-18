@@ -6,6 +6,9 @@ execute if score @s uhcp_augment matches 509 run return run function ssiege:augm
 # Hedge Fund
 execute if score @s uhcp_augment matches 528 run return run function ssiege:augments/effects/prismatic/hedge_fund/interest
 
+# Perseverence
+execute if score @s uhcp_augment matches 545 run return run function ssiege:augments/effects/prismatic/perseverence/update
+
 # Trophy Hunter Rare mob spawn
 execute if score @s uhcp_augment matches 559 run return run function ssiege:augments/effects/prismatic/trophy_hunter/spawn/init
 
