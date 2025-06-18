@@ -30,5 +30,8 @@ execute at @e[tag=RED_BASE,limit=1] run execute positioned ~-77 ~ ~ run tellraw 
 # Trophy Hunter Camel Effect
 execute as @a[tag=TH_Camel] run effect give @s absorption 120 0 true
 
+execute at @e[tag=BLUE_BASE,limit=1] run execute positioned ~77 ~ ~ as @a[team=blue,distance=..15,gamemode=survival,scores={uhcp_augment=506}] at @s positioned ^ ^ ^-2 run function ssiege:augments/effects/prismatic/beastmaster
+execute at @e[tag=RED_BASE,limit=1] run execute positioned ~-77 ~ ~ as @a[team=red,distance=..15,gamemode=survival,scores={uhcp_augment=506}] at @s positioned ^ ^ ^-2 run function ssiege:augments/effects/prismatic/beastmaster
+
 # Schedules for 2 second later (40 ticks)
 scoreboard players add %aura uhcp_game_time 40
