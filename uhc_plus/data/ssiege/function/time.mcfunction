@@ -122,6 +122,9 @@ execute as @a at @s if entity @e[tag=UHCP_Titan,distance=..32] run function uhcp
 execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/hide
 execute as @e[type=!minecraft:player,tag=UHCP_Titan] at @s run function uhcp:titans/update
 
+# Update Entity Teams
+function uhcp:teams/join_entities
+
 # Update Sniffer Bossbar
 function ssiege:bossbar/update
 
