@@ -173,6 +173,7 @@ scoreboard objectives add ssiege_mine_lapis minecraft.mined:minecraft.lapis_ore
 scoreboard objectives add ssiege_mine_dlapis minecraft.mined:minecraft.deepslate_lapis_ore
 scoreboard objectives add ssiege_mine_ddiamonds minecraft.mined:minecraft.deepslate_diamond_ore
 scoreboard objectives add ssiege_mine_diamonds minecraft.mined:minecraft.diamond_ore
+scoreboard objectives add ssiege_food_level food
 
 # Display health objective
 scoreboard objectives setdisplay below_name uhcp_health

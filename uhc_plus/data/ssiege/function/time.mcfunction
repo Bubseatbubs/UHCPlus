@@ -96,6 +96,9 @@ execute as @a[scores={ssiege_exposed=1..}] run function ssiege:augments/effects/
 # Buried Treasure
 execute as @a[scores={uhcp_augment=518}] run function ssiege:augments/effects/prismatic/buried_treasures/mined_ore
 
+# Hungry for Blood
+execute as @a[scores={uhcp_augment=529}] run function ssiege:augments/effects/prismatic/hungry_for_blood
+
 # Babysitting augment - Sniffer modifier
 function ssiege:augments/effects/gold/babysitting/sniffcd
 
