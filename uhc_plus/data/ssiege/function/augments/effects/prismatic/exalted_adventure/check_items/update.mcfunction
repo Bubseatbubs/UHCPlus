@@ -1,4 +1,5 @@
 execute if score @s exalted_item_1 matches -2 run return fail
+execute if score @s exalted_item_2 matches 0 run execute if score @s exalted_item_3 matches 0 run return fail
 execute store result score %1 uhcp_initStatus run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/1/check
 execute store result score %2 uhcp_initStatus run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/2/check
 execute store result score %3 uhcp_initStatus run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/3/check

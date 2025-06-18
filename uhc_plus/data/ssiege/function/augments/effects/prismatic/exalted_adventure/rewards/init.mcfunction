@@ -1,4 +1,4 @@
-tellraw @s ["",{"text":"[Exalted Adventure]","bold":true,"color":"aqua"},{"text":" Congratulations, you've completed your Exalted Adventure!"}]
+tellraw @s [{"text":" Congratulations, you've completed your Exalted Adventure!"}]
 execute at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 1.5 1
 scoreboard players set @s exalted_item_1 -2
 

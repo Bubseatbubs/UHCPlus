@@ -1,0 +1,101 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "Upgrade the Hard Drive over the course of the game!"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Hard Drive",
+                "color": "gray",
+                "bold": true
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "uhcp:cd_armor",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "uhcp:cd_armor_toughness",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "uhcp:cd_movement_speed",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0,
+                  "operation": "add_multiplied_total",
+                  "slot": "chest"
+                },
+                {
+                  "id": "uhcp:cd_attack_speed",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": 0,
+                  "operation": "add_multiplied_total",
+                  "slot": "chest"
+                },
+                {
+                  "id": "uhcp:cd_attack_damage",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "uhcp:cd_max_health",
+                  "attribute": "minecraft:max_health",
+                  "amount": 0,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {},
+                "minecraft:enchantments": {
+                  "minecraft:binding_curse": 1,
+                  "minecraft:vanishing_curse": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:unbreakable": false
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_harddrive:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

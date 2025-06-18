@@ -10,6 +10,7 @@ scoreboard objectives add top trigger
 scoreboard objectives add recall trigger
 scoreboard objectives add upgrade trigger
 scoreboard objectives add tips trigger
+scoreboard objectives add exalted trigger
 
 # Settings triggers
 scoreboard objectives add settings trigger

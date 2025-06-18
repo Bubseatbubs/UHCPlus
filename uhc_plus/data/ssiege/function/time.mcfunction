@@ -44,6 +44,9 @@ execute as @a[scores={upgrade=1..3}] at @s run function uhcp:augments/effects/pr
 execute as @a[tag=UHCP_CDSelectUpgrade] at @s run function uhcp:augments/effects/prismatic/cyberneticdownload/update_menu
 scoreboard players enable @a[tag=UHCP_CDSelectUpgrade] upgrade
 
+# Exalted Adventure
+execute as @a[scores={uhcp_augment=503,exalted=1}] at @s run function ssiege:augments/effects/prismatic/exalted_adventure/announce/init
+scoreboard players enable @a[scores={uhcp_augment=503}] exalted
 
 # Blood Diamonds
 execute as @a[scores={uhcp_augment=304}] run function ssiege:augments/effects/gold/blood_diamonds/clear_diamonds

@@ -1,0 +1,1 @@
+loot replace entity @s armor.chest loot ssiege:augments/hard_drive
