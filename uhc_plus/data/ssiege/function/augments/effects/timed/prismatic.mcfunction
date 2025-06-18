@@ -6,6 +6,9 @@ execute if score @s uhcp_augment matches 509 run return run function ssiege:augm
 # Hedge Fund
 execute if score @s uhcp_augment matches 528 run return run function ssiege:augments/effects/prismatic/hedge_fund/interest
 
+# Pandora's Box
+execute if score @s uhcp_augment matches 538 run return run function ssiege:augments/effects/prismatic/pandoras_box/roll
+
 # Perseverence
 execute if score @s uhcp_augment matches 545 run return run function ssiege:augments/effects/prismatic/perseverence/update
 
