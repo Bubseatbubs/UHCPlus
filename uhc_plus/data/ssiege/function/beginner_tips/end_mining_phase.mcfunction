@@ -1,1 +1,0 @@
-tellraw @s ["",{"text":"[Beginner Tips]","bold":true,"color":"green"},{"text":" We're 12 minutes into the game now. Most people will be finishing up their mining and heading back to base soon. To go back to base, type \"","color":"white"},{"text":"/trigger recall","color":"yellow"},{"text":"\" in the chat and stand still for 10 seconds.","color":"white"}]

@@ -1,1 +1,0 @@
-tellraw @s [{"text":"Click here","bold":true,"color":"gold","click_event":{"action":"run_command","command":"trigger tips"}},{"text":" or type \"/trigger tips\" to turn off Beginner Tips at any time.", color:white, bold:false}]
