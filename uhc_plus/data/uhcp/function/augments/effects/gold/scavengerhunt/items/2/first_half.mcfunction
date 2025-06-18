@@ -7,5 +7,5 @@ execute if score @s uhcp_aug_sh_item2 matches 4 run return run execute if predic
 execute if score @s uhcp_aug_sh_item2 matches 5 run return run execute if predicate uhcp:augments/scavenger_hunt/glowstone run function uhcp:augments/effects/gold/scavengerhunt/items/2/glowstone
 execute if score @s uhcp_aug_sh_item2 matches 6 run return run execute if predicate uhcp:augments/scavenger_hunt/jukebox run function uhcp:augments/effects/gold/scavengerhunt/items/2/jukebox
 execute if score @s uhcp_aug_sh_item2 matches 7 run return run execute if predicate uhcp:augments/scavenger_hunt/glow_ink_sac run function uhcp:augments/effects/gold/scavengerhunt/items/2/glow_ink_sac
-execute if score @s uhcp_aug_sh_item2 matches 8 run return run execute if predicate uhcp:augments/scavenger_hunt/saddle run function uhcp:augments/effects/gold/scavengerhunt/items/2/saddle
+execute if score @s uhcp_aug_sh_item2 matches 8 run return run execute if predicate uhcp:augments/scavenger_hunt/dried_ghast run function uhcp:augments/effects/gold/scavengerhunt/items/2/dried_ghast
 execute if predicate uhcp:augments/scavenger_hunt/golden_carrot run function uhcp:augments/effects/gold/scavengerhunt/items/2/golden_carrot

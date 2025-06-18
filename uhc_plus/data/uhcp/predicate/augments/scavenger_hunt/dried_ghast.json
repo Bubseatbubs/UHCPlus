@@ -8,7 +8,7 @@
         "predicate": {
           "slots": {
             "container.*": {
-              "items": "minecraft:saddle"
+              "items": "minecraft:dried_ghast"
             }
           }
         }
@@ -19,7 +19,7 @@
         "predicate": {
           "slots": {
             "weapon.offhand": {
-              "items": "minecraft:saddle"
+              "items": "minecraft:dried_ghast"
             }
           }
         }
