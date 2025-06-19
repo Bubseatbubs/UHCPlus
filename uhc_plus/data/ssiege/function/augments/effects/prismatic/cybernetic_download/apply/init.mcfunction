@@ -13,7 +13,7 @@ scoreboard players add @s uhcp_const 1
 function ssiege:augments/effects/prismatic/cybernetic_download/apply/get_current_attributes
 
 # Nofity player of success
-tellraw @a ["",{"text":"[Cybernetic Download]","bold":true,"color":"aqua"},{"text":" Upgrade downloaded!","color":"green"}]
+tellraw @s ["",{"text":"[Cybernetic Download]","bold":true,"color":"aqua"},{"text":" Upgrade downloaded!","color":"green"}]
 execute at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
 
 # Apply effect based on calculated ID
