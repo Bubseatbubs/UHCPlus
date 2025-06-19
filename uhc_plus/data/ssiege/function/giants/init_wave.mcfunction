@@ -8,6 +8,9 @@ execute if score %encounter ssiege_current_encounter matches 1 run function ssie
 
 # Spawn waves
 execute positioned -50 200 -50 run function ssiege:giants/spawn_wave
+
+scoreboard players set %spawned ssiege_giants 0
+
 # Spawn waves
 execute positioned 50 200 50 run function ssiege:giants/spawn_wave
 
