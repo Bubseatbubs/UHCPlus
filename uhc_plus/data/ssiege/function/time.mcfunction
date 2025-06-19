@@ -236,4 +236,4 @@ execute if score %time uhcp_game_time >= %titan_might uhcp_game_time run execute
 execute if score %time uhcp_game_time >= %encounter_time uhcp_game_time run function ssiege:start/encounters/effects/timed
 
 # Giants
-execute if score %time uhcp_game_time >= %giant_timer ssiege_giants in minecraft:overworld run function ssiege:giants/init_wave
+execute if score %time uhcp_game_time >= %giant_timer ssiege_giants in minecraft:overworld as @n run function ssiege:giants/init_wave
