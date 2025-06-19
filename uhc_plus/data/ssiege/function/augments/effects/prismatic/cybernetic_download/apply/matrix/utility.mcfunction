@@ -1,0 +1,1 @@
+item modify entity @s armor.chest ssiege:cybernetic_download/thorns

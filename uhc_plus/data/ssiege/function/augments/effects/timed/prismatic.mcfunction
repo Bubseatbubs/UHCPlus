@@ -3,6 +3,9 @@
 # Buzzy Bees
 execute if score @s uhcp_augment matches 509 run return run function ssiege:augments/effects/prismatic/buzzy_bees/regen
 
+# Cybernetic Download
+execute if score @s uhcp_augment matches 513 run return run function ssiege:augments/effects/prismatic/cybernetic_download/level_up
+
 # Hedge Fund
 execute if score @s uhcp_augment matches 528 run return run function ssiege:augments/effects/prismatic/hedge_fund/interest
 

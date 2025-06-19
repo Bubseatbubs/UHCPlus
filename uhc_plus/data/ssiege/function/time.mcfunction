@@ -39,11 +39,6 @@ execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=
 execute as @a[scores={uhcp_lava_timeInterval=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
 execute as @a[scores={uhcp_lava_maxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
 
-# Cybernetic download
-execute as @a[scores={upgrade=1..3}] at @s run function uhcp:augments/effects/prismatic/cyberneticdownload/select
-execute as @a[tag=UHCP_CDSelectUpgrade] at @s run function uhcp:augments/effects/prismatic/cyberneticdownload/update_menu
-scoreboard players enable @a[tag=UHCP_CDSelectUpgrade] upgrade
-
 # Exalted Adventure
 execute as @a[scores={uhcp_augment=503,exalted=1}] at @s run function ssiege:augments/effects/prismatic/exalted_adventure/announce/init
 scoreboard players enable @a[scores={uhcp_augment=503}] exalted
@@ -95,6 +90,10 @@ execute as @a[scores={uhcp_augment=537}] at @s run function ssiege:augments/effe
 
 # Expose Weakness
 execute as @a[scores={ssiege_exposed=1..}] run function ssiege:augments/effects/exposed/update
+
+# Cybernetic Download
+execute as @a[scores={uhcp_augment=513},tag=CD_SelectingUpgrade] run function ssiege:augments/effects/prismatic/cybernetic_download/update
+scoreboard players enable @a[scores={uhcp_augment=513}] upgrade
 
 # Buried Treasure
 execute as @a[scores={uhcp_augment=518}] run function ssiege:augments/effects/prismatic/buried_treasures/mined_ore

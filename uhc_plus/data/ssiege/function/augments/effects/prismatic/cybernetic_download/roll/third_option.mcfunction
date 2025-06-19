@@ -1,0 +1,3 @@
+execute store result score @s uhcp_aug_cd_thirdOption run random value 1..6
+execute if score @s uhcp_aug_cd_firstOption = @s uhcp_aug_cd_thirdOption run return run function ssiege:augments/effects/prismatic/cybernetic_download/roll/third_option
+execute if score @s uhcp_aug_cd_secondOption = @s uhcp_aug_cd_thirdOption run function ssiege:augments/effects/prismatic/cybernetic_download/roll/third_option

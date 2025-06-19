@@ -1,0 +1,185 @@
+{
+  "function": "minecraft:set_attributes",
+  "modifiers": [
+    {
+      "id": "uhcp:cd_max_health",
+      "attribute": "minecraft:max_health",
+      "amount": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "%cd_max_health"
+        },
+        "score": "uhcp_aug_count",
+        "scale": 1
+      },
+      "operation": "add_value",
+      "slot": "chest"
+    },
+    {
+      "id": "uhcp:cd_attack_damage",
+      "attribute": "minecraft:attack_damage",
+      "amount": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "%cd_attack_damage"
+        },
+        "score": "uhcp_aug_count",
+        "scale": 0.1
+      },
+      "operation": "add_value",
+      "slot": "chest"
+    },
+    {
+      "id": "uhcp:cd_attack_speed",
+      "attribute": "minecraft:attack_speed",
+      "amount": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "%cd_attack_speed"
+        },
+        "score": "uhcp_aug_count",
+        "scale": 0.001
+      },
+      "operation": "add_multiplied_total",
+      "slot": "chest"
+    },
+    {
+      "id": "uhcp:cd_movement_speed",
+      "attribute": "minecraft:movement_speed",
+      "amount": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "%cd_movement_speed"
+        },
+        "score": "uhcp_aug_count",
+        "scale": 0.001
+      },
+      "operation": "add_multiplied_total",
+      "slot": "chest"
+    },
+    {
+      "id": "uhcp:cd_armor_toughness",
+      "attribute": "minecraft:armor_toughness",
+      "amount": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "%cd_armor_toughness"
+        },
+        "score": "uhcp_aug_count",
+        "scale": 0.1
+      },
+      "operation": "add_value",
+      "slot": "chest"
+    },
+    {
+      "id": "uhcp:cd_armor",
+      "attribute": "minecraft:armor",
+      "amount": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "%cd_armor"
+        },
+        "score": "uhcp_aug_count",
+        "scale": 1
+      },
+      "operation": "add_value",
+      "slot": "chest"
+    },
+    {
+      "id": "uhcp:cd_fall_damage_multiplier",
+      "attribute": "minecraft:fall_damage_multiplier",
+      "amount": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "%cd_fall_damage_multiplier"
+        },
+        "score": "uhcp_aug_count",
+        "scale": 0.01
+      },
+      "operation": "add_multiplied_total",
+      "slot": "chest"
+    },
+    {
+      "id": "uhcp:cd_scale",
+      "attribute": "minecraft:scale",
+      "amount": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "%cd_scale"
+        },
+        "score": "uhcp_aug_count",
+        "scale": 0.01
+      },
+      "operation": "add_multiplied_total",
+      "slot": "chest"
+    },
+    {
+      "id": "uhcp:cd_water_movement_efficiency",
+      "attribute": "minecraft:water_movement_efficiency",
+      "amount": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "%cd_water_movement_efficiency"
+        },
+        "score": "uhcp_aug_count",
+        "scale": 0.01
+      },
+      "operation": "add_multiplied_total",
+      "slot": "chest"
+    },
+    {
+      "id": "uhcp:block_break_speed",
+      "attribute": "minecraft:block_break_speed",
+      "amount": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "%cd_block_break_speed"
+        },
+        "score": "uhcp_aug_count",
+        "scale": 0.01
+      },
+      "operation": "add_multiplied_total",
+      "slot": "chest"
+    },
+    {
+      "id": "uhcp:burning_time",
+      "attribute": "minecraft:burning_time",
+      "amount": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "%cd_burning_time"
+        },
+        "score": "uhcp_aug_count",
+        "scale": 0.1
+      },
+      "operation": "add_multiplied_total",
+      "slot": "chest"
+    },
+        {
+      "id": "uhcp:cd_submerged_mining_speed",
+      "attribute": "minecraft:submerged_mining_speed",
+      "amount": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "%cd_submerged_mining_speed"
+        },
+        "score": "uhcp_aug_count",
+        "scale": 0.01
+      },
+      "operation": "add_multiplied_total",
+      "slot": "chest"
+    }
+  ]
+}

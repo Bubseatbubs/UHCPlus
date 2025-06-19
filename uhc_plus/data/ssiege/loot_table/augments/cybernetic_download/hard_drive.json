@@ -78,8 +78,8 @@
               "components": {
                 "minecraft:unbreakable": {},
                 "minecraft:enchantments": {
-                  "minecraft:binding_curse": 1,
-                  "minecraft:vanishing_curse": 1
+                  "minecraft:protection": 1,
+                  "minecraft:binding_curse": 1
                 }
               }
             },
