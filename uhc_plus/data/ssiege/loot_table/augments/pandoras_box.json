@@ -17,7 +17,7 @@
         {
           "type": "loot_table",
           "weight": 1,
-          "value": "uhcp:consumables/relic_invoker",
+          "value": "ssiege:relics",
           "functions": [
             {
               "function": "set_count",
