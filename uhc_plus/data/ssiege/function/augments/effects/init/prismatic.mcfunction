@@ -21,6 +21,7 @@ execute if score @s uhcp_augment matches 537 run return run function ssiege:augm
 execute if score @s uhcp_augment matches 539 run return run function ssiege:augments/effects/prismatic/phantom_saber_ii/phantomsaber
 execute if score @s uhcp_augment matches 542 run return run loot give @s loot ssiege:relics/radiant_relics
 execute if score @s uhcp_augment matches 545 run return run function ssiege:augments/effects/prismatic/perseverence/init
+execute if score @s uhcp_augment matches 546 run return run function ssiege:augments/effects/prismatic/expose_weakness/init
 execute if score @s uhcp_augment matches 550 run return run function ssiege:augments/effects/prismatic/starterkitiii
 execute if score @s uhcp_augment matches 552 run return run function ssiege:augments/effects/prismatic/thehare
 execute if score @s uhcp_augment matches 553 run return run function ssiege:augments/effects/prismatic/thetortoise
