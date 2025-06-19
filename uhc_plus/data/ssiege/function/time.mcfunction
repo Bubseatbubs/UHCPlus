@@ -196,9 +196,6 @@ execute as @a[tag=SSIEGE_dead,team=red,gamemode=spectator] run function ssiege:d
 execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp_game_time >= @s uhcp_game_time run function ssiege:augments/effects/timed
 
 # Shop Interactions
-execute as @a[scores={shop=1..}] run function ssiege:shop/update
-scoreboard players enable @a shop
-
 # Blue Runesmith
 execute unless score %blue ssiege_unlocked_runesmith matches 1 at @e[type=wandering_trader,tag=SSIEGE_BLUE_RUNESMITH] if block ~ ~ ~-1 minecraft:anvil run function ssiege:shop/runes/unlock_blue_runesmith
 
