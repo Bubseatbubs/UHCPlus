@@ -7,7 +7,6 @@ scoreboard objectives add patron trigger
 scoreboard objectives add team trigger
 scoreboard objectives add testkit trigger
 scoreboard objectives add top trigger
-scoreboard objectives add shop trigger
 scoreboard objectives add recall trigger
 scoreboard objectives add upgrade trigger
 scoreboard objectives add exalted trigger
