@@ -5,6 +5,7 @@ execute if score @s uhcp_augment matches 504 run return run loot give @s loot uh
 execute if score @s uhcp_augment matches 508 run return run function ssiege:augments/effects/prismatic/bowmaster
 execute if score @s uhcp_augment matches 509 run return run function ssiege:augments/effects/prismatic/buzzy_bees/init
 execute if score @s uhcp_augment matches 510 run return run function ssiege:augments/effects/prismatic/center_of_attention
+execute if score @s uhcp_augment matches 513 run return run function ssiege:augments/effects/prismatic/cybernetic_download/init
 execute if score @s uhcp_augment matches 514 run return run loot give @s loot ssiege:augments/diamond_grab_bag
 execute if score @s uhcp_augment matches 516 run return run give @s totem_of_undying
 execute if score @s uhcp_augment matches 519 run return run function ssiege:augments/effects/prismatic/gapplegapiii
