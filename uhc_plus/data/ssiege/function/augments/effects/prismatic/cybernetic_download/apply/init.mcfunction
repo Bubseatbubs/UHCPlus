@@ -9,6 +9,9 @@ tag @s remove CD_SelectingUpgrade
 scoreboard players set @s upgrade 0
 scoreboard players add @s uhcp_const 1
 
+# Stop running menu updates once player reaches max upgrades
+execute if score @s uhcp_const matches 7 run return run scoreboard players set @s uhcp_game_time -1
+
 # Get the Player's current attributes
 function ssiege:augments/effects/prismatic/cybernetic_download/apply/get_current_attributes
 

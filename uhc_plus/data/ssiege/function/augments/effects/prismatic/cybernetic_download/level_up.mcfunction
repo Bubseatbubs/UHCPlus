@@ -9,6 +9,3 @@ tag @s add CD_SelectingUpgrade
 
 # Schedule next level up
 scoreboard players add @s uhcp_game_time 8400
-
-# Stop running menu updates once player reaches max upgrades
-execute if score @s uhcp_const matches 7 run return run scoreboard players set @s uhcp_game_time -1
