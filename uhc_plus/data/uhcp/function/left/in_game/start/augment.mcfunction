@@ -26,7 +26,12 @@ execute if score @s uhcp_aug_choosing matches 1 run function uhcp:augments/auto_
 function uhcp:start/advancements/reset
 
 # Initialize augment
-execute at @s run function uhcp:augments/effects/init
+scoreboard players set @s uhcp_leave 1
+execute unless predicate uhcp:augments/no_init run function uhcp:augments/effects/init
 
 # Give player snow boots if in snowy biome
 execute if biome ~ ~-1 ~ #uhcp:snowy run loot replace entity @s armor.feet loot uhcp:snow_boots
+scoreboard players reset @s uhcp_leave
+
+# Particle effect
+particle minecraft:totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.25 100 normal

@@ -1,5 +1,4 @@
 # Gold augments
-execute if predicate uhcp:augments/gold_skip run return fail
 execute if score @s uhcp_augment matches 1 run return run loot give @s loot uhcp:augments/birds_of_a_feather
 execute if score @s uhcp_augment matches 2 run return run function uhcp:augments/effects/gold/blooddiamonds
 execute if score @s uhcp_augment matches 4 run return run function uhcp:augments/effects/gold/cowboycosplay
