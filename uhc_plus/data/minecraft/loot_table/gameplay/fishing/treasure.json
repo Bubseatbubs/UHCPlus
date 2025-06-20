@@ -52,13 +52,13 @@
                       "type": "minecraft:loot_table",
                       "weight": 2,
                       "value": "ssiege:soulshard",
-                      "quality": 2
+                      "quality": 3
                     },
                     {
                       "type": "minecraft:loot_table",
                       "weight": 6,
                       "value": "ssiege:consumables/bridge_ball",
-                      "quality": 1
+                      "quality": 2
                     }
                   ],
                   "conditions": [
@@ -752,33 +752,6 @@
                   ],
                   "weight": 10,
                   "name": "minecraft:diamond_axe"
-                },
-                {
-                  "type": "minecraft:item",
-                  "functions": [
-                    {
-                      "add": false,
-                      "damage": {
-                        "type": "minecraft:uniform",
-                        "max": 0.9,
-                        "min": 0.5
-                      },
-                      "function": "minecraft:set_damage"
-                    },
-                    {
-                      "function": "minecraft:enchant_with_levels",
-                      "levels": {
-                        "min": 10,
-                        "max": {
-                          "max": 30,
-                          "min": 20
-                        }
-                      },
-                      "options": "#minecraft:on_random_loot"
-                    }
-                  ],
-                  "weight": 4,
-                  "name": "minecraft:diamond_hoe"
                 },
                 {
                   "type": "minecraft:item",
