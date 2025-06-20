@@ -14,7 +14,7 @@ execute if score @s uhcp_augment matches 522 run return run give @s golden_apple
 execute if score @s uhcp_augment matches 528 run return run function ssiege:augments/effects/prismatic/hedge_fund/init
 execute if score @s uhcp_augment matches 526 run return run function ssiege:augments/effects/prismatic/gomugomu
 execute if score @s uhcp_augment matches 531 run return run function ssiege:augments/effects/prismatic/immovable_object
-execute if score @s uhcp_augment matches 532 run return run give @s diamond_pickaxe[enchantments={"minecraft:efficiency":2,"minecraft:fortune":2}] 1
+execute if score @s uhcp_augment matches 532 run return run give @s diamond_pickaxe[enchantments={"minecraft:efficiency":3,"minecraft:fortune":2}] 1
 execute if score @s uhcp_augment matches 533 run return run attribute @s scale modifier add uhcp:scale -.2 add_multiplied_total
 execute if score @s uhcp_augment matches 536 run return run function ssiege:augments/effects/prismatic/midas_touch/init
 execute if score @s uhcp_augment matches 537 run return run function ssiege:augments/effects/prismatic/goldenless_apples/init
@@ -30,3 +30,4 @@ execute if score @s uhcp_augment matches 554 run return run function ssiege:augm
 execute if score @s uhcp_augment matches 559 run return run scoreboard players set @s uhcp_game_time 0
 execute if score @s uhcp_augment matches 560 run return run give @s fishing_rod[enchantments={"minecraft:luck_of_the_sea":10,"minecraft:lure":5},unbreakable={}] 1
 execute if score @s uhcp_augment matches 562 run return run function ssiege:augments/effects/prismatic/unleashthebeastii
+execute if score @s uhcp_augment matches 563 run return run function ssiege:augments/effects/gold/gates/laser/give

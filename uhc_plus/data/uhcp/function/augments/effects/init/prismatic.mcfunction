@@ -7,19 +7,16 @@ execute if score @s uhcp_augment matches 204 run return run function uhcp:augmen
 execute if score @s uhcp_augment matches 206 run return run function uhcp:augments/effects/prismatic/gapplegapiii
 execute if score @s uhcp_augment matches 207 run return run function uhcp:augments/effects/prismatic/gasgasgas
 execute if score @s uhcp_augment matches 208 run return run loot give @s loot uhcp:augments/attack_on_titan
-execute if score @s uhcp_augment matches 210 run return fail
 execute if score @s uhcp_augment matches 211 run return run function uhcp:augments/effects/prismatic/intotheminesiii
 execute if score @s uhcp_augment matches 212 run return run function uhcp:augments/effects/prismatic/laststand/init
 execute if score @s uhcp_augment matches 213 run return run function uhcp:augments/effects/prismatic/librarian
 execute if score @s uhcp_augment matches 214 run return run function uhcp:augments/effects/prismatic/netherborn
 execute if score @s uhcp_augment matches 216 run return run function uhcp:augments/effects/prismatic/potionmaster
 execute if score @s uhcp_augment matches 217 run return run function uhcp:augments/effects/prismatic/centerofattention
-execute if score @s uhcp_augment matches 218 run return fail
 execute if score @s uhcp_augment matches 219 run return run function uhcp:augments/effects/prismatic/lilestbro
 execute if score @s uhcp_augment matches 220 run return run function uhcp:augments/effects/prismatic/cyberneticdownload
 execute if score @s uhcp_augment matches 221 run return run function uhcp:augments/effects/gold/phantomsaber
 execute if score @s uhcp_augment matches 222 run return run function uhcp:augments/effects/prismatic/sololeveling
-execute if score @s uhcp_augment matches 223 run return fail
 execute if score @s uhcp_augment matches 224 run return run function uhcp:augments/effects/prismatic/starterkitiii
 execute if score @s uhcp_augment matches 225 run return run function uhcp:augments/effects/prismatic/surfaceduty
 execute if score @s uhcp_augment matches 226 run return run function uhcp:augments/effects/prismatic/thehare

@@ -63,6 +63,7 @@ scoreboard players reset @a uhcp_aug_hb_killedCreeper
 scoreboard players reset @a uhcp_aug_hb_killedSkeleton
 scoreboard players reset @a uhcp_aug_hb_killedSpider
 scoreboard players reset @a uhcp_aug_hb_killedZombie
+scoreboard players reset @a uhcp_aug_stack
 scoreboard players reset @a uhcp_aug_tier
 scoreboard players reset @a uhcp_augment
 scoreboard players reset %entities uhcp_game_id

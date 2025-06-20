@@ -48,7 +48,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -61,7 +61,7 @@
                   "slots": {
                     "weapon.offhand": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }

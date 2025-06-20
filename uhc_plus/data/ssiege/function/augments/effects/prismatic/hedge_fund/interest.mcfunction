@@ -7,4 +7,4 @@ function ssiege:augments/effects/prismatic/hedge_fund/give_macro with storage ss
 tellraw @s ["",{"text":"[Hedge Fund]","bold":true,"color":"aqua"},{"text":" You gained "},{"score":{"name":"%interest","objective":"uhcp_initStatus"}},{"text":" Diamonds","color":"aqua"},{"text":" of interest!"}]
 execute at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1 1
 
-scoreboard players add @s uhcp_game_time 3600
+scoreboard players add @s uhcp_game_time 2400

@@ -28,6 +28,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/gold/standunited/check"
+    "function": "uhcp:augments/effects/gold/standunited"
   }
 }

@@ -8,7 +8,7 @@
         "slots": {
           "player.cursor": {
             "predicates": {
-              "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+              "minecraft:custom_data": "{uhcp_lockedSlot:true}"
             }
           }
         }
@@ -21,7 +21,7 @@
         "slots": {
           "weapon.offhand": {
             "predicates": {
-              "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+              "minecraft:custom_data": "{uhcp_lockedSlot:true}"
             }
           }
         }
@@ -34,7 +34,7 @@
         "slots": {
           "container.0": {
             "predicates": {
-              "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+              "minecraft:custom_data": "{uhcp_lockedSlot:true}"
             }
           }
         }
@@ -47,7 +47,7 @@
         "slots": {
           "container.1": {
             "predicates": {
-              "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+              "minecraft:custom_data": "{uhcp_lockedSlot:true}"
             }
           }
         }
@@ -60,7 +60,7 @@
         "slots": {
           "container.2": {
             "predicates": {
-              "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+              "minecraft:custom_data": "{uhcp_lockedSlot:true}"
             }
           }
         }
@@ -73,7 +73,7 @@
         "slots": {
           "container.3": {
             "predicates": {
-              "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+              "minecraft:custom_data": "{uhcp_lockedSlot:true}"
             }
           }
         }
@@ -86,7 +86,7 @@
         "slots": {
           "container.4": {
             "predicates": {
-              "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+              "minecraft:custom_data": "{uhcp_lockedSlot:true}"
             }
           }
         }
@@ -99,7 +99,7 @@
         "slots": {
           "container.5": {
             "predicates": {
-              "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+              "minecraft:custom_data": "{uhcp_lockedSlot:true}"
             }
           }
         }
@@ -112,7 +112,7 @@
         "slots": {
           "container.6": {
             "predicates": {
-              "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+              "minecraft:custom_data": "{uhcp_lockedSlot:true}"
             }
           }
         }
@@ -125,7 +125,7 @@
         "slots": {
           "container.7": {
             "predicates": {
-              "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+              "minecraft:custom_data": "{uhcp_lockedSlot:true}"
             }
           }
         }
@@ -138,7 +138,7 @@
         "slots": {
           "container.8": {
             "predicates": {
-              "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+              "minecraft:custom_data": "{uhcp_lockedSlot:true}"
             }
           }
         }

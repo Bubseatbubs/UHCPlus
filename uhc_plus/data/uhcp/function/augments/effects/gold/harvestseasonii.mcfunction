@@ -1,3 +1,6 @@
-execute store result score %random uhcp_aug_count run random value 0..3
-execute if score %random uhcp_aug_count matches 0 run give @s minecraft:golden_apple
-execute if score %random uhcp_aug_count matches 0 run tellraw @s {"text":"You harvested a Golden Apple!","color":"red"}
+# 25% chance to harvest golden apple
+execute store result score @s uhcp_initStatus run random value 0..3
+execute unless score @s uhcp_initStatus matches 0 run return fail
+
+give @s minecraft:golden_apple
+tellraw @s {"text":"You harvested a Golden Apple!","color":"red"}

@@ -1,4 +1,4 @@
-summon zombie ~ ~ ~ {PersistenceRequired:1b,CustomNameVisible:1b,IsBaby:0b,Tags:["SSIEGE_Raise","SSIEGE_NewRaise"],equipment:{mainhand:{id:"minecraft:diamond_sword",count:1,components:{"minecraft:enchantments":{"minecraft:sharpness":1}}}},drop_chances:{mainhand:0.000},attributes:[{id:"minecraft:movement_speed",base:0.345}]}
+summon zombie ~ ~ ~ {PersistenceRequired:1b,CustomNameVisible:1b,IsBaby:0b,Tags:["SSIEGE_Raise","SSIEGE_NewRaise"],equipment:{mainhand:{id:"minecraft:diamond_axe",count:1,components:{"minecraft:enchantments":{"minecraft:sharpness":1}}}},drop_chances:{mainhand:0.000},attributes:[{id:"minecraft:movement_speed",base:0.345}]}
 
 loot replace entity @n[type=zombie,tag=SSIEGE_NewRaise] armor.head loot ssiege:player_head_armored
 execute as @n[type=zombie,tag=SSIEGE_NewRaise] run data modify entity @s CustomName.text set from entity @s equipment.head.components."minecraft:profile".name
