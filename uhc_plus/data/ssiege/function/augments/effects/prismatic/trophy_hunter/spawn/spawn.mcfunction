@@ -1,35 +1,35 @@
-execute if score @s uhcp_initStatus matches 0 positioned ^ ^ ^2 run return run summon armadillo ~ ~ ~
-execute if score @s uhcp_initStatus matches 1 positioned ^ ^ ^2 run return run summon axolotl ~ ~ ~
-execute if score @s uhcp_initStatus matches 2 positioned ^ ^ ^2 run return run summon bee ~ ~ ~
-execute if score @s uhcp_initStatus matches 3 positioned ^ ^ ^2 run return run summon blaze ~ ~ ~
-execute if score @s uhcp_initStatus matches 4 positioned ^ ^ ^2 run return run summon bogged ~ ~ ~
-execute if score @s uhcp_initStatus matches 5 positioned ^ ^ ^2 run return run summon camel ~ ~ ~
-execute if score @s uhcp_initStatus matches 6 positioned ^ ^ ^2 run return run summon cave_spider ~ ~ ~
-execute if score @s uhcp_initStatus matches 7 positioned ^ ^ ^2 run return run summon drowned ~ ~ ~
-execute if score @s uhcp_initStatus matches 8 positioned ^ ^ ^2 run return run summon enderman ~ ~ ~
-execute if score @s uhcp_initStatus matches 9 positioned ^ ^ ^2 run return run summon fox ~ ~ ~
-execute if score @s uhcp_initStatus matches 10 positioned ^ ^ ^2 run return run summon frog ~ ~ ~
-execute if score @s uhcp_initStatus matches 11 positioned ^ ^ ^2 run return run summon ghast ~ ~ ~
-execute if score @s uhcp_initStatus matches 12 positioned ^ ^ ^2 run return run summon glow_squid ~ ~ ~
-execute if score @s uhcp_initStatus matches 13 positioned ^ ^ ^2 run return run summon goat ~ ~ ~
-execute if score @s uhcp_initStatus matches 14 positioned ^ ^ ^2 run return run summon guardian ~ ~ ~
-execute if score @s uhcp_initStatus matches 15 positioned ^ ^ ^2 run return run summon husk ~ ~ ~
-execute if score @s uhcp_initStatus matches 16 positioned ^ ^ ^2 run return run summon iron_golem ~ ~ ~
-execute if score @s uhcp_initStatus matches 17 positioned ^ ^ ^2 run return run summon magma_cube ~ ~ ~
-execute if score @s uhcp_initStatus matches 18 positioned ^ ^ ^2 run return run summon ocelot ~ ~ ~
-execute if score @s uhcp_initStatus matches 19 positioned ^ ^ ^2 run return run summon panda ~ ~ ~
-execute if score @s uhcp_initStatus matches 20 positioned ^ ^ ^2 run return run summon parrot ~ ~ ~
-execute if score @s uhcp_initStatus matches 21 positioned ^ ^ ^2 run return run summon piglin ~ ~ ~
-execute if score @s uhcp_initStatus matches 22 positioned ^ ^ ^2 run return run summon piglin_brute ~ ~ ~
-execute if score @s uhcp_initStatus matches 23 positioned ^ ^ ^2 run return run summon polar_bear ~ ~ ~
-execute if score @s uhcp_initStatus matches 24 positioned ^ ^ ^2 run return run summon pufferfish ~ ~ ~
-execute if score @s uhcp_initStatus matches 25 positioned ^ ^ ^2 run return run summon rabbit ~ ~ ~
-execute if score @s uhcp_initStatus matches 26 positioned ^ ^ ^2 run return run summon silverfish ~ ~ ~
-execute if score @s uhcp_initStatus matches 27 positioned ^ ^ ^2 run return run summon slime ~ ~ ~
-execute if score @s uhcp_initStatus matches 28 positioned ^ ^ ^2 run return run summon stray ~ ~ ~
-execute if score @s uhcp_initStatus matches 29 positioned ^ ^ ^2 run return run summon strider ~ ~ ~
-execute if score @s uhcp_initStatus matches 30 positioned ^ ^ ^2 run return run summon tropical_fish ~ ~ ~
-execute if score @s uhcp_initStatus matches 31 positioned ^ ^ ^2 run return run summon turtle ~ ~ ~
-execute if score @s uhcp_initStatus matches 32 positioned ^ ^ ^2 run return run summon witch ~ ~ ~
-execute if score @s uhcp_initStatus matches 33 positioned ^ ^ ^2 run return run summon wither_skeleton ~ ~ ~
-execute if score @s uhcp_initStatus matches 34 positioned ^ ^ ^2 run return run summon zombie_villager ~ ~ ~
+execute if score @s uhcp_initStatus matches 0 run return run summon armadillo ~ ~ ~
+execute if score @s uhcp_initStatus matches 1 run return run summon axolotl ~ ~ ~
+execute if score @s uhcp_initStatus matches 2 run return run summon bee ~ ~ ~
+execute if score @s uhcp_initStatus matches 3 run return run summon blaze ~ ~ ~
+execute if score @s uhcp_initStatus matches 4 run return run summon bogged ~ ~ ~
+execute if score @s uhcp_initStatus matches 5 run return run summon camel ~ ~ ~
+execute if score @s uhcp_initStatus matches 6 run return run summon cave_spider ~ ~ ~
+execute if score @s uhcp_initStatus matches 7 run return run summon drowned ~ ~ ~
+execute if score @s uhcp_initStatus matches 8 run return run summon enderman ~ ~ ~
+execute if score @s uhcp_initStatus matches 9 run return run summon fox ~ ~ ~
+execute if score @s uhcp_initStatus matches 10 run return run summon frog ~ ~ ~
+execute if score @s uhcp_initStatus matches 11 run return run summon ghast ~ ~ ~
+execute if score @s uhcp_initStatus matches 12 run return run summon glow_squid ~ ~ ~
+execute if score @s uhcp_initStatus matches 13 run return run summon goat ~ ~ ~
+execute if score @s uhcp_initStatus matches 14 run return run summon guardian ~ ~ ~
+execute if score @s uhcp_initStatus matches 15 run return run summon husk ~ ~ ~
+execute if score @s uhcp_initStatus matches 16 run return run summon iron_golem ~ ~ ~
+execute if score @s uhcp_initStatus matches 17 run return run summon magma_cube ~ ~ ~
+execute if score @s uhcp_initStatus matches 18 run return run summon ocelot ~ ~ ~
+execute if score @s uhcp_initStatus matches 19 run return run summon panda ~ ~ ~
+execute if score @s uhcp_initStatus matches 20 run return run summon parrot ~ ~ ~
+execute if score @s uhcp_initStatus matches 21 run return run summon piglin ~ ~ ~
+execute if score @s uhcp_initStatus matches 22 run return run summon piglin_brute ~ ~ ~
+execute if score @s uhcp_initStatus matches 23 run return run summon polar_bear ~ ~ ~
+execute if score @s uhcp_initStatus matches 24 run return run summon pufferfish ~ ~ ~
+execute if score @s uhcp_initStatus matches 25 run return run summon rabbit ~ ~ ~
+execute if score @s uhcp_initStatus matches 26 run return run summon silverfish ~ ~ ~
+execute if score @s uhcp_initStatus matches 27 run return run summon slime ~ ~ ~
+execute if score @s uhcp_initStatus matches 28 run return run summon stray ~ ~ ~
+execute if score @s uhcp_initStatus matches 29 run return run summon strider ~ ~ ~
+execute if score @s uhcp_initStatus matches 30 run return run summon tropical_fish ~ ~ ~
+execute if score @s uhcp_initStatus matches 31 run return run summon turtle ~ ~ ~
+execute if score @s uhcp_initStatus matches 32 run return run summon witch ~ ~ ~
+execute if score @s uhcp_initStatus matches 33 run return run summon wither_skeleton ~ ~ ~
+execute if score @s uhcp_initStatus matches 34 run return run summon zombie_villager ~ ~ ~

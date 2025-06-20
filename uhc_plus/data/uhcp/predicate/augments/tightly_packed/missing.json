@@ -7,47 +7,47 @@
       "slots": {
         "container.27": {
           "predicates": {
-            "minecraft:custom_data": "{uhcp_lockedslot:true}"
+            "minecraft:custom_data": "{uhcp_lockedSlot:true}"
           }
         },
         "container.28": {
           "predicates": {
-            "minecraft:custom_data": "{uhcp_lockedslot:true}"
+            "minecraft:custom_data": "{uhcp_lockedSlot:true}"
           }
         },
         "container.29": {
           "predicates": {
-            "minecraft:custom_data": "{uhcp_lockedslot:true}"
+            "minecraft:custom_data": "{uhcp_lockedSlot:true}"
           }
         },
         "container.30": {
           "predicates": {
-            "minecraft:custom_data": "{uhcp_lockedslot:true}"
+            "minecraft:custom_data": "{uhcp_lockedSlot:true}"
           }
         },
         "container.31": {
           "predicates": {
-            "minecraft:custom_data": "{uhcp_lockedslot:true}"
+            "minecraft:custom_data": "{uhcp_lockedSlot:true}"
           }
         },
         "container.32": {
           "predicates": {
-            "minecraft:custom_data": "{uhcp_lockedslot:true}"
+            "minecraft:custom_data": "{uhcp_lockedSlot:true}"
           }
         },
         "container.33": {
           "predicates": {
-            "minecraft:custom_data": "{uhcp_lockedslot:true}"
+            "minecraft:custom_data": "{uhcp_lockedSlot:true}"
           }
         },
         "container.34": {
           "predicates": {
-            "minecraft:custom_data": "{uhcp_lockedslot:true}"
+            "minecraft:custom_data": "{uhcp_lockedSlot:true}"
           }
         },
         "container.35": {
           "predicates": {
-            "minecraft:custom_data": "{uhcp_lockedslot:true}"
+            "minecraft:custom_data": "{uhcp_lockedSlot:true}"
           }
         }
       }

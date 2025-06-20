@@ -10,7 +10,7 @@ function ssiege:end/check
 scoreboard players add %time uhcp_game_time 1
 
 # Inhibitor Invulnerability
-execute if score %time uhcp_game_time matches ..17980 run effect give @e[tag=SSIEGE_inhib] resistance 1 4 true
+execute if score %time uhcp_game_time matches ..17980 run effect give @e[tag=SSIEGE_inhib] resistance 1 4 false
 execute if score %time uhcp_game_time matches 18000 run tellraw @a "The Inhibitors are no longer invulnerable!"
 
 # Inhibitor/Turret update

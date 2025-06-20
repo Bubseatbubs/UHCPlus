@@ -1,4 +1,5 @@
 # Gold augments
+execute if score @s uhcp_augment matches 2 run return run function uhcp:augments/effects/gold/blooddiamonds/max_health
 execute if score @s uhcp_augment matches 7 run return run function uhcp:augments/effects/gold/dripeconomyii/give
 execute if score @s uhcp_augment matches 15 run return run function uhcp:augments/effects/gold/johnnyappleseed/give
 execute if score @s uhcp_augment matches 18 run return run function uhcp:augments/effects/gold/latelooter/haste

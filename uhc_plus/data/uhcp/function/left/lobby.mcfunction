@@ -11,6 +11,8 @@ tag @s remove UHCP_Died
 tag @s remove UHCP_DisableArmorAndOffhand
 tag @s remove UHCP_Explode
 tag @s remove UHCP_HighTide
+tag @s remove UHCP_InflictedWithGravityGlobe
+tag @s remove UHCP_InflictedWithPhantomPain
 tag @s remove UHCP_MilkBucket
 tag @s remove UHCP_PlannedEcon
 tag @s remove UHCP_SLLock

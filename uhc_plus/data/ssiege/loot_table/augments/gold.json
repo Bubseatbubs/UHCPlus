@@ -1914,7 +1914,7 @@
               "target": "item_name",
               "name": [
                 {
-                  "text": "Less Than 3",
+                  "text": "Less than 3",
                   "color": "gold",
                   "bold": true
                 }

@@ -852,10 +852,23 @@
                     "text": ". Your"
                   }
                 ],
-                {
-                  "text": "Arrow limit is increased by 8.",
-                  "color": "gray"
-                }
+                [
+                  {
+                    "text": "arrow limit is increased to ",
+                    "color": "gray"
+                  },
+                  {
+                    "score": {
+                      "objective": "uhcp_arrowCount",
+                      "name": "%arrow_limit149"
+                    },
+                    "color": "gray"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
               ],
               "mode": "replace_all"
             }

@@ -1,5 +1,5 @@
 # Randomize array for items
-execute store result score %sh_range uhcp_initStatus run random value 1..232792560
+execute store result score %sh_range uhcp_initStatus run random value 1..1627920
 scoreboard players operation %sh_range uhcp_initStatus %= %sh_last uhcp_initStatus
 function uhcp:augments/effects/gold/scavengerhunt/locate
 

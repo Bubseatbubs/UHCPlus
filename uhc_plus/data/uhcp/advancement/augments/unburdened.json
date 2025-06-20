@@ -48,6 +48,6 @@
       }
     },
   "rewards": {
-    "function": "uhcp:augments/effects/gold/unburdened/effect"
+    "function": "uhcp:augments/effects/gold/unburdened"
     }
 }

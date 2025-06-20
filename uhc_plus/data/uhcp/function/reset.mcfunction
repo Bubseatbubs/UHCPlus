@@ -81,6 +81,8 @@ tag @a remove UHCP_Died
 tag @a remove UHCP_DisableArmorAndOffhand
 tag @a remove UHCP_Explode
 tag @a remove UHCP_HighTide
+tag @a remove UHCP_InflictedWithGravityGlobe
+tag @a remove UHCP_InflictedWithPhantomPain
 tag @a remove UHCP_MilkBucket
 tag @a remove UHCP_PlannedEcon
 tag @a remove UHCP_RelicTestingChamber

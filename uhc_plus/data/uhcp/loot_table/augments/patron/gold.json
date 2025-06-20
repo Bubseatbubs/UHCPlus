@@ -879,7 +879,15 @@
                     "color": "dark_purple"
                   },
                   {
-                    "text": " Bow and 16 arrows",
+                    "text": " Bow",
+                    "color": "white"
+                  },
+                  {
+                    "text": " and 16 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "arrows",
                     "color": "white"
                   },
                   {
@@ -887,10 +895,23 @@
                     "color": "gray"
                   }
                 ],
-                {
-                  "text": "Arrow limit is increased by 20.",
-                  "color": "gray"
-                }
+                [
+                  {
+                    "text": "arrow limit is increased to ",
+                    "color": "gray"
+                  },
+                  {
+                    "score": {
+                      "objective": "uhcp_arrowCount",
+                      "name": "%arrow_limit5"
+                    },
+                    "color": "gray"
+                  },
+                  {
+                    "text": ".",
+                    "color": "gray"
+                  }
+                ]
               ],
               "mode": "replace_all"
             }
