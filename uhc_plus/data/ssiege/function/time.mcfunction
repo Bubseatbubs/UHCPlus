@@ -39,11 +39,9 @@ execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=
 execute as @a[scores={uhcp_lava_timeInterval=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
 execute as @a[scores={uhcp_lava_maxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
 
-# Cybernetic download
-execute as @a[scores={upgrade=1..3}] at @s run function uhcp:augments/effects/prismatic/cyberneticdownload/select
-execute as @a[tag=UHCP_CDSelectUpgrade] at @s run function uhcp:augments/effects/prismatic/cyberneticdownload/update_menu
-scoreboard players enable @a[tag=UHCP_CDSelectUpgrade] upgrade
-
+# Exalted Adventure
+execute as @a[scores={uhcp_augment=503,exalted=1}] at @s run function ssiege:augments/effects/prismatic/exalted_adventure/announce/init
+scoreboard players enable @a[scores={uhcp_augment=503}] exalted
 
 # Blood Diamonds
 execute as @a[scores={uhcp_augment=304}] run function ssiege:augments/effects/gold/blood_diamonds/clear_diamonds
@@ -93,6 +91,19 @@ execute as @a[scores={uhcp_augment=537}] at @s run function ssiege:augments/effe
 # Expose Weakness
 execute as @a[scores={ssiege_exposed=1..}] run function ssiege:augments/effects/exposed/update
 
+# Cybernetic Download
+execute as @a[scores={uhcp_augment=513},tag=CD_SelectingUpgrade] run function ssiege:augments/effects/prismatic/cybernetic_download/update
+scoreboard players enable @a[scores={uhcp_augment=513}] upgrade
+
+# Buried Treasure
+execute as @a[scores={uhcp_augment=518}] run function ssiege:augments/effects/prismatic/buried_treasures/mined_ore
+
+# Hungry for Blood
+execute as @a[scores={uhcp_augment=529}] run function ssiege:augments/effects/prismatic/hungry_for_blood
+
+# An Exalted Adventure
+execute as @a[scores={uhcp_augment=503}] run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/update
+
 # Babysitting augment - Sniffer modifier
 function ssiege:augments/effects/gold/babysitting/sniffcd
 
@@ -115,6 +126,9 @@ execute as @a[scores={ssiege_recall_charge=0}] run function ssiege:recall/finish
 execute as @a at @s if entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/update
 execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/hide
 execute as @e[type=!minecraft:player,tag=UHCP_Titan] at @s run function uhcp:titans/update
+
+# Update Entity Teams
+execute as @e[type=!player,scores={uhcp_team=2..}] run function ssiege:entity/join_team
 
 # Update Sniffer Bossbar
 function ssiege:bossbar/update
@@ -182,6 +196,9 @@ execute as @a[tag=SSIEGE_dead,team=red,gamemode=spectator] run function ssiege:d
 execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp_game_time >= @s uhcp_game_time run function ssiege:augments/effects/timed
 
 # Shop Interactions
+execute as @a[scores={shop=1..}] at @s run function ssiege:shop/update
+scoreboard players enable @a shop
+
 # Blue Runesmith
 execute unless score %blue ssiege_unlocked_runesmith matches 1 at @e[type=wandering_trader,tag=SSIEGE_BLUE_RUNESMITH] if block ~ ~ ~-1 minecraft:anvil run function ssiege:shop/runes/unlock_blue_runesmith
 
@@ -219,4 +236,4 @@ execute if score %time uhcp_game_time >= %titan_might uhcp_game_time run execute
 execute if score %time uhcp_game_time >= %encounter_time uhcp_game_time run function ssiege:start/encounters/effects/timed
 
 # Giants
-execute if score %time uhcp_game_time >= %giant_timer ssiege_giants in minecraft:overworld run function ssiege:giants/init_wave
+execute if score %time uhcp_game_time >= %giant_timer ssiege_giants in minecraft:overworld as @n run function ssiege:giants/init_wave

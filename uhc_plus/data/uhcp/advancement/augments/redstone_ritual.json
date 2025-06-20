@@ -12,10 +12,24 @@
             }
           },
           {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%time"
+              },
+              "score": "uhcp_game_time"
+            },
+            "range": {
+              "min": 42001
+            }
+          },
+          {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "nbt": "{AbsorptionAmount:0.0f}"
+              "nbt": "{attributes:[{modifiers:[{id:\"uhcp:max_absorption\"}]}],AbsorptionAmount:0.0f}"
             }
           }
         ]

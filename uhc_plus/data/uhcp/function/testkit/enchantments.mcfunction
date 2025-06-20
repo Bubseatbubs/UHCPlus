@@ -4,7 +4,6 @@ execute if score %enchant_reduce uhcp_settings matches 1 run return run function
 # Weapons
 item replace entity @s container.0 with minecraft:diamond_sword[minecraft:enchantments={"minecraft:sharpness":3}]
 item replace entity @s container.2 with minecraft:diamond_axe[minecraft:enchantments={"minecraft:sharpness":2}]
-item replace entity @s container.3 with minecraft:bow[minecraft:enchantments={"minecraft:power":2}]
 
 # Armor
 item replace entity @s armor.head with minecraft:diamond_helmet[minecraft:enchantments={"minecraft:protection":2}]

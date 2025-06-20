@@ -1,40 +1,28 @@
-# Clear previous effects
-effect clear @s minecraft:absorption
-function uhcp:augments/effects/gold/redstoneritual/reset
-
-# Define constants
-scoreboard players set %CONST_64 uhcp_aug_count 64
-scoreboard players set %CONST_2 uhcp_aug_count 2
-scoreboard players set %CONST_8 uhcp_aug_count 8
-
-# Store redstone amount
-execute store result score %redstone uhcp_aug_count run clear @s minecraft:redstone
-execute store result score %redstone_block uhcp_aug_count run clear @s minecraft:redstone_block
-
-# Convert blocks to redstone dust
-scoreboard players operation %redstone_block uhcp_aug_count *= %CONST_8 uhcp_aug_count
-scoreboard players operation %redstone uhcp_aug_count += %redstone_block uhcp_aug_count
-
-# Give player back the remaining redstone
-scoreboard players operation %redstone_remainder uhcp_aug_count = %redstone uhcp_aug_count
-scoreboard players operation %redstone_remainder uhcp_aug_count %= %CONST_64 uhcp_aug_count
-
-execute store result storage uhcp:redstone_ritual input.remainder float 1 run scoreboard players get %redstone_remainder uhcp_aug_count
-function uhcp:augments/effects/gold/redstoneritual/dust with storage uhcp:redstone_ritual input
-
-execute if score %redstone uhcp_aug_count matches ..63 run return 0
-
-# Convert redstone into absorption hearts
-scoreboard players operation %redstone uhcp_aug_count /= %CONST_64 uhcp_aug_count
-scoreboard players operation %redstone uhcp_aug_count *= %CONST_2 uhcp_aug_count
-execute store result storage uhcp:redstone_ritual input.absorption float 1 run scoreboard players get %redstone uhcp_aug_count
-function uhcp:augments/effects/gold/redstoneritual/absorption with storage uhcp:redstone_ritual input
-effect give @s minecraft:absorption infinite 255 true
-effect clear @s minecraft:absorption
-
-# Effects
-playsound minecraft:block.enchantment_table.use master @s ~ ~ ~ 1 1 1
-particle minecraft:composter ~ ~ ~ 0.5 1 0.5 0.01 50 normal
-particle minecraft:effect ~ ~ ~ 0.5 1 0.5 0.01 50 normal
-
+# Check for redstone
 scoreboard players set @s uhcp_game_time -1
+execute unless predicate uhcp:augments/redstone_ritual run return run playsound minecraft:block.note_block.snare master @s ~ ~ ~ 1 1 1
+scoreboard players set @s uhcp_leave 1000
+
+# Count redstone
+execute store result score @s uhcp_lava_timeInterval run clear @s minecraft:redstone 0
+execute store result score @s uhcp_initStatus run clear @s minecraft:redstone_block
+execute if score @s uhcp_lava_timeInterval matches 0 run return run function uhcp:augments/effects/gold/redstoneritual/blocks
+scoreboard players operation @s uhcp_initStatus *= #9 uhcp_const
+
+# Calculate absorption hearts and leftover redstone
+scoreboard players operation @s uhcp_initStatus += @s uhcp_lava_timeInterval
+execute if score @s uhcp_initStatus matches ..63 run return run function uhcp:augments/effects/gold/redstoneritual/none
+
+execute store result storage uhcp:augments RedRitual.absorption int 0.015625 run scoreboard players get @s uhcp_initStatus
+execute store result storage uhcp:augments RedRitual.absorption int 2 run data get storage uhcp:augments RedRitual.absorption
+scoreboard players operation @s uhcp_initStatus %= #64 uhcp_const
+scoreboard players operation @s uhcp_initStatus -= @s uhcp_lava_timeInterval
+
+execute if score @s uhcp_initStatus matches ..-1 run return run function uhcp:augments/effects/gold/redstoneritual/extra
+execute if score @s uhcp_initStatus matches 1.. run return run function uhcp:augments/effects/gold/redstoneritual/fewer
+
+# Max absorption
+function uhcp:augments/effects/gold/redstoneritual/absorption/maintain with storage uhcp:augments RedRitual
+
+# End
+function uhcp:augments/effects/gold/redstoneritual/end

@@ -1,1 +1,0 @@
-tellraw @s ["",{"text":"[Beginner Tips]","bold":true,"color":"green"},{"text":" Every game of Sniffer Siege begins with the "},{"text":"Opening Encounter","color":"yellow"},{"text":", which applies a random effect or rule change to the game. Most are fairly uneventful, but some can be completely game-warping!"}]

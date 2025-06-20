@@ -28,6 +28,12 @@ execute if score @s uhcp_augment matches 552 run effect give @s jump_boost infin
 execute as @s[tag=TH_MagmaCube] run effect give @s fire_resistance infinite 0 true
 execute as @s[tag=TH_Rabbit] run effect give @s jump_boost infinite 1 true
 
+# Perma Fire Res Effects
+execute as @s[tag=SSIEGE_PermaFireRes] run effect give @s fire_resistance infinite 0 true
+
+# Exalted Adventure Perma Strength
+execute as @s[tag=SSIEGE_PermaStrength] run effect give @s strength infinite 0 true
+
 # Infernus Blessing
 execute as @s[tag=SSIEGE_InfernusBlessing] run effect give @s fire_resistance infinite 0 true
 

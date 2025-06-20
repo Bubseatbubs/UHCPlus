@@ -1,0 +1,10 @@
+tellraw @s [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n————","color":"#217AFF","bold":true,"strikethrough":true},{"text":"————","color":"#38A9FF","bold":true,"strikethrough":true},{"text":"————","color":"#5CD9FF","bold":true,"strikethrough":true},{"text":"————","color":"#80FFEE","bold":true,"strikethrough":true},{"text":"————","color":"#80FFEE","bold":true,"strikethrough":true},{"text":"————","color":"#5CD9FF","bold":true,"strikethrough":true},{"text":"————","color":"#38A9FF","bold":true,"strikethrough":true},{"text":"————","color":"#217AFF","bold":true,"strikethrough":true}]
+tellraw @s [{"text":" ","color":"yellow","bold":true},{"text":"     "},{"text":" "},{"text":" "},{"text":" "},{"text":" "},{"text":" "},{"text":" "},{"text":" "},{"text":" "},{"text":" "},{"text":" "},{"text":" "},{"text":" "},{"text":"✦","color":"white"},{"text":" "},{"text":"Select an Upgrade","color":"gold"},{"text":" ","hover_event":{"action":"show_text","value":[{"text":"","color":"gold"}]}},{"text":"✦ \n","color":"white"},{"text":"Open chat (default: T) and click on an option\n","color":"gray"}]
+
+execute if score @s uhcp_const matches 0 run return run function ssiege:augments/effects/prismatic/cybernetic_download/menu/circuits
+execute if score @s uhcp_const matches 1 run return run function ssiege:augments/effects/prismatic/cybernetic_download/menu/configuration
+execute if score @s uhcp_const matches 2 run return run function ssiege:augments/effects/prismatic/cybernetic_download/menu/protocol
+execute if score @s uhcp_const matches 3 run return run function ssiege:augments/effects/prismatic/cybernetic_download/menu/stabilizer
+execute if score @s uhcp_const matches 4 run return run function ssiege:augments/effects/prismatic/cybernetic_download/menu/core
+execute if score @s uhcp_const matches 5 run return run function ssiege:augments/effects/prismatic/cybernetic_download/menu/matrix
+execute if score @s uhcp_const matches 6 run return run function ssiege:augments/effects/prismatic/cybernetic_download/menu/apex

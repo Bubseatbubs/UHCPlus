@@ -11,8 +11,6 @@ def csv_to_tellraw_commands_formatted(csv_file_path, output_file_path):
     
     with open(csv_file_path, 'r', newline='', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
-        commands.append("tellraw @s {\"text\":\"Augments Selected\",\"bold\":true,\"color\":\"gold\"}")
-        commands.append("tellraw @s {\"text\":\"(hover over any Augment to read its description)\",\"italic\":true,\"color\":\"gray\"}")
         for row in reader:
             augment_id = int(row['ID'])
             name = row['Augment']
@@ -33,7 +31,7 @@ def csv_to_tellraw_commands_formatted(csv_file_path, output_file_path):
             outfile.write(command + '\n')
     
     print(f"Tellraw commands created successfully: {output_file_path}")
-    print(f"Total augments processed: {len(commands) - 3}") 
+    print(f"Total augments processed: {len(commands) - 1}") 
 
 if __name__ == "__main__":
     csv_file = "scripts/augments.csv"  # Input CSV File

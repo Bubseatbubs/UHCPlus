@@ -1,3 +1,4 @@
+execute if score %mode uhcp_settings matches 1 run return run function ssiege:augments/effects/prismatic/hunters_insight/check
 execute as @s[tag=!UHCP_Creeper,advancements={uhcp:augments/hunters_blessing/killed_creeper=true}] run scoreboard players add @s uhcp_aug_hb_killedCreeper 1
 tellraw @s[tag=!UHCP_Creeper,advancements={uhcp:augments/hunters_blessing/killed_creeper=true}] [{"text":"Creepers ","color":"dark_red","bold":true},{"text":"Slain","color":"gray"},{"text":": [","color":"gray"},{"score":{"name":"@s","objective":"uhcp_aug_hb_killedCreeper"},"color":"light_purple"},{"text":"/5]","color":"gray"}]
 

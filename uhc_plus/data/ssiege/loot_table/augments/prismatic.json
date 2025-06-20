@@ -37,32 +37,27 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain various effects for 5 seconds when",
+                  "text": "Gain an Adreline Rush when you drop to",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "you drop to certain HP thresholds. You",
+                  "text": "6, 4, and 2 Hearts, granting various",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "cannot gain them again until you recall",
+                  "text": "bonus effects for 5 seconds. You cannot",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "or respawn.\\n6 Hearts - Speed I\\n4",
+                  "text": "gain the same effect again until you",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "Hearts - Resistance I\\n2 Hearts -",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "Strength I",
+                  "text": "return to your spawn.",
                   "color": "white",
                   "italic": false
                 }
@@ -81,6 +76,77 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:501s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:503s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "An Exalted Adventure",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Gain 3 random items. Once you have",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "acquired a stack of 2 of them, receive a",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "reward!",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:503s}"
                       }
                     }
                   }
@@ -167,6 +233,82 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:wolf_spawn_egg",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:506s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Beastmaster",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Summon a Pack Leader, a large wolf with",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "increased HP and damage. Whenever you",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "recall or respawn, summon a Pack Leader",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "if you don\u2019t already have one.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:506s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:bow",
           "weight": 1,
           "functions": [
@@ -233,6 +375,72 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:deepslate_emerald_ore",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:518s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Buried Treasures",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Whenever you mine an ore, there is a",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "chance it drops rare loot!",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:518s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:honeycomb",
           "weight": 1,
           "functions": [
@@ -270,12 +478,12 @@
                   "italic": false
                 },
                 {
-                  "text": "While standing on Honey blocks you are",
+                  "text": "Whenever you are standing on Honey",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "not slowed and gain Regeneration I.",
+                  "text": "blocks, gain Regeneration I.",
                   "color": "white",
                   "italic": false
                 }
@@ -370,6 +578,153 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:513s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Cybernetic Download",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Gain a Hard Drive, a Diamond Chestplate.",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Download an upgrade for it now and every",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "7 minutes. (select from 3 options each",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "time)",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:513s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_block",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:514s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Diamond Grab Bag",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Gain every Diamond Tool, Weapon, and",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Armor. They all gain random",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "enchantments.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:514s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:totem_of_undying",
           "weight": 1,
           "functions": [
@@ -441,7 +796,83 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:golden_hoe",
+          "name": "minecraft:spectral_arrow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:546s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Expose Weakness",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Any enemy you hit with a Bow glows and",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "takes 20% increased damage from all",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "sources for 10 seconds. Gain a Power I",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Bow and 12 arrows.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:546s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
           "weight": 1,
           "functions": [
             {
@@ -474,6 +905,16 @@
               "lore": [
                 {
                   "text": "Gain 12 Golden Apples and a Windfall.",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "(Windfall is a Relic that gets more",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "powerful the more Golden Apples you eat)",
                   "color": "white",
                   "italic": false
                 }
@@ -534,12 +975,17 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain Boots of Swiftness, which grant 15%",
+                  "text": "Gain 10 minutes of Speed I and Boots of",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "increased movement speed.",
+                  "text": "Swiftness, which grant 15% increased",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "movement speed.",
                   "color": "white",
                   "italic": false
                 }
@@ -568,7 +1014,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:golden_apple",
+          "name": "minecraft:gold_block",
           "weight": 1,
           "functions": [
             {
@@ -624,6 +1070,77 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:522s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:537s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Goldenless Apples",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "You no longer heal from Golden Apples.",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Gain 10 max HP and bonuses based on your",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "missing health.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:537s}"
                       }
                     }
                   }
@@ -700,7 +1217,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:creeper_spawn_egg",
+          "name": "minecraft:golden_hoe",
           "weight": 1,
           "functions": [
             {
@@ -756,6 +1273,229 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:527s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:528s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Hedge Fund",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Gain 25 Diamonds. Every 3 minutes, gain",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "1 additional Diamond of interest for",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "every 10 Diamonds in your inventory.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:528s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rotten_flesh",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:529s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Hungry for Blood",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Gain Strength I and Speed I whenever",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "your hunger bar isn't full.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:529s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spawner",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:530s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Hunter's Insight",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Gain rewards for killing certain numbers",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "of hostile mobs: 5 Zombies - Gain 4 max",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Hearts 5 Skeletons - Gain a Power III",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Bow and 8 arrows 5 Creepers - For the",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "rest of the game, explode on death 5",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Spiders - Gain a Web-o-Rang",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:530s}"
                       }
                     }
                   }
@@ -935,7 +1675,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Become very small (0.7x size).",
+                  "text": "Become very small (0.8x size).",
                   "color": "white",
                   "italic": false
                 }
@@ -1077,7 +1817,12 @@
                   "italic": false
                 },
                 {
-                  "text": "Gain Midas' Pickaxe and Midas' Armor.",
+                  "text": "Gain Midas Pickaxe and Midas Armor",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "(equivalent to Diamond Pickaxe/Armor).",
                   "color": "white",
                   "italic": false
                 }
@@ -1096,6 +1841,163 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:536s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shulker_box",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:538s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Pandora's Box",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "At the start of the game and every",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "minute, the items in your Ender Chest",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "are completely randomized. Gain an Ender",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Chest and Pandora's Pickaxe, a special",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Pickaxe that can only break Ender",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Chests.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:538s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:545s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Perseverence",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Gain 5 max Hearts. You have Regeneration",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "I whenever you haven't taken damage for",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "10 seconds.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:545s}"
                       }
                     }
                   }
@@ -1167,6 +2069,67 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:539s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flow_armor_trim_smithing_template",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:542s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Radiant Relics",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Gain a random Radiant Relic.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:542s}"
                       }
                     }
                   }
@@ -1422,7 +2385,12 @@
                   "italic": false
                 },
                 {
-                  "text": "Jump Boost 2.",
+                  "text": "Jump Boost 2. (Boots of Swiftness grant",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "15% increased movement speed)",
                   "color": "white",
                   "italic": false
                 }
@@ -1441,6 +2409,77 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:552s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:turtle_scute",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:553s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "The Tortoise",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Gain a Turtle's Shell, a powerful",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "chestplate that grants 10 maximum health",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "but reduces your movement speed.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:553s}"
                       }
                     }
                   }
@@ -1483,17 +2522,12 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain Haste LXXV and Speed III for 10",
+                  "text": "Gain Haste LXXV (break almost all blocks",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "minutes. (Haste makes you break blocks",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "faster)",
+                  "text": "instantly) and Speed III for 10 minutes.",
                   "color": "white",
                   "italic": false
                 }
@@ -1512,6 +2546,82 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:554s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:piglin_head",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:559s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Trophy Hunter",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Killing a rare mob for the first time",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "grants unique rewards. A rare mob you",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "haven't killed yet spawns near you every",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "3 minutes for the first 12 minutes.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:559s}"
                       }
                     }
                   }

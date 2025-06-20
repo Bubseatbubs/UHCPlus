@@ -84,7 +84,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -108,7 +108,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -151,7 +151,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -178,7 +178,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -205,7 +205,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -232,7 +232,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -259,7 +259,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -286,7 +286,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -313,7 +313,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -340,7 +340,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -606,7 +606,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -630,7 +630,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -657,7 +657,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -684,7 +684,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -711,7 +711,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -738,7 +738,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -765,7 +765,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -792,7 +792,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -819,7 +819,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
@@ -846,7 +846,7 @@
                       "damage": {
                         "type": "minecraft:uniform",
                         "max": 0.9,
-                        "min": 0.3
+                        "min": 0.5
                       },
                       "function": "minecraft:set_damage"
                     },
