@@ -16,5 +16,5 @@ scoreboard players set @s ssiege_mine_ddiamonds 0
 scoreboard players set @s ssiege_mine_diamonds 0
 
 execute store result score @s uhcp_initStatus run random value 0..99
-execute if score @s uhcp_initStatus matches 6.. run return fail
+execute if score @s uhcp_initStatus matches 3.. run return fail
 function ssiege:augments/effects/prismatic/buried_treasures/give
