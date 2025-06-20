@@ -77,7 +77,7 @@
                   "slots": {
                     "container.9": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -90,7 +90,7 @@
                   "slots": {
                     "container.10": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -103,7 +103,7 @@
                   "slots": {
                     "container.11": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -116,7 +116,7 @@
                   "slots": {
                     "container.12": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -129,7 +129,7 @@
                   "slots": {
                     "container.13": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -142,7 +142,7 @@
                   "slots": {
                     "container.14": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -155,7 +155,7 @@
                   "slots": {
                     "container.15": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -168,7 +168,7 @@
                   "slots": {
                     "container.16": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -181,7 +181,7 @@
                   "slots": {
                     "container.17": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -194,7 +194,7 @@
                   "slots": {
                     "container.18": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -207,7 +207,7 @@
                   "slots": {
                     "container.19": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -220,7 +220,7 @@
                   "slots": {
                     "container.20": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -233,7 +233,7 @@
                   "slots": {
                     "container.21": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -246,7 +246,7 @@
                   "slots": {
                     "container.22": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -259,7 +259,7 @@
                   "slots": {
                     "container.23": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -272,7 +272,7 @@
                   "slots": {
                     "container.24": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -285,7 +285,7 @@
                   "slots": {
                     "container.25": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }
@@ -298,7 +298,7 @@
                   "slots": {
                     "container.26": {
                       "predicates": {
-                        "minecraft:custom_data": "{uhcp_lockedslot:1b}"
+                        "minecraft:custom_data": "{uhcp_lockedSlot:true}"
                       }
                     }
                   }

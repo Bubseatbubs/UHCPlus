@@ -4,10 +4,6 @@
 ##
 
 # Augment tiers
-execute if score @s uhcp_augment matches 0..99 run function uhcp:augments/effects/init/gold
-execute if score @s uhcp_augment matches 100..199 run function uhcp:augments/effects/init/silver
+execute if score @s uhcp_augment matches 0..99 run return run function uhcp:augments/effects/init/gold
+execute if score @s uhcp_augment matches 100..199 run return run function uhcp:augments/effects/init/silver
 execute if score @s uhcp_augment matches 200..299 run function uhcp:augments/effects/init/prismatic
-
-# Universal effects
-scoreboard players reset @s uhcp_aug_stack
-particle minecraft:totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.25 100 normal

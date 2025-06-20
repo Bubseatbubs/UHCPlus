@@ -2,7 +2,7 @@
 # Also serves as a list of modifiers that may be reused for different use cases
 
 # Max health
-# Currently used by: Large and in Charge, Surface Duty, Zombie, Empty Hearted
+# Currently used by: Surface Duty, Zombie, Empty Hearted, Stand United, Less than 3
 attribute @s minecraft:max_health modifier remove uhcp:max_health
 
 # Game Max Health (+10 Hearts)
@@ -18,7 +18,7 @@ attribute @s minecraft:block_interaction_range modifier remove uhcp:start_block_
 attribute @s minecraft:entity_interaction_range modifier remove uhcp:start_entity_range
 
 # Player Scale
-# Currently used by: Prop Hunt, Lil'Bro, Lil'est Bro
+# Currently used by: Prop Hunt, Lil'Bro, Lil'est Bro, Large and in Charge
 attribute @s minecraft:scale modifier remove uhcp:scale
 
 # Fall Damage Multiplier

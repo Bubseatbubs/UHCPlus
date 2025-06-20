@@ -341,7 +341,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain a Power IV Bow and 64 arrows. Your",
+                  "text": "Gain a Power III Bow and 64 arrows. Your",
                   "color": "white",
                   "italic": false
                 },
@@ -1315,7 +1315,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain 25 Diamonds. Every 3 minutes, gain",
+                  "text": "Gain 15 Diamonds. Every 2 minutes, gain",
                   "color": "white",
                   "italic": false
                 },
@@ -1614,7 +1614,7 @@
                   "italic": false
                 },
                 {
-                  "text": "II and Fortune II.",
+                  "text": "III and Fortune II.",
                   "color": "white",
                   "italic": false
                 }
@@ -1953,7 +1953,7 @@
               "target": "item_name",
               "name": [
                 {
-                  "text": "Perseverence",
+                  "text": "Perseverance",
                   "color": "aqua",
                   "bold": true
                 }
@@ -2801,7 +2801,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain a Luck of the Sea XI Lure V Fishing",
+                  "text": "Gain a Luck of the Sea X Lure V Fishing",
                   "color": "white",
                   "italic": false
                 },
@@ -2825,6 +2825,82 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:560s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:recovery_compass",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:563s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Open the Gates II",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Gain a Portal Opener that returns 4",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "minutes after use. When used, create 2",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "temporary portals between your current",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "location and its landing spot.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:563s}"
                       }
                     }
                   }

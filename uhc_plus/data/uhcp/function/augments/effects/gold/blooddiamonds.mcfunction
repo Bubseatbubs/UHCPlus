@@ -1,4 +1,7 @@
+# Give diamonds
 give @s minecraft:diamond 24
-effect clear @s minecraft:resistance
-damage @s 8 minecraft:generic
-effect give @s minecraft:resistance 120 4 true
+
+# Temporarily lower max health
+attribute @s minecraft:max_health modifier add uhcp:max_health -8.0 add_value
+scoreboard players operation @s uhcp_game_time = %time uhcp_game_time
+scoreboard players add @s uhcp_game_time 2

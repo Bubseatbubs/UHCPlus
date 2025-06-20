@@ -82,8 +82,8 @@ execute as @a[scores={uhcp_augment=356},gamemode=survival] at @s run function ss
 # Res Tier Player
 execute as @a[scores={uhcp_augment=502}] run function ssiege:augments/effects/prismatic/res_tier_remove_shield
 
-# Open the Gates
-execute as @a[scores={uhcp_augment=341},nbt={SelectedItem:{id:"minecraft:ender_eye"}}] at @s run function ssiege:augments/effects/gold/gates/laser/init
+# Open the Gates - NEED TO REVISE OOPS SRY CODING IN 15 MINUTES
+execute as @a[nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] at @s run function ssiege:augments/effects/gold/gates/laser/init
 
 # Goldenless Apples
 execute as @a[scores={uhcp_augment=537}] at @s run function ssiege:augments/effects/prismatic/goldenless_apples/effect
@@ -236,4 +236,4 @@ execute if score %time uhcp_game_time >= %titan_might uhcp_game_time run execute
 execute if score %time uhcp_game_time >= %encounter_time uhcp_game_time run function ssiege:start/encounters/effects/timed
 
 # Giants
-execute if score %time uhcp_game_time >= %giant_timer ssiege_giants in minecraft:overworld as @n run function ssiege:giants/init_wave
+execute if score %time uhcp_game_time >= %giant_timer ssiege_giants in minecraft:overworld as @p run function ssiege:giants/init_wave

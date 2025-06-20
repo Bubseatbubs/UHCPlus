@@ -16,4 +16,4 @@ execute positioned over motion_blocking_no_leaves positioned 0 ~ 0 run function 
 # Announce
 function ssiege:titans/announcement
 title @a title {"text":"Bone Colossus","color":"gold"}
-tellraw @a ["",{"text":"Bone Colossus","bold":true,"color":"gold"},{"text":" has spawned! Defeat him to earn "},{"text":"Absorption Hearts","bold":true,"color":"yellow"},{"text":" for your team."}]
+tellraw @a ["",{"text":"Bone Colossus","bold":true,"color":"gold"},{"text":" has spawned! Defeat him to earn "},{"text":"Wolves","bold":true,"color":"yellow"},{"text":" for your team."}]

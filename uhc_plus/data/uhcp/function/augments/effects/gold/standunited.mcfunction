@@ -1,7 +1,5 @@
-# Assign team scoreboards
-scoreboard players set @a[distance=..5] uhcp_initStatus 0
-execute as @a[distance=..5,gamemode=survival] run scoreboard players operation @s uhcp_initStatus = @s uhcp_team
+advancement revoke @s only uhcp:augments/stand_united
 
-tag @s add UHCP_StandUnited
-execute as @a[distance=..4,scores={uhcp_initStatus=1..}] if score @s uhcp_initStatus = @p[tag=UHCP_StandUnited,scores={uhcp_initStatus=1..}] uhcp_initStatus run effect give @p[tag=UHCP_StandUnited,scores={uhcp_initStatus=1..}] minecraft:strength 1 0 false
-tag @s remove UHCP_StandUnited
+tag @s add UHCP_United
+function uhcp:augments/effects/gold/standunited/search
+tag @s remove UHCP_United

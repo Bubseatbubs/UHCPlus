@@ -3,18 +3,15 @@ execute if score @s uhcp_augment matches 100 run return run function uhcp:augmen
 execute if score @s uhcp_augment matches 101 run return run function uhcp:augments/effects/silver/afk
 execute if score @s uhcp_augment matches 102 run return run function uhcp:augments/effects/silver/blacksmith
 execute if score @s uhcp_augment matches 103 run return run function uhcp:augments/effects/silver/bucketlist
-execute if score @s uhcp_augment matches 104 run return fail
 execute if score @s uhcp_augment matches 106 run return run function uhcp:augments/effects/silver/youhavemyrodi
 execute if score @s uhcp_augment matches 107 run return run function uhcp:augments/effects/silver/dripeconomyi
 execute if score @s uhcp_augment matches 108 run return run function uhcp:augments/effects/silver/drunkenstupor
 execute if score @s uhcp_augment matches 109 run return run function uhcp:augments/effects/silver/emptyhearted
 execute if score @s uhcp_augment matches 111 run return run function uhcp:augments/effects/silver/gapplegapi
-execute if score @s uhcp_augment matches 112 run return fail
 execute if score @s uhcp_augment matches 113 run return run function uhcp:augments/effects/silver/ittakesavillage
 execute if score @s uhcp_augment matches 114 run return run function uhcp:augments/effects/silver/intotheminesi
 execute if score @s uhcp_augment matches 115 run return run function uhcp:augments/effects/silver/ironwill
 execute if score @s uhcp_augment matches 116 run return run function uhcp:augments/effects/silver/strongswimmer
-execute if score @s uhcp_augment matches 117 run return fail
 execute if score @s uhcp_augment matches 118 run return run loot give @s loot uhcp:consumables/groovy_disc
 execute if score @s uhcp_augment matches 119 run return run function uhcp:augments/effects/silver/monsterhunter
 execute if score @s uhcp_augment matches 120 run return run scoreboard players set @s uhcp_game_time 24000
