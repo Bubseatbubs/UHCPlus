@@ -11,7 +11,7 @@ execute positioned -50 200 -50 run function ssiege:giants/spawn_wave
 
 scoreboard players set %spawned ssiege_giants 0
 scoreboard players operation %count_remainder ssiege_giants %= #2 ssiege_giants
-execute if score %count_remainder ssiege_giants matches 1 run scoreboard players remove %spawned ssiege_giants 1
+execute if score %count_remainder ssiege_giants matches 1 run scoreboard players add %count ssiege_giants 1
 
 # Spawn waves
 execute positioned 50 200 50 run function ssiege:giants/spawn_wave
