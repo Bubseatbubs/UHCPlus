@@ -20,3 +20,6 @@ execute if score @s uhcp_augment matches 559 run return run function ssiege:augm
 
 # Unleash the Beast II
 execute if score @s uhcp_augment matches 562 run return run function ssiege:augments/effects/prismatic/unleashthebeastii
+
+# Open the Gates II
+execute if score @s uhcp_augment matches 562 run return run function ssiege:augments/effects/gold/gates/laser/give

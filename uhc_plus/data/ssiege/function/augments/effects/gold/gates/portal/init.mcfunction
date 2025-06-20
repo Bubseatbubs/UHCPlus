@@ -2,6 +2,10 @@
 #execute as @s[team=red] rotated as @s run summon marker ~ ~ ~ {Tags:["UHCP_Summon","UHCP_Gate","UHCP_NewGate","UHCP_TeamRed"]}
 #execute as @s[team=blue] rotated as @s run summon marker ~ ~ ~ {Tags:["UHCP_Summon","UHCP_Gate","UHCP_NewGate","UHCP_TeamBlue"]}
 
+scoreboard players operation @s uhcp_game_time = %time uhcp_game_time
+scoreboard players add @s uhcp_game_time 4800
+execute if score @s uhcp_augment matches 341 run return run scoreboard players add @s uhcp_game_time 4800
+
 summon marker ~ ~ ~ {Tags:["UHCP_Summon","UHCP_Gate","UHCP_NewGate"]}
 
 # Tried to rotate it multiple times same as player not sure why the rotational context didn't work for marker until the @p
