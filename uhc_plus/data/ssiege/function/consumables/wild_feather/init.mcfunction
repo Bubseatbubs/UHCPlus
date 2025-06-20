@@ -16,7 +16,7 @@ summon marker ~ ~ ~ {Tags:["SSIEGE_wild_feather"]}
 summon marker ~ ~ ~ {Tags:["SSIEGE_wild_feather"]}
 summon marker ~ ~ ~ {Tags:["SSIEGE_wild_feather"]}
 summon marker ~ ~ ~ {Tags:["SSIEGE_wild_feather"]}
-execute as @e[tag=SSIEGE_wild_feather] at @s run spreadplayers ~ ~ 0 8 false @s
+execute as @e[tag=SSIEGE_wild_feather] at @s run spreadplayers ~ ~ 0 16 false @s
 
 # Define upper and lower bound of valid y-levels based on players current y-level
 execute store result score %upper_bound uhcp_initStatus run data get entity @s Pos[1]
