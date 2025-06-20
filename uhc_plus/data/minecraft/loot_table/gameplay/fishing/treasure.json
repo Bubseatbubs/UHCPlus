@@ -52,7 +52,7 @@
                       "type": "minecraft:loot_table",
                       "weight": 2,
                       "value": "ssiege:soulshard",
-                      "quality": 3
+                      "quality": 4
                     },
                     {
                       "type": "minecraft:loot_table",
@@ -73,6 +73,22 @@
                         "score": "uhcp_settings"
                       },
                       "range": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:wind_charge",
+                  "weight": 8,
+                  "quality": 2,
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": {
+                        "type": "minecraft:uniform",
+                        "min": 4,
+                        "max": 6
+                      }
                     }
                   ]
                 },
@@ -186,6 +202,36 @@
                     }
                   ],
                   "weight": 20,
+                  "quality": -1,
+                  "name": "minecraft:diamond_helmet"
+                },
+                {
+                  "type": "minecraft:item",
+                  "functions": [
+                    {
+                      "add": false,
+                      "damage": {
+                        "type": "minecraft:uniform",
+                        "max": 0.9,
+                        "min": 0.5
+                      },
+                      "function": "minecraft:set_damage"
+                    },
+                    {
+                      "function": "minecraft:set_enchantments",
+                      "enchantments": {
+                        "minecraft:protection": {
+                          "type": "minecraft:uniform",
+                          "min": 1,
+                          "max": 2
+                        }
+                      },
+                      "add": false,
+                      "conditions": []
+                    }
+                  ],
+                  "weight": 1,
+                  "quality": 1,
                   "name": "minecraft:diamond_helmet"
                 },
                 {
@@ -321,6 +367,36 @@
                     }
                   ],
                   "weight": 20,
+                  "quality": -1,
+                  "name": "minecraft:diamond_chestplate"
+                },
+                {
+                  "type": "minecraft:item",
+                  "functions": [
+                    {
+                      "add": false,
+                      "damage": {
+                        "type": "minecraft:uniform",
+                        "max": 0.9,
+                        "min": 0.5
+                      },
+                      "function": "minecraft:set_damage"
+                    },
+                    {
+                      "function": "minecraft:set_enchantments",
+                      "enchantments": {
+                        "minecraft:protection": {
+                          "type": "minecraft:uniform",
+                          "min": 1,
+                          "max": 2
+                        }
+                      },
+                      "add": false,
+                      "conditions": []
+                    }
+                  ],
+                  "weight": 1,
+                  "quality": 1,
                   "name": "minecraft:diamond_chestplate"
                 },
                 {
@@ -348,6 +424,36 @@
                     }
                   ],
                   "weight": 20,
+                  "quality": -1,
+                  "name": "minecraft:diamond_leggings"
+                },
+                {
+                  "type": "minecraft:item",
+                  "functions": [
+                    {
+                      "add": false,
+                      "damage": {
+                        "type": "minecraft:uniform",
+                        "max": 0.9,
+                        "min": 0.5
+                      },
+                      "function": "minecraft:set_damage"
+                    },
+                    {
+                      "function": "minecraft:set_enchantments",
+                      "enchantments": {
+                        "minecraft:protection": {
+                          "type": "minecraft:uniform",
+                          "min": 1,
+                          "max": 2
+                        }
+                      },
+                      "add": false,
+                      "conditions": []
+                    }
+                  ],
+                  "weight": 1,
+                  "quality": 1,
                   "name": "minecraft:diamond_leggings"
                 },
                 {
@@ -375,6 +481,36 @@
                     }
                   ],
                   "weight": 20,
+                  "quality": -1,
+                  "name": "minecraft:diamond_boots"
+                },
+                {
+                  "type": "minecraft:item",
+                  "functions": [
+                    {
+                      "add": false,
+                      "damage": {
+                        "type": "minecraft:uniform",
+                        "max": 0.9,
+                        "min": 0.5
+                      },
+                      "function": "minecraft:set_damage"
+                    },
+                    {
+                      "function": "minecraft:set_enchantments",
+                      "enchantments": {
+                        "minecraft:protection": {
+                          "type": "minecraft:uniform",
+                          "min": 1,
+                          "max": 2
+                        }
+                      },
+                      "add": false,
+                      "conditions": []
+                    }
+                  ],
+                  "weight": 1,
+                  "quality": 1,
                   "name": "minecraft:diamond_boots"
                 },
                 {
@@ -390,7 +526,45 @@
                     }
                   ],
                   "weight": 60,
-                  "name": "minecraft:book"
+                  "name": "minecraft:book",
+                  "quality": -2
+                },
+                {
+                  "type": "minecraft:item",
+                  "functions": [
+                    {
+                      "function": "minecraft:enchant_with_levels",
+                      "levels": {
+                        "min": 14,
+                        "max": 26
+                      },
+                      "options": "#minecraft:on_random_loot"
+                    }
+                  ],
+                  "weight": 60,
+                  "name": "minecraft:book",
+                  "quality": -2
+                },
+                {
+                  "type": "minecraft:item",
+                  "functions": [
+                    {
+                      "function": "minecraft:enchant_randomly",
+                      "options": [
+                        "minecraft:fortune",
+                        "minecraft:punch",
+                        "minecraft:sharpness",
+                        "minecraft:mending",
+                        "minecraft:thorns",
+                        "minecraft:feather_falling"
+                      ],
+                      "only_compatible": true,
+                      "conditions": []
+                    }
+                  ],
+                  "weight": 1,
+                  "name": "minecraft:book",
+                  "quality": 2
                 },
                 {
                   "type": "minecraft:item",
@@ -410,7 +584,7 @@
                 {
                   "type": "minecraft:item",
                   "name": "minecraft:diamond",
-                  "quality": 4,
+                  "quality": 5,
                   "functions": [
                     {
                       "function": "minecraft:set_count",
@@ -426,7 +600,7 @@
                 {
                   "type": "minecraft:item",
                   "name": "minecraft:iron_ingot",
-                  "quality": -1,
+                  "quality": -2,
                   "functions": [
                     {
                       "function": "minecraft:set_count",
@@ -465,22 +639,6 @@
                     }
                   ],
                   "weight": 20
-                },
-                {
-                  "type": "minecraft:item",
-                  "name": "minecraft:wind_charge",
-                  "weight": 8,
-                  "quality": 1,
-                  "functions": [
-                    {
-                      "function": "minecraft:set_count",
-                      "count": {
-                        "type": "minecraft:uniform",
-                        "min": 2,
-                        "max": 4
-                      }
-                    }
-                  ]
                 },
                 {
                   "type": "minecraft:item",

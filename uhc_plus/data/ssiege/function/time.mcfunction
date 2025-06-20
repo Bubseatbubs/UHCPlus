@@ -82,8 +82,13 @@ execute as @a[scores={uhcp_augment=356},gamemode=survival] at @s run function ss
 # Res Tier Player
 execute as @a[scores={uhcp_augment=502}] run function ssiege:augments/effects/prismatic/res_tier_remove_shield
 
-# Open the Gates - NEED TO REVISE OOPS SRY CODING IN 15 MINUTES
-execute as @a[nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] at @s run function ssiege:augments/effects/gold/gates/laser/init
+# Open the Gates - kinda ehhhh about this implementation lol
+execute as @a[scores={uhcp_augment=563}] if items entity @s weapon.mainhand minecraft:recovery_compass[minecraft:custom_data~{uhcp_gate:1b}] at @s run function ssiege:augments/effects/gold/gates/laser/init
+execute as @a[scores={uhcp_augment=563}] if items entity @s weapon.offhand minecraft:recovery_compass[minecraft:custom_data~{uhcp_gate:1b}] at @s run function ssiege:augments/effects/gold/gates/laser/init
+
+execute as @a[scores={uhcp_augment=341}] if items entity @s weapon.mainhand minecraft:recovery_compass[minecraft:custom_data~{uhcp_gate:1b}] at @s run function ssiege:augments/effects/gold/gates/laser/init
+execute as @a[scores={uhcp_augment=341}] if items entity @s weapon.offhand minecraft:recovery_compass[minecraft:custom_data~{uhcp_gate:1b}] at @s run function ssiege:augments/effects/gold/gates/laser/init
+
 
 # Goldenless Apples
 execute as @a[scores={uhcp_augment=537}] at @s run function ssiege:augments/effects/prismatic/goldenless_apples/effect
