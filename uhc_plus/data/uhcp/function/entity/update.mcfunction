@@ -4,9 +4,7 @@ execute as @e[tag=UHCP_WarningSymbol] at @s run function uhcp:entity/warning_sym
 execute as @e[tag=UHCP_Scout] at @s unless entity @p[gamemode=survival,distance=..3] run function uhcp:augments/effects/silver/structurescout/clear
 execute as @e[tag=UHCP_RunicSentrySummon] at @s if entity @p[gamemode=survival,distance=..8] run function uhcp:entity/runic_sentry_summon
 execute as @e[tag=UHCP_SoulApple] at @s run function uhcp:kill/soul_apple/update
-
-# Portal Gun not sure where to put yet lol
-execute as @e[tag=UHCP_Gate] at @s run function ssiege:augments/effects/gold/gates/portal/tick
+execute as @e[tag=UHCP_TitanSpawnEffect] at @s run function ssiege:titans/titan_spawn_effect/update
 
 # Consumables
 execute as @e[tag=UHCP_WebSlinger] at @s run function uhcp:consumables/web_slinger/update
@@ -62,3 +60,4 @@ execute as @e[tag=UHCP_GraveMarker] at @s run function uhcp:titans/gigantus/grav
 execute as @e[tag=UHCP_FenrirMinion] at @s run function uhcp:titans/fenrir/wolves/update
 execute as @e[tag=UHCP_KungfuPanda] at @s run function uhcp:augments/effects/prismatic/kungfupanda/update
 execute as @e[tag=UHCP_Bee] at @s run function uhcp:entity/bees/update
+execute as @e[tag=UHCP_Gate] at @s run function ssiege:augments/effects/gold/gates/portal/tick

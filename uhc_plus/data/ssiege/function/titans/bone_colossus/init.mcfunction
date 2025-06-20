@@ -10,9 +10,8 @@ scoreboard players operation %hp uhcp_team += %BASE uhcp_titans_id
 execute store result storage ssiege:titan_health input.hp double 1 run scoreboard players get %hp uhcp_team
 
 # Spawn Titan
-execute in minecraft:overworld positioned 0 200 0 summon minecraft:stray run function ssiege:titans/bone_colossus/init_helper with storage ssiege:titan_health input
-execute positioned over motion_blocking_no_leaves as @e[tag=UHCP_Titan] run tp @s ~ ~ ~
-effect give @e[tag=UHCP_Titan] glowing infinite 0 true
+execute in minecraft:overworld positioned 0 300 0 summon minecraft:stray run function ssiege:titans/bone_colossus/init_helper with storage ssiege:titan_health input
+execute positioned over motion_blocking_no_leaves positioned 0 ~ 0 run function ssiege:titans/titan_spawn_effect/init
 
 # Announce
 function ssiege:titans/announcement
