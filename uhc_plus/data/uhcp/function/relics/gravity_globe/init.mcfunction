@@ -16,6 +16,7 @@ execute as @e[distance=..12,type=!#uhcp:inanimate_mobs] unless score @s uhcp_ini
 
 execute as @a[distance=..12,team=!grace_period,scores={uhcp_initStatus=1..}] unless score @s uhcp_initStatus = @p[tag=UHCP_Owner] uhcp_initStatus run tag @s add UHCP_InflictedWithGravityGlobe
 execute as @a[distance=..12,tag=UHCP_InflictedWithGravityGlobe] run attribute @s minecraft:gravity modifier add uhcp:gravity_globe -1 add_value
+execute as @a[distance=..12,tag=UHCP_InflictedWithGravityGlobe] as @s at @s run tp @s ~ ~ ~
 execute as @e[distance=..12,type=!minecraft:player,predicate=uhcp:targetable] unless score @s uhcp_initStatus = @p[tag=UHCP_Owner] uhcp_initStatus run data modify entity @s Motion[1] set value 1.75d
 
 tag @s remove UHCP_Owner
