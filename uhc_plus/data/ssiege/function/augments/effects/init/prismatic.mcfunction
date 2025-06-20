@@ -14,7 +14,7 @@ execute if score @s uhcp_augment matches 522 run return run give @s golden_apple
 execute if score @s uhcp_augment matches 528 run return run function ssiege:augments/effects/prismatic/hedge_fund/init
 execute if score @s uhcp_augment matches 526 run return run function ssiege:augments/effects/prismatic/gomugomu
 execute if score @s uhcp_augment matches 531 run return run function ssiege:augments/effects/prismatic/immovable_object
-execute if score @s uhcp_augment matches 532 run return run give @s diamond_pickaxe[enchantments={"minecraft:efficiency":2,"minecraft:fortune":2}] 1
+execute if score @s uhcp_augment matches 532 run return run give @s diamond_pickaxe[enchantments={"minecraft:efficiency":3,"minecraft:fortune":2}] 1
 execute if score @s uhcp_augment matches 533 run return run attribute @s scale modifier add uhcp:scale -.2 add_multiplied_total
 execute if score @s uhcp_augment matches 536 run return run function ssiege:augments/effects/prismatic/midas_touch/init
 execute if score @s uhcp_augment matches 537 run return run function ssiege:augments/effects/prismatic/goldenless_apples/init
