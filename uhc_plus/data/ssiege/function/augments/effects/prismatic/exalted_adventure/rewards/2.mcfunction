@@ -1,22 +1,19 @@
-loot give @s loot uhcp:consumables/web_slinger
-loot give @s loot uhcp:consumables/web_slinger
-loot give @s loot uhcp:consumables/web_slinger
-loot give @s loot uhcp:consumables/web_slinger
-loot give @s loot ssiege:consumables/wild_feather
-loot give @s loot ssiege:consumables/wild_feather
-loot give @s loot ssiege:consumables/wild_feather
-loot give @s loot ssiege:consumables/wild_feather
-give @s diamond 4
-give @s ender_pearl 4
-give @s golden_apple 4
-scoreboard players set @s ssiege_multi 4
+give @s diamond 24
+give @s golden_apple 20
+give @s wind_charge 16
+scoreboard players set @s ssiege_multi 12
 loot give @s loot ssiege:multi_soulshard
 loot give @s loot uhcp:consumables/all-seeing_eye
 loot give @s loot uhcp:consumables/all-seeing_eye
 loot give @s loot uhcp:consumables/all-seeing_eye
 loot give @s loot uhcp:consumables/all-seeing_eye
+loot give @s loot uhcp:consumables/all-seeing_eye
+loot give @s loot uhcp:consumables/all-seeing_eye
+loot give @s loot uhcp:consumables/all-seeing_eye
+loot give @s loot uhcp:consumables/all-seeing_eye
 loot give @s loot ssiege:consumables/bridge_ball
 loot give @s loot ssiege:consumables/bridge_ball
 loot give @s loot ssiege:consumables/bridge_ball
 loot give @s loot ssiege:consumables/bridge_ball
-tellraw @s ["",{"text":"You gained "},{"text":"4 Web Slingers","color":"yellow"},{"text":", "},{"text":"Wild Feathers","color":"yellow"},{"text":", "},{"text":"Diamonds","color":"aqua"},{"text":", "},{"text":"Ender Pearls","color":"dark_purple"},{"text":", "},{"text":"Golden Apples","color":"yellow"},{"text":", "},{"text":"Soul Shards","color":"light_purple"},{"text":", "},{"text":"All-Seeing Eyes","color":"dark_purple"},{"text":", and "},{"text":"Bridge Balls","color":"yellow"},{"text":"!"}]
+give @s ender_pearl 2
+tellraw @s ["",{"text":"You gained "},{"text":"24 Diamonds","color":"aqua"},{"text":", "},{"text":"20 Golden Apples","color":"gold"},{"text":", "},{"text":"16 Wind Charges","color":"yellow"},{"text":", "},{"text":"12 Soul Shards","color":"light_purple"},{"text":", "},{"text":"8 All-Seeing Eyes","color":"dark_purple"},{"text":", "},{"text":"4 Bridge Balls","color":"yellow"},{"text":", and "},{"text":"2 Ender Pearls","color":"dark_purple"},{"text":"!"}]
