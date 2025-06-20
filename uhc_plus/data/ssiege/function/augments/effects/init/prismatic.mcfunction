@@ -30,3 +30,4 @@ execute if score @s uhcp_augment matches 554 run return run function ssiege:augm
 execute if score @s uhcp_augment matches 559 run return run scoreboard players set @s uhcp_game_time 0
 execute if score @s uhcp_augment matches 560 run return run give @s fishing_rod[enchantments={"minecraft:luck_of_the_sea":10,"minecraft:lure":5},unbreakable={}] 1
 execute if score @s uhcp_augment matches 562 run return run function ssiege:augments/effects/prismatic/unleashthebeastii
+execute if score @s uhcp_augment matches 563 run return run function ssiege:augments/effects/gold/gates/laser/give

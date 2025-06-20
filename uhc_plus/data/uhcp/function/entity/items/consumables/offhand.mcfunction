@@ -13,4 +13,4 @@ execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumab
 execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumable_id:10b}] run return run function uhcp:consumables/ragnarok_bone/offhand
 execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumable_id:11b}] run function uhcp:consumables/high_tide/offhand
 
-execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumable_id:19b}] run function uhcp:consumables/portal_gate/offhand
+execute if items entity @s weapon.offhand *[minecraft:custom_data~{uhcp_consumable_id:19b}] as @s run function uhcp:consumables/portal_gate/offhand

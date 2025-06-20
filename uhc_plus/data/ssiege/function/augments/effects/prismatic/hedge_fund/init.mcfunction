@@ -1,2 +1,2 @@
 give @s diamond 15
-scoreboard players set @s uhcp_game_time 3600
+scoreboard players set @s uhcp_game_time 2400
