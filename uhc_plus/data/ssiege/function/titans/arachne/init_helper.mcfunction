@@ -4,3 +4,4 @@ scoreboard players set @s uhcp_titans_id 1
 
 $attribute @s minecraft:max_health base set $(hp)
 execute store result entity @s Health float 1 run scoreboard players get %hp uhcp_team
+effect give @s glowing infinite 0 true
