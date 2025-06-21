@@ -21,6 +21,9 @@ scoreboard players operation %damage uhcp_initStatus += %sharpness uhcp_initStat
 # 70 would represent a 30% damage reduction
 scoreboard players set %multiplier uhcp_initStatus 100
 
+# Base "Armor"
+scoreboard players remove %multiplier uhcp_initStatus 35
+
 # Titan Slayer Perk
 scoreboard players operation %temp uhcp_initStatus = @s ssiege_perk_titanslayer
 scoreboard players operation %temp uhcp_initStatus *= #10 uhcp_const
