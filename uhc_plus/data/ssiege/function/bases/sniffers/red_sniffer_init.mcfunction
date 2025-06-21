@@ -1,4 +1,4 @@
 summon sniffer ~-0.5 ~2 ~-0.5 {Glowing:1b,CustomNameVisible:0b,Team:"red",PersistenceRequired:1b,NoAI:1b,CanPickUpLoot:0b,Health:500f,Rotation:[-90F,-15F],Tags:["redsniffer","SSIEGE_sniffer"],CustomName:{"bold":true,"color":"red","text":"Red Sniffer"},active_effects:[{id:"minecraft:fire_resistance",amplifier:0,duration:-1,show_particles:0b,show_icon:0b}],attributes:[{id:"minecraft:armor",base:30},{id:"minecraft:knockback_resistance",base:1},{id:"minecraft:max_health",base:500},{id:"minecraft:scale",base:5.2}]}
-summon interaction ~-0.5 ~2 ~-0.5 {width:11.05,height:11,Tags:["RS_Hitbox","SSIEGE_Hitbox"]}
+summon interaction ~-0.5 ~2 ~-0.5 {width:11,height:11,Tags:["RS_Hitbox","SSIEGE_Hitbox"]}
 summon interaction ~9 ~3 ~-0.5 {width:6,height:6,Tags:["RS_Hitbox","SSIEGE_Hitbox"]}
 scoreboard players set @e[tag=redsniffer] uhcp_team 13
