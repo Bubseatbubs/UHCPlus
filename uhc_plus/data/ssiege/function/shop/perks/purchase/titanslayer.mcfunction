@@ -15,8 +15,6 @@ execute as @s[team=red] run tellraw @a ["",{"selector":"@s"},{"text":" purchased
 execute as @s[team=blue] run scoreboard players add %blue ssiege_perk_titanslayer 1
 execute as @s[team=red] run scoreboard players add %red ssiege_perk_titanslayer 1
 
-function ssiege:shop/perks/effects/titan_slayer
-
 # Update Price
 execute as @s[team=blue] run function ssiege:shop/perks/update_blue_perk_costs
 execute as @s[team=red] run function ssiege:shop/perks/update_red_perk_costs

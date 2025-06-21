@@ -5,4 +5,4 @@ execute if score @s ssiege_attack_cooldown matches ..4 run function ssiege:bases
 # Set attack cooldown
 function ssiege:bases/sniffers/hitboxes/calculate_attack_cooldown
 
-execute store result storage ssiege:temp damage int 0.01 run scoreboard players get %damage uhcp_initStatus
+execute store result storage ssiege:temp damage double 0.01 run scoreboard players get %damage uhcp_initStatus
