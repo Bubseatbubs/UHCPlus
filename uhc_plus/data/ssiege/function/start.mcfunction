@@ -174,4 +174,5 @@ forceload add -90 -90 -170 -90
 schedule function ssiege:start_augment_selection 200
 
 # Add on custom player balancing buffs
+function ssiege:buffs/give_tags
 execute as @a[tag=SSIEGE_Buff] run function ssiege:buffs/give_attributes
