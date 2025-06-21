@@ -1,6 +1,8 @@
 # Reset player's attribute modifiers
 # Also serves as a list of modifiers that may be reused for different use cases
 
+function ssiege:reset/attributes
+
 # Max health
 # Currently used by: Surface Duty, Zombie, Empty Hearted, Stand United, Less than 3
 attribute @s minecraft:max_health modifier remove uhcp:max_health
