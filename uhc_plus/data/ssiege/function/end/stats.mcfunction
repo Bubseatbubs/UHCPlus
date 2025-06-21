@@ -64,4 +64,4 @@ execute if score %blue ssiege_kills matches ..9 run tellraw @a [{"bold":false,"c
 execute if score %blue ssiege_kills matches 10..99 run tellraw @a [{"bold":false,"color":"yellow","text":"Gold Mined"},{"bold":true,"text":"      "},{"bold":false,"text":" "},{"bold":false,"color":"blue","score":{objective:ssiege_kills,name:"%blue"}},{"bold":true,"text":"        "},{"bold":false,"color":"red","score":{objective:ssiege_kills,name:"%red"}}]
 execute if score %blue ssiege_kills matches 100.. run tellraw @a [{"bold":false,"color":"yellow","text":"Gold Mined"},{"bold":true,"text":"    "},{"bold":false,"text":"   "},{"bold":false,"color":"blue","score":{objective:ssiege_kills,name:"%blue"}},{"bold":true,"text":"       "},{"bold":false,"color":"red","score":{objective:ssiege_kills,name:"%red"}}]
 
-scoreboard objectives setdisplay sidebar ssiege_damage_dealt
+#scoreboard objectives setdisplay sidebar ssiege_damage_dealt
