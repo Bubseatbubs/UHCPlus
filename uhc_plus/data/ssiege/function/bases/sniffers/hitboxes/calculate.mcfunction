@@ -16,6 +16,9 @@ execute if score %sharpness_lvl uhcp_initStatus matches 5 run scoreboard players
 scoreboard players operation %damage uhcp_initStatus += %sharpness uhcp_initStatus
 
 # Multiplicative scalars
+# %multiplier uhcp_initStatus at 100 represents normal damage
+# 120 would represent a 20% damage boost
+# 70 would represent a 30% damage reduction
 scoreboard players set %multiplier uhcp_initStatus 100
 
 # Titan Slayer Perk
@@ -28,9 +31,16 @@ scoreboard players operation %temp uhcp_initStatus = @s ssiege_buff_titanslayer
 scoreboard players operation %temp uhcp_initStatus *= #10 uhcp_const
 scoreboard players operation %multiplier uhcp_initStatus += %temp uhcp_initStatus
 
-# Not quite fully charged attack penalty
+# Not quite fully charged attack penalty -15% damage
 execute if score @s ssiege_attack_cooldown matches 1.. run scoreboard players remove %multiplier uhcp_initStatus 15
 
+# Backdoor protection -30% damage if alone
+scoreboard players operation %team uhcp_initStatus = @s uhcp_team
+scoreboard players set %nearby uhcp_initStatus 0
+execute as @a[distance=..24] run execute if score @s uhcp_team = %team uhcp_initStatus run scoreboard players add %nearby uhcp_initStatus 1
+execute if score %nearby uhcp_initStatus matches ..1 run scoreboard players remove %multiplier uhcp_initStatus 30
+
+# Apply all multiplicative scaling
 scoreboard players operation %damage uhcp_initStatus *= %multiplier uhcp_initStatus
 scoreboard players operation %damage uhcp_initStatus /= #100 uhcp_const
 
