@@ -25,6 +25,7 @@ execute if score @s uhcp_augment matches 335 run return run function ssiege:augm
 execute if score @s uhcp_augment matches 336 run return run function ssiege:augments/effects/gold/lockedout
 execute if score @s uhcp_augment matches 339 run return run function ssiege:augments/effects/gold/moneymoney
 execute if score @s uhcp_augment matches 340 run return run function ssiege:augments/effects/gold/moonwalking
+execute if score @s uhcp_augment matches 340 run return run function ssiege:augments/effects/gold/gates/laser/give
 execute if score @s uhcp_augment matches 342 run return run function ssiege:augments/effects/gold/oppenheimer
 execute if score @s uhcp_augment matches 343 run return run function ssiege:augments/effects/gold/parasite
 execute if score @s uhcp_augment matches 344 run return run give @s ender_pearl 3

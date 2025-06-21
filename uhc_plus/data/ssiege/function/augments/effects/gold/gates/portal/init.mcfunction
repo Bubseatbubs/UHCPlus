@@ -4,7 +4,8 @@
 
 scoreboard players operation @s uhcp_game_time = %time uhcp_game_time
 scoreboard players add @s uhcp_game_time 4800
-execute if score @s uhcp_augment matches 341 run return run scoreboard players add @s uhcp_game_time 4800
+execute if score @s uhcp_augment matches 341 run scoreboard players add @s uhcp_game_time 4800
+execute if score @s uhcp_augment matches 563 run effect give @s speed 60 0 true
 
 summon marker ~ ~ ~ {Tags:["UHCP_Summon","UHCP_Gate","UHCP_NewGate"]}
 
