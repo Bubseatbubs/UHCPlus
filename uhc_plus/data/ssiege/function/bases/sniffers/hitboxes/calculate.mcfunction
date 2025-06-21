@@ -16,19 +16,23 @@ execute if score %sharpness_lvl uhcp_initStatus matches 5 run scoreboard players
 scoreboard players operation %damage uhcp_initStatus += %sharpness uhcp_initStatus
 
 # Multiplicative scalars
-scoreboard players set %multiplier uhcp_initStatus 10
+scoreboard players set %multiplier uhcp_initStatus 100
 
 # Titan Slayer Perk
-scoreboard players operation %multiplier uhcp_initStatus += @s ssiege_perk_titanslayer
+scoreboard players operation %temp uhcp_initStatus = @s ssiege_perk_titanslayer
+scoreboard players operation %temp uhcp_initStatus *= #10 uhcp_const
+scoreboard players operation %multiplier uhcp_initStatus += %temp uhcp_initStatus
 
 # Titan's Might Buff
-scoreboard players operation %multiplier uhcp_initStatus += @s ssiege_buff_titanslayer
+scoreboard players operation %temp uhcp_initStatus = @s ssiege_buff_titanslayer
+scoreboard players operation %temp uhcp_initStatus *= #10 uhcp_const
+scoreboard players operation %multiplier uhcp_initStatus += %temp uhcp_initStatus
 
 # Not quite fully charged attack penalty
-execute if score @s ssiege_attack_cooldown matches 1.. run scoreboard players remove %multiplier uhcp_initStatus 2
+execute if score @s ssiege_attack_cooldown matches 1.. run scoreboard players remove %multiplier uhcp_initStatus 15
 
 scoreboard players operation %damage uhcp_initStatus *= %multiplier uhcp_initStatus
-scoreboard players operation %damage uhcp_initStatus /= #10 uhcp_const
+scoreboard players operation %damage uhcp_initStatus /= #100 uhcp_const
 
 # Attacks that deal less than 1 damage or less get rounded down to 0
 execute if score %damage uhcp_initStatus matches ..100 run return run scoreboard players set %damage uhcp_initStatus 0
