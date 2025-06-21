@@ -19,6 +19,12 @@ function ssiege:bases/inhibitors/update
 # Deferred inventory management
 execute if entity @a[tag=UHCP_Defer] run function uhcp:defer
 
+# Player attack cooldown (for Sniffer hitbox system)
+execute as @a[scores={ssiege_attack_cooldown=1..}] run scoreboard players remove @s ssiege_attack_cooldown 1
+
+# Update damage displays
+execute as @e[type=text_display,tag=SSIEGE_damage_display] at @s run function ssiege:bases/sniffers/hitboxes/damage_display/update
+
 # Timers
 scoreboard players remove @a[scores={uhcp_timer=0..}] uhcp_timer 1
 scoreboard players remove @e[tag=UHCP_HuntingCall,scores={uhcp_itemCount=1..}] uhcp_itemCount 1
@@ -222,9 +228,6 @@ execute if score %blue ssiege_perk_regen matches 1.. if score %time uhcp_game_ti
 # Sniffer Aura Perk - sniffer regen must be run first as %aura is updated in second function
 execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssiege:bases/sniffers/low_health_regen
 execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssiege:shop/perks/effects/sniffer_aura
-
-# Sniffer backdoor protection
-execute as @e[type=sniffer,tag=SSIEGE_sniffer] at @s run function ssiege:bases/sniffers/backdoor_protection/update_res
 
 # Titan Spawning
 execute if score %time uhcp_game_time = %titans uhcp_game_time run function ssiege:titans/timed

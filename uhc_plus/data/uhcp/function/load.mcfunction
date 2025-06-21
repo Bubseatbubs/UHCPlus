@@ -105,6 +105,7 @@ scoreboard objectives add uhcp_transformDuration dummy
 scoreboard objectives add ssiege_buff_titanslayer dummy
 scoreboard objectives add ssiege_current_encounter dummy "Encounter: "
 scoreboard objectives add ssiege_currently_shopping dummy
+scoreboard objectives add ssiege_attack_cooldown dummy
 scoreboard objectives add ssiege_death_timer dummy
 scoreboard objectives add ssiege_giants dummy
 scoreboard objectives add ssiege_kills dummy

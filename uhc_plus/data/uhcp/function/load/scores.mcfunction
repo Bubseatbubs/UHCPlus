@@ -1,5 +1,6 @@
 # Constants
 scoreboard players set #-1 uhcp_const -1
+scoreboard players set #0 uhcp_const 0
 scoreboard players set #2 uhcp_const 2
 scoreboard players set #3 uhcp_const 3
 scoreboard players set #4 uhcp_const 4
@@ -21,6 +22,8 @@ scoreboard players set #30 uhcp_const 30
 scoreboard players set #60 uhcp_const 60
 scoreboard players set #63 uhcp_const 63
 scoreboard players set #64 uhcp_const 64
+scoreboard players set #100 uhcp_const 100
+scoreboard players set #118 uhcp_const 118
 scoreboard players set #200 uhcp_const 200
 scoreboard players set #1200 uhcp_const 1200
 

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "team": "red"
+        },
+        "entity": {
+          "type": "interaction",
+          "nbt": "{Tags:[\"BS_Hitbox\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ssiege:bases/sniffers/hitboxes/blue/hit"
+  }
+}
