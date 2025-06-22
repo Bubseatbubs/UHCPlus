@@ -6,6 +6,6 @@ execute if predicate uhcp:augments/copper_collector/raw_copper run function uhcp
 
 scoreboard players reset @s uhcp_leave
 scoreboard players set @s uhcp_game_time -1
-execute at @s[tag=!UHCP_CopperC] run return run playsound minecraft:block.note_block.snare master @s ~ ~ ~ 1 1 1
+execute as @s[tag=!UHCP_CopperC] run return run function uhcp:augments/effects/gold/coppercollector/failure
 execute at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
 tag @s remove UHCP_CopperC

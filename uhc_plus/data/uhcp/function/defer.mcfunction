@@ -12,5 +12,9 @@ execute as @a[tag=UHCP_DiamondRough] run function uhcp:augments/effects/gold/dia
 # Planned Economy
 execute as @a[tag=UHCP_PlannedEcon] at @s run function uhcp:augments/effects/gold/plannedeconomy/init
 
+# Cat Lady fishing rods
+execute as @a[tag=UHCP_CLFishRod] run function uhcp:augments/effects/silver/crazycatlady/fishing_rod/mark
+execute as @a[tag=UHCP_NotCLFishRod] run function uhcp:augments/effects/silver/crazycatlady/fishing_rod/unmark
+
 # Unmark players
 tag @a remove UHCP_Defer

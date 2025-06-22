@@ -1,5 +1,5 @@
 # No absorption hearts
-playsound minecraft:block.note_block.snare master @s ~ ~ ~ 1 1 1
+function uhcp:augments/effects/gold/redstoneritual/failure
 
 # Return redstone
 scoreboard players operation @s uhcp_initStatus -= @s uhcp_lava_timeInterval

@@ -5,6 +5,8 @@ tag @s remove UHCP_AteApple
 tag @s remove UHCP_AugmentRerollSlot1
 tag @s remove UHCP_AugmentRerollSlot2
 tag @s remove UHCP_AugmentRerollSlot3
+tag @s remove UHCP_CLFishRod
+tag @s remove UHCP_CLHeal
 tag @s remove UHCP_CobwebCheck
 tag @s remove UHCP_Defer
 tag @s remove UHCP_DiamondRough
@@ -15,6 +17,7 @@ tag @s remove UHCP_HighTide
 tag @s remove UHCP_InflictedWithGravityGlobe
 tag @s remove UHCP_InflictedWithPhantomPain
 tag @s remove UHCP_MilkBucket
+tag @s remove UHCP_NotCLFishRod
 tag @s remove UHCP_PlannedEcon
 tag @s remove UHCP_RelicTestingChamber
 tag @s remove UHCP_SLLock

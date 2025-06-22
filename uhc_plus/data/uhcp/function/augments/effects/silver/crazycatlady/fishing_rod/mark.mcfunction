@@ -1,9 +1,10 @@
 # Mark fishing rods
 scoreboard players set @s uhcp_leave 1000
+tag @s remove UHCP_CLFishRod
 execute if items entity @s weapon.offhand minecraft:fishing_rod[!minecraft:custom_data~{uhcp_cat_lady:true}] run item modify entity @s weapon.offhand uhcp:fishing_rod/crazy_cat_lady
-execute if items entity @s hotbar.* minecraft:fishing_rod[!minecraft:custom_data~{uhcp_cat_lady:true}] run function uhcp:augments/effects/silver/crazycatlady/fishing_rod/mark_hotbar
+execute if items entity @s hotbar.* minecraft:fishing_rod[!minecraft:custom_data~{uhcp_cat_lady:true}] run function uhcp:augments/effects/silver/crazycatlady/fishing_rod/mark/hotbar
 
-execute unless items entity @s inventory.* minecraft:fishing_rod[!minecraft:custom_data~{uhcp_cat_lady:true}] run return run function uhcp:augments/effects/silver/crazycatlady/fishing_rod/mark_end
+execute unless items entity @s inventory.* minecraft:fishing_rod[!minecraft:custom_data~{uhcp_cat_lady:true}] run return run function uhcp:augments/effects/silver/crazycatlady/fishing_rod/mark/end
 execute if items entity @s container.9 minecraft:fishing_rod[!minecraft:custom_data~{uhcp_cat_lady:true}] run item modify entity @s container.9 uhcp:fishing_rod/crazy_cat_lady
 execute if items entity @s container.10 minecraft:fishing_rod[!minecraft:custom_data~{uhcp_cat_lady:true}] run item modify entity @s container.10 uhcp:fishing_rod/crazy_cat_lady
 execute if items entity @s container.11 minecraft:fishing_rod[!minecraft:custom_data~{uhcp_cat_lady:true}] run item modify entity @s container.11 uhcp:fishing_rod/crazy_cat_lady
@@ -32,4 +33,4 @@ execute if items entity @s container.33 minecraft:fishing_rod[!minecraft:custom_
 execute if items entity @s container.34 minecraft:fishing_rod[!minecraft:custom_data~{uhcp_cat_lady:true}] run item modify entity @s container.34 uhcp:fishing_rod/crazy_cat_lady
 execute if items entity @s container.35 minecraft:fishing_rod[!minecraft:custom_data~{uhcp_cat_lady:true}] run item modify entity @s container.35 uhcp:fishing_rod/crazy_cat_lady
 
-function uhcp:augments/effects/silver/crazycatlady/fishing_rod/mark_end
+function uhcp:augments/effects/silver/crazycatlady/fishing_rod/mark/end
