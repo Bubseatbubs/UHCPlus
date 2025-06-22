@@ -20,6 +20,7 @@ scoreboard players set #20 uhcp_const 20
 scoreboard players set #24 uhcp_const 24
 scoreboard players set #30 uhcp_const 30
 scoreboard players set #40 uhcp_const 40
+scoreboard players set #45 uhcp_const 45
 scoreboard players set #60 uhcp_const 60
 scoreboard players set #63 uhcp_const 63
 scoreboard players set #64 uhcp_const 64

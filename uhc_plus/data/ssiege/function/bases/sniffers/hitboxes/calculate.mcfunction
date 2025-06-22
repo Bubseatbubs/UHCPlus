@@ -39,8 +39,8 @@ scoreboard players operation %damage uhcp_initStatus *= %multiplier uhcp_initSta
 scoreboard players operation %damage uhcp_initStatus /= #100 uhcp_const
 
 # Base "Armor"
-scoreboard players operation %damage uhcp_initStatus *= #5 uhcp_const
-scoreboard players operation %damage uhcp_initStatus /= #8 uhcp_const
+scoreboard players operation %damage uhcp_initStatus *= #45 uhcp_const
+scoreboard players operation %damage uhcp_initStatus /= #100 uhcp_const
 
 # Attacks that deal less than 1 damage or less get rounded down to 0
 execute if score %damage uhcp_initStatus matches ..100 run return run scoreboard players set %damage uhcp_initStatus 0
