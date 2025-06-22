@@ -1,4 +1,5 @@
 {
+  "parent": "uhcp:defer",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
@@ -94,6 +95,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/silver/crazycatlady/fishing_rod/unmark"
+    "function": "uhcp:augments/effects/silver/crazycatlady/fishing_rod/unmark/defer"
   }
 }

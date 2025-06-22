@@ -10,8 +10,8 @@ execute as @s[team=blue] run execute as @a[team=blue] run function ssiege:titans
 execute as @s[team=red] run execute as @a[team=red] run function ssiege:titans/infernus/blessing_init
 
 # Titan's Might buff
-execute as @s[team=blue] run scoreboard players add @a[team=blue] ssiege_buff_titanslayer 20
-execute as @s[team=red] run scoreboard players add @a[team=red] ssiege_buff_titanslayer 20
+execute as @s[team=blue] run scoreboard players add @a[team=blue] ssiege_buff_titanslayer 250
+execute as @s[team=red] run scoreboard players add @a[team=red] ssiege_buff_titanslayer 250
 
 # Schedule buff removal after 5 minutes
 schedule clear ssiege:titans/reset_titanslayer

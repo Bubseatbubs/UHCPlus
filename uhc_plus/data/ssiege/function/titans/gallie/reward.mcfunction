@@ -10,8 +10,8 @@ execute as @s[team=blue] as @a[team=blue] run attribute @s minecraft:max_health 
 execute as @s[team=red] as @a[team=red] run attribute @s minecraft:max_health modifier add uhcp:max_health 4 add_value
 
 # Titan's Might buff
-execute as @s[team=blue] run scoreboard players add @a[team=blue] ssiege_buff_titanslayer 20
-execute as @s[team=red] run scoreboard players add @a[team=red] ssiege_buff_titanslayer 20
+execute as @s[team=blue] run scoreboard players add @a[team=blue] ssiege_buff_titanslayer 150
+execute as @s[team=red] run scoreboard players add @a[team=red] ssiege_buff_titanslayer 150
 
 # Schedule buff removal after 5 minutes
 schedule clear ssiege:titans/reset_titanslayer

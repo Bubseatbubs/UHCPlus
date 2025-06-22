@@ -4,7 +4,7 @@ execute unless score %end uhcp_initStatus matches 1 if entity @a run function uh
 # Game time
 scoreboard players add %time uhcp_game_time 1
 
-# Deferred inventory management
+# Deferred management (mainly inventory)
 execute if entity @a[tag=UHCP_Defer] run function uhcp:defer
 
 # World border

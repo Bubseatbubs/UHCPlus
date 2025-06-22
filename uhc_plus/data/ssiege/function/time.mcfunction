@@ -10,7 +10,7 @@ function ssiege:end/check
 scoreboard players add %time uhcp_game_time 1
 
 # Inhibitor Invulnerability
-execute if score %time uhcp_game_time matches ..17980 run effect give @e[tag=SSIEGE_inhib] resistance 1 4 true
+execute if score %time uhcp_game_time matches ..17980 run effect give @e[tag=SSIEGE_inhib] resistance 1 4 false
 execute if score %time uhcp_game_time matches 18000 run tellraw @a "The Inhibitors are no longer invulnerable!"
 
 # Inhibitor/Turret update
@@ -18,6 +18,12 @@ function ssiege:bases/inhibitors/update
 
 # Deferred inventory management
 execute if entity @a[tag=UHCP_Defer] run function uhcp:defer
+
+# Player attack cooldown (for Sniffer hitbox system)
+execute as @a[scores={ssiege_attack_cooldown=1..}] run scoreboard players remove @s ssiege_attack_cooldown 1
+
+# Update damage displays
+execute as @e[type=text_display,tag=SSIEGE_damage_display] at @s run function ssiege:bases/sniffers/hitboxes/damage_display/update
 
 # Timers
 scoreboard players remove @a[scores={uhcp_timer=0..}] uhcp_timer 1
@@ -32,80 +38,8 @@ execute if score %time uhcp_game_time matches ..45000 run function ssiege:augmen
 # Timed augment effects
 execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp_game_time >= @s uhcp_game_time run function ssiege:augments/effects/timed
 
-# AFK augment
-execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=300},gamemode=survival] at @s run ride @s mount @n[tag=UHCP_AFKLock,distance=..15]
-
-# Solo leveling
-execute as @a[scores={uhcp_lava_timeInterval=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound
-execute as @a[scores={uhcp_lava_maxHeight=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/return
-
-# Exalted Adventure
-execute as @a[scores={uhcp_augment=503,exalted=1}] at @s run function ssiege:augments/effects/prismatic/exalted_adventure/announce/init
-scoreboard players enable @a[scores={uhcp_augment=503}] exalted
-
-# Blood Diamonds
-execute as @a[scores={uhcp_augment=304}] run function ssiege:augments/effects/gold/blood_diamonds/clear_diamonds
-
-# Bottled Knowledge
-execute as @a[scores={uhcp_augment=306}] run function ssiege:augments/effects/gold/bottledknowledge/levelcheck
-
-# Copper Collector
-execute as @a[scores={uhcp_augment=309}] run function ssiege:augments/effects/gold/copper_collector
-
-# Diamonds in the Rough
-execute as @a[scores={uhcp_augment=312}] run function ssiege:augments/effects/gold/diamondsintherough
-
-# Cram Session
-execute as @a[scores={uhcp_augment=311}] run function ssiege:augments/effects/gold/cramsession/levelcheck
-
-# Earthbender
-execute as @a[scores={uhcp_augment=314}] run function ssiege:augments/effects/gold/earthbender/replace_dirt
-
-# Last Stand
-execute as @a[scores={uhcp_augment=331}] run function ssiege:augments/effects/gold/laststand
-
-# Late Game Specialist
-execute as @a[scores={uhcp_augment=332}] run function ssiege:augments/effects/gold/lategamespecialist/levelcheck
-
-# Hunting Call
-scoreboard players remove @e[tag=UHCP_HuntingCall,scores={uhcp_itemCount=1..}] uhcp_itemCount 1
-
-# Late Looter
-execute as @a[scores={uhcp_augment=333}] run function ssiege:augments/effects/gold/latelooter/update
-
-# Prop hunt
-execute as @a[scores={uhcp_augment=348}] at @s run function uhcp:augments/effects/silver/prophunt/status
-
-# Slime Time
-execute as @a[scores={uhcp_augment=356},gamemode=survival] at @s run function ssiege:augments/effects/gold/slime_time/trail
-
-# Res Tier Player
-execute as @a[scores={uhcp_augment=502}] run function ssiege:augments/effects/prismatic/res_tier_remove_shield
-
-# Open the Gates - NEED TO REVISE OOPS SRY CODING IN 15 MINUTES
-execute as @a[nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] at @s run function ssiege:augments/effects/gold/gates/laser/init
-
-# Goldenless Apples
-execute as @a[scores={uhcp_augment=537}] at @s run function ssiege:augments/effects/prismatic/goldenless_apples/effect
-
-# Expose Weakness
-execute as @a[scores={ssiege_exposed=1..}] run function ssiege:augments/effects/exposed/update
-
-# Cybernetic Download
-execute as @a[scores={uhcp_augment=513},tag=CD_SelectingUpgrade] run function ssiege:augments/effects/prismatic/cybernetic_download/update
-scoreboard players enable @a[scores={uhcp_augment=513}] upgrade
-
-# Buried Treasure
-execute as @a[scores={uhcp_augment=518}] run function ssiege:augments/effects/prismatic/buried_treasures/mined_ore
-
-# Hungry for Blood
-execute as @a[scores={uhcp_augment=529}] run function ssiege:augments/effects/prismatic/hungry_for_blood
-
-# An Exalted Adventure
-execute as @a[scores={uhcp_augment=503}] run function ssiege:augments/effects/prismatic/exalted_adventure/check_items/update
-
-# Babysitting augment - Sniffer modifier
-function ssiege:augments/effects/gold/babysitting/sniffcd
+# Augments that need to run every tick
+function ssiege:augments/tick_augments
 
 # Announce Augments
 execute as @a[scores={augments=1..}] run function ssiege:augments/announce
@@ -125,13 +59,16 @@ execute as @a[scores={ssiege_recall_charge=0}] run function ssiege:recall/finish
 # Update Titans
 execute as @a at @s if entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/update
 execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/hide
-execute as @e[type=!minecraft:player,tag=UHCP_Titan] at @s run function uhcp:titans/update
+execute as @e[type=!minecraft:player,tag=UHCP_Titan] at @s run function ssiege:titans/update
 
 # Update Entity Teams
 execute as @e[type=!player,scores={uhcp_team=2..}] run function ssiege:entity/join_team
 
 # Update Sniffer Bossbar
 function ssiege:bossbar/update
+
+# Update Sniffer Last Stand
+execute as @e[type=sniffer,tag=SSIEGE_sniffer] run function ssiege:bases/sniffers/last_stand/update
 
 # Test kit
 # TODO: Make a Sniffer Siege testkit
@@ -219,12 +156,8 @@ execute if score %time uhcp_game_time >= %homeguard uhcp_game_time run function 
 execute if score %red ssiege_perk_regen matches 1.. if score %time uhcp_game_time >= %red_regen uhcp_game_time run function ssiege:shop/perks/effects/red_regen
 execute if score %blue ssiege_perk_regen matches 1.. if score %time uhcp_game_time >= %blue_regen uhcp_game_time run function ssiege:shop/perks/effects/blue_regen
 
-# Sniffer Aura Perk - sniffer regen must be run first as %aura is updated in second function
-execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssiege:bases/sniffers/low_health_regen
+# Sniffer Aura Perk
 execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssiege:shop/perks/effects/sniffer_aura
-
-# Sniffer backdoor protection
-execute as @e[type=sniffer,tag=SSIEGE_sniffer] at @s run function ssiege:bases/sniffers/backdoor_protection/update_res
 
 # Titan Spawning
 execute if score %time uhcp_game_time = %titans uhcp_game_time run function ssiege:titans/timed

@@ -10,8 +10,8 @@ execute as @s[team=blue] as @a[team=blue,gamemode=survival] at @s run effect giv
 execute as @s[team=red] as @a[team=red,gamemode=survival] at @s run effect give @s minecraft:absorption infinite 2
 
 # Titan's Might buff
-execute as @s[team=blue] run scoreboard players add @a[team=blue] ssiege_buff_titanslayer 10
-execute as @s[team=red] run scoreboard players add @a[team=red] ssiege_buff_titanslayer 10
+execute as @s[team=blue] run scoreboard players add @a[team=blue] ssiege_buff_titanslayer 50
+execute as @s[team=red] run scoreboard players add @a[team=red] ssiege_buff_titanslayer 50
 
 # Schedule buff removal after 5 minutes
 schedule clear ssiege:titans/reset_titanslayer

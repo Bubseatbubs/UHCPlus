@@ -994,7 +994,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:45s,uhcp_cat_lady:0b}"
+              "tag": "{uhcp_augSelect:1b,augment:45s,uhcp_cat_lady:false}"
             },
             {
               "function": "minecraft:set_name",

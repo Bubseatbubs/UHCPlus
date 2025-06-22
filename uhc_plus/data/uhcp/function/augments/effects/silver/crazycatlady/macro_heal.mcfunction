@@ -1,1 +1,0 @@
-$effect give @s minecraft:regeneration $(count) 1 false

@@ -29,8 +29,8 @@ execute as @a[team=red] run function ssiege:bases/teleport_red
 execute at @s positioned ~ ~ ~ run fill ~-24 ~10 ~23 ~23 ~14 ~-24 minecraft:air
 execute at @s positioned ~ ~ ~ run fill ~-24 ~35 ~23 ~23 ~35 ~-24 minecraft:barrier
 
-execute at @s run fill ~-5 ~2 ~-5 ~4 ~6 ~4 minecraft:barrier
-execute at @s run fill ~-5 ~8 ~-5 ~4 ~11 ~4 minecraft:barrier
+execute at @s run fill ~-6 ~2 ~-5 ~6 ~6 ~4 minecraft:barrier
+execute at @s run fill ~-6 ~8 ~-5 ~6 ~11 ~4 minecraft:barrier
 
 summon marker ~-77 ~ ~ {Tags:["SSIEGE_HealingAura"]}
 kill @e[type=marker,tag=SSIEGE_edge]

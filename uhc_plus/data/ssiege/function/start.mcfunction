@@ -66,6 +66,7 @@ scoreboard players reset @a ssiege_gapples_eaten
 scoreboard players set @a ssiege_kills 0
 scoreboard players set @a ssiege_deaths 0
 scoreboard players set @a ssiege_sniffer_hits 0
+scoreboard players set @a ssiege_exposed -1
 scoreboard players set @a[team=blue] uhcp_team 2
 scoreboard players set @a[team=red] uhcp_team 13
 
@@ -174,4 +175,5 @@ forceload add -90 -90 -170 -90
 schedule function ssiege:start_augment_selection 200
 
 # Add on custom player balancing buffs
+function ssiege:buffs/give_tags
 execute as @a[tag=SSIEGE_Buff] run function ssiege:buffs/give_attributes

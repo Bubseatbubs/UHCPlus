@@ -14,4 +14,5 @@ execute if score @s shop matches 12 run function ssiege:shop/runes/purchase/gold
 execute if score @s shop matches 13 run function ssiege:shop/runes/purchase/bridge_ball
 execute if score @s shop matches 14 run function ssiege:shop/runes/purchase/ender_pearl
 execute if score @s shop matches 15 run function ssiege:shop/runes/purchase/netherite
+execute if score @s shop matches 16 run function ssiege:shop/runes/purchase/arrow
 scoreboard players set @s shop 0

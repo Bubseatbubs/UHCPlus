@@ -1,0 +1,1 @@
+$scoreboard players add @s ssiege_damage_dealt $(damage)

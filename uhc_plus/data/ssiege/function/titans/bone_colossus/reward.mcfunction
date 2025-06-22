@@ -13,8 +13,8 @@ execute as @s[team=red] as @a[team=red,gamemode=survival] at @s run summon wolf 
 execute as @e[type=wolf,tag=SSIEGE_fenrir_reward,team=red] run data modify entity @s Owner set from entity @p[team=red,gamemode=survival] UUID
 
 # Titan's Might buff
-execute as @s[team=blue] run scoreboard players add @a[team=blue] ssiege_buff_titanslayer 15
-execute as @s[team=red] run scoreboard players add @a[team=red] ssiege_buff_titanslayer 15
+execute as @s[team=blue] run scoreboard players add @a[team=blue] ssiege_buff_titanslayer 100
+execute as @s[team=red] run scoreboard players add @a[team=red] ssiege_buff_titanslayer 100
 
 # Schedule buff removal after 5 minutes
 schedule clear ssiege:titans/reset_titanslayer

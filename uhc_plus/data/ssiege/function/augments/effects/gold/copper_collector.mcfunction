@@ -4,7 +4,7 @@ scoreboard players set @s ssiege_mine_copper 0
 scoreboard players set @s ssiege_mine_dcopper 0
 
 execute store result score @s uhcp_initStatus run random value 0..99
-execute if score @s uhcp_initStatus matches 15.. run return fail
+execute if score @s uhcp_initStatus matches 12.. run return fail
 
 execute at @s run loot spawn ^ ^ ^2 loot ssiege:soulshard
 execute at @s as @e[type=item,nbt={Item:{id:"minecraft:copper_ingot"}},distance=..15] run execute store result score @s uhcp_initStatus run data get entity @s Age

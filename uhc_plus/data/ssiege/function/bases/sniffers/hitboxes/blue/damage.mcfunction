@@ -1,0 +1,1 @@
+$damage @n[tag=bluesniffer] $(damage) uhcp:instant_damage by @s

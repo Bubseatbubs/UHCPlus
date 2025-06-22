@@ -1,6 +1,6 @@
 # Check for redstone
 scoreboard players set @s uhcp_game_time -1
-execute unless predicate uhcp:augments/redstone_ritual run return run playsound minecraft:block.note_block.snare master @s ~ ~ ~ 1 1 1
+execute unless predicate uhcp:augments/redstone_ritual run return run function uhcp:augments/effects/gold/redstoneritual/failure
 scoreboard players set @s uhcp_leave 1000
 
 # Count redstone

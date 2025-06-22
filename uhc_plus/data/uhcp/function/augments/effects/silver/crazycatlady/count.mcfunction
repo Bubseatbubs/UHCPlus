@@ -1,16 +1,47 @@
+# Finish healing process
+execute as @s[tag=UHCP_CLHeal] run return run function uhcp:augments/effects/silver/crazycatlady/max_health/reset
+
+# Sum owned cats
 tag @s add UHCP_Owner
-scoreboard players reset @s uhcp_aug_count
-execute as @e[type=minecraft:cat] on owner run scoreboard players add @s[tag=UHCP_Owner] uhcp_aug_count 1
-scoreboard players add @s[scores={uhcp_aug_count=1..}] uhcp_aug_count 1
-
-execute unless score @s uhcp_aug_count matches 1.. run return run tag @s remove UHCP_Owner
-
-execute at @s run particle minecraft:happy_villager ~ ~ ~ 1 1.5 1 0.1 10 normal @s
-playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 2 1
-execute store result storage uhcp:crazy_cat_lady cats.count int 1 run scoreboard players get @s uhcp_aug_count
-function uhcp:augments/effects/silver/crazycatlady/macro_heal with storage uhcp:crazy_cat_lady cats
-
+scoreboard players set @s uhcp_initStatus 0
+execute as @e[type=minecraft:cat] on owner run scoreboard players add @s uhcp_initStatus 1000000
 tag @s remove UHCP_Owner
 
-scoreboard players add @s uhcp_game_time 1200
-execute if score %time uhcp_game_time >= @s uhcp_game_time run function uhcp:augments/effects/silver/crazycatlady/count
+# No cats found
+execute if score @s uhcp_initStatus matches 0 run return run function uhcp:augments/effects/silver/crazycatlady/no_cats
+
+# Effects
+particle minecraft:happy_villager ~ ~ ~ 1 1.5 1 0.1 10 normal @s
+playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 2 1
+
+# Add time
+scoreboard players operation @s uhcp_game_time /= #1200 uhcp_const
+scoreboard players add @s uhcp_game_time 1
+scoreboard players operation @s uhcp_game_time *= #1200 uhcp_const
+scoreboard players set @s uhcp_aug_count 1
+execute if score %time uhcp_game_time >= @s uhcp_game_time run function uhcp:augments/effects/silver/crazycatlady/multiplier
+
+# Full health already (no healing needed)
+execute store result score @s uhcp_aug_stack run data get entity @s Health 1000000
+execute store result score @s uhcp_aug_time run attribute @s minecraft:max_health get 1000000
+execute if score @s uhcp_initStatus >= @s uhcp_aug_time run return fail
+
+# Fully heal
+scoreboard players operation @s uhcp_initStatus += @s uhcp_aug_stack
+execute if score @s uhcp_initStatus >= @s uhcp_aug_time run return run effect give @s minecraft:instant_health 1 9 true
+
+# Partially heal
+scoreboard players operation @s uhcp_initStatus -= @s uhcp_aug_time
+execute store result score @s uhcp_aug_time run attribute @s minecraft:max_health get 100
+scoreboard players operation @s uhcp_initStatus /= @s uhcp_aug_time
+execute store result storage uhcp:augments CatLady.multiplier double 0.0001 run scoreboard players get @s uhcp_initStatus
+function uhcp:augments/effects/silver/crazycatlady/max_health/heal with storage uhcp:augments CatLady
+effect give @s minecraft:instant_health 1 9 true
+
+# Prepare to reset max health
+scoreboard players operation @s uhcp_aug_time = @s uhcp_game_time
+scoreboard players operation @s uhcp_game_time -= %time uhcp_game_time
+execute if score @s uhcp_game_time matches ..2 run scoreboard players add @s uhcp_aug_time 3
+scoreboard players operation @s uhcp_game_time = %time uhcp_game_time
+scoreboard players add @s uhcp_game_time 2
+tag @s add UHCP_CLHeal

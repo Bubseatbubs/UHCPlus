@@ -1,6 +1,5 @@
 ##
-# Gives player the augment they selected
-# When the ID returns 0, that means the augment does nothing at the start of the game
+# Initializes player's selected augment at game start
 ##
 
 # Augment tiers

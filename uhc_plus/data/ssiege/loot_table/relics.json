@@ -50,17 +50,6 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "ssiege:relics/windfall",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
           "value": "ssiege:relics/gravity_globe",
           "functions": [
             {

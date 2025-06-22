@@ -105,6 +105,7 @@ scoreboard objectives add uhcp_transformDuration dummy
 scoreboard objectives add ssiege_buff_titanslayer dummy
 scoreboard objectives add ssiege_current_encounter dummy "Encounter: "
 scoreboard objectives add ssiege_currently_shopping dummy
+scoreboard objectives add ssiege_attack_cooldown dummy
 scoreboard objectives add ssiege_death_timer dummy
 scoreboard objectives add ssiege_giants dummy
 scoreboard objectives add ssiege_kills dummy
@@ -140,6 +141,7 @@ scoreboard objectives add ssiege_shards dummy
 scoreboard objectives add ssiege_unlocked_runesmith dummy
 scoreboard objectives add ssiege_exposed dummy
 scoreboard objectives add ssiege_gapples_eaten dummy
+scoreboard objectives add ssiege_damage_dealt dummy "Player Damage Dealt (Pre-Mitigation)"
 scoreboard objectives add ssiege_mine_ddiamonds_stat minecraft.mined:minecraft.deepslate_diamond_ore
 scoreboard objectives add ssiege_mine_diamonds_stat minecraft.mined:minecraft.diamond_ore
 scoreboard objectives add ssiege_mine_dgold_stat minecraft.mined:minecraft.deepslate_gold_ore

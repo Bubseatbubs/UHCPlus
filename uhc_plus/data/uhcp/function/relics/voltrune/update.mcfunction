@@ -4,7 +4,7 @@ scoreboard players add @s uhcp_timer 1
 scoreboard players add @s uhcp_game_time 1
 
 execute as @s[tag=UHCP_ZeusFavor,scores={uhcp_game_time=118}] as @e[tag=!UHCP_Invulnerable,predicate=uhcp:targetable,distance=..12.5] unless score @s uhcp_team = @n[tag=UHCP_CurrentFluxFactor] uhcp_team at @s run function uhcp:titans/giga_creeper/lightning/summon_indicator
-execute at @s[tag=UHCP_VoltruneActive] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] unless score @s uhcp_team = @n[tag=UHCP_CurrentFluxFactor] uhcp_team run effect give @s minecraft:slowness 1 0 false
+execute at @s[tag=UHCP_VoltruneActive] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] unless score @s uhcp_team = @n[tag=UHCP_CurrentFluxFactor] uhcp_team run effect give @s minecraft:slowness 1 2 false
 execute at @s[tag=UHCP_VoltruneActive] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] if score @s uhcp_team = @n[tag=UHCP_CurrentFluxFactor] uhcp_team run effect give @s minecraft:speed 1 1 false
 execute at @s[tag=UHCP_VoltruneActive] as @e[type=!#uhcp:inanimate_mobs,distance=..12.5] if score @s uhcp_team = @n[tag=UHCP_CurrentFluxFactor] uhcp_team run effect give @s minecraft:jump_boost 1 0 false
 
