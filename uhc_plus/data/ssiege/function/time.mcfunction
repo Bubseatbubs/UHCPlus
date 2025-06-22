@@ -78,14 +78,14 @@ execute as @e[type=sniffer,tag=SSIEGE_sniffer] run function ssiege:bases/sniffer
 execute as @a[scores={uhcp_groovy=1}] at @s run particle minecraft:note ~ ~ ~ 1.5 1.5 1.5 0.001 2 normal @s
 execute as @a[tag=UHCP_IsRabbit] at @s run function uhcp:consumables/magic_trick/update
 execute as @a[tag=UHCP_IsAttackTitan] at @s run function uhcp:consumables/titan_spinal_fluid/update
-# Pretty sure this shouldn't actually be here but oops i gave up - rain
-function ssiege:consumables/bridge_ball/update
 
-# Update speed of golden apples
+# Pretty sure this shouldn't actually be here but oops i gave up - rain
+execute as @e[type=snowball] run function ssiege:consumables/bridge_ball/update
+function ssiege:consumables/bridge_ball/update_trail
+
+# Update speed of golden apples - temp solution while I work on how to collate stuff
 execute as @a[gamemode=survival] run function ssiege:buffs/medium_gapples
-item modify entity @e[type=item,nbt={Item:{id:"minecraft:golden_apple"}}] contents ssiege:make_medium
-#execute as @a[tag=SSIEGE_Buff,gamemode=survival] run function ssiege:buffs/faster_gapples
-#execute as @a[tag=!SSIEGE_Buff,gamemode=survival] run function ssiege:buffs/slower_gapples
+execute as @a[gamemode=survival] as @e[type=item,nbt={Item:{id:"minecraft:golden_apple"}},distance=..1] run item modify entity @s contents ssiege:make_medium
 
 # Ate golden apple effect
 execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:entity/items/ate_golden_apple/update
