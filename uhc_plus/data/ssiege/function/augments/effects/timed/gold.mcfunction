@@ -15,6 +15,9 @@ execute if score @s uhcp_augment matches 313 run return run function ssiege:augm
 # echolocation
 execute if score @s uhcp_augment matches 315 run return run function ssiege:augments/effects/gold/echolocation
 
+# Final Upgrade
+execute if score @s uhcp_augment matches 316 run return run function ssiege:augments/effects/gold/finalupgrade
+
 # jump king
 execute if score @s uhcp_augment matches 329 run return run function ssiege:augments/effects/gold/jumpking/givecharge
 
