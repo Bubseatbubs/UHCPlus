@@ -1,14 +1,11 @@
+# Disable last stand
 scoreboard players set @s ssiege_unlocked_runesmith 0
 
 # Get current Sniffer's team
 scoreboard players operation %team uhcp_initStatus = @s uhcp_team
 
-# Calculate how many shards to give
-scoreboard players operation %temp ssiege_shards = %time uhcp_game_time
-scoreboard players operation %temp ssiege_shards /= #2400 uhcp_const
-
 # Give Shards
-execute as @a run execute if score @s uhcp_team = %team uhcp_initStatus run scoreboard players operation @s ssiege_multi = %temp ssiege_shards
+execute as @a run execute if score @s uhcp_team = %team uhcp_initStatus run scoreboard players set @s ssiege_multi 22
 execute as @a run execute if score @s uhcp_team = %team uhcp_initStatus run loot give @s loot ssiege:multi_soulshard
 
 # Notify players
