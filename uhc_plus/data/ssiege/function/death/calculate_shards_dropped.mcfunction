@@ -15,3 +15,5 @@ execute if score @s ssiege_killstreak matches 3.. store result score %kill_bount
 scoreboard players operation @s ssiege_shards -= %reverse_bounty ssiege_shards
 scoreboard players operation @s ssiege_shards += %kill_bounty ssiege_shards
 execute if score @s ssiege_shards matches ..0 run scoreboard players set @s ssiege_shards 1
+
+execute if score %time uhcp_game_time matches ..18000 run scoreboard players set @s ssiege_shards 1

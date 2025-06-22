@@ -13,6 +13,7 @@ execute on attacker as @s[type=player,advancements={ssiege:killed_player=true}] 
 execute if score %killer_exists ssiege_multi matches 0 run function ssiege:death/pve_death
 
 # If player was killed by a player and did not kill anyone this life, add 10 minutes to their reverse bounty timer
+# reverse bounty also added in pve deaths after 15
 execute if score %killer_exists ssiege_multi matches 1 if score @s ssiege_killstreak matches 0 run scoreboard players add @s ssiege_reverse_bounty 12000
 
 # Reset player's killstreak

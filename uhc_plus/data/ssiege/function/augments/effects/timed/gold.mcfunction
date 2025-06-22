@@ -18,7 +18,7 @@ execute if score @s uhcp_augment matches 315 run return run function ssiege:augm
 # jump king
 execute if score @s uhcp_augment matches 329 run return run function ssiege:augments/effects/gold/jumpking/givecharge
 
-# Regenerative Shields
+# Open the Gates
 execute if score @s uhcp_augment matches 341 run return run function ssiege:augments/effects/gold/gates/laser/give
 
 # Regenerative Shields

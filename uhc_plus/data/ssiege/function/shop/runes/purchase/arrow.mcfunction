@@ -4,6 +4,6 @@ execute as @s[team=red] unless entity @n[tag=SSIEGE_RED_RUNESMITH,distance=..20]
 execute if score @s ssiege_unlocked_runesmith matches ..0 run execute store result storage ssiege:temp refund int 1 run scoreboard players get @s ssiege_unlocked_runesmith
 execute if score @s ssiege_unlocked_runesmith matches ..0 run return run function ssiege:shop/runes/purchase/refund_consumable with storage ssiege:temp
 
-loot give @s loot ssiege:consumables/bridge_ball
+give @s arrow 12
 
-tellraw @s ["",{"text":"You purchased a "},{"text":"Bridge Ball","color":"yellow"},{"text":"!"}]
+tellraw @s ["",{"text":"You purchased an "},{"text":"Arrow Pack","color":"yellow"},{"text":"!"}]
