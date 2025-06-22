@@ -1,4 +1,7 @@
 advancement revoke @s only ssiege:player_hit_hitbox/player_hit_blue_sniffer
+execute if score @n[type=sniffer,tag=bluesniffer,distance=..24] uhcp_game_time > %time uhcp_game_time run tellraw @s ["",{"text":"The "},{"text":"Sniffer","bold":true,"color":"blue"},{"text":" is "},{"text":"invulnerable","color":"yellow"},{"text":" during its Last Stand!"}]
+execute if score @n[type=sniffer,tag=bluesniffer,distance=..24] uhcp_game_time > %time uhcp_game_time run return run playsound entity.player.attack.weak master @s ~ ~ ~ 1 1 1
+
 execute if score %blue_inhib_up uhcp_game_time matches 1 run tellraw @s {"text":"You need to destroy the Inhibitor first!","color":"dark_red"}
 execute if score %blue_inhib_up uhcp_game_time matches 1 run return run playsound minecraft:block.note_block.bass player @s ~ ~ ~ 1 1 1
 

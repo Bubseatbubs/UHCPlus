@@ -25,10 +25,7 @@ scoreboard players set %multiplier uhcp_initStatus 100
 execute as @s[team=blue] run scoreboard players operation %temp uhcp_initStatus = %blue ssiege_perk_titanslayer
 execute as @s[team=red] run scoreboard players operation %temp uhcp_initStatus = %red ssiege_perk_titanslayer
 scoreboard players remove %temp uhcp_initStatus 1
-execute if score %temp uhcp_initStatus matches ..6 run scoreboard players operation %temp uhcp_initStatus *= #15 uhcp_const
-execute if score %temp ssiege_buff_titanslayer matches 7.. run scoreboard players remove %temp uhcp_initStatus 6
-execute if score %temp ssiege_buff_titanslayer matches 7.. run scoreboard players operation %temp uhcp_initStatus *= #10 uhcp_const
-execute if score %temp ssiege_buff_titanslayer matches 7.. run scoreboard players add %temp uhcp_initStatus 90
+scoreboard players operation %temp uhcp_initStatus *= #15 uhcp_const
 scoreboard players operation %multiplier uhcp_initStatus += %temp uhcp_initStatus
 
 # Titan's Might Buff
@@ -37,12 +34,12 @@ scoreboard players operation %multiplier uhcp_initStatus += @s ssiege_buff_titan
 # Not quite fully charged attack penalty -15% damage
 execute if score @s ssiege_attack_cooldown matches 1.. run scoreboard players remove %multiplier uhcp_initStatus 15
 
-# Base "Armor"
-scoreboard players operation %multiplier uhcp_initStatus /= #4 uhcp_const
-
 # Apply all multiplicative scaling
 scoreboard players operation %damage uhcp_initStatus *= %multiplier uhcp_initStatus
 scoreboard players operation %damage uhcp_initStatus /= #100 uhcp_const
+
+# Base "Armor"
+scoreboard players operation %damage uhcp_initStatus /= #4 uhcp_const
 
 # Attacks that deal less than 1 damage or less get rounded down to 0
 execute if score %damage uhcp_initStatus matches ..100 run return run scoreboard players set %damage uhcp_initStatus 0
