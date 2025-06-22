@@ -1,0 +1,1 @@
+$bossbar set ssiege:red_sniffer value $(red_hp)

@@ -3,3 +3,9 @@ summon interaction ~-2 ~2 ~-0.5 {width:10.25,height:11,Tags:["BS_Hitbox","SSIEGE
 summon interaction ~1 ~2 ~-0.5 {width:10.25,height:11,Tags:["BS_Hitbox","SSIEGE_Hitbox"]}
 summon interaction ~-10 ~3 ~-0.5 {width:6,height:6,Tags:["BS_Hitbox","SSIEGE_Hitbox"]}
 scoreboard players set @e[tag=bluesniffer] uhcp_team 2
+
+# uhcp_game_time represents what time Last Stand invuln falls off
+scoreboard players set @e[tag=bluesniffer] uhcp_game_time 0
+
+# Represents if Last Stand has been used
+scoreboard players set @e[tag=bluesniffer] ssiege_unlocked_runesmith 1

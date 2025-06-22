@@ -67,6 +67,9 @@ execute as @e[type=!player,scores={uhcp_team=2..}] run function ssiege:entity/jo
 # Update Sniffer Bossbar
 function ssiege:bossbar/update
 
+# Update Sniffer Last Stand
+execute as @e[type=sniffer,tag=SSIEGE_sniffer] run function ssiege:bases/sniffers/last_stand/update
+
 # Test kit
 # TODO: Make a Sniffer Siege testkit
 #execute as @a[scores={testkit=1..}] run function uhcp:testkit/verify
@@ -153,8 +156,7 @@ execute if score %time uhcp_game_time >= %homeguard uhcp_game_time run function 
 execute if score %red ssiege_perk_regen matches 1.. if score %time uhcp_game_time >= %red_regen uhcp_game_time run function ssiege:shop/perks/effects/red_regen
 execute if score %blue ssiege_perk_regen matches 1.. if score %time uhcp_game_time >= %blue_regen uhcp_game_time run function ssiege:shop/perks/effects/blue_regen
 
-# Sniffer Aura Perk - sniffer regen must be run first as %aura is updated in second function
-execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssiege:bases/sniffers/low_health_regen
+# Sniffer Aura Perk
 execute if score %time uhcp_game_time >= %aura uhcp_game_time run function ssiege:shop/perks/effects/sniffer_aura
 
 # Titan Spawning
