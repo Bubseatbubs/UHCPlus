@@ -5,5 +5,6 @@ execute if score @s uhcp_augment matches 201 run return run scoreboard players g
 
 execute if score @s uhcp_augment matches 365 run return run scoreboard players get %arrow_limit5 uhcp_arrowCount
 execute if score @s uhcp_augment matches 508 run return run scoreboard players get %arrow_limit201 uhcp_arrowCount
+execute if score @s uhcp_augment matches 546 run return run scoreboard players get %arrow_limit201 uhcp_arrowCount
 
 return run scoreboard players get %arrow_limit uhcp_arrowCount
