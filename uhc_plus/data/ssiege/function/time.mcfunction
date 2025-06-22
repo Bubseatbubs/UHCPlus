@@ -59,7 +59,7 @@ execute as @a[scores={ssiege_recall_charge=0}] run function ssiege:recall/finish
 # Update Titans
 execute as @a at @s if entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/update
 execute as @a[tag=UHCP_TitanHealthVisible] at @s unless entity @e[tag=UHCP_Titan,distance=..32] run function uhcp:titans/bossbar/hide
-execute as @e[type=!minecraft:player,tag=UHCP_Titan] at @s run function uhcp:titans/update
+execute as @e[type=!minecraft:player,tag=UHCP_Titan] at @s run function ssiege:titans/update
 
 # Update Entity Teams
 execute as @e[type=!player,scores={uhcp_team=2..}] run function ssiege:entity/join_team
