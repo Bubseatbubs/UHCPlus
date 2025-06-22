@@ -828,22 +828,32 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Any enemy you hit with a Bow glows and",
+                  "text": "Any enemy you hit with a crossbow glows",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "takes 20% increased damage from all",
+                  "text": "and takes 20% increased damage from all",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "sources for 10 seconds. Gain a Power I",
+                  "text": "sources for 15 seconds. Gain a Piercing",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "Bow and 12 arrows.",
+                  "text": "I, Quick Charge II crossbow and 24",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "arrows. Your arrow limit is increased to",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "64.",
                   "color": "white",
                   "italic": false
                 }
@@ -1577,7 +1587,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_pickaxe",
+          "name": "minecraft:netherite_pickaxe",
           "weight": 1,
           "functions": [
             {
@@ -1609,12 +1619,12 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain a Diamond Pickaxe with Efficiency",
+                  "text": "Gain a Netherite Pickaxe with Efficiency",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "III and Fortune II.",
+                  "text": "I and Fortune II.",
                   "color": "white",
                   "italic": false
                 }
@@ -2867,22 +2877,17 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain a Portal Opener that returns 4",
+                  "text": "Gain a Portal Gate, which returns 4",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "minutes after use. When used, create 2",
+                  "text": "minutes after use. After opening a",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "temporary portals between your current",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "location and its landing spot.",
+                  "text": "portal, gain speed I for 1 minute.",
                   "color": "white",
                   "italic": false
                 }

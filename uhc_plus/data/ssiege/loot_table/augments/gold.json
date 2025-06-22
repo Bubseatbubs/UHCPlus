@@ -22,7 +22,7 @@
               "name": [
                 {
                   "text": "AFK",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -42,7 +42,7 @@
                   "italic": false
                 },
                 {
-                  "text": "Diamonds and 2 Soul Shards after.",
+                  "text": "Diamonds and 3 Soul Shards after.",
                   "color": "white",
                   "italic": false
                 }
@@ -88,7 +88,7 @@
               "name": [
                 {
                   "text": "Babysitting",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -159,7 +159,7 @@
               "name": [
                 {
                   "text": "Back Off!",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -225,7 +225,7 @@
               "name": [
                 {
                   "text": "Featherstorm",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -306,7 +306,7 @@
               "name": [
                 {
                   "text": "Blood Diamonds",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -377,7 +377,7 @@
               "name": [
                 {
                   "text": "Bookworm I",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -443,7 +443,7 @@
               "name": [
                 {
                   "text": "Bottled Knowledge",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -458,17 +458,17 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain 20 Bottles o' Enchanting.The first",
+                  "text": "Gain 10 Bottles o' Enchanting.The first",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "time you reach each XP level, gain a",
+                  "text": "time you reach each XP level, gain 2",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "Diamond.",
+                  "text": "Diamonds.",
                   "color": "white",
                   "italic": false
                 }
@@ -514,7 +514,7 @@
               "name": [
                 {
                   "text": "Caerbannog",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -580,7 +580,7 @@
               "name": [
                 {
                   "text": "Copper Collector",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -595,7 +595,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Copper Ore you mine has a 15% chance to",
+                  "text": "Copper Ore you mine has a 12% chance to",
                   "color": "white",
                   "italic": false
                 },
@@ -646,7 +646,7 @@
               "name": [
                 {
                   "text": "Cowboy Cosplay",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -717,7 +717,7 @@
               "name": [
                 {
                   "text": "Cram Session",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -788,7 +788,7 @@
               "name": [
                 {
                   "text": "Diamonds in the Rough",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -854,7 +854,7 @@
               "name": [
                 {
                   "text": "Drip Economy II",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -920,7 +920,7 @@
               "name": [
                 {
                   "text": "Earthbender",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -935,12 +935,22 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "You can place Dirt infinitely and are",
+                  "text": "Whenever you place Dirt, it is",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "immune to fall damage. Gain a Dirt.",
+                  "text": "immediately replenished in your",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "inventory. Gain a Dirt and immunity to",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "fall damage.",
                   "color": "white",
                   "italic": false
                 }
@@ -986,7 +996,7 @@
               "name": [
                 {
                   "text": "Echolocation",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1052,7 +1062,7 @@
               "name": [
                 {
                   "text": "Final Upgrade",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1072,7 +1082,7 @@
                   "italic": false
                 },
                 {
-                  "text": "Upgrade Templates.",
+                  "text": "Upgrade Template at 24 minutes.",
                   "color": "white",
                   "italic": false
                 }
@@ -1118,7 +1128,7 @@
               "name": [
                 {
                   "text": "Fire and Water",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1189,7 +1199,7 @@
               "name": [
                 {
                   "text": "Gapple Gap I",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1250,7 +1260,7 @@
               "name": [
                 {
                   "text": "Hardstuck Iron",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1316,7 +1326,7 @@
               "name": [
                 {
                   "text": "Harvest Season II",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1336,7 +1346,7 @@
                   "italic": false
                 },
                 {
-                  "text": "a 50% chance to drop a Golden Apple.",
+                  "text": "a 40% chance to drop a Golden Apple.",
                   "color": "white",
                   "italic": false
                 }
@@ -1382,7 +1392,7 @@
               "name": [
                 {
                   "text": "Healing Orbs II",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1402,7 +1412,7 @@
                   "italic": false
                 },
                 {
-                  "text": "blocks of you, heal 4 hearts.",
+                  "text": "blocks of you, heal 5 hearts.",
                   "color": "white",
                   "italic": false
                 }
@@ -1447,8 +1457,8 @@
               "target": "item_name",
               "name": [
                 {
-                  "text": "Hungry for Blood",
-                  "color": "gold",
+                  "text": "Tracker",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1468,7 +1478,12 @@
                   "italic": false
                 },
                 {
-                  "text": "All-Seeing Eyes.",
+                  "text": "All-Seeing Eyes. (these items help you",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "find enemy players)",
                   "color": "white",
                   "italic": false
                 }
@@ -1514,7 +1529,7 @@
               "name": [
                 {
                   "text": "Rush Order",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1580,7 +1595,7 @@
               "name": [
                 {
                   "text": "Jump King",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1595,12 +1610,17 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain a Mace. Also, gain a Wind Charge",
+                  "text": "Gain a Mace and Diamond Boots with",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "every 90 seconds.",
+                  "text": "Feather Falling III, Protection I. Also,",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "gain a Wind Charge every 90 seconds.",
                   "color": "white",
                   "italic": false
                 }
@@ -1646,7 +1666,7 @@
               "name": [
                 {
                   "text": "Large and in Charge",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1712,7 +1732,7 @@
               "name": [
                 {
                   "text": "Last Stand",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1778,7 +1798,7 @@
               "name": [
                 {
                   "text": "Late Game Specialist",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1844,7 +1864,7 @@
               "name": [
                 {
                   "text": "Late Looter",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1915,7 +1935,7 @@
               "name": [
                 {
                   "text": "Less than 3",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1981,7 +2001,7 @@
               "name": [
                 {
                   "text": "Lil Bro",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -1996,7 +2016,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Become smaller. (85% size)",
+                  "text": "Become smaller (88% size).",
                   "color": "white",
                   "italic": false
                 }
@@ -2042,7 +2062,7 @@
               "name": [
                 {
                   "text": "Locked Out",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -2108,7 +2128,7 @@
               "name": [
                 {
                   "text": "Money Money",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -2123,7 +2143,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain 40 Gold Ingots and 8 Diamonds.",
+                  "text": "Gain 40 Gold Ingots and 12 Diamonds.",
                   "color": "white",
                   "italic": false
                 }
@@ -2169,7 +2189,7 @@
               "name": [
                 {
                   "text": "Moonwalking",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -2223,6 +2243,82 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:recovery_compass",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:341s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Open the Gates",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Gain a Portal Opener every 8 minutes",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "after use. When used, create 2 temporary",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "portals that teleport players between",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "them.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:341s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:tnt",
           "weight": 1,
           "functions": [
@@ -2240,7 +2336,7 @@
               "name": [
                 {
                   "text": "Oppenheimer",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -2311,7 +2407,7 @@
               "name": [
                 {
                   "text": "Parasite",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -2382,7 +2478,7 @@
               "name": [
                 {
                   "text": "Phantom Saber I",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -2453,7 +2549,7 @@
               "name": [
                 {
                   "text": "Prop Hunt",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -2544,7 +2640,7 @@
               "name": [
                 {
                   "text": "Protect Protocol",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -2610,7 +2706,7 @@
               "name": [
                 {
                   "text": "Regenerative Shields",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -2681,7 +2777,7 @@
               "name": [
                 {
                   "text": "Relics of the Past",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -2742,7 +2838,7 @@
               "name": [
                 {
                   "text": "Slime Time",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -2796,7 +2892,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:feather",
+          "name": "minecraft:glass_bottle",
           "weight": 1,
           "functions": [
             {
@@ -2813,7 +2909,7 @@
               "name": [
                 {
                   "text": "Sneaky Sneaky",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -2879,7 +2975,7 @@
               "name": [
                 {
                   "text": "Soul Siphon",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -2950,7 +3046,7 @@
               "name": [
                 {
                   "text": "Starter Kit I",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -3026,7 +3122,7 @@
               "name": [
                 {
                   "text": "Stay Alert",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -3097,7 +3193,7 @@
               "name": [
                 {
                   "text": "Summoned Help",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -3163,7 +3259,7 @@
               "name": [
                 {
                   "text": "Take Aim",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -3229,7 +3325,7 @@
               "name": [
                 {
                   "text": "The B.O.A.T.",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -3300,7 +3396,7 @@
               "name": [
                 {
                   "text": "Thundercaller",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -3315,12 +3411,17 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Your attacks have a 10% chance to summon",
+                  "text": "Your attacks on enemy players have a 15%",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "a Lightning Bolt on your target.",
+                  "text": "chance to summon a Lightning Bolt on",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "them.",
                   "color": "white",
                   "italic": false
                 }
@@ -3349,7 +3450,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:packed_mud",
+          "name": "minecraft:redstone_block",
           "weight": 1,
           "functions": [
             {
@@ -3358,15 +3459,15 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:370s}"
+              "tag": "{uhcp_augSelect:1b,augment:373s}"
             },
             {
               "function": "minecraft:set_name",
               "target": "item_name",
               "name": [
                 {
-                  "text": "Tightly Packed",
-                  "color": "gold",
+                  "text": "Trap Master",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -3381,12 +3482,27 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain 4 Max Hearts. Lose 9 inventory",
+                  "text": "Gain a Gold Sword with Knockback V, an",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "slots.",
+                  "text": "Iron Pickaxe, an Iron Shovel with",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Efficiency III, Unbreaking III, 16",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Signs, 3 Pistons, 3 Sticky Pistons, and",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "64 Redstone.",
                   "color": "white",
                   "italic": false
                 }
@@ -3404,7 +3520,7 @@
                   "slots": {
                     "container.*": {
                       "predicates": {
-                        "minecraft:custom_data": "{augment:370s}"
+                        "minecraft:custom_data": "{augment:373s}"
                       }
                     }
                   }
@@ -3432,7 +3548,7 @@
               "name": [
                 {
                   "text": "Unleash the Beast",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
@@ -3498,7 +3614,7 @@
               "name": [
                 {
                   "text": "You Have My Rod I",
-                  "color": "gold",
+                  "color": "aqua",
                   "bold": true
                 }
               ]
