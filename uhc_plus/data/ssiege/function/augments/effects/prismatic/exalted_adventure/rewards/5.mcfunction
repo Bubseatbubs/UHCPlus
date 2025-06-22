@@ -7,8 +7,8 @@ execute if entity @s[team=blue] run give @s rabbit_spawn_egg[entity_data={id:"mi
 execute if entity @s[team=red] run give @s zoglin_spawn_egg[entity_data={id:"minecraft:zoglin",Glowing:1b,Team:"red",CustomName:{"color":"red","text":"Nostradamus"},DeathLootTable:""}] 8
 execute if entity @s[team=blue] run give @s zoglin_spawn_egg[entity_data={id:"minecraft:zoglin",Glowing:1b,Team:"blue",CustomName:{"color":"blue","text":"Balthazar"},DeathLootTable:""}] 8
 
-execute if entity @s[team=red] run give @s piglin_brute_spawn_egg[entity_data={id:"minecraft:piglin_brute",Glowing:1b,Team:"red",CustomName:{"color":"red","text":"Nostradamus"},DeathLootTable:""}] 6
-execute if entity @s[team=blue] run give @s piglin_brute_spawn_egg[entity_data={id:"minecraft:piglin_brute",Glowing:1b,Team:"blue",CustomName:{"color":"blue","text":"Balthazar"},DeathLootTable:""}] 6
+execute if entity @s[team=red] run give @s vindicator_spawn_egg[entity_data={id:"minecraft:vindicator",Glowing:1b,Team:"red",CustomName:{"color":"red","text":"Nostradamus"},DeathLootTable:""}] 6
+execute if entity @s[team=blue] run give @s vindicator_spawn_egg[entity_data={id:"minecraft:vindicator",Glowing:1b,Team:"blue",CustomName:{"color":"blue","text":"Balthazar"},DeathLootTable:""}] 6
 
 execute if entity @s[team=red] run give @s evoker_spawn_egg[entity_data={id:"minecraft:evoker",Glowing:1b,Team:"red",CustomName:{"color":"red","text":"Nostradamus"},Health:60f,DeathLootTable:""}] 4
 execute if entity @s[team=blue] run give @s evoker_spawn_egg[entity_data={id:"minecraft:evoker",Glowing:1b,Team:"blue",CustomName:{"color":"blue","text":"Balthazar"},Health:60f,DeathLootTable:""}] 4
