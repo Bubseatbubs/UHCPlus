@@ -85,7 +85,7 @@ function ssiege:consumables/bridge_ball/update_trail
 
 # Update speed of golden apples - temp solution while I work on how to collate stuff
 execute as @a[gamemode=survival] run function ssiege:buffs/medium_gapples
-execute as @a[gamemode=survival] as @e[type=item,nbt={Item:{id:"minecraft:golden_apple"}},distance=..1] run item modify entity @s contents ssiege:make_medium
+execute as @a[gamemode=survival] at @s as @e[type=item,nbt={Item:{id:"minecraft:golden_apple"}},distance=..2] run item modify entity @s contents ssiege:make_medium
 
 # Ate golden apple effect
 execute as @a[tag=UHCP_AteApple,gamemode=survival] run function uhcp:entity/items/ate_golden_apple/update
