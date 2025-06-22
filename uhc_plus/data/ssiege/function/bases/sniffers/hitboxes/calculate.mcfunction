@@ -25,7 +25,7 @@ scoreboard players set %multiplier uhcp_initStatus 100
 execute as @s[team=blue] run scoreboard players operation %temp uhcp_initStatus = %blue ssiege_perk_titanslayer
 execute as @s[team=red] run scoreboard players operation %temp uhcp_initStatus = %red ssiege_perk_titanslayer
 scoreboard players remove %temp uhcp_initStatus 1
-scoreboard players operation %temp uhcp_initStatus *= #15 uhcp_const
+scoreboard players operation %temp uhcp_initStatus *= #5 uhcp_const
 scoreboard players operation %multiplier uhcp_initStatus += %temp uhcp_initStatus
 
 # Titan's Might Buff
@@ -38,8 +38,8 @@ execute if score @s ssiege_attack_cooldown matches 1.. run scoreboard players re
 scoreboard players operation %damage uhcp_initStatus *= %multiplier uhcp_initStatus
 scoreboard players operation %damage uhcp_initStatus /= #100 uhcp_const
 
-# Base "Armor"
-scoreboard players operation %damage uhcp_initStatus *= #45 uhcp_const
+# Base "Resistance"
+scoreboard players operation %damage uhcp_initStatus *= #35 uhcp_const
 scoreboard players operation %damage uhcp_initStatus /= #100 uhcp_const
 
 # Attacks that deal less than 1 damage or less get rounded down to 0
