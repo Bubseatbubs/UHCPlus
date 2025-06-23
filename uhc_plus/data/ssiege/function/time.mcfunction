@@ -107,8 +107,8 @@ item replace entity @e[type=minecraft:item,predicate=uhcp:golden_apple_head] con
 execute if score %time uhcp_game_time >= %apple uhcp_game_time run function ssiege:bases/apples/applecursion
 
 # Kill stupid decorative inventory clutters
-execute as @e[tag=UHCP_Titan] run kill @e[type=item,distance=..32,nbt={Item:{id:"minecraft:leaf_litter"}}]
-execute as @e[tag=UHCP_Titan] run kill @e[type=item,distance=..32,nbt={Item:{id:"minecraft:pink_petals"}}]
+execute as @e[tag=UHCP_Titan] at @s run kill @e[type=item,distance=..10,nbt={Item:{id:"minecraft:leaf_litter"}}]
+execute as @e[tag=UHCP_Titan] at @s run kill @e[type=item,distance=..10,nbt={Item:{id:"minecraft:pink_petals"}}]
 
 # Enable triggers
 scoreboard players enable @a augments
@@ -168,5 +168,5 @@ execute if score %time uhcp_game_time >= %titan_might uhcp_game_time run execute
 # Time-Based Encounters
 execute if score %time uhcp_game_time >= %encounter_time uhcp_game_time run function ssiege:start/encounters/effects/timed
 
-# Giants
+# Giants - must be run as a player for whatever reason
 execute if score %time uhcp_game_time >= %giant_timer ssiege_giants in minecraft:overworld as @p run function ssiege:giants/init_wave
