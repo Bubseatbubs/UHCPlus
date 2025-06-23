@@ -12,6 +12,9 @@ execute if score %temp uhcp_initStatus matches 0 run scoreboard players operatio
 scoreboard players set %containers uhcp_settings 1
 execute if score %blocksfilled uhcp_titans_count matches 3.. run playsound minecraft:entity.wither.break_block master @a[distance=..16] ~ ~ ~ 0.5 1.25 0.15
 
+# Filling in a 1 block larger area to try to replace decorative clutter
+fill ~-7 ~ ~-7 ~7 ~13 ~7 minecraft:air replace #uhcp:decorative_clutter
+
 scoreboard players reset %y_diff uhcp_titans_height
 
 execute at @s[tag=UHCP_IsJumping,scores={uhcp_timer=10..}] if entity @e[tag=UHCP_FerrumLanding,distance=..2] run function uhcp:titans/ferrum/jump/land
