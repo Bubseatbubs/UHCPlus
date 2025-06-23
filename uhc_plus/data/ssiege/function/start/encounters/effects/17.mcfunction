@@ -1,4 +1,3 @@
 # Weird Encounter
-give @a[gamemode=survival] obsidian 10
-give @a[gamemode=survival] flint_and_steel 1
-tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"Weird gave everyone "},{"text":"Nether Portal materials","bold":true,"color":"red"},{"text":"!"}]
+give @a[gamemode=survival] book[enchantments={"minecraft:sharpness":1}] 1
+tellraw @a ["",{"text":"Encounter: ","bold":true,"color":"green"},{"text":"Weird gave everyone a "},{"text":"Sharpness Book","bold":true,"color":"yellow"},{"text":"!"}]

@@ -39,7 +39,7 @@ scoreboard players operation %damage uhcp_initStatus *= %multiplier uhcp_initSta
 scoreboard players operation %damage uhcp_initStatus /= #100 uhcp_const
 
 # Base "Resistance"
-scoreboard players operation %damage uhcp_initStatus *= #35 uhcp_const
+scoreboard players operation %damage uhcp_initStatus *= #45 uhcp_const
 scoreboard players operation %damage uhcp_initStatus /= #100 uhcp_const
 
 # Attacks that deal less than 1 damage or less get rounded down to 0
