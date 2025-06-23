@@ -1,4 +1,3 @@
-scoreboard players operation %cost ssiege_unlocked_runesmith = %team_cost ssiege_unlocked_runesmith
 execute as @s[team=blue] run scoreboard players operation %bank uhcp_initStatus = %blue_diamonds ssiege_bank
 execute as @s[team=red] run scoreboard players operation %bank uhcp_initStatus = %red_diamonds ssiege_bank
 
