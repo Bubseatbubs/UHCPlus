@@ -15,4 +15,9 @@ execute if score @s shop matches 13 run function ssiege:shop/runes/purchase/brid
 execute if score @s shop matches 14 run function ssiege:shop/runes/purchase/ender_pearl
 execute if score @s shop matches 15 run function ssiege:shop/runes/purchase/netherite
 execute if score @s shop matches 16 run function ssiege:shop/runes/purchase/arrow
+
+execute if score @s shop matches 97 run function ssiege:shop/runes/show_rune_shop
+execute if score @s shop matches 98 run function ssiege:shop/runes/show_consumable_shop
+execute if score @s shop matches 99 run function ssiege:shop/runes/purchase/donate_shards
+execute if score @s shop matches 100 run function ssiege:shop/perks/purchase/donate_diamonds
 scoreboard players set @s shop 0

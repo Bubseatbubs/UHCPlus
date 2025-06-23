@@ -142,10 +142,6 @@ execute unless score %blue ssiege_unlocked_runesmith matches 1 at @e[type=wander
 # Red Runesmith
 execute unless score %red ssiege_unlocked_runesmith matches 1 at @e[type=wandering_trader,tag=SSIEGE_RED_RUNESMITH] if block ~ ~ ~1 minecraft:anvil run function ssiege:shop/runes/unlock_red_runesmith
 
-# Check when players leave shopping area
-execute as @e[type=villager,tag=SSIEGE_BLUE_SHOPKEEPER] at @s run scoreboard players set @a[team=blue,distance=33..] ssiege_currently_shopping 0
-execute as @e[type=villager,tag=SSIEGE_RED_SHOPKEEPER] at @s run scoreboard players set @a[team=red,distance=33..] ssiege_currently_shopping 0
-
 # Sniffer Sonar Perk
 execute if score %time uhcp_game_time >= %sonar uhcp_game_time run function ssiege:shop/perks/effects/sniffer_sonar
 

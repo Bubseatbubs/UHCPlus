@@ -69,7 +69,10 @@ scoreboard players set @a ssiege_sniffer_hits 0
 scoreboard players set @a ssiege_exposed -1
 scoreboard players set @a[team=blue] uhcp_team 2
 scoreboard players set @a[team=red] uhcp_team 13
-
+scoreboard players set %blue_shards ssiege_bank 0
+scoreboard players set %blue_diamonds ssiege_bank 0
+scoreboard players set %red_shards ssiege_bank 0
+scoreboard players set %red_diamonds ssiege_bank 0
 # Remove tags
 tag @a remove UHCP_Creeper
 tag @a remove UHCP_Skeleton
