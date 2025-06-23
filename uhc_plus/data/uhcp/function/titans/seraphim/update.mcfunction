@@ -12,6 +12,9 @@ execute store result score %blocksfilled uhcp_titans_count run fill ~-3 ~ ~-3 ~3
 scoreboard players set %containers uhcp_settings 1
 execute if score %blocksfilled uhcp_titans_count matches 3.. run playsound minecraft:entity.wither.break_block master @a[distance=..16] ~ ~ ~ 0.5 1.25 0.15
 
+# Filling in a 1 block larger area to try to replace decorative clutter
+fill ~-4 ~ ~-4 ~4 ~8 ~4 minecraft:air replace #uhcp:decorative_clutter
+
 execute as @s[tag=UHCP_Bite] run return run function uhcp:titans/seraphim/bite/update
 
 scoreboard players reset %y_diff uhcp_titans_height

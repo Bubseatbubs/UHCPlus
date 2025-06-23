@@ -1,4 +1,6 @@
 # This function modifies all golden apples in a player's inventory to eat 15% faster
+execute unless score %mode uhcp_settings matches 1 run return fail
+advancement revoke @s only ssiege:inventory_changed
 
 # Check and modify hotbar slots (0-8)
 execute if items entity @s hotbar.0 minecraft:golden_apple run item modify entity @s hotbar.0 ssiege:make_medium

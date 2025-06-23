@@ -28,8 +28,10 @@ execute at @e[tag=BLUE_BASE,limit=1] run execute positioned ~77 ~ ~ run tellraw 
 execute at @e[tag=RED_BASE,limit=1] run execute positioned ~-77 ~ ~ run tellraw @a[team=blue,distance=..16,gamemode=survival] {"text":"You are too close to the enemy spawn!","color":"red"}
 
 # Trophy Hunter Camel Effect
-execute as @a[tag=TH_Camel] run effect give @s absorption 120 0 true
+execute at @e[tag=BLUE_BASE,limit=1] run execute as @a[tag=TH_Camel,distance=..15] run effect give @s absorption 120 0 true
+execute at @e[tag=RED_BASE,limit=1] run execute as @a[tag=TH_Camel,distance=..15] run effect give @s absorption 120 0 true
 
+# Beastmaster
 execute at @e[tag=BLUE_BASE,limit=1] run execute positioned ~77 ~ ~ as @a[team=blue,distance=..15,gamemode=survival,scores={uhcp_augment=506}] at @s positioned ^ ^ ^-2 run function ssiege:augments/effects/prismatic/beastmaster
 execute at @e[tag=RED_BASE,limit=1] run execute positioned ~-77 ~ ~ as @a[team=red,distance=..15,gamemode=survival,scores={uhcp_augment=506}] at @s positioned ^ ^ ^-2 run function ssiege:augments/effects/prismatic/beastmaster
 

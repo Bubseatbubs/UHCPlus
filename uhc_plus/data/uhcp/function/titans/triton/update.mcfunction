@@ -11,6 +11,9 @@ scoreboard players set %containers uhcp_settings 1
 execute if score %blocksfilled uhcp_titans_count matches 3.. run playsound minecraft:item.bucket.empty master @a[distance=..16] ~ ~ ~ 0.5 1.25 0.15
 effect give @a[distance=..16,gamemode=survival] minecraft:water_breathing 5 0 false
 
+# Filling in a 1 block larger area to try to replace decorative clutter
+fill ~-6 ~ ~-6 ~6 ~16 ~6 minecraft:water replace #uhcp:decorative_clutter
+
 scoreboard players reset %y_diff uhcp_titans_height
 
 execute unless function uhcp:titans/check_aggression run return 0

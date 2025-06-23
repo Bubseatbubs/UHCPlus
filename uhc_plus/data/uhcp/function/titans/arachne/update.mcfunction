@@ -14,6 +14,8 @@ scoreboard players set %containers uhcp_settings 1
 execute if score %blocksfilled uhcp_titans_count matches 3.. run playsound minecraft:entity.wither.break_block master @a[distance=..16] ~ ~ ~ 0.5 1.25 0.15
 scoreboard players set %blocksfilled uhcp_titans_count 0
 
+# Filling in a 1 block larger area to try to replace decorative clutter
+fill ~-6 ~ ~-6 ~6 ~6 ~6 minecraft:air replace #uhcp:decorative_clutter
 
 tag @s[tag=UHCP_IsJumping,predicate=uhcp:on_ground] remove UHCP_IsJumping
 execute as @s[tag=UHCP_IsJumping] run return 0

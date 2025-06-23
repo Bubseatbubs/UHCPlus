@@ -89,7 +89,7 @@ scoreboard objectives setdisplay list ssiege_runes_purchased
 # Allow one-player games to not end
 execute if score %players uhcp_id matches ..1 run scoreboard players set %end uhcp_initStatus 1
 
-# Set gamerules
+# Set gamerules - need to do so in nether as well
 gamerule doImmediateRespawn true
 gamerule keepInventory true
 gamerule doDaylightCycle false
@@ -180,3 +180,4 @@ schedule function ssiege:start_augment_selection 200
 # Add on custom player balancing buffs
 function ssiege:buffs/give_tags
 execute as @a[tag=SSIEGE_Buff] run function ssiege:buffs/give_attributes
+advancement revoke @a only ssiege:inventory_changed

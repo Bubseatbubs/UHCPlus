@@ -6,9 +6,9 @@ execute if score @s exalted_item_3 matches 4 run return run tellraw @s {"text":"
 execute if score @s exalted_item_3 matches 5 run return run tellraw @s {"text":"Detector Rail","color":"yellow"}
 execute if score @s exalted_item_3 matches 6 run return run tellraw @s {"text":"Magenta Concrete","color":"yellow"}
 execute if score @s exalted_item_3 matches 7 run return run tellraw @s {"text":"Red Dye","color":"yellow"}
-execute if score @s exalted_item_3 matches 8 run return run tellraw @s {"text":"Copper Door","color":"yellow"}
+execute if score @s exalted_item_3 matches 8 run return run tellraw @s {"text":"Cut Copper Slab","color":"yellow"}
 execute if score @s exalted_item_3 matches 9 run return run tellraw @s {"text":"Chiseled Sandstone","color":"yellow"}
-execute if score @s exalted_item_3 matches 10 run return run tellraw @s {"text":"Light Gray Stained Glass Pane","color":"yellow"}
+execute if score @s exalted_item_3 matches 10 run return run tellraw @s {"text":"Gray Stained Glass Pane","color":"yellow"}
 execute if score @s exalted_item_3 matches 11 run return run tellraw @s {"text":"Dried Kelp Block","color":"yellow"}
 execute if score @s exalted_item_3 matches 12 run return run tellraw @s {"text":"Trapped Chest","color":"yellow"}
 execute if score @s exalted_item_3 matches 13 run return run tellraw @s {"text":"White Carpet","color":"yellow"}
