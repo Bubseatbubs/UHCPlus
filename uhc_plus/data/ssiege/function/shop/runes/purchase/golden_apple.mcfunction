@@ -9,4 +9,4 @@ execute if score @s ssiege_unlocked_runesmith matches ..0 run return run functio
 execute at @s run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:golden_apple",count:1},PickupDelay:2}
 
 tellraw @s ["",{"text":"You purchased 1 "},{"text":"Golden Apple","color":"yellow"},{"text":"!"}]
-function ssiege:shop/runes/show_rune_shop
+function ssiege:shop/runes/show_consumable_shop

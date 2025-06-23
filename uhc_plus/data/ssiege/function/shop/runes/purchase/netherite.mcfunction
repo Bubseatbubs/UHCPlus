@@ -10,4 +10,4 @@ give @s netherite_ingot 1
 give @s netherite_upgrade_smithing_template 1
 
 tellraw @s ["",{"text":"You purchased 1 "},{"text":"Netherite Ingot and Upgrade Template","color":"yellow"},{"text":"!"}]
-function ssiege:shop/runes/show_rune_shop
+function ssiege:shop/runes/show_consumable_shop

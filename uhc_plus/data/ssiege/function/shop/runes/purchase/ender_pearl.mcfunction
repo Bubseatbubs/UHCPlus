@@ -9,4 +9,4 @@ execute if score @s ssiege_unlocked_runesmith matches ..7 run return run functio
 give @s ender_pearl 1
 
 tellraw @s ["",{"text":"You purchased an "},{"text":"Ender Pearl","color":"yellow"},{"text":"!"}]
-function ssiege:shop/runes/show_rune_shop
+function ssiege:shop/runes/show_consumable_shop

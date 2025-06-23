@@ -9,4 +9,4 @@ execute if score @s ssiege_unlocked_runesmith matches ..0 run return run functio
 loot give @s loot ssiege:consumables/bridge_ball
 
 tellraw @s ["",{"text":"You purchased a "},{"text":"Bridge Ball","color":"yellow"},{"text":"!"}]
-function ssiege:shop/runes/show_rune_shop
+function ssiege:shop/runes/show_consumable_shop
