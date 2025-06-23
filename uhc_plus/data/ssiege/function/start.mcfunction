@@ -98,7 +98,6 @@ gamerule doDaylightCycle false
 scoreboard players set @a ssiege_reverse_bounty 0
 scoreboard players set @a ssiege_killstreak 0
 scoreboard players set @a ssiege_death_timer -1
-scoreboard players set %respawn_time ssiege_death_timer 5
 
 # Disable both Runesmiths
 scoreboard players set %blue ssiege_unlocked_runesmith 0
@@ -130,7 +129,6 @@ scoreboard players set %red ssiege_perk_sonar 1
 scoreboard players set %red ssiege_perk_titanslayer 1
 scoreboard players set %red ssiege_perk_homeguard 1
 
-scoreboard players set @a ssiege_currently_shopping 0
 scoreboard players set @a ssiege_runes_purchased 0
 
 # Set Perk Costs

@@ -1,15 +1,12 @@
-$execute store result score @s ssiege_perk_aura run clear @s diamond $(cost)
-execute as @s[team=blue] unless entity @n[tag=SSIEGE_BLUE_SHOPKEEPER,distance=..20] run return run tellraw @s ["",{"text":"You are "},{"text":"too far away","color":"red"},{"text":" from your "},{"text":"Shopkeeper","color":"yellow"},{"text":"!"}]
-execute as @s[team=red] unless entity @n[tag=SSIEGE_RED_SHOPKEEPER,distance=..20] run return run tellraw @s ["",{"text":"You are "},{"text":"too far away","color":"red"},{"text":" from your "},{"text":"Shopkeeper","color":"yellow"},{"text":"!"}]
+$execute store result score @s ssiege_unlocked_runesmith run clear @s diamond $(cost)
 
-execute as @s[team=blue] run scoreboard players operation %team_cost ssiege_perk_aura = %blue_cost ssiege_perk_featherfalling
-execute as @s[team=red] run scoreboard players operation %team_cost ssiege_perk_aura = %red_cost ssiege_perk_featherfalling
+execute as @s[team=blue] run scoreboard players operation %team_cost ssiege_unlocked_runesmith = %blue_cost ssiege_perk_featherfalling
+execute as @s[team=red] run scoreboard players operation %team_cost ssiege_unlocked_runesmith = %red_cost ssiege_perk_featherfalling
 
-execute if score @s ssiege_perk_aura < %team_cost ssiege_perk_aura run scoreboard players operation %cost uhcp_initStatus = %team_cost ssiege_perk_aura
-execute if score @s ssiege_perk_aura < %team_cost ssiege_perk_aura run function ssiege:shop/perks/purchase/bank_check
+execute if score @s ssiege_unlocked_runesmith < %team_cost ssiege_unlocked_runesmith run function ssiege:shop/perks/purchase/bank_check
 
-execute if score @s ssiege_perk_aura < %team_cost ssiege_perk_aura run execute store result storage ssiege:temp refund int 1 run scoreboard players get @s ssiege_perk_aura
-execute if score @s ssiege_perk_aura < %team_cost ssiege_perk_aura run return run function ssiege:shop/perks/purchase/refund with storage ssiege:temp
+execute if score @s ssiege_unlocked_runesmith < %team_cost ssiege_unlocked_runesmith run execute store result storage ssiege:temp shop.refund int 1 run scoreboard players get @s ssiege_unlocked_runesmith
+execute if score @s ssiege_unlocked_runesmith < %team_cost ssiege_unlocked_runesmith run return run function ssiege:shop/perks/purchase/refund with storage ssiege:temp shop
 
 # Successful purchase
 execute at @s run playsound block.note_block.chime master @s ~ ~ ~ 1 1 1
@@ -27,6 +24,9 @@ execute as @s[team=blue] run function ssiege:shop/perks/update_blue_perk_costs
 execute as @s[team=red] run function ssiege:shop/perks/update_red_perk_costs
 
 # Re-render the shop with new prices for all currently shopping players
+execute as @s[team=blue] run function ssiege:shop/perks/show_blue_perk_shop
+execute as @s[team=red] run function ssiege:shop/perks/show_red_perk_shop
+function ssiege:shop/runes/show_rune_shop
 
 execute as @s[team=blue] as @a[team=blue,scores={ssiege_currently_shopping=1}] run function ssiege:shop/perks/show_blue_perk_shop
 execute as @s[team=red] as @a[team=red,scores={ssiege_currently_shopping=1}] run function ssiege:shop/perks/show_red_perk_shop

@@ -4,16 +4,16 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "player": {
-          "team": "red"
+          "team": "blue"
         },
         "entity": {
           "type": "interaction",
-          "nbt": "{Tags:[\"SSIEGE_RED_RUNESMITH\"]}"
+          "nbt": "{Tags:[\"SSIEGE_RUNESMITH\"]}"
         }
       }
     }
   },
   "rewards": {
-    "function": "ssiege:shop/runes/interact_red_runesmith"
+    "function": "ssiege:shop/runes/show_rune_shop"
   }
 }

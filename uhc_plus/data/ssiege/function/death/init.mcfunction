@@ -24,12 +24,15 @@ function ssiege:death/augments
 
 # Set up death spectator mode
 gamemode spectator @s
-execute as @s[tag=!UHCP_Explode] run tag @s add SSIEGE_dead
-
-# Delay tagging explode to ensure player gets to watch their death explosion
-execute as @s[tag=UHCP_Explode] run schedule function ssiege:death/explode_spectate_delay 100t
+execute as @s run tag @s add SSIEGE_dead
 
 # Set death timer
+# Death timers are 5 seconds + 1 second for every minute of game time
+scoreboard players operation %respawn_time ssiege_death_timer = %time uhcp_game_time
+scoreboard players operation %respawn_time ssiege_death_timer /= #1200 uhcp_const
+scoreboard players add %respawn_time ssiege_death_timer 5
 scoreboard players operation @s ssiege_death_timer = %respawn_time ssiege_death_timer
 scoreboard players display name @s uhcp_game_display [{"selector":"@s"},{text:" respawn:"}]
 scoreboard players operation @s uhcp_game_display = @s ssiege_death_timer
+
+function ssiege:death/spectate/menu
