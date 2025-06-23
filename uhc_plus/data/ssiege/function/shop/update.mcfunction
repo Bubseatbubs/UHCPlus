@@ -21,4 +21,5 @@ execute if score @s shop matches 97 run function ssiege:shop/runes/show_rune_sho
 execute if score @s shop matches 98 run function ssiege:shop/runes/show_consumable_shop
 execute if score @s shop matches 99 run function ssiege:shop/runes/purchase/donate_shards
 execute if score @s shop matches 100 run function ssiege:shop/perks/purchase/donate_diamonds
+execute if score @s shop matches 101 run scoreboard players set @s ssiege_currently_shopping 0
 scoreboard players set @s shop 0
