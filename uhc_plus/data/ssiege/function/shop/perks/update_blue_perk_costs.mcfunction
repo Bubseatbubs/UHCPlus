@@ -100,8 +100,8 @@ execute if score %blue ssiege_perk_titanslayer matches 9 run scoreboard players 
 execute if score %blue ssiege_perk_titanslayer matches 10 run scoreboard players operation %blue_cost ssiege_perk_titanslayer = %temp uhcp_initStatus
 execute if score %blue ssiege_perk_titanslayer matches 10 run scoreboard players operation %blue_cost ssiege_perk_titanslayer *= #5 uhcp_const
 execute if score %blue ssiege_perk_titanslayer matches 11 run scoreboard players operation %blue_cost ssiege_perk_titanslayer = %temp uhcp_initStatus
-execute if score %blue ssiege_perk_titanslayer matches 11 run scoreboard players operation %blue_cost ssiege_perk_titanslayer *= 6 uhcp_const
+execute if score %blue ssiege_perk_titanslayer matches 11 run scoreboard players operation %blue_cost ssiege_perk_titanslayer *= #6 uhcp_const
 execute if score %blue ssiege_perk_titanslayer matches 12 run scoreboard players operation %blue_cost ssiege_perk_titanslayer = %temp uhcp_initStatus
-execute if score %blue ssiege_perk_titanslayer matches 12 run scoreboard players operation %blue_cost ssiege_perk_titanslayer *= 6 uhcp_const
+execute if score %blue ssiege_perk_titanslayer matches 12 run scoreboard players operation %blue_cost ssiege_perk_titanslayer *= #6 uhcp_const
 
 execute if score %blue ssiege_perk_titanslayer matches 13.. run scoreboard players set %blue_cost ssiege_perk_titanslayer 999
