@@ -1,6 +1,5 @@
 execute store result storage ssiege:temp perkshop.player_diamonds int 1 run clear @s diamond 0
 execute store result storage ssiege:temp perkshop.bank_diamonds int 1 run scoreboard players get %blue_diamonds ssiege_bank
-execute store result storage ssiege:temp perkshop.bank_diamonds int 1 run scoreboard players get %blue_diamonds ssiege_bank
 
 execute store result storage ssiege:temp perkshop.phealing_lvl int 1 run scoreboard players get %blue ssiege_perk_regen
 execute store result storage ssiege:temp perkshop.sregen_lvl int 1 run scoreboard players get %blue ssiege_perk_aura
