@@ -1,3 +1,4 @@
+# 0..16 total health
 advancement revoke @s only uhcp:augments/mirror_image
 scoreboard players set @s uhcp_aug_tier 1
 tag @s add UHCP_MirrorImage
@@ -18,3 +19,4 @@ playsound minecraft:entity.zombie.converted_to_drowned master @a[distance=..8] ~
 # End
 function uhcp:entity/armor/store_armor
 tag @s add UHCP_SmoothGetaway
+tag @s remove UHCP_MirrorImage

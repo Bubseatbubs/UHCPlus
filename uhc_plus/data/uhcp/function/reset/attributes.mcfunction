@@ -19,6 +19,11 @@ attribute @s minecraft:block_break_speed modifier remove uhcp:block_break_speed
 attribute @s minecraft:block_interaction_range modifier remove uhcp:start_block_range
 attribute @s minecraft:entity_interaction_range modifier remove uhcp:start_entity_range
 
+# Interaction ranges
+# Currently used by: Prop Hunt
+attribute @s minecraft:block_interaction_range modifier remove uhcp:block_range
+attribute @s minecraft:entity_interaction_range modifier remove uhcp:entity_range
+
 # Player Scale
 # Currently used by: Prop Hunt, Lil'Bro, Lil'est Bro, Large and in Charge
 attribute @s minecraft:scale modifier remove uhcp:scale

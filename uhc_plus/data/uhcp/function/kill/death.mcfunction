@@ -17,9 +17,6 @@ scoreboard players reset @s uhcp_mine_rawCopperBlock
 scoreboard players reset @s uhcp_mine_rawGoldBlock
 scoreboard players reset @s uhcp_mine_rawIronBlock
 
-# Situational checks
-execute as @s[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal_fluid/reset
-
 # In lobby
 execute unless score %game uhcp_initStatus matches 1 run return run function uhcp:kill/death/lobby
 execute as @s[gamemode=spectator] run return fail
@@ -32,6 +29,10 @@ tag @s add UHCP_Died
 # Set spawnpoint at death location
 execute store result score @s uhcp_initStatus run data get entity @s Pos[1]
 function uhcp:kill/death/height
+
+# Situational checks
+execute as @s[tag=UHCP_IsAttackTitan] run function uhcp:consumables/titan_spinal_fluid/reset
+execute as @s[predicate=uhcp:augments/prop_hunt/player,scores={uhcp_aug_tier=1}] run function uhcp:augments/effects/silver/prophunt/rejoin
 
 # Augments effects
 function uhcp:kill/death/augments

@@ -1,7 +1,6 @@
 scoreboard players set @s uhcp_leave 1
 function uhcp:entity/armor/load_armor
 tag @s remove UHCP_SmoothGetaway
-tag @s remove UHCP_MirrorImage
 
 scoreboard players set %current_damage uhcp_aug_durability 0
 scoreboard players set @s uhcp_leave 1000

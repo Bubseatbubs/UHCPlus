@@ -1,0 +1,55 @@
+[
+  {
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "uhcp_augment": 110,
+          "uhcp_aug_count": {
+            "min": 1
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "uhcp_augment": 348,
+          "uhcp_aug_count": {
+            "min": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "flags": {
+            "is_sneaking": false
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "gamemode": [
+              "adventure",
+              "creative",
+              "spectator"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

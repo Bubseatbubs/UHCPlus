@@ -1,5 +1,6 @@
 # Prevent usage
-execute unless entity @s[tag=!UHCP_IsPanda,tag=!UHCP_IsRabbit] run return fail
+execute unless entity @s[tag=!UHCP_IsAttackTitan,tag=!UHCP_IsPanda,tag=!UHCP_IsRabbit] run return fail
+execute as @s[predicate=uhcp:augments/prop_hunt/player,scores={uhcp_aug_tier=1}] run function uhcp:augments/effects/silver/prophunt/rejoin
 tag @s add UHCP_Owner
 function uhcp:relics/durability/offhand/reset
 
