@@ -4,7 +4,7 @@ data modify storage ssiege:temp shop.cost set value 1
 execute store result score %success uhcp_initStatus run function ssiege:shop/runes/purchase/check_enough_consumable
 execute if score %success uhcp_initStatus matches 0 run return fail
 
-give @s arrow 12
+give @s arrow 8
 
 tellraw @s ["",{"text":"You purchased an "},{"text":"Arrow Pack","color":"yellow"},{"text":"!"}]
 function ssiege:shop/runes/show_consumable_shop
