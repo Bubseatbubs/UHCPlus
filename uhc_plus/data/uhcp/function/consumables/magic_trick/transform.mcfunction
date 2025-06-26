@@ -1,5 +1,6 @@
 execute unless entity @s[tag=!UHCP_IsAttackTitan,tag=!UHCP_IsPanda,tag=!UHCP_SmoothGetaway] run return fail
 execute as @s[tag=UHCP_IsRabbit] run return run function uhcp:consumables/magic_trick/refresh
+execute as @s[predicate=uhcp:augments/prop_hunt/player,scores={uhcp_aug_tier=1}] run function uhcp:augments/effects/silver/prophunt/rejoin
 
 function uhcp:entity/armor/store_armor
 tag @s add UHCP_IsRabbit

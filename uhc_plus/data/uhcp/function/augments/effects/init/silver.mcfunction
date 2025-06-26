@@ -14,7 +14,7 @@ execute if score @s uhcp_augment matches 115 run return run function uhcp:augmen
 execute if score @s uhcp_augment matches 116 run return run function uhcp:augments/effects/silver/strongswimmer
 execute if score @s uhcp_augment matches 118 run return run loot give @s loot uhcp:consumables/groovy_disc
 execute if score @s uhcp_augment matches 119 run return run function uhcp:augments/effects/silver/monsterhunter
-execute if score @s uhcp_augment matches 120 run return run scoreboard players set @s uhcp_game_time 24000
+execute if score @s uhcp_augment matches 120 run return run function uhcp:augments/effects/silver/onthehunt
 execute if score @s uhcp_augment matches 121 run return run loot give @s loot uhcp:augments/cheap_imitation
 execute if score @s uhcp_augment matches 122 run return run loot give @s loot uhcp:consumables/magic_trick
 execute if score @s uhcp_augment matches 123 run return run function uhcp:augments/effects/silver/likefishinabarrel
@@ -32,7 +32,7 @@ execute if score @s uhcp_augment matches 139 run return run function uhcp:augmen
 execute if score @s uhcp_augment matches 140 run return run loot give @s loot uhcp:augments/the_watcher
 execute if score @s uhcp_augment matches 141 run return run function uhcp:augments/effects/silver/finalupgrade
 execute if score @s uhcp_augment matches 142 run return run function uhcp:augments/effects/silver/tunnelvision
-execute if score @s uhcp_augment matches 143 run return run scoreboard players set @s uhcp_game_time 30000
+execute if score @s uhcp_augment matches 143 run return run function uhcp:augments/effects/silver/delayedprotection
 execute if score @s uhcp_augment matches 144 run return run function uhcp:augments/effects/silver/backoff
 execute if score @s uhcp_augment matches 145 run return run scoreboard players set @s uhcp_game_time 42000
 execute if score @s uhcp_augment matches 146 run return run loot give @s loot uhcp:augments/portable_lava_pool

@@ -1,5 +1,7 @@
+# Reward
 execute if score @s uhcp_game_time matches 3600 run return run function uhcp:augments/effects/silver/drunkenstupor/reward
 
+# Clear effects afterward
 effect clear @s minecraft:strength
 effect clear @s minecraft:resistance
 

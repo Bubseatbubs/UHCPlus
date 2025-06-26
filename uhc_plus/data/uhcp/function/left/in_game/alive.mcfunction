@@ -15,4 +15,5 @@ execute if score %augment_countdown uhcp_game_time matches 1.. run return run ex
 execute at @s[gamemode=adventure] run return run function uhcp:left/in_game/start/augment
 
 # Phantom Saber
-execute as @s[predicate=uhcp:augments/phantom_saber] run function uhcp:augments/effects/gold/phantomsaber
+execute as @s[predicate=uhcp:augments/phantom_saber] run return run function uhcp:augments/effects/gold/phantomsaber
+execute as @s[predicate=uhcp:augments/prop_hunt/player,scores={uhcp_aug_tier=1}] run function uhcp:augments/effects/silver/prophunt/rejoin

@@ -29,7 +29,7 @@ scoreboard players remove @a[scores={uhcp_timer=0..}] uhcp_timer 1
 scoreboard players remove @e[tag=UHCP_HuntingCall,scores={uhcp_itemCount=1..}] uhcp_itemCount 1
 
 # Augment notifications
-execute if score %time uhcp_game_time matches ..45000 run function uhcp:augments/notifications
+execute if score %time uhcp_game_time matches 8400..40800 run function uhcp:augments/notifications
 
 # Timed augment effects
 execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp_game_time >= @s uhcp_game_time run function uhcp:augments/effects/timed
@@ -38,7 +38,7 @@ execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp
 execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=101},gamemode=survival] at @s run ride @s mount @n[tag=UHCP_AFKLock,distance=..15]
 
 # Prop hunt
-execute as @a[scores={uhcp_augment=110}] at @s run function uhcp:augments/effects/silver/prophunt/status
+execute if entity @a[predicate=uhcp:augments/prop_hunt/player] run function uhcp:augments/effects/silver/prophunt/tick
 
 # Solo leveling
 execute as @a[scores={uhcp_lava_timeInterval=0..}] run function uhcp:augments/effects/prismatic/sololeveling/interact/stopsound

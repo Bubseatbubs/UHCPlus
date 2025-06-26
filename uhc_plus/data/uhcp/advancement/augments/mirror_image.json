@@ -18,11 +18,11 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+              "uhcp_augment": 105,
               "uhcp_health": {
                 "min": 0,
                 "max": 16
-              },
-              "uhcp_augment": 105
+              }
             }
           },
           {
@@ -42,6 +42,6 @@
     }
   },
   "rewards": {
-    "function": "uhcp:augments/effects/silver/mirrorimage/init"
+    "function": "uhcp:augments/effects/silver/mirrorimage"
   }
 }

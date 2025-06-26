@@ -1,7 +1,10 @@
-tellraw @s {"text":"Your Iron Will's Invulnerability duration is almost over!","color":"red"}
-execute at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
+# Notification
+tellraw @s {"text":"Iron Will's invulnerability duration is almost over!","color":"red"}
+execute at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1.5 1
 
-execute if score @s uhcp_game_time >= @s uhcp_aug_time run function uhcp:augments/effects/silver/ironwill/clear
-scoreboard players operation @s[scores={uhcp_game_time=0..}] uhcp_game_time = @s uhcp_aug_time
+# Time until resistance clears
+scoreboard players operation @s uhcp_game_time = @s uhcp_aug_time
 scoreboard players reset @s uhcp_aug_time
-execute if score %time uhcp_game_time >= @s[scores={uhcp_game_time=0..}] uhcp_game_time run function uhcp:augments/effects/silver/ironwill/determine
+
+# Clear resistance
+execute if score %time uhcp_game_time >= @s uhcp_game_time run function uhcp:augments/effects/silver/ironwill/determine

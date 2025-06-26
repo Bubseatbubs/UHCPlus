@@ -1,0 +1,36 @@
+[
+  {
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "uhcp_augment": 110
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "uhcp_augment": 348
+        }
+      }
+    ]
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type_specific": {
+        "type": "minecraft:player",
+        "gamemode": [
+          "survival"
+        ]
+      },
+      "flags": {
+        "is_sneaking": true
+      }
+    }
+  }
+]

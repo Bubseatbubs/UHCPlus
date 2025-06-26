@@ -1,5 +1,6 @@
 advancement revoke @s only uhcp:augments/become_panda
-execute as @s[tag=UHCP_IsPanda] run function uhcp:augments/effects/prismatic/kungfupanda/reset
+execute unless entity @s[tag=!UHCP_IsAttackTitan,tag=!UHCP_IsRabbit] run return fail
+function uhcp:augments/effects/prismatic/kungfupanda/undo
 function uhcp:entity/armor/store_armor
 tag @s add UHCP_IsPanda
 execute if score %pvp uhcp_settings matches ..0 run team join no_collision @s[scores={uhcp_team=15..}]

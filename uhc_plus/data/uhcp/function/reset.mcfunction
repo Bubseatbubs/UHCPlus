@@ -17,6 +17,7 @@ kill @e[tag=UHCP_HuntingCall]
 kill @e[tag=UHCP_Minion]
 kill @e[tag=UHCP_PhantomDestination]
 kill @e[tag=UHCP_PhantomSaber]
+kill @e[tag=UHCP_Prop]
 execute as @e[tag=UHCP_SLBlock] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:air replace minecraft:nether_portal strict
 kill @e[tag=UHCP_SLBlock]
 kill @e[tag=UHCP_SLBTP]
