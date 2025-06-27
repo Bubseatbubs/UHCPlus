@@ -1,8 +1,8 @@
 execute if entity @s[team=red] run give @s blaze_spawn_egg[entity_data={id:"minecraft:blaze",Glowing:1b,Team:"red",CustomName:{"color":"red","text":"Nostradamus"},DeathLootTable:""}] 12
 execute if entity @s[team=blue] run give @s blaze_spawn_egg[entity_data={id:"minecraft:blaze",Glowing:1b,Team:"blue",CustomName:{"color":"blue","text":"Balthazar"},DeathLootTable:""}] 12
 
-execute if entity @s[team=red] run give @s rabbit_spawn_egg[entity_data={id:"minecraft:rabbit",Glowing:1b,CustomNameVisible:1b,Team:"red",PersistenceRequired:1b,Health:45f,RabbitType:99,CustomName:{"bold":true,"color":"dark_red","shadow_color":16777215,"text":"Killler Rabbit"},attributes:[{id:"minecraft:max_health",base:30},{id:attack_damage,base:12},{id:"minecraft:scale",base:2},{id:"minecraft:movement_speed",base:.5}]}] 10
-execute if entity @s[team=blue] run give @s rabbit_spawn_egg[entity_data={id:"minecraft:rabbit",Glowing:1b,CustomNameVisible:1b,Team:"blue",PersistenceRequired:1b,Health:45f,RabbitType:99,CustomName:{"bold":true,"color":"dark_blue","shadow_color":16777215,"text":"Killler Rabbit"},attributes:[{id:"minecraft:max_health",base:30},{id:attack_damage,base:12},{id:"minecraft:scale",base:2},{id:"minecraft:movement_speed",base:.5}]}] 10
+execute if entity @s[team=red] run give @s minecaft:rabbit_spawn_egg[minecraft:entity_data={id:"minecraft:marker",Tags:["UHCP_Summon","UHCP_SpawnEgg","UHCP_SpawnRKillRabbit"]}] 10
+execute if entity @s[team=blue] run give @s minecaft:rabbit_spawn_egg[minecraft:entity_data={id:"minecraft:marker",Tags:["UHCP_Summon","UHCP_SpawnEgg","UHCP_SpawnBKillRabbit"]}] 10
 
 execute if entity @s[team=red] run give @s zoglin_spawn_egg[entity_data={id:"minecraft:zoglin",Glowing:1b,Team:"red",CustomName:{"color":"red","text":"Nostradamus"},DeathLootTable:""}] 8
 execute if entity @s[team=blue] run give @s zoglin_spawn_egg[entity_data={id:"minecraft:zoglin",Glowing:1b,Team:"blue",CustomName:{"color":"blue","text":"Balthazar"},DeathLootTable:""}] 8
