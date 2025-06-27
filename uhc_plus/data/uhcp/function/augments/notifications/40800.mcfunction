@@ -17,3 +17,7 @@ execute as @a[scores={uhcp_augment=49},gamemode=survival] at @s run playsound mi
 # Planned Economy
 tellraw @a[scores={uhcp_augment=50},gamemode=survival] {"text":"You will gain 100 Gold in 1 minute!","color":"red"}
 execute as @a[scores={uhcp_augment=50},gamemode=survival] at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
+
+# Second Wind
+tellraw @a[scores={uhcp_augment=145},gamemode=survival] {"text":"You will fully heal in 1 minute!","color":"red"}
+execute as @a[scores={uhcp_augment=145},gamemode=survival] at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1

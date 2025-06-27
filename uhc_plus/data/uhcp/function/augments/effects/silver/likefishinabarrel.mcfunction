@@ -1,1 +1,0 @@
-give @s minecraft:splash_potion[minecraft:item_name={"text":"Levitation Potion","color":"light_purple"},minecraft:lore=[{"text":"It's like shooting fish in a barrel."}],minecraft:potion_contents={"custom_effects":[{"id":"minecraft:levitation","amplifier":0,"duration":800}]}] 2

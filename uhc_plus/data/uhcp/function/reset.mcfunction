@@ -147,6 +147,8 @@ scoreboard players reset @a uhcp_lava_timeInterval
 scoreboard players reset @a uhcp_lobby_item
 scoreboard players reset @a uhcp_relic_count
 scoreboard players reset @a uhcp_relic_sfe_time
+scoreboard players reset @a uhcp_spawn_bestFriend
+scoreboard players reset @a uhcp_spawn_crazyCat
 scoreboard players reset @a uhcp_team
 scoreboard players reset @a uhcp_top_charge
 scoreboard players reset @a uhcp_top_delay

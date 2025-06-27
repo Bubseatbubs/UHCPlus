@@ -1,5 +1,2 @@
-give @s minecraft:diamond 32
-
-execute at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1 1
-
-scoreboard players set @s uhcp_game_time -1
+scoreboard players set @s uhcp_game_time 36000
+execute if score %time uhcp_game_time matches 36000.. run function uhcp:augments/effects/silver/supplydrop/diamonds

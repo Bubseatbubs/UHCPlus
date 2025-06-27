@@ -29,7 +29,7 @@ scoreboard players remove @a[scores={uhcp_timer=0..}] uhcp_timer 1
 scoreboard players remove @e[tag=UHCP_HuntingCall,scores={uhcp_itemCount=1..}] uhcp_itemCount 1
 
 # Augment notifications
-execute if score %time uhcp_game_time matches 8400..40800 run function uhcp:augments/notifications
+execute if score %time uhcp_game_time matches 3600..40800 run function uhcp:augments/notifications
 
 # Timed augment effects
 execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp_game_time >= @s uhcp_game_time run function uhcp:augments/effects/timed

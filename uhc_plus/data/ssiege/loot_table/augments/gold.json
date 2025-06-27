@@ -2422,7 +2422,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain a irremovable Fungus attached to",
+                  "text": "Gain an irremovable Fungus attached to",
                   "color": "white",
                   "italic": false
                 },

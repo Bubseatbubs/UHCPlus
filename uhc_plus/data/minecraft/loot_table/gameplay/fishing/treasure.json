@@ -676,7 +676,22 @@
                     {
                       "type": "minecraft:item",
                       "weight": 1,
-                      "name": "minecraft:sniffer_spawn_egg"
+                      "name": "minecraft:sniffer_spawn_egg",
+                      "functions": [
+                        {
+                          "function": "minecraft:set_components",
+                          "components": {
+                            "minecraft:entity_data": {
+                              "id": "minecraft:marker",
+                              "Tags": [
+                                "UHCP_Summon",
+                                "UHCP_SpawnEgg",
+                                "UHCP_SpawnSniffer"
+                              ]
+                            }
+                          }
+                        }
+                      ]
                     },
                     {
                       "type": "minecraft:loot_table",

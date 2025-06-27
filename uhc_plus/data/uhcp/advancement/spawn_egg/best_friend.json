@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:wolf_spawn_egg",
+              "predicates": {
+                "minecraft:custom_data": {
+                  "uhcp_best_friend": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "uhcp:entity/spawn_egg/best_friend/use"
+  }
+}

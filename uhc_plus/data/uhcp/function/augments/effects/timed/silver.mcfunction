@@ -11,5 +11,5 @@ execute if score @s uhcp_augment matches 130 run return run function uhcp:augmen
 execute if score @s uhcp_augment matches 135 run return run function uhcp:augments/effects/silver/structurescout/remove
 execute at @s[scores={uhcp_augment=138}] run return run function uhcp:augments/effects/silver/crazycatlady/count
 execute if score @s uhcp_augment matches 143 run return run function uhcp:augments/effects/silver/delayedprotection/init
-execute if score @s uhcp_augment matches 145 run return run function uhcp:augments/effects/silver/secondwind
+execute if score @s uhcp_augment matches 145 run return run function uhcp:augments/effects/silver/secondwind/heal
 execute if score @s uhcp_augment matches 150 run function uhcp:augments/effects/silver/cramsession

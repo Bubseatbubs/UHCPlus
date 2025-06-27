@@ -91,6 +91,8 @@ scoreboard objectives add uhcp_relic_sfe_time dummy
 scoreboard objectives add uhcp_relic_sg dummy
 scoreboard objectives add uhcp_relic_sg_radiant dummy
 scoreboard objectives add uhcp_settings dummy
+scoreboard objectives add uhcp_spawn_bestFriend dummy
+scoreboard objectives add uhcp_spawn_crazyCat dummy
 scoreboard objectives add uhcp_team dummy
 scoreboard objectives add uhcp_timer dummy
 scoreboard objectives add uhcp_titans_attack dummy

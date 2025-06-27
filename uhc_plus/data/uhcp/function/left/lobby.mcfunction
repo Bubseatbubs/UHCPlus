@@ -47,6 +47,8 @@ scoreboard players reset @s uhcp_lava_maxHeight
 scoreboard players reset @s uhcp_lava_timeInterval
 scoreboard players reset @s uhcp_relic_count
 scoreboard players reset @s uhcp_relic_sfe_time
+scoreboard players reset @s uhcp_spawn_bestFriend
+scoreboard players reset @s uhcp_spawn_crazyCat
 scoreboard players reset @s uhcp_top_charge
 scoreboard players reset @s uhcp_top_delay
 function uhcp:left/lobby/identification

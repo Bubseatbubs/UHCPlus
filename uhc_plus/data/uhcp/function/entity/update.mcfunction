@@ -1,8 +1,9 @@
 # Update summoned entities
 # Other
+execute as @e[tag=UHCP_SpawnEgg] at @s run function uhcp:entity/spawn_egg
 execute as @e[tag=UHCP_WarningSymbol] at @s run function uhcp:entity/warning_symbol/update
-execute as @e[tag=UHCP_Scout] at @s unless entity @p[gamemode=survival,distance=..3] run function uhcp:augments/effects/silver/structurescout/clear
-execute as @e[tag=UHCP_RunicSentrySummon] at @s if entity @p[gamemode=survival,distance=..8] run function uhcp:entity/runic_sentry_summon
+execute as @e[tag=UHCP_Scout] at @s unless entity @a[distance=..3,gamemode=survival,scores={uhcp_augment=135}] run function uhcp:augments/effects/silver/structurescout/clear
+execute as @e[tag=UHCP_RunicSentrySummon] at @s if entity @a[gamemode=survival,distance=..8] run function uhcp:entity/runic_sentry_summon
 execute as @e[tag=UHCP_SoulApple] at @s run function uhcp:kill/soul_apple/update
 execute as @e[tag=UHCP_TitanSpawnEffect] at @s run function ssiege:titans/titan_spawn_effect/update
 

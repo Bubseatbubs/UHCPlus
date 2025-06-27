@@ -62,6 +62,8 @@ scoreboard players reset @s uhcp_mine_rawGoldBlock
 scoreboard players reset @s uhcp_mine_rawIronBlock
 scoreboard players reset @s uhcp_relic_count
 scoreboard players reset @s uhcp_relic_sfe_time
+scoreboard players reset @s uhcp_spawn_bestFriend
+scoreboard players reset @s uhcp_spawn_crazyCat
 scoreboard players reset @s uhcp_top_cd
 scoreboard players reset @s uhcp_top_charge
 scoreboard players reset @s uhcp_top_delay

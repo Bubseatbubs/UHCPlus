@@ -10,7 +10,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "uhcp_aug_tier": 100
+                "uhcp_aug_tier": 1
               }
             }
           },
@@ -20,8 +20,23 @@
             "scores": {
               "uhcp_augment": 117
             }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "minecraft:player",
+                "gamemode": [
+                  "survival"
+                ],
+                "level": {
+                  "min": 25
+                }
+              }
+            }
           }
-          ]
+        ]
       }
     }
   },
