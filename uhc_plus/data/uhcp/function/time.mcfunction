@@ -37,7 +37,7 @@ execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp
 # AFK augment
 execute if score %time uhcp_game_time matches ..3599 as @a[scores={uhcp_augment=101},gamemode=survival] at @s run ride @s mount @n[tag=UHCP_AFKLock,distance=..15]
 
-# Prop hunt
+# Prop Hunt
 execute if entity @a[predicate=uhcp:augments/prop_hunt/player] run function uhcp:augments/effects/silver/prophunt/tick
 
 # Solo leveling

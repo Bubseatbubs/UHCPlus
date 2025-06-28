@@ -41,8 +41,8 @@ scoreboard players remove @e[tag=UHCP_HuntingCall,scores={uhcp_itemCount=1..}] u
 # Late Looter
 execute as @a[scores={uhcp_augment=333}] run function ssiege:augments/effects/gold/latelooter/update
 
-# Prop hunt
-execute as @a[scores={uhcp_augment=348}] at @s run function uhcp:augments/effects/silver/prophunt/status
+# Prop Hunt
+execute if entity @a[predicate=uhcp:augments/prop_hunt/player] run function uhcp:augments/effects/silver/prophunt/tick
 
 # Slime Time
 execute as @a[scores={uhcp_augment=356},gamemode=survival] at @s run function ssiege:augments/effects/gold/slime_time/trail

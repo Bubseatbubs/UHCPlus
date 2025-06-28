@@ -124,9 +124,6 @@ scoreboard players set @a[scores={ssiege_reverse_bounty=..-1}] ssiege_reverse_bo
 # Handle death timers
 execute as @a[tag=SSIEGE_dead,gamemode=spectator] run function ssiege:death/update
 
-# Augment-based time events
-execute as @a[scores={uhcp_game_time=0..},gamemode=survival] if score %time uhcp_game_time >= @s uhcp_game_time run function ssiege:augments/effects/timed
-
 # Shop Interactions
 execute as @a[scores={shop=1..}] at @s run function ssiege:shop/update
 scoreboard players enable @a shop
