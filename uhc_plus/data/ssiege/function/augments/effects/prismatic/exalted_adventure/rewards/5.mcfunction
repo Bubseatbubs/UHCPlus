@@ -1,8 +1,8 @@
 execute if entity @s[team=red] run give @s blaze_spawn_egg[entity_data={id:"minecraft:blaze",Glowing:1b,Team:"red",CustomName:{"color":"red","text":"Nostradamus"},DeathLootTable:""}] 12
 execute if entity @s[team=blue] run give @s blaze_spawn_egg[entity_data={id:"minecraft:blaze",Glowing:1b,Team:"blue",CustomName:{"color":"blue","text":"Balthazar"},DeathLootTable:""}] 12
 
-execute if entity @s[team=red] run give @s minecaft:rabbit_spawn_egg[minecraft:entity_data={id:"minecraft:marker",Tags:["UHCP_Summon","UHCP_SpawnEgg","UHCP_SpawnRKillRabbit"]}] 10
-execute if entity @s[team=blue] run give @s minecaft:rabbit_spawn_egg[minecraft:entity_data={id:"minecraft:marker",Tags:["UHCP_Summon","UHCP_SpawnEgg","UHCP_SpawnBKillRabbit"]}] 10
+execute if entity @s[team=red] run give @s minecraft:rabbit_spawn_egg[minecraft:entity_data={id:"minecraft:marker",Tags:["UHCP_Summon","UHCP_SpawnEgg","UHCP_SpawnRKillRabbit"]}] 10
+execute if entity @s[team=blue] run give @s minecraft:rabbit_spawn_egg[minecraft:entity_data={id:"minecraft:marker",Tags:["UHCP_Summon","UHCP_SpawnEgg","UHCP_SpawnBKillRabbit"]}] 10
 
 execute if entity @s[team=red] run give @s zoglin_spawn_egg[entity_data={id:"minecraft:zoglin",Glowing:1b,Team:"red",CustomName:{"color":"red","text":"Nostradamus"},DeathLootTable:""}] 8
 execute if entity @s[team=blue] run give @s zoglin_spawn_egg[entity_data={id:"minecraft:zoglin",Glowing:1b,Team:"blue",CustomName:{"color":"blue","text":"Balthazar"},DeathLootTable:""}] 8

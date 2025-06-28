@@ -1490,7 +1490,7 @@
                 },
                 [
                   {
-                    "text": "Leather Helmet",
+                    "text": "Diamond Helmet",
                     "color": "white"
                   },
                   {
@@ -1508,7 +1508,7 @@
                 },
                 [
                   {
-                    "text": "Leather Boots",
+                    "text": "Diamond Boots",
                     "color": "white"
                   },
                   {
@@ -1593,11 +1593,24 @@
                 ],
                 [
                   {
+                    "text": "Milk Bucket",
+                    "color": "white"
+                  },
+                  {
+                    "text": ", "
+                  },
+                  {
                     "text": "empty Bucket",
                     "color": "white"
                   },
                   {
-                    "text": ", 12 ",
+                    "text": ",",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "12 ",
                     "color": "gray"
                   },
                   {
@@ -1606,9 +1619,7 @@
                   {
                     "text": ", and",
                     "color": "gray"
-                  }
-                ],
-                [
+                  },
                   {
                     "text": "2 ",
                     "color": "gray"
