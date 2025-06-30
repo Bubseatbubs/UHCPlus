@@ -7,5 +7,5 @@ execute unless entity @a[tag=UHCP_Owner] run return run tag @s remove UHCP_Curre
 execute as @s[tag=UHCP_PhantomFly] run return run function uhcp:augments/effects/gold/phantomsaber/flight
 
 # Update
-execute as @p[tag=UHCP_Owner] at @s run function uhcp:augments/effects/gold/phantomsaber/update/owner
+execute as @a[tag=UHCP_Owner,limit=1] at @s run function uhcp:augments/effects/gold/phantomsaber/update/owner
 tag @s remove UHCP_CurrentPhantom
