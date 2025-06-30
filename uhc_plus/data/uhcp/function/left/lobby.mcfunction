@@ -7,6 +7,7 @@ tag @s remove UHCP_AugmentRerollSlot3
 tag @s remove UHCP_CLFishRod
 tag @s remove UHCP_CLHeal
 tag @s remove UHCP_CobwebCheck
+tag @s remove UHCP_CPHeal
 tag @s remove UHCP_Defer
 tag @s remove UHCP_DiamondRough
 tag @s remove UHCP_Died

@@ -4,7 +4,7 @@
 function ssiege:reset/attributes
 
 # Max health
-# Currently used by: Surface Duty, Zombie, Empty Hearted, Stand United, Less than 3, Crazy Cat Lady
+# Currently used by: Surface Duty, Zombie, Empty Hearted, Stand United, Less than 3, Crazy Cat Lady, Cruel Pact
 attribute @s minecraft:max_health modifier remove uhcp:max_health
 
 # Game Max Health (+10 Hearts)

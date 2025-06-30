@@ -5,3 +5,7 @@ execute as @a[scores={uhcp_augment=120},gamemode=survival] at @s run playsound m
 # Speedy Start
 tellraw @a[scores={uhcp_augment=126},gamemode=survival] {"text":"Speed will wear off in 5 minutes!","color":"red"}
 execute as @a[scores={uhcp_augment=126},gamemode=survival] at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1 1
+
+# Center of Attention
+tellraw @a[scores={uhcp_augment=217},gamemode=survival] {"text":"Glowing will be cleared in 5 minutes!","color":"red"}
+execute as @a[scores={uhcp_augment=217},gamemode=survival] at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1 1

@@ -1,5 +1,5 @@
 # Prismatic augments
-execute if score @s uhcp_augment matches 203 run return run function uhcp:augments/effects/prismatic/cruelpact/regeneration
+execute if score @s uhcp_augment matches 203 run return run function uhcp:augments/effects/prismatic/cruelpact/heal
 execute if score @s uhcp_augment matches 214 run return run function uhcp:augments/effects/prismatic/netherborn/portal
 execute if score @s uhcp_augment matches 217 run return run function uhcp:augments/effects/prismatic/centerofattention/clear
 execute at @s[scores={uhcp_augment=220}] run return run function uhcp:augments/effects/prismatic/cyberneticdownload/upgrade

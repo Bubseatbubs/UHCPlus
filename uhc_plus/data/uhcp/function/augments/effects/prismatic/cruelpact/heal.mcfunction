@@ -1,15 +1,6 @@
 # Finish healing process
-execute as @s[tag=UHCP_CLHeal] run return run function uhcp:augments/effects/silver/crazycatlady/max_health/reset
-
-# Sum owned cats
-tag @s add UHCP_Owner
-scoreboard players set @s uhcp_initStatus 0
-execute as @e[type=minecraft:cat] on owner run scoreboard players add @s uhcp_initStatus 1000000
-execute if score @s uhcp_initStatus matches ..0 run scoreboard players set @s uhcp_initStatus 2000000000
-tag @s remove UHCP_Owner
-
-# No cats found
-execute if score @s uhcp_initStatus matches 0 run return run function uhcp:augments/effects/silver/crazycatlady/no_cats
+execute as @s[tag=UHCP_CPHeal] run return run function uhcp:augments/effects/prismatic/cruelpact/max_health/reset
+scoreboard players set @s uhcp_initStatus 3000000
 
 # Add time
 scoreboard players operation @s uhcp_game_time /= #1200 uhcp_const
@@ -44,4 +35,4 @@ scoreboard players operation @s uhcp_game_time -= %time uhcp_game_time
 execute if score @s uhcp_game_time matches ..2 run scoreboard players add @s uhcp_aug_time 3
 scoreboard players operation @s uhcp_game_time = %time uhcp_game_time
 scoreboard players add @s uhcp_game_time 2
-tag @s add UHCP_CLHeal
+tag @s add UHCP_CPHeal
