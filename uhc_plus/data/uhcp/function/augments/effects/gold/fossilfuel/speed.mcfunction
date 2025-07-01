@@ -1,2 +1,2 @@
 # Speed duration
-$effect give @s minecraft:speed $(seconds) 0 false
+$effect give @s minecraft:speed $(seconds) 1 false

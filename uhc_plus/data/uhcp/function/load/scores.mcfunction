@@ -27,6 +27,7 @@ scoreboard players set #64 uhcp_const 64
 scoreboard players set #100 uhcp_const 100
 scoreboard players set #118 uhcp_const 118
 scoreboard players set #200 uhcp_const 200
+scoreboard players set #600 uhcp_const 600
 scoreboard players set #1200 uhcp_const 1200
 scoreboard players set #2400 uhcp_const 2400
 scoreboard players set #4800 uhcp_const 4800
