@@ -6,7 +6,7 @@ execute if score @s exalted_item_2 matches 4 run return run give @s glowstone
 execute if score @s exalted_item_2 matches 5 run return run give @s detector_rail
 execute if score @s exalted_item_2 matches 6 run return run give @s magenta_concrete
 execute if score @s exalted_item_2 matches 7 run return run give @s red_dye
-execute if score @s exalted_item_2 matches 8 run return run give @s copper_door
+execute if score @s exalted_item_2 matches 8 run return run give @s cut_copper_slab
 execute if score @s exalted_item_2 matches 9 run return run give @s chiseled_sandstone
 execute if score @s exalted_item_2 matches 10 run return run give @s light_gray_stained_glass_pane
 execute if score @s exalted_item_2 matches 11 run return run give @s dried_kelp_block
