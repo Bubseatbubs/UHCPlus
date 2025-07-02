@@ -1,0 +1,1 @@
+advancement revoke @s only ssiege:augments/fossil_fuel/inventory_changed

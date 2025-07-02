@@ -13,6 +13,7 @@ execute if score @s uhcp_augment matches 314 run return run function ssiege:augm
 execute if score @s uhcp_augment matches 315 run return run function ssiege:augments/effects/gold/echolocation
 execute if score @s uhcp_augment matches 316 run return run scoreboard players set @s uhcp_game_time 28800
 execute if score @s uhcp_augment matches 317 run return run function ssiege:augments/effects/gold/fireandwater
+execute if score @s uhcp_augment matches 319 run return run function ssiege:augments/effects/gold/fossil_fuel/init
 execute if score @s uhcp_augment matches 320 run return run function ssiege:augments/effects/gold/gapplegapi
 execute if score @s uhcp_augment matches 322 run return run attribute @s max_health modifier add uhcp:max_health 20 add_value
 execute if score @s uhcp_augment matches 325 run return run function ssiege:augments/effects/gold/hungryforblood

@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 1.3,
+                  "animation": "eat",
+                  "sound": "entity.generic.eat",
+                  "has_consume_particles": true
+                },
+                "minecraft:food": {
+                  "nutrition": 4,
+                  "saturation": 9.6,
+                  "can_always_eat": true
+                },
+                "minecraft:custom_data": {
+                  "edible_bone": true
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": "this",
+                "score": "uhcp_initStatus"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
