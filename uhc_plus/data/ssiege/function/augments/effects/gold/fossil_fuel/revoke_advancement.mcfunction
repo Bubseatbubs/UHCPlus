@@ -1,1 +1,1 @@
-advancement revoke @s only ssiege:augments/fossil_fuel/inventory_changed
+execute as @a[tag=bone_eater] run advancement revoke @s only ssiege:augments/fossil_fuel/inventory_changed
