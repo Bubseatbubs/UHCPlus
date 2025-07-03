@@ -30,7 +30,7 @@ execute as @a[scores={uhcp_augment=311}] run function ssiege:augments/effects/go
 execute as @a[scores={uhcp_augment=314}] run function ssiege:augments/effects/gold/earthbender/replace_dirt
 
 # Last Stand
-execute as @a[scores={uhcp_augment=331}] run function ssiege:augments/effects/gold/laststand
+execute as @a[scores={uhcp_augment=331}] run function ssiege:augments/effects/gold/knifesedge
 
 # Late Game Specialist
 execute as @a[scores={uhcp_augment=332}] run function ssiege:augments/effects/gold/lategamespecialist/levelcheck
