@@ -843,7 +843,7 @@
                   "italic": false
                 },
                 {
-                  "text": "I, Quick Charge II crossbow and 24",
+                  "text": "I, Quick Charge II crossbow and 32",
                   "color": "white",
                   "italic": false
                 },
@@ -872,77 +872,6 @@
                     "container.*": {
                       "predicates": {
                         "minecraft:custom_data": "{augment:546s}"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:golden_apple",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:519s}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "target": "item_name",
-              "name": [
-                {
-                  "text": "Gapple Gap III",
-                  "color": "aqua",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:toggle_tooltips",
-              "toggles": {
-                "minecraft:attribute_modifiers": false
-              }
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "Gain 12 Golden Apples and a Windfall.",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "(Windfall is a Relic that gets more",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "powerful the more Golden Apples you eat)",
-                  "color": "white",
-                  "italic": false
-                }
-              ],
-              "mode": "replace_all"
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "slots": {
-                    "container.*": {
-                      "predicates": {
-                        "minecraft:custom_data": "{augment:519s}"
                       }
                     }
                   }
@@ -1127,7 +1056,7 @@
                   "italic": false
                 },
                 {
-                  "text": "Gain 10 max HP and bonuses based on your",
+                  "text": "Gain 6 max HP and bonuses based on your",
                   "color": "white",
                   "italic": false
                 },
@@ -1396,12 +1325,17 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain Strength I and Speed I whenever",
+                  "text": "Gain +2 Attack Damage and 15% movement",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "your hunger bar isn't full.",
+                  "text": "speed whenever your hunger bar isn't",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "full. Gain permanent Hunger II.",
                   "color": "white",
                   "italic": false
                 }
@@ -1989,7 +1923,7 @@
                   "italic": false
                 },
                 {
-                  "text": "10 seconds.",
+                  "text": "7 seconds.",
                   "color": "white",
                   "italic": false
                 }
@@ -2060,7 +1994,7 @@
                   "italic": false
                 },
                 {
-                  "text": "40% chance to strike your target.",
+                  "text": "50% chance to strike your target.",
                   "color": "white",
                   "italic": false
                 }

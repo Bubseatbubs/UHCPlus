@@ -142,7 +142,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:stick",
+          "name": "minecraft:golden_sword",
           "weight": 1,
           "functions": [
             {
@@ -458,7 +458,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain 10 Bottles o' Enchanting.The first",
+                  "text": "Gain 5 Bottles o' Enchanting.The first",
                   "color": "white",
                   "italic": false
                 },
@@ -595,7 +595,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Copper Ore you mine has a 12% chance to",
+                  "text": "Copper Ore you mine has a 4% chance to",
                   "color": "white",
                   "italic": false
                 },
@@ -803,7 +803,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Coal Ore you mine has a 33% chance to",
+                  "text": "Coal Ore you mine has a 28% chance to",
                   "color": "white",
                   "italic": false
                 },
@@ -874,7 +874,7 @@
                   "italic": false
                 },
                 {
-                  "text": "another one of each every 60 seconds.",
+                  "text": "another one of each every 45 seconds.",
                   "color": "white",
                   "italic": false
                 }
@@ -1182,6 +1182,72 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{uhcp_augSelect:1b,augment:319s}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": [
+                {
+                  "text": "Fossil Fuel",
+                  "color": "aqua",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "You can eat Bones, restoring 3 Hearts",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "over 7 seconds. Gain 6 bones.",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "container.*": {
+                      "predicates": {
+                        "minecraft:custom_data": "{augment:319s}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:golden_apple",
           "weight": 1,
           "functions": [
@@ -1441,77 +1507,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:compass",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:325s}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "target": "item_name",
-              "name": [
-                {
-                  "text": "Tracker",
-                  "color": "aqua",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:toggle_tooltips",
-              "toggles": {
-                "minecraft:attribute_modifiers": false
-              }
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "Gain a Player Tracking Compass and 12",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "All-Seeing Eyes. (these items help you",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "find enemy players)",
-                  "color": "white",
-                  "italic": false
-                }
-              ],
-              "mode": "replace_all"
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "slots": {
-                    "container.*": {
-                      "predicates": {
-                        "minecraft:custom_data": "{augment:325s}"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:diamond_pickaxe",
           "weight": 1,
           "functions": [
@@ -1731,7 +1726,7 @@
               "target": "item_name",
               "name": [
                 {
-                  "text": "Last Stand",
+                  "text": "Knife's Edge",
                   "color": "aqua",
                   "bold": true
                 }
@@ -1747,7 +1742,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Whenever you are below 4 hearts, gain",
+                  "text": "Whenever you are below 5 hearts, gain",
                   "color": "white",
                   "italic": false
                 },
@@ -1889,7 +1884,7 @@
                   "italic": false
                 },
                 {
-                  "text": "Haste III.",
+                  "text": "Haste II.",
                   "color": "white",
                   "italic": false
                 }
@@ -2275,7 +2270,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain a Portal Opener every 8 minutes",
+                  "text": "Gain a Portal Opener every 5 minutes",
                   "color": "white",
                   "italic": false
                 },
@@ -2351,7 +2346,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain 16 Rails, 20 TNT, 6 Minecarts, 64",
+                  "text": "Gain 16 Rails, 32 TNT, 8 Minecarts, 64",
                   "color": "white",
                   "italic": false
                 },
@@ -2361,7 +2356,12 @@
                   "italic": false
                 },
                 {
-                  "text": "Protection IV Diamond Boots.",
+                  "text": "Protection IV, Protection II Diamond",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Boots.",
                   "color": "white",
                   "italic": false
                 }
@@ -2427,12 +2427,12 @@
                   "italic": false
                 },
                 {
-                  "text": "your head (equivalent to an Leather",
+                  "text": "your head (equivalent to an Iron Helmet)",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "Helmet) that gives +2 damage.",
+                  "text": "that gives +2 damage.",
                   "color": "white",
                   "italic": false
                 }
@@ -2532,97 +2532,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:stone",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{uhcp_augSelect:1b,augment:348s}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "target": "item_name",
-              "name": [
-                {
-                  "text": "Prop Hunt",
-                  "color": "aqua",
-                  "bold": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:toggle_tooltips",
-              "toggles": {
-                "minecraft:attribute_modifiers": false
-              }
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "After sneaking on a block for 3 seconds,",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "transform into that block. Taking",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "damage, dealing damage or holding sneak",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "again grants you Resistance I for 3",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "seconds and reverts your appearance back",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "to normal. You cannot be detected by",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "text": "Sniffer Sonar or All-Seeing Eyes..",
-                  "color": "white",
-                  "italic": false
-                }
-              ],
-              "mode": "replace_all"
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "slots": {
-                    "container.*": {
-                      "predicates": {
-                        "minecraft:custom_data": "{augment:348s}"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:netherite_chestplate",
           "weight": 1,
           "functions": [
@@ -2655,12 +2564,12 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Gain a Diamond Chestplate and Leggings,",
+                  "text": "Gain a Netherite Chestplate, Diamond",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "text": "and an Iron Helmet and Boots.",
+                  "text": "Leggings, and an Iron Helmet and Boots.",
                   "color": "white",
                   "italic": false
                 }
@@ -3137,7 +3046,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Whenever you kill a Creeper, gain 3",
+                  "text": "Whenever you kill a Creeper, gain 5",
                   "color": "white",
                   "italic": false
                 },
