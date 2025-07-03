@@ -13,9 +13,7 @@ clear @s minecraft:bone
 
 loot give @s loot ssiege:augments/fossil_fuel
 
-advancement revoke @s only ssiege:augments/fossil_fuel/inventory_changed
+# advancement revoke @s only ssiege:augments/fossil_fuel/inventory_changed
 
 # Reset the advancement so it can trigger again - needs to be scheduled for whatever reason
-#schedule function ssiege:augments/effects/gold/fossil_fuel/revoke_advancement 2
-
-#execute as @a[scores={uhcp_augment=319}] run advancement revoke @s only ssiege:augments/fossil_fuel/inventory_changed
+schedule function ssiege:augments/effects/gold/fossil_fuel/advancement 2

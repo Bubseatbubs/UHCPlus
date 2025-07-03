@@ -1,0 +1,1 @@
+execute as @a[scores={uhcp_augment=319}] run advancement revoke @s only ssiege:augments/fossil_fuel/inventory_changed
