@@ -14,5 +14,6 @@ scoreboard players set @s ssiege_mine_lapis 0
 scoreboard players set @s ssiege_mine_dlapis 0
 scoreboard players set @s ssiege_mine_ddiamonds 0
 scoreboard players set @s ssiege_mine_diamonds 0
-
+playsound block.note_block.chime master @s ~ ~ ~ 1 1 1
+tellraw @s ["",{"text":"[Buried Treasure]","color":"aqua"},{"text":" You found treasure inside the ore!","color":"white"}]
  loot give @s loot ssiege:augments/buried_treasures
