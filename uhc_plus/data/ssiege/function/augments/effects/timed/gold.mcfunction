@@ -18,6 +18,9 @@ execute if score @s uhcp_augment matches 315 run return run function ssiege:augm
 # Final Upgrade
 execute if score @s uhcp_augment matches 316 run return run function ssiege:augments/effects/gold/finalupgrade
 
+# Fossil Fuel
+execute if score @s uhcp_augment matches 319 run return run function ssiege:augments/effects/gold/fossil_fuel/revoke_advancement
+
 # jump king
 execute if score @s uhcp_augment matches 329 run return run function ssiege:augments/effects/gold/jumpking/givecharge
 
