@@ -1,4 +1,4 @@
-give @s experience_bottle 10
+give @s experience_bottle 5
 
 # max level reached
 scoreboard objectives add max_level_achieved dummy
