@@ -4,7 +4,7 @@ scoreboard players set @s ssiege_mine_coal 0
 scoreboard players set @s ssiege_mine_dcoal 0
 
 execute store result score @s uhcp_initStatus run random value 0..99
-execute if score @s uhcp_initStatus matches 33.. run return fail
+execute if score @s uhcp_initStatus matches 28.. run return fail
 
 execute at @s run summon item ^ ^ ^2 {Item:{id:"minecraft:diamond"}}
 execute at @s as @e[type=item,nbt={Item:{id:"minecraft:coal"}},distance=..15] run execute store result score @s uhcp_initStatus run data get entity @s Age
