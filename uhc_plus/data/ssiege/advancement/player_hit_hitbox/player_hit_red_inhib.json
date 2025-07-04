@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "team": "blue"
+        },
+        "entity": {
+          "type": "interaction",
+          "nbt": "{Tags:[\"RI_Hitbox\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ssiege:bases/inhibitors/hitboxes/red/hit"
+  }
+}

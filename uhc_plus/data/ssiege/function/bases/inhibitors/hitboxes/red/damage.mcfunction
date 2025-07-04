@@ -1,0 +1,1 @@
+$damage @n[tag=SSIEGE_red_inhib] $(damage) uhcp:instant_damage by @s
